@@ -23,6 +23,10 @@ autoreconf
 make
 ```
 
+### TODO
+
+Read more in [TODO.md](TODO.md)
+
 ### Documentations
 
 - An [awesome overview](https://huytd.github.io/posts/go-tieng-viet-linux.html) of @huytd
