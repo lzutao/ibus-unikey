@@ -1,5 +1,5 @@
 # IBus-Unikey IME
-A future clone of [ibus-unikey][ibus-unikey] aim to fix for the present.
+A future clone of [ibus-unikey][ibus-unikey] aims to fix for the present.
 
 ### Description
 ibus-unikey is an [IBus](https://github.com/ibus/ibus) IME. It use Unikey-engine (a modified version) for progress key event.
@@ -33,7 +33,7 @@ Read more in [TODO.md](TODO.md)
 - [Overview of Imput Method for CJK (and Vietnamese)](https://blogs.gnome.org/happyaron/2011/01/15/linux-input-method-brief-summary/)
 - [BongNV ibus project](https://github.com/bongnv/ibus-unikey)
 - [BongNV own introduction](http://bongnv.github.io/2016/03/another-ibus-unikey.html)
-- And a alternative engine to unikey-based:
+- And few alternative engines with unikey-based:
   + https://devhub.io/repos/wilonth-BoGoEngine
   + https://devhub.io/repos/haqduong-ibus-bogo
 - Some intial step with [vala](https://github.com/lewtds/ibus-bogo-vala/blob/master/src/main.vala)
