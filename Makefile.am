@@ -1,18 +1,129 @@
-SUBDIRS = \
-	ukengine \
-	src \
-    setup \
-	icons \
-	m4 \
-	po \
-	$(NULL)
-
-MAKEFLAGS = --no-print-directory
+SUBDIRS = po
 
 ACLOCAL_AMFLAGS = -I m4
 
-EXTRA_DIST = \
-    ibus-unikey.spec.in
+MAKEFLAGS = --no-print-directory
+
+noinst_LTLIBRARIES = libunikey-ibus.la
+
+libexec_PROGRAMS = ibus-engine-unikey ibus-setup-unikey
+
+## ukengine
+libunikey_ibus_la_SOURCES = \
+	ukengine/byteio.cpp \
+	ukengine/byteio.h \
+	ukengine/charset.cpp \
+	ukengine/charset.h \
+	ukengine/convert.cpp \
+	ukengine/data.cpp \
+	ukengine/data.h \
+	ukengine/error.cpp \
+	ukengine/inputproc.cpp \
+	ukengine/inputproc.h \
+	ukengine/keycons.h \
+	ukengine/mactab.cpp \
+	ukengine/mactab.h \
+	ukengine/pattern.cpp \
+	ukengine/pattern.h \
+	ukengine/ukengine.cpp \
+	ukengine/ukengine.h \
+	ukengine/unikey.cpp \
+	ukengine/unikey.h \
+	ukengine/usrkeymap.cpp \
+	ukengine/usrkeymap.h \
+	ukengine/vnconv.h \
+	ukengine/vnlexi.h
+
+libunikey_ibus_la_CXXFLAGS = -Wall -funsigned-char
+
+## src
+
+ibus_engine_unikey_SOURCES = \
+	src/main.cpp \
+	src/engine.cpp \
+	src/engine.h \
+	src/engine_private.h \
+	src/utils.cpp \
+	src/utils.h
+
+ibus_engine_unikey_CPPFLAGS = \
+	-I$(top_srcdir)/ukengine \
+	-DPKGDATADIR=\"$(pkgdatadir)\" \
+	-DLOCALEDIR=\"$(localedir)\" \
+	-DLIBEXECDIR=\"$(libexecdir)\" \
+	-Wall
+
+noinst_HEADERS = \
+	src/engine.h \
+	src/engine_private.h \
+	src/engine_const.h \
+	src/utils.h
+
+ibus_engine_unikey_CXXFLAGS = @IBUS_CFLAGS@ @X11_CFLAGS@
+
+ibus_engine_unikey_LDFLAGS = \
+	@IBUS_LIBS@ \
+	@X11_LIBS@ \
+	$(top_builddir)/libunikey-ibus.la
+
+component_DATA = src/unikey.xml
+
+componentdir = $(datadir)/ibus/component
+
+unikey.xml: src/unikey.xml.in
+	$(AM_V_GEN)
+	$(AM_V_at)( \
+		libexecdir=${libexecdir}; \
+		pkgdatadir=${pkgdatadir}; \
+		s=`cat $<`; \
+		eval "echo \"$${s}\""; \
+	) > $@
+
+test: ibus-engine-unikey
+	$(builddir)/ibus-engine-unikey
+
+## setup
+ui_DATA = setup/setup-main.ui setup/setup-macro.ui
+
+uidir = $(pkgdatadir)/ui
+
+ibus_setup_unikey_SOURCES = \
+	setup/setup.cpp \
+	setup/dlg_main_setup.cpp \
+	setup/dlg_macro_table.cpp
+
+ibus_setup_unikey_CPPFLAGS = \
+	-I$(top_srcdir)/ukengine \
+	-I$(top_srcdir)/src \
+	-DPKGDATADIR=\"$(pkgdatadir)\" \
+	-DUI_DATA_DIR=\"$(uidir)\" \
+	-DLOCALEDIR=\"$(localedir)\" \
+	-Wall
+
+noinst_HEADERS += \
+	setup/dlg_main_setup.h \
+	setup/dlg_macro_table.h
+
+ibus_setup_unikey_CXXFLAGS = @IBUS_CFLAGS@ @GTK_CFLAGS@
+
+ibus_setup_unikey_LDFLAGS = @IBUS_LIBS@ @GTK_LIBS@ \
+	$(top_builddir)/libunikey-ibus.la \
+	$(top_builddir)/src/ibus_engine_unikey-utils.o
+
+## icons
+icons_DATA = icons/ibus-unikey.png
+
+iconsdir = $(pkgdatadir)/icons
+
+## end
+
+EXTRA_DIST = ibus-unikey.spec.in ukengine/README ukengine/COPYING \
+	src/unikey.xml.in \
+	$(ui_DATA) \
+	$(icons_DATA) \
+	m4/as-version.m4
+
+CLEANFILES = src/unikey.xml
 
 DISTCLEANFILES = \
 	po/stamp-it \
