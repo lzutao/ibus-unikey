@@ -4,7 +4,7 @@ ui_DATA = \
 
 uidir = $(pkgdatadir)/ui
 
-INCLUDES = \
+AM_CPPFLAGS = \
     -I$(top_srcdir)/ukengine \
     -I$(top_srcdir)/src \
     -DPKGDATADIR=\"$(pkgdatadir)\" \

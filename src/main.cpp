@@ -1,5 +1,5 @@
 #ifdef HAVE_CONFIG_H
-#include "config.h"
+#include <config.h>
 #endif
 
 #include <libintl.h>
@@ -15,27 +15,29 @@
 static IBusBus* bus         = NULL;
 static IBusFactory* factory = NULL;
 
-/* option */
-static gboolean xml     = FALSE;
+/* command line options */
 static gboolean ibus    = FALSE;
 static gboolean verbose = FALSE;
 static gboolean version = FALSE;
+static gboolean xml     = FALSE;
 
 static const GOptionEntry entries[] =
 {
-    { "xml",     'x', 0, G_OPTION_ARG_NONE, &xml,     "generate xml for engines", NULL },
     { "ibus",    'i', 0, G_OPTION_ARG_NONE, &ibus,    "component is executed by ibus", NULL },
     { "verbose", 'v', 0, G_OPTION_ARG_NONE, &verbose, "verbose", NULL },
     { "version", 'V', 0, G_OPTION_ARG_NONE, &version, "print ibus-unikey version", NULL },
+    { "xml",     'x', 0, G_OPTION_ARG_NONE, &xml,     "generate xml for engines", NULL },
     { NULL },
 };
 
-static void ibus_disconnected_cb(IBusBus* bus, gpointer user_data)
+static void
+ibus_disconnected_cb(IBusBus* bus, gpointer user_data)
 {
     ibus_quit();
 }
 
-static void start_component(void)
+static void
+start_component(void)
 {
     GList* engines;
     GList* p;
@@ -73,7 +75,8 @@ static void start_component(void)
     ibus_unikey_exit();
 }
 
-static void print_engines_xml(void)
+static void
+print_engines_xml(void)
 {
     IBusComponent* component;
     GString* output;
@@ -90,16 +93,17 @@ static void print_engines_xml(void)
     g_string_free(output, TRUE);
 }
 
-int main(gint argc, gchar** argv)
+int
+main(gint argc, gchar** argv)
 {
     GError* error = NULL;
-    GOptionContext* context;
 
+    /* select a locale based on the user choice of the appropriate environment variables */
     setlocale(LC_ALL, "");
     bindtextdomain(GETTEXT_PACKAGE, LOCALEDIR);
     textdomain(GETTEXT_PACKAGE);
 
-    context = g_option_context_new("- ibus unikey engine component");
+    GOptionContext* context = g_option_context_new("- ibus unikey engine component");
 
     g_option_context_add_main_entries(context, entries, "ibus-unikey");
 
