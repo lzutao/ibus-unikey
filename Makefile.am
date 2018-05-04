@@ -1,4 +1,5 @@
-SUBDIRS = po
+# using non-recursive Make
+SUBDIRS = . po
 
 ACLOCAL_AMFLAGS = -I m4
 
@@ -8,7 +9,8 @@ noinst_LTLIBRARIES = libunikey-ibus.la
 
 libexec_PROGRAMS = ibus-engine-unikey ibus-setup-unikey
 
-## ukengine
+## ukengine/
+
 libunikey_ibus_la_SOURCES = \
 	ukengine/byteio.cpp \
 	ukengine/byteio.h \
@@ -36,7 +38,7 @@ libunikey_ibus_la_SOURCES = \
 
 libunikey_ibus_la_CXXFLAGS = -Wall -funsigned-char
 
-## src
+## src/
 
 ibus_engine_unikey_SOURCES = \
 	src/main.cpp \
@@ -70,7 +72,7 @@ component_DATA = src/unikey.xml
 
 componentdir = $(datadir)/ibus/component
 
-unikey.xml: src/unikey.xml.in
+src/unikey.xml: src/unikey.xml.in
 	$(AM_V_GEN)
 	$(AM_V_at)( \
 		libexecdir=${libexecdir}; \
@@ -125,32 +127,29 @@ EXTRA_DIST = ibus-unikey.spec.in ukengine/README ukengine/COPYING \
 
 CLEANFILES = src/unikey.xml
 
-DISTCLEANFILES = \
-	po/stamp-it \
-	$(NULL)
+DISTCLEANFILES = po/stamp-it
 
-rpm: dist @PACKAGE_NAME@.spec
-	rpmbuild -bb \
-			--define "_sourcedir `pwd`" \
-			--define "_builddir `pwd`" \
-			--define "_srcrpmdir `pwd`" \
-			--define "_rpmdir `pwd`" \
-			--define "_specdir `pwd`" \
-			@PACKAGE_NAME@.spec
+# rpm: dist @PACKAGE_NAME@.spec
+# 	rpmbuild -bb \
+# 			--define "_sourcedir `pwd`" \
+# 			--define "_builddir `pwd`" \
+# 			--define "_srcrpmdir `pwd`" \
+# 			--define "_rpmdir `pwd`" \
+# 			--define "_specdir `pwd`" \
+# 			@PACKAGE_NAME@.spec
 
-srpm: dist @PACKAGE_NAME@.spec
-	rpmbuild -bs \
-			--define "_sourcedir `pwd`" \
-			--define "_builddir `pwd`" \
-			--define "_srcrpmdir `pwd`" \
-			--define "_rpmdir `pwd`" \
-			--define "_specdir `pwd`" \
-			@PACKAGE_NAME@.spec
+# srpm: dist @PACKAGE_NAME@.spec
+# 	rpmbuild -bs \
+# 			--define "_sourcedir `pwd`" \
+# 			--define "_builddir `pwd`" \
+# 			--define "_srcrpmdir `pwd`" \
+# 			--define "_rpmdir `pwd`" \
+# 			--define "_specdir `pwd`" \
+# 			@PACKAGE_NAME@.spec
 
-clean-rpm:
-	$(RM) -r "`uname -i`"
-	$(RM) -r @PACKAGE_NAME@-@PACKAGE_VERSION@*.src.rpm
+# clean-rpm:
+# 	$(RM) -r "`uname -i`"
+# 	$(RM) -r @PACKAGE_NAME@-@PACKAGE_VERSION@*.src.rpm
 
-clean-local: clean-rpm
-	$(RM) -r $(distdir)
-
+# clean-local: clean-rpm
+# 	$(RM) -r $(distdir)

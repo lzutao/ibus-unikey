@@ -1,6 +1,5 @@
-[encoding: UTF-8]
 src/engine.cpp
 src/utils.cpp
 setup/dlg_macro_table.cpp
-[type: gettext/glade]setup/setup-main.ui
-[type: gettext/glade]setup/setup-macro.ui
+setup/setup-main.ui
+setup/setup-macro.ui
