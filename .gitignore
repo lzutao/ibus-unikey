@@ -5,6 +5,15 @@
 ### Autotools ###
 # http://www.gnu.org/software/automake
 
+# Only manually add what we need in /m4
+/m4
+
+# po files
+/po
+!/po/Makevars
+!/po/*.po
+!/po/LINGUAS
+
 Makefile.in
 /ar-lib
 /mdate-sh
