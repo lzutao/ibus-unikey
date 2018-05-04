@@ -6,22 +6,26 @@ ibus-unikey is an [IBus](https://github.com/ibus/ibus) IME. It use Unikey-engine
 
 ### Installation
 
+#### From source
 **Dependencies** (On Debian 9):
 ```bash
 sudo apt-get update
-sudo apt-get install ibus git build-essential autoconf libtool autopoint libtool intltool libibus-1.0-dev libx11-dev libgtk2.0-dev
+sudo apt-get install ibus git build-essential libtool autoconf autopoint autotools-dev 
+sudo apt-get install libibus-1.0-dev libx11-dev libgtk2.0-dev libgtk-3-dev
 ```
 
 **How to build**:
 ```bash
 git clone https://github.com/lzutao/ibus-unikey.git
-ln -s README.md README
-autoreconf --install
-intltoolize
-autoreconf
-./configure
-make
+cd ibus-unikey
+mkdir build && cd build
+../autogen.sh --with-gtk-version=2 # defaul gtk version is 2, you can omit this option
+make # to build
+sudo make install # to install
 ```
+
+**Note**: Above commands will install `ibus-unikey` in defaul localtion `/usr/local/`. 
+If you want to change that, use `--prefix=<dir_to_install>` option in `../autogen.sh` like `../autogen.sh --prefix=/home/user/local`
 
 ### TODO
 
