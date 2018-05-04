@@ -1,0 +1,51 @@
+dist: trusty
+sudo: required
+# Enable C++ support
+language: cpp
+# Compiler selection
+compiler:
+  - gcc
+#addons:
+#  apt:
+#    sources:
+#      - ubuntu-toolchain-r-test
+#    packages:
+#      #- gcc-7
+#      #- g++-7
+before_install:
+  - wget http://de.archive.ubuntu.com/ubuntu/pool/main/g/gettext/autopoint_0.19.7-2ubuntu3_all.deb
+  - sudo dpkg -i autopoint_0.19.7-2ubuntu3_all.deb
+  - sudo apt-get install -f
+  - sudo apt-get update -qq
+  # command to install dependencies
+  - sudo apt-get install -qq libibus-1.0-dev libx11-dev libgtk2.0-dev libgtk-3-dev
+  - sudo apt-get install -qq cppcheck
+  # for running and testing
+  #- sudo apt-get install ibus
+  # command to run tests
+install:
+before_script:
+script:
+  # Link gcc-7 and g++-7 to their standard commands
+  #- sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 90
+  #- sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 90
+  # Check versions of gcc, g++ and cmake
+  #- gcc -v && g++ -v 
+  - autopoint --version
+  - cd ${TRAVIS_BUILD_DIR}
+  # cppcheck
+  - cppcheck --quiet --error-exitcode=1 .  || exit 1
+  - mkdir build && cd build
+  - ../autogen.sh --prefix=${TRAVIS_BUILD_DIR}/bin || exit 1
+  - make || exit 1
+  - make install || exit 1
+  - cd ${TRAVIS_BUILD_DIR}/bin || exit 1
+  - ./libexec/ibus-engine-unikey --version || exit 1
+  - ./libexec/ibus-setup-unikey  --version || exit 1
+
+after_success:
+after_failure:  
+before_deploy:
+deploy:
+after_deploy:
+after_script:
