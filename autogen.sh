@@ -2,8 +2,10 @@
 # Run this to generate all the initial makefiles, etc.
 # Ref: https://github.com/GNOME/gtetrinet/blob/master/autogen.sh
 
-# set -e
-# set -x
+# Exit immediately if a command exits with a non-zero status
+set -e
+# Print commands and their arguments as they are executed
+#set -x
 
 test -n "$srcdir" || srcdir=$(dirname "$0")
 test -n "$srcdir" || srcdir=.
@@ -29,12 +31,14 @@ if test -z "$AUTORECONF"; then
     exit 1
 fi
 
-autoreconf --force --install --verbose || exit 1
+autoreconf --install --verbose
 
 cd "$olddir"
-if [ "$NOCONFIGURE" = "" ]; then
-    # "$srcdir/configure" --enable-maintainer-mode "$@" || exit 1
-    "$srcdir/configure" "$@" || exit 1
+if test -z "$NOCONFIGURE"; then
+    export CFLAGS="-g -O0"
+    export CXXFLAGS="$CFLAGS"
+    #"$srcdir/configure" --enable-maintainer-mode "$@"
+    "$srcdir/configure" "$@"
 
     if test "$1" = "--help"; then
         exit 0

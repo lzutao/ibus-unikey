@@ -37,7 +37,8 @@
                 "/usr/include",
                 "/usr/include/ibus-1.0",
                 "${workspaceFolder}/ukengine",
-                "/usr/include/gtk-2.0"
+                "/usr/include/gtk-2.0",
+                "${workspaceFolder}/src"
             ],
             "defines": [],
             "intelliSenseMode": "clang-x64",
@@ -82,5 +83,5 @@
             }
         }
     ],
-    "version": 3
+    "version": 4
 }

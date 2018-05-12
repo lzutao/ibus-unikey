@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ibus-unikey 0.6.1\n"
 "Report-Msgid-Bugs-To: http://code.google.com/p/ibus-unikey\n"
-"POT-Creation-Date: 2018-05-04 10:16+0700\n"
+"POT-Creation-Date: 2018-05-05 16:03+0700\n"
 "PO-Revision-Date: 2012-02-29 10:15+0700\n"
 "Last-Translator: Lê Quốc Tuấn <mr.lequoctuan@gmail.com>\n"
 "Language-Team: Vietnamese\n"
@@ -99,95 +99,78 @@ msgstr "Chọn tập tin để nhập"
 msgid "Choose file to export"
 msgstr "Chọn tập tin để xuất"
 
-#~ msgid "Telex"
-#~ msgstr "Telex"
+#: setup/setup-main.ui:13
+msgid "IBus-Unikey Setup"
+msgstr "Cài đặt IBus-Unikey"
 
-#~ msgid "Vni"
-#~ msgstr "Vni"
+#: setup/setup-main.ui:59
+msgid "<b>Input/Output</b>"
+msgstr "<b>Nhập/Xuất</b>"
 
-#~ msgid "Simple Telex"
-#~ msgstr "Simple Telex"
+#: setup/setup-main.ui:84
+msgid "Input method:"
+msgstr "Kiểu gõ: "
 
-#~ msgid "Simple Telex 2"
-#~ msgstr "Simple Telex 2"
+#: setup/setup-main.ui:113
+msgid "Output charset: "
+msgstr "Bảng mã: "
 
-#~ msgid "Unicode"
-#~ msgstr "Unicode"
+#: setup/setup-main.ui:155
+msgid "<b>Options</b>"
+msgstr "<b>Tùy chọn</b>"
 
-#~ msgid "TCVN3"
-#~ msgstr "TCVN3"
+#: setup/setup-main.ui:176
+msgid "Enable _spell check"
+msgstr "Bật kiểm tra _chính tả"
 
-#~ msgid "VNI Win"
-#~ msgstr "VNI Win"
+#: setup/setup-main.ui:192
+msgid "Auto _restore keys with invalid words"
+msgstr "Tự động _trả phím khi gõ từ không hợp lệ"
 
-#~ msgid "VIQR"
-#~ msgstr "VIQR"
+#: setup/setup-main.ui:208
+msgid "Use oà, _uý (instead of òa, úy)"
+msgstr "Dùng oà, _uý (thay vì òa, úy)"
 
-#~ msgid "BK HCM 2"
-#~ msgstr "BK HCM 2"
+#: setup/setup-main.ui:224
+msgid "Allow type with more _freedom"
+msgstr "Cho phép bỏ dấu _tự do"
 
-#~ msgid "CString"
-#~ msgstr "CString"
+#: setup/setup-main.ui:244
+msgid "Enable _macro"
+msgstr "Bật gõ tắt"
 
-#~ msgid "NCR Decimal"
-#~ msgstr "NCR Decimal"
+#: setup/setup-main.ui:260
+msgid "_Edit macro"
+msgstr "_Sửa bảng gõ tắt"
 
-#~ msgid "NCR Hex"
-#~ msgstr "NCR Hex"
+#: setup/setup-main.ui:283
+msgid "Process _W at word begin"
+msgstr "Xử lý phím _W ở đầu từ"
 
-#~ msgid "IBus-Unikey Setup"
-#~ msgstr "Cài đặt IBus-Unikey"
+#: setup/setup-main.ui:299
+msgid "Capture _mouse event"
+msgstr "Bắt sự _kiện chuột"
 
-#~ msgid "Input method:"
-#~ msgstr "Kiểu gõ: "
+#: setup/setup-macro.ui:13
+msgid "Macro table definition"
+msgstr "Định nghĩa bảng gõ tắt"
 
-#~ msgid "Output charset: "
-#~ msgstr "Bảng mã: "
+#: setup/setup-macro.ui:86
+msgid "Word"
+msgstr "Từ"
 
-#~ msgid "<b>Input/Output</b>"
-#~ msgstr "<b>Nhập/Xuất</b>"
+#: setup/setup-macro.ui:102
+msgid "Replace with"
+msgstr "Thay thế bởi"
 
-#~ msgid "Enable _spell check"
-#~ msgstr "Bật kiểm tra _chính tả"
+#: setup/setup-macro.ui:145
+msgid "Delete _all"
+msgstr "Xóa _hết"
 
-#~ msgid "Auto _restore keys with invalid words"
-#~ msgstr "Tự động _trả phím khi gõ từ không hợp lệ"
+#: setup/setup-macro.ui:172
+msgid "_Import..."
+msgstr "_Nhập..."
 
-#~ msgid "Use oà, _uý (instead of òa, úy)"
-#~ msgstr "Dùng oà, _uý (thay vì òa, úy)"
-
-#~ msgid "Allow type with more _freedom"
-#~ msgstr "Cho phép bỏ dấu _tự do"
-
-#~ msgid "Enable _macro"
-#~ msgstr "Bật gõ tắt"
-
-#~ msgid "_Edit macro"
-#~ msgstr "_Sửa bảng gõ tắt"
-
-#~ msgid "Process _W at word begin"
-#~ msgstr "Xử lý phím _W ở đầu từ"
-
-#~ msgid "Capture _mouse event"
-#~ msgstr "Bắt sự _kiện chuột"
-
-#~ msgid "<b>Options</b>"
-#~ msgstr "<b>Tùy chọn</b>"
-
-#~ msgid "Macro table definition"
-#~ msgstr "Định nghĩa bảng gõ tắt"
-
-#~ msgid "Word"
-#~ msgstr "Từ"
-
-#~ msgid "Replace with"
-#~ msgstr "Thay thế bởi"
-
-#~ msgid "Delete _all"
-#~ msgstr "Xóa _hết"
-
-#~ msgid "_Import..."
-#~ msgstr "_Nhập..."
-
-#~ msgid "_Export..."
-#~ msgstr "_Xuất..."
+#: setup/setup-macro.ui:187
+msgid "_Export..."
+msgstr "_Xuất..."

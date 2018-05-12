@@ -1,17 +1,19 @@
 # using non-recursive Make
 SUBDIRS = . po
 
-ACLOCAL_AMFLAGS = -I m4
+ACLOCAL_AMFLAGS = -I m4 --install
 
 MAKEFLAGS = --no-print-directory
 
-noinst_LTLIBRARIES = libunikey-ibus.la
+noinst_LIBRARIES = libunikey-ibus.a
 
 libexec_PROGRAMS = ibus-engine-unikey ibus-setup-unikey
 
+############
 ## ukengine/
+############
 
-libunikey_ibus_la_SOURCES = \
+libunikey_ibus_a_SOURCES = \
 	ukengine/byteio.cpp \
 	ukengine/byteio.h \
 	ukengine/charset.cpp \
@@ -36,9 +38,11 @@ libunikey_ibus_la_SOURCES = \
 	ukengine/vnconv.h \
 	ukengine/vnlexi.h
 
-libunikey_ibus_la_CXXFLAGS = -Wall -funsigned-char
+libunikey_ibus_a_CXXFLAGS = -Wall -funsigned-char
 
+#######
 ## src/
+#######
 
 ibus_engine_unikey_SOURCES = \
 	src/main.cpp \
@@ -55,18 +59,8 @@ ibus_engine_unikey_CPPFLAGS = \
 	-DLIBEXECDIR=\"$(libexecdir)\" \
 	-Wall
 
-noinst_HEADERS = \
-	src/engine.h \
-	src/engine_private.h \
-	src/engine_const.h \
-	src/utils.h
-
 ibus_engine_unikey_CXXFLAGS = @IBUS_CFLAGS@ @X11_CFLAGS@
-
-ibus_engine_unikey_LDFLAGS = \
-	@IBUS_LIBS@ \
-	@X11_LIBS@ \
-	$(top_builddir)/libunikey-ibus.la
+ibus_engine_unikey_LDADD = libunikey-ibus.a @IBUS_LIBS@ @X11_LIBS@
 
 component_DATA = src/unikey.xml
 
@@ -84,7 +78,9 @@ src/unikey.xml: src/unikey.xml.in
 test: ibus-engine-unikey
 	$(builddir)/ibus-engine-unikey
 
+########
 ## setup
+########
 ui_DATA = setup/setup-main.ui setup/setup-macro.ui
 
 uidir = $(pkgdatadir)/ui
@@ -102,24 +98,32 @@ ibus_setup_unikey_CPPFLAGS = \
 	-DLOCALEDIR=\"$(localedir)\" \
 	-Wall
 
-noinst_HEADERS += \
-	setup/dlg_main_setup.h \
-	setup/dlg_macro_table.h
-
 ibus_setup_unikey_CXXFLAGS = @IBUS_CFLAGS@ @GTK_CFLAGS@
+ibus_setup_unikey_LDADD = libunikey-ibus.a @IBUS_LIBS@ @GTK_LIBS@
+ibus_setup_unikey_LDFLAGS = $(top_builddir)/src/ibus_engine_unikey-utils.o
 
-ibus_setup_unikey_LDFLAGS = @IBUS_LIBS@ @GTK_LIBS@ \
-	$(top_builddir)/libunikey-ibus.la \
-	$(top_builddir)/src/ibus_engine_unikey-utils.o
-
+########
 ## icons
+########
 icons_DATA = icons/ibus-unikey.png
 
 iconsdir = $(pkgdatadir)/icons
 
+######
 ## end
+######
 
-EXTRA_DIST = ibus-unikey.spec.in ukengine/README ukengine/COPYING \
+noinst_HEADERS = \
+	src/engine.h \
+	src/engine_private.h \
+	src/engine_const.h \
+	src/utils.h \
+	setup/dlg_main_setup.h \
+	setup/dlg_macro_table.h
+
+EXTRA_DIST = \
+	ibus-unikey.spec.in \
+	ukengine/README ukengine/COPYING \
 	src/unikey.xml.in \
 	$(ui_DATA) \
 	$(icons_DATA) \
@@ -129,27 +133,27 @@ CLEANFILES = src/unikey.xml
 
 DISTCLEANFILES = po/stamp-it
 
-# rpm: dist @PACKAGE_NAME@.spec
-# 	rpmbuild -bb \
-# 			--define "_sourcedir `pwd`" \
-# 			--define "_builddir `pwd`" \
-# 			--define "_srcrpmdir `pwd`" \
-# 			--define "_rpmdir `pwd`" \
-# 			--define "_specdir `pwd`" \
-# 			@PACKAGE_NAME@.spec
+rpm: dist @PACKAGE_NAME@.spec
+	rpmbuild -bb \
+			--define "_sourcedir `pwd`" \
+			--define "_builddir `pwd`" \
+			--define "_srcrpmdir `pwd`" \
+			--define "_rpmdir `pwd`" \
+			--define "_specdir `pwd`" \
+			@PACKAGE_NAME@.spec
 
-# srpm: dist @PACKAGE_NAME@.spec
-# 	rpmbuild -bs \
-# 			--define "_sourcedir `pwd`" \
-# 			--define "_builddir `pwd`" \
-# 			--define "_srcrpmdir `pwd`" \
-# 			--define "_rpmdir `pwd`" \
-# 			--define "_specdir `pwd`" \
-# 			@PACKAGE_NAME@.spec
+srpm: dist @PACKAGE_NAME@.spec
+	rpmbuild -bs \
+			--define "_sourcedir `pwd`" \
+			--define "_builddir `pwd`" \
+			--define "_srcrpmdir `pwd`" \
+			--define "_rpmdir `pwd`" \
+			--define "_specdir `pwd`" \
+			@PACKAGE_NAME@.spec
 
-# clean-rpm:
-# 	$(RM) -r "`uname -i`"
-# 	$(RM) -r @PACKAGE_NAME@-@PACKAGE_VERSION@*.src.rpm
+clean-rpm:
+	$(RM) -r "`uname -i`"
+	$(RM) -r @PACKAGE_NAME@-@PACKAGE_VERSION@*.src.rpm
 
-# clean-local: clean-rpm
-# 	$(RM) -r $(distdir)
+clean-local: clean-rpm
+	$(RM) -r $(distdir)

@@ -23,6 +23,8 @@ Makefile.in
 
 # http://www.gnu.org/software/autoconf
 
+/ABOUT-NLS*
+/INSTALL*
 /autom4te.cache
 autoscan.log
 autoscan-*.log
