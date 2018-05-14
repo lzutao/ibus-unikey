@@ -1,9 +1,13 @@
-/build-aux
+### Doxygen ###
+html/
+latex/
 
 # Created by https://www.gitignore.io/api/c,c++,cmake,autotools
 
 ### Autotools ###
 # http://www.gnu.org/software/automake
+
+/build-aux
 
 # Only manually add what we need in /m4
 /m4
