@@ -30,7 +30,6 @@ AS_VERSION
 dnl check if this is a release version
 AS_NANO
 
-AM_SANITY_CHECK
 dnl AM_MAINTAINER_MODE only provides the option to configure to enable it
 AM_MAINTAINER_MODE
 AC_SEARCH_LIBS([strerror],[cposix])
