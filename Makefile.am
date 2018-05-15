@@ -59,8 +59,8 @@ ibus_engine_unikey_CPPFLAGS = \
 	-DLIBEXECDIR=\"$(libexecdir)\" \
 	-Wall
 
-ibus_engine_unikey_CXXFLAGS = @IBUS_CFLAGS@ @X11_CFLAGS@
-ibus_engine_unikey_LDADD = libunikey-ibus.a @IBUS_LIBS@ @X11_LIBS@
+ibus_engine_unikey_CXXFLAGS = @IBUS_CFLAGS@
+ibus_engine_unikey_LDADD = libunikey-ibus.a @IBUS_LIBS@
 
 component_DATA = src/unikey.xml
 

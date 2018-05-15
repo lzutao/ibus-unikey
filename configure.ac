@@ -3,7 +3,7 @@ AC_PREREQ([2.69])
 dnl initialize autoconf
 dnl releases only do -Wall, git and prerelease does -Werror too
 dnl use a three digit version number for releases, and four for git/pre
-AC_INIT([ibus-unikey],[0.6.1],[http://code.google.com/p/ibus-unikey],[ibus-unikey])
+AC_INIT([ibus-unikey],[0.6.2],[https://github.com/vn-input/ibus-unikey],[ibus-unikey])
 AC_CONFIG_AUX_DIR([build-aux])
 dnl AC_GNU_SOURCE # Obsolete, use AC_USE_SYSTEM_EXTENSIONS, but neccessary ?
 AC_USE_SYSTEM_EXTENSIONS
@@ -97,9 +97,6 @@ AS_IF([test "x$gtk_version" = "x3"],
 )
 
 PKG_CHECK_MODULES([IBUS], [ibus-1.0 >= 1.4.0])
-
-PKG_CHECK_MODULES([X11], [x11])
-AC_SUBST(X11)
 
 PKG_CHECK_MODULES([GTK],$gtk_version)
 AC_SUBST(GTK)

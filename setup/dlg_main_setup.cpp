@@ -25,7 +25,7 @@ GtkWidget* unikey_main_setup_dialog_new()
     bus = ibus_bus_new();
     g_signal_connect(bus, "disconnected", G_CALLBACK(gtk_main_quit), NULL);
     config = ibus_bus_get_config(bus);
-    
+
     builder = gtk_builder_new();
     gtk_builder_add_from_file(builder, UI_DATA_DIR "/setup-main.ui", NULL);
 
@@ -69,11 +69,11 @@ void init_dialog_controls(GtkBuilder* builder)
     g_signal_connect(wid, "changed", G_CALLBACK(input_method_combo_box_changed_cb), NULL);
     i = 0;
     if (ibus_unikey_config_get_string(config, CONFIG_SECTION, CONFIG_INPUTMETHOD, &str))
-    {   
+    {
         for (; i < NUM_INPUTMETHOD; i++)
-        {   
+        {
             if (strcasecmp(str, Unikey_IMNames[i]) == 0) break;
-        }   
+        }
     }
     gtk_combo_box_set_active(GTK_COMBO_BOX(wid), i);
 
@@ -81,11 +81,11 @@ void init_dialog_controls(GtkBuilder* builder)
     g_signal_connect(wid, "changed", G_CALLBACK(output_charset_combo_box_changed_cb), NULL);
     i = 0;
     if (ibus_unikey_config_get_string(config, CONFIG_SECTION, CONFIG_OUTPUTCHARSET, &str))
-    {   
+    {
         for (; i < NUM_OUTPUTCHARSET; i++)
-        {   
+        {
             if (strcasecmp(str, Unikey_OCNames[i]) == 0) break;
-        }   
+        }
     }
     gtk_combo_box_set_active(GTK_COMBO_BOX(wid), i);
 
@@ -117,18 +117,6 @@ void init_dialog_controls(GtkBuilder* builder)
     g_signal_connect(wid, "toggled", G_CALLBACK(update_config_toggle_cb), (void*)CONFIG_MACROENABLED);
     if (!ibus_unikey_config_get_boolean(config, CONFIG_SECTION, CONFIG_MACROENABLED, &b))
         b = DEFAULT_CONF_MACROENABLED;
-    gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(wid), b);
-
-    wid = GTK_WIDGET(gtk_builder_get_object(builder, "check_processwatbegin"));
-    g_signal_connect(wid, "toggled", G_CALLBACK(update_config_toggle_cb), (void*)CONFIG_PROCESSWATBEGIN);
-    if (!ibus_unikey_config_get_boolean(config, CONFIG_SECTION, CONFIG_PROCESSWATBEGIN, &b))
-        b = DEFAULT_CONF_PROCESSWATBEGIN;
-    gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(wid), b);
-
-    wid = GTK_WIDGET(gtk_builder_get_object(builder, "check_mousecapture"));
-    g_signal_connect(wid, "toggled", G_CALLBACK(update_config_toggle_cb), (void*)CONFIG_MOUSECAPTURE);
-    if (!ibus_unikey_config_get_boolean(config, CONFIG_SECTION, CONFIG_MOUSECAPTURE, &b))
-        b = DEFAULT_CONF_MOUSECAPTURE;
     gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(wid), b);
 
     wid = GTK_WIDGET(gtk_builder_get_object(builder, "btn_macroedit"));
