@@ -49,15 +49,42 @@ make -j4
 sudo make install
 ```
 
-#### Latest version from Github
+#### Latest version from GitHub
 
 [Clone][how-to-clone] this repository and change the directory to the cloned folder and issue the commands:
 ```bash
 mkdir build && cd build
-../autogen.sh --prefix=/usr --with-gtk-version=3 # default gtk version is 3
+../autogen.sh --prefix=/usr --with-gtk-version=3 # default gtk version is 2
 make -j4          # to build with 4 threads
 sudo make install # to install
 ```
+
+## Debian package build for maintainer
+
+**Note**: Only for upstream version from GitHub
+
+```bash
+mkdir build && cd build
+../autogen.sh --prefix=/usr
+make dist
+```
+
+Change the name of release tarball from `ibus-unikey-VERSION.tar.gz` to `ibus-unikey_VERSION.orig.tar.gz`, issue these commands:
+```bash
+tar xf ibus-unikey_VERSION.orig.tar.gz
+cd ibus-unikey
+cp -a ../../debian .
+debuild -us -uc # build both source and binary package
+```
+
+To build only the binary package without signing the `.changes` file (or the non-existent `.dsc` file):
+```bash
+debuild -i -us -uc -b
+```
+
+Change the `-b` to `-S` to build only a source package.
+
+[Read more about debuild](http://manpages.ubuntu.com/manpages/xenial/en/man1/debuild.1.html)
 
 ## Acknowledgements
 - Author: Lê Quốc Tuấn \<mr.lequoctuan@gmail.com\>

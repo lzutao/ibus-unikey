@@ -75,8 +75,10 @@ src/unikey.xml: src/unikey.xml.in
 		eval "echo \"$${s}\""; \
 	) > $@
 
-test: ibus-engine-unikey
-	$(builddir)/ibus-engine-unikey
+## test need more effective
+## and this test will hang on debuild
+#test: ibus-engine-unikey
+#	$(builddir)/ibus-engine-unikey
 
 ########
 ## setup
