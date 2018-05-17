@@ -1,3 +1,10 @@
+# vim:set noet ts=4:
+#
+# ibus-unikey - Vietnamese Input Method Engine for IBus using Unikey Engine
+#
+# Copyright (c) 2009-2012 Le Quoc Tuan <mr.lequoctuan@gmail.com>
+#               2018      Lzu Tao <1stpangu@gmail.com>
+
 # using non-recursive Make
 SUBDIRS = . po
 
@@ -9,9 +16,7 @@ noinst_LIBRARIES = libunikey-ibus.a
 
 libexec_PROGRAMS = ibus-engine-unikey ibus-setup-unikey
 
-############
-## ukengine/
-############
+## ukengine ##
 
 libunikey_ibus_a_SOURCES = \
 	ukengine/byteio.cpp \
@@ -40,9 +45,7 @@ libunikey_ibus_a_SOURCES = \
 
 libunikey_ibus_a_CXXFLAGS = -Wall -funsigned-char
 
-#######
-## src/
-#######
+## src ##
 
 ibus_engine_unikey_SOURCES = \
 	src/main.cpp \
@@ -80,9 +83,7 @@ src/unikey.xml: src/unikey.xml.in
 #test: ibus-engine-unikey
 #	$(builddir)/ibus-engine-unikey
 
-########
-## setup
-########
+## setup ##
 ui_DATA = setup/setup-main.ui setup/setup-macro.ui
 
 uidir = $(pkgdatadir)/ui
@@ -104,16 +105,12 @@ ibus_setup_unikey_CXXFLAGS = @IBUS_CFLAGS@ @GTK_CFLAGS@
 ibus_setup_unikey_LDADD = libunikey-ibus.a @IBUS_LIBS@ @GTK_LIBS@
 ibus_setup_unikey_LDFLAGS = $(top_builddir)/src/ibus_engine_unikey-utils.o
 
-########
-## icons
-########
+## icons ##
 icons_DATA = icons/ibus-unikey.png
 
 iconsdir = $(pkgdatadir)/icons
 
-######
-## end
-######
+## end ##
 
 noinst_HEADERS = \
 	src/engine.h \

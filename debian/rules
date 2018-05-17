@@ -5,13 +5,15 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@
+	dh $@ --parallel
 
 override_dh_auto_install:
 	$(MAKE) DESTDIR=$$(pwd)/debian/ibus-unikey install
 
-override_dh_auto_configure:
-	./configure --prefix=/usr --enable-maintainer-mode
+#override_dh_auto_configure:
+#	./configure --enable-maintainer-mode --prefix=/usr
+#	or
+#	dh_auto_configure -- --enable-maintainer-mode
 
-override_dh_auto_build:
-	$(MAKE) -j
+# override_dh_auto_build:
+# 	$(MAKE) -j
