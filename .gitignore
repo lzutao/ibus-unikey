@@ -7,6 +7,7 @@ latex/
 ### Autotools ###
 # http://www.gnu.org/software/automake
 
+/build
 /build-aux
 
 # Only manually add what we need in /m4
@@ -124,19 +125,3 @@ dkms.conf
 # Compiled Static libraries
 *.lai
 
-# Executables
-
-### CMake ###
-CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
-cmake_install.cmake
-install_manifest.txt
-compile_commands.json
-CTestTestfile.cmake
-build
-
-
-# End of https://www.gitignore.io/api/c,c++,cmake,autotools
