@@ -7,4 +7,9 @@
     "telemetry.enableCrashReporter": false,
     "workbench.colorTheme": "Monokai",
     "editor.minimap.enabled": false,
+    "files.associations": {
+        "cerrno": "cpp",
+        "array": "cpp",
+        "string_view": "cpp"
+    },
 }
