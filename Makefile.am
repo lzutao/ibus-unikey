@@ -59,10 +59,9 @@ ibus_engine_unikey_CPPFLAGS = \
 	-I$(top_srcdir)/ukengine \
 	-DPKGDATADIR=\"$(pkgdatadir)\" \
 	-DLOCALEDIR=\"$(localedir)\" \
-	-DLIBEXECDIR=\"$(libexecdir)\" \
-	-Wall
+	-DLIBEXECDIR=\"$(libexecdir)\"
 
-ibus_engine_unikey_CXXFLAGS = @IBUS_CFLAGS@
+ibus_engine_unikey_CXXFLAGS = -Wall @IBUS_CFLAGS@
 ibus_engine_unikey_LDADD = libunikey-ibus.a @IBUS_LIBS@
 
 component_DATA = src/unikey.xml
@@ -98,10 +97,9 @@ ibus_setup_unikey_CPPFLAGS = \
 	-I$(top_srcdir)/src \
 	-DPKGDATADIR=\"$(pkgdatadir)\" \
 	-DUI_DATA_DIR=\"$(uidir)\" \
-	-DLOCALEDIR=\"$(localedir)\" \
-	-Wall
+	-DLOCALEDIR=\"$(localedir)\"
 
-ibus_setup_unikey_CXXFLAGS = @IBUS_CFLAGS@ @GTK_CFLAGS@
+ibus_setup_unikey_CXXFLAGS = -Wall @IBUS_CFLAGS@ @GTK_CFLAGS@
 ibus_setup_unikey_LDADD = libunikey-ibus.a @IBUS_LIBS@ @GTK_LIBS@
 ibus_setup_unikey_LDFLAGS = $(top_builddir)/src/ibus_engine_unikey-utils.o
 

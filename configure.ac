@@ -55,7 +55,6 @@ dnl LT_INIT([disable-shared])
 dnl LT_INIT()
 
 dnl ** Checks for header files **
-AC_PATH_X
 AC_CHECK_HEADERS([fcntl.h libintl.h locale.h memory.h stddef.h stdint.h stdlib.h string.h])
 
 dnl check if we have ANSI C header files
@@ -95,7 +94,7 @@ AS_IF([test "x$gtk_version" = "x3"],
     gtk_version="gtk+-2.0 >= 2.24",
 )
 
-PKG_CHECK_MODULES([IBUS], [ibus-1.0 >= 1.4.0])
+PKG_CHECK_MODULES([IBUS], [ibus-1.0 >= 1.5.4])
 
 PKG_CHECK_MODULES([GTK],$gtk_version)
 AC_SUBST(GTK)

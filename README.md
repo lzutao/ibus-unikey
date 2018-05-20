@@ -17,7 +17,7 @@ ibus-unikey is an [IBus](https://github.com/ibus/ibus) IME. It uses a modified v
 sudo apt-get install ibus-unikey
 ```
 
-After the installation completes, follow [those instructions](https://www.sitecuatui.com/ibus-unikey-go-tieng-viet-ubuntu/) to activate ibus-unikey.
+After the installation completes, follow [those instructions][after_installing] to activate ibus-unikey.
 
 ## Compiling on GNU/Linux
 
@@ -25,7 +25,7 @@ After the installation completes, follow [those instructions](https://www.sitecu
 ibus-unikey currently needs following libraries and binaries:
 - GNU gcc, g++ compiler or Clang
 - GNU autotools with autoconf >= 2.69, autopoint >= 0.19.7, libtool >= 2.4
-- IBus development library >= 1.4.0
+- IBus development library >= 1.5.4
 - Gtk development library with libgtk2.0-dev >= 2.24.0
 
 On Ubuntu 16.04 you can easily install them like this:
@@ -44,7 +44,7 @@ After installing required libraries and binaries, you are ready to build and ins
 Download a [tarball][release] and extract it, change current directory to extracted directory and use:
 ```bash
 mkdir build && cd build
-./configure --prefix=/usr
+./configure --prefix=/usr --libexec=/usr/lib/ibus
 make -j4
 sudo make install
 ```
@@ -54,7 +54,7 @@ sudo make install
 [Clone][how-to-clone] this repository and change the directory to the cloned folder and issue the commands:
 ```bash
 mkdir build && cd build
-../autogen.sh --prefix=/usr --with-gtk-version=3 # default gtk version is 2
+../autogen.sh --prefix=/usr --libexec=/usr/lib/ibus
 make -j4          # to build with 4 threads
 sudo make install # to install
 ```
@@ -65,7 +65,7 @@ sudo make install # to install
 
 ```bash
 mkdir build && cd build
-../autogen.sh --prefix=/usr
+../autogen.sh --prefix=/usr --libexec=/usr/lib/ibus
 make dist
 ```
 
@@ -87,7 +87,16 @@ Change the `-b` to `-S` to build only a source package.
 [Read more about debuild](http://manpages.ubuntu.com/manpages/xenial/en/man1/debuild.1.html)
 
 ## Acknowledgements
-- Author: Lê Quốc Tuấn \<mr.lequoctuan@gmail.com\>
+- Copyright
+```
+Files: ukengine/*
+Copyright: 2000-2005 Pham Kim Long <unikey@gmail.com>
+License: GPL-3.0+
+
+2009 - 2012 Lê Quốc Tuấn <mr.lequoctuan AT gmail DOT com>
+       2016 Bong Nguyen <vanbong AT gmail DOT com>
+       2018 Lzu Tao <1stpangu AT gmail DOT com>
+```
 
 ## License
 Licensed under [GNU GPLv3](COPYING).
@@ -96,7 +105,7 @@ Licensed under [GNU GPLv3](COPYING).
 
 Read more in [TODO](https://github.com/lzutao/ibus-unikey/projects) at GitHub's Projects.
 
-## Documentations
+## Useful links
 
 - An [awesome overview](https://huytd.github.io/posts/go-tieng-viet-linux.html) of @huytd
 - [Overview of Imput Method for CJK (and Vietnamese)](https://blogs.gnome.org/happyaron/2011/01/15/linux-input-method-brief-summary/)
@@ -111,3 +120,4 @@ Read more in [TODO](https://github.com/lzutao/ibus-unikey/projects) at GitHub's 
 [release]: https://github.com/lzutao/ibus-unikey/releases
 [how-to-clone]: https://help.github.com/articles/cloning-a-repository/
 [ibus-unikey]: https://github.com/vn-input/ibus-unikey
+[after_installing]: https://github.com/Ubuntu-VN/wiki/wiki/G%C3%B5-ti%E1%BA%BFng-Vi%E1%BB%87t

@@ -18,9 +18,9 @@ git:
 #      - g++-6
 before_install:
   - sudo apt-get update -qq
-  # command to install dependencies
-  - sudo apt-get install -qq libibus-1.0-dev libgtk2.0-dev libgtk-3-dev
-  - wget http://de.archive.ubuntu.com/ubuntu/pool/main/g/gettext/autopoint_0.19.7-2ubuntu3_all.deb -O autopoint.deb
+  # install dependencies
+  - sudo apt-get install -qq libibus-1.0-dev libgtk2.0-dev
+  - wget -O autopoint.deb http://mirror.math.princeton.edu/pub/ubuntu/pool/main/g/gettext/autopoint_0.19.7-2ubuntu3_all.deb
   - sudo dpkg -i autopoint.deb
   # for running and testing
   #- sudo apt-get install ibus
@@ -28,19 +28,16 @@ before_install:
   # FIXME: add tests
 install:
 before_script:
+  - mkdir build && cd build
 script:
-  # FIXME: code should be in directory where the repository being built has been copied on the worker.
-  #- cd ${TRAVIS_BUILD_DIR}
   # Link gcc-6 and g++-6 to their standard commands
   # FIXME: Is gcc-6 needed?
   # NOTE: see https://github.com/vn-input/ibus-unikey/issues/9
   #- export CC=gcc-6 CXX=g++-6
-  - mkdir build && cd build
-  - ../autogen.sh --enable-maintainer-mode || exit 1
-  # FIXME: cannot run parallel because of race condition, "libtool: link: cannot find the library `libunikey-ibus.la'"
+  - ../autogen.sh --disable-silent-rules --prefix=/usr --libexec=/usr/lib/ibus || exit 1
   - make -j && sudo make install
-  - /usr/local/libexec/ibus-setup-unikey  --version || exit 1
-  - /usr/local/libexec/ibus-engine-unikey --version || exit 1
+  - /usr/lib/ibus/ibus-setup-unikey  --version || exit 1
+  - /usr/lib/ibus/ibus-engine-unikey --version || exit 1
 after_success:
 after_failure:
 before_deploy:
