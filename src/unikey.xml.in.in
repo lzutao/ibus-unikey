@@ -7,9 +7,22 @@
 	<version>@VERSION@</version>
 	<author>Lê Quốc Tuấn &lt;mr.lequoctuan@gmail.com&gt;</author>
 	<license>GPL</license>
-	<homepage>http://code.google.com/p/ibus-unikey</homepage>
+	<homepage>https://github.com/vn-input/ibus-unikey</homepage>
 	<textdomain>ibus-unikey</textdomain>
 
-	<engines exec=\"${libexecdir}/ibus-engine-unikey --xml\" />
-
+	<engines>
+		<engine>
+			<name>Unikey</name>
+			<language>vi</language>
+			<license>GPLv3</license>
+			<author>Lê Quốc Tuấn &lt;mr.lequoctuan@gmail.com&gt;</author>
+			<icon>${pkgdatadir}/icons/ibus-unikey.png</icon>
+			<layout>default</layout>
+			<longname>Unikey</longname>
+			<description>Vietnamese Input Method Engine for IBus using Unikey Engine</description>
+			<rank>99</rank>
+			<symbol>&#x76;&#x69;</symbol>
+			<setup>${libexecdir}/ibus-setup-unikey</setup>
+		</engine>
+	</engines>
 </component>
