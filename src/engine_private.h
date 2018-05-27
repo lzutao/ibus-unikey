@@ -3,28 +3,32 @@
 
 #include <string>
 #include <ibus.h>
+
 #include "unikey.h"
 #include "vnconv.h"
 
 typedef struct _IBusUnikeyEngine       IBusUnikeyEngine;
 typedef struct _IBusUnikeyEngineClass  IBusUnikeyEngineClass;
 
+/**
+ * IBusUnikeyEngine properties.
+ */
 struct _IBusUnikeyEngine
 {
     IBusEngine parent;
 
-/* members */
-    IBusPropList* prop_list;
-    IBusPropList* menu_im;
-    IBusPropList* menu_oc;
+    /* members */
+    IBusPropList *prop_list; //!< pointer to an array of IBusProperties.
+    IBusPropList *menu_im;   //!< input method menu
+    IBusPropList *menu_oc;   //!< output charset menu
 
-    UkInputMethod im; // input method
-    unsigned int  oc; // output charset
-    UnikeyOptions ukopt;
+    UkInputMethod im;        //!< input method
+    unsigned int  oc;        //!< output charset
+    UnikeyOptions ukopt;     //!< unikey extra options like macro, spell-checking
 
     gboolean last_key_with_shift;
 
-    std::string* preeditstr;
+    std::string *preeditstr;
 };
 
 struct _IBusUnikeyEngineClass
@@ -32,45 +36,57 @@ struct _IBusUnikeyEngineClass
     IBusEngineClass parent;
 };
 
-// prototype
-static void ibus_unikey_engine_class_init(IBusUnikeyEngineClass* kclass);
-static void ibus_unikey_engine_init(IBusUnikeyEngine* unikey);
+/* functions prototype */
+static void ibus_unikey_engine_class_init       (IBusUnikeyEngineClass *kclass);
+static void ibus_unikey_engine_init             (IBusUnikeyEngine      *unikey);
+static GObject
+           *ibus_unikey_engine_constructor      (GType                  type,
+                                                 guint                  n_construct_params,
+                                                 GObjectConstructParam *construct_params);
+static void ibus_unikey_engine_destroy          (IBusUnikeyEngine      *unikey);
 
-static GObject* ibus_unikey_engine_constructor(GType type,
-                                               guint n_construct_params,
-                                               GObjectConstructParam* construct_params);
+static gboolean
+            ibus_unikey_engine_process_key_event(IBusEngine            *engine,
+                                                 guint                  keyval,
+                                                 guint                  keycode,
+                                                 guint                  modifiers);
+static gboolean
+            ibus_unikey_engine_process_key_event_preedit(
+                                                 IBusEngine            *engine,
+                                                 guint                  keyval,
+                                                 guint                  keycode,
+                                                 guint                  modifiers);
 
-static void ibus_unikey_engine_destroy(IBusUnikeyEngine* unikey);
-static gboolean ibus_unikey_engine_process_key_event(IBusEngine* engine,
-                                                     guint keyval,
-                                                     guint keycode,
-                                                     guint modifiers);
+static void ibus_unikey_engine_focus_in         (IBusEngine            *engine);
+static void ibus_unikey_engine_focus_out        (IBusEngine            *engine);
+static void ibus_unikey_engine_reset            (IBusEngine            *engine);
+static void ibus_unikey_engine_enable           (IBusEngine            *engine);
+static void ibus_unikey_engine_disable          (IBusEngine            *engine);
 
-static void ibus_unikey_engine_focus_in(IBusEngine* engine);
-static void ibus_unikey_engine_focus_out(IBusEngine* engine);
-static void ibus_unikey_engine_reset(IBusEngine* engine);
-static void ibus_unikey_engine_enable(IBusEngine* engine);
-static void ibus_unikey_engine_disable(IBusEngine* engine);
-static void ibus_unikey_engine_load_config(IBusUnikeyEngine* unikey);
-static void ibus_unikey_engine_property_activate(IBusEngine* engine,
-                                                 const gchar* prop_name,
-                                                 guint prop_state);
+/**
+ * Load config from dbus config or set default settings
+ */
+static void ibus_unikey_engine_load_config      (IBusUnikeyEngine      *unikey);
+static void ibus_unikey_engine_property_activate(IBusEngine            *engine,
+                                                 const gchar           *prop_name,
+                                                 guint                  prop_state);
 
-static gboolean ibus_unikey_engine_process_key_event_preedit(IBusEngine* engine,
-                                                             guint keyval,
-                                                             guint keycode,
-                                                             guint modifiers);
+static void ibus_unikey_engine_create_property_list(
+                                                 IBusUnikeyEngine      *unikey);
 
-static void ibus_unikey_engine_create_property_list(IBusUnikeyEngine* unikey);
+static void ibus_unikey_engine_update_preedit_string(
+                                                 IBusUnikeyEngine      *engine);
+static void ibus_unikey_engine_erase_chars      (IBusEngine            *engine,
+                                                 int                    num_chars);
 
-static void ibus_unikey_engine_update_preedit_string(IBusUnikeyEngine *engine);
-static void ibus_unikey_engine_erase_chars(IBusEngine *engine, int num_chars);
+/**
+ * clean buffer
+ */
+static void ibus_unikey_engine_clean_buffer     (IBusEngine            *engine);
 
-//clean buffer
-static void ibus_unikey_engine_clean_buffer(IBusEngine* engine);
+/**
+ * commit text from buffer to input
+ */
+static void ibus_unikey_engine_commit           (IBusEngine            *engine);
 
-//commit text from buffer to input
-static void ibus_unikey_engine_commit(IBusEngine* engine);
-
-#endif
-
+#endif // __ENGINE_PRIVATE_H__

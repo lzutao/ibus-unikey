@@ -10,28 +10,34 @@
 
 #define _(string) gettext(string)
 
-static gboolean version = FALSE;
+static gboolean kVersion = FALSE;
 
 static const GOptionEntry entries[] =
 {
-    { "version", 'V', 0, G_OPTION_ARG_NONE, &version, "print ibus-unikey version", NULL },
+    { "version", 'V', 0, G_OPTION_ARG_NONE, &kVersion, "print ibus-unikey version", NULL },
     { NULL },
 };
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     setlocale(LC_ALL, "");
     bindtextdomain(GETTEXT_PACKAGE, LOCALEDIR);
     textdomain(GETTEXT_PACKAGE);
 
-    GError* error = NULL;
-    GOptionContext* context;
-
-    context = g_option_context_new("- ibus unikey setup component");
+    // Parse the command line
+    GOptionContext *context = g_option_context_new("- ibus unikey setup component");
     g_option_context_add_main_entries(context, entries, "ibus-unikey");
-    g_option_context_parse(context, &argc, &argv, &error);
-    
-    if (version)
+    GError *error = NULL;
+    gboolean parse_ok = g_option_context_parse(context, &argc, &argv, &error);
+
+    if (!parse_ok)
+    {
+        g_print("Option parsing failed: %s\n", error->message);
+        g_error_free(error);
+        exit(EXIT_FAILURE);
+    }
+
+    if (kVersion)
     {
         g_print(PACKAGE_STRING " (setup component)"
             "\n  Copyright (C) 2009 - 2012 Ubuntu-VN <http://www.ubuntu-vn.org>"
@@ -44,13 +50,12 @@ int main(int argc, char** argv)
 
     gtk_init(&argc, &argv);
 
-    gtk_window_set_default_icon_from_file(PKGDATADIR"/icons/ibus-unikey.png", NULL);
+    gtk_window_set_default_icon_from_file(PKGDATADIR "/icons/ibus-unikey.png", NULL);
 
-    GtkWidget* main_dlg = unikey_main_setup_dialog_new(); // create main dlg
+    GtkWidget* main_dlg = unikey_main_setup_dialog_new();       // create main dlg
     g_signal_connect(main_dlg, "destroy", gtk_main_quit, NULL); // connect with signal
 
     gtk_dialog_run(GTK_DIALOG(main_dlg));
 
     return 0;
 }
-

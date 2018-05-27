@@ -21,65 +21,52 @@ and STelex2 (which same as STelex, the difference is it use w as ư).\n\
   - Use <Control> to commit a word.\
 ")
 
-const gchar*          Unikey_IMNames[]    = {"Telex", "Vni", "STelex", "STelex2"};
-const UkInputMethod   Unikey_IM[]         = {UkTelex, UkVni, UkSimpleTelex, UkSimpleTelex2};
-const unsigned int    NUM_INPUTMETHOD     = sizeof(Unikey_IM)/sizeof(Unikey_IM[0]);
+const gchar          *Unikey_IMNames[]  = {"Telex", "Vni", "STelex", "STelex2"};
+const UkInputMethod   Unikey_IM[]       = {UkTelex, UkVni, UkSimpleTelex, UkSimpleTelex2};
+const unsigned int    NUM_INPUTMETHOD   = 4u; //!< len(Unikey_IM)
 
-const gchar*          Unikey_OCNames[]    = {"Unicode",
-                                             "TCVN3",
-                                             "VNI Win",
-                                             "VIQR",
-                                             "BK HCM 2",
-                                             "CString",
-                                             "NCR Decimal",
-                                             "NCR Hex"};
-const unsigned int    Unikey_OC[]         = {CONV_CHARSET_XUTF8,
-                                             CONV_CHARSET_TCVN3,
-                                             CONV_CHARSET_VNIWIN,
-                                             CONV_CHARSET_VIQR,
-                                             CONV_CHARSET_BKHCM2,
-                                             CONV_CHARSET_UNI_CSTRING,
-                                             CONV_CHARSET_UNIREF,
-                                             CONV_CHARSET_UNIREF_HEX};
-const unsigned int    NUM_OUTPUTCHARSET   = sizeof(Unikey_OC)/sizeof(Unikey_OC[0]);
+const gchar          *Unikey_OCNames[]  = {"Unicode",
+                                           "TCVN3",
+                                           "VNI Win",
+                                           "VIQR",
+                                           "BK HCM 2",
+                                           "CString",
+                                           "NCR Decimal",
+                                           "NCR Hex"};
+const unsigned int    Unikey_OC[]       = {CONV_CHARSET_XUTF8,
+                                           CONV_CHARSET_TCVN3,
+                                           CONV_CHARSET_VNIWIN,
+                                           CONV_CHARSET_VIQR,
+                                           CONV_CHARSET_BKHCM2,
+                                           CONV_CHARSET_UNI_CSTRING,
+                                           CONV_CHARSET_UNIREF,
+                                           CONV_CHARSET_UNIREF_HEX};
+const unsigned int    NUM_OUTPUTCHARSET = 8u; //!< len(Unikey_OC)
 
-IBusComponent* ibus_unikey_get_component()
+IBusComponent *ibus_unikey_get_component()
 {
-    IBusComponent* component;
-    IBusEngineDesc* engine;
+    IBusComponent *component = ibus_component_new(
+            UNIKEY_DBUS_NAME,
+            "Unikey",
+            PACKAGE_VERSION,
+            "GPLv3",
+            "Lê Quốc Tuấn <mr.lequoctuan@gmail.com>",
+            PACKAGE_BUGREPORT,
+            "",
+            PACKAGE_NAME);
 
-    component = ibus_component_new("org.freedesktop.IBus.Unikey",
-                                   "Unikey",
-                                   PACKAGE_VERSION,
-                                   "GPLv3",
-                                   "Lê Quốc Tuấn <mr.lequoctuan@gmail.com>",
-                                   PACKAGE_BUGREPORT,
-                                   "",
-                                   PACKAGE_NAME);
-    
-#if IBUS_CHECK_VERSION(1,3,99)
-    engine = ibus_engine_desc_new_varargs ("name",        "Unikey",
-                                           "longname",    "Unikey",
-                                           "description", IU_DESC,
-                                           "language",    "vi",
-                                           "license",     "GPLv3",
-                                           "author",      "Lê Quốc Tuấn <mr.lequoctuan@gmail.com>",
-                                           "icon",        PKGDATADIR"/icons/ibus-unikey.png",
-                                           "layout",      "us",
-                                           "rank",        99,
-                                           "setup",       LIBEXECDIR "/ibus-setup-unikey",
-                                           NULL);
-#else
-    engine = ibus_engine_desc_new  ("Unikey",
-                                    "Unikey",
-                                    IU_DESC,
-                                    "vi",
-                                    "GPLv3",
-                                    "Lê Quốc Tuấn <mr.lequoctuan@gmail.com>",
-                                    PKGDATADIR"/icons/ibus-unikey.png",
-                                    "us");
-    engine->rank = 99;
-#endif
+    IBusEngineDesc *engine = ibus_engine_desc_new_varargs(
+            "name"       , "Unikey",
+            "longname"   , "Unikey",
+            "description", IU_DESC,
+            "language"   , "vi",
+            "license"    , "GPLv3",
+            "author"     , "Lê Quốc Tuấn <mr.lequoctuan@gmail.com>",
+            "icon"       , PKGDATADIR "/icons/ibus-unikey.png",
+            "layout"     , "default",
+            "rank"       , 99,
+            "setup"      , LIBEXECDIR "/ibus-setup-unikey",
+            NULL);
 
     ibus_component_add_engine(component, engine);
 
@@ -87,7 +74,7 @@ IBusComponent* ibus_unikey_get_component()
 }
 
 // code from x-unikey, for convert charset that not is XUtf-8
-int latinToUtf(unsigned char* dst, unsigned char* src, int inSize, int* pOutSize)
+int latinToUtf(unsigned char *dst, unsigned char *src, int inSize, int *pOutSize)
 {
     int i;
     int outLeft;
@@ -95,7 +82,7 @@ int latinToUtf(unsigned char* dst, unsigned char* src, int inSize, int* pOutSize
 
     outLeft = *pOutSize;
 
-    for (i=0; i<inSize; i++)
+    for (i = 0; i < inSize; i++)
     {
         ch = *src++;
         if (ch < 0x80)
@@ -119,94 +106,56 @@ int latinToUtf(unsigned char* dst, unsigned char* src, int inSize, int* pOutSize
     return (outLeft >= 0);
 }
 
-gboolean ibus_unikey_config_get_string(IBusConfig* config,
-                                    const gchar* section,
-                                    const gchar* name,
-                                    gchar** result)
+gboolean ibus_unikey_config_get_string(IBusConfig  *config,
+                                       const gchar *section,
+                                       const gchar *name,
+                                       gchar      **result)
 {
-#if IBUS_CHECK_VERSION(1,3,99)
-    GVariant *value = NULL;
-    value = ibus_config_get_value(config, section, name);
+    GVariant *value = ibus_config_get_value(config, section, name);
     if (value)
     {
-        *result = g_strdup((gchar*)g_variant_get_string(value, NULL));
+        *result = g_variant_dup_string(value, NULL);
         g_variant_unref(value);
-        return true;
+        return TRUE;
     }
-    return false;
-#else
-    GValue value = {0};
-    if (ibus_config_get_value(config, section, name, &value))
+    return FALSE;
+}
+
+void ibus_unikey_config_set_string(IBusConfig  *config,
+                                   const gchar *section,
+                                   const gchar *name,
+                                   const gchar *value)
+{
+    gboolean ok = ibus_config_set_value(config, section, name, g_variant_new_string(value));
+    if (!ok)
     {
-        *result = g_strdup((gchar*)g_value_get_string(&value));
-        g_value_unset(&value);
-        return true;
+        g_debug("ibus_unikey_config_set_string: Cannot set value.\n");
     }
-    return false;
-#endif
 }
 
-void ibus_unikey_config_set_string(IBusConfig* config,
-                                    const gchar* section,
-                                    const gchar* name,
-                                    const gchar* value)
+gboolean ibus_unikey_config_get_boolean(IBusConfig  *config,
+                                        const gchar *section,
+                                        const gchar *name,
+                                        gboolean    *result)
 {
-#if IBUS_CHECK_VERSION(1,3,99)
-    ibus_config_set_value(config, section, name, g_variant_new_string(value));
-#else
-    GValue v = {0};
-    g_value_init(&v, G_TYPE_STRING);
-    g_value_set_string(&v, value);
-    ibus_config_set_value(config, section, name, &v);
-#endif
-}
-
-gboolean ibus_unikey_config_get_boolean(IBusConfig* config,
-                                        const gchar* section,
-                                        const gchar* name,
-                                        gboolean* result)
-{
-#if IBUS_CHECK_VERSION(1,3,99)
-    GVariant *value = NULL;
-    value = ibus_config_get_value(config, section, name);
+    GVariant *value = ibus_config_get_value(config, section, name);
     if (value)
     {
         *result = g_variant_get_boolean(value);
         g_variant_unref(value);
-        return true;
+        return TRUE;
     }
-    return false;
-#else
-    GValue value = {0};
-    if (ibus_config_get_value(config, section, name, &value))
+    return FALSE;
+}
+
+void ibus_unikey_config_set_boolean(IBusConfig  *config,
+                                    const gchar *section,
+                                    const gchar *name,
+                                    gboolean     value)
+{
+    gboolean ok =ibus_config_set_value(config, section, name, g_variant_new_boolean(value));
+    if (!ok)
     {
-        *result = g_value_get_boolean(&value);
-        g_value_unset(&value);
-        return true;
+        g_debug("ibus_unikey_config_set_boolean: Cannot set boolean.\n");
     }
-    return false;
-#endif
 }
-
-void ibus_unikey_config_set_boolean(IBusConfig* config,
-                                    const gchar* section,
-                                    const gchar* name,
-                                    gboolean value)
-{
-#if IBUS_CHECK_VERSION(1,3,99)
-    ibus_config_set_value(config, section, name, g_variant_new_boolean(value));
-#else
-    GValue v = {0};
-    g_value_init(&v, G_TYPE_BOOLEAN);
-    g_value_set_boolean(&v, value);
-    ibus_config_set_value(config, section, name, &v);
-#endif
-}
-
-#if !IBUS_CHECK_VERSION(1,3,99)
-char* ibus_property_get_key(IBusProperty *prop)
-{
-    return prop->key;
-}
-#endif
-

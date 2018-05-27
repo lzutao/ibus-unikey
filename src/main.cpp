@@ -1,5 +1,5 @@
 #ifdef HAVE_CONFIG_H
-#include <config.h>
+#include "config.h"
 #endif
 
 #include <libintl.h>
@@ -7,31 +7,25 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include <ibus.h>
-#include "utils.h"
 #include "engine.h"
+#include "utils.h"
 #include "unikey.h"
 
-static IBusBus* bus         = NULL;
-static IBusFactory* factory = NULL;
-
 /* command line options */
-static gboolean ibus    = FALSE;
-static gboolean verbose = FALSE;
-static gboolean version = FALSE;
-static gboolean xml     = FALSE;
+static gboolean kIBus    = FALSE;
+//static gboolean kVerbose = FALSE;
+static gboolean kVersion = FALSE;
 
-static const GOptionEntry entries[] =
-{
-    { "ibus",    'i', 0, G_OPTION_ARG_NONE, &ibus,    "component is executed by ibus", NULL },
-    { "verbose", 'v', 0, G_OPTION_ARG_NONE, &verbose, "verbose", NULL },
-    { "version", 'V', 0, G_OPTION_ARG_NONE, &version, "print ibus-unikey version", NULL },
-    { "xml",     'x', 0, G_OPTION_ARG_NONE, &xml,     "generate xml for engines", NULL },
-    { NULL },
+static const GOptionEntry kEntries[] = {
+    {"ibus", 'i', 0, G_OPTION_ARG_NONE, &kIBus, "component is executed by ibus", NULL},
+    // verbose is a useless option
+    //{"verbose", 'v', 0, G_OPTION_ARG_NONE, &kVerbose, "verbose", NULL},
+    {"version", 'V', 0, G_OPTION_ARG_NONE, &kVersion, "print ibus-unikey version", NULL},
+    {NULL},
 };
 
 static void
-ibus_disconnected_cb(IBusBus* bus, gpointer user_data)
+ibus_disconnected_cb(IBusBus *bus, gpointer user_data)
 {
     ibus_quit();
 }
@@ -39,93 +33,95 @@ ibus_disconnected_cb(IBusBus* bus, gpointer user_data)
 static void
 start_component(void)
 {
-    GList* engines;
-    GList* p;
-    IBusComponent* component;
-
     ibus_init();
+    //!< An IBusBus connects with IBus daemon.
+    IBusBus *bus = ibus_bus_new();
+    if (!ibus_bus_is_connected(bus)) {
+        g_warning("start_component: Cannot connect to IBus daemon.\n");
+        exit(0);
+    }
 
-    bus = ibus_bus_new();
     g_signal_connect(bus, "disconnected", G_CALLBACK(ibus_disconnected_cb), NULL);
 
-    component = ibus_unikey_get_component();
+    //!< Factory for creating engine instances.
+    IBusFactory *factory = ibus_factory_new(ibus_bus_get_connection(bus));
+
+    IBusComponent *component = ibus_unikey_get_component();
 
     factory = ibus_factory_new(ibus_bus_get_connection(bus));
 
-    engines = ibus_component_get_engines(component);
+    GList *engines = ibus_component_get_engines(component);
+    GList *p = NULL;
+    const gchar *engine_name = NULL;
+
     for (p = engines; p != NULL; p = p->next)
     {
-        IBusEngineDesc* engine = (IBusEngineDesc*)p->data;
-#if IBUS_CHECK_VERSION(1,3,99)
-        ibus_factory_add_engine(factory, ibus_engine_desc_get_name(engine), IBUS_TYPE_UNIKEY_ENGINE);
-#else
-        ibus_factory_add_engine(factory, engine->name, IBUS_TYPE_UNIKEY_ENGINE);
-#endif
+        IBusEngineDesc *engine = (IBusEngineDesc *)p->data;
+        engine_name = ibus_engine_desc_get_name(engine);
+        ibus_factory_add_engine(factory, engine_name, IBUS_TYPE_UNIKEY_ENGINE);
     }
 
-    if (ibus)
-        ibus_bus_request_name(bus, "org.freedesktop.IBus.Unikey", 0);
+    if (kIBus)
+    {
+        if (!ibus_bus_request_name(bus, UNIKEY_DBUS_NAME, 0))
+        {
+            g_debug("start_component: Cannot request " UNIKEY_DBUS_NAME " from IBus daemon synchronously.\n");
+            goto fail;
+        }
+    }
     else
-        ibus_bus_register_component(bus, component);
+    {
+        if (!ibus_bus_register_component(bus, component))
+        {
+            g_debug("start_component:  Cannot register Unikey component to IBus daemon synchronously.\n");
+            goto fail;
+        }
+    }
 
+    goto check_ok;
+fail:
+    g_object_unref(component);
+    exit(EXIT_FAILURE);
+check_ok:
     g_object_unref(component);
 
     ibus_unikey_init(bus);
     ibus_main();
     ibus_unikey_exit();
-}
-
-static void
-print_engines_xml(void)
-{
-    IBusComponent* component;
-    GString* output;
-
-    ibus_init();
-
-    component = ibus_unikey_get_component();
-    output = g_string_new("");
-
-    ibus_component_output_engines(component, output, 0);
-
-    fprintf(stdout, "%s", output->str);
-
-    g_string_free(output, TRUE);
+    g_object_unref(factory);
+    g_object_unref(bus);
 }
 
 int
-main(gint argc, gchar** argv)
+main(gint argc, gchar **argv)
 {
-    GError* error = NULL;
-
-    /* select a locale based on the user choice of the appropriate environment variables */
+    // select a locale based on the user choice of the appropriate environment variables
     setlocale(LC_ALL, "");
     bindtextdomain(GETTEXT_PACKAGE, LOCALEDIR);
     textdomain(GETTEXT_PACKAGE);
 
+    // Parse the command line
     GOptionContext* context = g_option_context_new("- ibus unikey engine component");
+    g_option_context_add_main_entries(context, kEntries, "ibus-unikey");
 
-    g_option_context_add_main_entries(context, entries, "ibus-unikey");
-
-    if (!g_option_context_parse(context, &argc, &argv, &error)) {
+    GError *error = NULL;
+    gboolean parse_ok = g_option_context_parse(context, &argc, &argv, &error);
+    g_option_context_free(context);
+    if (!parse_ok) {
         g_print("Option parsing failed: %s\n", error->message);
-        exit(-1);
+        g_error_free(error);
+        exit(EXIT_FAILURE);
     }
 
-    if (xml)
+    if (kVersion)
     {
-        print_engines_xml();
-        return 0;
-    }
-    else if (version)
-    {
-        g_print(PACKAGE_STRING " (engine component)"
-            "\n  Copyright (C) 2009 - 2012 Ubuntu-VN <http://www.ubuntu-vn.org>"
-            "\n  Author: Lê Quốc Tuấn <mr.lequoctuan@gmail.com>"
-            "\n  Homepage: <http://ibus-unikey.googlecode.com>"
-            "\n  License: GNU GPL3"
-            "\n");
-        return 0;
+        g_print(PACKAGE_STRING " (engine component)\n"
+            "  Copyright (C) 2009 - 2012 Ubuntu-VN <http://www.ubuntu-vn.org>\n"
+            "  Author: Lê Quốc Tuấn <mr.lequoctuan@gmail.com>\n"
+            "  Homepage: <http://ibus-unikey.googlecode.com>\n"
+            "  License: GNU GPLv3\n"
+        );
+        exit(EXIT_SUCCESS);
     }
 
     start_component();
