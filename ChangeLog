@@ -1,3 +1,18 @@
+2018-05-17  Lzu Tao <1stpangu@gmail.com>
+
+	* Release 0.6.2
+	* Fix configure URL link in README (https://github.com/Ubuntu-VN/wiki/wiki/G%C3%B5-ti%E1%BA%BFng-Vi%E1%BB%87t) and libexecdir in ./configure
+	* Migrate to GTK 3
+	* Drop support for ibus < 1.5.4
+	* Hide unikey when inputing password (ibus >= 1.5.4)
+	* Migrate from IBusConfig to GSettings
+	* Remove --xml option and update unikey.xml.in.in
+	* Reformat code, follow Google code style
+	* Run ibus-setup-unikey in background by execve
+	* Use the default keyboard layout instead of 'us'.
+	* Use G_DEFINE_TYPE instead of our custom ibus_unikey_engine_get_type method
+	* Makefile.am: Move -Wall to target_CXXFLAGS
+
 2012-02-29  Lê Quốc Tuấn <mr.lequoctuan@gmail.com>
 
 	* Release 0.6.1
