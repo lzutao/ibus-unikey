@@ -2,8 +2,6 @@ dist: trusty
 sudo: required
 # Enable C++ support
 language: cpp
-services:
-  - docker          # docker still needs sudo
 # Compiler selection
 compiler:
   - gcc
@@ -19,24 +17,27 @@ git:
 #      - gcc-6
 #      - g++-6
 before_install:
+  - sudo apt-get update -qq
   # install dependencies
-  - docker pull lzutao/docker-ibus-unikey
+  - sudo apt-get install -qq libibus-1.0-dev libgtk2.0-dev
+  - wget -O autopoint.deb http://mirror.math.princeton.edu/pub/ubuntu/pool/main/g/gettext/autopoint_0.19.7-2ubuntu3_all.deb
+  - sudo dpkg -i autopoint.deb
   # for running and testing
   #- sudo apt-get install ibus
   # command to run tests
   # FIXME: add tests
 install:
 before_script:
+  - mkdir build && cd build
 script:
   # Link gcc-6 and g++-6 to their standard commands
   # FIXME: Is gcc-6 needed?
   # NOTE: see https://github.com/vn-input/ibus-unikey/issues/9
   #- export CC=gcc-6 CXX=g++-6
-  - docker run --rm -v "$TRAVIS_BUILD_DIR":/SRC lzutao/docker-ibus-unikey sh -c "cd /SRC
-      && meson builddir --prefix=/usr --libexec=lib/ibus
-      && ninja -C builddir install
-      && /usr/lib/ibus/ibus-engine-unikey  --version
-      && /usr/lib/ibus/ibus-setup-unikey   --version"
+  - ../autogen.sh --disable-silent-rules --prefix=/usr --libexec=/usr/lib/ibus || exit 1
+  - make -j && sudo make install
+  - /usr/lib/ibus/ibus-setup-unikey  --version || exit 1
+  - /usr/lib/ibus/ibus-engine-unikey --version || exit 1
 after_success:
 after_failure:
 before_deploy:

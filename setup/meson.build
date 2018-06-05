@@ -5,7 +5,7 @@ ibus_setup_unikey_sources = [
 ]
 
 ibus_setup_unikey = executable(
-  'ibus_setup_unikey',
+  'ibus-setup-unikey',
   ibus_setup_unikey_sources,
   cpp_args : [
     '-DPKGDATADIR="@0@"'.format(pkg_datadir),

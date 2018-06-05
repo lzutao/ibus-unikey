@@ -1,7 +1,7 @@
 ## Producing a coverage report
 ## http://mesonbuild.com/howtox.html#producing-a-coverage-report
 
-check_dep = dependency('check')
+#check_dep = dependency('check')
 
 # test_utf8small = executable(
 #     'utf8small',
