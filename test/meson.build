@@ -13,3 +13,14 @@ test_inputproc = executable(
 
 test('test_inputproc', test_inputproc,
     is_parallel: false)
+
+test_ukengine = executable(
+    'ukengine',
+    'test_ukengine.cc',
+    link_with: [libunikey],
+    include_directories: include_directories('../ukengine'),
+    dependencies: check_dep,
+)
+
+test('test_ukengine', test_ukengine,
+    is_parallel: false)
