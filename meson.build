@@ -136,8 +136,8 @@ message(output)
 
 ## Subdirs ##
 subdir('ukengine')
-subdir('src')
-subdir('setup')
-subdir('icons')
-subdir('po')
+#subdir('src')
+#subdir('setup')
+#subdir('icons')
+#subdir('po')
 subdir('test')         # test is the last one to include
