@@ -11,6 +11,8 @@
         "cerrno": "cpp",
         "array": "cpp",
         "string_view": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "bitset": "cpp",
+        "optional": "cpp"
     },
 }
