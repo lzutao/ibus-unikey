@@ -6,7 +6,7 @@ project('ibus-unikey', ['cpp'],
     ],
     version: '0.6.2',
     license: 'GPLv3',
-    meson_version: '>= 0.42.0'
+    meson_version: '>= 0.46.0'
 )
 
 pkg_name = meson.project_name()
