@@ -1,5 +1,0 @@
-src/engine.cpp
-src/utils.cpp
-setup/dlg_macro_table.cpp
-setup/setup-main.ui
-setup/setup-macro.ui
