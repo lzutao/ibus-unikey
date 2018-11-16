@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentchooser.h' l='101' type='void (*)(GtkRecentChooser *, GtkRecentFilter *)'/>
+<offset>640</offset>

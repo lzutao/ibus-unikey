@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkliststore.h' l='128' type='void gtk_list_store_clear(GtkListStore * list_store)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='138' u='c' c='_Z30unikey_macro_dialog_load_macroP10_GtkDialog11CMacroTable'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='325' u='c' c='_Z26removeall_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='54' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='63' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>

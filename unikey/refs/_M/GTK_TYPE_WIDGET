@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='136'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='133'>/* Macro for casting a pointer to a GtkWidget or GtkWidgetClass pointer.
+ * Macros for testing whether `widget&apos; or `klass&apos; are of type GTK_TYPE_WIDGET.
+ */</doc>

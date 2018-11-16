@@ -1,0 +1,18 @@
+<dec f='include/ibus-1.0/ibusservice.h' l='145' type='gboolean (*)(IBusService *, GDBusConnection *, const gchar *, const gchar *, const gchar *, const gchar *, GVariant *, GError **)'/>
+<offset>1728</offset>
+<doc f='include/ibus-1.0/ibusservice.h' l='129'>/**
+     * IBusServiceClass::service_set_property:
+     * @service: An #IBusService.
+     * @connection: A dbus connection.
+     * @sender: A sender.
+     * @object_path: An object path.
+     * @interface_name: An interface name.
+     * @property_name: An property name.
+     * @value: An property value.
+     * @error: Return location for error or %NULL.
+     *
+     * The ::service_set_property class method is to connect
+     * GDBusInterfaceSetPropertyFunc().
+     *
+     * Returns: %TRUE if set the value else %FALSE.
+     */</doc>

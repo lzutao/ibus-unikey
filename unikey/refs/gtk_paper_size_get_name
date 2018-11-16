@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkpapersize.h' l='67' type='const gchar * gtk_paper_size_get_name(GtkPaperSize * size)'/>
+<doc f='include/gtk-2.0/gtk/gtkpapersize.h' l='66'>/* The width is always the shortest side, measure in mm */</doc>

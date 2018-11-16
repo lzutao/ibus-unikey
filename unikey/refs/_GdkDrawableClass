@@ -1,0 +1,42 @@
+<def f='include/gtk-2.0/gdk/gdkdrawable.h' l='58' ll='232'/>
+<size>448</size>
+<mbr r='_GdkDrawableClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_GdkDrawableClass::create_gc' o='1088' t='GdkGC *(*)(GdkDrawable *, GdkGCValues *, GdkGCValuesMask)'/>
+<mbr r='_GdkDrawableClass::draw_rectangle' o='1152' t='void (*)(GdkDrawable *, GdkGC *, gboolean, gint, gint, gint, gint)'/>
+<mbr r='_GdkDrawableClass::draw_arc' o='1216' t='void (*)(GdkDrawable *, GdkGC *, gboolean, gint, gint, gint, gint, gint, gint)'/>
+<mbr r='_GdkDrawableClass::draw_polygon' o='1280' t='void (*)(GdkDrawable *, GdkGC *, gboolean, GdkPoint *, gint)'/>
+<mbr r='_GdkDrawableClass::draw_text' o='1344' t='void (*)(GdkDrawable *, GdkFont *, GdkGC *, gint, gint, const gchar *, gint)'/>
+<mbr r='_GdkDrawableClass::draw_text_wc' o='1408' t='void (*)(GdkDrawable *, GdkFont *, GdkGC *, gint, gint, const GdkWChar *, gint)'/>
+<mbr r='_GdkDrawableClass::draw_drawable' o='1472' t='void (*)(GdkDrawable *, GdkGC *, GdkDrawable *, gint, gint, gint, gint, gint, gint)'/>
+<mbr r='_GdkDrawableClass::draw_points' o='1536' t='void (*)(GdkDrawable *, GdkGC *, GdkPoint *, gint)'/>
+<mbr r='_GdkDrawableClass::draw_segments' o='1600' t='void (*)(GdkDrawable *, GdkGC *, GdkSegment *, gint)'/>
+<mbr r='_GdkDrawableClass::draw_lines' o='1664' t='void (*)(GdkDrawable *, GdkGC *, GdkPoint *, gint)'/>
+<mbr r='_GdkDrawableClass::draw_glyphs' o='1728' t='void (*)(GdkDrawable *, GdkGC *, PangoFont *, gint, gint, PangoGlyphString *)'/>
+<mbr r='_GdkDrawableClass::draw_image' o='1792' t='void (*)(GdkDrawable *, GdkGC *, GdkImage *, gint, gint, gint, gint, gint, gint)'/>
+<mbr r='_GdkDrawableClass::get_depth' o='1856' t='gint (*)(GdkDrawable *)'/>
+<mbr r='_GdkDrawableClass::get_size' o='1920' t='void (*)(GdkDrawable *, gint *, gint *)'/>
+<mbr r='_GdkDrawableClass::set_colormap' o='1984' t='void (*)(GdkDrawable *, GdkColormap *)'/>
+<mbr r='_GdkDrawableClass::get_colormap' o='2048' t='GdkColormap *(*)(GdkDrawable *)'/>
+<mbr r='_GdkDrawableClass::get_visual' o='2112' t='GdkVisual *(*)(GdkDrawable *)'/>
+<mbr r='_GdkDrawableClass::get_screen' o='2176' t='GdkScreen *(*)(GdkDrawable *)'/>
+<mbr r='_GdkDrawableClass::get_image' o='2240' t='GdkImage *(*)(GdkDrawable *, gint, gint, gint, gint)'/>
+<mbr r='_GdkDrawableClass::get_clip_region' o='2304' t='GdkRegion *(*)(GdkDrawable *)'/>
+<mbr r='_GdkDrawableClass::get_visible_region' o='2368' t='GdkRegion *(*)(GdkDrawable *)'/>
+<mbr r='_GdkDrawableClass::get_composite_drawable' o='2432' t='GdkDrawable *(*)(GdkDrawable *, gint, gint, gint, gint, gint *, gint *)'/>
+<mbr r='_GdkDrawableClass::draw_pixbuf' o='2496' t='void (*)(GdkDrawable *, GdkGC *, GdkPixbuf *, gint, gint, gint, gint, gint, gint, GdkRgbDither, gint, gint)'/>
+<mbr r='_GdkDrawableClass::_copy_to_image' o='2560' t='GdkImage *(*)(GdkDrawable *, GdkImage *, gint, gint, gint, gint, gint, gint)'/>
+<mbr r='_GdkDrawableClass::draw_glyphs_transformed' o='2624' t='void (*)(GdkDrawable *, GdkGC *, PangoMatrix *, PangoFont *, gint, gint, PangoGlyphString *)'/>
+<mbr r='_GdkDrawableClass::draw_trapezoids' o='2688' t='void (*)(GdkDrawable *, GdkGC *, GdkTrapezoid *, gint)'/>
+<mbr r='_GdkDrawableClass::ref_cairo_surface' o='2752' t='cairo_surface_t *(*)(GdkDrawable *)'/>
+<mbr r='_GdkDrawableClass::get_source_drawable' o='2816' t='GdkDrawable *(*)(GdkDrawable *)'/>
+<mbr r='_GdkDrawableClass::set_cairo_clip' o='2880' t='void (*)(GdkDrawable *, cairo_t *)'/>
+<mbr r='_GdkDrawableClass::create_cairo_surface' o='2944' t='cairo_surface_t *(*)(GdkDrawable *, int, int)'/>
+<mbr r='_GdkDrawableClass::draw_drawable_with_src' o='3008' t='void (*)(GdkDrawable *, GdkGC *, GdkDrawable *, gint, gint, gint, gint, gint, gint, GdkDrawable *)'/>
+<mbr r='_GdkDrawableClass::_gdk_reserved7' o='3072' t='void (*)()'/>
+<mbr r='_GdkDrawableClass::_gdk_reserved9' o='3136' t='void (*)()'/>
+<mbr r='_GdkDrawableClass::_gdk_reserved10' o='3200' t='void (*)()'/>
+<mbr r='_GdkDrawableClass::_gdk_reserved11' o='3264' t='void (*)()'/>
+<mbr r='_GdkDrawableClass::_gdk_reserved12' o='3328' t='void (*)()'/>
+<mbr r='_GdkDrawableClass::_gdk_reserved13' o='3392' t='void (*)()'/>
+<mbr r='_GdkDrawableClass::_gdk_reserved14' o='3456' t='void (*)()'/>
+<mbr r='_GdkDrawableClass::_gdk_reserved15' o='3520' t='void (*)()'/>

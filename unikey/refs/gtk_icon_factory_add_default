@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkiconfactory.h' l='84' type='void gtk_icon_factory_add_default(GtkIconFactory * factory)'/>
+<doc f='include/gtk-2.0/gtk/gtkiconfactory.h' l='82'>/* Manage the default icon factory stack */</doc>

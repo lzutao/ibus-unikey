@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='38' type='GType gtk_cell_renderer_accel_mode_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='37'>/* enumerations from &quot;gtkcellrendereraccel.h&quot; */</doc>

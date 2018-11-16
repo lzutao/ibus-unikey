@@ -1,0 +1,5 @@
+<def f='include/gtk-2.0/gtk/gtkselection.h' l='82' ll='85'/>
+<size>16</size>
+<doc f='include/gtk-2.0/gtk/gtkselection.h' l='81'>/* This structure is a list of destinations, and associated guint id&apos;s */</doc>
+<mbr r='_GtkTargetList::list' o='0' t='GList *'/>
+<mbr r='_GtkTargetList::ref_count' o='64' t='guint'/>

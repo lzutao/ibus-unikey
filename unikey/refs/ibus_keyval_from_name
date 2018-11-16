@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuskeys.h' l='53' type='guint ibus_keyval_from_name(const gchar * keyval_name)'/>
+<doc f='include/ibus-1.0/ibuskeys.h' l='45'>/**
+ * ibus_keyval_from_name:
+ * @keyval_name: Key name in #gdk_keys_by_name.
+ *
+ * Return the key symbol that associate with the key name.
+ *
+ * Returns: Corresponding key symbol.
+ */</doc>

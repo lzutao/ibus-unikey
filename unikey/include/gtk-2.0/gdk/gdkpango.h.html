@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gdkpango.h source code [include/gtk-2.0/gdk/gdkpango.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gdk/gdkpango.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gdk</a>/<a href='gdkpango.h.html'>gdkpango.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GDK - The GIMP Drawing Kit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2000 Red Hat, Inc. </i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="20">ifndef</span> <span class="macro" data-ref="_M/__GDK_PANGO_H__">__GDK_PANGO_H__</span></u></td></tr>
+<tr><th id="21">21</th><td><u>#define <dfn class="macro" id="_M/__GDK_PANGO_H__" data-ref="_M/__GDK_PANGO_H__">__GDK_PANGO_H__</dfn></u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> defined(<span class="macro" data-ref="_M/GTK_DISABLE_SINGLE_INCLUDES">GTK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gdk.h.html#30" data-ref="_M/__GDK_H_INSIDE__">__GDK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GDK_COMPILATION">GDK_COMPILATION</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#error "Only &lt;gdk/gdk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="gdktypes.h.html">&lt;gdk/gdktypes.h&gt;</a></u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><i>/* Pango interaction */</i></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkPangoRenderer" title='_GdkPangoRenderer' data-ref="_GdkPangoRenderer">_GdkPangoRenderer</a>        <dfn class="typedef" id="GdkPangoRenderer" title='GdkPangoRenderer' data-type='struct _GdkPangoRenderer' data-ref="GdkPangoRenderer">GdkPangoRenderer</dfn>;</td></tr>
+<tr><th id="34">34</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkPangoRendererClass" title='_GdkPangoRendererClass' data-ref="_GdkPangoRendererClass">_GdkPangoRendererClass</a>   <dfn class="typedef" id="GdkPangoRendererClass" title='GdkPangoRendererClass' data-type='struct _GdkPangoRendererClass' data-ref="GdkPangoRendererClass">GdkPangoRendererClass</dfn>;</td></tr>
+<tr><th id="35">35</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_GdkPangoRendererPrivate" title='_GdkPangoRendererPrivate' data-ref="_GdkPangoRendererPrivate"><a class="type" href="#_GdkPangoRendererPrivate" title='_GdkPangoRendererPrivate' data-ref="_GdkPangoRendererPrivate">_GdkPangoRendererPrivate</a></dfn> <dfn class="typedef" id="GdkPangoRendererPrivate" title='GdkPangoRendererPrivate' data-type='struct _GdkPangoRendererPrivate' data-ref="GdkPangoRendererPrivate">GdkPangoRendererPrivate</dfn>;</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><u>#define <dfn class="macro" id="_M/GDK_TYPE_PANGO_RENDERER" data-ref="_M/GDK_TYPE_PANGO_RENDERER">GDK_TYPE_PANGO_RENDERER</dfn>            (gdk_pango_renderer_get_type())</u></td></tr>
+<tr><th id="38">38</th><td><u>#define <dfn class="macro" id="_M/GDK_PANGO_RENDERER" data-ref="_M/GDK_PANGO_RENDERER">GDK_PANGO_RENDERER</dfn>(object)         (G_TYPE_CHECK_INSTANCE_CAST ((object), GDK_TYPE_PANGO_RENDERER, GdkPangoRenderer))</u></td></tr>
+<tr><th id="39">39</th><td><u>#define <dfn class="macro" id="_M/GDK_IS_PANGO_RENDERER" data-ref="_M/GDK_IS_PANGO_RENDERER">GDK_IS_PANGO_RENDERER</dfn>(object)      (G_TYPE_CHECK_INSTANCE_TYPE ((object), GDK_TYPE_PANGO_RENDERER))</u></td></tr>
+<tr><th id="40">40</th><td><u>#define <dfn class="macro" id="_M/GDK_PANGO_RENDERER_CLASS" data-ref="_M/GDK_PANGO_RENDERER_CLASS">GDK_PANGO_RENDERER_CLASS</dfn>(klass)    (G_TYPE_CHECK_CLASS_CAST ((klass), GDK_TYPE_PANGO_RENDERER, GdkPangoRendererClass))</u></td></tr>
+<tr><th id="41">41</th><td><u>#define <dfn class="macro" id="_M/GDK_IS_PANGO_RENDERER_CLASS" data-ref="_M/GDK_IS_PANGO_RENDERER_CLASS">GDK_IS_PANGO_RENDERER_CLASS</dfn>(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), GDK_TYPE_PANGO_RENDERER))</u></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/GDK_PANGO_RENDERER_GET_CLASS" data-ref="_M/GDK_PANGO_RENDERER_GET_CLASS">GDK_PANGO_RENDERER_GET_CLASS</dfn>(obj)  (G_TYPE_INSTANCE_GET_CLASS ((obj), GDK_TYPE_PANGO_RENDERER, GdkPangoRendererClass))</u></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> * GdkPangoRenderer:</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> * #GdkPangoRenderer is a subclass of #PangoRenderer used for rendering</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> * Pango objects into GDK drawables. The default renderer for a particular</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> * screen is obtained with gdk_pango_renderer_get_default(); Pango</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> * functions like pango_renderer_draw_layout() and</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> * pango_renderer_draw_layout_line() are then used to draw objects with</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> * the renderer.</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> * In most simple cases, applications can just use gdk_draw_layout(), and</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> * don't need to directly use #GdkPangoRenderer at all. Using the</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> * #GdkPangoRenderer directly is most useful when working with a</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> * transformation such as a rotation, because the Pango drawing functions</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> * take user space coordinates (coordinates before the transformation)</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"> * instead of device coordinates.</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> * In certain cases it can be useful to subclass #GdkPangoRenderer. Examples</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> * of reasons to do this are to add handling of custom attributes by</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> * overriding 'prepare_run' or to do custom drawing of embedded objects</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> * by overriding 'draw_shape'.</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> * Since: 2.6</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="68">68</th><td><b>struct</b> <dfn class="type def" id="_GdkPangoRenderer" title='_GdkPangoRenderer' data-ref="_GdkPangoRenderer">_GdkPangoRenderer</dfn></td></tr>
+<tr><th id="69">69</th><td>{</td></tr>
+<tr><th id="70">70</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="71">71</th><td>  <a class="typedef" href="../../pango-1.0/pango/pango-renderer.h.html#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a> <dfn class="decl" id="_GdkPangoRenderer::parent_instance" title='_GdkPangoRenderer::parent_instance' data-ref="_GdkPangoRenderer::parent_instance">parent_instance</dfn>;</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td>  <a class="typedef" href="#GdkPangoRendererPrivate" title='GdkPangoRendererPrivate' data-type='struct _GdkPangoRendererPrivate' data-ref="GdkPangoRendererPrivate">GdkPangoRendererPrivate</a> *<dfn class="decl" id="_GdkPangoRenderer::priv" title='_GdkPangoRenderer::priv' data-ref="_GdkPangoRenderer::priv">priv</dfn>;</td></tr>
+<tr><th id="74">74</th><td>};</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> * GdkPangoRendererClass:</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> * #GdkPangoRenderer is the class structure for #GdkPangoRenderer.</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> * Since: 2.6</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="83">83</th><td><b>struct</b> <dfn class="type def" id="_GdkPangoRendererClass" title='_GdkPangoRendererClass' data-ref="_GdkPangoRendererClass">_GdkPangoRendererClass</dfn></td></tr>
+<tr><th id="84">84</th><td>{</td></tr>
+<tr><th id="85">85</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="86">86</th><td>  <a class="typedef" href="../../pango-1.0/pango/pango-renderer.h.html#PangoRendererClass" title='PangoRendererClass' data-type='struct _PangoRendererClass' data-ref="PangoRendererClass">PangoRendererClass</a> <dfn class="decl" id="_GdkPangoRendererClass::parent_class" title='_GdkPangoRendererClass::parent_class' data-ref="_GdkPangoRendererClass::parent_class">parent_class</dfn>;</td></tr>
+<tr><th id="87">87</th><td>};</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a> <dfn class="decl" id="gdk_pango_renderer_get_type" title='gdk_pango_renderer_get_type' data-ref="gdk_pango_renderer_get_type">gdk_pango_renderer_get_type</dfn> (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><a class="typedef" href="../../pango-1.0/pango/pango-renderer.h.html#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a> *<dfn class="decl" id="gdk_pango_renderer_new" title='gdk_pango_renderer_new' data-ref="gdk_pango_renderer_new">gdk_pango_renderer_new</dfn>         (<a class="typedef" href="gdktypes.h.html#GdkScreen" title='GdkScreen' data-type='struct _GdkScreen' data-ref="GdkScreen">GdkScreen</a> *<dfn class="local col2 decl" id="14732screen" title='screen' data-type='GdkScreen *' data-ref="14732screen">screen</dfn>);</td></tr>
+<tr><th id="92">92</th><td><a class="typedef" href="../../pango-1.0/pango/pango-renderer.h.html#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a> *<dfn class="decl" id="gdk_pango_renderer_get_default" title='gdk_pango_renderer_get_default' data-ref="gdk_pango_renderer_get_default">gdk_pango_renderer_get_default</dfn> (<a class="typedef" href="gdktypes.h.html#GdkScreen" title='GdkScreen' data-type='struct _GdkScreen' data-ref="GdkScreen">GdkScreen</a> *<dfn class="local col3 decl" id="14733screen" title='screen' data-type='GdkScreen *' data-ref="14733screen">screen</dfn>);</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><em>void</em> <dfn class="decl" id="gdk_pango_renderer_set_drawable" title='gdk_pango_renderer_set_drawable' data-ref="gdk_pango_renderer_set_drawable">gdk_pango_renderer_set_drawable</dfn>       (<a class="typedef" href="#GdkPangoRenderer" title='GdkPangoRenderer' data-type='struct _GdkPangoRenderer' data-ref="GdkPangoRenderer">GdkPangoRenderer</a> *<dfn class="local col4 decl" id="14734gdk_renderer" title='gdk_renderer' data-type='GdkPangoRenderer *' data-ref="14734gdk_renderer">gdk_renderer</dfn>,</td></tr>
+<tr><th id="95">95</th><td>					    <a class="typedef" href="gdktypes.h.html#GdkDrawable" title='GdkDrawable' data-type='struct _GdkDrawable' data-ref="GdkDrawable">GdkDrawable</a>      *<dfn class="local col5 decl" id="14735drawable" title='drawable' data-type='GdkDrawable *' data-ref="14735drawable">drawable</dfn>);</td></tr>
+<tr><th id="96">96</th><td><em>void</em> <dfn class="decl" id="gdk_pango_renderer_set_gc" title='gdk_pango_renderer_set_gc' data-ref="gdk_pango_renderer_set_gc">gdk_pango_renderer_set_gc</dfn>             (<a class="typedef" href="#GdkPangoRenderer" title='GdkPangoRenderer' data-type='struct _GdkPangoRenderer' data-ref="GdkPangoRenderer">GdkPangoRenderer</a> *<dfn class="local col6 decl" id="14736gdk_renderer" title='gdk_renderer' data-type='GdkPangoRenderer *' data-ref="14736gdk_renderer">gdk_renderer</dfn>,</td></tr>
+<tr><th id="97">97</th><td>					    <a class="typedef" href="gdktypes.h.html#GdkGC" title='GdkGC' data-type='struct _GdkGC' data-ref="GdkGC">GdkGC</a>            *<dfn class="local col7 decl" id="14737gc" title='gc' data-type='GdkGC *' data-ref="14737gc">gc</dfn>);</td></tr>
+<tr><th id="98">98</th><td><em>void</em> <dfn class="decl" id="gdk_pango_renderer_set_stipple" title='gdk_pango_renderer_set_stipple' data-ref="gdk_pango_renderer_set_stipple">gdk_pango_renderer_set_stipple</dfn>        (<a class="typedef" href="#GdkPangoRenderer" title='GdkPangoRenderer' data-type='struct _GdkPangoRenderer' data-ref="GdkPangoRenderer">GdkPangoRenderer</a> *<dfn class="local col8 decl" id="14738gdk_renderer" title='gdk_renderer' data-type='GdkPangoRenderer *' data-ref="14738gdk_renderer">gdk_renderer</dfn>,</td></tr>
+<tr><th id="99">99</th><td>					    <a class="typedef" href="../../pango-1.0/pango/pango-renderer.h.html#PangoRenderPart" title='PangoRenderPart' data-type='enum PangoRenderPart' data-ref="PangoRenderPart">PangoRenderPart</a>   <dfn class="local col9 decl" id="14739part" title='part' data-type='PangoRenderPart' data-ref="14739part">part</dfn>,</td></tr>
+<tr><th id="100">100</th><td>					    <a class="typedef" href="gdktypes.h.html#GdkBitmap" title='GdkBitmap' data-type='struct _GdkDrawable' data-ref="GdkBitmap">GdkBitmap</a>        *<dfn class="local col0 decl" id="14740stipple" title='stipple' data-type='GdkBitmap *' data-ref="14740stipple">stipple</dfn>);</td></tr>
+<tr><th id="101">101</th><td><em>void</em> <dfn class="decl" id="gdk_pango_renderer_set_override_color" title='gdk_pango_renderer_set_override_color' data-ref="gdk_pango_renderer_set_override_color">gdk_pango_renderer_set_override_color</dfn> (<a class="typedef" href="#GdkPangoRenderer" title='GdkPangoRenderer' data-type='struct _GdkPangoRenderer' data-ref="GdkPangoRenderer">GdkPangoRenderer</a> *<dfn class="local col1 decl" id="14741gdk_renderer" title='gdk_renderer' data-type='GdkPangoRenderer *' data-ref="14741gdk_renderer">gdk_renderer</dfn>,</td></tr>
+<tr><th id="102">102</th><td>					    <a class="typedef" href="../../pango-1.0/pango/pango-renderer.h.html#PangoRenderPart" title='PangoRenderPart' data-type='enum PangoRenderPart' data-ref="PangoRenderPart">PangoRenderPart</a>   <dfn class="local col2 decl" id="14742part" title='part' data-type='PangoRenderPart' data-ref="14742part">part</dfn>,</td></tr>
+<tr><th id="103">103</th><td>					    <em>const</em> <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a>   *<dfn class="local col3 decl" id="14743color" title='color' data-type='const GdkColor *' data-ref="14743color">color</dfn>);</td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td><i>/************************************************************************/</i></td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><a class="typedef" href="../../pango-1.0/pango/pango-fontmap.h.html#PangoContext" title='PangoContext' data-type='struct _PangoContext' data-ref="PangoContext">PangoContext</a> *<dfn class="decl" id="gdk_pango_context_get_for_screen" title='gdk_pango_context_get_for_screen' data-ref="gdk_pango_context_get_for_screen">gdk_pango_context_get_for_screen</dfn> (<a class="typedef" href="gdktypes.h.html#GdkScreen" title='GdkScreen' data-type='struct _GdkScreen' data-ref="GdkScreen">GdkScreen</a>    *<dfn class="local col4 decl" id="14744screen" title='screen' data-type='GdkScreen *' data-ref="14744screen">screen</dfn>);</td></tr>
+<tr><th id="108">108</th><td><u>#<span data-ppcond="108">ifndef</span> <span class="macro" data-ref="_M/GDK_MULTIHEAD_SAFE">GDK_MULTIHEAD_SAFE</span></u></td></tr>
+<tr><th id="109">109</th><td><a class="typedef" href="../../pango-1.0/pango/pango-fontmap.h.html#PangoContext" title='PangoContext' data-type='struct _PangoContext' data-ref="PangoContext">PangoContext</a> *<dfn class="decl" id="gdk_pango_context_get" title='gdk_pango_context_get' data-ref="gdk_pango_context_get">gdk_pango_context_get</dfn>            (<em>void</em>);</td></tr>
+<tr><th id="110">110</th><td><u>#<span data-ppcond="108">endif</span></u></td></tr>
+<tr><th id="111">111</th><td><u>#<span data-ppcond="111">ifndef</span> <span class="macro" data-ref="_M/GDK_DISABLE_DEPRECATED">GDK_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="112">112</th><td><em>void</em>          <dfn class="decl" id="gdk_pango_context_set_colormap" title='gdk_pango_context_set_colormap' data-ref="gdk_pango_context_set_colormap">gdk_pango_context_set_colormap</dfn>   (<a class="typedef" href="../../pango-1.0/pango/pango-fontmap.h.html#PangoContext" title='PangoContext' data-type='struct _PangoContext' data-ref="PangoContext">PangoContext</a> *<dfn class="local col5 decl" id="14745context" title='context' data-type='PangoContext *' data-ref="14745context">context</dfn>,</td></tr>
+<tr><th id="113">113</th><td>                                                <a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a>  *<dfn class="local col6 decl" id="14746colormap" title='colormap' data-type='GdkColormap *' data-ref="14746colormap">colormap</dfn>);</td></tr>
+<tr><th id="114">114</th><td><u>#<span data-ppcond="111">endif</span></u> </td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><i>/* Get a clip region to draw only part of a layout or</i></td></tr>
+<tr><th id="118">118</th><td><i> * line. index_ranges contains alternating range starts/stops. The</i></td></tr>
+<tr><th id="119">119</th><td><i> * region is the region which contains the given ranges, i.e. if you</i></td></tr>
+<tr><th id="120">120</th><td><i> * draw with the region as clip, only the given ranges are drawn.</i></td></tr>
+<tr><th id="121">121</th><td><i> */</i></td></tr>
+<tr><th id="122">122</th><td></td></tr>
+<tr><th id="123">123</th><td><a class="typedef" href="gdktypes.h.html#GdkRegion" title='GdkRegion' data-type='struct _GdkRegion' data-ref="GdkRegion">GdkRegion</a>    *<dfn class="decl" id="gdk_pango_layout_line_get_clip_region" title='gdk_pango_layout_line_get_clip_region' data-ref="gdk_pango_layout_line_get_clip_region">gdk_pango_layout_line_get_clip_region</dfn> (<a class="typedef" href="../../pango-1.0/pango/pango-layout.h.html#PangoLayoutLine" title='PangoLayoutLine' data-type='struct _PangoLayoutLine' data-ref="PangoLayoutLine">PangoLayoutLine</a> *<dfn class="local col7 decl" id="14747line" title='line' data-type='PangoLayoutLine *' data-ref="14747line">line</dfn>,</td></tr>
+<tr><th id="124">124</th><td>                                                     <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>             <dfn class="local col8 decl" id="14748x_origin" title='x_origin' data-type='gint' data-ref="14748x_origin">x_origin</dfn>,</td></tr>
+<tr><th id="125">125</th><td>                                                     <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>             <dfn class="local col9 decl" id="14749y_origin" title='y_origin' data-type='gint' data-ref="14749y_origin">y_origin</dfn>,</td></tr>
+<tr><th id="126">126</th><td>                                                     <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>      *<dfn class="local col0 decl" id="14750index_ranges" title='index_ranges' data-type='const gint *' data-ref="14750index_ranges">index_ranges</dfn>,</td></tr>
+<tr><th id="127">127</th><td>                                                     <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>             <dfn class="local col1 decl" id="14751n_ranges" title='n_ranges' data-type='gint' data-ref="14751n_ranges">n_ranges</dfn>);</td></tr>
+<tr><th id="128">128</th><td><a class="typedef" href="gdktypes.h.html#GdkRegion" title='GdkRegion' data-type='struct _GdkRegion' data-ref="GdkRegion">GdkRegion</a>    *<dfn class="decl" id="gdk_pango_layout_get_clip_region" title='gdk_pango_layout_get_clip_region' data-ref="gdk_pango_layout_get_clip_region">gdk_pango_layout_get_clip_region</dfn>      (<a class="typedef" href="../../pango-1.0/pango/pango-layout.h.html#PangoLayout" title='PangoLayout' data-type='struct _PangoLayout' data-ref="PangoLayout">PangoLayout</a>     *<dfn class="local col2 decl" id="14752layout" title='layout' data-type='PangoLayout *' data-ref="14752layout">layout</dfn>,</td></tr>
+<tr><th id="129">129</th><td>                                                     <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>             <dfn class="local col3 decl" id="14753x_origin" title='x_origin' data-type='gint' data-ref="14753x_origin">x_origin</dfn>,</td></tr>
+<tr><th id="130">130</th><td>                                                     <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>             <dfn class="local col4 decl" id="14754y_origin" title='y_origin' data-type='gint' data-ref="14754y_origin">y_origin</dfn>,</td></tr>
+<tr><th id="131">131</th><td>                                                     <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>      *<dfn class="local col5 decl" id="14755index_ranges" title='index_ranges' data-type='const gint *' data-ref="14755index_ranges">index_ranges</dfn>,</td></tr>
+<tr><th id="132">132</th><td>                                                     <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>             <dfn class="local col6 decl" id="14756n_ranges" title='n_ranges' data-type='gint' data-ref="14756n_ranges">n_ranges</dfn>);</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td></td></tr>
+<tr><th id="136">136</th><td><i>/* Attributes use to render insensitive text in GTK+. */</i></td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkPangoAttrStipple" title='_GdkPangoAttrStipple' data-ref="_GdkPangoAttrStipple">_GdkPangoAttrStipple</a> <dfn class="typedef" id="GdkPangoAttrStipple" title='GdkPangoAttrStipple' data-type='struct _GdkPangoAttrStipple' data-ref="GdkPangoAttrStipple">GdkPangoAttrStipple</dfn>;</td></tr>
+<tr><th id="139">139</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkPangoAttrEmbossed" title='_GdkPangoAttrEmbossed' data-ref="_GdkPangoAttrEmbossed">_GdkPangoAttrEmbossed</a> <dfn class="typedef" id="GdkPangoAttrEmbossed" title='GdkPangoAttrEmbossed' data-type='struct _GdkPangoAttrEmbossed' data-ref="GdkPangoAttrEmbossed">GdkPangoAttrEmbossed</dfn>;</td></tr>
+<tr><th id="140">140</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkPangoAttrEmbossColor" title='_GdkPangoAttrEmbossColor' data-ref="_GdkPangoAttrEmbossColor">_GdkPangoAttrEmbossColor</a> <dfn class="typedef" id="GdkPangoAttrEmbossColor" title='GdkPangoAttrEmbossColor' data-type='struct _GdkPangoAttrEmbossColor' data-ref="GdkPangoAttrEmbossColor">GdkPangoAttrEmbossColor</dfn>;</td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td><b>struct</b> <dfn class="type def" id="_GdkPangoAttrStipple" title='_GdkPangoAttrStipple' data-ref="_GdkPangoAttrStipple">_GdkPangoAttrStipple</dfn></td></tr>
+<tr><th id="143">143</th><td>{</td></tr>
+<tr><th id="144">144</th><td>  <a class="typedef" href="../../pango-1.0/pango/pango-attributes.h.html#PangoAttribute" title='PangoAttribute' data-type='struct _PangoAttribute' data-ref="PangoAttribute">PangoAttribute</a> <dfn class="decl" id="_GdkPangoAttrStipple::attr" title='_GdkPangoAttrStipple::attr' data-ref="_GdkPangoAttrStipple::attr">attr</dfn>;</td></tr>
+<tr><th id="145">145</th><td>  <a class="typedef" href="gdktypes.h.html#GdkBitmap" title='GdkBitmap' data-type='struct _GdkDrawable' data-ref="GdkBitmap">GdkBitmap</a> *<dfn class="decl" id="_GdkPangoAttrStipple::stipple" title='_GdkPangoAttrStipple::stipple' data-ref="_GdkPangoAttrStipple::stipple">stipple</dfn>;</td></tr>
+<tr><th id="146">146</th><td>};</td></tr>
+<tr><th id="147">147</th><td></td></tr>
+<tr><th id="148">148</th><td><b>struct</b> <dfn class="type def" id="_GdkPangoAttrEmbossed" title='_GdkPangoAttrEmbossed' data-ref="_GdkPangoAttrEmbossed">_GdkPangoAttrEmbossed</dfn></td></tr>
+<tr><th id="149">149</th><td>{</td></tr>
+<tr><th id="150">150</th><td>  <a class="typedef" href="../../pango-1.0/pango/pango-attributes.h.html#PangoAttribute" title='PangoAttribute' data-type='struct _PangoAttribute' data-ref="PangoAttribute">PangoAttribute</a> <dfn class="decl" id="_GdkPangoAttrEmbossed::attr" title='_GdkPangoAttrEmbossed::attr' data-ref="_GdkPangoAttrEmbossed::attr">attr</dfn>;</td></tr>
+<tr><th id="151">151</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="_GdkPangoAttrEmbossed::embossed" title='_GdkPangoAttrEmbossed::embossed' data-ref="_GdkPangoAttrEmbossed::embossed">embossed</dfn>;</td></tr>
+<tr><th id="152">152</th><td>};</td></tr>
+<tr><th id="153">153</th><td></td></tr>
+<tr><th id="154">154</th><td><b>struct</b> <dfn class="type def" id="_GdkPangoAttrEmbossColor" title='_GdkPangoAttrEmbossColor' data-ref="_GdkPangoAttrEmbossColor">_GdkPangoAttrEmbossColor</dfn></td></tr>
+<tr><th id="155">155</th><td>{</td></tr>
+<tr><th id="156">156</th><td>  <a class="typedef" href="../../pango-1.0/pango/pango-attributes.h.html#PangoAttribute" title='PangoAttribute' data-type='struct _PangoAttribute' data-ref="PangoAttribute">PangoAttribute</a> <dfn class="decl" id="_GdkPangoAttrEmbossColor::attr" title='_GdkPangoAttrEmbossColor::attr' data-ref="_GdkPangoAttrEmbossColor::attr">attr</dfn>;</td></tr>
+<tr><th id="157">157</th><td>  <a class="typedef" href="../../pango-1.0/pango/pango-attributes.h.html#PangoColor" title='PangoColor' data-type='struct _PangoColor' data-ref="PangoColor">PangoColor</a> <dfn class="decl" id="_GdkPangoAttrEmbossColor::color" title='_GdkPangoAttrEmbossColor::color' data-ref="_GdkPangoAttrEmbossColor::color">color</dfn>;</td></tr>
+<tr><th id="158">158</th><td>};</td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td><a class="typedef" href="../../pango-1.0/pango/pango-attributes.h.html#PangoAttribute" title='PangoAttribute' data-type='struct _PangoAttribute' data-ref="PangoAttribute">PangoAttribute</a> *<dfn class="decl" id="gdk_pango_attr_stipple_new" title='gdk_pango_attr_stipple_new' data-ref="gdk_pango_attr_stipple_new">gdk_pango_attr_stipple_new</dfn>  (<a class="typedef" href="gdktypes.h.html#GdkBitmap" title='GdkBitmap' data-type='struct _GdkDrawable' data-ref="GdkBitmap">GdkBitmap</a> *<dfn class="local col7 decl" id="14757stipple" title='stipple' data-type='GdkBitmap *' data-ref="14757stipple">stipple</dfn>);</td></tr>
+<tr><th id="161">161</th><td><a class="typedef" href="../../pango-1.0/pango/pango-attributes.h.html#PangoAttribute" title='PangoAttribute' data-type='struct _PangoAttribute' data-ref="PangoAttribute">PangoAttribute</a> *<dfn class="decl" id="gdk_pango_attr_embossed_new" title='gdk_pango_attr_embossed_new' data-ref="gdk_pango_attr_embossed_new">gdk_pango_attr_embossed_new</dfn> (<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="local col8 decl" id="14758embossed" title='embossed' data-type='gboolean' data-ref="14758embossed">embossed</dfn>);</td></tr>
+<tr><th id="162">162</th><td><a class="typedef" href="../../pango-1.0/pango/pango-attributes.h.html#PangoAttribute" title='PangoAttribute' data-type='struct _PangoAttribute' data-ref="PangoAttribute">PangoAttribute</a> *<dfn class="decl" id="gdk_pango_attr_emboss_color_new" title='gdk_pango_attr_emboss_color_new' data-ref="gdk_pango_attr_emboss_color_new">gdk_pango_attr_emboss_color_new</dfn> (<em>const</em> <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a> *<dfn class="local col9 decl" id="14759color" title='color' data-type='const GdkColor *' data-ref="14759color">color</dfn>);</td></tr>
+<tr><th id="163">163</th><td></td></tr>
+<tr><th id="164">164</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="165">165</th><td></td></tr>
+<tr><th id="166">166</th><td><u>#<span data-ppcond="20">endif</span> /* __GDK_FONT_H__ */</u></td></tr>
+<tr><th id="167">167</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1200' type='void gtk_widget_set_composite_name(GtkWidget * widget, const gchar * name)'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='1197'>/* handle composite names for GTK_COMPOSITE_CHILD widgets,
+ * the returned name is newly allocated.
+ */</doc>

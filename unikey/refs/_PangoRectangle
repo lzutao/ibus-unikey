@@ -1,0 +1,18 @@
+<def f='include/pango-1.0/pango/pango-types.h' l='138' ll='144'/>
+<size>16</size>
+<doc f='include/pango-1.0/pango/pango-types.h' l='126'>/**
+ * PangoRectangle:
+ * @x: X coordinate of the left side of the rectangle.
+ * @y: Y coordinate of the the top side of the rectangle.
+ * @width: width of the rectangle.
+ * @height: height of the rectangle.
+ *
+ * The #PangoRectangle structure represents a rectangle. It is frequently
+ * used to represent the logical or ink extents of a single glyph or section
+ * of text. (See, for instance, pango_font_get_glyph_extents())
+ *
+ */</doc>
+<mbr r='_PangoRectangle::x' o='0' t='int'/>
+<mbr r='_PangoRectangle::y' o='32' t='int'/>
+<mbr r='_PangoRectangle::width' o='64' t='int'/>
+<mbr r='_PangoRectangle::height' o='96' t='int'/>

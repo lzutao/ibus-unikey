@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='231' type='gchar * gtk_text_buffer_get_text(GtkTextBuffer * buffer, const GtkTextIter * start, const GtkTextIter * end, gboolean include_hidden_chars)'/>
+<doc f='include/gtk-2.0/gtk/gtktextbuffer.h' l='230'>/* Obtain strings from the buffer */</doc>

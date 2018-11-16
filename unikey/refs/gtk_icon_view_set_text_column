@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconview.h' l='97' type='void gtk_icon_view_set_text_column(GtkIconView * icon_view, gint column)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktexttag.h' l='161' type='gboolean gtk_text_tag_event(GtkTextTag * tag, GObject * event_object, GdkEvent * event, const GtkTextIter * iter)'/>

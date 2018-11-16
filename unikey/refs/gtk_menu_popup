@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkmenu.h' l='129' type='void gtk_menu_popup(GtkMenu * menu, GtkWidget * parent_menu_shell, GtkWidget * parent_menu_item, GtkMenuPositionFunc func, gpointer data, guint button, guint32 activate_time)'/>
+<doc f='include/gtk-2.0/gtk/gtkmenu.h' l='128'>/* Display the menu onscreen */</doc>

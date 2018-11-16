@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkfilefilter.h' l='49' ll='57'/>
+<size>40</size>
+<mbr r='_GtkFileFilterInfo::contains' o='0' t='GtkFileFilterFlags'/>
+<mbr r='_GtkFileFilterInfo::filename' o='64' t='const gchar *'/>
+<mbr r='_GtkFileFilterInfo::uri' o='128' t='const gchar *'/>
+<mbr r='_GtkFileFilterInfo::display_name' o='192' t='const gchar *'/>
+<mbr r='_GtkFileFilterInfo::mime_type' o='256' t='const gchar *'/>

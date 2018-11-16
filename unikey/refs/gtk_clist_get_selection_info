@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='739' type='gint gtk_clist_get_selection_info(GtkCList * clist, gint x, gint y, gint * row, gint * column)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='735'>/* return the row column corresponding to the x and y coordinates,
+ * the returned values are only valid if the x and y coordinates
+ * are respectively to a window == clist-&gt;clist_window
+ */</doc>

@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusenginedesc.h' l='326' type='const gchar * ibus_engine_desc_get_icon_prop_key(IBusEngineDesc * info)'/>
+<doc f='include/ibus-1.0/ibusenginedesc.h' l='317'>/**
+ * ibus_engine_desc_get_icon_prop_key:
+ * @info: An IBusEngineDesc
+ *
+ * Gets the key of IBusProperty to load the panel icon dynamically
+ * in IBusEngineDesc. It should not be freed.
+ *
+ * Returns: IBusProperty.key for dynamic panel icon in IBusEngineDesc
+ */</doc>

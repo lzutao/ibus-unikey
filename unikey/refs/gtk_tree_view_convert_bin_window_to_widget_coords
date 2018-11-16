@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='347' type='void gtk_tree_view_convert_bin_window_to_widget_coords(GtkTreeView * tree_view, gint bx, gint by, gint * wx, gint * wy)'/>

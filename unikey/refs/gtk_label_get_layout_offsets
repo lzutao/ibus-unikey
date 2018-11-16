@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtklabel.h' l='172' type='void gtk_label_get_layout_offsets(GtkLabel * label, gint * x, gint * y)'/>

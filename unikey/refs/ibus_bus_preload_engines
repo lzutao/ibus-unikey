@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='1140' type='gboolean ibus_bus_preload_engines(IBusBus * bus, const gchar *const * names)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='1131'>/**
+ * ibus_bus_preload_engines:
+ * @bus: An #IBusBus.
+ * @names: (array zero-terminated=1): A %NULL-terminated array of engine names.
+ *
+ * Start bus components by engine names synchronously.
+ *
+ * Returns: %TRUE if components start. %FALSE otherwise.
+ */</doc>

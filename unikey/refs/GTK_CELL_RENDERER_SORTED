@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkcellrenderer.h' l='37' type='8'/>
+<doc f='include/gtk-2.0/gtk/gtkcellrenderer.h' l='36'>/* this flag means the cell is in the sort column/row */</doc>

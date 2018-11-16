@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='668' type='void gdk_window_invalidate_region(GdkWindow * window, const GdkRegion * region, gboolean invalidate_children)'/>

@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkrecentchoosermenu.h' l='44' ll='50'/>
+<size>304</size>
+<mbr r='_GtkRecentChooserMenu::parent_instance' o='0' t='GtkMenu'/>
+<mbr r='_GtkRecentChooserMenu::priv' o='2368' t='GtkRecentChooserMenuPrivate *'/>

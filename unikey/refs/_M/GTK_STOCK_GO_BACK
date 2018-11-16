@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='393'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='385'>/**
+ * GTK_STOCK_GO_BACK:
+ *
+ * The &quot;Back&quot; item.
+ * &lt;inlinegraphic fileref=&quot;go-previous-ltr.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ * RTL variant
+ * &lt;inlinegraphic fileref=&quot;go-previous-rtl.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

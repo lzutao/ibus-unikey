@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gdk/gdkdisplaymanager.h' l='49' ll='55'/>
+<size>144</size>
+<mbr r='_GdkDisplayManagerClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_GdkDisplayManagerClass::display_opened' o='1088' t='void (*)(GdkDisplayManager *, GdkDisplay *)'/>

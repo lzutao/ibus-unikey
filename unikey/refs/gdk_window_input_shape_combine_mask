@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='446' type='void gdk_window_input_shape_combine_mask(GdkWindow * window, GdkBitmap * mask, gint x, gint y)'/>

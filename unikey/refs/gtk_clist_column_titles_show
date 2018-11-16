@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='485' type='void gtk_clist_column_titles_show(GtkCList * clist)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='484'>/* show and hide the column title buttons */</doc>

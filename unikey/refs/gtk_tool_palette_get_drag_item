@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktoolpalette.h' l='124' type='GtkWidget * gtk_tool_palette_get_drag_item(GtkToolPalette * palette, const GtkSelectionData * selection)'/>

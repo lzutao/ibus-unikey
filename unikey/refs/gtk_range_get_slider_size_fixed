@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrange.h' l='158' type='gboolean gtk_range_get_slider_size_fixed(GtkRange * range)'/>

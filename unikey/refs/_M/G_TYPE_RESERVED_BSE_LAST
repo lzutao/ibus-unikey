@@ -1,0 +1,6 @@
+<dec f='include/glib-2.0/gobject/gtype.h' l='245'/>
+<doc f='include/glib-2.0/gobject/gtype.h' l='240'>/**
+ * G_TYPE_RESERVED_BSE_LAST:
+ * 
+ * Last fundamental type number reserved for BSE.
+ */</doc>

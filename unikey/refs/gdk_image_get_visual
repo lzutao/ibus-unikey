@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkimage.h' l='123' type='GdkVisual * gdk_image_get_visual(GdkImage * image)'/>

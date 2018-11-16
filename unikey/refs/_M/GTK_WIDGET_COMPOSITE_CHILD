@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='401'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='393'>/**
+ * GTK_WIDGET_COMPOSITE_CHILD:
+ * @wid: a #GtkWidget.
+ *
+ * Evaluates to %TRUE if the widget is a composite child of its parent.
+ *
+ * Deprecated: 2.20: Use the #GtkWidget:composite-child property instead.
+ */</doc>

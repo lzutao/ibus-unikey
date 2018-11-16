@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmain.h' l='205' type='guint gtk_key_snooper_install(GtkKeySnoopFunc snooper, gpointer func_data)'/>

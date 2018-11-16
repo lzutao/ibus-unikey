@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='130' type='gboolean ibus_bus_is_connected(IBusBus * bus)'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='22' u='c' c='_Z28unikey_main_setup_dialog_newv'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='122'>/**
+ * ibus_bus_is_connected:
+ * @bus: An #IBusBus.
+ *
+ * Return %TRUE if @bus is connected to IBus daemon.
+ *
+ * Returns: %TRUE if @bus is connected, %FALSE otherwise.
+ */</doc>
+<use f='unikey/src/main.cpp' l='39' u='c' c='_ZL15start_componentv'/>

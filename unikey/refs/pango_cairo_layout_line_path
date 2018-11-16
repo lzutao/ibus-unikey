@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pangocairo.h' l='183' type='void pango_cairo_layout_line_path(cairo_t * cr, PangoLayoutLine * line)'/>

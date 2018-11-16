@@ -1,0 +1,15 @@
+<def f='include/gtk-2.0/gtk/gtkaccellabel.h' l='73' ll='91'/>
+<size>872</size>
+<mbr r='_GtkAccelLabelClass::parent_class' o='0' t='GtkLabelClass'/>
+<mbr r='_GtkAccelLabelClass::signal_quote1' o='6208' t='gchar *'/>
+<mbr r='_GtkAccelLabelClass::signal_quote2' o='6272' t='gchar *'/>
+<mbr r='_GtkAccelLabelClass::mod_name_shift' o='6336' t='gchar *'/>
+<mbr r='_GtkAccelLabelClass::mod_name_control' o='6400' t='gchar *'/>
+<mbr r='_GtkAccelLabelClass::mod_name_alt' o='6464' t='gchar *'/>
+<mbr r='_GtkAccelLabelClass::mod_separator' o='6528' t='gchar *'/>
+<mbr r='_GtkAccelLabelClass::accel_seperator' o='6592' t='gchar *'/>
+<mbr r='_GtkAccelLabelClass::latin1_to_char' o='6656' t='guint'/>
+<mbr r='_GtkAccelLabelClass::_gtk_reserved1' o='6720' t='void (*)()'/>
+<mbr r='_GtkAccelLabelClass::_gtk_reserved2' o='6784' t='void (*)()'/>
+<mbr r='_GtkAccelLabelClass::_gtk_reserved3' o='6848' t='void (*)()'/>
+<mbr r='_GtkAccelLabelClass::_gtk_reserved4' o='6912' t='void (*)()'/>

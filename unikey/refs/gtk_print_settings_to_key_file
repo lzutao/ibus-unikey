@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintsettings.h' l='69' type='void gtk_print_settings_to_key_file(GtkPrintSettings * settings, GKeyFile * key_file, const gchar * group_name)'/>

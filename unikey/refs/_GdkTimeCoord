@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gdk/gdkinput.h' l='120' ll='124'/>
+<size>1032</size>
+<mbr r='_GdkTimeCoord::time' o='0' t='guint32'/>
+<mbr r='_GdkTimeCoord::axes' o='64' t='gdouble [128]'/>

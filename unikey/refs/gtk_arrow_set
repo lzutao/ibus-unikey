@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkarrow.h' l='69' type='void gtk_arrow_set(GtkArrow * arrow, GtkArrowType arrow_type, GtkShadowType shadow_type)'/>

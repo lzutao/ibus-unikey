@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkpixmap.h' l='78' type='GdkPixmap * gdk_pixmap_create_from_data(GdkDrawable * drawable, const gchar * data, gint width, gint height, gint depth, const GdkColor * fg, const GdkColor * bg)'/>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkmarshal.h' l='131' type='void gtk_marshal_VOID__ENUM_FLOAT_BOOLEAN(GClosure * closure, GValue * return_value, guint n_param_values, const GValue * param_values, gpointer invocation_hint, gpointer marshal_data)'/>
+<doc f='include/gtk-2.0/gtk/gtkmarshal.h' l='129'>/* NONE:ENUM,FLOAT,BOOL (./gtkmarshal.list:14) */</doc>

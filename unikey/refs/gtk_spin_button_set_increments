@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkspinbutton.h' l='147' type='void gtk_spin_button_set_increments(GtkSpinButton * spin_button, gdouble step, gdouble page)'/>

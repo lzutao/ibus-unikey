@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtkclist.h' l='375' ll='386'/>
+<size>32</size>
+<mbr r='_GtkCellPixmap::type' o='0' t='GtkCellType'/>
+<mbr r='_GtkCellPixmap::vertical' o='32' t='gint16'/>
+<mbr r='_GtkCellPixmap::horizontal' o='48' t='gint16'/>
+<mbr r='_GtkCellPixmap::style' o='64' t='GtkStyle *'/>
+<mbr r='_GtkCellPixmap::pixmap' o='128' t='GdkPixmap *'/>
+<mbr r='_GtkCellPixmap::mask' o='192' t='GdkBitmap *'/>

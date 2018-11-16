@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcontainer.h' l='176' type='void gtk_container_add_with_properties(GtkContainer * container, GtkWidget * widget, const gchar * first_prop_name)'/>

@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkcellview.h' l='44' ll='50'/>
+<size>104</size>
+<mbr r='_GtkCellView::parent_instance' o='0' t='GtkWidget'/>
+<mbr r='_GtkCellView::priv' o='768' t='GtkCellViewPrivate *'/>

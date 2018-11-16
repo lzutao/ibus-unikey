@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtktreednd.h' l='70' type='gboolean gtk_tree_drag_source_drag_data_get(GtkTreeDragSource * drag_source, GtkTreePath * path, GtkSelectionData * selection_data)'/>
+<doc f='include/gtk-2.0/gtk/gtktreednd.h' l='67'>/* Fills in selection_data with type selection_data-&gt;target based on
+ * the row denoted by path, returns TRUE if it does anything
+ */</doc>

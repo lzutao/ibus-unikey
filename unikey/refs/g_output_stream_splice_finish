@@ -1,0 +1,1 @@
+<dec f='include/glib-2.0/gio/goutputstream.h' l='231' type='gssize g_output_stream_splice_finish(GOutputStream * stream, GAsyncResult * result, GError ** error)'/>

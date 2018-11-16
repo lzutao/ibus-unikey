@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1034' type='void gtk_widget_set_uposition(GtkWidget * widget, gint x, gint y)'/>

@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>atkstate.h source code [include/atk-1.0/atk/atkstate.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/atk-1.0/atk/atkstate.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>atk-1.0</a>/<a href='./'>atk</a>/<a href='atkstate.h.html'>atkstate.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* ATK -  Accessibility Toolkit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright 2001 Sun Microsystems Inc.</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Library General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Library General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Library General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="20">ifndef</span> <span class="macro" data-ref="_M/__ATK_STATE_H__">__ATK_STATE_H__</span></u></td></tr>
+<tr><th id="21">21</th><td><u>#define <dfn class="macro" id="_M/__ATK_STATE_H__" data-ref="_M/__ATK_STATE_H__">__ATK_STATE_H__</dfn></u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> defined(<span class="macro" data-ref="_M/ATK_DISABLE_SINGLE_INCLUDES">ATK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="atk.h.html#23" data-ref="_M/__ATK_H_INSIDE__">__ATK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/ATK_COMPILATION">ATK_COMPILATION</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#error "Only &lt;atk/atk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="../../glib-2.0/glib-object.h.html">&lt;glib-object.h&gt;</a></u></td></tr>
+<tr><th id="28">28</th><td><u>#include <a href="atkversion.h.html">&lt;atk/atkversion.h&gt;</a></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> *AtkStateType:</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_INVALID: Indicates an invalid state - probably an error condition.</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_ACTIVE: Indicates a window is currently the active window, or an object is the active subelement within a container or table. ATK_STATE_ACTIVE should not be used for objects which have ATK_STATE_FOCUSABLE or ATK_STATE_SELECTABLE: Those objects should use ATK_STATE_FOCUSED and ATK_STATE_SELECTED respectively. ATK_STATE_ACTIVE is a means to indicate that an object which is not focusable and not selectable is the currently-active item within its parent container.</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_ARMED: Indicates that the object is 'armed', i.e. will be activated by if a pointer button-release event occurs within its bounds.  Buttons often enter this state when a pointer click occurs within their bounds, as a precursor to activation. ATK_STATE_ARMED has been deprecated since ATK-2.16 and should not be used in newly-written code.</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_BUSY:  Indicates the current object is busy, i.e. onscreen representation is in the process of changing, or the object is temporarily unavailable for interaction due to activity already in progress.  This state may be used by implementors of Document to indicate that content loading is underway.  It also may indicate other 'pending' conditions; clients may wish to interrogate this object when the ATK_STATE_BUSY flag is removed.</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_CHECKED: Indicates this object is currently checked, for instance a checkbox is 'non-empty'.</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_DEFUNCT: Indicates that this object no longer has a valid backing widget (for instance, if its peer object has been destroyed)</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_EDITABLE: Indicates that this object can contain text, and that the</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * user can change the textual contents of this object by editing those contents</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> * directly. For an object which is expected to be editable due to its type, but</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> * which cannot be edited due to the application or platform preventing the user</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> * from doing so, that object's #AtkStateSet should lack ATK_STATE_EDITABLE and</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> * should contain ATK_STATE_READ_ONLY.</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_ENABLED: 	Indicates that this object is enabled, i.e. that it currently reflects some application state. Objects that are "greyed out" may lack this state, and may lack the STATE_SENSITIVE if direct user interaction cannot cause them to acquire STATE_ENABLED. See also: ATK_STATE_SENSITIVE</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_EXPANDABLE: Indicates this object allows progressive disclosure of its children</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_EXPANDED: Indicates this object its expanded - see ATK_STATE_EXPANDABLE above</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_FOCUSABLE: Indicates this object can accept keyboard focus, which means all events resulting from typing on the keyboard will normally be passed to it when it has focus</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_FOCUSED: Indicates this object currently has the keyboard focus</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_HORIZONTAL: Indicates the orientation of this object is horizontal; used, for instance, by objects of ATK_ROLE_SCROLL_BAR.  For objects where vertical/horizontal orientation is especially meaningful.</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_ICONIFIED: Indicates this object is minimized and is represented only by an icon</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_MODAL: Indicates something must be done with this object before the user can interact with an object in a different window</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_MULTI_LINE: Indicates this (text) object can contain multiple lines of text</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_MULTISELECTABLE: Indicates this object allows more than one of its children to be selected at the same time, or in the case of text objects, that the object supports non-contiguous text selections.</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_OPAQUE: Indicates this object paints every pixel within its rectangular region.</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_PRESSED: Indicates this object is currently pressed.</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_RESIZABLE: Indicates the size of this object is not fixed</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_SELECTABLE: Indicates this object is the child of an object that allows its children to be selected and that this child is one of those children that can be selected</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_SELECTED: Indicates this object is the child of an object that allows its children to be selected and that this child is one of those children that has been selected</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_SENSITIVE: Indicates this object is sensitive, e.g. to user interaction. </i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> * STATE_SENSITIVE usually accompanies STATE_ENABLED for user-actionable controls,</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> * but may be found in the absence of STATE_ENABLED if the current visible state of the </i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> * control is "disconnected" from the application state.  In such cases, direct user interaction</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> * can often result in the object gaining STATE_SENSITIVE, for instance if a user makes </i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> * an explicit selection using an object whose current state is ambiguous or undefined.</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> * <span class="command">@see</span> STATE_ENABLED, STATE_INDETERMINATE.</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_SHOWING: Indicates this object, the object's parent, the object's parent's parent, and so on, </i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> * are all 'shown' to the end-user, i.e. subject to "exposure" if blocking or obscuring objects do not interpose</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> * between this object and the top of the window stack.</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_SINGLE_LINE: Indicates this (text) object can contain only a single line of text</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_STALE: Indicates that the information returned for this object may no longer be</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc"> * synchronized with the application state.  This is implied if the object has STATE_TRANSIENT,</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc"> * and can also occur towards the end of the object peer's lifecycle. It can also be used to indicate that </i></td></tr>
+<tr><th id="75">75</th><td><i class="doc"> * the index associated with this object has changed since the user accessed the object (in lieu of</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> * "index-in-parent-changed" events).</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_TRANSIENT: Indicates this object is transient, i.e. a snapshot which may not emit events when its</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> * state changes.  Data from objects with ATK_STATE_TRANSIENT should not be cached, since there may be no</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> * notification given when the cached data becomes obsolete.</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_VERTICAL: Indicates the orientation of this object is vertical</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_VISIBLE: Indicates this object is visible, e.g. has been explicitly marked for exposure to the user.</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc"> * <span class="command">@note</span>: STATE_VISIBLE is no guarantee that the object is actually unobscured on the screen, only</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc"> * that it is 'potentially' visible, barring obstruction, being scrolled or clipped out of the </i></td></tr>
+<tr><th id="84">84</th><td><i class="doc"> * field of view, or having an ancestor container that has not yet made visible.</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> * A widget is potentially onscreen if it has both STATE_VISIBLE and STATE_SHOWING.</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> * The absence of STATE_VISIBLE and STATE_SHOWING is semantically equivalent to saying </i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> * that an object is 'hidden'.  See also STATE_TRUNCATED, which applies if a VISIBLE and SHOWING object</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> * lies within a viewport which means that its contents are clipped, e.g. a truncated spreadsheet cell or</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc"> * an image within a scrolling viewport.  Mostly useful for screen-review and magnification algorithms.</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_MANAGES_DESCENDANTS: Indicates that "active-descendant-changed" event</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> * is sent when children become 'active' (i.e. are selected or navigated to onscreen).</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> * Used to prevent need to enumerate all children in very large containers, like tables.</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> * The presence of STATE_MANAGES_DESCENDANTS is an indication to the client.</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> * that the children should not, and need not, be enumerated by the client.</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> * Objects implementing this state are expected to provide relevant state</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> * notifications to listening clients, for instance notifications of visibility</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> * changes and activation of their contained child objects, without the client </i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> * having previously requested references to those children.</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_INDETERMINATE: Indicates that the value, or some other quantifiable</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc"> * property, of this AtkObject cannot be fully determined. In the case of a large</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc"> * data set in which the total number of items in that set is unknown (e.g. 1 of</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> * 999+), implementors should expose the currently-known set size (999) along</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> * with this state. In the case of a check box, this state should be used to</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> * indicate that the check box is a tri-state check box which is currently</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> * neither checked nor unchecked.</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_TRUNCATED: Indicates that an object is truncated, e.g. a text value in a speradsheet cell.</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_REQUIRED: Indicates that explicit user interaction with an object is required by the user interface, e.g. a required field in a "web-form" interface.</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_INVALID_ENTRY: Indicates that the object has encountered an error condition due to failure of input validation. For instance, a form control may acquire this state in response to invalid or malformed user input.</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_SUPPORTS_AUTOCOMPLETION:  Indicates that the object in question implements some form of ¨typeahead¨ or </i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> * pre-selection behavior whereby entering the first character of one or more sub-elements</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> * causes those elements to scroll into view or become selected.  Subsequent character input</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> * may narrow the selection further as long as one or more sub-elements match the string.</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc"> * This state is normally only useful and encountered on objects that implement Selection.</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc"> * In some cases the typeahead behavior may result in full or partial ¨completion¨ of </i></td></tr>
+<tr><th id="115">115</th><td><i class="doc"> * the data in the input field, in which case these input events may trigger text-changed</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> * events from the AtkText interface.  This state supplants<span class="command"> @ATK</span>_ROLE_AUTOCOMPLETE.</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_SELECTABLE_TEXT:Indicates that the object in question supports text selection. It should only be exposed on objects which implement the Text interface, in order to distinguish this state from<span class="command"> @ATK</span>_STATE_SELECTABLE, which infers that the object in question is a selectable child of an object which implements Selection. While similar, text selection and subelement selection are distinct operations.</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_DEFAULT: Indicates that the object is the "default" active component, i.e. the object which is activated by an end-user press of the "Enter" or "Return" key.  Typically a "close" or "submit" button.</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_ANIMATED: Indicates that the object changes its appearance dynamically as an inherent part of its presentation.  This state may come and go if an object is only temporarily animated on the way to a 'final' onscreen presentation.</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> * <span class="command">@note</span> some applications, notably content viewers, may not be able to detect</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"> * all kinds of animated content.  Therefore the absence of this state should not</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc"> * be taken as definitive evidence that the object's visual representation is</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> * static; this state is advisory.</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_VISITED: Indicates that the object (typically a hyperlink) has already been 'activated', and/or its backing data has already been downloaded, rendered, or otherwise "visited".</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_CHECKABLE: Indicates this object has the potential to be</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> *  checked, such as a checkbox or toggle-able table cell. <span class="command">@Since</span>:</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> *  ATK-2.12</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_HAS_POPUP: Indicates that the object has a popup context</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc"> * menu or sub-level menu which may or may not be showing. This means</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc"> * that activation renders conditional content.  Note that ordinary</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc"> * tooltips are not considered popups in this context. <span class="command">@Since</span>: ATK-2.12</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_HAS_TOOLTIP: Indicates this object has a tooltip. <span class="command">@Since</span>: ATK-2.16</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_READ_ONLY: Indicates that a widget which is ENABLED and SENSITIVE</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> * has a value which can be read, but not modified, by the user. Note that this</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> * state should only be applied to widget types whose value is normally directly</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> * user modifiable, such as check boxes, radio buttons, spin buttons, text input</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> * fields, and combo boxes, as a means to convey that the expected interaction</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> * with that widget is not possible. When the expected interaction with a</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> * widget does not include modification by the user, as is the case with</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc"> * labels and containers, ATK_STATE_READ_ONLY should not be applied. See also</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc"> * ATK_STATE_EDITABLE. <span class="command">@Since</span>: ATK-2-16</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> <span class="command">*@ATK</span>_STATE_LAST_DEFINED: Not a valid state, used for finding end of enumeration</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> *The possible types of states of an object</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="146">146</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="147">147</th><td>{</td></tr>
+<tr><th id="148">148</th><td>  <dfn class="enum" id="ATK_STATE_INVALID" title='ATK_STATE_INVALID' data-ref="ATK_STATE_INVALID">ATK_STATE_INVALID</dfn>,</td></tr>
+<tr><th id="149">149</th><td>  <dfn class="enum" id="ATK_STATE_ACTIVE" title='ATK_STATE_ACTIVE' data-ref="ATK_STATE_ACTIVE">ATK_STATE_ACTIVE</dfn>,</td></tr>
+<tr><th id="150">150</th><td>  <dfn class="enum" id="ATK_STATE_ARMED" title='ATK_STATE_ARMED' data-ref="ATK_STATE_ARMED">ATK_STATE_ARMED</dfn>,</td></tr>
+<tr><th id="151">151</th><td>  <dfn class="enum" id="ATK_STATE_BUSY" title='ATK_STATE_BUSY' data-ref="ATK_STATE_BUSY">ATK_STATE_BUSY</dfn>,</td></tr>
+<tr><th id="152">152</th><td>  <dfn class="enum" id="ATK_STATE_CHECKED" title='ATK_STATE_CHECKED' data-ref="ATK_STATE_CHECKED">ATK_STATE_CHECKED</dfn>,</td></tr>
+<tr><th id="153">153</th><td>  <dfn class="enum" id="ATK_STATE_DEFUNCT" title='ATK_STATE_DEFUNCT' data-ref="ATK_STATE_DEFUNCT">ATK_STATE_DEFUNCT</dfn>,</td></tr>
+<tr><th id="154">154</th><td>  <dfn class="enum" id="ATK_STATE_EDITABLE" title='ATK_STATE_EDITABLE' data-ref="ATK_STATE_EDITABLE">ATK_STATE_EDITABLE</dfn>,</td></tr>
+<tr><th id="155">155</th><td>  <dfn class="enum" id="ATK_STATE_ENABLED" title='ATK_STATE_ENABLED' data-ref="ATK_STATE_ENABLED">ATK_STATE_ENABLED</dfn>,</td></tr>
+<tr><th id="156">156</th><td>  <dfn class="enum" id="ATK_STATE_EXPANDABLE" title='ATK_STATE_EXPANDABLE' data-ref="ATK_STATE_EXPANDABLE">ATK_STATE_EXPANDABLE</dfn>,</td></tr>
+<tr><th id="157">157</th><td>  <dfn class="enum" id="ATK_STATE_EXPANDED" title='ATK_STATE_EXPANDED' data-ref="ATK_STATE_EXPANDED">ATK_STATE_EXPANDED</dfn>,</td></tr>
+<tr><th id="158">158</th><td>  <dfn class="enum" id="ATK_STATE_FOCUSABLE" title='ATK_STATE_FOCUSABLE' data-ref="ATK_STATE_FOCUSABLE">ATK_STATE_FOCUSABLE</dfn>,</td></tr>
+<tr><th id="159">159</th><td>  <dfn class="enum" id="ATK_STATE_FOCUSED" title='ATK_STATE_FOCUSED' data-ref="ATK_STATE_FOCUSED">ATK_STATE_FOCUSED</dfn>,</td></tr>
+<tr><th id="160">160</th><td>  <dfn class="enum" id="ATK_STATE_HORIZONTAL" title='ATK_STATE_HORIZONTAL' data-ref="ATK_STATE_HORIZONTAL">ATK_STATE_HORIZONTAL</dfn>,</td></tr>
+<tr><th id="161">161</th><td>  <dfn class="enum" id="ATK_STATE_ICONIFIED" title='ATK_STATE_ICONIFIED' data-ref="ATK_STATE_ICONIFIED">ATK_STATE_ICONIFIED</dfn>,</td></tr>
+<tr><th id="162">162</th><td>  <dfn class="enum" id="ATK_STATE_MODAL" title='ATK_STATE_MODAL' data-ref="ATK_STATE_MODAL">ATK_STATE_MODAL</dfn>,</td></tr>
+<tr><th id="163">163</th><td>  <dfn class="enum" id="ATK_STATE_MULTI_LINE" title='ATK_STATE_MULTI_LINE' data-ref="ATK_STATE_MULTI_LINE">ATK_STATE_MULTI_LINE</dfn>,</td></tr>
+<tr><th id="164">164</th><td>  <dfn class="enum" id="ATK_STATE_MULTISELECTABLE" title='ATK_STATE_MULTISELECTABLE' data-ref="ATK_STATE_MULTISELECTABLE">ATK_STATE_MULTISELECTABLE</dfn>,</td></tr>
+<tr><th id="165">165</th><td>  <dfn class="enum" id="ATK_STATE_OPAQUE" title='ATK_STATE_OPAQUE' data-ref="ATK_STATE_OPAQUE">ATK_STATE_OPAQUE</dfn>,</td></tr>
+<tr><th id="166">166</th><td>  <dfn class="enum" id="ATK_STATE_PRESSED" title='ATK_STATE_PRESSED' data-ref="ATK_STATE_PRESSED">ATK_STATE_PRESSED</dfn>,</td></tr>
+<tr><th id="167">167</th><td>  <dfn class="enum" id="ATK_STATE_RESIZABLE" title='ATK_STATE_RESIZABLE' data-ref="ATK_STATE_RESIZABLE">ATK_STATE_RESIZABLE</dfn>,</td></tr>
+<tr><th id="168">168</th><td>  <dfn class="enum" id="ATK_STATE_SELECTABLE" title='ATK_STATE_SELECTABLE' data-ref="ATK_STATE_SELECTABLE">ATK_STATE_SELECTABLE</dfn>,</td></tr>
+<tr><th id="169">169</th><td>  <dfn class="enum" id="ATK_STATE_SELECTED" title='ATK_STATE_SELECTED' data-ref="ATK_STATE_SELECTED">ATK_STATE_SELECTED</dfn>,</td></tr>
+<tr><th id="170">170</th><td>  <dfn class="enum" id="ATK_STATE_SENSITIVE" title='ATK_STATE_SENSITIVE' data-ref="ATK_STATE_SENSITIVE">ATK_STATE_SENSITIVE</dfn>,</td></tr>
+<tr><th id="171">171</th><td>  <dfn class="enum" id="ATK_STATE_SHOWING" title='ATK_STATE_SHOWING' data-ref="ATK_STATE_SHOWING">ATK_STATE_SHOWING</dfn>,</td></tr>
+<tr><th id="172">172</th><td>  <dfn class="enum" id="ATK_STATE_SINGLE_LINE" title='ATK_STATE_SINGLE_LINE' data-ref="ATK_STATE_SINGLE_LINE">ATK_STATE_SINGLE_LINE</dfn>,</td></tr>
+<tr><th id="173">173</th><td>  <dfn class="enum" id="ATK_STATE_STALE" title='ATK_STATE_STALE' data-ref="ATK_STATE_STALE">ATK_STATE_STALE</dfn>,</td></tr>
+<tr><th id="174">174</th><td>  <dfn class="enum" id="ATK_STATE_TRANSIENT" title='ATK_STATE_TRANSIENT' data-ref="ATK_STATE_TRANSIENT">ATK_STATE_TRANSIENT</dfn>,</td></tr>
+<tr><th id="175">175</th><td>  <dfn class="enum" id="ATK_STATE_VERTICAL" title='ATK_STATE_VERTICAL' data-ref="ATK_STATE_VERTICAL">ATK_STATE_VERTICAL</dfn>,</td></tr>
+<tr><th id="176">176</th><td>  <dfn class="enum" id="ATK_STATE_VISIBLE" title='ATK_STATE_VISIBLE' data-ref="ATK_STATE_VISIBLE">ATK_STATE_VISIBLE</dfn>,</td></tr>
+<tr><th id="177">177</th><td>  <dfn class="enum" id="ATK_STATE_MANAGES_DESCENDANTS" title='ATK_STATE_MANAGES_DESCENDANTS' data-ref="ATK_STATE_MANAGES_DESCENDANTS">ATK_STATE_MANAGES_DESCENDANTS</dfn>,</td></tr>
+<tr><th id="178">178</th><td>  <dfn class="enum" id="ATK_STATE_INDETERMINATE" title='ATK_STATE_INDETERMINATE' data-ref="ATK_STATE_INDETERMINATE">ATK_STATE_INDETERMINATE</dfn>,</td></tr>
+<tr><th id="179">179</th><td>  <dfn class="enum" id="ATK_STATE_TRUNCATED" title='ATK_STATE_TRUNCATED' data-ref="ATK_STATE_TRUNCATED">ATK_STATE_TRUNCATED</dfn>,</td></tr>
+<tr><th id="180">180</th><td>  <dfn class="enum" id="ATK_STATE_REQUIRED" title='ATK_STATE_REQUIRED' data-ref="ATK_STATE_REQUIRED">ATK_STATE_REQUIRED</dfn>,</td></tr>
+<tr><th id="181">181</th><td>  <dfn class="enum" id="ATK_STATE_INVALID_ENTRY" title='ATK_STATE_INVALID_ENTRY' data-ref="ATK_STATE_INVALID_ENTRY">ATK_STATE_INVALID_ENTRY</dfn>,</td></tr>
+<tr><th id="182">182</th><td>  <dfn class="enum" id="ATK_STATE_SUPPORTS_AUTOCOMPLETION" title='ATK_STATE_SUPPORTS_AUTOCOMPLETION' data-ref="ATK_STATE_SUPPORTS_AUTOCOMPLETION">ATK_STATE_SUPPORTS_AUTOCOMPLETION</dfn>,</td></tr>
+<tr><th id="183">183</th><td>  <dfn class="enum" id="ATK_STATE_SELECTABLE_TEXT" title='ATK_STATE_SELECTABLE_TEXT' data-ref="ATK_STATE_SELECTABLE_TEXT">ATK_STATE_SELECTABLE_TEXT</dfn>,</td></tr>
+<tr><th id="184">184</th><td>  <dfn class="enum" id="ATK_STATE_DEFAULT" title='ATK_STATE_DEFAULT' data-ref="ATK_STATE_DEFAULT">ATK_STATE_DEFAULT</dfn>,</td></tr>
+<tr><th id="185">185</th><td>  <dfn class="enum" id="ATK_STATE_ANIMATED" title='ATK_STATE_ANIMATED' data-ref="ATK_STATE_ANIMATED">ATK_STATE_ANIMATED</dfn>,</td></tr>
+<tr><th id="186">186</th><td>  <dfn class="enum" id="ATK_STATE_VISITED" title='ATK_STATE_VISITED' data-ref="ATK_STATE_VISITED">ATK_STATE_VISITED</dfn>,</td></tr>
+<tr><th id="187">187</th><td>  <dfn class="enum" id="ATK_STATE_CHECKABLE" title='ATK_STATE_CHECKABLE' data-ref="ATK_STATE_CHECKABLE">ATK_STATE_CHECKABLE</dfn>,</td></tr>
+<tr><th id="188">188</th><td>  <dfn class="enum" id="ATK_STATE_HAS_POPUP" title='ATK_STATE_HAS_POPUP' data-ref="ATK_STATE_HAS_POPUP">ATK_STATE_HAS_POPUP</dfn>,</td></tr>
+<tr><th id="189">189</th><td>  <dfn class="enum" id="ATK_STATE_HAS_TOOLTIP" title='ATK_STATE_HAS_TOOLTIP' data-ref="ATK_STATE_HAS_TOOLTIP">ATK_STATE_HAS_TOOLTIP</dfn>,</td></tr>
+<tr><th id="190">190</th><td>  <dfn class="enum" id="ATK_STATE_READ_ONLY" title='ATK_STATE_READ_ONLY' data-ref="ATK_STATE_READ_ONLY">ATK_STATE_READ_ONLY</dfn>,</td></tr>
+<tr><th id="191">191</th><td>  <dfn class="enum" id="ATK_STATE_LAST_DEFINED" title='ATK_STATE_LAST_DEFINED' data-ref="ATK_STATE_LAST_DEFINED">ATK_STATE_LAST_DEFINED</dfn></td></tr>
+<tr><th id="192">192</th><td>} <dfn class="typedef" id="AtkStateType" title='AtkStateType' data-type='enum AtkStateType' data-ref="AtkStateType">AtkStateType</dfn>;</td></tr>
+<tr><th id="193">193</th><td></td></tr>
+<tr><th id="194">194</th><td><b>typedef</b> <span class='typedef' title='guint64' data-type='unsigned long' data-ref="guint64">guint64</span>      <dfn class="typedef" id="AtkState" title='AtkState' data-type='guint64' data-ref="AtkState">AtkState</dfn>;</td></tr>
+<tr><th id="195">195</th><td></td></tr>
+<tr><th id="196">196</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="197">197</th><td><a class="typedef" href="#AtkStateType" title='AtkStateType' data-type='enum AtkStateType' data-ref="AtkStateType">AtkStateType</a> <dfn class="decl" id="atk_state_type_register" title='atk_state_type_register' data-ref="atk_state_type_register">atk_state_type_register</dfn>            (<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col5 decl" id="16415name" title='name' data-type='const gchar *' data-ref="16415name">name</dfn>);</td></tr>
+<tr><th id="198">198</th><td></td></tr>
+<tr><th id="199">199</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="200">200</th><td><em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>*          <dfn class="decl" id="atk_state_type_get_name" title='atk_state_type_get_name' data-ref="atk_state_type_get_name">atk_state_type_get_name</dfn>   (<a class="typedef" href="#AtkStateType" title='AtkStateType' data-type='enum AtkStateType' data-ref="AtkStateType">AtkStateType</a> <dfn class="local col6 decl" id="16416type" title='type' data-type='AtkStateType' data-ref="16416type">type</dfn>);</td></tr>
+<tr><th id="201">201</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="202">202</th><td><a class="typedef" href="#AtkStateType" title='AtkStateType' data-type='enum AtkStateType' data-ref="AtkStateType">AtkStateType</a>          <dfn class="decl" id="atk_state_type_for_name" title='atk_state_type_for_name' data-ref="atk_state_type_for_name">atk_state_type_for_name</dfn>   (<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>  *<dfn class="local col7 decl" id="16417name" title='name' data-type='const gchar *' data-ref="16417name">name</dfn>);</td></tr>
+<tr><th id="203">203</th><td></td></tr>
+<tr><th id="204">204</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="205">205</th><td></td></tr>
+<tr><th id="206">206</th><td><u>#<span data-ppcond="20">endif</span> /* __ATK_STATE_H__ */</u></td></tr>
+<tr><th id="207">207</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

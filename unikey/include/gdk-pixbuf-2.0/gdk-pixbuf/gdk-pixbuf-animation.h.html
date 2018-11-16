@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gdk-pixbuf-animation.h source code [include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-animation.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-animation.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gdk-pixbuf-2.0</a>/<a href='./'>gdk-pixbuf</a>/<a href='gdk-pixbuf-animation.h.html'>gdk-pixbuf-animation.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* -*- Mode: C; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 8 -*- */</i></td></tr>
+<tr><th id="2">2</th><td><i>/* GdkPixbuf library - Animation support</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 1999 The Free Software Foundation</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * Authors: Mark Crichton &lt;crichton@gimp.org&gt;</i></td></tr>
+<tr><th id="7">7</th><td><i> *          Miguel de Icaza &lt;miguel@gnu.org&gt;</i></td></tr>
+<tr><th id="8">8</th><td><i> *          Federico Mena-Quintero &lt;federico@gimp.org&gt;</i></td></tr>
+<tr><th id="9">9</th><td><i> *          Havoc Pennington &lt;hp@redhat.com&gt;</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="12">12</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="13">13</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="14">14</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="15">15</th><td><i> *</i></td></tr>
+<tr><th id="16">16</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="17">17</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="18">18</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="19">19</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="20">20</th><td><i> *</i></td></tr>
+<tr><th id="21">21</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="22">22</th><td><i> * License along with this library; if not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="23">23</th><td><i> */</i></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="25">ifndef</span> <span class="macro" data-ref="_M/GDK_PIXBUF_ANIMATION_H">GDK_PIXBUF_ANIMATION_H</span></u></td></tr>
+<tr><th id="26">26</th><td><u>#define <dfn class="macro" id="_M/GDK_PIXBUF_ANIMATION_H" data-ref="_M/GDK_PIXBUF_ANIMATION_H">GDK_PIXBUF_ANIMATION_H</dfn></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#<span data-ppcond="28">if</span> defined(<span class="macro" data-ref="_M/GDK_PIXBUF_DISABLE_SINGLE_INCLUDES">GDK_PIXBUF_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gdk-pixbuf.h.html#27" data-ref="_M/GDK_PIXBUF_H_INSIDE">GDK_PIXBUF_H_INSIDE</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GDK_PIXBUF_COMPILATION">GDK_PIXBUF_COMPILATION</span>)</u></td></tr>
+<tr><th id="29">29</th><td><u>#error "Only &lt;gdk-pixbuf/gdk-pixbuf.h&gt; can be included directly."</u></td></tr>
+<tr><th id="30">30</th><td><u>#<span data-ppcond="28">endif</span></u></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><u>#include <a href="../../glib-2.0/glib-object.h.html">&lt;glib-object.h&gt;</a></u></td></tr>
+<tr><th id="33">33</th><td><u>#include <a href="gdk-pixbuf-core.h.html">&lt;gdk-pixbuf/gdk-pixbuf-core.h&gt;</a></u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><i>/* Animation support */</i></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * GdkPixbufAnimation:</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> * An opaque struct representing an animation.</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="44">44</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_GdkPixbufAnimation" title='_GdkPixbufAnimation' data-ref="_GdkPixbufAnimation"><a class="type" href="#_GdkPixbufAnimation" title='_GdkPixbufAnimation' data-ref="_GdkPixbufAnimation">_GdkPixbufAnimation</a></dfn> <dfn class="typedef" id="GdkPixbufAnimation" title='GdkPixbufAnimation' data-type='struct _GdkPixbufAnimation' data-ref="GdkPixbufAnimation">GdkPixbufAnimation</dfn>;</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> * GdkPixbufAnimationIter:</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> * An opaque struct representing an iterator which points to a</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> * certain position in an animation.</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="53">53</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_GdkPixbufAnimationIter" title='_GdkPixbufAnimationIter' data-ref="_GdkPixbufAnimationIter"><a class="type" href="#_GdkPixbufAnimationIter" title='_GdkPixbufAnimationIter' data-ref="_GdkPixbufAnimationIter">_GdkPixbufAnimationIter</a></dfn> <dfn class="typedef" id="GdkPixbufAnimationIter" title='GdkPixbufAnimationIter' data-type='struct _GdkPixbufAnimationIter' data-ref="GdkPixbufAnimationIter">GdkPixbufAnimationIter</dfn>;</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><u>#define <dfn class="macro" id="_M/GDK_TYPE_PIXBUF_ANIMATION" data-ref="_M/GDK_TYPE_PIXBUF_ANIMATION">GDK_TYPE_PIXBUF_ANIMATION</dfn>              (gdk_pixbuf_animation_get_type ())</u></td></tr>
+<tr><th id="56">56</th><td><u>#define <dfn class="macro" id="_M/GDK_PIXBUF_ANIMATION" data-ref="_M/GDK_PIXBUF_ANIMATION">GDK_PIXBUF_ANIMATION</dfn>(object)           (G_TYPE_CHECK_INSTANCE_CAST ((object), GDK_TYPE_PIXBUF_ANIMATION, GdkPixbufAnimation))</u></td></tr>
+<tr><th id="57">57</th><td><u>#define <dfn class="macro" id="_M/GDK_IS_PIXBUF_ANIMATION" data-ref="_M/GDK_IS_PIXBUF_ANIMATION">GDK_IS_PIXBUF_ANIMATION</dfn>(object)        (G_TYPE_CHECK_INSTANCE_TYPE ((object), GDK_TYPE_PIXBUF_ANIMATION))</u></td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><u>#define <dfn class="macro" id="_M/GDK_TYPE_PIXBUF_ANIMATION_ITER" data-ref="_M/GDK_TYPE_PIXBUF_ANIMATION_ITER">GDK_TYPE_PIXBUF_ANIMATION_ITER</dfn>              (gdk_pixbuf_animation_iter_get_type ())</u></td></tr>
+<tr><th id="60">60</th><td><u>#define <dfn class="macro" id="_M/GDK_PIXBUF_ANIMATION_ITER" data-ref="_M/GDK_PIXBUF_ANIMATION_ITER">GDK_PIXBUF_ANIMATION_ITER</dfn>(object)           (G_TYPE_CHECK_INSTANCE_CAST ((object), GDK_TYPE_PIXBUF_ANIMATION_ITER, GdkPixbufAnimationIter))</u></td></tr>
+<tr><th id="61">61</th><td><u>#define <dfn class="macro" id="_M/GDK_IS_PIXBUF_ANIMATION_ITER" data-ref="_M/GDK_IS_PIXBUF_ANIMATION_ITER">GDK_IS_PIXBUF_ANIMATION_ITER</dfn>(object)        (G_TYPE_CHECK_INSTANCE_TYPE ((object), GDK_TYPE_PIXBUF_ANIMATION_ITER))</u></td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="64">64</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>               <dfn class="decl" id="gdk_pixbuf_animation_get_type" title='gdk_pixbuf_animation_get_type' data-ref="gdk_pixbuf_animation_get_type">gdk_pixbuf_animation_get_type</dfn>        (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td><u>#<span data-ppcond="66">ifdef</span> <span class="macro" data-ref="_M/G_OS_WIN32">G_OS_WIN32</span></u></td></tr>
+<tr><th id="67">67</th><td><i>/* API/ABI compat, see gdk-pixbuf-core.h for details */</i></td></tr>
+<tr><th id="68">68</th><td>GDK_PIXBUF_AVAILABLE_IN_ALL</td></tr>
+<tr><th id="69">69</th><td>GdkPixbufAnimation *gdk_pixbuf_animation_new_from_file_utf8   (<em>const</em> <em>char</em>         *filename,</td></tr>
+<tr><th id="70">70</th><td>                                                               GError            **error);</td></tr>
+<tr><th id="71">71</th><td><u>#<span data-ppcond="66">endif</span></u></td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="74">74</th><td><a class="typedef" href="#GdkPixbufAnimation" title='GdkPixbufAnimation' data-type='struct _GdkPixbufAnimation' data-ref="GdkPixbufAnimation">GdkPixbufAnimation</a> *<dfn class="decl" id="gdk_pixbuf_animation_new_from_file" title='gdk_pixbuf_animation_new_from_file' data-ref="gdk_pixbuf_animation_new_from_file">gdk_pixbuf_animation_new_from_file</dfn>   (<em>const</em> <em>char</em>         *<dfn class="local col9 decl" id="13959filename" title='filename' data-type='const char *' data-ref="13959filename">filename</dfn>,</td></tr>
+<tr><th id="75">75</th><td>                                                          <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>            **<dfn class="local col0 decl" id="13960error" title='error' data-type='GError **' data-ref="13960error">error</dfn>);</td></tr>
+<tr><th id="76">76</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#586" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_28">GDK_PIXBUF_AVAILABLE_IN_2_28</a></td></tr>
+<tr><th id="77">77</th><td><a class="typedef" href="#GdkPixbufAnimation" title='GdkPixbufAnimation' data-type='struct _GdkPixbufAnimation' data-ref="GdkPixbufAnimation">GdkPixbufAnimation</a> *<dfn class="decl" id="gdk_pixbuf_animation_new_from_stream" title='gdk_pixbuf_animation_new_from_stream' data-ref="gdk_pixbuf_animation_new_from_stream">gdk_pixbuf_animation_new_from_stream</dfn> (<a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GInputStream" title='GInputStream' data-type='struct _GInputStream' data-ref="GInputStream">GInputStream</a>       *<dfn class="local col1 decl" id="13961stream" title='stream' data-type='GInputStream *' data-ref="13961stream">stream</dfn>,</td></tr>
+<tr><th id="78">78</th><td>                                                          <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GCancellable" title='GCancellable' data-type='struct _GCancellable' data-ref="GCancellable">GCancellable</a>       *<dfn class="local col2 decl" id="13962cancellable" title='cancellable' data-type='GCancellable *' data-ref="13962cancellable">cancellable</dfn>,</td></tr>
+<tr><th id="79">79</th><td>                                                          <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>            **<dfn class="local col3 decl" id="13963error" title='error' data-type='GError **' data-ref="13963error">error</dfn>);</td></tr>
+<tr><th id="80">80</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#586" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_28">GDK_PIXBUF_AVAILABLE_IN_2_28</a></td></tr>
+<tr><th id="81">81</th><td><em>void</em>                <dfn class="decl" id="gdk_pixbuf_animation_new_from_stream_async" title='gdk_pixbuf_animation_new_from_stream_async' data-ref="gdk_pixbuf_animation_new_from_stream_async">gdk_pixbuf_animation_new_from_stream_async</dfn> (<a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GInputStream" title='GInputStream' data-type='struct _GInputStream' data-ref="GInputStream">GInputStream</a> *<dfn class="local col4 decl" id="13964stream" title='stream' data-type='GInputStream *' data-ref="13964stream">stream</dfn>,</td></tr>
+<tr><th id="82">82</th><td>                                                          <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GCancellable" title='GCancellable' data-type='struct _GCancellable' data-ref="GCancellable">GCancellable</a>       *<dfn class="local col5 decl" id="13965cancellable" title='cancellable' data-type='GCancellable *' data-ref="13965cancellable">cancellable</dfn>,</td></tr>
+<tr><th id="83">83</th><td>                                                          <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GAsyncReadyCallback" title='GAsyncReadyCallback' data-type='void (*)(GObject *, GAsyncResult *, gpointer)' data-ref="GAsyncReadyCallback">GAsyncReadyCallback</a> <dfn class="local col6 decl" id="13966callback" title='callback' data-type='GAsyncReadyCallback' data-ref="13966callback">callback</dfn>,</td></tr>
+<tr><th id="84">84</th><td>                                                          <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>            <dfn class="local col7 decl" id="13967user_data" title='user_data' data-type='gpointer' data-ref="13967user_data">user_data</dfn>);</td></tr>
+<tr><th id="85">85</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#586" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_28">GDK_PIXBUF_AVAILABLE_IN_2_28</a></td></tr>
+<tr><th id="86">86</th><td><a class="typedef" href="#GdkPixbufAnimation" title='GdkPixbufAnimation' data-type='struct _GdkPixbufAnimation' data-ref="GdkPixbufAnimation">GdkPixbufAnimation</a> *<dfn class="decl" id="gdk_pixbuf_animation_new_from_stream_finish" title='gdk_pixbuf_animation_new_from_stream_finish' data-ref="gdk_pixbuf_animation_new_from_stream_finish">gdk_pixbuf_animation_new_from_stream_finish</dfn> (<a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GAsyncResult" title='GAsyncResult' data-type='struct _GAsyncResult' data-ref="GAsyncResult">GAsyncResult</a>*<dfn class="local col8 decl" id="13968async_result" title='async_result' data-type='GAsyncResult *' data-ref="13968async_result">async_result</dfn>,</td></tr>
+<tr><th id="87">87</th><td>                                                          <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>            **<dfn class="local col9 decl" id="13969error" title='error' data-type='GError **' data-ref="13969error">error</dfn>);</td></tr>
+<tr><th id="88">88</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#586" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_28">GDK_PIXBUF_AVAILABLE_IN_2_28</a></td></tr>
+<tr><th id="89">89</th><td><a class="typedef" href="#GdkPixbufAnimation" title='GdkPixbufAnimation' data-type='struct _GdkPixbufAnimation' data-ref="GdkPixbufAnimation">GdkPixbufAnimation</a> *<dfn class="decl" id="gdk_pixbuf_animation_new_from_resource" title='gdk_pixbuf_animation_new_from_resource' data-ref="gdk_pixbuf_animation_new_from_resource">gdk_pixbuf_animation_new_from_resource</dfn>(<em>const</em> <em>char</em>        *<dfn class="local col0 decl" id="13970resource_path" title='resource_path' data-type='const char *' data-ref="13970resource_path">resource_path</dfn>,</td></tr>
+<tr><th id="90">90</th><td>                                                          <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>            **<dfn class="local col1 decl" id="13971error" title='error' data-type='GError **' data-ref="13971error">error</dfn>);</td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td><u>#<span data-ppcond="92">ifndef</span> <span class="macro" data-ref="_M/GDK_PIXBUF_DISABLE_DEPRECATED">GDK_PIXBUF_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#323" title="__attribute__((__deprecated__)) extern" data-ref="_M/GDK_PIXBUF_DEPRECATED_IN_2_0_FOR">GDK_PIXBUF_DEPRECATED_IN_2_0_FOR</a>(g_object_ref)</td></tr>
+<tr><th id="95">95</th><td><a class="typedef" href="#GdkPixbufAnimation" title='GdkPixbufAnimation' data-type='struct _GdkPixbufAnimation' data-ref="GdkPixbufAnimation">GdkPixbufAnimation</a> *<dfn class="decl" id="gdk_pixbuf_animation_ref" title='gdk_pixbuf_animation_ref' data-ref="gdk_pixbuf_animation_ref">gdk_pixbuf_animation_ref</dfn>             (<a class="typedef" href="#GdkPixbufAnimation" title='GdkPixbufAnimation' data-type='struct _GdkPixbufAnimation' data-ref="GdkPixbufAnimation">GdkPixbufAnimation</a> *<dfn class="local col2 decl" id="13972animation" title='animation' data-type='GdkPixbufAnimation *' data-ref="13972animation">animation</dfn>);</td></tr>
+<tr><th id="96">96</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#323" title="__attribute__((__deprecated__)) extern" data-ref="_M/GDK_PIXBUF_DEPRECATED_IN_2_0_FOR">GDK_PIXBUF_DEPRECATED_IN_2_0_FOR</a>(g_object_unref)</td></tr>
+<tr><th id="97">97</th><td><em>void</em>                <dfn class="decl" id="gdk_pixbuf_animation_unref" title='gdk_pixbuf_animation_unref' data-ref="gdk_pixbuf_animation_unref">gdk_pixbuf_animation_unref</dfn>           (<a class="typedef" href="#GdkPixbufAnimation" title='GdkPixbufAnimation' data-type='struct _GdkPixbufAnimation' data-ref="GdkPixbufAnimation">GdkPixbufAnimation</a> *<dfn class="local col3 decl" id="13973animation" title='animation' data-type='GdkPixbufAnimation *' data-ref="13973animation">animation</dfn>);</td></tr>
+<tr><th id="98">98</th><td><u>#<span data-ppcond="92">endif</span></u></td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="101">101</th><td><em>int</em>                 <dfn class="decl" id="gdk_pixbuf_animation_get_width" title='gdk_pixbuf_animation_get_width' data-ref="gdk_pixbuf_animation_get_width">gdk_pixbuf_animation_get_width</dfn>       (<a class="typedef" href="#GdkPixbufAnimation" title='GdkPixbufAnimation' data-type='struct _GdkPixbufAnimation' data-ref="GdkPixbufAnimation">GdkPixbufAnimation</a> *<dfn class="local col4 decl" id="13974animation" title='animation' data-type='GdkPixbufAnimation *' data-ref="13974animation">animation</dfn>);</td></tr>
+<tr><th id="102">102</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="103">103</th><td><em>int</em>                 <dfn class="decl" id="gdk_pixbuf_animation_get_height" title='gdk_pixbuf_animation_get_height' data-ref="gdk_pixbuf_animation_get_height">gdk_pixbuf_animation_get_height</dfn>      (<a class="typedef" href="#GdkPixbufAnimation" title='GdkPixbufAnimation' data-type='struct _GdkPixbufAnimation' data-ref="GdkPixbufAnimation">GdkPixbufAnimation</a> *<dfn class="local col5 decl" id="13975animation" title='animation' data-type='GdkPixbufAnimation *' data-ref="13975animation">animation</dfn>);</td></tr>
+<tr><th id="104">104</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="105">105</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>            <dfn class="decl" id="gdk_pixbuf_animation_is_static_image" title='gdk_pixbuf_animation_is_static_image' data-ref="gdk_pixbuf_animation_is_static_image">gdk_pixbuf_animation_is_static_image</dfn>  (<a class="typedef" href="#GdkPixbufAnimation" title='GdkPixbufAnimation' data-type='struct _GdkPixbufAnimation' data-ref="GdkPixbufAnimation">GdkPixbufAnimation</a> *<dfn class="local col6 decl" id="13976animation" title='animation' data-type='GdkPixbufAnimation *' data-ref="13976animation">animation</dfn>);</td></tr>
+<tr><th id="106">106</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="107">107</th><td><a class="typedef" href="gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>          *<dfn class="decl" id="gdk_pixbuf_animation_get_static_image" title='gdk_pixbuf_animation_get_static_image' data-ref="gdk_pixbuf_animation_get_static_image">gdk_pixbuf_animation_get_static_image</dfn> (<a class="typedef" href="#GdkPixbufAnimation" title='GdkPixbufAnimation' data-type='struct _GdkPixbufAnimation' data-ref="GdkPixbufAnimation">GdkPixbufAnimation</a> *<dfn class="local col7 decl" id="13977animation" title='animation' data-type='GdkPixbufAnimation *' data-ref="13977animation">animation</dfn>);</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="110">110</th><td><a class="typedef" href="#GdkPixbufAnimationIter" title='GdkPixbufAnimationIter' data-type='struct _GdkPixbufAnimationIter' data-ref="GdkPixbufAnimationIter">GdkPixbufAnimationIter</a> *<dfn class="decl" id="gdk_pixbuf_animation_get_iter" title='gdk_pixbuf_animation_get_iter' data-ref="gdk_pixbuf_animation_get_iter">gdk_pixbuf_animation_get_iter</dfn>                        (<a class="typedef" href="#GdkPixbufAnimation" title='GdkPixbufAnimation' data-type='struct _GdkPixbufAnimation' data-ref="GdkPixbufAnimation">GdkPixbufAnimation</a>     *<dfn class="local col8 decl" id="13978animation" title='animation' data-type='GdkPixbufAnimation *' data-ref="13978animation">animation</dfn>,</td></tr>
+<tr><th id="111">111</th><td>                                                                              <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#GTimeVal" title='GTimeVal' data-type='struct _GTimeVal' data-ref="GTimeVal">GTimeVal</a>         *<dfn class="local col9 decl" id="13979start_time" title='start_time' data-type='const GTimeVal *' data-ref="13979start_time">start_time</dfn>);</td></tr>
+<tr><th id="112">112</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="113">113</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>                   <dfn class="decl" id="gdk_pixbuf_animation_iter_get_type" title='gdk_pixbuf_animation_iter_get_type' data-ref="gdk_pixbuf_animation_iter_get_type">gdk_pixbuf_animation_iter_get_type</dfn>                   (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="114">114</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="115">115</th><td><em>int</em>                     <dfn class="decl" id="gdk_pixbuf_animation_iter_get_delay_time" title='gdk_pixbuf_animation_iter_get_delay_time' data-ref="gdk_pixbuf_animation_iter_get_delay_time">gdk_pixbuf_animation_iter_get_delay_time</dfn>             (<a class="typedef" href="#GdkPixbufAnimationIter" title='GdkPixbufAnimationIter' data-type='struct _GdkPixbufAnimationIter' data-ref="GdkPixbufAnimationIter">GdkPixbufAnimationIter</a> *<dfn class="local col0 decl" id="13980iter" title='iter' data-type='GdkPixbufAnimationIter *' data-ref="13980iter">iter</dfn>);</td></tr>
+<tr><th id="116">116</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="117">117</th><td><a class="typedef" href="gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>              *<dfn class="decl" id="gdk_pixbuf_animation_iter_get_pixbuf" title='gdk_pixbuf_animation_iter_get_pixbuf' data-ref="gdk_pixbuf_animation_iter_get_pixbuf">gdk_pixbuf_animation_iter_get_pixbuf</dfn>                 (<a class="typedef" href="#GdkPixbufAnimationIter" title='GdkPixbufAnimationIter' data-type='struct _GdkPixbufAnimationIter' data-ref="GdkPixbufAnimationIter">GdkPixbufAnimationIter</a> *<dfn class="local col1 decl" id="13981iter" title='iter' data-type='GdkPixbufAnimationIter *' data-ref="13981iter">iter</dfn>);</td></tr>
+<tr><th id="118">118</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="119">119</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>                <dfn class="decl" id="gdk_pixbuf_animation_iter_on_currently_loading_frame" title='gdk_pixbuf_animation_iter_on_currently_loading_frame' data-ref="gdk_pixbuf_animation_iter_on_currently_loading_frame">gdk_pixbuf_animation_iter_on_currently_loading_frame</dfn> (<a class="typedef" href="#GdkPixbufAnimationIter" title='GdkPixbufAnimationIter' data-type='struct _GdkPixbufAnimationIter' data-ref="GdkPixbufAnimationIter">GdkPixbufAnimationIter</a> *<dfn class="local col2 decl" id="13982iter" title='iter' data-type='GdkPixbufAnimationIter *' data-ref="13982iter">iter</dfn>);</td></tr>
+<tr><th id="120">120</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="121">121</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>                <dfn class="decl" id="gdk_pixbuf_animation_iter_advance" title='gdk_pixbuf_animation_iter_advance' data-ref="gdk_pixbuf_animation_iter_advance">gdk_pixbuf_animation_iter_advance</dfn>                    (<a class="typedef" href="#GdkPixbufAnimationIter" title='GdkPixbufAnimationIter' data-type='struct _GdkPixbufAnimationIter' data-ref="GdkPixbufAnimationIter">GdkPixbufAnimationIter</a> *<dfn class="local col3 decl" id="13983iter" title='iter' data-type='GdkPixbufAnimationIter *' data-ref="13983iter">iter</dfn>,</td></tr>
+<tr><th id="122">122</th><td>                                                                              <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#GTimeVal" title='GTimeVal' data-type='struct _GTimeVal' data-ref="GTimeVal">GTimeVal</a>         *<dfn class="local col4 decl" id="13984current_time" title='current_time' data-type='const GTimeVal *' data-ref="13984current_time">current_time</dfn>);</td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td><u>#<span data-ppcond="125">ifdef</span> <span class="macro" data-ref="_M/GDK_PIXBUF_ENABLE_BACKEND">GDK_PIXBUF_ENABLE_BACKEND</span></u></td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td></td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc"> * GdkPixbufAnimationClass:</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc"> *<span class="command"> @parent</span>_class: the parent class</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> *<span class="command"> @is</span>_static_image: returns whether the given animation is just a static image.</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> *<span class="command"> @get</span>_static_image: returns a static image representing the given animation.</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> *<span class="command"> @get</span>_size: fills<span class="command"> @width</span> and<span class="command"> @height</span> with the frame size of the animation.</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> *<span class="command"> @get</span>_iter: returns an iterator for the given animation.</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> * Modules supporting animations must derive a type from </i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> * #GdkPixbufAnimation, providing suitable implementations of the </i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> * virtual functions.</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="141">141</th><td><b>typedef</b> <b>struct</b> _GdkPixbufAnimationClass GdkPixbufAnimationClass;</td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td><u>#define GDK_PIXBUF_ANIMATION_CLASS(klass)      (G_TYPE_CHECK_CLASS_CAST ((klass), GDK_TYPE_PIXBUF_ANIMATION, GdkPixbufAnimationClass))</u></td></tr>
+<tr><th id="144">144</th><td><u>#define GDK_IS_PIXBUF_ANIMATION_CLASS(klass)   (G_TYPE_CHECK_CLASS_TYPE ((klass), GDK_TYPE_PIXBUF_ANIMATION))</u></td></tr>
+<tr><th id="145">145</th><td><u>#define GDK_PIXBUF_ANIMATION_GET_CLASS(obj)    (G_TYPE_INSTANCE_GET_CLASS ((obj), GDK_TYPE_PIXBUF_ANIMATION, GdkPixbufAnimationClass))</u></td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td><i>/* Private part of the GdkPixbufAnimation structure */</i></td></tr>
+<tr><th id="148">148</th><td><b>struct</b> _GdkPixbufAnimation {</td></tr>
+<tr><th id="149">149</th><td>        GObject parent_instance;</td></tr>
+<tr><th id="150">150</th><td></td></tr>
+<tr><th id="151">151</th><td>};</td></tr>
+<tr><th id="152">152</th><td></td></tr>
+<tr><th id="153">153</th><td><b>struct</b> _GdkPixbufAnimationClass {</td></tr>
+<tr><th id="154">154</th><td>        GObjectClass parent_class;</td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td>        <i>/*&lt; public &gt;*/</i></td></tr>
+<tr><th id="157">157</th><td></td></tr>
+<tr><th id="158">158</th><td>        gboolean                (*is_static_image)  (GdkPixbufAnimation *anim);</td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td>        GdkPixbuf*              (*get_static_image) (GdkPixbufAnimation *anim);</td></tr>
+<tr><th id="161">161</th><td>        </td></tr>
+<tr><th id="162">162</th><td>        <em>void</em>                    (*get_size) (GdkPixbufAnimation *anim,</td></tr>
+<tr><th id="163">163</th><td>                                             <em>int</em>                 *width,</td></tr>
+<tr><th id="164">164</th><td>                                             <em>int</em>                 *height);</td></tr>
+<tr><th id="165">165</th><td>        </td></tr>
+<tr><th id="166">166</th><td>        GdkPixbufAnimationIter* (*get_iter) (GdkPixbufAnimation *anim,</td></tr>
+<tr><th id="167">167</th><td>                                             <em>const</em> GTimeVal     *start_time);</td></tr>
+<tr><th id="168">168</th><td></td></tr>
+<tr><th id="169">169</th><td>};</td></tr>
+<tr><th id="170">170</th><td></td></tr>
+<tr><th id="171">171</th><td></td></tr>
+<tr><th id="172">172</th><td></td></tr>
+<tr><th id="173">173</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="174">174</th><td><i class="doc"> * GdkPixbufAnimationIterClass:</i></td></tr>
+<tr><th id="175">175</th><td><i class="doc"> *<span class="command"> @parent</span>_class: the parent class</i></td></tr>
+<tr><th id="176">176</th><td><i class="doc"> *<span class="command"> @get</span>_delay_time: returns the time in milliseconds that the current frame </i></td></tr>
+<tr><th id="177">177</th><td><i class="doc"> *  should be shown.</i></td></tr>
+<tr><th id="178">178</th><td><i class="doc"> *<span class="command"> @get</span>_pixbuf: returns the current frame.</i></td></tr>
+<tr><th id="179">179</th><td><i class="doc"> * <span class="command">@on</span>_<span class="verb">currently_loading_frame: returns whether the current frame of @iter is </span></i></td></tr>
+<tr><th id="180">180</th><td><i class="doc"> *  being loaded.</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc"> *<span class="command"> @advance</span>: advances the iterator to<span class="command"> @current</span>_time, possibly changing the </i></td></tr>
+<tr><th id="182">182</th><td><i class="doc"> *  current frame.</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="184">184</th><td><i class="doc"> * Modules supporting animations must derive a type from </i></td></tr>
+<tr><th id="185">185</th><td><i class="doc"> * #GdkPixbufAnimationIter, providing suitable implementations of the </i></td></tr>
+<tr><th id="186">186</th><td><i class="doc"> * virtual functions.</i></td></tr>
+<tr><th id="187">187</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="188">188</th><td><b>typedef</b> <b>struct</b> _GdkPixbufAnimationIterClass GdkPixbufAnimationIterClass;</td></tr>
+<tr><th id="189">189</th><td></td></tr>
+<tr><th id="190">190</th><td><u>#define GDK_PIXBUF_ANIMATION_ITER_CLASS(klass)      (G_TYPE_CHECK_CLASS_CAST ((klass), GDK_TYPE_PIXBUF_ANIMATION_ITER, GdkPixbufAnimationIterClass))</u></td></tr>
+<tr><th id="191">191</th><td><u>#define GDK_IS_PIXBUF_ANIMATION_ITER_CLASS(klass)   (G_TYPE_CHECK_CLASS_TYPE ((klass), GDK_TYPE_PIXBUF_ANIMATION_ITER))</u></td></tr>
+<tr><th id="192">192</th><td><u>#define GDK_PIXBUF_ANIMATION_ITER_GET_CLASS(obj)    (G_TYPE_INSTANCE_GET_CLASS ((obj), GDK_TYPE_PIXBUF_ANIMATION_ITER, GdkPixbufAnimationIterClass))</u></td></tr>
+<tr><th id="193">193</th><td></td></tr>
+<tr><th id="194">194</th><td><b>struct</b> _GdkPixbufAnimationIter {</td></tr>
+<tr><th id="195">195</th><td>        GObject parent_instance;</td></tr>
+<tr><th id="196">196</th><td></td></tr>
+<tr><th id="197">197</th><td>};</td></tr>
+<tr><th id="198">198</th><td></td></tr>
+<tr><th id="199">199</th><td><b>struct</b> _GdkPixbufAnimationIterClass {</td></tr>
+<tr><th id="200">200</th><td>        GObjectClass parent_class;</td></tr>
+<tr><th id="201">201</th><td></td></tr>
+<tr><th id="202">202</th><td>        <i>/*&lt; public &gt;*/</i></td></tr>
+<tr><th id="203">203</th><td></td></tr>
+<tr><th id="204">204</th><td>        <em>int</em>        (*get_delay_time)   (GdkPixbufAnimationIter *iter);</td></tr>
+<tr><th id="205">205</th><td></td></tr>
+<tr><th id="206">206</th><td>        GdkPixbuf* (*get_pixbuf)       (GdkPixbufAnimationIter *iter);</td></tr>
+<tr><th id="207">207</th><td></td></tr>
+<tr><th id="208">208</th><td>        gboolean   (*on_currently_loading_frame) (GdkPixbufAnimationIter *iter);</td></tr>
+<tr><th id="209">209</th><td></td></tr>
+<tr><th id="210">210</th><td>        gboolean   (*advance)          (GdkPixbufAnimationIter *iter,</td></tr>
+<tr><th id="211">211</th><td>                                        <em>const</em> GTimeVal         *current_time);</td></tr>
+<tr><th id="212">212</th><td>};</td></tr>
+<tr><th id="213">213</th><td>      </td></tr>
+<tr><th id="214">214</th><td></td></tr>
+<tr><th id="215">215</th><td>GDK_PIXBUF_AVAILABLE_IN_ALL</td></tr>
+<tr><th id="216">216</th><td>GType               gdk_pixbuf_non_anim_get_type (<em>void</em>) G_GNUC_CONST;</td></tr>
+<tr><th id="217">217</th><td>GDK_PIXBUF_AVAILABLE_IN_ALL</td></tr>
+<tr><th id="218">218</th><td>GdkPixbufAnimation* gdk_pixbuf_non_anim_new (GdkPixbuf *pixbuf);</td></tr>
+<tr><th id="219">219</th><td></td></tr>
+<tr><th id="220">220</th><td><u>#<span data-ppcond="125">endif</span> /* GDK_PIXBUF_ENABLE_BACKEND */</u></td></tr>
+<tr><th id="221">221</th><td></td></tr>
+<tr><th id="222">222</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="223">223</th><td></td></tr>
+<tr><th id="224">224</th><td><u>#<span data-ppcond="25">endif</span> /* GDK_PIXBUF_ANIMATION_H */</u></td></tr>
+<tr><th id="225">225</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

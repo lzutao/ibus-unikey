@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gthread.h source code [include/glib-2.0/glib/gthread.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/glib-2.0/glib/gthread.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>glib-2.0</a>/<a href='./'>glib</a>/<a href='gthread.h.html'>gthread.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GLIB - Library of useful routines for C programming</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 1995-1997  Peter Mattis, Spencer Kimball and Josh MacDonald</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful, but</i></td></tr>
+<tr><th id="10">10</th><td><i> * WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> */</i></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><i>/*</i></td></tr>
+<tr><th id="19">19</th><td><i> * Modified by the GLib Team and others 1997-2000.  See the AUTHORS</i></td></tr>
+<tr><th id="20">20</th><td><i> * file for a list of people on the GLib Team.  See the ChangeLog</i></td></tr>
+<tr><th id="21">21</th><td><i> * files for a list of changes.  These files are distributed with</i></td></tr>
+<tr><th id="22">22</th><td><i> * GLib at ftp://ftp.gtk.org/pub/gtk/.</i></td></tr>
+<tr><th id="23">23</th><td><i> */</i></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="25">ifndef</span> <span class="macro" data-ref="_M/__G_THREAD_H__">__G_THREAD_H__</span></u></td></tr>
+<tr><th id="26">26</th><td><u>#define <dfn class="macro" id="_M/__G_THREAD_H__" data-ref="_M/__G_THREAD_H__">__G_THREAD_H__</dfn></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#<span data-ppcond="28">if</span> !defined (<a class="macro" href="../glib.h.html#28" data-ref="_M/__GLIB_H_INSIDE__">__GLIB_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GLIB_COMPILATION">GLIB_COMPILATION</span>)</u></td></tr>
+<tr><th id="29">29</th><td><u>#error "Only &lt;glib.h&gt; can be included directly."</u></td></tr>
+<tr><th id="30">30</th><td><u>#<span data-ppcond="28">endif</span></u></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><u>#include <a href="gatomic.h.html">&lt;glib/gatomic.h&gt;</a></u></td></tr>
+<tr><th id="33">33</th><td><u>#include <a href="gerror.h.html">&lt;glib/gerror.h&gt;</a></u></td></tr>
+<tr><th id="34">34</th><td><u>#include <a href="gutils.h.html">&lt;glib/gutils.h&gt;</a></u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><a class="macro" href="gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><u>#define <dfn class="macro" id="_M/G_THREAD_ERROR" data-ref="_M/G_THREAD_ERROR">G_THREAD_ERROR</dfn> g_thread_error_quark ()</u></td></tr>
+<tr><th id="39">39</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="40">40</th><td><a class="typedef" href="gquark.h.html#GQuark" title='GQuark' data-type='guint32' data-ref="GQuark">GQuark</a> <dfn class="decl" id="g_thread_error_quark" title='g_thread_error_quark' data-ref="g_thread_error_quark">g_thread_error_quark</dfn> (<em>void</em>);</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="43">43</th><td>{</td></tr>
+<tr><th id="44">44</th><td>  <dfn class="enum" id="G_THREAD_ERROR_AGAIN" title='G_THREAD_ERROR_AGAIN' data-ref="G_THREAD_ERROR_AGAIN">G_THREAD_ERROR_AGAIN</dfn> <i>/* Resource temporarily unavailable */</i></td></tr>
+<tr><th id="45">45</th><td>} <dfn class="typedef" id="GThreadError" title='GThreadError' data-type='enum GThreadError' data-ref="GThreadError">GThreadError</dfn>;</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><b>typedef</b> <a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> (*<dfn class="typedef" id="GThreadFunc" title='GThreadFunc' data-type='gpointer (*)(gpointer)' data-ref="GThreadFunc">GThreadFunc</dfn>) (<a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="local col8 decl" id="628data" title='data' data-type='gpointer' data-ref="628data">data</dfn>);</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><b>typedef</b> <b>struct</b> <a class="type" href="deprecated/gthread.h.html#_GThread" title='_GThread' data-ref="_GThread" id="_GThread"><a class="type" href="deprecated/gthread.h.html#_GThread" title='_GThread' data-ref="_GThread">_GThread</a></a>         <dfn class="typedef" id="GThread" title='GThread' data-type='struct _GThread' data-ref="GThread">GThread</dfn>;</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><b>typedef</b> <b>union</b>  <a class="type" href="#_GMutex" title='_GMutex' data-ref="_GMutex">_GMutex</a>          <dfn class="typedef" id="GMutex" title='GMutex' data-type='union _GMutex' data-ref="GMutex">GMutex</dfn>;</td></tr>
+<tr><th id="52">52</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GRecMutex" title='_GRecMutex' data-ref="_GRecMutex">_GRecMutex</a>       <dfn class="typedef" id="GRecMutex" title='GRecMutex' data-type='struct _GRecMutex' data-ref="GRecMutex">GRecMutex</dfn>;</td></tr>
+<tr><th id="53">53</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GRWLock" title='_GRWLock' data-ref="_GRWLock">_GRWLock</a>         <dfn class="typedef" id="GRWLock" title='GRWLock' data-type='struct _GRWLock' data-ref="GRWLock">GRWLock</dfn>;</td></tr>
+<tr><th id="54">54</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GCond" title='_GCond' data-ref="_GCond">_GCond</a>           <dfn class="typedef" id="GCond" title='GCond' data-type='struct _GCond' data-ref="GCond">GCond</dfn>;</td></tr>
+<tr><th id="55">55</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GPrivate" title='_GPrivate' data-ref="_GPrivate">_GPrivate</a>        <dfn class="typedef" id="GPrivate" title='GPrivate' data-type='struct _GPrivate' data-ref="GPrivate">GPrivate</dfn>;</td></tr>
+<tr><th id="56">56</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GOnce" title='_GOnce' data-ref="_GOnce">_GOnce</a>           <dfn class="typedef" id="GOnce" title='GOnce' data-type='struct _GOnce' data-ref="GOnce">GOnce</dfn>;</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><b>union</b> <dfn class="type def" id="_GMutex" title='_GMutex' data-ref="_GMutex">_GMutex</dfn></td></tr>
+<tr><th id="59">59</th><td>{</td></tr>
+<tr><th id="60">60</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="61">61</th><td>  <a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="decl" id="_GMutex::p" title='_GMutex::p' data-ref="_GMutex::p">p</dfn>;</td></tr>
+<tr><th id="62">62</th><td>  <a class="typedef" href="gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="decl" id="_GMutex::i" title='_GMutex::i' data-ref="_GMutex::i">i</dfn>[<var>2</var>];</td></tr>
+<tr><th id="63">63</th><td>};</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><b>struct</b> <dfn class="type def" id="_GRWLock" title='_GRWLock' data-ref="_GRWLock">_GRWLock</dfn></td></tr>
+<tr><th id="66">66</th><td>{</td></tr>
+<tr><th id="67">67</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="68">68</th><td>  <a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="decl" id="_GRWLock::p" title='_GRWLock::p' data-ref="_GRWLock::p">p</dfn>;</td></tr>
+<tr><th id="69">69</th><td>  <a class="typedef" href="gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="decl" id="_GRWLock::i" title='_GRWLock::i' data-ref="_GRWLock::i">i</dfn>[<var>2</var>];</td></tr>
+<tr><th id="70">70</th><td>};</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><b>struct</b> <dfn class="type def" id="_GCond" title='_GCond' data-ref="_GCond">_GCond</dfn></td></tr>
+<tr><th id="73">73</th><td>{</td></tr>
+<tr><th id="74">74</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="75">75</th><td>  <a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="decl" id="_GCond::p" title='_GCond::p' data-ref="_GCond::p">p</dfn>;</td></tr>
+<tr><th id="76">76</th><td>  <a class="typedef" href="gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="decl" id="_GCond::i" title='_GCond::i' data-ref="_GCond::i">i</dfn>[<var>2</var>];</td></tr>
+<tr><th id="77">77</th><td>};</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><b>struct</b> <dfn class="type def" id="_GRecMutex" title='_GRecMutex' data-ref="_GRecMutex">_GRecMutex</dfn></td></tr>
+<tr><th id="80">80</th><td>{</td></tr>
+<tr><th id="81">81</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="82">82</th><td>  <a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="decl" id="_GRecMutex::p" title='_GRecMutex::p' data-ref="_GRecMutex::p">p</dfn>;</td></tr>
+<tr><th id="83">83</th><td>  <a class="typedef" href="gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="decl" id="_GRecMutex::i" title='_GRecMutex::i' data-ref="_GRecMutex::i">i</dfn>[<var>2</var>];</td></tr>
+<tr><th id="84">84</th><td>};</td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td><u>#define <dfn class="macro" id="_M/G_PRIVATE_INIT" data-ref="_M/G_PRIVATE_INIT">G_PRIVATE_INIT</dfn>(notify) { NULL, (notify), { NULL, NULL } }</u></td></tr>
+<tr><th id="87">87</th><td><b>struct</b> <dfn class="type def" id="_GPrivate" title='_GPrivate' data-ref="_GPrivate">_GPrivate</dfn></td></tr>
+<tr><th id="88">88</th><td>{</td></tr>
+<tr><th id="89">89</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="90">90</th><td>  <a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>       <dfn class="decl" id="_GPrivate::p" title='_GPrivate::p' data-ref="_GPrivate::p">p</dfn>;</td></tr>
+<tr><th id="91">91</th><td>  <a class="typedef" href="gtypes.h.html#GDestroyNotify" title='GDestroyNotify' data-type='void (*)(gpointer)' data-ref="GDestroyNotify">GDestroyNotify</a> <dfn class="decl" id="_GPrivate::notify" title='_GPrivate::notify' data-ref="_GPrivate::notify">notify</dfn>;</td></tr>
+<tr><th id="92">92</th><td>  <a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="decl" id="_GPrivate::future" title='_GPrivate::future' data-ref="_GPrivate::future">future</dfn>[<var>2</var>];</td></tr>
+<tr><th id="93">93</th><td>};</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="96">96</th><td>{</td></tr>
+<tr><th id="97">97</th><td>  <dfn class="enum" id="G_ONCE_STATUS_NOTCALLED" title='G_ONCE_STATUS_NOTCALLED' data-ref="G_ONCE_STATUS_NOTCALLED">G_ONCE_STATUS_NOTCALLED</dfn>,</td></tr>
+<tr><th id="98">98</th><td>  <dfn class="enum" id="G_ONCE_STATUS_PROGRESS" title='G_ONCE_STATUS_PROGRESS' data-ref="G_ONCE_STATUS_PROGRESS">G_ONCE_STATUS_PROGRESS</dfn>,</td></tr>
+<tr><th id="99">99</th><td>  <dfn class="enum" id="G_ONCE_STATUS_READY" title='G_ONCE_STATUS_READY' data-ref="G_ONCE_STATUS_READY">G_ONCE_STATUS_READY</dfn></td></tr>
+<tr><th id="100">100</th><td>} <dfn class="typedef" id="GOnceStatus" title='GOnceStatus' data-type='enum GOnceStatus' data-ref="GOnceStatus">GOnceStatus</dfn>;</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td><u>#define <dfn class="macro" id="_M/G_ONCE_INIT" data-ref="_M/G_ONCE_INIT">G_ONCE_INIT</dfn> { G_ONCE_STATUS_NOTCALLED, NULL }</u></td></tr>
+<tr><th id="103">103</th><td><b>struct</b> <dfn class="type def" id="_GOnce" title='_GOnce' data-ref="_GOnce">_GOnce</dfn></td></tr>
+<tr><th id="104">104</th><td>{</td></tr>
+<tr><th id="105">105</th><td>  <em>volatile</em> <a class="typedef" href="#GOnceStatus" title='GOnceStatus' data-type='enum GOnceStatus' data-ref="GOnceStatus">GOnceStatus</a> <dfn class="decl" id="_GOnce::status" title='_GOnce::status' data-ref="_GOnce::status">status</dfn>;</td></tr>
+<tr><th id="106">106</th><td>  <em>volatile</em> <a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="decl" id="_GOnce::retval" title='_GOnce::retval' data-ref="_GOnce::retval">retval</dfn>;</td></tr>
+<tr><th id="107">107</th><td>};</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><u>#define <dfn class="macro" id="_M/G_LOCK_NAME" data-ref="_M/G_LOCK_NAME">G_LOCK_NAME</dfn>(name)             g__ ## name ## _lock</u></td></tr>
+<tr><th id="110">110</th><td><u>#define <dfn class="macro" id="_M/G_LOCK_DEFINE_STATIC" data-ref="_M/G_LOCK_DEFINE_STATIC">G_LOCK_DEFINE_STATIC</dfn>(name)    static G_LOCK_DEFINE (name)</u></td></tr>
+<tr><th id="111">111</th><td><u>#define <dfn class="macro" id="_M/G_LOCK_DEFINE" data-ref="_M/G_LOCK_DEFINE">G_LOCK_DEFINE</dfn>(name)           GMutex G_LOCK_NAME (name)</u></td></tr>
+<tr><th id="112">112</th><td><u>#define <dfn class="macro" id="_M/G_LOCK_EXTERN" data-ref="_M/G_LOCK_EXTERN">G_LOCK_EXTERN</dfn>(name)           extern GMutex G_LOCK_NAME (name)</u></td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><u>#<span data-ppcond="114">ifdef</span> <span class="macro" data-ref="_M/G_DEBUG_LOCKS">G_DEBUG_LOCKS</span></u></td></tr>
+<tr><th id="115">115</th><td><u>#  define G_LOCK(name)                G_STMT_START{             \</u></td></tr>
+<tr><th id="116">116</th><td><u>      g_log (G_LOG_DOMAIN, G_LOG_LEVEL_DEBUG,                   \</u></td></tr>
+<tr><th id="117">117</th><td><u>             "file %s: line %d (%s): locking: %s ",             \</u></td></tr>
+<tr><th id="118">118</th><td><u>             __FILE__,        __LINE__, G_STRFUNC,              \</u></td></tr>
+<tr><th id="119">119</th><td><u>             #name);                                            \</u></td></tr>
+<tr><th id="120">120</th><td><u>      g_mutex_lock (&amp;G_LOCK_NAME (name));                       \</u></td></tr>
+<tr><th id="121">121</th><td><u>   }G_STMT_END</u></td></tr>
+<tr><th id="122">122</th><td><u>#  define G_UNLOCK(name)              G_STMT_START{             \</u></td></tr>
+<tr><th id="123">123</th><td><u>      g_log (G_LOG_DOMAIN, G_LOG_LEVEL_DEBUG,                   \</u></td></tr>
+<tr><th id="124">124</th><td><u>             "file %s: line %d (%s): unlocking: %s ",           \</u></td></tr>
+<tr><th id="125">125</th><td><u>             __FILE__,        __LINE__, G_STRFUNC,              \</u></td></tr>
+<tr><th id="126">126</th><td><u>             #name);                                            \</u></td></tr>
+<tr><th id="127">127</th><td><u>     g_mutex_unlock (&amp;G_LOCK_NAME (name));                      \</u></td></tr>
+<tr><th id="128">128</th><td><u>   }G_STMT_END</u></td></tr>
+<tr><th id="129">129</th><td><u>#  define G_TRYLOCK(name)                                       \</u></td></tr>
+<tr><th id="130">130</th><td><u>      (g_log (G_LOG_DOMAIN, G_LOG_LEVEL_DEBUG,                  \</u></td></tr>
+<tr><th id="131">131</th><td><u>             "file %s: line %d (%s): try locking: %s ",         \</u></td></tr>
+<tr><th id="132">132</th><td><u>             __FILE__,        __LINE__, G_STRFUNC,              \</u></td></tr>
+<tr><th id="133">133</th><td><u>             #name), g_mutex_trylock (&amp;G_LOCK_NAME (name)))</u></td></tr>
+<tr><th id="134">134</th><td><u>#<span data-ppcond="114">else</span>  /* !G_DEBUG_LOCKS */</u></td></tr>
+<tr><th id="135">135</th><td><u>#  define <dfn class="macro" id="_M/G_LOCK" data-ref="_M/G_LOCK">G_LOCK</dfn>(name) g_mutex_lock       (&amp;G_LOCK_NAME (name))</u></td></tr>
+<tr><th id="136">136</th><td><u>#  define <dfn class="macro" id="_M/G_UNLOCK" data-ref="_M/G_UNLOCK">G_UNLOCK</dfn>(name) g_mutex_unlock   (&amp;G_LOCK_NAME (name))</u></td></tr>
+<tr><th id="137">137</th><td><u>#  define <dfn class="macro" id="_M/G_TRYLOCK" data-ref="_M/G_TRYLOCK">G_TRYLOCK</dfn>(name) g_mutex_trylock (&amp;G_LOCK_NAME (name))</u></td></tr>
+<tr><th id="138">138</th><td><u>#<span data-ppcond="114">endif</span> /* !G_DEBUG_LOCKS */</u></td></tr>
+<tr><th id="139">139</th><td></td></tr>
+<tr><th id="140">140</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="141">141</th><td><a class="typedef" href="#GThread" title='GThread' data-type='struct _GThread' data-ref="GThread">GThread</a> *       <dfn class="decl" id="g_thread_ref" title='g_thread_ref' data-ref="g_thread_ref">g_thread_ref</dfn>                    (<a class="typedef" href="#GThread" title='GThread' data-type='struct _GThread' data-ref="GThread">GThread</a>        *<dfn class="local col9 decl" id="629thread" title='thread' data-type='GThread *' data-ref="629thread">thread</dfn>);</td></tr>
+<tr><th id="142">142</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="143">143</th><td><em>void</em>            <dfn class="decl" id="g_thread_unref" title='g_thread_unref' data-ref="g_thread_unref">g_thread_unref</dfn>                  (<a class="typedef" href="#GThread" title='GThread' data-type='struct _GThread' data-ref="GThread">GThread</a>        *<dfn class="local col0 decl" id="630thread" title='thread' data-type='GThread *' data-ref="630thread">thread</dfn>);</td></tr>
+<tr><th id="144">144</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="145">145</th><td><a class="typedef" href="#GThread" title='GThread' data-type='struct _GThread' data-ref="GThread">GThread</a> *       <dfn class="decl" id="g_thread_new" title='g_thread_new' data-ref="g_thread_new">g_thread_new</dfn>                    (<em>const</em> <a class="typedef" href="gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col1 decl" id="631name" title='name' data-type='const gchar *' data-ref="631name">name</dfn>,</td></tr>
+<tr><th id="146">146</th><td>                                                 <a class="typedef" href="#GThreadFunc" title='GThreadFunc' data-type='gpointer (*)(gpointer)' data-ref="GThreadFunc">GThreadFunc</a>     <dfn class="local col2 decl" id="632func" title='func' data-type='GThreadFunc' data-ref="632func">func</dfn>,</td></tr>
+<tr><th id="147">147</th><td>                                                 <a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>        <dfn class="local col3 decl" id="633data" title='data' data-type='gpointer' data-ref="633data">data</dfn>);</td></tr>
+<tr><th id="148">148</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="149">149</th><td><a class="typedef" href="#GThread" title='GThread' data-type='struct _GThread' data-ref="GThread">GThread</a> *       <dfn class="decl" id="g_thread_try_new" title='g_thread_try_new' data-ref="g_thread_try_new">g_thread_try_new</dfn>                (<em>const</em> <a class="typedef" href="gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col4 decl" id="634name" title='name' data-type='const gchar *' data-ref="634name">name</dfn>,</td></tr>
+<tr><th id="150">150</th><td>                                                 <a class="typedef" href="#GThreadFunc" title='GThreadFunc' data-type='gpointer (*)(gpointer)' data-ref="GThreadFunc">GThreadFunc</a>     <dfn class="local col5 decl" id="635func" title='func' data-type='GThreadFunc' data-ref="635func">func</dfn>,</td></tr>
+<tr><th id="151">151</th><td>                                                 <a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>        <dfn class="local col6 decl" id="636data" title='data' data-type='gpointer' data-ref="636data">data</dfn>,</td></tr>
+<tr><th id="152">152</th><td>                                                 <a class="typedef" href="gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>        **<dfn class="local col7 decl" id="637error" title='error' data-type='GError **' data-ref="637error">error</dfn>);</td></tr>
+<tr><th id="153">153</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="154">154</th><td><a class="typedef" href="#GThread" title='GThread' data-type='struct _GThread' data-ref="GThread">GThread</a> *       <dfn class="decl" id="g_thread_self" title='g_thread_self' data-ref="g_thread_self">g_thread_self</dfn>                   (<em>void</em>);</td></tr>
+<tr><th id="155">155</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="156">156</th><td><em>void</em>            <dfn class="decl" id="g_thread_exit" title='g_thread_exit' data-ref="g_thread_exit">g_thread_exit</dfn>                   (<a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>        <dfn class="local col8 decl" id="638retval" title='retval' data-type='gpointer' data-ref="638retval">retval</dfn>);</td></tr>
+<tr><th id="157">157</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="158">158</th><td><a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>        <dfn class="decl" id="g_thread_join" title='g_thread_join' data-ref="g_thread_join">g_thread_join</dfn>                   (<a class="typedef" href="#GThread" title='GThread' data-type='struct _GThread' data-ref="GThread">GThread</a>        *<dfn class="local col9 decl" id="639thread" title='thread' data-type='GThread *' data-ref="639thread">thread</dfn>);</td></tr>
+<tr><th id="159">159</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="160">160</th><td><em>void</em>            <dfn class="decl" id="g_thread_yield" title='g_thread_yield' data-ref="g_thread_yield">g_thread_yield</dfn>                  (<em>void</em>);</td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="164">164</th><td><em>void</em>            <dfn class="decl" id="g_mutex_init" title='g_mutex_init' data-ref="g_mutex_init">g_mutex_init</dfn>                    (<a class="typedef" href="#GMutex" title='GMutex' data-type='union _GMutex' data-ref="GMutex">GMutex</a>         *<dfn class="local col0 decl" id="640mutex" title='mutex' data-type='GMutex *' data-ref="640mutex">mutex</dfn>);</td></tr>
+<tr><th id="165">165</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="166">166</th><td><em>void</em>            <dfn class="decl" id="g_mutex_clear" title='g_mutex_clear' data-ref="g_mutex_clear">g_mutex_clear</dfn>                   (<a class="typedef" href="#GMutex" title='GMutex' data-type='union _GMutex' data-ref="GMutex">GMutex</a>         *<dfn class="local col1 decl" id="641mutex" title='mutex' data-type='GMutex *' data-ref="641mutex">mutex</dfn>);</td></tr>
+<tr><th id="167">167</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="168">168</th><td><em>void</em>            <dfn class="decl" id="g_mutex_lock" title='g_mutex_lock' data-ref="g_mutex_lock">g_mutex_lock</dfn>                    (<a class="typedef" href="#GMutex" title='GMutex' data-type='union _GMutex' data-ref="GMutex">GMutex</a>         *<dfn class="local col2 decl" id="642mutex" title='mutex' data-type='GMutex *' data-ref="642mutex">mutex</dfn>);</td></tr>
+<tr><th id="169">169</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="170">170</th><td><a class="typedef" href="gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>        <dfn class="decl" id="g_mutex_trylock" title='g_mutex_trylock' data-ref="g_mutex_trylock">g_mutex_trylock</dfn>                 (<a class="typedef" href="#GMutex" title='GMutex' data-type='union _GMutex' data-ref="GMutex">GMutex</a>         *<dfn class="local col3 decl" id="643mutex" title='mutex' data-type='GMutex *' data-ref="643mutex">mutex</dfn>);</td></tr>
+<tr><th id="171">171</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="172">172</th><td><em>void</em>            <dfn class="decl" id="g_mutex_unlock" title='g_mutex_unlock' data-ref="g_mutex_unlock">g_mutex_unlock</dfn>                  (<a class="typedef" href="#GMutex" title='GMutex' data-type='union _GMutex' data-ref="GMutex">GMutex</a>         *<dfn class="local col4 decl" id="644mutex" title='mutex' data-type='GMutex *' data-ref="644mutex">mutex</dfn>);</td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="175">175</th><td><em>void</em>            <dfn class="decl" id="g_rw_lock_init" title='g_rw_lock_init' data-ref="g_rw_lock_init">g_rw_lock_init</dfn>                  (<a class="typedef" href="#GRWLock" title='GRWLock' data-type='struct _GRWLock' data-ref="GRWLock">GRWLock</a>        *<dfn class="local col5 decl" id="645rw_lock" title='rw_lock' data-type='GRWLock *' data-ref="645rw_lock">rw_lock</dfn>);</td></tr>
+<tr><th id="176">176</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="177">177</th><td><em>void</em>            <dfn class="decl" id="g_rw_lock_clear" title='g_rw_lock_clear' data-ref="g_rw_lock_clear">g_rw_lock_clear</dfn>                 (<a class="typedef" href="#GRWLock" title='GRWLock' data-type='struct _GRWLock' data-ref="GRWLock">GRWLock</a>        *<dfn class="local col6 decl" id="646rw_lock" title='rw_lock' data-type='GRWLock *' data-ref="646rw_lock">rw_lock</dfn>);</td></tr>
+<tr><th id="178">178</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="179">179</th><td><em>void</em>            <dfn class="decl" id="g_rw_lock_writer_lock" title='g_rw_lock_writer_lock' data-ref="g_rw_lock_writer_lock">g_rw_lock_writer_lock</dfn>           (<a class="typedef" href="#GRWLock" title='GRWLock' data-type='struct _GRWLock' data-ref="GRWLock">GRWLock</a>        *<dfn class="local col7 decl" id="647rw_lock" title='rw_lock' data-type='GRWLock *' data-ref="647rw_lock">rw_lock</dfn>);</td></tr>
+<tr><th id="180">180</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="181">181</th><td><a class="typedef" href="gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>        <dfn class="decl" id="g_rw_lock_writer_trylock" title='g_rw_lock_writer_trylock' data-ref="g_rw_lock_writer_trylock">g_rw_lock_writer_trylock</dfn>        (<a class="typedef" href="#GRWLock" title='GRWLock' data-type='struct _GRWLock' data-ref="GRWLock">GRWLock</a>        *<dfn class="local col8 decl" id="648rw_lock" title='rw_lock' data-type='GRWLock *' data-ref="648rw_lock">rw_lock</dfn>);</td></tr>
+<tr><th id="182">182</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="183">183</th><td><em>void</em>            <dfn class="decl" id="g_rw_lock_writer_unlock" title='g_rw_lock_writer_unlock' data-ref="g_rw_lock_writer_unlock">g_rw_lock_writer_unlock</dfn>         (<a class="typedef" href="#GRWLock" title='GRWLock' data-type='struct _GRWLock' data-ref="GRWLock">GRWLock</a>        *<dfn class="local col9 decl" id="649rw_lock" title='rw_lock' data-type='GRWLock *' data-ref="649rw_lock">rw_lock</dfn>);</td></tr>
+<tr><th id="184">184</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="185">185</th><td><em>void</em>            <dfn class="decl" id="g_rw_lock_reader_lock" title='g_rw_lock_reader_lock' data-ref="g_rw_lock_reader_lock">g_rw_lock_reader_lock</dfn>           (<a class="typedef" href="#GRWLock" title='GRWLock' data-type='struct _GRWLock' data-ref="GRWLock">GRWLock</a>        *<dfn class="local col0 decl" id="650rw_lock" title='rw_lock' data-type='GRWLock *' data-ref="650rw_lock">rw_lock</dfn>);</td></tr>
+<tr><th id="186">186</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="187">187</th><td><a class="typedef" href="gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>        <dfn class="decl" id="g_rw_lock_reader_trylock" title='g_rw_lock_reader_trylock' data-ref="g_rw_lock_reader_trylock">g_rw_lock_reader_trylock</dfn>        (<a class="typedef" href="#GRWLock" title='GRWLock' data-type='struct _GRWLock' data-ref="GRWLock">GRWLock</a>        *<dfn class="local col1 decl" id="651rw_lock" title='rw_lock' data-type='GRWLock *' data-ref="651rw_lock">rw_lock</dfn>);</td></tr>
+<tr><th id="188">188</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="189">189</th><td><em>void</em>            <dfn class="decl" id="g_rw_lock_reader_unlock" title='g_rw_lock_reader_unlock' data-ref="g_rw_lock_reader_unlock">g_rw_lock_reader_unlock</dfn>         (<a class="typedef" href="#GRWLock" title='GRWLock' data-type='struct _GRWLock' data-ref="GRWLock">GRWLock</a>        *<dfn class="local col2 decl" id="652rw_lock" title='rw_lock' data-type='GRWLock *' data-ref="652rw_lock">rw_lock</dfn>);</td></tr>
+<tr><th id="190">190</th><td></td></tr>
+<tr><th id="191">191</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="192">192</th><td><em>void</em>            <dfn class="decl" id="g_rec_mutex_init" title='g_rec_mutex_init' data-ref="g_rec_mutex_init">g_rec_mutex_init</dfn>                (<a class="typedef" href="#GRecMutex" title='GRecMutex' data-type='struct _GRecMutex' data-ref="GRecMutex">GRecMutex</a>      *<dfn class="local col3 decl" id="653rec_mutex" title='rec_mutex' data-type='GRecMutex *' data-ref="653rec_mutex">rec_mutex</dfn>);</td></tr>
+<tr><th id="193">193</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="194">194</th><td><em>void</em>            <dfn class="decl" id="g_rec_mutex_clear" title='g_rec_mutex_clear' data-ref="g_rec_mutex_clear">g_rec_mutex_clear</dfn>               (<a class="typedef" href="#GRecMutex" title='GRecMutex' data-type='struct _GRecMutex' data-ref="GRecMutex">GRecMutex</a>      *<dfn class="local col4 decl" id="654rec_mutex" title='rec_mutex' data-type='GRecMutex *' data-ref="654rec_mutex">rec_mutex</dfn>);</td></tr>
+<tr><th id="195">195</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="196">196</th><td><em>void</em>            <dfn class="decl" id="g_rec_mutex_lock" title='g_rec_mutex_lock' data-ref="g_rec_mutex_lock">g_rec_mutex_lock</dfn>                (<a class="typedef" href="#GRecMutex" title='GRecMutex' data-type='struct _GRecMutex' data-ref="GRecMutex">GRecMutex</a>      *<dfn class="local col5 decl" id="655rec_mutex" title='rec_mutex' data-type='GRecMutex *' data-ref="655rec_mutex">rec_mutex</dfn>);</td></tr>
+<tr><th id="197">197</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="198">198</th><td><a class="typedef" href="gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>        <dfn class="decl" id="g_rec_mutex_trylock" title='g_rec_mutex_trylock' data-ref="g_rec_mutex_trylock">g_rec_mutex_trylock</dfn>             (<a class="typedef" href="#GRecMutex" title='GRecMutex' data-type='struct _GRecMutex' data-ref="GRecMutex">GRecMutex</a>      *<dfn class="local col6 decl" id="656rec_mutex" title='rec_mutex' data-type='GRecMutex *' data-ref="656rec_mutex">rec_mutex</dfn>);</td></tr>
+<tr><th id="199">199</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="200">200</th><td><em>void</em>            <dfn class="decl" id="g_rec_mutex_unlock" title='g_rec_mutex_unlock' data-ref="g_rec_mutex_unlock">g_rec_mutex_unlock</dfn>              (<a class="typedef" href="#GRecMutex" title='GRecMutex' data-type='struct _GRecMutex' data-ref="GRecMutex">GRecMutex</a>      *<dfn class="local col7 decl" id="657rec_mutex" title='rec_mutex' data-type='GRecMutex *' data-ref="657rec_mutex">rec_mutex</dfn>);</td></tr>
+<tr><th id="201">201</th><td></td></tr>
+<tr><th id="202">202</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="203">203</th><td><em>void</em>            <dfn class="decl" id="g_cond_init" title='g_cond_init' data-ref="g_cond_init">g_cond_init</dfn>                     (<a class="typedef" href="#GCond" title='GCond' data-type='struct _GCond' data-ref="GCond">GCond</a>          *<dfn class="local col8 decl" id="658cond" title='cond' data-type='GCond *' data-ref="658cond">cond</dfn>);</td></tr>
+<tr><th id="204">204</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="205">205</th><td><em>void</em>            <dfn class="decl" id="g_cond_clear" title='g_cond_clear' data-ref="g_cond_clear">g_cond_clear</dfn>                    (<a class="typedef" href="#GCond" title='GCond' data-type='struct _GCond' data-ref="GCond">GCond</a>          *<dfn class="local col9 decl" id="659cond" title='cond' data-type='GCond *' data-ref="659cond">cond</dfn>);</td></tr>
+<tr><th id="206">206</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="207">207</th><td><em>void</em>            <dfn class="decl" id="g_cond_wait" title='g_cond_wait' data-ref="g_cond_wait">g_cond_wait</dfn>                     (<a class="typedef" href="#GCond" title='GCond' data-type='struct _GCond' data-ref="GCond">GCond</a>          *<dfn class="local col0 decl" id="660cond" title='cond' data-type='GCond *' data-ref="660cond">cond</dfn>,</td></tr>
+<tr><th id="208">208</th><td>                                                 <a class="typedef" href="#GMutex" title='GMutex' data-type='union _GMutex' data-ref="GMutex">GMutex</a>         *<dfn class="local col1 decl" id="661mutex" title='mutex' data-type='GMutex *' data-ref="661mutex">mutex</dfn>);</td></tr>
+<tr><th id="209">209</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="210">210</th><td><em>void</em>            <dfn class="decl" id="g_cond_signal" title='g_cond_signal' data-ref="g_cond_signal">g_cond_signal</dfn>                   (<a class="typedef" href="#GCond" title='GCond' data-type='struct _GCond' data-ref="GCond">GCond</a>          *<dfn class="local col2 decl" id="662cond" title='cond' data-type='GCond *' data-ref="662cond">cond</dfn>);</td></tr>
+<tr><th id="211">211</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="212">212</th><td><em>void</em>            <dfn class="decl" id="g_cond_broadcast" title='g_cond_broadcast' data-ref="g_cond_broadcast">g_cond_broadcast</dfn>                (<a class="typedef" href="#GCond" title='GCond' data-type='struct _GCond' data-ref="GCond">GCond</a>          *<dfn class="local col3 decl" id="663cond" title='cond' data-type='GCond *' data-ref="663cond">cond</dfn>);</td></tr>
+<tr><th id="213">213</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="214">214</th><td><a class="typedef" href="gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>        <dfn class="decl" id="g_cond_wait_until" title='g_cond_wait_until' data-ref="g_cond_wait_until">g_cond_wait_until</dfn>               (<a class="typedef" href="#GCond" title='GCond' data-type='struct _GCond' data-ref="GCond">GCond</a>          *<dfn class="local col4 decl" id="664cond" title='cond' data-type='GCond *' data-ref="664cond">cond</dfn>,</td></tr>
+<tr><th id="215">215</th><td>                                                 <a class="typedef" href="#GMutex" title='GMutex' data-type='union _GMutex' data-ref="GMutex">GMutex</a>         *<dfn class="local col5 decl" id="665mutex" title='mutex' data-type='GMutex *' data-ref="665mutex">mutex</dfn>,</td></tr>
+<tr><th id="216">216</th><td>                                                 <span class='typedef' title='gint64' data-type='long' data-ref="gint64">gint64</span>          <dfn class="local col6 decl" id="666end_time" title='end_time' data-type='gint64' data-ref="666end_time">end_time</dfn>);</td></tr>
+<tr><th id="217">217</th><td></td></tr>
+<tr><th id="218">218</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="219">219</th><td><a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>        <dfn class="decl" id="g_private_get" title='g_private_get' data-ref="g_private_get">g_private_get</dfn>                   (<a class="typedef" href="#GPrivate" title='GPrivate' data-type='struct _GPrivate' data-ref="GPrivate">GPrivate</a>       *<dfn class="local col7 decl" id="667key" title='key' data-type='GPrivate *' data-ref="667key">key</dfn>);</td></tr>
+<tr><th id="220">220</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="221">221</th><td><em>void</em>            <dfn class="decl" id="g_private_set" title='g_private_set' data-ref="g_private_set">g_private_set</dfn>                   (<a class="typedef" href="#GPrivate" title='GPrivate' data-type='struct _GPrivate' data-ref="GPrivate">GPrivate</a>       *<dfn class="local col8 decl" id="668key" title='key' data-type='GPrivate *' data-ref="668key">key</dfn>,</td></tr>
+<tr><th id="222">222</th><td>                                                 <a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>        <dfn class="local col9 decl" id="669value" title='value' data-type='gpointer' data-ref="669value">value</dfn>);</td></tr>
+<tr><th id="223">223</th><td><a class="macro" href="gversionmacros.h.html#342" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_32">GLIB_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="224">224</th><td><em>void</em>            <dfn class="decl" id="g_private_replace" title='g_private_replace' data-ref="g_private_replace">g_private_replace</dfn>               (<a class="typedef" href="#GPrivate" title='GPrivate' data-type='struct _GPrivate' data-ref="GPrivate">GPrivate</a>       *<dfn class="local col0 decl" id="670key" title='key' data-type='GPrivate *' data-ref="670key">key</dfn>,</td></tr>
+<tr><th id="225">225</th><td>                                                 <a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>        <dfn class="local col1 decl" id="671value" title='value' data-type='gpointer' data-ref="671value">value</dfn>);</td></tr>
+<tr><th id="226">226</th><td></td></tr>
+<tr><th id="227">227</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="228">228</th><td><a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>        <dfn class="decl" id="g_once_impl" title='g_once_impl' data-ref="g_once_impl">g_once_impl</dfn>                     (<a class="typedef" href="#GOnce" title='GOnce' data-type='struct _GOnce' data-ref="GOnce">GOnce</a>          *<dfn class="local col2 decl" id="672once" title='once' data-type='GOnce *' data-ref="672once">once</dfn>,</td></tr>
+<tr><th id="229">229</th><td>                                                 <a class="typedef" href="#GThreadFunc" title='GThreadFunc' data-type='gpointer (*)(gpointer)' data-ref="GThreadFunc">GThreadFunc</a>     <dfn class="local col3 decl" id="673func" title='func' data-type='GThreadFunc' data-ref="673func">func</dfn>,</td></tr>
+<tr><th id="230">230</th><td>                                                 <a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>        <dfn class="local col4 decl" id="674arg" title='arg' data-type='gpointer' data-ref="674arg">arg</dfn>);</td></tr>
+<tr><th id="231">231</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="232">232</th><td><a class="typedef" href="gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>        <dfn class="decl" id="g_once_init_enter" title='g_once_init_enter' data-ref="g_once_init_enter">g_once_init_enter</dfn>               (<em>volatile</em> <em>void</em>  *<dfn class="local col5 decl" id="675location" title='location' data-type='volatile void *' data-ref="675location">location</dfn>);</td></tr>
+<tr><th id="233">233</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="234">234</th><td><em>void</em>            <dfn class="decl" id="g_once_init_leave" title='g_once_init_leave' data-ref="g_once_init_leave">g_once_init_leave</dfn>               (<em>volatile</em> <em>void</em>  *<dfn class="local col6 decl" id="676location" title='location' data-type='volatile void *' data-ref="676location">location</dfn>,</td></tr>
+<tr><th id="235">235</th><td>                                                 <span class='typedef' title='gsize' data-type='unsigned long' data-ref="gsize">gsize</span>           <dfn class="local col7 decl" id="677result" title='result' data-type='gsize' data-ref="677result">result</dfn>);</td></tr>
+<tr><th id="236">236</th><td></td></tr>
+<tr><th id="237">237</th><td><u>#<span data-ppcond="237">ifdef</span> <span class="macro" data-ref="_M/G_ATOMIC_OP_MEMORY_BARRIER_NEEDED">G_ATOMIC_OP_MEMORY_BARRIER_NEEDED</span></u></td></tr>
+<tr><th id="238">238</th><td><u># define g_once(once, func, arg) g_once_impl ((once), (func), (arg))</u></td></tr>
+<tr><th id="239">239</th><td><u>#<span data-ppcond="237">else</span> /* !G_ATOMIC_OP_MEMORY_BARRIER_NEEDED*/</u></td></tr>
+<tr><th id="240">240</th><td><u># define <dfn class="macro" id="_M/g_once" data-ref="_M/g_once">g_once</dfn>(once, func, arg) \</u></td></tr>
+<tr><th id="241">241</th><td><u>  (((once)-&gt;status == G_ONCE_STATUS_READY) ? \</u></td></tr>
+<tr><th id="242">242</th><td><u>   (once)-&gt;retval : \</u></td></tr>
+<tr><th id="243">243</th><td><u>   g_once_impl ((once), (func), (arg)))</u></td></tr>
+<tr><th id="244">244</th><td><u>#<span data-ppcond="237">endif</span> /* G_ATOMIC_OP_MEMORY_BARRIER_NEEDED */</u></td></tr>
+<tr><th id="245">245</th><td></td></tr>
+<tr><th id="246">246</th><td><u>#<span data-ppcond="246">ifdef</span> <span class="macro" data-ref="_M/__GNUC__">__GNUC__</span></u></td></tr>
+<tr><th id="247">247</th><td><u># define <dfn class="macro" id="_M/g_once_init_enter" data-ref="_M/g_once_init_enter">g_once_init_enter</dfn>(location) \</u></td></tr>
+<tr><th id="248">248</th><td><u>  (G_GNUC_EXTENSION ({                                               \</u></td></tr>
+<tr><th id="249">249</th><td><u>    G_STATIC_ASSERT (sizeof *(location) == sizeof (gpointer));       \</u></td></tr>
+<tr><th id="250">250</th><td><u>    (void) (0 ? (gpointer) *(location) : 0);                         \</u></td></tr>
+<tr><th id="251">251</th><td><u>    (!g_atomic_pointer_get (location) &amp;&amp;                             \</u></td></tr>
+<tr><th id="252">252</th><td><u>     g_once_init_enter (location));                                  \</u></td></tr>
+<tr><th id="253">253</th><td><u>  }))</u></td></tr>
+<tr><th id="254">254</th><td><u># define <dfn class="macro" id="_M/g_once_init_leave" data-ref="_M/g_once_init_leave">g_once_init_leave</dfn>(location, result) \</u></td></tr>
+<tr><th id="255">255</th><td><u>  (G_GNUC_EXTENSION ({                                               \</u></td></tr>
+<tr><th id="256">256</th><td><u>    G_STATIC_ASSERT (sizeof *(location) == sizeof (gpointer));       \</u></td></tr>
+<tr><th id="257">257</th><td><u>    (void) (0 ? *(location) = (result) : 0);                         \</u></td></tr>
+<tr><th id="258">258</th><td><u>    g_once_init_leave ((location), (gsize) (result));                \</u></td></tr>
+<tr><th id="259">259</th><td><u>  }))</u></td></tr>
+<tr><th id="260">260</th><td><u>#<span data-ppcond="246">else</span></u></td></tr>
+<tr><th id="261">261</th><td><u># define g_once_init_enter(location) \</u></td></tr>
+<tr><th id="262">262</th><td><u>  (g_once_init_enter((location)))</u></td></tr>
+<tr><th id="263">263</th><td><u># define g_once_init_leave(location, result) \</u></td></tr>
+<tr><th id="264">264</th><td><u>  (g_once_init_leave((location), (gsize) (result)))</u></td></tr>
+<tr><th id="265">265</th><td><u>#<span data-ppcond="246">endif</span></u></td></tr>
+<tr><th id="266">266</th><td></td></tr>
+<tr><th id="267">267</th><td><a class="macro" href="gversionmacros.h.html#370" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_36">GLIB_AVAILABLE_IN_2_36</a></td></tr>
+<tr><th id="268">268</th><td><a class="typedef" href="gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>          <dfn class="decl" id="g_get_num_processors" title='g_get_num_processors' data-ref="g_get_num_processors">g_get_num_processors</dfn> (<em>void</em>);</td></tr>
+<tr><th id="269">269</th><td></td></tr>
+<tr><th id="270">270</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="271">271</th><td><i class="doc"> * GMutexLocker:</i></td></tr>
+<tr><th id="272">272</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="273">273</th><td><i class="doc"> * Opaque type. See g_mutex_locker_new() for details.</i></td></tr>
+<tr><th id="274">274</th><td><i class="doc"> * Since: 2.44</i></td></tr>
+<tr><th id="275">275</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="276">276</th><td><b>typedef</b> <em>void</em> <dfn class="typedef" id="GMutexLocker" title='GMutexLocker' data-type='void' data-ref="GMutexLocker">GMutexLocker</dfn>;</td></tr>
+<tr><th id="277">277</th><td></td></tr>
+<tr><th id="278">278</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="279">279</th><td><i class="doc"> * g_mutex_locker_new:</i></td></tr>
+<tr><th id="280">280</th><td><i class="doc"> *<span class="command"> @mutex</span>: a mutex to lock</i></td></tr>
+<tr><th id="281">281</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="282">282</th><td><i class="doc"> * Lock<span class="command"> @mutex</span> and return a new #GMutexLocker. Unlock with</i></td></tr>
+<tr><th id="283">283</th><td><i class="doc"> * g_mutex_locker_free(). Using g_mutex_unlock() on<span class="command"> @mutex</span></i></td></tr>
+<tr><th id="284">284</th><td><i class="doc"> * while a #GMutexLocker exists can lead to undefined behaviour.</i></td></tr>
+<tr><th id="285">285</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="286">286</th><td><i class="doc"> * This is intended to be used with g_autoptr().  Note that g_autoptr()</i></td></tr>
+<tr><th id="287">287</th><td><i class="doc"> * is only available when using GCC or clang, so the following example</i></td></tr>
+<tr><th id="288">288</th><td><i class="doc"> * will only work with those compilers:</i></td></tr>
+<tr><th id="289">289</th><td><i class="doc"> * |[</i></td></tr>
+<tr><th id="290">290</th><td><i class="doc"> * typedef struct</i></td></tr>
+<tr><th id="291">291</th><td><i class="doc"> * {</i></td></tr>
+<tr><th id="292">292</th><td><i class="doc"> *   ...</i></td></tr>
+<tr><th id="293">293</th><td><i class="doc"> *   GMutex mutex;</i></td></tr>
+<tr><th id="294">294</th><td><i class="doc"> *   ...</i></td></tr>
+<tr><th id="295">295</th><td><i class="doc"> * } MyObject;</i></td></tr>
+<tr><th id="296">296</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="297">297</th><td><i class="doc"> * static void</i></td></tr>
+<tr><th id="298">298</th><td><i class="doc"> * my_object_do_stuff (MyObject *self)</i></td></tr>
+<tr><th id="299">299</th><td><i class="doc"> * {</i></td></tr>
+<tr><th id="300">300</th><td><i class="doc"> *   g_autoptr(GMutexLocker) locker = g_mutex_locker_new (&amp;self-&gt;mutex);</i></td></tr>
+<tr><th id="301">301</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="302">302</th><td><i class="doc"> *   // Code with mutex locked here</i></td></tr>
+<tr><th id="303">303</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="304">304</th><td><i class="doc"> *   if (cond)</i></td></tr>
+<tr><th id="305">305</th><td><i class="doc"> *     // No need to unlock</i></td></tr>
+<tr><th id="306">306</th><td><i class="doc"> *     return;</i></td></tr>
+<tr><th id="307">307</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="308">308</th><td><i class="doc"> *   // Optionally early unlock</i></td></tr>
+<tr><th id="309">309</th><td><i class="doc"> *   g_clear_pointer (&amp;locker, g_mutex_locker_free);</i></td></tr>
+<tr><th id="310">310</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="311">311</th><td><i class="doc"> *   // Code with mutex unlocked here</i></td></tr>
+<tr><th id="312">312</th><td><i class="doc"> * }</i></td></tr>
+<tr><th id="313">313</th><td><i class="doc"> * ]|</i></td></tr>
+<tr><th id="314">314</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="315">315</th><td><i class="doc"> * Returns: a #GMutexLocker</i></td></tr>
+<tr><th id="316">316</th><td><i class="doc"> * Since: 2.44</i></td></tr>
+<tr><th id="317">317</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="318">318</th><td><em>static</em> <b>inline</b> <a class="typedef" href="#GMutexLocker" title='GMutexLocker' data-type='void' data-ref="GMutexLocker">GMutexLocker</a> *</td></tr>
+<tr><th id="319">319</th><td><dfn class="decl def" id="_ZL18g_mutex_locker_newP7_GMutex" title='g_mutex_locker_new' data-ref="_ZL18g_mutex_locker_newP7_GMutex">g_mutex_locker_new</dfn> (<a class="typedef" href="#GMutex" title='GMutex' data-type='union _GMutex' data-ref="GMutex">GMutex</a> *<dfn class="local col8 decl" id="678mutex" title='mutex' data-type='GMutex *' data-ref="678mutex">mutex</dfn>)</td></tr>
+<tr><th id="320">320</th><td>{</td></tr>
+<tr><th id="321">321</th><td>  <a class="ref" href="#g_mutex_lock" title='g_mutex_lock' data-ref="g_mutex_lock">g_mutex_lock</a> (<a class="local col8 ref" href="#678mutex" title='mutex' data-ref="678mutex">mutex</a>);</td></tr>
+<tr><th id="322">322</th><td>  <b>return</b> (<a class="typedef" href="#GMutexLocker" title='GMutexLocker' data-type='void' data-ref="GMutexLocker">GMutexLocker</a> *) <a class="local col8 ref" href="#678mutex" title='mutex' data-ref="678mutex">mutex</a>;</td></tr>
+<tr><th id="323">323</th><td>}</td></tr>
+<tr><th id="324">324</th><td></td></tr>
+<tr><th id="325">325</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="326">326</th><td><i class="doc"> * g_mutex_locker_free:</i></td></tr>
+<tr><th id="327">327</th><td><i class="doc"> *<span class="command"> @locker</span>: a GMutexLocker</i></td></tr>
+<tr><th id="328">328</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="329">329</th><td><i class="doc"> * Unlock<span class="command"> @locker</span>'s mutex. See g_mutex_locker_new() for details.</i></td></tr>
+<tr><th id="330">330</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="331">331</th><td><i class="doc"> * Since: 2.44</i></td></tr>
+<tr><th id="332">332</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="333">333</th><td><em>static</em> <b>inline</b> <em>void</em></td></tr>
+<tr><th id="334">334</th><td><dfn class="decl def" id="_ZL19g_mutex_locker_freePv" title='g_mutex_locker_free' data-ref="_ZL19g_mutex_locker_freePv">g_mutex_locker_free</dfn> (<a class="typedef" href="#GMutexLocker" title='GMutexLocker' data-type='void' data-ref="GMutexLocker">GMutexLocker</a> *<dfn class="local col9 decl" id="679locker" title='locker' data-type='GMutexLocker *' data-ref="679locker">locker</dfn>)</td></tr>
+<tr><th id="335">335</th><td>{</td></tr>
+<tr><th id="336">336</th><td>  <a class="ref" href="#g_mutex_unlock" title='g_mutex_unlock' data-ref="g_mutex_unlock">g_mutex_unlock</a> ((<a class="typedef" href="#GMutex" title='GMutex' data-type='union _GMutex' data-ref="GMutex">GMutex</a> *) <a class="local col9 ref" href="#679locker" title='locker' data-ref="679locker">locker</a>);</td></tr>
+<tr><th id="337">337</th><td>}</td></tr>
+<tr><th id="338">338</th><td></td></tr>
+<tr><th id="339">339</th><td><a class="macro" href="gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="340">340</th><td></td></tr>
+<tr><th id="341">341</th><td><u>#<span data-ppcond="25">endif</span> /* __G_THREAD_H__ */</u></td></tr>
+<tr><th id="342">342</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

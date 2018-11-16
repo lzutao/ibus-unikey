@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkevents.h' l='525' type='void gdk_event_put(const GdkEvent * event)'/>

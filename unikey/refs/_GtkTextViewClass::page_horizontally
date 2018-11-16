@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtktextview.h' l='178' type='void (*)(GtkTextView *, gint, gboolean)'/>
+<offset>6784</offset>
+<doc f='include/gtk-2.0/gtk/gtktextview.h' l='174'>/* FIXME should be deprecated in favor of adding GTK_MOVEMENT_HORIZONTAL_PAGES
+   * or something in GTK 2.2, was put in to avoid adding enum values during
+   * the freeze.
+   */</doc>

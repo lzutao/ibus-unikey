@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkfontsel.h' l='196' type='GdkFont * gtk_font_selection_dialog_get_font(GtkFontSelectionDialog * fsd)'/>
+<doc f='include/gtk-2.0/gtk/gtkfontsel.h' l='193'>/* This will return the current GdkFont, or NULL if none is selected or there
+   was a problem loading it. Remember to use gdk_font_ref/unref() if you want
+   to use the font (in a style, for example). */</doc>

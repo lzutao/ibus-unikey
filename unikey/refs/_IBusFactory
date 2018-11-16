@@ -1,0 +1,9 @@
+<def f='include/ibus-1.0/ibusfactory.h' l='119' ll='125'/>
+<size>56</size>
+<doc f='include/ibus-1.0/ibusfactory.h' l='114'>/**
+ * IBusFactory:
+ *
+ * An opaque data type representing an IBusFactory.
+ */</doc>
+<mbr r='_IBusFactory::parent' o='0' t='IBusService'/>
+<mbr r='_IBusFactory::priv' o='384' t='IBusFactoryPrivate *'/>

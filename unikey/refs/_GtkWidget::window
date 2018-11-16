@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='589' type='GdkWindow *'/>
+<offset>640</offset>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='585'>/* The widget&apos;s window or its parent window if it does
+   *  not have a window. (Which will be indicated by the
+   *  GTK_NO_WINDOW flag being set).
+   */</doc>

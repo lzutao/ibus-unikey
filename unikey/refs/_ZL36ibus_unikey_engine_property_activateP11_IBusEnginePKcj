@@ -1,0 +1,2 @@
+<dec f='unikey/src/engine_private.h' l='70' type='void ibus_unikey_engine_property_activate(IBusEngine * engine, const gchar * prop_name, guint prop_state)'/>
+<use f='unikey/src/engine.cpp' l='94' u='r' c='_ZL29ibus_unikey_engine_class_initP22_IBusUnikeyEngineClass'/>

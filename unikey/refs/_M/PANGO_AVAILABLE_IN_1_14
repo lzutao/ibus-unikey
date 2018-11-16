@@ -1,0 +1,5 @@
+<dec f='include/pango-1.0/pango/pango-version-macros.h' l='429'/>
+<use f='include/pango-1.0/pango/pango-font.h' l='555' u='c'/>
+<use f='include/pango-1.0/pango/pango-glyph.h' l='160' u='c'/>
+<use f='include/pango-1.0/pango/pangocairo.h' l='168' u='c'/>
+<use f='include/pango-1.0/pango/pangocairo.h' l='189' u='c'/>

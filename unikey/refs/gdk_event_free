@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkevents.h' l='529' type='void gdk_event_free(GdkEvent * event)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextview.h' l='235' type='void gtk_text_view_scroll_mark_onscreen(GtkTextView * text_view, GtkTextMark * mark)'/>

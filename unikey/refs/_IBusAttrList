@@ -1,0 +1,10 @@
+<def f='include/ibus-1.0/ibusattrlist.h' l='70' ll='75'/>
+<size>56</size>
+<doc f='include/ibus-1.0/ibusattrlist.h' l='64'>/**
+ * IBusAttrList:
+ * @attributes: GArray that holds #IBusAttribute.
+ *
+ * Array of IBusAttribute.
+ */</doc>
+<mbr r='_IBusAttrList::parent' o='0' t='IBusSerializable'/>
+<mbr r='_IBusAttrList::attributes' o='384' t='GArray *'/>

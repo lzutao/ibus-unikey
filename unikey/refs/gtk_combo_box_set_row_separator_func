@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcombobox.h' l='114' type='void gtk_combo_box_set_row_separator_func(GtkComboBox * combo_box, GtkTreeViewRowSeparatorFunc func, gpointer data, GDestroyNotify destroy)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdnd.h' l='131' type='void gdk_drop_reply(GdkDragContext * context, gboolean ok, guint32 time_)'/>

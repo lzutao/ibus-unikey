@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmessagedialog.h' l='108' type='GtkWidget * gtk_message_dialog_new_with_markup(GtkWindow * parent, GtkDialogFlags flags, GtkMessageType type, GtkButtonsType buttons, const gchar * message_format)'/>

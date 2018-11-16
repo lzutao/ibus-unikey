@@ -1,0 +1,6 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='615' type='void (*)(AtkObject *, guint, gpointer)'/>
+<offset>2240</offset>
+<doc f='include/atk-1.0/atk/atkobject.h' l='611'>/*
+   * The signal handler which is executed when there is a change in the
+   * children of the object
+   */</doc>

@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusenginedesc.h' l='232' type='const gchar * ibus_engine_desc_get_layout(IBusEngineDesc * info)'/>
+<doc f='include/ibus-1.0/ibusenginedesc.h' l='224'>/**
+ * ibus_engine_desc_get_layout:
+ * @info: An IBusEngineDesc
+ *
+ * Gets the layout property in IBusEngineDesc. It should not be freed.
+ *
+ * Returns: layout property in IBusEngineDesc
+ */</doc>

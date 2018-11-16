@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintsettings.h' l='56' type='gboolean gtk_print_settings_load_file(GtkPrintSettings * settings, const gchar * file_name, GError ** error)'/>

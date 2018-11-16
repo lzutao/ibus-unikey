@@ -1,0 +1,26 @@
+<def f='include/ibus-1.0/ibuslookuptable.h' l='87' ll='99'/>
+<size>88</size>
+<doc f='include/ibus-1.0/ibuslookuptable.h' l='71'>/**
+ * IBusLookupTable:
+ * @page_size: number of candidate shown per page.
+ * @cursor_pos: position index of cursor.
+ * @cursor_visible: whether the cursor is visible.
+ * @round: TRUE for lookup table wrap around.
+ * @orientation: orientation of the table.
+ * @candidates: Candidate words/phrases.
+ * @labels: Candidate labels which identify individual candidates in the same page. Default is 1, 2, 3, 4 ...
+ *
+ * An IBusLookuptable stores the candidate words or phrases for users to choose from.
+ * Note that some input methods allow you to select candidate by pressing non-numeric
+ * keys such as &quot;asdfghjkl;&quot;.
+ * Developers of these input methods should change the labels with
+ * ibus_lookup_table_append_label().
+ */</doc>
+<mbr r='_IBusLookupTable::parent' o='0' t='IBusSerializable'/>
+<mbr r='_IBusLookupTable::page_size' o='384' t='guint'/>
+<mbr r='_IBusLookupTable::cursor_pos' o='416' t='guint'/>
+<mbr r='_IBusLookupTable::cursor_visible' o='448' t='gboolean'/>
+<mbr r='_IBusLookupTable::round' o='480' t='gboolean'/>
+<mbr r='_IBusLookupTable::orientation' o='512' t='gint'/>
+<mbr r='_IBusLookupTable::candidates' o='576' t='GArray *'/>
+<mbr r='_IBusLookupTable::labels' o='640' t='GArray *'/>

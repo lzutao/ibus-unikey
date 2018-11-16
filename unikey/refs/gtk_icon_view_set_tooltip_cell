@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconview.h' l='224' type='void gtk_icon_view_set_tooltip_cell(GtkIconView * icon_view, GtkTooltip * tooltip, GtkTreePath * path, GtkCellRenderer * cell)'/>

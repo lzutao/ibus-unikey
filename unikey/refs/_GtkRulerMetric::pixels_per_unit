@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkruler.h' l='108' type='gdouble'/>
+<offset>128</offset>
+<doc f='include/gtk-2.0/gtk/gtkruler.h' l='106'>/* This should be points_per_unit. This is the size of the unit
+   * in 1/72nd&apos;s of an inch and has nothing to do with screen pixels */</doc>

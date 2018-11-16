@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-coverage.h' l='70' type='PangoCoverageLevel pango_coverage_get(PangoCoverage * coverage, int index_)'/>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='300' type='void gtk_text_iter_order(GtkTextIter * first, GtkTextIter * second)'/>
+<doc f='include/gtk-2.0/gtk/gtktextiter.h' l='299'>/* Put these two in ascending order */</doc>

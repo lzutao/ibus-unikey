@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='3132' type='cairo_region_overlap_t cairo_region_contains_rectangle(const cairo_region_t * region, const cairo_rectangle_int_t * rectangle)'/>

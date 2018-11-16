@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1135' type='void gtk_widget_style_attach(GtkWidget * style)'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='1133'>/* Widget styles.
+ */</doc>

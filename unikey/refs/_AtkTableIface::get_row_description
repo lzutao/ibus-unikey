@@ -1,0 +1,2 @@
+<dec f='include/atk-1.0/atk/atktable.h' l='70' type='const gchar *(*)(AtkTable *, gint)'/>
+<offset>832</offset>

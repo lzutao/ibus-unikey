@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconview.h' l='194' type='void gtk_icon_view_set_reorderable(GtkIconView * icon_view, gboolean reorderable)'/>

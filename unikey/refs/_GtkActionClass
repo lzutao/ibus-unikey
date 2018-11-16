@@ -1,0 +1,14 @@
+<def f='include/gtk-2.0/gtk/gtkaction.h' l='62' ll='86'/>
+<size>224</size>
+<mbr r='_GtkActionClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_GtkActionClass::activate' o='1088' t='void (*)(GtkAction *)'/>
+<mbr r='_GtkActionClass::menu_item_type' o='1152' t='GType'/>
+<mbr r='_GtkActionClass::toolbar_item_type' o='1216' t='GType'/>
+<mbr r='_GtkActionClass::create_menu_item' o='1280' t='GtkWidget *(*)(GtkAction *)'/>
+<mbr r='_GtkActionClass::create_tool_item' o='1344' t='GtkWidget *(*)(GtkAction *)'/>
+<mbr r='_GtkActionClass::connect_proxy' o='1408' t='void (*)(GtkAction *, GtkWidget *)'/>
+<mbr r='_GtkActionClass::disconnect_proxy' o='1472' t='void (*)(GtkAction *, GtkWidget *)'/>
+<mbr r='_GtkActionClass::create_menu' o='1536' t='GtkWidget *(*)(GtkAction *)'/>
+<mbr r='_GtkActionClass::_gtk_reserved2' o='1600' t='void (*)()'/>
+<mbr r='_GtkActionClass::_gtk_reserved3' o='1664' t='void (*)()'/>
+<mbr r='_GtkActionClass::_gtk_reserved4' o='1728' t='void (*)()'/>

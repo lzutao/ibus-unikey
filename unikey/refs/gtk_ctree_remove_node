@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='192' type='void gtk_ctree_remove_node(GtkCTree * ctree, GtkCTreeNode * node)'/>

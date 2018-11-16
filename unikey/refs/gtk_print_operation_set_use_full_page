@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintoperation.h' l='155' type='void gtk_print_operation_set_use_full_page(GtkPrintOperation * op, gboolean full_page)'/>

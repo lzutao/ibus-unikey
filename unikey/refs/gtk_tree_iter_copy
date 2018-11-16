@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktreemodel.h' l='186' type='GtkTreeIter * gtk_tree_iter_copy(GtkTreeIter * iter)'/>
+<doc f='include/gtk-2.0/gtk/gtktreemodel.h' l='185'>/* GtkTreeIter operations */</doc>

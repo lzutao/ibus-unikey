@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextbufferrichtext.h' l='86' type='gboolean gtk_text_buffer_deserialize(GtkTextBuffer * register_buffer, GtkTextBuffer * content_buffer, GdkAtom format, GtkTextIter * iter, const guint8 * data, gsize length, GError ** error)'/>

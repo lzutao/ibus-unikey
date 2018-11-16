@@ -1,0 +1,12 @@
+<def f='include/gtk-2.0/gtk/gtkscrolledwindow.h' l='55' ll='72'/>
+<size>144</size>
+<mbr r='_GtkScrolledWindow::container' o='0' t='GtkBin'/>
+<mbr r='_GtkScrolledWindow::hscrollbar' o='960' t='GtkWidget *'/>
+<mbr r='_GtkScrolledWindow::vscrollbar' o='1024' t='GtkWidget *'/>
+<mbr r='_GtkScrolledWindow::hscrollbar_policy' o='1088' t='guint'/>
+<mbr r='_GtkScrolledWindow::vscrollbar_policy' o='1090' t='guint'/>
+<mbr r='_GtkScrolledWindow::hscrollbar_visible' o='1092' t='guint'/>
+<mbr r='_GtkScrolledWindow::vscrollbar_visible' o='1093' t='guint'/>
+<mbr r='_GtkScrolledWindow::window_placement' o='1094' t='guint'/>
+<mbr r='_GtkScrolledWindow::focus_out' o='1096' t='guint'/>
+<mbr r='_GtkScrolledWindow::shadow_type' o='1104' t='guint16'/>

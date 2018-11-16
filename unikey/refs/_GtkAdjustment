@@ -1,0 +1,9 @@
+<def f='include/gtk-2.0/gtk/gtkadjustment.h' l='51' ll='61'/>
+<size>80</size>
+<mbr r='_GtkAdjustment::parent_instance' o='0' t='GtkObject'/>
+<mbr r='_GtkAdjustment::lower' o='256' t='gdouble'/>
+<mbr r='_GtkAdjustment::upper' o='320' t='gdouble'/>
+<mbr r='_GtkAdjustment::value' o='384' t='gdouble'/>
+<mbr r='_GtkAdjustment::step_increment' o='448' t='gdouble'/>
+<mbr r='_GtkAdjustment::page_increment' o='512' t='gdouble'/>
+<mbr r='_GtkAdjustment::page_size' o='576' t='gdouble'/>

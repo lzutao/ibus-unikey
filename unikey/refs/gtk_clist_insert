@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='688' type='gint gtk_clist_insert(GtkCList * clist, gint row, gchar ** text)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='685'>/* inserts a row at index row and returns the row where it was
+ * actually inserted (may be different from &quot;row&quot; in auto_sort mode)
+ */</doc>

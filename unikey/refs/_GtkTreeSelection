@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtktreeselection.h' l='49' ll='60'/>
+<size>64</size>
+<mbr r='_GtkTreeSelection::parent' o='0' t='GObject'/>
+<mbr r='_GtkTreeSelection::tree_view' o='192' t='GtkTreeView *'/>
+<mbr r='_GtkTreeSelection::type' o='256' t='GtkSelectionMode'/>
+<mbr r='_GtkTreeSelection::user_func' o='320' t='GtkTreeSelectionFunc'/>
+<mbr r='_GtkTreeSelection::user_data' o='384' t='gpointer'/>
+<mbr r='_GtkTreeSelection::destroy' o='448' t='GDestroyNotify'/>

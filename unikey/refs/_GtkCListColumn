@@ -1,0 +1,15 @@
+<def f='include/gtk-2.0/gtk/gtkclist.h' l='324' ll='342'/>
+<size>64</size>
+<mbr r='_GtkCListColumn::title' o='0' t='gchar *'/>
+<mbr r='_GtkCListColumn::area' o='64' t='GdkRectangle'/>
+<mbr r='_GtkCListColumn::button' o='192' t='GtkWidget *'/>
+<mbr r='_GtkCListColumn::window' o='256' t='GdkWindow *'/>
+<mbr r='_GtkCListColumn::width' o='320' t='gint'/>
+<mbr r='_GtkCListColumn::min_width' o='352' t='gint'/>
+<mbr r='_GtkCListColumn::max_width' o='384' t='gint'/>
+<mbr r='_GtkCListColumn::justification' o='416' t='GtkJustification'/>
+<mbr r='_GtkCListColumn::visible' o='448' t='guint'/>
+<mbr r='_GtkCListColumn::width_set' o='449' t='guint'/>
+<mbr r='_GtkCListColumn::resizeable' o='450' t='guint'/>
+<mbr r='_GtkCListColumn::auto_resize' o='451' t='guint'/>
+<mbr r='_GtkCListColumn::button_passive' o='452' t='guint'/>

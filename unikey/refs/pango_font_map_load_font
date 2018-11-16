@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-fontmap.h' l='58' type='PangoFont * pango_font_map_load_font(PangoFontMap * fontmap, PangoContext * context, const PangoFontDescription * desc)'/>

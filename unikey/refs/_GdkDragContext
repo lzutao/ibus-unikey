@@ -1,0 +1,13 @@
+<def f='include/gtk-2.0/gdk/gdkdnd.h' l='75' ll='97'/>
+<size>80</size>
+<mbr r='_GdkDragContext::parent_instance' o='0' t='GObject'/>
+<mbr r='_GdkDragContext::protocol' o='192' t='GdkDragProtocol'/>
+<mbr r='_GdkDragContext::is_source' o='224' t='gboolean'/>
+<mbr r='_GdkDragContext::source_window' o='256' t='GdkWindow *'/>
+<mbr r='_GdkDragContext::dest_window' o='320' t='GdkWindow *'/>
+<mbr r='_GdkDragContext::targets' o='384' t='GList *'/>
+<mbr r='_GdkDragContext::actions' o='448' t='GdkDragAction'/>
+<mbr r='_GdkDragContext::suggested_action' o='480' t='GdkDragAction'/>
+<mbr r='_GdkDragContext::action' o='512' t='GdkDragAction'/>
+<mbr r='_GdkDragContext::start_time' o='544' t='guint32'/>
+<mbr r='_GdkDragContext::windowing_data' o='576' t='gpointer'/>

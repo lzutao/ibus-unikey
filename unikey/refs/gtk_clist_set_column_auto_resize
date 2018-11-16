@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='533' type='void gtk_clist_set_column_auto_resize(GtkCList * clist, gint column, gboolean auto_resize)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='532'>/* resize column automatically to its optimal width */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-context.h' l='58' type='void pango_context_set_font_map(PangoContext * context, PangoFontMap * font_map)'/>

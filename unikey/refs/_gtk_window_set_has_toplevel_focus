@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='424' type='void _gtk_window_set_has_toplevel_focus(GtkWindow * window, gboolean has_toplevel_focus)'/>

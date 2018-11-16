@@ -1,0 +1,2 @@
+<dec f='unikey/src/engine_private.h' l='61' type='void ibus_unikey_engine_focus_out(IBusEngine * engine)'/>
+<use f='unikey/src/engine.cpp' l='93' u='r' c='_ZL29ibus_unikey_engine_class_initP22_IBusUnikeyEngineClass'/>

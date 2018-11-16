@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkobject.h' l='157' type='GtkObject * gtk_object_new(GType type, const gchar * first_property_name)'/>

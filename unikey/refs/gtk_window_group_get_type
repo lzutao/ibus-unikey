@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='397' type='GType gtk_window_group_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtkwindow.h' l='395'>/* Window groups
+ */</doc>

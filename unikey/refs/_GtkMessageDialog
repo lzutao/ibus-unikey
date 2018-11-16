@@ -1,0 +1,5 @@
+<def f='include/gtk-2.0/gtk/gtkmessagedialog.h' l='50' ll='58'/>
+<size>280</size>
+<mbr r='_GtkMessageDialog::parent_instance' o='0' t='GtkDialog'/>
+<mbr r='_GtkMessageDialog::image' o='2112' t='GtkWidget *'/>
+<mbr r='_GtkMessageDialog::label' o='2176' t='GtkWidget *'/>

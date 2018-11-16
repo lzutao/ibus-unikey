@@ -1,0 +1,2 @@
+<dec f='include/ibus-1.0/ibusconfigservice.h' l='200' type='gboolean (*)(IBusConfigService *, const gchar *, const gchar *, GError **)'/>
+<offset>2240</offset>

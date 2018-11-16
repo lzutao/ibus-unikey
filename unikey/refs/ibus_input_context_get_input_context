@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusinputcontext.h' l='147' type='IBusInputContext * ibus_input_context_get_input_context(const gchar * path, GDBusConnection * connection)'/>
+<doc f='include/ibus-1.0/ibusinputcontext.h' l='137'>/**
+ * ibus_input_context_get_input_context:
+ * @path: The path to the object that emitting the signal.
+ * @connection: A GDBusConnection.
+ *
+ * Gets an existing IBusInputContext.
+ *
+ * Returns: (transfer none): An existing #IBusInputContext.
+ */</doc>

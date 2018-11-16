@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>pango-glyph-item.h source code [include/pango-1.0/pango/pango-glyph-item.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/pango-1.0/pango/pango-glyph-item.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>pango-1.0</a>/<a href='./'>pango</a>/<a href='pango-glyph-item.h.html'>pango-glyph-item.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Pango</i></td></tr>
+<tr><th id="2">2</th><td><i> * pango-glyph-item.h: Pair of PangoItem and a glyph string</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 2002 Red Hat Software</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="7">7</th><td><i> * modify it under the terms of the GNU Library General Public</i></td></tr>
+<tr><th id="8">8</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="9">9</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="12">12</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="13">13</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the GNU</i></td></tr>
+<tr><th id="14">14</th><td><i> * Library General Public License for more details.</i></td></tr>
+<tr><th id="15">15</th><td><i> *</i></td></tr>
+<tr><th id="16">16</th><td><i> * You should have received a copy of the GNU Library General Public</i></td></tr>
+<tr><th id="17">17</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="18">18</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="19">19</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="22">ifndef</span> <span class="macro" data-ref="_M/__PANGO_GLYPH_ITEM_H__">__PANGO_GLYPH_ITEM_H__</span></u></td></tr>
+<tr><th id="23">23</th><td><u>#define <dfn class="macro" id="_M/__PANGO_GLYPH_ITEM_H__" data-ref="_M/__PANGO_GLYPH_ITEM_H__">__PANGO_GLYPH_ITEM_H__</dfn></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="pango-attributes.h.html">&lt;pango/pango-attributes.h&gt;</a></u></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="pango-break.h.html">&lt;pango/pango-break.h&gt;</a></u></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="pango-item.h.html">&lt;pango/pango-item.h&gt;</a></u></td></tr>
+<tr><th id="28">28</th><td><u>#include <a href="pango-glyph.h.html">&lt;pango/pango-glyph.h&gt;</a></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> * PangoGlyphItem:</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> *<span class="command"> @item</span>: corresponding #PangoItem.</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> *<span class="command"> @glyphs</span>: corresponding #PangoGlyphString.</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> * A #PangoGlyphItem is a pair of a #PangoItem and the glyphs</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * resulting from shaping the text corresponding to an item.</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * As an example of the usage of #PangoGlyphItem, the results</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * of shaping text with #PangoLayout is a list of #PangoLayoutLine,</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * each of which contains a list of #PangoGlyphItem.</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="43">43</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_PangoGlyphItem" title='_PangoGlyphItem' data-ref="_PangoGlyphItem">_PangoGlyphItem</a> <dfn class="typedef" id="PangoGlyphItem" title='PangoGlyphItem' data-type='struct _PangoGlyphItem' data-ref="PangoGlyphItem">PangoGlyphItem</dfn>;</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><b>struct</b> <dfn class="type def" id="_PangoGlyphItem" title='_PangoGlyphItem' data-ref="_PangoGlyphItem">_PangoGlyphItem</dfn></td></tr>
+<tr><th id="46">46</th><td>{</td></tr>
+<tr><th id="47">47</th><td>  <a class="typedef" href="pango-item.h.html#PangoItem" title='PangoItem' data-type='struct _PangoItem' data-ref="PangoItem">PangoItem</a>        *<dfn class="decl" id="_PangoGlyphItem::item" title='_PangoGlyphItem::item' data-ref="_PangoGlyphItem::item">item</dfn>;</td></tr>
+<tr><th id="48">48</th><td>  <a class="typedef" href="pango-glyph.h.html#PangoGlyphString" title='PangoGlyphString' data-type='struct _PangoGlyphString' data-ref="PangoGlyphString">PangoGlyphString</a> *<dfn class="decl" id="_PangoGlyphItem::glyphs" title='_PangoGlyphItem::glyphs' data-ref="_PangoGlyphItem::glyphs">glyphs</dfn>;</td></tr>
+<tr><th id="49">49</th><td>};</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> * PANGO_TYPE_GLYPH_ITEM:</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> * The #GObject type for #PangoGlyphItem.</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="56">56</th><td><u>#define <dfn class="macro" id="_M/PANGO_TYPE_GLYPH_ITEM" data-ref="_M/PANGO_TYPE_GLYPH_ITEM">PANGO_TYPE_GLYPH_ITEM</dfn> (pango_glyph_item_get_type ())</u></td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><a class="macro" href="pango-version-macros.h.html#31" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_ALL">PANGO_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="59">59</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a> <dfn class="decl" id="pango_glyph_item_get_type" title='pango_glyph_item_get_type' data-ref="pango_glyph_item_get_type">pango_glyph_item_get_type</dfn> (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><a class="macro" href="pango-version-macros.h.html#352" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_2">PANGO_AVAILABLE_IN_1_2</a></td></tr>
+<tr><th id="62">62</th><td><a class="typedef" href="#PangoGlyphItem" title='PangoGlyphItem' data-type='struct _PangoGlyphItem' data-ref="PangoGlyphItem">PangoGlyphItem</a> *<dfn class="decl" id="pango_glyph_item_split" title='pango_glyph_item_split' data-ref="pango_glyph_item_split">pango_glyph_item_split</dfn>        (<a class="typedef" href="#PangoGlyphItem" title='PangoGlyphItem' data-type='struct _PangoGlyphItem' data-ref="PangoGlyphItem">PangoGlyphItem</a> *<dfn class="local col5 decl" id="12745orig" title='orig' data-type='PangoGlyphItem *' data-ref="12745orig">orig</dfn>,</td></tr>
+<tr><th id="63">63</th><td>					       <em>const</em> <em>char</em>     *<dfn class="local col6 decl" id="12746text" title='text' data-type='const char *' data-ref="12746text">text</dfn>,</td></tr>
+<tr><th id="64">64</th><td>					       <em>int</em>             <dfn class="local col7 decl" id="12747split_index" title='split_index' data-type='int' data-ref="12747split_index">split_index</dfn>);</td></tr>
+<tr><th id="65">65</th><td><a class="macro" href="pango-version-macros.h.html#479" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_20">PANGO_AVAILABLE_IN_1_20</a></td></tr>
+<tr><th id="66">66</th><td><a class="typedef" href="#PangoGlyphItem" title='PangoGlyphItem' data-type='struct _PangoGlyphItem' data-ref="PangoGlyphItem">PangoGlyphItem</a> *<dfn class="decl" id="pango_glyph_item_copy" title='pango_glyph_item_copy' data-ref="pango_glyph_item_copy">pango_glyph_item_copy</dfn>         (<a class="typedef" href="#PangoGlyphItem" title='PangoGlyphItem' data-type='struct _PangoGlyphItem' data-ref="PangoGlyphItem">PangoGlyphItem</a> *<dfn class="local col8 decl" id="12748orig" title='orig' data-type='PangoGlyphItem *' data-ref="12748orig">orig</dfn>);</td></tr>
+<tr><th id="67">67</th><td><a class="macro" href="pango-version-macros.h.html#381" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_6">PANGO_AVAILABLE_IN_1_6</a></td></tr>
+<tr><th id="68">68</th><td><em>void</em>            <dfn class="decl" id="pango_glyph_item_free" title='pango_glyph_item_free' data-ref="pango_glyph_item_free">pango_glyph_item_free</dfn>         (<a class="typedef" href="#PangoGlyphItem" title='PangoGlyphItem' data-type='struct _PangoGlyphItem' data-ref="PangoGlyphItem">PangoGlyphItem</a> *<dfn class="local col9 decl" id="12749glyph_item" title='glyph_item' data-type='PangoGlyphItem *' data-ref="12749glyph_item">glyph_item</dfn>);</td></tr>
+<tr><th id="69">69</th><td><a class="macro" href="pango-version-macros.h.html#352" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_2">PANGO_AVAILABLE_IN_1_2</a></td></tr>
+<tr><th id="70">70</th><td><a class="typedef" href="../../glib-2.0/glib/gslist.h.html#GSList" title='GSList' data-type='struct _GSList' data-ref="GSList">GSList</a> *        <dfn class="decl" id="pango_glyph_item_apply_attrs" title='pango_glyph_item_apply_attrs' data-ref="pango_glyph_item_apply_attrs">pango_glyph_item_apply_attrs</dfn>  (<a class="typedef" href="#PangoGlyphItem" title='PangoGlyphItem' data-type='struct _PangoGlyphItem' data-ref="PangoGlyphItem">PangoGlyphItem</a> *<dfn class="local col0 decl" id="12750glyph_item" title='glyph_item' data-type='PangoGlyphItem *' data-ref="12750glyph_item">glyph_item</dfn>,</td></tr>
+<tr><th id="71">71</th><td>					       <em>const</em> <em>char</em>     *<dfn class="local col1 decl" id="12751text" title='text' data-type='const char *' data-ref="12751text">text</dfn>,</td></tr>
+<tr><th id="72">72</th><td>					       <a class="typedef" href="pango-attributes.h.html#PangoAttrList" title='PangoAttrList' data-type='struct _PangoAttrList' data-ref="PangoAttrList">PangoAttrList</a>  *<dfn class="local col2 decl" id="12752list" title='list' data-type='PangoAttrList *' data-ref="12752list">list</dfn>);</td></tr>
+<tr><th id="73">73</th><td><a class="macro" href="pango-version-macros.h.html#381" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_6">PANGO_AVAILABLE_IN_1_6</a></td></tr>
+<tr><th id="74">74</th><td><em>void</em>            <dfn class="decl" id="pango_glyph_item_letter_space" title='pango_glyph_item_letter_space' data-ref="pango_glyph_item_letter_space">pango_glyph_item_letter_space</dfn> (<a class="typedef" href="#PangoGlyphItem" title='PangoGlyphItem' data-type='struct _PangoGlyphItem' data-ref="PangoGlyphItem">PangoGlyphItem</a> *<dfn class="local col3 decl" id="12753glyph_item" title='glyph_item' data-type='PangoGlyphItem *' data-ref="12753glyph_item">glyph_item</dfn>,</td></tr>
+<tr><th id="75">75</th><td>					       <em>const</em> <em>char</em>     *<dfn class="local col4 decl" id="12754text" title='text' data-type='const char *' data-ref="12754text">text</dfn>,</td></tr>
+<tr><th id="76">76</th><td>					       <a class="typedef" href="pango-types.h.html#PangoLogAttr" title='PangoLogAttr' data-type='struct _PangoLogAttr' data-ref="PangoLogAttr">PangoLogAttr</a>   *<dfn class="local col5 decl" id="12755log_attrs" title='log_attrs' data-type='PangoLogAttr *' data-ref="12755log_attrs">log_attrs</dfn>,</td></tr>
+<tr><th id="77">77</th><td>					       <em>int</em>             <dfn class="local col6 decl" id="12756letter_spacing" title='letter_spacing' data-type='int' data-ref="12756letter_spacing">letter_spacing</dfn>);</td></tr>
+<tr><th id="78">78</th><td><a class="macro" href="pango-version-macros.h.html#521" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_26">PANGO_AVAILABLE_IN_1_26</a></td></tr>
+<tr><th id="79">79</th><td><em>void</em> 	  <dfn class="decl" id="pango_glyph_item_get_logical_widths" title='pango_glyph_item_get_logical_widths' data-ref="pango_glyph_item_get_logical_widths">pango_glyph_item_get_logical_widths</dfn> (<a class="typedef" href="#PangoGlyphItem" title='PangoGlyphItem' data-type='struct _PangoGlyphItem' data-ref="PangoGlyphItem">PangoGlyphItem</a> *<dfn class="local col7 decl" id="12757glyph_item" title='glyph_item' data-type='PangoGlyphItem *' data-ref="12757glyph_item">glyph_item</dfn>,</td></tr>
+<tr><th id="80">80</th><td>					       <em>const</em> <em>char</em>     *<dfn class="local col8 decl" id="12758text" title='text' data-type='const char *' data-ref="12758text">text</dfn>,</td></tr>
+<tr><th id="81">81</th><td>					       <em>int</em>            *<dfn class="local col9 decl" id="12759logical_widths" title='logical_widths' data-type='int *' data-ref="12759logical_widths">logical_widths</dfn>);</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> * PangoGlyphItemIter:</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> * A #PangoGlyphItemIter is an iterator over the clusters in a</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> * #PangoGlyphItem.  The &lt;firstterm&gt;forward direction&lt;/firstterm&gt; of the</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc"> * iterator is the logical direction of text.  That is, with increasing</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> *<span class="command"> @start</span>_index and<span class="command"> @start</span>_char values.  If<span class="command"> @glyph</span>_item is right-to-left</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> * (that is, if &lt;literal<span class="command">&gt;@glyph</span>_item-&gt;item-&gt;analysis.level&lt;/literal&gt; is odd),</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> * then<span class="command"> @start</span>_glyph decreases as the iterator moves forward.  Moreover,</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> * in right-to-left cases,<span class="command"> @start</span>_glyph is greater than<span class="command"> @end</span>_glyph.</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> * An iterator should be initialized using either of</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> * pango_glyph_item_iter_init_start() and</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> * pango_glyph_item_iter_init_end(), for forward and backward iteration</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> * respectively, and walked over using any desired mixture of</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"> * pango_glyph_item_iter_next_cluster() and</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc"> * pango_glyph_item_iter_prev_cluster().  A common idiom for doing a</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc"> * forward iteration over the clusters is:</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> * &lt;programlisting&gt;</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> * PangoGlyphItemIter cluster_iter;</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> * gboolean have_cluster;</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"> * for (have_cluster = pango_glyph_item_iter_init_start (&amp;amp;cluster_iter,</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> *                                                       glyph_item, text);</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> *      have_cluster;</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> *      have_cluster = pango_glyph_item_iter_next_cluster (&amp;amp;cluster_iter))</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> * {</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> *   ...</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> * }</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc"> * &lt;/programlisting&gt;</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc"> * Note that<span class="command"> @text</span> is the start of the text for layout, which is then</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> * indexed by &lt;literal<span class="command">&gt;@glyph</span>_item-&gt;item-&gt;offset&lt;/literal&gt; to get to the</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc"> * text of<span class="command"> @glyph</span>_item.  The<span class="command"> @start</span>_index and<span class="command"> @end</span>_index values can directly</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc"> * index into<span class="command"> @text</span>.  The<span class="command"> @start</span>_glyph,<span class="command"> @end</span>_glyph,<span class="command"> @start</span>_char, and<span class="command"> @end</span>_char</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> * values however are zero-based for the<span class="command"> @glyph</span>_item.  For each cluster, the</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> * item pointed at by the start variables is included in the cluster while</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"> * the one pointed at by end variables is not.</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> * None of the members of a #PangoGlyphItemIter should be modified manually.</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc"> * Since: 1.22</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="127">127</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_PangoGlyphItemIter" title='_PangoGlyphItemIter' data-ref="_PangoGlyphItemIter">_PangoGlyphItemIter</a> <dfn class="typedef" id="PangoGlyphItemIter" title='PangoGlyphItemIter' data-type='struct _PangoGlyphItemIter' data-ref="PangoGlyphItemIter">PangoGlyphItemIter</dfn>;</td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td><b>struct</b> <dfn class="type def" id="_PangoGlyphItemIter" title='_PangoGlyphItemIter' data-ref="_PangoGlyphItemIter">_PangoGlyphItemIter</dfn></td></tr>
+<tr><th id="130">130</th><td>{</td></tr>
+<tr><th id="131">131</th><td>  <a class="typedef" href="#PangoGlyphItem" title='PangoGlyphItem' data-type='struct _PangoGlyphItem' data-ref="PangoGlyphItem">PangoGlyphItem</a> *<dfn class="decl" id="_PangoGlyphItemIter::glyph_item" title='_PangoGlyphItemIter::glyph_item' data-ref="_PangoGlyphItemIter::glyph_item">glyph_item</dfn>;</td></tr>
+<tr><th id="132">132</th><td>  <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="decl" id="_PangoGlyphItemIter::text" title='_PangoGlyphItemIter::text' data-ref="_PangoGlyphItemIter::text">text</dfn>;</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td>  <em>int</em> <dfn class="decl" id="_PangoGlyphItemIter::start_glyph" title='_PangoGlyphItemIter::start_glyph' data-ref="_PangoGlyphItemIter::start_glyph">start_glyph</dfn>;</td></tr>
+<tr><th id="135">135</th><td>  <em>int</em> <dfn class="decl" id="_PangoGlyphItemIter::start_index" title='_PangoGlyphItemIter::start_index' data-ref="_PangoGlyphItemIter::start_index">start_index</dfn>;</td></tr>
+<tr><th id="136">136</th><td>  <em>int</em> <dfn class="decl" id="_PangoGlyphItemIter::start_char" title='_PangoGlyphItemIter::start_char' data-ref="_PangoGlyphItemIter::start_char">start_char</dfn>;</td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td>  <em>int</em> <dfn class="decl" id="_PangoGlyphItemIter::end_glyph" title='_PangoGlyphItemIter::end_glyph' data-ref="_PangoGlyphItemIter::end_glyph">end_glyph</dfn>;</td></tr>
+<tr><th id="139">139</th><td>  <em>int</em> <dfn class="decl" id="_PangoGlyphItemIter::end_index" title='_PangoGlyphItemIter::end_index' data-ref="_PangoGlyphItemIter::end_index">end_index</dfn>;</td></tr>
+<tr><th id="140">140</th><td>  <em>int</em> <dfn class="decl" id="_PangoGlyphItemIter::end_char" title='_PangoGlyphItemIter::end_char' data-ref="_PangoGlyphItemIter::end_char">end_char</dfn>;</td></tr>
+<tr><th id="141">141</th><td>};</td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> * PANGO_TYPE_GLYPH_ITEM_ITER:</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> * The #GObject type for #PangoGlyphItemIter.</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> * Since: 1.22</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="150">150</th><td><u>#define <dfn class="macro" id="_M/PANGO_TYPE_GLYPH_ITEM_ITER" data-ref="_M/PANGO_TYPE_GLYPH_ITEM_ITER">PANGO_TYPE_GLYPH_ITEM_ITER</dfn> (pango_glyph_item_iter_get_type ())</u></td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td><a class="macro" href="pango-version-macros.h.html#493" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_22">PANGO_AVAILABLE_IN_1_22</a></td></tr>
+<tr><th id="153">153</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>               <dfn class="decl" id="pango_glyph_item_iter_get_type" title='pango_glyph_item_iter_get_type' data-ref="pango_glyph_item_iter_get_type">pango_glyph_item_iter_get_type</dfn> (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="154">154</th><td><a class="macro" href="pango-version-macros.h.html#493" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_22">PANGO_AVAILABLE_IN_1_22</a></td></tr>
+<tr><th id="155">155</th><td><a class="typedef" href="#PangoGlyphItemIter" title='PangoGlyphItemIter' data-type='struct _PangoGlyphItemIter' data-ref="PangoGlyphItemIter">PangoGlyphItemIter</a> *<dfn class="decl" id="pango_glyph_item_iter_copy" title='pango_glyph_item_iter_copy' data-ref="pango_glyph_item_iter_copy">pango_glyph_item_iter_copy</dfn> (<a class="typedef" href="#PangoGlyphItemIter" title='PangoGlyphItemIter' data-type='struct _PangoGlyphItemIter' data-ref="PangoGlyphItemIter">PangoGlyphItemIter</a> *<dfn class="local col0 decl" id="12760orig" title='orig' data-type='PangoGlyphItemIter *' data-ref="12760orig">orig</dfn>);</td></tr>
+<tr><th id="156">156</th><td><a class="macro" href="pango-version-macros.h.html#493" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_22">PANGO_AVAILABLE_IN_1_22</a></td></tr>
+<tr><th id="157">157</th><td><em>void</em>                <dfn class="decl" id="pango_glyph_item_iter_free" title='pango_glyph_item_iter_free' data-ref="pango_glyph_item_iter_free">pango_glyph_item_iter_free</dfn> (<a class="typedef" href="#PangoGlyphItemIter" title='PangoGlyphItemIter' data-type='struct _PangoGlyphItemIter' data-ref="PangoGlyphItemIter">PangoGlyphItemIter</a> *<dfn class="local col1 decl" id="12761iter" title='iter' data-type='PangoGlyphItemIter *' data-ref="12761iter">iter</dfn>);</td></tr>
+<tr><th id="158">158</th><td></td></tr>
+<tr><th id="159">159</th><td><a class="macro" href="pango-version-macros.h.html#493" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_22">PANGO_AVAILABLE_IN_1_22</a></td></tr>
+<tr><th id="160">160</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="pango_glyph_item_iter_init_start" title='pango_glyph_item_iter_init_start' data-ref="pango_glyph_item_iter_init_start">pango_glyph_item_iter_init_start</dfn>   (<a class="typedef" href="#PangoGlyphItemIter" title='PangoGlyphItemIter' data-type='struct _PangoGlyphItemIter' data-ref="PangoGlyphItemIter">PangoGlyphItemIter</a> *<dfn class="local col2 decl" id="12762iter" title='iter' data-type='PangoGlyphItemIter *' data-ref="12762iter">iter</dfn>,</td></tr>
+<tr><th id="161">161</th><td>					     <a class="typedef" href="#PangoGlyphItem" title='PangoGlyphItem' data-type='struct _PangoGlyphItem' data-ref="PangoGlyphItem">PangoGlyphItem</a>     *<dfn class="local col3 decl" id="12763glyph_item" title='glyph_item' data-type='PangoGlyphItem *' data-ref="12763glyph_item">glyph_item</dfn>,</td></tr>
+<tr><th id="162">162</th><td>					     <em>const</em> <em>char</em>         *<dfn class="local col4 decl" id="12764text" title='text' data-type='const char *' data-ref="12764text">text</dfn>);</td></tr>
+<tr><th id="163">163</th><td><a class="macro" href="pango-version-macros.h.html#493" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_22">PANGO_AVAILABLE_IN_1_22</a></td></tr>
+<tr><th id="164">164</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="pango_glyph_item_iter_init_end" title='pango_glyph_item_iter_init_end' data-ref="pango_glyph_item_iter_init_end">pango_glyph_item_iter_init_end</dfn>     (<a class="typedef" href="#PangoGlyphItemIter" title='PangoGlyphItemIter' data-type='struct _PangoGlyphItemIter' data-ref="PangoGlyphItemIter">PangoGlyphItemIter</a> *<dfn class="local col5 decl" id="12765iter" title='iter' data-type='PangoGlyphItemIter *' data-ref="12765iter">iter</dfn>,</td></tr>
+<tr><th id="165">165</th><td>					     <a class="typedef" href="#PangoGlyphItem" title='PangoGlyphItem' data-type='struct _PangoGlyphItem' data-ref="PangoGlyphItem">PangoGlyphItem</a>     *<dfn class="local col6 decl" id="12766glyph_item" title='glyph_item' data-type='PangoGlyphItem *' data-ref="12766glyph_item">glyph_item</dfn>,</td></tr>
+<tr><th id="166">166</th><td>					     <em>const</em> <em>char</em>         *<dfn class="local col7 decl" id="12767text" title='text' data-type='const char *' data-ref="12767text">text</dfn>);</td></tr>
+<tr><th id="167">167</th><td><a class="macro" href="pango-version-macros.h.html#493" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_22">PANGO_AVAILABLE_IN_1_22</a></td></tr>
+<tr><th id="168">168</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="pango_glyph_item_iter_next_cluster" title='pango_glyph_item_iter_next_cluster' data-ref="pango_glyph_item_iter_next_cluster">pango_glyph_item_iter_next_cluster</dfn> (<a class="typedef" href="#PangoGlyphItemIter" title='PangoGlyphItemIter' data-type='struct _PangoGlyphItemIter' data-ref="PangoGlyphItemIter">PangoGlyphItemIter</a> *<dfn class="local col8 decl" id="12768iter" title='iter' data-type='PangoGlyphItemIter *' data-ref="12768iter">iter</dfn>);</td></tr>
+<tr><th id="169">169</th><td><a class="macro" href="pango-version-macros.h.html#493" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_22">PANGO_AVAILABLE_IN_1_22</a></td></tr>
+<tr><th id="170">170</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="pango_glyph_item_iter_prev_cluster" title='pango_glyph_item_iter_prev_cluster' data-ref="pango_glyph_item_iter_prev_cluster">pango_glyph_item_iter_prev_cluster</dfn> (<a class="typedef" href="#PangoGlyphItemIter" title='PangoGlyphItemIter' data-type='struct _PangoGlyphItemIter' data-ref="PangoGlyphItemIter">PangoGlyphItemIter</a> *<dfn class="local col9 decl" id="12769iter" title='iter' data-type='PangoGlyphItemIter *' data-ref="12769iter">iter</dfn>);</td></tr>
+<tr><th id="171">171</th><td></td></tr>
+<tr><th id="172">172</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td><u>#<span data-ppcond="22">endif</span> /* __PANGO_GLYPH_ITEM_H__ */</u></td></tr>
+<tr><th id="175">175</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

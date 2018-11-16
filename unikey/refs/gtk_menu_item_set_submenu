@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmenuitem.h' l='103' type='void gtk_menu_item_set_submenu(GtkMenuItem * menu_item, GtkWidget * submenu)'/>

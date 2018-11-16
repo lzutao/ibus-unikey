@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-renderer.h' l='262' type='PangoColor * pango_renderer_get_color(PangoRenderer * renderer, PangoRenderPart part)'/>

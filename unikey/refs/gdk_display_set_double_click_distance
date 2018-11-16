@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='176' type='void gdk_display_set_double_click_distance(GdkDisplay * display, guint distance)'/>

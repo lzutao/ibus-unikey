@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkstyle.h' l='894' type='void gtk_style_get(GtkStyle * style, GType widget_type, const gchar * first_property_name)'/>

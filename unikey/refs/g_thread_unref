@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/glib/gthread.h' l='143' type='void g_thread_unref(GThread * thread)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='75' u='c' c='_ZL28glib_autoptr_cleanup_GThreadPP8_GThread'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='75' u='r' c='_ZL32glib_listautoptr_cleanup_GThreadPP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='75' u='r' c='_ZL33glib_slistautoptr_cleanup_GThreadPP7_GSList'/>

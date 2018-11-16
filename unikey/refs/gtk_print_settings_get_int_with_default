@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintsettings.h' l='106' type='gint gtk_print_settings_get_int_with_default(GtkPrintSettings * settings, const gchar * key, gint def)'/>

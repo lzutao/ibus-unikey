@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusemoji.h' l='114' type='GSList * ibus_emoji_data_get_annotations(IBusEmojiData * emoji)'/>
+<doc f='include/ibus-1.0/ibusemoji.h' l='105'>/**
+ * ibus_emoji_data_get_annotations:
+ * @emoji : An #IBusEmojiData
+ *
+ * Gets the annotation list in #IBusEmojiData. It should not be freed.
+ *
+ * Returns: (transfer none) (element-type utf8):
+ *          annotation list property in #IBusEmojiData
+ */</doc>

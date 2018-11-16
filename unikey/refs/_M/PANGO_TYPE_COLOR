@@ -1,0 +1,6 @@
+<dec f='include/pango-1.0/pango/pango-attributes.h' l='55'/>
+<doc f='include/pango-1.0/pango/pango-attributes.h' l='50'>/**
+ * PANGO_TYPE_COLOR:
+ *
+ * The #GObject type for #PangoColor.
+ */</doc>

@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='562' type='void gtk_clist_set_row_height(GtkCList * clist, guint height)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='559'>/* change the height of the rows, the default (height=0) is
+ * the hight of the current font.
+ */</doc>

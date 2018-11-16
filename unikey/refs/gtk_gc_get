@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkgc.h' l='40' type='GdkGC * gtk_gc_get(gint depth, GdkColormap * colormap, GdkGCValues * values, GdkGCValuesMask values_mask)'/>

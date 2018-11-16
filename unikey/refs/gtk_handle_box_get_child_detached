@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkhandlebox.h' l='108' type='gboolean gtk_handle_box_get_child_detached(GtkHandleBox * handle_box)'/>

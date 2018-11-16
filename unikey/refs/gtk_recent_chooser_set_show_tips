@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentchooser.h' l='138' type='void gtk_recent_chooser_set_show_tips(GtkRecentChooser * chooser, gboolean show_tips)'/>

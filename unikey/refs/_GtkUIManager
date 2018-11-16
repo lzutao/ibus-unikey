@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkuimanager.h' l='57' ll='63'/>
+<size>32</size>
+<mbr r='_GtkUIManager::parent' o='0' t='GObject'/>
+<mbr r='_GtkUIManager::private_data' o='192' t='GtkUIManagerPrivate *'/>

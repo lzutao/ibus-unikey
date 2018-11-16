@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconview.h' l='125' type='void gtk_icon_view_set_column_spacing(GtkIconView * icon_view, gint column_spacing)'/>

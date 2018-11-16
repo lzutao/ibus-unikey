@@ -1,0 +1,3 @@
+<dec f='include/glib-2.0/gio/gappinfo.h' l='255' type='GAppLaunchContextPrivate *'/>
+<offset>192</offset>
+<doc f='include/glib-2.0/gio/gappinfo.h' l='254'>/*&lt; private &gt;*/</doc>

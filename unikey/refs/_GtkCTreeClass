@@ -1,0 +1,9 @@
+<def f='include/gtk-2.0/gtk/gtkctree.h' l='125' ll='145'/>
+<size>1104</size>
+<mbr r='_GtkCTreeClass::parent_class' o='0' t='GtkCListClass'/>
+<mbr r='_GtkCTreeClass::tree_select_row' o='8448' t='void (*)(GtkCTree *, GtkCTreeNode *, gint)'/>
+<mbr r='_GtkCTreeClass::tree_unselect_row' o='8512' t='void (*)(GtkCTree *, GtkCTreeNode *, gint)'/>
+<mbr r='_GtkCTreeClass::tree_expand' o='8576' t='void (*)(GtkCTree *, GtkCTreeNode *)'/>
+<mbr r='_GtkCTreeClass::tree_collapse' o='8640' t='void (*)(GtkCTree *, GtkCTreeNode *)'/>
+<mbr r='_GtkCTreeClass::tree_move' o='8704' t='void (*)(GtkCTree *, GtkCTreeNode *, GtkCTreeNode *, GtkCTreeNode *)'/>
+<mbr r='_GtkCTreeClass::change_focus_row_expansion' o='8768' t='void (*)(GtkCTree *, GtkCTreeExpansionType)'/>

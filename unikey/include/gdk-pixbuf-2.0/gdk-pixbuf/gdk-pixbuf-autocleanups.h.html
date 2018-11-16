@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gdk-pixbuf-autocleanups.h source code [include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-autocleanups.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-autocleanups.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gdk-pixbuf-2.0</a>/<a href='./'>gdk-pixbuf</a>/<a href='gdk-pixbuf-autocleanups.h.html'>gdk-pixbuf-autocleanups.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GdkPixbuf library - Autocleanup definitions</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright (C) 2015 Kalev Lember &lt;kalevlember@gmail.com&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="6">6</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="7">7</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="8">8</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="11">11</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="12">12</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="13">13</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="16">16</th><td><i> * License along with this library; if not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="17">17</th><td><i> */</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#<span data-ppcond="19">ifndef</span> <span class="macro" data-ref="_M/GDK_PIXBUF_AUTOCLEANUPS_H">GDK_PIXBUF_AUTOCLEANUPS_H</span></u></td></tr>
+<tr><th id="20">20</th><td><u>#define <dfn class="macro" id="_M/GDK_PIXBUF_AUTOCLEANUPS_H" data-ref="_M/GDK_PIXBUF_AUTOCLEANUPS_H">GDK_PIXBUF_AUTOCLEANUPS_H</dfn></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i>/* We need all the types, so don't try to include this directly */</i></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> defined(<span class="macro" data-ref="_M/GDK_PIXBUF_DISABLE_SINGLE_INCLUDES">GDK_PIXBUF_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gdk-pixbuf.h.html#27" data-ref="_M/GDK_PIXBUF_H_INSIDE">GDK_PIXBUF_H_INSIDE</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GDK_PIXBUF_COMPILATION">GDK_PIXBUF_COMPILATION</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#error "Only &lt;gdk-pixbuf/gdk-pixbuf.h&gt; can be included directly."</u></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifdef</span> <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#456" data-ref="_M/G_DEFINE_AUTOPTR_CLEANUP_FUNC">G_DEFINE_AUTOPTR_CLEANUP_FUNC</a></u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#456" title="typedef GdkPixbuf *GdkPixbuf_autoptr; typedef GList *GdkPixbuf_listautoptr; typedef GSList *GdkPixbuf_slistautoptr; static inline void glib_autoptr_cleanup_GdkPixbuf (GdkPixbuf **_ptr) { if (*_ptr) (g_object_unref) (*_ptr); } static inline void glib_listautoptr_cleanup_GdkPixbuf (GList **_l) { g_list_free_full (*_l, (GDestroyNotify) g_object_unref); } static inline void glib_slistautoptr_cleanup_GdkPixbuf (GSList **_l) { g_slist_free_full (*_l, (GDestroyNotify) g_object_unref); }" data-ref="_M/G_DEFINE_AUTOPTR_CLEANUP_FUNC">G_DEFINE_AUTOPTR_CLEANUP_FUNC</a>(<a class="typedef" href="gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>, <a class="ref" href="../../glib-2.0/gobject/gobject.h.html#g_object_unref" title='g_object_unref' data-ref="g_object_unref">g_object_unref</a>)</td></tr>
+<tr><th id="30">30</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#456" title="typedef GdkPixbufAnimation *GdkPixbufAnimation_autoptr; typedef GList *GdkPixbufAnimation_listautoptr; typedef GSList *GdkPixbufAnimation_slistautoptr; static inline void glib_autoptr_cleanup_GdkPixbufAnimation (GdkPixbufAnimation **_ptr) { if (*_ptr) (g_object_unref) (*_ptr); } static inline void glib_listautoptr_cleanup_GdkPixbufAnimation (GList **_l) { g_list_free_full (*_l, (GDestroyNotify) g_object_unref); } static inline void glib_slistautoptr_cleanup_GdkPixbufAnimation (GSList **_l) { g_slist_free_full (*_l, (GDestroyNotify) g_object_unref); }" data-ref="_M/G_DEFINE_AUTOPTR_CLEANUP_FUNC">G_DEFINE_AUTOPTR_CLEANUP_FUNC</a>(<a class="typedef" href="gdk-pixbuf-animation.h.html#GdkPixbufAnimation" title='GdkPixbufAnimation' data-type='struct _GdkPixbufAnimation' data-ref="GdkPixbufAnimation">GdkPixbufAnimation</a>, <a class="ref" href="../../glib-2.0/gobject/gobject.h.html#g_object_unref" title='g_object_unref' data-ref="g_object_unref">g_object_unref</a>)</td></tr>
+<tr><th id="31">31</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#456" title="typedef GdkPixbufAnimationIter *GdkPixbufAnimationIter_autoptr; typedef GList *GdkPixbufAnimationIter_listautoptr; typedef GSList *GdkPixbufAnimationIter_slistautoptr; static inline void glib_autoptr_cleanup_GdkPixbufAnimationIter (GdkPixbufAnimationIter **_ptr) { if (*_ptr) (g_object_unref) (*_ptr); } static inline void glib_listautoptr_cleanup_GdkPixbufAnimationIter (GList **_l) { g_list_free_full (*_l, (GDestroyNotify) g_object_unref); } static inline void glib_slistautoptr_cleanup_GdkPixbufAnimationIter (GSList **_l) { g_slist_free_full (*_l, (GDestroyNotify) g_object_unref); }" data-ref="_M/G_DEFINE_AUTOPTR_CLEANUP_FUNC">G_DEFINE_AUTOPTR_CLEANUP_FUNC</a>(<a class="typedef" href="gdk-pixbuf-animation.h.html#GdkPixbufAnimationIter" title='GdkPixbufAnimationIter' data-type='struct _GdkPixbufAnimationIter' data-ref="GdkPixbufAnimationIter">GdkPixbufAnimationIter</a>, <a class="ref" href="../../glib-2.0/gobject/gobject.h.html#g_object_unref" title='g_object_unref' data-ref="g_object_unref">g_object_unref</a>)</td></tr>
+<tr><th id="32">32</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#456" title="typedef GdkPixbufLoader *GdkPixbufLoader_autoptr; typedef GList *GdkPixbufLoader_listautoptr; typedef GSList *GdkPixbufLoader_slistautoptr; static inline void glib_autoptr_cleanup_GdkPixbufLoader (GdkPixbufLoader **_ptr) { if (*_ptr) (g_object_unref) (*_ptr); } static inline void glib_listautoptr_cleanup_GdkPixbufLoader (GList **_l) { g_list_free_full (*_l, (GDestroyNotify) g_object_unref); } static inline void glib_slistautoptr_cleanup_GdkPixbufLoader (GSList **_l) { g_slist_free_full (*_l, (GDestroyNotify) g_object_unref); }" data-ref="_M/G_DEFINE_AUTOPTR_CLEANUP_FUNC">G_DEFINE_AUTOPTR_CLEANUP_FUNC</a>(<a class="typedef" href="gdk-pixbuf-loader.h.html#GdkPixbufLoader" title='GdkPixbufLoader' data-type='struct _GdkPixbufLoader' data-ref="GdkPixbufLoader">GdkPixbufLoader</a>, <a class="ref" href="../../glib-2.0/gobject/gobject.h.html#g_object_unref" title='g_object_unref' data-ref="g_object_unref">g_object_unref</a>)</td></tr>
+<tr><th id="33">33</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#456" title="typedef GdkPixbufSimpleAnim *GdkPixbufSimpleAnim_autoptr; typedef GList *GdkPixbufSimpleAnim_listautoptr; typedef GSList *GdkPixbufSimpleAnim_slistautoptr; static inline void glib_autoptr_cleanup_GdkPixbufSimpleAnim (GdkPixbufSimpleAnim **_ptr) { if (*_ptr) (g_object_unref) (*_ptr); } static inline void glib_listautoptr_cleanup_GdkPixbufSimpleAnim (GList **_l) { g_list_free_full (*_l, (GDestroyNotify) g_object_unref); } static inline void glib_slistautoptr_cleanup_GdkPixbufSimpleAnim (GSList **_l) { g_slist_free_full (*_l, (GDestroyNotify) g_object_unref); }" data-ref="_M/G_DEFINE_AUTOPTR_CLEANUP_FUNC">G_DEFINE_AUTOPTR_CLEANUP_FUNC</a>(<a class="typedef" href="gdk-pixbuf-simple-anim.h.html#GdkPixbufSimpleAnim" title='GdkPixbufSimpleAnim' data-type='struct _GdkPixbufSimpleAnim' data-ref="GdkPixbufSimpleAnim">GdkPixbufSimpleAnim</a>, <a class="ref" href="../../glib-2.0/gobject/gobject.h.html#g_object_unref" title='g_object_unref' data-ref="g_object_unref">g_object_unref</a>)</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><u>#<span data-ppcond="27">endif</span></u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><u>#<span data-ppcond="19">endif</span> /* GDK_PIXBUF_AUTOCLEANUPS_H */</u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

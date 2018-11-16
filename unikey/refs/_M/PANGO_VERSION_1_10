@@ -1,0 +1,11 @@
+<dec f='include/pango-1.0/pango/pango-version-macros.h' l='83'/>
+<use f='include/pango-1.0/pango/pango-version-macros.h' l='398' u='c'/>
+<use f='include/pango-1.0/pango/pango-version-macros.h' l='406' u='c'/>
+<doc f='include/pango-1.0/pango/pango-version-macros.h' l='75'>/**
+ * PANGO_VERSION_1_10:
+ *
+ * A macro that evaluates to the 1.10 version of Pango, in a format
+ * that can be used by the C pre-processor.
+ *
+ * Since: 1.42
+ */</doc>

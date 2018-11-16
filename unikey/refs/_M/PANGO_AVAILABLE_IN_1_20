@@ -1,0 +1,9 @@
+<dec f='include/pango-1.0/pango/pango-version-macros.h' l='479'/>
+<use f='include/pango-1.0/pango/pango-attributes.h' l='442' u='c'/>
+<use f='include/pango-1.0/pango/pango-glyph-item.h' l='65' u='c'/>
+<use f='include/pango-1.0/pango/pango-layout.h' l='187' u='c'/>
+<use f='include/pango-1.0/pango/pango-layout.h' l='190' u='c'/>
+<use f='include/pango-1.0/pango/pango-layout.h' l='369' u='c'/>
+<use f='include/pango-1.0/pango/pango-layout.h' l='386' u='c'/>
+<use f='include/pango-1.0/pango/pango-renderer.h' l='279' u='c'/>
+<use f='include/pango-1.0/pango/pango-renderer.h' l='281' u='c'/>

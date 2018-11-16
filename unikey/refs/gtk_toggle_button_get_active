@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktogglebutton.h' l='84' type='gboolean gtk_toggle_button_get_active(GtkToggleButton * toggle_button)'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='144' u='c' c='_ZL23update_config_toggle_cbP16_GtkToggleButtonPv'/>

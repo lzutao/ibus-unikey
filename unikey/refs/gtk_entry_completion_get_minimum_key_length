@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentrycompletion.h' l='95' type='gint gtk_entry_completion_get_minimum_key_length(GtkEntryCompletion * completion)'/>

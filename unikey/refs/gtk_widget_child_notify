@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='933' type='void gtk_widget_child_notify(GtkWidget * widget, const gchar * child_property)'/>

@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-glyph.h' l='164' type='void pango_glyph_string_extents_range(PangoGlyphString * glyphs, int start, int end, PangoFont * font, PangoRectangle * ink_rect, PangoRectangle * logical_rect)'/>

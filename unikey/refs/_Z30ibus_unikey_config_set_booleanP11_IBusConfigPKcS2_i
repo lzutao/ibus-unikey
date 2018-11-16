@@ -1,0 +1,8 @@
+<dec f='unikey/src/utils.h' l='34' type='void ibus_unikey_config_set_boolean(IBusConfig * config, const gchar * section, const gchar * name, gboolean value)'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='145' u='c' c='_ZL23update_config_toggle_cbP16_GtkToggleButtonPv'/>
+<use f='unikey/src/engine.cpp' l='221' u='c' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='227' u='c' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='233' u='c' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='239' u='c' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='245' u='c' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<def f='unikey/src/utils.cpp' l='151' ll='161' type='void ibus_unikey_config_set_boolean(IBusConfig * config, const gchar * section, const gchar * name, gboolean value)'/>

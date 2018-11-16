@@ -1,0 +1,6 @@
+<dec f='unikey/src/utils.h' l='21' type='gboolean ibus_unikey_config_get_string(IBusConfig * config, const gchar * section, const gchar * name, gchar ** result)'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='73' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='86' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/src/engine.cpp' l='185' u='c' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='202' u='c' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<def f='unikey/src/utils.cpp' l='109' ll='122' type='gboolean ibus_unikey_config_get_string(IBusConfig * config, const gchar * section, const gchar * name, gchar ** result)'/>

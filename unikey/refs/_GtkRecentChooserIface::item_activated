@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentchooser.h' l='114' type='void (*)(GtkRecentChooser *)'/>
+<offset>896</offset>
+<doc f='include/gtk-2.0/gtk/gtkrecentchooser.h' l='111'>/*
+   * Signals
+   */</doc>

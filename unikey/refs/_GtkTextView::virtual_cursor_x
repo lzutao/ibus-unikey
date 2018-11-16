@@ -1,0 +1,12 @@
+<dec f='include/gtk-2.0/gtk/gtktextview.h' l='130' type='gint'/>
+<offset>2048</offset>
+<doc f='include/gtk-2.0/gtk/gtktextview.h' l='121'>/* The virtual cursor position is normally the same as the
+   * actual (strong) cursor position, except in two circumstances:
+   *
+   * a) When the cursor is moved vertically with the keyboard
+   * b) When the text view is scrolled with the keyboard
+   *
+   * In case a), virtual_cursor_x is preserved, but not virtual_cursor_y
+   * In case b), both virtual_cursor_x and virtual_cursor_y are preserved.
+   */</doc>
+<doc f='include/gtk-2.0/gtk/gtktextview.h' l='130'>/* -1 means use actual cursor position */</doc>

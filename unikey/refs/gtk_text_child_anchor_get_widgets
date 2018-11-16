@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextchild.h' l='77' type='GList * gtk_text_child_anchor_get_widgets(GtkTextChildAnchor * anchor)'/>

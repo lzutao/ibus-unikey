@@ -1,0 +1,17 @@
+<dec f='include/pango-1.0/pango/pango-version-macros.h' l='366'/>
+<use f='include/pango-1.0/pango/pango-script.h' l='307' u='c'/>
+<use f='include/pango-1.0/pango/pango-script.h' l='310' u='c'/>
+<use f='include/pango-1.0/pango/pango-script.h' l='313' u='c'/>
+<use f='include/pango-1.0/pango/pango-script.h' l='318' u='c'/>
+<use f='include/pango-1.0/pango/pango-script.h' l='320' u='c'/>
+<use f='include/pango-1.0/pango/pango-language.h' l='62' u='c'/>
+<use f='include/pango-1.0/pango/pango-script.h' l='325' u='c'/>
+<use f='include/pango-1.0/pango/pango-bidi-type.h' l='128' u='c'/>
+<use f='include/pango-1.0/pango/pango-font.h' l='399' u='c'/>
+<use f='include/pango-1.0/pango/pango-font.h' l='477' u='c'/>
+<use f='include/pango-1.0/pango/pango-attributes.h' l='497' u='c'/>
+<use f='include/pango-1.0/pango/pango-fontset.h' l='72' u='c'/>
+<use f='include/pango-1.0/pango/pango-context.h' l='126' u='c'/>
+<use f='include/pango-1.0/pango/pango-layout.h' l='214' u='c'/>
+<use f='include/pango-1.0/pango/pango-layout.h' l='217' u='c'/>
+<use f='include/pango-1.0/pango/pango-utils.h' l='121' u='c'/>

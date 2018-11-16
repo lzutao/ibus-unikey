@@ -1,0 +1,12 @@
+<def f='include/gtk-2.0/gtk/gtkclist.h' l='344' ll='360'/>
+<size>72</size>
+<mbr r='_GtkCListRow::cell' o='0' t='GtkCell *'/>
+<mbr r='_GtkCListRow::state' o='64' t='GtkStateType'/>
+<mbr r='_GtkCListRow::foreground' o='96' t='GdkColor'/>
+<mbr r='_GtkCListRow::background' o='192' t='GdkColor'/>
+<mbr r='_GtkCListRow::style' o='320' t='GtkStyle *'/>
+<mbr r='_GtkCListRow::data' o='384' t='gpointer'/>
+<mbr r='_GtkCListRow::destroy' o='448' t='GDestroyNotify'/>
+<mbr r='_GtkCListRow::fg_set' o='512' t='guint'/>
+<mbr r='_GtkCListRow::bg_set' o='513' t='guint'/>
+<mbr r='_GtkCListRow::selectable' o='514' t='guint'/>

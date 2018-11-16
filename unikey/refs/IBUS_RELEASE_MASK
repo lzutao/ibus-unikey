@@ -1,0 +1,2 @@
+<dec f='include/ibus-1.0/ibustypes.h' l='96' type='1073741824'/>
+<use f='unikey/src/engine.cpp' l='583' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>

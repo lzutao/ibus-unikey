@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkfontsel.h' l='127' ll='136'/>
+<size>984</size>
+<mbr r='_GtkFontSelectionDialogClass::parent_class' o='0' t='GtkDialogClass'/>
+<mbr r='_GtkFontSelectionDialogClass::_gtk_reserved1' o='7616' t='void (*)()'/>
+<mbr r='_GtkFontSelectionDialogClass::_gtk_reserved2' o='7680' t='void (*)()'/>
+<mbr r='_GtkFontSelectionDialogClass::_gtk_reserved3' o='7744' t='void (*)()'/>
+<mbr r='_GtkFontSelectionDialogClass::_gtk_reserved4' o='7808' t='void (*)()'/>

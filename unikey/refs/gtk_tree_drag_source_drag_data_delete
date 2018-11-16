@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktreednd.h' l='64' type='gboolean gtk_tree_drag_source_drag_data_delete(GtkTreeDragSource * drag_source, GtkTreePath * path)'/>
+<doc f='include/gtk-2.0/gtk/gtktreednd.h' l='63'>/* Deletes the given row, or returns FALSE if it can&apos;t */</doc>

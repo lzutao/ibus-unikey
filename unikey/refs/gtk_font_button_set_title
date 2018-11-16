@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkfontbutton.h' l='79' type='void gtk_font_button_set_title(GtkFontButton * font_button, const gchar * title)'/>

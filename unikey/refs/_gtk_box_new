@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkbox.h' l='105' type='GtkWidget * _gtk_box_new(GtkOrientation orientation, gboolean homogeneous, gint spacing)'/>

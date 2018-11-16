@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='417' type='void _gtk_window_constrain_size(GtkWindow * window, gint width, gint height, gint * new_width, gint * new_height)'/>

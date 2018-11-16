@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='552' type='void gtk_clist_set_column_min_width(GtkCList * clist, gint column, gint min_width)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='551'>/* set column minimum/maximum width. min/max_width &lt; 0 =&gt; no restriction */</doc>

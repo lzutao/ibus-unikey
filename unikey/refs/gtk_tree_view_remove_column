@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='169' type='gint gtk_tree_view_remove_column(GtkTreeView * tree_view, GtkTreeViewColumn * column)'/>

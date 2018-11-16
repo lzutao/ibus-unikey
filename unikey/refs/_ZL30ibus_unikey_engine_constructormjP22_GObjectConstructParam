@@ -1,0 +1,2 @@
+<dec f='unikey/src/engine_private.h' l='43' type='GObject * ibus_unikey_engine_constructor(GType type, guint n_construct_params, GObjectConstructParam * construct_params)'/>
+<use f='unikey/src/engine.cpp' l='82' u='r' c='_ZL29ibus_unikey_engine_class_initP22_IBusUnikeyEngineClass'/>

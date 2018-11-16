@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdrawable.h' l='375' type='void gdk_draw_layout_line(GdkDrawable * drawable, GdkGC * gc, gint x, gint y, PangoLayoutLine * line)'/>

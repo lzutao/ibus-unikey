@@ -1,0 +1,6 @@
+<dec f='include/glib-2.0/glib/gvariant.h' l='59' type='void g_variant_unref(GVariant * value)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='82' u='c' c='_ZL29glib_autoptr_cleanup_GVariantPP9_GVariant'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='82' u='r' c='_ZL33glib_listautoptr_cleanup_GVariantPP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='82' u='r' c='_ZL34glib_slistautoptr_cleanup_GVariantPP7_GSList'/>
+<use f='unikey/src/utils.cpp' l='118' u='c' c='_Z29ibus_unikey_config_get_stringP11_IBusConfigPKcS2_PPc'/>
+<use f='unikey/src/utils.cpp' l='145' u='c' c='_Z30ibus_unikey_config_get_booleanP11_IBusConfigPKcS2_Pi'/>

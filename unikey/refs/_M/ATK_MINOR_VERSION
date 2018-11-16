@@ -1,0 +1,12 @@
+<dec f='include/atk-1.0/atk/atkversion.h' l='53'/>
+<use f='include/atk-1.0/atk/atkversion.h' l='182' u='c'/>
+<use f='include/atk-1.0/atk/atkversion.h' l='189' u='c'/>
+<doc f='include/atk-1.0/atk/atkversion.h' l='44'>/**
+ * ATK_MINOR_VERSION:
+ *
+ * Like atk_get_minor_version(), but from the headers used at
+ * application compile time, rather than from the library linked
+ * against at application run time.
+ *
+ * Since: 2.7.4
+ */</doc>

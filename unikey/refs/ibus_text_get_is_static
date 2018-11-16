@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibustext.h' l='187' type='gboolean ibus_text_get_is_static(IBusText * text)'/>
+<doc f='include/ibus-1.0/ibustext.h' l='179'>/**
+ * ibus_text_get_is_static: (skip)
+ * @text: An #IBusText.
+ *
+ * Return the is_static in an #IBusText.
+ *
+ * Returns: the is_static in @text.
+ */</doc>

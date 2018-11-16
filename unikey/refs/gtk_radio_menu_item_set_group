@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkradiomenuitem.h' l='85' type='void gtk_radio_menu_item_set_group(GtkRadioMenuItem * radio_menu_item, GSList * group)'/>

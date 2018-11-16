@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkrecentaction.h' l='45' ll='51'/>
+<size>40</size>
+<mbr r='_GtkRecentAction::parent_instance' o='0' t='GtkAction'/>
+<mbr r='_GtkRecentAction::priv' o='256' t='GtkRecentActionPrivate *'/>

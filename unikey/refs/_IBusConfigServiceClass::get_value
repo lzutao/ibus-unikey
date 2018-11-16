@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusconfigservice.h' l='196' type='GVariant *(*)(IBusConfigService *, const gchar *, const gchar *, GError **)'/>
+<offset>2176</offset>
+<doc f='include/ibus-1.0/ibusconfigservice.h' l='187'>/**
+     * get_value:
+     * @config: An #IBusConfig.
+     * @section: section name
+     * @name: value name
+     *
+     * Returns: (transfer full): The value in config associated with section
+     *         and name.
+     */</doc>

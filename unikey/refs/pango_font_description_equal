@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-font.h' l='228' type='gboolean pango_font_description_equal(const PangoFontDescription * desc1, const PangoFontDescription * desc2)'/>

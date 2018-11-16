@@ -1,0 +1,3 @@
+<dec f='unikey/setup/dlg_macro_table.cpp' l='27' type='void remove_macro_clicked_cb(GtkButton * button, gpointer user_data)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='55' u='r' c='_Z23unikey_macro_dialog_newv'/>
+<def f='unikey/setup/dlg_macro_table.cpp' l='288' ll='313' type='void remove_macro_clicked_cb(GtkButton * button, gpointer user_data)'/>

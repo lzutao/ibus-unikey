@@ -1,0 +1,38 @@
+<def f='include/gtk-2.0/gtk/gtktreeviewcolumn.h' l='62' ll='111'/>
+<size>184</size>
+<mbr r='_GtkTreeViewColumn::parent' o='0' t='GtkObject'/>
+<mbr r='_GtkTreeViewColumn::tree_view' o='256' t='GtkWidget *'/>
+<mbr r='_GtkTreeViewColumn::button' o='320' t='GtkWidget *'/>
+<mbr r='_GtkTreeViewColumn::child' o='384' t='GtkWidget *'/>
+<mbr r='_GtkTreeViewColumn::arrow' o='448' t='GtkWidget *'/>
+<mbr r='_GtkTreeViewColumn::alignment' o='512' t='GtkWidget *'/>
+<mbr r='_GtkTreeViewColumn::window' o='576' t='GdkWindow *'/>
+<mbr r='_GtkTreeViewColumn::editable_widget' o='640' t='GtkCellEditable *'/>
+<mbr r='_GtkTreeViewColumn::xalign' o='704' t='gfloat'/>
+<mbr r='_GtkTreeViewColumn::property_changed_signal' o='736' t='guint'/>
+<mbr r='_GtkTreeViewColumn::spacing' o='768' t='gint'/>
+<mbr r='_GtkTreeViewColumn::column_type' o='800' t='GtkTreeViewColumnSizing'/>
+<mbr r='_GtkTreeViewColumn::requested_width' o='832' t='gint'/>
+<mbr r='_GtkTreeViewColumn::button_request' o='864' t='gint'/>
+<mbr r='_GtkTreeViewColumn::resized_width' o='896' t='gint'/>
+<mbr r='_GtkTreeViewColumn::width' o='928' t='gint'/>
+<mbr r='_GtkTreeViewColumn::fixed_width' o='960' t='gint'/>
+<mbr r='_GtkTreeViewColumn::min_width' o='992' t='gint'/>
+<mbr r='_GtkTreeViewColumn::max_width' o='1024' t='gint'/>
+<mbr r='_GtkTreeViewColumn::drag_x' o='1056' t='gint'/>
+<mbr r='_GtkTreeViewColumn::drag_y' o='1088' t='gint'/>
+<mbr r='_GtkTreeViewColumn::title' o='1152' t='gchar *'/>
+<mbr r='_GtkTreeViewColumn::cell_list' o='1216' t='GList *'/>
+<mbr r='_GtkTreeViewColumn::sort_clicked_signal' o='1280' t='guint'/>
+<mbr r='_GtkTreeViewColumn::sort_column_changed_signal' o='1312' t='guint'/>
+<mbr r='_GtkTreeViewColumn::sort_column_id' o='1344' t='gint'/>
+<mbr r='_GtkTreeViewColumn::sort_order' o='1376' t='GtkSortType'/>
+<mbr r='_GtkTreeViewColumn::visible' o='1408' t='guint'/>
+<mbr r='_GtkTreeViewColumn::resizable' o='1409' t='guint'/>
+<mbr r='_GtkTreeViewColumn::clickable' o='1410' t='guint'/>
+<mbr r='_GtkTreeViewColumn::dirty' o='1411' t='guint'/>
+<mbr r='_GtkTreeViewColumn::show_sort_indicator' o='1412' t='guint'/>
+<mbr r='_GtkTreeViewColumn::maybe_reordered' o='1413' t='guint'/>
+<mbr r='_GtkTreeViewColumn::reorderable' o='1414' t='guint'/>
+<mbr r='_GtkTreeViewColumn::use_resized_width' o='1415' t='guint'/>
+<mbr r='_GtkTreeViewColumn::expand' o='1416' t='guint'/>

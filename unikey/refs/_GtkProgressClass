@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gtk/gtkprogress.h' l='67' ll='80'/>
+<size>776</size>
+<mbr r='_GtkProgressClass::parent_class' o='0' t='GtkWidgetClass'/>
+<mbr r='_GtkProgressClass::paint' o='5760' t='void (*)(GtkProgress *)'/>
+<mbr r='_GtkProgressClass::update' o='5824' t='void (*)(GtkProgress *)'/>
+<mbr r='_GtkProgressClass::act_mode_enter' o='5888' t='void (*)(GtkProgress *)'/>
+<mbr r='_GtkProgressClass::_gtk_reserved1' o='5952' t='void (*)()'/>
+<mbr r='_GtkProgressClass::_gtk_reserved2' o='6016' t='void (*)()'/>
+<mbr r='_GtkProgressClass::_gtk_reserved3' o='6080' t='void (*)()'/>
+<mbr r='_GtkProgressClass::_gtk_reserved4' o='6144' t='void (*)()'/>

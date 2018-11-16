@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-language.h' l='63' type='gboolean pango_language_includes_script(PangoLanguage * language, PangoScript script)'/>

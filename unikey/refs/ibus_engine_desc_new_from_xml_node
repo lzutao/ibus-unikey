@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusenginedesc.h' l='150' type='IBusEngineDesc * ibus_engine_desc_new_from_xml_node(IBusXML * node)'/>
+<doc f='include/ibus-1.0/ibusenginedesc.h' l='138'>/**
+ * ibus_engine_desc_new_from_xml_node:
+ * @node: An XML node
+ *
+ * Creates a new IBusEngineDesc from an XML node.
+ * &lt;note&gt;&lt;para&gt;This function is called by ibus_component_new_from_file(),
+ *  so developers normally do not need to call it directly.
+ * &lt;/para&gt;&lt;/note&gt;
+ *
+ * Returns: A newly allocated IBusEngineDesc that contains description from
+ * @node.
+ */</doc>

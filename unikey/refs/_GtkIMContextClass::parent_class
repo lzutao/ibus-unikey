@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkimcontext.h' l='56' type='GtkObjectClass'/>
+<offset>0</offset>
+<doc f='include/gtk-2.0/gtk/gtkimcontext.h' l='53'>/* Yes, this should be GObjectClass, be we can&apos;t fix it without breaking
+   * binary compatibility - see bug #90935
+   */</doc>

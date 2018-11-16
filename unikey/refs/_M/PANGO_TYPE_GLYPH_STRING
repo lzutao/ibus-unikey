@@ -1,0 +1,6 @@
+<dec f='include/pango-1.0/pango/pango-glyph.h' l='142'/>
+<doc f='include/pango-1.0/pango/pango-glyph.h' l='137'>/**
+ * PANGO_TYPE_GLYPH_STRING:
+ *
+ * The #GObject type for #PangoGlyphString.
+ */</doc>

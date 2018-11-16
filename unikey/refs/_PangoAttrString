@@ -1,0 +1,12 @@
+<def f='include/pango-1.0/pango/pango-attributes.h' l='306' ll='310'/>
+<size>24</size>
+<doc f='include/pango-1.0/pango/pango-attributes.h' l='298'>/**
+ * PangoAttrString:
+ * @attr: the common portion of the attribute
+ * @value: the string which is the value of the attribute
+ *
+ * The #PangoAttrString structure is used to represent attributes with
+ * a string value.
+ */</doc>
+<mbr r='_PangoAttrString::attr' o='0' t='PangoAttribute'/>
+<mbr r='_PangoAttrString::value' o='128' t='char *'/>

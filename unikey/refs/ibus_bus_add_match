@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='350' type='gboolean ibus_bus_add_match(IBusBus * bus, const gchar * rule)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='341'>/**
+ * ibus_bus_add_match:
+ * @bus: An #IBusBus.
+ * @rule: Match rule.
+ *
+ * Add a match rule to an #IBusBus synchronously.
+ *
+ * Returns: %TRUE if the rule is added. %FALSE otherwise.
+ */</doc>

@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibushotkey.h' l='150' type='gboolean ibus_hotkey_profile_remove_hotkey_by_event(IBusHotkeyProfile * profile, GQuark event)'/>
+<doc f='include/ibus-1.0/ibushotkey.h' l='141'>/**
+ * ibus_hotkey_profile_remove_hotkey_by_event:
+ * @profile: An IBusHotkeyProfile.
+ * @event: The associated event.
+ *
+ * Removes the hotkey for an #IBusHotkeyProfile by event.
+ *
+ * Returns: %FALSE if no such event in @profile, %TRUE otherwise.
+ */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkclipboard.h' l='108' type='void gtk_clipboard_request_rich_text(GtkClipboard * clipboard, GtkTextBuffer * buffer, GtkClipboardRichTextReceivedFunc callback, gpointer user_data)'/>

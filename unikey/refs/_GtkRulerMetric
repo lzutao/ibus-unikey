@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkruler.h' l='102' ll='111'/>
+<size>128</size>
+<mbr r='_GtkRulerMetric::metric_name' o='0' t='gchar *'/>
+<mbr r='_GtkRulerMetric::abbrev' o='64' t='gchar *'/>
+<mbr r='_GtkRulerMetric::pixels_per_unit' o='128' t='gdouble'/>
+<mbr r='_GtkRulerMetric::ruler_scale' o='192' t='gdouble [10]'/>
+<mbr r='_GtkRulerMetric::subdivide' o='832' t='gint [5]'/>

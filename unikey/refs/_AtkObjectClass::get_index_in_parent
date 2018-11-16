@@ -1,0 +1,6 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='560' type='gint (*)(AtkObject *)'/>
+<offset>1408</offset>
+<doc f='include/atk-1.0/atk/atkobject.h' l='556'>/*
+   * Gets the 0-based index of this object in its parent; returns -1 if the
+   * object does not have an accessible parent.
+   */</doc>

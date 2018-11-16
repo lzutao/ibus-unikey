@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkmarshal.h' l='12' type='void gtk_marshal_BOOLEAN__VOID(GClosure * closure, GValue * return_value, guint n_param_values, const GValue * param_values, gpointer invocation_hint, gpointer marshal_data)'/>
+<doc f='include/gtk-2.0/gtk/gtkmarshal.h' l='10'>/* BOOL:NONE (./gtkmarshal.list:1) */</doc>

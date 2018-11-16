@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='167' type='gint gtk_tree_view_append_column(GtkTreeView * tree_view, GtkTreeViewColumn * column)'/>
+<doc f='include/gtk-2.0/gtk/gtktreeview.h' l='166'>/* Column funtions */</doc>

@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkstock.h' l='42' ll='49'/>
+<size>32</size>
+<mbr r='_GtkStockItem::stock_id' o='0' t='gchar *'/>
+<mbr r='_GtkStockItem::label' o='64' t='gchar *'/>
+<mbr r='_GtkStockItem::modifier' o='128' t='GdkModifierType'/>
+<mbr r='_GtkStockItem::keyval' o='160' t='guint'/>
+<mbr r='_GtkStockItem::translation_domain' o='192' t='gchar *'/>

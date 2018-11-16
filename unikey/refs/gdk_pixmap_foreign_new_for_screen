@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkpixmap.h' l='121' type='GdkPixmap * gdk_pixmap_foreign_new_for_screen(GdkScreen * screen, GdkNativeWindow anid, gint width, gint height, gint depth)'/>

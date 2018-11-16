@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkassistant.h' l='127' type='gint gtk_assistant_get_n_pages(GtkAssistant * assistant)'/>

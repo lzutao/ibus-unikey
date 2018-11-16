@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ibustypes.h source code [include/ibus-1.0/ibustypes.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="_IBusRectangle "/>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/ibus-1.0/ibustypes.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>ibus-1.0</a>/<a href='ibustypes.h.html'>ibustypes.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* -*- mode: C; c-basic-offset: 4; indent-tabs-mode: nil; -*- */</i></td></tr>
+<tr><th id="2">2</th><td><i>/* vim:set et sts=4: */</i></td></tr>
+<tr><th id="3">3</th><td><i>/* ibus - The Input Bus</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 2008-2013 Peng Huang &lt;shawn.p.huang@gmail.com&gt;</i></td></tr>
+<tr><th id="5">5</th><td><i> * Copyright (C) 2008-2015 Red Hat, Inc.</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="8">8</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="9">9</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="10">10</th><td><i> * version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="11">11</th><td><i> *</i></td></tr>
+<tr><th id="12">12</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="13">13</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="14">14</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="15">15</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="18">18</th><td><i> * License along with this library; if not, write to the Free Software</i></td></tr>
+<tr><th id="19">19</th><td><i> * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301</i></td></tr>
+<tr><th id="20">20</th><td><i> * USA</i></td></tr>
+<tr><th id="21">21</th><td><i> */</i></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> !defined (<a class="macro" href="ibus.h.html#26" data-ref="_M/__IBUS_H_INSIDE__">__IBUS_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/IBUS_COMPILATION">IBUS_COMPILATION</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#error "Only &lt;ibus.h&gt; can be included directly"</u></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/__IBUS_TYPES_H_">__IBUS_TYPES_H_</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/__IBUS_TYPES_H_" data-ref="_M/__IBUS_TYPES_H_">__IBUS_TYPES_H_</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> * SECTION: ibustypes</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> * <span class="command">@short</span>_description: Generic types for  IBus.</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> *<span class="command"> @stability</span>: Stable</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> * This section consists generic types for IBus, including shift/control key</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * modifiers,</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> * and a rectangle structure.</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * IBusModifierType:</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> *<span class="command"> @IBUS</span>_SHIFT_MASK: Shift  is activated.</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> *<span class="command"> @IBUS</span>_LOCK_MASK: Cap Lock is locked.</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> *<span class="command"> @IBUS</span>_CONTROL_MASK: Control key is activated.</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> *<span class="command"> @IBUS</span>_MOD1_MASK: Modifier 1 (Usually Alt_L (0x40),  Alt_R (0x6c),  Meta_L (0xcd)) activated.</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> *<span class="command"> @IBUS</span>_MOD2_MASK: Modifier 2 (Usually Num_Lock (0x4d)) activated.</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> *<span class="command"> @IBUS</span>_MOD3_MASK: Modifier 3 activated.</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> *<span class="command"> @IBUS</span>_MOD4_MASK: Modifier 4 (Usually Super_L (0xce),  Hyper_L (0xcf)) activated.</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> *<span class="command"> @IBUS</span>_MOD5_MASK: Modifier 5 (ISO_Level3_Shift (0x5c),  Mode_switch (0xcb)) activated.</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> *<span class="command"> @IBUS</span>_BUTTON1_MASK: Mouse button 1 (left) is activated.</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> *<span class="command"> @IBUS</span>_BUTTON2_MASK: Mouse button 2 (middle) is activated.</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> *<span class="command"> @IBUS</span>_BUTTON3_MASK: Mouse button 3 (right) is activated.</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> *<span class="command"> @IBUS</span>_BUTTON4_MASK: Mouse button 4 (scroll up) is activated.</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> *<span class="command"> @IBUS</span>_BUTTON5_MASK: Mouse button 5 (scroll down) is activated.</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> *<span class="command"> @IBUS</span>_HANDLED_MASK: Handled mask indicates the event has been handled by ibus.</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> *<span class="command"> @IBUS</span>_FORWARD_MASK: Forward mask indicates the event has been forward from ibus.</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> *<span class="command"> @IBUS</span>_IGNORED_MASK: It is an alias of IBUS_FORWARD_MASK.</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> *<span class="command"> @IBUS</span>_SUPER_MASK: Super (Usually Win) key is activated.</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"> *<span class="command"> @IBUS</span>_HYPER_MASK: Hyper key is activated.</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"> *<span class="command"> @IBUS</span>_META_MASK: Meta key is activated.</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> *<span class="command"> @IBUS</span>_RELEASE_MASK: Key is released.</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> *<span class="command"> @IBUS</span>_MODIFIER_MASK: Modifier mask for the all the masks above.</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> * Handles key modifier such as control, shift and alt and release event.</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> * Note that nits 15 - 25 are currently unused, while bit 29 is used internally.</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="67">67</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="68">68</th><td>{</td></tr>
+<tr><th id="69">69</th><td>    <dfn class="enum" id="IBUS_SHIFT_MASK" title='IBUS_SHIFT_MASK' data-ref="IBUS_SHIFT_MASK">IBUS_SHIFT_MASK</dfn>    = <var>1</var> &lt;&lt; <var>0</var>,</td></tr>
+<tr><th id="70">70</th><td>    <dfn class="enum" id="IBUS_LOCK_MASK" title='IBUS_LOCK_MASK' data-ref="IBUS_LOCK_MASK">IBUS_LOCK_MASK</dfn>     = <var>1</var> &lt;&lt; <var>1</var>,</td></tr>
+<tr><th id="71">71</th><td>    <dfn class="enum" id="IBUS_CONTROL_MASK" title='IBUS_CONTROL_MASK' data-ref="IBUS_CONTROL_MASK">IBUS_CONTROL_MASK</dfn>  = <var>1</var> &lt;&lt; <var>2</var>,</td></tr>
+<tr><th id="72">72</th><td>    <dfn class="enum" id="IBUS_MOD1_MASK" title='IBUS_MOD1_MASK' data-ref="IBUS_MOD1_MASK">IBUS_MOD1_MASK</dfn>     = <var>1</var> &lt;&lt; <var>3</var>,</td></tr>
+<tr><th id="73">73</th><td>    <dfn class="enum" id="IBUS_MOD2_MASK" title='IBUS_MOD2_MASK' data-ref="IBUS_MOD2_MASK">IBUS_MOD2_MASK</dfn>     = <var>1</var> &lt;&lt; <var>4</var>,</td></tr>
+<tr><th id="74">74</th><td>    <dfn class="enum" id="IBUS_MOD3_MASK" title='IBUS_MOD3_MASK' data-ref="IBUS_MOD3_MASK">IBUS_MOD3_MASK</dfn>     = <var>1</var> &lt;&lt; <var>5</var>,</td></tr>
+<tr><th id="75">75</th><td>    <dfn class="enum" id="IBUS_MOD4_MASK" title='IBUS_MOD4_MASK' data-ref="IBUS_MOD4_MASK">IBUS_MOD4_MASK</dfn>     = <var>1</var> &lt;&lt; <var>6</var>,</td></tr>
+<tr><th id="76">76</th><td>    <dfn class="enum" id="IBUS_MOD5_MASK" title='IBUS_MOD5_MASK' data-ref="IBUS_MOD5_MASK">IBUS_MOD5_MASK</dfn>     = <var>1</var> &lt;&lt; <var>7</var>,</td></tr>
+<tr><th id="77">77</th><td>    <dfn class="enum" id="IBUS_BUTTON1_MASK" title='IBUS_BUTTON1_MASK' data-ref="IBUS_BUTTON1_MASK">IBUS_BUTTON1_MASK</dfn>  = <var>1</var> &lt;&lt; <var>8</var>,</td></tr>
+<tr><th id="78">78</th><td>    <dfn class="enum" id="IBUS_BUTTON2_MASK" title='IBUS_BUTTON2_MASK' data-ref="IBUS_BUTTON2_MASK">IBUS_BUTTON2_MASK</dfn>  = <var>1</var> &lt;&lt; <var>9</var>,</td></tr>
+<tr><th id="79">79</th><td>    <dfn class="enum" id="IBUS_BUTTON3_MASK" title='IBUS_BUTTON3_MASK' data-ref="IBUS_BUTTON3_MASK">IBUS_BUTTON3_MASK</dfn>  = <var>1</var> &lt;&lt; <var>10</var>,</td></tr>
+<tr><th id="80">80</th><td>    <dfn class="enum" id="IBUS_BUTTON4_MASK" title='IBUS_BUTTON4_MASK' data-ref="IBUS_BUTTON4_MASK">IBUS_BUTTON4_MASK</dfn>  = <var>1</var> &lt;&lt; <var>11</var>,</td></tr>
+<tr><th id="81">81</th><td>    <dfn class="enum" id="IBUS_BUTTON5_MASK" title='IBUS_BUTTON5_MASK' data-ref="IBUS_BUTTON5_MASK">IBUS_BUTTON5_MASK</dfn>  = <var>1</var> &lt;&lt; <var>12</var>,</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td>    <i>/* The next few modifiers are used by XKB, so we skip to the end.</i></td></tr>
+<tr><th id="84">84</th><td><i>     * Bits 15 - 23 are currently unused. Bit 29 is used internally.</i></td></tr>
+<tr><th id="85">85</th><td><i>     */</i></td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td>    <i>/* ibus mask */</i></td></tr>
+<tr><th id="88">88</th><td>    <dfn class="enum" id="IBUS_HANDLED_MASK" title='IBUS_HANDLED_MASK' data-ref="IBUS_HANDLED_MASK">IBUS_HANDLED_MASK</dfn>  = <var>1</var> &lt;&lt; <var>24</var>,</td></tr>
+<tr><th id="89">89</th><td>    <dfn class="enum" id="IBUS_FORWARD_MASK" title='IBUS_FORWARD_MASK' data-ref="IBUS_FORWARD_MASK">IBUS_FORWARD_MASK</dfn>  = <var>1</var> &lt;&lt; <var>25</var>,</td></tr>
+<tr><th id="90">90</th><td>    <dfn class="enum" id="IBUS_IGNORED_MASK" title='IBUS_IGNORED_MASK' data-ref="IBUS_IGNORED_MASK">IBUS_IGNORED_MASK</dfn>  = <a class="enum" href="#IBUS_FORWARD_MASK" title='IBUS_FORWARD_MASK' data-ref="IBUS_FORWARD_MASK">IBUS_FORWARD_MASK</a>,</td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td>    <dfn class="enum" id="IBUS_SUPER_MASK" title='IBUS_SUPER_MASK' data-ref="IBUS_SUPER_MASK">IBUS_SUPER_MASK</dfn>    = <var>1</var> &lt;&lt; <var>26</var>,</td></tr>
+<tr><th id="93">93</th><td>    <dfn class="enum" id="IBUS_HYPER_MASK" title='IBUS_HYPER_MASK' data-ref="IBUS_HYPER_MASK">IBUS_HYPER_MASK</dfn>    = <var>1</var> &lt;&lt; <var>27</var>,</td></tr>
+<tr><th id="94">94</th><td>    <dfn class="enum" id="IBUS_META_MASK" title='IBUS_META_MASK' data-ref="IBUS_META_MASK">IBUS_META_MASK</dfn>     = <var>1</var> &lt;&lt; <var>28</var>,</td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td>    <dfn class="enum" id="IBUS_RELEASE_MASK" title='IBUS_RELEASE_MASK' data-ref="IBUS_RELEASE_MASK">IBUS_RELEASE_MASK</dfn>  = <var>1</var> &lt;&lt; <var>30</var>,</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td>    <dfn class="enum" id="IBUS_MODIFIER_MASK" title='IBUS_MODIFIER_MASK' data-ref="IBUS_MODIFIER_MASK">IBUS_MODIFIER_MASK</dfn> = <var>0x5f001fff</var></td></tr>
+<tr><th id="99">99</th><td>} <dfn class="typedef" id="IBusModifierType" title='IBusModifierType' data-type='enum IBusModifierType' data-ref="IBusModifierType">IBusModifierType</dfn>;</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> * IBusCapabilite:</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> *<span class="command"> @IBUS</span>_CAP_PREEDIT_TEXT: UI is capable to show pre-edit text.</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> *<span class="command"> @IBUS</span>_CAP_AUXILIARY_TEXT: UI is capable to show auxiliary text.</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> *<span class="command"> @IBUS</span>_CAP_LOOKUP_TABLE: UI is capable to show the lookup table.</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"> *<span class="command"> @IBUS</span>_CAP_FOCUS: UI is capable to get focus.</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> *<span class="command"> @IBUS</span>_CAP_PROPERTY: UI is capable to have property.</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> *<span class="command"> @IBUS</span>_CAP_SURROUNDING_TEXT: Client can provide surround text,</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> *  or IME can handle surround text.</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> * Capability flags of UI.</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="113">113</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="114">114</th><td>    <dfn class="enum" id="IBUS_CAP_PREEDIT_TEXT" title='IBUS_CAP_PREEDIT_TEXT' data-ref="IBUS_CAP_PREEDIT_TEXT">IBUS_CAP_PREEDIT_TEXT</dfn>       = <var>1</var> &lt;&lt; <var>0</var>,</td></tr>
+<tr><th id="115">115</th><td>    <dfn class="enum" id="IBUS_CAP_AUXILIARY_TEXT" title='IBUS_CAP_AUXILIARY_TEXT' data-ref="IBUS_CAP_AUXILIARY_TEXT">IBUS_CAP_AUXILIARY_TEXT</dfn>     = <var>1</var> &lt;&lt; <var>1</var>,</td></tr>
+<tr><th id="116">116</th><td>    <dfn class="enum" id="IBUS_CAP_LOOKUP_TABLE" title='IBUS_CAP_LOOKUP_TABLE' data-ref="IBUS_CAP_LOOKUP_TABLE">IBUS_CAP_LOOKUP_TABLE</dfn>       = <var>1</var> &lt;&lt; <var>2</var>,</td></tr>
+<tr><th id="117">117</th><td>    <dfn class="enum" id="IBUS_CAP_FOCUS" title='IBUS_CAP_FOCUS' data-ref="IBUS_CAP_FOCUS">IBUS_CAP_FOCUS</dfn>              = <var>1</var> &lt;&lt; <var>3</var>,</td></tr>
+<tr><th id="118">118</th><td>    <dfn class="enum" id="IBUS_CAP_PROPERTY" title='IBUS_CAP_PROPERTY' data-ref="IBUS_CAP_PROPERTY">IBUS_CAP_PROPERTY</dfn>           = <var>1</var> &lt;&lt; <var>4</var>,</td></tr>
+<tr><th id="119">119</th><td>    <dfn class="enum" id="IBUS_CAP_SURROUNDING_TEXT" title='IBUS_CAP_SURROUNDING_TEXT' data-ref="IBUS_CAP_SURROUNDING_TEXT">IBUS_CAP_SURROUNDING_TEXT</dfn>   = <var>1</var> &lt;&lt; <var>5</var>,</td></tr>
+<tr><th id="120">120</th><td>} <dfn class="typedef" id="IBusCapabilite" title='IBusCapabilite' data-type='enum IBusCapabilite' data-ref="IBusCapabilite">IBusCapabilite</dfn>;</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> * IBusPreeditFocusMode:</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> *<span class="command"> @IBUS</span>_ENGINE_PREEDIT_CLEAR: pre-edit text is cleared.</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc"> *<span class="command"> @IBUS</span>_ENGINE_PREEDIT_COMMIT: pre-edit text is committed.</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> * Pre-edit commit mode when the focus is lost.</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="129">129</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="130">130</th><td>    <dfn class="enum" id="IBUS_ENGINE_PREEDIT_CLEAR" title='IBUS_ENGINE_PREEDIT_CLEAR' data-ref="IBUS_ENGINE_PREEDIT_CLEAR">IBUS_ENGINE_PREEDIT_CLEAR</dfn>   = <var>0</var>,</td></tr>
+<tr><th id="131">131</th><td>    <dfn class="enum" id="IBUS_ENGINE_PREEDIT_COMMIT" title='IBUS_ENGINE_PREEDIT_COMMIT' data-ref="IBUS_ENGINE_PREEDIT_COMMIT">IBUS_ENGINE_PREEDIT_COMMIT</dfn>  = <var>1</var>,</td></tr>
+<tr><th id="132">132</th><td>} <dfn class="typedef" id="IBusPreeditFocusMode" title='IBusPreeditFocusMode' data-type='enum IBusPreeditFocusMode' data-ref="IBusPreeditFocusMode">IBusPreeditFocusMode</dfn>;</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> * IBusOrientation:</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> *<span class="command"> @IBUS</span>_ORIENTATION_HORIZONTAL: Horizontal orientation.</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> *<span class="command"> @IBUS</span>_ORIENTATION_VERTICAL: Vertival orientation.</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> *<span class="command"> @IBUS</span>_ORIENTATION_SYSTEM: Use ibus global orientation setup.</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc"> * Orientation of UI.</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="142">142</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="143">143</th><td>    <dfn class="enum" id="IBUS_ORIENTATION_HORIZONTAL" title='IBUS_ORIENTATION_HORIZONTAL' data-ref="IBUS_ORIENTATION_HORIZONTAL">IBUS_ORIENTATION_HORIZONTAL</dfn> = <var>0</var>,</td></tr>
+<tr><th id="144">144</th><td>    <dfn class="enum" id="IBUS_ORIENTATION_VERTICAL" title='IBUS_ORIENTATION_VERTICAL' data-ref="IBUS_ORIENTATION_VERTICAL">IBUS_ORIENTATION_VERTICAL</dfn>   = <var>1</var>,</td></tr>
+<tr><th id="145">145</th><td>    <dfn class="enum" id="IBUS_ORIENTATION_SYSTEM" title='IBUS_ORIENTATION_SYSTEM' data-ref="IBUS_ORIENTATION_SYSTEM">IBUS_ORIENTATION_SYSTEM</dfn>     = <var>2</var>,</td></tr>
+<tr><th id="146">146</th><td>} <dfn class="typedef" id="IBusOrientation" title='IBusOrientation' data-type='enum IBusOrientation' data-ref="IBusOrientation">IBusOrientation</dfn>;</td></tr>
+<tr><th id="147">147</th><td></td></tr>
+<tr><th id="148">148</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> * IBusBusNameFlag:</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> *<span class="command"> @IBUS</span>_BUS_NAME_FLAG_ALLOW_REPLACEMENT:</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> *    same as DBUS_NAME_FLAG_ALLOW_REPLACEMENT	</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> *<span class="command"> @IBUS</span>_BUS_NAME_FLAG_REPLACE_EXISTING:</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> *    same as DBUS_NAME_FLAG_REPLACE_EXISTING</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> *<span class="command"> @IBUS</span>_BUS_NAME_FLAG_DO_NOT_QUEUE:</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc"> *    same as DBUS_NAME_FLAG_DO_NOT_QUEUE </i></td></tr>
+<tr><th id="156">156</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="157">157</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="158">158</th><td>    <dfn class="enum" id="IBUS_BUS_NAME_FLAG_ALLOW_REPLACEMENT" title='IBUS_BUS_NAME_FLAG_ALLOW_REPLACEMENT' data-ref="IBUS_BUS_NAME_FLAG_ALLOW_REPLACEMENT">IBUS_BUS_NAME_FLAG_ALLOW_REPLACEMENT</dfn>   = (<var>1</var> &lt;&lt; <var>0</var>),</td></tr>
+<tr><th id="159">159</th><td>    <dfn class="enum" id="IBUS_BUS_NAME_FLAG_REPLACE_EXISTING" title='IBUS_BUS_NAME_FLAG_REPLACE_EXISTING' data-ref="IBUS_BUS_NAME_FLAG_REPLACE_EXISTING">IBUS_BUS_NAME_FLAG_REPLACE_EXISTING</dfn>    = (<var>1</var> &lt;&lt; <var>1</var>),</td></tr>
+<tr><th id="160">160</th><td>    <dfn class="enum" id="IBUS_BUS_NAME_FLAG_DO_NOT_QUEUE" title='IBUS_BUS_NAME_FLAG_DO_NOT_QUEUE' data-ref="IBUS_BUS_NAME_FLAG_DO_NOT_QUEUE">IBUS_BUS_NAME_FLAG_DO_NOT_QUEUE</dfn>        = (<var>1</var> &lt;&lt; <var>2</var>),</td></tr>
+<tr><th id="161">161</th><td>} <dfn class="typedef" id="IBusBusNameFlag" title='IBusBusNameFlag' data-type='enum IBusBusNameFlag' data-ref="IBusBusNameFlag">IBusBusNameFlag</dfn>;</td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc"> * IBusBusRequestNameReply:</i></td></tr>
+<tr><th id="165">165</th><td><i class="doc"> *<span class="command"> @IBUS</span>_BUS_REQUEST_NAME_REPLY_PRIMARY_OWNER:</i></td></tr>
+<tr><th id="166">166</th><td><i class="doc"> *    same as DBUS_REQUEST_NAME_REPLY_PRIMARY_OWNER</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc"> *<span class="command"> @IBUS</span>_BUS_REQUEST_NAME_REPLY_IN_QUEUE:</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc"> *    same as DBUS_REQUEST_NAME_REPLY_IN_QUEUE</i></td></tr>
+<tr><th id="169">169</th><td><i class="doc"> *<span class="command"> @IBUS</span>_BUS_REQUEST_NAME_REPLY_EXISTS:</i></td></tr>
+<tr><th id="170">170</th><td><i class="doc"> *    same as DBUS_REQUEST_NAME_REPLY_EXISTS</i></td></tr>
+<tr><th id="171">171</th><td><i class="doc"> *<span class="command"> @IBUS</span>_BUS_REQUEST_NAME_REPLY_ALREADY_OWNER:</i></td></tr>
+<tr><th id="172">172</th><td><i class="doc"> *    same as DBUS_REQUEST_NAME_REPLY_ALREADY_OWNER</i></td></tr>
+<tr><th id="173">173</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="174">174</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="175">175</th><td>    <dfn class="enum" id="IBUS_BUS_REQUEST_NAME_REPLY_PRIMARY_OWNER" title='IBUS_BUS_REQUEST_NAME_REPLY_PRIMARY_OWNER' data-ref="IBUS_BUS_REQUEST_NAME_REPLY_PRIMARY_OWNER">IBUS_BUS_REQUEST_NAME_REPLY_PRIMARY_OWNER</dfn>   = <var>1</var>,</td></tr>
+<tr><th id="176">176</th><td>    <dfn class="enum" id="IBUS_BUS_REQUEST_NAME_REPLY_IN_QUEUE" title='IBUS_BUS_REQUEST_NAME_REPLY_IN_QUEUE' data-ref="IBUS_BUS_REQUEST_NAME_REPLY_IN_QUEUE">IBUS_BUS_REQUEST_NAME_REPLY_IN_QUEUE</dfn>        = <var>2</var>,</td></tr>
+<tr><th id="177">177</th><td>    <dfn class="enum" id="IBUS_BUS_REQUEST_NAME_REPLY_EXISTS" title='IBUS_BUS_REQUEST_NAME_REPLY_EXISTS' data-ref="IBUS_BUS_REQUEST_NAME_REPLY_EXISTS">IBUS_BUS_REQUEST_NAME_REPLY_EXISTS</dfn>          = <var>3</var>,</td></tr>
+<tr><th id="178">178</th><td>    <dfn class="enum" id="IBUS_BUS_REQUEST_NAME_REPLY_ALREADY_OWNER" title='IBUS_BUS_REQUEST_NAME_REPLY_ALREADY_OWNER' data-ref="IBUS_BUS_REQUEST_NAME_REPLY_ALREADY_OWNER">IBUS_BUS_REQUEST_NAME_REPLY_ALREADY_OWNER</dfn>   = <var>4</var>,</td></tr>
+<tr><th id="179">179</th><td>} <dfn class="typedef" id="IBusBusRequestNameReply" title='IBusBusRequestNameReply' data-type='enum IBusBusRequestNameReply' data-ref="IBusBusRequestNameReply">IBusBusRequestNameReply</dfn>;</td></tr>
+<tr><th id="180">180</th><td></td></tr>
+<tr><th id="181">181</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc"> * IBusBusStartServiceByNameReply:</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc"> *<span class="command"> @IBUS</span>_BUS_START_REPLY_SUCCESS:</i></td></tr>
+<tr><th id="184">184</th><td><i class="doc"> *    same as DBUS_START_REPLY_SUCCESS</i></td></tr>
+<tr><th id="185">185</th><td><i class="doc"> *<span class="command"> @IBUS</span>_BUS_START_REPLY_ALREADY_RUNNING:</i></td></tr>
+<tr><th id="186">186</th><td><i class="doc"> *    same as DBUS_START_REPLY_ALREADY_RUNNING</i></td></tr>
+<tr><th id="187">187</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="188">188</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="189">189</th><td>    <dfn class="enum" id="IBUS_BUS_START_REPLY_SUCCESS" title='IBUS_BUS_START_REPLY_SUCCESS' data-ref="IBUS_BUS_START_REPLY_SUCCESS">IBUS_BUS_START_REPLY_SUCCESS</dfn> = <var>1</var>,</td></tr>
+<tr><th id="190">190</th><td>    <dfn class="enum" id="IBUS_BUS_START_REPLY_ALREADY_RUNNING" title='IBUS_BUS_START_REPLY_ALREADY_RUNNING' data-ref="IBUS_BUS_START_REPLY_ALREADY_RUNNING">IBUS_BUS_START_REPLY_ALREADY_RUNNING</dfn> = <var>2</var>,</td></tr>
+<tr><th id="191">191</th><td>} <dfn class="typedef" id="IBusBusStartServiceByNameReply" title='IBusBusStartServiceByNameReply' data-type='enum IBusBusStartServiceByNameReply' data-ref="IBusBusStartServiceByNameReply">IBusBusStartServiceByNameReply</dfn>;</td></tr>
+<tr><th id="192">192</th><td></td></tr>
+<tr><th id="193">193</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="194">194</th><td><i class="doc"> * IBusError:</i></td></tr>
+<tr><th id="195">195</th><td><i class="doc"> *<span class="command"> @IBUS</span>_ERROR_NO_ENGINE:</i></td></tr>
+<tr><th id="196">196</th><td><i class="doc"> * There is no engine associated with input context.</i></td></tr>
+<tr><th id="197">197</th><td><i class="doc"> *<span class="command"> @IBUS</span>_ERROR_NO_CONFIG:</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc"> * There is no config module running.</i></td></tr>
+<tr><th id="199">199</th><td><i class="doc"> *<span class="command"> @IBUS</span>_ERROR_FAILED:</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc"> * General failure.</i></td></tr>
+<tr><th id="201">201</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="202">202</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="203">203</th><td>    <dfn class="enum" id="IBUS_ERROR_NO_ENGINE" title='IBUS_ERROR_NO_ENGINE' data-ref="IBUS_ERROR_NO_ENGINE">IBUS_ERROR_NO_ENGINE</dfn>,</td></tr>
+<tr><th id="204">204</th><td>    <dfn class="enum" id="IBUS_ERROR_NO_CONFIG" title='IBUS_ERROR_NO_CONFIG' data-ref="IBUS_ERROR_NO_CONFIG">IBUS_ERROR_NO_CONFIG</dfn>,</td></tr>
+<tr><th id="205">205</th><td>    <dfn class="enum" id="IBUS_ERROR_FAILED" title='IBUS_ERROR_FAILED' data-ref="IBUS_ERROR_FAILED">IBUS_ERROR_FAILED</dfn></td></tr>
+<tr><th id="206">206</th><td>} <dfn class="typedef" id="IBusError" title='IBusError' data-type='enum IBusError' data-ref="IBusError">IBusError</dfn>;</td></tr>
+<tr><th id="207">207</th><td></td></tr>
+<tr><th id="208">208</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="209">209</th><td><i class="doc"> * IBusRectangle:</i></td></tr>
+<tr><th id="210">210</th><td><i class="doc"> *<span class="command"> @x</span>: x coordinate.</i></td></tr>
+<tr><th id="211">211</th><td><i class="doc"> *<span class="command"> @y</span>: y coordinate.</i></td></tr>
+<tr><th id="212">212</th><td><i class="doc"> *<span class="command"> @width</span>: width of the rectangle.</i></td></tr>
+<tr><th id="213">213</th><td><i class="doc"> *<span class="command"> @height</span>: height of the renctangl.</i></td></tr>
+<tr><th id="214">214</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="215">215</th><td><i class="doc"> * Rectangle definition.</i></td></tr>
+<tr><th id="216">216</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="217">217</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_IBusRectangle" title='_IBusRectangle' data-ref="_IBusRectangle">_IBusRectangle</a> <dfn class="typedef" id="IBusRectangle" title='IBusRectangle' data-type='struct _IBusRectangle' data-ref="IBusRectangle">IBusRectangle</dfn>;</td></tr>
+<tr><th id="218">218</th><td><b>struct</b> <dfn class="type def" id="_IBusRectangle" title='_IBusRectangle' data-ref="_IBusRectangle">_IBusRectangle</dfn> {</td></tr>
+<tr><th id="219">219</th><td>    <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="_IBusRectangle::x" title='_IBusRectangle::x' data-ref="_IBusRectangle::x">x</dfn>;</td></tr>
+<tr><th id="220">220</th><td>    <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="_IBusRectangle::y" title='_IBusRectangle::y' data-ref="_IBusRectangle::y">y</dfn>;</td></tr>
+<tr><th id="221">221</th><td>    <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="_IBusRectangle::width" title='_IBusRectangle::width' data-ref="_IBusRectangle::width">width</dfn>;</td></tr>
+<tr><th id="222">222</th><td>    <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="_IBusRectangle::height" title='_IBusRectangle::height' data-ref="_IBusRectangle::height">height</dfn>;</td></tr>
+<tr><th id="223">223</th><td>};</td></tr>
+<tr><th id="224">224</th><td></td></tr>
+<tr><th id="225">225</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="226">226</th><td><i class="doc"> * IBusFreeFunc:</i></td></tr>
+<tr><th id="227">227</th><td><i class="doc"> *<span class="command"> @object</span>: object to be freed.</i></td></tr>
+<tr><th id="228">228</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="229">229</th><td><i class="doc"> * Free function prototype.</i></td></tr>
+<tr><th id="230">230</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="231">231</th><td><b>typedef</b> <em>void</em> (* <dfn class="typedef" id="IBusFreeFunc" title='IBusFreeFunc' data-type='void (*)(gpointer)' data-ref="IBusFreeFunc">IBusFreeFunc</dfn>) (<a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="local col0 decl" id="10object" title='object' data-type='gpointer' data-ref="10object">object</dfn>);</td></tr>
+<tr><th id="232">232</th><td></td></tr>
+<tr><th id="233">233</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="234">234</th><td><i class="doc"> * IBusInputPurpose:</i></td></tr>
+<tr><th id="235">235</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_PURPOSE_FREE_FORM: Allow any character</i></td></tr>
+<tr><th id="236">236</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_PURPOSE_ALPHA: Allow only alphabetic characters</i></td></tr>
+<tr><th id="237">237</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_PURPOSE_DIGITS: Allow only digits</i></td></tr>
+<tr><th id="238">238</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_PURPOSE_NUMBER: Edited field expects numbers</i></td></tr>
+<tr><th id="239">239</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_PURPOSE_PHONE: Edited field expects phone number</i></td></tr>
+<tr><th id="240">240</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_PURPOSE_URL: Edited field expects URL</i></td></tr>
+<tr><th id="241">241</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_PURPOSE_EMAIL: Edited field expects email address</i></td></tr>
+<tr><th id="242">242</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_PURPOSE_NAME: Edited field expects the name of a person</i></td></tr>
+<tr><th id="243">243</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_PURPOSE_PASSWORD: Like<span class="command"> @IBUS</span>_INPUT_PURPOSE_FREE_FORM,</i></td></tr>
+<tr><th id="244">244</th><td><i class="doc"> * but characters are hidden</i></td></tr>
+<tr><th id="245">245</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_PURPOSE_PIN: Like<span class="command"> @IBUS</span>_INPUT_PURPOSE_DIGITS, but</i></td></tr>
+<tr><th id="246">246</th><td><i class="doc"> * characters are hidden</i></td></tr>
+<tr><th id="247">247</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="248">248</th><td><i class="doc"> * Describes primary purpose of the input context.  This information</i></td></tr>
+<tr><th id="249">249</th><td><i class="doc"> * is particularly useful to implement intelligent behavior in</i></td></tr>
+<tr><th id="250">250</th><td><i class="doc"> * engines, such as automatic input-mode switch and text prediction.</i></td></tr>
+<tr><th id="251">251</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="252">252</th><td><i class="doc"> * This enumeration may be extended in the future; engines should</i></td></tr>
+<tr><th id="253">253</th><td><i class="doc"> * interpret unknown values as 'free form'.</i></td></tr>
+<tr><th id="254">254</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="255">255</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="256">256</th><td>{</td></tr>
+<tr><th id="257">257</th><td>  <dfn class="enum" id="IBUS_INPUT_PURPOSE_FREE_FORM" title='IBUS_INPUT_PURPOSE_FREE_FORM' data-ref="IBUS_INPUT_PURPOSE_FREE_FORM">IBUS_INPUT_PURPOSE_FREE_FORM</dfn>,</td></tr>
+<tr><th id="258">258</th><td>  <dfn class="enum" id="IBUS_INPUT_PURPOSE_ALPHA" title='IBUS_INPUT_PURPOSE_ALPHA' data-ref="IBUS_INPUT_PURPOSE_ALPHA">IBUS_INPUT_PURPOSE_ALPHA</dfn>,</td></tr>
+<tr><th id="259">259</th><td>  <dfn class="enum" id="IBUS_INPUT_PURPOSE_DIGITS" title='IBUS_INPUT_PURPOSE_DIGITS' data-ref="IBUS_INPUT_PURPOSE_DIGITS">IBUS_INPUT_PURPOSE_DIGITS</dfn>,</td></tr>
+<tr><th id="260">260</th><td>  <dfn class="enum" id="IBUS_INPUT_PURPOSE_NUMBER" title='IBUS_INPUT_PURPOSE_NUMBER' data-ref="IBUS_INPUT_PURPOSE_NUMBER">IBUS_INPUT_PURPOSE_NUMBER</dfn>,</td></tr>
+<tr><th id="261">261</th><td>  <dfn class="enum" id="IBUS_INPUT_PURPOSE_PHONE" title='IBUS_INPUT_PURPOSE_PHONE' data-ref="IBUS_INPUT_PURPOSE_PHONE">IBUS_INPUT_PURPOSE_PHONE</dfn>,</td></tr>
+<tr><th id="262">262</th><td>  <dfn class="enum" id="IBUS_INPUT_PURPOSE_URL" title='IBUS_INPUT_PURPOSE_URL' data-ref="IBUS_INPUT_PURPOSE_URL">IBUS_INPUT_PURPOSE_URL</dfn>,</td></tr>
+<tr><th id="263">263</th><td>  <dfn class="enum" id="IBUS_INPUT_PURPOSE_EMAIL" title='IBUS_INPUT_PURPOSE_EMAIL' data-ref="IBUS_INPUT_PURPOSE_EMAIL">IBUS_INPUT_PURPOSE_EMAIL</dfn>,</td></tr>
+<tr><th id="264">264</th><td>  <dfn class="enum" id="IBUS_INPUT_PURPOSE_NAME" title='IBUS_INPUT_PURPOSE_NAME' data-ref="IBUS_INPUT_PURPOSE_NAME">IBUS_INPUT_PURPOSE_NAME</dfn>,</td></tr>
+<tr><th id="265">265</th><td>  <dfn class="enum" id="IBUS_INPUT_PURPOSE_PASSWORD" title='IBUS_INPUT_PURPOSE_PASSWORD' data-ref="IBUS_INPUT_PURPOSE_PASSWORD">IBUS_INPUT_PURPOSE_PASSWORD</dfn>,</td></tr>
+<tr><th id="266">266</th><td>  <dfn class="enum" id="IBUS_INPUT_PURPOSE_PIN" title='IBUS_INPUT_PURPOSE_PIN' data-ref="IBUS_INPUT_PURPOSE_PIN">IBUS_INPUT_PURPOSE_PIN</dfn></td></tr>
+<tr><th id="267">267</th><td>} <dfn class="typedef" id="IBusInputPurpose" title='IBusInputPurpose' data-type='enum IBusInputPurpose' data-ref="IBusInputPurpose">IBusInputPurpose</dfn>;</td></tr>
+<tr><th id="268">268</th><td></td></tr>
+<tr><th id="269">269</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="270">270</th><td><i class="doc"> * IBusInputHints:</i></td></tr>
+<tr><th id="271">271</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_HINT_NONE: No special behaviour suggested</i></td></tr>
+<tr><th id="272">272</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_HINT_SPELLCHECK: Suggest checking for typos</i></td></tr>
+<tr><th id="273">273</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_HINT_NO_SPELLCHECK: Suggest not checking for typos</i></td></tr>
+<tr><th id="274">274</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_HINT_WORD_COMPLETION: Suggest word completion</i></td></tr>
+<tr><th id="275">275</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_HINT_LOWERCASE: Suggest to convert all text to lowercase</i></td></tr>
+<tr><th id="276">276</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_HINT_UPPERCASE_CHARS: Suggest to capitalize all text</i></td></tr>
+<tr><th id="277">277</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_HINT_UPPERCASE_WORDS: Suggest to capitalize the first</i></td></tr>
+<tr><th id="278">278</th><td><i class="doc"> *     character of each word</i></td></tr>
+<tr><th id="279">279</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_HINT_UPPERCASE_SENTENCES: Suggest to capitalize the</i></td></tr>
+<tr><th id="280">280</th><td><i class="doc"> *     first word of each sentence</i></td></tr>
+<tr><th id="281">281</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_HINT_INHIBIT_OSK: Suggest to not show an onscreen keyboard</i></td></tr>
+<tr><th id="282">282</th><td><i class="doc"> *     (e.g for a calculator that already has all the keys).</i></td></tr>
+<tr><th id="283">283</th><td><i class="doc"> *<span class="command"> @IBUS</span>_INPUT_HINT_VERTICAL_WRITING: The text is vertical.</i></td></tr>
+<tr><th id="284">284</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="285">285</th><td><i class="doc"> * Describes hints that might be taken into account by engines.  Note</i></td></tr>
+<tr><th id="286">286</th><td><i class="doc"> * that engines may already tailor their behaviour according to the</i></td></tr>
+<tr><th id="287">287</th><td><i class="doc"> * #IBusInputPurpose of the entry.</i></td></tr>
+<tr><th id="288">288</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="289">289</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="290">290</th><td>{</td></tr>
+<tr><th id="291">291</th><td>  <dfn class="enum" id="IBUS_INPUT_HINT_NONE" title='IBUS_INPUT_HINT_NONE' data-ref="IBUS_INPUT_HINT_NONE">IBUS_INPUT_HINT_NONE</dfn>                = <var>0</var>,</td></tr>
+<tr><th id="292">292</th><td>  <dfn class="enum" id="IBUS_INPUT_HINT_SPELLCHECK" title='IBUS_INPUT_HINT_SPELLCHECK' data-ref="IBUS_INPUT_HINT_SPELLCHECK">IBUS_INPUT_HINT_SPELLCHECK</dfn>          = <var>1</var> &lt;&lt; <var>0</var>,</td></tr>
+<tr><th id="293">293</th><td>  <dfn class="enum" id="IBUS_INPUT_HINT_NO_SPELLCHECK" title='IBUS_INPUT_HINT_NO_SPELLCHECK' data-ref="IBUS_INPUT_HINT_NO_SPELLCHECK">IBUS_INPUT_HINT_NO_SPELLCHECK</dfn>       = <var>1</var> &lt;&lt; <var>1</var>,</td></tr>
+<tr><th id="294">294</th><td>  <dfn class="enum" id="IBUS_INPUT_HINT_WORD_COMPLETION" title='IBUS_INPUT_HINT_WORD_COMPLETION' data-ref="IBUS_INPUT_HINT_WORD_COMPLETION">IBUS_INPUT_HINT_WORD_COMPLETION</dfn>     = <var>1</var> &lt;&lt; <var>2</var>,</td></tr>
+<tr><th id="295">295</th><td>  <dfn class="enum" id="IBUS_INPUT_HINT_LOWERCASE" title='IBUS_INPUT_HINT_LOWERCASE' data-ref="IBUS_INPUT_HINT_LOWERCASE">IBUS_INPUT_HINT_LOWERCASE</dfn>           = <var>1</var> &lt;&lt; <var>3</var>,</td></tr>
+<tr><th id="296">296</th><td>  <dfn class="enum" id="IBUS_INPUT_HINT_UPPERCASE_CHARS" title='IBUS_INPUT_HINT_UPPERCASE_CHARS' data-ref="IBUS_INPUT_HINT_UPPERCASE_CHARS">IBUS_INPUT_HINT_UPPERCASE_CHARS</dfn>     = <var>1</var> &lt;&lt; <var>4</var>,</td></tr>
+<tr><th id="297">297</th><td>  <dfn class="enum" id="IBUS_INPUT_HINT_UPPERCASE_WORDS" title='IBUS_INPUT_HINT_UPPERCASE_WORDS' data-ref="IBUS_INPUT_HINT_UPPERCASE_WORDS">IBUS_INPUT_HINT_UPPERCASE_WORDS</dfn>     = <var>1</var> &lt;&lt; <var>5</var>,</td></tr>
+<tr><th id="298">298</th><td>  <dfn class="enum" id="IBUS_INPUT_HINT_UPPERCASE_SENTENCES" title='IBUS_INPUT_HINT_UPPERCASE_SENTENCES' data-ref="IBUS_INPUT_HINT_UPPERCASE_SENTENCES">IBUS_INPUT_HINT_UPPERCASE_SENTENCES</dfn> = <var>1</var> &lt;&lt; <var>6</var>,</td></tr>
+<tr><th id="299">299</th><td>  <dfn class="enum" id="IBUS_INPUT_HINT_INHIBIT_OSK" title='IBUS_INPUT_HINT_INHIBIT_OSK' data-ref="IBUS_INPUT_HINT_INHIBIT_OSK">IBUS_INPUT_HINT_INHIBIT_OSK</dfn>         = <var>1</var> &lt;&lt; <var>7</var>,</td></tr>
+<tr><th id="300">300</th><td>  <dfn class="enum" id="IBUS_INPUT_HINT_VERTICAL_WRITING" title='IBUS_INPUT_HINT_VERTICAL_WRITING' data-ref="IBUS_INPUT_HINT_VERTICAL_WRITING">IBUS_INPUT_HINT_VERTICAL_WRITING</dfn>    = <var>1</var> &lt;&lt; <var>8</var></td></tr>
+<tr><th id="301">301</th><td>} <dfn class="typedef" id="IBusInputHints" title='IBusInputHints' data-type='enum IBusInputHints' data-ref="IBusInputHints">IBusInputHints</dfn>;</td></tr>
+<tr><th id="302">302</th><td></td></tr>
+<tr><th id="303">303</th><td><u>#<span data-ppcond="27">endif</span></u></td></tr>
+<tr><th id="304">304</th><td></td></tr>
+<tr><th id="305">305</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../unikey/setup/dlg_main_setup.cpp.html'>unikey/setup/dlg_main_setup.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

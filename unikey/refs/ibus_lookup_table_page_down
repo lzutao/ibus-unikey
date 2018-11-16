@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibuslookuptable.h' l='357' type='gboolean ibus_lookup_table_page_down(IBusLookupTable * table)'/>
+<doc f='include/ibus-1.0/ibuslookuptable.h' l='345'>/**
+ * ibus_lookup_table_page_down:
+ * @table: An IBusLookupTable.
+ *
+ * Go to next page of an #IBusLookupTable.
+ *
+ * It returns FALSE if it is already at the last page,
+ * unless  &lt;code&gt;table&amp;gt;-round==TRUE&lt;/code&gt;, where it will go
+ * to the first page.
+ *
+ * Returns: %TRUE if succeed.
+ */</doc>

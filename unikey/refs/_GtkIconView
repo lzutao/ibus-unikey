@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkiconview.h' l='60' ll='65'/>
+<size>120</size>
+<mbr r='_GtkIconView::parent' o='0' t='GtkContainer'/>
+<mbr r='_GtkIconView::priv' o='896' t='GtkIconViewPrivate *'/>

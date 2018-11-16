@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='3124' type='void cairo_region_get_rectangle(const cairo_region_t * region, int nth, cairo_rectangle_int_t * rectangle)'/>

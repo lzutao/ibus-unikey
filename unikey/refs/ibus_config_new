@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusconfig.h' l='99' type='IBusConfig * ibus_config_new(GDBusConnection * connection, GCancellable * cancellable, GError ** error)'/>
+<doc f='include/ibus-1.0/ibusconfig.h' l='89'>/**
+ * ibus_config_new:
+ * @connection: A #GDBusConnection.
+ * @cancellable: A #GCancellable or %NULL.
+ * @error: Return location for error or %NULL.
+ *
+ * Create a new #IBusConfig from existing #GDBusConnection.
+ *
+ * Returns: A newly allocated #IBusConfig corresponding to @connection.
+ */</doc>

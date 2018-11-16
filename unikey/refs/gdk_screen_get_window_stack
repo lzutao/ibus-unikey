@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkscreen.h' l='128' type='GList * gdk_screen_get_window_stack(GdkScreen * screen)'/>

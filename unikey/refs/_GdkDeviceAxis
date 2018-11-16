@@ -1,0 +1,5 @@
+<def f='include/gtk-2.0/gdk/gdkinput.h' l='91' ll='96'/>
+<size>24</size>
+<mbr r='_GdkDeviceAxis::use' o='0' t='GdkAxisUse'/>
+<mbr r='_GdkDeviceAxis::min' o='64' t='gdouble'/>
+<mbr r='_GdkDeviceAxis::max' o='128' t='gdouble'/>

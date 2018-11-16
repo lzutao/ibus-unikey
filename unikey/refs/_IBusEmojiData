@@ -1,0 +1,10 @@
+<def f='include/ibus-1.0/ibusemoji.h' l='65' ll='72'/>
+<size>56</size>
+<doc f='include/ibus-1.0/ibusemoji.h' l='59'>/**
+ * IBusEmojiData:
+ *
+ * Emoji data likes emoji unicode, annotations, description, category.
+ * You can get extended values with g_object_get_properties.
+ */</doc>
+<mbr r='_IBusEmojiData::parent' o='0' t='IBusSerializable'/>
+<mbr r='_IBusEmojiData::priv' o='384' t='IBusEmojiDataPrivate *'/>

@@ -1,0 +1,12 @@
+<dec f='include/libintl.h' l='39' type='char * gettext(const char * __msgid)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='9' u='c' c='_Z13key_edited_cbP20_GtkCellRendererTextPKcS2_Pv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='9' u='c' c='_Z23import_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='9' u='c' c='_Z23export_macro_clicked_cbP10_GtkButtonPv'/>
+<doc f='include/libintl.h' l='36'>/* Look up MSGID in the current default message catalog for the current
+   LC_MESSAGES locale.  If not found, returns MSGID itself (the default
+   text).  */</doc>
+<use f='unikey/src/engine.cpp' l='41' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='41' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='41' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='41' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/utils.cpp' l='12' u='c' c='_Z25ibus_unikey_get_componentv'/>

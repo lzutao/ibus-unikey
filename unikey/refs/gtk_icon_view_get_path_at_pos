@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconview.h' l='136' type='GtkTreePath * gtk_icon_view_get_path_at_pos(GtkIconView * icon_view, gint x, gint y)'/>

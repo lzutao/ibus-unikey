@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkvalue.h' l='139' type='void atk_value_get_minimum_increment(AtkValue * obj, GValue * value)'/>

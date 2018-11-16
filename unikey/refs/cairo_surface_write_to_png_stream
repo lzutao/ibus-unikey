@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='2432' type='cairo_status_t cairo_surface_write_to_png_stream(cairo_surface_t * surface, cairo_write_func_t write_func, void * closure)'/>

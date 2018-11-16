@@ -1,0 +1,3 @@
+<dec f='include/pango-1.0/pango/pango-renderer.h' l='189' type='void (*)()'/>
+<offset>1792</offset>
+<doc f='include/pango-1.0/pango/pango-renderer.h' l='188'>/* Padding for future expansion */</doc>

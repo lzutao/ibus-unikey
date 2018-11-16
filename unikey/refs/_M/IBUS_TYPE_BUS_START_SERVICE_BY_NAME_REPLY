@@ -1,0 +1,7 @@
+<dec f='include/ibus-1.0/ibusenumtypes.h' l='197'/>
+<doc f='include/ibus-1.0/ibusenumtypes.h' l='191'>/**
+ * IBUS_TYPE_BUS_START_SERVICE_BY_NAME_REPLY:
+ * @returns: GType of IBUS_BUS_START_SERVICE_BY_NAME_REPLY
+ *
+ * Returns the type of IBUS_BUS_START_SERVICE_BY_NAME_REPLY as GType.
+ */</doc>

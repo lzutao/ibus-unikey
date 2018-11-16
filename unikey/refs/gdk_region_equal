@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkregion.h' l='84' type='gboolean gdk_region_equal(const GdkRegion * region1, const GdkRegion * region2)'/>

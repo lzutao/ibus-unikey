@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusserializable.h' l='106'/>
+<doc f='include/ibus-1.0/ibusserializable.h' l='98'>/**
+ * ibus_serializable_remove_attachment:
+ * @o: An #IBusSerializable.
+ * @k: String formatted key for indexing value.
+ *
+ * Remove a value from attachment of an #IBusSerializable.
+ * This macro is an convenient wrapper of ibus_serializable_remove_qattachment().
+ */</doc>

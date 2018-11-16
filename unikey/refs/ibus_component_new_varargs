@@ -1,0 +1,15 @@
+<dec f='include/ibus-1.0/ibuscomponent.h' l='142' type='IBusComponent * ibus_component_new_varargs(const gchar * first_property_name)'/>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='128'>/**
+ * ibus_component_new_varargs:
+ * @first_property_name: Name of the first property.
+ * @...: the NULL-terminated arguments of the properties and values.
+ *
+ * Creates a new #IBusComponent.
+ * ibus_component_new_varargs() supports the va_list format.
+ * name property is required. e.g.
+ * IBusComponent *component = ibus_component_new_varargs (&quot;name&quot;, &quot;ibus-foo&quot;,
+ *                                                        &quot;command_line&quot;, &quot;/usr/libexec/ibus-engine-foo --ibus&quot;,
+ *                                                     NULL)
+ *
+ * Returns: A newly allocated #IBusComponent.
+ */</doc>

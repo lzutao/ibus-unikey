@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkevents.h' l='84' type='2'/>
+<doc f='include/gtk-2.0/gdk/gdkevents.h' l='84'>/* Terminate processing, removing event */</doc>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='761' type='gboolean (*)(GtkWidget *, GdkDragContext *, gint, gint, guint)'/>
+<offset>4928</offset>

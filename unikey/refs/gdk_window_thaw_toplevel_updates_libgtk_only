@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='681' type='void gdk_window_thaw_toplevel_updates_libgtk_only(GdkWindow * window)'/>

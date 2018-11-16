@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkbin.h' l='51' ll='56'/>
+<size>120</size>
+<mbr r='_GtkBin::container' o='0' t='GtkContainer'/>
+<mbr r='_GtkBin::child' o='896' t='GtkWidget *'/>

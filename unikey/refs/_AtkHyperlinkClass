@@ -1,0 +1,13 @@
+<def f='include/atk-1.0/atk/atkhyperlink.h' l='63' ll='81'/>
+<size>216</size>
+<mbr r='_AtkHyperlinkClass::parent' o='0' t='GObjectClass'/>
+<mbr r='_AtkHyperlinkClass::get_uri' o='1088' t='gchar *(*)(AtkHyperlink *, gint)'/>
+<mbr r='_AtkHyperlinkClass::get_object' o='1152' t='AtkObject *(*)(AtkHyperlink *, gint)'/>
+<mbr r='_AtkHyperlinkClass::get_end_index' o='1216' t='gint (*)(AtkHyperlink *)'/>
+<mbr r='_AtkHyperlinkClass::get_start_index' o='1280' t='gint (*)(AtkHyperlink *)'/>
+<mbr r='_AtkHyperlinkClass::is_valid' o='1344' t='gboolean (*)(AtkHyperlink *)'/>
+<mbr r='_AtkHyperlinkClass::get_n_anchors' o='1408' t='gint (*)(AtkHyperlink *)'/>
+<mbr r='_AtkHyperlinkClass::link_state' o='1472' t='guint (*)(AtkHyperlink *)'/>
+<mbr r='_AtkHyperlinkClass::is_selected_link' o='1536' t='gboolean (*)(AtkHyperlink *)'/>
+<mbr r='_AtkHyperlinkClass::link_activated' o='1600' t='void (*)(AtkHyperlink *)'/>
+<mbr r='_AtkHyperlinkClass::pad1' o='1664' t='AtkFunction'/>

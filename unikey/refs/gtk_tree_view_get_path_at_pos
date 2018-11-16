@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='246' type='gboolean gtk_tree_view_get_path_at_pos(GtkTreeView * tree_view, gint x, gint y, GtkTreePath ** path, GtkTreeViewColumn ** column, gint * cell_x, gint * cell_y)'/>

@@ -1,0 +1,5 @@
+<def f='include/ibus-1.0/ibusfactory.h' l='127' ll='141'/>
+<size>328</size>
+<mbr r='_IBusFactoryClass::parent' o='0' t='IBusServiceClass'/>
+<mbr r='_IBusFactoryClass::create_engine' o='2112' t='IBusEngine *(*)(IBusFactory *, const gchar *)'/>
+<mbr r='_IBusFactoryClass::pdummy' o='2176' t='gpointer [7]'/>

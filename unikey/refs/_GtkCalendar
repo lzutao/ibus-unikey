@@ -1,0 +1,26 @@
+<def f='include/gtk-2.0/gtk/gtkcalendar.h' l='105' ll='141'/>
+<size>1072</size>
+<mbr r='_GtkCalendar::widget' o='0' t='GtkWidget'/>
+<mbr r='_GtkCalendar::header_style' o='768' t='GtkStyle *'/>
+<mbr r='_GtkCalendar::label_style' o='832' t='GtkStyle *'/>
+<mbr r='_GtkCalendar::month' o='896' t='gint'/>
+<mbr r='_GtkCalendar::year' o='928' t='gint'/>
+<mbr r='_GtkCalendar::selected_day' o='960' t='gint'/>
+<mbr r='_GtkCalendar::day_month' o='992' t='gint [6][7]'/>
+<mbr r='_GtkCalendar::day' o='2336' t='gint [6][7]'/>
+<mbr r='_GtkCalendar::num_marked_dates' o='3680' t='gint'/>
+<mbr r='_GtkCalendar::marked_date' o='3712' t='gint [31]'/>
+<mbr r='_GtkCalendar::display_flags' o='4704' t='GtkCalendarDisplayOptions'/>
+<mbr r='_GtkCalendar::marked_date_color' o='4736' t='GdkColor [31]'/>
+<mbr r='_GtkCalendar::gc' o='7744' t='GdkGC *'/>
+<mbr r='_GtkCalendar::xor_gc' o='7808' t='GdkGC *'/>
+<mbr r='_GtkCalendar::focus_row' o='7872' t='gint'/>
+<mbr r='_GtkCalendar::focus_col' o='7904' t='gint'/>
+<mbr r='_GtkCalendar::highlight_row' o='7936' t='gint'/>
+<mbr r='_GtkCalendar::highlight_col' o='7968' t='gint'/>
+<mbr r='_GtkCalendar::priv' o='8000' t='GtkCalendarPrivate *'/>
+<mbr r='_GtkCalendar::grow_space' o='8064' t='gchar [32]'/>
+<mbr r='_GtkCalendar::_gtk_reserved1' o='8320' t='void (*)()'/>
+<mbr r='_GtkCalendar::_gtk_reserved2' o='8384' t='void (*)()'/>
+<mbr r='_GtkCalendar::_gtk_reserved3' o='8448' t='void (*)()'/>
+<mbr r='_GtkCalendar::_gtk_reserved4' o='8512' t='void (*)()'/>

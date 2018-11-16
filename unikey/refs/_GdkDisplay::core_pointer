@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='89' type='GdkDevice *'/>
+<offset>640</offset>
+<doc f='include/gtk-2.0/gdk/gdkdisplay.h' l='89'>/* Core pointer device */</doc>

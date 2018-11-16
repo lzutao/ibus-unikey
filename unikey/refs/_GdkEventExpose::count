@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gdk/gdkevents.h' l='280' type='gint'/>
+<offset>384</offset>
+<doc f='include/gtk-2.0/gdk/gdkevents.h' l='280'>/* If non-zero, how many more events follow. */</doc>

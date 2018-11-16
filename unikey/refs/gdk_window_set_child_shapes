@@ -1,0 +1,8 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='431' type='void gdk_window_set_child_shapes(GdkWindow * window)'/>
+<doc f='include/gtk-2.0/gdk/gdkwindow.h' l='424'>/*
+ * This routine allows you to quickly take the shapes of all the child windows
+ * of a window and use their shapes as the shape mask for this window - useful
+ * for container windows that dont want to look like a big box
+ * 
+ * - Raster
+ */</doc>

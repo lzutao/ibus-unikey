@@ -1,0 +1,24 @@
+<def f='include/ibus-1.0/ibusengine.h' l='95' ll='160'/>
+<size>456</size>
+<mbr r='_IBusEngineClass::parent' o='0' t='IBusServiceClass'/>
+<mbr r='_IBusEngineClass::process_key_event' o='2112' t='gboolean (*)(IBusEngine *, guint, guint, guint)'/>
+<mbr r='_IBusEngineClass::focus_in' o='2176' t='void (*)(IBusEngine *)'/>
+<mbr r='_IBusEngineClass::focus_out' o='2240' t='void (*)(IBusEngine *)'/>
+<mbr r='_IBusEngineClass::reset' o='2304' t='void (*)(IBusEngine *)'/>
+<mbr r='_IBusEngineClass::enable' o='2368' t='void (*)(IBusEngine *)'/>
+<mbr r='_IBusEngineClass::disable' o='2432' t='void (*)(IBusEngine *)'/>
+<mbr r='_IBusEngineClass::set_cursor_location' o='2496' t='void (*)(IBusEngine *, gint, gint, gint, gint)'/>
+<mbr r='_IBusEngineClass::set_capabilities' o='2560' t='void (*)(IBusEngine *, guint)'/>
+<mbr r='_IBusEngineClass::page_up' o='2624' t='void (*)(IBusEngine *)'/>
+<mbr r='_IBusEngineClass::page_down' o='2688' t='void (*)(IBusEngine *)'/>
+<mbr r='_IBusEngineClass::cursor_up' o='2752' t='void (*)(IBusEngine *)'/>
+<mbr r='_IBusEngineClass::cursor_down' o='2816' t='void (*)(IBusEngine *)'/>
+<mbr r='_IBusEngineClass::property_activate' o='2880' t='void (*)(IBusEngine *, const gchar *, guint)'/>
+<mbr r='_IBusEngineClass::property_show' o='2944' t='void (*)(IBusEngine *, const gchar *)'/>
+<mbr r='_IBusEngineClass::property_hide' o='3008' t='void (*)(IBusEngine *, const gchar *)'/>
+<mbr r='_IBusEngineClass::candidate_clicked' o='3072' t='void (*)(IBusEngine *, guint, guint, guint)'/>
+<mbr r='_IBusEngineClass::set_surrounding_text' o='3136' t='void (*)(IBusEngine *, IBusText *, guint, guint)'/>
+<mbr r='_IBusEngineClass::process_hand_writing_event' o='3200' t='void (*)(IBusEngine *, const gdouble *, guint)'/>
+<mbr r='_IBusEngineClass::cancel_hand_writing' o='3264' t='void (*)(IBusEngine *, guint)'/>
+<mbr r='_IBusEngineClass::set_content_type' o='3328' t='void (*)(IBusEngine *, guint, guint)'/>
+<mbr r='_IBusEngineClass::pdummy' o='3392' t='gpointer [4]'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkfont.h' l='75' type='GdkFont * gdk_fontset_load(const gchar * fontset_name)'/>

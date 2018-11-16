@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkcombo.h' l='109' type='void gtk_combo_set_popdown_strings(GtkCombo * combo, GList * strings)'/>
+<doc f='include/gtk-2.0/gtk/gtkcombo.h' l='108'>/* simple interface */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkinput.h' l='145' type='gint gdk_device_get_n_axes(GdkDevice * device)'/>

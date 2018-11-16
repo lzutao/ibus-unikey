@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtktexttag.h' l='190' type='guint'/>
+<offset>448</offset>
+<doc f='include/gtk-2.0/gtk/gtktexttag.h' l='189'>/*&lt; public &gt;*/</doc>
+<doc f='include/gtk-2.0/gtk/gtktexttag.h' l='190'>/* PangoUnderline */</doc>

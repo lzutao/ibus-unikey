@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtksignal.h' l='116' type='void gtk_signal_connect_while_alive(GtkObject * object, const gchar * name, GCallback func, gpointer func_data, GtkObject * alive_object)'/>

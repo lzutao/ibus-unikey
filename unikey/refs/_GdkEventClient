@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gdk/gdkevents.h' l='438' ll='450'/>
+<size>80</size>
+<mbr r='_GdkEventClient::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventClient::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventClient::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventClient::message_type' o='192' t='GdkAtom'/>
+<mbr r='_GdkEventClient::data_format' o='256' t='gushort'/>
+<mbr r='_GdkEventClient::data' o='320' t='union (anonymous union at /usr/include/gtk-2.0/gdk/gdkevents.h:445:3)'/>

@@ -1,0 +1,2 @@
+<dec f='unikey/src/engine_private.h' l='74' type='void ibus_unikey_engine_create_property_list(IBusUnikeyEngine * unikey)'/>
+<use f='unikey/src/engine.cpp' l='106' u='c' c='_ZL23ibus_unikey_engine_initP17_IBusUnikeyEngine'/>

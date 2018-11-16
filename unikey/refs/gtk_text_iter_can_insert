@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='151' type='gboolean gtk_text_iter_can_insert(const GtkTextIter * iter, gboolean default_editability)'/>

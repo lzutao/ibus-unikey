@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusserializable.h' l='209' type='void ibus_serializable_set_qattachment(IBusSerializable * serializable, GQuark key, GVariant * value)'/>
+<doc f='include/ibus-1.0/ibusserializable.h' l='198'>/**
+ * ibus_serializable_set_qattachment:
+ * @serializable: An #IBusSerializable.
+ * @key: String formatted key for indexing value.
+ * @value: Value to be attached or %NULL to remove any prevoius value.
+ *
+ * Attach a value to an #IBusSerializable. If the value is floating,
+ * the serializable will take the ownership.
+ *
+ * See also: ibus_serializable_set_attachment().
+ */</doc>

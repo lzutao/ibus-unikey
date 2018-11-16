@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='593' type='GtkWidget *'/>
+<offset>704</offset>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='591'>/* The widget&apos;s parent.
+   */</doc>

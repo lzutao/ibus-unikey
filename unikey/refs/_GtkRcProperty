@@ -1,0 +1,9 @@
+<def f='include/gtk-2.0/gtk/gtkrc.h' l='245' ll='254'/>
+<size>40</size>
+<doc f='include/gtk-2.0/gtk/gtkrc.h' l='242'>/* rc properties
+ * (structure forward declared in gtkstyle.h)
+ */</doc>
+<mbr r='_GtkRcProperty::type_name' o='0' t='GQuark'/>
+<mbr r='_GtkRcProperty::property_name' o='32' t='GQuark'/>
+<mbr r='_GtkRcProperty::origin' o='64' t='gchar *'/>
+<mbr r='_GtkRcProperty::value' o='128' t='GValue'/>

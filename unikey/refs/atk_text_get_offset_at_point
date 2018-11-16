@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atktext.h' l='400' type='gint atk_text_get_offset_at_point(AtkText * text, gint x, gint y, AtkCoordType coords)'/>

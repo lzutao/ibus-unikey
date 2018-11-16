@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='2993' type='cairo_path_t * cairo_mesh_pattern_get_path(cairo_pattern_t * pattern, unsigned int patch_num)'/>

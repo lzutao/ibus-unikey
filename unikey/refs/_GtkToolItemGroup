@@ -1,0 +1,9 @@
+<def f='include/gtk-2.0/gtk/gtktoolitemgroup.h' l='50' ll='54'/>
+<size>120</size>
+<doc f='include/gtk-2.0/gtk/gtktoolitemgroup.h' l='45'>/**
+ * GtkToolItemGroup:
+ *
+ * This should not be accessed directly. Use the accessor functions below.
+ */</doc>
+<mbr r='_GtkToolItemGroup::parent_instance' o='0' t='GtkContainer'/>
+<mbr r='_GtkToolItemGroup::priv' o='896' t='GtkToolItemGroupPrivate *'/>

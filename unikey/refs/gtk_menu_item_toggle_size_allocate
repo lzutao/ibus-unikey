@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmenuitem.h' l='111' type='void gtk_menu_item_toggle_size_allocate(GtkMenuItem * menu_item, gint allocation)'/>

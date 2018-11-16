@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkselection.h' l='175' type='gboolean gtk_selection_data_get_targets(GtkSelectionData * selection_data, GdkAtom ** targets, gint * n_atoms)'/>

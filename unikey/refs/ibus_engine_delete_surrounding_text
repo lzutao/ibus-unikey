@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='415' type='void ibus_engine_delete_surrounding_text(IBusEngine * engine, gint offset, guint nchars)'/>
+<doc f='include/ibus-1.0/ibusengine.h' l='407'>/**
+ * ibus_engine_delete_surrounding_text:
+ * @engine: An IBusEngine.
+ * @offset: The offset of the first char.
+ * @nchars: Number of chars to be deleted.
+ *
+ * Delete surrounding text.
+ */</doc>

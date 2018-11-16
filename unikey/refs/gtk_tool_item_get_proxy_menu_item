@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktoolitem.h' l='127' type='GtkWidget * gtk_tool_item_get_proxy_menu_item(GtkToolItem * tool_item, const gchar * menu_item_id)'/>

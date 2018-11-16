@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusinputcontext.h' l='478' type='gboolean ibus_input_context_needs_surrounding_text(IBusInputContext * context)'/>
+<doc f='include/ibus-1.0/ibusinputcontext.h' l='469'>/**
+ * ibus_input_context_needs_surrounding_text:
+ * @context: An #IBusInputContext.
+ *
+ * Check whether the current engine requires surrounding-text.
+ *
+ * Returns: %TRUE if surrounding-text is needed by the current engine;
+ * %FALSE otherwise.
+ */</doc>

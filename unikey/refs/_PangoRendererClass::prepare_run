@@ -1,0 +1,4 @@
+<dec f='include/pango-1.0/pango/pango-renderer.h' l='174' type='void (*)(PangoRenderer *, PangoLayoutRun *)'/>
+<offset>1664</offset>
+<doc f='include/pango-1.0/pango/pango-renderer.h' l='172'>/* Hooks into the details of layout rendering
+   */</doc>

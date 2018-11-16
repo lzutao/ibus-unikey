@@ -1,0 +1,13 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='182'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='170'>/**
+ * GTK_WIDGET_SAVED_STATE:
+ * @wid: a #GtkWidget.
+ *
+ * Returns the saved state of the widget, as a #GtkStateType.
+ *
+ * The saved state will be restored when a widget gets sensitive
+ * again, after it has been made insensitive with gtk_widget_set_state()
+ * or gtk_widget_set_sensitive().
+ *
+ * Deprecated: 2.20: Do not used it.
+ */</doc>

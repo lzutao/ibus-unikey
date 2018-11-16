@@ -1,0 +1,14 @@
+<def f='include/pango-1.0/pango/pango-attributes.h' l='43' ll='48'/>
+<size>6</size>
+<doc f='include/pango-1.0/pango/pango-attributes.h' l='34'>/**
+ * PangoColor:
+ * @red: value of red component
+ * @green: value of green component
+ * @blue: value of blue component
+ *
+ * The #PangoColor structure is used to
+ * represent a color in an uncalibrated RGB color-space.
+ */</doc>
+<mbr r='_PangoColor::red' o='0' t='guint16'/>
+<mbr r='_PangoColor::green' o='16' t='guint16'/>
+<mbr r='_PangoColor::blue' o='32' t='guint16'/>

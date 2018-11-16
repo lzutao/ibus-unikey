@@ -1,0 +1,14 @@
+<def f='include/pango-1.0/pango/pango-glyph.h' l='60' ll='65'/>
+<size>12</size>
+<doc f='include/pango-1.0/pango/pango-glyph.h' l='51'>/**
+ * PangoGlyphGeometry:
+ * @width: the logical width to use for the the character.
+ * @x_offset: horizontal offset from nominal character position.
+ * @y_offset: vertical offset from nominal character position.
+ *
+ * The #PangoGlyphGeometry structure contains width and positioning
+ * information for a single glyph.
+ */</doc>
+<mbr r='_PangoGlyphGeometry::width' o='0' t='PangoGlyphUnit'/>
+<mbr r='_PangoGlyphGeometry::x_offset' o='32' t='PangoGlyphUnit'/>
+<mbr r='_PangoGlyphGeometry::y_offset' o='64' t='PangoGlyphUnit'/>

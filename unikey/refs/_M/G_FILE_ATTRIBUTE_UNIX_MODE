@@ -1,0 +1,9 @@
+<dec f='include/glib-2.0/gio/gfileinfo.h' l='584'/>
+<doc f='include/glib-2.0/gio/gfileinfo.h' l='576'>/**
+ * G_FILE_ATTRIBUTE_UNIX_MODE:
+ *
+ * A key in the &quot;unix&quot; namespace for getting the mode of the file
+ * (e.g. whether the file is a regular file, symlink, etc). See lstat()
+ * documentation. This attribute is only available for UNIX file systems.
+ * Corresponding #GFileAttributeType is %G_FILE_ATTRIBUTE_TYPE_UINT32.
+ **/</doc>

@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtkbbox.h' l='52' ll='60'/>
+<size>152</size>
+<mbr r='_GtkButtonBox::box' o='0' t='GtkBox'/>
+<mbr r='_GtkButtonBox::child_min_width' o='1024' t='gint'/>
+<mbr r='_GtkButtonBox::child_min_height' o='1056' t='gint'/>
+<mbr r='_GtkButtonBox::child_ipad_x' o='1088' t='gint'/>
+<mbr r='_GtkButtonBox::child_ipad_y' o='1120' t='gint'/>
+<mbr r='_GtkButtonBox::layout_style' o='1152' t='GtkButtonBoxStyle'/>

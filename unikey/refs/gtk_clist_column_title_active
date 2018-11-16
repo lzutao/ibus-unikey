@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='492' type='void gtk_clist_column_title_active(GtkCList * clist, gint column)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='488'>/* set the column title to be a active title (responds to button presses, 
+ * prelights, and grabs keyboard focus), or passive where it acts as just
+ * a title
+ */</doc>

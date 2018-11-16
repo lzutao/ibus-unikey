@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='3033' type='void cairo_matrix_translate(cairo_matrix_t * matrix, double tx, double ty)'/>

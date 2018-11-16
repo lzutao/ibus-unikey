@@ -1,0 +1,11 @@
+<def f='include/gtk-2.0/gtk/gtkrc.h' l='90' ll='124'/>
+<size>200</size>
+<mbr r='_GtkRcStyleClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_GtkRcStyleClass::create_rc_style' o='1088' t='GtkRcStyle *(*)(GtkRcStyle *)'/>
+<mbr r='_GtkRcStyleClass::parse' o='1152' t='guint (*)(GtkRcStyle *, GtkSettings *, GScanner *)'/>
+<mbr r='_GtkRcStyleClass::merge' o='1216' t='void (*)(GtkRcStyle *, GtkRcStyle *)'/>
+<mbr r='_GtkRcStyleClass::create_style' o='1280' t='GtkStyle *(*)(GtkRcStyle *)'/>
+<mbr r='_GtkRcStyleClass::_gtk_reserved1' o='1344' t='void (*)()'/>
+<mbr r='_GtkRcStyleClass::_gtk_reserved2' o='1408' t='void (*)()'/>
+<mbr r='_GtkRcStyleClass::_gtk_reserved3' o='1472' t='void (*)()'/>
+<mbr r='_GtkRcStyleClass::_gtk_reserved4' o='1536' t='void (*)()'/>

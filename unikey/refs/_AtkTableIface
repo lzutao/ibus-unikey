@@ -1,0 +1,39 @@
+<def f='include/atk-1.0/atk/atktable.h' l='42' ll='129'/>
+<size>304</size>
+<mbr r='_AtkTableIface::parent' o='0' t='GTypeInterface'/>
+<mbr r='_AtkTableIface::ref_at' o='128' t='AtkObject *(*)(AtkTable *, gint, gint)'/>
+<mbr r='_AtkTableIface::get_index_at' o='192' t='gint (*)(AtkTable *, gint, gint)'/>
+<mbr r='_AtkTableIface::get_column_at_index' o='256' t='gint (*)(AtkTable *, gint)'/>
+<mbr r='_AtkTableIface::get_row_at_index' o='320' t='gint (*)(AtkTable *, gint)'/>
+<mbr r='_AtkTableIface::get_n_columns' o='384' t='gint (*)(AtkTable *)'/>
+<mbr r='_AtkTableIface::get_n_rows' o='448' t='gint (*)(AtkTable *)'/>
+<mbr r='_AtkTableIface::get_column_extent_at' o='512' t='gint (*)(AtkTable *, gint, gint)'/>
+<mbr r='_AtkTableIface::get_row_extent_at' o='576' t='gint (*)(AtkTable *, gint, gint)'/>
+<mbr r='_AtkTableIface::get_caption' o='640' t='AtkObject *(*)(AtkTable *)'/>
+<mbr r='_AtkTableIface::get_column_description' o='704' t='const gchar *(*)(AtkTable *, gint)'/>
+<mbr r='_AtkTableIface::get_column_header' o='768' t='AtkObject *(*)(AtkTable *, gint)'/>
+<mbr r='_AtkTableIface::get_row_description' o='832' t='const gchar *(*)(AtkTable *, gint)'/>
+<mbr r='_AtkTableIface::get_row_header' o='896' t='AtkObject *(*)(AtkTable *, gint)'/>
+<mbr r='_AtkTableIface::get_summary' o='960' t='AtkObject *(*)(AtkTable *)'/>
+<mbr r='_AtkTableIface::set_caption' o='1024' t='void (*)(AtkTable *, AtkObject *)'/>
+<mbr r='_AtkTableIface::set_column_description' o='1088' t='void (*)(AtkTable *, gint, const gchar *)'/>
+<mbr r='_AtkTableIface::set_column_header' o='1152' t='void (*)(AtkTable *, gint, AtkObject *)'/>
+<mbr r='_AtkTableIface::set_row_description' o='1216' t='void (*)(AtkTable *, gint, const gchar *)'/>
+<mbr r='_AtkTableIface::set_row_header' o='1280' t='void (*)(AtkTable *, gint, AtkObject *)'/>
+<mbr r='_AtkTableIface::set_summary' o='1344' t='void (*)(AtkTable *, AtkObject *)'/>
+<mbr r='_AtkTableIface::get_selected_columns' o='1408' t='gint (*)(AtkTable *, gint **)'/>
+<mbr r='_AtkTableIface::get_selected_rows' o='1472' t='gint (*)(AtkTable *, gint **)'/>
+<mbr r='_AtkTableIface::is_column_selected' o='1536' t='gboolean (*)(AtkTable *, gint)'/>
+<mbr r='_AtkTableIface::is_row_selected' o='1600' t='gboolean (*)(AtkTable *, gint)'/>
+<mbr r='_AtkTableIface::is_selected' o='1664' t='gboolean (*)(AtkTable *, gint, gint)'/>
+<mbr r='_AtkTableIface::add_row_selection' o='1728' t='gboolean (*)(AtkTable *, gint)'/>
+<mbr r='_AtkTableIface::remove_row_selection' o='1792' t='gboolean (*)(AtkTable *, gint)'/>
+<mbr r='_AtkTableIface::add_column_selection' o='1856' t='gboolean (*)(AtkTable *, gint)'/>
+<mbr r='_AtkTableIface::remove_column_selection' o='1920' t='gboolean (*)(AtkTable *, gint)'/>
+<mbr r='_AtkTableIface::row_inserted' o='1984' t='void (*)(AtkTable *, gint, gint)'/>
+<mbr r='_AtkTableIface::column_inserted' o='2048' t='void (*)(AtkTable *, gint, gint)'/>
+<mbr r='_AtkTableIface::row_deleted' o='2112' t='void (*)(AtkTable *, gint, gint)'/>
+<mbr r='_AtkTableIface::column_deleted' o='2176' t='void (*)(AtkTable *, gint, gint)'/>
+<mbr r='_AtkTableIface::row_reordered' o='2240' t='void (*)(AtkTable *)'/>
+<mbr r='_AtkTableIface::column_reordered' o='2304' t='void (*)(AtkTable *)'/>
+<mbr r='_AtkTableIface::model_changed' o='2368' t='void (*)(AtkTable *)'/>

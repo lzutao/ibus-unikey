@@ -1,0 +1,4 @@
+<def f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-loader.h' l='53' ll='59'/>
+<size>32</size>
+<mbr r='_GdkPixbufLoader::parent_instance' o='0' t='GObject'/>
+<mbr r='_GdkPixbufLoader::priv' o='192' t='gpointer'/>

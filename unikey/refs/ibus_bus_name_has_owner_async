@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='304' type='void ibus_bus_name_has_owner_async(IBusBus * bus, const gchar * name, gint timeout_msec, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer user_data)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='292'>/**
+ * ibus_bus_name_has_owner_async:
+ * @bus: An #IBusBus.
+ * @name: Name to be checked.
+ * @timeout_msec: The timeout in milliseconds or -1 to use the default timeout.
+ * @cancellable: A #GCancellable or %NULL.
+ * @callback: A #GAsyncReadyCallback to call when the request is satisfied
+ *      or %NULL if you don&apos;t care about the result of the method invocation.
+ * @user_data: The data to pass to callback.
+ *
+ * Checks whether the name has owner asynchronously.
+ */</doc>

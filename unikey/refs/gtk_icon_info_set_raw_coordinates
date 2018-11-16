@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkicontheme.h' l='182' type='void gtk_icon_info_set_raw_coordinates(GtkIconInfo * icon_info, gboolean raw_coordinates)'/>

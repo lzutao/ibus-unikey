@@ -1,0 +1,2 @@
+<dec f='include/glib-2.0/glib/gunicode.h' l='827' type='gint g_unichar_to_utf8(gunichar c, gchar * outbuf)'/>
+<use f='unikey/src/engine.cpp' l='713' u='c' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>

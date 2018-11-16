@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeselection.h' l='98' type='void gtk_tree_selection_selected_foreach(GtkTreeSelection * selection, GtkTreeSelectionForeachFunc func, gpointer data)'/>

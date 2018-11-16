@@ -1,0 +1,4 @@
+<dec f='include/pango-1.0/pango/pango-break.h' l='132' type='guint'/>
+<offset>12</offset>
+<doc f='include/pango-1.0/pango/pango-break.h' l='131'>/* Word boundary as defined by UAX#29 */</doc>
+<doc f='include/pango-1.0/pango/pango-break.h' l='132'>/* is NOT in the middle of a word */</doc>

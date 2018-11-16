@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkkeys.h' l='113' type='gboolean gdk_keymap_map_virtual_modifiers(GdkKeymap * keymap, GdkModifierType * state)'/>

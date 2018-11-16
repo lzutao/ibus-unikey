@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='174' type='guint32 ibus_bus_request_name(IBusBus * bus, const gchar * name, guint32 flags)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='164'>/**
+ * ibus_bus_request_name:
+ * @bus: the IBusBus instance to be processed.
+ * @name: Name to be requested.
+ * @flags: IBusBusNameFlag.
+ *
+ * Request a name from IBus daemon synchronously.
+ *
+ * Returns: 0 if failed; IBusBusRequestNameReply otherwise.
+ */</doc>
+<use f='unikey/src/main.cpp' l='66' u='c' c='_ZL15start_componentv'/>

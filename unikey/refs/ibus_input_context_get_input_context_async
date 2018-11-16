@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusinputcontext.h' l='161' type='void ibus_input_context_get_input_context_async(const gchar * path, GDBusConnection * connection, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer user_data)'/>
+<doc f='include/ibus-1.0/ibusinputcontext.h' l='150'>/**
+ * ibus_input_context_get_input_context_async:
+ * @path: The path to the object that emitting the signal.
+ * @connection: A #GDBusConnection.
+ * @cancellable: A #GCancellable or %NULL.
+ * @callback: A #GAsyncReadyCallback to call when the request is satisfied.
+ *      The callback should not be %NULL.
+ * @user_data: The data to pass to callback.
+ *
+ * Gets an existing #IBusInputContext asynchronously.
+ */</doc>

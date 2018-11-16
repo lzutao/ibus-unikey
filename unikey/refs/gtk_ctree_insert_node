@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='181' type='GtkCTreeNode * gtk_ctree_insert_node(GtkCTree * ctree, GtkCTreeNode * parent, GtkCTreeNode * sibling, gchar ** text, guint8 spacing, GdkPixmap * pixmap_closed, GdkBitmap * mask_closed, GdkPixmap * pixmap_opened, GdkBitmap * mask_opened, gboolean is_leaf, gboolean expanded)'/>

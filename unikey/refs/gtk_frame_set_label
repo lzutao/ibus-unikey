@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkframe.h' l='75' type='void gtk_frame_set_label(GtkFrame * frame, const gchar * label)'/>

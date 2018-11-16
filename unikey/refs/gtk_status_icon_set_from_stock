@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkstatusicon.h' l='93' type='void gtk_status_icon_set_from_stock(GtkStatusIcon * status_icon, const gchar * stock_id)'/>

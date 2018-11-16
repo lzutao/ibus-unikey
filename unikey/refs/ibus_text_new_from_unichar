@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibustext.h' l='150' type='IBusText * ibus_text_new_from_unichar(gunichar c)'/>
+<doc f='include/ibus-1.0/ibustext.h' l='142'>/**
+ * ibus_text_new_from_unichar:
+ * @c: A single UCS4-encoded character.
+ *
+ * Creates a new #IBusText from a single UCS4-encoded character.
+ *
+ * Returns: A newly allocated #IBusText.
+ */</doc>

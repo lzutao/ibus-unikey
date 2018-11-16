@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='113' type='gchar * gtk_text_iter_get_slice(const GtkTextIter * start, const GtkTextIter * end)'/>
+<doc f='include/gtk-2.0/gtk/gtktextiter.h' l='110'>/* includes the 0xFFFC char for pixmaps/widgets, so char offsets
+ * into the returned string map properly into buffer char offsets
+ */</doc>

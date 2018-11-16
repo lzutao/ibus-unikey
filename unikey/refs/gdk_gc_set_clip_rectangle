@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkgc.h' l='260' type='void gdk_gc_set_clip_rectangle(GdkGC * gc, const GdkRectangle * rectangle)'/>

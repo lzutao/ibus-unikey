@@ -1,0 +1,6 @@
+<dec f='include/ibus-1.0/ibuskeysyms-compat.h' l='73'/>
+<doc f='include/ibus-1.0/ibuskeysyms-compat.h' l='68'>/**
+ * IBUS_Codeinput:
+ *
+ * International and multi-key character composition.
+ */</doc>

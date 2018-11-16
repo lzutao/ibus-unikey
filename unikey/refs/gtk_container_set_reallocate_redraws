@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkcontainer.h' l='151' type='void gtk_container_set_reallocate_redraws(GtkContainer * container, gboolean needs_redraws)'/>
+<doc f='include/gtk-2.0/gtk/gtkcontainer.h' l='149'>/* Widget-level methods */</doc>

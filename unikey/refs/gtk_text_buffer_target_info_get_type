@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='284' type='GType gtk_text_buffer_target_info_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='283'>/* enumerations from &quot;gtktextbuffer.h&quot; */</doc>

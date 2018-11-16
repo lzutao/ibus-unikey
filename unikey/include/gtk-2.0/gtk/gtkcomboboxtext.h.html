@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gtkcomboboxtext.h source code [include/gtk-2.0/gtk/gtkcomboboxtext.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gtk/gtkcomboboxtext.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gtk</a>/<a href='gtkcomboboxtext.h.html'>gtkcomboboxtext.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GTK - The GIMP Toolkit</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright (C) 2010 Christian Dywan</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="6">6</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="7">7</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="8">8</th><td><i> * version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="11">11</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="12">12</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="13">13</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="16">16</th><td><i> * License along with this library. If not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="17">17</th><td><i> */</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#<span data-ppcond="19">ifndef</span> <span class="macro" data-ref="_M/__GTK_COMBO_BOX_TEXT_H__">__GTK_COMBO_BOX_TEXT_H__</span></u></td></tr>
+<tr><th id="20">20</th><td><u>#define <dfn class="macro" id="_M/__GTK_COMBO_BOX_TEXT_H__" data-ref="_M/__GTK_COMBO_BOX_TEXT_H__">__GTK_COMBO_BOX_TEXT_H__</dfn></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="22">if</span> defined(<span class="macro" data-ref="_M/GTK_DISABLE_SINGLE_INCLUDES">GTK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gtk.h.html#30" data-ref="_M/__GTK_H_INSIDE__">__GTK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GTK_COMPILATION">GTK_COMPILATION</span>)</u></td></tr>
+<tr><th id="23">23</th><td><u>#error "Only &lt;gtk/gtk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="22">endif</span></u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="gtkcombobox.h.html">&lt;gtk/gtkcombobox.h&gt;</a></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><u>#define <dfn class="macro" id="_M/GTK_TYPE_COMBO_BOX_TEXT" data-ref="_M/GTK_TYPE_COMBO_BOX_TEXT">GTK_TYPE_COMBO_BOX_TEXT</dfn>                 (gtk_combo_box_text_get_type ())</u></td></tr>
+<tr><th id="31">31</th><td><u>#define <dfn class="macro" id="_M/GTK_COMBO_BOX_TEXT" data-ref="_M/GTK_COMBO_BOX_TEXT">GTK_COMBO_BOX_TEXT</dfn>(obj)                 (G_TYPE_CHECK_INSTANCE_CAST ((obj), GTK_TYPE_COMBO_BOX_TEXT, GtkComboBoxText))</u></td></tr>
+<tr><th id="32">32</th><td><u>#define <dfn class="macro" id="_M/GTK_COMBO_BOX_TEXT_CLASS" data-ref="_M/GTK_COMBO_BOX_TEXT_CLASS">GTK_COMBO_BOX_TEXT_CLASS</dfn>(klass)         (G_TYPE_CHECK_CLASS_CAST ((klass), GTK_TYPE_COMBO_BOX_TEXT, GtkComboBoxTextClass))</u></td></tr>
+<tr><th id="33">33</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_COMBO_BOX_TEXT" data-ref="_M/GTK_IS_COMBO_BOX_TEXT">GTK_IS_COMBO_BOX_TEXT</dfn>(obj)              (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GTK_TYPE_COMBO_BOX_TEXT))</u></td></tr>
+<tr><th id="34">34</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_COMBO_BOX_TEXT_CLASS" data-ref="_M/GTK_IS_COMBO_BOX_TEXT_CLASS">GTK_IS_COMBO_BOX_TEXT_CLASS</dfn>(klass)      (G_TYPE_CHECK_CLASS_TYPE ((klass), GTK_TYPE_COMBO_BOX_TEXT))</u></td></tr>
+<tr><th id="35">35</th><td><u>#define <dfn class="macro" id="_M/GTK_COMBO_BOX_TEXT_GET_CLASS" data-ref="_M/GTK_COMBO_BOX_TEXT_GET_CLASS">GTK_COMBO_BOX_TEXT_GET_CLASS</dfn>(obj)       (G_TYPE_INSTANCE_GET_CLASS ((obj), GTK_TYPE_COMBO_BOX_TEXT, GtkComboBoxTextClass))</u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkComboBoxText" title='_GtkComboBoxText' data-ref="_GtkComboBoxText">_GtkComboBoxText</a>             <dfn class="typedef" id="GtkComboBoxText" title='GtkComboBoxText' data-type='struct _GtkComboBoxText' data-ref="GtkComboBoxText">GtkComboBoxText</dfn>;</td></tr>
+<tr><th id="38">38</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_GtkComboBoxTextPrivate" title='_GtkComboBoxTextPrivate' data-ref="_GtkComboBoxTextPrivate"><a class="type" href="#_GtkComboBoxTextPrivate" title='_GtkComboBoxTextPrivate' data-ref="_GtkComboBoxTextPrivate">_GtkComboBoxTextPrivate</a></dfn>      <dfn class="typedef" id="GtkComboBoxTextPrivate" title='GtkComboBoxTextPrivate' data-type='struct _GtkComboBoxTextPrivate' data-ref="GtkComboBoxTextPrivate">GtkComboBoxTextPrivate</dfn>;</td></tr>
+<tr><th id="39">39</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkComboBoxTextClass" title='_GtkComboBoxTextClass' data-ref="_GtkComboBoxTextClass">_GtkComboBoxTextClass</a>        <dfn class="typedef" id="GtkComboBoxTextClass" title='GtkComboBoxTextClass' data-type='struct _GtkComboBoxTextClass' data-ref="GtkComboBoxTextClass">GtkComboBoxTextClass</dfn>;</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><b>struct</b> <dfn class="type def" id="_GtkComboBoxText" title='_GtkComboBoxText' data-ref="_GtkComboBoxText">_GtkComboBoxText</dfn></td></tr>
+<tr><th id="42">42</th><td>{</td></tr>
+<tr><th id="43">43</th><td>  <i>/* &lt;private&gt; */</i></td></tr>
+<tr><th id="44">44</th><td>  <a class="typedef" href="gtkcombobox.h.html#GtkComboBox" title='GtkComboBox' data-type='struct _GtkComboBox' data-ref="GtkComboBox">GtkComboBox</a> <dfn class="decl" id="_GtkComboBoxText::parent_instance" title='_GtkComboBoxText::parent_instance' data-ref="_GtkComboBoxText::parent_instance">parent_instance</dfn>;</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td>  <a class="typedef" href="#GtkComboBoxTextPrivate" title='GtkComboBoxTextPrivate' data-type='struct _GtkComboBoxTextPrivate' data-ref="GtkComboBoxTextPrivate">GtkComboBoxTextPrivate</a> *<dfn class="decl" id="_GtkComboBoxText::priv" title='_GtkComboBoxText::priv' data-ref="_GtkComboBoxText::priv">priv</dfn>;</td></tr>
+<tr><th id="47">47</th><td>};</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><b>struct</b> <dfn class="type def" id="_GtkComboBoxTextClass" title='_GtkComboBoxTextClass' data-ref="_GtkComboBoxTextClass">_GtkComboBoxTextClass</dfn></td></tr>
+<tr><th id="50">50</th><td>{</td></tr>
+<tr><th id="51">51</th><td>  <a class="typedef" href="gtkcombobox.h.html#GtkComboBoxClass" title='GtkComboBoxClass' data-type='struct _GtkComboBoxClass' data-ref="GtkComboBoxClass">GtkComboBoxClass</a> <dfn class="decl" id="_GtkComboBoxTextClass::parent_class" title='_GtkComboBoxTextClass::parent_class' data-ref="_GtkComboBoxTextClass::parent_class">parent_class</dfn>;</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td>  <i>/* Padding for future expansion */</i></td></tr>
+<tr><th id="54">54</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkComboBoxTextClass::_gtk_reserved1" title='_GtkComboBoxTextClass::_gtk_reserved1' data-ref="_GtkComboBoxTextClass::_gtk_reserved1">_gtk_reserved1</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="55">55</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkComboBoxTextClass::_gtk_reserved2" title='_GtkComboBoxTextClass::_gtk_reserved2' data-ref="_GtkComboBoxTextClass::_gtk_reserved2">_gtk_reserved2</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="56">56</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkComboBoxTextClass::_gtk_reserved3" title='_GtkComboBoxTextClass::_gtk_reserved3' data-ref="_GtkComboBoxTextClass::_gtk_reserved3">_gtk_reserved3</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="57">57</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkComboBoxTextClass::_gtk_reserved4" title='_GtkComboBoxTextClass::_gtk_reserved4' data-ref="_GtkComboBoxTextClass::_gtk_reserved4">_gtk_reserved4</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="58">58</th><td>};</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>         <dfn class="decl" id="gtk_combo_box_text_get_type" title='gtk_combo_box_text_get_type' data-ref="gtk_combo_box_text_get_type">gtk_combo_box_text_get_type</dfn>        (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="61">61</th><td><a class="typedef" href="gtkstyle.h.html#GtkWidget" title='GtkWidget' data-type='struct _GtkWidget' data-ref="GtkWidget">GtkWidget</a>*    <dfn class="decl" id="gtk_combo_box_text_new" title='gtk_combo_box_text_new' data-ref="gtk_combo_box_text_new">gtk_combo_box_text_new</dfn>             (<em>void</em>);</td></tr>
+<tr><th id="62">62</th><td><a class="typedef" href="gtkstyle.h.html#GtkWidget" title='GtkWidget' data-type='struct _GtkWidget' data-ref="GtkWidget">GtkWidget</a>*    <dfn class="decl" id="gtk_combo_box_text_new_with_entry" title='gtk_combo_box_text_new_with_entry' data-ref="gtk_combo_box_text_new_with_entry">gtk_combo_box_text_new_with_entry</dfn>  (<em>void</em>);</td></tr>
+<tr><th id="63">63</th><td><em>void</em>          <dfn class="decl" id="gtk_combo_box_text_append_text" title='gtk_combo_box_text_append_text' data-ref="gtk_combo_box_text_append_text">gtk_combo_box_text_append_text</dfn>     (<a class="typedef" href="#GtkComboBoxText" title='GtkComboBoxText' data-type='struct _GtkComboBoxText' data-ref="GtkComboBoxText">GtkComboBoxText</a>     *<dfn class="local col4 decl" id="21184combo_box" title='combo_box' data-type='GtkComboBoxText *' data-ref="21184combo_box">combo_box</dfn>,</td></tr>
+<tr><th id="64">64</th><td>                                                  <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>         *<dfn class="local col5 decl" id="21185text" title='text' data-type='const gchar *' data-ref="21185text">text</dfn>);</td></tr>
+<tr><th id="65">65</th><td><em>void</em>          <dfn class="decl" id="gtk_combo_box_text_insert_text" title='gtk_combo_box_text_insert_text' data-ref="gtk_combo_box_text_insert_text">gtk_combo_box_text_insert_text</dfn>     (<a class="typedef" href="#GtkComboBoxText" title='GtkComboBoxText' data-type='struct _GtkComboBoxText' data-ref="GtkComboBoxText">GtkComboBoxText</a>     *<dfn class="local col6 decl" id="21186combo_box" title='combo_box' data-type='GtkComboBoxText *' data-ref="21186combo_box">combo_box</dfn>,</td></tr>
+<tr><th id="66">66</th><td>                                                  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>                 <dfn class="local col7 decl" id="21187position" title='position' data-type='gint' data-ref="21187position">position</dfn>,</td></tr>
+<tr><th id="67">67</th><td>                                                  <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>         *<dfn class="local col8 decl" id="21188text" title='text' data-type='const gchar *' data-ref="21188text">text</dfn>);</td></tr>
+<tr><th id="68">68</th><td><em>void</em>          <dfn class="decl" id="gtk_combo_box_text_prepend_text" title='gtk_combo_box_text_prepend_text' data-ref="gtk_combo_box_text_prepend_text">gtk_combo_box_text_prepend_text</dfn>    (<a class="typedef" href="#GtkComboBoxText" title='GtkComboBoxText' data-type='struct _GtkComboBoxText' data-ref="GtkComboBoxText">GtkComboBoxText</a>     *<dfn class="local col9 decl" id="21189combo_box" title='combo_box' data-type='GtkComboBoxText *' data-ref="21189combo_box">combo_box</dfn>,</td></tr>
+<tr><th id="69">69</th><td>                                                  <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>         *<dfn class="local col0 decl" id="21190text" title='text' data-type='const gchar *' data-ref="21190text">text</dfn>);</td></tr>
+<tr><th id="70">70</th><td><em>void</em>          <dfn class="decl" id="gtk_combo_box_text_remove" title='gtk_combo_box_text_remove' data-ref="gtk_combo_box_text_remove">gtk_combo_box_text_remove</dfn>          (<a class="typedef" href="#GtkComboBoxText" title='GtkComboBoxText' data-type='struct _GtkComboBoxText' data-ref="GtkComboBoxText">GtkComboBoxText</a>     *<dfn class="local col1 decl" id="21191combo_box" title='combo_box' data-type='GtkComboBoxText *' data-ref="21191combo_box">combo_box</dfn>,</td></tr>
+<tr><th id="71">71</th><td>                                                  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>                 <dfn class="local col2 decl" id="21192position" title='position' data-type='gint' data-ref="21192position">position</dfn>);</td></tr>
+<tr><th id="72">72</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>        *<dfn class="decl" id="gtk_combo_box_text_get_active_text" title='gtk_combo_box_text_get_active_text' data-ref="gtk_combo_box_text_get_active_text">gtk_combo_box_text_get_active_text</dfn> (<a class="typedef" href="#GtkComboBoxText" title='GtkComboBoxText' data-type='struct _GtkComboBoxText' data-ref="GtkComboBoxText">GtkComboBoxText</a>     *<dfn class="local col3 decl" id="21193combo_box" title='combo_box' data-type='GtkComboBoxText *' data-ref="21193combo_box">combo_box</dfn>);</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td><u>#<span data-ppcond="19">endif</span> /* __GTK_COMBO_BOX_TEXT_H__ */</u></td></tr>
+<tr><th id="78">78</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

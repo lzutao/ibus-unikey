@@ -1,0 +1,7 @@
+<dec f='include/ibus-1.0/ibusenumtypes.h' l='152'/>
+<doc f='include/ibus-1.0/ibusenumtypes.h' l='146'>/**
+ * IBUS_TYPE_ORIENTATION:
+ * @returns: GType of IBUS_ORIENTATION
+ *
+ * Returns the type of IBUS_ORIENTATION as GType.
+ */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkpango.h' l='92' type='PangoRenderer * gdk_pango_renderer_get_default(GdkScreen * screen)'/>

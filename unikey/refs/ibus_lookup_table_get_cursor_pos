@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuslookuptable.h' l='222' type='guint ibus_lookup_table_get_cursor_pos(IBusLookupTable * table)'/>
+<doc f='include/ibus-1.0/ibuslookuptable.h' l='214'>/**
+ * ibus_lookup_table_get_cursor_pos:
+ * @table: An IBusLookupTable.
+ *
+ * Gets the cursor position of #IBusLookupTable.
+ *
+ * Returns: The position of cursor.
+ */</doc>

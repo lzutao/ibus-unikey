@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkinfobar.h' l='46'/>
+<doc f='include/gtk-2.0/gtk/gtkinfobar.h' l='43'>/*
+ * Type checking and casting macros
+ */</doc>

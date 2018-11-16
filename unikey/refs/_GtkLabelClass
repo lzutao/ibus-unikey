@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gtk/gtklabel.h' l='86' ll='107'/>
+<size>776</size>
+<mbr r='_GtkLabelClass::parent_class' o='0' t='GtkMiscClass'/>
+<mbr r='_GtkLabelClass::move_cursor' o='5760' t='void (*)(GtkLabel *, GtkMovementStep, gint, gboolean)'/>
+<mbr r='_GtkLabelClass::copy_clipboard' o='5824' t='void (*)(GtkLabel *)'/>
+<mbr r='_GtkLabelClass::populate_popup' o='5888' t='void (*)(GtkLabel *, GtkMenu *)'/>
+<mbr r='_GtkLabelClass::activate_link' o='5952' t='gboolean (*)(GtkLabel *, const gchar *)'/>
+<mbr r='_GtkLabelClass::_gtk_reserved1' o='6016' t='void (*)()'/>
+<mbr r='_GtkLabelClass::_gtk_reserved2' o='6080' t='void (*)()'/>
+<mbr r='_GtkLabelClass::_gtk_reserved3' o='6144' t='void (*)()'/>

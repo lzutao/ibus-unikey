@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='70' type='GType gtk_dest_defaults_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='69'>/* enumerations from &quot;gtkdnd.h&quot; */</doc>

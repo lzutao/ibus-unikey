@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gtk/gtktreemodel.h' l='70' type='void (*)(GtkTreeModel *, GtkTreePath *, GtkTreeIter *)'/>
+<offset>128</offset>
+<doc f='include/gtk-2.0/gtk/gtktreemodel.h' l='69'>/* Signals */</doc>

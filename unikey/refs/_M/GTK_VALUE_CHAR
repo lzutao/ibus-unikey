@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtktypeutils.h' l='176'/>
+<doc f='include/gtk-2.0/gtk/gtktypeutils.h' l='172'>/* argument value access macros, these must not contain casts,
+ * to allow the usage of these macros in combination with the
+ * address operator, e.g. &amp;GTK_VALUE_CHAR (*arg)
+ */</doc>

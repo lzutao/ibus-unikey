@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktextview.h' l='334' type='void gtk_text_view_set_wrap_mode(GtkTextView * text_view, GtkWrapMode wrap_mode)'/>
+<doc f='include/gtk-2.0/gtk/gtktextview.h' l='332'>/* Default style settings (fallbacks if no tag affects the property) */</doc>

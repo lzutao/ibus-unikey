@@ -1,0 +1,14 @@
+<def f='include/cairo/cairo.h' l='1986' ll='1991'/>
+<doc f='include/cairo/cairo.h' l='1973'>/**
+ * cairo_path_data_type_t:
+ * @CAIRO_PATH_MOVE_TO: A move-to operation, since 1.0
+ * @CAIRO_PATH_LINE_TO: A line-to operation, since 1.0
+ * @CAIRO_PATH_CURVE_TO: A curve-to operation, since 1.0
+ * @CAIRO_PATH_CLOSE_PATH: A close-path operation, since 1.0
+ *
+ * #cairo_path_data_t is used to describe the type of one portion
+ * of a path when represented as a #cairo_path_t.
+ * See #cairo_path_data_t for details.
+ *
+ * Since: 1.0
+ **/</doc>

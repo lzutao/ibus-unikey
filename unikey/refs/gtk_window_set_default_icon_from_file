@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='301' type='gboolean gtk_window_set_default_icon_from_file(const gchar * filename, GError ** err)'/>
+<use f='unikey/setup/setup.cpp' l='53' u='c' c='main'/>

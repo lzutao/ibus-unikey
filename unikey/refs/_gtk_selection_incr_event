@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkselection.h' l='206' type='gboolean _gtk_selection_incr_event(GdkWindow * window, GdkEventProperty * event)'/>

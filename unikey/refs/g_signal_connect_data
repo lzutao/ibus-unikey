@@ -1,0 +1,18 @@
+<dec f='include/glib-2.0/gobject/gsignal.h' l='388' type='gulong g_signal_connect_data(gpointer instance, const gchar * detailed_signal, GCallback c_handler, gpointer data, GClosureNotify destroy_data, GConnectFlags connect_flags)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='48' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='51' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='54' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='57' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='60' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='63' macro='1' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='28' macro='1' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='71' macro='1' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='84' macro='1' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='97' macro='1' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='103' macro='1' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='109' macro='1' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='115' macro='1' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='121' macro='1' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='127' macro='1' u='c'/>
+<use f='unikey/setup/setup.cpp' l='56' macro='1' u='c'/>
+<use f='unikey/src/main.cpp' l='44' macro='1' u='c'/>

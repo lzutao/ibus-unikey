@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkfilefilter.h' l='68' type='void gtk_file_filter_add_pattern(GtkFileFilter * filter, const gchar * pattern)'/>

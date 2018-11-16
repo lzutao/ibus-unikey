@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtkobject.h' l='200' type='void gtk_object_set_user_data(GtkObject * object, gpointer data)'/>
+<doc f='include/gtk-2.0/gtk/gtkobject.h' l='195'>/* Set/get the &quot;user_data&quot; object data field of &quot;object&quot;. It should
+ *  be noted that these functions are no different than calling
+ *  `gtk_object_set_data&apos;/`gtk_object_get_data&apos; with a key of &quot;user_data&quot;.
+ *  They are merely provided as a convenience.
+ */</doc>

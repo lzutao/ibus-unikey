@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gtk/gtktooltips.h' l='50' ll='56'/>
+<size>32</size>
+<mbr r='_GtkTooltipsData::tooltips' o='0' t='GtkTooltips *'/>
+<mbr r='_GtkTooltipsData::widget' o='64' t='GtkWidget *'/>
+<mbr r='_GtkTooltipsData::tip_text' o='128' t='gchar *'/>
+<mbr r='_GtkTooltipsData::tip_private' o='192' t='gchar *'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtknotebook.h' l='260' type='void gtk_notebook_set_tab_label(GtkNotebook * notebook, GtkWidget * child, GtkWidget * tab_label)'/>

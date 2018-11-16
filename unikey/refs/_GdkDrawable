@@ -1,0 +1,3 @@
+<def f='include/gtk-2.0/gdk/gdkdrawable.h' l='53' ll='56'/>
+<size>24</size>
+<mbr r='_GdkDrawable::parent_instance' o='0' t='GObject'/>

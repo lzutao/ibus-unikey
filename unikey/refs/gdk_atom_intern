@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkproperty.h' l='45' type='GdkAtom gdk_atom_intern(const gchar * atom_name, gboolean only_if_exists)'/>

@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='151' type='const gchar * ibus_bus_get_service_name(IBusBus * bus)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='143'>/**
+ * ibus_bus_get_service_name:
+ * @bus: An #IBusBus.
+ *
+ * Return the main service name to use for calls on the ibus connection.
+ *
+ * Returns: at dbus name.
+ */</doc>

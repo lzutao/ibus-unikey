@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtktreemodel.h' l='163' type='GType gtk_tree_row_reference_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktreemodel.h' l='158'>/* Row reference (an object that tracks model changes so it refers to the same
+ * row always; a path refers to a position, not a fixed row).  You almost always
+ * want to call gtk_tree_row_reference_new.
+ */</doc>

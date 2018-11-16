@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='177' type='gboolean gtk_text_iter_forward_char(GtkTextIter * iter)'/>
+<doc f='include/gtk-2.0/gtk/gtktextiter.h' l='173'>/*
+ * Moving around the buffer
+ */</doc>

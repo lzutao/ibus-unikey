@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkenums.h' l='339' type='0'/>
+<doc f='include/gtk-2.0/gtk/gtkenums.h' l='339'>/* Pass resize request to the parent */</doc>

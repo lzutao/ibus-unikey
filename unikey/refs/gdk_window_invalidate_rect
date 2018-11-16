@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='665' type='void gdk_window_invalidate_rect(GdkWindow * window, const GdkRectangle * rect, gboolean invalidate_children)'/>
+<doc f='include/gtk-2.0/gdk/gdkwindow.h' l='664'>/* Interface for dirty-region queueing */</doc>

@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/glib/garray.h' l='215' type='void g_byte_array_unref(GByteArray * array)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='55' u='c' c='_ZL31glib_autoptr_cleanup_GByteArrayPP11_GByteArray'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='55' u='r' c='_ZL35glib_listautoptr_cleanup_GByteArrayPP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='55' u='r' c='_ZL36glib_slistautoptr_cleanup_GByteArrayPP7_GSList'/>

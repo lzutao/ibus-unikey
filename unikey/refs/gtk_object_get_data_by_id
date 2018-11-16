@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkobject.h' l='215' type='gpointer gtk_object_get_data_by_id(GtkObject * object, GQuark data_id)'/>

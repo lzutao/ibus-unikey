@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibuslookuptable.h' l='210' type='void ibus_lookup_table_set_cursor_pos(IBusLookupTable * table, guint cursor_pos)'/>
+<doc f='include/ibus-1.0/ibuslookuptable.h' l='203'>/**
+ * ibus_lookup_table_set_cursor_pos:
+ * @table: An IBusLookupTable.
+ * @cursor_pos: The position of cursor.
+ *
+ * Set the cursor position of IBusLookupTable.
+ */</doc>

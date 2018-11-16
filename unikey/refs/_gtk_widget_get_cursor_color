@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkstyle.h' l='940' type='void _gtk_widget_get_cursor_color(GtkWidget * widget, GdkColor * color)'/>

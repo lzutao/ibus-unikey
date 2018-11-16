@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkprogressbar.h' l='152' type='GtkWidget * gtk_progress_bar_new_with_adjustment(GtkAdjustment * adjustment)'/>
+<doc f='include/gtk-2.0/gtk/gtkprogressbar.h' l='151'>/* Everything below here is deprecated */</doc>

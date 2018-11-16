@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtklabel.h' l='149' type='gint gtk_label_get_max_width_chars(GtkLabel * label)'/>

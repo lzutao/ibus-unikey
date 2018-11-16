@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='260' type='GType gtk_recent_sort_type_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='259'>/* enumerations from &quot;gtkrecentchooser.h&quot; */</doc>

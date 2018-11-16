@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-utils.h' l='63' type='gboolean pango_parse_enum(GType type, const char * str, int * value, gboolean warn, char ** possible_values)'/>

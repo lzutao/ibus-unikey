@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='248' type='GList * gtk_ctree_find_all_by_row_data(GtkCTree * ctree, GtkCTreeNode * node, gpointer data)'/>
+<doc f='include/gtk-2.0/gtk/gtkctree.h' l='247'>/* returns a GList of all GtkCTreeNodes with row-&gt;data == data. */</doc>

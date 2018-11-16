@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtknotebook.h' l='276' type='const gchar * gtk_notebook_get_menu_label_text(GtkNotebook * notebook, GtkWidget * child)'/>

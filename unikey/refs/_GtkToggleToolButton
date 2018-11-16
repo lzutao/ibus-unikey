@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtktoggletoolbutton.h' l='45' ll='51'/>
+<size>144</size>
+<mbr r='_GtkToggleToolButton::parent' o='0' t='GtkToolButton'/>
+<mbr r='_GtkToggleToolButton::priv' o='1088' t='GtkToggleToolButtonPrivate *'/>

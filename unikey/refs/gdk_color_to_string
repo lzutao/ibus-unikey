@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkcolor.h' l='141' type='gchar * gdk_color_to_string(const GdkColor * color)'/>

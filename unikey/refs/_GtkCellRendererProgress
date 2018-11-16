@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkcellrendererprogress.h' l='50' ll='56'/>
+<size>64</size>
+<mbr r='_GtkCellRendererProgress::parent_instance' o='0' t='GtkCellRenderer'/>
+<mbr r='_GtkCellRendererProgress::priv' o='448' t='GtkCellRendererProgressPrivate *'/>

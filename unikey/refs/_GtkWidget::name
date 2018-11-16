@@ -1,0 +1,8 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='566' type='gchar *'/>
+<offset>320</offset>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='560'>/* The widget&apos;s name. If the widget does not have a name
+   *  (the name is NULL), then its name (as returned by
+   *  &quot;gtk_widget_get_name&quot;) is its class&apos;s name.
+   * Among other things, the widget name is used to determine
+   *  the style to use for a widget.
+   */</doc>

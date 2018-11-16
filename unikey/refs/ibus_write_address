@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='225' type='void ibus_write_address(const gchar * address)'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='217'>/**
+ * ibus_write_address:
+ * @address: D-Bus address of IBus.
+ *
+ * Write D-Bus address to socket file.
+ *
+ * See also: ibus_get_address().
+ */</doc>

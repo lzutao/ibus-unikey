@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='500' type='void gtk_clist_set_column_title(GtkCList * clist, gint column, const gchar * title)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='499'>/* set the title in the column title button */</doc>

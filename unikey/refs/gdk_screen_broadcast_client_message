@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkscreen.h' l='110' type='void gdk_screen_broadcast_client_message(GdkScreen * screen, GdkEvent * event)'/>

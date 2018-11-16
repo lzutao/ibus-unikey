@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='775' type='gboolean (*)(GtkWidget *)'/>
+<offset>5056</offset>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='774'>/* Signals used only for keybindings */</doc>

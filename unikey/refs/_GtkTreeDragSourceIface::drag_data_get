@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktreednd.h' l='49' type='gboolean (*)(GtkTreeDragSource *, GtkTreePath *, GtkSelectionData *)'/>
+<offset>192</offset>

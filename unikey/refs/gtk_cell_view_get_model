@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcellview.h' l='65' type='GtkTreeModel * gtk_cell_view_get_model(GtkCellView * cell_view)'/>

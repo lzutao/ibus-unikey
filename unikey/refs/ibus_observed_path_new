@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusobservedpath.h' l='115' type='IBusObservedPath * ibus_observed_path_new(const gchar * path, gboolean fill_stat)'/>
+<doc f='include/ibus-1.0/ibusobservedpath.h' l='106'>/**
+ * ibus_observed_path_new:
+ * @path: The path string.
+ * @fill_stat: Auto-fill the path status.
+ *
+ * Creates a new #IBusObservedPath from an XML node.
+ *
+ * Returns: A newly allocated #IBusObservedPath.
+ */</doc>

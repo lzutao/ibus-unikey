@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkcombobox.h' l='109' type='void gtk_combo_box_set_model(GtkComboBox * combo_box, GtkTreeModel * model)'/>
+<doc f='include/gtk-2.0/gtk/gtkcombobox.h' l='108'>/* getters and setters */</doc>

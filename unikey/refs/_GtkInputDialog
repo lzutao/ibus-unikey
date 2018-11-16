@@ -1,0 +1,12 @@
+<def f='include/gtk-2.0/gtk/gtkinputdialog.h' l='59' ll='75'/>
+<size>384</size>
+<mbr r='_GtkInputDialog::dialog' o='0' t='GtkDialog'/>
+<mbr r='_GtkInputDialog::axis_list' o='2112' t='GtkWidget *'/>
+<mbr r='_GtkInputDialog::axis_listbox' o='2176' t='GtkWidget *'/>
+<mbr r='_GtkInputDialog::mode_optionmenu' o='2240' t='GtkWidget *'/>
+<mbr r='_GtkInputDialog::close_button' o='2304' t='GtkWidget *'/>
+<mbr r='_GtkInputDialog::save_button' o='2368' t='GtkWidget *'/>
+<mbr r='_GtkInputDialog::axis_items' o='2432' t='GtkWidget *[7]'/>
+<mbr r='_GtkInputDialog::current_device' o='2880' t='GdkDevice *'/>
+<mbr r='_GtkInputDialog::keys_list' o='2944' t='GtkWidget *'/>
+<mbr r='_GtkInputDialog::keys_listbox' o='3008' t='GtkWidget *'/>

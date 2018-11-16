@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='837' type='void gtk_widget_destroy(GtkWidget * widget)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='380' u='c' c='_Z23import_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='430' u='c' c='_Z23export_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='182' u='c' c='_ZL20macro_edit_button_cbP10_GtkButtonPv'/>

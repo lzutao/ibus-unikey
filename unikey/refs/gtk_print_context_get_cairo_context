@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkprintcontext.h' l='45' type='cairo_t * gtk_print_context_get_cairo_context(GtkPrintContext * context)'/>
+<doc f='include/gtk-2.0/gtk/gtkprintcontext.h' l='44'>/* Rendering */</doc>

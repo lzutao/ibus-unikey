@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='96' type='guint'/>
+<offset>800</offset>
+<doc f='include/gtk-2.0/gdk/gdkdisplay.h' l='96'>/* Maximum distance between clicks in pixels */</doc>

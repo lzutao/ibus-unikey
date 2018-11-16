@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkobject.h' l='65'/>
+<doc f='include/gtk-2.0/gtk/gtkobject.h' l='57'>/**
+ * GTK_OBJECT_TYPE:
+ * @object: a #GtkObject.
+ *
+ * Gets the type of an object.
+ *
+ * Deprecated: 2.20: Use G_OBJECT_TYPE() instead.
+ */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmenuitem.h' l='126' type='gboolean gtk_menu_item_get_use_underline(GtkMenuItem * menu_item)'/>

@@ -1,0 +1,25 @@
+<dec f='unikey/src/engine_private.h' l='31' type='std::string *'/>
+<use f='unikey/src/engine.cpp' l='105' u='w' c='_ZL23ibus_unikey_engine_initP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='124' u='r' c='_ZL26ibus_unikey_engine_destroyP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='125' u='w' c='_ZL26ibus_unikey_engine_destroyP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='525' u='r' c='_ZL40ibus_unikey_engine_update_preedit_stringP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='539' u='r' c='_ZL30ibus_unikey_engine_erase_charsP11_IBusEnginei'/>
+<use f='unikey/src/engine.cpp' l='541' u='r' c='_ZL30ibus_unikey_engine_erase_charsP11_IBusEnginei'/>
+<use f='unikey/src/engine.cpp' l='550' u='r' c='_ZL30ibus_unikey_engine_erase_charsP11_IBusEnginei'/>
+<use f='unikey/src/engine.cpp' l='625' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='628' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='630' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='644' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='652' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='685' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='687' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='699' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='707' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='714' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='719' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='721' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='721' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='746' u='r' c='_ZL31ibus_unikey_engine_clean_bufferP11_IBusEngine'/>
+<use f='unikey/src/engine.cpp' l='754' u='r' c='_ZL25ibus_unikey_engine_commitP11_IBusEngine'/>
+<use f='unikey/src/engine.cpp' l='758' u='r' c='_ZL25ibus_unikey_engine_commitP11_IBusEngine'/>
+<offset>1280</offset>

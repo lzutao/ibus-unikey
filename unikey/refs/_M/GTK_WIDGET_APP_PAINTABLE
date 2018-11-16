@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='413'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='405'>/**
+ * GTK_WIDGET_APP_PAINTABLE:
+ * @wid: a #GtkWidget.
+ *
+ * Evaluates to %TRUE if the #GTK_APP_PAINTABLE flag has been set on the widget.
+ *
+ * Deprecated: 2.20: Use gtk_widget_get_app_paintable() instead.
+ */</doc>

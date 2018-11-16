@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='586' type='void gtk_clist_set_text(GtkCList * clist, gint row, gint column, const gchar * text)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='585'>/* sets a given cell&apos;s text, replacing its current contents */</doc>

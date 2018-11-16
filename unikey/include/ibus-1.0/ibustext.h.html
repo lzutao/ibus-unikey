@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ibustext.h source code [include/ibus-1.0/ibustext.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/ibus-1.0/ibustext.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>ibus-1.0</a>/<a href='ibustext.h.html'>ibustext.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* -*- mode: C; c-basic-offset: 4; indent-tabs-mode: nil; -*- */</i></td></tr>
+<tr><th id="2">2</th><td><i>/* vim:set et sts=4: */</i></td></tr>
+<tr><th id="3">3</th><td><i>/* IBus - The Input Bus</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 2008-2013 Peng Huang &lt;shawn.p.huang@gmail.com&gt;</i></td></tr>
+<tr><th id="5">5</th><td><i> * Copyright (C) 2008-2013 Red Hat, Inc.</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="8">8</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="9">9</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="10">10</th><td><i> * version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="11">11</th><td><i> *</i></td></tr>
+<tr><th id="12">12</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="13">13</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="14">14</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="15">15</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="18">18</th><td><i> * License along with this library; if not, write to the Free Software</i></td></tr>
+<tr><th id="19">19</th><td><i> * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301</i></td></tr>
+<tr><th id="20">20</th><td><i> * USA</i></td></tr>
+<tr><th id="21">21</th><td><i> */</i></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> !defined (<a class="macro" href="ibus.h.html#26" data-ref="_M/__IBUS_H_INSIDE__">__IBUS_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/IBUS_COMPILATION">IBUS_COMPILATION</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#error "Only &lt;ibus.h&gt; can be included directly"</u></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/__IBUS_TEXT_H_">__IBUS_TEXT_H_</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/__IBUS_TEXT_H_" data-ref="_M/__IBUS_TEXT_H_">__IBUS_TEXT_H_</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> * SECTION: ibustext</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> * <span class="command">@short</span>_description: Text with decorating information.</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> * An IBusText is the main text object in IBus.</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> * The text is decorated according to associated IBusAttribute,</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * e.g. the foreground/background color, underline, and</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> * applied scope.</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * see_also: #IBusAttribute</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#include <a href="ibusserializable.h.html">"ibusserializable.h"</a></u></td></tr>
+<tr><th id="43">43</th><td><u>#include <a href="ibusattrlist.h.html">"ibusattrlist.h"</a></u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><i>/*</i></td></tr>
+<tr><th id="46">46</th><td><i> * Type macros.</i></td></tr>
+<tr><th id="47">47</th><td><i> */</i></td></tr>
+<tr><th id="48">48</th><td><i>/* define IBusText macros */</i></td></tr>
+<tr><th id="49">49</th><td><u>#define <dfn class="macro" id="_M/IBUS_TYPE_TEXT" data-ref="_M/IBUS_TYPE_TEXT">IBUS_TYPE_TEXT</dfn>             \</u></td></tr>
+<tr><th id="50">50</th><td><u>    (ibus_text_get_type ())</u></td></tr>
+<tr><th id="51">51</th><td><u>#define <dfn class="macro" id="_M/IBUS_TEXT" data-ref="_M/IBUS_TEXT">IBUS_TEXT</dfn>(obj)             \</u></td></tr>
+<tr><th id="52">52</th><td><u>    (G_TYPE_CHECK_INSTANCE_CAST ((obj), IBUS_TYPE_TEXT, IBusText))</u></td></tr>
+<tr><th id="53">53</th><td><u>#define <dfn class="macro" id="_M/IBUS_TEXT_CLASS" data-ref="_M/IBUS_TEXT_CLASS">IBUS_TEXT_CLASS</dfn>(klass)     \</u></td></tr>
+<tr><th id="54">54</th><td><u>    (G_TYPE_CHECK_CLASS_CAST ((klass), IBUS_TYPE_TEXT, IBusTextClass))</u></td></tr>
+<tr><th id="55">55</th><td><u>#define <dfn class="macro" id="_M/IBUS_IS_TEXT" data-ref="_M/IBUS_IS_TEXT">IBUS_IS_TEXT</dfn>(obj)          \</u></td></tr>
+<tr><th id="56">56</th><td><u>    (G_TYPE_CHECK_INSTANCE_TYPE ((obj), IBUS_TYPE_TEXT))</u></td></tr>
+<tr><th id="57">57</th><td><u>#define <dfn class="macro" id="_M/IBUS_IS_TEXT_CLASS" data-ref="_M/IBUS_IS_TEXT_CLASS">IBUS_IS_TEXT_CLASS</dfn>(klass)  \</u></td></tr>
+<tr><th id="58">58</th><td><u>    (G_TYPE_CHECK_CLASS_TYPE ((klass), IBUS_TYPE_TEXT))</u></td></tr>
+<tr><th id="59">59</th><td><u>#define <dfn class="macro" id="_M/IBUS_TEXT_GET_CLASS" data-ref="_M/IBUS_TEXT_GET_CLASS">IBUS_TEXT_GET_CLASS</dfn>(obj)   \</u></td></tr>
+<tr><th id="60">60</th><td><u>    (G_TYPE_INSTANCE_GET_CLASS ((obj), IBUS_TYPE_TEXT, IBusTextClass))</u></td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td><a class="macro" href="../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_IBusText" title='_IBusText' data-ref="_IBusText">_IBusText</a> <dfn class="typedef" id="IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</dfn>;</td></tr>
+<tr><th id="65">65</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_IBusTextClass" title='_IBusTextClass' data-ref="_IBusTextClass">_IBusTextClass</a> <dfn class="typedef" id="IBusTextClass" title='IBusTextClass' data-type='struct _IBusTextClass' data-ref="IBusTextClass">IBusTextClass</dfn>;</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> * IBusText:</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> *<span class="command"> @is</span>_static: Whether<span class="command"> @text</span> is static, i.e., no need and will not be freed. Only TRUE if IBusText is newed from ibus_text_new_from_static_string().</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> *<span class="command"> @text</span>: The string content of IBusText in UTF-8.</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> *<span class="command"> @attrs</span>: Associated IBusAttributes.</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc"> * A text object in IBus.</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="75">75</th><td><b>struct</b> <dfn class="type def" id="_IBusText" title='_IBusText' data-ref="_IBusText">_IBusText</dfn> {</td></tr>
+<tr><th id="76">76</th><td>    <a class="typedef" href="ibusserializable.h.html#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a> <dfn class="decl" id="_IBusText::parent" title='_IBusText::parent' data-ref="_IBusText::parent">parent</dfn>;</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td>    <i>/* members */</i></td></tr>
+<tr><th id="79">79</th><td>    <i>/*&lt; public &gt;*/</i></td></tr>
+<tr><th id="80">80</th><td>    <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="_IBusText::is_static" title='_IBusText::is_static' data-ref="_IBusText::is_static">is_static</dfn>;</td></tr>
+<tr><th id="81">81</th><td>    <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>  *<dfn class="decl" id="_IBusText::text" title='_IBusText::text' data-ref="_IBusText::text">text</dfn>;</td></tr>
+<tr><th id="82">82</th><td>    <a class="typedef" href="ibusattrlist.h.html#IBusAttrList" title='IBusAttrList' data-type='struct _IBusAttrList' data-ref="IBusAttrList">IBusAttrList</a> *<dfn class="decl" id="_IBusText::attrs" title='_IBusText::attrs' data-ref="_IBusText::attrs">attrs</dfn>;</td></tr>
+<tr><th id="83">83</th><td>};</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><b>struct</b> <dfn class="type def" id="_IBusTextClass" title='_IBusTextClass' data-ref="_IBusTextClass">_IBusTextClass</dfn> {</td></tr>
+<tr><th id="86">86</th><td>    <a class="typedef" href="ibusserializable.h.html#IBusSerializableClass" title='IBusSerializableClass' data-type='struct _IBusSerializableClass' data-ref="IBusSerializableClass">IBusSerializableClass</a> <dfn class="decl" id="_IBusTextClass::parent" title='_IBusTextClass::parent' data-ref="_IBusTextClass::parent">parent</dfn>;</td></tr>
+<tr><th id="87">87</th><td>};</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><a class="typedef" href="../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>            <dfn class="decl" id="ibus_text_get_type" title='ibus_text_get_type' data-ref="ibus_text_get_type">ibus_text_get_type</dfn>                 (<em>void</em>);</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> * ibus_text_new_from_string:</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> *<span class="command"> @str</span>: An text string to be set.</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> * Creates a new #IBusText from a string.</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> *<span class="command"> @str</span> will be duplicated in #IBusText, so feel free to free<span class="command"> @str</span> after this</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> * function.</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"> * Returns: A newly allocated #IBusText.</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="101">101</th><td><a class="typedef" href="#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a>        *<dfn class="decl" id="ibus_text_new_from_string" title='ibus_text_new_from_string' data-ref="ibus_text_new_from_string">ibus_text_new_from_string</dfn>          (<em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col7 decl" id="57str" title='str' data-type='const gchar *' data-ref="57str">str</dfn>);</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> * ibus_text_new_from_ucs4:</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> *<span class="command"> @str</span>: An text string to be set.</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> * Creates a new #IBusText from an UCS-4 encoded string.</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> *<span class="command"> @str</span> will be duplicated in IBusText, so feel free to free<span class="command"> @str</span> after this</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> * function.</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> * Returns: A newly allocated #IBusText.</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="113">113</th><td><a class="typedef" href="#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a>        *<dfn class="decl" id="ibus_text_new_from_ucs4" title='ibus_text_new_from_ucs4' data-ref="ibus_text_new_from_ucs4">ibus_text_new_from_ucs4</dfn>            (<em>const</em> <a class="typedef" href="../glib-2.0/glib/gunicode.h.html#gunichar" title='gunichar' data-type='guint32' data-ref="gunichar">gunichar</a> *<dfn class="local col8 decl" id="58str" title='str' data-type='const gunichar *' data-ref="58str">str</dfn>);</td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> * ibus_text_new_from_static_string: (skip)</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc"> *<span class="command"> @str</span>: An text string to be set.</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> * Creates a new #IBusText from a static string.</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"> * Since<span class="command"> @str</span> is a static string which won't be freed.</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc"> * This function will NOT duplicate<span class="command"> @str</span>.</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> * Returns: A newly allocated #IBusText.</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="126">126</th><td><a class="typedef" href="#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a>        *<dfn class="decl" id="ibus_text_new_from_static_string" title='ibus_text_new_from_static_string' data-ref="ibus_text_new_from_static_string">ibus_text_new_from_static_string</dfn>   (<em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col9 decl" id="59str" title='str' data-type='const gchar *' data-ref="59str">str</dfn>);</td></tr>
+<tr><th id="127">127</th><td></td></tr>
+<tr><th id="128">128</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc"> * ibus_text_new_from_printf:</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc"> *<span class="command"> @fmt</span>: printf format string.</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc"> * @...: arguments for<span class="command"> @fmt</span>.</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> * Creates a new #IBusText from a printf expression.</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> * The result of printf expression is stored in the new IBusText instance.</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> * Returns: A newly allocated #IBusText.</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="139">139</th><td><a class="typedef" href="#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a>        *<dfn class="decl" id="ibus_text_new_from_printf" title='ibus_text_new_from_printf' data-ref="ibus_text_new_from_printf">ibus_text_new_from_printf</dfn>          (<em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col0 decl" id="60fmt" title='fmt' data-type='const gchar *' data-ref="60fmt">fmt</dfn>,</td></tr>
+<tr><th id="140">140</th><td>                                                     ...) <a class="macro" href="../glib-2.0/glib/gmacros.h.html#134" title="__attribute__((__format__ (__printf__, 1, 2)))" data-ref="_M/G_GNUC_PRINTF">G_GNUC_PRINTF</a> (<var>1</var>, <var>2</var>);</td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> * ibus_text_new_from_unichar:</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> *<span class="command"> @c</span><span class="arg">:</span> A single UCS4-encoded character.</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> * Creates a new #IBusText from a single UCS4-encoded character.</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> * Returns: A newly allocated #IBusText.</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="150">150</th><td><a class="typedef" href="#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a>        *<dfn class="decl" id="ibus_text_new_from_unichar" title='ibus_text_new_from_unichar' data-ref="ibus_text_new_from_unichar">ibus_text_new_from_unichar</dfn>         (<a class="typedef" href="../glib-2.0/glib/gunicode.h.html#gunichar" title='gunichar' data-type='guint32' data-ref="gunichar">gunichar</a>        <dfn class="local col1 decl" id="61c" title='c' data-type='gunichar' data-ref="61c">c</dfn>);</td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> * ibus_text_append_attribute:</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> *<span class="command"> @text</span>: an IBusText</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc"> *<span class="command"> @type</span>: IBusAttributeType for<span class="command"> @text</span>.</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc"> * <span class="command">@value</span>: Value for the type.</i></td></tr>
+<tr><th id="157">157</th><td><i class="doc"> *<span class="command"> @start</span>_index: The starting index, inclusive.</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc"> *<span class="command"> @end</span>_index: The ending index, exclusive.</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc"> * Append an IBusAttribute for IBusText.</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="162">162</th><td><em>void</em>             <dfn class="decl" id="ibus_text_append_attribute" title='ibus_text_append_attribute' data-ref="ibus_text_append_attribute">ibus_text_append_attribute</dfn>         (<a class="typedef" href="#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a>       *<dfn class="local col2 decl" id="62text" title='text' data-type='IBusText *' data-ref="62text">text</dfn>,</td></tr>
+<tr><th id="163">163</th><td>                                                     <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           <dfn class="local col3 decl" id="63type" title='type' data-type='guint' data-ref="63type">type</dfn>,</td></tr>
+<tr><th id="164">164</th><td>                                                     <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           <dfn class="local col4 decl" id="64value" title='value' data-type='guint' data-ref="64value">value</dfn>,</td></tr>
+<tr><th id="165">165</th><td>                                                     <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           <dfn class="local col5 decl" id="65start_index" title='start_index' data-type='guint' data-ref="65start_index">start_index</dfn>,</td></tr>
+<tr><th id="166">166</th><td>                                                     <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>            <dfn class="local col6 decl" id="66end_index" title='end_index' data-type='gint' data-ref="66end_index">end_index</dfn>);</td></tr>
+<tr><th id="167">167</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc"> * ibus_text_get_length:</i></td></tr>
+<tr><th id="169">169</th><td><i class="doc"> *<span class="command"> @text</span>: An #IBusText.</i></td></tr>
+<tr><th id="170">170</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="171">171</th><td><i class="doc"> * Return number of characters in an #IBusText.</i></td></tr>
+<tr><th id="172">172</th><td><i class="doc"> * This function is based on g_utf8_strlen(), so unlike strlen(),</i></td></tr>
+<tr><th id="173">173</th><td><i class="doc"> * it does not count by bytes but characters instead.</i></td></tr>
+<tr><th id="174">174</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="175">175</th><td><i class="doc"> * Returns: Number of character in<span class="command"> @text</span>, not counted by bytes.</i></td></tr>
+<tr><th id="176">176</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="177">177</th><td><a class="typedef" href="../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>            <dfn class="decl" id="ibus_text_get_length" title='ibus_text_get_length' data-ref="ibus_text_get_length">ibus_text_get_length</dfn>               (<a class="typedef" href="#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a>       *<dfn class="local col7 decl" id="67text" title='text' data-type='IBusText *' data-ref="67text">text</dfn>);</td></tr>
+<tr><th id="178">178</th><td></td></tr>
+<tr><th id="179">179</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc"> * ibus_text_get_is_static: (skip)</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc"> *<span class="command"> @text</span>: An #IBusText.</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc"> * Return the is_static in an #IBusText.</i></td></tr>
+<tr><th id="184">184</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="185">185</th><td><i class="doc"> * Returns: the is_static in<span class="command"> @text</span>.</i></td></tr>
+<tr><th id="186">186</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="187">187</th><td><a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>         <dfn class="decl" id="ibus_text_get_is_static" title='ibus_text_get_is_static' data-ref="ibus_text_get_is_static">ibus_text_get_is_static</dfn>            (<a class="typedef" href="#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a>       *<dfn class="local col8 decl" id="68text" title='text' data-type='IBusText *' data-ref="68text">text</dfn>);</td></tr>
+<tr><th id="188">188</th><td></td></tr>
+<tr><th id="189">189</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc"> * ibus_text_get_text:</i></td></tr>
+<tr><th id="191">191</th><td><i class="doc"> *<span class="command"> @text</span>: An #IBusText.</i></td></tr>
+<tr><th id="192">192</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="193">193</th><td><i class="doc"> * Return the text in an #IBusText. Should not be freed.</i></td></tr>
+<tr><th id="194">194</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="195">195</th><td><i class="doc"> * Returns: the text in<span class="command"> @text</span>.</i></td></tr>
+<tr><th id="196">196</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="197">197</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *    <dfn class="decl" id="ibus_text_get_text" title='ibus_text_get_text' data-ref="ibus_text_get_text">ibus_text_get_text</dfn>                 (<a class="typedef" href="#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a>       *<dfn class="local col9 decl" id="69text" title='text' data-type='IBusText *' data-ref="69text">text</dfn>);</td></tr>
+<tr><th id="198">198</th><td></td></tr>
+<tr><th id="199">199</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc"> * ibus_text_get_attributes:</i></td></tr>
+<tr><th id="201">201</th><td><i class="doc"> *<span class="command"> @text</span>: An #IBusText.</i></td></tr>
+<tr><th id="202">202</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="203">203</th><td><i class="doc"> * Return the attributes in an #IBusText. Should not be freed.</i></td></tr>
+<tr><th id="204">204</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="205">205</th><td><i class="doc"> * Returns: (transfer none): the attrs in<span class="command"> @text</span>.</i></td></tr>
+<tr><th id="206">206</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="207">207</th><td><a class="typedef" href="ibusattrlist.h.html#IBusAttrList" title='IBusAttrList' data-type='struct _IBusAttrList' data-ref="IBusAttrList">IBusAttrList</a> *   <dfn class="decl" id="ibus_text_get_attributes" title='ibus_text_get_attributes' data-ref="ibus_text_get_attributes">ibus_text_get_attributes</dfn>           (<a class="typedef" href="#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a>       *<dfn class="local col0 decl" id="70text" title='text' data-type='IBusText *' data-ref="70text">text</dfn>);</td></tr>
+<tr><th id="208">208</th><td></td></tr>
+<tr><th id="209">209</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="210">210</th><td><i class="doc"> * ibus_text_set_attributes:</i></td></tr>
+<tr><th id="211">211</th><td><i class="doc"> *<span class="command"> @text</span>: An IBusText.</i></td></tr>
+<tr><th id="212">212</th><td><i class="doc"> *<span class="command"> @attrs</span>: An IBusAttrList</i></td></tr>
+<tr><th id="213">213</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="214">214</th><td><em>void</em>             <dfn class="decl" id="ibus_text_set_attributes" title='ibus_text_set_attributes' data-ref="ibus_text_set_attributes">ibus_text_set_attributes</dfn>           (<a class="typedef" href="#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a>       *<dfn class="local col1 decl" id="71text" title='text' data-type='IBusText *' data-ref="71text">text</dfn>,</td></tr>
+<tr><th id="215">215</th><td>                                                     <a class="typedef" href="ibusattrlist.h.html#IBusAttrList" title='IBusAttrList' data-type='struct _IBusAttrList' data-ref="IBusAttrList">IBusAttrList</a>   *<dfn class="local col2 decl" id="72attrs" title='attrs' data-type='IBusAttrList *' data-ref="72attrs">attrs</dfn>);</td></tr>
+<tr><th id="216">216</th><td></td></tr>
+<tr><th id="217">217</th><td></td></tr>
+<tr><th id="218">218</th><td><a class="macro" href="../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="219">219</th><td><u>#<span data-ppcond="27">endif</span></u></td></tr>
+<tr><th id="220">220</th><td></td></tr>
+<tr><th id="221">221</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../unikey/setup/dlg_main_setup.cpp.html'>unikey/setup/dlg_main_setup.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

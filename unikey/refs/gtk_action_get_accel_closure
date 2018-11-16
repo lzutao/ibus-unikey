@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkaction.h' l='112' type='GClosure * gtk_action_get_accel_closure(GtkAction * action)'/>

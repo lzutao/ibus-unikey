@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrange.h' l='177' type='void gtk_range_set_increments(GtkRange * range, gdouble step, gdouble page)'/>

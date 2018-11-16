@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='579' type='GtkRequisition'/>
+<offset>448</offset>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='577'>/* The widget&apos;s desired size.
+   */</doc>

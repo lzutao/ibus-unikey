@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktooltips.h' l='101' type='gboolean gtk_tooltips_get_info_from_tip_window(GtkWindow * tip_window, GtkTooltips ** tooltips, GtkWidget ** current_widget)'/>

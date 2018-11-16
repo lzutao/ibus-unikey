@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibuslookuptable.h' l='277' type='guint ibus_lookup_table_get_page_size(IBusLookupTable * table)'/>
+<doc f='include/ibus-1.0/ibuslookuptable.h' l='268'>/**
+ * ibus_lookup_table_get_page_size:
+ * @table: An IBusLookupTable.
+ *
+ * Gets the number of candidate shown per page.
+ *
+ * Returns: Page size, i.e., number of candidate shown per page.
+dd
+ */</doc>

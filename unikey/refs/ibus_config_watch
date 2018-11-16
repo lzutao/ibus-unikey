@@ -1,0 +1,18 @@
+<dec f='include/ibus-1.0/ibusconfig.h' l='341' type='gboolean ibus_config_watch(IBusConfig * config, const gchar * section, const gchar * name)'/>
+<doc f='include/ibus-1.0/ibusconfig.h' l='324'>/**
+ * ibus_config_watch:
+ * @config: An #IBusConfig
+ * @section: (allow-none): Section name of the configuration option.
+ * @name: (allow-none): Name of the configure option its self.
+ *
+ * Subscribe to the configuration option change notification.
+ *
+ * Until this function is called, every change will be notified to the
+ * client through #IBusConfig::value-changed signal.  Clients should
+ * call ibus_config_watch() with the sections they are interested in,
+ * to reduce the number of D-Bus messages.
+ *
+ * Returns: %TRUE if succeed; %FALSE otherwise.
+ *
+ * See also: ibus_config_unwatch().
+ */</doc>

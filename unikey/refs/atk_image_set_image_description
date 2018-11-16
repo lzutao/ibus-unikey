@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkimage.h' l='77' type='gboolean atk_image_set_image_description(AtkImage * image, const gchar * description)'/>

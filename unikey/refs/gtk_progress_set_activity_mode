@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprogress.h' l='107' type='void gtk_progress_set_activity_mode(GtkProgress * progress, gboolean activity_mode)'/>

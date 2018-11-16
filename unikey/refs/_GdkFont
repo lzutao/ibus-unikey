@@ -1,0 +1,5 @@
+<def f='include/gtk-2.0/gdk/gdkfont.h' l='49' ll='54'/>
+<size>12</size>
+<mbr r='_GdkFont::type' o='0' t='GdkFontType'/>
+<mbr r='_GdkFont::ascent' o='32' t='gint'/>
+<mbr r='_GdkFont::descent' o='64' t='gint'/>

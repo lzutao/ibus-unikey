@@ -1,0 +1,21 @@
+<def f='include/gtk-2.0/gtk/gtktextbuffer.h' l='94' ll='155'/>
+<size>280</size>
+<mbr r='_GtkTextBufferClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_GtkTextBufferClass::insert_text' o='1088' t='void (*)(GtkTextBuffer *, GtkTextIter *, const gchar *, gint)'/>
+<mbr r='_GtkTextBufferClass::insert_pixbuf' o='1152' t='void (*)(GtkTextBuffer *, GtkTextIter *, GdkPixbuf *)'/>
+<mbr r='_GtkTextBufferClass::insert_child_anchor' o='1216' t='void (*)(GtkTextBuffer *, GtkTextIter *, GtkTextChildAnchor *)'/>
+<mbr r='_GtkTextBufferClass::delete_range' o='1280' t='void (*)(GtkTextBuffer *, GtkTextIter *, GtkTextIter *)'/>
+<mbr r='_GtkTextBufferClass::changed' o='1344' t='void (*)(GtkTextBuffer *)'/>
+<mbr r='_GtkTextBufferClass::modified_changed' o='1408' t='void (*)(GtkTextBuffer *)'/>
+<mbr r='_GtkTextBufferClass::mark_set' o='1472' t='void (*)(GtkTextBuffer *, const GtkTextIter *, GtkTextMark *)'/>
+<mbr r='_GtkTextBufferClass::mark_deleted' o='1536' t='void (*)(GtkTextBuffer *, GtkTextMark *)'/>
+<mbr r='_GtkTextBufferClass::apply_tag' o='1600' t='void (*)(GtkTextBuffer *, GtkTextTag *, const GtkTextIter *, const GtkTextIter *)'/>
+<mbr r='_GtkTextBufferClass::remove_tag' o='1664' t='void (*)(GtkTextBuffer *, GtkTextTag *, const GtkTextIter *, const GtkTextIter *)'/>
+<mbr r='_GtkTextBufferClass::begin_user_action' o='1728' t='void (*)(GtkTextBuffer *)'/>
+<mbr r='_GtkTextBufferClass::end_user_action' o='1792' t='void (*)(GtkTextBuffer *)'/>
+<mbr r='_GtkTextBufferClass::paste_done' o='1856' t='void (*)(GtkTextBuffer *, GtkClipboard *)'/>
+<mbr r='_GtkTextBufferClass::_gtk_reserved1' o='1920' t='void (*)()'/>
+<mbr r='_GtkTextBufferClass::_gtk_reserved2' o='1984' t='void (*)()'/>
+<mbr r='_GtkTextBufferClass::_gtk_reserved3' o='2048' t='void (*)()'/>
+<mbr r='_GtkTextBufferClass::_gtk_reserved4' o='2112' t='void (*)()'/>
+<mbr r='_GtkTextBufferClass::_gtk_reserved5' o='2176' t='void (*)()'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='238' type='void gtk_text_iter_set_line(GtkTextIter * iter, gint line_number)'/>

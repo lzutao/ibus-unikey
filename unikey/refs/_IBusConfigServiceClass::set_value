@@ -1,0 +1,3 @@
+<dec f='include/ibus-1.0/ibusconfigservice.h' l='182' type='gboolean (*)(IBusConfigService *, const gchar *, const gchar *, GVariant *, GError **)'/>
+<offset>2112</offset>
+<doc f='include/ibus-1.0/ibusconfigservice.h' l='181'>/* class members */</doc>

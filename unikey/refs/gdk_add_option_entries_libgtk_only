@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdk.h' l='75' type='void gdk_add_option_entries_libgtk_only(GOptionGroup * group)'/>

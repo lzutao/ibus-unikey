@@ -1,0 +1,9 @@
+<dec f='unikey/src/utils.h' l='14' type='const unsigned int'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='64' u='r' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='88' u='r' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/src/engine.cpp' l='204' u='r' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='317' u='r' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='435' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='484' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<def f='unikey/src/utils.cpp' l='44' type='const unsigned int'/>
+<doc f='unikey/src/utils.cpp' l='44'>//!&lt; len(Unikey_OC)</doc>

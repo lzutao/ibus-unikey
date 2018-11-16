@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkexpander.h' l='75' type='gint gtk_expander_get_spacing(GtkExpander * expander)'/>

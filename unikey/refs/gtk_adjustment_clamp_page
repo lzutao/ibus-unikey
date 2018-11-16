@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkadjustment.h' l='88' type='void gtk_adjustment_clamp_page(GtkAdjustment * adjustment, gdouble lower, gdouble upper)'/>

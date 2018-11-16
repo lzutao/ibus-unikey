@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuscomponent.h' l='227' type='const gchar * ibus_component_get_homepage(IBusComponent * component)'/>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='219'>/**
+ * ibus_component_get_homepage:
+ * @component: An #IBusComponent
+ *
+ * Gets the homepage property in #IBusComponent. It should not be freed.
+ *
+ * Returns: homepage property in #IBusComponent
+ */</doc>

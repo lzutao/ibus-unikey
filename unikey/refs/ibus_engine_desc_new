@@ -1,0 +1,16 @@
+<dec f='include/ibus-1.0/ibusenginedesc.h' l='113' type='IBusEngineDesc * ibus_engine_desc_new(const gchar * name, const gchar * longname, const gchar * description, const gchar * language, const gchar * license, const gchar * author, const gchar * icon, const gchar * layout)'/>
+<doc f='include/ibus-1.0/ibusenginedesc.h' l='98'>/**
+ * ibus_engine_desc_new:
+ * @name: Name of the engine.
+ * @longname: Long name of the input method engine.
+ * @description: Input method engine description.
+ * @language: Language (e.g. zh, jp) supported by this input method engine.
+ * @license: License of the input method engine.
+ * @author: Author of the input method engine.
+ * @icon: Icon file of this engine.
+ * @layout: Keyboard layout
+ *
+ * Creates a new #IBusEngineDesc.
+ *
+ * Returns: A newly allocated IBusEngineDesc.
+ */</doc>

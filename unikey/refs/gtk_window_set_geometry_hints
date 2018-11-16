@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='246' type='void gtk_window_set_geometry_hints(GtkWindow * window, GtkWidget * geometry_widget, GdkGeometry * geometry, GdkWindowHints geom_mask)'/>

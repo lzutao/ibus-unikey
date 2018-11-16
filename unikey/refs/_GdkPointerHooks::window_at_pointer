@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='247' type='GdkWindow *(*)(GdkScreen *, gint *, gint *)'/>
+<offset>64</offset>
+<doc f='include/gtk-2.0/gdk/gdkwindow.h' l='247'>/* unused */</doc>

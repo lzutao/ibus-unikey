@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkcellrenderertext.h' l='85' type='void (*)(GtkCellRendererText *, const gchar *, const gchar *)'/>
+<offset>1792</offset>

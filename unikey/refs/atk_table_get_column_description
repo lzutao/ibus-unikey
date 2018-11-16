@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atktable.h' l='164' type='const gchar * atk_table_get_column_description(AtkTable * table, gint column)'/>

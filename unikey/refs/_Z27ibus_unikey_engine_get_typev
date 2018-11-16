@@ -1,0 +1,6 @@
+<def f='unikey/src/engine.cpp' l='66' macro='1' type='GType ibus_unikey_engine_get_type()'/>
+<dec f='unikey/src/engine.h' l='18' type='GType ibus_unikey_engine_get_type()'/>
+<use f='unikey/src/main.cpp' l='61' macro='1' u='c'/>
+<doc f='unikey/src/engine.h' l='15'>/**
+ * Use G_DEFINE_TYPE to define it
+ */</doc>

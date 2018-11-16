@@ -1,0 +1,5 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='564' type='AtkRelationSet *(*)(AtkObject *)'/>
+<offset>1472</offset>
+<doc f='include/atk-1.0/atk/atkobject.h' l='561'>/*
+   * Gets the RelationSet associated with the object
+   */</doc>

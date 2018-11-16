@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>atkrelationtype.h source code [include/atk-1.0/atk/atkrelationtype.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/atk-1.0/atk/atkrelationtype.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>atk-1.0</a>/<a href='./'>atk</a>/<a href='atkrelationtype.h.html'>atkrelationtype.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* ATK -  Accessibility Toolkit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright 2002 Sun Microsystems Inc.</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Library General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Library General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Library General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="20">ifndef</span> <span class="macro" data-ref="_M/__ATK_RELATION_TYPE_H__">__ATK_RELATION_TYPE_H__</span></u></td></tr>
+<tr><th id="21">21</th><td><u>#define <dfn class="macro" id="_M/__ATK_RELATION_TYPE_H__" data-ref="_M/__ATK_RELATION_TYPE_H__">__ATK_RELATION_TYPE_H__</dfn></u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> defined(<span class="macro" data-ref="_M/ATK_DISABLE_SINGLE_INCLUDES">ATK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="atk.h.html#23" data-ref="_M/__ATK_H_INSIDE__">__ATK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/ATK_COMPILATION">ATK_COMPILATION</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#error "Only &lt;atk/atk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="../../glib-2.0/glib.h.html">&lt;glib.h&gt;</a></u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> *AtkRelationType:</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_NULL: Not used, represens "no relationship" or an error condition.</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_CONTROLLED_BY: Indicates an object controlled by one or more target objects.</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_CONTROLLER_FOR: Indicates an object is an controller for one or more target objects.</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_LABEL_FOR: Indicates an object is a label for one or more target objects.</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_LABELLED_BY: Indicates an object is labelled by one or more target objects.</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_MEMBER_OF: Indicates an object is a member of a group of one or more target objects.</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_NODE_CHILD_OF: Indicates an object is a cell in a treetable which is displayed because a cell in the same column is expanded and identifies that cell.</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_FLOWS_TO: Indicates that the object has content that flows logically to another</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> *  AtkObject in a sequential way, (for instance text-flow).</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_FLOWS_FROM: Indicates that the object has content that flows logically from</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> *  another AtkObject in a sequential way, (for instance text-flow).</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_SUBWINDOW_OF: Indicates a subwindow attached to a component but otherwise has no connection in  the UI heirarchy to that component.</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_EMBEDS: Indicates that the object visually embeds </i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> *  another object's content, i.e. this object's content flows around </i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> *  another's content.</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_EMBEDDED_BY: Reciprocal of %ATK_RELATION_EMBEDS, indicates that</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> *  this object's content is visualy embedded in another object.</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_POPUP_FOR: Indicates that an object is a popup for another object.</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_PARENT_WINDOW_OF: Indicates that an object is a parent window of another object.</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_DESCRIBED_BY: Reciprocal of %ATK_RELATION_DESCRIPTION_FOR. Indicates that one</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> * or more target objects provide descriptive information about this object. This relation</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> * type is most appropriate for information that is not essential as its presentation may</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> * be user-configurable and/or limited to an on-demand mechanism such as an assistive</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> * technology command. For brief, essential information such as can be found in a widget's</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> * on-screen label, use %ATK_RELATION_LABELLED_BY. For an on-screen error message, use</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> * %ATK_RELATION_ERROR_MESSAGE. For lengthy extended descriptive information contained in</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"> * an on-screen object, consider using %ATK_RELATION_DETAILS as assistive technologies may</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"> * provide a means for the user to navigate to objects containing detailed descriptions so</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> * that their content can be more closely reviewed.</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_DESCRIPTION_FOR: Reciprocal of %ATK_RELATION_DESCRIBED_BY. Indicates that this</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> * object provides descriptive information about the target object(s). See also</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> * %ATK_RELATION_DETAILS_FOR and %ATK_RELATION_ERROR_FOR.</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_NODE_PARENT_OF: Indicates an object is a cell in a treetable and is expanded to display other cells in the same column.</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_DETAILS: Reciprocal of %ATK_RELATION_DETAILS_FOR. Indicates that this object</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> * has a detailed or extended description, the contents of which can be found in the target</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> * object(s). This relation type is most appropriate for information that is sufficiently</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> * lengthy as to make navigation to the container of that information desirable. For less</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> * verbose information suitable for announcement only, see %ATK_RELATION_DESCRIBED_BY. If</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> * the detailed information describes an error condition, %ATK_RELATION_ERROR_FOR should be</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> * used instead. <span class="command">@Since</span>: ATK-2.26.</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_DETAILS_FOR: Reciprocal of %ATK_RELATION_DETAILS. Indicates that this object</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc"> * provides a detailed or extended description about the target object(s). See also</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc"> * %ATK_RELATION_DESCRIPTION_FOR and %ATK_RELATION_ERROR_FOR. <span class="command">@Since</span>: ATK-2.26.</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_ERROR_MESSAGE: Reciprocal of %ATK_RELATION_ERROR_FOR. Indicates that this object</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> * has one or more errors, the nature of which is described in the contents of the target</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> * object(s). Objects that have this relation type should also contain %ATK_STATE_INVALID_ENTRY</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> * in their #AtkStateSet. <span class="command">@Since</span>: ATK-2.26.</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_ERROR_FOR: Reciprocal of %ATK_RELATION_ERROR_MESSAGE. Indicates that this object</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> * contains an error message describing an invalid condition in the target object(s). <span class="command">@Since</span>:</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc"> * ATK_2.26.</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc"> <span class="command">*@ATK</span>_RELATION_LAST_DEFINED: Not used, this value indicates the end of the enumeration.</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> *Describes the type of the relation</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="87">87</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="88">88</th><td>{</td></tr>
+<tr><th id="89">89</th><td>  <dfn class="enum" id="ATK_RELATION_NULL" title='ATK_RELATION_NULL' data-ref="ATK_RELATION_NULL">ATK_RELATION_NULL</dfn> = <var>0</var>,</td></tr>
+<tr><th id="90">90</th><td>  <dfn class="enum" id="ATK_RELATION_CONTROLLED_BY" title='ATK_RELATION_CONTROLLED_BY' data-ref="ATK_RELATION_CONTROLLED_BY">ATK_RELATION_CONTROLLED_BY</dfn>,</td></tr>
+<tr><th id="91">91</th><td>  <dfn class="enum" id="ATK_RELATION_CONTROLLER_FOR" title='ATK_RELATION_CONTROLLER_FOR' data-ref="ATK_RELATION_CONTROLLER_FOR">ATK_RELATION_CONTROLLER_FOR</dfn>,</td></tr>
+<tr><th id="92">92</th><td>  <dfn class="enum" id="ATK_RELATION_LABEL_FOR" title='ATK_RELATION_LABEL_FOR' data-ref="ATK_RELATION_LABEL_FOR">ATK_RELATION_LABEL_FOR</dfn>,</td></tr>
+<tr><th id="93">93</th><td>  <dfn class="enum" id="ATK_RELATION_LABELLED_BY" title='ATK_RELATION_LABELLED_BY' data-ref="ATK_RELATION_LABELLED_BY">ATK_RELATION_LABELLED_BY</dfn>,</td></tr>
+<tr><th id="94">94</th><td>  <dfn class="enum" id="ATK_RELATION_MEMBER_OF" title='ATK_RELATION_MEMBER_OF' data-ref="ATK_RELATION_MEMBER_OF">ATK_RELATION_MEMBER_OF</dfn>,</td></tr>
+<tr><th id="95">95</th><td>  <dfn class="enum" id="ATK_RELATION_NODE_CHILD_OF" title='ATK_RELATION_NODE_CHILD_OF' data-ref="ATK_RELATION_NODE_CHILD_OF">ATK_RELATION_NODE_CHILD_OF</dfn>,</td></tr>
+<tr><th id="96">96</th><td>  <dfn class="enum" id="ATK_RELATION_FLOWS_TO" title='ATK_RELATION_FLOWS_TO' data-ref="ATK_RELATION_FLOWS_TO">ATK_RELATION_FLOWS_TO</dfn>,</td></tr>
+<tr><th id="97">97</th><td>  <dfn class="enum" id="ATK_RELATION_FLOWS_FROM" title='ATK_RELATION_FLOWS_FROM' data-ref="ATK_RELATION_FLOWS_FROM">ATK_RELATION_FLOWS_FROM</dfn>,</td></tr>
+<tr><th id="98">98</th><td>  <dfn class="enum" id="ATK_RELATION_SUBWINDOW_OF" title='ATK_RELATION_SUBWINDOW_OF' data-ref="ATK_RELATION_SUBWINDOW_OF">ATK_RELATION_SUBWINDOW_OF</dfn>, </td></tr>
+<tr><th id="99">99</th><td>  <dfn class="enum" id="ATK_RELATION_EMBEDS" title='ATK_RELATION_EMBEDS' data-ref="ATK_RELATION_EMBEDS">ATK_RELATION_EMBEDS</dfn>, </td></tr>
+<tr><th id="100">100</th><td>  <dfn class="enum" id="ATK_RELATION_EMBEDDED_BY" title='ATK_RELATION_EMBEDDED_BY' data-ref="ATK_RELATION_EMBEDDED_BY">ATK_RELATION_EMBEDDED_BY</dfn>, </td></tr>
+<tr><th id="101">101</th><td>  <dfn class="enum" id="ATK_RELATION_POPUP_FOR" title='ATK_RELATION_POPUP_FOR' data-ref="ATK_RELATION_POPUP_FOR">ATK_RELATION_POPUP_FOR</dfn>, </td></tr>
+<tr><th id="102">102</th><td>  <dfn class="enum" id="ATK_RELATION_PARENT_WINDOW_OF" title='ATK_RELATION_PARENT_WINDOW_OF' data-ref="ATK_RELATION_PARENT_WINDOW_OF">ATK_RELATION_PARENT_WINDOW_OF</dfn>, </td></tr>
+<tr><th id="103">103</th><td>  <dfn class="enum" id="ATK_RELATION_DESCRIBED_BY" title='ATK_RELATION_DESCRIBED_BY' data-ref="ATK_RELATION_DESCRIBED_BY">ATK_RELATION_DESCRIBED_BY</dfn>,</td></tr>
+<tr><th id="104">104</th><td>  <dfn class="enum" id="ATK_RELATION_DESCRIPTION_FOR" title='ATK_RELATION_DESCRIPTION_FOR' data-ref="ATK_RELATION_DESCRIPTION_FOR">ATK_RELATION_DESCRIPTION_FOR</dfn>,</td></tr>
+<tr><th id="105">105</th><td>  <dfn class="enum" id="ATK_RELATION_NODE_PARENT_OF" title='ATK_RELATION_NODE_PARENT_OF' data-ref="ATK_RELATION_NODE_PARENT_OF">ATK_RELATION_NODE_PARENT_OF</dfn>,</td></tr>
+<tr><th id="106">106</th><td>  <dfn class="enum" id="ATK_RELATION_DETAILS" title='ATK_RELATION_DETAILS' data-ref="ATK_RELATION_DETAILS">ATK_RELATION_DETAILS</dfn>,</td></tr>
+<tr><th id="107">107</th><td>  <dfn class="enum" id="ATK_RELATION_DETAILS_FOR" title='ATK_RELATION_DETAILS_FOR' data-ref="ATK_RELATION_DETAILS_FOR">ATK_RELATION_DETAILS_FOR</dfn>,</td></tr>
+<tr><th id="108">108</th><td>  <dfn class="enum" id="ATK_RELATION_ERROR_MESSAGE" title='ATK_RELATION_ERROR_MESSAGE' data-ref="ATK_RELATION_ERROR_MESSAGE">ATK_RELATION_ERROR_MESSAGE</dfn>,</td></tr>
+<tr><th id="109">109</th><td>  <dfn class="enum" id="ATK_RELATION_ERROR_FOR" title='ATK_RELATION_ERROR_FOR' data-ref="ATK_RELATION_ERROR_FOR">ATK_RELATION_ERROR_FOR</dfn>,</td></tr>
+<tr><th id="110">110</th><td>  <dfn class="enum" id="ATK_RELATION_LAST_DEFINED" title='ATK_RELATION_LAST_DEFINED' data-ref="ATK_RELATION_LAST_DEFINED">ATK_RELATION_LAST_DEFINED</dfn></td></tr>
+<tr><th id="111">111</th><td>} <dfn class="typedef" id="AtkRelationType" title='AtkRelationType' data-type='enum AtkRelationType' data-ref="AtkRelationType">AtkRelationType</dfn>;</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><u>#<span data-ppcond="20">endif</span> /* __ATK_RELATION_TYPE_H__ */</u></td></tr>
+<tr><th id="116">116</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,17 @@
+<dec f='include/ibus-1.0/ibushotkey.h' l='170' type='GQuark ibus_hotkey_profile_filter_key_event(IBusHotkeyProfile * profile, guint keyval, guint modifiers, guint prev_keyval, guint prev_modifiers, gpointer user_data)'/>
+<doc f='include/ibus-1.0/ibushotkey.h' l='154'>/**
+ * ibus_hotkey_profile_filter_key_event:
+ * @profile: An IBusHotkeyProfile.
+ * @keyval: Keycode of the hotkey.
+ * @modifiers: Modifiers of the hotkey.
+ * @prev_keyval: Keycode of the hotkey.
+ * @prev_modifiers: Modifiers of the hotkey.
+ * @user_data: user data for signal &quot;trigger&quot;.
+ *
+ * Emits a &lt;constant&gt;::trigger&lt;/constant&gt; signal when a hotkey is in a profile.
+ *
+ * Returns: 0 if releasing a hotkey and the hotkey is not in the profile;
+ * an associated event otherwise.
+ *
+ * See also: ::trigger
+ */</doc>

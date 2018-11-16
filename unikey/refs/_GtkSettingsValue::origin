@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtksettings.h' l='68' type='gchar *'/>
+<offset>0</offset>
+<doc f='include/gtk-2.0/gtk/gtksettings.h' l='65'>/* origin should be something like &quot;filename:linenumber&quot; for rc files,
+   * or e.g. &quot;XProperty&quot; for other sources
+   */</doc>

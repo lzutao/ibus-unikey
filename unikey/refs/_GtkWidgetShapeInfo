@@ -1,0 +1,5 @@
+<def f='include/gtk-2.0/gtk/gtkwidget.h' l='826' ll='831'/>
+<size>16</size>
+<mbr r='_GtkWidgetShapeInfo::offset_x' o='0' t='gint16'/>
+<mbr r='_GtkWidgetShapeInfo::offset_y' o='16' t='gint16'/>
+<mbr r='_GtkWidgetShapeInfo::shape_mask' o='64' t='GdkBitmap *'/>

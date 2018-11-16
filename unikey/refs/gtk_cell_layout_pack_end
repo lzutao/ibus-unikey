@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcelllayout.h' l='82' type='void gtk_cell_layout_pack_end(GtkCellLayout * cell_layout, GtkCellRenderer * cell, gboolean expand)'/>

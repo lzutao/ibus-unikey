@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkcheckmenuitem.h' l='51' ll='59'/>
+<size>168</size>
+<mbr r='_GtkCheckMenuItem::menu_item' o='0' t='GtkMenuItem'/>
+<mbr r='_GtkCheckMenuItem::active' o='1280' t='guint'/>
+<mbr r='_GtkCheckMenuItem::always_show_toggle' o='1281' t='guint'/>
+<mbr r='_GtkCheckMenuItem::inconsistent' o='1282' t='guint'/>
+<mbr r='_GtkCheckMenuItem::draw_as_radio' o='1283' t='guint'/>

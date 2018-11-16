@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>main.cpp source code [unikey/src/main.cpp] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="main "/>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'unikey/src/main.cpp'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>unikey</a>/<a href='./'>src</a>/<a href='main.cpp.html'>main.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifdef</span> <span class="macro" data-ref="_M/HAVE_CONFIG_H">HAVE_CONFIG_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="../builddir/config.h.html">"config.h"</a></u></td></tr>
+<tr><th id="3">3</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="../../include/libintl.h.html">&lt;libintl.h&gt;</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="../../include/locale.h.html">&lt;locale.h&gt;</a></u></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="../../include/c++/7/stdlib.h.html">&lt;stdlib.h&gt;</a></u></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="../../include/stdio.h.html">&lt;stdio.h&gt;</a></u></td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><u>#include <a href="engine.h.html">"engine.h"</a></u></td></tr>
+<tr><th id="11">11</th><td><u>#include <a href="utils.h.html">"utils.h"</a></u></td></tr>
+<tr><th id="12">12</th><td><u>#include <a href="../ukengine/unikey.h.html">"unikey.h"</a></u></td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><i  data-doc="kIBus">/* command line options */</i></td></tr>
+<tr><th id="15">15</th><td><em>static</em> <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="tu decl def" id="kIBus" title='kIBus' data-type='gboolean' data-ref="kIBus">kIBus</dfn>    = <a class="macro" href="../../include/glib-2.0/glib/gmacros.h.html#289" title="(0)" data-ref="_M/FALSE">FALSE</a>;</td></tr>
+<tr><th id="16">16</th><td><i  data-doc="kVersion">//static gboolean kVerbose = FALSE;</i></td></tr>
+<tr><th id="17">17</th><td><em>static</em> <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="tu decl def" id="kVersion" title='kVersion' data-type='gboolean' data-ref="kVersion">kVersion</dfn> = <a class="macro" href="../../include/glib-2.0/glib/gmacros.h.html#289" title="(0)" data-ref="_M/FALSE">FALSE</a>;</td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><em>static</em> <em>const</em> <a class="typedef" href="../../include/glib-2.0/glib/goption.h.html#GOptionEntry" title='GOptionEntry' data-type='struct _GOptionEntry' data-ref="GOptionEntry">GOptionEntry</a> <dfn class="tu decl def" id="kEntries" title='kEntries' data-type='const GOptionEntry [3]' data-ref="kEntries">kEntries</dfn>[] = {</td></tr>
+<tr><th id="20">20</th><td>    {<q>"ibus"</q>, <kbd>'i'</kbd>, <var>0</var>, <a class="enum" href="../../include/glib-2.0/glib/goption.h.html#G_OPTION_ARG_NONE" title='G_OPTION_ARG_NONE' data-ref="G_OPTION_ARG_NONE">G_OPTION_ARG_NONE</a>, &amp;<a class="tu ref" href="#kIBus" title='kIBus' data-use='a' data-ref="kIBus">kIBus</a>, <q>"component is executed by ibus"</q>, <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>},</td></tr>
+<tr><th id="21">21</th><td>    <i>// verbose is a useless option</i></td></tr>
+<tr><th id="22">22</th><td><i>    //{"verbose", 'v', 0, G_OPTION_ARG_NONE, &amp;kVerbose, "verbose", NULL},</i></td></tr>
+<tr><th id="23">23</th><td>    {<q>"version"</q>, <kbd>'V'</kbd>, <var>0</var>, <a class="enum" href="../../include/glib-2.0/glib/goption.h.html#G_OPTION_ARG_NONE" title='G_OPTION_ARG_NONE' data-ref="G_OPTION_ARG_NONE">G_OPTION_ARG_NONE</a>, &amp;<a class="tu ref" href="#kVersion" title='kVersion' data-use='a' data-ref="kVersion">kVersion</a>, <q>"print ibus-unikey version"</q>, <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>},</td></tr>
+<tr><th id="24">24</th><td>    {<span class="macro" title="__null" data-ref="_M/NULL">NULL</span>},</td></tr>
+<tr><th id="25">25</th><td>};</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><em>static</em> <em>void</em></td></tr>
+<tr><th id="28">28</th><td><dfn class="tu decl def" id="_ZL20ibus_disconnected_cbP8_IBusBusPv" title='ibus_disconnected_cb' data-type='void ibus_disconnected_cb(IBusBus * bus, gpointer user_data)' data-ref="_ZL20ibus_disconnected_cbP8_IBusBusPv">ibus_disconnected_cb</dfn>(<a class="typedef" href="../../include/ibus-1.0/ibusbus.h.html#IBusBus" title='IBusBus' data-type='struct _IBusBus' data-ref="IBusBus">IBusBus</a> *<dfn class="local col2 decl" id="2bus" title='bus' data-type='IBusBus *' data-ref="2bus">bus</dfn>, <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="local col3 decl" id="3user_data" title='user_data' data-type='gpointer' data-ref="3user_data">user_data</dfn>)</td></tr>
+<tr><th id="29">29</th><td>{</td></tr>
+<tr><th id="30">30</th><td>    <a class="ref" href="../../include/ibus-1.0/ibusshare.h.html#ibus_quit" title='ibus_quit' data-ref="ibus_quit">ibus_quit</a>();</td></tr>
+<tr><th id="31">31</th><td>}</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><em>static</em> <em>void</em></td></tr>
+<tr><th id="34">34</th><td><dfn class="tu decl def" id="_ZL15start_componentv" title='start_component' data-type='void start_component()' data-ref="_ZL15start_componentv">start_component</dfn>(<em>void</em>)</td></tr>
+<tr><th id="35">35</th><td>{</td></tr>
+<tr><th id="36">36</th><td>    <a class="ref" href="../../include/ibus-1.0/ibusshare.h.html#ibus_init" title='ibus_init' data-ref="ibus_init">ibus_init</a>();</td></tr>
+<tr><th id="37">37</th><td>    <i class="doc">//!&lt; An IBusBus connects with IBus daemon.</i></td></tr>
+<tr><th id="38">38</th><td>    <a class="typedef" href="../../include/ibus-1.0/ibusbus.h.html#IBusBus" title='IBusBus' data-type='struct _IBusBus' data-ref="IBusBus">IBusBus</a> *<dfn class="local col4 decl" id="4bus" title='bus' data-type='IBusBus *' data-ref="4bus">bus</dfn> = <a class="ref" href="../../include/ibus-1.0/ibusbus.h.html#ibus_bus_new" title='ibus_bus_new' data-ref="ibus_bus_new">ibus_bus_new</a>();</td></tr>
+<tr><th id="39">39</th><td>    <b>if</b> (!<a class="ref" href="../../include/ibus-1.0/ibusbus.h.html#ibus_bus_is_connected" title='ibus_bus_is_connected' data-ref="ibus_bus_is_connected">ibus_bus_is_connected</a>(<a class="local col4 ref" href="#4bus" title='bus' data-ref="4bus">bus</a>)) {</td></tr>
+<tr><th id="40">40</th><td>        <a class="macro" href="../../include/glib-2.0/glib/gmessages.h.html#337" title="g_log (((gchar*) 0), G_LOG_LEVEL_WARNING, &quot;start_component: Cannot connect to IBus daemon.\n&quot;)" data-ref="_M/g_warning">g_warning</a>(<q>"start_component: Cannot connect to IBus daemon.\n"</q>);</td></tr>
+<tr><th id="41">41</th><td>        <a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>0</var>);</td></tr>
+<tr><th id="42">42</th><td>    }</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td>    <a class="macro" href="../../include/glib-2.0/gobject/gsignal.h.html#474" title="g_signal_connect_data ((bus), (&quot;disconnected&quot;), (((GCallback) (ibus_disconnected_cb))), (__null), __null, (GConnectFlags) 0)" data-ref="_M/g_signal_connect">g_signal_connect</a>(<a class="local col4 ref" href="#4bus" title='bus' data-ref="4bus">bus</a>, <q>"disconnected"</q>, <a class="macro" href="../../include/glib-2.0/gobject/gclosure.h.html#70" title="((GCallback) (ibus_disconnected_cb))" data-ref="_M/G_CALLBACK">G_CALLBACK</a>(<a class="tu ref" href="#_ZL20ibus_disconnected_cbP8_IBusBusPv" title='ibus_disconnected_cb' data-use='r' data-ref="_ZL20ibus_disconnected_cbP8_IBusBusPv">ibus_disconnected_cb</a>), <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td>    <i class="doc">//!&lt; Factory for creating engine instances.</i></td></tr>
+<tr><th id="47">47</th><td>    <a class="typedef" href="../../include/ibus-1.0/ibusfactory.h.html#IBusFactory" title='IBusFactory' data-type='struct _IBusFactory' data-ref="IBusFactory">IBusFactory</a> *<dfn class="local col5 decl" id="5factory" title='factory' data-type='IBusFactory *' data-ref="5factory">factory</dfn> = <a class="ref" href="../../include/ibus-1.0/ibusfactory.h.html#ibus_factory_new" title='ibus_factory_new' data-ref="ibus_factory_new">ibus_factory_new</a>(<a class="ref" href="../../include/ibus-1.0/ibusbus.h.html#ibus_bus_get_connection" title='ibus_bus_get_connection' data-ref="ibus_bus_get_connection">ibus_bus_get_connection</a>(<a class="local col4 ref" href="#4bus" title='bus' data-ref="4bus">bus</a>));</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td>    <a class="typedef" href="../../include/ibus-1.0/ibuscomponent.h.html#IBusComponent" title='IBusComponent' data-type='struct _IBusComponent' data-ref="IBusComponent">IBusComponent</a> *<dfn class="local col6 decl" id="6component" title='component' data-type='IBusComponent *' data-ref="6component">component</dfn> = <a class="ref" href="utils.h.html#_Z25ibus_unikey_get_componentv" title='ibus_unikey_get_component' data-ref="_Z25ibus_unikey_get_componentv">ibus_unikey_get_component</a>();</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td>    <a class="local col5 ref" href="#5factory" title='factory' data-ref="5factory">factory</a> = <a class="ref" href="../../include/ibus-1.0/ibusfactory.h.html#ibus_factory_new" title='ibus_factory_new' data-ref="ibus_factory_new">ibus_factory_new</a>(<a class="ref" href="../../include/ibus-1.0/ibusbus.h.html#ibus_bus_get_connection" title='ibus_bus_get_connection' data-ref="ibus_bus_get_connection">ibus_bus_get_connection</a>(<a class="local col4 ref" href="#4bus" title='bus' data-ref="4bus">bus</a>));</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td>    <a class="typedef" href="../../include/glib-2.0/glib/glist.h.html#GList" title='GList' data-type='struct _GList' data-ref="GList">GList</a> *<dfn class="local col7 decl" id="7engines" title='engines' data-type='GList *' data-ref="7engines">engines</dfn> = <a class="ref" href="../../include/ibus-1.0/ibuscomponent.h.html#ibus_component_get_engines" title='ibus_component_get_engines' data-ref="ibus_component_get_engines">ibus_component_get_engines</a>(<a class="local col6 ref" href="#6component" title='component' data-ref="6component">component</a>);</td></tr>
+<tr><th id="54">54</th><td>    <a class="typedef" href="../../include/glib-2.0/glib/glist.h.html#GList" title='GList' data-type='struct _GList' data-ref="GList">GList</a> *<dfn class="local col8 decl" id="8p" title='p' data-type='GList *' data-ref="8p">p</dfn> = <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="55">55</th><td>    <em>const</em> <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col9 decl" id="9engine_name" title='engine_name' data-type='const gchar *' data-ref="9engine_name">engine_name</dfn> = <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td>    <b>for</b> (<a class="local col8 ref" href="#8p" title='p' data-ref="8p">p</a> = <a class="local col7 ref" href="#7engines" title='engines' data-ref="7engines">engines</a>; <a class="local col8 ref" href="#8p" title='p' data-ref="8p">p</a> != <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>; <a class="local col8 ref" href="#8p" title='p' data-ref="8p">p</a> = <a class="local col8 ref" href="#8p" title='p' data-ref="8p">p</a>-&gt;<a class="ref" href="../../include/glib-2.0/glib/glist.h.html#_GList::next" title='_GList::next' data-ref="_GList::next">next</a>)</td></tr>
+<tr><th id="58">58</th><td>    {</td></tr>
+<tr><th id="59">59</th><td>        <a class="typedef" href="../../include/ibus-1.0/ibusenginedesc.h.html#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col0 decl" id="10engine" title='engine' data-type='IBusEngineDesc *' data-ref="10engine">engine</dfn> = (<a class="typedef" href="../../include/ibus-1.0/ibusenginedesc.h.html#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *)<a class="local col8 ref" href="#8p" title='p' data-ref="8p">p</a>-&gt;<a class="ref" href="../../include/glib-2.0/glib/glist.h.html#_GList::data" title='_GList::data' data-ref="_GList::data">data</a>;</td></tr>
+<tr><th id="60">60</th><td>        <a class="local col9 ref" href="#9engine_name" title='engine_name' data-ref="9engine_name">engine_name</a> = <a class="ref" href="../../include/ibus-1.0/ibusenginedesc.h.html#ibus_engine_desc_get_name" title='ibus_engine_desc_get_name' data-ref="ibus_engine_desc_get_name">ibus_engine_desc_get_name</a>(<a class="local col0 ref" href="#10engine" title='engine' data-ref="10engine">engine</a>);</td></tr>
+<tr><th id="61">61</th><td>        <a class="ref" href="../../include/ibus-1.0/ibusfactory.h.html#ibus_factory_add_engine" title='ibus_factory_add_engine' data-ref="ibus_factory_add_engine">ibus_factory_add_engine</a>(<a class="local col5 ref" href="#5factory" title='factory' data-ref="5factory">factory</a>, <a class="local col9 ref" href="#9engine_name" title='engine_name' data-ref="9engine_name">engine_name</a>, <a class="macro" href="engine.h.html#10" title="(ibus_unikey_engine_get_type())" data-ref="_M/IBUS_TYPE_UNIKEY_ENGINE">IBUS_TYPE_UNIKEY_ENGINE</a>);</td></tr>
+<tr><th id="62">62</th><td>    }</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td>    <b>if</b> (<a class="tu ref" href="#kIBus" title='kIBus' data-use='r' data-ref="kIBus">kIBus</a>)</td></tr>
+<tr><th id="65">65</th><td>    {</td></tr>
+<tr><th id="66">66</th><td>        <b>if</b> (!<a class="ref" href="../../include/ibus-1.0/ibusbus.h.html#ibus_bus_request_name" title='ibus_bus_request_name' data-ref="ibus_bus_request_name">ibus_bus_request_name</a>(<a class="local col4 ref" href="#4bus" title='bus' data-ref="4bus">bus</a>, <a class="macro" href="engine_const.h.html#18" title="&quot;org.freedesktop.IBus.Unikey&quot;" data-ref="_M/UNIKEY_DBUS_NAME">UNIKEY_DBUS_NAME</a>, <var>0</var>))</td></tr>
+<tr><th id="67">67</th><td>        {</td></tr>
+<tr><th id="68">68</th><td>            <a class="macro" href="../../include/glib-2.0/glib/gmessages.h.html#343" title="g_log (((gchar*) 0), G_LOG_LEVEL_DEBUG, &quot;start_component: Cannot request &quot; &quot;org.freedesktop.IBus.Unikey&quot; &quot; from IBus daemon synchronously.\n&quot;)" data-ref="_M/g_debug">g_debug</a>(<q>"start_component: Cannot request "</q> <a class="macro" href="engine_const.h.html#18" title="&quot;org.freedesktop.IBus.Unikey&quot;" data-ref="_M/UNIKEY_DBUS_NAME">UNIKEY_DBUS_NAME</a> <q>" from IBus daemon synchronously.\n"</q>);</td></tr>
+<tr><th id="69">69</th><td>            <b>goto</b> <a class="lbl" href="#11fail" data-ref="11fail">fail</a>;</td></tr>
+<tr><th id="70">70</th><td>        }</td></tr>
+<tr><th id="71">71</th><td>    }</td></tr>
+<tr><th id="72">72</th><td>    <b>else</b></td></tr>
+<tr><th id="73">73</th><td>    {</td></tr>
+<tr><th id="74">74</th><td>        <b>if</b> (!<a class="ref" href="../../include/ibus-1.0/ibusbus.h.html#ibus_bus_register_component" title='ibus_bus_register_component' data-ref="ibus_bus_register_component">ibus_bus_register_component</a>(<a class="local col4 ref" href="#4bus" title='bus' data-ref="4bus">bus</a>, <a class="local col6 ref" href="#6component" title='component' data-ref="6component">component</a>))</td></tr>
+<tr><th id="75">75</th><td>        {</td></tr>
+<tr><th id="76">76</th><td>            <a class="macro" href="../../include/glib-2.0/glib/gmessages.h.html#343" title="g_log (((gchar*) 0), G_LOG_LEVEL_DEBUG, &quot;start_component:  Cannot register Unikey component to IBus daemon synchronously.\n&quot;)" data-ref="_M/g_debug">g_debug</a>(<q>"start_component:  Cannot register Unikey component to IBus daemon synchronously.\n"</q>);</td></tr>
+<tr><th id="77">77</th><td>            <b>goto</b> <a class="lbl" href="#11fail" data-ref="11fail">fail</a>;</td></tr>
+<tr><th id="78">78</th><td>        }</td></tr>
+<tr><th id="79">79</th><td>    }</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td>    <b>goto</b> <a class="lbl" href="#12check_ok" data-ref="12check_ok">check_ok</a>;</td></tr>
+<tr><th id="82">82</th><td><dfn class="lbl" id="11fail" data-ref="11fail">fail</dfn>:</td></tr>
+<tr><th id="83">83</th><td>    <a class="ref" href="../../include/glib-2.0/gobject/gobject.h.html#g_object_unref" title='g_object_unref' data-ref="g_object_unref">g_object_unref</a>(<a class="local col6 ref" href="#6component" title='component' data-ref="6component">component</a>);</td></tr>
+<tr><th id="84">84</th><td>    <a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<a class="macro" href="../../include/stdlib.h.html#91" title="1" data-ref="_M/EXIT_FAILURE">EXIT_FAILURE</a>);</td></tr>
+<tr><th id="85">85</th><td><dfn class="lbl" id="12check_ok" data-ref="12check_ok">check_ok</dfn>:</td></tr>
+<tr><th id="86">86</th><td>    <a class="ref" href="../../include/glib-2.0/gobject/gobject.h.html#g_object_unref" title='g_object_unref' data-ref="g_object_unref">g_object_unref</a>(<a class="local col6 ref" href="#6component" title='component' data-ref="6component">component</a>);</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td>    <a class="ref" href="engine.h.html#_Z16ibus_unikey_initP8_IBusBus" title='ibus_unikey_init' data-ref="_Z16ibus_unikey_initP8_IBusBus">ibus_unikey_init</a>(<a class="local col4 ref" href="#4bus" title='bus' data-ref="4bus">bus</a>);</td></tr>
+<tr><th id="89">89</th><td>    <a class="ref" href="../../include/ibus-1.0/ibusshare.h.html#ibus_main" title='ibus_main' data-ref="ibus_main">ibus_main</a>();</td></tr>
+<tr><th id="90">90</th><td>    <a class="ref" href="engine.h.html#_Z16ibus_unikey_exitv" title='ibus_unikey_exit' data-ref="_Z16ibus_unikey_exitv">ibus_unikey_exit</a>();</td></tr>
+<tr><th id="91">91</th><td>    <a class="ref" href="../../include/glib-2.0/gobject/gobject.h.html#g_object_unref" title='g_object_unref' data-ref="g_object_unref">g_object_unref</a>(<a class="local col5 ref" href="#5factory" title='factory' data-ref="5factory">factory</a>);</td></tr>
+<tr><th id="92">92</th><td>    <a class="ref" href="../../include/glib-2.0/gobject/gobject.h.html#g_object_unref" title='g_object_unref' data-ref="g_object_unref">g_object_unref</a>(<a class="local col4 ref" href="#4bus" title='bus' data-ref="4bus">bus</a>);</td></tr>
+<tr><th id="93">93</th><td>}</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><em>int</em></td></tr>
+<tr><th id="96">96</th><td><dfn class="decl def" id="main" title='main' data-ref="main">main</dfn>(<a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="local col3 decl" id="13argc" title='argc' data-type='gint' data-ref="13argc">argc</dfn>, <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> **<dfn class="local col4 decl" id="14argv" title='argv' data-type='gchar **' data-ref="14argv">argv</dfn>)</td></tr>
+<tr><th id="97">97</th><td>{</td></tr>
+<tr><th id="98">98</th><td>    <i>// select a locale based on the user choice of the appropriate environment variables</i></td></tr>
+<tr><th id="99">99</th><td>    <a class="ref" href="../../include/locale.h.html#setlocale" title='setlocale' data-ref="setlocale">setlocale</a>(<a class="macro" href="../../include/locale.h.html#41" title="6" data-ref="_M/LC_ALL">LC_ALL</a>, <q>""</q>);</td></tr>
+<tr><th id="100">100</th><td>    <a class="ref" href="../../include/libintl.h.html#bindtextdomain" title='bindtextdomain' data-ref="bindtextdomain">bindtextdomain</a>(<a class="macro" href="../builddir/config.h.html#8" title="&quot;ibus-unikey&quot;" data-ref="_M/GETTEXT_PACKAGE">GETTEXT_PACKAGE</a>, <span class="macro" title="&quot;/usr/local/share/locale&quot;" data-ref="_M/LOCALEDIR">LOCALEDIR</span>);</td></tr>
+<tr><th id="101">101</th><td>    <a class="ref" href="../../include/libintl.h.html#textdomain" title='textdomain' data-ref="textdomain">textdomain</a>(<a class="macro" href="../builddir/config.h.html#8" title="&quot;ibus-unikey&quot;" data-ref="_M/GETTEXT_PACKAGE">GETTEXT_PACKAGE</a>);</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td>    <i>// Parse the command line</i></td></tr>
+<tr><th id="104">104</th><td>    <a class="typedef" href="../../include/glib-2.0/glib/goption.h.html#GOptionContext" title='GOptionContext' data-type='struct _GOptionContext' data-ref="GOptionContext">GOptionContext</a>* <dfn class="local col5 decl" id="15context" title='context' data-type='GOptionContext *' data-ref="15context">context</dfn> = <a class="ref" href="../../include/glib-2.0/glib/goption.h.html#g_option_context_new" title='g_option_context_new' data-ref="g_option_context_new">g_option_context_new</a>(<q>"- ibus unikey engine component"</q>);</td></tr>
+<tr><th id="105">105</th><td>    <a class="ref" href="../../include/glib-2.0/glib/goption.h.html#g_option_context_add_main_entries" title='g_option_context_add_main_entries' data-ref="g_option_context_add_main_entries">g_option_context_add_main_entries</a>(<a class="local col5 ref" href="#15context" title='context' data-ref="15context">context</a>, <a class="tu ref" href="#kEntries" title='kEntries' data-use='r' data-ref="kEntries">kEntries</a>, <q>"ibus-unikey"</q>);</td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td>    <a class="typedef" href="../../include/glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a> *<dfn class="local col6 decl" id="16error" title='error' data-type='GError *' data-ref="16error">error</dfn> = <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="108">108</th><td>    <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="local col7 decl" id="17parse_ok" title='parse_ok' data-type='gboolean' data-ref="17parse_ok">parse_ok</dfn> = <a class="ref" href="../../include/glib-2.0/glib/goption.h.html#g_option_context_parse" title='g_option_context_parse' data-ref="g_option_context_parse">g_option_context_parse</a>(<a class="local col5 ref" href="#15context" title='context' data-ref="15context">context</a>, &amp;<a class="local col3 ref" href="#13argc" title='argc' data-ref="13argc">argc</a>, &amp;<a class="local col4 ref" href="#14argv" title='argv' data-ref="14argv">argv</a>, &amp;<a class="local col6 ref" href="#16error" title='error' data-ref="16error">error</a>);</td></tr>
+<tr><th id="109">109</th><td>    <a class="ref" href="../../include/glib-2.0/glib/goption.h.html#g_option_context_free" title='g_option_context_free' data-ref="g_option_context_free">g_option_context_free</a>(<a class="local col5 ref" href="#15context" title='context' data-ref="15context">context</a>);</td></tr>
+<tr><th id="110">110</th><td>    <b>if</b> (!<a class="local col7 ref" href="#17parse_ok" title='parse_ok' data-ref="17parse_ok">parse_ok</a>) {</td></tr>
+<tr><th id="111">111</th><td>        <a class="ref" href="../../include/glib-2.0/glib/gmessages.h.html#g_print" title='g_print' data-ref="g_print">g_print</a>(<q>"Option parsing failed: %s\n"</q>, <a class="local col6 ref" href="#16error" title='error' data-ref="16error">error</a>-&gt;<a class="ref" href="../../include/glib-2.0/glib/gerror.h.html#_GError::message" title='_GError::message' data-ref="_GError::message">message</a>);</td></tr>
+<tr><th id="112">112</th><td>        <a class="ref" href="../../include/glib-2.0/glib/gerror.h.html#g_error_free" title='g_error_free' data-ref="g_error_free">g_error_free</a>(<a class="local col6 ref" href="#16error" title='error' data-ref="16error">error</a>);</td></tr>
+<tr><th id="113">113</th><td>        <a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<a class="macro" href="../../include/stdlib.h.html#91" title="1" data-ref="_M/EXIT_FAILURE">EXIT_FAILURE</a>);</td></tr>
+<tr><th id="114">114</th><td>    }</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td>    <b>if</b> (<a class="tu ref" href="#kVersion" title='kVersion' data-use='r' data-ref="kVersion">kVersion</a>)</td></tr>
+<tr><th id="117">117</th><td>    {</td></tr>
+<tr><th id="118">118</th><td>        <a class="ref" href="../../include/glib-2.0/glib/gmessages.h.html#g_print" title='g_print' data-ref="g_print">g_print</a>(<a class="macro" href="../builddir/config.h.html#46" title="&quot;ibus-unikey 0.6.2&quot;" data-ref="_M/PACKAGE_STRING">PACKAGE_STRING</a> <q>" (engine component)\n"</q></td></tr>
+<tr><th id="119">119</th><td>            <q>"  Copyright (C) 2009 - 2012 Ubuntu-VN &lt;http://www.ubuntu-vn.org&gt;\n"</q></td></tr>
+<tr><th id="120">120</th><td>            <q>"  Author: Lê Quốc Tuấn &lt;mr.lequoctuan@gmail.com&gt;\n"</q></td></tr>
+<tr><th id="121">121</th><td>            <q>"  Homepage: &lt;http://ibus-unikey.googlecode.com&gt;\n"</q></td></tr>
+<tr><th id="122">122</th><td>            <q>"  License: GNU GPLv3\n"</q></td></tr>
+<tr><th id="123">123</th><td>        );</td></tr>
+<tr><th id="124">124</th><td>        <a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<a class="macro" href="../../include/stdlib.h.html#92" title="0" data-ref="_M/EXIT_SUCCESS">EXIT_SUCCESS</a>);</td></tr>
+<tr><th id="125">125</th><td>    }</td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td>    <a class="tu ref" href="#_ZL15start_componentv" title='start_component' data-use='c' data-ref="_ZL15start_componentv">start_component</a>();</td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td>    <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="130">130</th><td>}</td></tr>
+<tr><th id="131">131</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2018-Nov-16</em> from project unikey revision <em>0.6.1</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

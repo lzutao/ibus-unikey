@@ -1,0 +1,3 @@
+<dec f='include/atk-1.0/atk/atkhyperlink.h' l='79' type='void (*)(AtkHyperlink *)'/>
+<offset>1600</offset>
+<doc f='include/atk-1.0/atk/atkhyperlink.h' l='78'>/* Signals */</doc>

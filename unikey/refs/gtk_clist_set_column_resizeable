@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='528' type='void gtk_clist_set_column_resizeable(GtkCList * clist, gint column, gboolean resizeable)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='527'>/* enable/disable column resize operations by mouse */</doc>

@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusregistry.h' l='96' type='IBusRegistry * ibus_registry_new()'/>
+<doc f='include/ibus-1.0/ibusregistry.h' l='89'>/**
+ * ibus_registry_new:
+ *
+ * Creates a new #IBusRegistry
+ *
+ * Returns: A newly allocated #IBusRegistry.
+ */</doc>

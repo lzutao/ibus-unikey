@@ -1,0 +1,10 @@
+<dec f='include/atk-1.0/atk/atkversion.h' l='42'/>
+<doc f='include/atk-1.0/atk/atkversion.h' l='33'>/**
+ * ATK_MAJOR_VERSION:
+ *
+ * Like atk_get_major_version(), but from the headers used at
+ * application compile time, rather than from the library linked
+ * against at application run time.
+ *
+ * Since: 2.7.4
+ */</doc>

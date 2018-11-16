@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrange.h' l='189' type='gboolean gtk_range_get_show_fill_level(GtkRange * range)'/>

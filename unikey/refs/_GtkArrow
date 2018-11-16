@@ -1,0 +1,5 @@
+<def f='include/gtk-2.0/gtk/gtkarrow.h' l='52' ll='58'/>
+<size>120</size>
+<mbr r='_GtkArrow::misc' o='0' t='GtkMisc'/>
+<mbr r='_GtkArrow::arrow_type' o='896' t='gint16'/>
+<mbr r='_GtkArrow::shadow_type' o='912' t='gint16'/>

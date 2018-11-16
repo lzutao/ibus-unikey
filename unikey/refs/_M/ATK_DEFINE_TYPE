@@ -1,0 +1,15 @@
+<dec f='include/atk-1.0/atk/atkutil.h' l='248'/>
+<doc f='include/atk-1.0/atk/atkutil.h' l='234'>/**
+ * ATK_DEFINE_TYPE:
+ * @TN: The name of the new type, in Camel case.
+ * @t_n: The name of the new type, in lowercase, with words separated by &apos;_&apos;.
+ * @T_P: The #GType of the parent type.
+ *
+ * A convenience macro for type ATK implementations, which declares a class
+ * initialization function, an instance initialization function (see #GTypeInfo
+ * for information about these) and a static variable named
+ * @t_n _parent_class pointing to the parent class. Furthermore, it
+ * defines a _get_type() function.
+ *
+ * Since: 1.22
+ */</doc>

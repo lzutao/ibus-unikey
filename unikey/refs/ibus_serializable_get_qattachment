@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusserializable.h' l='224' type='GVariant * ibus_serializable_get_qattachment(IBusSerializable * serializable, GQuark key)'/>
+<doc f='include/ibus-1.0/ibusserializable.h' l='213'>/**
+ * ibus_serializable_get_qattachment:
+ * @serializable: An #IBusSerializable.
+ * @key: String formatted key for indexing value.
+ *
+ * Gets a value from attachment of an #IBusSerializable.
+ *
+ * Returns: The attached value; or %NULL if fail to retrieve the value.
+ *
+ * See also: ibus_serializable_set_attachment().
+ */</doc>

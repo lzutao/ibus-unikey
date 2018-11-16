@@ -1,0 +1,5 @@
+<def f='include/ibus-1.0/ibusproxy.h' l='88' ll='96'/>
+<size>472</size>
+<mbr r='_IBusProxyClass::parent' o='0' t='GDBusProxyClass'/>
+<mbr r='_IBusProxyClass::destroy' o='3264' t='void (*)(IBusProxy *)'/>
+<mbr r='_IBusProxyClass::pdummy' o='3328' t='gpointer [7]'/>

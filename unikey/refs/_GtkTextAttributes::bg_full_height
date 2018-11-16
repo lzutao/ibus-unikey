@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtktexttag.h' l='261' type='guint'/>
+<offset>1217</offset>
+<doc f='include/gtk-2.0/gtk/gtktexttag.h' l='258'>/* Background is fit to full line height rather than
+   * baseline +/- ascent/descent (font height)
+   */</doc>

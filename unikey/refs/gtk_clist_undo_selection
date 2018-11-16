@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='728' type='void gtk_clist_undo_selection(GtkCList * clist)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='727'>/* undo the last select/unselect operation */</doc>

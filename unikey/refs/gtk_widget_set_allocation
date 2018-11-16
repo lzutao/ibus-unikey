@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1015' type='void gtk_widget_set_allocation(GtkWidget * widget, const GtkAllocation * allocation)'/>

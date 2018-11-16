@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='410' type='void gtk_ctree_set_indent(GtkCTree * ctree, gint indent)'/>
+<doc f='include/gtk-2.0/gtk/gtkctree.h' l='406'>/***********************************************************
+ *             GtkCTree specific functions                 *
+ ***********************************************************/</doc>

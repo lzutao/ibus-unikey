@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkpixbuf.h' l='93' type='GdkPixbuf * gdk_pixbuf_get_from_drawable(GdkPixbuf * dest, GdkDrawable * src, GdkColormap * cmap, int src_x, int src_y, int dest_x, int dest_y, int width, int height)'/>
+<doc f='include/gtk-2.0/gdk/gdkpixbuf.h' l='92'>/* Fetching a region from a drawable */</doc>

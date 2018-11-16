@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='550' type='guint8'/>
+<offset>272</offset>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='547'>/* The state of the widget. There are actually only
+   *  5 widget states (defined in &quot;gtkenums.h&quot;).
+   */</doc>

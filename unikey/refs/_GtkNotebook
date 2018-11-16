@@ -1,0 +1,28 @@
+<def f='include/gtk-2.0/gtk/gtknotebook.h' l='61' ll='99'/>
+<size>176</size>
+<mbr r='_GtkNotebook::container' o='0' t='GtkContainer'/>
+<mbr r='_GtkNotebook::cur_page' o='896' t='GtkNotebookPage *'/>
+<mbr r='_GtkNotebook::children' o='960' t='GList *'/>
+<mbr r='_GtkNotebook::first_tab' o='1024' t='GList *'/>
+<mbr r='_GtkNotebook::focus_tab' o='1088' t='GList *'/>
+<mbr r='_GtkNotebook::menu' o='1152' t='GtkWidget *'/>
+<mbr r='_GtkNotebook::event_window' o='1216' t='GdkWindow *'/>
+<mbr r='_GtkNotebook::timer' o='1280' t='guint32'/>
+<mbr r='_GtkNotebook::tab_hborder' o='1312' t='guint16'/>
+<mbr r='_GtkNotebook::tab_vborder' o='1328' t='guint16'/>
+<mbr r='_GtkNotebook::show_tabs' o='1344' t='guint'/>
+<mbr r='_GtkNotebook::homogeneous' o='1345' t='guint'/>
+<mbr r='_GtkNotebook::show_border' o='1346' t='guint'/>
+<mbr r='_GtkNotebook::tab_pos' o='1347' t='guint'/>
+<mbr r='_GtkNotebook::scrollable' o='1349' t='guint'/>
+<mbr r='_GtkNotebook::in_child' o='1350' t='guint'/>
+<mbr r='_GtkNotebook::click_child' o='1353' t='guint'/>
+<mbr r='_GtkNotebook::button' o='1356' t='guint'/>
+<mbr r='_GtkNotebook::need_timer' o='1358' t='guint'/>
+<mbr r='_GtkNotebook::child_has_focus' o='1359' t='guint'/>
+<mbr r='_GtkNotebook::have_visible_child' o='1360' t='guint'/>
+<mbr r='_GtkNotebook::focus_out' o='1361' t='guint'/>
+<mbr r='_GtkNotebook::has_before_previous' o='1362' t='guint'/>
+<mbr r='_GtkNotebook::has_before_next' o='1363' t='guint'/>
+<mbr r='_GtkNotebook::has_after_previous' o='1364' t='guint'/>
+<mbr r='_GtkNotebook::has_after_next' o='1365' t='guint'/>

@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusserializable.h' l='196' type='IBusSerializable * ibus_serializable_new()'/>
+<doc f='include/ibus-1.0/ibusserializable.h' l='189'>/**
+ * ibus_serializable_new:
+ *
+ * Creates a new instance of an #IBusSerializable.
+ *
+ * Returns: a new instance of #IBusSerializable.
+ */</doc>

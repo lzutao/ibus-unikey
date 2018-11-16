@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkhandlebox.h' l='73' type='gint'/>
+<offset>1152</offset>
+<doc f='include/gtk-2.0/gtk/gtkhandlebox.h' l='71'>/* Variables used during a drag
+   */</doc>
+<doc f='include/gtk-2.0/gtk/gtkhandlebox.h' l='73'>/* Offset between root relative coords */</doc>

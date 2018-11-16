@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkdialog.h' l='171' type='void gtk_dialog_response(GtkDialog * dialog, gint response_id)'/>
+<doc f='include/gtk-2.0/gtk/gtkdialog.h' l='170'>/* Emit response signal */</doc>

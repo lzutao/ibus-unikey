@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gdk/gdkinput.h' l='118'/>
+<use f='include/gtk-2.0/gdk/gdkinput.h' l='123' u='c'/>
+<doc f='include/gtk-2.0/gdk/gdkinput.h' l='115'>/* We don&apos;t allocate each coordinate this big, but we use it to
+ * be ANSI compliant and avoid accessing past the defined limits.
+ */</doc>

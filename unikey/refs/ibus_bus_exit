@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='497' type='gboolean ibus_bus_exit(IBusBus * bus, gboolean restart)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='488'>/**
+ * ibus_bus_exit:
+ * @bus: An #IBusBus.
+ * @restart: Whether restarting the ibus.
+ *
+ * Exit or restart ibus-daemon synchronously.
+ *
+ * Returns: %TRUE if the &quot;Exit&quot; call is suceeded, %FALSE otherwise.
+ */</doc>

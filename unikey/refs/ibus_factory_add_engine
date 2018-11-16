@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusfactory.h' l='170' type='void ibus_factory_add_engine(IBusFactory * factory, const gchar * engine_name, GType engine_type)'/>
+<doc f='include/ibus-1.0/ibusfactory.h' l='162'>/**
+ * ibus_factory_add_engine:
+ * @factory: An IBusFactory.
+ * @engine_name: Name of an engine.
+ * @engine_type: GType of an engine.
+ *
+ * Add an engine to the factory.
+ */</doc>
+<use f='unikey/src/main.cpp' l='61' u='c' c='_ZL15start_componentv'/>

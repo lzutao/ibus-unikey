@@ -1,0 +1,2 @@
+<dec f='include/glib-2.0/gobject/gobject.h' l='492' type='gpointer g_object_ref(gpointer object)'/>
+<use f='include/glib-2.0/gobject/gobject.h' l='725' u='c' c='_ZL12g_set_objectPP8_GObjectS0_'/>

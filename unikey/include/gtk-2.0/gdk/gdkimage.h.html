@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gdkimage.h source code [include/gtk-2.0/gdk/gdkimage.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gdk/gdkimage.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gdk</a>/<a href='gdkimage.h.html'>gdkimage.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GDK - The GIMP Drawing Kit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><i>/*</i></td></tr>
+<tr><th id="21">21</th><td><i> * Modified by the GTK+ Team and others 1997-2000.  See the AUTHORS</i></td></tr>
+<tr><th id="22">22</th><td><i> * file for a list of people on the GTK+ Team.  See the ChangeLog</i></td></tr>
+<tr><th id="23">23</th><td><i> * files for a list of changes.  These files are distributed with</i></td></tr>
+<tr><th id="24">24</th><td><i> * GTK+ at ftp://ftp.gtk.org/pub/gtk/.</i></td></tr>
+<tr><th id="25">25</th><td><i> */</i></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/__GDK_IMAGE_H__">__GDK_IMAGE_H__</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/__GDK_IMAGE_H__" data-ref="_M/__GDK_IMAGE_H__">__GDK_IMAGE_H__</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><u>#<span data-ppcond="30">if</span> defined(<span class="macro" data-ref="_M/GTK_DISABLE_SINGLE_INCLUDES">GTK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gdk.h.html#30" data-ref="_M/__GDK_H_INSIDE__">__GDK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GDK_COMPILATION">GDK_COMPILATION</span>)</u></td></tr>
+<tr><th id="31">31</th><td><u>#error "Only &lt;gdk/gdk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="32">32</th><td><u>#<span data-ppcond="30">endif</span></u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><u>#include <a href="gdktypes.h.html">&lt;gdk/gdktypes.h&gt;</a></u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><i>/* Types of images.</i></td></tr>
+<tr><th id="39">39</th><td><i> *   Normal: Normal X image type. These are slow as they involve passing</i></td></tr>
+<tr><th id="40">40</th><td><i> *	     the entire image through the X connection each time a draw</i></td></tr>
+<tr><th id="41">41</th><td><i> *	     request is required. On Win32, a bitmap.</i></td></tr>
+<tr><th id="42">42</th><td><i> *   Shared: Shared memory X image type. These are fast as the X server</i></td></tr>
+<tr><th id="43">43</th><td><i> *	     and the program actually use the same piece of memory. They</i></td></tr>
+<tr><th id="44">44</th><td><i> *	     should be used with care though as there is the possibility</i></td></tr>
+<tr><th id="45">45</th><td><i> *	     for both the X server and the program to be reading/writing</i></td></tr>
+<tr><th id="46">46</th><td><i> *	     the image simultaneously and producing undesired results.</i></td></tr>
+<tr><th id="47">47</th><td><i> *	     On Win32, also a bitmap.</i></td></tr>
+<tr><th id="48">48</th><td><i> */</i></td></tr>
+<tr><th id="49">49</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="50">50</th><td>{</td></tr>
+<tr><th id="51">51</th><td>  <dfn class="enum" id="GDK_IMAGE_NORMAL" title='GDK_IMAGE_NORMAL' data-ref="GDK_IMAGE_NORMAL">GDK_IMAGE_NORMAL</dfn>,</td></tr>
+<tr><th id="52">52</th><td>  <dfn class="enum" id="GDK_IMAGE_SHARED" title='GDK_IMAGE_SHARED' data-ref="GDK_IMAGE_SHARED">GDK_IMAGE_SHARED</dfn>,</td></tr>
+<tr><th id="53">53</th><td>  <dfn class="enum" id="GDK_IMAGE_FASTEST" title='GDK_IMAGE_FASTEST' data-ref="GDK_IMAGE_FASTEST">GDK_IMAGE_FASTEST</dfn></td></tr>
+<tr><th id="54">54</th><td>} <dfn class="typedef" id="GdkImageType" title='GdkImageType' data-type='enum GdkImageType' data-ref="GdkImageType">GdkImageType</dfn>;</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkImageClass" title='_GdkImageClass' data-ref="_GdkImageClass">_GdkImageClass</a> <dfn class="typedef" id="GdkImageClass" title='GdkImageClass' data-type='struct _GdkImageClass' data-ref="GdkImageClass">GdkImageClass</dfn>;</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><u>#define <dfn class="macro" id="_M/GDK_TYPE_IMAGE" data-ref="_M/GDK_TYPE_IMAGE">GDK_TYPE_IMAGE</dfn>              (gdk_image_get_type ())</u></td></tr>
+<tr><th id="59">59</th><td><u>#define <dfn class="macro" id="_M/GDK_IMAGE" data-ref="_M/GDK_IMAGE">GDK_IMAGE</dfn>(object)           (G_TYPE_CHECK_INSTANCE_CAST ((object), GDK_TYPE_IMAGE, GdkImage))</u></td></tr>
+<tr><th id="60">60</th><td><u>#define <dfn class="macro" id="_M/GDK_IMAGE_CLASS" data-ref="_M/GDK_IMAGE_CLASS">GDK_IMAGE_CLASS</dfn>(klass)      (G_TYPE_CHECK_CLASS_CAST ((klass), GDK_TYPE_IMAGE, GdkImageClass))</u></td></tr>
+<tr><th id="61">61</th><td><u>#define <dfn class="macro" id="_M/GDK_IS_IMAGE" data-ref="_M/GDK_IS_IMAGE">GDK_IS_IMAGE</dfn>(object)        (G_TYPE_CHECK_INSTANCE_TYPE ((object), GDK_TYPE_IMAGE))</u></td></tr>
+<tr><th id="62">62</th><td><u>#define <dfn class="macro" id="_M/GDK_IS_IMAGE_CLASS" data-ref="_M/GDK_IS_IMAGE_CLASS">GDK_IS_IMAGE_CLASS</dfn>(klass)   (G_TYPE_CHECK_CLASS_TYPE ((klass), GDK_TYPE_IMAGE))</u></td></tr>
+<tr><th id="63">63</th><td><u>#define <dfn class="macro" id="_M/GDK_IMAGE_GET_CLASS" data-ref="_M/GDK_IMAGE_GET_CLASS">GDK_IMAGE_GET_CLASS</dfn>(obj)    (G_TYPE_INSTANCE_GET_CLASS ((obj), GDK_TYPE_IMAGE, GdkImageClass))</u></td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><b>struct</b> <dfn class="type def" id="_GdkImage" title='_GdkImage' data-ref="_GdkImage">_GdkImage</dfn></td></tr>
+<tr><th id="66">66</th><td>{</td></tr>
+<tr><th id="67">67</th><td>  <a class="typedef" href="../../glib-2.0/gobject/gobject.h.html#GObject" title='GObject' data-type='struct _GObject' data-ref="GObject">GObject</a> <dfn class="decl" id="_GdkImage::parent_instance" title='_GdkImage::parent_instance' data-ref="_GdkImage::parent_instance">parent_instance</dfn>;</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td>  <i>/*&lt; public &gt;*/</i></td></tr>
+<tr><th id="70">70</th><td>  </td></tr>
+<tr><th id="71">71</th><td>  <a class="typedef" href="#GdkImageType" title='GdkImageType' data-type='enum GdkImageType' data-ref="GdkImageType">GdkImageType</a>	<span class="macro" title="type" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkImage::type" title='_GdkImage::type' data-ref="_GdkImage::type">type</dfn>); <i>/* read only. */</i></td></tr>
+<tr><th id="72">72</th><td>  <a class="typedef" href="gdktypes.h.html#GdkVisual" title='GdkVisual' data-type='struct _GdkVisual' data-ref="GdkVisual">GdkVisual</a>    *<span class="macro" title="visual" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkImage::visual" title='_GdkImage::visual' data-ref="_GdkImage::visual">visual</dfn>);	    <i>/* read only. visual used to create the image */</i></td></tr>
+<tr><th id="73">73</th><td>  <a class="typedef" href="gdktypes.h.html#GdkByteOrder" title='GdkByteOrder' data-type='enum GdkByteOrder' data-ref="GdkByteOrder">GdkByteOrder</a>	<span class="macro" title="byte_order" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkImage::byte_order" title='_GdkImage::byte_order' data-ref="_GdkImage::byte_order">byte_order</dfn>); <i>/* read only. */</i></td></tr>
+<tr><th id="74">74</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>		<span class="macro" title="width" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkImage::width" title='_GdkImage::width' data-ref="_GdkImage::width">width</dfn>);  <i>/* read only. */</i></td></tr>
+<tr><th id="75">75</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>		<span class="macro" title="height" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkImage::height" title='_GdkImage::height' data-ref="_GdkImage::height">height</dfn>); <i>/* read only. */</i></td></tr>
+<tr><th id="76">76</th><td>  <span class='typedef' title='guint16' data-type='unsigned short' data-ref="guint16">guint16</span>	<span class="macro" title="depth" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkImage::depth" title='_GdkImage::depth' data-ref="_GdkImage::depth">depth</dfn>);  <i>/* read only. */</i></td></tr>
+<tr><th id="77">77</th><td>  <span class='typedef' title='guint16' data-type='unsigned short' data-ref="guint16">guint16</span>	<span class="macro" title="bpp" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkImage::bpp" title='_GdkImage::bpp' data-ref="_GdkImage::bpp">bpp</dfn>);    <i>/* read only. bytes per pixel */</i></td></tr>
+<tr><th id="78">78</th><td>  <span class='typedef' title='guint16' data-type='unsigned short' data-ref="guint16">guint16</span>	<span class="macro" title="bpl" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkImage::bpl" title='_GdkImage::bpl' data-ref="_GdkImage::bpl">bpl</dfn>);    <i>/* read only. bytes per line */</i></td></tr>
+<tr><th id="79">79</th><td>  <span class='typedef' title='guint16' data-type='unsigned short' data-ref="guint16">guint16</span>       <span class="macro" title="bits_per_pixel" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkImage::bits_per_pixel" title='_GdkImage::bits_per_pixel' data-ref="_GdkImage::bits_per_pixel">bits_per_pixel</dfn>); <i>/* read only. bits per pixel */</i></td></tr>
+<tr><th id="80">80</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>	<span class="macro" title="mem" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkImage::mem" title='_GdkImage::mem' data-ref="_GdkImage::mem">mem</dfn>);</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td>  <a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a>  *<span class="macro" title="colormap" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkImage::colormap" title='_GdkImage::colormap' data-ref="_GdkImage::colormap">colormap</dfn>); <i>/* read only. */</i></td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="85">85</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <span class="macro" title="windowing_data" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkImage::windowing_data" title='_GdkImage::windowing_data' data-ref="_GdkImage::windowing_data">windowing_data</dfn>); <i>/* read only. */</i></td></tr>
+<tr><th id="86">86</th><td>};</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td><b>struct</b> <dfn class="type def" id="_GdkImageClass" title='_GdkImageClass' data-ref="_GdkImageClass">_GdkImageClass</dfn></td></tr>
+<tr><th id="89">89</th><td>{</td></tr>
+<tr><th id="90">90</th><td>  <a class="typedef" href="../../glib-2.0/gobject/gobject.h.html#GObjectClass" title='GObjectClass' data-type='struct _GObjectClass' data-ref="GObjectClass">GObjectClass</a> <dfn class="decl" id="_GdkImageClass::parent_class" title='_GdkImageClass::parent_class' data-ref="_GdkImageClass::parent_class">parent_class</dfn>;</td></tr>
+<tr><th id="91">91</th><td>};</td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>     <dfn class="decl" id="gdk_image_get_type" title='gdk_image_get_type' data-ref="gdk_image_get_type">gdk_image_get_type</dfn>   (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><u>#<span data-ppcond="95">ifndef</span> <span class="macro" data-ref="_M/GDK_DISABLE_DEPRECATED">GDK_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="96">96</th><td><a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a>*  <dfn class="decl" id="gdk_image_new" title='gdk_image_new' data-ref="gdk_image_new">gdk_image_new</dfn>       (<a class="typedef" href="#GdkImageType" title='GdkImageType' data-type='enum GdkImageType' data-ref="GdkImageType">GdkImageType</a>  <dfn class="local col0 decl" id="14660type" title='type' data-type='GdkImageType' data-ref="14660type">type</dfn>,</td></tr>
+<tr><th id="97">97</th><td>				<a class="typedef" href="gdktypes.h.html#GdkVisual" title='GdkVisual' data-type='struct _GdkVisual' data-ref="GdkVisual">GdkVisual</a>    *<dfn class="local col1 decl" id="14661visual" title='visual' data-type='GdkVisual *' data-ref="14661visual">visual</dfn>,</td></tr>
+<tr><th id="98">98</th><td>				<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>	      <dfn class="local col2 decl" id="14662width" title='width' data-type='gint' data-ref="14662width">width</dfn>,</td></tr>
+<tr><th id="99">99</th><td>				<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>	      <dfn class="local col3 decl" id="14663height" title='height' data-type='gint' data-ref="14663height">height</dfn>);</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td><a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a>*  <dfn class="decl" id="gdk_image_get" title='gdk_image_get' data-ref="gdk_image_get">gdk_image_get</dfn>       (<a class="typedef" href="gdktypes.h.html#GdkDrawable" title='GdkDrawable' data-type='struct _GdkDrawable' data-ref="GdkDrawable">GdkDrawable</a>  *<dfn class="local col4 decl" id="14664drawable" title='drawable' data-type='GdkDrawable *' data-ref="14664drawable">drawable</dfn>,</td></tr>
+<tr><th id="102">102</th><td>				<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>	      <dfn class="local col5 decl" id="14665x" title='x' data-type='gint' data-ref="14665x">x</dfn>,</td></tr>
+<tr><th id="103">103</th><td>				<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>	      <dfn class="local col6 decl" id="14666y" title='y' data-type='gint' data-ref="14666y">y</dfn>,</td></tr>
+<tr><th id="104">104</th><td>				<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>	      <dfn class="local col7 decl" id="14667width" title='width' data-type='gint' data-ref="14667width">width</dfn>,</td></tr>
+<tr><th id="105">105</th><td>				<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>	      <dfn class="local col8 decl" id="14668height" title='height' data-type='gint' data-ref="14668height">height</dfn>);</td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a> * <dfn class="decl" id="gdk_image_ref" title='gdk_image_ref' data-ref="gdk_image_ref">gdk_image_ref</dfn>       (<a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a>     *<dfn class="local col9 decl" id="14669image" title='image' data-type='GdkImage *' data-ref="14669image">image</dfn>);</td></tr>
+<tr><th id="108">108</th><td><em>void</em>       <dfn class="decl" id="gdk_image_unref" title='gdk_image_unref' data-ref="gdk_image_unref">gdk_image_unref</dfn>     (<a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a>     *<dfn class="local col0 decl" id="14670image" title='image' data-type='GdkImage *' data-ref="14670image">image</dfn>);</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><em>void</em>	   <dfn class="decl" id="gdk_image_put_pixel" title='gdk_image_put_pixel' data-ref="gdk_image_put_pixel">gdk_image_put_pixel</dfn> (<a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a>     *<dfn class="local col1 decl" id="14671image" title='image' data-type='GdkImage *' data-ref="14671image">image</dfn>,</td></tr>
+<tr><th id="111">111</th><td>				<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>	      <dfn class="local col2 decl" id="14672x" title='x' data-type='gint' data-ref="14672x">x</dfn>,</td></tr>
+<tr><th id="112">112</th><td>				<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>	      <dfn class="local col3 decl" id="14673y" title='y' data-type='gint' data-ref="14673y">y</dfn>,</td></tr>
+<tr><th id="113">113</th><td>				<span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span>	      <dfn class="local col4 decl" id="14674pixel" title='pixel' data-type='guint32' data-ref="14674pixel">pixel</dfn>);</td></tr>
+<tr><th id="114">114</th><td><span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span>	   <dfn class="decl" id="gdk_image_get_pixel" title='gdk_image_get_pixel' data-ref="gdk_image_get_pixel">gdk_image_get_pixel</dfn> (<a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a>     *<dfn class="local col5 decl" id="14675image" title='image' data-type='GdkImage *' data-ref="14675image">image</dfn>,</td></tr>
+<tr><th id="115">115</th><td>				<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>	      <dfn class="local col6 decl" id="14676x" title='x' data-type='gint' data-ref="14676x">x</dfn>,</td></tr>
+<tr><th id="116">116</th><td>				<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>	      <dfn class="local col7 decl" id="14677y" title='y' data-type='gint' data-ref="14677y">y</dfn>);</td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><em>void</em>       <dfn class="decl" id="gdk_image_set_colormap" title='gdk_image_set_colormap' data-ref="gdk_image_set_colormap">gdk_image_set_colormap</dfn> (<a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a>    *<dfn class="local col8 decl" id="14678image" title='image' data-type='GdkImage *' data-ref="14678image">image</dfn>,</td></tr>
+<tr><th id="119">119</th><td>                                   <a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a> *<dfn class="local col9 decl" id="14679colormap" title='colormap' data-type='GdkColormap *' data-ref="14679colormap">colormap</dfn>);</td></tr>
+<tr><th id="120">120</th><td><a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a>* <dfn class="decl" id="gdk_image_get_colormap" title='gdk_image_get_colormap' data-ref="gdk_image_get_colormap">gdk_image_get_colormap</dfn> (<a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a>    *<dfn class="local col0 decl" id="14680image" title='image' data-type='GdkImage *' data-ref="14680image">image</dfn>);</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td><a class="typedef" href="#GdkImageType" title='GdkImageType' data-type='enum GdkImageType' data-ref="GdkImageType">GdkImageType</a>  <dfn class="decl" id="gdk_image_get_image_type" title='gdk_image_get_image_type' data-ref="gdk_image_get_image_type">gdk_image_get_image_type</dfn>     (<a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a> *<dfn class="local col1 decl" id="14681image" title='image' data-type='GdkImage *' data-ref="14681image">image</dfn>);</td></tr>
+<tr><th id="123">123</th><td><a class="typedef" href="gdktypes.h.html#GdkVisual" title='GdkVisual' data-type='struct _GdkVisual' data-ref="GdkVisual">GdkVisual</a>    *<dfn class="decl" id="gdk_image_get_visual" title='gdk_image_get_visual' data-ref="gdk_image_get_visual">gdk_image_get_visual</dfn>         (<a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a> *<dfn class="local col2 decl" id="14682image" title='image' data-type='GdkImage *' data-ref="14682image">image</dfn>);</td></tr>
+<tr><th id="124">124</th><td><a class="typedef" href="gdktypes.h.html#GdkByteOrder" title='GdkByteOrder' data-type='enum GdkByteOrder' data-ref="GdkByteOrder">GdkByteOrder</a>  <dfn class="decl" id="gdk_image_get_byte_order" title='gdk_image_get_byte_order' data-ref="gdk_image_get_byte_order">gdk_image_get_byte_order</dfn>     (<a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a> *<dfn class="local col3 decl" id="14683image" title='image' data-type='GdkImage *' data-ref="14683image">image</dfn>);</td></tr>
+<tr><th id="125">125</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>          <dfn class="decl" id="gdk_image_get_width" title='gdk_image_get_width' data-ref="gdk_image_get_width">gdk_image_get_width</dfn>          (<a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a> *<dfn class="local col4 decl" id="14684image" title='image' data-type='GdkImage *' data-ref="14684image">image</dfn>);</td></tr>
+<tr><th id="126">126</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>          <dfn class="decl" id="gdk_image_get_height" title='gdk_image_get_height' data-ref="gdk_image_get_height">gdk_image_get_height</dfn>         (<a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a> *<dfn class="local col5 decl" id="14685image" title='image' data-type='GdkImage *' data-ref="14685image">image</dfn>);</td></tr>
+<tr><th id="127">127</th><td><span class='typedef' title='guint16' data-type='unsigned short' data-ref="guint16">guint16</span>       <dfn class="decl" id="gdk_image_get_depth" title='gdk_image_get_depth' data-ref="gdk_image_get_depth">gdk_image_get_depth</dfn>          (<a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a> *<dfn class="local col6 decl" id="14686image" title='image' data-type='GdkImage *' data-ref="14686image">image</dfn>);</td></tr>
+<tr><th id="128">128</th><td><span class='typedef' title='guint16' data-type='unsigned short' data-ref="guint16">guint16</span>       <dfn class="decl" id="gdk_image_get_bytes_per_pixel" title='gdk_image_get_bytes_per_pixel' data-ref="gdk_image_get_bytes_per_pixel">gdk_image_get_bytes_per_pixel</dfn>(<a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a> *<dfn class="local col7 decl" id="14687image" title='image' data-type='GdkImage *' data-ref="14687image">image</dfn>);</td></tr>
+<tr><th id="129">129</th><td><span class='typedef' title='guint16' data-type='unsigned short' data-ref="guint16">guint16</span>       <dfn class="decl" id="gdk_image_get_bytes_per_line" title='gdk_image_get_bytes_per_line' data-ref="gdk_image_get_bytes_per_line">gdk_image_get_bytes_per_line</dfn> (<a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a> *<dfn class="local col8 decl" id="14688image" title='image' data-type='GdkImage *' data-ref="14688image">image</dfn>);</td></tr>
+<tr><th id="130">130</th><td><span class='typedef' title='guint16' data-type='unsigned short' data-ref="guint16">guint16</span>       <dfn class="decl" id="gdk_image_get_bits_per_pixel" title='gdk_image_get_bits_per_pixel' data-ref="gdk_image_get_bits_per_pixel">gdk_image_get_bits_per_pixel</dfn> (<a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a> *<dfn class="local col9 decl" id="14689image" title='image' data-type='GdkImage *' data-ref="14689image">image</dfn>);</td></tr>
+<tr><th id="131">131</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>      <dfn class="decl" id="gdk_image_get_pixels" title='gdk_image_get_pixels' data-ref="gdk_image_get_pixels">gdk_image_get_pixels</dfn>         (<a class="typedef" href="gdktypes.h.html#GdkImage" title='GdkImage' data-type='struct _GdkImage' data-ref="GdkImage">GdkImage</a> *<dfn class="local col0 decl" id="14690image" title='image' data-type='GdkImage *' data-ref="14690image">image</dfn>);</td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td><u>#<span data-ppcond="133">ifdef</span> <span class="macro" data-ref="_M/GDK_ENABLE_BROKEN">GDK_ENABLE_BROKEN</span></u></td></tr>
+<tr><th id="134">134</th><td>GdkImage* gdk_image_new_bitmap (GdkVisual     *visual,</td></tr>
+<tr><th id="135">135</th><td>				gpointer      data,</td></tr>
+<tr><th id="136">136</th><td>				gint          width,</td></tr>
+<tr><th id="137">137</th><td>				gint          height);</td></tr>
+<tr><th id="138">138</th><td><u>#<span data-ppcond="133">endif</span> /* GDK_ENABLE_BROKEN */</u></td></tr>
+<tr><th id="139">139</th><td></td></tr>
+<tr><th id="140">140</th><td><u>#define <dfn class="macro" id="_M/gdk_image_destroy" data-ref="_M/gdk_image_destroy">gdk_image_destroy</dfn>              g_object_unref</u></td></tr>
+<tr><th id="141">141</th><td><u>#<span data-ppcond="95">endif</span> /* GDK_DISABLE_DEPRECATED */</u></td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td><u>#<span data-ppcond="27">endif</span> /* __GDK_IMAGE_H__ */</u></td></tr>
+<tr><th id="146">146</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtklabel.h' l='167' type='gboolean gtk_label_get_selection_bounds(GtkLabel * label, gint * start, gint * end)'/>

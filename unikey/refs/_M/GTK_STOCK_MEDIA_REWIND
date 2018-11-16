@@ -1,0 +1,11 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='623'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='613'>/**
+ * GTK_STOCK_MEDIA_REWIND:
+ *
+ * The &quot;Media Rewind&quot; item.
+ * &lt;inlinegraphic fileref=&quot;media-seek-backward-ltr.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ * RTL variant
+ * &lt;inlinegraphic fileref=&quot;media-seek-backward-rtl.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ *
+ * Since: 2.6
+ */</doc>

@@ -1,0 +1,6 @@
+<dec f='include/glib-2.0/glib/gerror.h' l='67' type='void g_error_free(GError * error)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='47' u='c' c='_ZL27glib_autoptr_cleanup_GErrorPP7_GError'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='47' u='r' c='_ZL31glib_listautoptr_cleanup_GErrorPP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='47' u='r' c='_ZL32glib_slistautoptr_cleanup_GErrorPP7_GSList'/>
+<use f='unikey/setup/setup.cpp' l='36' u='c' c='main'/>
+<use f='unikey/src/main.cpp' l='112' u='c' c='main'/>

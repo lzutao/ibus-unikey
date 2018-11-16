@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusfactory.h' l='183' type='IBusEngine * ibus_factory_create_engine(IBusFactory * factory, const gchar * engine_name)'/>
+<doc f='include/ibus-1.0/ibusfactory.h' l='174'>/**
+ * ibus_factory_create_engine:
+ * @factory: An #IBusFactory.
+ * @engine_name: Name of an engine.
+ *
+ * Creates an #IBusEngine with @engine_name.
+ *
+ * Returns: (transfer full): #IBusEngine with @engine_name.
+ */</doc>

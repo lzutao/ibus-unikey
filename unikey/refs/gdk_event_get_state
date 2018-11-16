@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkevents.h' l='532' type='gboolean gdk_event_get_state(const GdkEvent * event, GdkModifierType * state)'/>

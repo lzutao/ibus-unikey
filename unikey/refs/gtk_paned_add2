@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkpaned.h' l='112' type='void gtk_paned_add2(GtkPaned * paned, GtkWidget * child)'/>

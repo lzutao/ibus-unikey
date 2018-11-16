@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='1055' type='gboolean ibus_bus_set_global_engine(IBusBus * bus, const gchar * global_engine)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='1046'>/**
+ * ibus_bus_set_global_engine:
+ * @bus: An #IBusBus.
+ * @global_engine: A new engine name.
+ *
+ * Set current global engine synchronously.
+ *
+ * Returns: %TRUE if the global engine was set successfully.
+ */</doc>

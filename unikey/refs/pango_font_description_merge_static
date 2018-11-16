@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-font.h' l='291' type='void pango_font_description_merge_static(PangoFontDescription * desc, const PangoFontDescription * desc_to_merge, gboolean replace_existing)'/>

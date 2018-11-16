@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkaboutdialog.h' l='94' type='void gtk_about_dialog_set_comments(GtkAboutDialog * about, const gchar * comments)'/>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gdkspawn.h source code [include/gtk-2.0/gdk/gdkspawn.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gdk/gdkspawn.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gdk</a>/<a href='gdkspawn.h.html'>gdkspawn.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2003 Sun Microsystems Inc.</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Library General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Library General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Library General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> *</i></td></tr>
+<tr><th id="19">19</th><td><i> * Authors: Mark McLoughlin &lt;mark@skynet.ie&gt;</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="22">ifndef</span> <span class="macro" data-ref="_M/__GDK_SPAWN_H__">__GDK_SPAWN_H__</span></u></td></tr>
+<tr><th id="23">23</th><td><u>#define <dfn class="macro" id="_M/__GDK_SPAWN_H__" data-ref="_M/__GDK_SPAWN_H__">__GDK_SPAWN_H__</dfn></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="25">if</span> defined(<span class="macro" data-ref="_M/GTK_DISABLE_SINGLE_INCLUDES">GTK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gdk.h.html#30" data-ref="_M/__GDK_H_INSIDE__">__GDK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GDK_COMPILATION">GDK_COMPILATION</span>)</u></td></tr>
+<tr><th id="26">26</th><td><u>#error "Only &lt;gdk/gdk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="25">endif</span></u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><u>#include <a href="gdkscreen.h.html">&lt;gdk/gdkscreen.h&gt;</a></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><u>#<span data-ppcond="33">ifndef</span> <span class="macro" data-ref="_M/GDK_DISABLE_DEPRECATED">GDK_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="34">34</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="gdk_spawn_on_screen" title='gdk_spawn_on_screen' data-ref="gdk_spawn_on_screen">gdk_spawn_on_screen</dfn>              (<a class="typedef" href="gdktypes.h.html#GdkScreen" title='GdkScreen' data-type='struct _GdkScreen' data-ref="GdkScreen">GdkScreen</a>             *<dfn class="local col3 decl" id="14953screen" title='screen' data-type='GdkScreen *' data-ref="14953screen">screen</dfn>,</td></tr>
+<tr><th id="35">35</th><td>					   <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>           *<dfn class="local col4 decl" id="14954working_directory" title='working_directory' data-type='const gchar *' data-ref="14954working_directory">working_directory</dfn>,</td></tr>
+<tr><th id="36">36</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>                **<dfn class="local col5 decl" id="14955argv" title='argv' data-type='gchar **' data-ref="14955argv">argv</dfn>,</td></tr>
+<tr><th id="37">37</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>                **<dfn class="local col6 decl" id="14956envp" title='envp' data-type='gchar **' data-ref="14956envp">envp</dfn>,</td></tr>
+<tr><th id="38">38</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gspawn.h.html#GSpawnFlags" title='GSpawnFlags' data-type='enum GSpawnFlags' data-ref="GSpawnFlags">GSpawnFlags</a>            <dfn class="local col7 decl" id="14957flags" title='flags' data-type='GSpawnFlags' data-ref="14957flags">flags</dfn>,</td></tr>
+<tr><th id="39">39</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gspawn.h.html#GSpawnChildSetupFunc" title='GSpawnChildSetupFunc' data-type='void (*)(gpointer)' data-ref="GSpawnChildSetupFunc">GSpawnChildSetupFunc</a>   <dfn class="local col8 decl" id="14958child_setup" title='child_setup' data-type='GSpawnChildSetupFunc' data-ref="14958child_setup">child_setup</dfn>,</td></tr>
+<tr><th id="40">40</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>               <dfn class="local col9 decl" id="14959user_data" title='user_data' data-type='gpointer' data-ref="14959user_data">user_data</dfn>,</td></tr>
+<tr><th id="41">41</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>                  *<dfn class="local col0 decl" id="14960child_pid" title='child_pid' data-type='gint *' data-ref="14960child_pid">child_pid</dfn>,</td></tr>
+<tr><th id="42">42</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>               **<dfn class="local col1 decl" id="14961error" title='error' data-type='GError **' data-ref="14961error">error</dfn>);</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="gdk_spawn_on_screen_with_pipes" title='gdk_spawn_on_screen_with_pipes' data-ref="gdk_spawn_on_screen_with_pipes">gdk_spawn_on_screen_with_pipes</dfn>   (<a class="typedef" href="gdktypes.h.html#GdkScreen" title='GdkScreen' data-type='struct _GdkScreen' data-ref="GdkScreen">GdkScreen</a>             *<dfn class="local col2 decl" id="14962screen" title='screen' data-type='GdkScreen *' data-ref="14962screen">screen</dfn>,</td></tr>
+<tr><th id="45">45</th><td>					   <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>           *<dfn class="local col3 decl" id="14963working_directory" title='working_directory' data-type='const gchar *' data-ref="14963working_directory">working_directory</dfn>,</td></tr>
+<tr><th id="46">46</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>                **<dfn class="local col4 decl" id="14964argv" title='argv' data-type='gchar **' data-ref="14964argv">argv</dfn>,</td></tr>
+<tr><th id="47">47</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>                **<dfn class="local col5 decl" id="14965envp" title='envp' data-type='gchar **' data-ref="14965envp">envp</dfn>,</td></tr>
+<tr><th id="48">48</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gspawn.h.html#GSpawnFlags" title='GSpawnFlags' data-type='enum GSpawnFlags' data-ref="GSpawnFlags">GSpawnFlags</a>            <dfn class="local col6 decl" id="14966flags" title='flags' data-type='GSpawnFlags' data-ref="14966flags">flags</dfn>,</td></tr>
+<tr><th id="49">49</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gspawn.h.html#GSpawnChildSetupFunc" title='GSpawnChildSetupFunc' data-type='void (*)(gpointer)' data-ref="GSpawnChildSetupFunc">GSpawnChildSetupFunc</a>   <dfn class="local col7 decl" id="14967child_setup" title='child_setup' data-type='GSpawnChildSetupFunc' data-ref="14967child_setup">child_setup</dfn>,</td></tr>
+<tr><th id="50">50</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>               <dfn class="local col8 decl" id="14968user_data" title='user_data' data-type='gpointer' data-ref="14968user_data">user_data</dfn>,</td></tr>
+<tr><th id="51">51</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>                  *<dfn class="local col9 decl" id="14969child_pid" title='child_pid' data-type='gint *' data-ref="14969child_pid">child_pid</dfn>,</td></tr>
+<tr><th id="52">52</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>                  *<dfn class="local col0 decl" id="14970standard_input" title='standard_input' data-type='gint *' data-ref="14970standard_input">standard_input</dfn>,</td></tr>
+<tr><th id="53">53</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>                  *<dfn class="local col1 decl" id="14971standard_output" title='standard_output' data-type='gint *' data-ref="14971standard_output">standard_output</dfn>,</td></tr>
+<tr><th id="54">54</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>                  *<dfn class="local col2 decl" id="14972standard_error" title='standard_error' data-type='gint *' data-ref="14972standard_error">standard_error</dfn>,</td></tr>
+<tr><th id="55">55</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>               **<dfn class="local col3 decl" id="14973error" title='error' data-type='GError **' data-ref="14973error">error</dfn>);</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="gdk_spawn_command_line_on_screen" title='gdk_spawn_command_line_on_screen' data-ref="gdk_spawn_command_line_on_screen">gdk_spawn_command_line_on_screen</dfn> (<a class="typedef" href="gdktypes.h.html#GdkScreen" title='GdkScreen' data-type='struct _GdkScreen' data-ref="GdkScreen">GdkScreen</a>             *<dfn class="local col4 decl" id="14974screen" title='screen' data-type='GdkScreen *' data-ref="14974screen">screen</dfn>,</td></tr>
+<tr><th id="58">58</th><td>					   <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>           *<dfn class="local col5 decl" id="14975command_line" title='command_line' data-type='const gchar *' data-ref="14975command_line">command_line</dfn>,</td></tr>
+<tr><th id="59">59</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>               **<dfn class="local col6 decl" id="14976error" title='error' data-type='GError **' data-ref="14976error">error</dfn>);</td></tr>
+<tr><th id="60">60</th><td><u>#<span data-ppcond="33">endif</span></u></td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><u>#<span data-ppcond="22">endif</span> /* __GDK_SPAWN_H__ */</u></td></tr>
+<tr><th id="65">65</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='109' type='0'/>
+<use f='unikey/src/engine.cpp' l='303' u='r' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='348' u='r' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='417' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='440' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='477' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='498' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='514' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>

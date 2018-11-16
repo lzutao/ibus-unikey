@@ -1,0 +1,7 @@
+<dec f='include/ibus-1.0/ibusfactory.h' l='107'/>
+<doc f='include/ibus-1.0/ibusfactory.h' l='101'>/**
+ * IBUS_FACTORY_GET_CLASS:
+ * @obj: An object.
+ *
+ * Get the class of a given object and cast the class to IBusFactoryClass.
+ */</doc>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktoolbar.h' l='230' type='void gtk_toolbar_append_space(GtkToolbar * toolbar)'/>
+<doc f='include/gtk-2.0/gtk/gtktoolbar.h' l='229'>/* Space Items */</doc>

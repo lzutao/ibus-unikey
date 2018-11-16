@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='386' type='void gtk_ctree_node_set_background(GtkCTree * ctree, GtkCTreeNode * node, const GdkColor * color)'/>

@@ -1,0 +1,3 @@
+<dec f='include/glib-2.0/glib/goption.h' l='320' type='void g_option_context_add_main_entries(GOptionContext * context, const GOptionEntry * entries, const gchar * translation_domain)'/>
+<use f='unikey/setup/setup.cpp' l='29' u='c' c='main'/>
+<use f='unikey/src/main.cpp' l='105' u='c' c='main'/>

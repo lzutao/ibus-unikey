@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintoperation.h' l='148' type='GtkPrintSettings * gtk_print_operation_get_print_settings(GtkPrintOperation * op)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-simple-anim.h' l='55' type='GdkPixbufSimpleAnim * gdk_pixbuf_simple_anim_new(gint width, gint height, gfloat rate)'/>

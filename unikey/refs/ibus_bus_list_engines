@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='698' type='GList * ibus_bus_list_engines(IBusBus * bus)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='689'>/**
+ * ibus_bus_list_engines:
+ * @bus: An #IBusBus.
+ *
+ * List engines synchronously.
+ *
+ * Returns: (transfer container) (element-type IBusEngineDesc):
+ *         A List of engines.
+ */</doc>

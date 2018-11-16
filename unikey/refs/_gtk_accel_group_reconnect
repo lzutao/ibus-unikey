@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='184' type='void _gtk_accel_group_reconnect(GtkAccelGroup * accel_group, GQuark accel_path_quark)'/>

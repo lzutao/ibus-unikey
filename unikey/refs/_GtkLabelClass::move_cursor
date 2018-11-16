@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtklabel.h' l='90' type='void (*)(GtkLabel *, GtkMovementStep, gint, gboolean)'/>
+<offset>5760</offset>

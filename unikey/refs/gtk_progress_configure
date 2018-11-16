@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprogress.h' l='98' type='void gtk_progress_configure(GtkProgress * progress, gdouble value, gdouble min, gdouble max)'/>

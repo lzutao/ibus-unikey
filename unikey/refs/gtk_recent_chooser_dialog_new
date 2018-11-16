@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentchooserdialog.h' l='62' type='GtkWidget * gtk_recent_chooser_dialog_new(const gchar * title, GtkWindow * parent, const gchar * first_button_text)'/>

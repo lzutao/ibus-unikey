@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkimage.h' l='128' type='guint16 gdk_image_get_bytes_per_pixel(GdkImage * image)'/>

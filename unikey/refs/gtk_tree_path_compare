@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreemodel.h' l='142' type='gint gtk_tree_path_compare(const GtkTreePath * a, const GtkTreePath * b)'/>

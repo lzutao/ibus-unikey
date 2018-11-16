@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gdk/gdkgc.h' l='201' ll='220'/>
+<size>192</size>
+<mbr r='_GdkGCClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_GdkGCClass::get_values' o='1088' t='void (*)(GdkGC *, GdkGCValues *)'/>
+<mbr r='_GdkGCClass::set_values' o='1152' t='void (*)(GdkGC *, GdkGCValues *, GdkGCValuesMask)'/>
+<mbr r='_GdkGCClass::set_dashes' o='1216' t='void (*)(GdkGC *, gint, gint8 *, gint)'/>
+<mbr r='_GdkGCClass::_gdk_reserved1' o='1280' t='void (*)()'/>
+<mbr r='_GdkGCClass::_gdk_reserved2' o='1344' t='void (*)()'/>
+<mbr r='_GdkGCClass::_gdk_reserved3' o='1408' t='void (*)()'/>
+<mbr r='_GdkGCClass::_gdk_reserved4' o='1472' t='void (*)()'/>

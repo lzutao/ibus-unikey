@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-utils.h' l='85' type='gboolean pango_parse_weight(const char * str, PangoWeight * weight, gboolean warn)'/>

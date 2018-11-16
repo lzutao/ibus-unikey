@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gdk/gdkimage.h' l='73' type='GdkByteOrder'/>
+<offset>320</offset>
+<doc f='include/gtk-2.0/gdk/gdkimage.h' l='73'>/* read only. */</doc>

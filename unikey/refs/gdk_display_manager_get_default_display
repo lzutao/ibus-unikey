@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplaymanager.h' l='60' type='GdkDisplay * gdk_display_manager_get_default_display(GdkDisplayManager * display_manager)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkicontheme.h' l='166' type='void gtk_icon_theme_add_builtin_icon(const gchar * icon_name, gint size, GdkPixbuf * pixbuf)'/>

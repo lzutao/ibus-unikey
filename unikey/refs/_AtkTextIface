@@ -1,0 +1,43 @@
+<def f='include/atk-1.0/atk/atktext.h' l='247' ll='336'/>
+<size>208</size>
+<doc f='include/atk-1.0/atk/atktext.h' l='231'>/**
+ * AtkTextIface:
+ * @get_text_after_offset: Gets specified text. This virtual function
+ *   is deprecated and it should not be overridden.
+ * @get_text_at_offset: Gets specified text. This virtual function
+ *   is deprecated and it should not be overridden.
+ * @get_text_before_offset: Gets specified text. This virtual function
+ *   is deprecated and it should not be overridden.
+ * @get_string_at_offset: Gets a portion of the text exposed through
+ *   an AtkText according to a given offset and a specific
+ *   granularity, along with the start and end offsets defining the
+ *   boundaries of such a portion of text.
+ * @text_changed: the signal handler which is executed when there is a
+ *   text change. This virtual function is deprecated sice 2.9.4 and
+ *   it should not be overriden.
+ */</doc>
+<mbr r='_AtkTextIface::parent' o='0' t='GTypeInterface'/>
+<mbr r='_AtkTextIface::get_text' o='128' t='gchar *(*)(AtkText *, gint, gint)'/>
+<mbr r='_AtkTextIface::get_text_after_offset' o='192' t='gchar *(*)(AtkText *, gint, AtkTextBoundary, gint *, gint *)'/>
+<mbr r='_AtkTextIface::get_text_at_offset' o='256' t='gchar *(*)(AtkText *, gint, AtkTextBoundary, gint *, gint *)'/>
+<mbr r='_AtkTextIface::get_character_at_offset' o='320' t='gunichar (*)(AtkText *, gint)'/>
+<mbr r='_AtkTextIface::get_text_before_offset' o='384' t='gchar *(*)(AtkText *, gint, AtkTextBoundary, gint *, gint *)'/>
+<mbr r='_AtkTextIface::get_caret_offset' o='448' t='gint (*)(AtkText *)'/>
+<mbr r='_AtkTextIface::get_run_attributes' o='512' t='AtkAttributeSet *(*)(AtkText *, gint, gint *, gint *)'/>
+<mbr r='_AtkTextIface::get_default_attributes' o='576' t='AtkAttributeSet *(*)(AtkText *)'/>
+<mbr r='_AtkTextIface::get_character_extents' o='640' t='void (*)(AtkText *, gint, gint *, gint *, gint *, gint *, AtkCoordType)'/>
+<mbr r='_AtkTextIface::get_character_count' o='704' t='gint (*)(AtkText *)'/>
+<mbr r='_AtkTextIface::get_offset_at_point' o='768' t='gint (*)(AtkText *, gint, gint, AtkCoordType)'/>
+<mbr r='_AtkTextIface::get_n_selections' o='832' t='gint (*)(AtkText *)'/>
+<mbr r='_AtkTextIface::get_selection' o='896' t='gchar *(*)(AtkText *, gint, gint *, gint *)'/>
+<mbr r='_AtkTextIface::add_selection' o='960' t='gboolean (*)(AtkText *, gint, gint)'/>
+<mbr r='_AtkTextIface::remove_selection' o='1024' t='gboolean (*)(AtkText *, gint)'/>
+<mbr r='_AtkTextIface::set_selection' o='1088' t='gboolean (*)(AtkText *, gint, gint, gint)'/>
+<mbr r='_AtkTextIface::set_caret_offset' o='1152' t='gboolean (*)(AtkText *, gint)'/>
+<mbr r='_AtkTextIface::text_changed' o='1216' t='void (*)(AtkText *, gint, gint)'/>
+<mbr r='_AtkTextIface::text_caret_moved' o='1280' t='void (*)(AtkText *, gint)'/>
+<mbr r='_AtkTextIface::text_selection_changed' o='1344' t='void (*)(AtkText *)'/>
+<mbr r='_AtkTextIface::text_attributes_changed' o='1408' t='void (*)(AtkText *)'/>
+<mbr r='_AtkTextIface::get_range_extents' o='1472' t='void (*)(AtkText *, gint, gint, AtkCoordType, AtkTextRectangle *)'/>
+<mbr r='_AtkTextIface::get_bounded_ranges' o='1536' t='AtkTextRange **(*)(AtkText *, AtkTextRectangle *, AtkCoordType, AtkTextClipType, AtkTextClipType)'/>
+<mbr r='_AtkTextIface::get_string_at_offset' o='1600' t='gchar *(*)(AtkText *, gint, AtkTextGranularity, gint *, gint *)'/>

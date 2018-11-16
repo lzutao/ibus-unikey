@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkevents.h' l='540' type='gboolean gdk_event_get_axis(const GdkEvent * event, GdkAxisUse axis_use, gdouble * value)'/>

@@ -1,0 +1,8 @@
+<def f='include/glib-2.0/gobject/gtype.h' l='406' ll='410'/>
+<size>8</size>
+<doc f='include/glib-2.0/gobject/gtype.h' l='401'>/**
+ * GTypeClass:
+ * 
+ * An opaque structure used as the base of all classes.
+ */</doc>
+<mbr r='_GTypeClass::g_type' o='0' t='GType'/>

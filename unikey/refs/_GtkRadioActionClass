@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtkradioaction.h' l='62' ll='73'/>
+<size>304</size>
+<mbr r='_GtkRadioActionClass::parent_class' o='0' t='GtkToggleActionClass'/>
+<mbr r='_GtkRadioActionClass::changed' o='2112' t='void (*)(GtkRadioAction *, GtkRadioAction *)'/>
+<mbr r='_GtkRadioActionClass::_gtk_reserved1' o='2176' t='void (*)()'/>
+<mbr r='_GtkRadioActionClass::_gtk_reserved2' o='2240' t='void (*)()'/>
+<mbr r='_GtkRadioActionClass::_gtk_reserved3' o='2304' t='void (*)()'/>
+<mbr r='_GtkRadioActionClass::_gtk_reserved4' o='2368' t='void (*)()'/>

@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-transform.h' l='96' type='void gdk_pixbuf_scale(const GdkPixbuf * src, GdkPixbuf * dest, int dest_x, int dest_y, int dest_width, int dest_height, double offset_x, double offset_y, double scale_x, double scale_y, GdkInterpType interp_type)'/>

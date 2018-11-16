@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkactiongroup.h' l='171' type='void _gtk_action_group_emit_connect_proxy(GtkActionGroup * action_group, GtkAction * action, GtkWidget * proxy)'/>
+<doc f='include/gtk-2.0/gtk/gtkactiongroup.h' l='170'>/* Protected for use by GtkAction */</doc>

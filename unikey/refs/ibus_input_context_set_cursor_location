@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusinputcontext.h' l='313' type='void ibus_input_context_set_cursor_location(IBusInputContext * context, gint32 x, gint32 y, gint32 w, gint32 h)'/>
+<doc f='include/ibus-1.0/ibusinputcontext.h' l='301'>/**
+ * ibus_input_context_set_cursor_location:
+ * @context: An IBusInputContext.
+ * @x: X coordinate of the cursor.
+ * @y: Y coordinate of the cursor.
+ * @w: Width of the cursor.
+ * @h: Height of the cursor.
+ *
+ * Set the cursor location of IBus input context asynchronously.
+ *
+ * see_also: #IBusEngine::set-cursor-location
+ */</doc>

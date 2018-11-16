@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-io.h' l='77' type='void gdk_pixbuf_get_file_info_async(const gchar * filename, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer user_data)'/>

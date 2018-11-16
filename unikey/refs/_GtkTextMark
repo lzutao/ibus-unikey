@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtktextmark.h' l='71' ll='76'/>
+<size>32</size>
+<mbr r='_GtkTextMark::parent_instance' o='0' t='GObject'/>
+<mbr r='_GtkTextMark::segment' o='192' t='gpointer'/>

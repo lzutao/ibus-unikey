@@ -1,0 +1,11 @@
+<dec f='include/glib-2.0/glib/gversionmacros.h' l='496'/>
+<use f='include/glib-2.0/glib/garray.h' l='185' u='c'/>
+<use f='include/glib-2.0/glib/garray.h' l='189' u='c'/>
+<use f='include/glib-2.0/glib/gstrfuncs.h' l='337' u='c'/>
+<use f='include/glib-2.0/glib/gstrfuncs.h' l='340' u='c'/>
+<use f='include/glib-2.0/glib/gstrfuncs.h' l='348' u='c'/>
+<use f='include/glib-2.0/gobject/gobject.h' l='422' u='c'/>
+<use f='include/glib-2.0/gobject/gobject.h' l='451' u='c'/>
+<use f='include/glib-2.0/gobject/gobject.h' l='460' u='c'/>
+<use f='include/glib-2.0/gobject/genums.h' l='236' u='c'/>
+<use f='include/glib-2.0/gobject/genums.h' l='239' u='c'/>

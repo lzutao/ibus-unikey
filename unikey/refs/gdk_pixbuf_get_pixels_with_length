@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h' l='257' type='guchar * gdk_pixbuf_get_pixels_with_length(const GdkPixbuf * pixbuf, guint * length)'/>

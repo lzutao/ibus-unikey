@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkobject.h' l='146' type='GType gtk_object_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtkobject.h' l='144'>/* Application-level methods */</doc>

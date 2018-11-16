@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuscomponent.h' l='247' type='const gchar * ibus_component_get_textdomain(IBusComponent * component)'/>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='239'>/**
+ * ibus_component_get_textdomain:
+ * @component: An #IBusComponent
+ *
+ * Gets the textdomain property in #IBusComponent. It should not be freed.
+ *
+ * Returns: textdomain property in #IBusComponent
+ */</doc>

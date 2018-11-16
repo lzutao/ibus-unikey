@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='596' type='GdkWindow * gdk_window_get_parent(GdkWindow * window)'/>

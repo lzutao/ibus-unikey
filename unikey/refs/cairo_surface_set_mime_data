@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='2468' type='cairo_status_t cairo_surface_set_mime_data(cairo_surface_t * surface, const char * mime_type, const unsigned char * data, unsigned long length, cairo_destroy_func_t destroy, void * closure)'/>

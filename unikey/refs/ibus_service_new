@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusservice.h' l='173' type='IBusService * ibus_service_new(GDBusConnection * connection, const gchar * path)'/>
+<doc f='include/ibus-1.0/ibusservice.h' l='164'>/**
+ * ibus_service_new:
+ * @connection: A GDBusConnection.
+ * @path: Object path.
+ *
+ * Creantes a new #IBusService.
+ *
+ * Returns: A newly allocated #IBusService
+ */</doc>

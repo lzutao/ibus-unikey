@@ -1,0 +1,4 @@
+<dec f='include/pango-1.0/pango/pango-renderer.h' l='169' type='void (*)(PangoRenderer *)'/>
+<offset>1536</offset>
+<doc f='include/pango-1.0/pango/pango-renderer.h' l='167'>/* Paired around drawing operations
+   */</doc>

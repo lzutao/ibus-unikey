@@ -1,0 +1,2 @@
+<dec f='include/cairo/cairo.h' l='491' type='cairo_t * cairo_create(cairo_surface_t * target)'/>
+<doc f='include/cairo/cairo.h' l='489'>/* Functions for manipulating state objects */</doc>

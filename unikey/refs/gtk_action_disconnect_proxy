@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkaction.h' l='118' type='void gtk_action_disconnect_proxy(GtkAction * action, GtkWidget * proxy)'/>

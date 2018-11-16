@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkclist.h' l='141' ll='145'/>
+<size>12</size>
+<mbr r='_GtkCListDestInfo::cell' o='0' t='GtkCListCellInfo'/>
+<mbr r='_GtkCListDestInfo::insert_pos' o='64' t='GtkCListDragPos'/>

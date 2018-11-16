@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='999' type='GtkWidget * gtk_widget_get_parent(GtkWidget * widget)'/>

@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='289' type='gboolean ibus_bus_name_has_owner(IBusBus * bus, const gchar * name)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='280'>/**
+ * ibus_bus_name_has_owner:
+ * @bus: An #IBusBus.
+ * @name: Name to be checked.
+ *
+ * Checks whether the name has owner synchronously.
+ *
+ * Returns: %TRUE if the name has owner, %FALSE otherwise.
+ */</doc>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='762' type='void gtk_clist_set_compare_func(GtkCList * clist, GtkCListCompareFunc cmp_func)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='761'>/* sets a compare function different to the default */</doc>

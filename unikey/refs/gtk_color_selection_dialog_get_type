@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkcolorseldialog.h' l='75' type='GType gtk_color_selection_dialog_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtkcolorseldialog.h' l='74'>/* ColorSelectionDialog */</doc>

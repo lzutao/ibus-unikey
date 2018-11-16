@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkcairo.h' l='33' type='cairo_t * gdk_cairo_create(GdkDrawable * drawable)'/>

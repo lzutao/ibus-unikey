@@ -1,0 +1,3 @@
+<dec f='include/glib-2.0/gio/gpollableoutputstream.h' l='71' type='gboolean (*)(GPollableOutputStream *)'/>
+<offset>128</offset>
+<doc f='include/glib-2.0/gio/gpollableoutputstream.h' l='70'>/* Virtual Table */</doc>

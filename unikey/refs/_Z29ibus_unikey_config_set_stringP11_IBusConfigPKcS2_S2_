@@ -1,0 +1,8 @@
+<dec f='unikey/src/utils.h' l='25' type='void ibus_unikey_config_set_string(IBusConfig * config, const gchar * section, const gchar * name, const gchar * value)'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='133' u='c' c='_ZL33input_method_combo_box_changed_cbP12_GtkComboBoxPv'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='139' u='c' c='_ZL35output_charset_combo_box_changed_cbP12_GtkComboBoxPv'/>
+<use f='unikey/src/engine.cpp' l='197' u='c' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='213' u='c' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='308' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='353' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<def f='unikey/src/utils.cpp' l='124' ll='134' type='void ibus_unikey_config_set_string(IBusConfig * config, const gchar * section, const gchar * name, const gchar * value)'/>

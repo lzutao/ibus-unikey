@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkpreview.h' l='67' ll='72'/>
+<size>16</size>
+<mbr r='_GtkPreviewInfo::lookup' o='0' t='guchar *'/>
+<mbr r='_GtkPreviewInfo::gamma' o='64' t='gdouble'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextbufferrichtext.h' l='69' type='void gtk_text_buffer_deserialize_set_can_create_tags(GtkTextBuffer * buffer, GdkAtom format, gboolean can_create_tags)'/>

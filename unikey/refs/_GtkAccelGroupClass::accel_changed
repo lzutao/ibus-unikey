@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='101' type='void (*)(GtkAccelGroup *, guint, GdkModifierType, GClosure *)'/>
+<offset>1088</offset>

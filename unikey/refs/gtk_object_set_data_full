@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkobject.h' l='184' type='void gtk_object_set_data_full(GtkObject * object, const gchar * key, gpointer data, GDestroyNotify destroy)'/>

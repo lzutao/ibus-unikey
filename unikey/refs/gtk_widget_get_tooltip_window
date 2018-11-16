@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1296' type='GtkWindow * gtk_widget_get_tooltip_window(GtkWidget * widget)'/>

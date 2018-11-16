@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcontainer.h' l='200' type='void gtk_container_child_get_property(GtkContainer * container, GtkWidget * child, const gchar * property_name, GValue * value)'/>

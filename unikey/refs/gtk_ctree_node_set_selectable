@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='337' type='void gtk_ctree_node_set_selectable(GtkCTree * ctree, GtkCTreeNode * node, gboolean selectable)'/>

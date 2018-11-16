@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkstyle.h' l='490' type='void gtk_draw_vline(GtkStyle * style, GdkWindow * window, GtkStateType state_type, gint y1_, gint y2_, gint x)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktogglebutton.h' l='81' type='gboolean gtk_toggle_button_get_mode(GtkToggleButton * toggle_button)'/>

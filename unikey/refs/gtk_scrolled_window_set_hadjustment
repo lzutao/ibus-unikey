@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkscrolledwindow.h' l='105' type='void gtk_scrolled_window_set_hadjustment(GtkScrolledWindow * scrolled_window, GtkAdjustment * hadjustment)'/>

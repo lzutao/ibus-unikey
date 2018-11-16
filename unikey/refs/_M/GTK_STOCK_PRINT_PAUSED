@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='769'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='761'>/**
+ * GTK_STOCK_PRINT_PAUSED:
+ *
+ * The &quot;Print Paused&quot; icon.
+ * &lt;inlinegraphic fileref=&quot;printer-paused.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ *
+ * Since: 2.14
+ */</doc>

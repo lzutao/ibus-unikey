@@ -1,0 +1,2 @@
+<dec f='include/unistd.h' l='1085' type='int lockf(int __fd, int __cmd, __off64_t __len)'/>
+<dec f='include/unistd.h' l='1092' type='int lockf64(int __fd, int __cmd, __off64_t __len)'/>

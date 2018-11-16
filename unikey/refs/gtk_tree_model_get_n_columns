@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreemodel.h' l='192' type='gint gtk_tree_model_get_n_columns(GtkTreeModel * tree_model)'/>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkdrawable.h' l='93' type='void (*)(GdkDrawable *, GdkFont *, GdkGC *, gint, gint, const GdkWChar *, gint)'/>
+<offset>1408</offset>

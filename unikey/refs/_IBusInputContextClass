@@ -1,0 +1,4 @@
+<def f='include/ibus-1.0/ibusinputcontext.h' l='79' ll='86'/>
+<size>664</size>
+<mbr r='_IBusInputContextClass::parent' o='0' t='IBusProxyClass'/>
+<mbr r='_IBusInputContextClass::pdummy' o='3776' t='gpointer [24]'/>

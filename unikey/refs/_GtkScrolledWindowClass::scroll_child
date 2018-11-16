@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtkscrolledwindow.h' l='87' type='gboolean (*)(GtkScrolledWindow *, GtkScrollType, gboolean)'/>
+<offset>6656</offset>
+<doc f='include/gtk-2.0/gtk/gtkscrolledwindow.h' l='83'>/* Unfortunately, GtkScrollType is deficient in that there is
+   * no horizontal/vertical variants for GTK_SCROLL_START/END,
+   * so we have to add an additional boolean flag.
+   */</doc>

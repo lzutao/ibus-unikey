@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkcombobox.h' l='146' type='void gtk_combo_box_popup(GtkComboBox * combo_box)'/>
+<doc f='include/gtk-2.0/gtk/gtkcombobox.h' l='145'>/* programmatic control */</doc>

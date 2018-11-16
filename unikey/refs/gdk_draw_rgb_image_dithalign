@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkrgb.h' l='78' type='void gdk_draw_rgb_image_dithalign(GdkDrawable * drawable, GdkGC * gc, gint x, gint y, gint width, gint height, GdkRgbDither dith, const guchar * rgb_buf, gint rowstride, gint xdith, gint ydith)'/>

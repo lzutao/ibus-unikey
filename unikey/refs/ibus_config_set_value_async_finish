@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusconfig.h' l='301' type='gboolean ibus_config_set_value_async_finish(IBusConfig * config, GAsyncResult * result, GError ** error)'/>
+<doc f='include/ibus-1.0/ibusconfig.h' l='289'>/**
+ * ibus_config_set_value_async_finish:
+ * @config: A #IBusConfig.
+ * @result: A #GAsyncResult.
+ * @error: Return location for error or %NULL.
+ * 
+ * Finish set value of a configuration option.
+ *
+ * Returns: %TRUE or %FALSE if error is set.
+ *
+ * See also: ibus_config_set_value_async().
+ */</doc>

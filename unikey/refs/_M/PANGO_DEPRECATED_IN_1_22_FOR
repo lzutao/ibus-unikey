@@ -1,0 +1,2 @@
+<dec f='include/pango-1.0/pango/pango-version-macros.h' l='484'/>
+<use f='include/pango-1.0/pango/pangocairo.h' l='100' u='c'/>

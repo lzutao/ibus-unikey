@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pangocairo.h' l='116' type='void pango_cairo_update_context(cairo_t * cr, PangoContext * context)'/>

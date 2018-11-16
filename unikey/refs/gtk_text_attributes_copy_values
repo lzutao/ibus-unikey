@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktexttag.h' l='278' type='void gtk_text_attributes_copy_values(GtkTextAttributes * src, GtkTextAttributes * dest)'/>

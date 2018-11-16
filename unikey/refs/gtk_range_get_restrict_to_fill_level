@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrange.h' l='192' type='gboolean gtk_range_get_restrict_to_fill_level(GtkRange * range)'/>

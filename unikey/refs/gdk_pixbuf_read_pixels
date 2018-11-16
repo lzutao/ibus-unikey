@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h' l='261' type='const guint8 * gdk_pixbuf_read_pixels(const GdkPixbuf * pixbuf)'/>

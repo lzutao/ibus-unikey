@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkfilechooser.h' l='188' type='gboolean gtk_file_chooser_set_current_folder_uri(GtkFileChooser * chooser, const gchar * uri)'/>

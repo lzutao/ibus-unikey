@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkfont.h' l='76' type='GdkFont * gdk_font_from_description(PangoFontDescription * font_desc)'/>

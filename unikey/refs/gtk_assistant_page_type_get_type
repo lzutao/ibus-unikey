@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='20' type='GType gtk_assistant_page_type_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='19'>/* enumerations from &quot;gtkassistant.h&quot; */</doc>

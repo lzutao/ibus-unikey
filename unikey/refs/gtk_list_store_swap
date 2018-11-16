@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkliststore.h' l='133' type='void gtk_list_store_swap(GtkListStore * store, GtkTreeIter * a, GtkTreeIter * b)'/>

@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusconfig.h' l='113' type='void ibus_config_new_async(GDBusConnection * connection, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer user_data)'/>
+<doc f='include/ibus-1.0/ibusconfig.h' l='103'>/**
+ * ibus_config_new_async:
+ * @connection: An #GDBusConnection.
+ * @cancellable: A #GCancellable or %NULL.
+ * @callback: A #GAsyncReadyCallback to call when the request is satisfied.
+ *      The callback should not be %NULL.
+ * @user_data: The data to pass to callback.
+ *
+ * New an #IBusConfig asynchronously.
+ */</doc>

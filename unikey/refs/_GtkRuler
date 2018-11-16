@@ -1,0 +1,16 @@
+<def f='include/gtk-2.0/gtk/gtkruler.h' l='67' ll='86'/>
+<size>168</size>
+<doc f='include/gtk-2.0/gtk/gtkruler.h' l='64'>/* All distances below are in 1/72nd&apos;s of an inch. (According to
+ * Adobe that&apos;s a point, but points are really 1/72.27 in.)
+ */</doc>
+<mbr r='_GtkRuler::widget' o='0' t='GtkWidget'/>
+<mbr r='_GtkRuler::backing_store' o='768' t='GdkPixmap *'/>
+<mbr r='_GtkRuler::non_gr_exp_gc' o='832' t='GdkGC *'/>
+<mbr r='_GtkRuler::metric' o='896' t='GtkRulerMetric *'/>
+<mbr r='_GtkRuler::xsrc' o='960' t='gint'/>
+<mbr r='_GtkRuler::ysrc' o='992' t='gint'/>
+<mbr r='_GtkRuler::slider_size' o='1024' t='gint'/>
+<mbr r='_GtkRuler::lower' o='1088' t='gdouble'/>
+<mbr r='_GtkRuler::upper' o='1152' t='gdouble'/>
+<mbr r='_GtkRuler::position' o='1216' t='gdouble'/>
+<mbr r='_GtkRuler::max_size' o='1280' t='gdouble'/>

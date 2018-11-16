@@ -1,0 +1,15 @@
+<def f='include/gtk-2.0/gdk/gdkevents.h' l='357' ll='372'/>
+<size>88</size>
+<mbr r='_GdkEventCrossing::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventCrossing::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventCrossing::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventCrossing::subwindow' o='192' t='GdkWindow *'/>
+<mbr r='_GdkEventCrossing::time' o='256' t='guint32'/>
+<mbr r='_GdkEventCrossing::x' o='320' t='gdouble'/>
+<mbr r='_GdkEventCrossing::y' o='384' t='gdouble'/>
+<mbr r='_GdkEventCrossing::x_root' o='448' t='gdouble'/>
+<mbr r='_GdkEventCrossing::y_root' o='512' t='gdouble'/>
+<mbr r='_GdkEventCrossing::mode' o='576' t='GdkCrossingMode'/>
+<mbr r='_GdkEventCrossing::detail' o='608' t='GdkNotifyType'/>
+<mbr r='_GdkEventCrossing::focus' o='640' t='gboolean'/>
+<mbr r='_GdkEventCrossing::state' o='672' t='guint'/>

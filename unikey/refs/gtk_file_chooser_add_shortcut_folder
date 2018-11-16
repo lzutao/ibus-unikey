@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkfilechooser.h' l='246' type='gboolean gtk_file_chooser_add_shortcut_folder(GtkFileChooser * chooser, const char * folder, GError ** error)'/>
+<doc f='include/gtk-2.0/gtk/gtkfilechooser.h' l='244'>/* Per-application shortcut folders */</doc>

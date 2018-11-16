@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='385' type='gboolean gtk_tree_view_get_rubber_banding(GtkTreeView * tree_view)'/>

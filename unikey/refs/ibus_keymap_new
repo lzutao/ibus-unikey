@@ -1,0 +1,15 @@
+<dec f='include/ibus-1.0/ibuskeymap.h' l='127' type='IBusKeymap * ibus_keymap_new(const gchar * name)'/>
+<doc f='include/ibus-1.0/ibuskeymap.h' l='113'>/**
+ * ibus_keymap_new:
+ * @name: The keymap file to be loaded, such as &apos;us&apos;, &apos;jp&apos;.
+ *
+ * Get an #IBusKeymap associated with the giving name.
+ *
+ * This function loads the keymap file specified in @name
+ * in the IBUS_DATA_DIR/keymaps directory.
+ *
+ * Returns: An #IBusKeymap associated with the giving name; or %NULL if failed.
+ *
+ * Deprecated: This function has been deprecated and should
+ * not be used in newly written code. Please use ibus_keymap_get().
+ */</doc>

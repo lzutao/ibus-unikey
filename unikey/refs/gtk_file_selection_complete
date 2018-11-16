@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkfilesel.h' l='108' type='void gtk_file_selection_complete(GtkFileSelection * filesel, const gchar * pattern)'/>

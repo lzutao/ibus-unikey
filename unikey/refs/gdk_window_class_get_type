@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkenumtypes.h' l='114' type='GType gdk_window_class_get_type()'/>
+<doc f='include/gtk-2.0/gdk/gdkenumtypes.h' l='113'>/* enumerations from &quot;gdkwindow.h&quot; */</doc>

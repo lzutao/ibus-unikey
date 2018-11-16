@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='156' type='gboolean gtk_text_iter_inside_word(const GtkTextIter * iter)'/>

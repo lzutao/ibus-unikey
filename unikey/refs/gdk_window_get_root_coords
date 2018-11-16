@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='564' type='void gdk_window_get_root_coords(GdkWindow * window, gint x, gint y, gint * root_x, gint * root_y)'/>

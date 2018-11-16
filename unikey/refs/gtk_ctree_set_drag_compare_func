@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='420' type='void gtk_ctree_set_drag_compare_func(GtkCTree * ctree, GtkCTreeCompareDragFunc cmp_func)'/>

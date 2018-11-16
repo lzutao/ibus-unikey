@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-attributes.h' l='557' type='void pango_attr_iterator_range(PangoAttrIterator * iterator, gint * start, gint * end)'/>

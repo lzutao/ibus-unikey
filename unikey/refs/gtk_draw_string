@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkstyle.h' l='915' type='void gtk_draw_string(GtkStyle * style, GdkWindow * window, GtkStateType state_type, gint x, gint y, const gchar * string)'/>

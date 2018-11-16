@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtktypeutils.h' l='75'/>
+<doc f='include/gtk-2.0/gtk/gtktypeutils.h' l='70'>/* Fundamental Types
+ * many of these are just aliases for GLib types to maintain
+ * compatibility
+ */</doc>

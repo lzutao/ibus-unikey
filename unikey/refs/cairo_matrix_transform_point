@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='3054' type='void cairo_matrix_transform_point(const cairo_matrix_t * matrix, double * x, double * y)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkvisual.h' l='112' type='void gdk_query_depths(gint ** depths, gint * count)'/>

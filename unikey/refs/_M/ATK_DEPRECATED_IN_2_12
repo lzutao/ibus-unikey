@@ -1,0 +1,12 @@
+<dec f='include/atk-1.0/atk/atkversion.h' l='352'/>
+<use f='include/atk-1.0/atk/atkobject.h' l='732' u='c'/>
+<use f='include/atk-1.0/atk/atkobject.h' l='735' u='c'/>
+<use f='include/atk-1.0/atk/atkobject.h' l='764' u='c'/>
+<use f='include/atk-1.0/atk/atkdocument.h' l='88' u='c'/>
+<use f='include/atk-1.0/atk/atkdocument.h' l='91' u='c'/>
+<use f='include/atk-1.0/atk/atktable.h' l='142' u='c'/>
+<use f='include/atk-1.0/atk/atktable.h' l='145' u='c'/>
+<use f='include/atk-1.0/atk/atkmisc.h' l='100' u='c'/>
+<use f='include/atk-1.0/atk/atkmisc.h' l='103' u='c'/>
+<use f='include/atk-1.0/atk/atkmisc.h' l='105' u='c'/>
+<use f='include/atk-1.0/atk/atkmisc.h' l='107' u='c'/>

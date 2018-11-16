@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtksettings.h' l='131' type='gboolean _gtk_settings_parse_convert(GtkRcPropertyParser parser, const GValue * src_value, GParamSpec * pspec, GValue * dest_value)'/>

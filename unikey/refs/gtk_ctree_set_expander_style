@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='418' type='void gtk_ctree_set_expander_style(GtkCTree * ctree, GtkCTreeExpanderStyle expander_style)'/>

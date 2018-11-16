@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='439' type='GType gtk_ctree_node_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtkctree.h' l='435'>/* GType for the GtkCTreeNode.  This is a boxed type, although it uses
+ * no-op&apos;s for the copy and free routines.  It is defined in order to
+ * provide type information for the signal arguments
+ */</doc>

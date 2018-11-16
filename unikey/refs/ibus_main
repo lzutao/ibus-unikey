@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='336' type='void ibus_main()'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='329'>/**
+ * ibus_main:
+ *
+ * Runs an IBus main loop until ibus_quit() is called in the loop.
+ *
+ * See also: ibus_quit().
+ */</doc>
+<use f='unikey/src/main.cpp' l='89' u='c' c='_ZL15start_componentv'/>

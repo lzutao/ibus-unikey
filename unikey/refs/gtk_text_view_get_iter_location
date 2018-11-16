@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextview.h' l='247' type='void gtk_text_view_get_iter_location(GtkTextView * text_view, const GtkTextIter * iter, GdkRectangle * location)'/>

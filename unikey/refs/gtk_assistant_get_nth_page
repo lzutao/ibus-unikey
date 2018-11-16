@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkassistant.h' l='128' type='GtkWidget * gtk_assistant_get_nth_page(GtkAssistant * assistant, gint page_num)'/>

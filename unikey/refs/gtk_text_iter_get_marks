@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='126' type='GSList * gtk_text_iter_get_marks(const GtkTextIter * iter)'/>

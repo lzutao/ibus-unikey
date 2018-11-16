@@ -1,0 +1,4 @@
+<dec f='include/pango-1.0/pango/pango-renderer.h' l='82' type='PangoMatrix *'/>
+<offset>320</offset>
+<doc f='include/pango-1.0/pango/pango-renderer.h' l='81'>/*&lt; public &gt;*/</doc>
+<doc f='include/pango-1.0/pango/pango-renderer.h' l='82'>/* May be NULL */</doc>

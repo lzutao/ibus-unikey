@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkexpander.h' l='53' ll='61'/>
+<size>832</size>
+<mbr r='_GtkExpanderClass::parent_class' o='0' t='GtkBinClass'/>
+<mbr r='_GtkExpanderClass::activate' o='6592' t='void (*)(GtkExpander *)'/>

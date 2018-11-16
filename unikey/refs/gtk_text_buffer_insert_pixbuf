@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='242' type='void gtk_text_buffer_insert_pixbuf(GtkTextBuffer * buffer, GtkTextIter * iter, GdkPixbuf * pixbuf)'/>
+<doc f='include/gtk-2.0/gtk/gtktextbuffer.h' l='241'>/* Insert a pixbuf */</doc>

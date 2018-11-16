@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-context.h' l='65' type='void pango_context_list_families(PangoContext * context, PangoFontFamily *** families, int * n_families)'/>

@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/gobject/gtype.h' l='429' type='GType'/>
+<offset>0</offset>
+<doc f='include/glib-2.0/gobject/gtype.h' l='428'>/*&lt; private &gt;*/</doc>
+<doc f='include/glib-2.0/gobject/gtype.h' l='429'>/* iface type */</doc>

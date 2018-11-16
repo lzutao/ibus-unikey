@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='810' type='void cairo_set_dash(cairo_t * cr, const double * dashes, int num_dashes, double offset)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktable.h' l='130' type='void gtk_table_set_col_spacing(GtkTable * table, guint column, guint spacing)'/>

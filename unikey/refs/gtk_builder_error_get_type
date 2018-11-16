@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='24' type='GType gtk_builder_error_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='23'>/* enumerations from &quot;gtkbuilder.h&quot; */</doc>

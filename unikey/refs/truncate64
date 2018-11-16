@@ -1,0 +1,2 @@
+<dec f='include/unistd.h' l='998' type='int truncate(const char * __file, __off64_t __length)'/>
+<dec f='include/unistd.h' l='1006' type='int truncate64(const char * __file, __off64_t __length)'/>

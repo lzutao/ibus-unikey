@@ -1,0 +1,14 @@
+<dec f='include/ibus-1.0/ibusconfig.h' l='221' type='void ibus_config_get_values_async(IBusConfig * config, const gchar * section, gint timeout_ms, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer user_data)'/>
+<doc f='include/ibus-1.0/ibusconfig.h' l='208'>/**
+ * ibus_config_get_values_async:
+ * @config: An #IBusConfig
+ * @section: Section name of the configuration option.
+ * @timeout_ms: The timeout in milliseconds or -1 to use the default timeout.
+ * @cancellable: A #GCancellable or %NULL.
+ * @callback: Callback function to invoke when the return value is ready.
+ * @user_data: The data to pass to callback.
+ *
+ * Get all values in a section asynchronously.
+ *
+ * See also: ibus_config_get_values().
+ */</doc>

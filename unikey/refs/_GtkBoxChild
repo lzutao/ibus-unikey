@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtkbox.h' l='93' ll='101'/>
+<size>16</size>
+<mbr r='_GtkBoxChild::widget' o='0' t='GtkWidget *'/>
+<mbr r='_GtkBoxChild::padding' o='64' t='guint16'/>
+<mbr r='_GtkBoxChild::expand' o='80' t='guint'/>
+<mbr r='_GtkBoxChild::fill' o='81' t='guint'/>
+<mbr r='_GtkBoxChild::pack' o='82' t='guint'/>
+<mbr r='_GtkBoxChild::is_secondary' o='83' t='guint'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkgc.h' l='226' type='GdkGC * gdk_gc_new_with_values(GdkDrawable * drawable, GdkGCValues * values, GdkGCValuesMask values_mask)'/>

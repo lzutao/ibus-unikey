@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkeditabletext.h' l='92' type='void atk_editable_text_copy_text(AtkEditableText * text, gint start_pos, gint end_pos)'/>

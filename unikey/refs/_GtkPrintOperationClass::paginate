@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkprintoperation.h' l='93' type='gboolean (*)(GtkPrintOperation *, GtkPrintContext *)'/>
+<offset>1216</offset>

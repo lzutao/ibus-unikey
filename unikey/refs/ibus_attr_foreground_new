@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusattribute.h' l='214' type='IBusAttribute * ibus_attr_foreground_new(guint color, guint start_index, guint end_index)'/>
+<doc f='include/ibus-1.0/ibusattribute.h' l='204'>/**
+ * ibus_attr_foreground_new:
+ * @color: Color in RGB.
+ * @start_index: Where attribute starts.
+ * @end_index: Where attribute ends.
+ *
+ * Creates a new foreground #IBusAttribute.
+ *
+ * Returns: (transfer none): A newly allocated #IBusAttribute.
+ */</doc>

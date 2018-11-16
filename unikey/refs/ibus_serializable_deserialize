@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusserializable.h' l='277' type='IBusSerializable * ibus_serializable_deserialize(GVariant * variant)'/>
+<doc f='include/ibus-1.0/ibusserializable.h' l='266'>/**
+ * ibus_serializable_deserialize:
+ * @variant: A #GVariant.
+ *
+ * Deserialize a #GVariant to an #IBusSerializable/
+ * The deserialize method should be implemented in extended class.
+ *
+ * Returns: (transfer none): The deserialized #IBusSerializable.
+ *
+ * See also: IBusSerializableCopyFunc().
+ */</doc>

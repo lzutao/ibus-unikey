@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='752' type='void gtk_clist_swap_rows(GtkCList * clist, gint row1, gint row2)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='751'>/* swap the position of two rows */</doc>

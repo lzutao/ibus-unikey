@@ -1,0 +1,27 @@
+<def f='include/gtk-2.0/gtk/gtkpaned.h' l='50' ll='85'/>
+<size>216</size>
+<mbr r='_GtkPaned::container' o='0' t='GtkContainer'/>
+<mbr r='_GtkPaned::child1' o='896' t='GtkWidget *'/>
+<mbr r='_GtkPaned::child2' o='960' t='GtkWidget *'/>
+<mbr r='_GtkPaned::handle' o='1024' t='GdkWindow *'/>
+<mbr r='_GtkPaned::xor_gc' o='1088' t='GdkGC *'/>
+<mbr r='_GtkPaned::cursor_type' o='1152' t='GdkCursorType'/>
+<mbr r='_GtkPaned::handle_pos' o='1184' t='GdkRectangle'/>
+<mbr r='_GtkPaned::child1_size' o='1312' t='gint'/>
+<mbr r='_GtkPaned::last_allocation' o='1344' t='gint'/>
+<mbr r='_GtkPaned::min_position' o='1376' t='gint'/>
+<mbr r='_GtkPaned::max_position' o='1408' t='gint'/>
+<mbr r='_GtkPaned::position_set' o='1440' t='guint'/>
+<mbr r='_GtkPaned::in_drag' o='1441' t='guint'/>
+<mbr r='_GtkPaned::child1_shrink' o='1442' t='guint'/>
+<mbr r='_GtkPaned::child1_resize' o='1443' t='guint'/>
+<mbr r='_GtkPaned::child2_shrink' o='1444' t='guint'/>
+<mbr r='_GtkPaned::child2_resize' o='1445' t='guint'/>
+<mbr r='_GtkPaned::orientation' o='1446' t='guint'/>
+<mbr r='_GtkPaned::in_recursion' o='1447' t='guint'/>
+<mbr r='_GtkPaned::handle_prelit' o='1448' t='guint'/>
+<mbr r='_GtkPaned::last_child1_focus' o='1472' t='GtkWidget *'/>
+<mbr r='_GtkPaned::last_child2_focus' o='1536' t='GtkWidget *'/>
+<mbr r='_GtkPaned::priv' o='1600' t='GtkPanedPrivate *'/>
+<mbr r='_GtkPaned::drag_pos' o='1664' t='gint'/>
+<mbr r='_GtkPaned::original_position' o='1696' t='gint'/>

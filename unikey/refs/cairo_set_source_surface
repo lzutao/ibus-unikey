@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='664' type='void cairo_set_source_surface(cairo_t * cr, cairo_surface_t * surface, double x, double y)'/>

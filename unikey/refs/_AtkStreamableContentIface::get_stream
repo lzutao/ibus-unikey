@@ -1,0 +1,8 @@
+<dec f='include/atk-1.0/atk/atkstreamablecontent.h' l='69' type='GIOChannel *(*)(AtkStreamableContent *, const gchar *)'/>
+<offset>256</offset>
+<doc f='include/atk-1.0/atk/atkstreamablecontent.h' l='63'>/*
+   * One possible implementation for this method is that it constructs the
+   * content appropriate for the mime type and then creates a temporary
+   * file containing the content, opens the file and then calls
+   * g_io_channel_unix_new_fd().
+   */</doc>

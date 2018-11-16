@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1005' type='void gtk_widget_set_child_visible(GtkWidget * widget, gboolean is_visible)'/>

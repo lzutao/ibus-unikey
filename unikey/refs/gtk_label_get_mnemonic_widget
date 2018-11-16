@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtklabel.h' l='135' type='GtkWidget * gtk_label_get_mnemonic_widget(GtkLabel * label)'/>

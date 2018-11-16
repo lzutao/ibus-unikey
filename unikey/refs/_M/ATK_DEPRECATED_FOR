@@ -1,0 +1,3 @@
+<dec f='include/atk-1.0/atk/atkversion.h' l='273'/>
+<use f='include/atk-1.0/atk/atkobject.h' l='707' u='c'/>
+<use f='include/atk-1.0/atk/atkobject.h' l='709' u='c'/>

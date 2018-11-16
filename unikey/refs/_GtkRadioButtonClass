@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkradiobutton.h' l='58' ll='69'/>
+<size>1016</size>
+<mbr r='_GtkRadioButtonClass::parent_class' o='0' t='GtkCheckButtonClass'/>
+<mbr r='_GtkRadioButtonClass::group_changed' o='7872' t='void (*)(GtkRadioButton *)'/>
+<mbr r='_GtkRadioButtonClass::_gtk_reserved2' o='7936' t='void (*)()'/>
+<mbr r='_GtkRadioButtonClass::_gtk_reserved3' o='8000' t='void (*)()'/>
+<mbr r='_GtkRadioButtonClass::_gtk_reserved4' o='8064' t='void (*)()'/>

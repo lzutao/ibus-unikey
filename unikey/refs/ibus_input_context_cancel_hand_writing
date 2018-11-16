@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusinputcontext.h' l='216' type='void ibus_input_context_cancel_hand_writing(IBusInputContext * context, guint n_strokes)'/>
+<doc f='include/ibus-1.0/ibusinputcontext.h' l='207'>/**
+ * ibus_input_context_cancel_hand_writing:
+ * @context: An IBusInputContext.
+ * @n_strokes: The number of strokes to be removed. Pass 0 to remove all.
+ *
+ * Clear handwriting stroke(s) in the current input method engine.
+ *
+ * see_also: #IBusEngine::cancel-hand-writing
+ */</doc>

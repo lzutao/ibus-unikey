@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmessagedialog.h' l='131' type='GtkWidget * gtk_message_dialog_get_message_area(GtkMessageDialog * message_dialog)'/>

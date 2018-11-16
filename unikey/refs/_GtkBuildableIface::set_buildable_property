@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkbuildable.h' l='104' type='void (*)(GtkBuildable *, GtkBuilder *, const gchar *, const GValue *)'/>
+<offset>320</offset>

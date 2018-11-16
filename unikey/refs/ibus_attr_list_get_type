@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusattrlist.h' l='88' type='GType ibus_attr_list_get_type()'/>
+<doc f='include/ibus-1.0/ibusattrlist.h' l='81'>/**
+ * ibus_attr_list_get_type:
+ *
+ * Returns GType of #IBusAttrList.
+ *
+ * Returns: GType of #IBusAttrList.
+ */</doc>

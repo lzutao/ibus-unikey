@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkevents.h' l='531' type='guint32 gdk_event_get_time(const GdkEvent * event)'/>

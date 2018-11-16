@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkpagesetup.h' l='87' type='GtkPageSetup * gtk_page_setup_new_from_file(const gchar * file_name, GError ** error)'/>
+<doc f='include/gtk-2.0/gtk/gtkpagesetup.h' l='86'>/* Saving and restoring page setup */</doc>

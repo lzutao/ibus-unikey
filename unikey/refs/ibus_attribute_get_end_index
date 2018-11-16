@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusattribute.h' l='188' type='guint ibus_attribute_get_end_index(IBusAttribute * attr)'/>
+<doc f='include/ibus-1.0/ibusattribute.h' l='180'>/**
+ * ibus_attribute_get_end_index:
+ * @attr: An #IBusAttribute
+ *
+ * Gets an end unsigned index
+ *
+ * Returns: A end unsigned index
+ */</doc>

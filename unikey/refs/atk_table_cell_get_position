@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atktablecell.h' l='86' type='gboolean atk_table_cell_get_position(AtkTableCell * cell, gint * row, gint * column)'/>

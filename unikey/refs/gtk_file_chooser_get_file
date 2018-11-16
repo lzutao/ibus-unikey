@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkfilechooser.h' l='193' type='GFile * gtk_file_chooser_get_file(GtkFileChooser * chooser)'/>
+<doc f='include/gtk-2.0/gtk/gtkfilechooser.h' l='192'>/* GFile manipulation */</doc>

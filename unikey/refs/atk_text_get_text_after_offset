@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atktext.h' l='357' type='gchar * atk_text_get_text_after_offset(AtkText * text, gint offset, AtkTextBoundary boundary_type, gint * start_offset, gint * end_offset)'/>

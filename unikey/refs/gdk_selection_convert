@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkselection.h' l='85' type='void gdk_selection_convert(GdkWindow * requestor, GdkAtom selection, GdkAtom target, guint32 time_)'/>

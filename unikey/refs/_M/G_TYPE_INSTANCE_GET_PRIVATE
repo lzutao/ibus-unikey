@@ -1,0 +1,16 @@
+<dec f='include/glib-2.0/gobject/gtype.h' l='639'/>
+<doc f='include/glib-2.0/gobject/gtype.h' l='624'>/**
+ * G_TYPE_INSTANCE_GET_PRIVATE:
+ * @instance: the instance of a type deriving from @private_type
+ * @g_type: the type identifying which private data to retrieve
+ * @c_type: The C type for the private structure
+ * 
+ * Gets the private structure for a particular type.
+ * The private structure must have been registered in the
+ * class_init function with g_type_class_add_private().
+ * 
+ * This macro should only be used in type implementations.
+ * 
+ * Since: 2.4
+ * Returns: (not nullable): a pointer to the private data structure
+ */</doc>

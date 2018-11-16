@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='1897' type='void cairo_user_font_face_set_render_glyph_func(cairo_font_face_t * font_face, cairo_user_scaled_font_render_glyph_func_t render_glyph_func)'/>

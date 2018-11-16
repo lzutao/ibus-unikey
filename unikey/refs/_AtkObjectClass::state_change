@@ -1,0 +1,6 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='634' type='void (*)(AtkObject *, const gchar *, gboolean)'/>
+<offset>2432</offset>
+<doc f='include/atk-1.0/atk/atkobject.h' l='630'>/*
+   * The signal handler which is executed  when there is a state_change 
+   * signal for an object.
+   */</doc>

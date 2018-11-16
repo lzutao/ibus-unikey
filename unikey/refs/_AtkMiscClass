@@ -1,0 +1,15 @@
+<def f='include/atk-1.0/atk/atkmisc.h' l='92' ll='98'/>
+<size>408</size>
+<doc f='include/atk-1.0/atk/atkmisc.h' l='83'>/**
+ * AtkMiscClass:
+ * @threads_enter: This virtual function is deprecated since 2.12 and
+ *   it should not be overriden.
+ * @threads_leave: This virtual function is deprecated sice 2.12 and
+ *   it should not be overriden.
+ *
+ * Usage of AtkMisc is deprecated since 2.12 and heavily discouraged.
+ */</doc>
+<mbr r='_AtkMiscClass::parent' o='0' t='GObjectClass'/>
+<mbr r='_AtkMiscClass::threads_enter' o='1088' t='void (*)(AtkMisc *)'/>
+<mbr r='_AtkMiscClass::threads_leave' o='1152' t='void (*)(AtkMisc *)'/>
+<mbr r='_AtkMiscClass::vfuncs' o='1216' t='gpointer [32]'/>

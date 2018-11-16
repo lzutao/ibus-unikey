@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='223' type='gint'/>
+<offset>2880</offset>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='222'>/* the current x-pixel location of the xor-drag line */</doc>

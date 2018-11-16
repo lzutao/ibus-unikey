@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtkcolorsel.h' l='66' ll='77'/>
+<size>864</size>
+<mbr r='_GtkColorSelectionClass::parent_class' o='0' t='GtkVBoxClass'/>
+<mbr r='_GtkColorSelectionClass::color_changed' o='6592' t='void (*)(GtkColorSelection *)'/>
+<mbr r='_GtkColorSelectionClass::_gtk_reserved1' o='6656' t='void (*)()'/>
+<mbr r='_GtkColorSelectionClass::_gtk_reserved2' o='6720' t='void (*)()'/>
+<mbr r='_GtkColorSelectionClass::_gtk_reserved3' o='6784' t='void (*)()'/>
+<mbr r='_GtkColorSelectionClass::_gtk_reserved4' o='6848' t='void (*)()'/>

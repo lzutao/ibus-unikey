@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-io.h' l='82' type='GdkPixbufFormat * gdk_pixbuf_get_file_info_finish(GAsyncResult * async_result, gint * width, gint * height, GError ** error)'/>

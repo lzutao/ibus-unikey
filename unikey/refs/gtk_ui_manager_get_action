@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkuimanager.h' l='129' type='GtkAction * gtk_ui_manager_get_action(GtkUIManager * self, const gchar * path)'/>

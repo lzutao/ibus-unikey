@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkscalebutton.h' l='93' type='void gtk_scale_button_set_value(GtkScaleButton * button, gdouble value)'/>

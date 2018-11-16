@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkcolor.h' l='147' type='void gdk_colors_store(GdkColormap * colormap, GdkColor * colors, gint ncolors)'/>

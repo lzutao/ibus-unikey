@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gdk/gdkevents.h' l='481' ll='489'/>
+<size>40</size>
+<doc f='include/gtk-2.0/gdk/gdkevents.h' l='479'>/* Event types for DND */</doc>
+<mbr r='_GdkEventDND::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventDND::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventDND::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventDND::context' o='192' t='GdkDragContext *'/>
+<mbr r='_GdkEventDND::time' o='256' t='guint32'/>
+<mbr r='_GdkEventDND::x_root' o='288' t='gshort'/>
+<mbr r='_GdkEventDND::y_root' o='304' t='gshort'/>

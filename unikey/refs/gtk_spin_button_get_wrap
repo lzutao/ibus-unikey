@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkspinbutton.h' l='182' type='gboolean gtk_spin_button_get_wrap(GtkSpinButton * spin_button)'/>

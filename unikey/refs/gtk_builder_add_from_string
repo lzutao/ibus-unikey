@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkbuilder.h' l='100' type='guint gtk_builder_add_from_string(GtkBuilder * builder, const gchar * buffer, gsize length, GError ** error)'/>

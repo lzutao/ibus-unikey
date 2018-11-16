@@ -1,0 +1,8 @@
+<def f='include/ibus-1.0/ibuspanelservice.h' l='70' ll='73'/>
+<size>48</size>
+<doc f='include/ibus-1.0/ibuspanelservice.h' l='65'>/**
+ * IBusPanelService:
+ *
+ * An opaque data type representing an IBusPanelService.
+ */</doc>
+<mbr r='_IBusPanelService::parent' o='0' t='IBusService'/>

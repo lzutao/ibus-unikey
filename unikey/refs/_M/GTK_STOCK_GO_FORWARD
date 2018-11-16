@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='411'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='403'>/**
+ * GTK_STOCK_GO_FORWARD:
+ *
+ * The &quot;Forward&quot; item.
+ * &lt;inlinegraphic fileref=&quot;go-next-ltr.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ * RTL variant
+ * &lt;inlinegraphic fileref=&quot;go-next-rtl.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

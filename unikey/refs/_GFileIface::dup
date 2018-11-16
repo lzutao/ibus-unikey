@@ -1,0 +1,3 @@
+<dec f='include/glib-2.0/gio/gfile.h' l='165' type='GFile *(*)(GFile *)'/>
+<offset>128</offset>
+<doc f='include/glib-2.0/gio/gfile.h' l='163'>/* Virtual Table */</doc>

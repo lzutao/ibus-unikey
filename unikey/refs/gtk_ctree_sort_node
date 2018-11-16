@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='427' type='void gtk_ctree_sort_node(GtkCTree * ctree, GtkCTreeNode * node)'/>
+<doc f='include/gtk-2.0/gtk/gtkctree.h' l='423'>/***********************************************************
+ *             Tree sorting functions                      *
+ ***********************************************************/</doc>

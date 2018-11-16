@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='253' type='GdkScreen * gtk_window_get_screen(GtkWindow * window)'/>

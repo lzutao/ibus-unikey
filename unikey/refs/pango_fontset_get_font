@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-fontset.h' l='68' type='PangoFont * pango_fontset_get_font(PangoFontset * fontset, guint wc)'/>

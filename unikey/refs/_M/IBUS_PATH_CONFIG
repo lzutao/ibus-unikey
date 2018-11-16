@@ -1,0 +1,6 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='108'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='103'>/**
+ * IBUS_PATH_CONFIG:
+ *
+ * D-Bus path for IBus config.
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibustext.h' l='207' type='IBusAttrList * ibus_text_get_attributes(IBusText * text)'/>
+<doc f='include/ibus-1.0/ibustext.h' l='199'>/**
+ * ibus_text_get_attributes:
+ * @text: An #IBusText.
+ *
+ * Return the attributes in an #IBusText. Should not be freed.
+ *
+ * Returns: (transfer none): the attrs in @text.
+ */</doc>

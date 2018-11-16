@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkbbox.h' l='98' type='void _gtk_button_box_child_requisition(GtkWidget * widget, int * nvis_children, int * nvis_secondaries, int * width, int * height)'/>
+<doc f='include/gtk-2.0/gtk/gtkbbox.h' l='97'>/* Internal method - do not use. */</doc>

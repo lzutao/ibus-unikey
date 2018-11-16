@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='247' type='void gtk_entry_set_progress_pulse_step(GtkEntry * entry, gdouble fraction)'/>

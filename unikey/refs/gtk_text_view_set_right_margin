@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextview.h' l='361' type='void gtk_text_view_set_right_margin(GtkTextView * text_view, gint right_margin)'/>

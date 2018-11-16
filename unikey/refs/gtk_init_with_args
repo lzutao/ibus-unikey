@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmain.h' l='100' type='gboolean gtk_init_with_args(int * argc, char *** argv, const char * parameter_string, GOptionEntry * entries, const char * translation_domain, GError ** error)'/>

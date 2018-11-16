@@ -1,0 +1,36 @@
+<def f='include/gtk-2.0/gtk/gtkstyle.h' l='73' ll='123'/>
+<size>984</size>
+<mbr r='_GtkStyle::parent_instance' o='0' t='GObject'/>
+<mbr r='_GtkStyle::fg' o='192' t='GdkColor [5]'/>
+<mbr r='_GtkStyle::bg' o='672' t='GdkColor [5]'/>
+<mbr r='_GtkStyle::light' o='1152' t='GdkColor [5]'/>
+<mbr r='_GtkStyle::dark' o='1632' t='GdkColor [5]'/>
+<mbr r='_GtkStyle::mid' o='2112' t='GdkColor [5]'/>
+<mbr r='_GtkStyle::text' o='2592' t='GdkColor [5]'/>
+<mbr r='_GtkStyle::base' o='3072' t='GdkColor [5]'/>
+<mbr r='_GtkStyle::text_aa' o='3552' t='GdkColor [5]'/>
+<mbr r='_GtkStyle::black' o='4032' t='GdkColor'/>
+<mbr r='_GtkStyle::white' o='4128' t='GdkColor'/>
+<mbr r='_GtkStyle::font_desc' o='4224' t='PangoFontDescription *'/>
+<mbr r='_GtkStyle::xthickness' o='4288' t='gint'/>
+<mbr r='_GtkStyle::ythickness' o='4320' t='gint'/>
+<mbr r='_GtkStyle::fg_gc' o='4352' t='GdkGC *[5]'/>
+<mbr r='_GtkStyle::bg_gc' o='4672' t='GdkGC *[5]'/>
+<mbr r='_GtkStyle::light_gc' o='4992' t='GdkGC *[5]'/>
+<mbr r='_GtkStyle::dark_gc' o='5312' t='GdkGC *[5]'/>
+<mbr r='_GtkStyle::mid_gc' o='5632' t='GdkGC *[5]'/>
+<mbr r='_GtkStyle::text_gc' o='5952' t='GdkGC *[5]'/>
+<mbr r='_GtkStyle::base_gc' o='6272' t='GdkGC *[5]'/>
+<mbr r='_GtkStyle::text_aa_gc' o='6592' t='GdkGC *[5]'/>
+<mbr r='_GtkStyle::black_gc' o='6912' t='GdkGC *'/>
+<mbr r='_GtkStyle::white_gc' o='6976' t='GdkGC *'/>
+<mbr r='_GtkStyle::bg_pixmap' o='7040' t='GdkPixmap *[5]'/>
+<mbr r='_GtkStyle::attach_count' o='7360' t='gint'/>
+<mbr r='_GtkStyle::depth' o='7392' t='gint'/>
+<mbr r='_GtkStyle::colormap' o='7424' t='GdkColormap *'/>
+<mbr r='_GtkStyle::private_font' o='7488' t='GdkFont *'/>
+<mbr r='_GtkStyle::private_font_desc' o='7552' t='PangoFontDescription *'/>
+<mbr r='_GtkStyle::rc_style' o='7616' t='GtkRcStyle *'/>
+<mbr r='_GtkStyle::styles' o='7680' t='GSList *'/>
+<mbr r='_GtkStyle::property_cache' o='7744' t='GArray *'/>
+<mbr r='_GtkStyle::icon_factories' o='7808' t='GSList *'/>

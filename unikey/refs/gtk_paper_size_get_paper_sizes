@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkpapersize.h' l='64' type='GList * gtk_paper_size_get_paper_sizes(gboolean include_custom)'/>

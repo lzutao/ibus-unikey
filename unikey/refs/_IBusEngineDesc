@@ -1,0 +1,10 @@
+<def f='include/ibus-1.0/ibusenginedesc.h' l='82' ll='89'/>
+<size>56</size>
+<doc f='include/ibus-1.0/ibusenginedesc.h' l='76'>/**
+ * IBusEngineDesc:
+ *
+ * Input method engine description data.
+ * You can get extended values with g_object_get_properties.
+ */</doc>
+<mbr r='_IBusEngineDesc::parent' o='0' t='IBusSerializable'/>
+<mbr r='_IBusEngineDesc::priv' o='384' t='IBusEngineDescPrivate *'/>

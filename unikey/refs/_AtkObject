@@ -1,0 +1,9 @@
+<def f='include/atk-1.0/atk/atkobject.h' l='501' ll='511'/>
+<size>72</size>
+<mbr r='_AtkObject::parent' o='0' t='GObject'/>
+<mbr r='_AtkObject::description' o='192' t='gchar *'/>
+<mbr r='_AtkObject::name' o='256' t='gchar *'/>
+<mbr r='_AtkObject::accessible_parent' o='320' t='AtkObject *'/>
+<mbr r='_AtkObject::role' o='384' t='AtkRole'/>
+<mbr r='_AtkObject::relation_set' o='448' t='AtkRelationSet *'/>
+<mbr r='_AtkObject::layer' o='512' t='AtkLayer'/>

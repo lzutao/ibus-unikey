@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='741'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='735'>/**
+ * GTK_STOCK_PREFERENCES:
+ *
+ * The &quot;Preferences&quot; item.
+ * &lt;inlinegraphic fileref=&quot;gtk-preferences.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

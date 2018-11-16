@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='543'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='537'>/**
+ * GTK_STOCK_MISSING_IMAGE:
+ *
+ * The &quot;Missing image&quot; icon.
+ * &lt;inlinegraphic fileref=&quot;image-missing.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

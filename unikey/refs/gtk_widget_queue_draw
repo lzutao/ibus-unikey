@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='864' type='void gtk_widget_queue_draw(GtkWidget * widget)'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='863'>/* Queuing draws */</doc>

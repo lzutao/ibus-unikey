@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkicontheme.h' l='185' type='gboolean gtk_icon_info_get_embedded_rect(GtkIconInfo * icon_info, GdkRectangle * rectangle)'/>

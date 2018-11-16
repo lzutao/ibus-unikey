@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkinput.h' l='148' type='void gdk_device_set_source(GdkDevice * device, GdkInputSource source)'/>
+<doc f='include/gtk-2.0/gdk/gdkinput.h' l='147'>/* Functions to configure a device */</doc>

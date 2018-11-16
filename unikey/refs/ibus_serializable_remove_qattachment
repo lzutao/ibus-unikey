@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusserializable.h' l='235' type='void ibus_serializable_remove_qattachment(IBusSerializable * serializable, GQuark key)'/>
+<doc f='include/ibus-1.0/ibusserializable.h' l='227'>/**
+ * ibus_serializable_remove_qattachment:
+ * @serializable: An #IBusSerializable.
+ * @key: String formatted key for indexing value.
+ *
+ * Remove a value from attachment of an #IBusSerializable.
+ * See also: ibus_serializable_remove_attachment().
+ */</doc>

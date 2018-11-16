@@ -1,0 +1,11 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-macros.h' l='179'/>
+<use f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-macros.h' l='537' u='c'/>
+<use f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-macros.h' l='547' u='c'/>
+<doc f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-macros.h' l='171'>/**
+ * GDK_PIXBUF_VERSION_2_24:
+ *
+ * A macro that evaluates to the 2.24 version of GdkPixbuf,
+ * in a format that can be used by the C pre-processor.
+ *
+ * Since: 2.36
+ */</doc>

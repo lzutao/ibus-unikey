@@ -1,0 +1,16 @@
+<dec f='include/ibus-1.0/ibusinputcontext.h' l='496' type='void ibus_input_context_set_content_type(IBusInputContext * context, guint purpose, guint hints)'/>
+<doc f='include/ibus-1.0/ibusinputcontext.h' l='481'>/**
+ * ibus_input_context_set_content_type:
+ * @context: An #IBusInputContext.
+ * @purpose: Primary purpose of the input context, as an #IBusInputPurpose.
+ * @hints: Hints that augment @purpose, as an #IBusInputHints.
+ *
+ * Set content-type (primary purpose and hints) of the context.  This
+ * information is particularly useful to implement intelligent
+ * behavior in engines, such as automatic input-mode switch and text
+ * prediction.  For example, to restrict input to numbers, the client
+ * can call this function with @purpose set to
+ * #IBUS_INPUT_PURPOSE_NUMBER.
+ *
+ * See also: #IBusEngine::set-content-type
+ */</doc>

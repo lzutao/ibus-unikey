@@ -1,0 +1,5 @@
+<def f='include/atk-1.0/atk/atkregistry.h' l='39' ll='44'/>
+<size>40</size>
+<mbr r='_AtkRegistry::parent' o='0' t='GObject'/>
+<mbr r='_AtkRegistry::factory_type_registry' o='192' t='GHashTable *'/>
+<mbr r='_AtkRegistry::factory_singleton_cache' o='256' t='GHashTable *'/>

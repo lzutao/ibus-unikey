@@ -1,0 +1,15 @@
+<def f='include/gtk-2.0/gtk/gtkbutton.h' l='51' ll='70'/>
+<size>144</size>
+<mbr r='_GtkButton::bin' o='0' t='GtkBin'/>
+<mbr r='_GtkButton::event_window' o='960' t='GdkWindow *'/>
+<mbr r='_GtkButton::label_text' o='1024' t='gchar *'/>
+<mbr r='_GtkButton::activate_timeout' o='1088' t='guint'/>
+<mbr r='_GtkButton::constructed' o='1120' t='guint'/>
+<mbr r='_GtkButton::in_button' o='1121' t='guint'/>
+<mbr r='_GtkButton::button_down' o='1122' t='guint'/>
+<mbr r='_GtkButton::relief' o='1123' t='guint'/>
+<mbr r='_GtkButton::use_underline' o='1125' t='guint'/>
+<mbr r='_GtkButton::use_stock' o='1126' t='guint'/>
+<mbr r='_GtkButton::depressed' o='1127' t='guint'/>
+<mbr r='_GtkButton::depress_on_activate' o='1128' t='guint'/>
+<mbr r='_GtkButton::focus_on_click' o='1129' t='guint'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkstyle.h' l='869' type='void gtk_paint_spinner(GtkStyle * style, GdkWindow * window, GtkStateType state_type, const GdkRectangle * area, GtkWidget * widget, const gchar * detail, guint step, gint x, gint y, gint width, gint height)'/>

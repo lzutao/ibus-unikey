@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gtk/gtktreednd.h' l='40' ll='55'/>
+<size>40</size>
+<mbr r='_GtkTreeDragSourceIface::g_iface' o='0' t='GTypeInterface'/>
+<mbr r='_GtkTreeDragSourceIface::row_draggable' o='128' t='gboolean (*)(GtkTreeDragSource *, GtkTreePath *)'/>
+<mbr r='_GtkTreeDragSourceIface::drag_data_get' o='192' t='gboolean (*)(GtkTreeDragSource *, GtkTreePath *, GtkSelectionData *)'/>
+<mbr r='_GtkTreeDragSourceIface::drag_data_delete' o='256' t='gboolean (*)(GtkTreeDragSource *, GtkTreePath *)'/>

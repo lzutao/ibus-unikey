@@ -1,0 +1,3 @@
+<dec f='unikey/setup/dlg_macro_table.h' l='8' type='void unikey_macro_dialog_save_macro(GtkDialog * dialog, CMacroTable * macro)'/>
+<def f='unikey/setup/dlg_macro_table.cpp' l='149' ll='174' type='void unikey_macro_dialog_save_macro(GtkDialog * dialog, CMacroTable * macro)'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='168' u='c' c='_ZL20macro_edit_button_cbP10_GtkButtonPv'/>

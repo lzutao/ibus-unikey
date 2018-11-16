@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/glib/garray.h' l='144' type='void g_ptr_array_unref(GPtrArray * array)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='54' u='c' c='_ZL30glib_autoptr_cleanup_GPtrArrayPP10_GPtrArray'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='54' u='r' c='_ZL34glib_listautoptr_cleanup_GPtrArrayPP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='54' u='r' c='_ZL35glib_slistautoptr_cleanup_GPtrArrayPP7_GSList'/>

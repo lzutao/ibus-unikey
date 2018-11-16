@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-glyph.h' l='204' type='void pango_shape_full(const gchar * item_text, gint item_length, const gchar * paragraph_text, gint paragraph_length, const PangoAnalysis * analysis, PangoGlyphString * glyphs)'/>

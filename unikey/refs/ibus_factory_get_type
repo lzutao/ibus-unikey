@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusfactory.h' l='150' type='GType ibus_factory_get_type()'/>
+<doc f='include/ibus-1.0/ibusfactory.h' l='143'>/**
+ * ibus_factory_info_get_type:
+ *
+ * Gets GType of IBus factory information.
+ *
+ * Returns: GType of IBus factory information.
+ */</doc>

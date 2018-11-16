@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='787' type='AtkObject *(*)(GtkWidget *)'/>
+<offset>5184</offset>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='785'>/* accessibility support 
+   */</doc>

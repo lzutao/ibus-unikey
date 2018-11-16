@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='281' type='void gtk_text_buffer_place_cursor(GtkTextBuffer * buffer, const GtkTextIter * where)'/>
+<doc f='include/gtk-2.0/gtk/gtktextbuffer.h' l='280'>/* efficiently move insert and selection_bound at the same time */</doc>

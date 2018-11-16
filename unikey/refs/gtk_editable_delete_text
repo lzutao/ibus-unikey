@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkeditable.h' l='98' type='void gtk_editable_delete_text(GtkEditable * editable, gint start_pos, gint end_pos)'/>

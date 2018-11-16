@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='1620' type='void cairo_scaled_font_extents(cairo_scaled_font_t * scaled_font, cairo_font_extents_t * extents)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='403' type='GtkVisibility gtk_ctree_node_is_visible(GtkCTree * ctree, GtkCTreeNode * node)'/>

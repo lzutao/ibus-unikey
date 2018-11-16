@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ibusproplist.h source code [include/ibus-1.0/ibusproplist.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/ibus-1.0/ibusproplist.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>ibus-1.0</a>/<a href='ibusproplist.h.html'>ibusproplist.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* -*- mode: C; c-basic-offset: 4; indent-tabs-mode: nil; -*- */</i></td></tr>
+<tr><th id="2">2</th><td><i>/* vim:set et sts=4: */</i></td></tr>
+<tr><th id="3">3</th><td><i>/* IBus - The Input Bus</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 2008-2013 Peng Huang &lt;shawn.p.huang@gmail.com&gt;</i></td></tr>
+<tr><th id="5">5</th><td><i> * Copyright (C) 2008-2013 Red Hat, Inc.</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="8">8</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="9">9</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="10">10</th><td><i> * version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="11">11</th><td><i> *</i></td></tr>
+<tr><th id="12">12</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="13">13</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="14">14</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="15">15</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="18">18</th><td><i> * License along with this library; if not, write to the Free Software</i></td></tr>
+<tr><th id="19">19</th><td><i> * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301</i></td></tr>
+<tr><th id="20">20</th><td><i> * USA</i></td></tr>
+<tr><th id="21">21</th><td><i> */</i></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> !defined (<a class="macro" href="ibus.h.html#26" data-ref="_M/__IBUS_H_INSIDE__">__IBUS_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/IBUS_COMPILATION">IBUS_COMPILATION</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#error "Only &lt;ibus.h&gt; can be included directly"</u></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/__IBUS_PROP_LIST_H_">__IBUS_PROP_LIST_H_</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/__IBUS_PROP_LIST_H_" data-ref="_M/__IBUS_PROP_LIST_H_">__IBUS_PROP_LIST_H_</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> * SECTION: ibusproplist</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> *<span class="command"> @Title</span>: IBusPropList</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> * <span class="command">@Short</span>_description: An #IBusProperty container.</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> *<span class="command"> @Stability</span>: Stable</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * See_also: #IBusProperty, #IBusEngine</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><u>#include <a href="ibusserializable.h.html">"ibusserializable.h"</a></u></td></tr>
+<tr><th id="41">41</th><td><u>#include <a href="ibusproperty.h.html">"ibusproperty.h"</a></u></td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><a class="macro" href="../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><i>/*</i></td></tr>
+<tr><th id="46">46</th><td><i> * Type macros.</i></td></tr>
+<tr><th id="47">47</th><td><i> */</i></td></tr>
+<tr><th id="48">48</th><td><i>/* define IBusPropList macros */</i></td></tr>
+<tr><th id="49">49</th><td><u>#define <dfn class="macro" id="_M/IBUS_TYPE_PROP_LIST" data-ref="_M/IBUS_TYPE_PROP_LIST">IBUS_TYPE_PROP_LIST</dfn>             \</u></td></tr>
+<tr><th id="50">50</th><td><u>    (ibus_prop_list_get_type ())</u></td></tr>
+<tr><th id="51">51</th><td><u>#define <dfn class="macro" id="_M/IBUS_PROP_LIST" data-ref="_M/IBUS_PROP_LIST">IBUS_PROP_LIST</dfn>(obj)             \</u></td></tr>
+<tr><th id="52">52</th><td><u>    (G_TYPE_CHECK_INSTANCE_CAST ((obj), IBUS_TYPE_PROP_LIST, IBusPropList))</u></td></tr>
+<tr><th id="53">53</th><td><u>#define <dfn class="macro" id="_M/IBUS_PROP_LIST_CLASS" data-ref="_M/IBUS_PROP_LIST_CLASS">IBUS_PROP_LIST_CLASS</dfn>(klass)     \</u></td></tr>
+<tr><th id="54">54</th><td><u>    (G_TYPE_CHECK_CLASS_CAST ((klass), IBUS_TYPE_PROP_LIST, IBusPropListClass))</u></td></tr>
+<tr><th id="55">55</th><td><u>#define <dfn class="macro" id="_M/IBUS_IS_PROP_LIST" data-ref="_M/IBUS_IS_PROP_LIST">IBUS_IS_PROP_LIST</dfn>(obj)          \</u></td></tr>
+<tr><th id="56">56</th><td><u>    (G_TYPE_CHECK_INSTANCE_TYPE ((obj), IBUS_TYPE_PROP_LIST))</u></td></tr>
+<tr><th id="57">57</th><td><u>#define <dfn class="macro" id="_M/IBUS_IS_PROP_LIST_CLASS" data-ref="_M/IBUS_IS_PROP_LIST_CLASS">IBUS_IS_PROP_LIST_CLASS</dfn>(klass)  \</u></td></tr>
+<tr><th id="58">58</th><td><u>    (G_TYPE_CHECK_CLASS_TYPE ((klass), IBUS_TYPE_PROP_LIST))</u></td></tr>
+<tr><th id="59">59</th><td><u>#define <dfn class="macro" id="_M/IBUS_PROP_LIST_GET_CLASS" data-ref="_M/IBUS_PROP_LIST_GET_CLASS">IBUS_PROP_LIST_GET_CLASS</dfn>(obj)   \</u></td></tr>
+<tr><th id="60">60</th><td><u>    (G_TYPE_INSTANCE_GET_CLASS ((obj), IBUS_TYPE_PROP_LIST, IBusPropListClass))</u></td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td><i>/* FIXME: <a href="https://mail.gnome.org/archives/gtk-doc-list/2015-July/msg00004.html">https://mail.gnome.org/archives/gtk-doc-list/2015-July/msg00004.html</a></i></td></tr>
+<tr><th id="63">63</th><td><i> * If ibusproperty.h and ibusproplist.h includes each other,</i></td></tr>
+<tr><th id="64">64</th><td><i> * gtk-doc build outputs several warnings:</i></td></tr>
+<tr><th id="65">65</th><td><i> *</i></td></tr>
+<tr><th id="66">66</th><td><i> * # cd html &amp;&amp; gtkdoc-mkhtml ibus ../ibus-docs.sgml</i></td></tr>
+<tr><th id="67">67</th><td><i> * ../ibus-docs.sgml:4: element refentry: validity error : ID IBusPropList</i></td></tr>
+<tr><th id="68">68</th><td><i> * already defined</i></td></tr>
+<tr><th id="69">69</th><td><i> * ../ibus-docs.sgml:172: element refsect2: validity error : ID</i></td></tr>
+<tr><th id="70">70</th><td><i> * IBusPropListClass already defined</i></td></tr>
+<tr><th id="71">71</th><td><i> * Warning: multiple "IDs" for constraint linkend: IBusPropList.</i></td></tr>
+<tr><th id="72">72</th><td><i> * Warning: multiple "IDs" for constraint linkend: IBusPropList.</i></td></tr>
+<tr><th id="73">73</th><td><i> * Warning: multiple "IDs" for constraint linkend: IBusPropListClass.</i></td></tr>
+<tr><th id="74">74</th><td><i> */</i></td></tr>
+<tr><th id="75">75</th><td><u>#<span data-ppcond="75">ifndef</span> <a class="macro" href="ibusproperty.h.html#120" data-ref="_M/__PROPLIST_DEFINED">__PROPLIST_DEFINED</a></u></td></tr>
+<tr><th id="76">76</th><td><u>#define __PROPLIST_DEFINED</u></td></tr>
+<tr><th id="77">77</th><td><b>typedef</b> <b>struct</b> _IBusPropList IBusPropList;</td></tr>
+<tr><th id="78">78</th><td><b>typedef</b> <b>struct</b> _IBusPropListClass IBusPropListClass;</td></tr>
+<tr><th id="79">79</th><td><u>#<span data-ppcond="75">endif</span></u></td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc"> * IBusPropList:</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc"> *<span class="command"> @properties</span>: GArray that holds IBusProperties.</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> * An array of IBusProperties.</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="87">87</th><td><b>struct</b> <dfn class="type def" id="_IBusPropList" title='_IBusPropList' data-ref="_IBusPropList">_IBusPropList</dfn> {</td></tr>
+<tr><th id="88">88</th><td>    <a class="typedef" href="ibusserializable.h.html#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a> <dfn class="decl" id="_IBusPropList::parent" title='_IBusPropList::parent' data-ref="_IBusPropList::parent">parent</dfn>;</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td>    <i>/*&lt; public &gt;*/</i></td></tr>
+<tr><th id="91">91</th><td>    <a class="typedef" href="../glib-2.0/glib/garray.h.html#GArray" title='GArray' data-type='struct _GArray' data-ref="GArray">GArray</a> *<dfn class="decl" id="_IBusPropList::properties" title='_IBusPropList::properties' data-ref="_IBusPropList::properties">properties</dfn>;</td></tr>
+<tr><th id="92">92</th><td>};</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> * IBusPropListClass:</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> *<span class="command"> @parent</span>: The parent class.</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> * Class structure for #IBusPropList.</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="100">100</th><td><b>struct</b> <dfn class="type def" id="_IBusPropListClass" title='_IBusPropListClass' data-ref="_IBusPropListClass">_IBusPropListClass</dfn> {</td></tr>
+<tr><th id="101">101</th><td>    <a class="typedef" href="ibusserializable.h.html#IBusSerializableClass" title='IBusSerializableClass' data-type='struct _IBusSerializableClass' data-ref="IBusSerializableClass">IBusSerializableClass</a> <dfn class="decl" id="_IBusPropListClass::parent" title='_IBusPropListClass::parent' data-ref="_IBusPropListClass::parent">parent</dfn>;</td></tr>
+<tr><th id="102">102</th><td>};</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><a class="typedef" href="../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>            <dfn class="decl" id="ibus_prop_list_get_type" title='ibus_prop_list_get_type' data-ref="ibus_prop_list_get_type">ibus_prop_list_get_type</dfn>    ();</td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> * ibus_prop_list_new:</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> * Create a new #IBusPropList.</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> * Returns: A newly allocated #IBusPropList.</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="113">113</th><td><a class="typedef" href="ibusproperty.h.html#IBusPropList" title='IBusPropList' data-type='struct _IBusPropList' data-ref="IBusPropList">IBusPropList</a>    *<dfn class="decl" id="ibus_prop_list_new" title='ibus_prop_list_new' data-ref="ibus_prop_list_new">ibus_prop_list_new</dfn>         ();</td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> * ibus_prop_list_append:</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc"> *<span class="command"> @prop</span>_list: An IBusPropList.</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc"> *<span class="command"> @prop</span>: IBusProperty to be append to<span class="command"> @prop</span>_list.</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> * Append an IBusProperty to an IBusPropList, and increase reference.</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="122">122</th><td><em>void</em>             <dfn class="decl" id="ibus_prop_list_append" title='ibus_prop_list_append' data-ref="ibus_prop_list_append">ibus_prop_list_append</dfn>      (<a class="typedef" href="ibusproperty.h.html#IBusPropList" title='IBusPropList' data-type='struct _IBusPropList' data-ref="IBusPropList">IBusPropList</a>   *<dfn class="local col0 decl" id="190prop_list" title='prop_list' data-type='IBusPropList *' data-ref="190prop_list">prop_list</dfn>,</td></tr>
+<tr><th id="123">123</th><td>                                             <a class="typedef" href="ibusproperty.h.html#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col1 decl" id="191prop" title='prop' data-type='IBusProperty *' data-ref="191prop">prop</dfn>);</td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> * ibus_prop_list_get:</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> *<span class="command"> @prop</span>_list: An IBusPropList.</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> *<span class="command"> @index</span>: Index of an IBusPropList.</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc"> * Gets #IBusProperty at given index. Borrowed reference.</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> * Returns: (transfer none): #IBusProperty at given index, %NULL if no such</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> *     #IBusProperty.</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="135">135</th><td><a class="typedef" href="ibusproperty.h.html#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>    *<dfn class="decl" id="ibus_prop_list_get" title='ibus_prop_list_get' data-ref="ibus_prop_list_get">ibus_prop_list_get</dfn>         (<a class="typedef" href="ibusproperty.h.html#IBusPropList" title='IBusPropList' data-type='struct _IBusPropList' data-ref="IBusPropList">IBusPropList</a>   *<dfn class="local col2 decl" id="192prop_list" title='prop_list' data-type='IBusPropList *' data-ref="192prop_list">prop_list</dfn>,</td></tr>
+<tr><th id="136">136</th><td>                                             <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           <dfn class="local col3 decl" id="193index" title='index' data-type='guint' data-ref="193index">index</dfn>);</td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> * ibus_prop_list_update_property:</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc"> *<span class="command"> @prop</span>_list: An IBusPropList.</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc"> *<span class="command"> @prop</span>: IBusProperty to be update.</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> * Update an IBusProperty in IBusPropList.</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> * Returns: %TRUE if succeeded, %FALSE otherwise.</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="147">147</th><td><a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>         <dfn class="decl" id="ibus_prop_list_update_property" title='ibus_prop_list_update_property' data-ref="ibus_prop_list_update_property">ibus_prop_list_update_property</dfn></td></tr>
+<tr><th id="148">148</th><td>                                            (<a class="typedef" href="ibusproperty.h.html#IBusPropList" title='IBusPropList' data-type='struct _IBusPropList' data-ref="IBusPropList">IBusPropList</a>   *<dfn class="local col4 decl" id="194prop_list" title='prop_list' data-type='IBusPropList *' data-ref="194prop_list">prop_list</dfn>,</td></tr>
+<tr><th id="149">149</th><td>                                             <a class="typedef" href="ibusproperty.h.html#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col5 decl" id="195prop" title='prop' data-type='IBusProperty *' data-ref="195prop">prop</dfn>);</td></tr>
+<tr><th id="150">150</th><td><a class="macro" href="../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="151">151</th><td><u>#<span data-ppcond="27">endif</span></u></td></tr>
+<tr><th id="152">152</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../unikey/setup/dlg_main_setup.cpp.html'>unikey/setup/dlg_main_setup.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,2 @@
+<dec f='include/glib-2.0/gio/gappinfo.h' l='265' type='char *(*)(GAppLaunchContext *, GAppInfo *, GList *)'/>
+<offset>1152</offset>

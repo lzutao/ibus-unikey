@@ -1,0 +1,19 @@
+<def f='include/pango-1.0/pango/pango-glyph.h' l='121' ll='135'/>
+<size>32</size>
+<doc f='include/pango-1.0/pango/pango-glyph.h' l='108'>/**
+ * PangoGlyphString:
+ * @num_glyphs: number of the glyphs in this glyph string.
+ * @glyphs: (array length=num_glyphs): array of glyph information
+ *          for the glyph string.
+ * @log_clusters: logical cluster info, indexed by the byte index
+ *                within the text corresponding to the glyph string.
+ *
+ * The #PangoGlyphString structure is used to store strings
+ * of glyphs with geometry and visual attribute information.
+ * The storage for the glyph information is owned
+ * by the structure which simplifies memory management.
+ */</doc>
+<mbr r='_PangoGlyphString::num_glyphs' o='0' t='gint'/>
+<mbr r='_PangoGlyphString::glyphs' o='64' t='PangoGlyphInfo *'/>
+<mbr r='_PangoGlyphString::log_clusters' o='128' t='gint *'/>
+<mbr r='_PangoGlyphString::space' o='192' t='gint'/>

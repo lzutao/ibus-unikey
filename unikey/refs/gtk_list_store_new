@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkliststore.h' l='78' type='GtkListStore * gtk_list_store_new(gint n_columns)'/>

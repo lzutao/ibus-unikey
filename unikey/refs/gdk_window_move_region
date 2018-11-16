@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='403' type='void gdk_window_move_region(GdkWindow * window, const GdkRegion * region, gint dx, gint dy)'/>

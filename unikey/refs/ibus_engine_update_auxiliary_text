@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='285' type='void ibus_engine_update_auxiliary_text(IBusEngine * engine, IBusText * text, gboolean visible)'/>
+<doc f='include/ibus-1.0/ibusengine.h' l='273'>/**
+ * ibus_engine_update_auxiliary_text:
+ * @engine: An IBusEngine.
+ * @text: Update content.
+ * @visible: Whether the auxiliary text bar is visible.
+ *
+ * Update the auxiliary bar.
+ *
+ * (Note: The text object will be released, if it is floating.
+ *  If caller want to keep the object, caller should make the object
+ *  sink by g_object_ref_sink.)
+ */</doc>

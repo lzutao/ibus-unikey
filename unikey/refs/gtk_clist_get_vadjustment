@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='458' type='GtkAdjustment * gtk_clist_get_vadjustment(GtkCList * clist)'/>

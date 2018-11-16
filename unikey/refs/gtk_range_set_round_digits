@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrange.h' l='196' type='void gtk_range_set_round_digits(GtkRange * range, gint round_digits)'/>

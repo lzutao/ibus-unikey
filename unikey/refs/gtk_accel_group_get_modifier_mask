@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='126' type='GdkModifierType gtk_accel_group_get_modifier_mask(GtkAccelGroup * accel_group)'/>

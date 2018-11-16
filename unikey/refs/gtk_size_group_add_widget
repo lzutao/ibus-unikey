@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtksizegroup.h' l='96' type='void gtk_size_group_add_widget(GtkSizeGroup * size_group, GtkWidget * widget)'/>

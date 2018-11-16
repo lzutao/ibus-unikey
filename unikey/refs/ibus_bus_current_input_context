@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='599' type='gchar * ibus_bus_current_input_context(IBusBus * bus)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='589'>/**
+ * ibus_bus_current_input_context:
+ * @bus: An #IBusBus.
+ *
+ * Get the current focused input context synchronously.
+ *
+ * Returns: The named of currently focued #IBusInputContext if the
+ *          &quot;CurrentInputContext&quot; call suceeded, %NULL otherwise. The return
+ *          value must be freed with g_free().
+ */</doc>

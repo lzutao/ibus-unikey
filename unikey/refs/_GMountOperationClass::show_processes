@@ -1,0 +1,11 @@
+<dec f='include/glib-2.0/gio/gmountoperation.h' l='91' type='void (*)(GMountOperation *, const gchar *, GArray *, const gchar **)'/>
+<offset>1344</offset>
+<doc f='include/glib-2.0/gio/gmountoperation.h' l='82'>/**
+   * GMountOperationClass::show_processes:
+   * @op:
+   * @message:
+   * @processes: (element-type GPid):
+   * @choices: (array zero-terminated=1) (element-type utf8):
+   *
+   * Since: 2.22
+   */</doc>

@@ -1,0 +1,6 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='59'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='54'>/**
+ * IBUS_SERVICE_PORTAL:
+ *
+ * Address of IBus portalservice.
+ */</doc>

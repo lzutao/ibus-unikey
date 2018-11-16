@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='535'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='527'>/**
+ * GTK_STOCK_LEAVE_FULLSCREEN:
+ *
+ * The &quot;Leave Fullscreen&quot; item.
+ * &lt;inlinegraphic fileref=&quot;view-restore.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ *
+ * Since: 2.8
+ */</doc>

@@ -1,0 +1,27 @@
+<def f='include/atk-1.0/atk/atktablecell.h' l='59' ll='76'/>
+<size>72</size>
+<doc f='include/atk-1.0/atk/atktablecell.h' l='42'>/**
+ * AtkTableCellIface:
+ * @get_column_span: virtual function that returns the number of
+ * columns occupied by this cell accessible. @Since: 2.12
+ * @get_column_header_cells: virtual function that returns the column
+ * headers as an array of cell accessibles. @Since: 2.12
+ * @get_position: virtual function that retrieves the tabular position
+ * of this cell. @Since: 2.12
+ * @get_row_span: virtual function that returns the number of rows
+ * occupied by this cell. @Since: 2.12
+ * @get_row_header_cells: virtual function that returns the row
+ * headers as an array of cell accessibles. @Since: 2.12
+ * @get_row_column_span: virtual function that get the row an column
+ * indexes and span of this cell. @Since: 2.12
+ * @get_table: virtual function that returns a reference to the
+ * accessible of the containing table. @Since: 2.12
+ */</doc>
+<mbr r='_AtkTableCellIface::parent' o='0' t='GTypeInterface'/>
+<mbr r='_AtkTableCellIface::get_column_span' o='128' t='gint (*)(AtkTableCell *)'/>
+<mbr r='_AtkTableCellIface::get_column_header_cells' o='192' t='GPtrArray *(*)(AtkTableCell *)'/>
+<mbr r='_AtkTableCellIface::get_position' o='256' t='gboolean (*)(AtkTableCell *, gint *, gint *)'/>
+<mbr r='_AtkTableCellIface::get_row_span' o='320' t='gint (*)(AtkTableCell *)'/>
+<mbr r='_AtkTableCellIface::get_row_header_cells' o='384' t='GPtrArray *(*)(AtkTableCell *)'/>
+<mbr r='_AtkTableCellIface::get_row_column_span' o='448' t='gboolean (*)(AtkTableCell *, gint *, gint *, gint *, gint *)'/>
+<mbr r='_AtkTableCellIface::get_table' o='512' t='AtkObject *(*)(AtkTableCell *)'/>

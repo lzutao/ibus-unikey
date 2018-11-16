@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-context.h' l='85' type='PangoFontDescription * pango_context_get_font_description(PangoContext * context)'/>

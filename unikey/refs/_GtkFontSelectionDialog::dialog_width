@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkfontsel.h' l='123' type='gint'/>
+<offset>2496</offset>
+<doc f='include/gtk-2.0/gtk/gtkfontsel.h' l='120'>/* If the user changes the width of the dialog, we turn auto-shrink off.
+   * (Unused now, autoshrink doesn&apos;t mean anything anymore -Yosh)
+   */</doc>

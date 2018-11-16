@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='736' type='void atk_object_remove_property_change_handler(AtkObject * accessible, guint handler_id)'/>

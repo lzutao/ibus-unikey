@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeviewcolumn.h' l='215' type='GtkSortType gtk_tree_view_column_get_sort_order(GtkTreeViewColumn * tree_column)'/>

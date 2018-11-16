@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='269' type='GdkPixbuf * gtk_entry_get_icon_pixbuf(GtkEntry * entry, GtkEntryIconPosition icon_pos)'/>

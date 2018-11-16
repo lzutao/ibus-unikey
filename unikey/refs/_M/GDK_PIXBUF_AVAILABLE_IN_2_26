@@ -1,0 +1,5 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-macros.h' l='568'/>
+<use f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h' l='253' u='c'/>
+<use f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h' l='256' u='c'/>
+<use f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h' l='329' u='c'/>
+<use f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h' l='332' u='c'/>

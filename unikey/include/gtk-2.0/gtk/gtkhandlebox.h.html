@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gtkhandlebox.h source code [include/gtk-2.0/gtk/gtkhandlebox.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gtk/gtkhandlebox.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gtk</a>/<a href='gtkhandlebox.h.html'>gtkhandlebox.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GTK - The GIMP Toolkit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright (C) 1998 Elliot Lee</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="6">6</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="7">7</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="8">8</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="11">11</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="12">12</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="13">13</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="16">16</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="17">17</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="18">18</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="19">19</th><td><i> */</i></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><i>/*</i></td></tr>
+<tr><th id="22">22</th><td><i> * Modified by the GTK+ Team and others 1997-2000.  See the AUTHORS</i></td></tr>
+<tr><th id="23">23</th><td><i> * file for a list of people on the GTK+ Team.  See the ChangeLog</i></td></tr>
+<tr><th id="24">24</th><td><i> * files for a list of changes.  These files are distributed with</i></td></tr>
+<tr><th id="25">25</th><td><i> * GTK+ at ftp://ftp.gtk.org/pub/gtk/.</i></td></tr>
+<tr><th id="26">26</th><td><i> */</i></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><i>/* The GtkHandleBox is to allow widgets to be dragged in and out of</i></td></tr>
+<tr><th id="29">29</th><td><i> * their parents.</i></td></tr>
+<tr><th id="30">30</th><td><i> */</i></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><u>#<span data-ppcond="32">ifndef</span> <span class="macro" data-ref="_M/__GTK_HANDLE_BOX_H__">__GTK_HANDLE_BOX_H__</span></u></td></tr>
+<tr><th id="33">33</th><td><u>#define <dfn class="macro" id="_M/__GTK_HANDLE_BOX_H__" data-ref="_M/__GTK_HANDLE_BOX_H__">__GTK_HANDLE_BOX_H__</dfn></u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><u>#<span data-ppcond="36">if</span> defined(<span class="macro" data-ref="_M/GTK_DISABLE_SINGLE_INCLUDES">GTK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gtk.h.html#30" data-ref="_M/__GTK_H_INSIDE__">__GTK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GTK_COMPILATION">GTK_COMPILATION</span>)</u></td></tr>
+<tr><th id="37">37</th><td><u>#error "Only &lt;gtk/gtk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="38">38</th><td><u>#<span data-ppcond="36">endif</span></u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><u>#include <a href="gtkbin.h.html">&lt;gtk/gtkbin.h&gt;</a></u></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><u>#define <dfn class="macro" id="_M/GTK_TYPE_HANDLE_BOX" data-ref="_M/GTK_TYPE_HANDLE_BOX">GTK_TYPE_HANDLE_BOX</dfn>            (gtk_handle_box_get_type ())</u></td></tr>
+<tr><th id="46">46</th><td><u>#define <dfn class="macro" id="_M/GTK_HANDLE_BOX" data-ref="_M/GTK_HANDLE_BOX">GTK_HANDLE_BOX</dfn>(obj)            (G_TYPE_CHECK_INSTANCE_CAST ((obj), GTK_TYPE_HANDLE_BOX, GtkHandleBox))</u></td></tr>
+<tr><th id="47">47</th><td><u>#define <dfn class="macro" id="_M/GTK_HANDLE_BOX_CLASS" data-ref="_M/GTK_HANDLE_BOX_CLASS">GTK_HANDLE_BOX_CLASS</dfn>(klass)    (G_TYPE_CHECK_CLASS_CAST ((klass), GTK_TYPE_HANDLE_BOX, GtkHandleBoxClass))</u></td></tr>
+<tr><th id="48">48</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_HANDLE_BOX" data-ref="_M/GTK_IS_HANDLE_BOX">GTK_IS_HANDLE_BOX</dfn>(obj)         (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GTK_TYPE_HANDLE_BOX))</u></td></tr>
+<tr><th id="49">49</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_HANDLE_BOX_CLASS" data-ref="_M/GTK_IS_HANDLE_BOX_CLASS">GTK_IS_HANDLE_BOX_CLASS</dfn>(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), GTK_TYPE_HANDLE_BOX))</u></td></tr>
+<tr><th id="50">50</th><td><u>#define <dfn class="macro" id="_M/GTK_HANDLE_BOX_GET_CLASS" data-ref="_M/GTK_HANDLE_BOX_GET_CLASS">GTK_HANDLE_BOX_GET_CLASS</dfn>(obj)  (G_TYPE_INSTANCE_GET_CLASS ((obj), GTK_TYPE_HANDLE_BOX, GtkHandleBoxClass))</u></td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkHandleBox" title='_GtkHandleBox' data-ref="_GtkHandleBox">_GtkHandleBox</a>       <dfn class="typedef" id="GtkHandleBox" title='GtkHandleBox' data-type='struct _GtkHandleBox' data-ref="GtkHandleBox">GtkHandleBox</dfn>;</td></tr>
+<tr><th id="54">54</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkHandleBoxClass" title='_GtkHandleBoxClass' data-ref="_GtkHandleBoxClass">_GtkHandleBoxClass</a>  <dfn class="typedef" id="GtkHandleBoxClass" title='GtkHandleBoxClass' data-type='struct _GtkHandleBoxClass' data-ref="GtkHandleBoxClass">GtkHandleBoxClass</dfn>;</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><b>struct</b> <dfn class="type def" id="_GtkHandleBox" title='_GtkHandleBox' data-ref="_GtkHandleBox">_GtkHandleBox</dfn></td></tr>
+<tr><th id="57">57</th><td>{</td></tr>
+<tr><th id="58">58</th><td>  <a class="typedef" href="gtkbin.h.html#GtkBin" title='GtkBin' data-type='struct _GtkBin' data-ref="GtkBin">GtkBin</a> <dfn class="decl" id="_GtkHandleBox::bin" title='_GtkHandleBox::bin' data-ref="_GtkHandleBox::bin">bin</dfn>;</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td>  <a class="typedef" href="../gdk/gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a>      *<span class="macro" title="bin_window" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkHandleBox::bin_window" title='_GtkHandleBox::bin_window' data-ref="_GtkHandleBox::bin_window">bin_window</dfn>);	<i>/* parent window for children */</i></td></tr>
+<tr><th id="61">61</th><td>  <a class="typedef" href="../gdk/gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a>      *<span class="macro" title="float_window" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkHandleBox::float_window" title='_GtkHandleBox::float_window' data-ref="_GtkHandleBox::float_window">float_window</dfn>);</td></tr>
+<tr><th id="62">62</th><td>  <a class="typedef" href="gtkenums.h.html#GtkShadowType" title='GtkShadowType' data-type='enum GtkShadowType' data-ref="GtkShadowType">GtkShadowType</a>   <span class="macro" title="shadow_type" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkHandleBox::shadow_type" title='_GtkHandleBox::shadow_type' data-ref="_GtkHandleBox::shadow_type">shadow_type</dfn>);</td></tr>
+<tr><th id="63">63</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           <span class="macro" title="handle_position" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkHandleBox::handle_position" title='_GtkHandleBox::handle_position' data-ref="_GtkHandleBox::handle_position">handle_position</dfn>) : <var>2</var>;</td></tr>
+<tr><th id="64">64</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           <span class="macro" title="float_window_mapped" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkHandleBox::float_window_mapped" title='_GtkHandleBox::float_window_mapped' data-ref="_GtkHandleBox::float_window_mapped">float_window_mapped</dfn>) : <var>1</var>;</td></tr>
+<tr><th id="65">65</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           <span class="macro" title="child_detached" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkHandleBox::child_detached" title='_GtkHandleBox::child_detached' data-ref="_GtkHandleBox::child_detached">child_detached</dfn>) : <var>1</var>;</td></tr>
+<tr><th id="66">66</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           <span class="macro" title="in_drag" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkHandleBox::in_drag" title='_GtkHandleBox::in_drag' data-ref="_GtkHandleBox::in_drag">in_drag</dfn>) : <var>1</var>;</td></tr>
+<tr><th id="67">67</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           <span class="macro" title="shrink_on_detach" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkHandleBox::shrink_on_detach" title='_GtkHandleBox::shrink_on_detach' data-ref="_GtkHandleBox::shrink_on_detach">shrink_on_detach</dfn>) : <var>1</var>;</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td>  <em>signed</em> <em>int</em>      <span class="macro" title="snap_edge : 3" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkHandleBox::snap_edge" title='_GtkHandleBox::snap_edge' data-ref="_GtkHandleBox::snap_edge">snap_edge</dfn> : <var>3</var>); <i>/* -1 == unset */</i></td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td>  <i>/* Variables used during a drag</i></td></tr>
+<tr><th id="72">72</th><td><i>   */</i></td></tr>
+<tr><th id="73">73</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>            <span class="macro" title="deskoff_x" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkHandleBox::deskoff_x" title='_GtkHandleBox::deskoff_x' data-ref="_GtkHandleBox::deskoff_x">deskoff_x</dfn>); <i>/* Offset between root relative coords */</i></td></tr>
+<tr><th id="74">74</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>            <span class="macro" title="deskoff_y" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkHandleBox::deskoff_y" title='_GtkHandleBox::deskoff_y' data-ref="_GtkHandleBox::deskoff_y">deskoff_y</dfn>); <i>/* and deskrelative coords             */</i></td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td>  <a class="typedef" href="gtkwidget.h.html#GtkAllocation" title='GtkAllocation' data-type='GdkRectangle' data-ref="GtkAllocation">GtkAllocation</a>   <span class="macro" title="attach_allocation" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkHandleBox::attach_allocation" title='_GtkHandleBox::attach_allocation' data-ref="_GtkHandleBox::attach_allocation">attach_allocation</dfn>);</td></tr>
+<tr><th id="77">77</th><td>  <a class="typedef" href="gtkwidget.h.html#GtkAllocation" title='GtkAllocation' data-type='GdkRectangle' data-ref="GtkAllocation">GtkAllocation</a>   <span class="macro" title="float_allocation" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkHandleBox::float_allocation" title='_GtkHandleBox::float_allocation' data-ref="_GtkHandleBox::float_allocation">float_allocation</dfn>);</td></tr>
+<tr><th id="78">78</th><td>};</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td><b>struct</b> <dfn class="type def" id="_GtkHandleBoxClass" title='_GtkHandleBoxClass' data-ref="_GtkHandleBoxClass">_GtkHandleBoxClass</dfn></td></tr>
+<tr><th id="81">81</th><td>{</td></tr>
+<tr><th id="82">82</th><td>  <a class="typedef" href="gtkbin.h.html#GtkBinClass" title='GtkBinClass' data-type='struct _GtkBinClass' data-ref="GtkBinClass">GtkBinClass</a> <dfn class="decl" id="_GtkHandleBoxClass::parent_class" title='_GtkHandleBoxClass::parent_class' data-ref="_GtkHandleBoxClass::parent_class">parent_class</dfn>;</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td>  <em>void</em>	(*<dfn class="decl" id="_GtkHandleBoxClass::child_attached" title='_GtkHandleBoxClass::child_attached' data-ref="_GtkHandleBoxClass::child_attached">child_attached</dfn>)	(<a class="typedef" href="#GtkHandleBox" title='GtkHandleBox' data-type='struct _GtkHandleBox' data-ref="GtkHandleBox">GtkHandleBox</a>	*<dfn class="local col3 decl" id="21433handle_box" title='handle_box' data-type='GtkHandleBox *' data-ref="21433handle_box">handle_box</dfn>,</td></tr>
+<tr><th id="85">85</th><td>				 <a class="typedef" href="gtkstyle.h.html#GtkWidget" title='GtkWidget' data-type='struct _GtkWidget' data-ref="GtkWidget">GtkWidget</a>	*<dfn class="local col4 decl" id="21434child" title='child' data-type='GtkWidget *' data-ref="21434child">child</dfn>);</td></tr>
+<tr><th id="86">86</th><td>  <em>void</em>	(*<dfn class="decl" id="_GtkHandleBoxClass::child_detached" title='_GtkHandleBoxClass::child_detached' data-ref="_GtkHandleBoxClass::child_detached">child_detached</dfn>)	(<a class="typedef" href="#GtkHandleBox" title='GtkHandleBox' data-type='struct _GtkHandleBox' data-ref="GtkHandleBox">GtkHandleBox</a>	*<dfn class="local col5 decl" id="21435handle_box" title='handle_box' data-type='GtkHandleBox *' data-ref="21435handle_box">handle_box</dfn>,</td></tr>
+<tr><th id="87">87</th><td>				 <a class="typedef" href="gtkstyle.h.html#GtkWidget" title='GtkWidget' data-type='struct _GtkWidget' data-ref="GtkWidget">GtkWidget</a>	*<dfn class="local col6 decl" id="21436child" title='child' data-type='GtkWidget *' data-ref="21436child">child</dfn>);</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td>  <i>/* Padding for future expansion */</i></td></tr>
+<tr><th id="90">90</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkHandleBoxClass::_gtk_reserved1" title='_GtkHandleBoxClass::_gtk_reserved1' data-ref="_GtkHandleBoxClass::_gtk_reserved1">_gtk_reserved1</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="91">91</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkHandleBoxClass::_gtk_reserved2" title='_GtkHandleBoxClass::_gtk_reserved2' data-ref="_GtkHandleBoxClass::_gtk_reserved2">_gtk_reserved2</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="92">92</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkHandleBoxClass::_gtk_reserved3" title='_GtkHandleBoxClass::_gtk_reserved3' data-ref="_GtkHandleBoxClass::_gtk_reserved3">_gtk_reserved3</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="93">93</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkHandleBoxClass::_gtk_reserved4" title='_GtkHandleBoxClass::_gtk_reserved4' data-ref="_GtkHandleBoxClass::_gtk_reserved4">_gtk_reserved4</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="94">94</th><td>};</td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>         <dfn class="decl" id="gtk_handle_box_get_type" title='gtk_handle_box_get_type' data-ref="gtk_handle_box_get_type">gtk_handle_box_get_type</dfn>             (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="98">98</th><td><a class="typedef" href="gtkstyle.h.html#GtkWidget" title='GtkWidget' data-type='struct _GtkWidget' data-ref="GtkWidget">GtkWidget</a>*    <dfn class="decl" id="gtk_handle_box_new" title='gtk_handle_box_new' data-ref="gtk_handle_box_new">gtk_handle_box_new</dfn>                  (<em>void</em>);</td></tr>
+<tr><th id="99">99</th><td><em>void</em>          <dfn class="decl" id="gtk_handle_box_set_shadow_type" title='gtk_handle_box_set_shadow_type' data-ref="gtk_handle_box_set_shadow_type">gtk_handle_box_set_shadow_type</dfn>      (<a class="typedef" href="#GtkHandleBox" title='GtkHandleBox' data-type='struct _GtkHandleBox' data-ref="GtkHandleBox">GtkHandleBox</a>    *<dfn class="local col7 decl" id="21437handle_box" title='handle_box' data-type='GtkHandleBox *' data-ref="21437handle_box">handle_box</dfn>,</td></tr>
+<tr><th id="100">100</th><td>                                                   <a class="typedef" href="gtkenums.h.html#GtkShadowType" title='GtkShadowType' data-type='enum GtkShadowType' data-ref="GtkShadowType">GtkShadowType</a>    <dfn class="local col8 decl" id="21438type" title='type' data-type='GtkShadowType' data-ref="21438type">type</dfn>);</td></tr>
+<tr><th id="101">101</th><td><a class="typedef" href="gtkenums.h.html#GtkShadowType" title='GtkShadowType' data-type='enum GtkShadowType' data-ref="GtkShadowType">GtkShadowType</a> <dfn class="decl" id="gtk_handle_box_get_shadow_type" title='gtk_handle_box_get_shadow_type' data-ref="gtk_handle_box_get_shadow_type">gtk_handle_box_get_shadow_type</dfn>      (<a class="typedef" href="#GtkHandleBox" title='GtkHandleBox' data-type='struct _GtkHandleBox' data-ref="GtkHandleBox">GtkHandleBox</a>    *<dfn class="local col9 decl" id="21439handle_box" title='handle_box' data-type='GtkHandleBox *' data-ref="21439handle_box">handle_box</dfn>);</td></tr>
+<tr><th id="102">102</th><td><em>void</em>          <dfn class="decl" id="gtk_handle_box_set_handle_position" title='gtk_handle_box_set_handle_position' data-ref="gtk_handle_box_set_handle_position">gtk_handle_box_set_handle_position</dfn>  (<a class="typedef" href="#GtkHandleBox" title='GtkHandleBox' data-type='struct _GtkHandleBox' data-ref="GtkHandleBox">GtkHandleBox</a>    *<dfn class="local col0 decl" id="21440handle_box" title='handle_box' data-type='GtkHandleBox *' data-ref="21440handle_box">handle_box</dfn>,</td></tr>
+<tr><th id="103">103</th><td>					           <a class="typedef" href="gtkenums.h.html#GtkPositionType" title='GtkPositionType' data-type='enum GtkPositionType' data-ref="GtkPositionType">GtkPositionType</a>  <dfn class="local col1 decl" id="21441position" title='position' data-type='GtkPositionType' data-ref="21441position">position</dfn>);</td></tr>
+<tr><th id="104">104</th><td><a class="typedef" href="gtkenums.h.html#GtkPositionType" title='GtkPositionType' data-type='enum GtkPositionType' data-ref="GtkPositionType">GtkPositionType</a> <dfn class="decl" id="gtk_handle_box_get_handle_position" title='gtk_handle_box_get_handle_position' data-ref="gtk_handle_box_get_handle_position">gtk_handle_box_get_handle_position</dfn>(<a class="typedef" href="#GtkHandleBox" title='GtkHandleBox' data-type='struct _GtkHandleBox' data-ref="GtkHandleBox">GtkHandleBox</a>    *<dfn class="local col2 decl" id="21442handle_box" title='handle_box' data-type='GtkHandleBox *' data-ref="21442handle_box">handle_box</dfn>);</td></tr>
+<tr><th id="105">105</th><td><em>void</em>          <dfn class="decl" id="gtk_handle_box_set_snap_edge" title='gtk_handle_box_set_snap_edge' data-ref="gtk_handle_box_set_snap_edge">gtk_handle_box_set_snap_edge</dfn>        (<a class="typedef" href="#GtkHandleBox" title='GtkHandleBox' data-type='struct _GtkHandleBox' data-ref="GtkHandleBox">GtkHandleBox</a>    *<dfn class="local col3 decl" id="21443handle_box" title='handle_box' data-type='GtkHandleBox *' data-ref="21443handle_box">handle_box</dfn>,</td></tr>
+<tr><th id="106">106</th><td>						   <a class="typedef" href="gtkenums.h.html#GtkPositionType" title='GtkPositionType' data-type='enum GtkPositionType' data-ref="GtkPositionType">GtkPositionType</a>  <dfn class="local col4 decl" id="21444edge" title='edge' data-type='GtkPositionType' data-ref="21444edge">edge</dfn>);</td></tr>
+<tr><th id="107">107</th><td><a class="typedef" href="gtkenums.h.html#GtkPositionType" title='GtkPositionType' data-type='enum GtkPositionType' data-ref="GtkPositionType">GtkPositionType</a> <dfn class="decl" id="gtk_handle_box_get_snap_edge" title='gtk_handle_box_get_snap_edge' data-ref="gtk_handle_box_get_snap_edge">gtk_handle_box_get_snap_edge</dfn>      (<a class="typedef" href="#GtkHandleBox" title='GtkHandleBox' data-type='struct _GtkHandleBox' data-ref="GtkHandleBox">GtkHandleBox</a>    *<dfn class="local col5 decl" id="21445handle_box" title='handle_box' data-type='GtkHandleBox *' data-ref="21445handle_box">handle_box</dfn>);</td></tr>
+<tr><th id="108">108</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>      <dfn class="decl" id="gtk_handle_box_get_child_detached" title='gtk_handle_box_get_child_detached' data-ref="gtk_handle_box_get_child_detached">gtk_handle_box_get_child_detached</dfn>   (<a class="typedef" href="#GtkHandleBox" title='GtkHandleBox' data-type='struct _GtkHandleBox' data-ref="GtkHandleBox">GtkHandleBox</a>    *<dfn class="local col6 decl" id="21446handle_box" title='handle_box' data-type='GtkHandleBox *' data-ref="21446handle_box">handle_box</dfn>);</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td><u>#<span data-ppcond="32">endif</span> /* __GTK_HANDLE_BOX_H__ */</u></td></tr>
+<tr><th id="113">113</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

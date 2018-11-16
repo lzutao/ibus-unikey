@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pangocairo.h' l='95' type='void pango_cairo_font_map_set_resolution(PangoCairoFontMap * fontmap, double dpi)'/>

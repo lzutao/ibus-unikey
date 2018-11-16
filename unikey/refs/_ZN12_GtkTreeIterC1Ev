@@ -1,0 +1,11 @@
+<use f='unikey/setup/dlg_macro_table.cpp' l='74' u='c' c='_Z26append_macro_to_list_storeP13_GtkListStore11CMacroTable'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='133' u='c' c='_Z30unikey_macro_dialog_load_macroP10_GtkDialog11CMacroTable'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='153' u='c' c='_Z30unikey_macro_dialog_save_macroP10_GtkDialogP11CMacroTable'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='178' u='c' c='_Z24check_last_macro_in_listP13_GtkListStore'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='215' u='c' c='_Z13key_edited_cbP20_GtkCellRendererTextPKcS2_Pv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='268' u='c' c='_Z15value_edited_cbP20_GtkCellRendererTextPKcS2_Pv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='293' u='c' c='_Z23remove_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='319' u='c' c='_Z26removeall_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='341' u='c' c='_Z23import_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='390' u='c' c='_Z23export_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='50' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>

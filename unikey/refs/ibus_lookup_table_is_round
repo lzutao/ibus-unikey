@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuslookuptable.h' l='298' type='gboolean ibus_lookup_table_is_round(IBusLookupTable * table)'/>
+<doc f='include/ibus-1.0/ibuslookuptable.h' l='290'>/**
+ * ibus_lookup_table_is_round:
+ * @table: An IBusLookupTable.
+ *
+ * Returns whether the #IBusLookupTable is round.
+ *
+ * Returns: Whether the @table is round.
+ */</doc>

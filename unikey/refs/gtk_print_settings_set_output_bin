@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintsettings.h' l='229' type='void gtk_print_settings_set_output_bin(GtkPrintSettings * settings, const gchar * output_bin)'/>

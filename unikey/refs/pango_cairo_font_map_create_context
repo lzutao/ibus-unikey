@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pangocairo.h' l='101' type='PangoContext * pango_cairo_font_map_create_context(PangoCairoFontMap * fontmap)'/>

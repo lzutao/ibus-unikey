@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gtk/gtkscrolledwindow.h' l='74' ll='99'/>
+<size>880</size>
+<mbr r='_GtkScrolledWindowClass::parent_class' o='0' t='GtkBinClass'/>
+<mbr r='_GtkScrolledWindowClass::scrollbar_spacing' o='6592' t='gint'/>
+<mbr r='_GtkScrolledWindowClass::scroll_child' o='6656' t='gboolean (*)(GtkScrolledWindow *, GtkScrollType, gboolean)'/>
+<mbr r='_GtkScrolledWindowClass::move_focus_out' o='6720' t='void (*)(GtkScrolledWindow *, GtkDirectionType)'/>
+<mbr r='_GtkScrolledWindowClass::_gtk_reserved1' o='6784' t='void (*)()'/>
+<mbr r='_GtkScrolledWindowClass::_gtk_reserved2' o='6848' t='void (*)()'/>
+<mbr r='_GtkScrolledWindowClass::_gtk_reserved3' o='6912' t='void (*)()'/>
+<mbr r='_GtkScrolledWindowClass::_gtk_reserved4' o='6976' t='void (*)()'/>

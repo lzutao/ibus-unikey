@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='139' type='void (*)(GtkEntry *, GtkMovementStep, gint, gboolean)'/>
+<offset>5888</offset>

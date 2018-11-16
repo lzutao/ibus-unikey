@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='461' type='void gtk_clist_set_shadow_type(GtkCList * clist, GtkShadowType type)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='460'>/* set the border style of the clist */</doc>

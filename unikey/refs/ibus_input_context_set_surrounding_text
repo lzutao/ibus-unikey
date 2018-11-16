@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusinputcontext.h' l='463' type='void ibus_input_context_set_surrounding_text(IBusInputContext * context, IBusText * text, guint32 cursor_pos, guint32 anchor_pos)'/>
+<doc f='include/ibus-1.0/ibusinputcontext.h' l='456'>/**
+ * ibus_input_context_set_surrounding_text:
+ * @context: An #IBusInputContext.
+ * @text: An #IBusText surrounding the current cursor on the application.
+ * @cursor_pos: Current cursor position in characters in @text.
+ * @anchor_pos: Anchor position of selection in @text.
+*/</doc>

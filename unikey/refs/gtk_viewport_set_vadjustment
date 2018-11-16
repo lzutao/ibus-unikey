@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkviewport.h' l='81' type='void gtk_viewport_set_vadjustment(GtkViewport * viewport, GtkAdjustment * adjustment)'/>

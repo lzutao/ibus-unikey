@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-layout.h' l='385' type='gboolean pango_layout_iter_at_last_line(PangoLayoutIter * iter)'/>

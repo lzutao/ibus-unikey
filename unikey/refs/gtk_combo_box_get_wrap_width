@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkcombobox.h' l='77' type='gint gtk_combo_box_get_wrap_width(GtkComboBox * combo_box)'/>
+<doc f='include/gtk-2.0/gtk/gtkcombobox.h' l='76'>/* grids */</doc>

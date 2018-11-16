@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusinputcontext.h' l='395' type='void ibus_input_context_reset(IBusInputContext * context)'/>
+<doc f='include/ibus-1.0/ibusinputcontext.h' l='387'>/**
+ * ibus_input_context_reset:
+ * @context: An #IBusInputContext.
+ *
+ * Invoked when the IME is reset. An asynchronous IPC will be performed.
+ *
+ * see_also: #IBusEngine::reset
+ */</doc>

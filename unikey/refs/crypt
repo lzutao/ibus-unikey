@@ -1,0 +1,2 @@
+<dec f='include/unistd.h' l='1126' type='char * crypt(const char * __key, const char * __salt)'/>
+<doc f='include/unistd.h' l='1125'>/* Encrypt at most 8 characters from KEY using salt to perturb DES.  */</doc>

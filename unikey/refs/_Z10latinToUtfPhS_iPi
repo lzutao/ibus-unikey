@@ -1,0 +1,5 @@
+<dec f='unikey/src/utils.h' l='17' type='int latinToUtf(unsigned char * dst, unsigned char * src, int inSize, int * pOutSize)'/>
+<use f='unikey/src/engine.cpp' l='651' u='c' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='706' u='c' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<def f='unikey/src/utils.cpp' l='77' ll='107' type='int latinToUtf(unsigned char * dst, unsigned char * src, int inSize, int * pOutSize)'/>
+<doc f='unikey/src/utils.cpp' l='76'>// code from x-unikey, for convert charset that not is XUtf-8</doc>

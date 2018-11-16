@@ -1,0 +1,2 @@
+<dec f='include/atk-1.0/atk/atkimage.h' l='52' type='void (*)(AtkImage *, gint *, gint *, AtkCoordType)'/>
+<offset>128</offset>

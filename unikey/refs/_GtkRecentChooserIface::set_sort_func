@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentchooser.h' l='106' type='void (*)(GtkRecentChooser *, GtkRecentSortFunc, gpointer, GDestroyNotify)'/>
+<offset>832</offset>

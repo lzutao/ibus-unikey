@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusserializable.h' l='84'/>
+<doc f='include/ibus-1.0/ibusserializable.h' l='75'>/**
+ * ibus_serializable_set_attachment:
+ * @o: An IBusSerializable.
+ * @k: String formatted key for indexing value.
+ * @v: Value to be attached. Should be also serializable.
+ *
+ * Attach a value to an IBusSerializable.
+ * This macro is an convenient wrapper of ibus_serializable_set_qattachment().
+ */</doc>

@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkitemfactory.h' l='125' ll='129'/>
+<size>16</size>
+<mbr r='_GtkItemFactoryItem::path' o='0' t='gchar *'/>
+<mbr r='_GtkItemFactoryItem::widgets' o='64' t='GSList *'/>

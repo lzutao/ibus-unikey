@@ -1,0 +1,14 @@
+<dec f='include/atk-1.0/atk/atkutil.h' l='263'/>
+<doc f='include/atk-1.0/atk/atkutil.h' l='250'>/**
+ * ATK_DEFINE_TYPE_WITH_CODE:
+ * @TN: The name of the new type, in Camel case.
+ * @t_n: The name of the new type in lowercase, with words separated by &apos;_&apos;.
+ * @T_P: The #GType of the parent type.
+ * @_C_: Custom code that gets inserted in the _get_type() function.
+ *
+ * A convenience macro for ATK type implementations.
+ * Similar to ATK_DEFINE_TYPE(), but allows you to insert custom code into the
+ * _get_type() function, e.g. interface implementations via G_IMPLEMENT_INTERFACE().
+ *
+ * Since: 1.22
+ */</doc>

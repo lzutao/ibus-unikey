@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuspanelservice.h' l='242' type='void ibus_panel_service_commit_text(IBusPanelService * panel, IBusText * text)'/>
+<doc f='include/ibus-1.0/ibuspanelservice.h' l='234'>/**
+ * ibus_panel_service_commit_text:
+ * @panel: An #IBusPanelService
+ * @text: An #IBusText
+ *
+ * Notify that a text is sent
+ * by sending a &quot;CommitText&quot; message to IBus service.
+ */</doc>

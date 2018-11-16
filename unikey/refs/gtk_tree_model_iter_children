@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreemodel.h' l='216' type='gboolean gtk_tree_model_iter_children(GtkTreeModel * tree_model, GtkTreeIter * iter, GtkTreeIter * parent)'/>

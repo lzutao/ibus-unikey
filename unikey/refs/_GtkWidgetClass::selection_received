@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='735' type='void (*)(GtkWidget *, GtkSelectionData *, guint)'/>
+<offset>4480</offset>

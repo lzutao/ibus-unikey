@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-context.h' l='77' type='PangoFontMetrics * pango_context_get_metrics(PangoContext * context, const PangoFontDescription * desc, PangoLanguage * language)'/>

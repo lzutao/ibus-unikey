@@ -1,0 +1,2 @@
+<dec f='include/glib-2.0/glib/deprecated/gthread.h' l='64' type='gboolean (*)(GMutex *)'/>
+<offset>128</offset>

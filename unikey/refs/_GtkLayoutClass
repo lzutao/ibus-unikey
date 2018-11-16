@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtklayout.h' l='79' ll='92'/>
+<size>864</size>
+<mbr r='_GtkLayoutClass::parent_class' o='0' t='GtkContainerClass'/>
+<mbr r='_GtkLayoutClass::set_scroll_adjustments' o='6592' t='void (*)(GtkLayout *, GtkAdjustment *, GtkAdjustment *)'/>
+<mbr r='_GtkLayoutClass::_gtk_reserved1' o='6656' t='void (*)()'/>
+<mbr r='_GtkLayoutClass::_gtk_reserved2' o='6720' t='void (*)()'/>
+<mbr r='_GtkLayoutClass::_gtk_reserved3' o='6784' t='void (*)()'/>
+<mbr r='_GtkLayoutClass::_gtk_reserved4' o='6848' t='void (*)()'/>

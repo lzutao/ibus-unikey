@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkstreamablecontent.h' l='98' type='const gchar * atk_streamable_content_get_mime_type(AtkStreamableContent * streamable, gint i)'/>

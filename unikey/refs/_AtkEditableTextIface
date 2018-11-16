@@ -1,0 +1,10 @@
+<def f='include/atk-1.0/atk/atkeditabletext.h' l='48' ll='73'/>
+<size>72</size>
+<mbr r='_AtkEditableTextIface::parent_interface' o='0' t='GTypeInterface'/>
+<mbr r='_AtkEditableTextIface::set_run_attributes' o='128' t='gboolean (*)(AtkEditableText *, AtkAttributeSet *, gint, gint)'/>
+<mbr r='_AtkEditableTextIface::set_text_contents' o='192' t='void (*)(AtkEditableText *, const gchar *)'/>
+<mbr r='_AtkEditableTextIface::insert_text' o='256' t='void (*)(AtkEditableText *, const gchar *, gint, gint *)'/>
+<mbr r='_AtkEditableTextIface::copy_text' o='320' t='void (*)(AtkEditableText *, gint, gint)'/>
+<mbr r='_AtkEditableTextIface::cut_text' o='384' t='void (*)(AtkEditableText *, gint, gint)'/>
+<mbr r='_AtkEditableTextIface::delete_text' o='448' t='void (*)(AtkEditableText *, gint, gint)'/>
+<mbr r='_AtkEditableTextIface::paste_text' o='512' t='void (*)(AtkEditableText *, gint)'/>

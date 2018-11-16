@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkrc.h' l='99' type='GtkRcStyle *(*)(GtkRcStyle *)'/>
+<offset>1088</offset>
+<doc f='include/gtk-2.0/gtk/gtkrc.h' l='94'>/* Create an empty RC style of the same type as this RC style.
+   * The default implementation, which does
+   * g_object_new (G_OBJECT_TYPE (style), NULL);
+   * should work in most cases.
+   */</doc>

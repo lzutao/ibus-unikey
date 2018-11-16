@@ -1,0 +1,6 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='641' type='void (*)(AtkObject *)'/>
+<offset>2496</offset>
+<doc f='include/atk-1.0/atk/atkobject.h' l='637'>/*
+   * The signal handler which is executed when there is a change in the
+   * visible data for an object
+   */</doc>

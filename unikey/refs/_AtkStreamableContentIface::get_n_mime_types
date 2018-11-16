@@ -1,0 +1,5 @@
+<dec f='include/atk-1.0/atk/atkstreamablecontent.h' l='49' type='gint (*)(AtkStreamableContent *)'/>
+<offset>128</offset>
+<doc f='include/atk-1.0/atk/atkstreamablecontent.h' l='46'>/*
+   * Get the number of mime types supported by this object
+   */</doc>

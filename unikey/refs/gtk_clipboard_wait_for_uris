@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkclipboard.h' l='130' type='gchar ** gtk_clipboard_wait_for_uris(GtkClipboard * clipboard)'/>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkiconfactory.h' l='119' type='GType gtk_icon_set_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtkiconfactory.h' l='117'>/* Icon sets */</doc>

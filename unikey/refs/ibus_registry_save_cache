@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusregistry.h' l='157' type='gboolean ibus_registry_save_cache(IBusRegistry * registry, gboolean is_user)'/>
+<doc f='include/ibus-1.0/ibusregistry.h' l='148'>/**
+ * ibus_registry_save_cache:
+ * @registry: An #IBusRegistry.
+ * @is_user: %TRUE if the registry cache is saved in the user directory.
+ *
+ * Save the registry in a user directory or system directory.
+ *
+ * Returns: %TRUE if the cache is saved successfully, %FALSE otherwise.
+ */</doc>

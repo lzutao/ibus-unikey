@@ -1,0 +1,11 @@
+<def f='include/cairo/cairo.h' l='1263' ll='1267'/>
+<doc f='include/cairo/cairo.h' l='1253'>/**
+ * cairo_font_slant_t:
+ * @CAIRO_FONT_SLANT_NORMAL: Upright font style, since 1.0
+ * @CAIRO_FONT_SLANT_ITALIC: Italic font style, since 1.0
+ * @CAIRO_FONT_SLANT_OBLIQUE: Oblique font style, since 1.0
+ *
+ * Specifies variants of a font face based on their slant.
+ *
+ * Since: 1.0
+ **/</doc>

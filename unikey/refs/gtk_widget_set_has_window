@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='973' type='void gtk_widget_set_has_window(GtkWidget * widget, gboolean has_window)'/>

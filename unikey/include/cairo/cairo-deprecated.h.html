@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>cairo-deprecated.h source code [include/cairo/cairo-deprecated.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/cairo/cairo-deprecated.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>cairo</a>/<a href='cairo-deprecated.h.html'>cairo-deprecated.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* cairo - a vector graphics library with display and print output</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright © 2006 Red Hat, Inc.</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="6">6</th><td><i> * modify it either under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="7">7</th><td><i> * License version 2.1 as published by the Free Software Foundation</i></td></tr>
+<tr><th id="8">8</th><td><i> * (the "LGPL") or, at your option, under the terms of the Mozilla</i></td></tr>
+<tr><th id="9">9</th><td><i> * Public License Version 1.1 (the "MPL"). If you do not alter this</i></td></tr>
+<tr><th id="10">10</th><td><i> * notice, a recipient may use your version of this file under either</i></td></tr>
+<tr><th id="11">11</th><td><i> * the MPL or the LGPL.</i></td></tr>
+<tr><th id="12">12</th><td><i> *</i></td></tr>
+<tr><th id="13">13</th><td><i> * You should have received a copy of the LGPL along with this library</i></td></tr>
+<tr><th id="14">14</th><td><i> * in the file COPYING-LGPL-2.1; if not, write to the Free Software</i></td></tr>
+<tr><th id="15">15</th><td><i> * Foundation, Inc., 51 Franklin Street, Suite 500, Boston, MA 02110-1335, USA</i></td></tr>
+<tr><th id="16">16</th><td><i> * You should have received a copy of the MPL along with this library</i></td></tr>
+<tr><th id="17">17</th><td><i> * in the file COPYING-MPL-1.1</i></td></tr>
+<tr><th id="18">18</th><td><i> *</i></td></tr>
+<tr><th id="19">19</th><td><i> * The contents of this file are subject to the Mozilla Public License</i></td></tr>
+<tr><th id="20">20</th><td><i> * Version 1.1 (the "License"); you may not use this file except in</i></td></tr>
+<tr><th id="21">21</th><td><i> * compliance with the License. You may obtain a copy of the License at</i></td></tr>
+<tr><th id="22">22</th><td><i> * <a href="http://www.mozilla.org/MPL/">http://www.mozilla.org/MPL/</a></i></td></tr>
+<tr><th id="23">23</th><td><i> *</i></td></tr>
+<tr><th id="24">24</th><td><i> * This software is distributed on an "AS IS" basis, WITHOUT WARRANTY</i></td></tr>
+<tr><th id="25">25</th><td><i> * OF ANY KIND, either express or implied. See the LGPL or the MPL for</i></td></tr>
+<tr><th id="26">26</th><td><i> * the specific language governing rights and limitations.</i></td></tr>
+<tr><th id="27">27</th><td><i> *</i></td></tr>
+<tr><th id="28">28</th><td><i> * The Original Code is the cairo graphics library.</i></td></tr>
+<tr><th id="29">29</th><td><i> *</i></td></tr>
+<tr><th id="30">30</th><td><i> * The Initial Developer of the Original Code is Red Hat, Inc.</i></td></tr>
+<tr><th id="31">31</th><td><i> *</i></td></tr>
+<tr><th id="32">32</th><td><i> * Contributor(s):</i></td></tr>
+<tr><th id="33">33</th><td><i> *	Carl D. Worth &lt;cworth@cworth.org&gt;</i></td></tr>
+<tr><th id="34">34</th><td><i> */</i></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><u>#<span data-ppcond="36">ifndef</span> <span class="macro" data-ref="_M/CAIRO_DEPRECATED_H">CAIRO_DEPRECATED_H</span></u></td></tr>
+<tr><th id="37">37</th><td><u>#define <dfn class="macro" id="_M/CAIRO_DEPRECATED_H" data-ref="_M/CAIRO_DEPRECATED_H">CAIRO_DEPRECATED_H</dfn></u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#define <dfn class="macro" id="_M/CAIRO_FONT_TYPE_ATSUI" data-ref="_M/CAIRO_FONT_TYPE_ATSUI">CAIRO_FONT_TYPE_ATSUI</dfn> CAIRO_FONT_TYPE_QUARTZ</u></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><i>/* Obsolete functions. These definitions exist to coerce the compiler</i></td></tr>
+<tr><th id="42">42</th><td><i> * into providing a little bit of guidance with its error</i></td></tr>
+<tr><th id="43">43</th><td><i> * messages. The idea is to help users port their old code without</i></td></tr>
+<tr><th id="44">44</th><td><i> * having to dig through lots of documentation.</i></td></tr>
+<tr><th id="45">45</th><td><i> *</i></td></tr>
+<tr><th id="46">46</th><td><i> * The first set of REPLACED_BY functions is for functions whose names</i></td></tr>
+<tr><th id="47">47</th><td><i> * have just been changed. So fixing these up is mechanical, (and</i></td></tr>
+<tr><th id="48">48</th><td><i> * automated by means of the cairo/util/cairo-api-update script.</i></td></tr>
+<tr><th id="49">49</th><td><i> *</i></td></tr>
+<tr><th id="50">50</th><td><i> * The second set of DEPRECATED_BY functions is for functions where</i></td></tr>
+<tr><th id="51">51</th><td><i> * the replacement is used in a different way, (ie. different</i></td></tr>
+<tr><th id="52">52</th><td><i> * arguments, multiple functions instead of one, etc). Fixing these up</i></td></tr>
+<tr><th id="53">53</th><td><i> * will require a bit more work on the user's part, (and hopefully we</i></td></tr>
+<tr><th id="54">54</th><td><i> * can get cairo-api-update to find these and print some guiding</i></td></tr>
+<tr><th id="55">55</th><td><i> * information).</i></td></tr>
+<tr><th id="56">56</th><td><i> */</i></td></tr>
+<tr><th id="57">57</th><td><u>#define <dfn class="macro" id="_M/cairo_current_font_extents" data-ref="_M/cairo_current_font_extents">cairo_current_font_extents</dfn>   cairo_current_font_extents_REPLACED_BY_cairo_font_extents</u></td></tr>
+<tr><th id="58">58</th><td><u>#define <dfn class="macro" id="_M/cairo_get_font_extents" data-ref="_M/cairo_get_font_extents">cairo_get_font_extents</dfn>       cairo_get_font_extents_REPLACED_BY_cairo_font_extents</u></td></tr>
+<tr><th id="59">59</th><td><u>#define <dfn class="macro" id="_M/cairo_current_operator" data-ref="_M/cairo_current_operator">cairo_current_operator</dfn>       cairo_current_operator_REPLACED_BY_cairo_get_operator</u></td></tr>
+<tr><th id="60">60</th><td><u>#define <dfn class="macro" id="_M/cairo_current_tolerance" data-ref="_M/cairo_current_tolerance">cairo_current_tolerance</dfn>	     cairo_current_tolerance_REPLACED_BY_cairo_get_tolerance</u></td></tr>
+<tr><th id="61">61</th><td><u>#define <dfn class="macro" id="_M/cairo_current_point" data-ref="_M/cairo_current_point">cairo_current_point</dfn>	     cairo_current_point_REPLACED_BY_cairo_get_current_point</u></td></tr>
+<tr><th id="62">62</th><td><u>#define <dfn class="macro" id="_M/cairo_current_fill_rule" data-ref="_M/cairo_current_fill_rule">cairo_current_fill_rule</dfn>	     cairo_current_fill_rule_REPLACED_BY_cairo_get_fill_rule</u></td></tr>
+<tr><th id="63">63</th><td><u>#define <dfn class="macro" id="_M/cairo_current_line_width" data-ref="_M/cairo_current_line_width">cairo_current_line_width</dfn>     cairo_current_line_width_REPLACED_BY_cairo_get_line_width</u></td></tr>
+<tr><th id="64">64</th><td><u>#define <dfn class="macro" id="_M/cairo_current_line_cap" data-ref="_M/cairo_current_line_cap">cairo_current_line_cap</dfn>       cairo_current_line_cap_REPLACED_BY_cairo_get_line_cap</u></td></tr>
+<tr><th id="65">65</th><td><u>#define <dfn class="macro" id="_M/cairo_current_line_join" data-ref="_M/cairo_current_line_join">cairo_current_line_join</dfn>      cairo_current_line_join_REPLACED_BY_cairo_get_line_join</u></td></tr>
+<tr><th id="66">66</th><td><u>#define <dfn class="macro" id="_M/cairo_current_miter_limit" data-ref="_M/cairo_current_miter_limit">cairo_current_miter_limit</dfn>    cairo_current_miter_limit_REPLACED_BY_cairo_get_miter_limit</u></td></tr>
+<tr><th id="67">67</th><td><u>#define <dfn class="macro" id="_M/cairo_current_matrix" data-ref="_M/cairo_current_matrix">cairo_current_matrix</dfn>         cairo_current_matrix_REPLACED_BY_cairo_get_matrix</u></td></tr>
+<tr><th id="68">68</th><td><u>#define <dfn class="macro" id="_M/cairo_current_target_surface" data-ref="_M/cairo_current_target_surface">cairo_current_target_surface</dfn> cairo_current_target_surface_REPLACED_BY_cairo_get_target</u></td></tr>
+<tr><th id="69">69</th><td><u>#define <dfn class="macro" id="_M/cairo_get_status" data-ref="_M/cairo_get_status">cairo_get_status</dfn>             cairo_get_status_REPLACED_BY_cairo_status</u></td></tr>
+<tr><th id="70">70</th><td><u>#define <dfn class="macro" id="_M/cairo_concat_matrix" data-ref="_M/cairo_concat_matrix">cairo_concat_matrix</dfn>		 cairo_concat_matrix_REPLACED_BY_cairo_transform</u></td></tr>
+<tr><th id="71">71</th><td><u>#define <dfn class="macro" id="_M/cairo_scale_font" data-ref="_M/cairo_scale_font">cairo_scale_font</dfn>                 cairo_scale_font_REPLACED_BY_cairo_set_font_size</u></td></tr>
+<tr><th id="72">72</th><td><u>#define <dfn class="macro" id="_M/cairo_select_font" data-ref="_M/cairo_select_font">cairo_select_font</dfn>                cairo_select_font_REPLACED_BY_cairo_select_font_face</u></td></tr>
+<tr><th id="73">73</th><td><u>#define <dfn class="macro" id="_M/cairo_transform_font" data-ref="_M/cairo_transform_font">cairo_transform_font</dfn>             cairo_transform_font_REPLACED_BY_cairo_set_font_matrix</u></td></tr>
+<tr><th id="74">74</th><td><u>#define <dfn class="macro" id="_M/cairo_transform_point" data-ref="_M/cairo_transform_point">cairo_transform_point</dfn>		 cairo_transform_point_REPLACED_BY_cairo_user_to_device</u></td></tr>
+<tr><th id="75">75</th><td><u>#define <dfn class="macro" id="_M/cairo_transform_distance" data-ref="_M/cairo_transform_distance">cairo_transform_distance</dfn>	 cairo_transform_distance_REPLACED_BY_cairo_user_to_device_distance</u></td></tr>
+<tr><th id="76">76</th><td><u>#define <dfn class="macro" id="_M/cairo_inverse_transform_point" data-ref="_M/cairo_inverse_transform_point">cairo_inverse_transform_point</dfn>	 cairo_inverse_transform_point_REPLACED_BY_cairo_device_to_user</u></td></tr>
+<tr><th id="77">77</th><td><u>#define <dfn class="macro" id="_M/cairo_inverse_transform_distance" data-ref="_M/cairo_inverse_transform_distance">cairo_inverse_transform_distance</dfn> cairo_inverse_transform_distance_REPLACED_BY_cairo_device_to_user_distance</u></td></tr>
+<tr><th id="78">78</th><td><u>#define <dfn class="macro" id="_M/cairo_init_clip" data-ref="_M/cairo_init_clip">cairo_init_clip</dfn>			 cairo_init_clip_REPLACED_BY_cairo_reset_clip</u></td></tr>
+<tr><th id="79">79</th><td><u>#define <dfn class="macro" id="_M/cairo_surface_create_for_image" data-ref="_M/cairo_surface_create_for_image">cairo_surface_create_for_image</dfn>	 cairo_surface_create_for_image_REPLACED_BY_cairo_image_surface_create_for_data</u></td></tr>
+<tr><th id="80">80</th><td><u>#define <dfn class="macro" id="_M/cairo_default_matrix" data-ref="_M/cairo_default_matrix">cairo_default_matrix</dfn>		 cairo_default_matrix_REPLACED_BY_cairo_identity_matrix</u></td></tr>
+<tr><th id="81">81</th><td><u>#define <dfn class="macro" id="_M/cairo_matrix_set_affine" data-ref="_M/cairo_matrix_set_affine">cairo_matrix_set_affine</dfn>		 cairo_matrix_set_affine_REPLACED_BY_cairo_matrix_init</u></td></tr>
+<tr><th id="82">82</th><td><u>#define <dfn class="macro" id="_M/cairo_matrix_set_identity" data-ref="_M/cairo_matrix_set_identity">cairo_matrix_set_identity</dfn>	 cairo_matrix_set_identity_REPLACED_BY_cairo_matrix_init_identity</u></td></tr>
+<tr><th id="83">83</th><td><u>#define <dfn class="macro" id="_M/cairo_pattern_add_color_stop" data-ref="_M/cairo_pattern_add_color_stop">cairo_pattern_add_color_stop</dfn>	 cairo_pattern_add_color_stop_REPLACED_BY_cairo_pattern_add_color_stop_rgba</u></td></tr>
+<tr><th id="84">84</th><td><u>#define <dfn class="macro" id="_M/cairo_set_rgb_color" data-ref="_M/cairo_set_rgb_color">cairo_set_rgb_color</dfn>		 cairo_set_rgb_color_REPLACED_BY_cairo_set_source_rgb</u></td></tr>
+<tr><th id="85">85</th><td><u>#define <dfn class="macro" id="_M/cairo_set_pattern" data-ref="_M/cairo_set_pattern">cairo_set_pattern</dfn>		 cairo_set_pattern_REPLACED_BY_cairo_set_source</u></td></tr>
+<tr><th id="86">86</th><td><u>#define <dfn class="macro" id="_M/cairo_xlib_surface_create_for_pixmap_with_visual" data-ref="_M/cairo_xlib_surface_create_for_pixmap_with_visual">cairo_xlib_surface_create_for_pixmap_with_visual</dfn>	cairo_xlib_surface_create_for_pixmap_with_visual_REPLACED_BY_cairo_xlib_surface_create</u></td></tr>
+<tr><th id="87">87</th><td><u>#define <dfn class="macro" id="_M/cairo_xlib_surface_create_for_window_with_visual" data-ref="_M/cairo_xlib_surface_create_for_window_with_visual">cairo_xlib_surface_create_for_window_with_visual</dfn>	cairo_xlib_surface_create_for_window_with_visual_REPLACED_BY_cairo_xlib_surface_create</u></td></tr>
+<tr><th id="88">88</th><td><u>#define <dfn class="macro" id="_M/cairo_xcb_surface_create_for_pixmap_with_visual" data-ref="_M/cairo_xcb_surface_create_for_pixmap_with_visual">cairo_xcb_surface_create_for_pixmap_with_visual</dfn>	cairo_xcb_surface_create_for_pixmap_with_visual_REPLACED_BY_cairo_xcb_surface_create</u></td></tr>
+<tr><th id="89">89</th><td><u>#define <dfn class="macro" id="_M/cairo_xcb_surface_create_for_window_with_visual" data-ref="_M/cairo_xcb_surface_create_for_window_with_visual">cairo_xcb_surface_create_for_window_with_visual</dfn>	cairo_xcb_surface_create_for_window_with_visual_REPLACED_BY_cairo_xcb_surface_create</u></td></tr>
+<tr><th id="90">90</th><td><u>#define <dfn class="macro" id="_M/cairo_ps_surface_set_dpi" data-ref="_M/cairo_ps_surface_set_dpi">cairo_ps_surface_set_dpi</dfn>	cairo_ps_surface_set_dpi_REPLACED_BY_cairo_surface_set_fallback_resolution</u></td></tr>
+<tr><th id="91">91</th><td><u>#define <dfn class="macro" id="_M/cairo_pdf_surface_set_dpi" data-ref="_M/cairo_pdf_surface_set_dpi">cairo_pdf_surface_set_dpi</dfn>	cairo_pdf_surface_set_dpi_REPLACED_BY_cairo_surface_set_fallback_resolution</u></td></tr>
+<tr><th id="92">92</th><td><u>#define <dfn class="macro" id="_M/cairo_svg_surface_set_dpi" data-ref="_M/cairo_svg_surface_set_dpi">cairo_svg_surface_set_dpi</dfn>	cairo_svg_surface_set_dpi_REPLACED_BY_cairo_surface_set_fallback_resolution</u></td></tr>
+<tr><th id="93">93</th><td><u>#define <dfn class="macro" id="_M/cairo_atsui_font_face_create_for_atsu_font_id" data-ref="_M/cairo_atsui_font_face_create_for_atsu_font_id">cairo_atsui_font_face_create_for_atsu_font_id</dfn>  cairo_atsui_font_face_create_for_atsu_font_id_REPLACED_BY_cairo_quartz_font_face_create_for_atsu_font_id</u></td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><u>#define <dfn class="macro" id="_M/cairo_current_path" data-ref="_M/cairo_current_path">cairo_current_path</dfn>	     cairo_current_path_DEPRECATED_BY_cairo_copy_path</u></td></tr>
+<tr><th id="96">96</th><td><u>#define <dfn class="macro" id="_M/cairo_current_path_flat" data-ref="_M/cairo_current_path_flat">cairo_current_path_flat</dfn>	     cairo_current_path_flat_DEPRECATED_BY_cairo_copy_path_flat</u></td></tr>
+<tr><th id="97">97</th><td><u>#define <dfn class="macro" id="_M/cairo_get_path" data-ref="_M/cairo_get_path">cairo_get_path</dfn>		     cairo_get_path_DEPRECATED_BY_cairo_copy_path</u></td></tr>
+<tr><th id="98">98</th><td><u>#define <dfn class="macro" id="_M/cairo_get_path_flat" data-ref="_M/cairo_get_path_flat">cairo_get_path_flat</dfn>	     cairo_get_path_flat_DEPRECATED_BY_cairo_get_path_flat</u></td></tr>
+<tr><th id="99">99</th><td><u>#define <dfn class="macro" id="_M/cairo_set_alpha" data-ref="_M/cairo_set_alpha">cairo_set_alpha</dfn>		     cairo_set_alpha_DEPRECATED_BY_cairo_set_source_rgba_OR_cairo_paint_with_alpha</u></td></tr>
+<tr><th id="100">100</th><td><u>#define <dfn class="macro" id="_M/cairo_show_surface" data-ref="_M/cairo_show_surface">cairo_show_surface</dfn>	     cairo_show_surface_DEPRECATED_BY_cairo_set_source_surface_AND_cairo_paint</u></td></tr>
+<tr><th id="101">101</th><td><u>#define <dfn class="macro" id="_M/cairo_copy" data-ref="_M/cairo_copy">cairo_copy</dfn>		     cairo_copy_DEPRECATED_BY_cairo_create_AND_MANY_INDIVIDUAL_FUNCTIONS</u></td></tr>
+<tr><th id="102">102</th><td><u>#define <dfn class="macro" id="_M/cairo_surface_set_repeat" data-ref="_M/cairo_surface_set_repeat">cairo_surface_set_repeat</dfn>	cairo_surface_set_repeat_DEPRECATED_BY_cairo_pattern_set_extend</u></td></tr>
+<tr><th id="103">103</th><td><u>#define <dfn class="macro" id="_M/cairo_surface_set_matrix" data-ref="_M/cairo_surface_set_matrix">cairo_surface_set_matrix</dfn>	cairo_surface_set_matrix_DEPRECATED_BY_cairo_pattern_set_matrix</u></td></tr>
+<tr><th id="104">104</th><td><u>#define <dfn class="macro" id="_M/cairo_surface_get_matrix" data-ref="_M/cairo_surface_get_matrix">cairo_surface_get_matrix</dfn>	cairo_surface_get_matrix_DEPRECATED_BY_cairo_pattern_get_matrix</u></td></tr>
+<tr><th id="105">105</th><td><u>#define <dfn class="macro" id="_M/cairo_surface_set_filter" data-ref="_M/cairo_surface_set_filter">cairo_surface_set_filter</dfn>	cairo_surface_set_filter_DEPRECATED_BY_cairo_pattern_set_filter</u></td></tr>
+<tr><th id="106">106</th><td><u>#define <dfn class="macro" id="_M/cairo_surface_get_filter" data-ref="_M/cairo_surface_get_filter">cairo_surface_get_filter</dfn>	cairo_surface_get_filter_DEPRECATED_BY_cairo_pattern_get_filter</u></td></tr>
+<tr><th id="107">107</th><td><u>#define <dfn class="macro" id="_M/cairo_matrix_create" data-ref="_M/cairo_matrix_create">cairo_matrix_create</dfn>		cairo_matrix_create_DEPRECATED_BY_cairo_matrix_t</u></td></tr>
+<tr><th id="108">108</th><td><u>#define <dfn class="macro" id="_M/cairo_matrix_destroy" data-ref="_M/cairo_matrix_destroy">cairo_matrix_destroy</dfn>		cairo_matrix_destroy_DEPRECATED_BY_cairo_matrix_t</u></td></tr>
+<tr><th id="109">109</th><td><u>#define <dfn class="macro" id="_M/cairo_matrix_copy" data-ref="_M/cairo_matrix_copy">cairo_matrix_copy</dfn>		cairo_matrix_copy_DEPRECATED_BY_cairo_matrix_t</u></td></tr>
+<tr><th id="110">110</th><td><u>#define <dfn class="macro" id="_M/cairo_matrix_get_affine" data-ref="_M/cairo_matrix_get_affine">cairo_matrix_get_affine</dfn>		cairo_matrix_get_affine_DEPRECATED_BY_cairo_matrix_t</u></td></tr>
+<tr><th id="111">111</th><td><u>#define <dfn class="macro" id="_M/cairo_set_target_surface" data-ref="_M/cairo_set_target_surface">cairo_set_target_surface</dfn>	cairo_set_target_surface_DEPRECATED_BY_cairo_create</u></td></tr>
+<tr><th id="112">112</th><td><u>#define <dfn class="macro" id="_M/cairo_set_target_image" data-ref="_M/cairo_set_target_image">cairo_set_target_image</dfn>		cairo_set_target_image_DEPRECATED_BY_cairo_image_surface_create_for_data</u></td></tr>
+<tr><th id="113">113</th><td><u>#define <dfn class="macro" id="_M/cairo_set_target_pdf" data-ref="_M/cairo_set_target_pdf">cairo_set_target_pdf</dfn>		cairo_set_target_pdf_DEPRECATED_BY_cairo_pdf_surface_create</u></td></tr>
+<tr><th id="114">114</th><td><u>#define <dfn class="macro" id="_M/cairo_set_target_png" data-ref="_M/cairo_set_target_png">cairo_set_target_png</dfn>		cairo_set_target_png_DEPRECATED_BY_cairo_surface_write_to_png</u></td></tr>
+<tr><th id="115">115</th><td><u>#define <dfn class="macro" id="_M/cairo_set_target_ps" data-ref="_M/cairo_set_target_ps">cairo_set_target_ps</dfn>		cairo_set_target_ps_DEPRECATED_BY_cairo_ps_surface_create</u></td></tr>
+<tr><th id="116">116</th><td><u>#define <dfn class="macro" id="_M/cairo_set_target_quartz" data-ref="_M/cairo_set_target_quartz">cairo_set_target_quartz</dfn>		cairo_set_target_quartz_DEPRECATED_BY_cairo_quartz_surface_create</u></td></tr>
+<tr><th id="117">117</th><td><u>#define <dfn class="macro" id="_M/cairo_set_target_win32" data-ref="_M/cairo_set_target_win32">cairo_set_target_win32</dfn>		cairo_set_target_win32_DEPRECATED_BY_cairo_win32_surface_create</u></td></tr>
+<tr><th id="118">118</th><td><u>#define <dfn class="macro" id="_M/cairo_set_target_xcb" data-ref="_M/cairo_set_target_xcb">cairo_set_target_xcb</dfn>		cairo_set_target_xcb_DEPRECATED_BY_cairo_xcb_surface_create</u></td></tr>
+<tr><th id="119">119</th><td><u>#define <dfn class="macro" id="_M/cairo_set_target_drawable" data-ref="_M/cairo_set_target_drawable">cairo_set_target_drawable</dfn>	cairo_set_target_drawable_DEPRECATED_BY_cairo_xlib_surface_create</u></td></tr>
+<tr><th id="120">120</th><td><u>#define <dfn class="macro" id="_M/cairo_get_status_string" data-ref="_M/cairo_get_status_string">cairo_get_status_string</dfn>		cairo_get_status_string_DEPRECATED_BY_cairo_status_AND_cairo_status_to_string</u></td></tr>
+<tr><th id="121">121</th><td><u>#define <dfn class="macro" id="_M/cairo_status_string" data-ref="_M/cairo_status_string">cairo_status_string</dfn>		cairo_status_string_DEPRECATED_BY_cairo_status_AND_cairo_status_to_string</u></td></tr>
+<tr><th id="122">122</th><td></td></tr>
+<tr><th id="123">123</th><td><u>#<span data-ppcond="36">endif</span> /* CAIRO_DEPRECATED_H */</u></td></tr>
+<tr><th id="124">124</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

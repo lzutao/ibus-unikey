@@ -1,0 +1,7 @@
+<def f='include/ibus-1.0/ibusserializable.h' l='171' ll='185'/>
+<size>264</size>
+<mbr r='_IBusSerializableClass::parent' o='0' t='IBusObjectClass'/>
+<mbr r='_IBusSerializableClass::serialize' o='1600' t='gboolean (*)(IBusSerializable *, GVariantBuilder *)'/>
+<mbr r='_IBusSerializableClass::deserialize' o='1664' t='gint (*)(IBusSerializable *, GVariant *)'/>
+<mbr r='_IBusSerializableClass::copy' o='1728' t='gboolean (*)(IBusSerializable *, const IBusSerializable *)'/>
+<mbr r='_IBusSerializableClass::pdummy' o='1792' t='gpointer [5]'/>

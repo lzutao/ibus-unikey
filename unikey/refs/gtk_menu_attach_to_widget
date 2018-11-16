@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkmenu.h' l='165' type='void gtk_menu_attach_to_widget(GtkMenu * menu, GtkWidget * attach_widget, GtkMenuDetachFunc detacher)'/>
+<doc f='include/gtk-2.0/gtk/gtkmenu.h' l='161'>/* A reference count is kept for a widget when it is attached to
+ * a particular widget. This is typically a menu item; it may also
+ * be a widget with a popup menu - for instance, the Notebook widget.
+ */</doc>

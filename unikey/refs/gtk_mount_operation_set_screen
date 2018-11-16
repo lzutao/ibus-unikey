@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmountoperation.h' l='77' type='void gtk_mount_operation_set_screen(GtkMountOperation * op, GdkScreen * screen)'/>

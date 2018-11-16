@@ -1,0 +1,43 @@
+<def f='include/gtk-2.0/gtk/gtkstyle.h' l='125' ll='430'/>
+<size>456</size>
+<mbr r='_GtkStyleClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_GtkStyleClass::realize' o='1088' t='void (*)(GtkStyle *)'/>
+<mbr r='_GtkStyleClass::unrealize' o='1152' t='void (*)(GtkStyle *)'/>
+<mbr r='_GtkStyleClass::copy' o='1216' t='void (*)(GtkStyle *, GtkStyle *)'/>
+<mbr r='_GtkStyleClass::clone' o='1280' t='GtkStyle *(*)(GtkStyle *)'/>
+<mbr r='_GtkStyleClass::init_from_rc' o='1344' t='void (*)(GtkStyle *, GtkRcStyle *)'/>
+<mbr r='_GtkStyleClass::set_background' o='1408' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType)'/>
+<mbr r='_GtkStyleClass::render_icon' o='1472' t='GdkPixbuf *(*)(GtkStyle *, const GtkIconSource *, GtkTextDirection, GtkStateType, GtkIconSize, GtkWidget *, const gchar *)'/>
+<mbr r='_GtkStyleClass::draw_hline' o='1536' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GdkRectangle *, GtkWidget *, const gchar *, gint, gint, gint)'/>
+<mbr r='_GtkStyleClass::draw_vline' o='1600' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GdkRectangle *, GtkWidget *, const gchar *, gint, gint, gint)'/>
+<mbr r='_GtkStyleClass::draw_shadow' o='1664' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GtkShadowType, GdkRectangle *, GtkWidget *, const gchar *, gint, gint, gint, gint)'/>
+<mbr r='_GtkStyleClass::draw_polygon' o='1728' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GtkShadowType, GdkRectangle *, GtkWidget *, const gchar *, GdkPoint *, gint, gboolean)'/>
+<mbr r='_GtkStyleClass::draw_arrow' o='1792' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GtkShadowType, GdkRectangle *, GtkWidget *, const gchar *, GtkArrowType, gboolean, gint, gint, gint, gint)'/>
+<mbr r='_GtkStyleClass::draw_diamond' o='1856' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GtkShadowType, GdkRectangle *, GtkWidget *, const gchar *, gint, gint, gint, gint)'/>
+<mbr r='_GtkStyleClass::draw_string' o='1920' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GdkRectangle *, GtkWidget *, const gchar *, gint, gint, const gchar *)'/>
+<mbr r='_GtkStyleClass::draw_box' o='1984' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GtkShadowType, GdkRectangle *, GtkWidget *, const gchar *, gint, gint, gint, gint)'/>
+<mbr r='_GtkStyleClass::draw_flat_box' o='2048' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GtkShadowType, GdkRectangle *, GtkWidget *, const gchar *, gint, gint, gint, gint)'/>
+<mbr r='_GtkStyleClass::draw_check' o='2112' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GtkShadowType, GdkRectangle *, GtkWidget *, const gchar *, gint, gint, gint, gint)'/>
+<mbr r='_GtkStyleClass::draw_option' o='2176' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GtkShadowType, GdkRectangle *, GtkWidget *, const gchar *, gint, gint, gint, gint)'/>
+<mbr r='_GtkStyleClass::draw_tab' o='2240' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GtkShadowType, GdkRectangle *, GtkWidget *, const gchar *, gint, gint, gint, gint)'/>
+<mbr r='_GtkStyleClass::draw_shadow_gap' o='2304' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GtkShadowType, GdkRectangle *, GtkWidget *, const gchar *, gint, gint, gint, gint, GtkPositionType, gint, gint)'/>
+<mbr r='_GtkStyleClass::draw_box_gap' o='2368' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GtkShadowType, GdkRectangle *, GtkWidget *, const gchar *, gint, gint, gint, gint, GtkPositionType, gint, gint)'/>
+<mbr r='_GtkStyleClass::draw_extension' o='2432' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GtkShadowType, GdkRectangle *, GtkWidget *, const gchar *, gint, gint, gint, gint, GtkPositionType)'/>
+<mbr r='_GtkStyleClass::draw_focus' o='2496' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GdkRectangle *, GtkWidget *, const gchar *, gint, gint, gint, gint)'/>
+<mbr r='_GtkStyleClass::draw_slider' o='2560' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GtkShadowType, GdkRectangle *, GtkWidget *, const gchar *, gint, gint, gint, gint, GtkOrientation)'/>
+<mbr r='_GtkStyleClass::draw_handle' o='2624' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GtkShadowType, GdkRectangle *, GtkWidget *, const gchar *, gint, gint, gint, gint, GtkOrientation)'/>
+<mbr r='_GtkStyleClass::draw_expander' o='2688' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GdkRectangle *, GtkWidget *, const gchar *, gint, gint, GtkExpanderStyle)'/>
+<mbr r='_GtkStyleClass::draw_layout' o='2752' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, gboolean, GdkRectangle *, GtkWidget *, const gchar *, gint, gint, PangoLayout *)'/>
+<mbr r='_GtkStyleClass::draw_resize_grip' o='2816' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GdkRectangle *, GtkWidget *, const gchar *, GdkWindowEdge, gint, gint, gint, gint)'/>
+<mbr r='_GtkStyleClass::draw_spinner' o='2880' t='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GdkRectangle *, GtkWidget *, const gchar *, guint, gint, gint, gint, gint)'/>
+<mbr r='_GtkStyleClass::_gtk_reserved1' o='2944' t='void (*)()'/>
+<mbr r='_GtkStyleClass::_gtk_reserved2' o='3008' t='void (*)()'/>
+<mbr r='_GtkStyleClass::_gtk_reserved3' o='3072' t='void (*)()'/>
+<mbr r='_GtkStyleClass::_gtk_reserved4' o='3136' t='void (*)()'/>
+<mbr r='_GtkStyleClass::_gtk_reserved5' o='3200' t='void (*)()'/>
+<mbr r='_GtkStyleClass::_gtk_reserved6' o='3264' t='void (*)()'/>
+<mbr r='_GtkStyleClass::_gtk_reserved7' o='3328' t='void (*)()'/>
+<mbr r='_GtkStyleClass::_gtk_reserved8' o='3392' t='void (*)()'/>
+<mbr r='_GtkStyleClass::_gtk_reserved9' o='3456' t='void (*)()'/>
+<mbr r='_GtkStyleClass::_gtk_reserved10' o='3520' t='void (*)()'/>
+<mbr r='_GtkStyleClass::_gtk_reserved11' o='3584' t='void (*)()'/>

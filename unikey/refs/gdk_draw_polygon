@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdrawable.h' l='301' type='void gdk_draw_polygon(GdkDrawable * drawable, GdkGC * gc, gboolean filled, const GdkPoint * points, gint n_points)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='269' type='void gtk_window_get_frame_dimensions(GtkWindow * window, gint * left, gint * top, gint * right, gint * bottom)'/>

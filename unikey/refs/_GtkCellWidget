@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkclist.h' l='403' ll='413'/>
+<size>24</size>
+<mbr r='_GtkCellWidget::type' o='0' t='GtkCellType'/>
+<mbr r='_GtkCellWidget::vertical' o='32' t='gint16'/>
+<mbr r='_GtkCellWidget::horizontal' o='48' t='gint16'/>
+<mbr r='_GtkCellWidget::style' o='64' t='GtkStyle *'/>
+<mbr r='_GtkCellWidget::widget' o='128' t='GtkWidget *'/>

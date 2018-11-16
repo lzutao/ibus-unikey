@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='345' type='GdkWindow * gdk_window_at_pointer(gint * win_x, gint * win_y)'/>

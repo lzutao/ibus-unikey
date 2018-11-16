@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkrgb.h' l='128' type='GdkRgbCmap * gdk_rgb_cmap_new(guint32 * colors, gint n_colors)'/>

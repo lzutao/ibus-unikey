@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-attributes.h' l='506' type='PangoAttribute * pango_attr_shape_new_with_data(const PangoRectangle * ink_rect, const PangoRectangle * logical_rect, gpointer data, PangoAttrDataCopyFunc copy_func, GDestroyNotify destroy_func)'/>

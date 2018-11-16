@@ -1,0 +1,62 @@
+<def f='include/gtk-2.0/gtk/gtkbuildable.h' l='92' ll='133'/>
+<size>96</size>
+<doc f='include/gtk-2.0/gtk/gtkbuildable.h' l='43'>/**
+ * GtkBuildableIface:
+ * @g_iface: the parent class
+ * @set_name: Stores the name attribute given in the GtkBuilder UI definition.
+ *  #GtkWidget stores the name as object data. Implement this method if your
+ *  object has some notion of &quot;name&quot; and it makes sense to map the XML name
+ *  attribute to it.
+ * @get_name: The getter corresponding to @set_name. Implement this
+ *  if you implement @set_name.
+ * @add_child: Adds a child. The @type parameter can be used to
+ *  differentiate the kind of child. #GtkContainer implements this
+ *  to add add a child widget to the container, #GtkNotebook uses
+ *  the @type to distinguish between page labels (of type &quot;page-label&quot;)
+ *  and normal children.
+ * @set_buildable_property: Sets a property of a buildable object.
+ *  It is normally not necessary to implement this, g_object_set_property()
+ *  is used by default. #GtkWindow implements this to delay showing itself
+ *  (i.e. setting the #GtkWidget:visible property) until the whole interface
+ *  is created.
+ * @construct_child: Constructs a child of a buildable that has been
+ *  specified as &quot;constructor&quot; in the UI definition. #GtkUIManager implements
+ *  this to reference to a widget created in a &amp;lt;ui&amp;gt; tag which is outside
+ *  of the normal GtkBuilder UI definition hierarchy.  A reference to the
+ *  constructed object is returned and becomes owned by the caller.
+ * @custom_tag_start: Implement this if the buildable needs to parse
+ *  content below &amp;lt;child&amp;gt;. To handle an element, the implementation
+ *  must fill in the @parser structure and @user_data and return %TRUE.
+ *  #GtkWidget implements this to parse keyboard accelerators specified
+ *  in &amp;lt;accelerator&amp;gt; elements. #GtkContainer implements it to map
+ *  properties defined via &amp;lt;packing&amp;gt; elements to child properties.
+ *  Note that @user_data must be freed in @custom_tag_end or @custom_finished.
+ * @custom_tag_end: Called for the end tag of each custom element that is
+ *  handled by the buildable (see @custom_tag_start).
+ * @custom_finished: Called for each custom tag handled by the buildable
+ *  when the builder finishes parsing (see @custom_tag_start)
+ * @parser_finished: Called when a builder finishes the parsing
+ *  of a UI definition. It is normally not necessary to implement this,
+ *  unless you need to perform special cleanup actions. #GtkWindow sets
+ *  the #GtkWidget:visible property here.
+ * @get_internal_child: Returns an internal child of a buildable.
+ *  #GtkDialog implements this to give access to its @vbox, making
+ *  it possible to add children to the vbox in a UI definition.
+ *  Implement this if the buildable has internal children that may
+ *  need to be accessed from a UI definition.
+ *
+ * The GtkBuildableIface interface contains method that are
+ * necessary to allow #GtkBuilder to construct an object from
+ * a GtkBuilder UI definition.
+ */</doc>
+<mbr r='_GtkBuildableIface::g_iface' o='0' t='GTypeInterface'/>
+<mbr r='_GtkBuildableIface::set_name' o='128' t='void (*)(GtkBuildable *, const gchar *)'/>
+<mbr r='_GtkBuildableIface::get_name' o='192' t='const gchar *(*)(GtkBuildable *)'/>
+<mbr r='_GtkBuildableIface::add_child' o='256' t='void (*)(GtkBuildable *, GtkBuilder *, GObject *, const gchar *)'/>
+<mbr r='_GtkBuildableIface::set_buildable_property' o='320' t='void (*)(GtkBuildable *, GtkBuilder *, const gchar *, const GValue *)'/>
+<mbr r='_GtkBuildableIface::construct_child' o='384' t='GObject *(*)(GtkBuildable *, GtkBuilder *, const gchar *)'/>
+<mbr r='_GtkBuildableIface::custom_tag_start' o='448' t='gboolean (*)(GtkBuildable *, GtkBuilder *, GObject *, const gchar *, GMarkupParser *, gpointer *)'/>
+<mbr r='_GtkBuildableIface::custom_tag_end' o='512' t='void (*)(GtkBuildable *, GtkBuilder *, GObject *, const gchar *, gpointer *)'/>
+<mbr r='_GtkBuildableIface::custom_finished' o='576' t='void (*)(GtkBuildable *, GtkBuilder *, GObject *, const gchar *, gpointer)'/>
+<mbr r='_GtkBuildableIface::parser_finished' o='640' t='void (*)(GtkBuildable *, GtkBuilder *)'/>
+<mbr r='_GtkBuildableIface::get_internal_child' o='704' t='GObject *(*)(GtkBuildable *, GtkBuilder *, const gchar *)'/>

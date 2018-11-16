@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='175' type='void gtk_text_buffer_insert(GtkTextBuffer * buffer, GtkTextIter * iter, const gchar * text, gint len)'/>
+<doc f='include/gtk-2.0/gtk/gtktextbuffer.h' l='174'>/* Insert into the buffer */</doc>

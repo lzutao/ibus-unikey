@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='53' type='void gtk_stock_add_static(const GtkStockItem * items, guint n_items)'/>

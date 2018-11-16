@@ -1,0 +1,3 @@
+<use f='unikey/setup/dlg_macro_table.cpp' l='140' u='c' c='_Z30unikey_macro_dialog_load_macroP10_GtkDialog11CMacroTable'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='370' u='c' c='_Z23import_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='162' u='c' c='_ZL20macro_edit_button_cbP10_GtkButtonPv'/>

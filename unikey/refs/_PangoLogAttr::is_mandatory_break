@@ -1,0 +1,3 @@
+<dec f='include/pango-1.0/pango/pango-break.h' l='90' type='guint'/>
+<offset>1</offset>
+<doc f='include/pango-1.0/pango/pango-break.h' l='90'>/* Must break line in front of character */</doc>

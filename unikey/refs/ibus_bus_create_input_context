@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='546' type='IBusInputContext * ibus_bus_create_input_context(IBusBus * bus, const gchar * client_name)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='535'>/**
+ * ibus_bus_create_input_context:
+ * @bus: An #IBusBus.
+ * @client_name: Name of client.
+ *      &quot;CreateInputContext&quot; call is suceeded, %NULL otherwise.
+ *
+ * Create an input context for client synchronously.
+ *
+ * Returns: (transfer full): An newly allocated #IBusInputContext if the
+ */</doc>

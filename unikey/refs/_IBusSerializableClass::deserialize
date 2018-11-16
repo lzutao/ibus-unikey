@@ -1,0 +1,2 @@
+<dec f='include/ibus-1.0/ibusserializable.h' l='178' type='gint (*)(IBusSerializable *, GVariant *)'/>
+<offset>1664</offset>

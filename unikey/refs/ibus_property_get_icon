@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='242' type='const gchar * ibus_property_get_icon(IBusProperty * prop)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='234'>/**
+ * ibus_property_get_icon:
+ * @prop: An #IBusProperty.
+ *
+ * Get the icon of #IBusProperty.
+ *
+ * Returns: the icon of #IBusProperty. Should not be freed.
+ */</doc>

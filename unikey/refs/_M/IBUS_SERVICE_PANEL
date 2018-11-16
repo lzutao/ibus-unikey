@@ -1,0 +1,6 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='66'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='61'>/**
+ * IBUS_SERVICE_PANEL:
+ *
+ * Address of IBus panel service.
+ */</doc>

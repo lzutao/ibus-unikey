@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkcolor.h' l='121' type='gboolean gdk_colormap_alloc_color(GdkColormap * colormap, GdkColor * color, gboolean writeable, gboolean best_match)'/>

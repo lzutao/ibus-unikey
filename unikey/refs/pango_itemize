@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-context.h' l='120' type='GList * pango_itemize(PangoContext * context, const char * text, int start_index, int length, PangoAttrList * attrs, PangoAttrIterator * cached_iter)'/>

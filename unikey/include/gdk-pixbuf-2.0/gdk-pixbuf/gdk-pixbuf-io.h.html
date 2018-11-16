@@ -1,0 +1,383 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gdk-pixbuf-io.h source code [include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-io.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-io.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gdk-pixbuf-2.0</a>/<a href='./'>gdk-pixbuf</a>/<a href='gdk-pixbuf-io.h.html'>gdk-pixbuf-io.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GdkPixbuf library - Io handling.  This is an internal header for </i></td></tr>
+<tr><th id="2">2</th><td><i> * GdkPixbuf. You should never use it unless you are doing development for </i></td></tr>
+<tr><th id="3">3</th><td><i> * GdkPixbuf itself.</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * Copyright (C) 1999 The Free Software Foundation</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * Authors: Mark Crichton &lt;crichton@gimp.org&gt;</i></td></tr>
+<tr><th id="8">8</th><td><i> *          Miguel de Icaza &lt;miguel@gnu.org&gt;</i></td></tr>
+<tr><th id="9">9</th><td><i> *          Federico Mena-Quintero &lt;federico@gimp.org&gt;</i></td></tr>
+<tr><th id="10">10</th><td><i> *          Jonathan Blandford &lt;jrb@redhat.com&gt;</i></td></tr>
+<tr><th id="11">11</th><td><i> *          Michael Fulbright &lt;drmike@redhat.com&gt;</i></td></tr>
+<tr><th id="12">12</th><td><i> *</i></td></tr>
+<tr><th id="13">13</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="14">14</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="16">16</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="17">17</th><td><i> *</i></td></tr>
+<tr><th id="18">18</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="19">19</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="20">20</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="21">21</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="22">22</th><td><i> *</i></td></tr>
+<tr><th id="23">23</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="24">24</th><td><i> * License along with this library; if not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="25">25</th><td><i> */</i></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/GDK_PIXBUF_IO_H">GDK_PIXBUF_IO_H</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/GDK_PIXBUF_IO_H" data-ref="_M/GDK_PIXBUF_IO_H">GDK_PIXBUF_IO_H</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><u>#<span data-ppcond="30">if</span> defined(<span class="macro" data-ref="_M/GDK_PIXBUF_DISABLE_SINGLE_INCLUDES">GDK_PIXBUF_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gdk-pixbuf.h.html#27" data-ref="_M/GDK_PIXBUF_H_INSIDE">GDK_PIXBUF_H_INSIDE</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GDK_PIXBUF_COMPILATION">GDK_PIXBUF_COMPILATION</span>)</u></td></tr>
+<tr><th id="31">31</th><td><u>#error "Only &lt;gdk-pixbuf/gdk-pixbuf.h&gt; can be included directly."</u></td></tr>
+<tr><th id="32">32</th><td><u>#<span data-ppcond="30">endif</span></u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><u>#include <a href="../../stdio.h.html">&lt;stdio.h&gt;</a></u></td></tr>
+<tr><th id="35">35</th><td><u>#include <a href="../../glib-2.0/glib.h.html">&lt;glib.h&gt;</a></u></td></tr>
+<tr><th id="36">36</th><td><u>#include <a href="../../glib-2.0/gmodule.h.html">&lt;gmodule.h&gt;</a></u></td></tr>
+<tr><th id="37">37</th><td><u>#include <a href="gdk-pixbuf-core.h.html">&lt;gdk-pixbuf/gdk-pixbuf-core.h&gt;</a></u></td></tr>
+<tr><th id="38">38</th><td><u>#include <a href="gdk-pixbuf-animation.h.html">&lt;gdk-pixbuf/gdk-pixbuf-animation.h&gt;</a></u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_GdkPixbufFormat" title='_GdkPixbufFormat' data-ref="_GdkPixbufFormat"><a class="type" href="#_GdkPixbufFormat" title='_GdkPixbufFormat' data-ref="_GdkPixbufFormat">_GdkPixbufFormat</a></dfn> <dfn class="typedef" id="GdkPixbufFormat" title='GdkPixbufFormat' data-type='struct _GdkPixbufFormat' data-ref="GdkPixbufFormat">GdkPixbufFormat</dfn>;</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="45">45</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a> <dfn class="decl" id="gdk_pixbuf_format_get_type" title='gdk_pixbuf_format_get_type' data-ref="gdk_pixbuf_format_get_type">gdk_pixbuf_format_get_type</dfn> (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="48">48</th><td><a class="typedef" href="../../glib-2.0/glib/gslist.h.html#GSList" title='GSList' data-type='struct _GSList' data-ref="GSList">GSList</a>    *<dfn class="decl" id="gdk_pixbuf_get_formats" title='gdk_pixbuf_get_formats' data-ref="gdk_pixbuf_get_formats">gdk_pixbuf_get_formats</dfn>            (<em>void</em>);</td></tr>
+<tr><th id="49">49</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#352" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_2">GDK_PIXBUF_AVAILABLE_IN_2_2</a></td></tr>
+<tr><th id="50">50</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="gdk_pixbuf_format_get_name" title='gdk_pixbuf_format_get_name' data-ref="gdk_pixbuf_format_get_name">gdk_pixbuf_format_get_name</dfn>        (<a class="typedef" href="#GdkPixbufFormat" title='GdkPixbufFormat' data-type='struct _GdkPixbufFormat' data-ref="GdkPixbufFormat">GdkPixbufFormat</a> *<dfn class="local col3 decl" id="13993format" title='format' data-type='GdkPixbufFormat *' data-ref="13993format">format</dfn>);</td></tr>
+<tr><th id="51">51</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#352" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_2">GDK_PIXBUF_AVAILABLE_IN_2_2</a></td></tr>
+<tr><th id="52">52</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="gdk_pixbuf_format_get_description" title='gdk_pixbuf_format_get_description' data-ref="gdk_pixbuf_format_get_description">gdk_pixbuf_format_get_description</dfn> (<a class="typedef" href="#GdkPixbufFormat" title='GdkPixbufFormat' data-type='struct _GdkPixbufFormat' data-ref="GdkPixbufFormat">GdkPixbufFormat</a> *<dfn class="local col4 decl" id="13994format" title='format' data-type='GdkPixbufFormat *' data-ref="13994format">format</dfn>);</td></tr>
+<tr><th id="53">53</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#352" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_2">GDK_PIXBUF_AVAILABLE_IN_2_2</a></td></tr>
+<tr><th id="54">54</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    **<dfn class="decl" id="gdk_pixbuf_format_get_mime_types" title='gdk_pixbuf_format_get_mime_types' data-ref="gdk_pixbuf_format_get_mime_types">gdk_pixbuf_format_get_mime_types</dfn>  (<a class="typedef" href="#GdkPixbufFormat" title='GdkPixbufFormat' data-type='struct _GdkPixbufFormat' data-ref="GdkPixbufFormat">GdkPixbufFormat</a> *<dfn class="local col5 decl" id="13995format" title='format' data-type='GdkPixbufFormat *' data-ref="13995format">format</dfn>);</td></tr>
+<tr><th id="55">55</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#352" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_2">GDK_PIXBUF_AVAILABLE_IN_2_2</a></td></tr>
+<tr><th id="56">56</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    **<dfn class="decl" id="gdk_pixbuf_format_get_extensions" title='gdk_pixbuf_format_get_extensions' data-ref="gdk_pixbuf_format_get_extensions">gdk_pixbuf_format_get_extensions</dfn>  (<a class="typedef" href="#GdkPixbufFormat" title='GdkPixbufFormat' data-type='struct _GdkPixbufFormat' data-ref="GdkPixbufFormat">GdkPixbufFormat</a> *<dfn class="local col6 decl" id="13996format" title='format' data-type='GdkPixbufFormat *' data-ref="13996format">format</dfn>);</td></tr>
+<tr><th id="57">57</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#658" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_36">GDK_PIXBUF_AVAILABLE_IN_2_36</a></td></tr>
+<tr><th id="58">58</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>   <dfn class="decl" id="gdk_pixbuf_format_is_save_option_supported" title='gdk_pixbuf_format_is_save_option_supported' data-ref="gdk_pixbuf_format_is_save_option_supported">gdk_pixbuf_format_is_save_option_supported</dfn> (<a class="typedef" href="#GdkPixbufFormat" title='GdkPixbufFormat' data-type='struct _GdkPixbufFormat' data-ref="GdkPixbufFormat">GdkPixbufFormat</a> *<dfn class="local col7 decl" id="13997format" title='format' data-type='GdkPixbufFormat *' data-ref="13997format">format</dfn>,</td></tr>
+<tr><th id="59">59</th><td>                                                       <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="local col8 decl" id="13998option_key" title='option_key' data-type='const gchar *' data-ref="13998option_key">option_key</dfn>);</td></tr>
+<tr><th id="60">60</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#352" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_2">GDK_PIXBUF_AVAILABLE_IN_2_2</a></td></tr>
+<tr><th id="61">61</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>   <dfn class="decl" id="gdk_pixbuf_format_is_writable" title='gdk_pixbuf_format_is_writable' data-ref="gdk_pixbuf_format_is_writable">gdk_pixbuf_format_is_writable</dfn>     (<a class="typedef" href="#GdkPixbufFormat" title='GdkPixbufFormat' data-type='struct _GdkPixbufFormat' data-ref="GdkPixbufFormat">GdkPixbufFormat</a> *<dfn class="local col9 decl" id="13999format" title='format' data-type='GdkPixbufFormat *' data-ref="13999format">format</dfn>);</td></tr>
+<tr><th id="62">62</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#388" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_6">GDK_PIXBUF_AVAILABLE_IN_2_6</a></td></tr>
+<tr><th id="63">63</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>   <dfn class="decl" id="gdk_pixbuf_format_is_scalable" title='gdk_pixbuf_format_is_scalable' data-ref="gdk_pixbuf_format_is_scalable">gdk_pixbuf_format_is_scalable</dfn>     (<a class="typedef" href="#GdkPixbufFormat" title='GdkPixbufFormat' data-type='struct _GdkPixbufFormat' data-ref="GdkPixbufFormat">GdkPixbufFormat</a> *<dfn class="local col0 decl" id="14000format" title='format' data-type='GdkPixbufFormat *' data-ref="14000format">format</dfn>);</td></tr>
+<tr><th id="64">64</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#388" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_6">GDK_PIXBUF_AVAILABLE_IN_2_6</a></td></tr>
+<tr><th id="65">65</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>   <dfn class="decl" id="gdk_pixbuf_format_is_disabled" title='gdk_pixbuf_format_is_disabled' data-ref="gdk_pixbuf_format_is_disabled">gdk_pixbuf_format_is_disabled</dfn>     (<a class="typedef" href="#GdkPixbufFormat" title='GdkPixbufFormat' data-type='struct _GdkPixbufFormat' data-ref="GdkPixbufFormat">GdkPixbufFormat</a> *<dfn class="local col1 decl" id="14001format" title='format' data-type='GdkPixbufFormat *' data-ref="14001format">format</dfn>);</td></tr>
+<tr><th id="66">66</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#388" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_6">GDK_PIXBUF_AVAILABLE_IN_2_6</a></td></tr>
+<tr><th id="67">67</th><td><em>void</em>       <dfn class="decl" id="gdk_pixbuf_format_set_disabled" title='gdk_pixbuf_format_set_disabled' data-ref="gdk_pixbuf_format_set_disabled">gdk_pixbuf_format_set_disabled</dfn>    (<a class="typedef" href="#GdkPixbufFormat" title='GdkPixbufFormat' data-type='struct _GdkPixbufFormat' data-ref="GdkPixbufFormat">GdkPixbufFormat</a> *<dfn class="local col2 decl" id="14002format" title='format' data-type='GdkPixbufFormat *' data-ref="14002format">format</dfn>,</td></tr>
+<tr><th id="68">68</th><td>					      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>         <dfn class="local col3 decl" id="14003disabled" title='disabled' data-type='gboolean' data-ref="14003disabled">disabled</dfn>);</td></tr>
+<tr><th id="69">69</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#388" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_6">GDK_PIXBUF_AVAILABLE_IN_2_6</a></td></tr>
+<tr><th id="70">70</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="gdk_pixbuf_format_get_license" title='gdk_pixbuf_format_get_license' data-ref="gdk_pixbuf_format_get_license">gdk_pixbuf_format_get_license</dfn>     (<a class="typedef" href="#GdkPixbufFormat" title='GdkPixbufFormat' data-type='struct _GdkPixbufFormat' data-ref="GdkPixbufFormat">GdkPixbufFormat</a> *<dfn class="local col4 decl" id="14004format" title='format' data-type='GdkPixbufFormat *' data-ref="14004format">format</dfn>);</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#370" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_4">GDK_PIXBUF_AVAILABLE_IN_2_4</a></td></tr>
+<tr><th id="73">73</th><td><a class="typedef" href="#GdkPixbufFormat" title='GdkPixbufFormat' data-type='struct _GdkPixbufFormat' data-ref="GdkPixbufFormat">GdkPixbufFormat</a> *<dfn class="decl" id="gdk_pixbuf_get_file_info" title='gdk_pixbuf_get_file_info' data-ref="gdk_pixbuf_get_file_info">gdk_pixbuf_get_file_info</dfn>    (<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="local col5 decl" id="14005filename" title='filename' data-type='const gchar *' data-ref="14005filename">filename</dfn>,</td></tr>
+<tr><th id="74">74</th><td>					      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>            *<dfn class="local col6 decl" id="14006width" title='width' data-type='gint *' data-ref="14006width">width</dfn>, </td></tr>
+<tr><th id="75">75</th><td>					      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>            *<dfn class="local col7 decl" id="14007height" title='height' data-type='gint *' data-ref="14007height">height</dfn>);</td></tr>
+<tr><th id="76">76</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#622" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_32">GDK_PIXBUF_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="77">77</th><td><em>void</em>             <dfn class="decl" id="gdk_pixbuf_get_file_info_async" title='gdk_pixbuf_get_file_info_async' data-ref="gdk_pixbuf_get_file_info_async">gdk_pixbuf_get_file_info_async</dfn>  (<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>          *<dfn class="local col8 decl" id="14008filename" title='filename' data-type='const gchar *' data-ref="14008filename">filename</dfn>,</td></tr>
+<tr><th id="78">78</th><td>						  <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GCancellable" title='GCancellable' data-type='struct _GCancellable' data-ref="GCancellable">GCancellable</a>         *<dfn class="local col9 decl" id="14009cancellable" title='cancellable' data-type='GCancellable *' data-ref="14009cancellable">cancellable</dfn>,</td></tr>
+<tr><th id="79">79</th><td>						  <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GAsyncReadyCallback" title='GAsyncReadyCallback' data-type='void (*)(GObject *, GAsyncResult *, gpointer)' data-ref="GAsyncReadyCallback">GAsyncReadyCallback</a>   <dfn class="local col0 decl" id="14010callback" title='callback' data-type='GAsyncReadyCallback' data-ref="14010callback">callback</dfn>,</td></tr>
+<tr><th id="80">80</th><td>						  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>              <dfn class="local col1 decl" id="14011user_data" title='user_data' data-type='gpointer' data-ref="14011user_data">user_data</dfn>);</td></tr>
+<tr><th id="81">81</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#622" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_32">GDK_PIXBUF_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="82">82</th><td><a class="typedef" href="#GdkPixbufFormat" title='GdkPixbufFormat' data-type='struct _GdkPixbufFormat' data-ref="GdkPixbufFormat">GdkPixbufFormat</a> *<dfn class="decl" id="gdk_pixbuf_get_file_info_finish" title='gdk_pixbuf_get_file_info_finish' data-ref="gdk_pixbuf_get_file_info_finish">gdk_pixbuf_get_file_info_finish</dfn> (<a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GAsyncResult" title='GAsyncResult' data-type='struct _GAsyncResult' data-ref="GAsyncResult">GAsyncResult</a>         *<dfn class="local col2 decl" id="14012async_result" title='async_result' data-type='GAsyncResult *' data-ref="14012async_result">async_result</dfn>,</td></tr>
+<tr><th id="83">83</th><td>						  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>                 *<dfn class="local col3 decl" id="14013width" title='width' data-type='gint *' data-ref="14013width">width</dfn>,</td></tr>
+<tr><th id="84">84</th><td>						  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>                 *<dfn class="local col4 decl" id="14014height" title='height' data-type='gint *' data-ref="14014height">height</dfn>,</td></tr>
+<tr><th id="85">85</th><td>						  <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>              **<dfn class="local col5 decl" id="14015error" title='error' data-type='GError **' data-ref="14015error">error</dfn>);</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="88">88</th><td><a class="typedef" href="#GdkPixbufFormat" title='GdkPixbufFormat' data-type='struct _GdkPixbufFormat' data-ref="GdkPixbufFormat">GdkPixbufFormat</a> *<dfn class="decl" id="gdk_pixbuf_format_copy" title='gdk_pixbuf_format_copy' data-ref="gdk_pixbuf_format_copy">gdk_pixbuf_format_copy</dfn> (<em>const</em> <a class="typedef" href="#GdkPixbufFormat" title='GdkPixbufFormat' data-type='struct _GdkPixbufFormat' data-ref="GdkPixbufFormat">GdkPixbufFormat</a> *<dfn class="local col6 decl" id="14016format" title='format' data-type='const GdkPixbufFormat *' data-ref="14016format">format</dfn>);</td></tr>
+<tr><th id="89">89</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="90">90</th><td><em>void</em>             <dfn class="decl" id="gdk_pixbuf_format_free" title='gdk_pixbuf_format_free' data-ref="gdk_pixbuf_format_free">gdk_pixbuf_format_free</dfn> (<a class="typedef" href="#GdkPixbufFormat" title='GdkPixbufFormat' data-type='struct _GdkPixbufFormat' data-ref="GdkPixbufFormat">GdkPixbufFormat</a>       *<dfn class="local col7 decl" id="14017format" title='format' data-type='GdkPixbufFormat *' data-ref="14017format">format</dfn>);</td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td><u>#<span data-ppcond="92">ifdef</span> <span class="macro" data-ref="_M/GDK_PIXBUF_ENABLE_BACKEND">GDK_PIXBUF_ENABLE_BACKEND</span></u></td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> * GdkPixbufModuleSizeFunc:</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> *<span class="command"> @width</span>: pointer to a location containing the current image width</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"> *<span class="command"> @height</span>: pointer to a location containing the current image height</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc"> *<span class="command"> @user</span>_data: the loader.</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> * Defines the type of the function that gets called once the size </i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> * of the loaded image is known.</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> * The function is expected to set<span class="command"> @width</span> and<span class="command"> @height</span> to the desired</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"> * size to which the image should be scaled. If a module has no efficient </i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> * way to achieve the desired scaling during the loading of the image, it may</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> * either ignore the size request, or only approximate it - gdk-pixbuf will</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> * then perform the required scaling on the completely loaded image. </i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> * If the function sets<span class="command"> @width</span> or<span class="command"> @height</span> to zero, the module should interpret</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> * this as a hint that it will be closed soon and shouldn't allocate further </i></td></tr>
+<tr><th id="113">113</th><td><i class="doc"> * resources. This convention is used to implement gdk_pixbuf_get_file_info()</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc"> * efficiently.</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> * Since: 2.2</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="118">118</th><td><b>typedef</b> <em>void</em> (* GdkPixbufModuleSizeFunc)           (gint *width, </td></tr>
+<tr><th id="119">119</th><td>						    gint *height, </td></tr>
+<tr><th id="120">120</th><td>						    gpointer user_data);</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> * GdkPixbufModulePreparedFunc:</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> *<span class="command"> @pixbuf</span>: the #GdkPixbuf that is currently being loaded.</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc"> *<span class="command"> @anim</span>: if an animation is being loaded, the #GdkPixbufAnimation, else %NULL.</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> *<span class="command"> @user</span>_data: the loader.</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> * Defines the type of the function that gets called once the initial </i></td></tr>
+<tr><th id="129">129</th><td><i class="doc"> * setup of<span class="command"> @pixbuf</span> is done.</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="131">131</th><td><i class="doc"> * #GdkPixbufLoader uses a function of this type to emit the </i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> * "&lt;link linkend="GdkPixbufLoader-area-prepared"&gt;area_prepared&lt;/link&gt;"</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> * signal.</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> * Since: 2.2</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="137">137</th><td><b>typedef</b> <em>void</em> (* GdkPixbufModulePreparedFunc) (GdkPixbuf          *pixbuf,</td></tr>
+<tr><th id="138">138</th><td>					      GdkPixbufAnimation *anim,</td></tr>
+<tr><th id="139">139</th><td>					      gpointer            user_data);</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> * GdkPixbufModuleUpdatedFunc:</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> *<span class="command"> @pixbuf</span>: the #GdkPixbuf that is currently being loaded.</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> *<span class="command"> @x</span>: the X origin of the updated area.</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> *<span class="command"> @y</span>: the Y origin of the updated area.</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> *<span class="command"> @width</span>: the width of the updated area.</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc"> *<span class="command"> @height</span>: the height of the updated area.</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> *<span class="command"> @user</span>_data: the loader.</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> * Defines the type of the function that gets called every time a region</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> * of<span class="command"> @pixbuf</span> is updated.</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> * #GdkPixbufLoader uses a function of this type to emit the </i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> * "&lt;link linkend="GdkPixbufLoader-area-updated"&gt;area_updated&lt;/link&gt;"</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc"> * signal.</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="157">157</th><td><i class="doc"> * Since: 2.2</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="159">159</th><td><b>typedef</b> <em>void</em> (* GdkPixbufModuleUpdatedFunc)  (GdkPixbuf *pixbuf,</td></tr>
+<tr><th id="160">160</th><td>					      <em>int</em>        x,</td></tr>
+<tr><th id="161">161</th><td>					      <em>int</em>        y,</td></tr>
+<tr><th id="162">162</th><td>					      <em>int</em>        width,</td></tr>
+<tr><th id="163">163</th><td>					      <em>int</em>        height,</td></tr>
+<tr><th id="164">164</th><td>					      gpointer   user_data);</td></tr>
+<tr><th id="165">165</th><td></td></tr>
+<tr><th id="166">166</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc"> * GdkPixbufModulePattern:</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc"> *<span class="command"> @prefix</span>: the prefix for this pattern</i></td></tr>
+<tr><th id="169">169</th><td><i class="doc"> *<span class="command"> @mask</span>: mask containing bytes which modify how the prefix is matched against</i></td></tr>
+<tr><th id="170">170</th><td><i class="doc"> *  test data</i></td></tr>
+<tr><th id="171">171</th><td><i class="doc"> *<span class="command"> @relevance</span>: relevance of this pattern</i></td></tr>
+<tr><th id="172">172</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="173">173</th><td><i class="doc"> * The signature of a module is a set of prefixes. Prefixes are encoded as</i></td></tr>
+<tr><th id="174">174</th><td><i class="doc"> * pairs of ordinary strings, where the second string, called the mask, if </i></td></tr>
+<tr><th id="175">175</th><td><i class="doc"> * not %NULL, must be of the same length as the first one and may contain </i></td></tr>
+<tr><th id="176">176</th><td><i class="doc"> * ' ', '!', 'x', 'z', and 'n' to indicate bytes that must be matched, </i></td></tr>
+<tr><th id="177">177</th><td><i class="doc"> * not matched, "don't-care"-bytes, zeros and non-zeros. </i></td></tr>
+<tr><th id="178">178</th><td><i class="doc"> * Each prefix has an associated integer that describes the relevance of </i></td></tr>
+<tr><th id="179">179</th><td><i class="doc"> * the prefix, with 0 meaning a mismatch and 100 a "perfect match".</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="181">181</th><td><i class="doc"> * Starting with gdk-pixbuf 2.8, the first byte of the mask may be '*', </i></td></tr>
+<tr><th id="182">182</th><td><i class="doc"> * indicating an unanchored pattern that matches not only at the beginning, </i></td></tr>
+<tr><th id="183">183</th><td><i class="doc"> * but also in the middle. Versions prior to 2.8 will interpret the '*'</i></td></tr>
+<tr><th id="184">184</th><td><i class="doc"> * like an 'x'. </i></td></tr>
+<tr><th id="185">185</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="186">186</th><td><i class="doc"> * The signature of a module is stored as an array of </i></td></tr>
+<tr><th id="187">187</th><td><i class="doc"> * #GdkPixbufModulePatterns. The array is terminated by a pattern</i></td></tr>
+<tr><th id="188">188</th><td><i class="doc"> * where the<span class="command"> @prefix</span> is %NULL.</i></td></tr>
+<tr><th id="189">189</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="190">190</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="191">191</th><td><i class="doc"> * &lt;informalexample&gt;&lt;programlisting&gt;</i></td></tr>
+<tr><th id="192">192</th><td><i class="doc"> * GdkPixbufModulePattern *signature[] = {</i></td></tr>
+<tr><th id="193">193</th><td><i class="doc"> *   { "abcdx", " !x z", 100 },</i></td></tr>
+<tr><th id="194">194</th><td><i class="doc"> *   { "bla", NULL,  90 },</i></td></tr>
+<tr><th id="195">195</th><td><i class="doc"> *   { NULL, NULL, 0 }</i></td></tr>
+<tr><th id="196">196</th><td><i class="doc"> * };</i></td></tr>
+<tr><th id="197">197</th><td><i class="doc"> * &lt;/programlisting&gt;</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc"> * The example matches e.g. "auud\0" with relevance 100, and "blau" with </i></td></tr>
+<tr><th id="199">199</th><td><i class="doc"> * relevance 90.&lt;/informalexample&gt;</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="201">201</th><td><i class="doc"> * Since: 2.2</i></td></tr>
+<tr><th id="202">202</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="203">203</th><td><b>typedef</b> <b>struct</b> _GdkPixbufModulePattern GdkPixbufModulePattern;</td></tr>
+<tr><th id="204">204</th><td><b>struct</b> _GdkPixbufModulePattern {</td></tr>
+<tr><th id="205">205</th><td>	<em>char</em> *prefix;</td></tr>
+<tr><th id="206">206</th><td>	<em>char</em> *mask;</td></tr>
+<tr><th id="207">207</th><td>	<em>int</em> relevance;</td></tr>
+<tr><th id="208">208</th><td>};</td></tr>
+<tr><th id="209">209</th><td></td></tr>
+<tr><th id="210">210</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="211">211</th><td><i class="doc"> * GdkPixbufModule:</i></td></tr>
+<tr><th id="212">212</th><td><i class="doc"> *<span class="command"> @module</span>_name: the name of the module, usually the same as the</i></td></tr>
+<tr><th id="213">213</th><td><i class="doc"> *  usual file extension for images of this type, eg. "xpm", "jpeg" or "png".</i></td></tr>
+<tr><th id="214">214</th><td><i class="doc"> *<span class="command"> @module</span>_path: the path from which the module is loaded.</i></td></tr>
+<tr><th id="215">215</th><td><i class="doc"> *<span class="command"> @module</span>: the loaded #GModule.</i></td></tr>
+<tr><th id="216">216</th><td><i class="doc"> *<span class="command"> @info</span>: a #GdkPixbufFormat holding information about the module.</i></td></tr>
+<tr><th id="217">217</th><td><i class="doc"> *<span class="command"> @load</span>: loads an image from a file.</i></td></tr>
+<tr><th id="218">218</th><td><i class="doc"> *<span class="command"> @load</span>_xpm_data: loads an image from data in memory.</i></td></tr>
+<tr><th id="219">219</th><td><i class="doc"> *<span class="command"> @begin</span>_load: begins an incremental load.</i></td></tr>
+<tr><th id="220">220</th><td><i class="doc"> *<span class="command"> @stop</span>_load: stops an incremental load.</i></td></tr>
+<tr><th id="221">221</th><td><i class="doc"> *<span class="command"> @load</span>_increment: continues an incremental load.</i></td></tr>
+<tr><th id="222">222</th><td><i class="doc"> *<span class="command"> @load</span>_animation: loads an animation from a file.</i></td></tr>
+<tr><th id="223">223</th><td><i class="doc"> *<span class="command"> @save</span>: saves a #GdkPixbuf to a file.</i></td></tr>
+<tr><th id="224">224</th><td><i class="doc"> *<span class="command"> @save</span>_to_callback: saves a #GdkPixbuf by calling the given #GdkPixbufSaveFunc.</i></td></tr>
+<tr><th id="225">225</th><td><i class="doc"> *<span class="command"> @is</span>_save_option_supported: returns whether a save option key is supported by the module</i></td></tr>
+<tr><th id="226">226</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="227">227</th><td><i class="doc"> * A #GdkPixbufModule contains the necessary functions to load and save </i></td></tr>
+<tr><th id="228">228</th><td><i class="doc"> * images in a certain file format. </i></td></tr>
+<tr><th id="229">229</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="230">230</th><td><i class="doc"> * A #GdkPixbufModule can be loaded dynamically from a #GModule.</i></td></tr>
+<tr><th id="231">231</th><td><i class="doc"> * Each loadable module must contain a #GdkPixbufModuleFillVtableFunc function </i></td></tr>
+<tr><th id="232">232</th><td><i class="doc"> * named &lt;function&gt;fill_vtable&lt;/function&gt;, which will get called when the module</i></td></tr>
+<tr><th id="233">233</th><td><i class="doc"> * is loaded and must set the function pointers of the #GdkPixbufModule. </i></td></tr>
+<tr><th id="234">234</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="235">235</th><td><b>typedef</b> <b>struct</b> _GdkPixbufModule GdkPixbufModule;</td></tr>
+<tr><th id="236">236</th><td><b>struct</b> _GdkPixbufModule {</td></tr>
+<tr><th id="237">237</th><td>	<em>char</em> *module_name;</td></tr>
+<tr><th id="238">238</th><td>	<em>char</em> *module_path;</td></tr>
+<tr><th id="239">239</th><td>	GModule *module;</td></tr>
+<tr><th id="240">240</th><td>	GdkPixbufFormat *info;</td></tr>
+<tr><th id="241">241</th><td>	</td></tr>
+<tr><th id="242">242</th><td>        GdkPixbuf *(* load) (FILE    *f,</td></tr>
+<tr><th id="243">243</th><td>                             GError **error);</td></tr>
+<tr><th id="244">244</th><td>        GdkPixbuf *(* load_xpm_data) (<em>const</em> <em>char</em> **data);</td></tr>
+<tr><th id="245">245</th><td></td></tr>
+<tr><th id="246">246</th><td>        <i>/* Incremental loading */</i></td></tr>
+<tr><th id="247">247</th><td></td></tr>
+<tr><th id="248">248</th><td>        gpointer (* begin_load)     (GdkPixbufModuleSizeFunc size_func,</td></tr>
+<tr><th id="249">249</th><td>                                     GdkPixbufModulePreparedFunc prepare_func,</td></tr>
+<tr><th id="250">250</th><td>                                     GdkPixbufModuleUpdatedFunc update_func,</td></tr>
+<tr><th id="251">251</th><td>                                     gpointer user_data,</td></tr>
+<tr><th id="252">252</th><td>                                     GError **error);</td></tr>
+<tr><th id="253">253</th><td>        gboolean (* stop_load)      (gpointer context,</td></tr>
+<tr><th id="254">254</th><td>                                     GError **error);</td></tr>
+<tr><th id="255">255</th><td>        gboolean (* load_increment) (gpointer      context,</td></tr>
+<tr><th id="256">256</th><td>                                     <em>const</em> guchar *buf,</td></tr>
+<tr><th id="257">257</th><td>                                     guint         size,</td></tr>
+<tr><th id="258">258</th><td>                                     GError      **error);</td></tr>
+<tr><th id="259">259</th><td></td></tr>
+<tr><th id="260">260</th><td>	<i>/* Animation loading */</i></td></tr>
+<tr><th id="261">261</th><td>	GdkPixbufAnimation *(* load_animation) (FILE    *f,</td></tr>
+<tr><th id="262">262</th><td>                                                GError **error);</td></tr>
+<tr><th id="263">263</th><td></td></tr>
+<tr><th id="264">264</th><td>        <i>/* Saving */</i></td></tr>
+<tr><th id="265">265</th><td>        gboolean (* save) (FILE      *f,</td></tr>
+<tr><th id="266">266</th><td>                           GdkPixbuf *pixbuf,</td></tr>
+<tr><th id="267">267</th><td>                           gchar    **param_keys,</td></tr>
+<tr><th id="268">268</th><td>                           gchar    **param_values,</td></tr>
+<tr><th id="269">269</th><td>                           GError   **error);</td></tr>
+<tr><th id="270">270</th><td></td></tr>
+<tr><th id="271">271</th><td>        gboolean (*save_to_callback) (GdkPixbufSaveFunc save_func,</td></tr>
+<tr><th id="272">272</th><td>				      gpointer user_data,</td></tr>
+<tr><th id="273">273</th><td>				      GdkPixbuf *pixbuf,</td></tr>
+<tr><th id="274">274</th><td>				      gchar **option_keys,</td></tr>
+<tr><th id="275">275</th><td>				      gchar **option_values,</td></tr>
+<tr><th id="276">276</th><td>				      GError **error);</td></tr>
+<tr><th id="277">277</th><td>  </td></tr>
+<tr><th id="278">278</th><td>        gboolean (* is_save_option_supported) (<em>const</em> gchar *option_key);</td></tr>
+<tr><th id="279">279</th><td></td></tr>
+<tr><th id="280">280</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="281">281</th><td>	<em>void</em> (*_reserved1) (<em>void</em>); </td></tr>
+<tr><th id="282">282</th><td>	<em>void</em> (*_reserved2) (<em>void</em>); </td></tr>
+<tr><th id="283">283</th><td>	<em>void</em> (*_reserved3) (<em>void</em>); </td></tr>
+<tr><th id="284">284</th><td>	<em>void</em> (*_reserved4) (<em>void</em>);</td></tr>
+<tr><th id="285">285</th><td>};</td></tr>
+<tr><th id="286">286</th><td></td></tr>
+<tr><th id="287">287</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="288">288</th><td><i class="doc"> * GdkPixbufModuleFillVtableFunc:</i></td></tr>
+<tr><th id="289">289</th><td><i class="doc"> *<span class="command"> @module</span>: a #GdkPixbufModule.</i></td></tr>
+<tr><th id="290">290</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="291">291</th><td><i class="doc"> * Defines the type of the function used to set the vtable of a </i></td></tr>
+<tr><th id="292">292</th><td><i class="doc"> * #GdkPixbufModule when it is loaded. </i></td></tr>
+<tr><th id="293">293</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="294">294</th><td><i class="doc"> * Since: 2.2</i></td></tr>
+<tr><th id="295">295</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="296">296</th><td></td></tr>
+<tr><th id="297">297</th><td><b>typedef</b> <em>void</em> (* GdkPixbufModuleFillVtableFunc) (GdkPixbufModule *module);</td></tr>
+<tr><th id="298">298</th><td></td></tr>
+<tr><th id="299">299</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="300">300</th><td><i class="doc"> * GdkPixbufModuleFillInfoFunc:</i></td></tr>
+<tr><th id="301">301</th><td><i class="doc"> *<span class="command"> @info</span>: a #GdkPixbufFormat.</i></td></tr>
+<tr><th id="302">302</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="303">303</th><td><i class="doc"> * Defines the type of the function used to fill a </i></td></tr>
+<tr><th id="304">304</th><td><i class="doc"> * #GdkPixbufFormat structure with information about a module.</i></td></tr>
+<tr><th id="305">305</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="306">306</th><td><i class="doc"> * Since: 2.2</i></td></tr>
+<tr><th id="307">307</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="308">308</th><td><b>typedef</b> <em>void</em> (* GdkPixbufModuleFillInfoFunc) (GdkPixbufFormat *info);</td></tr>
+<tr><th id="309">309</th><td></td></tr>
+<tr><th id="310">310</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="311">311</th><td><i class="doc"> * GdkPixbufFormatFlags:</i></td></tr>
+<tr><th id="312">312</th><td><i class="doc"> *<span class="command"> @GDK</span>_PIXBUF_FORMAT_WRITABLE: the module can write out images in the format.</i></td></tr>
+<tr><th id="313">313</th><td><i class="doc"> *<span class="command"> @GDK</span>_PIXBUF_FORMAT_SCALABLE: the image format is scalable</i></td></tr>
+<tr><th id="314">314</th><td><i class="doc"> *<span class="command"> @GDK</span>_PIXBUF_FORMAT_THREADSAFE: the module is threadsafe. gdk-pixbuf</i></td></tr>
+<tr><th id="315">315</th><td><i class="doc"> *     ignores modules that are not marked as threadsafe. (Since 2.28).</i></td></tr>
+<tr><th id="316">316</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="317">317</th><td><i class="doc"> * Flags which allow a module to specify further details about the supported</i></td></tr>
+<tr><th id="318">318</th><td><i class="doc"> * operations.</i></td></tr>
+<tr><th id="319">319</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="320">320</th><td><i class="doc"> * Since: 2.2</i></td></tr>
+<tr><th id="321">321</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="322">322</th><td><b>typedef</b> <b>enum</b> <i>/*&lt; skip &gt;*/</i></td></tr>
+<tr><th id="323">323</th><td>{</td></tr>
+<tr><th id="324">324</th><td>  GDK_PIXBUF_FORMAT_WRITABLE = <var>1</var> &lt;&lt; <var>0</var>,</td></tr>
+<tr><th id="325">325</th><td>  GDK_PIXBUF_FORMAT_SCALABLE = <var>1</var> &lt;&lt; <var>1</var>,</td></tr>
+<tr><th id="326">326</th><td>  GDK_PIXBUF_FORMAT_THREADSAFE = <var>1</var> &lt;&lt; <var>2</var></td></tr>
+<tr><th id="327">327</th><td>} GdkPixbufFormatFlags;</td></tr>
+<tr><th id="328">328</th><td></td></tr>
+<tr><th id="329">329</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="330">330</th><td><i class="doc"> * GdkPixbufFormat:</i></td></tr>
+<tr><th id="331">331</th><td><i class="doc"> * <span class="command">@name</span>:<span class="verb"> the name of the image format.</span></i></td></tr>
+<tr><th id="332">332</th><td><i class="doc"> *<span class="command"> @signature</span>: the signature of the module.</i></td></tr>
+<tr><th id="333">333</th><td><i class="doc"> *<span class="command"> @domain</span>: the message domain for the<span class="command"> @description</span>.</i></td></tr>
+<tr><th id="334">334</th><td><i class="doc"> *<span class="command"> @description</span>: a description of the image format.</i></td></tr>
+<tr><th id="335">335</th><td><i class="doc"> *<span class="command"> @mime</span>_types: a %NULL-terminated array of MIME types for the image format.</i></td></tr>
+<tr><th id="336">336</th><td><i class="doc"> *<span class="command"> @extensions</span>: a %NULL-terminated array of typical filename extensions for the</i></td></tr>
+<tr><th id="337">337</th><td><i class="doc"> *  image format.</i></td></tr>
+<tr><th id="338">338</th><td><i class="doc"> *<span class="command"> @flags</span>: a combination of #GdkPixbufFormatFlags.</i></td></tr>
+<tr><th id="339">339</th><td><i class="doc"> *<span class="command"> @disabled</span>: a boolean determining whether the loader is disabled.</i></td></tr>
+<tr><th id="340">340</th><td><i class="doc"> *<span class="command"> @license</span>: a string containing license information, typically set to </i></td></tr>
+<tr><th id="341">341</th><td><i class="doc"> *  shorthands like "GPL", "LGPL", etc.</i></td></tr>
+<tr><th id="342">342</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="343">343</th><td><i class="doc"> * A #GdkPixbufFormat contains information about the image format accepted by a</i></td></tr>
+<tr><th id="344">344</th><td><i class="doc"> * module. Only modules should access the fields directly, applications should</i></td></tr>
+<tr><th id="345">345</th><td><i class="doc"> * use the &lt;function&gt;gdk_pixbuf_format_*&lt;/function&gt; functions.</i></td></tr>
+<tr><th id="346">346</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="347">347</th><td><i class="doc"> * Since: 2.2</i></td></tr>
+<tr><th id="348">348</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="349">349</th><td><b>struct</b> _GdkPixbufFormat {</td></tr>
+<tr><th id="350">350</th><td>  gchar *name;</td></tr>
+<tr><th id="351">351</th><td>  GdkPixbufModulePattern *signature;</td></tr>
+<tr><th id="352">352</th><td>  gchar *domain;</td></tr>
+<tr><th id="353">353</th><td>  gchar *description;</td></tr>
+<tr><th id="354">354</th><td>  gchar **mime_types;</td></tr>
+<tr><th id="355">355</th><td>  gchar **extensions;</td></tr>
+<tr><th id="356">356</th><td>  guint32 flags;</td></tr>
+<tr><th id="357">357</th><td>  gboolean disabled;</td></tr>
+<tr><th id="358">358</th><td>  gchar *license;</td></tr>
+<tr><th id="359">359</th><td>};</td></tr>
+<tr><th id="360">360</th><td></td></tr>
+<tr><th id="361">361</th><td><u>#<span data-ppcond="92">endif</span> /* GDK_PIXBUF_ENABLE_BACKEND */</u></td></tr>
+<tr><th id="362">362</th><td></td></tr>
+<tr><th id="363">363</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="364">364</th><td></td></tr>
+<tr><th id="365">365</th><td><u>#<span data-ppcond="27">endif</span> /* GDK_PIXBUF_IO_H */</u></td></tr>
+<tr><th id="366">366</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

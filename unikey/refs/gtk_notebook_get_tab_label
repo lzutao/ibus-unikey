@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtknotebook.h' l='258' type='GtkWidget * gtk_notebook_get_tab_label(GtkNotebook * notebook, GtkWidget * child)'/>
+<doc f='include/gtk-2.0/gtk/gtknotebook.h' l='254'>/***********************************************************
+ *             query/set NotebookPage Properties           *
+ ***********************************************************/</doc>

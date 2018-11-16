@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkdialog.h' l='44' type='2'/>
+<doc f='include/gtk-2.0/gtk/gtkdialog.h' l='44'>/* call gtk_window_set_destroy_with_parent () */</doc>

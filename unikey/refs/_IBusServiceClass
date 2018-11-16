@@ -1,0 +1,8 @@
+<def f='include/ibus-1.0/ibusservice.h' l='76' ll='159'/>
+<size>264</size>
+<mbr r='_IBusServiceClass::parent' o='0' t='IBusObjectClass'/>
+<mbr r='_IBusServiceClass::service_method_call' o='1600' t='void (*)(IBusService *, GDBusConnection *, const gchar *, const gchar *, const gchar *, const gchar *, GVariant *, GDBusMethodInvocation *)'/>
+<mbr r='_IBusServiceClass::service_get_property' o='1664' t='GVariant *(*)(IBusService *, GDBusConnection *, const gchar *, const gchar *, const gchar *, const gchar *, GError **)'/>
+<mbr r='_IBusServiceClass::service_set_property' o='1728' t='gboolean (*)(IBusService *, GDBusConnection *, const gchar *, const gchar *, const gchar *, const gchar *, GVariant *, GError **)'/>
+<mbr r='_IBusServiceClass::interfaces' o='1792' t='GArray *'/>
+<mbr r='_IBusServiceClass::pdummy' o='1856' t='gpointer [4]'/>

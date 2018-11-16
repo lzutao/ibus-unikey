@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='671' type='void gtk_clist_set_selectable(GtkCList * clist, gint row, gboolean selectable)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='670'>/* set/get selectable flag of a single row */</doc>

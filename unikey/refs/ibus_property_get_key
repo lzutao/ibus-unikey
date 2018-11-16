@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='192' type='const gchar * ibus_property_get_key(IBusProperty * prop)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='184'>/**
+ * ibus_property_get_key:
+ * @prop: An #IBusProperty.
+ *
+ * Get the key of #IBusProperty.
+ *
+ * Returns: the key of #IBusProperty. Should not be freed.
+ */</doc>
+<use f='unikey/src/engine.cpp' l='285' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='300' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='330' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='345' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>

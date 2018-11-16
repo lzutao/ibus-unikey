@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='240'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='234'>/**
+ * GTK_STOCK_DIALOG_QUESTION:
+ *
+ * The &quot;Question&quot; item.
+ * &lt;inlinegraphic fileref=&quot;dialog-question.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

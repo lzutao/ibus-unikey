@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='360' type='gboolean gtk_text_buffer_get_modified(GtkTextBuffer * buffer)'/>
+<doc f='include/gtk-2.0/gtk/gtktextbuffer.h' l='354'>/* Used to keep track of whether the buffer needs saving; anytime the
+   buffer contents change, the modified flag is turned on. Whenever
+   you save, turn it off. Tags and marks do not affect the modified
+   flag, but if you would like them to you can connect a handler to
+   the tag/mark signals and call set_modified in your handler */</doc>

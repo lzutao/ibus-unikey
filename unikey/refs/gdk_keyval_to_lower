@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkkeys.h' l='124' type='guint gdk_keyval_to_lower(guint keyval)'/>

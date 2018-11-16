@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkscreen.h' l='107' type='gchar * gdk_screen_get_monitor_plug_name(GdkScreen * screen, gint monitor_num)'/>

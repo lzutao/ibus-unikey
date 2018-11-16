@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='251' type='GtkCTreeNode * gtk_ctree_find_by_row_data_custom(GtkCTree * ctree, GtkCTreeNode * node, gpointer data, GCompareFunc func)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreestore.h' l='79' type='GtkTreeStore * gtk_tree_store_newv(gint n_columns, GType * types)'/>

@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='714' type='gint gtk_clist_find_row_from_data(GtkCList * clist, gpointer data)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='711'>/* givin a data pointer, find the first (and hopefully only!)
+ * row that points to that data, or -1 if none do
+ */</doc>

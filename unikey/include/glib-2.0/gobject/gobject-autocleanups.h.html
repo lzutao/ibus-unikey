@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gobject-autocleanups.h source code [include/glib-2.0/gobject/gobject-autocleanups.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/glib-2.0/gobject/gobject-autocleanups.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>glib-2.0</a>/<a href='./'>gobject</a>/<a href='gobject-autocleanups.h.html'>gobject-autocleanups.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright © 2015 Canonical Limited</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * Author: Ryan Lortie &lt;desrt@desrt.ca&gt;</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="20">if</span> !defined (<a class="macro" href="../glib-object.h.html#20" data-ref="_M/__GLIB_GOBJECT_H_INSIDE__">__GLIB_GOBJECT_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GOBJECT_COMPILATION">GOBJECT_COMPILATION</span>)</u></td></tr>
+<tr><th id="21">21</th><td><u>#error "Only &lt;glib-object.h&gt; can be included directly."</u></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="20">endif</span></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><a class="macro" href="../glib/gmacros.h.html#456" title="typedef GClosure *GClosure_autoptr; typedef GList *GClosure_listautoptr; typedef GSList *GClosure_slistautoptr; static inline void glib_autoptr_cleanup_GClosure (GClosure **_ptr) { if (*_ptr) (g_closure_unref) (*_ptr); } static inline void glib_listautoptr_cleanup_GClosure (GList **_l) { g_list_free_full (*_l, (GDestroyNotify) g_closure_unref); } static inline void glib_slistautoptr_cleanup_GClosure (GSList **_l) { g_slist_free_full (*_l, (GDestroyNotify) g_closure_unref); }" data-ref="_M/G_DEFINE_AUTOPTR_CLEANUP_FUNC">G_DEFINE_AUTOPTR_CLEANUP_FUNC</a>(<a class="typedef" href="gclosure.h.html#GClosure" title='GClosure' data-type='struct _GClosure' data-ref="GClosure">GClosure</a>, <a class="ref" href="gclosure.h.html#g_closure_unref" title='g_closure_unref' data-ref="g_closure_unref">g_closure_unref</a>)</td></tr>
+<tr><th id="25">25</th><td><a class="macro" href="../glib/gmacros.h.html#456" title="typedef GObject *GObject_autoptr; typedef GList *GObject_listautoptr; typedef GSList *GObject_slistautoptr; static inline void glib_autoptr_cleanup_GObject (GObject **_ptr) { if (*_ptr) (g_object_unref) (*_ptr); } static inline void glib_listautoptr_cleanup_GObject (GList **_l) { g_list_free_full (*_l, (GDestroyNotify) g_object_unref); } static inline void glib_slistautoptr_cleanup_GObject (GSList **_l) { g_slist_free_full (*_l, (GDestroyNotify) g_object_unref); }" data-ref="_M/G_DEFINE_AUTOPTR_CLEANUP_FUNC">G_DEFINE_AUTOPTR_CLEANUP_FUNC</a>(<a class="typedef" href="gobject.h.html#GObject" title='GObject' data-type='struct _GObject' data-ref="GObject">GObject</a>, <a class="ref" href="gobject.h.html#g_object_unref" title='g_object_unref' data-ref="g_object_unref">g_object_unref</a>)</td></tr>
+<tr><th id="26">26</th><td><a class="macro" href="../glib/gmacros.h.html#456" title="typedef GInitiallyUnowned *GInitiallyUnowned_autoptr; typedef GList *GInitiallyUnowned_listautoptr; typedef GSList *GInitiallyUnowned_slistautoptr; static inline void glib_autoptr_cleanup_GInitiallyUnowned (GInitiallyUnowned **_ptr) { if (*_ptr) (g_object_unref) (*_ptr); } static inline void glib_listautoptr_cleanup_GInitiallyUnowned (GList **_l) { g_list_free_full (*_l, (GDestroyNotify) g_object_unref); } static inline void glib_slistautoptr_cleanup_GInitiallyUnowned (GSList **_l) { g_slist_free_full (*_l, (GDestroyNotify) g_object_unref); }" data-ref="_M/G_DEFINE_AUTOPTR_CLEANUP_FUNC">G_DEFINE_AUTOPTR_CLEANUP_FUNC</a>(<a class="typedef" href="gobject.h.html#GInitiallyUnowned" title='GInitiallyUnowned' data-type='struct _GObject' data-ref="GInitiallyUnowned">GInitiallyUnowned</a>, <a class="ref" href="gobject.h.html#g_object_unref" title='g_object_unref' data-ref="g_object_unref">g_object_unref</a>)</td></tr>
+<tr><th id="27">27</th><td><a class="macro" href="../glib/gmacros.h.html#465" title=" static inline void glib_auto_cleanup_GValue (GValue *_ptr) { (g_value_unset) (_ptr); }" data-ref="_M/G_DEFINE_AUTO_CLEANUP_CLEAR_FUNC">G_DEFINE_AUTO_CLEANUP_CLEAR_FUNC</a>(<a class="typedef" href="gtype.h.html#GValue" title='GValue' data-type='struct _GValue' data-ref="GValue">GValue</a>, <a class="ref" href="gvalue.h.html#g_value_unset" title='g_value_unset' data-ref="g_value_unset">g_value_unset</a>)</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

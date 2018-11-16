@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdrawable.h' l='312' type='void gdk_draw_text(GdkDrawable * drawable, GdkFont * font, GdkGC * gc, gint x, gint y, const gchar * text, gint text_length)'/>

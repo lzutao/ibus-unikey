@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h' l='510' type='void gdk_pixbuf_save_to_stream_async(GdkPixbuf * pixbuf, GOutputStream * stream, const gchar * type, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer user_data)'/>

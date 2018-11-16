@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='221' type='void gtk_ctree_pre_recursive(GtkCTree * ctree, GtkCTreeNode * node, GtkCTreeFunc func, gpointer data)'/>

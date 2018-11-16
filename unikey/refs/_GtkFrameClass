@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkframe.h' l='64' ll='69'/>
+<size>832</size>
+<mbr r='_GtkFrameClass::parent_class' o='0' t='GtkBinClass'/>
+<mbr r='_GtkFrameClass::compute_child_allocation' o='6592' t='void (*)(GtkFrame *, GtkAllocation *)'/>

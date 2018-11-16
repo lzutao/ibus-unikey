@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkradiomenuitem.h' l='82' type='GtkWidget * gtk_radio_menu_item_new_with_label_from_widget(GtkRadioMenuItem * group, const gchar * label)'/>

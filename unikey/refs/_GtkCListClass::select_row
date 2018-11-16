@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='253' type='void (*)(GtkCList *, gint, gint, GdkEvent *)'/>
+<offset>6720</offset>

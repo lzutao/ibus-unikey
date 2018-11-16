@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktoolbutton.h' l='95' type='GtkWidget * _gtk_tool_button_get_button(GtkToolButton * button)'/>
+<doc f='include/gtk-2.0/gtk/gtktoolbutton.h' l='94'>/* internal function */</doc>

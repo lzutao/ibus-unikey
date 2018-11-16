@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkadjustment.h' l='102' type='void gtk_adjustment_set_step_increment(GtkAdjustment * adjustment, gdouble step_increment)'/>

@@ -1,0 +1,2 @@
+<dec f='include/cairo/cairo.h' l='2744' type='cairo_pattern_t * cairo_pattern_create_rgb(double red, double green, double blue)'/>
+<doc f='include/cairo/cairo.h' l='2741'>/* Pattern creation functions */</doc>

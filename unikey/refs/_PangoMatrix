@@ -1,0 +1,28 @@
+<def f='include/pango-1.0/pango/pango-matrix.h' l='52' ll='60'/>
+<size>48</size>
+<doc f='include/pango-1.0/pango/pango-matrix.h' l='32'>/**
+ * PangoMatrix:
+ * @xx: 1st component of the transformation matrix
+ * @xy: 2nd component of the transformation matrix
+ * @yx: 3rd component of the transformation matrix
+ * @yy: 4th component of the transformation matrix
+ * @x0: x translation
+ * @y0: y translation
+ *
+ * A structure specifying a transformation between user-space
+ * coordinates and device coordinates. The transformation
+ * is given by
+ *
+ * &lt;programlisting&gt;
+ * x_device = x_user * matrix-&gt;xx + y_user * matrix-&gt;xy + matrix-&gt;x0;
+ * y_device = x_user * matrix-&gt;yx + y_user * matrix-&gt;yy + matrix-&gt;y0;
+ * &lt;/programlisting&gt;
+ *
+ * Since: 1.6
+ **/</doc>
+<mbr r='_PangoMatrix::xx' o='0' t='double'/>
+<mbr r='_PangoMatrix::xy' o='64' t='double'/>
+<mbr r='_PangoMatrix::yx' o='128' t='double'/>
+<mbr r='_PangoMatrix::yy' o='192' t='double'/>
+<mbr r='_PangoMatrix::x0' o='256' t='double'/>
+<mbr r='_PangoMatrix::y0' o='320' t='double'/>

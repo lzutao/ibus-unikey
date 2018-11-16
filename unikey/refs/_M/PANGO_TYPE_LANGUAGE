@@ -1,0 +1,6 @@
+<dec f='include/pango-1.0/pango/pango-language.h' l='39'/>
+<doc f='include/pango-1.0/pango/pango-language.h' l='34'>/**
+ * PANGO_TYPE_LANGUAGE:
+ *
+ * The #GObject type for #PangoLanguage.
+ */</doc>

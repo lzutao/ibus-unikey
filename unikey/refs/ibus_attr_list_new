@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusattrlist.h' l='97' type='IBusAttrList * ibus_attr_list_new()'/>
+<doc f='include/ibus-1.0/ibusattrlist.h' l='90'>/**
+ * ibus_attr_list_new:
+ *
+ * Creates an new #IBusAttrList.
+ *
+ * Returns: A newly allocated #IBusAttrList.
+ */</doc>

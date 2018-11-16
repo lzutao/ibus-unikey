@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkstyle.h' l='395' type='void (*)(GtkStyle *, GdkWindow *, GtkStateType, GdkRectangle *, GtkWidget *, const gchar *, GdkWindowEdge, gint, gint, gint, gint)'/>
+<offset>2816</offset>

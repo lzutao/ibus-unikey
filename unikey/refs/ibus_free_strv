@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='288' type='void ibus_free_strv(gchar ** strv)'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='280'>/**
+ * ibus_free_strv:
+ * @strv: List of strings.
+ *
+ * Free a list of strings.
+ * Deprecated: This function has been deprecated and should
+ * not be used in newly written code.
+ */</doc>

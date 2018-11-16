@@ -1,0 +1,12 @@
+<dec f='unikey/src/utils.h' l='30' type='gboolean ibus_unikey_config_get_boolean(IBusConfig * config, const gchar * section, const gchar * name, gboolean * result)'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='98' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='104' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='110' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='116' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='122' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/src/engine.cpp' l='218' u='c' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='224' u='c' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='230' u='c' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='236' u='c' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='242' u='c' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<def f='unikey/src/utils.cpp' l='136' ll='149' type='gboolean ibus_unikey_config_get_boolean(IBusConfig * config, const gchar * section, const gchar * name, gboolean * result)'/>

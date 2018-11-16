@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdk.h' l='177' type='gboolean gdk_event_send_client_message_for_display(GdkDisplay * display, GdkEvent * event, GdkNativeWindow winid)'/>

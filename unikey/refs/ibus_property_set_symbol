@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='231' type='void ibus_property_set_symbol(IBusProperty * prop, IBusText * symbol)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='224'>/**
+ * ibus_property_set_symbol:
+ * @prop: An #IBusProperty.
+ * @symbol: Text shown in UI.
+ *
+ * Set the symbol of #IBusProperty.
+ */</doc>

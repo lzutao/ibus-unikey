@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusemoji.h' l='92' type='IBusEmojiData * ibus_emoji_data_new(const gchar * first_property_name)'/>
+<doc f='include/ibus-1.0/ibusemoji.h' l='81'>/**
+ * ibus_emoji_data_new:
+ * @first_property_name: Name of the first property.
+ * @...: the NULL-terminated arguments of the properties and values.
+ *
+ * Creates a new #IBusEmojiData.
+ * emoji property is required. e.g.
+ * ibus_emoji_data_new (&quot;emoji&quot;, &quot;😁&quot;, NULL)
+ *
+ * Returns: A newly allocated #IBusEmojiData.
+ */</doc>

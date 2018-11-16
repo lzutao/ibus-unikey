@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibuskeymap.h' l='154' type='guint ibus_keymap_lookup_keysym(IBusKeymap * keymap, guint16 keycode, guint32 state)'/>
+<doc f='include/ibus-1.0/ibuskeymap.h' l='144'>/**
+ * ibus_keymap_lookup_keysym:
+ * @keymap: An IBusKeymap.
+ * @keycode: A scancode to be converted.
+ * @state: Modifier flags(such as Ctrl, Shift).
+ *
+ * Converts the scancode to keysym, given the keymap.
+ *
+ * Returns: Corresponding keysym.
+ */</doc>

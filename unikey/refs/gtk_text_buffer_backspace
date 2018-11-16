@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='225' type='gboolean gtk_text_buffer_backspace(GtkTextBuffer * buffer, GtkTextIter * iter, gboolean interactive, gboolean default_editable)'/>

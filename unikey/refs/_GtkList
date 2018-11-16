@@ -1,0 +1,17 @@
+<def f='include/gtk-2.0/gtk/gtklist.h' l='47' ll='70'/>
+<size>184</size>
+<mbr r='_GtkList::container' o='0' t='GtkContainer'/>
+<mbr r='_GtkList::children' o='896' t='GList *'/>
+<mbr r='_GtkList::selection' o='960' t='GList *'/>
+<mbr r='_GtkList::undo_selection' o='1024' t='GList *'/>
+<mbr r='_GtkList::undo_unselection' o='1088' t='GList *'/>
+<mbr r='_GtkList::last_focus_child' o='1152' t='GtkWidget *'/>
+<mbr r='_GtkList::undo_focus_child' o='1216' t='GtkWidget *'/>
+<mbr r='_GtkList::htimer' o='1280' t='guint'/>
+<mbr r='_GtkList::vtimer' o='1312' t='guint'/>
+<mbr r='_GtkList::anchor' o='1344' t='gint'/>
+<mbr r='_GtkList::drag_pos' o='1376' t='gint'/>
+<mbr r='_GtkList::anchor_state' o='1408' t='GtkStateType'/>
+<mbr r='_GtkList::selection_mode' o='1440' t='guint'/>
+<mbr r='_GtkList::drag_selection' o='1442' t='guint'/>
+<mbr r='_GtkList::add_mode' o='1443' t='guint'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkgc.h' l='280' type='void gdk_gc_copy(GdkGC * dst_gc, GdkGC * src_gc)'/>

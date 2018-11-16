@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusregistry.h' l='218' type='GList * ibus_registry_get_observed_paths(IBusRegistry * registry)'/>
+<doc f='include/ibus-1.0/ibusregistry.h' l='208'>/**
+ * ibus_registry_get_observed_paths:
+ * @registry: An #IBusRegistry.
+ *
+ * List observed paths.
+ *
+ * Returns: (transfer container) (element-type IBusObservedPath):
+ * a list of #IBusObservedPath objects.
+ * The caller has to call g_list_free() for the returned list.
+ */</doc>

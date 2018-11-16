@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='483'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='477'>/**
+ * GTK_STOCK_ITALIC:
+ *
+ * The &quot;Italic&quot; item.
+ * &lt;inlinegraphic fileref=&quot;format-text-italic.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

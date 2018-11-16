@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcellview.h' l='73' type='void gtk_cell_view_set_background_color(GtkCellView * cell_view, const GdkColor * color)'/>

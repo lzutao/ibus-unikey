@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcellrenderer.h' l='127' type='void gtk_cell_renderer_get_size(GtkCellRenderer * cell, GtkWidget * widget, const GdkRectangle * cell_area, gint * x_offset, gint * y_offset, gint * width, gint * height)'/>

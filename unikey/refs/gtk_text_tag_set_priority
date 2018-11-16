@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktexttag.h' l='159' type='void gtk_text_tag_set_priority(GtkTextTag * tag, gint priority)'/>

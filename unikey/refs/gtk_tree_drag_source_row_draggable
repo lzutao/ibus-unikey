@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktreednd.h' l='60' type='gboolean gtk_tree_drag_source_row_draggable(GtkTreeDragSource * drag_source, GtkTreePath * path)'/>
+<doc f='include/gtk-2.0/gtk/gtktreednd.h' l='59'>/* Returns whether the given row can be dragged */</doc>

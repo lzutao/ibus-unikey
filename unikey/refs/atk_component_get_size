@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkcomponent.h' l='191' type='void atk_component_get_size(AtkComponent * component, gint * width, gint * height)'/>

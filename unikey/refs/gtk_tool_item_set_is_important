@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktoolitem.h' l='114' type='void gtk_tool_item_set_is_important(GtkToolItem * tool_item, gboolean is_important)'/>

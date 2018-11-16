@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusregistry.h' l='169' type='gboolean ibus_registry_save_cache_file(IBusRegistry * registry, const gchar * filename)'/>
+<doc f='include/ibus-1.0/ibusregistry.h' l='160'>/**
+ * ibus_registry_save_cache_file:
+ * @registry: An #IBusRegistry.
+ * @filename: The file path of the registry cache
+ *
+ * Save the registry cache @filename.
+ *
+ * Returns: %TRUE if the cache is saved successfully, %FALSE otherwise.
+ */</doc>

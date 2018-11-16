@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='44' type='2'/>
+<doc f='include/gtk-2.0/gtk/gtktreeview.h' l='41'>/* drop as a child of this row (with fallback to before or after
+   * if into is not possible)
+   */</doc>

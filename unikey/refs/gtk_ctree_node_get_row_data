@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='396' type='gpointer gtk_ctree_node_get_row_data(GtkCTree * ctree, GtkCTreeNode * node)'/>

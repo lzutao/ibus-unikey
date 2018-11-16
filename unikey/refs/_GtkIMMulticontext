@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gtk/gtkimmulticontext.h' l='44' ll='53'/>
+<size>48</size>
+<mbr r='_GtkIMMulticontext::object' o='0' t='GtkIMContext'/>
+<mbr r='_GtkIMMulticontext::slave' o='192' t='GtkIMContext *'/>
+<mbr r='_GtkIMMulticontext::priv' o='256' t='GtkIMMulticontextPrivate *'/>
+<mbr r='_GtkIMMulticontext::context_id' o='320' t='gchar *'/>

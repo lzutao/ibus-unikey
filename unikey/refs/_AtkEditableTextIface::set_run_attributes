@@ -1,0 +1,2 @@
+<dec f='include/atk-1.0/atk/atkeditabletext.h' l='52' type='gboolean (*)(AtkEditableText *, AtkAttributeSet *, gint, gint)'/>
+<offset>128</offset>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextbufferrichtext.h' l='56' type='GdkAtom gtk_text_buffer_register_deserialize_format(GtkTextBuffer * buffer, const gchar * mime_type, GtkTextBufferDeserializeFunc function, gpointer user_data, GDestroyNotify user_data_destroy)'/>

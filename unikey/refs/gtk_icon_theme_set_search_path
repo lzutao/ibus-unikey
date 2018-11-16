@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkicontheme.h' l='122' type='void gtk_icon_theme_set_search_path(GtkIconTheme * icon_theme, const gchar ** path, gint n_elements)'/>

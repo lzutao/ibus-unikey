@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreesortable.h' l='90' type='void gtk_tree_sortable_set_sort_func(GtkTreeSortable * sortable, gint sort_column_id, GtkTreeIterCompareFunc sort_func, gpointer user_data, GDestroyNotify destroy)'/>

@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-types.h' l='192' type='void pango_extents_to_pixels(PangoRectangle * inclusive, PangoRectangle * nearest)'/>

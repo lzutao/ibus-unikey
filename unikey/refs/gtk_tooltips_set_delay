@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktooltips.h' l='92' type='void gtk_tooltips_set_delay(GtkTooltips * tooltips, guint delay)'/>

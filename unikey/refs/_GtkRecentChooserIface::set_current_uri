@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentchooser.h' l='88' type='gboolean (*)(GtkRecentChooser *, const gchar *, GError **)'/>
+<offset>128</offset>
+<doc f='include/gtk-2.0/gtk/gtkrecentchooser.h' l='85'>/*
+   * Methods
+   */</doc>

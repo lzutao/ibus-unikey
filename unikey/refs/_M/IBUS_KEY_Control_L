@@ -1,0 +1,2 @@
+<dec f='include/ibus-1.0/ibuskeysyms.h' l='190'/>
+<use f='include/ibus-1.0/ibusenginesimple.h' l='101' u='c'/>

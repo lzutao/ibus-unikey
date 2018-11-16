@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gdk/gdk.h' l='151' type='gboolean gdk_rectangle_intersect(const GdkRectangle * src1, const GdkRectangle * src2, GdkRectangle * dest)'/>
+<doc f='include/gtk-2.0/gdk/gdk.h' l='149'>/* Rectangle utilities
+ */</doc>

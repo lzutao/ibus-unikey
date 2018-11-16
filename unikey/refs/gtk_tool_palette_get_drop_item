@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktoolpalette.h' l='118' type='GtkToolItem * gtk_tool_palette_get_drop_item(GtkToolPalette * palette, gint x, gint y)'/>

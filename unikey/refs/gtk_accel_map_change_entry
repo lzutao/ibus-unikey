@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkaccelmap.h' l='64' type='gboolean gtk_accel_map_change_entry(const gchar * accel_path, guint accel_key, GdkModifierType accel_mods, gboolean replace)'/>

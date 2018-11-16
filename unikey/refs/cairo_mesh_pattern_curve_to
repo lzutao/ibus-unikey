@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='2848' type='void cairo_mesh_pattern_curve_to(cairo_pattern_t * pattern, double x1, double y1, double x2, double y2, double x3, double y3)'/>

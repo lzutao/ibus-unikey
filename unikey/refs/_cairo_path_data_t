@@ -1,0 +1,4 @@
+<def f='include/cairo/cairo.h' l='2062' ll='2070'/>
+<size>16</size>
+<mbr r='_cairo_path_data_t::header' o='0' t='struct (anonymous struct at /usr/include/cairo/cairo.h:2063:5)'/>
+<mbr r='_cairo_path_data_t::point' o='0' t='struct (anonymous struct at /usr/include/cairo/cairo.h:2067:5)'/>

@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-break.h' l='152' type='void pango_get_log_attrs(const char * text, int length, int level, PangoLanguage * language, PangoLogAttr * log_attrs, int attrs_len)'/>

@@ -1,0 +1,9 @@
+<def f='include/gtk-2.0/gtk/gtkvscale.h' l='58' ll='61'/>
+<size>200</size>
+<doc f='include/gtk-2.0/gtk/gtkvscale.h' l='52'>/**
+ * GtkVScale:
+ *
+ * The #GtkVScale struct contains private data only, and
+ * should be accessed using the functions below.
+ */</doc>
+<mbr r='_GtkVScale::scale' o='0' t='GtkScale'/>

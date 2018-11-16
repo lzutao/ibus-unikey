@@ -1,0 +1,6 @@
+<def f='include/atk-1.0/atk/atktext.h' l='205' ll='210'/>
+<size>32</size>
+<mbr r='_AtkTextRange::bounds' o='0' t='AtkTextRectangle'/>
+<mbr r='_AtkTextRange::start_offset' o='128' t='gint'/>
+<mbr r='_AtkTextRange::end_offset' o='160' t='gint'/>
+<mbr r='_AtkTextRange::content' o='192' t='gchar *'/>

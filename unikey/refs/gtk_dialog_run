@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtkdialog.h' l='175' type='gint gtk_dialog_run(GtkDialog * dialog)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='355' u='c' c='_Z23import_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='405' u='c' c='_Z23export_macro_clicked_cbP10_GtkButtonPv'/>
+<doc f='include/gtk-2.0/gtk/gtkdialog.h' l='174'>/* Returns response_id */</doc>
+<use f='unikey/setup/dlg_main_setup.cpp' l='164' u='c' c='_ZL20macro_edit_button_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/setup.cpp' l='58' u='c' c='main'/>

@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibustext.h' l='177' type='guint ibus_text_get_length(IBusText * text)'/>
+<doc f='include/ibus-1.0/ibustext.h' l='167'>/**
+ * ibus_text_get_length:
+ * @text: An #IBusText.
+ *
+ * Return number of characters in an #IBusText.
+ * This function is based on g_utf8_strlen(), so unlike strlen(),
+ * it does not count by bytes but characters instead.
+ *
+ * Returns: Number of character in @text, not counted by bytes.
+ */</doc>
+<use f='unikey/src/engine.cpp' l='528' u='c' c='_ZL40ibus_unikey_engine_update_preedit_stringP17_IBusUnikeyEngine'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkscrolledwindow.h' l='127' type='void gtk_scrolled_window_add_with_viewport(GtkScrolledWindow * scrolled_window, GtkWidget * child)'/>

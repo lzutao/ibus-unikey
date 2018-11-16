@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtknotebook.h' l='196' type='void gtk_notebook_set_group_name(GtkNotebook * notebook, const gchar * group_name)'/>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='288' type='GType gtk_text_search_flags_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='287'>/* enumerations from &quot;gtktextiter.h&quot; */</doc>

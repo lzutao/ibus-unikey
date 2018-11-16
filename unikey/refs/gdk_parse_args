@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdk.h' l='69' type='void gdk_parse_args(gint * argc, gchar *** argv)'/>

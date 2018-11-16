@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkcolor.h' l='103' type='GdkScreen * gdk_colormap_get_screen(GdkColormap * cmap)'/>

@@ -1,0 +1,17 @@
+<def f='include/cairo/cairo.h' l='1002' ll='1004'/>
+<size>32</size>
+<doc f='include/cairo/cairo.h' l='991'>/**
+ * cairo_rectangle_t:
+ * @x: X coordinate of the left side of the rectangle
+ * @y: Y coordinate of the the top side of the rectangle
+ * @width: width of the rectangle
+ * @height: height of the rectangle
+ *
+ * A data structure for holding a rectangle.
+ *
+ * Since: 1.4
+ **/</doc>
+<mbr r='_cairo_rectangle::x' o='0' t='double'/>
+<mbr r='_cairo_rectangle::y' o='64' t='double'/>
+<mbr r='_cairo_rectangle::width' o='128' t='double'/>
+<mbr r='_cairo_rectangle::height' o='192' t='double'/>

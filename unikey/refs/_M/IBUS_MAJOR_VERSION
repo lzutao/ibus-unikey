@@ -1,0 +1,6 @@
+<dec f='include/ibus-1.0/ibusversion.h' l='40'/>
+<doc f='include/ibus-1.0/ibusversion.h' l='35'>/**
+ * IBUS_MAJOR_VERSION:
+ *
+ * IBus major version.
+ */</doc>

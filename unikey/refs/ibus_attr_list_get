@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusattrlist.h' l='118' type='IBusAttribute * ibus_attr_list_get(IBusAttrList * attr_list, guint index)'/>
+<doc f='include/ibus-1.0/ibusattrlist.h' l='108'>/**
+ * ibus_attr_list_get:
+ * @attr_list: An IBusAttrList instance.
+ * @index: Index of the @attr_list.
+ *
+ * Returns #IBusAttribute at given index. Borrowed reference.
+ *
+ * Returns: (transfer none): #IBusAttribute at given index, %NULL if no such
+ *        #IBusAttribute.
+ */</doc>

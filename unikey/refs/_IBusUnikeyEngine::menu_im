@@ -1,0 +1,9 @@
+<dec f='unikey/src/engine_private.h' l='22' type='IBusPropList *'/>
+<use f='unikey/src/engine.cpp' l='294' u='r' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='296' u='r' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='397' u='w' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='428' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='429' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='478' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<offset>768</offset>
+<doc f='unikey/src/engine_private.h' l='22'>//!&lt; input method menu</doc>

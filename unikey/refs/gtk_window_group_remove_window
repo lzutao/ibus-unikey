@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='402' type='void gtk_window_group_remove_window(GtkWindowGroup * window_group, GtkWindow * window)'/>

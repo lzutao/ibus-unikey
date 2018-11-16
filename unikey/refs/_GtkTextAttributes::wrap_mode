@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtktexttag.h' l='244' type='GtkWrapMode'/>
+<offset>1024</offset>
+<doc f='include/gtk-2.0/gtk/gtktexttag.h' l='244'>/* How to handle wrap-around for this tag.
+                                 * Must be GTK_WRAPMODE_CHAR,
+                                 * GTK_WRAPMODE_NONE, GTK_WRAPMODE_WORD
+                                 */</doc>

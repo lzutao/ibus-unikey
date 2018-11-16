@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmenuitem.h' l='113' type='void gtk_menu_item_set_right_justified(GtkMenuItem * menu_item, gboolean right_justified)'/>

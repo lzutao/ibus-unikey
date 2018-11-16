@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrc.h' l='234' type='guint gtk_rc_parse_color_full(GScanner * scanner, GtkRcStyle * style, GdkColor * color)'/>

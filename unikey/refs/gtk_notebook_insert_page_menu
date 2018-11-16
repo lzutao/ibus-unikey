@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtknotebook.h' l='171' type='gint gtk_notebook_insert_page_menu(GtkNotebook * notebook, GtkWidget * child, GtkWidget * tab_label, GtkWidget * menu_label, gint position)'/>

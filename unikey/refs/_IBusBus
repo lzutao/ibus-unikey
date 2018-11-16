@@ -1,0 +1,9 @@
+<def f='include/ibus-1.0/ibusbus.h' l='73' ll='78'/>
+<size>48</size>
+<doc f='include/ibus-1.0/ibusbus.h' l='68'>/**
+ * IBusBus:
+ *
+ * An opaque data type representing IBus bus (daemon communication) status.
+ */</doc>
+<mbr r='_IBusBus::parent' o='0' t='IBusObject'/>
+<mbr r='_IBusBus::priv' o='320' t='IBusBusPrivate *'/>

@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusemoji.h' l='143' type='void ibus_emoji_data_set_description(IBusEmojiData * emoji, const gchar * description)'/>
+<doc f='include/ibus-1.0/ibusemoji.h' l='136'>/**
+ * ibus_emoji_data_set_description:
+ * @emoji : An #IBusEmojiData
+ * @description: An emoji description
+ *
+ * Sets the description in #IBusEmojiData.
+ */</doc>

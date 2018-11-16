@@ -1,0 +1,27 @@
+<def f='include/gtk-2.0/gtk/gtkrange.h' l='56' ll='103'/>
+<size>192</size>
+<mbr r='_GtkRange::widget' o='0' t='GtkWidget'/>
+<mbr r='_GtkRange::adjustment' o='768' t='GtkAdjustment *'/>
+<mbr r='_GtkRange::update_policy' o='832' t='GtkUpdateType'/>
+<mbr r='_GtkRange::inverted' o='864' t='guint'/>
+<mbr r='_GtkRange::flippable' o='865' t='guint'/>
+<mbr r='_GtkRange::has_stepper_a' o='866' t='guint'/>
+<mbr r='_GtkRange::has_stepper_b' o='867' t='guint'/>
+<mbr r='_GtkRange::has_stepper_c' o='868' t='guint'/>
+<mbr r='_GtkRange::has_stepper_d' o='869' t='guint'/>
+<mbr r='_GtkRange::need_recalc' o='870' t='guint'/>
+<mbr r='_GtkRange::slider_size_fixed' o='871' t='guint'/>
+<mbr r='_GtkRange::min_slider_size' o='896' t='gint'/>
+<mbr r='_GtkRange::orientation' o='928' t='GtkOrientation'/>
+<mbr r='_GtkRange::range_rect' o='960' t='GdkRectangle'/>
+<mbr r='_GtkRange::slider_start' o='1088' t='gint'/>
+<mbr r='_GtkRange::slider_end' o='1120' t='gint'/>
+<mbr r='_GtkRange::round_digits' o='1152' t='gint'/>
+<mbr r='_GtkRange::trough_click_forward' o='1184' t='guint'/>
+<mbr r='_GtkRange::update_pending' o='1185' t='guint'/>
+<mbr r='_GtkRange::layout' o='1216' t='GtkRangeLayout *'/>
+<mbr r='_GtkRange::timer' o='1280' t='GtkRangeStepTimer *'/>
+<mbr r='_GtkRange::slide_initial_slider_position' o='1344' t='gint'/>
+<mbr r='_GtkRange::slide_initial_coordinate' o='1376' t='gint'/>
+<mbr r='_GtkRange::update_timeout_id' o='1408' t='guint'/>
+<mbr r='_GtkRange::event_window' o='1472' t='GdkWindow *'/>

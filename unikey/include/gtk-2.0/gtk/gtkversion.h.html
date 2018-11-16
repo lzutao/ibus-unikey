@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gtkversion.h source code [include/gtk-2.0/gtk/gtkversion.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gtk/gtkversion.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gtk</a>/<a href='gtkversion.h.html'>gtkversion.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GTK - The GIMP Toolkit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><i>/*</i></td></tr>
+<tr><th id="21">21</th><td><i> * Modified by the GTK+ Team and others 1997-1999.  See the AUTHORS</i></td></tr>
+<tr><th id="22">22</th><td><i> * file for a list of people on the GTK+ Team.  See the ChangeLog</i></td></tr>
+<tr><th id="23">23</th><td><i> * files for a list of changes.  These files are distributed with</i></td></tr>
+<tr><th id="24">24</th><td><i> * GTK+ at ftp://ftp.gtk.org/pub/gtk/.</i></td></tr>
+<tr><th id="25">25</th><td><i> */</i></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">if</span> defined(<span class="macro" data-ref="_M/GTK_DISABLE_SINGLE_INCLUDES">GTK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gtk.h.html#30" data-ref="_M/__GTK_H_INSIDE__">__GTK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GTK_COMPILATION">GTK_COMPILATION</span>)</u></td></tr>
+<tr><th id="28">28</th><td><u>#error "Only &lt;gtk/gtk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="29">29</th><td><u>#<span data-ppcond="27">endif</span></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#<span data-ppcond="31">ifndef</span> <span class="macro" data-ref="_M/__GTK_VERSION_H__">__GTK_VERSION_H__</span></u></td></tr>
+<tr><th id="32">32</th><td><u>#define <dfn class="macro" id="_M/__GTK_VERSION_H__" data-ref="_M/__GTK_VERSION_H__">__GTK_VERSION_H__</dfn></u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><i>/* compile time version</i></td></tr>
+<tr><th id="35">35</th><td><i> */</i></td></tr>
+<tr><th id="36">36</th><td><u>#define <dfn class="macro" id="_M/GTK_MAJOR_VERSION" data-ref="_M/GTK_MAJOR_VERSION">GTK_MAJOR_VERSION</dfn>				(2)</u></td></tr>
+<tr><th id="37">37</th><td><u>#define <dfn class="macro" id="_M/GTK_MINOR_VERSION" data-ref="_M/GTK_MINOR_VERSION">GTK_MINOR_VERSION</dfn>				(24)</u></td></tr>
+<tr><th id="38">38</th><td><u>#define <dfn class="macro" id="_M/GTK_MICRO_VERSION" data-ref="_M/GTK_MICRO_VERSION">GTK_MICRO_VERSION</dfn>				(32)</u></td></tr>
+<tr><th id="39">39</th><td><u>#define <dfn class="macro" id="_M/GTK_BINARY_AGE" data-ref="_M/GTK_BINARY_AGE">GTK_BINARY_AGE</dfn>					(2432)</u></td></tr>
+<tr><th id="40">40</th><td><u>#define <dfn class="macro" id="_M/GTK_INTERFACE_AGE" data-ref="_M/GTK_INTERFACE_AGE">GTK_INTERFACE_AGE</dfn>				(32)</u></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><i>/* check whether a Gtk+ version equal to or greater than</i></td></tr>
+<tr><th id="43">43</th><td><i> * major.minor.micro is present.</i></td></tr>
+<tr><th id="44">44</th><td><i> */</i></td></tr>
+<tr><th id="45">45</th><td><u>#define	<dfn class="macro" id="_M/GTK_CHECK_VERSION" data-ref="_M/GTK_CHECK_VERSION">GTK_CHECK_VERSION</dfn>(major,minor,micro)	\</u></td></tr>
+<tr><th id="46">46</th><td><u>    (GTK_MAJOR_VERSION &gt; (major) || \</u></td></tr>
+<tr><th id="47">47</th><td><u>     (GTK_MAJOR_VERSION == (major) &amp;&amp; GTK_MINOR_VERSION &gt; (minor)) || \</u></td></tr>
+<tr><th id="48">48</th><td><u>     (GTK_MAJOR_VERSION == (major) &amp;&amp; GTK_MINOR_VERSION == (minor) &amp;&amp; \</u></td></tr>
+<tr><th id="49">49</th><td><u>      GTK_MICRO_VERSION &gt;= (micro)))</u></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><u>#<span data-ppcond="31">endif</span> /* __GTK_VERSION_H__ */</u></td></tr>
+<tr><th id="52">52</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

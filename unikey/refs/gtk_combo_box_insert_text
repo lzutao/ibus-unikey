@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcombobox.h' l='134' type='void gtk_combo_box_insert_text(GtkComboBox * combo_box, gint position, const gchar * text)'/>

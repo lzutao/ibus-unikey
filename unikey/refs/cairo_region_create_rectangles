@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='3098' type='cairo_region_t * cairo_region_create_rectangles(const cairo_rectangle_int_t * rects, int count)'/>

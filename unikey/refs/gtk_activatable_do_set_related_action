@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkactivatable.h' l='83' type='void gtk_activatable_do_set_related_action(GtkActivatable * activatable, GtkAction * action)'/>
+<doc f='include/gtk-2.0/gtk/gtkactivatable.h' l='82'>/* For use in activatable implementations */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h' l='543' type='GdkPixbuf * gdk_pixbuf_add_alpha(const GdkPixbuf * pixbuf, gboolean substitute_color, guchar r, guchar g, guchar b)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextview.h' l='229' type='void gtk_text_view_scroll_to_mark(GtkTextView * text_view, GtkTextMark * mark, gdouble within_margin, gboolean use_align, gdouble xalign, gdouble yalign)'/>

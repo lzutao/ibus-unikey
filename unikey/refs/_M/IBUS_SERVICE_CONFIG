@@ -1,0 +1,6 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='73'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='68'>/**
+ * IBUS_SERVICE_CONFIG:
+ *
+ * Address of IBus config service.
+ */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmountoperation.h' l='73' type='gboolean gtk_mount_operation_is_showing(GtkMountOperation * op)'/>

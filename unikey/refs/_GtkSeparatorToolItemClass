@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkseparatortoolitem.h' l='52' ll='61'/>
+<size>912</size>
+<mbr r='_GtkSeparatorToolItemClass::parent_class' o='0' t='GtkToolItemClass'/>
+<mbr r='_GtkSeparatorToolItemClass::_gtk_reserved1' o='7040' t='void (*)()'/>
+<mbr r='_GtkSeparatorToolItemClass::_gtk_reserved2' o='7104' t='void (*)()'/>
+<mbr r='_GtkSeparatorToolItemClass::_gtk_reserved3' o='7168' t='void (*)()'/>
+<mbr r='_GtkSeparatorToolItemClass::_gtk_reserved4' o='7232' t='void (*)()'/>

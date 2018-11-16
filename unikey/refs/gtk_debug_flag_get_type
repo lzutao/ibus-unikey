@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='60' type='GType gtk_debug_flag_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='59'>/* enumerations from &quot;gtkdebug.h&quot; */</doc>

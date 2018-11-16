@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkmenu.h' l='174' type='GtkWidget * gtk_menu_get_attach_widget(GtkMenu * menu)'/>
+<doc f='include/gtk-2.0/gtk/gtkmenu.h' l='170'>/* This should be dumped in favor of data set when the menu is popped
+ * up - that is currently in the ItemFactory code, but should be
+ * in the Menu code.
+ */</doc>

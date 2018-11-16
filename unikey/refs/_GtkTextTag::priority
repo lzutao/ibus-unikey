@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtktexttag.h' l='94' type='int'/>
+<offset>320</offset>
+<doc f='include/gtk-2.0/gtk/gtktexttag.h' l='94'>/* Priority of this tag within widget.  0
+                         * means lowest priority.  Exactly one tag
+                         * has each integer value between 0 and
+                         * numTags-1. */</doc>

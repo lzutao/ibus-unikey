@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmain.h' l='202' type='void gtk_input_remove(guint input_handler_id)'/>

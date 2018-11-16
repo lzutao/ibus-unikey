@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkpapersize.h' l='95' type='void gtk_paper_size_to_key_file(GtkPaperSize * size, GKeyFile * key_file, const gchar * group_name)'/>

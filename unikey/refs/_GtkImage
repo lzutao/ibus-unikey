@@ -1,0 +1,13 @@
+<def f='include/gtk-2.0/gtk/gtkimage.h' l='148' ll='171'/>
+<size>160</size>
+<doc f='include/gtk-2.0/gtk/gtkimage.h' l='142'>/**
+ * GtkImage:
+ *
+ * This struct contain private data only and should be accessed by the functions
+ * below.
+ */</doc>
+<mbr r='_GtkImage::misc' o='0' t='GtkMisc'/>
+<mbr r='_GtkImage::storage_type' o='896' t='GtkImageType'/>
+<mbr r='_GtkImage::data' o='960' t='union (anonymous union at /usr/include/gtk-2.0/gtk/gtkimage.h:154:3)'/>
+<mbr r='_GtkImage::mask' o='1152' t='GdkBitmap *'/>
+<mbr r='_GtkImage::icon_size' o='1216' t='GtkIconSize'/>

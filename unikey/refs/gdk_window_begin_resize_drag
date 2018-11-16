@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='652' type='void gdk_window_begin_resize_drag(GdkWindow * window, GdkWindowEdge edge, gint button, gint root_x, gint root_y, guint32 timestamp)'/>

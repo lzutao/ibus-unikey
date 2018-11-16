@@ -1,0 +1,604 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gdk-pixbuf-core.h source code [include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gdk-pixbuf-2.0</a>/<a href='./'>gdk-pixbuf</a>/<a href='gdk-pixbuf-core.h.html'>gdk-pixbuf-core.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GdkPixbuf library - GdkPixbuf data structure</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright (C) 2003 The Free Software Foundation</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * Authors: Mark Crichton &lt;crichton@gimp.org&gt;</i></td></tr>
+<tr><th id="6">6</th><td><i> *          Miguel de Icaza &lt;miguel@gnu.org&gt;</i></td></tr>
+<tr><th id="7">7</th><td><i> *          Federico Mena-Quintero &lt;federico@gimp.org&gt;</i></td></tr>
+<tr><th id="8">8</th><td><i> *          Havoc Pennington &lt;hp@redhat.com&gt;</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="11">11</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="12">12</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="13">13</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="16">16</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="17">17</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="18">18</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="19">19</th><td><i> *</i></td></tr>
+<tr><th id="20">20</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="21">21</th><td><i> * License along with this library; if not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="22">22</th><td><i> */</i></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="24">ifndef</span> <span class="macro" data-ref="_M/GDK_PIXBUF_CORE_H">GDK_PIXBUF_CORE_H</span></u></td></tr>
+<tr><th id="25">25</th><td><u>#define <dfn class="macro" id="_M/GDK_PIXBUF_CORE_H" data-ref="_M/GDK_PIXBUF_CORE_H">GDK_PIXBUF_CORE_H</dfn></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">if</span> defined(<span class="macro" data-ref="_M/GDK_PIXBUF_DISABLE_SINGLE_INCLUDES">GDK_PIXBUF_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gdk-pixbuf.h.html#27" data-ref="_M/GDK_PIXBUF_H_INSIDE">GDK_PIXBUF_H_INSIDE</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GDK_PIXBUF_COMPILATION">GDK_PIXBUF_COMPILATION</span>)</u></td></tr>
+<tr><th id="28">28</th><td><u>#error "Only &lt;gdk-pixbuf/gdk-pixbuf.h&gt; can be included directly."</u></td></tr>
+<tr><th id="29">29</th><td><u>#<span data-ppcond="27">endif</span></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="../../glib-2.0/glib.h.html">&lt;glib.h&gt;</a></u></td></tr>
+<tr><th id="32">32</th><td><u>#include <a href="../../glib-2.0/glib-object.h.html">&lt;glib-object.h&gt;</a></u></td></tr>
+<tr><th id="33">33</th><td><u>#include <a href="../../glib-2.0/gio/gio.h.html">&lt;gio/gio.h&gt;</a></u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><u>#include <a href="gdk-pixbuf-macros.h.html">&lt;gdk-pixbuf/gdk-pixbuf-macros.h&gt;</a></u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * SECTION:gdk-pixbuf</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * <span class="command">@Short</span>_description: Information that describes an image.</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> *<span class="command"> @Title</span>: The GdkPixbuf Structure</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> * The #GdkPixbuf structure contains</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> * information that describes an image in memory.</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> * ## Image Data ## {#image-data}</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> * Image data in a pixbuf is stored in memory in uncompressed,</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> * packed format.  Rows in the image are stored top to bottom, and</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> * in each row pixels are stored from left to right.  There may be</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> * padding at the end of a row.  The "rowstride" value of a pixbuf,</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> * as returned by gdk_pixbuf_get_rowstride(), indicates the number</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> * of bytes between rows.</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> * ## put_pixel() Example ## {#put-pixel}</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> * The following code illustrates a simple put_pixel()</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"> * function for RGB pixbufs with 8 bits per channel with an alpha</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"> * channel.  It is not included in the gdk-pixbuf library for</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> * performance reasons; rather than making several function calls</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> * for each pixel, your own code can take shortcuts.</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> * |[&lt;!-- language="C" --&gt;</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> * static void</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> * put_pixel (GdkPixbuf *pixbuf, int x, int y, guchar red, guchar green, guchar blue, guchar alpha)</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> * {</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> *   int width, height, rowstride, n_channels;</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> *   guchar *pixels, *p;</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> *   n_channels = gdk_pixbuf_get_n_channels (pixbuf);</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="73">73</th><td><i class="doc"> *   g_assert (gdk_pixbuf_get_colorspace (pixbuf) == GDK_COLORSPACE_RGB);</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc"> *   g_assert (gdk_pixbuf_get_bits_per_sample (pixbuf) == 8);</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc"> *   g_assert (gdk_pixbuf_get_has_alpha (pixbuf));</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> *   g_assert (n_channels == 4);</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> *   width = gdk_pixbuf_get_width (pixbuf);</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> *   height = gdk_pixbuf_get_height (pixbuf);</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> *   g_assert (x &gt;= 0 &amp;&amp; x &lt; width);</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc"> *   g_assert (y &gt;= 0 &amp;&amp; y &lt; height);</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="84">84</th><td><i class="doc"> *   rowstride = gdk_pixbuf_get_rowstride (pixbuf);</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> *   pixels = gdk_pixbuf_get_pixels (pixbuf);</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> *   p = pixels + y * rowstride + x * n_channels;</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> *   p[0] = red;</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc"> *   p[1] = green;</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> *   p[2] = blue;</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> *   p[3] = alpha;</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> * }</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> * ]|</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> * This function will not work for pixbufs with images that are</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> * other than 8 bits per sample or channel, but it will work for</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> * most of the pixbufs that GTK+ uses.</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"> * If you are doing memcpy() of raw pixbuf data, note that the last row</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc"> * in the pixbuf may not be as wide as the full rowstride, but rather</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc"> * just as wide as the pixel data needs to be. That is, it is unsafe to</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> * do `memcpy (dest, pixels, rowstride * height)` to copy a whole pixbuf.</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> * Use gdk_pixbuf_copy() instead, or compute the width in bytes of the</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> * last row as `width * ((n_channels * bits_per_sample + 7) / 8)`.</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> * GdkPixbufAlphaMode:</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> *<span class="command"> @GDK</span>_PIXBUF_ALPHA_BILEVEL: A bilevel clipping mask (black and white)</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> *  will be created and used to draw the image.  Pixels below 0.5 opacity</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> *  will be considered fully transparent, and all others will be</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc"> *  considered fully opaque.</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc"> *<span class="command"> @GDK</span>_PIXBUF_ALPHA_FULL: For now falls back to #GDK_PIXBUF_ALPHA_BILEVEL.</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc"> *  In the future it will do full alpha compositing.</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="117">117</th><td><i class="doc"> * These values can be passed to</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc"> * gdk_pixbuf_xlib_render_to_drawable_alpha() to control how the alpha</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> * channel of an image should be handled.  This function can create a</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> * bilevel clipping mask (black and white) and use it while painting</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"> * the image.  In the future, when the X Window System gets an alpha</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc"> * channel extension, it will be possible to do full alpha</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> * compositing onto arbitrary drawables.  For now both cases fall</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> * back to a bilevel clipping mask.</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="126">126</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="127">127</th><td>{</td></tr>
+<tr><th id="128">128</th><td>        <dfn class="enum" id="GDK_PIXBUF_ALPHA_BILEVEL" title='GDK_PIXBUF_ALPHA_BILEVEL' data-ref="GDK_PIXBUF_ALPHA_BILEVEL">GDK_PIXBUF_ALPHA_BILEVEL</dfn>,</td></tr>
+<tr><th id="129">129</th><td>        <dfn class="enum" id="GDK_PIXBUF_ALPHA_FULL" title='GDK_PIXBUF_ALPHA_FULL' data-ref="GDK_PIXBUF_ALPHA_FULL">GDK_PIXBUF_ALPHA_FULL</dfn></td></tr>
+<tr><th id="130">130</th><td>} <dfn class="typedef" id="GdkPixbufAlphaMode" title='GdkPixbufAlphaMode' data-type='enum GdkPixbufAlphaMode' data-ref="GdkPixbufAlphaMode">GdkPixbufAlphaMode</dfn>;</td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> * GdkColorspace:</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> *<span class="command"> @GDK</span>_COLORSPACE_RGB: Indicates a red/green/blue additive color space.</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> * This enumeration defines the color spaces that are supported by</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> * the gdk-pixbuf library.  Currently only RGB is supported.</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="139">139</th><td><i>/* Note that these values are encoded in inline pixbufs</i></td></tr>
+<tr><th id="140">140</th><td><i> * as ints, so don't reorder them</i></td></tr>
+<tr><th id="141">141</th><td><i> */</i></td></tr>
+<tr><th id="142">142</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="143">143</th><td>	<dfn class="enum" id="GDK_COLORSPACE_RGB" title='GDK_COLORSPACE_RGB' data-ref="GDK_COLORSPACE_RGB">GDK_COLORSPACE_RGB</dfn></td></tr>
+<tr><th id="144">144</th><td>} <dfn class="typedef" id="GdkColorspace" title='GdkColorspace' data-type='enum GdkColorspace' data-ref="GdkColorspace">GdkColorspace</dfn>;</td></tr>
+<tr><th id="145">145</th><td></td></tr>
+<tr><th id="146">146</th><td><i>/* All of these are opaque structures */</i></td></tr>
+<tr><th id="147">147</th><td></td></tr>
+<tr><th id="148">148</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> * GdkPixbuf:</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> * This is the main structure in the gdk-pixbuf library.  It is</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> * used to represent images.  It contains information about the</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> * image's pixel data, its color space, bits per sample, width and</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> * height, and the rowstride (the number of bytes between the start of</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc"> * one row and the start of the next). </i></td></tr>
+<tr><th id="156">156</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="157">157</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_GdkPixbuf" title='_GdkPixbuf' data-ref="_GdkPixbuf"><a class="type" href="#_GdkPixbuf" title='_GdkPixbuf' data-ref="_GdkPixbuf">_GdkPixbuf</a></dfn> <dfn class="typedef" id="GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</dfn>;</td></tr>
+<tr><th id="158">158</th><td></td></tr>
+<tr><th id="159">159</th><td><u>#define <dfn class="macro" id="_M/GDK_TYPE_PIXBUF" data-ref="_M/GDK_TYPE_PIXBUF">GDK_TYPE_PIXBUF</dfn>              (gdk_pixbuf_get_type ())</u></td></tr>
+<tr><th id="160">160</th><td><u>#define <dfn class="macro" id="_M/GDK_PIXBUF" data-ref="_M/GDK_PIXBUF">GDK_PIXBUF</dfn>(object)           (G_TYPE_CHECK_INSTANCE_CAST ((object), GDK_TYPE_PIXBUF, GdkPixbuf))</u></td></tr>
+<tr><th id="161">161</th><td><u>#define <dfn class="macro" id="_M/GDK_IS_PIXBUF" data-ref="_M/GDK_IS_PIXBUF">GDK_IS_PIXBUF</dfn>(object)        (G_TYPE_CHECK_INSTANCE_TYPE ((object), GDK_TYPE_PIXBUF))</u></td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td></td></tr>
+<tr><th id="164">164</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="165">165</th><td><i class="doc"> * GdkPixbufDestroyNotify:</i></td></tr>
+<tr><th id="166">166</th><td><i class="doc"> *<span class="command"> @pixels</span>: (array) (element-type guint8): The pixel array of the pixbuf</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc"> *   that is being finalized.</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc"> * <span class="command">@data</span>: (closure): User closure data.</i></td></tr>
+<tr><th id="169">169</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="170">170</th><td><i class="doc"> * A function of this type is responsible for freeing the pixel array</i></td></tr>
+<tr><th id="171">171</th><td><i class="doc"> * of a pixbuf.  The gdk_pixbuf_new_from_data() function lets you</i></td></tr>
+<tr><th id="172">172</th><td><i class="doc"> * pass in a pre-allocated pixel array so that a pixbuf can be</i></td></tr>
+<tr><th id="173">173</th><td><i class="doc"> * created from it; in this case you will need to pass in a function</i></td></tr>
+<tr><th id="174">174</th><td><i class="doc"> * of #GdkPixbufDestroyNotify so that the pixel data can be freed</i></td></tr>
+<tr><th id="175">175</th><td><i class="doc"> * when the pixbuf is finalized.</i></td></tr>
+<tr><th id="176">176</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="177">177</th><td><b>typedef</b> <em>void</em> (* <dfn class="typedef" id="GdkPixbufDestroyNotify" title='GdkPixbufDestroyNotify' data-type='void (*)(guchar *, gpointer)' data-ref="GdkPixbufDestroyNotify">GdkPixbufDestroyNotify</dfn>) (<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guchar" title='guchar' data-type='unsigned char' data-ref="guchar">guchar</a> *<dfn class="local col3 decl" id="13713pixels" title='pixels' data-type='guchar *' data-ref="13713pixels">pixels</dfn>, <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="local col4 decl" id="13714data" title='data' data-type='gpointer' data-ref="13714data">data</dfn>);</td></tr>
+<tr><th id="178">178</th><td></td></tr>
+<tr><th id="179">179</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc"> * GDK_PIXBUF_ERROR:</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="182">182</th><td><i class="doc"> * Error domain used for pixbuf operations. Indicates that the error code</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc"> * will be in the #GdkPixbufError enumeration. See #GError for</i></td></tr>
+<tr><th id="184">184</th><td><i class="doc"> * information on error domains and error codes.</i></td></tr>
+<tr><th id="185">185</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="186">186</th><td><u>#define <dfn class="macro" id="_M/GDK_PIXBUF_ERROR" data-ref="_M/GDK_PIXBUF_ERROR">GDK_PIXBUF_ERROR</dfn> gdk_pixbuf_error_quark ()</u></td></tr>
+<tr><th id="187">187</th><td></td></tr>
+<tr><th id="188">188</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="189">189</th><td><i class="doc"> * GdkPixbufError:</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc"> *<span class="command"> @GDK</span>_PIXBUF_ERROR_CORRUPT_IMAGE: An image file was broken somehow.</i></td></tr>
+<tr><th id="191">191</th><td><i class="doc"> *<span class="command"> @GDK</span>_PIXBUF_ERROR_INSUFFICIENT_MEMORY: Not enough memory.</i></td></tr>
+<tr><th id="192">192</th><td><i class="doc"> *<span class="command"> @GDK</span>_PIXBUF_ERROR_BAD_OPTION: A bad option was passed to a pixbuf save module.</i></td></tr>
+<tr><th id="193">193</th><td><i class="doc"> *<span class="command"> @GDK</span>_PIXBUF_ERROR_UNKNOWN_TYPE: Unknown image type.</i></td></tr>
+<tr><th id="194">194</th><td><i class="doc"> *<span class="command"> @GDK</span>_PIXBUF_ERROR_UNSUPPORTED_OPERATION: Don't know how to perform the</i></td></tr>
+<tr><th id="195">195</th><td><i class="doc"> *  given operation on the type of image at hand.</i></td></tr>
+<tr><th id="196">196</th><td><i class="doc"> *<span class="command"> @GDK</span>_PIXBUF_ERROR_FAILED: Generic failure code, something went wrong.</i></td></tr>
+<tr><th id="197">197</th><td><i class="doc"> *<span class="command"> @GDK</span>_PIXBUF_ERROR_INCOMPLETE_ANIMATION: Only part of the animation was loaded.</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="199">199</th><td><i class="doc"> * An error code in the #GDK_PIXBUF_ERROR domain. Many gdk-pixbuf</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc"> * operations can cause errors in this domain, or in the #G_FILE_ERROR</i></td></tr>
+<tr><th id="201">201</th><td><i class="doc"> * domain.</i></td></tr>
+<tr><th id="202">202</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="203">203</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="204">204</th><td>        <i>/* image data hosed */</i></td></tr>
+<tr><th id="205">205</th><td>        <dfn class="enum" id="GDK_PIXBUF_ERROR_CORRUPT_IMAGE" title='GDK_PIXBUF_ERROR_CORRUPT_IMAGE' data-ref="GDK_PIXBUF_ERROR_CORRUPT_IMAGE">GDK_PIXBUF_ERROR_CORRUPT_IMAGE</dfn>,</td></tr>
+<tr><th id="206">206</th><td>        <i>/* no mem to load image */</i></td></tr>
+<tr><th id="207">207</th><td>        <dfn class="enum" id="GDK_PIXBUF_ERROR_INSUFFICIENT_MEMORY" title='GDK_PIXBUF_ERROR_INSUFFICIENT_MEMORY' data-ref="GDK_PIXBUF_ERROR_INSUFFICIENT_MEMORY">GDK_PIXBUF_ERROR_INSUFFICIENT_MEMORY</dfn>,</td></tr>
+<tr><th id="208">208</th><td>        <i>/* bad option passed to save routine */</i></td></tr>
+<tr><th id="209">209</th><td>        <dfn class="enum" id="GDK_PIXBUF_ERROR_BAD_OPTION" title='GDK_PIXBUF_ERROR_BAD_OPTION' data-ref="GDK_PIXBUF_ERROR_BAD_OPTION">GDK_PIXBUF_ERROR_BAD_OPTION</dfn>,</td></tr>
+<tr><th id="210">210</th><td>        <i>/* unsupported image type (sort of an ENOSYS) */</i></td></tr>
+<tr><th id="211">211</th><td>        <dfn class="enum" id="GDK_PIXBUF_ERROR_UNKNOWN_TYPE" title='GDK_PIXBUF_ERROR_UNKNOWN_TYPE' data-ref="GDK_PIXBUF_ERROR_UNKNOWN_TYPE">GDK_PIXBUF_ERROR_UNKNOWN_TYPE</dfn>,</td></tr>
+<tr><th id="212">212</th><td>        <i>/* unsupported operation (load, save) for image type */</i></td></tr>
+<tr><th id="213">213</th><td>        <dfn class="enum" id="GDK_PIXBUF_ERROR_UNSUPPORTED_OPERATION" title='GDK_PIXBUF_ERROR_UNSUPPORTED_OPERATION' data-ref="GDK_PIXBUF_ERROR_UNSUPPORTED_OPERATION">GDK_PIXBUF_ERROR_UNSUPPORTED_OPERATION</dfn>,</td></tr>
+<tr><th id="214">214</th><td>        <dfn class="enum" id="GDK_PIXBUF_ERROR_FAILED" title='GDK_PIXBUF_ERROR_FAILED' data-ref="GDK_PIXBUF_ERROR_FAILED">GDK_PIXBUF_ERROR_FAILED</dfn>,</td></tr>
+<tr><th id="215">215</th><td>        <dfn class="enum" id="GDK_PIXBUF_ERROR_INCOMPLETE_ANIMATION" title='GDK_PIXBUF_ERROR_INCOMPLETE_ANIMATION' data-ref="GDK_PIXBUF_ERROR_INCOMPLETE_ANIMATION">GDK_PIXBUF_ERROR_INCOMPLETE_ANIMATION</dfn></td></tr>
+<tr><th id="216">216</th><td>} <dfn class="typedef" id="GdkPixbufError" title='GdkPixbufError' data-type='enum GdkPixbufError' data-ref="GdkPixbufError">GdkPixbufError</dfn>;</td></tr>
+<tr><th id="217">217</th><td></td></tr>
+<tr><th id="218">218</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="219">219</th><td><a class="typedef" href="../../glib-2.0/glib/gquark.h.html#GQuark" title='GQuark' data-type='guint32' data-ref="GQuark">GQuark</a> <dfn class="decl" id="gdk_pixbuf_error_quark" title='gdk_pixbuf_error_quark' data-ref="gdk_pixbuf_error_quark">gdk_pixbuf_error_quark</dfn> (<em>void</em>);</td></tr>
+<tr><th id="220">220</th><td></td></tr>
+<tr><th id="221">221</th><td></td></tr>
+<tr><th id="222">222</th><td></td></tr>
+<tr><th id="223">223</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="224">224</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a> <dfn class="decl" id="gdk_pixbuf_get_type" title='gdk_pixbuf_get_type' data-ref="gdk_pixbuf_get_type">gdk_pixbuf_get_type</dfn> (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="225">225</th><td></td></tr>
+<tr><th id="226">226</th><td><i>/* Reference counting */</i></td></tr>
+<tr><th id="227">227</th><td></td></tr>
+<tr><th id="228">228</th><td><u>#<span data-ppcond="228">ifndef</span> <span class="macro" data-ref="_M/GDK_PIXBUF_DISABLE_DEPRECATED">GDK_PIXBUF_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="229">229</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#323" title="__attribute__((__deprecated__)) extern" data-ref="_M/GDK_PIXBUF_DEPRECATED_IN_2_0_FOR">GDK_PIXBUF_DEPRECATED_IN_2_0_FOR</a>(g_object_ref)</td></tr>
+<tr><th id="230">230</th><td><a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_ref" title='gdk_pixbuf_ref' data-ref="gdk_pixbuf_ref">gdk_pixbuf_ref</dfn>      (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col5 decl" id="13715pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="13715pixbuf">pixbuf</dfn>);</td></tr>
+<tr><th id="231">231</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#323" title="__attribute__((__deprecated__)) extern" data-ref="_M/GDK_PIXBUF_DEPRECATED_IN_2_0_FOR">GDK_PIXBUF_DEPRECATED_IN_2_0_FOR</a>(g_object_unref)</td></tr>
+<tr><th id="232">232</th><td><em>void</em>       <dfn class="decl" id="gdk_pixbuf_unref" title='gdk_pixbuf_unref' data-ref="gdk_pixbuf_unref">gdk_pixbuf_unref</dfn>    (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col6 decl" id="13716pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="13716pixbuf">pixbuf</dfn>);</td></tr>
+<tr><th id="233">233</th><td><u>#<span data-ppcond="228">endif</span></u></td></tr>
+<tr><th id="234">234</th><td></td></tr>
+<tr><th id="235">235</th><td><i>/* GdkPixbuf accessors */</i></td></tr>
+<tr><th id="236">236</th><td></td></tr>
+<tr><th id="237">237</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="238">238</th><td><a class="typedef" href="#GdkColorspace" title='GdkColorspace' data-type='enum GdkColorspace' data-ref="GdkColorspace">GdkColorspace</a> <dfn class="decl" id="gdk_pixbuf_get_colorspace" title='gdk_pixbuf_get_colorspace' data-ref="gdk_pixbuf_get_colorspace">gdk_pixbuf_get_colorspace</dfn>      (<em>const</em> <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col7 decl" id="13717pixbuf" title='pixbuf' data-type='const GdkPixbuf *' data-ref="13717pixbuf">pixbuf</dfn>);</td></tr>
+<tr><th id="239">239</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="240">240</th><td><em>int</em>           <dfn class="decl" id="gdk_pixbuf_get_n_channels" title='gdk_pixbuf_get_n_channels' data-ref="gdk_pixbuf_get_n_channels">gdk_pixbuf_get_n_channels</dfn>      (<em>const</em> <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col8 decl" id="13718pixbuf" title='pixbuf' data-type='const GdkPixbuf *' data-ref="13718pixbuf">pixbuf</dfn>);</td></tr>
+<tr><th id="241">241</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="242">242</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>      <dfn class="decl" id="gdk_pixbuf_get_has_alpha" title='gdk_pixbuf_get_has_alpha' data-ref="gdk_pixbuf_get_has_alpha">gdk_pixbuf_get_has_alpha</dfn>       (<em>const</em> <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col9 decl" id="13719pixbuf" title='pixbuf' data-type='const GdkPixbuf *' data-ref="13719pixbuf">pixbuf</dfn>);</td></tr>
+<tr><th id="243">243</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="244">244</th><td><em>int</em>           <dfn class="decl" id="gdk_pixbuf_get_bits_per_sample" title='gdk_pixbuf_get_bits_per_sample' data-ref="gdk_pixbuf_get_bits_per_sample">gdk_pixbuf_get_bits_per_sample</dfn> (<em>const</em> <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col0 decl" id="13720pixbuf" title='pixbuf' data-type='const GdkPixbuf *' data-ref="13720pixbuf">pixbuf</dfn>);</td></tr>
+<tr><th id="245">245</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="246">246</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guchar" title='guchar' data-type='unsigned char' data-ref="guchar">guchar</a>       *<dfn class="decl" id="gdk_pixbuf_get_pixels" title='gdk_pixbuf_get_pixels' data-ref="gdk_pixbuf_get_pixels">gdk_pixbuf_get_pixels</dfn>          (<em>const</em> <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col1 decl" id="13721pixbuf" title='pixbuf' data-type='const GdkPixbuf *' data-ref="13721pixbuf">pixbuf</dfn>);</td></tr>
+<tr><th id="247">247</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="248">248</th><td><em>int</em>           <dfn class="decl" id="gdk_pixbuf_get_width" title='gdk_pixbuf_get_width' data-ref="gdk_pixbuf_get_width">gdk_pixbuf_get_width</dfn>           (<em>const</em> <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col2 decl" id="13722pixbuf" title='pixbuf' data-type='const GdkPixbuf *' data-ref="13722pixbuf">pixbuf</dfn>);</td></tr>
+<tr><th id="249">249</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="250">250</th><td><em>int</em>           <dfn class="decl" id="gdk_pixbuf_get_height" title='gdk_pixbuf_get_height' data-ref="gdk_pixbuf_get_height">gdk_pixbuf_get_height</dfn>          (<em>const</em> <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col3 decl" id="13723pixbuf" title='pixbuf' data-type='const GdkPixbuf *' data-ref="13723pixbuf">pixbuf</dfn>);</td></tr>
+<tr><th id="251">251</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="252">252</th><td><em>int</em>           <dfn class="decl" id="gdk_pixbuf_get_rowstride" title='gdk_pixbuf_get_rowstride' data-ref="gdk_pixbuf_get_rowstride">gdk_pixbuf_get_rowstride</dfn>       (<em>const</em> <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col4 decl" id="13724pixbuf" title='pixbuf' data-type='const GdkPixbuf *' data-ref="13724pixbuf">pixbuf</dfn>);</td></tr>
+<tr><th id="253">253</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#568" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_26">GDK_PIXBUF_AVAILABLE_IN_2_26</a></td></tr>
+<tr><th id="254">254</th><td><span class='typedef' title='gsize' data-type='unsigned long' data-ref="gsize">gsize</span>         <dfn class="decl" id="gdk_pixbuf_get_byte_length" title='gdk_pixbuf_get_byte_length' data-ref="gdk_pixbuf_get_byte_length">gdk_pixbuf_get_byte_length</dfn>     (<em>const</em> <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col5 decl" id="13725pixbuf" title='pixbuf' data-type='const GdkPixbuf *' data-ref="13725pixbuf">pixbuf</dfn>);</td></tr>
+<tr><th id="255">255</th><td></td></tr>
+<tr><th id="256">256</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#568" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_26">GDK_PIXBUF_AVAILABLE_IN_2_26</a></td></tr>
+<tr><th id="257">257</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guchar" title='guchar' data-type='unsigned char' data-ref="guchar">guchar</a>       *<dfn class="decl" id="gdk_pixbuf_get_pixels_with_length" title='gdk_pixbuf_get_pixels_with_length' data-ref="gdk_pixbuf_get_pixels_with_length">gdk_pixbuf_get_pixels_with_length</dfn> (<em>const</em> <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col6 decl" id="13726pixbuf" title='pixbuf' data-type='const GdkPixbuf *' data-ref="13726pixbuf">pixbuf</dfn>,</td></tr>
+<tr><th id="258">258</th><td>                                                 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           *<dfn class="local col7 decl" id="13727length" title='length' data-type='guint *' data-ref="13727length">length</dfn>);</td></tr>
+<tr><th id="259">259</th><td></td></tr>
+<tr><th id="260">260</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#622" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_32">GDK_PIXBUF_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="261">261</th><td><em>const</em> <span class='typedef' title='guint8' data-type='unsigned char' data-ref="guint8">guint8</span>* <dfn class="decl" id="gdk_pixbuf_read_pixels" title='gdk_pixbuf_read_pixels' data-ref="gdk_pixbuf_read_pixels">gdk_pixbuf_read_pixels</dfn>         (<em>const</em> <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>  *<dfn class="local col8 decl" id="13728pixbuf" title='pixbuf' data-type='const GdkPixbuf *' data-ref="13728pixbuf">pixbuf</dfn>);</td></tr>
+<tr><th id="262">262</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#622" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_32">GDK_PIXBUF_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="263">263</th><td><a class="typedef" href="../../glib-2.0/glib/garray.h.html#GBytes" title='GBytes' data-type='struct _GBytes' data-ref="GBytes">GBytes</a> *      <dfn class="decl" id="gdk_pixbuf_read_pixel_bytes" title='gdk_pixbuf_read_pixel_bytes' data-ref="gdk_pixbuf_read_pixel_bytes">gdk_pixbuf_read_pixel_bytes</dfn>    (<em>const</em> <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>  *<dfn class="local col9 decl" id="13729pixbuf" title='pixbuf' data-type='const GdkPixbuf *' data-ref="13729pixbuf">pixbuf</dfn>);</td></tr>
+<tr><th id="264">264</th><td></td></tr>
+<tr><th id="265">265</th><td></td></tr>
+<tr><th id="266">266</th><td></td></tr>
+<tr><th id="267">267</th><td><i>/* Create a blank pixbuf with an optimal rowstride and a new buffer */</i></td></tr>
+<tr><th id="268">268</th><td></td></tr>
+<tr><th id="269">269</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="270">270</th><td><a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_new" title='gdk_pixbuf_new' data-ref="gdk_pixbuf_new">gdk_pixbuf_new</dfn> (<a class="typedef" href="#GdkColorspace" title='GdkColorspace' data-type='enum GdkColorspace' data-ref="GdkColorspace">GdkColorspace</a> <dfn class="local col0 decl" id="13730colorspace" title='colorspace' data-type='GdkColorspace' data-ref="13730colorspace">colorspace</dfn>, <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="local col1 decl" id="13731has_alpha" title='has_alpha' data-type='gboolean' data-ref="13731has_alpha">has_alpha</dfn>, <em>int</em> <dfn class="local col2 decl" id="13732bits_per_sample" title='bits_per_sample' data-type='int' data-ref="13732bits_per_sample">bits_per_sample</dfn>,</td></tr>
+<tr><th id="271">271</th><td>			   <em>int</em> <dfn class="local col3 decl" id="13733width" title='width' data-type='int' data-ref="13733width">width</dfn>, <em>int</em> <dfn class="local col4 decl" id="13734height" title='height' data-type='int' data-ref="13734height">height</dfn>);</td></tr>
+<tr><th id="272">272</th><td></td></tr>
+<tr><th id="273">273</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#658" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_36">GDK_PIXBUF_AVAILABLE_IN_2_36</a></td></tr>
+<tr><th id="274">274</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="gdk_pixbuf_calculate_rowstride" title='gdk_pixbuf_calculate_rowstride' data-ref="gdk_pixbuf_calculate_rowstride">gdk_pixbuf_calculate_rowstride</dfn> (<a class="typedef" href="#GdkColorspace" title='GdkColorspace' data-type='enum GdkColorspace' data-ref="GdkColorspace">GdkColorspace</a> <dfn class="local col5 decl" id="13735colorspace" title='colorspace' data-type='GdkColorspace' data-ref="13735colorspace">colorspace</dfn>,</td></tr>
+<tr><th id="275">275</th><td>				     <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>      <dfn class="local col6 decl" id="13736has_alpha" title='has_alpha' data-type='gboolean' data-ref="13736has_alpha">has_alpha</dfn>,</td></tr>
+<tr><th id="276">276</th><td>				     <em>int</em>           <dfn class="local col7 decl" id="13737bits_per_sample" title='bits_per_sample' data-type='int' data-ref="13737bits_per_sample">bits_per_sample</dfn>,</td></tr>
+<tr><th id="277">277</th><td>				     <em>int</em>           <dfn class="local col8 decl" id="13738width" title='width' data-type='int' data-ref="13738width">width</dfn>,</td></tr>
+<tr><th id="278">278</th><td>				     <em>int</em>           <dfn class="local col9 decl" id="13739height" title='height' data-type='int' data-ref="13739height">height</dfn>);</td></tr>
+<tr><th id="279">279</th><td></td></tr>
+<tr><th id="280">280</th><td><i>/* Copy a pixbuf */</i></td></tr>
+<tr><th id="281">281</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="282">282</th><td><a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_copy" title='gdk_pixbuf_copy' data-ref="gdk_pixbuf_copy">gdk_pixbuf_copy</dfn> (<em>const</em> <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col0 decl" id="13740pixbuf" title='pixbuf' data-type='const GdkPixbuf *' data-ref="13740pixbuf">pixbuf</dfn>);</td></tr>
+<tr><th id="283">283</th><td></td></tr>
+<tr><th id="284">284</th><td><i>/* Create a pixbuf which points to the pixels of another pixbuf */</i></td></tr>
+<tr><th id="285">285</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="286">286</th><td><a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_new_subpixbuf" title='gdk_pixbuf_new_subpixbuf' data-ref="gdk_pixbuf_new_subpixbuf">gdk_pixbuf_new_subpixbuf</dfn> (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col1 decl" id="13741src_pixbuf" title='src_pixbuf' data-type='GdkPixbuf *' data-ref="13741src_pixbuf">src_pixbuf</dfn>,</td></tr>
+<tr><th id="287">287</th><td>                                     <em>int</em>        <dfn class="local col2 decl" id="13742src_x" title='src_x' data-type='int' data-ref="13742src_x">src_x</dfn>,</td></tr>
+<tr><th id="288">288</th><td>                                     <em>int</em>        <dfn class="local col3 decl" id="13743src_y" title='src_y' data-type='int' data-ref="13743src_y">src_y</dfn>,</td></tr>
+<tr><th id="289">289</th><td>                                     <em>int</em>        <dfn class="local col4 decl" id="13744width" title='width' data-type='int' data-ref="13744width">width</dfn>,</td></tr>
+<tr><th id="290">290</th><td>                                     <em>int</em>        <dfn class="local col5 decl" id="13745height" title='height' data-type='int' data-ref="13745height">height</dfn>);</td></tr>
+<tr><th id="291">291</th><td></td></tr>
+<tr><th id="292">292</th><td><i>/* Simple loading */</i></td></tr>
+<tr><th id="293">293</th><td></td></tr>
+<tr><th id="294">294</th><td><u>#<span data-ppcond="294">ifdef</span> <span class="macro" data-ref="_M/G_OS_WIN32">G_OS_WIN32</span></u></td></tr>
+<tr><th id="295">295</th><td><i>/* In previous versions these _utf8 variants where exported and linked to</i></td></tr>
+<tr><th id="296">296</th><td><i> * by default. Export them here for ABI (and gi API) compat.</i></td></tr>
+<tr><th id="297">297</th><td><i> */</i></td></tr>
+<tr><th id="298">298</th><td></td></tr>
+<tr><th id="299">299</th><td>GDK_PIXBUF_AVAILABLE_IN_ALL</td></tr>
+<tr><th id="300">300</th><td>GdkPixbuf *gdk_pixbuf_new_from_file_utf8 (<em>const</em> <em>char</em> *filename,</td></tr>
+<tr><th id="301">301</th><td>                                          GError    **error);</td></tr>
+<tr><th id="302">302</th><td>GDK_PIXBUF_AVAILABLE_IN_2_4</td></tr>
+<tr><th id="303">303</th><td>GdkPixbuf *gdk_pixbuf_new_from_file_at_size_utf8 (<em>const</em> <em>char</em> *filename,</td></tr>
+<tr><th id="304">304</th><td>                                                  <em>int</em>         width,</td></tr>
+<tr><th id="305">305</th><td>                                                  <em>int</em>         height,</td></tr>
+<tr><th id="306">306</th><td>                                                  GError    **error);</td></tr>
+<tr><th id="307">307</th><td>GDK_PIXBUF_AVAILABLE_IN_2_6</td></tr>
+<tr><th id="308">308</th><td>GdkPixbuf *gdk_pixbuf_new_from_file_at_scale_utf8 (<em>const</em> <em>char</em> *filename,</td></tr>
+<tr><th id="309">309</th><td>                                                   <em>int</em>         width,</td></tr>
+<tr><th id="310">310</th><td>                                                   <em>int</em>         height,</td></tr>
+<tr><th id="311">311</th><td>                                                   gboolean    preserve_aspect_ratio,</td></tr>
+<tr><th id="312">312</th><td>                                                   GError    **error);</td></tr>
+<tr><th id="313">313</th><td><u>#<span data-ppcond="294">endif</span></u></td></tr>
+<tr><th id="314">314</th><td></td></tr>
+<tr><th id="315">315</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="316">316</th><td><a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_new_from_file" title='gdk_pixbuf_new_from_file' data-ref="gdk_pixbuf_new_from_file">gdk_pixbuf_new_from_file</dfn> (<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="13746filename" title='filename' data-type='const char *' data-ref="13746filename">filename</dfn>,</td></tr>
+<tr><th id="317">317</th><td>                                     <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>    **<dfn class="local col7 decl" id="13747error" title='error' data-type='GError **' data-ref="13747error">error</dfn>);</td></tr>
+<tr><th id="318">318</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#370" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_4">GDK_PIXBUF_AVAILABLE_IN_2_4</a></td></tr>
+<tr><th id="319">319</th><td><a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_new_from_file_at_size" title='gdk_pixbuf_new_from_file_at_size' data-ref="gdk_pixbuf_new_from_file_at_size">gdk_pixbuf_new_from_file_at_size</dfn> (<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="13748filename" title='filename' data-type='const char *' data-ref="13748filename">filename</dfn>,</td></tr>
+<tr><th id="320">320</th><td>					     <em>int</em>         <dfn class="local col9 decl" id="13749width" title='width' data-type='int' data-ref="13749width">width</dfn>, </td></tr>
+<tr><th id="321">321</th><td>					     <em>int</em>         <dfn class="local col0 decl" id="13750height" title='height' data-type='int' data-ref="13750height">height</dfn>,</td></tr>
+<tr><th id="322">322</th><td>					     <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>    **<dfn class="local col1 decl" id="13751error" title='error' data-type='GError **' data-ref="13751error">error</dfn>);</td></tr>
+<tr><th id="323">323</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#388" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_6">GDK_PIXBUF_AVAILABLE_IN_2_6</a></td></tr>
+<tr><th id="324">324</th><td><a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_new_from_file_at_scale" title='gdk_pixbuf_new_from_file_at_scale' data-ref="gdk_pixbuf_new_from_file_at_scale">gdk_pixbuf_new_from_file_at_scale</dfn> (<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="13752filename" title='filename' data-type='const char *' data-ref="13752filename">filename</dfn>,</td></tr>
+<tr><th id="325">325</th><td>					      <em>int</em>         <dfn class="local col3 decl" id="13753width" title='width' data-type='int' data-ref="13753width">width</dfn>, </td></tr>
+<tr><th id="326">326</th><td>					      <em>int</em>         <dfn class="local col4 decl" id="13754height" title='height' data-type='int' data-ref="13754height">height</dfn>,</td></tr>
+<tr><th id="327">327</th><td>					      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>    <dfn class="local col5 decl" id="13755preserve_aspect_ratio" title='preserve_aspect_ratio' data-type='gboolean' data-ref="13755preserve_aspect_ratio">preserve_aspect_ratio</dfn>,</td></tr>
+<tr><th id="328">328</th><td>					      <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>    **<dfn class="local col6 decl" id="13756error" title='error' data-type='GError **' data-ref="13756error">error</dfn>);</td></tr>
+<tr><th id="329">329</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#568" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_26">GDK_PIXBUF_AVAILABLE_IN_2_26</a></td></tr>
+<tr><th id="330">330</th><td><a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_new_from_resource" title='gdk_pixbuf_new_from_resource' data-ref="gdk_pixbuf_new_from_resource">gdk_pixbuf_new_from_resource</dfn> (<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="13757resource_path" title='resource_path' data-type='const char *' data-ref="13757resource_path">resource_path</dfn>,</td></tr>
+<tr><th id="331">331</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>    **<dfn class="local col8 decl" id="13758error" title='error' data-type='GError **' data-ref="13758error">error</dfn>);</td></tr>
+<tr><th id="332">332</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#568" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_26">GDK_PIXBUF_AVAILABLE_IN_2_26</a></td></tr>
+<tr><th id="333">333</th><td><a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_new_from_resource_at_scale" title='gdk_pixbuf_new_from_resource_at_scale' data-ref="gdk_pixbuf_new_from_resource_at_scale">gdk_pixbuf_new_from_resource_at_scale</dfn> (<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="13759resource_path" title='resource_path' data-type='const char *' data-ref="13759resource_path">resource_path</dfn>,</td></tr>
+<tr><th id="334">334</th><td>						  <em>int</em>         <dfn class="local col0 decl" id="13760width" title='width' data-type='int' data-ref="13760width">width</dfn>,</td></tr>
+<tr><th id="335">335</th><td>						  <em>int</em>         <dfn class="local col1 decl" id="13761height" title='height' data-type='int' data-ref="13761height">height</dfn>,</td></tr>
+<tr><th id="336">336</th><td>						  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>    <dfn class="local col2 decl" id="13762preserve_aspect_ratio" title='preserve_aspect_ratio' data-type='gboolean' data-ref="13762preserve_aspect_ratio">preserve_aspect_ratio</dfn>,</td></tr>
+<tr><th id="337">337</th><td>						  <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>    **<dfn class="local col3 decl" id="13763error" title='error' data-type='GError **' data-ref="13763error">error</dfn>);</td></tr>
+<tr><th id="338">338</th><td></td></tr>
+<tr><th id="339">339</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="340">340</th><td><a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_new_from_data" title='gdk_pixbuf_new_from_data' data-ref="gdk_pixbuf_new_from_data">gdk_pixbuf_new_from_data</dfn> (<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guchar" title='guchar' data-type='unsigned char' data-ref="guchar">guchar</a> *<dfn class="local col4 decl" id="13764data" title='data' data-type='const guchar *' data-ref="13764data">data</dfn>,</td></tr>
+<tr><th id="341">341</th><td>				     <a class="typedef" href="#GdkColorspace" title='GdkColorspace' data-type='enum GdkColorspace' data-ref="GdkColorspace">GdkColorspace</a> <dfn class="local col5 decl" id="13765colorspace" title='colorspace' data-type='GdkColorspace' data-ref="13765colorspace">colorspace</dfn>,</td></tr>
+<tr><th id="342">342</th><td>				     <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="local col6 decl" id="13766has_alpha" title='has_alpha' data-type='gboolean' data-ref="13766has_alpha">has_alpha</dfn>,</td></tr>
+<tr><th id="343">343</th><td>				     <em>int</em> <dfn class="local col7 decl" id="13767bits_per_sample" title='bits_per_sample' data-type='int' data-ref="13767bits_per_sample">bits_per_sample</dfn>,</td></tr>
+<tr><th id="344">344</th><td>				     <em>int</em> <dfn class="local col8 decl" id="13768width" title='width' data-type='int' data-ref="13768width">width</dfn>, <em>int</em> <dfn class="local col9 decl" id="13769height" title='height' data-type='int' data-ref="13769height">height</dfn>,</td></tr>
+<tr><th id="345">345</th><td>				     <em>int</em> <dfn class="local col0 decl" id="13770rowstride" title='rowstride' data-type='int' data-ref="13770rowstride">rowstride</dfn>,</td></tr>
+<tr><th id="346">346</th><td>				     <a class="typedef" href="#GdkPixbufDestroyNotify" title='GdkPixbufDestroyNotify' data-type='void (*)(guchar *, gpointer)' data-ref="GdkPixbufDestroyNotify">GdkPixbufDestroyNotify</a> <dfn class="local col1 decl" id="13771destroy_fn" title='destroy_fn' data-type='GdkPixbufDestroyNotify' data-ref="13771destroy_fn">destroy_fn</dfn>,</td></tr>
+<tr><th id="347">347</th><td>				     <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="local col2 decl" id="13772destroy_fn_data" title='destroy_fn_data' data-type='gpointer' data-ref="13772destroy_fn_data">destroy_fn_data</dfn>);</td></tr>
+<tr><th id="348">348</th><td></td></tr>
+<tr><th id="349">349</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#622" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_32">GDK_PIXBUF_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="350">350</th><td><a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_new_from_bytes" title='gdk_pixbuf_new_from_bytes' data-ref="gdk_pixbuf_new_from_bytes">gdk_pixbuf_new_from_bytes</dfn> (<a class="typedef" href="../../glib-2.0/glib/garray.h.html#GBytes" title='GBytes' data-type='struct _GBytes' data-ref="GBytes">GBytes</a> *<dfn class="local col3 decl" id="13773data" title='data' data-type='GBytes *' data-ref="13773data">data</dfn>,</td></tr>
+<tr><th id="351">351</th><td>				      <a class="typedef" href="#GdkColorspace" title='GdkColorspace' data-type='enum GdkColorspace' data-ref="GdkColorspace">GdkColorspace</a> <dfn class="local col4 decl" id="13774colorspace" title='colorspace' data-type='GdkColorspace' data-ref="13774colorspace">colorspace</dfn>,</td></tr>
+<tr><th id="352">352</th><td>				      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="local col5 decl" id="13775has_alpha" title='has_alpha' data-type='gboolean' data-ref="13775has_alpha">has_alpha</dfn>,</td></tr>
+<tr><th id="353">353</th><td>				      <em>int</em> <dfn class="local col6 decl" id="13776bits_per_sample" title='bits_per_sample' data-type='int' data-ref="13776bits_per_sample">bits_per_sample</dfn>,</td></tr>
+<tr><th id="354">354</th><td>				      <em>int</em> <dfn class="local col7 decl" id="13777width" title='width' data-type='int' data-ref="13777width">width</dfn>, <em>int</em> <dfn class="local col8 decl" id="13778height" title='height' data-type='int' data-ref="13778height">height</dfn>,</td></tr>
+<tr><th id="355">355</th><td>				      <em>int</em> <dfn class="local col9 decl" id="13779rowstride" title='rowstride' data-type='int' data-ref="13779rowstride">rowstride</dfn>);</td></tr>
+<tr><th id="356">356</th><td></td></tr>
+<tr><th id="357">357</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="358">358</th><td><a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_new_from_xpm_data" title='gdk_pixbuf_new_from_xpm_data' data-ref="gdk_pixbuf_new_from_xpm_data">gdk_pixbuf_new_from_xpm_data</dfn> (<em>const</em> <em>char</em> **<dfn class="local col0 decl" id="13780data" title='data' data-type='const char **' data-ref="13780data">data</dfn>);</td></tr>
+<tr><th id="359">359</th><td></td></tr>
+<tr><th id="360">360</th><td><u>#<span data-ppcond="360">ifndef</span> <span class="macro" data-ref="_M/GDK_PIXBUF_DISABLE_DEPRECATED">GDK_PIXBUF_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="361">361</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#610" title="__attribute__((__deprecated__)) extern" data-ref="_M/GDK_PIXBUF_DEPRECATED_IN_2_32">GDK_PIXBUF_DEPRECATED_IN_2_32</a></td></tr>
+<tr><th id="362">362</th><td><a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>* <dfn class="decl" id="gdk_pixbuf_new_from_inline" title='gdk_pixbuf_new_from_inline' data-ref="gdk_pixbuf_new_from_inline">gdk_pixbuf_new_from_inline</dfn>	(<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>          <dfn class="local col1 decl" id="13781data_length" title='data_length' data-type='gint' data-ref="13781data_length">data_length</dfn>,</td></tr>
+<tr><th id="363">363</th><td>					 <em>const</em> <span class='typedef' title='guint8' data-type='unsigned char' data-ref="guint8">guint8</span> *<dfn class="local col2 decl" id="13782data" title='data' data-type='const guint8 *' data-ref="13782data">data</dfn>,</td></tr>
+<tr><th id="364">364</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>      <dfn class="local col3 decl" id="13783copy_pixels" title='copy_pixels' data-type='gboolean' data-ref="13783copy_pixels">copy_pixels</dfn>,</td></tr>
+<tr><th id="365">365</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>      **<dfn class="local col4 decl" id="13784error" title='error' data-type='GError **' data-ref="13784error">error</dfn>);</td></tr>
+<tr><th id="366">366</th><td><u>#<span data-ppcond="360">endif</span></u></td></tr>
+<tr><th id="367">367</th><td></td></tr>
+<tr><th id="368">368</th><td><i>/* Mutations */</i></td></tr>
+<tr><th id="369">369</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="370">370</th><td><em>void</em>       <dfn class="decl" id="gdk_pixbuf_fill" title='gdk_pixbuf_fill' data-ref="gdk_pixbuf_fill">gdk_pixbuf_fill</dfn>              (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>    *<dfn class="local col5 decl" id="13785pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="13785pixbuf">pixbuf</dfn>,</td></tr>
+<tr><th id="371">371</th><td>                                         <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span>       <dfn class="local col6 decl" id="13786pixel" title='pixel' data-type='guint32' data-ref="13786pixel">pixel</dfn>);</td></tr>
+<tr><th id="372">372</th><td></td></tr>
+<tr><th id="373">373</th><td><i>/* Saving */</i></td></tr>
+<tr><th id="374">374</th><td></td></tr>
+<tr><th id="375">375</th><td><u>#<span data-ppcond="375">ifndef</span> <span class="macro" data-ref="_M/__GTK_DOC_IGNORE__">__GTK_DOC_IGNORE__</span></u></td></tr>
+<tr><th id="376">376</th><td><u>#<span data-ppcond="376">ifdef</span> <span class="macro" data-ref="_M/G_OS_WIN32">G_OS_WIN32</span></u></td></tr>
+<tr><th id="377">377</th><td><i>/* DLL ABI stability hack. */</i></td></tr>
+<tr><th id="378">378</th><td><u>#define gdk_pixbuf_save gdk_pixbuf_save_utf8</u></td></tr>
+<tr><th id="379">379</th><td><u>#<span data-ppcond="376">endif</span></u></td></tr>
+<tr><th id="380">380</th><td><u>#<span data-ppcond="375">endif</span></u></td></tr>
+<tr><th id="381">381</th><td></td></tr>
+<tr><th id="382">382</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="383">383</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="gdk_pixbuf_save" title='gdk_pixbuf_save' data-ref="gdk_pixbuf_save">gdk_pixbuf_save</dfn>           (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>  *<dfn class="local col7 decl" id="13787pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="13787pixbuf">pixbuf</dfn>, </td></tr>
+<tr><th id="384">384</th><td>                                    <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="13788filename" title='filename' data-type='const char *' data-ref="13788filename">filename</dfn>, </td></tr>
+<tr><th id="385">385</th><td>                                    <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="13789type" title='type' data-type='const char *' data-ref="13789type">type</dfn>, </td></tr>
+<tr><th id="386">386</th><td>                                    <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>    **<dfn class="local col0 decl" id="13790error" title='error' data-type='GError **' data-ref="13790error">error</dfn>,</td></tr>
+<tr><th id="387">387</th><td>                                    ...) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#106" title="__attribute__((__sentinel__))" data-ref="_M/G_GNUC_NULL_TERMINATED">G_GNUC_NULL_TERMINATED</a>;</td></tr>
+<tr><th id="388">388</th><td></td></tr>
+<tr><th id="389">389</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="390">390</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="gdk_pixbuf_savev" title='gdk_pixbuf_savev' data-ref="gdk_pixbuf_savev">gdk_pixbuf_savev</dfn>          (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>  *<dfn class="local col1 decl" id="13791pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="13791pixbuf">pixbuf</dfn>, </td></tr>
+<tr><th id="391">391</th><td>                                    <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="13792filename" title='filename' data-type='const char *' data-ref="13792filename">filename</dfn>, </td></tr>
+<tr><th id="392">392</th><td>                                    <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="13793type" title='type' data-type='const char *' data-ref="13793type">type</dfn>,</td></tr>
+<tr><th id="393">393</th><td>                                    <em>char</em>      **<dfn class="local col4 decl" id="13794option_keys" title='option_keys' data-type='char **' data-ref="13794option_keys">option_keys</dfn>,</td></tr>
+<tr><th id="394">394</th><td>                                    <em>char</em>      **<dfn class="local col5 decl" id="13795option_values" title='option_values' data-type='char **' data-ref="13795option_values">option_values</dfn>,</td></tr>
+<tr><th id="395">395</th><td>                                    <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>    **<dfn class="local col6 decl" id="13796error" title='error' data-type='GError **' data-ref="13796error">error</dfn>);</td></tr>
+<tr><th id="396">396</th><td></td></tr>
+<tr><th id="397">397</th><td><u>#<span data-ppcond="397">ifdef</span> <span class="macro" data-ref="_M/G_OS_WIN32">G_OS_WIN32</span></u></td></tr>
+<tr><th id="398">398</th><td>GDK_PIXBUF_AVAILABLE_IN_ALL</td></tr>
+<tr><th id="399">399</th><td>gboolean gdk_pixbuf_savev_utf8     (GdkPixbuf  *pixbuf,</td></tr>
+<tr><th id="400">400</th><td>                                    <em>const</em> <em>char</em> *filename,</td></tr>
+<tr><th id="401">401</th><td>                                    <em>const</em> <em>char</em> *type,</td></tr>
+<tr><th id="402">402</th><td>                                    <em>char</em>      **option_keys,</td></tr>
+<tr><th id="403">403</th><td>                                    <em>char</em>      **option_values,</td></tr>
+<tr><th id="404">404</th><td>                                    GError    **error);</td></tr>
+<tr><th id="405">405</th><td><u>#<span data-ppcond="397">endif</span></u></td></tr>
+<tr><th id="406">406</th><td></td></tr>
+<tr><th id="407">407</th><td><i>/* Saving to a callback function */</i></td></tr>
+<tr><th id="408">408</th><td></td></tr>
+<tr><th id="409">409</th><td></td></tr>
+<tr><th id="410">410</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="411">411</th><td><i class="doc"> * GdkPixbufSaveFunc:</i></td></tr>
+<tr><th id="412">412</th><td><i class="doc"> * <span class="command">@buf</span>: (array length=count) (element-type guint8): bytes to be written.</i></td></tr>
+<tr><th id="413">413</th><td><i class="doc"> *<span class="command"> @count</span>: number of bytes in <span class="command">@buf</span>. </i></td></tr>
+<tr><th id="414">414</th><td><i class="doc"> *<span class="command"> @error</span>: (out): A location to return an error.</i></td></tr>
+<tr><th id="415">415</th><td><i class="doc"> * <span class="command">@data</span>: (closure): user data passed to gdk_pixbuf_save_to_callback(). </i></td></tr>
+<tr><th id="416">416</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="417">417</th><td><i class="doc"> * Specifies the type of the function passed to</i></td></tr>
+<tr><th id="418">418</th><td><i class="doc"> * gdk_pixbuf_save_to_callback().  It is called once for each block of</i></td></tr>
+<tr><th id="419">419</th><td><i class="doc"> * bytes that is "written" by gdk_pixbuf_save_to_callback().  If</i></td></tr>
+<tr><th id="420">420</th><td><i class="doc"> * successful it should return %TRUE.  If an error occurs it should set</i></td></tr>
+<tr><th id="421">421</th><td><i class="doc"> *<span class="command"> @error</span> and return %FALSE, in which case gdk_pixbuf_save_to_callback()</i></td></tr>
+<tr><th id="422">422</th><td><i class="doc"> * will fail with the same error.</i></td></tr>
+<tr><th id="423">423</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="424">424</th><td><i class="doc"> * Since: 2.4</i></td></tr>
+<tr><th id="425">425</th><td><i class="doc"> * Returns: %TRUE if successful, %FALSE (with<span class="command"> @error</span> set) if failed.</i></td></tr>
+<tr><th id="426">426</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="427">427</th><td></td></tr>
+<tr><th id="428">428</th><td><b>typedef</b> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> (*<dfn class="typedef" id="GdkPixbufSaveFunc" title='GdkPixbufSaveFunc' data-type='gboolean (*)(const gchar *, gsize, GError **, gpointer)' data-ref="GdkPixbufSaveFunc">GdkPixbufSaveFunc</dfn>)   (<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col7 decl" id="13797buf" title='buf' data-type='const gchar *' data-ref="13797buf">buf</dfn>,</td></tr>
+<tr><th id="429">429</th><td>					 <span class='typedef' title='gsize' data-type='unsigned long' data-ref="gsize">gsize</span> <dfn class="local col8 decl" id="13798count" title='count' data-type='gsize' data-ref="13798count">count</dfn>,</td></tr>
+<tr><th id="430">430</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a> **<dfn class="local col9 decl" id="13799error" title='error' data-type='GError **' data-ref="13799error">error</dfn>,</td></tr>
+<tr><th id="431">431</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="local col0 decl" id="13800data" title='data' data-type='gpointer' data-ref="13800data">data</dfn>);</td></tr>
+<tr><th id="432">432</th><td></td></tr>
+<tr><th id="433">433</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#370" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_4">GDK_PIXBUF_AVAILABLE_IN_2_4</a></td></tr>
+<tr><th id="434">434</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="gdk_pixbuf_save_to_callback" title='gdk_pixbuf_save_to_callback' data-ref="gdk_pixbuf_save_to_callback">gdk_pixbuf_save_to_callback</dfn>    (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>  *<dfn class="local col1 decl" id="13801pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="13801pixbuf">pixbuf</dfn>,</td></tr>
+<tr><th id="435">435</th><td>					 <a class="typedef" href="#GdkPixbufSaveFunc" title='GdkPixbufSaveFunc' data-type='gboolean (*)(const gchar *, gsize, GError **, gpointer)' data-ref="GdkPixbufSaveFunc">GdkPixbufSaveFunc</a> <dfn class="local col2 decl" id="13802save_func" title='save_func' data-type='GdkPixbufSaveFunc' data-ref="13802save_func">save_func</dfn>,</td></tr>
+<tr><th id="436">436</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="local col3 decl" id="13803user_data" title='user_data' data-type='gpointer' data-ref="13803user_data">user_data</dfn>,</td></tr>
+<tr><th id="437">437</th><td>					 <em>const</em> <em>char</em> *<dfn class="local col4 decl" id="13804type" title='type' data-type='const char *' data-ref="13804type">type</dfn>, </td></tr>
+<tr><th id="438">438</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>    **<dfn class="local col5 decl" id="13805error" title='error' data-type='GError **' data-ref="13805error">error</dfn>,</td></tr>
+<tr><th id="439">439</th><td>					 ...) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#106" title="__attribute__((__sentinel__))" data-ref="_M/G_GNUC_NULL_TERMINATED">G_GNUC_NULL_TERMINATED</a>;</td></tr>
+<tr><th id="440">440</th><td></td></tr>
+<tr><th id="441">441</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#370" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_4">GDK_PIXBUF_AVAILABLE_IN_2_4</a></td></tr>
+<tr><th id="442">442</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="gdk_pixbuf_save_to_callbackv" title='gdk_pixbuf_save_to_callbackv' data-ref="gdk_pixbuf_save_to_callbackv">gdk_pixbuf_save_to_callbackv</dfn>   (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>  *<dfn class="local col6 decl" id="13806pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="13806pixbuf">pixbuf</dfn>, </td></tr>
+<tr><th id="443">443</th><td>					 <a class="typedef" href="#GdkPixbufSaveFunc" title='GdkPixbufSaveFunc' data-type='gboolean (*)(const gchar *, gsize, GError **, gpointer)' data-ref="GdkPixbufSaveFunc">GdkPixbufSaveFunc</a> <dfn class="local col7 decl" id="13807save_func" title='save_func' data-type='GdkPixbufSaveFunc' data-ref="13807save_func">save_func</dfn>,</td></tr>
+<tr><th id="444">444</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="local col8 decl" id="13808user_data" title='user_data' data-type='gpointer' data-ref="13808user_data">user_data</dfn>,</td></tr>
+<tr><th id="445">445</th><td>					 <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="13809type" title='type' data-type='const char *' data-ref="13809type">type</dfn>,</td></tr>
+<tr><th id="446">446</th><td>					 <em>char</em>      **<dfn class="local col0 decl" id="13810option_keys" title='option_keys' data-type='char **' data-ref="13810option_keys">option_keys</dfn>,</td></tr>
+<tr><th id="447">447</th><td>					 <em>char</em>      **<dfn class="local col1 decl" id="13811option_values" title='option_values' data-type='char **' data-ref="13811option_values">option_values</dfn>,</td></tr>
+<tr><th id="448">448</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>    **<dfn class="local col2 decl" id="13812error" title='error' data-type='GError **' data-ref="13812error">error</dfn>);</td></tr>
+<tr><th id="449">449</th><td></td></tr>
+<tr><th id="450">450</th><td><i>/* Saving into a newly allocated char array */</i></td></tr>
+<tr><th id="451">451</th><td></td></tr>
+<tr><th id="452">452</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#370" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_4">GDK_PIXBUF_AVAILABLE_IN_2_4</a></td></tr>
+<tr><th id="453">453</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="gdk_pixbuf_save_to_buffer" title='gdk_pixbuf_save_to_buffer' data-ref="gdk_pixbuf_save_to_buffer">gdk_pixbuf_save_to_buffer</dfn>      (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>  *<dfn class="local col3 decl" id="13813pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="13813pixbuf">pixbuf</dfn>,</td></tr>
+<tr><th id="454">454</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     **<dfn class="local col4 decl" id="13814buffer" title='buffer' data-type='gchar **' data-ref="13814buffer">buffer</dfn>,</td></tr>
+<tr><th id="455">455</th><td>					 <span class='typedef' title='gsize' data-type='unsigned long' data-ref="gsize">gsize</span>      *<dfn class="local col5 decl" id="13815buffer_size" title='buffer_size' data-type='gsize *' data-ref="13815buffer_size">buffer_size</dfn>,</td></tr>
+<tr><th id="456">456</th><td>					 <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="13816type" title='type' data-type='const char *' data-ref="13816type">type</dfn>, </td></tr>
+<tr><th id="457">457</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>    **<dfn class="local col7 decl" id="13817error" title='error' data-type='GError **' data-ref="13817error">error</dfn>,</td></tr>
+<tr><th id="458">458</th><td>					 ...) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#106" title="__attribute__((__sentinel__))" data-ref="_M/G_GNUC_NULL_TERMINATED">G_GNUC_NULL_TERMINATED</a>;</td></tr>
+<tr><th id="459">459</th><td></td></tr>
+<tr><th id="460">460</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#370" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_4">GDK_PIXBUF_AVAILABLE_IN_2_4</a></td></tr>
+<tr><th id="461">461</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="gdk_pixbuf_save_to_bufferv" title='gdk_pixbuf_save_to_bufferv' data-ref="gdk_pixbuf_save_to_bufferv">gdk_pixbuf_save_to_bufferv</dfn>     (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>  *<dfn class="local col8 decl" id="13818pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="13818pixbuf">pixbuf</dfn>,</td></tr>
+<tr><th id="462">462</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     **<dfn class="local col9 decl" id="13819buffer" title='buffer' data-type='gchar **' data-ref="13819buffer">buffer</dfn>,</td></tr>
+<tr><th id="463">463</th><td>					 <span class='typedef' title='gsize' data-type='unsigned long' data-ref="gsize">gsize</span>      *<dfn class="local col0 decl" id="13820buffer_size" title='buffer_size' data-type='gsize *' data-ref="13820buffer_size">buffer_size</dfn>,</td></tr>
+<tr><th id="464">464</th><td>					 <em>const</em> <em>char</em> *<dfn class="local col1 decl" id="13821type" title='type' data-type='const char *' data-ref="13821type">type</dfn>, </td></tr>
+<tr><th id="465">465</th><td>					 <em>char</em>      **<dfn class="local col2 decl" id="13822option_keys" title='option_keys' data-type='char **' data-ref="13822option_keys">option_keys</dfn>,</td></tr>
+<tr><th id="466">466</th><td>					 <em>char</em>      **<dfn class="local col3 decl" id="13823option_values" title='option_values' data-type='char **' data-ref="13823option_values">option_values</dfn>,</td></tr>
+<tr><th id="467">467</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>    **<dfn class="local col4 decl" id="13824error" title='error' data-type='GError **' data-ref="13824error">error</dfn>);</td></tr>
+<tr><th id="468">468</th><td></td></tr>
+<tr><th id="469">469</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#460" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_14">GDK_PIXBUF_AVAILABLE_IN_2_14</a></td></tr>
+<tr><th id="470">470</th><td><a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_new_from_stream" title='gdk_pixbuf_new_from_stream' data-ref="gdk_pixbuf_new_from_stream">gdk_pixbuf_new_from_stream</dfn>   (<a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GInputStream" title='GInputStream' data-type='struct _GInputStream' data-ref="GInputStream">GInputStream</a>   *<dfn class="local col5 decl" id="13825stream" title='stream' data-type='GInputStream *' data-ref="13825stream">stream</dfn>,</td></tr>
+<tr><th id="471">471</th><td>					 <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GCancellable" title='GCancellable' data-type='struct _GCancellable' data-ref="GCancellable">GCancellable</a>   *<dfn class="local col6 decl" id="13826cancellable" title='cancellable' data-type='GCancellable *' data-ref="13826cancellable">cancellable</dfn>,</td></tr>
+<tr><th id="472">472</th><td>                                         <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>        **<dfn class="local col7 decl" id="13827error" title='error' data-type='GError **' data-ref="13827error">error</dfn>);</td></tr>
+<tr><th id="473">473</th><td></td></tr>
+<tr><th id="474">474</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="475">475</th><td><em>void</em> <dfn class="decl" id="gdk_pixbuf_new_from_stream_async" title='gdk_pixbuf_new_from_stream_async' data-ref="gdk_pixbuf_new_from_stream_async">gdk_pixbuf_new_from_stream_async</dfn> (<a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GInputStream" title='GInputStream' data-type='struct _GInputStream' data-ref="GInputStream">GInputStream</a>        *<dfn class="local col8 decl" id="13828stream" title='stream' data-type='GInputStream *' data-ref="13828stream">stream</dfn>,</td></tr>
+<tr><th id="476">476</th><td>				       <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GCancellable" title='GCancellable' data-type='struct _GCancellable' data-ref="GCancellable">GCancellable</a>        *<dfn class="local col9 decl" id="13829cancellable" title='cancellable' data-type='GCancellable *' data-ref="13829cancellable">cancellable</dfn>,</td></tr>
+<tr><th id="477">477</th><td>				       <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GAsyncReadyCallback" title='GAsyncReadyCallback' data-type='void (*)(GObject *, GAsyncResult *, gpointer)' data-ref="GAsyncReadyCallback">GAsyncReadyCallback</a>  <dfn class="local col0 decl" id="13830callback" title='callback' data-type='GAsyncReadyCallback' data-ref="13830callback">callback</dfn>,</td></tr>
+<tr><th id="478">478</th><td>				       <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>             <dfn class="local col1 decl" id="13831user_data" title='user_data' data-type='gpointer' data-ref="13831user_data">user_data</dfn>);</td></tr>
+<tr><th id="479">479</th><td></td></tr>
+<tr><th id="480">480</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="481">481</th><td><a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_new_from_stream_finish" title='gdk_pixbuf_new_from_stream_finish' data-ref="gdk_pixbuf_new_from_stream_finish">gdk_pixbuf_new_from_stream_finish</dfn> (<a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GAsyncResult" title='GAsyncResult' data-type='struct _GAsyncResult' data-ref="GAsyncResult">GAsyncResult</a>  *<dfn class="local col2 decl" id="13832async_result" title='async_result' data-type='GAsyncResult *' data-ref="13832async_result">async_result</dfn>,</td></tr>
+<tr><th id="482">482</th><td>					      <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>       **<dfn class="local col3 decl" id="13833error" title='error' data-type='GError **' data-ref="13833error">error</dfn>);</td></tr>
+<tr><th id="483">483</th><td></td></tr>
+<tr><th id="484">484</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#460" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_14">GDK_PIXBUF_AVAILABLE_IN_2_14</a></td></tr>
+<tr><th id="485">485</th><td><a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_new_from_stream_at_scale" title='gdk_pixbuf_new_from_stream_at_scale' data-ref="gdk_pixbuf_new_from_stream_at_scale">gdk_pixbuf_new_from_stream_at_scale</dfn>   (<a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GInputStream" title='GInputStream' data-type='struct _GInputStream' data-ref="GInputStream">GInputStream</a>   *<dfn class="local col4 decl" id="13834stream" title='stream' data-type='GInputStream *' data-ref="13834stream">stream</dfn>,</td></tr>
+<tr><th id="486">486</th><td>                                                  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>            <dfn class="local col5 decl" id="13835width" title='width' data-type='gint' data-ref="13835width">width</dfn>,</td></tr>
+<tr><th id="487">487</th><td>                                                  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>            <dfn class="local col6 decl" id="13836height" title='height' data-type='gint' data-ref="13836height">height</dfn>,</td></tr>
+<tr><th id="488">488</th><td>                                                  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>        <dfn class="local col7 decl" id="13837preserve_aspect_ratio" title='preserve_aspect_ratio' data-type='gboolean' data-ref="13837preserve_aspect_ratio">preserve_aspect_ratio</dfn>,</td></tr>
+<tr><th id="489">489</th><td>						  <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GCancellable" title='GCancellable' data-type='struct _GCancellable' data-ref="GCancellable">GCancellable</a>   *<dfn class="local col8 decl" id="13838cancellable" title='cancellable' data-type='GCancellable *' data-ref="13838cancellable">cancellable</dfn>,</td></tr>
+<tr><th id="490">490</th><td>                                                  <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>        **<dfn class="local col9 decl" id="13839error" title='error' data-type='GError **' data-ref="13839error">error</dfn>);</td></tr>
+<tr><th id="491">491</th><td></td></tr>
+<tr><th id="492">492</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="493">493</th><td><em>void</em> <dfn class="decl" id="gdk_pixbuf_new_from_stream_at_scale_async" title='gdk_pixbuf_new_from_stream_at_scale_async' data-ref="gdk_pixbuf_new_from_stream_at_scale_async">gdk_pixbuf_new_from_stream_at_scale_async</dfn> (<a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GInputStream" title='GInputStream' data-type='struct _GInputStream' data-ref="GInputStream">GInputStream</a>        *<dfn class="local col0 decl" id="13840stream" title='stream' data-type='GInputStream *' data-ref="13840stream">stream</dfn>,</td></tr>
+<tr><th id="494">494</th><td>						<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>                 <dfn class="local col1 decl" id="13841width" title='width' data-type='gint' data-ref="13841width">width</dfn>,</td></tr>
+<tr><th id="495">495</th><td>						<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>                 <dfn class="local col2 decl" id="13842height" title='height' data-type='gint' data-ref="13842height">height</dfn>,</td></tr>
+<tr><th id="496">496</th><td>						<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>             <dfn class="local col3 decl" id="13843preserve_aspect_ratio" title='preserve_aspect_ratio' data-type='gboolean' data-ref="13843preserve_aspect_ratio">preserve_aspect_ratio</dfn>,</td></tr>
+<tr><th id="497">497</th><td>						<a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GCancellable" title='GCancellable' data-type='struct _GCancellable' data-ref="GCancellable">GCancellable</a>        *<dfn class="local col4 decl" id="13844cancellable" title='cancellable' data-type='GCancellable *' data-ref="13844cancellable">cancellable</dfn>,</td></tr>
+<tr><th id="498">498</th><td>						<a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GAsyncReadyCallback" title='GAsyncReadyCallback' data-type='void (*)(GObject *, GAsyncResult *, gpointer)' data-ref="GAsyncReadyCallback">GAsyncReadyCallback</a>  <dfn class="local col5 decl" id="13845callback" title='callback' data-type='GAsyncReadyCallback' data-ref="13845callback">callback</dfn>,</td></tr>
+<tr><th id="499">499</th><td>						<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>             <dfn class="local col6 decl" id="13846user_data" title='user_data' data-type='gpointer' data-ref="13846user_data">user_data</dfn>);</td></tr>
+<tr><th id="500">500</th><td></td></tr>
+<tr><th id="501">501</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#460" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_14">GDK_PIXBUF_AVAILABLE_IN_2_14</a></td></tr>
+<tr><th id="502">502</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>   <dfn class="decl" id="gdk_pixbuf_save_to_stream" title='gdk_pixbuf_save_to_stream' data-ref="gdk_pixbuf_save_to_stream">gdk_pixbuf_save_to_stream</dfn>    (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>      *<dfn class="local col7 decl" id="13847pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="13847pixbuf">pixbuf</dfn>,</td></tr>
+<tr><th id="503">503</th><td>                                         <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GOutputStream" title='GOutputStream' data-type='struct _GOutputStream' data-ref="GOutputStream">GOutputStream</a>  *<dfn class="local col8 decl" id="13848stream" title='stream' data-type='GOutputStream *' data-ref="13848stream">stream</dfn>,</td></tr>
+<tr><th id="504">504</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col9 decl" id="13849type" title='type' data-type='const char *' data-ref="13849type">type</dfn>,</td></tr>
+<tr><th id="505">505</th><td>					 <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GCancellable" title='GCancellable' data-type='struct _GCancellable' data-ref="GCancellable">GCancellable</a>   *<dfn class="local col0 decl" id="13850cancellable" title='cancellable' data-type='GCancellable *' data-ref="13850cancellable">cancellable</dfn>,</td></tr>
+<tr><th id="506">506</th><td>                                         <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>        **<dfn class="local col1 decl" id="13851error" title='error' data-type='GError **' data-ref="13851error">error</dfn>,</td></tr>
+<tr><th id="507">507</th><td>                                         ...);</td></tr>
+<tr><th id="508">508</th><td></td></tr>
+<tr><th id="509">509</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="510">510</th><td><em>void</em> <dfn class="decl" id="gdk_pixbuf_save_to_stream_async" title='gdk_pixbuf_save_to_stream_async' data-ref="gdk_pixbuf_save_to_stream_async">gdk_pixbuf_save_to_stream_async</dfn> (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>           *<dfn class="local col2 decl" id="13852pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="13852pixbuf">pixbuf</dfn>,</td></tr>
+<tr><th id="511">511</th><td>				      <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GOutputStream" title='GOutputStream' data-type='struct _GOutputStream' data-ref="GOutputStream">GOutputStream</a>       *<dfn class="local col3 decl" id="13853stream" title='stream' data-type='GOutputStream *' data-ref="13853stream">stream</dfn>,</td></tr>
+<tr><th id="512">512</th><td>				      <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>         *<dfn class="local col4 decl" id="13854type" title='type' data-type='const gchar *' data-ref="13854type">type</dfn>,</td></tr>
+<tr><th id="513">513</th><td>				      <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GCancellable" title='GCancellable' data-type='struct _GCancellable' data-ref="GCancellable">GCancellable</a>        *<dfn class="local col5 decl" id="13855cancellable" title='cancellable' data-type='GCancellable *' data-ref="13855cancellable">cancellable</dfn>,</td></tr>
+<tr><th id="514">514</th><td>				      <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GAsyncReadyCallback" title='GAsyncReadyCallback' data-type='void (*)(GObject *, GAsyncResult *, gpointer)' data-ref="GAsyncReadyCallback">GAsyncReadyCallback</a>  <dfn class="local col6 decl" id="13856callback" title='callback' data-type='GAsyncReadyCallback' data-ref="13856callback">callback</dfn>,</td></tr>
+<tr><th id="515">515</th><td>				      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>             <dfn class="local col7 decl" id="13857user_data" title='user_data' data-type='gpointer' data-ref="13857user_data">user_data</dfn>,</td></tr>
+<tr><th id="516">516</th><td>				      ...);</td></tr>
+<tr><th id="517">517</th><td></td></tr>
+<tr><th id="518">518</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="519">519</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="gdk_pixbuf_save_to_stream_finish" title='gdk_pixbuf_save_to_stream_finish' data-ref="gdk_pixbuf_save_to_stream_finish">gdk_pixbuf_save_to_stream_finish</dfn> (<a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GAsyncResult" title='GAsyncResult' data-type='struct _GAsyncResult' data-ref="GAsyncResult">GAsyncResult</a>  *<dfn class="local col8 decl" id="13858async_result" title='async_result' data-type='GAsyncResult *' data-ref="13858async_result">async_result</dfn>,</td></tr>
+<tr><th id="520">520</th><td>					   <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>       **<dfn class="local col9 decl" id="13859error" title='error' data-type='GError **' data-ref="13859error">error</dfn>);</td></tr>
+<tr><th id="521">521</th><td></td></tr>
+<tr><th id="522">522</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#658" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_36">GDK_PIXBUF_AVAILABLE_IN_2_36</a></td></tr>
+<tr><th id="523">523</th><td><em>void</em> <dfn class="decl" id="gdk_pixbuf_save_to_streamv_async" title='gdk_pixbuf_save_to_streamv_async' data-ref="gdk_pixbuf_save_to_streamv_async">gdk_pixbuf_save_to_streamv_async</dfn> (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>           *<dfn class="local col0 decl" id="13860pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="13860pixbuf">pixbuf</dfn>,</td></tr>
+<tr><th id="524">524</th><td>                                       <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GOutputStream" title='GOutputStream' data-type='struct _GOutputStream' data-ref="GOutputStream">GOutputStream</a>       *<dfn class="local col1 decl" id="13861stream" title='stream' data-type='GOutputStream *' data-ref="13861stream">stream</dfn>,</td></tr>
+<tr><th id="525">525</th><td>                                       <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>         *<dfn class="local col2 decl" id="13862type" title='type' data-type='const gchar *' data-ref="13862type">type</dfn>,</td></tr>
+<tr><th id="526">526</th><td>                                       <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>              **<dfn class="local col3 decl" id="13863option_keys" title='option_keys' data-type='gchar **' data-ref="13863option_keys">option_keys</dfn>,</td></tr>
+<tr><th id="527">527</th><td>                                       <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>              **<dfn class="local col4 decl" id="13864option_values" title='option_values' data-type='gchar **' data-ref="13864option_values">option_values</dfn>,</td></tr>
+<tr><th id="528">528</th><td>                                       <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GCancellable" title='GCancellable' data-type='struct _GCancellable' data-ref="GCancellable">GCancellable</a>        *<dfn class="local col5 decl" id="13865cancellable" title='cancellable' data-type='GCancellable *' data-ref="13865cancellable">cancellable</dfn>,</td></tr>
+<tr><th id="529">529</th><td>                                       <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GAsyncReadyCallback" title='GAsyncReadyCallback' data-type='void (*)(GObject *, GAsyncResult *, gpointer)' data-ref="GAsyncReadyCallback">GAsyncReadyCallback</a>  <dfn class="local col6 decl" id="13866callback" title='callback' data-type='GAsyncReadyCallback' data-ref="13866callback">callback</dfn>,</td></tr>
+<tr><th id="530">530</th><td>                                       <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>             <dfn class="local col7 decl" id="13867user_data" title='user_data' data-type='gpointer' data-ref="13867user_data">user_data</dfn>);</td></tr>
+<tr><th id="531">531</th><td></td></tr>
+<tr><th id="532">532</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#658" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_36">GDK_PIXBUF_AVAILABLE_IN_2_36</a></td></tr>
+<tr><th id="533">533</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="gdk_pixbuf_save_to_streamv" title='gdk_pixbuf_save_to_streamv' data-ref="gdk_pixbuf_save_to_streamv">gdk_pixbuf_save_to_streamv</dfn> (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>      *<dfn class="local col8 decl" id="13868pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="13868pixbuf">pixbuf</dfn>,</td></tr>
+<tr><th id="534">534</th><td>                                     <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GOutputStream" title='GOutputStream' data-type='struct _GOutputStream' data-ref="GOutputStream">GOutputStream</a>  *<dfn class="local col9 decl" id="13869stream" title='stream' data-type='GOutputStream *' data-ref="13869stream">stream</dfn>,</td></tr>
+<tr><th id="535">535</th><td>                                     <em>const</em> <em>char</em>     *<dfn class="local col0 decl" id="13870type" title='type' data-type='const char *' data-ref="13870type">type</dfn>,</td></tr>
+<tr><th id="536">536</th><td>                                     <em>char</em>          **<dfn class="local col1 decl" id="13871option_keys" title='option_keys' data-type='char **' data-ref="13871option_keys">option_keys</dfn>,</td></tr>
+<tr><th id="537">537</th><td>                                     <em>char</em>          **<dfn class="local col2 decl" id="13872option_values" title='option_values' data-type='char **' data-ref="13872option_values">option_values</dfn>,</td></tr>
+<tr><th id="538">538</th><td>                                     <a class="typedef" href="../../glib-2.0/gio/giotypes.h.html#GCancellable" title='GCancellable' data-type='struct _GCancellable' data-ref="GCancellable">GCancellable</a>   *<dfn class="local col3 decl" id="13873cancellable" title='cancellable' data-type='GCancellable *' data-ref="13873cancellable">cancellable</dfn>,</td></tr>
+<tr><th id="539">539</th><td>                                     <a class="typedef" href="../../glib-2.0/glib/gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>        **<dfn class="local col4 decl" id="13874error" title='error' data-type='GError **' data-ref="13874error">error</dfn>);</td></tr>
+<tr><th id="540">540</th><td></td></tr>
+<tr><th id="541">541</th><td><i>/* Adding an alpha channel */</i></td></tr>
+<tr><th id="542">542</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="543">543</th><td><a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_add_alpha" title='gdk_pixbuf_add_alpha' data-ref="gdk_pixbuf_add_alpha">gdk_pixbuf_add_alpha</dfn> (<em>const</em> <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col5 decl" id="13875pixbuf" title='pixbuf' data-type='const GdkPixbuf *' data-ref="13875pixbuf">pixbuf</dfn>, <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="local col6 decl" id="13876substitute_color" title='substitute_color' data-type='gboolean' data-ref="13876substitute_color">substitute_color</dfn>,</td></tr>
+<tr><th id="544">544</th><td>				 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guchar" title='guchar' data-type='unsigned char' data-ref="guchar">guchar</a> <dfn class="local col7 decl" id="13877r" title='r' data-type='guchar' data-ref="13877r">r</dfn>, <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guchar" title='guchar' data-type='unsigned char' data-ref="guchar">guchar</a> <dfn class="local col8 decl" id="13878g" title='g' data-type='guchar' data-ref="13878g">g</dfn>, <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guchar" title='guchar' data-type='unsigned char' data-ref="guchar">guchar</a> <dfn class="local col9 decl" id="13879b" title='b' data-type='guchar' data-ref="13879b">b</dfn>);</td></tr>
+<tr><th id="545">545</th><td></td></tr>
+<tr><th id="546">546</th><td><i>/* Copy an area of a pixbuf onto another one */</i></td></tr>
+<tr><th id="547">547</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="548">548</th><td><em>void</em> <dfn class="decl" id="gdk_pixbuf_copy_area" title='gdk_pixbuf_copy_area' data-ref="gdk_pixbuf_copy_area">gdk_pixbuf_copy_area</dfn> (<em>const</em> <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col0 decl" id="13880src_pixbuf" title='src_pixbuf' data-type='const GdkPixbuf *' data-ref="13880src_pixbuf">src_pixbuf</dfn>,</td></tr>
+<tr><th id="549">549</th><td>			   <em>int</em> <dfn class="local col1 decl" id="13881src_x" title='src_x' data-type='int' data-ref="13881src_x">src_x</dfn>, <em>int</em> <dfn class="local col2 decl" id="13882src_y" title='src_y' data-type='int' data-ref="13882src_y">src_y</dfn>,</td></tr>
+<tr><th id="550">550</th><td>			   <em>int</em> <dfn class="local col3 decl" id="13883width" title='width' data-type='int' data-ref="13883width">width</dfn>, <em>int</em> <dfn class="local col4 decl" id="13884height" title='height' data-type='int' data-ref="13884height">height</dfn>,</td></tr>
+<tr><th id="551">551</th><td>			   <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col5 decl" id="13885dest_pixbuf" title='dest_pixbuf' data-type='GdkPixbuf *' data-ref="13885dest_pixbuf">dest_pixbuf</dfn>,</td></tr>
+<tr><th id="552">552</th><td>			   <em>int</em> <dfn class="local col6 decl" id="13886dest_x" title='dest_x' data-type='int' data-ref="13886dest_x">dest_x</dfn>, <em>int</em> <dfn class="local col7 decl" id="13887dest_y" title='dest_y' data-type='int' data-ref="13887dest_y">dest_y</dfn>);</td></tr>
+<tr><th id="553">553</th><td></td></tr>
+<tr><th id="554">554</th><td><i>/* Brighten/darken and optionally make it pixelated-looking */</i></td></tr>
+<tr><th id="555">555</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="556">556</th><td><em>void</em> <dfn class="decl" id="gdk_pixbuf_saturate_and_pixelate" title='gdk_pixbuf_saturate_and_pixelate' data-ref="gdk_pixbuf_saturate_and_pixelate">gdk_pixbuf_saturate_and_pixelate</dfn> (<em>const</em> <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col8 decl" id="13888src" title='src' data-type='const GdkPixbuf *' data-ref="13888src">src</dfn>,</td></tr>
+<tr><th id="557">557</th><td>                                       <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>       *<dfn class="local col9 decl" id="13889dest" title='dest' data-type='GdkPixbuf *' data-ref="13889dest">dest</dfn>,</td></tr>
+<tr><th id="558">558</th><td>                                       <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gfloat" title='gfloat' data-type='float' data-ref="gfloat">gfloat</a>           <dfn class="local col0 decl" id="13890saturation" title='saturation' data-type='gfloat' data-ref="13890saturation">saturation</dfn>,</td></tr>
+<tr><th id="559">559</th><td>                                       <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>         <dfn class="local col1 decl" id="13891pixelate" title='pixelate' data-type='gboolean' data-ref="13891pixelate">pixelate</dfn>);</td></tr>
+<tr><th id="560">560</th><td></td></tr>
+<tr><th id="561">561</th><td><i>/* Transform an image to agree with its embedded orientation option / tag */</i></td></tr>
+<tr><th id="562">562</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#442" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_12">GDK_PIXBUF_AVAILABLE_IN_2_12</a></td></tr>
+<tr><th id="563">563</th><td><a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_apply_embedded_orientation" title='gdk_pixbuf_apply_embedded_orientation' data-ref="gdk_pixbuf_apply_embedded_orientation">gdk_pixbuf_apply_embedded_orientation</dfn> (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col2 decl" id="13892src" title='src' data-type='GdkPixbuf *' data-ref="13892src">src</dfn>);</td></tr>
+<tr><th id="564">564</th><td></td></tr>
+<tr><th id="565">565</th><td><i>/*  key/value pairs that can be attached by the pixbuf loader  */</i></td></tr>
+<tr><th id="566">566</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="567">567</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="gdk_pixbuf_set_option" title='gdk_pixbuf_set_option' data-ref="gdk_pixbuf_set_option">gdk_pixbuf_set_option</dfn>  (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>   *<dfn class="local col3 decl" id="13893pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="13893pixbuf">pixbuf</dfn>,</td></tr>
+<tr><th id="568">568</th><td>                                 <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col4 decl" id="13894key" title='key' data-type='const gchar *' data-ref="13894key">key</dfn>,</td></tr>
+<tr><th id="569">569</th><td>                                 <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col5 decl" id="13895value" title='value' data-type='const gchar *' data-ref="13895value">value</dfn>);</td></tr>
+<tr><th id="570">570</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="571">571</th><td><em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> * <dfn class="decl" id="gdk_pixbuf_get_option" title='gdk_pixbuf_get_option' data-ref="gdk_pixbuf_get_option">gdk_pixbuf_get_option</dfn> (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>   *<dfn class="local col6 decl" id="13896pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="13896pixbuf">pixbuf</dfn>,</td></tr>
+<tr><th id="572">572</th><td>                                              <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col7 decl" id="13897key" title='key' data-type='const gchar *' data-ref="13897key">key</dfn>);</td></tr>
+<tr><th id="573">573</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#658" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_36">GDK_PIXBUF_AVAILABLE_IN_2_36</a></td></tr>
+<tr><th id="574">574</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="gdk_pixbuf_remove_option" title='gdk_pixbuf_remove_option' data-ref="gdk_pixbuf_remove_option">gdk_pixbuf_remove_option</dfn> (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>   *<dfn class="local col8 decl" id="13898pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="13898pixbuf">pixbuf</dfn>,</td></tr>
+<tr><th id="575">575</th><td>                                   <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col9 decl" id="13899key" title='key' data-type='const gchar *' data-ref="13899key">key</dfn>);</td></tr>
+<tr><th id="576">576</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#622" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_32">GDK_PIXBUF_AVAILABLE_IN_2_32</a></td></tr>
+<tr><th id="577">577</th><td><a class="typedef" href="../../glib-2.0/glib/ghash.h.html#GHashTable" title='GHashTable' data-type='struct _GHashTable' data-ref="GHashTable">GHashTable</a> * <dfn class="decl" id="gdk_pixbuf_get_options" title='gdk_pixbuf_get_options' data-ref="gdk_pixbuf_get_options">gdk_pixbuf_get_options</dfn> (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>   *<dfn class="local col0 decl" id="13900pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="13900pixbuf">pixbuf</dfn>);</td></tr>
+<tr><th id="578">578</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#658" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_36">GDK_PIXBUF_AVAILABLE_IN_2_36</a></td></tr>
+<tr><th id="579">579</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="gdk_pixbuf_copy_options" title='gdk_pixbuf_copy_options' data-ref="gdk_pixbuf_copy_options">gdk_pixbuf_copy_options</dfn> (<a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col1 decl" id="13901src_pixbuf" title='src_pixbuf' data-type='GdkPixbuf *' data-ref="13901src_pixbuf">src_pixbuf</dfn>,</td></tr>
+<tr><th id="580">580</th><td>                                  <a class="typedef" href="#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col2 decl" id="13902dest_pixbuf" title='dest_pixbuf' data-type='GdkPixbuf *' data-ref="13902dest_pixbuf">dest_pixbuf</dfn>);</td></tr>
+<tr><th id="581">581</th><td></td></tr>
+<tr><th id="582">582</th><td></td></tr>
+<tr><th id="583">583</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="584">584</th><td></td></tr>
+<tr><th id="585">585</th><td></td></tr>
+<tr><th id="586">586</th><td><u>#<span data-ppcond="24">endif</span> /* GDK_PIXBUF_CORE_H */</u></td></tr>
+<tr><th id="587">587</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkbuildable.h' l='130' type='GObject *(*)(GtkBuildable *, GtkBuilder *, const gchar *)'/>
+<offset>704</offset>

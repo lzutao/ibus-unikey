@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-utils.h' l='81' type='gboolean pango_parse_variant(const char * str, PangoVariant * variant, gboolean warn)'/>

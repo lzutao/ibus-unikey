@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gdk/gdkimage.h' l='76' type='guint16'/>
+<offset>416</offset>
+<doc f='include/gtk-2.0/gdk/gdkimage.h' l='76'>/* read only. */</doc>

@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='639' type='void gtk_clist_set_background(GtkCList * clist, gint row, const GdkColor * color)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='636'>/* sets the background color of a row, the color must already
+ * be allocated
+ */</doc>

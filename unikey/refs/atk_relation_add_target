@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkrelation.h' l='91' type='void atk_relation_add_target(AtkRelation * relation, AtkObject * target)'/>

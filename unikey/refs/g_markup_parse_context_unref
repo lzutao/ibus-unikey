@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/glib/gmarkup.h' l='194' type='void g_markup_parse_context_unref(GMarkupParseContext * context)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='60' u='c' c='_ZL40glib_autoptr_cleanup_GMarkupParseContextPP20_GMarkupParseContext'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='60' u='r' c='_ZL44glib_listautoptr_cleanup_GMarkupParseContextPP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='60' u='r' c='_ZL45glib_slistautoptr_cleanup_GMarkupParseContextPP7_GSList'/>

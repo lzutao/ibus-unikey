@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkhyperlink.h' l='87' type='gchar * atk_hyperlink_get_uri(AtkHyperlink * link_, gint i)'/>

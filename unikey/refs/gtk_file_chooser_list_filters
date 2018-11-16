@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkfilechooser.h' l='236' type='GSList * gtk_file_chooser_list_filters(GtkFileChooser * chooser)'/>

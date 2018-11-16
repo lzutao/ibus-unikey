@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkgc.h' l='277' type='void gdk_gc_offset(GdkGC * gc, gint x_offset, gint y_offset)'/>

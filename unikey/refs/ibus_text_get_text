@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibustext.h' l='197' type='const gchar * ibus_text_get_text(IBusText * text)'/>
+<doc f='include/ibus-1.0/ibustext.h' l='189'>/**
+ * ibus_text_get_text:
+ * @text: An #IBusText.
+ *
+ * Return the text in an #IBusText. Should not be freed.
+ *
+ * Returns: the text in @text.
+ */</doc>

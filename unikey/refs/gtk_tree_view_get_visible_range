@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='276' type='gboolean gtk_tree_view_get_visible_range(GtkTreeView * tree_view, GtkTreePath ** start_path, GtkTreePath ** end_path)'/>

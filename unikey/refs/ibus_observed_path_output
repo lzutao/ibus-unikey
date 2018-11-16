@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusobservedpath.h' l='153' type='void ibus_observed_path_output(IBusObservedPath * path, GString * output, gint indent)'/>
+<doc f='include/ibus-1.0/ibusobservedpath.h' l='144'>/**
+ * ibus_observed_path_output:
+ * @path: An IBusObservedPath.
+ * @output: Path is appended to.
+ * @indent: number of indent.
+ *
+ * Append the observed path to a string with following format:
+ * &amp;lt;path mtime=&quot;&amp;lt;i&amp;gt;modified time&amp;lt;/i&amp;gt;&quot; &amp;gt;&amp;lt;i&amp;gt;path&amp;lt;/i&amp;gt;&amp;lt;/path&amp;gt;
+ */</doc>

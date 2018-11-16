@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='1103' type='void ibus_bus_set_watch_dbus_signal(IBusBus * bus, gboolean watch)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='1095'>/**
+ * ibus_bus_set_watch_dbus_signal:
+ * @bus: An #IBusBus.
+ * @watch: %TRUE if you want ibusbus to emit &quot;name-owner-changed&quot; signal when
+ * ibus-daemon emits the NameOwnerChanged DBus signal.
+ *
+ * Start or stop watching the NameOwnerChanged DBus signal.
+ */</doc>

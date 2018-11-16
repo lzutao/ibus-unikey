@@ -1,0 +1,2 @@
+<dec f='include/glib-2.0/gio/gfile.h' l='336' type='GFileOutputStream *(*)(GFile *, const char *, gboolean, GFileCreateFlags, GCancellable *, GError **)'/>
+<offset>3264</offset>

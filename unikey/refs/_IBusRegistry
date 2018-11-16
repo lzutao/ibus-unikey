@@ -1,0 +1,10 @@
+<def f='include/ibus-1.0/ibusregistry.h' l='74' ll='79'/>
+<size>56</size>
+<doc f='include/ibus-1.0/ibusregistry.h' l='68'>/**
+ * IBusRegistry:
+ *
+ * Registry cache handling.
+ * You can load the registry from compose files or a cache file.
+ */</doc>
+<mbr r='_IBusRegistry::parent' o='0' t='IBusSerializable'/>
+<mbr r='_IBusRegistry::priv' o='384' t='IBusRegistryPrivate *'/>

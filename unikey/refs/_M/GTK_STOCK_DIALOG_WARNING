@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='224'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='218'>/**
+ * GTK_STOCK_DIALOG_WARNING:
+ *
+ * The &quot;Warning&quot; item.
+ * &lt;inlinegraphic fileref=&quot;dialog-warning.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

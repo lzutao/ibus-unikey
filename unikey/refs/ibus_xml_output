@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusxml.h' l='116' type='void ibus_xml_output(const IBusXML * node, GString * output)'/>
+<doc f='include/ibus-1.0/ibusxml.h' l='109'>/**
+ * ibus_xml_output:
+ * @node: Root node of an XML tree.
+ * @output: GString which stores the output.
+ *
+ * Output an XML tree to a GString.
+ */</doc>

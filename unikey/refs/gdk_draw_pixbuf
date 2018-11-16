@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdrawable.h' l='356' type='void gdk_draw_pixbuf(GdkDrawable * drawable, GdkGC * gc, const GdkPixbuf * pixbuf, gint src_x, gint src_y, gint dest_x, gint dest_y, gint width, gint height, GdkRgbDither dither, gint x_dither, gint y_dither)'/>

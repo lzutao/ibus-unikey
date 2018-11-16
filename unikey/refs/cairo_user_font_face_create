@@ -1,0 +1,2 @@
+<dec f='include/cairo/cairo.h' l='1686' type='cairo_font_face_t * cairo_user_font_face_create()'/>
+<doc f='include/cairo/cairo.h' l='1683'>/* User fonts */</doc>

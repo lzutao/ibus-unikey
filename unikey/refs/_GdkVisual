@@ -1,0 +1,29 @@
+<def f='include/gtk-2.0/gdk/gdkvisual.h' l='77' ll='98'/>
+<size>80</size>
+<doc f='include/gtk-2.0/gdk/gdkvisual.h' l='65'>/* The visual type.
+ *   &quot;type&quot; is the type of visual this is (PseudoColor, TrueColor, etc).
+ *   &quot;depth&quot; is the bit depth of this visual.
+ *   &quot;colormap_size&quot; is the size of a colormap for this visual.
+ *   &quot;bits_per_rgb&quot; is the number of significant bits per red, green and blue.
+ *  The red, green and blue masks, shifts and precisions refer
+ *   to value needed to calculate pixel values in TrueColor and DirectColor
+ *   visuals. The &quot;mask&quot; is the significant bits within the pixel. The
+ *   &quot;shift&quot; is the number of bits left we must shift a primary for it
+ *   to be in position (according to the &quot;mask&quot;). &quot;prec&quot; refers to how
+ *   much precision the pixel value contains for a particular primary.
+ */</doc>
+<mbr r='_GdkVisual::parent_instance' o='0' t='GObject'/>
+<mbr r='_GdkVisual::type' o='192' t='GdkVisualType'/>
+<mbr r='_GdkVisual::depth' o='224' t='gint'/>
+<mbr r='_GdkVisual::byte_order' o='256' t='GdkByteOrder'/>
+<mbr r='_GdkVisual::colormap_size' o='288' t='gint'/>
+<mbr r='_GdkVisual::bits_per_rgb' o='320' t='gint'/>
+<mbr r='_GdkVisual::red_mask' o='352' t='guint32'/>
+<mbr r='_GdkVisual::red_shift' o='384' t='gint'/>
+<mbr r='_GdkVisual::red_prec' o='416' t='gint'/>
+<mbr r='_GdkVisual::green_mask' o='448' t='guint32'/>
+<mbr r='_GdkVisual::green_shift' o='480' t='gint'/>
+<mbr r='_GdkVisual::green_prec' o='512' t='gint'/>
+<mbr r='_GdkVisual::blue_mask' o='544' t='guint32'/>
+<mbr r='_GdkVisual::blue_shift' o='576' t='gint'/>
+<mbr r='_GdkVisual::blue_prec' o='608' t='gint'/>

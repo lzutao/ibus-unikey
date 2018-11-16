@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkvisual.h' l='123' type='gint gdk_visual_get_depth(GdkVisual * visual)'/>

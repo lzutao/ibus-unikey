@@ -1,0 +1,11 @@
+<def f='include/gtk-2.0/gdk/gdkinput.h' l='98' ll='113'/>
+<size>72</size>
+<mbr r='_GdkDevice::parent_instance' o='0' t='GObject'/>
+<mbr r='_GdkDevice::name' o='192' t='gchar *'/>
+<mbr r='_GdkDevice::source' o='256' t='GdkInputSource'/>
+<mbr r='_GdkDevice::mode' o='288' t='GdkInputMode'/>
+<mbr r='_GdkDevice::has_cursor' o='320' t='gboolean'/>
+<mbr r='_GdkDevice::num_axes' o='352' t='gint'/>
+<mbr r='_GdkDevice::axes' o='384' t='GdkDeviceAxis *'/>
+<mbr r='_GdkDevice::num_keys' o='448' t='gint'/>
+<mbr r='_GdkDevice::keys' o='512' t='GdkDeviceKey *'/>

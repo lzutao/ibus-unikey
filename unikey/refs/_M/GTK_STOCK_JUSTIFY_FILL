@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='509'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='503'>/**
+ * GTK_STOCK_JUSTIFY_FILL:
+ *
+ * The &quot;Fill&quot; item.
+ * &lt;inlinegraphic fileref=&quot;format-justify-fill.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

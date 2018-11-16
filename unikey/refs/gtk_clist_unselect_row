@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='723' type='void gtk_clist_unselect_row(GtkCList * clist, gint row, gint column)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='722'>/* force unselection of a row */</doc>

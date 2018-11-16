@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gdkcursor.h source code [include/gtk-2.0/gdk/gdkcursor.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gdk/gdkcursor.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gdk</a>/<a href='gdkcursor.h.html'>gdkcursor.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GDK - The GIMP Drawing Kit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><i>/*</i></td></tr>
+<tr><th id="21">21</th><td><i> * Modified by the GTK+ Team and others 1997-2000.  See the AUTHORS</i></td></tr>
+<tr><th id="22">22</th><td><i> * file for a list of people on the GTK+ Team.  See the ChangeLog</i></td></tr>
+<tr><th id="23">23</th><td><i> * files for a list of changes.  These files are distributed with</i></td></tr>
+<tr><th id="24">24</th><td><i> * GTK+ at ftp://ftp.gtk.org/pub/gtk/.</i></td></tr>
+<tr><th id="25">25</th><td><i> */</i></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/__GDK_CURSOR_H__">__GDK_CURSOR_H__</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/__GDK_CURSOR_H__" data-ref="_M/__GDK_CURSOR_H__">__GDK_CURSOR_H__</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><u>#<span data-ppcond="30">if</span> defined(<span class="macro" data-ref="_M/GTK_DISABLE_SINGLE_INCLUDES">GTK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gdk.h.html#30" data-ref="_M/__GDK_H_INSIDE__">__GDK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GDK_COMPILATION">GDK_COMPILATION</span>)</u></td></tr>
+<tr><th id="31">31</th><td><u>#error "Only &lt;gdk/gdk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="32">32</th><td><u>#<span data-ppcond="30">endif</span></u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><u>#include <a href="gdktypes.h.html">&lt;gdk/gdktypes.h&gt;</a></u></td></tr>
+<tr><th id="35">35</th><td><u>#include <a href="../../gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf.h.html">&lt;gdk-pixbuf/gdk-pixbuf.h&gt;</a></u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#define <dfn class="macro" id="_M/GDK_TYPE_CURSOR" data-ref="_M/GDK_TYPE_CURSOR">GDK_TYPE_CURSOR</dfn> (gdk_cursor_get_type ())</u></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><i>/* Cursor types.</i></td></tr>
+<tr><th id="42">42</th><td><i> */</i></td></tr>
+<tr><th id="43">43</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="44">44</th><td>{</td></tr>
+<tr><th id="45">45</th><td>  <dfn class="enum" id="GDK_X_CURSOR" title='GDK_X_CURSOR' data-ref="GDK_X_CURSOR">GDK_X_CURSOR</dfn> 		  = <var>0</var>,</td></tr>
+<tr><th id="46">46</th><td>  <dfn class="enum" id="GDK_ARROW" title='GDK_ARROW' data-ref="GDK_ARROW">GDK_ARROW</dfn> 		  = <var>2</var>,</td></tr>
+<tr><th id="47">47</th><td>  <dfn class="enum" id="GDK_BASED_ARROW_DOWN" title='GDK_BASED_ARROW_DOWN' data-ref="GDK_BASED_ARROW_DOWN">GDK_BASED_ARROW_DOWN</dfn>    = <var>4</var>,</td></tr>
+<tr><th id="48">48</th><td>  <dfn class="enum" id="GDK_BASED_ARROW_UP" title='GDK_BASED_ARROW_UP' data-ref="GDK_BASED_ARROW_UP">GDK_BASED_ARROW_UP</dfn> 	  = <var>6</var>,</td></tr>
+<tr><th id="49">49</th><td>  <dfn class="enum" id="GDK_BOAT" title='GDK_BOAT' data-ref="GDK_BOAT">GDK_BOAT</dfn> 		  = <var>8</var>,</td></tr>
+<tr><th id="50">50</th><td>  <dfn class="enum" id="GDK_BOGOSITY" title='GDK_BOGOSITY' data-ref="GDK_BOGOSITY">GDK_BOGOSITY</dfn> 		  = <var>10</var>,</td></tr>
+<tr><th id="51">51</th><td>  <dfn class="enum" id="GDK_BOTTOM_LEFT_CORNER" title='GDK_BOTTOM_LEFT_CORNER' data-ref="GDK_BOTTOM_LEFT_CORNER">GDK_BOTTOM_LEFT_CORNER</dfn>  = <var>12</var>,</td></tr>
+<tr><th id="52">52</th><td>  <dfn class="enum" id="GDK_BOTTOM_RIGHT_CORNER" title='GDK_BOTTOM_RIGHT_CORNER' data-ref="GDK_BOTTOM_RIGHT_CORNER">GDK_BOTTOM_RIGHT_CORNER</dfn> = <var>14</var>,</td></tr>
+<tr><th id="53">53</th><td>  <dfn class="enum" id="GDK_BOTTOM_SIDE" title='GDK_BOTTOM_SIDE' data-ref="GDK_BOTTOM_SIDE">GDK_BOTTOM_SIDE</dfn> 	  = <var>16</var>,</td></tr>
+<tr><th id="54">54</th><td>  <dfn class="enum" id="GDK_BOTTOM_TEE" title='GDK_BOTTOM_TEE' data-ref="GDK_BOTTOM_TEE">GDK_BOTTOM_TEE</dfn> 	  = <var>18</var>,</td></tr>
+<tr><th id="55">55</th><td>  <dfn class="enum" id="GDK_BOX_SPIRAL" title='GDK_BOX_SPIRAL' data-ref="GDK_BOX_SPIRAL">GDK_BOX_SPIRAL</dfn> 	  = <var>20</var>,</td></tr>
+<tr><th id="56">56</th><td>  <dfn class="enum" id="GDK_CENTER_PTR" title='GDK_CENTER_PTR' data-ref="GDK_CENTER_PTR">GDK_CENTER_PTR</dfn> 	  = <var>22</var>,</td></tr>
+<tr><th id="57">57</th><td>  <dfn class="enum" id="GDK_CIRCLE" title='GDK_CIRCLE' data-ref="GDK_CIRCLE">GDK_CIRCLE</dfn> 		  = <var>24</var>,</td></tr>
+<tr><th id="58">58</th><td>  <dfn class="enum" id="GDK_CLOCK" title='GDK_CLOCK' data-ref="GDK_CLOCK">GDK_CLOCK</dfn>	 	  = <var>26</var>,</td></tr>
+<tr><th id="59">59</th><td>  <dfn class="enum" id="GDK_COFFEE_MUG" title='GDK_COFFEE_MUG' data-ref="GDK_COFFEE_MUG">GDK_COFFEE_MUG</dfn> 	  = <var>28</var>,</td></tr>
+<tr><th id="60">60</th><td>  <dfn class="enum" id="GDK_CROSS" title='GDK_CROSS' data-ref="GDK_CROSS">GDK_CROSS</dfn> 		  = <var>30</var>,</td></tr>
+<tr><th id="61">61</th><td>  <dfn class="enum" id="GDK_CROSS_REVERSE" title='GDK_CROSS_REVERSE' data-ref="GDK_CROSS_REVERSE">GDK_CROSS_REVERSE</dfn> 	  = <var>32</var>,</td></tr>
+<tr><th id="62">62</th><td>  <dfn class="enum" id="GDK_CROSSHAIR" title='GDK_CROSSHAIR' data-ref="GDK_CROSSHAIR">GDK_CROSSHAIR</dfn> 	  = <var>34</var>,</td></tr>
+<tr><th id="63">63</th><td>  <dfn class="enum" id="GDK_DIAMOND_CROSS" title='GDK_DIAMOND_CROSS' data-ref="GDK_DIAMOND_CROSS">GDK_DIAMOND_CROSS</dfn> 	  = <var>36</var>,</td></tr>
+<tr><th id="64">64</th><td>  <dfn class="enum" id="GDK_DOT" title='GDK_DOT' data-ref="GDK_DOT">GDK_DOT</dfn> 		  = <var>38</var>,</td></tr>
+<tr><th id="65">65</th><td>  <dfn class="enum" id="GDK_DOTBOX" title='GDK_DOTBOX' data-ref="GDK_DOTBOX">GDK_DOTBOX</dfn> 		  = <var>40</var>,</td></tr>
+<tr><th id="66">66</th><td>  <dfn class="enum" id="GDK_DOUBLE_ARROW" title='GDK_DOUBLE_ARROW' data-ref="GDK_DOUBLE_ARROW">GDK_DOUBLE_ARROW</dfn> 	  = <var>42</var>,</td></tr>
+<tr><th id="67">67</th><td>  <dfn class="enum" id="GDK_DRAFT_LARGE" title='GDK_DRAFT_LARGE' data-ref="GDK_DRAFT_LARGE">GDK_DRAFT_LARGE</dfn> 	  = <var>44</var>,</td></tr>
+<tr><th id="68">68</th><td>  <dfn class="enum" id="GDK_DRAFT_SMALL" title='GDK_DRAFT_SMALL' data-ref="GDK_DRAFT_SMALL">GDK_DRAFT_SMALL</dfn> 	  = <var>46</var>,</td></tr>
+<tr><th id="69">69</th><td>  <dfn class="enum" id="GDK_DRAPED_BOX" title='GDK_DRAPED_BOX' data-ref="GDK_DRAPED_BOX">GDK_DRAPED_BOX</dfn> 	  = <var>48</var>,</td></tr>
+<tr><th id="70">70</th><td>  <dfn class="enum" id="GDK_EXCHANGE" title='GDK_EXCHANGE' data-ref="GDK_EXCHANGE">GDK_EXCHANGE</dfn> 		  = <var>50</var>,</td></tr>
+<tr><th id="71">71</th><td>  <dfn class="enum" id="GDK_FLEUR" title='GDK_FLEUR' data-ref="GDK_FLEUR">GDK_FLEUR</dfn> 		  = <var>52</var>,</td></tr>
+<tr><th id="72">72</th><td>  <dfn class="enum" id="GDK_GOBBLER" title='GDK_GOBBLER' data-ref="GDK_GOBBLER">GDK_GOBBLER</dfn> 		  = <var>54</var>,</td></tr>
+<tr><th id="73">73</th><td>  <dfn class="enum" id="GDK_GUMBY" title='GDK_GUMBY' data-ref="GDK_GUMBY">GDK_GUMBY</dfn> 		  = <var>56</var>,</td></tr>
+<tr><th id="74">74</th><td>  <dfn class="enum" id="GDK_HAND1" title='GDK_HAND1' data-ref="GDK_HAND1">GDK_HAND1</dfn> 		  = <var>58</var>,</td></tr>
+<tr><th id="75">75</th><td>  <dfn class="enum" id="GDK_HAND2" title='GDK_HAND2' data-ref="GDK_HAND2">GDK_HAND2</dfn> 		  = <var>60</var>,</td></tr>
+<tr><th id="76">76</th><td>  <dfn class="enum" id="GDK_HEART" title='GDK_HEART' data-ref="GDK_HEART">GDK_HEART</dfn> 		  = <var>62</var>,</td></tr>
+<tr><th id="77">77</th><td>  <dfn class="enum" id="GDK_ICON" title='GDK_ICON' data-ref="GDK_ICON">GDK_ICON</dfn> 		  = <var>64</var>,</td></tr>
+<tr><th id="78">78</th><td>  <dfn class="enum" id="GDK_IRON_CROSS" title='GDK_IRON_CROSS' data-ref="GDK_IRON_CROSS">GDK_IRON_CROSS</dfn> 	  = <var>66</var>,</td></tr>
+<tr><th id="79">79</th><td>  <dfn class="enum" id="GDK_LEFT_PTR" title='GDK_LEFT_PTR' data-ref="GDK_LEFT_PTR">GDK_LEFT_PTR</dfn> 		  = <var>68</var>,</td></tr>
+<tr><th id="80">80</th><td>  <dfn class="enum" id="GDK_LEFT_SIDE" title='GDK_LEFT_SIDE' data-ref="GDK_LEFT_SIDE">GDK_LEFT_SIDE</dfn> 	  = <var>70</var>,</td></tr>
+<tr><th id="81">81</th><td>  <dfn class="enum" id="GDK_LEFT_TEE" title='GDK_LEFT_TEE' data-ref="GDK_LEFT_TEE">GDK_LEFT_TEE</dfn> 		  = <var>72</var>,</td></tr>
+<tr><th id="82">82</th><td>  <dfn class="enum" id="GDK_LEFTBUTTON" title='GDK_LEFTBUTTON' data-ref="GDK_LEFTBUTTON">GDK_LEFTBUTTON</dfn> 	  = <var>74</var>,</td></tr>
+<tr><th id="83">83</th><td>  <dfn class="enum" id="GDK_LL_ANGLE" title='GDK_LL_ANGLE' data-ref="GDK_LL_ANGLE">GDK_LL_ANGLE</dfn> 		  = <var>76</var>,</td></tr>
+<tr><th id="84">84</th><td>  <dfn class="enum" id="GDK_LR_ANGLE" title='GDK_LR_ANGLE' data-ref="GDK_LR_ANGLE">GDK_LR_ANGLE</dfn> 	 	  = <var>78</var>,</td></tr>
+<tr><th id="85">85</th><td>  <dfn class="enum" id="GDK_MAN" title='GDK_MAN' data-ref="GDK_MAN">GDK_MAN</dfn> 		  = <var>80</var>,</td></tr>
+<tr><th id="86">86</th><td>  <dfn class="enum" id="GDK_MIDDLEBUTTON" title='GDK_MIDDLEBUTTON' data-ref="GDK_MIDDLEBUTTON">GDK_MIDDLEBUTTON</dfn> 	  = <var>82</var>,</td></tr>
+<tr><th id="87">87</th><td>  <dfn class="enum" id="GDK_MOUSE" title='GDK_MOUSE' data-ref="GDK_MOUSE">GDK_MOUSE</dfn> 		  = <var>84</var>,</td></tr>
+<tr><th id="88">88</th><td>  <dfn class="enum" id="GDK_PENCIL" title='GDK_PENCIL' data-ref="GDK_PENCIL">GDK_PENCIL</dfn> 		  = <var>86</var>,</td></tr>
+<tr><th id="89">89</th><td>  <dfn class="enum" id="GDK_PIRATE" title='GDK_PIRATE' data-ref="GDK_PIRATE">GDK_PIRATE</dfn> 		  = <var>88</var>,</td></tr>
+<tr><th id="90">90</th><td>  <dfn class="enum" id="GDK_PLUS" title='GDK_PLUS' data-ref="GDK_PLUS">GDK_PLUS</dfn> 		  = <var>90</var>,</td></tr>
+<tr><th id="91">91</th><td>  <dfn class="enum" id="GDK_QUESTION_ARROW" title='GDK_QUESTION_ARROW' data-ref="GDK_QUESTION_ARROW">GDK_QUESTION_ARROW</dfn> 	  = <var>92</var>,</td></tr>
+<tr><th id="92">92</th><td>  <dfn class="enum" id="GDK_RIGHT_PTR" title='GDK_RIGHT_PTR' data-ref="GDK_RIGHT_PTR">GDK_RIGHT_PTR</dfn> 	  = <var>94</var>,</td></tr>
+<tr><th id="93">93</th><td>  <dfn class="enum" id="GDK_RIGHT_SIDE" title='GDK_RIGHT_SIDE' data-ref="GDK_RIGHT_SIDE">GDK_RIGHT_SIDE</dfn> 	  = <var>96</var>,</td></tr>
+<tr><th id="94">94</th><td>  <dfn class="enum" id="GDK_RIGHT_TEE" title='GDK_RIGHT_TEE' data-ref="GDK_RIGHT_TEE">GDK_RIGHT_TEE</dfn> 	  = <var>98</var>,</td></tr>
+<tr><th id="95">95</th><td>  <dfn class="enum" id="GDK_RIGHTBUTTON" title='GDK_RIGHTBUTTON' data-ref="GDK_RIGHTBUTTON">GDK_RIGHTBUTTON</dfn> 	  = <var>100</var>,</td></tr>
+<tr><th id="96">96</th><td>  <dfn class="enum" id="GDK_RTL_LOGO" title='GDK_RTL_LOGO' data-ref="GDK_RTL_LOGO">GDK_RTL_LOGO</dfn> 		  = <var>102</var>,</td></tr>
+<tr><th id="97">97</th><td>  <dfn class="enum" id="GDK_SAILBOAT" title='GDK_SAILBOAT' data-ref="GDK_SAILBOAT">GDK_SAILBOAT</dfn> 		  = <var>104</var>,</td></tr>
+<tr><th id="98">98</th><td>  <dfn class="enum" id="GDK_SB_DOWN_ARROW" title='GDK_SB_DOWN_ARROW' data-ref="GDK_SB_DOWN_ARROW">GDK_SB_DOWN_ARROW</dfn> 	  = <var>106</var>,</td></tr>
+<tr><th id="99">99</th><td>  <dfn class="enum" id="GDK_SB_H_DOUBLE_ARROW" title='GDK_SB_H_DOUBLE_ARROW' data-ref="GDK_SB_H_DOUBLE_ARROW">GDK_SB_H_DOUBLE_ARROW</dfn>   = <var>108</var>,</td></tr>
+<tr><th id="100">100</th><td>  <dfn class="enum" id="GDK_SB_LEFT_ARROW" title='GDK_SB_LEFT_ARROW' data-ref="GDK_SB_LEFT_ARROW">GDK_SB_LEFT_ARROW</dfn> 	  = <var>110</var>,</td></tr>
+<tr><th id="101">101</th><td>  <dfn class="enum" id="GDK_SB_RIGHT_ARROW" title='GDK_SB_RIGHT_ARROW' data-ref="GDK_SB_RIGHT_ARROW">GDK_SB_RIGHT_ARROW</dfn> 	  = <var>112</var>,</td></tr>
+<tr><th id="102">102</th><td>  <dfn class="enum" id="GDK_SB_UP_ARROW" title='GDK_SB_UP_ARROW' data-ref="GDK_SB_UP_ARROW">GDK_SB_UP_ARROW</dfn> 	  = <var>114</var>,</td></tr>
+<tr><th id="103">103</th><td>  <dfn class="enum" id="GDK_SB_V_DOUBLE_ARROW" title='GDK_SB_V_DOUBLE_ARROW' data-ref="GDK_SB_V_DOUBLE_ARROW">GDK_SB_V_DOUBLE_ARROW</dfn>   = <var>116</var>,</td></tr>
+<tr><th id="104">104</th><td>  <dfn class="enum" id="GDK_SHUTTLE" title='GDK_SHUTTLE' data-ref="GDK_SHUTTLE">GDK_SHUTTLE</dfn> 		  = <var>118</var>,</td></tr>
+<tr><th id="105">105</th><td>  <dfn class="enum" id="GDK_SIZING" title='GDK_SIZING' data-ref="GDK_SIZING">GDK_SIZING</dfn> 		  = <var>120</var>,</td></tr>
+<tr><th id="106">106</th><td>  <dfn class="enum" id="GDK_SPIDER" title='GDK_SPIDER' data-ref="GDK_SPIDER">GDK_SPIDER</dfn>		  = <var>122</var>,</td></tr>
+<tr><th id="107">107</th><td>  <dfn class="enum" id="GDK_SPRAYCAN" title='GDK_SPRAYCAN' data-ref="GDK_SPRAYCAN">GDK_SPRAYCAN</dfn> 		  = <var>124</var>,</td></tr>
+<tr><th id="108">108</th><td>  <dfn class="enum" id="GDK_STAR" title='GDK_STAR' data-ref="GDK_STAR">GDK_STAR</dfn> 		  = <var>126</var>,</td></tr>
+<tr><th id="109">109</th><td>  <dfn class="enum" id="GDK_TARGET" title='GDK_TARGET' data-ref="GDK_TARGET">GDK_TARGET</dfn> 		  = <var>128</var>,</td></tr>
+<tr><th id="110">110</th><td>  <dfn class="enum" id="GDK_TCROSS" title='GDK_TCROSS' data-ref="GDK_TCROSS">GDK_TCROSS</dfn> 		  = <var>130</var>,</td></tr>
+<tr><th id="111">111</th><td>  <dfn class="enum" id="GDK_TOP_LEFT_ARROW" title='GDK_TOP_LEFT_ARROW' data-ref="GDK_TOP_LEFT_ARROW">GDK_TOP_LEFT_ARROW</dfn> 	  = <var>132</var>,</td></tr>
+<tr><th id="112">112</th><td>  <dfn class="enum" id="GDK_TOP_LEFT_CORNER" title='GDK_TOP_LEFT_CORNER' data-ref="GDK_TOP_LEFT_CORNER">GDK_TOP_LEFT_CORNER</dfn> 	  = <var>134</var>,</td></tr>
+<tr><th id="113">113</th><td>  <dfn class="enum" id="GDK_TOP_RIGHT_CORNER" title='GDK_TOP_RIGHT_CORNER' data-ref="GDK_TOP_RIGHT_CORNER">GDK_TOP_RIGHT_CORNER</dfn> 	  = <var>136</var>,</td></tr>
+<tr><th id="114">114</th><td>  <dfn class="enum" id="GDK_TOP_SIDE" title='GDK_TOP_SIDE' data-ref="GDK_TOP_SIDE">GDK_TOP_SIDE</dfn> 		  = <var>138</var>,</td></tr>
+<tr><th id="115">115</th><td>  <dfn class="enum" id="GDK_TOP_TEE" title='GDK_TOP_TEE' data-ref="GDK_TOP_TEE">GDK_TOP_TEE</dfn> 		  = <var>140</var>,</td></tr>
+<tr><th id="116">116</th><td>  <dfn class="enum" id="GDK_TREK" title='GDK_TREK' data-ref="GDK_TREK">GDK_TREK</dfn> 		  = <var>142</var>,</td></tr>
+<tr><th id="117">117</th><td>  <dfn class="enum" id="GDK_UL_ANGLE" title='GDK_UL_ANGLE' data-ref="GDK_UL_ANGLE">GDK_UL_ANGLE</dfn> 		  = <var>144</var>,</td></tr>
+<tr><th id="118">118</th><td>  <dfn class="enum" id="GDK_UMBRELLA" title='GDK_UMBRELLA' data-ref="GDK_UMBRELLA">GDK_UMBRELLA</dfn> 		  = <var>146</var>,</td></tr>
+<tr><th id="119">119</th><td>  <dfn class="enum" id="GDK_UR_ANGLE" title='GDK_UR_ANGLE' data-ref="GDK_UR_ANGLE">GDK_UR_ANGLE</dfn> 		  = <var>148</var>,</td></tr>
+<tr><th id="120">120</th><td>  <dfn class="enum" id="GDK_WATCH" title='GDK_WATCH' data-ref="GDK_WATCH">GDK_WATCH</dfn> 		  = <var>150</var>,</td></tr>
+<tr><th id="121">121</th><td>  <dfn class="enum" id="GDK_XTERM" title='GDK_XTERM' data-ref="GDK_XTERM">GDK_XTERM</dfn> 		  = <var>152</var>,</td></tr>
+<tr><th id="122">122</th><td>  <dfn class="enum" id="GDK_LAST_CURSOR" title='GDK_LAST_CURSOR' data-ref="GDK_LAST_CURSOR">GDK_LAST_CURSOR</dfn>,</td></tr>
+<tr><th id="123">123</th><td>  <dfn class="enum" id="GDK_BLANK_CURSOR" title='GDK_BLANK_CURSOR' data-ref="GDK_BLANK_CURSOR">GDK_BLANK_CURSOR</dfn>        = -<var>2</var>,</td></tr>
+<tr><th id="124">124</th><td>  <dfn class="enum" id="GDK_CURSOR_IS_PIXMAP" title='GDK_CURSOR_IS_PIXMAP' data-ref="GDK_CURSOR_IS_PIXMAP">GDK_CURSOR_IS_PIXMAP</dfn> 	  = -<var>1</var></td></tr>
+<tr><th id="125">125</th><td>} <dfn class="typedef" id="GdkCursorType" title='GdkCursorType' data-type='enum GdkCursorType' data-ref="GdkCursorType">GdkCursorType</dfn>;</td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td><b>struct</b> <dfn class="type def" id="_GdkCursor" title='_GdkCursor' data-ref="_GdkCursor">_GdkCursor</dfn></td></tr>
+<tr><th id="128">128</th><td>{</td></tr>
+<tr><th id="129">129</th><td>  <a class="typedef" href="#GdkCursorType" title='GdkCursorType' data-type='enum GdkCursorType' data-ref="GdkCursorType">GdkCursorType</a> <span class="macro" title="type" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkCursor::type" title='_GdkCursor::type' data-ref="_GdkCursor::type">type</dfn>);</td></tr>
+<tr><th id="130">130</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="131">131</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <span class="macro" title="ref_count" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkCursor::ref_count" title='_GdkCursor::ref_count' data-ref="_GdkCursor::ref_count">ref_count</dfn>);</td></tr>
+<tr><th id="132">132</th><td>};</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td><i>/* Cursors</i></td></tr>
+<tr><th id="135">135</th><td><i> */</i></td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>      <dfn class="decl" id="gdk_cursor_get_type" title='gdk_cursor_get_type' data-ref="gdk_cursor_get_type">gdk_cursor_get_type</dfn>           (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td><a class="typedef" href="gdktypes.h.html#GdkCursor" title='GdkCursor' data-type='struct _GdkCursor' data-ref="GdkCursor">GdkCursor</a>* <dfn class="decl" id="gdk_cursor_new_for_display" title='gdk_cursor_new_for_display' data-ref="gdk_cursor_new_for_display">gdk_cursor_new_for_display</dfn>	 (<a class="typedef" href="gdktypes.h.html#GdkDisplay" title='GdkDisplay' data-type='struct _GdkDisplay' data-ref="GdkDisplay">GdkDisplay</a>      *<dfn class="local col6 decl" id="14186display" title='display' data-type='GdkDisplay *' data-ref="14186display">display</dfn>,</td></tr>
+<tr><th id="140">140</th><td>					  <a class="typedef" href="#GdkCursorType" title='GdkCursorType' data-type='enum GdkCursorType' data-ref="GdkCursorType">GdkCursorType</a>    <dfn class="local col7 decl" id="14187cursor_type" title='cursor_type' data-type='GdkCursorType' data-ref="14187cursor_type">cursor_type</dfn>);</td></tr>
+<tr><th id="141">141</th><td><u>#<span data-ppcond="141">ifndef</span> <span class="macro" data-ref="_M/GDK_MULTIHEAD_SAFE">GDK_MULTIHEAD_SAFE</span></u></td></tr>
+<tr><th id="142">142</th><td><a class="typedef" href="gdktypes.h.html#GdkCursor" title='GdkCursor' data-type='struct _GdkCursor' data-ref="GdkCursor">GdkCursor</a>* <dfn class="decl" id="gdk_cursor_new" title='gdk_cursor_new' data-ref="gdk_cursor_new">gdk_cursor_new</dfn>		 (<a class="typedef" href="#GdkCursorType" title='GdkCursorType' data-type='enum GdkCursorType' data-ref="GdkCursorType">GdkCursorType</a>	   <dfn class="local col8 decl" id="14188cursor_type" title='cursor_type' data-type='GdkCursorType' data-ref="14188cursor_type">cursor_type</dfn>);</td></tr>
+<tr><th id="143">143</th><td><u>#<span data-ppcond="141">endif</span></u></td></tr>
+<tr><th id="144">144</th><td><a class="typedef" href="gdktypes.h.html#GdkCursor" title='GdkCursor' data-type='struct _GdkCursor' data-ref="GdkCursor">GdkCursor</a>* <dfn class="decl" id="gdk_cursor_new_from_pixmap" title='gdk_cursor_new_from_pixmap' data-ref="gdk_cursor_new_from_pixmap">gdk_cursor_new_from_pixmap</dfn>	 (<a class="typedef" href="gdktypes.h.html#GdkPixmap" title='GdkPixmap' data-type='struct _GdkDrawable' data-ref="GdkPixmap">GdkPixmap</a>	  *<dfn class="local col9 decl" id="14189source" title='source' data-type='GdkPixmap *' data-ref="14189source">source</dfn>,</td></tr>
+<tr><th id="145">145</th><td>					  <a class="typedef" href="gdktypes.h.html#GdkPixmap" title='GdkPixmap' data-type='struct _GdkDrawable' data-ref="GdkPixmap">GdkPixmap</a>	  *<dfn class="local col0 decl" id="14190mask" title='mask' data-type='GdkPixmap *' data-ref="14190mask">mask</dfn>,</td></tr>
+<tr><th id="146">146</th><td>					  <em>const</em> <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a>  *<dfn class="local col1 decl" id="14191fg" title='fg' data-type='const GdkColor *' data-ref="14191fg">fg</dfn>,</td></tr>
+<tr><th id="147">147</th><td>					  <em>const</em> <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a>  *<dfn class="local col2 decl" id="14192bg" title='bg' data-type='const GdkColor *' data-ref="14192bg">bg</dfn>,</td></tr>
+<tr><th id="148">148</th><td>					  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>		   <dfn class="local col3 decl" id="14193x" title='x' data-type='gint' data-ref="14193x">x</dfn>,</td></tr>
+<tr><th id="149">149</th><td>					  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>		   <dfn class="local col4 decl" id="14194y" title='y' data-type='gint' data-ref="14194y">y</dfn>);</td></tr>
+<tr><th id="150">150</th><td><a class="typedef" href="gdktypes.h.html#GdkCursor" title='GdkCursor' data-type='struct _GdkCursor' data-ref="GdkCursor">GdkCursor</a>* <dfn class="decl" id="gdk_cursor_new_from_pixbuf" title='gdk_cursor_new_from_pixbuf' data-ref="gdk_cursor_new_from_pixbuf">gdk_cursor_new_from_pixbuf</dfn>	 (<a class="typedef" href="gdktypes.h.html#GdkDisplay" title='GdkDisplay' data-type='struct _GdkDisplay' data-ref="GdkDisplay">GdkDisplay</a>      *<dfn class="local col5 decl" id="14195display" title='display' data-type='GdkDisplay *' data-ref="14195display">display</dfn>,</td></tr>
+<tr><th id="151">151</th><td>					  <a class="typedef" href="../../gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>       *<dfn class="local col6 decl" id="14196pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="14196pixbuf">pixbuf</dfn>,</td></tr>
+<tr><th id="152">152</th><td>					  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>             <dfn class="local col7 decl" id="14197x" title='x' data-type='gint' data-ref="14197x">x</dfn>,</td></tr>
+<tr><th id="153">153</th><td>					  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>             <dfn class="local col8 decl" id="14198y" title='y' data-type='gint' data-ref="14198y">y</dfn>);</td></tr>
+<tr><th id="154">154</th><td><a class="typedef" href="gdktypes.h.html#GdkDisplay" title='GdkDisplay' data-type='struct _GdkDisplay' data-ref="GdkDisplay">GdkDisplay</a>* <dfn class="decl" id="gdk_cursor_get_display" title='gdk_cursor_get_display' data-ref="gdk_cursor_get_display">gdk_cursor_get_display</dfn>	 (<a class="typedef" href="gdktypes.h.html#GdkCursor" title='GdkCursor' data-type='struct _GdkCursor' data-ref="GdkCursor">GdkCursor</a>	  *<dfn class="local col9 decl" id="14199cursor" title='cursor' data-type='GdkCursor *' data-ref="14199cursor">cursor</dfn>);</td></tr>
+<tr><th id="155">155</th><td><a class="typedef" href="gdktypes.h.html#GdkCursor" title='GdkCursor' data-type='struct _GdkCursor' data-ref="GdkCursor">GdkCursor</a>*  <dfn class="decl" id="gdk_cursor_ref" title='gdk_cursor_ref' data-ref="gdk_cursor_ref">gdk_cursor_ref</dfn>               (<a class="typedef" href="gdktypes.h.html#GdkCursor" title='GdkCursor' data-type='struct _GdkCursor' data-ref="GdkCursor">GdkCursor</a>       *<dfn class="local col0 decl" id="14200cursor" title='cursor' data-type='GdkCursor *' data-ref="14200cursor">cursor</dfn>);</td></tr>
+<tr><th id="156">156</th><td><em>void</em>        <dfn class="decl" id="gdk_cursor_unref" title='gdk_cursor_unref' data-ref="gdk_cursor_unref">gdk_cursor_unref</dfn>             (<a class="typedef" href="gdktypes.h.html#GdkCursor" title='GdkCursor' data-type='struct _GdkCursor' data-ref="GdkCursor">GdkCursor</a>       *<dfn class="local col1 decl" id="14201cursor" title='cursor' data-type='GdkCursor *' data-ref="14201cursor">cursor</dfn>);</td></tr>
+<tr><th id="157">157</th><td><a class="typedef" href="gdktypes.h.html#GdkCursor" title='GdkCursor' data-type='struct _GdkCursor' data-ref="GdkCursor">GdkCursor</a>*  <dfn class="decl" id="gdk_cursor_new_from_name" title='gdk_cursor_new_from_name' data-ref="gdk_cursor_new_from_name">gdk_cursor_new_from_name</dfn>	 (<a class="typedef" href="gdktypes.h.html#GdkDisplay" title='GdkDisplay' data-type='struct _GdkDisplay' data-ref="GdkDisplay">GdkDisplay</a>      *<dfn class="local col2 decl" id="14202display" title='display' data-type='GdkDisplay *' data-ref="14202display">display</dfn>,</td></tr>
+<tr><th id="158">158</th><td>					  <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="local col3 decl" id="14203name" title='name' data-type='const gchar *' data-ref="14203name">name</dfn>);</td></tr>
+<tr><th id="159">159</th><td><a class="typedef" href="../../gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>*  <dfn class="decl" id="gdk_cursor_get_image" title='gdk_cursor_get_image' data-ref="gdk_cursor_get_image">gdk_cursor_get_image</dfn>         (<a class="typedef" href="gdktypes.h.html#GdkCursor" title='GdkCursor' data-type='struct _GdkCursor' data-ref="GdkCursor">GdkCursor</a>       *<dfn class="local col4 decl" id="14204cursor" title='cursor' data-type='GdkCursor *' data-ref="14204cursor">cursor</dfn>);</td></tr>
+<tr><th id="160">160</th><td><a class="typedef" href="#GdkCursorType" title='GdkCursorType' data-type='enum GdkCursorType' data-ref="GdkCursorType">GdkCursorType</a> <dfn class="decl" id="gdk_cursor_get_cursor_type" title='gdk_cursor_get_cursor_type' data-ref="gdk_cursor_get_cursor_type">gdk_cursor_get_cursor_type</dfn> (<a class="typedef" href="gdktypes.h.html#GdkCursor" title='GdkCursor' data-type='struct _GdkCursor' data-ref="GdkCursor">GdkCursor</a>       *<dfn class="local col5 decl" id="14205cursor" title='cursor' data-type='GdkCursor *' data-ref="14205cursor">cursor</dfn>);</td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td><u>#<span data-ppcond="162">ifndef</span> <span class="macro" data-ref="_M/GDK_DISABLE_DEPRECATED">GDK_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="163">163</th><td><u>#define <dfn class="macro" id="_M/gdk_cursor_destroy" data-ref="_M/gdk_cursor_destroy">gdk_cursor_destroy</dfn>             gdk_cursor_unref</u></td></tr>
+<tr><th id="164">164</th><td><u>#<span data-ppcond="162">endif</span> /* GDK_DISABLE_DEPRECATED */</u></td></tr>
+<tr><th id="165">165</th><td></td></tr>
+<tr><th id="166">166</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td><u>#<span data-ppcond="27">endif</span> /* __GDK_CURSOR_H__ */</u></td></tr>
+<tr><th id="169">169</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

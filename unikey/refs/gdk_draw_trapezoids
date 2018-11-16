@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdrawable.h' l='408' type='void gdk_draw_trapezoids(GdkDrawable * drawable, GdkGC * gc, const GdkTrapezoid * trapezoids, gint n_trapezoids)'/>

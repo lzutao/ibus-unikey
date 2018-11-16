@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='270' type='void ibus_engine_hide_preedit_text(IBusEngine * engine)'/>
+<doc f='include/ibus-1.0/ibusengine.h' l='264'>/**
+ * ibus_engine_hide_preedit_text:
+ * @engine: An IBusEngine.
+ *
+ * Hide the pre-edit buffer.
+ */</doc>
+<use f='unikey/src/engine.cpp' l='631' u='c' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='747' u='c' c='_ZL31ibus_unikey_engine_clean_bufferP11_IBusEngine'/>

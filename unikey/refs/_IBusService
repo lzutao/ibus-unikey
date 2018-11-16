@@ -1,0 +1,9 @@
+<def f='include/ibus-1.0/ibusservice.h' l='70' ll='74'/>
+<size>48</size>
+<doc f='include/ibus-1.0/ibusservice.h' l='65'>/**
+ * IBusService:
+ *
+ * An opaque data type representing an IBusService.
+ */</doc>
+<mbr r='_IBusService::parent' o='0' t='IBusObject'/>
+<mbr r='_IBusService::priv' o='320' t='IBusServicePrivate *'/>

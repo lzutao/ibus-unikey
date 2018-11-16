@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-tabs.h' l='83' type='void pango_tab_array_get_tab(PangoTabArray * tab_array, gint tab_index, PangoTabAlign * alignment, gint * location)'/>

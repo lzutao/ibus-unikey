@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkgc.h' l='268' type='void gdk_gc_set_line_attributes(GdkGC * gc, gint line_width, GdkLineStyle line_style, GdkCapStyle cap_style, GdkJoinStyle join_style)'/>

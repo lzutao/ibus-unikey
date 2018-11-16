@@ -1,0 +1,5 @@
+<dec f='include/pango-1.0/pango/pango-break.h' l='129' type='guint'/>
+<offset>11</offset>
+<doc f='include/pango-1.0/pango/pango-break.h' l='126'>/* Only few space variants (U+0020 and U+00A0) have variable
+   * width during justification.
+   */</doc>

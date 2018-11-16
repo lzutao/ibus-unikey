@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmenubar.h' l='75' type='void gtk_menu_bar_set_child_pack_direction(GtkMenuBar * menubar, GtkPackDirection child_pack_dir)'/>

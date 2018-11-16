@@ -1,0 +1,2 @@
+<dec f='include/glib-2.0/glib/gthread.h' l='234' type='void g_once_init_leave(volatile void * location, gsize result)'/>
+<use f='unikey/src/engine.cpp' l='66' macro='1' u='c'/>

@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='447' type='gchar * ibus_bus_get_name_owner(IBusBus * bus, const gchar * name)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='438'>/**
+ * ibus_bus_get_name_owner:
+ * @bus: An #IBusBus.
+ * @name: Name.
+ *
+ * Return the name owner synchronously.
+ *
+ * Returns: Owner of the name. The returned value must be freed with g_free().
+ */</doc>

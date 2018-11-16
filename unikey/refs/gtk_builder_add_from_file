@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gtk/gtkbuilder.h' l='97' type='guint gtk_builder_add_from_file(GtkBuilder * builder, const gchar * filename, GError ** error)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='36' u='c' c='_Z23unikey_macro_dialog_newv'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='32' u='c' c='_Z28unikey_main_setup_dialog_newv'/>

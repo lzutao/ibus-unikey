@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktoolbutton.h' l='79' type='gboolean gtk_tool_button_get_use_underline(GtkToolButton * button)'/>

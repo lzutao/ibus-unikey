@@ -1,0 +1,34 @@
+<dec f='include/glib-2.0/gobject/gsignal.h' l='474'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='48' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='51' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='54' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='57' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='60' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='63' u='c'/>
+<doc f='include/glib-2.0/gobject/gsignal.h' l='458'>/**
+ * g_signal_connect:
+ * @instance: the instance to connect to.
+ * @detailed_signal: a string of the form &quot;signal-name::detail&quot;.
+ * @c_handler: the #GCallback to connect.
+ * @data: data to pass to @c_handler calls.
+ * 
+ * Connects a #GCallback function to a signal for a particular object.
+ * 
+ * The handler will be called before the default handler of the signal.
+ *
+ * See [memory management of signal handlers][signal-memory-management] for
+ * details on how to handle the return value and memory management of @data.
+ * 
+ * Returns: the handler ID, of type #gulong (always greater than 0 for successful connections)
+ */</doc>
+<use f='unikey/setup/dlg_main_setup.cpp' l='28' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='71' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='84' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='97' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='103' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='109' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='115' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='121' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='127' u='c'/>
+<use f='unikey/setup/setup.cpp' l='56' u='c'/>
+<use f='unikey/src/main.cpp' l='44' u='c'/>

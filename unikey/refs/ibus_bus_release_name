@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='225' type='guint ibus_bus_release_name(IBusBus * bus, const gchar * name)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='216'>/**
+ * ibus_bus_release_name:
+ * @bus: An #IBusBus.
+ * @name: Name to be released.
+ *
+ * Release a name to IBus daemon synchronously.
+ *
+ * Returns: 0 if failed; positive number otherwise.
+ */</doc>

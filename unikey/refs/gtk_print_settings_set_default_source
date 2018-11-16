@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintsettings.h' l='217' type='void gtk_print_settings_set_default_source(GtkPrintSettings * settings, const gchar * default_source)'/>

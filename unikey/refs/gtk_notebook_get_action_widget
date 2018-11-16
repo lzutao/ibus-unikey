@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtknotebook.h' l='304' type='GtkWidget * gtk_notebook_get_action_widget(GtkNotebook * notebook, GtkPackType pack_type)'/>

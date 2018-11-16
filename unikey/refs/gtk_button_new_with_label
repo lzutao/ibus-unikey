@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkbutton.h' l='93' type='GtkWidget * gtk_button_new_with_label(const gchar * label)'/>

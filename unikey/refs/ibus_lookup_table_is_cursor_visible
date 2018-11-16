@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuslookuptable.h' l='244' type='gboolean ibus_lookup_table_is_cursor_visible(IBusLookupTable * table)'/>
+<doc f='include/ibus-1.0/ibuslookuptable.h' l='236'>/**
+ * ibus_lookup_table_is_cursor_visible:
+ * @table: An #IBusLookupTable.
+ *
+ * Returns whether the cursor of an #IBusLookupTable is visible.
+ *
+ * Returns: Whether the cursor of @table is visible.
+ */</doc>

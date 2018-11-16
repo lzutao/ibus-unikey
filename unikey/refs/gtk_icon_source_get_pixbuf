@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconfactory.h' l='160' type='GdkPixbuf * gtk_icon_source_get_pixbuf(const GtkIconSource * source)'/>

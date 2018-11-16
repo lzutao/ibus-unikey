@@ -1,0 +1,12 @@
+<def f='include/gtk-2.0/gtk/gtkwidget.h' l='519' ll='523'/>
+<size>8</size>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='511'>/**
+ * GtkRequisition:
+ * @width: the widget&apos;s desired width
+ * @height: the widget&apos;s desired height
+ *
+ * A &lt;structname&gt;GtkRequisition&lt;/structname&gt; represents the desired size of a widget. See
+ * &lt;xref linkend=&quot;size-requisition&quot;/&gt; for more information.
+ */</doc>
+<mbr r='_GtkRequisition::width' o='0' t='gint'/>
+<mbr r='_GtkRequisition::height' o='32' t='gint'/>

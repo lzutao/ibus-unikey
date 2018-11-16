@@ -1,0 +1,9 @@
+<dec f='include/atk-1.0/atk/atkversion.h' l='353'/>
+<use f='include/atk-1.0/atk/atkcomponent.h' l='185' u='c'/>
+<use f='include/atk-1.0/atk/atkcomponent.h' l='190' u='c'/>
+<use f='include/atk-1.0/atk/atktable.h' l='138' u='c'/>
+<use f='include/atk-1.0/atk/atkvalue.h' l='125' u='c'/>
+<use f='include/atk-1.0/atk/atkvalue.h' l='129' u='c'/>
+<use f='include/atk-1.0/atk/atkvalue.h' l='132' u='c'/>
+<use f='include/atk-1.0/atk/atkvalue.h' l='135' u='c'/>
+<use f='include/atk-1.0/atk/atkvalue.h' l='138' u='c'/>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='718' type='void gtk_clist_select_row(GtkCList * clist, gint row, gint column)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='717'>/* force selection of a row */</doc>

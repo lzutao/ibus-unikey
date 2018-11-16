@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-renderer.h' l='277' type='const PangoMatrix * pango_renderer_get_matrix(PangoRenderer * renderer)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintoperation.h' l='143' type='void gtk_print_operation_set_default_page_setup(GtkPrintOperation * op, GtkPageSetup * default_page_setup)'/>

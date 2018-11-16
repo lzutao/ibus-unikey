@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='226' type='void gtk_entry_set_completion(GtkEntry * entry, GtkEntryCompletion * completion)'/>

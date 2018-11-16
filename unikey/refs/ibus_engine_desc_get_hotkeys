@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusenginedesc.h' l='274' type='const gchar * ibus_engine_desc_get_hotkeys(IBusEngineDesc * info)'/>
+<doc f='include/ibus-1.0/ibusenginedesc.h' l='266'>/**
+ * ibus_engine_desc_get_hotkeys:
+ * @info: An IBusEngineDesc
+ *
+ * Gets the hotkeys property in IBusEngineDesc. It should not be freed.
+ *
+ * Returns: hotkeys property in IBusEngineDesc
+ */</doc>

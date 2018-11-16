@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktoolbar.h' l='204' type='GtkWidget * gtk_toolbar_prepend_item(GtkToolbar * toolbar, const char * text, const char * tooltip_text, const char * tooltip_private_text, GtkWidget * icon, GCallback callback, gpointer user_data)'/>

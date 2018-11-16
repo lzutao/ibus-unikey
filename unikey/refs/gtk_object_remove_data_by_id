@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkobject.h' l='217' type='void gtk_object_remove_data_by_id(GtkObject * object, GQuark data_id)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkselection.h' l='181' type='gboolean gtk_selection_data_targets_include_image(GtkSelectionData * selection_data, gboolean writable)'/>

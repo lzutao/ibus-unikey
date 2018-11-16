@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibuscomponent.h' l='330' type='GList * ibus_component_get_observed_paths(IBusComponent * component)'/>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='321'>/**
+ * ibus_component_get_observed_paths:
+ * @component: An #IBusComponent.
+ *
+ * Gets the observed paths of this component.
+ *
+ * Returns: (transfer container) (element-type IBusObservedPath): A
+ * newly allocated GList that contains observed paths.
+ */</doc>

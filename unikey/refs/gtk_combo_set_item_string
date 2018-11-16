@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gtk/gtkcombo.h' l='105' type='void gtk_combo_set_item_string(GtkCombo * combo, GtkItem * item, const gchar * item_value)'/>
+<doc f='include/gtk-2.0/gtk/gtkcombo.h' l='103'>/* call this function on an item if it isn&apos;t a label or you
+   want it to have a different value to be displayed in the entry */</doc>

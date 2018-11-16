@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkpapersize.h' l='68' type='const gchar * gtk_paper_size_get_display_name(GtkPaperSize * size)'/>

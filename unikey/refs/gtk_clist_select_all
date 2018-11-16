@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='746' type='void gtk_clist_select_all(GtkCList * clist)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='745'>/* in multiple or extended mode, select all rows */</doc>

@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusenginedesc.h' l='253' type='const gchar * ibus_engine_desc_get_layout_option(IBusEngineDesc * info)'/>
+<doc f='include/ibus-1.0/ibusenginedesc.h' l='245'>/**
+ * ibus_engine_desc_get_layout_option:
+ * @info: An IBusEngineDesc
+ *
+ * Gets the keyboard option property in IBusEngineDesc. It should not be freed.
+ *
+ * Returns: keyboard option property in IBusEngineDesc
+ */</doc>

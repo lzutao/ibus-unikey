@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkcombobox.h' l='131' type='GtkWidget * gtk_combo_box_new_text()'/>
+<doc f='include/gtk-2.0/gtk/gtkcombobox.h' l='130'>/* convenience -- text */</doc>

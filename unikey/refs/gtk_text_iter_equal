@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='291' type='gboolean gtk_text_iter_equal(const GtkTextIter * lhs, const GtkTextIter * rhs)'/>
+<doc f='include/gtk-2.0/gtk/gtktextiter.h' l='288'>/*
+ * Comparisons
+ */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h' l='286' type='GdkPixbuf * gdk_pixbuf_new_subpixbuf(GdkPixbuf * src_pixbuf, int src_x, int src_y, int width, int height)'/>

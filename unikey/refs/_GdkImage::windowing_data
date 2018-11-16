@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gdk/gdkimage.h' l='85' type='gpointer'/>
+<offset>640</offset>
+<doc f='include/gtk-2.0/gdk/gdkimage.h' l='84'>/*&lt; private &gt;*/</doc>
+<doc f='include/gtk-2.0/gdk/gdkimage.h' l='85'>/* read only. */</doc>

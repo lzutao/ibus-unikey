@@ -1,0 +1,20 @@
+<def f='include/gtk-2.0/gtk/gtkoldeditable.h' l='68' ll='114'/>
+<size>856</size>
+<mbr r='_GtkOldEditableClass::parent_class' o='0' t='GtkWidgetClass'/>
+<mbr r='_GtkOldEditableClass::activate' o='5760' t='void (*)(GtkOldEditable *)'/>
+<mbr r='_GtkOldEditableClass::set_editable' o='5824' t='void (*)(GtkOldEditable *, gboolean)'/>
+<mbr r='_GtkOldEditableClass::move_cursor' o='5888' t='void (*)(GtkOldEditable *, gint, gint)'/>
+<mbr r='_GtkOldEditableClass::move_word' o='5952' t='void (*)(GtkOldEditable *, gint)'/>
+<mbr r='_GtkOldEditableClass::move_page' o='6016' t='void (*)(GtkOldEditable *, gint, gint)'/>
+<mbr r='_GtkOldEditableClass::move_to_row' o='6080' t='void (*)(GtkOldEditable *, gint)'/>
+<mbr r='_GtkOldEditableClass::move_to_column' o='6144' t='void (*)(GtkOldEditable *, gint)'/>
+<mbr r='_GtkOldEditableClass::kill_char' o='6208' t='void (*)(GtkOldEditable *, gint)'/>
+<mbr r='_GtkOldEditableClass::kill_word' o='6272' t='void (*)(GtkOldEditable *, gint)'/>
+<mbr r='_GtkOldEditableClass::kill_line' o='6336' t='void (*)(GtkOldEditable *, gint)'/>
+<mbr r='_GtkOldEditableClass::cut_clipboard' o='6400' t='void (*)(GtkOldEditable *)'/>
+<mbr r='_GtkOldEditableClass::copy_clipboard' o='6464' t='void (*)(GtkOldEditable *)'/>
+<mbr r='_GtkOldEditableClass::paste_clipboard' o='6528' t='void (*)(GtkOldEditable *)'/>
+<mbr r='_GtkOldEditableClass::update_text' o='6592' t='void (*)(GtkOldEditable *, gint, gint)'/>
+<mbr r='_GtkOldEditableClass::get_chars' o='6656' t='gchar *(*)(GtkOldEditable *, gint, gint)'/>
+<mbr r='_GtkOldEditableClass::set_selection' o='6720' t='void (*)(GtkOldEditable *, gint, gint)'/>
+<mbr r='_GtkOldEditableClass::set_position' o='6784' t='void (*)(GtkOldEditable *, gint)'/>

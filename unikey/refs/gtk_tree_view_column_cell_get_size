@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeviewcolumn.h' l='225' type='void gtk_tree_view_column_cell_get_size(GtkTreeViewColumn * tree_column, const GdkRectangle * cell_area, gint * x_offset, gint * y_offset, gint * width, gint * height)'/>

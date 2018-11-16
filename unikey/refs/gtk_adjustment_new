@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkadjustment.h' l='79' type='GtkObject * gtk_adjustment_new(gdouble value, gdouble lower, gdouble upper, gdouble step_increment, gdouble page_increment, gdouble page_size)'/>

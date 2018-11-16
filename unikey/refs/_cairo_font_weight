@@ -1,0 +1,10 @@
+<def f='include/cairo/cairo.h' l='1278' ll='1281'/>
+<doc f='include/cairo/cairo.h' l='1269'>/**
+ * cairo_font_weight_t:
+ * @CAIRO_FONT_WEIGHT_NORMAL: Normal font weight, since 1.0
+ * @CAIRO_FONT_WEIGHT_BOLD: Bold font weight, since 1.0
+ *
+ * Specifies variants of a font face based on their weight.
+ *
+ * Since: 1.0
+ **/</doc>

@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='733' type='void gtk_clist_clear(GtkCList * clist)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='730'>/* clear the entire list -- this is much faster than removing
+ * each item with gtk_clist_remove
+ */</doc>

@@ -1,0 +1,14 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='634' type='gchar * ibus_bus_current_input_context_async_finish(IBusBus * bus, GAsyncResult * res, GError ** error)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='621'>/**
+ * ibus_bus_current_input_context_async_finish:
+ * @bus: An #IBusBus.
+ * @res: A #GAsyncResult obtained from the #GAsyncReadyCallback passed to
+ *   ibus_bus_current_input_context_async().
+ * @error: Return location for error or %NULL.
+ *
+ * Finishes an operation started with ibus_bus_current_input_context_async().
+ *
+ * Returns: The named of currently focued IBusInputContext if the
+ *          &quot;CurrentInputContext&quot; call suceeded, %NULL otherwise. The return
+ *          value must be freed with g_free().
+ */</doc>

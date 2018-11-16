@@ -1,0 +1,2 @@
+<dec f='include/cairo/cairo.h' l='1589' type='cairo_scaled_font_t * cairo_scaled_font_create(cairo_font_face_t * font_face, const cairo_matrix_t * font_matrix, const cairo_matrix_t * ctm, const cairo_font_options_t * options)'/>
+<doc f='include/cairo/cairo.h' l='1586'>/* Portable interface to general font features. */</doc>

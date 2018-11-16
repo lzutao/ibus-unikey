@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='678' type='void gdk_window_thaw_updates(GdkWindow * window)'/>

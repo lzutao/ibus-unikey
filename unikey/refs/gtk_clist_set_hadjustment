@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='451' type='void gtk_clist_set_hadjustment(GtkCList * clist, GtkAdjustment * adjustment)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='450'>/* set adjustments of clist */</doc>

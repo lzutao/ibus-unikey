@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1258' type='gboolean gtk_widget_is_composited(GtkWidget * widget)'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='1257'>/* Compositing manager functionality */</doc>

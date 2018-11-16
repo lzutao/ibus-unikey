@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gdk/gdktypes.h' l='200' ll='206'/>
+<size>16</size>
+<mbr r='_GdkRectangle::x' o='0' t='gint'/>
+<mbr r='_GdkRectangle::y' o='32' t='gint'/>
+<mbr r='_GdkRectangle::width' o='64' t='gint'/>
+<mbr r='_GdkRectangle::height' o='96' t='gint'/>

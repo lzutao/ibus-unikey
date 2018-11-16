@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcontainer.h' l='156' type='GtkWidget * gtk_container_get_focus_child(GtkContainer * container)'/>

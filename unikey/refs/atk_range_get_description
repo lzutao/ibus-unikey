@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkrange.h' l='51' type='const gchar * atk_range_get_description(AtkRange * range)'/>

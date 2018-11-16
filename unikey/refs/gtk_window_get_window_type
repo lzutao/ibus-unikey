@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='393' type='GtkWindowType gtk_window_get_window_type(GtkWindow * window)'/>

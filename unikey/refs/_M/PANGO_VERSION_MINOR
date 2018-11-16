@@ -1,0 +1,3 @@
+<dec f='include/pango-1.0/pango/pango-features.h' l='6'/>
+<use f='include/pango-1.0/pango/pango-version-macros.h' l='248' u='c'/>
+<use f='include/pango-1.0/pango/pango-version-macros.h' l='255' u='c'/>

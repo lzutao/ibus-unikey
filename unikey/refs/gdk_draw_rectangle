@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdrawable.h' l='285' type='void gdk_draw_rectangle(GdkDrawable * drawable, GdkGC * gc, gboolean filled, gint x, gint y, gint width, gint height)'/>

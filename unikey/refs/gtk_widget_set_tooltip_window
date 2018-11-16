@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1294' type='void gtk_widget_set_tooltip_window(GtkWidget * widget, GtkWindow * custom_window)'/>

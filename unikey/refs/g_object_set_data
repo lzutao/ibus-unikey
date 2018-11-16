@@ -1,0 +1,2 @@
+<dec f='include/glib-2.0/gobject/gobject.h' l='574' type='void g_object_set_data(GObject * object, const gchar * key, gpointer data)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='45' u='c' c='_Z23unikey_macro_dialog_newv'/>

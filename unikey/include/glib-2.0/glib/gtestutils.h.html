@@ -1,0 +1,479 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gtestutils.h source code [include/glib-2.0/glib/gtestutils.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/glib-2.0/glib/gtestutils.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>glib-2.0</a>/<a href='./'>glib</a>/<a href='gtestutils.h.html'>gtestutils.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GLib testing utilities</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2007 Imendio AB</i></td></tr>
+<tr><th id="3">3</th><td><i> * Authors: Tim Janik</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="6">6</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="7">7</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="8">8</th><td><i> * version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="11">11</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="12">12</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="13">13</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="16">16</th><td><i> * License along with this library; if not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="17">17</th><td><i> */</i></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#<span data-ppcond="19">ifndef</span> <span class="macro" data-ref="_M/__G_TEST_UTILS_H__">__G_TEST_UTILS_H__</span></u></td></tr>
+<tr><th id="20">20</th><td><u>#define <dfn class="macro" id="_M/__G_TEST_UTILS_H__" data-ref="_M/__G_TEST_UTILS_H__">__G_TEST_UTILS_H__</dfn></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="22">if</span> !defined (<a class="macro" href="../glib.h.html#28" data-ref="_M/__GLIB_H_INSIDE__">__GLIB_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GLIB_COMPILATION">GLIB_COMPILATION</span>)</u></td></tr>
+<tr><th id="23">23</th><td><u>#error "Only &lt;glib.h&gt; can be included directly."</u></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="22">endif</span></u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="gmessages.h.html">&lt;glib/gmessages.h&gt;</a></u></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="gstring.h.html">&lt;glib/gstring.h&gt;</a></u></td></tr>
+<tr><th id="28">28</th><td><u>#include <a href="gerror.h.html">&lt;glib/gerror.h&gt;</a></u></td></tr>
+<tr><th id="29">29</th><td><u>#include <a href="gslist.h.html">&lt;glib/gslist.h&gt;</a></u></td></tr>
+<tr><th id="30">30</th><td><u>#include <a href="../../string.h.html">&lt;string.h&gt;</a></u></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><a class="macro" href="gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="GTestCase" title='GTestCase' data-ref="GTestCase"><a class="type" href="#GTestCase" title='GTestCase' data-ref="GTestCase">GTestCase</a></dfn>  <dfn class="typedef" id="GTestCase" title='GTestCase' data-type='struct GTestCase' data-ref="GTestCase">GTestCase</dfn>;</td></tr>
+<tr><th id="35">35</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="GTestSuite" title='GTestSuite' data-ref="GTestSuite"><a class="type" href="#GTestSuite" title='GTestSuite' data-ref="GTestSuite">GTestSuite</a></dfn> <dfn class="typedef" id="GTestSuite" title='GTestSuite' data-type='struct GTestSuite' data-ref="GTestSuite">GTestSuite</dfn>;</td></tr>
+<tr><th id="36">36</th><td><b>typedef</b> <em>void</em> (*<dfn class="typedef" id="GTestFunc" title='GTestFunc' data-type='void (*)()' data-ref="GTestFunc">GTestFunc</dfn>)        (<em>void</em>);</td></tr>
+<tr><th id="37">37</th><td><b>typedef</b> <em>void</em> (*<dfn class="typedef" id="GTestDataFunc" title='GTestDataFunc' data-type='void (*)(gconstpointer)' data-ref="GTestDataFunc">GTestDataFunc</dfn>)    (<a class="typedef" href="gtypes.h.html#gconstpointer" title='gconstpointer' data-type='const void *' data-ref="gconstpointer">gconstpointer</a> <dfn class="local col1 decl" id="3671user_data" title='user_data' data-type='gconstpointer' data-ref="3671user_data">user_data</dfn>);</td></tr>
+<tr><th id="38">38</th><td><b>typedef</b> <em>void</em> (*<dfn class="typedef" id="GTestFixtureFunc" title='GTestFixtureFunc' data-type='void (*)(gpointer, gconstpointer)' data-ref="GTestFixtureFunc">GTestFixtureFunc</dfn>) (<a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>      <dfn class="local col2 decl" id="3672fixture" title='fixture' data-type='gpointer' data-ref="3672fixture">fixture</dfn>,</td></tr>
+<tr><th id="39">39</th><td>                                  <a class="typedef" href="gtypes.h.html#gconstpointer" title='gconstpointer' data-type='const void *' data-ref="gconstpointer">gconstpointer</a> <dfn class="local col3 decl" id="3673user_data" title='user_data' data-type='gconstpointer' data-ref="3673user_data">user_data</dfn>);</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><i>/* assertion API */</i></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/g_assert_cmpstr" data-ref="_M/g_assert_cmpstr">g_assert_cmpstr</dfn>(s1, cmp, s2)    G_STMT_START { \</u></td></tr>
+<tr><th id="43">43</th><td><u>                                             const char *__s1 = (s1), *__s2 = (s2); \</u></td></tr>
+<tr><th id="44">44</th><td><u>                                             if (g_strcmp0 (__s1, __s2) cmp 0) ; else \</u></td></tr>
+<tr><th id="45">45</th><td><u>                                               g_assertion_message_cmpstr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \</u></td></tr>
+<tr><th id="46">46</th><td><u>                                                 #s1 " " #cmp " " #s2, __s1, #cmp, __s2); \</u></td></tr>
+<tr><th id="47">47</th><td><u>                                        } G_STMT_END</u></td></tr>
+<tr><th id="48">48</th><td><u>#define <dfn class="macro" id="_M/g_assert_cmpint" data-ref="_M/g_assert_cmpint">g_assert_cmpint</dfn>(n1, cmp, n2)    G_STMT_START { \</u></td></tr>
+<tr><th id="49">49</th><td><u>                                             gint64 __n1 = (n1), __n2 = (n2); \</u></td></tr>
+<tr><th id="50">50</th><td><u>                                             if (__n1 cmp __n2) ; else \</u></td></tr>
+<tr><th id="51">51</th><td><u>                                               g_assertion_message_cmpnum (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \</u></td></tr>
+<tr><th id="52">52</th><td><u>                                                 #n1 " " #cmp " " #n2, (long double) __n1, #cmp, (long double) __n2, 'i'); \</u></td></tr>
+<tr><th id="53">53</th><td><u>                                        } G_STMT_END</u></td></tr>
+<tr><th id="54">54</th><td><u>#define <dfn class="macro" id="_M/g_assert_cmpuint" data-ref="_M/g_assert_cmpuint">g_assert_cmpuint</dfn>(n1, cmp, n2)   G_STMT_START { \</u></td></tr>
+<tr><th id="55">55</th><td><u>                                             guint64 __n1 = (n1), __n2 = (n2); \</u></td></tr>
+<tr><th id="56">56</th><td><u>                                             if (__n1 cmp __n2) ; else \</u></td></tr>
+<tr><th id="57">57</th><td><u>                                               g_assertion_message_cmpnum (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \</u></td></tr>
+<tr><th id="58">58</th><td><u>                                                 #n1 " " #cmp " " #n2, (long double) __n1, #cmp, (long double) __n2, 'i'); \</u></td></tr>
+<tr><th id="59">59</th><td><u>                                        } G_STMT_END</u></td></tr>
+<tr><th id="60">60</th><td><u>#define <dfn class="macro" id="_M/g_assert_cmphex" data-ref="_M/g_assert_cmphex">g_assert_cmphex</dfn>(n1, cmp, n2)    G_STMT_START {\</u></td></tr>
+<tr><th id="61">61</th><td><u>                                             guint64 __n1 = (n1), __n2 = (n2); \</u></td></tr>
+<tr><th id="62">62</th><td><u>                                             if (__n1 cmp __n2) ; else \</u></td></tr>
+<tr><th id="63">63</th><td><u>                                               g_assertion_message_cmpnum (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \</u></td></tr>
+<tr><th id="64">64</th><td><u>                                                 #n1 " " #cmp " " #n2, (long double) __n1, #cmp, (long double) __n2, 'x'); \</u></td></tr>
+<tr><th id="65">65</th><td><u>                                        } G_STMT_END</u></td></tr>
+<tr><th id="66">66</th><td><u>#define <dfn class="macro" id="_M/g_assert_cmpfloat" data-ref="_M/g_assert_cmpfloat">g_assert_cmpfloat</dfn>(n1,cmp,n2)    G_STMT_START { \</u></td></tr>
+<tr><th id="67">67</th><td><u>                                             long double __n1 = (n1), __n2 = (n2); \</u></td></tr>
+<tr><th id="68">68</th><td><u>                                             if (__n1 cmp __n2) ; else \</u></td></tr>
+<tr><th id="69">69</th><td><u>                                               g_assertion_message_cmpnum (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \</u></td></tr>
+<tr><th id="70">70</th><td><u>                                                 #n1 " " #cmp " " #n2, (long double) __n1, #cmp, (long double) __n2, 'f'); \</u></td></tr>
+<tr><th id="71">71</th><td><u>                                        } G_STMT_END</u></td></tr>
+<tr><th id="72">72</th><td><u>#define <dfn class="macro" id="_M/g_assert_cmpmem" data-ref="_M/g_assert_cmpmem">g_assert_cmpmem</dfn>(m1, l1, m2, l2) G_STMT_START {\</u></td></tr>
+<tr><th id="73">73</th><td><u>                                             gconstpointer __m1 = m1, __m2 = m2; \</u></td></tr>
+<tr><th id="74">74</th><td><u>                                             int __l1 = l1, __l2 = l2; \</u></td></tr>
+<tr><th id="75">75</th><td><u>                                             if (__l1 != __l2) \</u></td></tr>
+<tr><th id="76">76</th><td><u>                                               g_assertion_message_cmpnum (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \</u></td></tr>
+<tr><th id="77">77</th><td><u>                                                                           #l1 " (len(" #m1 ")) == " #l2 " (len(" #m2 "))", \</u></td></tr>
+<tr><th id="78">78</th><td><u>                                                                           (long double) __l1, "==", (long double) __l2, 'i'); \</u></td></tr>
+<tr><th id="79">79</th><td><u>                                             else if (__l1 != 0 &amp;&amp; memcmp (__m1, __m2, __l1) != 0) \</u></td></tr>
+<tr><th id="80">80</th><td><u>                                               g_assertion_message (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \</u></td></tr>
+<tr><th id="81">81</th><td><u>                                                                    "assertion failed (" #m1 " == " #m2 ")"); \</u></td></tr>
+<tr><th id="82">82</th><td><u>                                        } G_STMT_END</u></td></tr>
+<tr><th id="83">83</th><td><u>#define <dfn class="macro" id="_M/g_assert_no_error" data-ref="_M/g_assert_no_error">g_assert_no_error</dfn>(err)          G_STMT_START { \</u></td></tr>
+<tr><th id="84">84</th><td><u>                                             if (err) \</u></td></tr>
+<tr><th id="85">85</th><td><u>                                               g_assertion_message_error (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \</u></td></tr>
+<tr><th id="86">86</th><td><u>                                                 #err, err, 0, 0); \</u></td></tr>
+<tr><th id="87">87</th><td><u>                                        } G_STMT_END</u></td></tr>
+<tr><th id="88">88</th><td><u>#define <dfn class="macro" id="_M/g_assert_error" data-ref="_M/g_assert_error">g_assert_error</dfn>(err, dom, c)     G_STMT_START { \</u></td></tr>
+<tr><th id="89">89</th><td><u>                                               if (!err || (err)-&gt;domain != dom || (err)-&gt;code != c) \</u></td></tr>
+<tr><th id="90">90</th><td><u>                                               g_assertion_message_error (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \</u></td></tr>
+<tr><th id="91">91</th><td><u>                                                 #err, err, dom, c); \</u></td></tr>
+<tr><th id="92">92</th><td><u>                                        } G_STMT_END</u></td></tr>
+<tr><th id="93">93</th><td><u>#define <dfn class="macro" id="_M/g_assert_true" data-ref="_M/g_assert_true">g_assert_true</dfn>(expr)             G_STMT_START { \</u></td></tr>
+<tr><th id="94">94</th><td><u>                                             if G_LIKELY (expr) ; else \</u></td></tr>
+<tr><th id="95">95</th><td><u>                                               g_assertion_message (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \</u></td></tr>
+<tr><th id="96">96</th><td><u>                                                                    "'" #expr "' should be TRUE"); \</u></td></tr>
+<tr><th id="97">97</th><td><u>                                        } G_STMT_END</u></td></tr>
+<tr><th id="98">98</th><td><u>#define <dfn class="macro" id="_M/g_assert_false" data-ref="_M/g_assert_false">g_assert_false</dfn>(expr)            G_STMT_START { \</u></td></tr>
+<tr><th id="99">99</th><td><u>                                             if G_LIKELY (!(expr)) ; else \</u></td></tr>
+<tr><th id="100">100</th><td><u>                                               g_assertion_message (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \</u></td></tr>
+<tr><th id="101">101</th><td><u>                                                                    "'" #expr "' should be FALSE"); \</u></td></tr>
+<tr><th id="102">102</th><td><u>                                        } G_STMT_END</u></td></tr>
+<tr><th id="103">103</th><td><u>#define <dfn class="macro" id="_M/g_assert_null" data-ref="_M/g_assert_null">g_assert_null</dfn>(expr)             G_STMT_START { if G_LIKELY ((expr) == NULL) ; else \</u></td></tr>
+<tr><th id="104">104</th><td><u>                                               g_assertion_message (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \</u></td></tr>
+<tr><th id="105">105</th><td><u>                                                                    "'" #expr "' should be NULL"); \</u></td></tr>
+<tr><th id="106">106</th><td><u>                                        } G_STMT_END</u></td></tr>
+<tr><th id="107">107</th><td><u>#define <dfn class="macro" id="_M/g_assert_nonnull" data-ref="_M/g_assert_nonnull">g_assert_nonnull</dfn>(expr)          G_STMT_START { \</u></td></tr>
+<tr><th id="108">108</th><td><u>                                             if G_LIKELY ((expr) != NULL) ; else \</u></td></tr>
+<tr><th id="109">109</th><td><u>                                               g_assertion_message (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \</u></td></tr>
+<tr><th id="110">110</th><td><u>                                                                    "'" #expr "' should not be NULL"); \</u></td></tr>
+<tr><th id="111">111</th><td><u>                                        } G_STMT_END</u></td></tr>
+<tr><th id="112">112</th><td><u>#<span data-ppcond="112">ifdef</span> <span class="macro" data-ref="_M/G_DISABLE_ASSERT">G_DISABLE_ASSERT</span></u></td></tr>
+<tr><th id="113">113</th><td><u>#define g_assert_not_reached()          G_STMT_START { (void) 0; } G_STMT_END</u></td></tr>
+<tr><th id="114">114</th><td><u>#define g_assert(expr)                  G_STMT_START { (void) 0; } G_STMT_END</u></td></tr>
+<tr><th id="115">115</th><td><u>#<span data-ppcond="112">else</span> /* !G_DISABLE_ASSERT */</u></td></tr>
+<tr><th id="116">116</th><td><u>#define <dfn class="macro" id="_M/g_assert_not_reached" data-ref="_M/g_assert_not_reached">g_assert_not_reached</dfn>()          G_STMT_START { g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } G_STMT_END</u></td></tr>
+<tr><th id="117">117</th><td><u>#define <dfn class="macro" id="_M/g_assert" data-ref="_M/g_assert">g_assert</dfn>(expr)                  G_STMT_START { \</u></td></tr>
+<tr><th id="118">118</th><td><u>                                             if G_LIKELY (expr) ; else \</u></td></tr>
+<tr><th id="119">119</th><td><u>                                               g_assertion_message_expr (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, \</u></td></tr>
+<tr><th id="120">120</th><td><u>                                                                         #expr); \</u></td></tr>
+<tr><th id="121">121</th><td><u>                                        } G_STMT_END</u></td></tr>
+<tr><th id="122">122</th><td><u>#<span data-ppcond="112">endif</span> /* !G_DISABLE_ASSERT */</u></td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="125">125</th><td><em>int</em>     <dfn class="decl" id="g_strcmp0" title='g_strcmp0' data-ref="g_strcmp0">g_strcmp0</dfn>                       (<em>const</em> <em>char</em>     *<dfn class="local col4 decl" id="3674str1" title='str1' data-type='const char *' data-ref="3674str1">str1</dfn>,</td></tr>
+<tr><th id="126">126</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col5 decl" id="3675str2" title='str2' data-type='const char *' data-ref="3675str2">str2</dfn>);</td></tr>
+<tr><th id="127">127</th><td></td></tr>
+<tr><th id="128">128</th><td><i>/* report performance results */</i></td></tr>
+<tr><th id="129">129</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="130">130</th><td><em>void</em>    <dfn class="decl" id="g_test_minimized_result" title='g_test_minimized_result' data-ref="g_test_minimized_result">g_test_minimized_result</dfn>         (<em>double</em>          <dfn class="local col6 decl" id="3676minimized_quantity" title='minimized_quantity' data-type='double' data-ref="3676minimized_quantity">minimized_quantity</dfn>,</td></tr>
+<tr><th id="131">131</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col7 decl" id="3677format" title='format' data-type='const char *' data-ref="3677format">format</dfn>,</td></tr>
+<tr><th id="132">132</th><td>                                         ...) <a class="macro" href="gmacros.h.html#134" title="__attribute__((__format__ (__printf__, 2, 3)))" data-ref="_M/G_GNUC_PRINTF">G_GNUC_PRINTF</a> (<var>2</var>, <var>3</var>);</td></tr>
+<tr><th id="133">133</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="134">134</th><td><em>void</em>    <dfn class="decl" id="g_test_maximized_result" title='g_test_maximized_result' data-ref="g_test_maximized_result">g_test_maximized_result</dfn>         (<em>double</em>          <dfn class="local col8 decl" id="3678maximized_quantity" title='maximized_quantity' data-type='double' data-ref="3678maximized_quantity">maximized_quantity</dfn>,</td></tr>
+<tr><th id="135">135</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col9 decl" id="3679format" title='format' data-type='const char *' data-ref="3679format">format</dfn>,</td></tr>
+<tr><th id="136">136</th><td>                                         ...) <a class="macro" href="gmacros.h.html#134" title="__attribute__((__format__ (__printf__, 2, 3)))" data-ref="_M/G_GNUC_PRINTF">G_GNUC_PRINTF</a> (<var>2</var>, <var>3</var>);</td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td><i>/* initialize testing framework */</i></td></tr>
+<tr><th id="139">139</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="140">140</th><td><em>void</em>    <dfn class="decl" id="g_test_init" title='g_test_init' data-ref="g_test_init">g_test_init</dfn>                     (<em>int</em>            *<dfn class="local col0 decl" id="3680argc" title='argc' data-type='int *' data-ref="3680argc">argc</dfn>,</td></tr>
+<tr><th id="141">141</th><td>                                         <em>char</em>         ***<dfn class="local col1 decl" id="3681argv" title='argv' data-type='char ***' data-ref="3681argv">argv</dfn>,</td></tr>
+<tr><th id="142">142</th><td>                                         ...) <a class="macro" href="gmacros.h.html#106" title="__attribute__((__sentinel__))" data-ref="_M/G_GNUC_NULL_TERMINATED">G_GNUC_NULL_TERMINATED</a>;</td></tr>
+<tr><th id="143">143</th><td><i>/* query testing framework config */</i></td></tr>
+<tr><th id="144">144</th><td><u>#define <dfn class="macro" id="_M/g_test_initialized" data-ref="_M/g_test_initialized">g_test_initialized</dfn>()            (g_test_config_vars-&gt;test_initialized)</u></td></tr>
+<tr><th id="145">145</th><td><u>#define <dfn class="macro" id="_M/g_test_quick" data-ref="_M/g_test_quick">g_test_quick</dfn>()                  (g_test_config_vars-&gt;test_quick)</u></td></tr>
+<tr><th id="146">146</th><td><u>#define <dfn class="macro" id="_M/g_test_slow" data-ref="_M/g_test_slow">g_test_slow</dfn>()                   (!g_test_config_vars-&gt;test_quick)</u></td></tr>
+<tr><th id="147">147</th><td><u>#define <dfn class="macro" id="_M/g_test_thorough" data-ref="_M/g_test_thorough">g_test_thorough</dfn>()               (!g_test_config_vars-&gt;test_quick)</u></td></tr>
+<tr><th id="148">148</th><td><u>#define <dfn class="macro" id="_M/g_test_perf" data-ref="_M/g_test_perf">g_test_perf</dfn>()                   (g_test_config_vars-&gt;test_perf)</u></td></tr>
+<tr><th id="149">149</th><td><u>#define <dfn class="macro" id="_M/g_test_verbose" data-ref="_M/g_test_verbose">g_test_verbose</dfn>()                (g_test_config_vars-&gt;test_verbose)</u></td></tr>
+<tr><th id="150">150</th><td><u>#define <dfn class="macro" id="_M/g_test_quiet" data-ref="_M/g_test_quiet">g_test_quiet</dfn>()                  (g_test_config_vars-&gt;test_quiet)</u></td></tr>
+<tr><th id="151">151</th><td><u>#define <dfn class="macro" id="_M/g_test_undefined" data-ref="_M/g_test_undefined">g_test_undefined</dfn>()              (g_test_config_vars-&gt;test_undefined)</u></td></tr>
+<tr><th id="152">152</th><td><a class="macro" href="gversionmacros.h.html#384" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_38">GLIB_AVAILABLE_IN_2_38</a></td></tr>
+<tr><th id="153">153</th><td><a class="typedef" href="gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="g_test_subprocess" title='g_test_subprocess' data-ref="g_test_subprocess">g_test_subprocess</dfn> (<em>void</em>);</td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td><i>/* run all tests under toplevel suite (path: /) */</i></td></tr>
+<tr><th id="156">156</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="157">157</th><td><em>int</em>     <dfn class="decl" id="g_test_run" title='g_test_run' data-ref="g_test_run">g_test_run</dfn>                      (<em>void</em>);</td></tr>
+<tr><th id="158">158</th><td><i>/* hook up a test functions under test path */</i></td></tr>
+<tr><th id="159">159</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="160">160</th><td><em>void</em>    <dfn class="decl" id="g_test_add_func" title='g_test_add_func' data-ref="g_test_add_func">g_test_add_func</dfn>                 (<em>const</em> <em>char</em>     *<dfn class="local col2 decl" id="3682testpath" title='testpath' data-type='const char *' data-ref="3682testpath">testpath</dfn>,</td></tr>
+<tr><th id="161">161</th><td>                                         <a class="typedef" href="#GTestFunc" title='GTestFunc' data-type='void (*)()' data-ref="GTestFunc">GTestFunc</a>       <dfn class="local col3 decl" id="3683test_func" title='test_func' data-type='GTestFunc' data-ref="3683test_func">test_func</dfn>);</td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="164">164</th><td><em>void</em>    <dfn class="decl" id="g_test_add_data_func" title='g_test_add_data_func' data-ref="g_test_add_data_func">g_test_add_data_func</dfn>            (<em>const</em> <em>char</em>     *<dfn class="local col4 decl" id="3684testpath" title='testpath' data-type='const char *' data-ref="3684testpath">testpath</dfn>,</td></tr>
+<tr><th id="165">165</th><td>                                         <a class="typedef" href="gtypes.h.html#gconstpointer" title='gconstpointer' data-type='const void *' data-ref="gconstpointer">gconstpointer</a>   <dfn class="local col5 decl" id="3685test_data" title='test_data' data-type='gconstpointer' data-ref="3685test_data">test_data</dfn>,</td></tr>
+<tr><th id="166">166</th><td>                                         <a class="typedef" href="#GTestDataFunc" title='GTestDataFunc' data-type='void (*)(gconstpointer)' data-ref="GTestDataFunc">GTestDataFunc</a>   <dfn class="local col6 decl" id="3686test_func" title='test_func' data-type='GTestDataFunc' data-ref="3686test_func">test_func</dfn>);</td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td><a class="macro" href="gversionmacros.h.html#356" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_34">GLIB_AVAILABLE_IN_2_34</a></td></tr>
+<tr><th id="169">169</th><td><em>void</em>    <dfn class="decl" id="g_test_add_data_func_full" title='g_test_add_data_func_full' data-ref="g_test_add_data_func_full">g_test_add_data_func_full</dfn>       (<em>const</em> <em>char</em>     *<dfn class="local col7 decl" id="3687testpath" title='testpath' data-type='const char *' data-ref="3687testpath">testpath</dfn>,</td></tr>
+<tr><th id="170">170</th><td>                                         <a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>        <dfn class="local col8 decl" id="3688test_data" title='test_data' data-type='gpointer' data-ref="3688test_data">test_data</dfn>,</td></tr>
+<tr><th id="171">171</th><td>                                         <a class="typedef" href="#GTestDataFunc" title='GTestDataFunc' data-type='void (*)(gconstpointer)' data-ref="GTestDataFunc">GTestDataFunc</a>   <dfn class="local col9 decl" id="3689test_func" title='test_func' data-type='GTestDataFunc' data-ref="3689test_func">test_func</dfn>,</td></tr>
+<tr><th id="172">172</th><td>                                         <a class="typedef" href="gtypes.h.html#GDestroyNotify" title='GDestroyNotify' data-type='void (*)(gpointer)' data-ref="GDestroyNotify">GDestroyNotify</a>  <dfn class="local col0 decl" id="3690data_free_func" title='data_free_func' data-type='GDestroyNotify' data-ref="3690data_free_func">data_free_func</dfn>);</td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td><i>/* tell about failure */</i></td></tr>
+<tr><th id="175">175</th><td><a class="macro" href="gversionmacros.h.html#328" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_30">GLIB_AVAILABLE_IN_2_30</a></td></tr>
+<tr><th id="176">176</th><td><em>void</em>    <dfn class="decl" id="g_test_fail" title='g_test_fail' data-ref="g_test_fail">g_test_fail</dfn>                     (<em>void</em>);</td></tr>
+<tr><th id="177">177</th><td><a class="macro" href="gversionmacros.h.html#384" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_38">GLIB_AVAILABLE_IN_2_38</a></td></tr>
+<tr><th id="178">178</th><td><em>void</em>    <dfn class="decl" id="g_test_incomplete" title='g_test_incomplete' data-ref="g_test_incomplete">g_test_incomplete</dfn>               (<em>const</em> <a class="typedef" href="gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col1 decl" id="3691msg" title='msg' data-type='const gchar *' data-ref="3691msg">msg</dfn>);</td></tr>
+<tr><th id="179">179</th><td><a class="macro" href="gversionmacros.h.html#384" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_38">GLIB_AVAILABLE_IN_2_38</a></td></tr>
+<tr><th id="180">180</th><td><em>void</em>    <dfn class="decl" id="g_test_skip" title='g_test_skip' data-ref="g_test_skip">g_test_skip</dfn>                     (<em>const</em> <a class="typedef" href="gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col2 decl" id="3692msg" title='msg' data-type='const gchar *' data-ref="3692msg">msg</dfn>);</td></tr>
+<tr><th id="181">181</th><td><a class="macro" href="gversionmacros.h.html#384" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_38">GLIB_AVAILABLE_IN_2_38</a></td></tr>
+<tr><th id="182">182</th><td><a class="typedef" href="gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="g_test_failed" title='g_test_failed' data-ref="g_test_failed">g_test_failed</dfn>                  (<em>void</em>);</td></tr>
+<tr><th id="183">183</th><td><a class="macro" href="gversionmacros.h.html#384" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_38">GLIB_AVAILABLE_IN_2_38</a></td></tr>
+<tr><th id="184">184</th><td><em>void</em>    <dfn class="decl" id="g_test_set_nonfatal_assertions" title='g_test_set_nonfatal_assertions' data-ref="g_test_set_nonfatal_assertions">g_test_set_nonfatal_assertions</dfn>  (<em>void</em>);</td></tr>
+<tr><th id="185">185</th><td></td></tr>
+<tr><th id="186">186</th><td><i>/* hook up a test with fixture under test path */</i></td></tr>
+<tr><th id="187">187</th><td><u>#define <dfn class="macro" id="_M/g_test_add" data-ref="_M/g_test_add">g_test_add</dfn>(testpath, Fixture, tdata, fsetup, ftest, fteardown) \</u></td></tr>
+<tr><th id="188">188</th><td><u>					G_STMT_START {			\</u></td></tr>
+<tr><th id="189">189</th><td><u>                                         void (*add_vtable) (const char*,       \</u></td></tr>
+<tr><th id="190">190</th><td><u>                                                    gsize,             \</u></td></tr>
+<tr><th id="191">191</th><td><u>                                                    gconstpointer,     \</u></td></tr>
+<tr><th id="192">192</th><td><u>                                                    void (*) (Fixture*, gconstpointer),   \</u></td></tr>
+<tr><th id="193">193</th><td><u>                                                    void (*) (Fixture*, gconstpointer),   \</u></td></tr>
+<tr><th id="194">194</th><td><u>                                                    void (*) (Fixture*, gconstpointer)) =  (void (*) (const gchar *, gsize, gconstpointer, void (*) (Fixture*, gconstpointer), void (*) (Fixture*, gconstpointer), void (*) (Fixture*, gconstpointer))) g_test_add_vtable; \</u></td></tr>
+<tr><th id="195">195</th><td><u>                                         add_vtable \</u></td></tr>
+<tr><th id="196">196</th><td><u>                                          (testpath, sizeof (Fixture), tdata, fsetup, ftest, fteardown); \</u></td></tr>
+<tr><th id="197">197</th><td><u>					} G_STMT_END</u></td></tr>
+<tr><th id="198">198</th><td></td></tr>
+<tr><th id="199">199</th><td><i>/* add test messages to the test report */</i></td></tr>
+<tr><th id="200">200</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="201">201</th><td><em>void</em>    <dfn class="decl" id="g_test_message" title='g_test_message' data-ref="g_test_message">g_test_message</dfn>                  (<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="3693format" title='format' data-type='const char *' data-ref="3693format">format</dfn>,</td></tr>
+<tr><th id="202">202</th><td>                                         ...) <a class="macro" href="gmacros.h.html#134" title="__attribute__((__format__ (__printf__, 1, 2)))" data-ref="_M/G_GNUC_PRINTF">G_GNUC_PRINTF</a> (<var>1</var>, <var>2</var>);</td></tr>
+<tr><th id="203">203</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="204">204</th><td><em>void</em>    <dfn class="decl" id="g_test_bug_base" title='g_test_bug_base' data-ref="g_test_bug_base">g_test_bug_base</dfn>                 (<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="3694uri_pattern" title='uri_pattern' data-type='const char *' data-ref="3694uri_pattern">uri_pattern</dfn>);</td></tr>
+<tr><th id="205">205</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="206">206</th><td><em>void</em>    <dfn class="decl" id="g_test_bug" title='g_test_bug' data-ref="g_test_bug">g_test_bug</dfn>                      (<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="3695bug_uri_snippet" title='bug_uri_snippet' data-type='const char *' data-ref="3695bug_uri_snippet">bug_uri_snippet</dfn>);</td></tr>
+<tr><th id="207">207</th><td><i>/* measure test timings */</i></td></tr>
+<tr><th id="208">208</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="209">209</th><td><em>void</em>    <dfn class="decl" id="g_test_timer_start" title='g_test_timer_start' data-ref="g_test_timer_start">g_test_timer_start</dfn>              (<em>void</em>);</td></tr>
+<tr><th id="210">210</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="211">211</th><td><em>double</em>  <dfn class="decl" id="g_test_timer_elapsed" title='g_test_timer_elapsed' data-ref="g_test_timer_elapsed">g_test_timer_elapsed</dfn>            (<em>void</em>); <i>/* elapsed seconds */</i></td></tr>
+<tr><th id="212">212</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="213">213</th><td><em>double</em>  <dfn class="decl" id="g_test_timer_last" title='g_test_timer_last' data-ref="g_test_timer_last">g_test_timer_last</dfn>               (<em>void</em>); <i>/* repeat last elapsed() result */</i></td></tr>
+<tr><th id="214">214</th><td></td></tr>
+<tr><th id="215">215</th><td><i>/* automatically g_free or g_object_unref upon teardown */</i></td></tr>
+<tr><th id="216">216</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="217">217</th><td><em>void</em>    <dfn class="decl" id="g_test_queue_free" title='g_test_queue_free' data-ref="g_test_queue_free">g_test_queue_free</dfn>               (<a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="local col6 decl" id="3696gfree_pointer" title='gfree_pointer' data-type='gpointer' data-ref="3696gfree_pointer">gfree_pointer</dfn>);</td></tr>
+<tr><th id="218">218</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="219">219</th><td><em>void</em>    <dfn class="decl" id="g_test_queue_destroy" title='g_test_queue_destroy' data-ref="g_test_queue_destroy">g_test_queue_destroy</dfn>            (<a class="typedef" href="gtypes.h.html#GDestroyNotify" title='GDestroyNotify' data-type='void (*)(gpointer)' data-ref="GDestroyNotify">GDestroyNotify</a> <dfn class="local col7 decl" id="3697destroy_func" title='destroy_func' data-type='GDestroyNotify' data-ref="3697destroy_func">destroy_func</dfn>,</td></tr>
+<tr><th id="220">220</th><td>                                         <a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>       <dfn class="local col8 decl" id="3698destroy_data" title='destroy_data' data-type='gpointer' data-ref="3698destroy_data">destroy_data</dfn>);</td></tr>
+<tr><th id="221">221</th><td><u>#define <dfn class="macro" id="_M/g_test_queue_unref" data-ref="_M/g_test_queue_unref">g_test_queue_unref</dfn>(gobject)     g_test_queue_destroy (g_object_unref, gobject)</u></td></tr>
+<tr><th id="222">222</th><td></td></tr>
+<tr><th id="223">223</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="224">224</th><td>  <dfn class="enum" id="G_TEST_TRAP_SILENCE_STDOUT" title='G_TEST_TRAP_SILENCE_STDOUT' data-ref="G_TEST_TRAP_SILENCE_STDOUT">G_TEST_TRAP_SILENCE_STDOUT</dfn>    = <var>1</var> &lt;&lt; <var>7</var>,</td></tr>
+<tr><th id="225">225</th><td>  <dfn class="enum" id="G_TEST_TRAP_SILENCE_STDERR" title='G_TEST_TRAP_SILENCE_STDERR' data-ref="G_TEST_TRAP_SILENCE_STDERR">G_TEST_TRAP_SILENCE_STDERR</dfn>    = <var>1</var> &lt;&lt; <var>8</var>,</td></tr>
+<tr><th id="226">226</th><td>  <dfn class="enum" id="G_TEST_TRAP_INHERIT_STDIN" title='G_TEST_TRAP_INHERIT_STDIN' data-ref="G_TEST_TRAP_INHERIT_STDIN">G_TEST_TRAP_INHERIT_STDIN</dfn>     = <var>1</var> &lt;&lt; <var>9</var></td></tr>
+<tr><th id="227">227</th><td>} <dfn class="typedef" id="GTestTrapFlags" title='GTestTrapFlags' data-type='enum GTestTrapFlags' data-ref="GTestTrapFlags">GTestTrapFlags</dfn>;</td></tr>
+<tr><th id="228">228</th><td></td></tr>
+<tr><th id="229">229</th><td><a class="macro" href="gversionmacros.h.html#375" title="__attribute__((__deprecated__)) extern" data-ref="_M/GLIB_DEPRECATED_IN_2_38_FOR">GLIB_DEPRECATED_IN_2_38_FOR</a> (g_test_trap_subprocess)</td></tr>
+<tr><th id="230">230</th><td><a class="typedef" href="gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="g_test_trap_fork" title='g_test_trap_fork' data-ref="g_test_trap_fork">g_test_trap_fork</dfn>               (<span class='typedef' title='guint64' data-type='unsigned long' data-ref="guint64">guint64</span>              <dfn class="local col9 decl" id="3699usec_timeout" title='usec_timeout' data-type='guint64' data-ref="3699usec_timeout">usec_timeout</dfn>,</td></tr>
+<tr><th id="231">231</th><td>                                         <a class="typedef" href="#GTestTrapFlags" title='GTestTrapFlags' data-type='enum GTestTrapFlags' data-ref="GTestTrapFlags">GTestTrapFlags</a>       <dfn class="local col0 decl" id="3700test_trap_flags" title='test_trap_flags' data-type='GTestTrapFlags' data-ref="3700test_trap_flags">test_trap_flags</dfn>);</td></tr>
+<tr><th id="232">232</th><td></td></tr>
+<tr><th id="233">233</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="234">234</th><td>  <dfn class="enum" id="G_TEST_SUBPROCESS_INHERIT_STDIN" title='G_TEST_SUBPROCESS_INHERIT_STDIN' data-ref="G_TEST_SUBPROCESS_INHERIT_STDIN">G_TEST_SUBPROCESS_INHERIT_STDIN</dfn>  = <var>1</var> &lt;&lt; <var>0</var>,</td></tr>
+<tr><th id="235">235</th><td>  <dfn class="enum" id="G_TEST_SUBPROCESS_INHERIT_STDOUT" title='G_TEST_SUBPROCESS_INHERIT_STDOUT' data-ref="G_TEST_SUBPROCESS_INHERIT_STDOUT">G_TEST_SUBPROCESS_INHERIT_STDOUT</dfn> = <var>1</var> &lt;&lt; <var>1</var>,</td></tr>
+<tr><th id="236">236</th><td>  <dfn class="enum" id="G_TEST_SUBPROCESS_INHERIT_STDERR" title='G_TEST_SUBPROCESS_INHERIT_STDERR' data-ref="G_TEST_SUBPROCESS_INHERIT_STDERR">G_TEST_SUBPROCESS_INHERIT_STDERR</dfn> = <var>1</var> &lt;&lt; <var>2</var></td></tr>
+<tr><th id="237">237</th><td>} <dfn class="typedef" id="GTestSubprocessFlags" title='GTestSubprocessFlags' data-type='enum GTestSubprocessFlags' data-ref="GTestSubprocessFlags">GTestSubprocessFlags</dfn>;</td></tr>
+<tr><th id="238">238</th><td></td></tr>
+<tr><th id="239">239</th><td><a class="macro" href="gversionmacros.h.html#384" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_38">GLIB_AVAILABLE_IN_2_38</a></td></tr>
+<tr><th id="240">240</th><td><em>void</em>     <dfn class="decl" id="g_test_trap_subprocess" title='g_test_trap_subprocess' data-ref="g_test_trap_subprocess">g_test_trap_subprocess</dfn>         (<em>const</em> <em>char</em>           *<dfn class="local col1 decl" id="3701test_path" title='test_path' data-type='const char *' data-ref="3701test_path">test_path</dfn>,</td></tr>
+<tr><th id="241">241</th><td>                                         <span class='typedef' title='guint64' data-type='unsigned long' data-ref="guint64">guint64</span>               <dfn class="local col2 decl" id="3702usec_timeout" title='usec_timeout' data-type='guint64' data-ref="3702usec_timeout">usec_timeout</dfn>,</td></tr>
+<tr><th id="242">242</th><td>                                         <a class="typedef" href="#GTestSubprocessFlags" title='GTestSubprocessFlags' data-type='enum GTestSubprocessFlags' data-ref="GTestSubprocessFlags">GTestSubprocessFlags</a>  <dfn class="local col3 decl" id="3703test_flags" title='test_flags' data-type='GTestSubprocessFlags' data-ref="3703test_flags">test_flags</dfn>);</td></tr>
+<tr><th id="243">243</th><td></td></tr>
+<tr><th id="244">244</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="245">245</th><td><a class="typedef" href="gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="g_test_trap_has_passed" title='g_test_trap_has_passed' data-ref="g_test_trap_has_passed">g_test_trap_has_passed</dfn>         (<em>void</em>);</td></tr>
+<tr><th id="246">246</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="247">247</th><td><a class="typedef" href="gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="g_test_trap_reached_timeout" title='g_test_trap_reached_timeout' data-ref="g_test_trap_reached_timeout">g_test_trap_reached_timeout</dfn>    (<em>void</em>);</td></tr>
+<tr><th id="248">248</th><td><u>#define  <dfn class="macro" id="_M/g_test_trap_assert_passed" data-ref="_M/g_test_trap_assert_passed">g_test_trap_assert_passed</dfn>()                      g_test_trap_assertions (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, 0, 0)</u></td></tr>
+<tr><th id="249">249</th><td><u>#define  <dfn class="macro" id="_M/g_test_trap_assert_failed" data-ref="_M/g_test_trap_assert_failed">g_test_trap_assert_failed</dfn>()                      g_test_trap_assertions (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, 1, 0)</u></td></tr>
+<tr><th id="250">250</th><td><u>#define  <dfn class="macro" id="_M/g_test_trap_assert_stdout" data-ref="_M/g_test_trap_assert_stdout">g_test_trap_assert_stdout</dfn>(soutpattern)           g_test_trap_assertions (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, 2, soutpattern)</u></td></tr>
+<tr><th id="251">251</th><td><u>#define  <dfn class="macro" id="_M/g_test_trap_assert_stdout_unmatched" data-ref="_M/g_test_trap_assert_stdout_unmatched">g_test_trap_assert_stdout_unmatched</dfn>(soutpattern) g_test_trap_assertions (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, 3, soutpattern)</u></td></tr>
+<tr><th id="252">252</th><td><u>#define  <dfn class="macro" id="_M/g_test_trap_assert_stderr" data-ref="_M/g_test_trap_assert_stderr">g_test_trap_assert_stderr</dfn>(serrpattern)           g_test_trap_assertions (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, 4, serrpattern)</u></td></tr>
+<tr><th id="253">253</th><td><u>#define  <dfn class="macro" id="_M/g_test_trap_assert_stderr_unmatched" data-ref="_M/g_test_trap_assert_stderr_unmatched">g_test_trap_assert_stderr_unmatched</dfn>(serrpattern) g_test_trap_assertions (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, 5, serrpattern)</u></td></tr>
+<tr><th id="254">254</th><td></td></tr>
+<tr><th id="255">255</th><td><i>/* provide seed-able random numbers for tests */</i></td></tr>
+<tr><th id="256">256</th><td><u>#define  <dfn class="macro" id="_M/g_test_rand_bit" data-ref="_M/g_test_rand_bit">g_test_rand_bit</dfn>()              (0 != (g_test_rand_int() &amp; (1 &lt;&lt; 15)))</u></td></tr>
+<tr><th id="257">257</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="258">258</th><td><span class='typedef' title='gint32' data-type='int' data-ref="gint32">gint32</span>   <dfn class="decl" id="g_test_rand_int" title='g_test_rand_int' data-ref="g_test_rand_int">g_test_rand_int</dfn>                (<em>void</em>);</td></tr>
+<tr><th id="259">259</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="260">260</th><td><span class='typedef' title='gint32' data-type='int' data-ref="gint32">gint32</span>   <dfn class="decl" id="g_test_rand_int_range" title='g_test_rand_int_range' data-ref="g_test_rand_int_range">g_test_rand_int_range</dfn>          (<span class='typedef' title='gint32' data-type='int' data-ref="gint32">gint32</span>          <dfn class="local col4 decl" id="3704begin" title='begin' data-type='gint32' data-ref="3704begin">begin</dfn>,</td></tr>
+<tr><th id="261">261</th><td>                                         <span class='typedef' title='gint32' data-type='int' data-ref="gint32">gint32</span>          <dfn class="local col5 decl" id="3705end" title='end' data-type='gint32' data-ref="3705end">end</dfn>);</td></tr>
+<tr><th id="262">262</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="263">263</th><td><em>double</em>   <dfn class="decl" id="g_test_rand_double" title='g_test_rand_double' data-ref="g_test_rand_double">g_test_rand_double</dfn>             (<em>void</em>);</td></tr>
+<tr><th id="264">264</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="265">265</th><td><em>double</em>   <dfn class="decl" id="g_test_rand_double_range" title='g_test_rand_double_range' data-ref="g_test_rand_double_range">g_test_rand_double_range</dfn>       (<em>double</em>          <dfn class="local col6 decl" id="3706range_start" title='range_start' data-type='double' data-ref="3706range_start">range_start</dfn>,</td></tr>
+<tr><th id="266">266</th><td>                                         <em>double</em>          <dfn class="local col7 decl" id="3707range_end" title='range_end' data-type='double' data-ref="3707range_end">range_end</dfn>);</td></tr>
+<tr><th id="267">267</th><td></td></tr>
+<tr><th id="268">268</th><td><i>/*</i></td></tr>
+<tr><th id="269">269</th><td><i> * semi-internal API: non-documented symbols with stable ABI. You</i></td></tr>
+<tr><th id="270">270</th><td><i> * should use the non-internal helper macros instead. However, for</i></td></tr>
+<tr><th id="271">271</th><td><i> * compatibility reason, you may use this semi-internal API.</i></td></tr>
+<tr><th id="272">272</th><td><i> */</i></td></tr>
+<tr><th id="273">273</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="274">274</th><td><a class="typedef" href="#GTestCase" title='GTestCase' data-type='struct GTestCase' data-ref="GTestCase">GTestCase</a>*    <dfn class="decl" id="g_test_create_case" title='g_test_create_case' data-ref="g_test_create_case">g_test_create_case</dfn>        (<em>const</em> <em>char</em>       *<dfn class="local col8 decl" id="3708test_name" title='test_name' data-type='const char *' data-ref="3708test_name">test_name</dfn>,</td></tr>
+<tr><th id="275">275</th><td>                                         <span class='typedef' title='gsize' data-type='unsigned long' data-ref="gsize">gsize</span>             <dfn class="local col9 decl" id="3709data_size" title='data_size' data-type='gsize' data-ref="3709data_size">data_size</dfn>,</td></tr>
+<tr><th id="276">276</th><td>                                         <a class="typedef" href="gtypes.h.html#gconstpointer" title='gconstpointer' data-type='const void *' data-ref="gconstpointer">gconstpointer</a>     <dfn class="local col0 decl" id="3710test_data" title='test_data' data-type='gconstpointer' data-ref="3710test_data">test_data</dfn>,</td></tr>
+<tr><th id="277">277</th><td>                                         <a class="typedef" href="#GTestFixtureFunc" title='GTestFixtureFunc' data-type='void (*)(gpointer, gconstpointer)' data-ref="GTestFixtureFunc">GTestFixtureFunc</a>  <dfn class="local col1 decl" id="3711data_setup" title='data_setup' data-type='GTestFixtureFunc' data-ref="3711data_setup">data_setup</dfn>,</td></tr>
+<tr><th id="278">278</th><td>                                         <a class="typedef" href="#GTestFixtureFunc" title='GTestFixtureFunc' data-type='void (*)(gpointer, gconstpointer)' data-ref="GTestFixtureFunc">GTestFixtureFunc</a>  <dfn class="local col2 decl" id="3712data_test" title='data_test' data-type='GTestFixtureFunc' data-ref="3712data_test">data_test</dfn>,</td></tr>
+<tr><th id="279">279</th><td>                                         <a class="typedef" href="#GTestFixtureFunc" title='GTestFixtureFunc' data-type='void (*)(gpointer, gconstpointer)' data-ref="GTestFixtureFunc">GTestFixtureFunc</a>  <dfn class="local col3 decl" id="3713data_teardown" title='data_teardown' data-type='GTestFixtureFunc' data-ref="3713data_teardown">data_teardown</dfn>);</td></tr>
+<tr><th id="280">280</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="281">281</th><td><a class="typedef" href="#GTestSuite" title='GTestSuite' data-type='struct GTestSuite' data-ref="GTestSuite">GTestSuite</a>*   <dfn class="decl" id="g_test_create_suite" title='g_test_create_suite' data-ref="g_test_create_suite">g_test_create_suite</dfn>       (<em>const</em> <em>char</em>       *<dfn class="local col4 decl" id="3714suite_name" title='suite_name' data-type='const char *' data-ref="3714suite_name">suite_name</dfn>);</td></tr>
+<tr><th id="282">282</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="283">283</th><td><a class="typedef" href="#GTestSuite" title='GTestSuite' data-type='struct GTestSuite' data-ref="GTestSuite">GTestSuite</a>*   <dfn class="decl" id="g_test_get_root" title='g_test_get_root' data-ref="g_test_get_root">g_test_get_root</dfn>           (<em>void</em>);</td></tr>
+<tr><th id="284">284</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="285">285</th><td><em>void</em>          <dfn class="decl" id="g_test_suite_add" title='g_test_suite_add' data-ref="g_test_suite_add">g_test_suite_add</dfn>          (<a class="typedef" href="#GTestSuite" title='GTestSuite' data-type='struct GTestSuite' data-ref="GTestSuite">GTestSuite</a>     *<dfn class="local col5 decl" id="3715suite" title='suite' data-type='GTestSuite *' data-ref="3715suite">suite</dfn>,</td></tr>
+<tr><th id="286">286</th><td>                                         <a class="typedef" href="#GTestCase" title='GTestCase' data-type='struct GTestCase' data-ref="GTestCase">GTestCase</a>      *<dfn class="local col6 decl" id="3716test_case" title='test_case' data-type='GTestCase *' data-ref="3716test_case">test_case</dfn>);</td></tr>
+<tr><th id="287">287</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="288">288</th><td><em>void</em>          <dfn class="decl" id="g_test_suite_add_suite" title='g_test_suite_add_suite' data-ref="g_test_suite_add_suite">g_test_suite_add_suite</dfn>    (<a class="typedef" href="#GTestSuite" title='GTestSuite' data-type='struct GTestSuite' data-ref="GTestSuite">GTestSuite</a>     *<dfn class="local col7 decl" id="3717suite" title='suite' data-type='GTestSuite *' data-ref="3717suite">suite</dfn>,</td></tr>
+<tr><th id="289">289</th><td>                                         <a class="typedef" href="#GTestSuite" title='GTestSuite' data-type='struct GTestSuite' data-ref="GTestSuite">GTestSuite</a>     *<dfn class="local col8 decl" id="3718nestedsuite" title='nestedsuite' data-type='GTestSuite *' data-ref="3718nestedsuite">nestedsuite</dfn>);</td></tr>
+<tr><th id="290">290</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="291">291</th><td><em>int</em>           <dfn class="decl" id="g_test_run_suite" title='g_test_run_suite' data-ref="g_test_run_suite">g_test_run_suite</dfn>          (<a class="typedef" href="#GTestSuite" title='GTestSuite' data-type='struct GTestSuite' data-ref="GTestSuite">GTestSuite</a>     *<dfn class="local col9 decl" id="3719suite" title='suite' data-type='GTestSuite *' data-ref="3719suite">suite</dfn>);</td></tr>
+<tr><th id="292">292</th><td></td></tr>
+<tr><th id="293">293</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="294">294</th><td><em>void</em>    <dfn class="decl" id="g_test_trap_assertions" title='g_test_trap_assertions' data-ref="g_test_trap_assertions">g_test_trap_assertions</dfn>          (<em>const</em> <em>char</em>     *<dfn class="local col0 decl" id="3720domain" title='domain' data-type='const char *' data-ref="3720domain">domain</dfn>,</td></tr>
+<tr><th id="295">295</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col1 decl" id="3721file" title='file' data-type='const char *' data-ref="3721file">file</dfn>,</td></tr>
+<tr><th id="296">296</th><td>                                         <em>int</em>             <dfn class="local col2 decl" id="3722line" title='line' data-type='int' data-ref="3722line">line</dfn>,</td></tr>
+<tr><th id="297">297</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col3 decl" id="3723func" title='func' data-type='const char *' data-ref="3723func">func</dfn>,</td></tr>
+<tr><th id="298">298</th><td>                                         <span class='typedef' title='guint64' data-type='unsigned long' data-ref="guint64">guint64</span>         <dfn class="local col4 decl" id="3724assertion_flags" title='assertion_flags' data-type='guint64' data-ref="3724assertion_flags">assertion_flags</dfn>, <i>/* 0-pass, 1-fail, 2-outpattern, 4-errpattern */</i></td></tr>
+<tr><th id="299">299</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col5 decl" id="3725pattern" title='pattern' data-type='const char *' data-ref="3725pattern">pattern</dfn>);</td></tr>
+<tr><th id="300">300</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="301">301</th><td><em>void</em>    <dfn class="decl" id="g_assertion_message" title='g_assertion_message' data-ref="g_assertion_message">g_assertion_message</dfn>             (<em>const</em> <em>char</em>     *<dfn class="local col6 decl" id="3726domain" title='domain' data-type='const char *' data-ref="3726domain">domain</dfn>,</td></tr>
+<tr><th id="302">302</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col7 decl" id="3727file" title='file' data-type='const char *' data-ref="3727file">file</dfn>,</td></tr>
+<tr><th id="303">303</th><td>                                         <em>int</em>             <dfn class="local col8 decl" id="3728line" title='line' data-type='int' data-ref="3728line">line</dfn>,</td></tr>
+<tr><th id="304">304</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col9 decl" id="3729func" title='func' data-type='const char *' data-ref="3729func">func</dfn>,</td></tr>
+<tr><th id="305">305</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col0 decl" id="3730message" title='message' data-type='const char *' data-ref="3730message">message</dfn>);</td></tr>
+<tr><th id="306">306</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="307">307</th><td><em>void</em>    <dfn class="decl" id="g_assertion_message_expr" title='g_assertion_message_expr' data-ref="g_assertion_message_expr">g_assertion_message_expr</dfn>        (<em>const</em> <em>char</em>     *<dfn class="local col1 decl" id="3731domain" title='domain' data-type='const char *' data-ref="3731domain">domain</dfn>,</td></tr>
+<tr><th id="308">308</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col2 decl" id="3732file" title='file' data-type='const char *' data-ref="3732file">file</dfn>,</td></tr>
+<tr><th id="309">309</th><td>                                         <em>int</em>             <dfn class="local col3 decl" id="3733line" title='line' data-type='int' data-ref="3733line">line</dfn>,</td></tr>
+<tr><th id="310">310</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col4 decl" id="3734func" title='func' data-type='const char *' data-ref="3734func">func</dfn>,</td></tr>
+<tr><th id="311">311</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col5 decl" id="3735expr" title='expr' data-type='const char *' data-ref="3735expr">expr</dfn>) <a class="macro" href="gmacros.h.html#140" title="__attribute__((__noreturn__))" data-ref="_M/G_GNUC_NORETURN">G_GNUC_NORETURN</a>;</td></tr>
+<tr><th id="312">312</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="313">313</th><td><em>void</em>    <dfn class="decl" id="g_assertion_message_cmpstr" title='g_assertion_message_cmpstr' data-ref="g_assertion_message_cmpstr">g_assertion_message_cmpstr</dfn>      (<em>const</em> <em>char</em>     *<dfn class="local col6 decl" id="3736domain" title='domain' data-type='const char *' data-ref="3736domain">domain</dfn>,</td></tr>
+<tr><th id="314">314</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col7 decl" id="3737file" title='file' data-type='const char *' data-ref="3737file">file</dfn>,</td></tr>
+<tr><th id="315">315</th><td>                                         <em>int</em>             <dfn class="local col8 decl" id="3738line" title='line' data-type='int' data-ref="3738line">line</dfn>,</td></tr>
+<tr><th id="316">316</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col9 decl" id="3739func" title='func' data-type='const char *' data-ref="3739func">func</dfn>,</td></tr>
+<tr><th id="317">317</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col0 decl" id="3740expr" title='expr' data-type='const char *' data-ref="3740expr">expr</dfn>,</td></tr>
+<tr><th id="318">318</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col1 decl" id="3741arg1" title='arg1' data-type='const char *' data-ref="3741arg1">arg1</dfn>,</td></tr>
+<tr><th id="319">319</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col2 decl" id="3742cmp" title='cmp' data-type='const char *' data-ref="3742cmp">cmp</dfn>,</td></tr>
+<tr><th id="320">320</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col3 decl" id="3743arg2" title='arg2' data-type='const char *' data-ref="3743arg2">arg2</dfn>);</td></tr>
+<tr><th id="321">321</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="322">322</th><td><em>void</em>    <dfn class="decl" id="g_assertion_message_cmpnum" title='g_assertion_message_cmpnum' data-ref="g_assertion_message_cmpnum">g_assertion_message_cmpnum</dfn>      (<em>const</em> <em>char</em>     *<dfn class="local col4 decl" id="3744domain" title='domain' data-type='const char *' data-ref="3744domain">domain</dfn>,</td></tr>
+<tr><th id="323">323</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col5 decl" id="3745file" title='file' data-type='const char *' data-ref="3745file">file</dfn>,</td></tr>
+<tr><th id="324">324</th><td>                                         <em>int</em>             <dfn class="local col6 decl" id="3746line" title='line' data-type='int' data-ref="3746line">line</dfn>,</td></tr>
+<tr><th id="325">325</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col7 decl" id="3747func" title='func' data-type='const char *' data-ref="3747func">func</dfn>,</td></tr>
+<tr><th id="326">326</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col8 decl" id="3748expr" title='expr' data-type='const char *' data-ref="3748expr">expr</dfn>,</td></tr>
+<tr><th id="327">327</th><td>                                         <em>long</em> <em>double</em>     <dfn class="local col9 decl" id="3749arg1" title='arg1' data-type='long double' data-ref="3749arg1">arg1</dfn>,</td></tr>
+<tr><th id="328">328</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col0 decl" id="3750cmp" title='cmp' data-type='const char *' data-ref="3750cmp">cmp</dfn>,</td></tr>
+<tr><th id="329">329</th><td>                                         <em>long</em> <em>double</em>     <dfn class="local col1 decl" id="3751arg2" title='arg2' data-type='long double' data-ref="3751arg2">arg2</dfn>,</td></tr>
+<tr><th id="330">330</th><td>                                         <em>char</em>            <dfn class="local col2 decl" id="3752numtype" title='numtype' data-type='char' data-ref="3752numtype">numtype</dfn>);</td></tr>
+<tr><th id="331">331</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="332">332</th><td><em>void</em>    <dfn class="decl" id="g_assertion_message_error" title='g_assertion_message_error' data-ref="g_assertion_message_error">g_assertion_message_error</dfn>       (<em>const</em> <em>char</em>     *<dfn class="local col3 decl" id="3753domain" title='domain' data-type='const char *' data-ref="3753domain">domain</dfn>,</td></tr>
+<tr><th id="333">333</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col4 decl" id="3754file" title='file' data-type='const char *' data-ref="3754file">file</dfn>,</td></tr>
+<tr><th id="334">334</th><td>                                         <em>int</em>             <dfn class="local col5 decl" id="3755line" title='line' data-type='int' data-ref="3755line">line</dfn>,</td></tr>
+<tr><th id="335">335</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col6 decl" id="3756func" title='func' data-type='const char *' data-ref="3756func">func</dfn>,</td></tr>
+<tr><th id="336">336</th><td>                                         <em>const</em> <em>char</em>     *<dfn class="local col7 decl" id="3757expr" title='expr' data-type='const char *' data-ref="3757expr">expr</dfn>,</td></tr>
+<tr><th id="337">337</th><td>                                         <em>const</em> <a class="typedef" href="gerror.h.html#GError" title='GError' data-type='struct _GError' data-ref="GError">GError</a>   *<dfn class="local col8 decl" id="3758error" title='error' data-type='const GError *' data-ref="3758error">error</dfn>,</td></tr>
+<tr><th id="338">338</th><td>                                         <a class="typedef" href="gquark.h.html#GQuark" title='GQuark' data-type='guint32' data-ref="GQuark">GQuark</a>          <dfn class="local col9 decl" id="3759error_domain" title='error_domain' data-type='GQuark' data-ref="3759error_domain">error_domain</dfn>,</td></tr>
+<tr><th id="339">339</th><td>                                         <em>int</em>             <dfn class="local col0 decl" id="3760error_code" title='error_code' data-type='int' data-ref="3760error_code">error_code</dfn>);</td></tr>
+<tr><th id="340">340</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="341">341</th><td><em>void</em>    <dfn class="decl" id="g_test_add_vtable" title='g_test_add_vtable' data-ref="g_test_add_vtable">g_test_add_vtable</dfn>               (<em>const</em> <em>char</em>     *<dfn class="local col1 decl" id="3761testpath" title='testpath' data-type='const char *' data-ref="3761testpath">testpath</dfn>,</td></tr>
+<tr><th id="342">342</th><td>                                         <span class='typedef' title='gsize' data-type='unsigned long' data-ref="gsize">gsize</span>           <dfn class="local col2 decl" id="3762data_size" title='data_size' data-type='gsize' data-ref="3762data_size">data_size</dfn>,</td></tr>
+<tr><th id="343">343</th><td>                                         <a class="typedef" href="gtypes.h.html#gconstpointer" title='gconstpointer' data-type='const void *' data-ref="gconstpointer">gconstpointer</a>   <dfn class="local col3 decl" id="3763test_data" title='test_data' data-type='gconstpointer' data-ref="3763test_data">test_data</dfn>,</td></tr>
+<tr><th id="344">344</th><td>                                         <a class="typedef" href="#GTestFixtureFunc" title='GTestFixtureFunc' data-type='void (*)(gpointer, gconstpointer)' data-ref="GTestFixtureFunc">GTestFixtureFunc</a>  <dfn class="local col4 decl" id="3764data_setup" title='data_setup' data-type='GTestFixtureFunc' data-ref="3764data_setup">data_setup</dfn>,</td></tr>
+<tr><th id="345">345</th><td>                                         <a class="typedef" href="#GTestFixtureFunc" title='GTestFixtureFunc' data-type='void (*)(gpointer, gconstpointer)' data-ref="GTestFixtureFunc">GTestFixtureFunc</a>  <dfn class="local col5 decl" id="3765data_test" title='data_test' data-type='GTestFixtureFunc' data-ref="3765data_test">data_test</dfn>,</td></tr>
+<tr><th id="346">346</th><td>                                         <a class="typedef" href="#GTestFixtureFunc" title='GTestFixtureFunc' data-type='void (*)(gpointer, gconstpointer)' data-ref="GTestFixtureFunc">GTestFixtureFunc</a>  <dfn class="local col6 decl" id="3766data_teardown" title='data_teardown' data-type='GTestFixtureFunc' data-ref="3766data_teardown">data_teardown</dfn>);</td></tr>
+<tr><th id="347">347</th><td><b>typedef</b> <b>struct</b> {</td></tr>
+<tr><th id="348">348</th><td>  <a class="typedef" href="gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>      <dfn class="decl" id="(anonymous)::test_initialized" title='(anonymous struct)::test_initialized' data-ref="(anonymous)::test_initialized">test_initialized</dfn>;</td></tr>
+<tr><th id="349">349</th><td>  <a class="typedef" href="gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>      <dfn class="decl" id="(anonymous)::test_quick" title='(anonymous struct)::test_quick' data-ref="(anonymous)::test_quick">test_quick</dfn>;     <i>/* disable thorough tests */</i></td></tr>
+<tr><th id="350">350</th><td>  <a class="typedef" href="gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>      <dfn class="decl" id="(anonymous)::test_perf" title='(anonymous struct)::test_perf' data-ref="(anonymous)::test_perf">test_perf</dfn>;      <i>/* run performance tests */</i></td></tr>
+<tr><th id="351">351</th><td>  <a class="typedef" href="gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>      <dfn class="decl" id="(anonymous)::test_verbose" title='(anonymous struct)::test_verbose' data-ref="(anonymous)::test_verbose">test_verbose</dfn>;   <i>/* extra info */</i></td></tr>
+<tr><th id="352">352</th><td>  <a class="typedef" href="gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>      <dfn class="decl" id="(anonymous)::test_quiet" title='(anonymous struct)::test_quiet' data-ref="(anonymous)::test_quiet">test_quiet</dfn>;     <i>/* reduce output */</i></td></tr>
+<tr><th id="353">353</th><td>  <a class="typedef" href="gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>      <dfn class="decl" id="(anonymous)::test_undefined" title='(anonymous struct)::test_undefined' data-ref="(anonymous)::test_undefined">test_undefined</dfn>; <i>/* run tests that are meant to assert */</i></td></tr>
+<tr><th id="354">354</th><td>} <dfn class="typedef" id="GTestConfig" title='GTestConfig' data-type='struct GTestConfig' data-ref="GTestConfig">GTestConfig</dfn>;</td></tr>
+<tr><th id="355">355</th><td><a class="macro" href="gtypes.h.html#534" title="extern" data-ref="_M/GLIB_VAR">GLIB_VAR</a> <em>const</em> <a class="typedef" href="#GTestConfig" title='GTestConfig' data-type='struct GTestConfig' data-ref="GTestConfig">GTestConfig</a> * <em>const</em> <dfn class="decl" id="g_test_config_vars" title='g_test_config_vars' data-ref="g_test_config_vars">g_test_config_vars</dfn>;</td></tr>
+<tr><th id="356">356</th><td></td></tr>
+<tr><th id="357">357</th><td><i>/* internal logging API */</i></td></tr>
+<tr><th id="358">358</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="359">359</th><td>  <dfn class="enum" id="G_TEST_RUN_SUCCESS" title='G_TEST_RUN_SUCCESS' data-ref="G_TEST_RUN_SUCCESS">G_TEST_RUN_SUCCESS</dfn>,</td></tr>
+<tr><th id="360">360</th><td>  <dfn class="enum" id="G_TEST_RUN_SKIPPED" title='G_TEST_RUN_SKIPPED' data-ref="G_TEST_RUN_SKIPPED">G_TEST_RUN_SKIPPED</dfn>,</td></tr>
+<tr><th id="361">361</th><td>  <dfn class="enum" id="G_TEST_RUN_FAILURE" title='G_TEST_RUN_FAILURE' data-ref="G_TEST_RUN_FAILURE">G_TEST_RUN_FAILURE</dfn>,</td></tr>
+<tr><th id="362">362</th><td>  <dfn class="enum" id="G_TEST_RUN_INCOMPLETE" title='G_TEST_RUN_INCOMPLETE' data-ref="G_TEST_RUN_INCOMPLETE">G_TEST_RUN_INCOMPLETE</dfn></td></tr>
+<tr><th id="363">363</th><td>} <dfn class="typedef" id="GTestResult" title='GTestResult' data-type='enum GTestResult' data-ref="GTestResult">GTestResult</dfn>;</td></tr>
+<tr><th id="364">364</th><td></td></tr>
+<tr><th id="365">365</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="366">366</th><td>  <dfn class="enum" id="G_TEST_LOG_NONE" title='G_TEST_LOG_NONE' data-ref="G_TEST_LOG_NONE">G_TEST_LOG_NONE</dfn>,</td></tr>
+<tr><th id="367">367</th><td>  <dfn class="enum" id="G_TEST_LOG_ERROR" title='G_TEST_LOG_ERROR' data-ref="G_TEST_LOG_ERROR">G_TEST_LOG_ERROR</dfn>,             <i>/* s:msg */</i></td></tr>
+<tr><th id="368">368</th><td>  <dfn class="enum" id="G_TEST_LOG_START_BINARY" title='G_TEST_LOG_START_BINARY' data-ref="G_TEST_LOG_START_BINARY">G_TEST_LOG_START_BINARY</dfn>,      <i>/* s:binaryname s:seed */</i></td></tr>
+<tr><th id="369">369</th><td>  <dfn class="enum" id="G_TEST_LOG_LIST_CASE" title='G_TEST_LOG_LIST_CASE' data-ref="G_TEST_LOG_LIST_CASE">G_TEST_LOG_LIST_CASE</dfn>,         <i>/* s:testpath */</i></td></tr>
+<tr><th id="370">370</th><td>  <dfn class="enum" id="G_TEST_LOG_SKIP_CASE" title='G_TEST_LOG_SKIP_CASE' data-ref="G_TEST_LOG_SKIP_CASE">G_TEST_LOG_SKIP_CASE</dfn>,         <i>/* s:testpath */</i></td></tr>
+<tr><th id="371">371</th><td>  <dfn class="enum" id="G_TEST_LOG_START_CASE" title='G_TEST_LOG_START_CASE' data-ref="G_TEST_LOG_START_CASE">G_TEST_LOG_START_CASE</dfn>,        <i>/* s:testpath */</i></td></tr>
+<tr><th id="372">372</th><td>  <dfn class="enum" id="G_TEST_LOG_STOP_CASE" title='G_TEST_LOG_STOP_CASE' data-ref="G_TEST_LOG_STOP_CASE">G_TEST_LOG_STOP_CASE</dfn>,         <i>/* d:status d:nforks d:elapsed */</i></td></tr>
+<tr><th id="373">373</th><td>  <dfn class="enum" id="G_TEST_LOG_MIN_RESULT" title='G_TEST_LOG_MIN_RESULT' data-ref="G_TEST_LOG_MIN_RESULT">G_TEST_LOG_MIN_RESULT</dfn>,        <i>/* s:blurb d:result */</i></td></tr>
+<tr><th id="374">374</th><td>  <dfn class="enum" id="G_TEST_LOG_MAX_RESULT" title='G_TEST_LOG_MAX_RESULT' data-ref="G_TEST_LOG_MAX_RESULT">G_TEST_LOG_MAX_RESULT</dfn>,        <i>/* s:blurb d:result */</i></td></tr>
+<tr><th id="375">375</th><td>  <dfn class="enum" id="G_TEST_LOG_MESSAGE" title='G_TEST_LOG_MESSAGE' data-ref="G_TEST_LOG_MESSAGE">G_TEST_LOG_MESSAGE</dfn>,           <i>/* s:blurb */</i></td></tr>
+<tr><th id="376">376</th><td>  <dfn class="enum" id="G_TEST_LOG_START_SUITE" title='G_TEST_LOG_START_SUITE' data-ref="G_TEST_LOG_START_SUITE">G_TEST_LOG_START_SUITE</dfn>,</td></tr>
+<tr><th id="377">377</th><td>  <dfn class="enum" id="G_TEST_LOG_STOP_SUITE" title='G_TEST_LOG_STOP_SUITE' data-ref="G_TEST_LOG_STOP_SUITE">G_TEST_LOG_STOP_SUITE</dfn></td></tr>
+<tr><th id="378">378</th><td>} <dfn class="typedef" id="GTestLogType" title='GTestLogType' data-type='enum GTestLogType' data-ref="GTestLogType">GTestLogType</dfn>;</td></tr>
+<tr><th id="379">379</th><td></td></tr>
+<tr><th id="380">380</th><td><b>typedef</b> <b>struct</b> {</td></tr>
+<tr><th id="381">381</th><td>  <a class="typedef" href="#GTestLogType" title='GTestLogType' data-type='enum GTestLogType' data-ref="GTestLogType">GTestLogType</a>  <dfn class="decl" id="(anonymous)::log_type" title='(anonymous struct)::log_type' data-ref="(anonymous)::log_type">log_type</dfn>;</td></tr>
+<tr><th id="382">382</th><td>  <a class="typedef" href="gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>         <dfn class="decl" id="(anonymous)::n_strings" title='(anonymous struct)::n_strings' data-ref="(anonymous)::n_strings">n_strings</dfn>;</td></tr>
+<tr><th id="383">383</th><td>  <a class="typedef" href="gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>       **<dfn class="decl" id="(anonymous)::strings" title='(anonymous struct)::strings' data-ref="(anonymous)::strings">strings</dfn>; <i>/* NULL terminated */</i></td></tr>
+<tr><th id="384">384</th><td>  <a class="typedef" href="gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>         <dfn class="decl" id="(anonymous)::n_nums" title='(anonymous struct)::n_nums' data-ref="(anonymous)::n_nums">n_nums</dfn>;</td></tr>
+<tr><th id="385">385</th><td>  <em>long</em> <em>double</em>  *<dfn class="decl" id="(anonymous)::nums" title='(anonymous struct)::nums' data-ref="(anonymous)::nums">nums</dfn>;</td></tr>
+<tr><th id="386">386</th><td>} <dfn class="typedef" id="GTestLogMsg" title='GTestLogMsg' data-type='struct GTestLogMsg' data-ref="GTestLogMsg">GTestLogMsg</dfn>;</td></tr>
+<tr><th id="387">387</th><td><b>typedef</b> <b>struct</b> {</td></tr>
+<tr><th id="388">388</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="389">389</th><td>  <a class="typedef" href="gstring.h.html#GString" title='GString' data-type='struct _GString' data-ref="GString">GString</a>     *<dfn class="decl" id="(anonymous)::data" title='(anonymous struct)::data' data-ref="(anonymous)::data">data</dfn>;</td></tr>
+<tr><th id="390">390</th><td>  <a class="typedef" href="gslist.h.html#GSList" title='GSList' data-type='struct _GSList' data-ref="GSList">GSList</a>      *<dfn class="decl" id="(anonymous)::msgs" title='(anonymous struct)::msgs' data-ref="(anonymous)::msgs">msgs</dfn>;</td></tr>
+<tr><th id="391">391</th><td>} <dfn class="typedef" id="GTestLogBuffer" title='GTestLogBuffer' data-type='struct GTestLogBuffer' data-ref="GTestLogBuffer">GTestLogBuffer</dfn>;</td></tr>
+<tr><th id="392">392</th><td></td></tr>
+<tr><th id="393">393</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="394">394</th><td><em>const</em> <em>char</em>*     <dfn class="decl" id="g_test_log_type_name" title='g_test_log_type_name' data-ref="g_test_log_type_name">g_test_log_type_name</dfn>    (<a class="typedef" href="#GTestLogType" title='GTestLogType' data-type='enum GTestLogType' data-ref="GTestLogType">GTestLogType</a>    <dfn class="local col7 decl" id="3767log_type" title='log_type' data-type='GTestLogType' data-ref="3767log_type">log_type</dfn>);</td></tr>
+<tr><th id="395">395</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="396">396</th><td><a class="typedef" href="#GTestLogBuffer" title='GTestLogBuffer' data-type='struct GTestLogBuffer' data-ref="GTestLogBuffer">GTestLogBuffer</a>* <dfn class="decl" id="g_test_log_buffer_new" title='g_test_log_buffer_new' data-ref="g_test_log_buffer_new">g_test_log_buffer_new</dfn>   (<em>void</em>);</td></tr>
+<tr><th id="397">397</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="398">398</th><td><em>void</em>            <dfn class="decl" id="g_test_log_buffer_free" title='g_test_log_buffer_free' data-ref="g_test_log_buffer_free">g_test_log_buffer_free</dfn>  (<a class="typedef" href="#GTestLogBuffer" title='GTestLogBuffer' data-type='struct GTestLogBuffer' data-ref="GTestLogBuffer">GTestLogBuffer</a> *<dfn class="local col8 decl" id="3768tbuffer" title='tbuffer' data-type='GTestLogBuffer *' data-ref="3768tbuffer">tbuffer</dfn>);</td></tr>
+<tr><th id="399">399</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="400">400</th><td><em>void</em>            <dfn class="decl" id="g_test_log_buffer_push" title='g_test_log_buffer_push' data-ref="g_test_log_buffer_push">g_test_log_buffer_push</dfn>  (<a class="typedef" href="#GTestLogBuffer" title='GTestLogBuffer' data-type='struct GTestLogBuffer' data-ref="GTestLogBuffer">GTestLogBuffer</a> *<dfn class="local col9 decl" id="3769tbuffer" title='tbuffer' data-type='GTestLogBuffer *' data-ref="3769tbuffer">tbuffer</dfn>,</td></tr>
+<tr><th id="401">401</th><td>                                         <a class="typedef" href="gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           <dfn class="local col0 decl" id="3770n_bytes" title='n_bytes' data-type='guint' data-ref="3770n_bytes">n_bytes</dfn>,</td></tr>
+<tr><th id="402">402</th><td>                                         <em>const</em> <span class='typedef' title='guint8' data-type='unsigned char' data-ref="guint8">guint8</span>   *<dfn class="local col1 decl" id="3771bytes" title='bytes' data-type='const guint8 *' data-ref="3771bytes">bytes</dfn>);</td></tr>
+<tr><th id="403">403</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="404">404</th><td><a class="typedef" href="#GTestLogMsg" title='GTestLogMsg' data-type='struct GTestLogMsg' data-ref="GTestLogMsg">GTestLogMsg</a>*    <dfn class="decl" id="g_test_log_buffer_pop" title='g_test_log_buffer_pop' data-ref="g_test_log_buffer_pop">g_test_log_buffer_pop</dfn>   (<a class="typedef" href="#GTestLogBuffer" title='GTestLogBuffer' data-type='struct GTestLogBuffer' data-ref="GTestLogBuffer">GTestLogBuffer</a> *<dfn class="local col2 decl" id="3772tbuffer" title='tbuffer' data-type='GTestLogBuffer *' data-ref="3772tbuffer">tbuffer</dfn>);</td></tr>
+<tr><th id="405">405</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="406">406</th><td><em>void</em>            <dfn class="decl" id="g_test_log_msg_free" title='g_test_log_msg_free' data-ref="g_test_log_msg_free">g_test_log_msg_free</dfn>     (<a class="typedef" href="#GTestLogMsg" title='GTestLogMsg' data-type='struct GTestLogMsg' data-ref="GTestLogMsg">GTestLogMsg</a>    *<dfn class="local col3 decl" id="3773tmsg" title='tmsg' data-type='GTestLogMsg *' data-ref="3773tmsg">tmsg</dfn>);</td></tr>
+<tr><th id="407">407</th><td></td></tr>
+<tr><th id="408">408</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="409">409</th><td><i class="doc"> * GTestLogFatalFunc:</i></td></tr>
+<tr><th id="410">410</th><td><i class="doc"> *<span class="command"> @log</span>_domain: the log domain of the message</i></td></tr>
+<tr><th id="411">411</th><td><i class="doc"> *<span class="command"> @log</span>_level: the log level of the message (including the fatal and recursion flags)</i></td></tr>
+<tr><th id="412">412</th><td><i class="doc"> *<span class="command"> @message</span>: the message to process</i></td></tr>
+<tr><th id="413">413</th><td><i class="doc"> *<span class="command"> @user</span>_data: user data, set in g_test_log_set_fatal_handler()</i></td></tr>
+<tr><th id="414">414</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="415">415</th><td><i class="doc"> * Specifies the prototype of fatal log handler functions.</i></td></tr>
+<tr><th id="416">416</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="417">417</th><td><i class="doc"> * Returns: %TRUE if the program should abort, %FALSE otherwise</i></td></tr>
+<tr><th id="418">418</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="419">419</th><td><i class="doc"> * Since: 2.22</i></td></tr>
+<tr><th id="420">420</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="421">421</th><td><b>typedef</b> <a class="typedef" href="gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>        (*<dfn class="typedef" id="GTestLogFatalFunc" title='GTestLogFatalFunc' data-type='gboolean (*)(const gchar *, GLogLevelFlags, const gchar *, gpointer)' data-ref="GTestLogFatalFunc">GTestLogFatalFunc</dfn>)    (<em>const</em> <a class="typedef" href="gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col4 decl" id="3774log_domain" title='log_domain' data-type='const gchar *' data-ref="3774log_domain">log_domain</dfn>,</td></tr>
+<tr><th id="422">422</th><td>                                                 <a class="typedef" href="gmessages.h.html#GLogLevelFlags" title='GLogLevelFlags' data-type='enum GLogLevelFlags' data-ref="GLogLevelFlags">GLogLevelFlags</a>  <dfn class="local col5 decl" id="3775log_level" title='log_level' data-type='GLogLevelFlags' data-ref="3775log_level">log_level</dfn>,</td></tr>
+<tr><th id="423">423</th><td>                                                 <em>const</em> <a class="typedef" href="gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col6 decl" id="3776message" title='message' data-type='const gchar *' data-ref="3776message">message</dfn>,</td></tr>
+<tr><th id="424">424</th><td>                                                 <a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>        <dfn class="local col7 decl" id="3777user_data" title='user_data' data-type='gpointer' data-ref="3777user_data">user_data</dfn>);</td></tr>
+<tr><th id="425">425</th><td><a class="macro" href="gversionmacros.h.html#285" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_ALL">GLIB_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="426">426</th><td><em>void</em></td></tr>
+<tr><th id="427">427</th><td><dfn class="decl" id="g_test_log_set_fatal_handler" title='g_test_log_set_fatal_handler' data-ref="g_test_log_set_fatal_handler">g_test_log_set_fatal_handler</dfn>            (<a class="typedef" href="#GTestLogFatalFunc" title='GTestLogFatalFunc' data-type='gboolean (*)(const gchar *, GLogLevelFlags, const gchar *, gpointer)' data-ref="GTestLogFatalFunc">GTestLogFatalFunc</a> <dfn class="local col8 decl" id="3778log_func" title='log_func' data-type='GTestLogFatalFunc' data-ref="3778log_func">log_func</dfn>,</td></tr>
+<tr><th id="428">428</th><td>                                         <a class="typedef" href="gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>          <dfn class="local col9 decl" id="3779user_data" title='user_data' data-type='gpointer' data-ref="3779user_data">user_data</dfn>);</td></tr>
+<tr><th id="429">429</th><td></td></tr>
+<tr><th id="430">430</th><td><a class="macro" href="gversionmacros.h.html#356" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_34">GLIB_AVAILABLE_IN_2_34</a></td></tr>
+<tr><th id="431">431</th><td><em>void</em>    <dfn class="decl" id="g_test_expect_message" title='g_test_expect_message' data-ref="g_test_expect_message">g_test_expect_message</dfn>                    (<em>const</em> <a class="typedef" href="gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col0 decl" id="3780log_domain" title='log_domain' data-type='const gchar *' data-ref="3780log_domain">log_domain</dfn>,</td></tr>
+<tr><th id="432">432</th><td>                                                  <a class="typedef" href="gmessages.h.html#GLogLevelFlags" title='GLogLevelFlags' data-type='enum GLogLevelFlags' data-ref="GLogLevelFlags">GLogLevelFlags</a>  <dfn class="local col1 decl" id="3781log_level" title='log_level' data-type='GLogLevelFlags' data-ref="3781log_level">log_level</dfn>,</td></tr>
+<tr><th id="433">433</th><td>                                                  <em>const</em> <a class="typedef" href="gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col2 decl" id="3782pattern" title='pattern' data-type='const gchar *' data-ref="3782pattern">pattern</dfn>);</td></tr>
+<tr><th id="434">434</th><td><a class="macro" href="gversionmacros.h.html#356" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_34">GLIB_AVAILABLE_IN_2_34</a></td></tr>
+<tr><th id="435">435</th><td><em>void</em>    <dfn class="decl" id="g_test_assert_expected_messages_internal" title='g_test_assert_expected_messages_internal' data-ref="g_test_assert_expected_messages_internal">g_test_assert_expected_messages_internal</dfn> (<em>const</em> <em>char</em>     *<dfn class="local col3 decl" id="3783domain" title='domain' data-type='const char *' data-ref="3783domain">domain</dfn>,</td></tr>
+<tr><th id="436">436</th><td>                                                  <em>const</em> <em>char</em>     *<dfn class="local col4 decl" id="3784file" title='file' data-type='const char *' data-ref="3784file">file</dfn>,</td></tr>
+<tr><th id="437">437</th><td>                                                  <em>int</em>             <dfn class="local col5 decl" id="3785line" title='line' data-type='int' data-ref="3785line">line</dfn>,</td></tr>
+<tr><th id="438">438</th><td>                                                  <em>const</em> <em>char</em>     *<dfn class="local col6 decl" id="3786func" title='func' data-type='const char *' data-ref="3786func">func</dfn>);</td></tr>
+<tr><th id="439">439</th><td></td></tr>
+<tr><th id="440">440</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="441">441</th><td>{</td></tr>
+<tr><th id="442">442</th><td>  <dfn class="enum" id="G_TEST_DIST" title='G_TEST_DIST' data-ref="G_TEST_DIST">G_TEST_DIST</dfn>,</td></tr>
+<tr><th id="443">443</th><td>  <dfn class="enum" id="G_TEST_BUILT" title='G_TEST_BUILT' data-ref="G_TEST_BUILT">G_TEST_BUILT</dfn></td></tr>
+<tr><th id="444">444</th><td>} <dfn class="typedef" id="GTestFileType" title='GTestFileType' data-type='enum GTestFileType' data-ref="GTestFileType">GTestFileType</dfn>;</td></tr>
+<tr><th id="445">445</th><td></td></tr>
+<tr><th id="446">446</th><td><a class="macro" href="gversionmacros.h.html#384" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_38">GLIB_AVAILABLE_IN_2_38</a></td></tr>
+<tr><th id="447">447</th><td><a class="typedef" href="gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> * <dfn class="decl" id="g_test_build_filename" title='g_test_build_filename' data-ref="g_test_build_filename">g_test_build_filename</dfn>                    (<a class="typedef" href="#GTestFileType" title='GTestFileType' data-type='enum GTestFileType' data-ref="GTestFileType">GTestFileType</a>   <dfn class="local col7 decl" id="3787file_type" title='file_type' data-type='GTestFileType' data-ref="3787file_type">file_type</dfn>,</td></tr>
+<tr><th id="448">448</th><td>                                                  <em>const</em> <a class="typedef" href="gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col8 decl" id="3788first_path" title='first_path' data-type='const gchar *' data-ref="3788first_path">first_path</dfn>,</td></tr>
+<tr><th id="449">449</th><td>                                                  ...) <a class="macro" href="gmacros.h.html#106" title="__attribute__((__sentinel__))" data-ref="_M/G_GNUC_NULL_TERMINATED">G_GNUC_NULL_TERMINATED</a>;</td></tr>
+<tr><th id="450">450</th><td><a class="macro" href="gversionmacros.h.html#384" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_38">GLIB_AVAILABLE_IN_2_38</a></td></tr>
+<tr><th id="451">451</th><td><em>const</em> <a class="typedef" href="gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="decl" id="g_test_get_dir" title='g_test_get_dir' data-ref="g_test_get_dir">g_test_get_dir</dfn>                      (<a class="typedef" href="#GTestFileType" title='GTestFileType' data-type='enum GTestFileType' data-ref="GTestFileType">GTestFileType</a>   <dfn class="local col9 decl" id="3789file_type" title='file_type' data-type='GTestFileType' data-ref="3789file_type">file_type</dfn>);</td></tr>
+<tr><th id="452">452</th><td><a class="macro" href="gversionmacros.h.html#384" title="extern" data-ref="_M/GLIB_AVAILABLE_IN_2_38">GLIB_AVAILABLE_IN_2_38</a></td></tr>
+<tr><th id="453">453</th><td><em>const</em> <a class="typedef" href="gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="decl" id="g_test_get_filename" title='g_test_get_filename' data-ref="g_test_get_filename">g_test_get_filename</dfn>                 (<a class="typedef" href="#GTestFileType" title='GTestFileType' data-type='enum GTestFileType' data-ref="GTestFileType">GTestFileType</a>   <dfn class="local col0 decl" id="3790file_type" title='file_type' data-type='GTestFileType' data-ref="3790file_type">file_type</dfn>,</td></tr>
+<tr><th id="454">454</th><td>                                                  <em>const</em> <a class="typedef" href="gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col1 decl" id="3791first_path" title='first_path' data-type='const gchar *' data-ref="3791first_path">first_path</dfn>,</td></tr>
+<tr><th id="455">455</th><td>                                                  ...) <a class="macro" href="gmacros.h.html#106" title="__attribute__((__sentinel__))" data-ref="_M/G_GNUC_NULL_TERMINATED">G_GNUC_NULL_TERMINATED</a>;</td></tr>
+<tr><th id="456">456</th><td></td></tr>
+<tr><th id="457">457</th><td><u>#define <dfn class="macro" id="_M/g_test_assert_expected_messages" data-ref="_M/g_test_assert_expected_messages">g_test_assert_expected_messages</dfn>() g_test_assert_expected_messages_internal (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC)</u></td></tr>
+<tr><th id="458">458</th><td></td></tr>
+<tr><th id="459">459</th><td><a class="macro" href="gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="460">460</th><td></td></tr>
+<tr><th id="461">461</th><td><u>#<span data-ppcond="19">endif</span> /* __G_TEST_UTILS_H__ */</u></td></tr>
+<tr><th id="462">462</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

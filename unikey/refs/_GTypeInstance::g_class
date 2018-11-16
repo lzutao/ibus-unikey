@@ -1,0 +1,8 @@
+<dec f='include/glib-2.0/gobject/gtype.h' l='419' type='GTypeClass *'/>
+<use f='include/glib-2.0/gio/glistmodel.h' l='36' macro='1' u='r'/>
+<use f='include/glib-2.0/gio/glistmodel.h' l='36' macro='1' u='r'/>
+<use f='include/glib-2.0/gio/glistmodel.h' l='36' macro='1' u='r'/>
+<use f='include/glib-2.0/gio/gliststore.h' l='36' macro='1' u='r'/>
+<use f='include/glib-2.0/gio/gliststore.h' l='36' macro='1' u='r'/>
+<offset>0</offset>
+<doc f='include/glib-2.0/gobject/gtype.h' l='418'>/*&lt; private &gt;*/</doc>

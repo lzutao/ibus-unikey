@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h' l='519' type='gboolean gdk_pixbuf_save_to_stream_finish(GAsyncResult * async_result, GError ** error)'/>

@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gdk/gdkkeys.h' l='41' ll='46'/>
+<size>12</size>
+<doc f='include/gtk-2.0/gdk/gdkkeys.h' l='40'>/* GdkKeymapKey is a hardware key that can be mapped to a keyval */</doc>
+<mbr r='_GdkKeymapKey::keycode' o='0' t='guint'/>
+<mbr r='_GdkKeymapKey::group' o='32' t='gint'/>
+<mbr r='_GdkKeymapKey::level' o='64' t='gint'/>

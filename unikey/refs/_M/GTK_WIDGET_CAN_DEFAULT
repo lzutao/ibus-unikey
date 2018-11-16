@@ -1,0 +1,10 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='351'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='342'>/**
+ * GTK_WIDGET_CAN_DEFAULT:
+ * @wid: a #GtkWidget.
+ *
+ * Evaluates to %TRUE if the widget is allowed to receive the default action
+ * via gtk_widget_grab_default().
+ *
+ * Deprecated: 2.20: Use gtk_widget_get_can_default() instead.
+ */</doc>

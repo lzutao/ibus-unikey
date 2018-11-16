@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='744' type='void (*)(GtkWidget *, GdkDragContext *, GtkSelectionData *, guint, guint)'/>
+<offset>4672</offset>

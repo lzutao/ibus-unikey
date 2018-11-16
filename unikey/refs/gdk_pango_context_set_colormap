@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkpango.h' l='112' type='void gdk_pango_context_set_colormap(PangoContext * context, GdkColormap * colormap)'/>

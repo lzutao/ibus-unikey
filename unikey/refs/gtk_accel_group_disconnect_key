@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='139' type='gboolean gtk_accel_group_disconnect_key(GtkAccelGroup * accel_group, guint accel_key, GdkModifierType accel_mods)'/>

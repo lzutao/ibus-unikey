@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkfontbutton.h' l='81' type='gboolean gtk_font_button_get_use_font(GtkFontButton * font_button)'/>

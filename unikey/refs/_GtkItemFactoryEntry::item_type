@@ -1,0 +1,18 @@
+<dec f='include/gtk-2.0/gtk/gtkitemfactory.h' l='116' type='gchar *'/>
+<offset>256</offset>
+<doc f='include/gtk-2.0/gtk/gtkitemfactory.h' l='100'>/* possible values:
+   * NULL		-&gt; &quot;&lt;Item&gt;&quot;
+   * &quot;&quot;			-&gt; &quot;&lt;Item&gt;&quot;
+   * &quot;&lt;Title&gt;&quot;		-&gt; create a title item
+   * &quot;&lt;Item&gt;&quot;		-&gt; create a simple item
+   * &quot;&lt;ImageItem&gt;&quot;	-&gt; create an item holding an image
+   * &quot;&lt;StockItem&gt;&quot;	-&gt; create an item holding a stock image
+   * &quot;&lt;CheckItem&gt;&quot;	-&gt; create a check item
+   * &quot;&lt;ToggleItem&gt;&quot;	-&gt; create a toggle item
+   * &quot;&lt;RadioItem&gt;&quot;	-&gt; create a radio item
+   * &lt;path&gt;		-&gt; path of a radio item to link against
+   * &quot;&lt;Separator&gt;&quot;	-&gt; create a separator
+   * &quot;&lt;Tearoff&gt;&quot;	-&gt; create a tearoff separator
+   * &quot;&lt;Branch&gt;&quot;		-&gt; create an item to hold sub items
+   * &quot;&lt;LastBranch&gt;&quot;	-&gt; create a right justified item to hold sub items
+   */</doc>

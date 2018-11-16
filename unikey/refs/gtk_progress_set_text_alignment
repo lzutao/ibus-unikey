@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprogress.h' l='91' type='void gtk_progress_set_text_alignment(GtkProgress * progress, gfloat x_align, gfloat y_align)'/>

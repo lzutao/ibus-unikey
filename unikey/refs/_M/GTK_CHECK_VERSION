@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkversion.h' l='45'/>
+<doc f='include/gtk-2.0/gtk/gtkversion.h' l='42'>/* check whether a Gtk+ version equal to or greater than
+ * major.minor.micro is present.
+ */</doc>

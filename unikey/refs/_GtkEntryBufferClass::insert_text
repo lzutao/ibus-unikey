@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkentrybuffer.h' l='75' type='guint (*)(GtkEntryBuffer *, guint, const gchar *, guint)'/>
+<offset>1344</offset>

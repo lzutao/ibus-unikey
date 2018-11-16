@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusproplist.h' l='113' type='IBusPropList * ibus_prop_list_new()'/>
+<doc f='include/ibus-1.0/ibusproplist.h' l='106'>/**
+ * ibus_prop_list_new:
+ *
+ * Create a new #IBusPropList.
+ *
+ * Returns: A newly allocated #IBusPropList.
+ */</doc>
+<use f='unikey/src/engine.cpp' l='396' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='397' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='398' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>

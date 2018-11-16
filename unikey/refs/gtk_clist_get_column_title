@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='505' type='gchar * gtk_clist_get_column_title(GtkCList * clist, gint column)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='504'>/* returns the title of column. Returns NULL if title is not set */</doc>

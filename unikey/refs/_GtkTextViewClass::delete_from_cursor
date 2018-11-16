@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktextview.h' l='188' type='void (*)(GtkTextView *, GtkDeleteType, gint)'/>
+<offset>6976</offset>

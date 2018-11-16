@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdnd.h' l='112' type='GdkDragAction gdk_drag_context_get_actions(GdkDragContext * context)'/>

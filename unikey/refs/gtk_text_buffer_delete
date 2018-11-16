@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='218' type='void gtk_text_buffer_delete(GtkTextBuffer * buffer, GtkTextIter * start, GtkTextIter * end)'/>
+<doc f='include/gtk-2.0/gtk/gtktextbuffer.h' l='217'>/* Delete from the buffer */</doc>

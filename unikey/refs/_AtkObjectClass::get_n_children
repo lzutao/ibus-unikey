@@ -1,0 +1,5 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='548' type='gint (*)(AtkObject *)'/>
+<offset>1280</offset>
+<doc f='include/atk-1.0/atk/atkobject.h' l='545'>/*
+   * Gets the number of accessible children of the object
+   */</doc>

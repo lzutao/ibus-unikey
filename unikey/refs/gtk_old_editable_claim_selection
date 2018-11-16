@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkoldeditable.h' l='117' type='void gtk_old_editable_claim_selection(GtkOldEditable * old_editable, gboolean claim, guint32 time_)'/>

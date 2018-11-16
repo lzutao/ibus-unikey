@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkstateset.h' l='78' type='gboolean atk_state_set_remove_state(AtkStateSet * set, AtkStateType type)'/>

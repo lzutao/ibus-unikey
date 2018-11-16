@@ -1,0 +1,22 @@
+<dec f='unikey/src/engine_private.h' l='21' type='IBusPropList *'/>
+<use f='unikey/src/engine.cpp' l='127' u='r' c='_ZL26ibus_unikey_engine_destroyP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='128' u='w' c='_ZL26ibus_unikey_engine_destroyP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='141' u='r' c='_ZL27ibus_unikey_engine_focus_inP11_IBusEngine'/>
+<use f='unikey/src/engine.cpp' l='279' u='r' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='281' u='r' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='307' u='r' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='324' u='r' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='326' u='r' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='352' u='r' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='394' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='396' u='w' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='400' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='480' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='481' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='501' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='502' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='517' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='518' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<offset>704</offset>
+<doc f='unikey/src/engine_private.h' l='20'>/* members */</doc>
+<doc f='unikey/src/engine_private.h' l='21'>//!&lt; pointer to an array of IBusProperties.</doc>

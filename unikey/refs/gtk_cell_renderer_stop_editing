@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcellrenderer.h' l='189' type='void gtk_cell_renderer_stop_editing(GtkCellRenderer * cell, gboolean canceled)'/>

@@ -1,0 +1,22 @@
+<def f='include/gtk-2.0/gtk/gtkcellrenderertext.h' l='44' ll='79'/>
+<size>120</size>
+<mbr r='_GtkCellRendererText::parent' o='0' t='GtkCellRenderer'/>
+<mbr r='_GtkCellRendererText::text' o='448' t='gchar *'/>
+<mbr r='_GtkCellRendererText::font' o='512' t='PangoFontDescription *'/>
+<mbr r='_GtkCellRendererText::font_scale' o='576' t='gdouble'/>
+<mbr r='_GtkCellRendererText::foreground' o='640' t='PangoColor'/>
+<mbr r='_GtkCellRendererText::background' o='688' t='PangoColor'/>
+<mbr r='_GtkCellRendererText::extra_attrs' o='768' t='PangoAttrList *'/>
+<mbr r='_GtkCellRendererText::underline_style' o='832' t='PangoUnderline'/>
+<mbr r='_GtkCellRendererText::rise' o='864' t='gint'/>
+<mbr r='_GtkCellRendererText::fixed_height_rows' o='896' t='gint'/>
+<mbr r='_GtkCellRendererText::strikethrough' o='928' t='guint'/>
+<mbr r='_GtkCellRendererText::editable' o='929' t='guint'/>
+<mbr r='_GtkCellRendererText::scale_set' o='930' t='guint'/>
+<mbr r='_GtkCellRendererText::foreground_set' o='931' t='guint'/>
+<mbr r='_GtkCellRendererText::background_set' o='932' t='guint'/>
+<mbr r='_GtkCellRendererText::underline_set' o='933' t='guint'/>
+<mbr r='_GtkCellRendererText::rise_set' o='934' t='guint'/>
+<mbr r='_GtkCellRendererText::strikethrough_set' o='935' t='guint'/>
+<mbr r='_GtkCellRendererText::editable_set' o='936' t='guint'/>
+<mbr r='_GtkCellRendererText::calc_fixed_height' o='937' t='guint'/>

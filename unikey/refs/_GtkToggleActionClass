@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtktoggleaction.h' l='62' ll='73'/>
+<size>264</size>
+<mbr r='_GtkToggleActionClass::parent_class' o='0' t='GtkActionClass'/>
+<mbr r='_GtkToggleActionClass::toggled' o='1792' t='void (*)(GtkToggleAction *)'/>
+<mbr r='_GtkToggleActionClass::_gtk_reserved1' o='1856' t='void (*)()'/>
+<mbr r='_GtkToggleActionClass::_gtk_reserved2' o='1920' t='void (*)()'/>
+<mbr r='_GtkToggleActionClass::_gtk_reserved3' o='1984' t='void (*)()'/>
+<mbr r='_GtkToggleActionClass::_gtk_reserved4' o='2048' t='void (*)()'/>

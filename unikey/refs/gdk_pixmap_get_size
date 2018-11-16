@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkpixmap.h' l='106' type='void gdk_pixmap_get_size(GdkPixmap * pixmap, gint * width, gint * height)'/>

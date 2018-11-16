@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gdk/gdk.h' l='88' type='void gdk_error_trap_push()'/>
+<doc f='include/gtk-2.0/gdk/gdk.h' l='86'>/* Push and pop error handlers for X errors
+ */</doc>

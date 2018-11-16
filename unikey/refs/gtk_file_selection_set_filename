@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkfilesel.h' l='104' type='void gtk_file_selection_set_filename(GtkFileSelection * filesel, const gchar * filename)'/>

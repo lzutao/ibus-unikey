@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextbufferrichtext.h' l='77' type='GdkAtom * gtk_text_buffer_get_deserialize_formats(GtkTextBuffer * buffer, gint * n_formats)'/>

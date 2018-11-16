@@ -1,0 +1,17 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='435' type='void ibus_engine_get_surrounding_text(IBusEngine * engine, IBusText ** text, guint * cursor_pos, guint * anchor_pos)'/>
+<doc f='include/ibus-1.0/ibusengine.h' l='419'>/**
+ * ibus_engine_get_surrounding_text:
+ * @engine: An IBusEngine.
+ * @text: (out) (transfer none) (allow-none): Location to store surrounding text.
+ * @cursor_pos: (out) (allow-none): Cursor position in characters in @text.
+ * @anchor_pos: (out) (allow-none): Anchor position of selection in @text.
+ *
+ * Get surrounding text.
+ *
+ * It is also used to tell the input-context that the engine will
+ * utilize surrounding-text.  In that case, it must be called in
+ * #IBusEngine::enable handler, with both @text and @cursor set to
+ * %NULL.
+ *
+ * See also: #IBusEngine::set-surrounding-text
+ */</doc>

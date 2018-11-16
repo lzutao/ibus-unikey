@@ -1,0 +1,2 @@
+<dec f='include/cairo/cairo.h' l='1669' type='cairo_font_face_t * cairo_toy_font_face_create(const char * family, cairo_font_slant_t slant, cairo_font_weight_t weight)'/>
+<doc f='include/cairo/cairo.h' l='1666'>/* Toy fonts */</doc>

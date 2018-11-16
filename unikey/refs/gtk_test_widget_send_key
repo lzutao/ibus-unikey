@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktestutils.h' l='56' type='gboolean gtk_test_widget_send_key(GtkWidget * widget, guint keyval, GdkModifierType modifiers)'/>

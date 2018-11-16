@@ -1,0 +1,2 @@
+<dec f='include/glib-2.0/glib/gversionmacros.h' l='319'/>
+<use f='include/glib-2.0/glib/gatomic.h' l='79' u='c'/>

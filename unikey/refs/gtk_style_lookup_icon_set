@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkstyle.h' l='469' type='GtkIconSet * gtk_style_lookup_icon_set(GtkStyle * style, const gchar * stock_id)'/>

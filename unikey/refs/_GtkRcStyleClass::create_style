@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkrc.h' l='117' type='GtkStyle *(*)(GtkRcStyle *)'/>
+<offset>1280</offset>
+<doc f='include/gtk-2.0/gtk/gtkrc.h' l='115'>/* Create an empty style suitable to this RC style
+   */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtksettings.h' l='92' type='gboolean gtk_rc_property_parse_enum(const GParamSpec * pspec, const GString * gstring, GValue * property_value)'/>

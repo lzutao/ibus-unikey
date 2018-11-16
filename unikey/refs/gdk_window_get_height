@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='343' type='int gdk_window_get_height(GdkWindow * window)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='206' type='void gdk_display_get_maximal_cursor_size(GdkDisplay * display, guint * width, guint * height)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='920' type='gboolean gtk_widget_set_scroll_adjustments(GtkWidget * widget, GtkAdjustment * hadjustment, GtkAdjustment * vadjustment)'/>

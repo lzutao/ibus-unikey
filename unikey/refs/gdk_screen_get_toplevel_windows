@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkscreen.h' l='90' type='GList * gdk_screen_get_toplevel_windows(GdkScreen * screen)'/>

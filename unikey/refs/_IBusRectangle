@@ -1,0 +1,6 @@
+<def f='include/ibus-1.0/ibustypes.h' l='218' ll='223'/>
+<size>16</size>
+<mbr r='_IBusRectangle::x' o='0' t='gint'/>
+<mbr r='_IBusRectangle::y' o='32' t='gint'/>
+<mbr r='_IBusRectangle::width' o='64' t='gint'/>
+<mbr r='_IBusRectangle::height' o='96' t='gint'/>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkrgb.h' l='135' type='void gdk_rgb_set_install(gboolean install)'/>
+<doc f='include/gtk-2.0/gdk/gdkrgb.h' l='134'>/* experimental colormap stuff */</doc>

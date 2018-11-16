@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='276' type='GList * ibus_bus_list_queued_owners(IBusBus * bus, const gchar * name)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='265'>/**
+ * ibus_bus_list_queued_owners:
+ * @bus: An IBusBus.
+ * @name: Name to be queried.
+ *
+ * Lists the unique bus names of connections currently queued for a bus name.
+ * FIXME add an asynchronous version.
+ *
+ * Returns: (transfer full) (element-type utf8):
+ *           The unique bus names of connections currently queued for @name.
+ */</doc>

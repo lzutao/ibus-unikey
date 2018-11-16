@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='693' type='void gtk_clist_remove(GtkCList * clist, gint row)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='692'>/* removes row at index row */</doc>

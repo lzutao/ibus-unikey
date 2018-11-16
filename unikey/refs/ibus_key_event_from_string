@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='317' type='gboolean ibus_key_event_from_string(const gchar * string, guint * keyval, guint * modifiers)'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='307'>/**
+ * ibus_key_event_from_string:
+ * @string: Key event string.
+ * @keyval: Variable that hold key symbol result.
+ * @modifiers: Variable that hold modifiers result.
+ *
+ * Parse key event string and return key symbol and modifiers.
+ *
+ * Returns: %TRUE for succeed; %FALSE if failed.
+ */</doc>

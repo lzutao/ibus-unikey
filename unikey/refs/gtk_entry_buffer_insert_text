@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentrybuffer.h' l='113' type='guint gtk_entry_buffer_insert_text(GtkEntryBuffer * buffer, guint position, const gchar * chars, gint n_chars)'/>

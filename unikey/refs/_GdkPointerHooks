@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gdk/gdkwindow.h' l='241' ll='250'/>
+<size>16</size>
+<mbr r='_GdkPointerHooks::get_pointer' o='0' t='GdkWindow *(*)(GdkWindow *, gint *, gint *, GdkModifierType *)'/>
+<mbr r='_GdkPointerHooks::window_at_pointer' o='64' t='GdkWindow *(*)(GdkScreen *, gint *, gint *)'/>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdktestutils.h' l='33' type='void gdk_test_render_sync(GdkWindow * window)'/>
+<doc f='include/gtk-2.0/gdk/gdktestutils.h' l='32'>/* --- Gdk Test Utility API --- */</doc>

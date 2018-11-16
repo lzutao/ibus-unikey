@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusservice.h' l='215' type='void ibus_service_unregister(IBusService * service, GDBusConnection * connection)'/>
+<doc f='include/ibus-1.0/ibusservice.h' l='208'>/**
+ * ibus_service_unregister:
+ * @service: An IBusService.
+ * @connection: A GDBusConnection the service was registered with.
+ *
+ * Unregisters service from a connection.
+ */</doc>

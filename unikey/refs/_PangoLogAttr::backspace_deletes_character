@@ -1,0 +1,5 @@
+<dec f='include/pango-1.0/pango/pango-break.h' l='124' type='guint'/>
+<offset>10</offset>
+<doc f='include/pango-1.0/pango/pango-break.h' l='121'>/* If set, backspace deletes one character rather than
+   * the entire grapheme cluster.
+   */</doc>

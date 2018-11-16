@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atktext.h' l='391' type='AtkAttributeSet * atk_text_get_run_attributes(AtkText * text, gint offset, gint * start_offset, gint * end_offset)'/>

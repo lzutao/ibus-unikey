@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdrawable.h' l='259' type='void gdk_drawable_get_size(GdkDrawable * drawable, gint * width, gint * height)'/>

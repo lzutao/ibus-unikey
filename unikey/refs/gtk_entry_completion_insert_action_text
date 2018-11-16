@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentrycompletion.h' l='99' type='void gtk_entry_completion_insert_action_text(GtkEntryCompletion * completion, gint index_, const gchar * text)'/>

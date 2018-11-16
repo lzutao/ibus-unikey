@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-utils.h' l='48' type='gboolean pango_scan_int(const char ** pos, int * out)'/>

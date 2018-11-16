@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='221' type='gboolean gtk_text_iter_forward_cursor_position(GtkTextIter * iter)'/>
+<doc f='include/gtk-2.0/gtk/gtktextiter.h' l='216'>/* cursor positions are almost equivalent to chars, but not quite;
+ * in some languages, you can&apos;t put the cursor between certain
+ * chars. Also, you can&apos;t put the cursor between \r\n at the end
+ * of a line.
+ */</doc>

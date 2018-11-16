@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gdk/gdkdrawable.h' l='234' ll='237'/>
+<size>48</size>
+<mbr r='_GdkTrapezoid::y1' o='0' t='double'/>
+<mbr r='_GdkTrapezoid::x11' o='64' t='double'/>
+<mbr r='_GdkTrapezoid::x21' o='128' t='double'/>
+<mbr r='_GdkTrapezoid::y2' o='192' t='double'/>
+<mbr r='_GdkTrapezoid::x12' o='256' t='double'/>
+<mbr r='_GdkTrapezoid::x22' o='320' t='double'/>

@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='2878' type='void cairo_pattern_set_matrix(cairo_pattern_t * pattern, const cairo_matrix_t * matrix)'/>

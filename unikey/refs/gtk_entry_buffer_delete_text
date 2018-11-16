@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentrybuffer.h' l='118' type='guint gtk_entry_buffer_delete_text(GtkEntryBuffer * buffer, guint position, gint n_chars)'/>

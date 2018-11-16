@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='112'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='349' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='399' u='c'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='106'>/**
+ * GTK_STOCK_CANCEL:
+ *
+ * The &quot;Cancel&quot; item.
+ * &lt;inlinegraphic fileref=&quot;gtk-cancel.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

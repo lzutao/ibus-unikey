@@ -1,0 +1,10 @@
+<def f='include/pango-1.0/pango/pango-glyph-item.h' l='129' ll='141'/>
+<size>40</size>
+<mbr r='_PangoGlyphItemIter::glyph_item' o='0' t='PangoGlyphItem *'/>
+<mbr r='_PangoGlyphItemIter::text' o='64' t='const gchar *'/>
+<mbr r='_PangoGlyphItemIter::start_glyph' o='128' t='int'/>
+<mbr r='_PangoGlyphItemIter::start_index' o='160' t='int'/>
+<mbr r='_PangoGlyphItemIter::start_char' o='192' t='int'/>
+<mbr r='_PangoGlyphItemIter::end_glyph' o='224' t='int'/>
+<mbr r='_PangoGlyphItemIter::end_index' o='256' t='int'/>
+<mbr r='_PangoGlyphItemIter::end_char' o='288' t='int'/>

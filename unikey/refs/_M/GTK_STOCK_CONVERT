@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='174'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='168'>/**
+ * GTK_STOCK_CONVERT:
+ *
+ * The &quot;Convert&quot; item.
+ * &lt;inlinegraphic fileref=&quot;gtk-convert.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

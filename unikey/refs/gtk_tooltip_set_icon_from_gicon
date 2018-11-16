@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktooltip.h' l='51' type='void gtk_tooltip_set_icon_from_gicon(GtkTooltip * tooltip, GIcon * gicon, GtkIconSize size)'/>

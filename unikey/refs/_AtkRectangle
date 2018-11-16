@@ -1,0 +1,16 @@
+<def f='include/atk-1.0/atk/atkcomponent.h' l='77' ll='83'/>
+<size>16</size>
+<doc f='include/atk-1.0/atk/atkcomponent.h' l='67'>/**
+ * AtkRectangle:
+ * @x: X coordinate of the left side of the rectangle.
+ * @y: Y coordinate of the top side of the rectangle.
+ * @width: width of the rectangle.
+ * @height: height of the rectangle.
+ *
+ * A data structure for holding a rectangle. Those coordinates are
+ * relative to the component top-level parent.
+ */</doc>
+<mbr r='_AtkRectangle::x' o='0' t='gint'/>
+<mbr r='_AtkRectangle::y' o='32' t='gint'/>
+<mbr r='_AtkRectangle::width' o='64' t='gint'/>
+<mbr r='_AtkRectangle::height' o='96' t='gint'/>

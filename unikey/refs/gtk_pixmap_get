@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkpixmap.h' l='71' type='void gtk_pixmap_get(GtkPixmap * pixmap, GdkPixmap ** val, GdkBitmap ** mask)'/>

@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='282' type='gboolean ibus_property_get_sensitive(IBusProperty * prop)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='274'>/**
+ * ibus_property_get_sensitive:
+ * @prop: An #IBusProperty.
+ *
+ * Get the sensitive of #IBusProperty.
+ *
+ * Returns: the sensitive of #IBusProperty.
+ */</doc>

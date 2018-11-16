@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtkclist.h' l='363' ll='373'/>
+<size>24</size>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='362'>/* Cell Structures */</doc>
+<mbr r='_GtkCellText::type' o='0' t='GtkCellType'/>
+<mbr r='_GtkCellText::vertical' o='32' t='gint16'/>
+<mbr r='_GtkCellText::horizontal' o='48' t='gint16'/>
+<mbr r='_GtkCellText::style' o='64' t='GtkStyle *'/>
+<mbr r='_GtkCellText::text' o='128' t='gchar *'/>

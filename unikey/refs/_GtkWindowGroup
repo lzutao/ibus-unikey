@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkwindow.h' l='154' ll='159'/>
+<size>32</size>
+<mbr r='_GtkWindowGroup::parent_instance' o='0' t='GObject'/>
+<mbr r='_GtkWindowGroup::grabs' o='192' t='GSList *'/>

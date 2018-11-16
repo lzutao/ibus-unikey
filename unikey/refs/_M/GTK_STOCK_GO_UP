@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='419'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='413'>/**
+ * GTK_STOCK_GO_UP:
+ *
+ * The &quot;Up&quot; item.
+ * &lt;inlinegraphic fileref=&quot;go-up.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

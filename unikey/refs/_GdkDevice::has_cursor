@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gdk/gdkinput.h' l='106' type='gboolean'/>
+<offset>320</offset>
+<doc f='include/gtk-2.0/gdk/gdkinput.h' l='106'>/* TRUE if the X pointer follows device motion */</doc>

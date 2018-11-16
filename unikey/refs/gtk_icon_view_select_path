@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconview.h' l='154' type='void gtk_icon_view_select_path(GtkIconView * icon_view, GtkTreePath * path)'/>

@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='1007' type='IBusEngineDesc * ibus_bus_get_global_engine(IBusBus * bus)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='997'>/**
+ * ibus_bus_get_global_engine:
+ * @bus: An #IBusBus.
+ *
+ * Get the description of current global engine synchronously.
+ *
+ * Returns: (transfer full): The description of current global engine,
+ * or %NULL if there is no global engine.
+ */</doc>

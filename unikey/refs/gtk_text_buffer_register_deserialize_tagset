@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextbufferrichtext.h' l='61' type='GdkAtom gtk_text_buffer_register_deserialize_tagset(GtkTextBuffer * buffer, const gchar * tagset_name)'/>

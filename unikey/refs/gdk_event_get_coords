@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkevents.h' l='534' type='gboolean gdk_event_get_coords(const GdkEvent * event, gdouble * x_win, gdouble * y_win)'/>

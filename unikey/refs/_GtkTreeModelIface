@@ -1,0 +1,22 @@
+<def f='include/gtk-2.0/gtk/gtktreemodel.h' l='65' ll='121'/>
+<size>168</size>
+<mbr r='_GtkTreeModelIface::g_iface' o='0' t='GTypeInterface'/>
+<mbr r='_GtkTreeModelIface::row_changed' o='128' t='void (*)(GtkTreeModel *, GtkTreePath *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::row_inserted' o='192' t='void (*)(GtkTreeModel *, GtkTreePath *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::row_has_child_toggled' o='256' t='void (*)(GtkTreeModel *, GtkTreePath *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::row_deleted' o='320' t='void (*)(GtkTreeModel *, GtkTreePath *)'/>
+<mbr r='_GtkTreeModelIface::rows_reordered' o='384' t='void (*)(GtkTreeModel *, GtkTreePath *, GtkTreeIter *, gint *)'/>
+<mbr r='_GtkTreeModelIface::get_flags' o='448' t='GtkTreeModelFlags (*)(GtkTreeModel *)'/>
+<mbr r='_GtkTreeModelIface::get_n_columns' o='512' t='gint (*)(GtkTreeModel *)'/>
+<mbr r='_GtkTreeModelIface::get_column_type' o='576' t='GType (*)(GtkTreeModel *, gint)'/>
+<mbr r='_GtkTreeModelIface::get_iter' o='640' t='gboolean (*)(GtkTreeModel *, GtkTreeIter *, GtkTreePath *)'/>
+<mbr r='_GtkTreeModelIface::get_path' o='704' t='GtkTreePath *(*)(GtkTreeModel *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::get_value' o='768' t='void (*)(GtkTreeModel *, GtkTreeIter *, gint, GValue *)'/>
+<mbr r='_GtkTreeModelIface::iter_next' o='832' t='gboolean (*)(GtkTreeModel *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::iter_children' o='896' t='gboolean (*)(GtkTreeModel *, GtkTreeIter *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::iter_has_child' o='960' t='gboolean (*)(GtkTreeModel *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::iter_n_children' o='1024' t='gint (*)(GtkTreeModel *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::iter_nth_child' o='1088' t='gboolean (*)(GtkTreeModel *, GtkTreeIter *, GtkTreeIter *, gint)'/>
+<mbr r='_GtkTreeModelIface::iter_parent' o='1152' t='gboolean (*)(GtkTreeModel *, GtkTreeIter *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::ref_node' o='1216' t='void (*)(GtkTreeModel *, GtkTreeIter *)'/>
+<mbr r='_GtkTreeModelIface::unref_node' o='1280' t='void (*)(GtkTreeModel *, GtkTreeIter *)'/>

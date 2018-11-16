@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='806'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='800'>/**
+ * GTK_STOCK_PROPERTIES:
+ *
+ * The &quot;Properties&quot; item.
+ * &lt;inlinegraphic fileref=&quot;document-properties.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

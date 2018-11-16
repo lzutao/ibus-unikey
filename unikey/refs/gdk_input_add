@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdk.h' l='105' type='gint gdk_input_add(gint source, GdkInputCondition condition, GdkInputFunction function, gpointer data)'/>

@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gdk/gdktypes.h' l='208' ll='214'/>
+<size>16</size>
+<mbr r='_GdkSegment::x1' o='0' t='gint'/>
+<mbr r='_GdkSegment::y1' o='32' t='gint'/>
+<mbr r='_GdkSegment::x2' o='64' t='gint'/>
+<mbr r='_GdkSegment::y2' o='96' t='gint'/>

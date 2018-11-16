@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-loader.h' l='102' type='gboolean gdk_pixbuf_loader_write_bytes(GdkPixbufLoader * loader, GBytes * buffer, GError ** error)'/>

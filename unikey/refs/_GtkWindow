@@ -1,0 +1,41 @@
+<def f='include/gtk-2.0/gtk/gtkwindow.h' l='54' ll='115'/>
+<size>240</size>
+<mbr r='_GtkWindow::bin' o='0' t='GtkBin'/>
+<mbr r='_GtkWindow::title' o='960' t='gchar *'/>
+<mbr r='_GtkWindow::wmclass_name' o='1024' t='gchar *'/>
+<mbr r='_GtkWindow::wmclass_class' o='1088' t='gchar *'/>
+<mbr r='_GtkWindow::wm_role' o='1152' t='gchar *'/>
+<mbr r='_GtkWindow::focus_widget' o='1216' t='GtkWidget *'/>
+<mbr r='_GtkWindow::default_widget' o='1280' t='GtkWidget *'/>
+<mbr r='_GtkWindow::transient_parent' o='1344' t='GtkWindow *'/>
+<mbr r='_GtkWindow::geometry_info' o='1408' t='GtkWindowGeometryInfo *'/>
+<mbr r='_GtkWindow::frame' o='1472' t='GdkWindow *'/>
+<mbr r='_GtkWindow::group' o='1536' t='GtkWindowGroup *'/>
+<mbr r='_GtkWindow::configure_request_count' o='1600' t='guint16'/>
+<mbr r='_GtkWindow::allow_shrink' o='1616' t='guint'/>
+<mbr r='_GtkWindow::allow_grow' o='1617' t='guint'/>
+<mbr r='_GtkWindow::configure_notify_received' o='1618' t='guint'/>
+<mbr r='_GtkWindow::need_default_position' o='1619' t='guint'/>
+<mbr r='_GtkWindow::need_default_size' o='1620' t='guint'/>
+<mbr r='_GtkWindow::position' o='1621' t='guint'/>
+<mbr r='_GtkWindow::type' o='1624' t='guint'/>
+<mbr r='_GtkWindow::has_user_ref_count' o='1628' t='guint'/>
+<mbr r='_GtkWindow::has_focus' o='1629' t='guint'/>
+<mbr r='_GtkWindow::modal' o='1630' t='guint'/>
+<mbr r='_GtkWindow::destroy_with_parent' o='1631' t='guint'/>
+<mbr r='_GtkWindow::has_frame' o='1632' t='guint'/>
+<mbr r='_GtkWindow::iconify_initially' o='1633' t='guint'/>
+<mbr r='_GtkWindow::stick_initially' o='1634' t='guint'/>
+<mbr r='_GtkWindow::maximize_initially' o='1635' t='guint'/>
+<mbr r='_GtkWindow::decorated' o='1636' t='guint'/>
+<mbr r='_GtkWindow::type_hint' o='1637' t='guint'/>
+<mbr r='_GtkWindow::gravity' o='1640' t='guint'/>
+<mbr r='_GtkWindow::is_active' o='1645' t='guint'/>
+<mbr r='_GtkWindow::has_toplevel_focus' o='1646' t='guint'/>
+<mbr r='_GtkWindow::frame_left' o='1664' t='guint'/>
+<mbr r='_GtkWindow::frame_top' o='1696' t='guint'/>
+<mbr r='_GtkWindow::frame_right' o='1728' t='guint'/>
+<mbr r='_GtkWindow::frame_bottom' o='1760' t='guint'/>
+<mbr r='_GtkWindow::keys_changed_handler' o='1792' t='guint'/>
+<mbr r='_GtkWindow::mnemonic_modifier' o='1824' t='GdkModifierType'/>
+<mbr r='_GtkWindow::screen' o='1856' t='GdkScreen *'/>

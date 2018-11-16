@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdnd.h' l='158' type='GdkNativeWindow gdk_drag_get_protocol(GdkNativeWindow xid, GdkDragProtocol * protocol)'/>

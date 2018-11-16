@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='197' type='GdkDisplayPointerHooks * gdk_display_set_pointer_hooks(GdkDisplay * display, const GdkDisplayPointerHooks * new_hooks)'/>

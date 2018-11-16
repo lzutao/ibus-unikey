@@ -1,0 +1,12 @@
+<def f='include/gtk-2.0/gtk/gtknotebook.h' l='101' ll='139'/>
+<size>896</size>
+<mbr r='_GtkNotebookClass::parent_class' o='0' t='GtkContainerClass'/>
+<mbr r='_GtkNotebookClass::switch_page' o='6592' t='void (*)(GtkNotebook *, GtkNotebookPage *, guint)'/>
+<mbr r='_GtkNotebookClass::select_page' o='6656' t='gboolean (*)(GtkNotebook *, gboolean)'/>
+<mbr r='_GtkNotebookClass::focus_tab' o='6720' t='gboolean (*)(GtkNotebook *, GtkNotebookTab)'/>
+<mbr r='_GtkNotebookClass::change_current_page' o='6784' t='gboolean (*)(GtkNotebook *, gint)'/>
+<mbr r='_GtkNotebookClass::move_focus_out' o='6848' t='void (*)(GtkNotebook *, GtkDirectionType)'/>
+<mbr r='_GtkNotebookClass::reorder_tab' o='6912' t='gboolean (*)(GtkNotebook *, GtkDirectionType, gboolean)'/>
+<mbr r='_GtkNotebookClass::insert_page' o='6976' t='gint (*)(GtkNotebook *, GtkWidget *, GtkWidget *, GtkWidget *, gint)'/>
+<mbr r='_GtkNotebookClass::create_window' o='7040' t='GtkNotebook *(*)(GtkNotebook *, GtkWidget *, gint, gint)'/>
+<mbr r='_GtkNotebookClass::_gtk_reserved1' o='7104' t='void (*)()'/>

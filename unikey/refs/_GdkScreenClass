@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gdk/gdkscreen.h' l='60' ll='67'/>
+<size>160</size>
+<mbr r='_GdkScreenClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_GdkScreenClass::size_changed' o='1088' t='void (*)(GdkScreen *)'/>
+<mbr r='_GdkScreenClass::composited_changed' o='1152' t='void (*)(GdkScreen *)'/>
+<mbr r='_GdkScreenClass::monitors_changed' o='1216' t='void (*)(GdkScreen *)'/>

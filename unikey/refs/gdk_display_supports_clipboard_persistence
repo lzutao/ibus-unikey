@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='216' type='gboolean gdk_display_supports_clipboard_persistence(GdkDisplay * display)'/>

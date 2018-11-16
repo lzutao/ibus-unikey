@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkproperty.h' l='60' type='void gdk_property_change(GdkWindow * window, GdkAtom property, GdkAtom type, gint format, GdkPropMode mode, const guchar * data, gint nelements)'/>

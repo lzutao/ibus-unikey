@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentrybuffer.h' l='108' type='void gtk_entry_buffer_set_max_length(GtkEntryBuffer * buffer, gint max_length)'/>

@@ -1,0 +1,5 @@
+<dec f='include/pango-1.0/pango/pango-renderer.h' l='148' type='void (*)(PangoRenderer *, PangoRenderPart, double, double, double, double, double, double)'/>
+<offset>1344</offset>
+<doc f='include/pango-1.0/pango/pango-renderer.h' l='145'>/* These two must be implemented and take coordinates in
+   * device space as doubles.
+   */</doc>

@@ -1,0 +1,17 @@
+<def f='include/gtk-2.0/gtk/gtkfontsel.h' l='67' ll='90'/>
+<size>240</size>
+<mbr r='_GtkFontSelection::parent_instance' o='0' t='GtkVBox'/>
+<mbr r='_GtkFontSelection::font_entry' o='1024' t='GtkWidget *'/>
+<mbr r='_GtkFontSelection::family_list' o='1088' t='GtkWidget *'/>
+<mbr r='_GtkFontSelection::font_style_entry' o='1152' t='GtkWidget *'/>
+<mbr r='_GtkFontSelection::face_list' o='1216' t='GtkWidget *'/>
+<mbr r='_GtkFontSelection::size_entry' o='1280' t='GtkWidget *'/>
+<mbr r='_GtkFontSelection::size_list' o='1344' t='GtkWidget *'/>
+<mbr r='_GtkFontSelection::pixels_button' o='1408' t='GtkWidget *'/>
+<mbr r='_GtkFontSelection::points_button' o='1472' t='GtkWidget *'/>
+<mbr r='_GtkFontSelection::filter_button' o='1536' t='GtkWidget *'/>
+<mbr r='_GtkFontSelection::preview_entry' o='1600' t='GtkWidget *'/>
+<mbr r='_GtkFontSelection::family' o='1664' t='PangoFontFamily *'/>
+<mbr r='_GtkFontSelection::face' o='1728' t='PangoFontFace *'/>
+<mbr r='_GtkFontSelection::size' o='1792' t='gint'/>
+<mbr r='_GtkFontSelection::font' o='1856' t='GdkFont *'/>

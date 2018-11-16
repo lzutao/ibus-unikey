@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='749' type='void gtk_clist_unselect_all(GtkCList * clist)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='748'>/* in all modes except browse mode, deselect all rows */</doc>

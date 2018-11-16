@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkliststore.h' l='139' type='void gtk_list_store_move_before(GtkListStore * store, GtkTreeIter * iter, GtkTreeIter * position)'/>

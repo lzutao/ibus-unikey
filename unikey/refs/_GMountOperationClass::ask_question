@@ -1,0 +1,8 @@
+<dec f='include/glib-2.0/gio/gmountoperation.h' l='73' type='void (*)(GMountOperation *, const char *, const char **)'/>
+<offset>1152</offset>
+<doc f='include/glib-2.0/gio/gmountoperation.h' l='67'>/**
+   * GMountOperationClass::ask_question:
+   * @op:
+   * @message:
+   * @choices: (array zero-terminated=1) (element-type utf8):
+   */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-glyph.h' l='179' type='void pango_glyph_string_index_to_x(PangoGlyphString * glyphs, char * text, int length, PangoAnalysis * analysis, int index_, gboolean trailing, int * x_pos)'/>

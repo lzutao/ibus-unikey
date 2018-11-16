@@ -1,0 +1,2 @@
+<dec f='include/glib-2.0/glib/gvariant.h' l='101' type='GVariant * g_variant_new_string(const gchar * string)'/>
+<use f='unikey/src/utils.cpp' l='129' u='c' c='_Z29ibus_unikey_config_set_stringP11_IBusConfigPKcS2_S2_'/>

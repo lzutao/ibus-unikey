@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtkfontsel.h' l='190' type='gchar * gtk_font_selection_dialog_get_font_name(GtkFontSelectionDialog * fsd)'/>
+<doc f='include/gtk-2.0/gtk/gtkfontsel.h' l='185'>/* This returns the X Logical Font Description fontname, or NULL if no font
+   is selected. Note that there is a slight possibility that the font might not
+   have been loaded OK. You should call gtk_font_selection_dialog_get_font()
+   to see if it has been loaded OK.
+   You should g_free() the returned font name after you&apos;re done with it. */</doc>

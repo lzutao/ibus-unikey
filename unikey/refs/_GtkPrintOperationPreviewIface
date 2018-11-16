@@ -1,0 +1,15 @@
+<def f='include/gtk-2.0/gtk/gtkprintoperationpreview.h' l='42' ll='68'/>
+<size>112</size>
+<mbr r='_GtkPrintOperationPreviewIface::g_iface' o='0' t='GTypeInterface'/>
+<mbr r='_GtkPrintOperationPreviewIface::ready' o='128' t='void (*)(GtkPrintOperationPreview *, GtkPrintContext *)'/>
+<mbr r='_GtkPrintOperationPreviewIface::got_page_size' o='192' t='void (*)(GtkPrintOperationPreview *, GtkPrintContext *, GtkPageSetup *)'/>
+<mbr r='_GtkPrintOperationPreviewIface::render_page' o='256' t='void (*)(GtkPrintOperationPreview *, gint)'/>
+<mbr r='_GtkPrintOperationPreviewIface::is_selected' o='320' t='gboolean (*)(GtkPrintOperationPreview *, gint)'/>
+<mbr r='_GtkPrintOperationPreviewIface::end_preview' o='384' t='void (*)(GtkPrintOperationPreview *)'/>
+<mbr r='_GtkPrintOperationPreviewIface::_gtk_reserved1' o='448' t='void (*)()'/>
+<mbr r='_GtkPrintOperationPreviewIface::_gtk_reserved2' o='512' t='void (*)()'/>
+<mbr r='_GtkPrintOperationPreviewIface::_gtk_reserved3' o='576' t='void (*)()'/>
+<mbr r='_GtkPrintOperationPreviewIface::_gtk_reserved4' o='640' t='void (*)()'/>
+<mbr r='_GtkPrintOperationPreviewIface::_gtk_reserved5' o='704' t='void (*)()'/>
+<mbr r='_GtkPrintOperationPreviewIface::_gtk_reserved6' o='768' t='void (*)()'/>
+<mbr r='_GtkPrintOperationPreviewIface::_gtk_reserved7' o='832' t='void (*)()'/>

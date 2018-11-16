@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtksizegroup.h' l='93' type='void gtk_size_group_set_ignore_hidden(GtkSizeGroup * size_group, gboolean ignore_hidden)'/>

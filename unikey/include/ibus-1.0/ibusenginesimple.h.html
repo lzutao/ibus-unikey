@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ibusenginesimple.h source code [include/ibus-1.0/ibusenginesimple.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/ibus-1.0/ibusenginesimple.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>ibus-1.0</a>/<a href='ibusenginesimple.h.html'>ibusenginesimple.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* -*- mode: C; c-basic-offset: 4; indent-tabs-mode: nil; -*- */</i></td></tr>
+<tr><th id="2">2</th><td><i>/* vim:set et sts=4: */</i></td></tr>
+<tr><th id="3">3</th><td><i>/* ibus - The Input Bus</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 2008-2015 Peng Huang &lt;shawn.p.huang@gmail.com&gt;</i></td></tr>
+<tr><th id="5">5</th><td><i> * Copyright (C) 2015-2017 Takao Fujiwara &lt;takao.fujiwara1@gmail.com&gt;</i></td></tr>
+<tr><th id="6">6</th><td><i> * Copyright (C) 2008-2017 Red Hat, Inc.</i></td></tr>
+<tr><th id="7">7</th><td><i> *</i></td></tr>
+<tr><th id="8">8</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="9">9</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="10">10</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="11">11</th><td><i> * version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="12">12</th><td><i> *</i></td></tr>
+<tr><th id="13">13</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="14">14</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="15">15</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="16">16</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="17">17</th><td><i> *</i></td></tr>
+<tr><th id="18">18</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="19">19</th><td><i> * License along with this library; if not, write to the Free Software</i></td></tr>
+<tr><th id="20">20</th><td><i> * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301</i></td></tr>
+<tr><th id="21">21</th><td><i> * USA</i></td></tr>
+<tr><th id="22">22</th><td><i> */</i></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="24">if</span> !defined (<a class="macro" href="ibus.h.html#26" data-ref="_M/__IBUS_H_INSIDE__">__IBUS_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/IBUS_COMPILATION">IBUS_COMPILATION</span>)</u></td></tr>
+<tr><th id="25">25</th><td><u>#error "Only &lt;ibus.h&gt; can be included directly"</u></td></tr>
+<tr><th id="26">26</th><td><u>#<span data-ppcond="24">endif</span></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#<span data-ppcond="28">ifndef</span> <span class="macro" data-ref="_M/__IBUS_ENGINE_SIMPLE_H__">__IBUS_ENGINE_SIMPLE_H__</span></u></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/__IBUS_ENGINE_SIMPLE_H__" data-ref="_M/__IBUS_ENGINE_SIMPLE_H__">__IBUS_ENGINE_SIMPLE_H__</dfn></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> * SECTION: ibusenginesimple</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> * <span class="command">@short</span>_description: Input method engine supporting table-based input method</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> *<span class="command"> @title</span>: IBusEngineSimple</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> *<span class="command"> @stability</span>: Stable</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> * An IBusEngineSimple provides table-based input method logic.</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * see_also: #IBusEngine</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#include <a href="ibusengine.h.html">"ibusengine.h"</a></u></td></tr>
+<tr><th id="43">43</th><td><u>#include <a href="ibuskeysyms.h.html">"ibuskeysyms.h"</a></u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><a class="macro" href="../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><u>#define <dfn class="macro" id="_M/IBUS_MAX_COMPOSE_LEN" data-ref="_M/IBUS_MAX_COMPOSE_LEN">IBUS_MAX_COMPOSE_LEN</dfn> 7</u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><i>/*</i></td></tr>
+<tr><th id="50">50</th><td><i> * Type macros.</i></td></tr>
+<tr><th id="51">51</th><td><i> */</i></td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><i>/* define GOBJECT macros */</i></td></tr>
+<tr><th id="54">54</th><td><u>#define <dfn class="macro" id="_M/IBUS_TYPE_ENGINE_SIMPLE" data-ref="_M/IBUS_TYPE_ENGINE_SIMPLE">IBUS_TYPE_ENGINE_SIMPLE</dfn>             \</u></td></tr>
+<tr><th id="55">55</th><td><u>    (ibus_engine_simple_get_type ())</u></td></tr>
+<tr><th id="56">56</th><td><u>#define <dfn class="macro" id="_M/IBUS_ENGINE_SIMPLE" data-ref="_M/IBUS_ENGINE_SIMPLE">IBUS_ENGINE_SIMPLE</dfn>(obj)             \</u></td></tr>
+<tr><th id="57">57</th><td><u>    (G_TYPE_CHECK_INSTANCE_CAST ((obj), IBUS_TYPE_ENGINE_SIMPLE, IBusEngineSimple))</u></td></tr>
+<tr><th id="58">58</th><td><u>#define <dfn class="macro" id="_M/IBUS_ENGINE_SIMPLE_CLASS" data-ref="_M/IBUS_ENGINE_SIMPLE_CLASS">IBUS_ENGINE_SIMPLE_CLASS</dfn>(klass)     \</u></td></tr>
+<tr><th id="59">59</th><td><u>    (G_TYPE_CHECK_CLASS_CAST ((klass), IBUS_TYPE_ENGINE_SIMPLE, IBusEngineSimpleClass))</u></td></tr>
+<tr><th id="60">60</th><td><u>#define <dfn class="macro" id="_M/IBUS_IS_ENGINE_SIMPLE" data-ref="_M/IBUS_IS_ENGINE_SIMPLE">IBUS_IS_ENGINE_SIMPLE</dfn>(obj)          \</u></td></tr>
+<tr><th id="61">61</th><td><u>    (G_TYPE_CHECK_INSTANCE_TYPE ((obj), IBUS_TYPE_ENGINE_SIMPLE))</u></td></tr>
+<tr><th id="62">62</th><td><u>#define <dfn class="macro" id="_M/IBUS_IS_ENGINE_SIMPLE_CLASS" data-ref="_M/IBUS_IS_ENGINE_SIMPLE_CLASS">IBUS_IS_ENGINE_SIMPLE_CLASS</dfn>(klass)  \</u></td></tr>
+<tr><th id="63">63</th><td><u>    (G_TYPE_CHECK_CLASS_TYPE ((klass), IBUS_TYPE_ENGINE_SIMPLE))</u></td></tr>
+<tr><th id="64">64</th><td><u>#define <dfn class="macro" id="_M/IBUS_ENGINE_SIMPLE_GET_CLASS" data-ref="_M/IBUS_ENGINE_SIMPLE_GET_CLASS">IBUS_ENGINE_SIMPLE_GET_CLASS</dfn>(obj)   \</u></td></tr>
+<tr><th id="65">65</th><td><u>    (G_TYPE_INSTANCE_GET_CLASS ((obj), IBUS_TYPE_ENGINE_SIMPLE, IBusEngineSimpleClass))</u></td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_IBusEngineSimple" title='_IBusEngineSimple' data-ref="_IBusEngineSimple">_IBusEngineSimple</a> <dfn class="typedef" id="IBusEngineSimple" title='IBusEngineSimple' data-type='struct _IBusEngineSimple' data-ref="IBusEngineSimple">IBusEngineSimple</dfn>;</td></tr>
+<tr><th id="68">68</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_IBusEngineSimpleClass" title='_IBusEngineSimpleClass' data-ref="_IBusEngineSimpleClass">_IBusEngineSimpleClass</a> <dfn class="typedef" id="IBusEngineSimpleClass" title='IBusEngineSimpleClass' data-type='struct _IBusEngineSimpleClass' data-ref="IBusEngineSimpleClass">IBusEngineSimpleClass</dfn>;</td></tr>
+<tr><th id="69">69</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_IBusEngineSimplePrivate" title='_IBusEngineSimplePrivate' data-ref="_IBusEngineSimplePrivate"><a class="type" href="#_IBusEngineSimplePrivate" title='_IBusEngineSimplePrivate' data-ref="_IBusEngineSimplePrivate">_IBusEngineSimplePrivate</a></dfn> <dfn class="typedef" id="IBusEngineSimplePrivate" title='IBusEngineSimplePrivate' data-type='struct _IBusEngineSimplePrivate' data-ref="IBusEngineSimplePrivate">IBusEngineSimplePrivate</dfn>;</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> * IBusEngineSimple:</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc"> * IBusEngineSimple properties.</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="76">76</th><td><b>struct</b> <dfn class="type def" id="_IBusEngineSimple" title='_IBusEngineSimple' data-ref="_IBusEngineSimple">_IBusEngineSimple</dfn> {</td></tr>
+<tr><th id="77">77</th><td>    <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="78">78</th><td>    <a class="typedef" href="ibusengine.h.html#IBusEngine" title='IBusEngine' data-type='struct _IBusEngine' data-ref="IBusEngine">IBusEngine</a> <dfn class="decl" id="_IBusEngineSimple::parent" title='_IBusEngineSimple::parent' data-ref="_IBusEngineSimple::parent">parent</dfn>;</td></tr>
+<tr><th id="79">79</th><td>    <a class="typedef" href="#IBusEngineSimplePrivate" title='IBusEngineSimplePrivate' data-type='struct _IBusEngineSimplePrivate' data-ref="IBusEngineSimplePrivate">IBusEngineSimplePrivate</a> *<dfn class="decl" id="_IBusEngineSimple::priv" title='_IBusEngineSimple::priv' data-ref="_IBusEngineSimple::priv">priv</dfn>;</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td>    <i>/* instance members */</i></td></tr>
+<tr><th id="82">82</th><td>    <i>/*&lt; public &gt;*/</i></td></tr>
+<tr><th id="83">83</th><td>};</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><b>struct</b> <dfn class="type def" id="_IBusEngineSimpleClass" title='_IBusEngineSimpleClass' data-ref="_IBusEngineSimpleClass">_IBusEngineSimpleClass</dfn> {</td></tr>
+<tr><th id="86">86</th><td>    <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="87">87</th><td>    <a class="typedef" href="ibusengine.h.html#IBusEngineClass" title='IBusEngineClass' data-type='struct _IBusEngineClass' data-ref="IBusEngineClass">IBusEngineClass</a> <dfn class="decl" id="_IBusEngineSimpleClass::parent" title='_IBusEngineSimpleClass::parent' data-ref="_IBusEngineSimpleClass::parent">parent</dfn>;</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td>    <i>/* class members */</i></td></tr>
+<tr><th id="90">90</th><td>    <i>/*&lt; public &gt;*/</i></td></tr>
+<tr><th id="91">91</th><td>    <i>/* signals */</i></td></tr>
+<tr><th id="92">92</th><td>    </td></tr>
+<tr><th id="93">93</th><td>    <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="94">94</th><td>    <i>/* padding */</i></td></tr>
+<tr><th id="95">95</th><td>    <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="decl" id="_IBusEngineSimpleClass::pdummy" title='_IBusEngineSimpleClass::pdummy' data-ref="_IBusEngineSimpleClass::pdummy">pdummy</dfn>[<var>8</var>];</td></tr>
+<tr><th id="96">96</th><td>};</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td><em>static</em> <em>const</em> <span class='typedef' title='guint16' data-type='unsigned short' data-ref="guint16">guint16</span> <dfn class="decl def" id="IBUS_COMPOSE_IGNORE_KEYLIST" title='IBUS_COMPOSE_IGNORE_KEYLIST' data-ref="IBUS_COMPOSE_IGNORE_KEYLIST">IBUS_COMPOSE_IGNORE_KEYLIST</dfn>[] = {</td></tr>
+<tr><th id="99">99</th><td>    <a class="macro" href="ibuskeysyms.h.html#188" title="0xffe1" data-ref="_M/IBUS_KEY_Shift_L">IBUS_KEY_Shift_L</a>,</td></tr>
+<tr><th id="100">100</th><td>    <a class="macro" href="ibuskeysyms.h.html#189" title="0xffe2" data-ref="_M/IBUS_KEY_Shift_R">IBUS_KEY_Shift_R</a>,</td></tr>
+<tr><th id="101">101</th><td>    <a class="macro" href="ibuskeysyms.h.html#190" title="0xffe3" data-ref="_M/IBUS_KEY_Control_L">IBUS_KEY_Control_L</a>,</td></tr>
+<tr><th id="102">102</th><td>    <a class="macro" href="ibuskeysyms.h.html#191" title="0xffe4" data-ref="_M/IBUS_KEY_Control_R">IBUS_KEY_Control_R</a>,</td></tr>
+<tr><th id="103">103</th><td>    <a class="macro" href="ibuskeysyms.h.html#192" title="0xffe5" data-ref="_M/IBUS_KEY_Caps_Lock">IBUS_KEY_Caps_Lock</a>,</td></tr>
+<tr><th id="104">104</th><td>    <a class="macro" href="ibuskeysyms.h.html#193" title="0xffe6" data-ref="_M/IBUS_KEY_Shift_Lock">IBUS_KEY_Shift_Lock</a>,</td></tr>
+<tr><th id="105">105</th><td>    <a class="macro" href="ibuskeysyms.h.html#194" title="0xffe7" data-ref="_M/IBUS_KEY_Meta_L">IBUS_KEY_Meta_L</a>,</td></tr>
+<tr><th id="106">106</th><td>    <a class="macro" href="ibuskeysyms.h.html#195" title="0xffe8" data-ref="_M/IBUS_KEY_Meta_R">IBUS_KEY_Meta_R</a>,</td></tr>
+<tr><th id="107">107</th><td>    <a class="macro" href="ibuskeysyms.h.html#196" title="0xffe9" data-ref="_M/IBUS_KEY_Alt_L">IBUS_KEY_Alt_L</a>,</td></tr>
+<tr><th id="108">108</th><td>    <a class="macro" href="ibuskeysyms.h.html#197" title="0xffea" data-ref="_M/IBUS_KEY_Alt_R">IBUS_KEY_Alt_R</a>,</td></tr>
+<tr><th id="109">109</th><td>    <a class="macro" href="ibuskeysyms.h.html#198" title="0xffeb" data-ref="_M/IBUS_KEY_Super_L">IBUS_KEY_Super_L</a>,</td></tr>
+<tr><th id="110">110</th><td>    <a class="macro" href="ibuskeysyms.h.html#199" title="0xffec" data-ref="_M/IBUS_KEY_Super_R">IBUS_KEY_Super_R</a>,</td></tr>
+<tr><th id="111">111</th><td>    <a class="macro" href="ibuskeysyms.h.html#200" title="0xffed" data-ref="_M/IBUS_KEY_Hyper_L">IBUS_KEY_Hyper_L</a>,</td></tr>
+<tr><th id="112">112</th><td>    <a class="macro" href="ibuskeysyms.h.html#201" title="0xffee" data-ref="_M/IBUS_KEY_Hyper_R">IBUS_KEY_Hyper_R</a>,</td></tr>
+<tr><th id="113">113</th><td>    <a class="macro" href="ibuskeysyms.h.html#88" title="0xff7e" data-ref="_M/IBUS_KEY_Mode_switch">IBUS_KEY_Mode_switch</a>,</td></tr>
+<tr><th id="114">114</th><td>    <a class="macro" href="ibuskeysyms.h.html#204" title="0xfe03" data-ref="_M/IBUS_KEY_ISO_Level3_Shift">IBUS_KEY_ISO_Level3_Shift</a></td></tr>
+<tr><th id="115">115</th><td>};</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><a class="typedef" href="../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>   <dfn class="decl" id="ibus_engine_simple_get_type" title='ibus_engine_simple_get_type' data-ref="ibus_engine_simple_get_type">ibus_engine_simple_get_type</dfn>       (<em>void</em>);</td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> * ibus_engine_simple_add_table:</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"> *<span class="command"> @simple</span>: An IBusEngineSimple.</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc"> * <span class="command">@data</span>: (element-type guint16) (array): The table which must be available</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> *      during the whole life of the simple engine.</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> *<span class="command"> @max</span>_seq_len: Maximum length of a swquence in the table (cannot be greater</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc"> *      than %IBUS_MAX_COMPOSE_LEN)</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> *<span class="command"> @n</span>_seqs: number of sequences in the table</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> * Adds an additional table to search to the engine. Each row of the table</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc"> * consists of max_seq_len key symbols followed by two guint16 interpreted as</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc"> * the high and low words of a gunicode value. Tables are searched starting from</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc"> * the last added.</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> * The table must be sorted in dictionary order on the numeric value of the key</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> * symbol fields. (Values beyond the length of the sequence should be zero.)</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="136">136</th><td><em>void</em>             <dfn class="decl" id="ibus_engine_simple_add_table" title='ibus_engine_simple_add_table' data-ref="ibus_engine_simple_add_table">ibus_engine_simple_add_table</dfn>   (<a class="typedef" href="#IBusEngineSimple" title='IBusEngineSimple' data-type='struct _IBusEngineSimple' data-ref="IBusEngineSimple">IBusEngineSimple</a>  *<dfn class="local col9 decl" id="299simple" title='simple' data-type='IBusEngineSimple *' data-ref="299simple">simple</dfn>,</td></tr>
+<tr><th id="137">137</th><td>                                                 <em>const</em> <span class='typedef' title='guint16' data-type='unsigned short' data-ref="guint16">guint16</span>     *<dfn class="local col0 decl" id="300data" title='data' data-type='const guint16 *' data-ref="300data">data</dfn>,</td></tr>
+<tr><th id="138">138</th><td>                                                 <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>               <dfn class="local col1 decl" id="301max_seq_len" title='max_seq_len' data-type='gint' data-ref="301max_seq_len">max_seq_len</dfn>,</td></tr>
+<tr><th id="139">139</th><td>                                                 <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>               <dfn class="local col2 decl" id="302n_seqs" title='n_seqs' data-type='gint' data-ref="302n_seqs">n_seqs</dfn>);</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> * ibus_engine_simple_add_table_by_locale:</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> *<span class="command"> @simple</span>: An IBusEngineSimple.</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> *<span class="command"> @locale</span>: (allow-none): The locale name. If the locale is %NULL,</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> *                        the current locale is used.</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc"> * Call ibus_engine_simple_add_table() internally by locale.</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> * Returns: %TRUE if the<span class="command"> @locale</span> is matched to the table.</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="151">151</th><td><a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>         <dfn class="decl" id="ibus_engine_simple_add_table_by_locale" title='ibus_engine_simple_add_table_by_locale' data-ref="ibus_engine_simple_add_table_by_locale">ibus_engine_simple_add_table_by_locale</dfn></td></tr>
+<tr><th id="152">152</th><td>                                                (<a class="typedef" href="#IBusEngineSimple" title='IBusEngineSimple' data-type='struct _IBusEngineSimple' data-ref="IBusEngineSimple">IBusEngineSimple</a>  *<dfn class="local col3 decl" id="303simple" title='simple' data-type='IBusEngineSimple *' data-ref="303simple">simple</dfn>,</td></tr>
+<tr><th id="153">153</th><td>                                                 <em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>       *<dfn class="local col4 decl" id="304locale" title='locale' data-type='const gchar *' data-ref="304locale">locale</dfn>);</td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc"> * ibus_engine_simple_add_compose_file:</i></td></tr>
+<tr><th id="157">157</th><td><i class="doc"> *<span class="command"> @simple</span>: An IBusEngineSimple.</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc"> *<span class="command"> @file</span>: The compose file.</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc"> * Call ibus_engine_simple_add_table() internally by locale.</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="162">162</th><td><i class="doc"> * Returns: %TRUE if the<span class="command"> @file</span> is loaded.</i></td></tr>
+<tr><th id="163">163</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="164">164</th><td><a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>         <dfn class="decl" id="ibus_engine_simple_add_compose_file" title='ibus_engine_simple_add_compose_file' data-ref="ibus_engine_simple_add_compose_file">ibus_engine_simple_add_compose_file</dfn></td></tr>
+<tr><th id="165">165</th><td>                                                (<a class="typedef" href="#IBusEngineSimple" title='IBusEngineSimple' data-type='struct _IBusEngineSimple' data-ref="IBusEngineSimple">IBusEngineSimple</a>  *<dfn class="local col5 decl" id="305simple" title='simple' data-type='IBusEngineSimple *' data-ref="305simple">simple</dfn>,</td></tr>
+<tr><th id="166">166</th><td>                                                 <em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>       *<dfn class="local col6 decl" id="306file" title='file' data-type='const gchar *' data-ref="306file">file</dfn>);</td></tr>
+<tr><th id="167">167</th><td><a class="macro" href="../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="168">168</th><td></td></tr>
+<tr><th id="169">169</th><td><u>#<span data-ppcond="28">endif</span> // __IBUS_ENGINE_SIMPLE_H__</u></td></tr>
+<tr><th id="170">170</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../unikey/setup/dlg_main_setup.cpp.html'>unikey/setup/dlg_main_setup.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

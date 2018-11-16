@@ -1,0 +1,9 @@
+<dec f='include/pango-1.0/pango/pango-version-macros.h' l='335'/>
+<use f='include/pango-1.0/pango/pango-utils.h' l='31' u='c'/>
+<use f='include/pango-1.0/pango/pango-utils.h' l='34' u='c'/>
+<use f='include/pango-1.0/pango/pango-utils.h' l='36' u='c'/>
+<use f='include/pango-1.0/pango/pango-utils.h' l='39' u='c'/>
+<use f='include/pango-1.0/pango/pango-utils.h' l='41' u='c'/>
+<use f='include/pango-1.0/pango/pango-utils.h' l='44' u='c'/>
+<use f='include/pango-1.0/pango/pango-utils.h' l='47' u='c'/>
+<use f='include/pango-1.0/pango/pango-utils.h' l='62' u='c'/>

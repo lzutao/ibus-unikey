@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1021' type='gboolean gtk_widget_child_focus(GtkWidget * widget, GtkDirectionType direction)'/>

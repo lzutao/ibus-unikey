@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkuimanager.h' l='138' type='void gtk_ui_manager_add_ui(GtkUIManager * self, guint merge_id, const gchar * path, const gchar * name, const gchar * action, GtkUIManagerItemType type, gboolean top)'/>

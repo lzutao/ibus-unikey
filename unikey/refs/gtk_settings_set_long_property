@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtksettings.h' l='113' type='void gtk_settings_set_long_property(GtkSettings * settings, const gchar * name, glong v_long, const gchar * origin)'/>

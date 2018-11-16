@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='205' type='gboolean gtk_text_iter_forward_visible_word_ends(GtkTextIter * iter, gint count)'/>

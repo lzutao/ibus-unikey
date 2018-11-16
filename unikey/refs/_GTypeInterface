@@ -1,0 +1,9 @@
+<def f='include/glib-2.0/gobject/gtype.h' l='426' ll='431'/>
+<size>16</size>
+<doc f='include/glib-2.0/gobject/gtype.h' l='421'>/**
+ * GTypeInterface:
+ * 
+ * An opaque structure used as the base of all interface types.
+ */</doc>
+<mbr r='_GTypeInterface::g_type' o='0' t='GType'/>
+<mbr r='_GTypeInterface::g_instance_type' o='64' t='GType'/>

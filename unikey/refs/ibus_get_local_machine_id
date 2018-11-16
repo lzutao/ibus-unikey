@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='190' type='const gchar * ibus_get_local_machine_id()'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='183'>/**
+ * ibus_get_local_machine_id:
+ *
+ * Obtains the machine UUID of the machine this process is running on.
+ *
+ * Returns: A newly allocated string that shows the UUID of the machine.
+ */</doc>

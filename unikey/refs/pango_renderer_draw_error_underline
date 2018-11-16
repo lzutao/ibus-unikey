@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-renderer.h' l='227' type='void pango_renderer_draw_error_underline(PangoRenderer * renderer, int x, int y, int width, int height)'/>

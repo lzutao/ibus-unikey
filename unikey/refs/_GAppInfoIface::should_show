@@ -1,0 +1,2 @@
+<dec f='include/glib-2.0/gio/gappinfo.h' l='110' type='gboolean (*)(GAppInfo *)'/>
+<offset>832</offset>

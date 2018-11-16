@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='201' type='void gtk_window_set_default(GtkWindow * window, GtkWidget * default_widget)'/>

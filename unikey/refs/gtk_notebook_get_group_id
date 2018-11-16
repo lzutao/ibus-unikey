@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtknotebook.h' l='189' type='gint gtk_notebook_get_group_id(GtkNotebook * notebook)'/>

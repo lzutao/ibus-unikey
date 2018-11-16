@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcellrenderer.h' l='181' type='void gtk_cell_renderer_set_sensitive(GtkCellRenderer * cell, gboolean sensitive)'/>

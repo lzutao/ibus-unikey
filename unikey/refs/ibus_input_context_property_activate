@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusinputcontext.h' l='360' type='void ibus_input_context_property_activate(IBusInputContext * context, const gchar * prop_name, guint32 state)'/>
+<doc f='include/ibus-1.0/ibusinputcontext.h' l='350'>/**
+ * ibus_input_context_property_activate:
+ * @context: An #IBusInputContext.
+ * @prop_name: A property name (e.g. &quot;InputMode.WideLatin&quot;)
+ * @state: A status of the property (e.g. PROP_STATE_CHECKED)
+ *
+ * Activate the property asynchronously.
+ *
+ * See also: #IBusEngine::property_activate
+ */</doc>

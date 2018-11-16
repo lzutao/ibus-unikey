@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkcombobox.h' l='44' ll='50'/>
+<size>128</size>
+<mbr r='_GtkComboBox::parent_instance' o='0' t='GtkBin'/>
+<mbr r='_GtkComboBox::priv' o='960' t='GtkComboBoxPrivate *'/>

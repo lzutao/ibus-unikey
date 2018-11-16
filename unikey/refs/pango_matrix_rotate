@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-matrix.h' l='104' type='void pango_matrix_rotate(PangoMatrix * matrix, double degrees)'/>

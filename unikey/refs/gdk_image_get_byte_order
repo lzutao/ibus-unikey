@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkimage.h' l='124' type='GdkByteOrder gdk_image_get_byte_order(GdkImage * image)'/>

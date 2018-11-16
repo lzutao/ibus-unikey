@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtktoolbutton.h' l='45' ll='51'/>
+<size>136</size>
+<mbr r='_GtkToolButton::parent' o='0' t='GtkToolItem'/>
+<mbr r='_GtkToolButton::priv' o='1024' t='GtkToolButtonPrivate *'/>

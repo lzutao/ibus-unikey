@@ -1,0 +1,4 @@
+<def f='include/atk-1.0/atk/atkhyperlinkimpl.h' l='53' ll='58'/>
+<size>24</size>
+<mbr r='_AtkHyperlinkImplIface::parent' o='0' t='GTypeInterface'/>
+<mbr r='_AtkHyperlinkImplIface::get_hyperlink' o='128' t='AtkHyperlink *(*)(AtkHyperlinkImpl *)'/>

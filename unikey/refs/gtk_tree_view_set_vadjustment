@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='153' type='void gtk_tree_view_set_vadjustment(GtkTreeView * tree_view, GtkAdjustment * adjustment)'/>

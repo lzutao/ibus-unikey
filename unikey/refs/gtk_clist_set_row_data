@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='697' type='void gtk_clist_set_row_data(GtkCList * clist, gint row, gpointer data)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='696'>/* sets a arbitrary data pointer for a given row */</doc>

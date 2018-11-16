@@ -1,0 +1,2 @@
+<dec f='include/glib-2.0/glib/gthread.h' l='232' type='gboolean g_once_init_enter(volatile void * location)'/>
+<use f='unikey/src/engine.cpp' l='66' macro='1' u='c'/>

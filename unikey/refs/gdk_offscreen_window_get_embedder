@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='711' type='GdkWindow * gdk_offscreen_window_get_embedder(GdkWindow * window)'/>

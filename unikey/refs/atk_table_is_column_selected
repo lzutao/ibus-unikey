@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atktable.h' l='208' type='gboolean atk_table_is_column_selected(AtkTable * table, gint column)'/>

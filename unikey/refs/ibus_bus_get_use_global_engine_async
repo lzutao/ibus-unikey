@@ -1,0 +1,1 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='902' type='void ibus_bus_get_use_global_engine_async(IBusBus * bus, gint timeout_msec, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer user_data)'/>

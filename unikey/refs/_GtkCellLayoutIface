@@ -1,0 +1,11 @@
+<def f='include/gtk-2.0/gtk/gtkcelllayout.h' l='49' ll='76'/>
+<size>80</size>
+<mbr r='_GtkCellLayoutIface::g_iface' o='0' t='GTypeInterface'/>
+<mbr r='_GtkCellLayoutIface::pack_start' o='128' t='void (*)(GtkCellLayout *, GtkCellRenderer *, gboolean)'/>
+<mbr r='_GtkCellLayoutIface::pack_end' o='192' t='void (*)(GtkCellLayout *, GtkCellRenderer *, gboolean)'/>
+<mbr r='_GtkCellLayoutIface::clear' o='256' t='void (*)(GtkCellLayout *)'/>
+<mbr r='_GtkCellLayoutIface::add_attribute' o='320' t='void (*)(GtkCellLayout *, GtkCellRenderer *, const gchar *, gint)'/>
+<mbr r='_GtkCellLayoutIface::set_cell_data_func' o='384' t='void (*)(GtkCellLayout *, GtkCellRenderer *, GtkCellLayoutDataFunc, gpointer, GDestroyNotify)'/>
+<mbr r='_GtkCellLayoutIface::clear_attributes' o='448' t='void (*)(GtkCellLayout *, GtkCellRenderer *)'/>
+<mbr r='_GtkCellLayoutIface::reorder' o='512' t='void (*)(GtkCellLayout *, GtkCellRenderer *, gint)'/>
+<mbr r='_GtkCellLayoutIface::get_cells' o='576' t='GList *(*)(GtkCellLayout *)'/>

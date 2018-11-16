@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeviewcolumn.h' l='161' type='void gtk_tree_view_column_set_resizable(GtkTreeViewColumn * tree_column, gboolean resizable)'/>

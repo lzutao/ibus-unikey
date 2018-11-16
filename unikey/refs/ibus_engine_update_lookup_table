@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='320' type='void ibus_engine_update_lookup_table(IBusEngine * engine, IBusLookupTable * lookup_table, gboolean visible)'/>
+<doc f='include/ibus-1.0/ibusengine.h' l='308'>/**
+ * ibus_engine_update_lookup_table:
+ * @engine: An IBusEngine.
+ * @lookup_table: An lookup_table.
+ * @visible: Whether the lookup_table is visible.
+ *
+ * Update the lookup table.
+ *
+ * (Note: The table object will be released, if it is floating.
+ *  If caller want to keep the object, caller should make the object
+ *  sink by g_object_ref_sink.)
+ */</doc>

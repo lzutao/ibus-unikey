@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconview.h' l='188' type='void gtk_icon_view_enable_model_drag_dest(GtkIconView * icon_view, const GtkTargetEntry * targets, gint n_targets, GdkDragAction actions)'/>

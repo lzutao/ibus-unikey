@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkcurve.h' l='70' type='gint'/>
+<offset>1344</offset>
+<doc f='include/gtk-2.0/gtk/gtkcurve.h' l='69'>/* control points: */</doc>
+<doc f='include/gtk-2.0/gtk/gtkcurve.h' l='70'>/* number of control points */</doc>

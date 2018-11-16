@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-layout.h' l='148' type='void pango_layout_set_attributes(PangoLayout * layout, PangoAttrList * attrs)'/>

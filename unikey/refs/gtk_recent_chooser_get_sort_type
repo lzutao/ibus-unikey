@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentchooser.h' l='151' type='GtkRecentSortType gtk_recent_chooser_get_sort_type(GtkRecentChooser * chooser)'/>

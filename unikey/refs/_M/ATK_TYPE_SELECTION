@@ -1,0 +1,7 @@
+<dec f='include/atk-1.0/atk/atkselection.h' l='38'/>
+<doc f='include/atk-1.0/atk/atkselection.h' l='31'>/*
+ * This AtkSelection interface provides the standard mechanism for an 
+ * assistive technology to determine what the current selected children are, 
+ * as well as modify the selection set. Any object that has children that 
+ * can be selected should support the AtkSelection interface.
+ */</doc>

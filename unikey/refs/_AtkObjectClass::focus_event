@@ -1,0 +1,6 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='622' type='void (*)(AtkObject *, gboolean)'/>
+<offset>2304</offset>
+<doc f='include/atk-1.0/atk/atkobject.h' l='618'>/*
+   * The signal handler which is executed  when there is a focus event
+   * for an object.
+   */</doc>

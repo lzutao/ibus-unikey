@@ -1,0 +1,2 @@
+<dec f='include/ibus-1.0/ibuspanelservice.h' l='102' type='void (*)(IBusPanelService *, IBusProperty *)'/>
+<offset>2560</offset>

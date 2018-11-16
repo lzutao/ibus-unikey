@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdrawable.h' l='432' type='GdkRegion * gdk_drawable_get_visible_region(GdkDrawable * drawable)'/>

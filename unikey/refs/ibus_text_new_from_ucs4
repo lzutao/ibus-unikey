@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibustext.h' l='113' type='IBusText * ibus_text_new_from_ucs4(const gunichar * str)'/>
+<doc f='include/ibus-1.0/ibustext.h' l='103'>/**
+ * ibus_text_new_from_ucs4:
+ * @str: An text string to be set.
+ *
+ * Creates a new #IBusText from an UCS-4 encoded string.
+ * @str will be duplicated in IBusText, so feel free to free @str after this
+ * function.
+ *
+ * Returns: A newly allocated #IBusText.
+ */</doc>

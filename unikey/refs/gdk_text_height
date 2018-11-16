@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkfont.h' l='100' type='gint gdk_text_height(GdkFont * font, const gchar * text, gint text_length)'/>

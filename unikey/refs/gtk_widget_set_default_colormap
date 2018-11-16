@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1240' type='void gtk_widget_set_default_colormap(GdkColormap * colormap)'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='1238'>/* Set certain default values to be used at widget creation time.
+ */</doc>

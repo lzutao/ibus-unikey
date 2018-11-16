@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='230' type='gint gtk_entry_layout_index_to_text_index(GtkEntry * entry, gint layout_index)'/>

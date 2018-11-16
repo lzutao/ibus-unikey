@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkenumtypes.h' l='26' type='GType gdk_filter_return_get_type()'/>
+<doc f='include/gtk-2.0/gdk/gdkenumtypes.h' l='25'>/* enumerations from &quot;gdkevents.h&quot; */</doc>

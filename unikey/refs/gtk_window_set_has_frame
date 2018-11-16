@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='261' type='void gtk_window_set_has_frame(GtkWindow * window, gboolean setting)'/>
+<doc f='include/gtk-2.0/gtk/gtkwindow.h' l='260'>/* gtk_window_set_has_frame () must be called before realizing the window_*/</doc>

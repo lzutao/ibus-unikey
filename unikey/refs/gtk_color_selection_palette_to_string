@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcolorsel.h' l='112' type='gchar * gtk_color_selection_palette_to_string(const GdkColor * colors, gint n_colors)'/>

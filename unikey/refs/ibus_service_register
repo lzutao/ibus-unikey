@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusservice.h' l='205' type='gboolean ibus_service_register(IBusService * service, GDBusConnection * connection, GError ** error)'/>
+<doc f='include/ibus-1.0/ibusservice.h' l='195'>/**
+ * ibus_service_register:
+ * @service: An IBusService.
+ * @connection: A GDBusConnection the service will be registered to.
+ * @error: Return location for error or NULL.
+ *
+ * Registers service to a connection.
+ *
+ * Returns: %TRUE if the service was registered, %FALSE otherwise.
+ */</doc>

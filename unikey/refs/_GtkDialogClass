@@ -1,0 +1,9 @@
+<def f='include/gtk-2.0/gtk/gtkdialog.h' l='109' ll='124'/>
+<size>952</size>
+<mbr r='_GtkDialogClass::parent_class' o='0' t='GtkWindowClass'/>
+<mbr r='_GtkDialogClass::response' o='7232' t='void (*)(GtkDialog *, gint)'/>
+<mbr r='_GtkDialogClass::close' o='7296' t='void (*)(GtkDialog *)'/>
+<mbr r='_GtkDialogClass::_gtk_reserved1' o='7360' t='void (*)()'/>
+<mbr r='_GtkDialogClass::_gtk_reserved2' o='7424' t='void (*)()'/>
+<mbr r='_GtkDialogClass::_gtk_reserved3' o='7488' t='void (*)()'/>
+<mbr r='_GtkDialogClass::_gtk_reserved4' o='7552' t='void (*)()'/>

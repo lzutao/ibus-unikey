@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkaction.h' l='170' type='void gtk_action_set_is_important(GtkAction * action, gboolean is_important)'/>

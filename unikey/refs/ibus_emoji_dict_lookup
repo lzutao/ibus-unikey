@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusemoji.h' l='196' type='IBusEmojiData * ibus_emoji_dict_lookup(GHashTable * dict, const gchar * emoji)'/>
+<doc f='include/ibus-1.0/ibusemoji.h' l='186'>/**
+ * ibus_emoji_dict_lookup:
+ * @dict: (element-type utf8 IBusEmojiData) (transfer full): An Emoji dictionary
+ * @emoji: an emoji character
+ *
+ * Returns: (transfer none): An #IBusEmojiData of @emoji.
+ * This API was prepared for the old dict foramat with Gir and Vala
+ * but no longer needed.
+ * Use ibus_emoji_data_load() instead.
+ */</doc>

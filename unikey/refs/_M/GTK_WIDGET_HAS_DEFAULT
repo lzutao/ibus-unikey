@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='363'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='355'>/**
+ * GTK_WIDGET_HAS_DEFAULT:
+ * @wid: a #GtkWidget.
+ *
+ * Evaluates to %TRUE if the widget currently is receiving the default action.
+ *
+ * Deprecated: 2.20: Use gtk_widget_has_default() instead.
+ */</doc>

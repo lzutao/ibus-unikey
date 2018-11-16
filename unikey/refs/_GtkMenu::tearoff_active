@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkmenu.h' l='103' type='guint'/>
+<offset>2338</offset>
+<doc f='include/gtk-2.0/gtk/gtkmenu.h' l='100'>/* The tearoff is active when it is torn off and the not-torn-off
+   * menu is not popped up.
+   */</doc>

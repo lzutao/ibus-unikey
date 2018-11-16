@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeviewcolumn.h' l='168' type='gint gtk_tree_view_column_get_fixed_width(GtkTreeViewColumn * tree_column)'/>

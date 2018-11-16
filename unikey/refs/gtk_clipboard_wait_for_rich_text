@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkclipboard.h' l='125' type='guint8 * gtk_clipboard_wait_for_rich_text(GtkClipboard * clipboard, GtkTextBuffer * buffer, GdkAtom * format, gsize * length)'/>

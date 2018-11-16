@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkvolumebutton.h' l='56' ll='65'/>
+<size>976</size>
+<mbr r='_GtkVolumeButtonClass::parent_class' o='0' t='GtkScaleButtonClass'/>
+<mbr r='_GtkVolumeButtonClass::_gtk_reserved1' o='7552' t='void (*)()'/>
+<mbr r='_GtkVolumeButtonClass::_gtk_reserved2' o='7616' t='void (*)()'/>
+<mbr r='_GtkVolumeButtonClass::_gtk_reserved3' o='7680' t='void (*)()'/>
+<mbr r='_GtkVolumeButtonClass::_gtk_reserved4' o='7744' t='void (*)()'/>

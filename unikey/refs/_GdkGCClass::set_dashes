@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkgc.h' l='210' type='void (*)(GdkGC *, gint, gint8 *, gint)'/>
+<offset>1216</offset>

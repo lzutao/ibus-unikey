@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-transform.h' l='156' type='GdkPixbuf * gdk_pixbuf_rotate_simple(const GdkPixbuf * src, GdkPixbufRotation angle)'/>

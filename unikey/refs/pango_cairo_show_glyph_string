@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pangocairo.h' l='154' type='void pango_cairo_show_glyph_string(cairo_t * cr, PangoFont * font, PangoGlyphString * glyphs)'/>

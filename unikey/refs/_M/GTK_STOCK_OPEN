@@ -1,0 +1,8 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='675'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='350' u='c'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='669'>/**
+ * GTK_STOCK_OPEN:
+ *
+ * The &quot;Open&quot; item.
+ * &lt;inlinegraphic fileref=&quot;document-open.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

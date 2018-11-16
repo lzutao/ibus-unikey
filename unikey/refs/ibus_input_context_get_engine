@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusinputcontext.h' l='443' type='IBusEngineDesc * ibus_input_context_get_engine(IBusInputContext * context)'/>
+<doc f='include/ibus-1.0/ibusinputcontext.h' l='433'>/**
+ * ibus_input_context_get_engine:
+ * @context: An #IBusInputContext.
+ *
+ * Gets an IME engine description for the context.
+ * A synchronous IPC will be performed.
+ *
+ * Returns: (transfer none): An IME engine description for the context, or NULL.
+ */</doc>

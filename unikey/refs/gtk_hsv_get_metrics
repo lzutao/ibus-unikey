@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkhsv.h' l='94' type='void gtk_hsv_get_metrics(GtkHSV * hsv, gint * size, gint * ring_width)'/>

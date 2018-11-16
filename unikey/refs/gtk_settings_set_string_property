@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtksettings.h' l='109' type='void gtk_settings_set_string_property(GtkSettings * settings, const gchar * name, const gchar * v_string, const gchar * origin)'/>

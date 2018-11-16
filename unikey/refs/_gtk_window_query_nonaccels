@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='446' type='gboolean _gtk_window_query_nonaccels(GtkWindow * window, guint accel_key, GdkModifierType accel_mods)'/>
+<doc f='include/gtk-2.0/gtk/gtkwindow.h' l='445'>/* --- internal (GtkAcceleratable) --- */</doc>

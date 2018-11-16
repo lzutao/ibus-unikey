@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkscalebutton.h' l='90' type='void gtk_scale_button_set_icons(GtkScaleButton * button, const gchar ** icons)'/>

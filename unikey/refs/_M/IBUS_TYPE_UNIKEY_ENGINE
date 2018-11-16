@@ -1,0 +1,6 @@
+<dec f='unikey/src/engine.h' l='10'/>
+<use f='unikey/src/main.cpp' l='61' u='c'/>
+<doc f='unikey/src/engine.h' l='6'>/**
+ * Returns a numerical value which represents the unique
+ * identifier of unikey engine
+ */</doc>

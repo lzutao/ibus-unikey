@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gtk/gtkaboutdialog.h' l='52' ll='58'/>
+<size>272</size>
+<doc f='include/gtk-2.0/gtk/gtkaboutdialog.h' l='46'>/**
+ * GtkAboutDialog:
+ *
+ * The &lt;structname&gt;GtkAboutDialog&lt;/structname&gt; struct contains
+ * only private fields and should not be directly accessed.
+ */</doc>
+<mbr r='_GtkAboutDialog::parent_instance' o='0' t='GtkDialog'/>
+<mbr r='_GtkAboutDialog::private_data' o='2112' t='gpointer'/>

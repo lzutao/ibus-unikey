@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gtk/gtkaction.h' l='73' type='GtkWidget *(*)(GtkAction *)'/>
+<offset>1280</offset>
+<doc f='include/gtk-2.0/gtk/gtkaction.h' l='72'>/* widget creation routines (not signals) */</doc>

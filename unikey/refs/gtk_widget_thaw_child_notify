@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='935' type='void gtk_widget_thaw_child_notify(GtkWidget * widget)'/>

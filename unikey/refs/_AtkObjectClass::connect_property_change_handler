@@ -1,0 +1,5 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='598' type='guint (*)(AtkObject *, AtkPropertyChangeHandler *)'/>
+<offset>2048</offset>
+<doc f='include/atk-1.0/atk/atkobject.h' l='595'>/*
+   * Specifies a function to be called when a property changes value
+   */</doc>

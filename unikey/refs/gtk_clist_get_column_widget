@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='514' type='GtkWidget * gtk_clist_get_column_widget(GtkCList * clist, gint column)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='513'>/* returns the column widget */</doc>

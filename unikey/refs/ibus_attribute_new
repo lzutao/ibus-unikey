@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusattribute.h' l='140' type='IBusAttribute * ibus_attribute_new(guint type, guint value, guint start_index, guint end_index)'/>
+<doc f='include/ibus-1.0/ibusattribute.h' l='129'>/**
+ * ibus_attribute_new:
+ * @type: Type of the attribute.
+ * @value: Value of the attribute.
+ * @start_index: Where attribute starts.
+ * @end_index: Where attribute ends.
+ *
+ * Creates a new IBusAttribute.
+ *
+ * Returns: (transfer none): A newly allocated IBusAttribute.
+ */</doc>

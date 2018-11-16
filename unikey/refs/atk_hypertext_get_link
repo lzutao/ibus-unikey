@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkhypertext.h' l='68' type='AtkHyperlink * atk_hypertext_get_link(AtkHypertext * hypertext, gint link_index)'/>

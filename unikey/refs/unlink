@@ -1,0 +1,2 @@
+<dec f='include/unistd.h' l='828' type='int unlink(const char * __name)'/>
+<doc f='include/unistd.h' l='827'>/* Remove the link NAME.  */</doc>

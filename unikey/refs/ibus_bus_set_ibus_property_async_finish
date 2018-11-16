@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='1278' type='gboolean ibus_bus_set_ibus_property_async_finish(IBusBus * bus, GAsyncResult * res, GError ** error)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='1267'>/**
+ * ibus_bus_set_ibus_property_async_finish:
+ * @bus: An #IBusBus.
+ * @res: A #GAsyncResult obtained from the #GAsyncReadyCallback passed to
+ *   ibus_bus_set_ibus_property_async().
+ * @error: Return location for error or %NULL.
+ *
+ * Finishes an operation started with ibus_bus_set_ibus_property_async().
+ *
+ * Returns: %TRUE if property is set with async. %FALSE failed.
+ */</doc>

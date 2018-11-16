@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkenumtypes.h' l='98' type='GType gdk_byte_order_get_type()'/>
+<doc f='include/gtk-2.0/gdk/gdkenumtypes.h' l='97'>/* enumerations from &quot;gdktypes.h&quot; */</doc>

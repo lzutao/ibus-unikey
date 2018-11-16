@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkstyle.h' l='932' type='void gtk_draw_insertion_cursor(GtkWidget * widget, GdkDrawable * drawable, const GdkRectangle * area, const GdkRectangle * location, gboolean is_primary, GtkTextDirection direction, gboolean draw_arrow)'/>

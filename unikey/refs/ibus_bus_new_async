@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='106' type='IBusBus * ibus_bus_new_async()'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='97'>/**
+ * ibus_bus_new_async:
+ *
+ * Creates a new #IBusBus instance. The instance will asynchronously connect
+ * to the IBus daemon.
+ *
+ * Returns: A newly allocated #IBusBus instance, and the instance is not
+ * floating.
+ */</doc>

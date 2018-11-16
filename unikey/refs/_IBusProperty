@@ -1,0 +1,9 @@
+<def f='include/ibus-1.0/ibusproperty.h' l='129' ll='135'/>
+<size>112</size>
+<doc f='include/ibus-1.0/ibusproperty.h' l='125'>/**
+ * IBusProperty:
+ * UI component for input method engine property.
+ */</doc>
+<mbr r='_IBusProperty::parent' o='0' t='IBusSerializable'/>
+<mbr r='_IBusProperty::priv' o='384' t='IBusPropertyPrivate *'/>
+<mbr r='_IBusProperty::pdummy' o='448' t='gpointer [7]'/>

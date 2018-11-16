@@ -1,0 +1,10 @@
+<def f='include/ibus-1.0/ibusserializable.h' l='121' ll='126'/>
+<size>48</size>
+<doc f='include/ibus-1.0/ibusserializable.h' l='115'>/**
+ * IBusSerializable:
+ *
+ * All the fields in the &lt;structname&gt;IBusSerializable&lt;/structname&gt; structure are
+ * private to the #IBusSerializable and should never be accessed directly.
+ */</doc>
+<mbr r='_IBusSerializable::parent' o='0' t='IBusObject'/>
+<mbr r='_IBusSerializable::priv' o='320' t='IBusSerializablePrivate *'/>

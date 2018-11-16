@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='942'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='934'>/**
+ * GTK_STOCK_UNDELETE:
+ *
+ * The &quot;Undelete&quot; item.
+ * &lt;inlinegraphic fileref=&quot;gtk-undelete-ltr.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ * RTL variant
+ * &lt;inlinegraphic fileref=&quot;gtk-undelete-rtl.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

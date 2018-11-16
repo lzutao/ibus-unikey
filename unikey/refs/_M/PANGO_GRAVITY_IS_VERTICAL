@@ -1,0 +1,12 @@
+<dec f='include/pango-1.0/pango/pango-gravity.h' l='94'/>
+<doc f='include/pango-1.0/pango/pango-gravity.h' l='83'>/**
+ * PANGO_GRAVITY_IS_VERTICAL:
+ * @gravity: the #PangoGravity to check
+ *
+ * Whether a #PangoGravity represents vertical writing directions.
+ *
+ * Returns: %TRUE if @gravity is %PANGO_GRAVITY_EAST or %PANGO_GRAVITY_WEST,
+ *          %FALSE otherwise.
+ *
+ * Since: 1.16
+ **/</doc>

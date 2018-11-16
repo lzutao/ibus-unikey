@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='603' type='GList * gdk_window_peek_children(GdkWindow * window)'/>

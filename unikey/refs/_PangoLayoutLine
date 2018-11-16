@@ -1,0 +1,27 @@
+<def f='include/pango-1.0/pango/pango-layout.h' l='116' ll='124'/>
+<size>32</size>
+<doc f='include/pango-1.0/pango/pango-layout.h' l='97'>/**
+ * PangoLayoutLine:
+ * @layout: (allow-none): the layout this line belongs to, might be %NULL
+ * @start_index: start of line as byte index into layout-&gt;text
+ * @length: length of line in bytes
+ * @runs: (allow-none) (element-type Pango.LayoutRun): list of runs in the
+ *        line, from left to right
+ * @is_paragraph_start: #TRUE if this is the first line of the paragraph
+ * @resolved_dir: #Resolved PangoDirection of line
+ *
+ * The #PangoLayoutLine structure represents one of the lines resulting
+ * from laying out a paragraph via #PangoLayout. #PangoLayoutLine
+ * structures are obtained by calling pango_layout_get_line() and
+ * are only valid until the text, attributes, or settings of the
+ * parent #PangoLayout are modified.
+ *
+ * Routines for rendering PangoLayout objects are provided in
+ * code specific to each rendering system.
+ */</doc>
+<mbr r='_PangoLayoutLine::layout' o='0' t='PangoLayout *'/>
+<mbr r='_PangoLayoutLine::start_index' o='64' t='gint'/>
+<mbr r='_PangoLayoutLine::length' o='96' t='gint'/>
+<mbr r='_PangoLayoutLine::runs' o='128' t='GSList *'/>
+<mbr r='_PangoLayoutLine::is_paragraph_start' o='192' t='guint'/>
+<mbr r='_PangoLayoutLine::resolved_dir' o='193' t='guint'/>

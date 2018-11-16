@@ -1,0 +1,16 @@
+<def f='include/gtk-2.0/gtk/gtkcellrenderer.h' l='58' ll='78'/>
+<size>56</size>
+<mbr r='_GtkCellRenderer::parent' o='0' t='GtkObject'/>
+<mbr r='_GtkCellRenderer::xalign' o='256' t='gfloat'/>
+<mbr r='_GtkCellRenderer::yalign' o='288' t='gfloat'/>
+<mbr r='_GtkCellRenderer::width' o='320' t='gint'/>
+<mbr r='_GtkCellRenderer::height' o='352' t='gint'/>
+<mbr r='_GtkCellRenderer::xpad' o='384' t='guint16'/>
+<mbr r='_GtkCellRenderer::ypad' o='400' t='guint16'/>
+<mbr r='_GtkCellRenderer::mode' o='416' t='guint'/>
+<mbr r='_GtkCellRenderer::visible' o='418' t='guint'/>
+<mbr r='_GtkCellRenderer::is_expander' o='419' t='guint'/>
+<mbr r='_GtkCellRenderer::is_expanded' o='420' t='guint'/>
+<mbr r='_GtkCellRenderer::cell_background_set' o='421' t='guint'/>
+<mbr r='_GtkCellRenderer::sensitive' o='422' t='guint'/>
+<mbr r='_GtkCellRenderer::editing' o='423' t='guint'/>

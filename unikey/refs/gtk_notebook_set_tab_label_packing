@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtknotebook.h' l='284' type='void gtk_notebook_set_tab_label_packing(GtkNotebook * notebook, GtkWidget * child, gboolean expand, gboolean fill, GtkPackType pack_type)'/>

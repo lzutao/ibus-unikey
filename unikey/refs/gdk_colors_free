@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkcolor.h' l='168' type='void gdk_colors_free(GdkColormap * colormap, gulong * pixels, gint npixels, gulong planes)'/>

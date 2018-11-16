@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkfilechooser.h' l='216' type='void gtk_file_chooser_set_use_preview_label(GtkFileChooser * chooser, gboolean use_label)'/>

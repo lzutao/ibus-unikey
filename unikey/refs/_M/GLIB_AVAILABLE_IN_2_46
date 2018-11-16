@@ -1,0 +1,13 @@
+<dec f='include/glib-2.0/glib/gversionmacros.h' l='440'/>
+<use f='include/glib-2.0/glib/gasyncqueue.h' l='100' u='c'/>
+<use f='include/glib-2.0/glib/gasyncqueue.h' l='103' u='c'/>
+<use f='include/glib-2.0/glib/gasyncqueue.h' l='106' u='c'/>
+<use f='include/glib-2.0/glib/gasyncqueue.h' l='109' u='c'/>
+<use f='include/glib-2.0/glib/gmessages.h' l='84' u='c'/>
+<use f='include/glib-2.0/glib/gthreadpool.h' l='68' u='c'/>
+<use f='include/glib-2.0/gobject/gparam.h' l='349' u='c'/>
+<use f='include/glib-2.0/gio/gdbusconnection.h' l='404' u='c'/>
+<use f='include/glib-2.0/gio/gnetworkmonitor.h' l='75' u='c'/>
+<use f='include/glib-2.0/gio/gsettingsschema.h' l='77' u='c'/>
+<use f='include/glib-2.0/gio/gtlsclientconnection.h' l='80' u='c'/>
+<use f='include/glib-2.0/gio/gliststore.h' l='52' u='c'/>

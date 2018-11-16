@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtknotebook.h' l='209' type='gint gtk_notebook_page_num(GtkNotebook * notebook, GtkWidget * child)'/>

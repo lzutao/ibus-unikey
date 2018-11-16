@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='777' type='void gtk_clist_set_auto_sort(GtkCList * clist, gboolean auto_sort)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='776'>/* Automatically sort upon insertion */</doc>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='126' type='void (*)(GdkDisplay *, GdkScreen **, gint *, gint *, GdkModifierType *)'/>
+<offset>0</offset>

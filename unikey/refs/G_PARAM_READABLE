@@ -1,0 +1,3 @@
+<dec f='include/glib-2.0/gobject/gparam.h' l='152' type='1'/>
+<use f='include/glib-2.0/gobject/gparam.h' l='154' u='r'/>
+<use f='include/gtk-2.0/gtk/gtkobject.h' l='228'/>

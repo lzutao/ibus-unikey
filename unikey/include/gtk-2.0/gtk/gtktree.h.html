@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gtktree.h source code [include/gtk-2.0/gtk/gtktree.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gtk/gtktree.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gtk</a>/<a href='gtktree.h.html'>gtktree.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GTK - The GIMP Toolkit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><i>/*</i></td></tr>
+<tr><th id="21">21</th><td><i> * Modified by the GTK+ Team and others 1997-2000.  See the AUTHORS</i></td></tr>
+<tr><th id="22">22</th><td><i> * file for a list of people on the GTK+ Team.  See the ChangeLog</i></td></tr>
+<tr><th id="23">23</th><td><i> * files for a list of changes.  These files are distributed with</i></td></tr>
+<tr><th id="24">24</th><td><i> * GTK+ at ftp://ftp.gtk.org/pub/gtk/.</i></td></tr>
+<tr><th id="25">25</th><td><i> */</i></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifdef</span> <span class="macro" data-ref="_M/GTK_ENABLE_BROKEN">GTK_ENABLE_BROKEN</span></u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><u>#ifndef __GTK_TREE_H__</u></td></tr>
+<tr><th id="30">30</th><td><u>#define __GTK_TREE_H__</u></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><u>#include &lt;gtk/gtkcontainer.h&gt;</u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td>G_BEGIN_DECLS</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><i>/* set this flag to enable tree debugging output */</i></td></tr>
+<tr><th id="39">39</th><td><i>/* #define TREE_DEBUG */</i></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><u>#define GTK_TYPE_TREE                  (gtk_tree_get_type ())</u></td></tr>
+<tr><th id="42">42</th><td><u>#define GTK_TREE(obj)                  (G_TYPE_CHECK_INSTANCE_CAST ((obj), GTK_TYPE_TREE, GtkTree))</u></td></tr>
+<tr><th id="43">43</th><td><u>#define GTK_TREE_CLASS(klass)          (G_TYPE_CHECK_CLASS_CAST ((klass), GTK_TYPE_TREE, GtkTreeClass))</u></td></tr>
+<tr><th id="44">44</th><td><u>#define GTK_IS_TREE(obj)               (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GTK_TYPE_TREE))</u></td></tr>
+<tr><th id="45">45</th><td><u>#define GTK_IS_TREE_CLASS(klass)       (G_TYPE_CHECK_CLASS_TYPE ((klass), GTK_TYPE_TREE))</u></td></tr>
+<tr><th id="46">46</th><td><u>#define GTK_TREE_GET_CLASS(obj)        (G_TYPE_INSTANCE_GET_CLASS ((obj), GTK_TYPE_TREE, GtkTreeClass))</u></td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><u>#define GTK_IS_ROOT_TREE(obj)   ((GtkObject*) GTK_TREE(obj)-&gt;root_tree == (GtkObject*)obj)</u></td></tr>
+<tr><th id="50">50</th><td><u>#define GTK_TREE_ROOT_TREE(obj) (GTK_TREE(obj)-&gt;root_tree ? GTK_TREE(obj)-&gt;root_tree : GTK_TREE(obj))</u></td></tr>
+<tr><th id="51">51</th><td><u>#define GTK_TREE_SELECTION_OLD(obj) (GTK_TREE_ROOT_TREE(obj)-&gt;selection)</u></td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><b>typedef</b> <b>enum</b> </td></tr>
+<tr><th id="54">54</th><td>{</td></tr>
+<tr><th id="55">55</th><td>  GTK_TREE_VIEW_LINE,  <i>/* default view mode */</i></td></tr>
+<tr><th id="56">56</th><td>  GTK_TREE_VIEW_ITEM</td></tr>
+<tr><th id="57">57</th><td>} GtkTreeViewMode;</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><b>typedef</b> <b>struct</b> _GtkTree       GtkTree;</td></tr>
+<tr><th id="60">60</th><td><b>typedef</b> <b>struct</b> _GtkTreeClass  GtkTreeClass;</td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td><b>struct</b> _GtkTree</td></tr>
+<tr><th id="63">63</th><td>{</td></tr>
+<tr><th id="64">64</th><td>  GtkContainer container;</td></tr>
+<tr><th id="65">65</th><td>  </td></tr>
+<tr><th id="66">66</th><td>  GList *children;</td></tr>
+<tr><th id="67">67</th><td>  </td></tr>
+<tr><th id="68">68</th><td>  GtkTree* root_tree; <i>/* owner of selection list */</i></td></tr>
+<tr><th id="69">69</th><td>  GtkWidget* tree_owner;</td></tr>
+<tr><th id="70">70</th><td>  GList *selection;</td></tr>
+<tr><th id="71">71</th><td>  guint level;</td></tr>
+<tr><th id="72">72</th><td>  guint indent_value;</td></tr>
+<tr><th id="73">73</th><td>  guint current_indent;</td></tr>
+<tr><th id="74">74</th><td>  guint selection_mode : <var>2</var>;</td></tr>
+<tr><th id="75">75</th><td>  guint view_mode : <var>1</var>;</td></tr>
+<tr><th id="76">76</th><td>  guint view_line : <var>1</var>;</td></tr>
+<tr><th id="77">77</th><td>};</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><b>struct</b> _GtkTreeClass</td></tr>
+<tr><th id="80">80</th><td>{</td></tr>
+<tr><th id="81">81</th><td>  GtkContainerClass parent_class;</td></tr>
+<tr><th id="82">82</th><td>  </td></tr>
+<tr><th id="83">83</th><td>  <em>void</em> (* selection_changed) (GtkTree   *tree);</td></tr>
+<tr><th id="84">84</th><td>  <em>void</em> (* select_child)      (GtkTree   *tree,</td></tr>
+<tr><th id="85">85</th><td>			      GtkWidget *child);</td></tr>
+<tr><th id="86">86</th><td>  <em>void</em> (* unselect_child)    (GtkTree   *tree,</td></tr>
+<tr><th id="87">87</th><td>			      GtkWidget *child);</td></tr>
+<tr><th id="88">88</th><td>};</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td>GType      gtk_tree_get_type           (<em>void</em>) G_GNUC_CONST;</td></tr>
+<tr><th id="92">92</th><td>GtkWidget* gtk_tree_new                (<em>void</em>);</td></tr>
+<tr><th id="93">93</th><td><em>void</em>       gtk_tree_append             (GtkTree          *tree,</td></tr>
+<tr><th id="94">94</th><td>				        GtkWidget        *tree_item);</td></tr>
+<tr><th id="95">95</th><td><em>void</em>       gtk_tree_prepend            (GtkTree          *tree,</td></tr>
+<tr><th id="96">96</th><td>				        GtkWidget        *tree_item);</td></tr>
+<tr><th id="97">97</th><td><em>void</em>       gtk_tree_insert             (GtkTree          *tree,</td></tr>
+<tr><th id="98">98</th><td>				        GtkWidget        *tree_item,</td></tr>
+<tr><th id="99">99</th><td>				        gint              position);</td></tr>
+<tr><th id="100">100</th><td><em>void</em>       gtk_tree_remove_items       (GtkTree          *tree,</td></tr>
+<tr><th id="101">101</th><td>				        GList            *items);</td></tr>
+<tr><th id="102">102</th><td><em>void</em>       gtk_tree_clear_items        (GtkTree          *tree,</td></tr>
+<tr><th id="103">103</th><td>				        gint              start,</td></tr>
+<tr><th id="104">104</th><td>				        gint              end);</td></tr>
+<tr><th id="105">105</th><td><em>void</em>       gtk_tree_select_item        (GtkTree          *tree,</td></tr>
+<tr><th id="106">106</th><td>				        gint              item);</td></tr>
+<tr><th id="107">107</th><td><em>void</em>       gtk_tree_unselect_item      (GtkTree          *tree,</td></tr>
+<tr><th id="108">108</th><td>				        gint              item);</td></tr>
+<tr><th id="109">109</th><td><em>void</em>       gtk_tree_select_child       (GtkTree          *tree,</td></tr>
+<tr><th id="110">110</th><td>				        GtkWidget        *tree_item);</td></tr>
+<tr><th id="111">111</th><td><em>void</em>       gtk_tree_unselect_child     (GtkTree          *tree,</td></tr>
+<tr><th id="112">112</th><td>				        GtkWidget        *tree_item);</td></tr>
+<tr><th id="113">113</th><td>gint       gtk_tree_child_position     (GtkTree          *tree,</td></tr>
+<tr><th id="114">114</th><td>				        GtkWidget        *child);</td></tr>
+<tr><th id="115">115</th><td><em>void</em>       gtk_tree_set_selection_mode (GtkTree          *tree,</td></tr>
+<tr><th id="116">116</th><td>				        GtkSelectionMode  mode);</td></tr>
+<tr><th id="117">117</th><td><em>void</em>       gtk_tree_set_view_mode      (GtkTree          *tree,</td></tr>
+<tr><th id="118">118</th><td>				        GtkTreeViewMode   mode); </td></tr>
+<tr><th id="119">119</th><td><em>void</em>       gtk_tree_set_view_lines     (GtkTree          *tree,</td></tr>
+<tr><th id="120">120</th><td>					gboolean	  flag);</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td><i>/* deprecated function, use gtk_container_remove instead.</i></td></tr>
+<tr><th id="123">123</th><td><i> */</i></td></tr>
+<tr><th id="124">124</th><td><em>void</em>       gtk_tree_remove_item        (GtkTree          *tree,</td></tr>
+<tr><th id="125">125</th><td>				        GtkWidget        *child);</td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td></td></tr>
+<tr><th id="128">128</th><td>G_END_DECLS</td></tr>
+<tr><th id="129">129</th><td></td></tr>
+<tr><th id="130">130</th><td><u>#endif /* __GTK_TREE_H__ */</u></td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td><u>#<span data-ppcond="27">endif</span> /* GTK_ENABLE_BROKEN */</u></td></tr>
+<tr><th id="133">133</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

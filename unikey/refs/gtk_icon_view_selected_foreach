@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconview.h' l='148' type='void gtk_icon_view_selected_foreach(GtkIconView * icon_view, GtkIconViewForeachFunc func, gpointer data)'/>

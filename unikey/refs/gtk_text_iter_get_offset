@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='96' type='gint gtk_text_iter_get_offset(const GtkTextIter * iter)'/>
+<doc f='include/gtk-2.0/gtk/gtktextiter.h' l='92'>/*
+ * Convert to different kinds of index
+ */</doc>

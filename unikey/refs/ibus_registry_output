@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusregistry.h' l='181' type='void ibus_registry_output(IBusRegistry * registry, GString * output, int indent)'/>
+<doc f='include/ibus-1.0/ibusregistry.h' l='172'>/**
+ * ibus_registry_output:
+ * @registry: An #IBusRegistry.
+ * @output: GString that holds the result.
+ * @indent: level of indent.
+ *
+ * Output #IBusRegistry as an XML-formatted string.
+ * The output string can be then shown on the screen or written to file.
+ */</doc>

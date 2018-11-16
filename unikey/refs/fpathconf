@@ -1,0 +1,2 @@
+<dec f='include/unistd.h' l='619' type='long fpathconf(int __fd, int __name)'/>
+<doc f='include/unistd.h' l='618'>/* Get file-specific configuration about descriptor FD.  */</doc>

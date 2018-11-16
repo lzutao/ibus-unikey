@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='210'/>
+<doc f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='205'>/**
+ * gtk_accel_group_unref:
+ * 
+ * Deprecated equivalent of g_object_unref().
+ */</doc>

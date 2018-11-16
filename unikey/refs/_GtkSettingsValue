@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtksettings.h' l='63' ll='74'/>
+<size>32</size>
+<mbr r='_GtkSettingsValue::origin' o='0' t='gchar *'/>
+<mbr r='_GtkSettingsValue::value' o='64' t='GValue'/>

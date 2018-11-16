@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkradiobutton.h' l='82' type='GtkWidget * gtk_radio_button_new_with_mnemonic_from_widget(GtkRadioButton * radio_group_member, const gchar * label)'/>

@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-utils.h' l='122' type='guint8 * pango_log2vis_get_embedding_levels(const gchar * text, int length, PangoDirection * pbase_dir)'/>

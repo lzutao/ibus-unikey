@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentchooser.h' l='123' type='void gtk_recent_chooser_set_show_private(GtkRecentChooser * chooser, gboolean show_private)'/>
+<doc f='include/gtk-2.0/gtk/gtkrecentchooser.h' l='120'>/*
+ * Configuration
+ */</doc>

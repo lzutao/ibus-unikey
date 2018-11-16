@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusenginedesc.h' l='284' type='const gchar * ibus_engine_desc_get_symbol(IBusEngineDesc * info)'/>
+<doc f='include/ibus-1.0/ibusenginedesc.h' l='276'>/**
+ * ibus_engine_desc_get_symbol:
+ * @info: An IBusEngineDesc
+ *
+ * Gets the symbol property in IBusEngineDesc. It should not be freed.
+ *
+ * Returns: symbol property in IBusEngineDesc
+ */</doc>

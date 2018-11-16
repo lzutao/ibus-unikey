@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='224' type='GType gtk_notebook_tab_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='223'>/* enumerations from &quot;gtknotebook.h&quot; */</doc>

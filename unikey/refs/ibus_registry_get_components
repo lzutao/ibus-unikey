@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusregistry.h' l='206' type='GList * ibus_registry_get_components(IBusRegistry * registry)'/>
+<doc f='include/ibus-1.0/ibusregistry.h' l='196'>/**
+ * ibus_registry_get_components:
+ * @registry: An #IBusRegistry.
+ *
+ * List components.
+ *
+ * Returns: (transfer container) (element-type IBusComponent):
+ * a list of #IBusComponent objects.
+ * The caller has to call g_list_free() for the returned list.
+ */</doc>

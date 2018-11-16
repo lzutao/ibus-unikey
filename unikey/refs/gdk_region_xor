@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkregion.h' l='112' type='void gdk_region_xor(GdkRegion * source1, const GdkRegion * source2)'/>

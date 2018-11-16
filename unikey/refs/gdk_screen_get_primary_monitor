@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkscreen.h' l='94' type='gint gdk_screen_get_primary_monitor(GdkScreen * screen)'/>

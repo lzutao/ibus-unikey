@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktipsquery.h' l='102' type='void gtk_tips_query_set_labels(GtkTipsQuery * tips_query, const gchar * label_inactive, const gchar * label_no_tip)'/>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='102' type='gboolean (*)(GtkTreeView *, gboolean, gboolean, gboolean)'/>
+<offset>7424</offset>

@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-font.h' l='270' type='void pango_font_description_set_absolute_size(PangoFontDescription * desc, double size)'/>

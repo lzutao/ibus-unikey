@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-renderer.h' l='208' type='void pango_renderer_draw_glyphs(PangoRenderer * renderer, PangoFont * font, PangoGlyphString * glyphs, int x, int y)'/>

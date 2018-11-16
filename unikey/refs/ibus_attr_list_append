@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusattrlist.h' l='106' type='void ibus_attr_list_append(IBusAttrList * attr_list, IBusAttribute * attr)'/>
+<doc f='include/ibus-1.0/ibusattrlist.h' l='99'>/**
+ * ibus_attr_list_append:
+ * @attr_list: An IBusAttrList instance.
+ * @attr: The IBusAttribute instance to be appended.
+ *
+ * Append an IBusAttribute to IBusAttrList, and increase reference.
+ */</doc>

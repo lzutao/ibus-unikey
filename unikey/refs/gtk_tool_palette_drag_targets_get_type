@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='302' type='GType gtk_tool_palette_drag_targets_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='301'>/* enumerations from &quot;gtktoolpalette.h&quot; */</doc>

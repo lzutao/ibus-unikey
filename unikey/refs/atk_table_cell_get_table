@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atktablecell.h' l='100' type='AtkObject * atk_table_cell_get_table(AtkTableCell * cell)'/>

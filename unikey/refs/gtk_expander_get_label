@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkexpander.h' l='79' type='const gchar * gtk_expander_get_label(GtkExpander * expander)'/>

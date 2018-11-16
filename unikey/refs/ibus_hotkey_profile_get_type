@@ -1,0 +1,2 @@
+<dec f='include/ibus-1.0/ibushotkey.h' l='82' type='GType ibus_hotkey_profile_get_type()'/>
+<doc f='include/ibus-1.0/ibushotkey.h' l='81'>/* hotkey profile functions */</doc>

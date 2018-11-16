@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='44'/>
+<use f='include/ibus-1.0/ibusbus.h' l='749' u='c'/>
+<use f='include/ibus-1.0/ibusbus.h' l='767' u='c'/>
+<use f='include/ibus-1.0/ibusbus.h' l='791' u='c'/>
+<use f='include/ibus-1.0/ibusbus.h' l='826' u='c'/>
+<use f='include/ibus-1.0/ibusbus.h' l='844' u='c'/>
+<use f='include/ibus-1.0/ibusbus.h' l='867' u='c'/>
+<use f='include/ibus-1.0/ibusbus.h' l='884' u='c'/>
+<use f='include/ibus-1.0/ibusbus.h' l='901' u='c'/>
+<use f='include/ibus-1.0/ibusbus.h' l='923' u='c'/>
+<use f='include/ibus-1.0/ibusbus.h' l='943' u='c'/>
+<use f='include/ibus-1.0/ibusbus.h' l='964' u='c'/>
+<use f='include/ibus-1.0/ibusbus.h' l='990' u='c'/>

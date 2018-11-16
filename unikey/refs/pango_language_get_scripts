@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-language.h' l='66' type='const PangoScript * pango_language_get_scripts(PangoLanguage * language, int * num_scripts)'/>

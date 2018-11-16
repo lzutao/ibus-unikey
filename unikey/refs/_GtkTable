@@ -1,0 +1,11 @@
+<def f='include/gtk-2.0/gtk/gtktable.h' l='53' ll='65'/>
+<size>152</size>
+<mbr r='_GtkTable::container' o='0' t='GtkContainer'/>
+<mbr r='_GtkTable::children' o='896' t='GList *'/>
+<mbr r='_GtkTable::rows' o='960' t='GtkTableRowCol *'/>
+<mbr r='_GtkTable::cols' o='1024' t='GtkTableRowCol *'/>
+<mbr r='_GtkTable::nrows' o='1088' t='guint16'/>
+<mbr r='_GtkTable::ncols' o='1104' t='guint16'/>
+<mbr r='_GtkTable::column_spacing' o='1120' t='guint16'/>
+<mbr r='_GtkTable::row_spacing' o='1136' t='guint16'/>
+<mbr r='_GtkTable::homogeneous' o='1152' t='guint'/>

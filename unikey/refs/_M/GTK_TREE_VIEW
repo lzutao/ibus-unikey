@@ -1,0 +1,10 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='49'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='44' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='135' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='159' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='220' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='272' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='296' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='322' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='363' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='410' u='c'/>

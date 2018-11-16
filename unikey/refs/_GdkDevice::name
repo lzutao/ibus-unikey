@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gdk/gdkinput.h' l='103' type='gchar *'/>
+<offset>192</offset>
+<doc f='include/gtk-2.0/gdk/gdkinput.h' l='101'>/* All fields are read-only */</doc>

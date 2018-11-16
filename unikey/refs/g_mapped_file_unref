@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/glib/gmappedfile.h' l='51' type='void g_mapped_file_unref(GMappedFile * file)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='59' u='c' c='_ZL32glib_autoptr_cleanup_GMappedFilePP12_GMappedFile'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='59' u='r' c='_ZL36glib_listautoptr_cleanup_GMappedFilePP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='59' u='r' c='_ZL37glib_slistautoptr_cleanup_GMappedFilePP7_GSList'/>

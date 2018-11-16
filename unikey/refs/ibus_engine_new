@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='174' type='IBusEngine * ibus_engine_new(const gchar * engine_name, const gchar * object_path, GDBusConnection * connection)'/>
+<doc f='include/ibus-1.0/ibusengine.h' l='164'>/**
+ * ibus_engine_new:
+ * @engine_name: Name of the IBusObject.
+ * @object_path: Path for IBusService.
+ * @connection: An opened GDBusConnection.
+ *
+ * Create a new #IBusEngine.
+ *
+ * Returns: A newly allocated IBusEngine.
+ */</doc>

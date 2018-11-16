@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='929' type='GdkRegion * gtk_widget_region_intersect(GtkWidget * widget, const GdkRegion * region)'/>

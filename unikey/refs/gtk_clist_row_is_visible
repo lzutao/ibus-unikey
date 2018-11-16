@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='577' type='GtkVisibility gtk_clist_row_is_visible(GtkCList * clist, gint row)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='576'>/* returns whether the row is visible */</doc>

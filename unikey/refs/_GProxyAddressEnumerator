@@ -1,0 +1,4 @@
+<def f='include/glib-2.0/gio/gproxyaddressenumerator.h' l='50' ll='54'/>
+<size>32</size>
+<mbr r='_GProxyAddressEnumerator::parent_instance' o='0' t='GSocketAddressEnumerator'/>
+<mbr r='_GProxyAddressEnumerator::priv' o='192' t='GProxyAddressEnumeratorPrivate *'/>

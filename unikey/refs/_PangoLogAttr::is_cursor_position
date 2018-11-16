@@ -1,0 +1,5 @@
+<dec f='include/pango-1.0/pango/pango-break.h' l='99' type='guint'/>
+<offset>4</offset>
+<doc f='include/pango-1.0/pango/pango-break.h' l='96'>/* Cursor can appear in front of character (i.e. this is a grapheme
+   * boundary, or the first character in the text).
+   */</doc>

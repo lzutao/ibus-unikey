@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkhsv.h' l='100' type='void gtk_hsv_to_rgb(gdouble h, gdouble s, gdouble v, gdouble * r, gdouble * g, gdouble * b)'/>
+<doc f='include/gtk-2.0/gtk/gtkhsv.h' l='99'>/* Convert colors between the RGB and HSV color spaces */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkselection.h' l='112' type='void gtk_target_list_add_table(GtkTargetList * list, const GtkTargetEntry * targets, guint ntargets)'/>

@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusserializable.h' l='95'/>
+<doc f='include/ibus-1.0/ibusserializable.h' l='87'>/**
+ * ibus_serializable_get_attachment:
+ * @o: An #IBusSerializable.
+ * @k: String formatted key for indexing value.
+ *
+ * Get a value from attachment of an #IBusSerializable.
+ * This macro is an convenient wrapper of ibus_serializable_get_qattachment().
+ */</doc>

@@ -1,0 +1,18 @@
+<def f='include/gtk-2.0/gtk/gtksocket.h' l='48' ll='70'/>
+<size>160</size>
+<mbr r='_GtkSocket::container' o='0' t='GtkContainer'/>
+<mbr r='_GtkSocket::request_width' o='896' t='guint16'/>
+<mbr r='_GtkSocket::request_height' o='912' t='guint16'/>
+<mbr r='_GtkSocket::current_width' o='928' t='guint16'/>
+<mbr r='_GtkSocket::current_height' o='944' t='guint16'/>
+<mbr r='_GtkSocket::plug_window' o='960' t='GdkWindow *'/>
+<mbr r='_GtkSocket::plug_widget' o='1024' t='GtkWidget *'/>
+<mbr r='_GtkSocket::xembed_version' o='1088' t='gshort'/>
+<mbr r='_GtkSocket::same_app' o='1104' t='guint'/>
+<mbr r='_GtkSocket::focus_in' o='1105' t='guint'/>
+<mbr r='_GtkSocket::have_size' o='1106' t='guint'/>
+<mbr r='_GtkSocket::need_map' o='1107' t='guint'/>
+<mbr r='_GtkSocket::is_mapped' o='1108' t='guint'/>
+<mbr r='_GtkSocket::active' o='1109' t='guint'/>
+<mbr r='_GtkSocket::accel_group' o='1152' t='GtkAccelGroup *'/>
+<mbr r='_GtkSocket::toplevel' o='1216' t='GtkWidget *'/>

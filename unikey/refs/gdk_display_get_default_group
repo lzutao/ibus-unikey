@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='210' type='GdkWindow * gdk_display_get_default_group(GdkDisplay * display)'/>

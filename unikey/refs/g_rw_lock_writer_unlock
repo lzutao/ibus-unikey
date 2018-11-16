@@ -1,0 +1,1 @@
+<dec f='include/glib-2.0/glib/gthread.h' l='183' type='void g_rw_lock_writer_unlock(GRWLock * rw_lock)'/>

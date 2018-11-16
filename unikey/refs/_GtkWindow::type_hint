@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='98' type='guint'/>
+<offset>1637</offset>
+<doc f='include/gtk-2.0/gtk/gtkwindow.h' l='98'>/* GdkWindowTypeHint if the hint is one of the original eight. If not, then
+				* it contains GDK_WINDOW_TYPE_HINT_NORMAL
+				*/</doc>

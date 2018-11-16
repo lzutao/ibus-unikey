@@ -1,0 +1,11 @@
+<def f='include/atk-1.0/atk/atkselection.h' l='49' ll='68'/>
+<size>80</size>
+<mbr r='_AtkSelectionIface::parent' o='0' t='GTypeInterface'/>
+<mbr r='_AtkSelectionIface::add_selection' o='128' t='gboolean (*)(AtkSelection *, gint)'/>
+<mbr r='_AtkSelectionIface::clear_selection' o='192' t='gboolean (*)(AtkSelection *)'/>
+<mbr r='_AtkSelectionIface::ref_selection' o='256' t='AtkObject *(*)(AtkSelection *, gint)'/>
+<mbr r='_AtkSelectionIface::get_selection_count' o='320' t='gint (*)(AtkSelection *)'/>
+<mbr r='_AtkSelectionIface::is_child_selected' o='384' t='gboolean (*)(AtkSelection *, gint)'/>
+<mbr r='_AtkSelectionIface::remove_selection' o='448' t='gboolean (*)(AtkSelection *, gint)'/>
+<mbr r='_AtkSelectionIface::select_all_selection' o='512' t='gboolean (*)(AtkSelection *)'/>
+<mbr r='_AtkSelectionIface::selection_changed' o='576' t='void (*)(AtkSelection *)'/>

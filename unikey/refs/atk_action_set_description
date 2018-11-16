@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkaction.h' l='100' type='gboolean atk_action_set_description(AtkAction * action, gint i, const gchar * desc)'/>

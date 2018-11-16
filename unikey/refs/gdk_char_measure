@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkfont.h' l='96' type='gint gdk_char_measure(GdkFont * font, gchar character)'/>

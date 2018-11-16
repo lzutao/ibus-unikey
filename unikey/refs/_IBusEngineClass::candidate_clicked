@@ -1,0 +1,2 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='135' type='void (*)(IBusEngine *, guint, guint, guint)'/>
+<offset>3072</offset>

@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='135' type='void (*)(GtkWindow *, GtkDirectionType)'/>
+<offset>6848</offset>
+<doc f='include/gtk-2.0/gtk/gtkwindow.h' l='131'>/* as of GTK+ 2.12 the &quot;move-focus&quot; signal has been moved to GtkWidget,
+   * so this is merley a virtual function now. Overriding it in subclasses
+   * continues to work though.
+   */</doc>

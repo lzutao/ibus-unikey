@@ -1,0 +1,2 @@
+<dec f='include/cairo/cairo.h' l='3012' type='void cairo_matrix_init(cairo_matrix_t * matrix, double xx, double yx, double xy, double yy, double x0, double y0)'/>
+<doc f='include/cairo/cairo.h' l='3009'>/* Matrix functions */</doc>

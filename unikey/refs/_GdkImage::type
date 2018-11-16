@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gdk/gdkimage.h' l='71' type='GdkImageType'/>
+<offset>192</offset>
+<doc f='include/gtk-2.0/gdk/gdkimage.h' l='69'>/*&lt; public &gt;*/</doc>
+<doc f='include/gtk-2.0/gdk/gdkimage.h' l='71'>/* read only. */</doc>

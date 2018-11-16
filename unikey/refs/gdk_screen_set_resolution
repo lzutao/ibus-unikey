@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkscreen.h' l='123' type='void gdk_screen_set_resolution(GdkScreen * screen, gdouble dpi)'/>

@@ -1,0 +1,16 @@
+<def f='include/gtk-2.0/gtk/gtkaccellabel.h' l='60' ll='71'/>
+<size>232</size>
+<doc f='include/gtk-2.0/gtk/gtkaccellabel.h' l='54'>/**
+ * GtkAccelLabel:
+ *
+ * The #GtkAccelLabel-struct struct contains private data only, and
+ * should be accessed using the functions below.
+ */</doc>
+<mbr r='_GtkAccelLabel::label' o='0' t='GtkLabel'/>
+<mbr r='_GtkAccelLabel::gtk_reserved' o='1472' t='guint'/>
+<mbr r='_GtkAccelLabel::accel_padding' o='1504' t='guint'/>
+<mbr r='_GtkAccelLabel::accel_widget' o='1536' t='GtkWidget *'/>
+<mbr r='_GtkAccelLabel::accel_closure' o='1600' t='GClosure *'/>
+<mbr r='_GtkAccelLabel::accel_group' o='1664' t='GtkAccelGroup *'/>
+<mbr r='_GtkAccelLabel::accel_string' o='1728' t='gchar *'/>
+<mbr r='_GtkAccelLabel::accel_string_width' o='1792' t='guint16'/>

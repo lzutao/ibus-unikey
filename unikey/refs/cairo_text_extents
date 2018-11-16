@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='1497' type='void cairo_text_extents(cairo_t * cr, const char * utf8, cairo_text_extents_t * extents)'/>

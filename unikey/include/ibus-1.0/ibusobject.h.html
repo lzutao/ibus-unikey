@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ibusobject.h source code [include/ibus-1.0/ibusobject.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/ibus-1.0/ibusobject.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>ibus-1.0</a>/<a href='ibusobject.h.html'>ibusobject.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* -*- mode: C; c-basic-offset: 4; indent-tabs-mode: nil; -*- */</i></td></tr>
+<tr><th id="2">2</th><td><i>/* vim:set et sts=4: */</i></td></tr>
+<tr><th id="3">3</th><td><i>/* ibus - The Input Bus</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 2008-2013 Peng Huang &lt;shawn.p.huang@gmail.com&gt;</i></td></tr>
+<tr><th id="5">5</th><td><i> * Copyright (C) 2008-2013 Red Hat, Inc.</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="8">8</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="9">9</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="10">10</th><td><i> * version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="11">11</th><td><i> *</i></td></tr>
+<tr><th id="12">12</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="13">13</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="14">14</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="15">15</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="18">18</th><td><i> * License along with this library; if not, write to the Free Software</i></td></tr>
+<tr><th id="19">19</th><td><i> * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301</i></td></tr>
+<tr><th id="20">20</th><td><i> * USA</i></td></tr>
+<tr><th id="21">21</th><td><i> */</i></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> !defined (<a class="macro" href="ibus.h.html#26" data-ref="_M/__IBUS_H_INSIDE__">__IBUS_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/IBUS_COMPILATION">IBUS_COMPILATION</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#error "Only &lt;ibus.h&gt; can be included directly"</u></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/__IBUS_OBJECT_H_">__IBUS_OBJECT_H_</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/__IBUS_OBJECT_H_" data-ref="_M/__IBUS_OBJECT_H_">__IBUS_OBJECT_H_</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> * SECTION: ibusobject</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> * <span class="command">@short</span>_description: Base object of IBus.</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> *<span class="command"> @title</span>: IBusObject</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> *<span class="command"> @stability</span>: Stable</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * IBusObject is the base object for all objects in IBus.</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#include <a href="../glib-2.0/glib-object.h.html">&lt;glib-object.h&gt;</a></u></td></tr>
+<tr><th id="40">40</th><td><u>#include <a href="ibustypes.h.html">"ibustypes.h"</a></u></td></tr>
+<tr><th id="41">41</th><td><u>#include <a href="ibusdebug.h.html">"ibusdebug.h"</a></u></td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><i>/*</i></td></tr>
+<tr><th id="44">44</th><td><i> * Type macros.</i></td></tr>
+<tr><th id="45">45</th><td><i> */</i></td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><i>/* define GOBJECT macros */</i></td></tr>
+<tr><th id="48">48</th><td><u>#define <dfn class="macro" id="_M/IBUS_TYPE_OBJECT" data-ref="_M/IBUS_TYPE_OBJECT">IBUS_TYPE_OBJECT</dfn>             \</u></td></tr>
+<tr><th id="49">49</th><td><u>    (ibus_object_get_type ())</u></td></tr>
+<tr><th id="50">50</th><td><u>#define <dfn class="macro" id="_M/IBUS_OBJECT" data-ref="_M/IBUS_OBJECT">IBUS_OBJECT</dfn>(obj)             \</u></td></tr>
+<tr><th id="51">51</th><td><u>    (G_TYPE_CHECK_INSTANCE_CAST ((obj), IBUS_TYPE_OBJECT, IBusObject))</u></td></tr>
+<tr><th id="52">52</th><td><u>#define <dfn class="macro" id="_M/IBUS_OBJECT_CLASS" data-ref="_M/IBUS_OBJECT_CLASS">IBUS_OBJECT_CLASS</dfn>(klass)     \</u></td></tr>
+<tr><th id="53">53</th><td><u>    (G_TYPE_CHECK_CLASS_CAST ((klass), IBUS_TYPE_OBJECT, IBusObjectClass))</u></td></tr>
+<tr><th id="54">54</th><td><u>#define <dfn class="macro" id="_M/IBUS_IS_OBJECT" data-ref="_M/IBUS_IS_OBJECT">IBUS_IS_OBJECT</dfn>(obj)          \</u></td></tr>
+<tr><th id="55">55</th><td><u>    (G_TYPE_CHECK_INSTANCE_TYPE ((obj), IBUS_TYPE_OBJECT))</u></td></tr>
+<tr><th id="56">56</th><td><u>#define <dfn class="macro" id="_M/IBUS_IS_OBJECT_CLASS" data-ref="_M/IBUS_IS_OBJECT_CLASS">IBUS_IS_OBJECT_CLASS</dfn>(klass)  \</u></td></tr>
+<tr><th id="57">57</th><td><u>    (G_TYPE_CHECK_CLASS_TYPE ((klass), IBUS_TYPE_OBJECT))</u></td></tr>
+<tr><th id="58">58</th><td><u>#define <dfn class="macro" id="_M/IBUS_OBJECT_GET_CLASS" data-ref="_M/IBUS_OBJECT_GET_CLASS">IBUS_OBJECT_GET_CLASS</dfn>(obj)   \</u></td></tr>
+<tr><th id="59">59</th><td><u>    (G_TYPE_INSTANCE_GET_CLASS ((obj), IBUS_TYPE_OBJECT, IBusObjectClass))</u></td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> * IBusObjectFlags:</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> *<span class="command"> @IBUS</span>_IN_DESTRUCTION: Used in GObjectClass::dispose</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> *<span class="command"> @IBUS</span>_DESTROYED: Used during emitting IBusObject::destroy signal.</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> *<span class="command"> @IBUS</span>_RESERVED_1: Reserved.</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> *<span class="command"> @IBUS</span>_RESERVED_2: Reserved.</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> * The flags are used internally.</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="70">70</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="71">71</th><td>    <dfn class="enum" id="IBUS_IN_DESTRUCTION" title='IBUS_IN_DESTRUCTION' data-ref="IBUS_IN_DESTRUCTION">IBUS_IN_DESTRUCTION</dfn> = (<var>1</var> &lt;&lt; <var>0</var>),</td></tr>
+<tr><th id="72">72</th><td>    <dfn class="enum" id="IBUS_DESTROYED" title='IBUS_DESTROYED' data-ref="IBUS_DESTROYED">IBUS_DESTROYED</dfn>      = (<var>1</var> &lt;&lt; <var>1</var>),</td></tr>
+<tr><th id="73">73</th><td>    <dfn class="enum" id="IBUS_RESERVED_1" title='IBUS_RESERVED_1' data-ref="IBUS_RESERVED_1">IBUS_RESERVED_1</dfn>     = (<var>1</var> &lt;&lt; <var>2</var>),</td></tr>
+<tr><th id="74">74</th><td>    <dfn class="enum" id="IBUS_RESERVED_2" title='IBUS_RESERVED_2' data-ref="IBUS_RESERVED_2">IBUS_RESERVED_2</dfn>     = (<var>1</var> &lt;&lt; <var>3</var>),</td></tr>
+<tr><th id="75">75</th><td>} <dfn class="typedef" id="IBusObjectFlags" title='IBusObjectFlags' data-type='enum IBusObjectFlags' data-ref="IBusObjectFlags">IBusObjectFlags</dfn>;</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td><u>#define <dfn class="macro" id="_M/IBUS_OBJECT_FLAGS" data-ref="_M/IBUS_OBJECT_FLAGS">IBUS_OBJECT_FLAGS</dfn>(obj)             (IBUS_OBJECT (obj)-&gt;flags)</u></td></tr>
+<tr><th id="78">78</th><td><u>#define <dfn class="macro" id="_M/IBUS_OBJECT_SET_FLAGS" data-ref="_M/IBUS_OBJECT_SET_FLAGS">IBUS_OBJECT_SET_FLAGS</dfn>(obj,flag)    G_STMT_START{ (IBUS_OBJECT_FLAGS (obj) |= (flag)); }G_STMT_END</u></td></tr>
+<tr><th id="79">79</th><td><u>#define <dfn class="macro" id="_M/IBUS_OBJECT_UNSET_FLAGS" data-ref="_M/IBUS_OBJECT_UNSET_FLAGS">IBUS_OBJECT_UNSET_FLAGS</dfn>(obj,flag)  G_STMT_START{ (IBUS_OBJECT_FLAGS (obj) &amp;= ~(flag)); }G_STMT_END</u></td></tr>
+<tr><th id="80">80</th><td><u>#define <dfn class="macro" id="_M/IBUS_OBJECT_IN_DESTRUCTION" data-ref="_M/IBUS_OBJECT_IN_DESTRUCTION">IBUS_OBJECT_IN_DESTRUCTION</dfn>(obj)    (IBUS_OBJECT_FLAGS (obj) &amp; IBUS_IN_DESTRUCTION)</u></td></tr>
+<tr><th id="81">81</th><td><u>#define <dfn class="macro" id="_M/IBUS_OBJECT_DESTROYED" data-ref="_M/IBUS_OBJECT_DESTROYED">IBUS_OBJECT_DESTROYED</dfn>(obj)         (IBUS_OBJECT_FLAGS (obj) &amp; IBUS_DESTROYED)</u></td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><a class="macro" href="../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_IBusObject" title='_IBusObject' data-ref="_IBusObject">_IBusObject</a> <dfn class="typedef" id="IBusObject" title='IBusObject' data-type='struct _IBusObject' data-ref="IBusObject">IBusObject</dfn>;</td></tr>
+<tr><th id="86">86</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_IBusObjectClass" title='_IBusObjectClass' data-ref="_IBusObjectClass">_IBusObjectClass</a> <dfn class="typedef" id="IBusObjectClass" title='IBusObjectClass' data-type='struct _IBusObjectClass' data-ref="IBusObjectClass">IBusObjectClass</dfn>;</td></tr>
+<tr><th id="87">87</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_IBusObjectPrivate" title='_IBusObjectPrivate' data-ref="_IBusObjectPrivate"><a class="type" href="#_IBusObjectPrivate" title='_IBusObjectPrivate' data-ref="_IBusObjectPrivate">_IBusObjectPrivate</a></dfn> <dfn class="typedef" id="IBusObjectPrivate" title='IBusObjectPrivate' data-type='struct _IBusObjectPrivate' data-ref="IBusObjectPrivate">IBusObjectPrivate</dfn>;</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> * IBusObject:</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> * All the fields in the &lt;structname&gt;IBusObject&lt;/structname&gt; structure are</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> * private to the #IBusObject and should never be accessed directly.</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="95">95</th><td><b>struct</b> <dfn class="type def" id="_IBusObject" title='_IBusObject' data-ref="_IBusObject">_IBusObject</dfn> {</td></tr>
+<tr><th id="96">96</th><td>    <a class="typedef" href="../glib-2.0/gobject/gobject.h.html#GInitiallyUnowned" title='GInitiallyUnowned' data-type='struct _GObject' data-ref="GInitiallyUnowned">GInitiallyUnowned</a> <dfn class="decl" id="_IBusObject::parent" title='_IBusObject::parent' data-ref="_IBusObject::parent">parent</dfn>;</td></tr>
+<tr><th id="97">97</th><td>    <i>/* instance members */</i></td></tr>
+<tr><th id="98">98</th><td>    <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span> <dfn class="decl" id="_IBusObject::flags" title='_IBusObject::flags' data-ref="_IBusObject::flags">flags</dfn>;</td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td>    <a class="typedef" href="#IBusObjectPrivate" title='IBusObjectPrivate' data-type='struct _IBusObjectPrivate' data-ref="IBusObjectPrivate">IBusObjectPrivate</a> *<dfn class="decl" id="_IBusObject::priv" title='_IBusObject::priv' data-ref="_IBusObject::priv">priv</dfn>;</td></tr>
+<tr><th id="101">101</th><td>};</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td><b>typedef</b> <em>void</em> ( *<dfn class="typedef" id="IBusObjectDestroyFunc" title='IBusObjectDestroyFunc' data-type='void (*)(IBusObject *)' data-ref="IBusObjectDestroyFunc">IBusObjectDestroyFunc</dfn>) (<a class="typedef" href="#IBusObject" title='IBusObject' data-type='struct _IBusObject' data-ref="IBusObject">IBusObject</a> *<dfn class="local col1 decl" id="11object" title='object' data-type='IBusObject *' data-ref="11object">object</dfn>);</td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td><b>struct</b> <dfn class="type def" id="_IBusObjectClass" title='_IBusObjectClass' data-ref="_IBusObjectClass">_IBusObjectClass</dfn> {</td></tr>
+<tr><th id="106">106</th><td>    <a class="typedef" href="../glib-2.0/gobject/gobject.h.html#GInitiallyUnownedClass" title='GInitiallyUnownedClass' data-type='struct _GObjectClass' data-ref="GInitiallyUnownedClass">GInitiallyUnownedClass</a> <dfn class="decl" id="_IBusObjectClass::parent" title='_IBusObjectClass::parent' data-ref="_IBusObjectClass::parent">parent</dfn>;</td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td>    <i>/* signals */</i></td></tr>
+<tr><th id="109">109</th><td>    <em>void</em> (* <dfn class="decl" id="_IBusObjectClass::destroy" title='_IBusObjectClass::destroy' data-ref="_IBusObjectClass::destroy">destroy</dfn>)        (<a class="typedef" href="#IBusObject" title='IBusObject' data-type='struct _IBusObject' data-ref="IBusObject">IBusObject</a>   *<dfn class="local col2 decl" id="12object" title='object' data-type='IBusObject *' data-ref="12object">object</dfn>);</td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td>    <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="112">112</th><td>    <i>/* padding */</i></td></tr>
+<tr><th id="113">113</th><td>    <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="decl" id="_IBusObjectClass::pdummy" title='_IBusObjectClass::pdummy' data-ref="_IBusObjectClass::pdummy">pdummy</dfn>[<var>7</var>];</td></tr>
+<tr><th id="114">114</th><td>};</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td><a class="typedef" href="../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>           <dfn class="decl" id="ibus_object_get_type" title='ibus_object_get_type' data-ref="ibus_object_get_type">ibus_object_get_type</dfn>            (<em>void</em>);</td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> * ibus_object_new:</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"> * Creates  a new #IBusObject.</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> * Returns: A newly allocated #IBusObject</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="125">125</th><td><a class="typedef" href="#IBusObject" title='IBusObject' data-type='struct _IBusObject' data-ref="IBusObject">IBusObject</a>     *<dfn class="decl" id="ibus_object_new" title='ibus_object_new' data-ref="ibus_object_new">ibus_object_new</dfn>                 (<em>void</em>);</td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> * ibus_object_destroy:</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc"> *<span class="command"> @object</span>: an #IBusObject to destroy.</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc"> * Emit the "destory" signal notifying all reference holders that they should</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> * release the #IBusObject.</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> * The memory for the object itself won't be deleted until its reference count</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> * actually drops to 0; ibus_object_destroy merely asks reference holders to</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> * release their references. It does not free the object.</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="138">138</th><td><em>void</em>            <dfn class="decl" id="ibus_object_destroy" title='ibus_object_destroy' data-ref="ibus_object_destroy">ibus_object_destroy</dfn>             (<a class="typedef" href="#IBusObject" title='IBusObject' data-type='struct _IBusObject' data-ref="IBusObject">IBusObject</a>     *<dfn class="local col3 decl" id="13object" title='object' data-type='IBusObject *' data-ref="13object">object</dfn>);</td></tr>
+<tr><th id="139">139</th><td></td></tr>
+<tr><th id="140">140</th><td><a class="macro" href="../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="141">141</th><td><u>#<span data-ppcond="27">endif</span></u></td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../unikey/setup/dlg_main_setup.cpp.html'>unikey/setup/dlg_main_setup.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

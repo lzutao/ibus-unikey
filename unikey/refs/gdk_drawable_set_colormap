@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdrawable.h' l='253' type='void gdk_drawable_set_colormap(GdkDrawable * drawable, GdkColormap * colormap)'/>

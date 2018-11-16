@@ -1,0 +1,9 @@
+<def f='include/gtk-2.0/gtk/gtkinputdialog.h' l='77' ll='91'/>
+<size>1000</size>
+<mbr r='_GtkInputDialogClass::parent_class' o='0' t='GtkDialogClass'/>
+<mbr r='_GtkInputDialogClass::enable_device' o='7616' t='void (*)(GtkInputDialog *, GdkDevice *)'/>
+<mbr r='_GtkInputDialogClass::disable_device' o='7680' t='void (*)(GtkInputDialog *, GdkDevice *)'/>
+<mbr r='_GtkInputDialogClass::_gtk_reserved1' o='7744' t='void (*)()'/>
+<mbr r='_GtkInputDialogClass::_gtk_reserved2' o='7808' t='void (*)()'/>
+<mbr r='_GtkInputDialogClass::_gtk_reserved3' o='7872' t='void (*)()'/>
+<mbr r='_GtkInputDialogClass::_gtk_reserved4' o='7936' t='void (*)()'/>

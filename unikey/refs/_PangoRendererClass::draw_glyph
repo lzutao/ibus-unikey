@@ -1,0 +1,2 @@
+<dec f='include/pango-1.0/pango/pango-renderer.h' l='156' type='void (*)(PangoRenderer *, PangoFont *, PangoGlyph, double, double)'/>
+<offset>1408</offset>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkaccellabel.h' l='108' type='gchar * _gtk_accel_label_class_get_accelerator_label(GtkAccelLabelClass * klass, guint accelerator_key, GdkModifierType accelerator_mods)'/>
+<doc f='include/gtk-2.0/gtk/gtkaccellabel.h' l='107'>/* private */</doc>

@@ -1,0 +1,16 @@
+<def f='include/gtk-2.0/gtk/gtkliststore.h' l='45' ll='63'/>
+<size>120</size>
+<mbr r='_GtkListStore::parent' o='0' t='GObject'/>
+<mbr r='_GtkListStore::stamp' o='192' t='gint'/>
+<mbr r='_GtkListStore::seq' o='256' t='gpointer'/>
+<mbr r='_GtkListStore::_gtk_reserved1' o='320' t='gpointer'/>
+<mbr r='_GtkListStore::sort_list' o='384' t='GList *'/>
+<mbr r='_GtkListStore::n_columns' o='448' t='gint'/>
+<mbr r='_GtkListStore::sort_column_id' o='480' t='gint'/>
+<mbr r='_GtkListStore::order' o='512' t='GtkSortType'/>
+<mbr r='_GtkListStore::column_headers' o='576' t='GType *'/>
+<mbr r='_GtkListStore::length' o='640' t='gint'/>
+<mbr r='_GtkListStore::default_sort_func' o='704' t='GtkTreeIterCompareFunc'/>
+<mbr r='_GtkListStore::default_sort_data' o='768' t='gpointer'/>
+<mbr r='_GtkListStore::default_sort_destroy' o='832' t='GDestroyNotify'/>
+<mbr r='_GtkListStore::columns_dirty' o='896' t='guint'/>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='800' type='gboolean (*)(GtkWidget *, gint, gint, gboolean, GtkTooltip *)'/>
+<offset>5504</offset>

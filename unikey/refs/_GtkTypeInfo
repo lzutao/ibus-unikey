@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gtk/gtktypeutils.h' l='224' ll='234'/>
+<size>56</size>
+<mbr r='_GtkTypeInfo::type_name' o='0' t='gchar *'/>
+<mbr r='_GtkTypeInfo::object_size' o='64' t='guint'/>
+<mbr r='_GtkTypeInfo::class_size' o='96' t='guint'/>
+<mbr r='_GtkTypeInfo::class_init_func' o='128' t='GtkClassInitFunc'/>
+<mbr r='_GtkTypeInfo::object_init_func' o='192' t='GtkObjectInitFunc'/>
+<mbr r='_GtkTypeInfo::reserved_1' o='256' t='gpointer'/>
+<mbr r='_GtkTypeInfo::reserved_2' o='320' t='gpointer'/>
+<mbr r='_GtkTypeInfo::base_class_init_func' o='384' t='GtkClassInitFunc'/>

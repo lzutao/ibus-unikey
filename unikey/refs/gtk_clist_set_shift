@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='664' type='void gtk_clist_set_shift(GtkCList * clist, gint row, gint column, gint vertical, gint horizontal)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='660'>/* this sets a horizontal and vertical shift for drawing
+ * the contents of a cell; it can be positive or negitive;
+ * this is particulary useful for indenting items in a column
+ */</doc>

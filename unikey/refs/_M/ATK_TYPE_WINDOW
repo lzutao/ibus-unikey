@@ -1,0 +1,4 @@
+<dec f='include/atk-1.0/atk/atkwindow.h' l='36'/>
+<doc f='include/atk-1.0/atk/atkwindow.h' l='31'>/*
+ * AtkWindow describes signals pertaining to on-screen windows.
+ */</doc>

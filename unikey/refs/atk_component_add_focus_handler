@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkcomponent.h' l='166' type='guint atk_component_add_focus_handler(AtkComponent * component, AtkFocusHandler handler)'/>

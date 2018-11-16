@@ -1,0 +1,3 @@
+<def f='include/atk-1.0/atk/atkutil.h' l='135' ll='138'/>
+<size>24</size>
+<mbr r='_AtkUtil::parent' o='0' t='GObject'/>

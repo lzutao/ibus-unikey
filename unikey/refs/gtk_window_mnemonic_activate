@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='318' type='gboolean gtk_window_mnemonic_activate(GtkWindow * window, guint keyval, GdkModifierType modifier)'/>

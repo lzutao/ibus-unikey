@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='374' type='void gtk_text_buffer_copy_clipboard(GtkTextBuffer * buffer, GtkClipboard * clipboard)'/>

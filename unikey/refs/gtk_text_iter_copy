@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='87' type='GtkTextIter * gtk_text_iter_copy(const GtkTextIter * iter)'/>
+<doc f='include/gtk-2.0/gtk/gtktextiter.h' l='83'>/*
+ * Life cycle
+ */</doc>

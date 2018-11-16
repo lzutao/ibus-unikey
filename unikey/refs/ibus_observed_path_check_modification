@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusobservedpath.h' l='142' type='gboolean ibus_observed_path_check_modification(IBusObservedPath * path)'/>
+<doc f='include/ibus-1.0/ibusobservedpath.h' l='133'>/**
+ * ibus_observed_path_check_modification:
+ * @path: An IBusObservedPath.
+ *
+ * Checks whether the path is modified by comparing the mtime in object and
+ * mtime in file system.
+ *
+ * Returns: %TRUE if imtime is changed, otherwise %FALSE.
+ */</doc>

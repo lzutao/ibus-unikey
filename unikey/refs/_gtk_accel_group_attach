@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='150' type='void _gtk_accel_group_attach(GtkAccelGroup * accel_group, GObject * object)'/>
+<doc f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='149'>/* --- GtkActivatable glue --- */</doc>

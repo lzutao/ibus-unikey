@@ -1,0 +1,8 @@
+<dec f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='203'/>
+<doc f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='196'>/**
+ * gtk_accel_group_ref:
+ * 
+ * Deprecated equivalent of g_object_ref().
+ * 
+ * Returns: the accel group that was passed in
+ */</doc>

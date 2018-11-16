@@ -1,0 +1,28 @@
+<def f='include/gtk-2.0/gdk/gdkpango.h' l='68' ll='74'/>
+<size>64</size>
+<doc f='include/gtk-2.0/gdk/gdkpango.h' l='44'>/**
+ * GdkPangoRenderer:
+ *
+ * #GdkPangoRenderer is a subclass of #PangoRenderer used for rendering
+ * Pango objects into GDK drawables. The default renderer for a particular
+ * screen is obtained with gdk_pango_renderer_get_default(); Pango
+ * functions like pango_renderer_draw_layout() and
+ * pango_renderer_draw_layout_line() are then used to draw objects with
+ * the renderer.
+ *
+ * In most simple cases, applications can just use gdk_draw_layout(), and
+ * don&apos;t need to directly use #GdkPangoRenderer at all. Using the
+ * #GdkPangoRenderer directly is most useful when working with a
+ * transformation such as a rotation, because the Pango drawing functions
+ * take user space coordinates (coordinates before the transformation)
+ * instead of device coordinates.
+ *
+ * In certain cases it can be useful to subclass #GdkPangoRenderer. Examples
+ * of reasons to do this are to add handling of custom attributes by
+ * overriding &apos;prepare_run&apos; or to do custom drawing of embedded objects
+ * by overriding &apos;draw_shape&apos;.
+ *
+ * Since: 2.6
+ **/</doc>
+<mbr r='_GdkPangoRenderer::parent_instance' o='0' t='PangoRenderer'/>
+<mbr r='_GdkPangoRenderer::priv' o='448' t='GdkPangoRendererPrivate *'/>

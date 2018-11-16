@@ -1,0 +1,2 @@
+<dec f='include/atk-1.0/atk/atktable.h' l='83' type='void (*)(AtkTable *, gint, const gchar *)'/>
+<offset>1216</offset>

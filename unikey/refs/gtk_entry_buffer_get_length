@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentrybuffer.h' l='100' type='guint gtk_entry_buffer_get_length(GtkEntryBuffer * buffer)'/>

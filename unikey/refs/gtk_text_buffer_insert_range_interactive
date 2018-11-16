@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='197' type='gboolean gtk_text_buffer_insert_range_interactive(GtkTextBuffer * buffer, GtkTextIter * iter, const GtkTextIter * start, const GtkTextIter * end, gboolean default_editable)'/>

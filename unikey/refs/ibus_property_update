@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='377' type='gboolean ibus_property_update(IBusProperty * prop, IBusProperty * prop_update)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='365'>/**
+ * ibus_property_update:
+ * @prop: An #IBusProperty.
+ * @prop_update: #IBusPropList that contains sub IBusProperties.
+ *
+ * Update the content of an #IBusProperty.
+ * #IBusProperty @prop_update can either be sub-property of @prop,
+ * or holds new values for @prop.
+ *
+ * Returns: TRUE for update suceeded; FALSE otherwise.
+ */</doc>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkcontainer.h' l='107' type='GType gtk_container_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtkcontainer.h' l='105'>/* Application-level methods */</doc>

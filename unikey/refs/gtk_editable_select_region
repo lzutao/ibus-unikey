@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkeditable.h' l='88' type='void gtk_editable_select_region(GtkEditable * editable, gint start_pos, gint end_pos)'/>

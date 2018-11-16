@@ -1,0 +1,16 @@
+<def f='include/gtk-2.0/gtk/gtkentry.h' l='128' ll='164'/>
+<size>824</size>
+<mbr r='_GtkEntryClass::parent_class' o='0' t='GtkWidgetClass'/>
+<mbr r='_GtkEntryClass::populate_popup' o='5760' t='void (*)(GtkEntry *, GtkMenu *)'/>
+<mbr r='_GtkEntryClass::activate' o='5824' t='void (*)(GtkEntry *)'/>
+<mbr r='_GtkEntryClass::move_cursor' o='5888' t='void (*)(GtkEntry *, GtkMovementStep, gint, gboolean)'/>
+<mbr r='_GtkEntryClass::insert_at_cursor' o='5952' t='void (*)(GtkEntry *, const gchar *)'/>
+<mbr r='_GtkEntryClass::delete_from_cursor' o='6016' t='void (*)(GtkEntry *, GtkDeleteType, gint)'/>
+<mbr r='_GtkEntryClass::backspace' o='6080' t='void (*)(GtkEntry *)'/>
+<mbr r='_GtkEntryClass::cut_clipboard' o='6144' t='void (*)(GtkEntry *)'/>
+<mbr r='_GtkEntryClass::copy_clipboard' o='6208' t='void (*)(GtkEntry *)'/>
+<mbr r='_GtkEntryClass::paste_clipboard' o='6272' t='void (*)(GtkEntry *)'/>
+<mbr r='_GtkEntryClass::toggle_overwrite' o='6336' t='void (*)(GtkEntry *)'/>
+<mbr r='_GtkEntryClass::get_text_area_size' o='6400' t='void (*)(GtkEntry *, gint *, gint *, gint *, gint *)'/>
+<mbr r='_GtkEntryClass::_gtk_reserved1' o='6464' t='void (*)()'/>
+<mbr r='_GtkEntryClass::_gtk_reserved2' o='6528' t='void (*)()'/>

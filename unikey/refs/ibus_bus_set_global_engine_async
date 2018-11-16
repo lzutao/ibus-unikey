@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='1070' type='void ibus_bus_set_global_engine_async(IBusBus * bus, const gchar * global_engine, gint timeout_msec, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer user_data)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='1058'>/**
+ * ibus_bus_set_global_engine_async:
+ * @bus: An #IBusBus.
+ * @global_engine: A new engine name.
+ * @timeout_msec: The timeout in milliseconds or -1 to use the default timeout.
+ * @cancellable: A #GCancellable or %NULL.
+ * @callback: A #GAsyncReadyCallback to call when the request is satisfied
+ *      or %NULL if you don&apos;t care about the result of the method invocation.
+ * @user_data: The data to pass to callback.
+ *
+ * Set current global engine asynchronously.
+ */</doc>

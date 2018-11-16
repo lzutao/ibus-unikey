@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/glib/gtree.h' l='57' type='void g_tree_unref(GTree * tree)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='81' u='c' c='_ZL26glib_autoptr_cleanup_GTreePP6_GTree'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='81' u='r' c='_ZL30glib_listautoptr_cleanup_GTreePP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='81' u='r' c='_ZL31glib_slistautoptr_cleanup_GTreePP7_GSList'/>

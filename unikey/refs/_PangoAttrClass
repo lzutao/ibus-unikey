@@ -1,0 +1,18 @@
+<def f='include/pango-1.0/pango/pango-attributes.h' l='289' ll='296'/>
+<size>32</size>
+<doc f='include/pango-1.0/pango/pango-attributes.h' l='277'>/**
+ * PangoAttrClass:
+ * @type: the type ID for this attribute
+ * @copy: function to duplicate an attribute of this type (see pango_attribute_copy())
+ * @destroy: function to free an attribute of this type (see pango_attribute_destroy())
+ * @equal: function to check two attributes of this type for equality (see pango_attribute_equal())
+ *
+ * The #PangoAttrClass structure stores the type and operations for
+ * a particular type of attribute. The functions in this structure should
+ * not be called directly. Instead, one should use the wrapper functions
+ * provided for #PangoAttribute.
+ */</doc>
+<mbr r='_PangoAttrClass::type' o='0' t='PangoAttrType'/>
+<mbr r='_PangoAttrClass::copy' o='64' t='PangoAttribute *(*)(const PangoAttribute *)'/>
+<mbr r='_PangoAttrClass::destroy' o='128' t='void (*)(PangoAttribute *)'/>
+<mbr r='_PangoAttrClass::equal' o='192' t='gboolean (*)(const PangoAttribute *, const PangoAttribute *)'/>

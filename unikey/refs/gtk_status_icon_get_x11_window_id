@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkstatusicon.h' l='153' type='guint32 gtk_status_icon_get_x11_window_id(GtkStatusIcon * status_icon)'/>

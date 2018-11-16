@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkselection.h' l='117' type='gboolean gtk_target_list_find(GtkTargetList * list, GdkAtom target, guint * info)'/>

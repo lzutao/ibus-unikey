@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gtk/gtkfontbutton.h' l='64' type='void (*)(GtkFontButton *)'/>
+<offset>7232</offset>
+<doc f='include/gtk-2.0/gtk/gtkfontbutton.h' l='63'>/* font_set signal is emitted when font is chosen */</doc>

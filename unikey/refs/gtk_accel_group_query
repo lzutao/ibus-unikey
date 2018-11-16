@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='179' type='GtkAccelGroupEntry * gtk_accel_group_query(GtkAccelGroup * accel_group, guint accel_key, GdkModifierType accel_mods, guint * n_entries)'/>
+<doc f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='178'>/* --- internal --- */</doc>

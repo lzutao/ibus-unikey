@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='114' type='GdkScreen *(*)(GdkDisplay *, gint)'/>
+<offset>1216</offset>

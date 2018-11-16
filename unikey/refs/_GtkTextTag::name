@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtktexttag.h' l='90' type='char *'/>
+<offset>256</offset>
+<doc f='include/gtk-2.0/gtk/gtktexttag.h' l='90'>/* Name of this tag.  This field is actually
+                                 * a pointer to the key from the entry in
+                                 * tkxt-&gt;tagTable, so it needn&apos;t be freed
+                                 * explicitly. */</doc>

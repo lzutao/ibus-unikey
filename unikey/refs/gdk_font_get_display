@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkfont.h' l='130' type='GdkDisplay * gdk_font_get_display(GdkFont * font)'/>

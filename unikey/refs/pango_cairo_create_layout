@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pangocairo.h' l='145' type='PangoLayout * pango_cairo_create_layout(cairo_t * cr)'/>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='292' type='GType gtk_text_window_type_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='291'>/* enumerations from &quot;gtktextview.h&quot; */</doc>

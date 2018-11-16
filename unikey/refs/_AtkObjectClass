@@ -1,0 +1,44 @@
+<def f='include/atk-1.0/atk/atkobject.h' l='528' ll='661'/>
+<size>352</size>
+<doc f='include/atk-1.0/atk/atkobject.h' l='514'>/**
+ * AtkObjectClass:
+ * @connect_property_change_handler: specifies a function to be called
+ *   when a property changes value. This virtual function is
+ *   deprecated since 2.12 and it should not be overriden. Connect
+ *   directly to property-change or notify signal instead.
+ * @remove_property_change_handler: removes a property changed handler
+ *   as returned by @connect_property_change_handler. This virtual
+ *   function is deprecated sice 2.12 and it should not be overriden.
+ * @focus_event: The signal handler which is executed when there is a
+ *   focus event for an object. This virtual function is deprecated
+ *   since 2.9.4 and it should not be overriden. Use
+ *   the #AtkObject::state-change &quot;focused&quot; signal instead.
+ */</doc>
+<mbr r='_AtkObjectClass::parent' o='0' t='GObjectClass'/>
+<mbr r='_AtkObjectClass::get_name' o='1088' t='const gchar *(*)(AtkObject *)'/>
+<mbr r='_AtkObjectClass::get_description' o='1152' t='const gchar *(*)(AtkObject *)'/>
+<mbr r='_AtkObjectClass::get_parent' o='1216' t='AtkObject *(*)(AtkObject *)'/>
+<mbr r='_AtkObjectClass::get_n_children' o='1280' t='gint (*)(AtkObject *)'/>
+<mbr r='_AtkObjectClass::ref_child' o='1344' t='AtkObject *(*)(AtkObject *, gint)'/>
+<mbr r='_AtkObjectClass::get_index_in_parent' o='1408' t='gint (*)(AtkObject *)'/>
+<mbr r='_AtkObjectClass::ref_relation_set' o='1472' t='AtkRelationSet *(*)(AtkObject *)'/>
+<mbr r='_AtkObjectClass::get_role' o='1536' t='AtkRole (*)(AtkObject *)'/>
+<mbr r='_AtkObjectClass::get_layer' o='1600' t='AtkLayer (*)(AtkObject *)'/>
+<mbr r='_AtkObjectClass::get_mdi_zorder' o='1664' t='gint (*)(AtkObject *)'/>
+<mbr r='_AtkObjectClass::ref_state_set' o='1728' t='AtkStateSet *(*)(AtkObject *)'/>
+<mbr r='_AtkObjectClass::set_name' o='1792' t='void (*)(AtkObject *, const gchar *)'/>
+<mbr r='_AtkObjectClass::set_description' o='1856' t='void (*)(AtkObject *, const gchar *)'/>
+<mbr r='_AtkObjectClass::set_parent' o='1920' t='void (*)(AtkObject *, AtkObject *)'/>
+<mbr r='_AtkObjectClass::set_role' o='1984' t='void (*)(AtkObject *, AtkRole)'/>
+<mbr r='_AtkObjectClass::connect_property_change_handler' o='2048' t='guint (*)(AtkObject *, AtkPropertyChangeHandler *)'/>
+<mbr r='_AtkObjectClass::remove_property_change_handler' o='2112' t='void (*)(AtkObject *, guint)'/>
+<mbr r='_AtkObjectClass::initialize' o='2176' t='void (*)(AtkObject *, gpointer)'/>
+<mbr r='_AtkObjectClass::children_changed' o='2240' t='void (*)(AtkObject *, guint, gpointer)'/>
+<mbr r='_AtkObjectClass::focus_event' o='2304' t='void (*)(AtkObject *, gboolean)'/>
+<mbr r='_AtkObjectClass::property_change' o='2368' t='void (*)(AtkObject *, AtkPropertyValues *)'/>
+<mbr r='_AtkObjectClass::state_change' o='2432' t='void (*)(AtkObject *, const gchar *, gboolean)'/>
+<mbr r='_AtkObjectClass::visible_data_changed' o='2496' t='void (*)(AtkObject *)'/>
+<mbr r='_AtkObjectClass::active_descendant_changed' o='2560' t='void (*)(AtkObject *, gpointer *)'/>
+<mbr r='_AtkObjectClass::get_attributes' o='2624' t='AtkAttributeSet *(*)(AtkObject *)'/>
+<mbr r='_AtkObjectClass::get_object_locale' o='2688' t='const gchar *(*)(AtkObject *)'/>
+<mbr r='_AtkObjectClass::pad1' o='2752' t='AtkFunction'/>

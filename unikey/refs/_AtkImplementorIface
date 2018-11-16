@@ -1,0 +1,11 @@
+<def f='include/atk-1.0/atk/atkobject.h' l='673' ll='678'/>
+<size>24</size>
+<doc f='include/atk-1.0/atk/atkobject.h' l='666'>/**
+ * AtkImplementorIface:
+ *
+ * The AtkImplementor interface is implemented by objects for which
+ * AtkObject peers may be obtained via calls to
+ * iface-&gt;(ref_accessible)(implementor);
+ */</doc>
+<mbr r='_AtkImplementorIface::parent' o='0' t='GTypeInterface'/>
+<mbr r='_AtkImplementorIface::ref_accessible' o='128' t='AtkObject *(*)(AtkImplementor *)'/>

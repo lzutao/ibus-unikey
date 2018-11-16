@@ -1,0 +1,31 @@
+<dec f='unikey/src/engine_const.h' l='29'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='73' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='86' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='98' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='104' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='110' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='116' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='122' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='133' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='139' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='145' u='c'/>
+<doc f='unikey/src/engine_const.h' l='25'>/**
+ * settings is saved in ~/.config/dconf/user
+ * or cache in ~/.cache/ibus/ibus/registry
+ */</doc>
+<use f='unikey/src/engine.cpp' l='185' u='c'/>
+<use f='unikey/src/engine.cpp' l='197' u='c'/>
+<use f='unikey/src/engine.cpp' l='202' u='c'/>
+<use f='unikey/src/engine.cpp' l='213' u='c'/>
+<use f='unikey/src/engine.cpp' l='218' u='c'/>
+<use f='unikey/src/engine.cpp' l='221' u='c'/>
+<use f='unikey/src/engine.cpp' l='224' u='c'/>
+<use f='unikey/src/engine.cpp' l='227' u='c'/>
+<use f='unikey/src/engine.cpp' l='230' u='c'/>
+<use f='unikey/src/engine.cpp' l='233' u='c'/>
+<use f='unikey/src/engine.cpp' l='236' u='c'/>
+<use f='unikey/src/engine.cpp' l='239' u='c'/>
+<use f='unikey/src/engine.cpp' l='242' u='c'/>
+<use f='unikey/src/engine.cpp' l='245' u='c'/>
+<use f='unikey/src/engine.cpp' l='308' u='c'/>
+<use f='unikey/src/engine.cpp' l='353' u='c'/>

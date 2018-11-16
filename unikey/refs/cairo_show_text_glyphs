@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='1481' type='void cairo_show_text_glyphs(cairo_t * cr, const char * utf8, int utf8_len, const cairo_glyph_t * glyphs, int num_glyphs, const cairo_text_cluster_t * clusters, int num_clusters, cairo_text_cluster_flags_t cluster_flags)'/>

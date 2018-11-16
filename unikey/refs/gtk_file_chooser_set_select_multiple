@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkfilechooser.h' l='126' type='void gtk_file_chooser_set_select_multiple(GtkFileChooser * chooser, gboolean select_multiple)'/>

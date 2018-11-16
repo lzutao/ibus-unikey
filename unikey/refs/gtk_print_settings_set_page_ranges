@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintsettings.h' l='210' type='void gtk_print_settings_set_page_ranges(GtkPrintSettings * settings, GtkPageRange * page_ranges, gint num_ranges)'/>

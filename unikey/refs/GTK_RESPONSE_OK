@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkdialog.h' l='76' type='-5'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='350' c='_Z23import_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='356' u='r' c='_Z23import_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='400' c='_Z23export_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='406' u='r' c='_Z23export_macro_clicked_cbP10_GtkButtonPv'/>
+<doc f='include/gtk-2.0/gtk/gtkdialog.h' l='73'>/* These are returned from GTK dialogs, and you can also use them
+   * yourself if you like.
+   */</doc>
+<use f='unikey/setup/dlg_main_setup.cpp' l='166' u='r' c='_ZL20macro_edit_button_cbP10_GtkButtonPv'/>

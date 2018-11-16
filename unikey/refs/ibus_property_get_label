@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='202' type='IBusText * ibus_property_get_label(IBusProperty * prop)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='194'>/**
+ * ibus_property_get_label:
+ * @prop: An #IBusProperty.
+ *
+ * Get the label of #IBusProperty.
+ *
+ * Returns: (transfer none): the label of #IBusProperty. Should not be freed.
+ */</doc>

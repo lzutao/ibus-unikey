@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pangocairo.h' l='123' type='const cairo_font_options_t * pango_cairo_context_get_font_options(PangoContext * context)'/>

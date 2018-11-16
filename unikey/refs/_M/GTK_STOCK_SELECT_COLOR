@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='884'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='878'>/**
+ * GTK_STOCK_SELECT_COLOR:
+ *
+ * The &quot;Color&quot; item.
+ * &lt;inlinegraphic fileref=&quot;gtk-select-color.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

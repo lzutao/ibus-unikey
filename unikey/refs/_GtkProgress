@@ -1,0 +1,11 @@
+<def f='include/gtk-2.0/gtk/gtkprogress.h' l='52' ll='65'/>
+<size>136</size>
+<mbr r='_GtkProgress::widget' o='0' t='GtkWidget'/>
+<mbr r='_GtkProgress::adjustment' o='768' t='GtkAdjustment *'/>
+<mbr r='_GtkProgress::offscreen_pixmap' o='832' t='GdkPixmap *'/>
+<mbr r='_GtkProgress::format' o='896' t='gchar *'/>
+<mbr r='_GtkProgress::x_align' o='960' t='gfloat'/>
+<mbr r='_GtkProgress::y_align' o='992' t='gfloat'/>
+<mbr r='_GtkProgress::show_text' o='1024' t='guint'/>
+<mbr r='_GtkProgress::activity_mode' o='1025' t='guint'/>
+<mbr r='_GtkProgress::use_text_format' o='1026' t='guint'/>

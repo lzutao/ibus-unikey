@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='302' type='gboolean ibus_property_get_visible(IBusProperty * prop)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='294'>/**
+ * ibus_property_get_visible:
+ * @prop: An #IBusProperty.
+ *
+ * Get the visible of #IBusProperty.
+ *
+ * Returns: the visible of #IBusProperty.
+ */</doc>

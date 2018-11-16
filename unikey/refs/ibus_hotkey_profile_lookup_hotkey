@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibushotkey.h' l='187' type='GQuark ibus_hotkey_profile_lookup_hotkey(IBusHotkeyProfile * profile, guint keyval, guint modifiers)'/>
+<doc f='include/ibus-1.0/ibushotkey.h' l='178'>/**
+ * ibus_hotkey_profile_lookup_hotkey:
+ * @profile: An IBusHotkeyProfile.
+ * @keyval: Keycode of the hotkey.
+ * @modifiers: Modifiers of the hotkey.
+ *
+ * Returns: The event associated to the hotkey or 0 if the hotkey is not in the
+ * profile.
+ */</doc>

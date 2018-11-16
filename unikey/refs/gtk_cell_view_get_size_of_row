@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcellview.h' l='69' type='gboolean gtk_cell_view_get_size_of_row(GtkCellView * cell_view, GtkTreePath * path, GtkRequisition * requisition)'/>

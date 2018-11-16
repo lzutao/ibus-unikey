@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkevents.h' l='556' type='void gdk_add_client_message_filter(GdkAtom message_type, GdkFilterFunc func, gpointer data)'/>

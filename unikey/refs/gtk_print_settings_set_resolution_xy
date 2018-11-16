@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintsettings.h' l='196' type='void gtk_print_settings_set_resolution_xy(GtkPrintSettings * settings, gint resolution_x, gint resolution_y)'/>

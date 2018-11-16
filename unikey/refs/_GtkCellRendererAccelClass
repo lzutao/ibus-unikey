@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gtk/gtkcellrendereraccel.h' l='64' ll='83'/>
+<size>320</size>
+<mbr r='_GtkCellRendererAccelClass::parent_class' o='0' t='GtkCellRendererTextClass'/>
+<mbr r='_GtkCellRendererAccelClass::accel_edited' o='2112' t='void (*)(GtkCellRendererAccel *, const gchar *, guint, GdkModifierType, guint)'/>
+<mbr r='_GtkCellRendererAccelClass::accel_cleared' o='2176' t='void (*)(GtkCellRendererAccel *, const gchar *)'/>
+<mbr r='_GtkCellRendererAccelClass::_gtk_reserved0' o='2240' t='void (*)()'/>
+<mbr r='_GtkCellRendererAccelClass::_gtk_reserved1' o='2304' t='void (*)()'/>
+<mbr r='_GtkCellRendererAccelClass::_gtk_reserved2' o='2368' t='void (*)()'/>
+<mbr r='_GtkCellRendererAccelClass::_gtk_reserved3' o='2432' t='void (*)()'/>
+<mbr r='_GtkCellRendererAccelClass::_gtk_reserved4' o='2496' t='void (*)()'/>

@@ -1,0 +1,13 @@
+<def f='include/gtk-2.0/gdk/gdkevents.h' l='342' ll='355'/>
+<size>56</size>
+<mbr r='_GdkEventKey::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventKey::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventKey::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventKey::time' o='160' t='guint32'/>
+<mbr r='_GdkEventKey::state' o='192' t='guint'/>
+<mbr r='_GdkEventKey::keyval' o='224' t='guint'/>
+<mbr r='_GdkEventKey::length' o='256' t='gint'/>
+<mbr r='_GdkEventKey::string' o='320' t='gchar *'/>
+<mbr r='_GdkEventKey::hardware_keycode' o='384' t='guint16'/>
+<mbr r='_GdkEventKey::group' o='400' t='guint8'/>
+<mbr r='_GdkEventKey::is_modifier' o='408' t='guint'/>

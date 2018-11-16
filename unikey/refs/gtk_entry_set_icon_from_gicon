@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='264' type='void gtk_entry_set_icon_from_gicon(GtkEntry * entry, GtkEntryIconPosition icon_pos, GIcon * icon)'/>

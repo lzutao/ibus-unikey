@@ -1,0 +1,9 @@
+<dec f='include/pango-1.0/pango/pango-item.h' l='40'/>
+<doc f='include/pango-1.0/pango/pango-item.h' l='32'>/**
+ * PANGO_ANALYSIS_FLAG_CENTERED_BASELINE:
+ *
+ * Whether the segment should be shifted to center around the baseline.
+ * Used in vertical writing directions mostly.
+ *
+ * Since: 1.16
+ */</doc>

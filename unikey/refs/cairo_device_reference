@@ -1,0 +1,2 @@
+<dec f='include/cairo/cairo.h' l='2123' type='cairo_device_t * cairo_device_reference(cairo_device_t * device)'/>
+<doc f='include/cairo/cairo.h' l='2120'>/* Backend device manipulation */</doc>

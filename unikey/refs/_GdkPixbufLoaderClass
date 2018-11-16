@@ -1,0 +1,7 @@
+<def f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-loader.h' l='62' ll='80'/>
+<size>168</size>
+<mbr r='_GdkPixbufLoaderClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_GdkPixbufLoaderClass::size_prepared' o='1088' t='void (*)(GdkPixbufLoader *, int, int)'/>
+<mbr r='_GdkPixbufLoaderClass::area_prepared' o='1152' t='void (*)(GdkPixbufLoader *)'/>
+<mbr r='_GdkPixbufLoaderClass::area_updated' o='1216' t='void (*)(GdkPixbufLoader *, int, int, int, int)'/>
+<mbr r='_GdkPixbufLoaderClass::closed' o='1280' t='void (*)(GdkPixbufLoader *)'/>

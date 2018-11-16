@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='86' type='gint [2]'/>
+<offset>512</offset>
+<doc f='include/gtk-2.0/gdk/gdkdisplay.h' l='86'>/* The last 2 buttons to be pressed. */</doc>

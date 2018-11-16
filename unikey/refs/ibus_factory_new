@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusfactory.h' l='160' type='IBusFactory * ibus_factory_new(GDBusConnection * connection)'/>
+<doc f='include/ibus-1.0/ibusfactory.h' l='152'>/**
+ * ibus_factory_new:
+ * @connection: An GDBusConnection.
+ *
+ * Creates a new #IBusFactory.
+ *
+ * Returns: A newly allocated #IBusFactory.
+ */</doc>
+<use f='unikey/src/main.cpp' l='47' u='c' c='_ZL15start_componentv'/>
+<use f='unikey/src/main.cpp' l='51' u='c' c='_ZL15start_componentv'/>

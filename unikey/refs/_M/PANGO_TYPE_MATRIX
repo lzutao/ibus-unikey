@@ -1,0 +1,6 @@
+<dec f='include/pango-1.0/pango/pango-matrix.h' l='67'/>
+<doc f='include/pango-1.0/pango/pango-matrix.h' l='62'>/**
+ * PANGO_TYPE_MATRIX:
+ *
+ * The GObject type for #PangoMatrix
+ **/</doc>

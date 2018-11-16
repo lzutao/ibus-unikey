@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkregion.h' l='104' type='void gdk_region_union_with_rect(GdkRegion * region, const GdkRectangle * rect)'/>

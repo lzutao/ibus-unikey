@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='811' type='IBusEngineDesc ** ibus_bus_get_engines_by_names(IBusBus * bus, const gchar *const * names)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='798'>/**
+ * ibus_bus_get_engines_by_names:
+ * @bus: An #IBusBus.
+ * @names: (array zero-terminated=1): A %NULL-terminated array of names.
+ *
+ * Get engines by given names synchronously. If some engine names do not exist,
+ * this function will simply ignore them, and return rest of engines.
+ * TODO(penghuang): add asynchronous version
+ *
+ * Returns: (array zero-terminated=1) (transfer full):
+ *         A %NULL-terminated array of engines.
+ */</doc>

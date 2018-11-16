@@ -1,0 +1,7 @@
+<dec f='include/pango-1.0/pango/pango-break.h' l='106' type='guint'/>
+<offset>5</offset>
+<doc f='include/pango-1.0/pango/pango-break.h' l='101'>/* Note that in degenerate cases, you could have both start/end set on
+   * some text, most likely for sentences (e.g. no space after a period, so
+   * the next sentence starts right away).
+   */</doc>
+<doc f='include/pango-1.0/pango/pango-break.h' l='106'>/* first character in a word */</doc>

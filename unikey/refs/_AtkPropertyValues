@@ -1,0 +1,16 @@
+<def f='include/atk-1.0/atk/atkobject.h' l='454' ll='459'/>
+<size>56</size>
+<doc f='include/atk-1.0/atk/atkobject.h' l='443'>/**
+ * AtkPropertyValues:
+ * @property_name: The name of the ATK property which has changed.
+ * @old_value: NULL. This field is not used anymore.
+ * @new_value: The new value of the named property.
+ *
+ * Note: @old_value field of #AtkPropertyValues will not contain a
+ * valid value. This is a field defined with the purpose of contain
+ * the previous value of the property, but is not used anymore.
+ *
+ **/</doc>
+<mbr r='_AtkPropertyValues::property_name' o='0' t='const gchar *'/>
+<mbr r='_AtkPropertyValues::old_value' o='64' t='GValue'/>
+<mbr r='_AtkPropertyValues::new_value' o='256' t='GValue'/>

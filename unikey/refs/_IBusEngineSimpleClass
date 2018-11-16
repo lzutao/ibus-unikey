@@ -1,0 +1,4 @@
+<def f='include/ibus-1.0/ibusenginesimple.h' l='85' ll='96'/>
+<size>520</size>
+<mbr r='_IBusEngineSimpleClass::parent' o='0' t='IBusEngineClass'/>
+<mbr r='_IBusEngineSimpleClass::pdummy' o='3648' t='gpointer [8]'/>

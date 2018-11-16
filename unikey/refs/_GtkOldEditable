@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gtk/gtkoldeditable.h' l='50' ll='66'/>
+<size>120</size>
+<mbr r='_GtkOldEditable::widget' o='0' t='GtkWidget'/>
+<mbr r='_GtkOldEditable::current_pos' o='768' t='guint'/>
+<mbr r='_GtkOldEditable::selection_start_pos' o='800' t='guint'/>
+<mbr r='_GtkOldEditable::selection_end_pos' o='832' t='guint'/>
+<mbr r='_GtkOldEditable::has_selection' o='864' t='guint'/>
+<mbr r='_GtkOldEditable::editable' o='865' t='guint'/>
+<mbr r='_GtkOldEditable::visible' o='866' t='guint'/>
+<mbr r='_GtkOldEditable::clipboard_text' o='896' t='gchar *'/>

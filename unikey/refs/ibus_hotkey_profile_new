@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibushotkey.h' l='91' type='IBusHotkeyProfile * ibus_hotkey_profile_new()'/>
+<doc f='include/ibus-1.0/ibushotkey.h' l='83'>/**
+ * ibus_hotkey_profile_new:
+ *
+ * Creates a new #IBusHotkeyProfile.
+ *
+ * Returns: A newly allocated #IBusHotkeyProfile.
+ */</doc>

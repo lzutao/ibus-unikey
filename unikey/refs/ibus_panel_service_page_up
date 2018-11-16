@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibuspanelservice.h' l='198' type='void ibus_panel_service_page_up(IBusPanelService * panel)'/>
+<doc f='include/ibus-1.0/ibuspanelservice.h' l='191'>/**
+ * ibus_panel_service_page_up:
+ * @panel: An IBusPanelService
+ *
+ * Notify that the page is up
+ * by sending a &quot;PageUp&quot; to IBus service.
+ */</doc>

@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibuskeys.h' l='99' type='guint ibus_keyval_to_lower(guint keyval)'/>
+<doc f='include/ibus-1.0/ibuskeys.h' l='90'>/**
+ * ibus_keyval_to_lower:
+ * @keyval: a key value.
+ *
+ * Converts a key value to lower case, if applicable.
+ *
+ * Returns: the lower case form of @keyval, or @keyval itself if it is already
+ *  in lower case or it is not subject to case conversion.
+ */</doc>

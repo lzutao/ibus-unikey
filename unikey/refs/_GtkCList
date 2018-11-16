@@ -1,0 +1,50 @@
+<def f='include/gtk-2.0/gtk/gtkclist.h' l='147' ll='243'/>
+<size>424</size>
+<mbr r='_GtkCList::container' o='0' t='GtkContainer'/>
+<mbr r='_GtkCList::flags' o='896' t='guint16'/>
+<mbr r='_GtkCList::reserved1' o='960' t='gpointer'/>
+<mbr r='_GtkCList::reserved2' o='1024' t='gpointer'/>
+<mbr r='_GtkCList::freeze_count' o='1088' t='guint'/>
+<mbr r='_GtkCList::internal_allocation' o='1120' t='GdkRectangle'/>
+<mbr r='_GtkCList::rows' o='1248' t='gint'/>
+<mbr r='_GtkCList::row_height' o='1280' t='gint'/>
+<mbr r='_GtkCList::row_list' o='1344' t='GList *'/>
+<mbr r='_GtkCList::row_list_end' o='1408' t='GList *'/>
+<mbr r='_GtkCList::columns' o='1472' t='gint'/>
+<mbr r='_GtkCList::column_title_area' o='1504' t='GdkRectangle'/>
+<mbr r='_GtkCList::title_window' o='1664' t='GdkWindow *'/>
+<mbr r='_GtkCList::column' o='1728' t='GtkCListColumn *'/>
+<mbr r='_GtkCList::clist_window' o='1792' t='GdkWindow *'/>
+<mbr r='_GtkCList::clist_window_width' o='1856' t='gint'/>
+<mbr r='_GtkCList::clist_window_height' o='1888' t='gint'/>
+<mbr r='_GtkCList::hoffset' o='1920' t='gint'/>
+<mbr r='_GtkCList::voffset' o='1952' t='gint'/>
+<mbr r='_GtkCList::shadow_type' o='1984' t='GtkShadowType'/>
+<mbr r='_GtkCList::selection_mode' o='2016' t='GtkSelectionMode'/>
+<mbr r='_GtkCList::selection' o='2048' t='GList *'/>
+<mbr r='_GtkCList::selection_end' o='2112' t='GList *'/>
+<mbr r='_GtkCList::undo_selection' o='2176' t='GList *'/>
+<mbr r='_GtkCList::undo_unselection' o='2240' t='GList *'/>
+<mbr r='_GtkCList::undo_anchor' o='2304' t='gint'/>
+<mbr r='_GtkCList::button_actions' o='2336' t='guint8 [5]'/>
+<mbr r='_GtkCList::drag_button' o='2376' t='guint8'/>
+<mbr r='_GtkCList::click_cell' o='2400' t='GtkCListCellInfo'/>
+<mbr r='_GtkCList::hadjustment' o='2496' t='GtkAdjustment *'/>
+<mbr r='_GtkCList::vadjustment' o='2560' t='GtkAdjustment *'/>
+<mbr r='_GtkCList::xor_gc' o='2624' t='GdkGC *'/>
+<mbr r='_GtkCList::fg_gc' o='2688' t='GdkGC *'/>
+<mbr r='_GtkCList::bg_gc' o='2752' t='GdkGC *'/>
+<mbr r='_GtkCList::cursor_drag' o='2816' t='GdkCursor *'/>
+<mbr r='_GtkCList::x_drag' o='2880' t='gint'/>
+<mbr r='_GtkCList::focus_row' o='2912' t='gint'/>
+<mbr r='_GtkCList::focus_header_column' o='2944' t='gint'/>
+<mbr r='_GtkCList::anchor' o='2976' t='gint'/>
+<mbr r='_GtkCList::anchor_state' o='3008' t='GtkStateType'/>
+<mbr r='_GtkCList::drag_pos' o='3040' t='gint'/>
+<mbr r='_GtkCList::htimer' o='3072' t='gint'/>
+<mbr r='_GtkCList::vtimer' o='3104' t='gint'/>
+<mbr r='_GtkCList::sort_type' o='3136' t='GtkSortType'/>
+<mbr r='_GtkCList::compare' o='3200' t='GtkCListCompareFunc'/>
+<mbr r='_GtkCList::sort_column' o='3264' t='gint'/>
+<mbr r='_GtkCList::drag_highlight_row' o='3296' t='gint'/>
+<mbr r='_GtkCList::drag_highlight_pos' o='3328' t='GtkCListDragPos'/>

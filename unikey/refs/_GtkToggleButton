@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gtk/gtktogglebutton.h' l='51' ll='58'/>
+<size>152</size>
+<mbr r='_GtkToggleButton::button' o='0' t='GtkButton'/>
+<mbr r='_GtkToggleButton::active' o='1152' t='guint'/>
+<mbr r='_GtkToggleButton::draw_indicator' o='1153' t='guint'/>
+<mbr r='_GtkToggleButton::inconsistent' o='1154' t='guint'/>

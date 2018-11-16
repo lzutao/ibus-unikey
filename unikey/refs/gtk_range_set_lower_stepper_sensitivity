@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrange.h' l='170' type='void gtk_range_set_lower_stepper_sensitivity(GtkRange * range, GtkSensitivityType sensitivity)'/>

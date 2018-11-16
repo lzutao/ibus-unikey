@@ -1,0 +1,3 @@
+<dec f='include/glib-2.0/gobject/gtype.h' l='2191' type='gboolean g_type_check_instance_is_a(GTypeInstance * instance, GType iface_type)'/>
+<use f='include/glib-2.0/gio/glistmodel.h' l='36' macro='1' u='c'/>
+<use f='include/glib-2.0/gio/gliststore.h' l='36' macro='1' u='c'/>

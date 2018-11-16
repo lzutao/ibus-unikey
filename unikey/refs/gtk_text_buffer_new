@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='162' type='GtkTextBuffer * gtk_text_buffer_new(GtkTextTagTable * table)'/>
+<doc f='include/gtk-2.0/gtk/gtktextbuffer.h' l='161'>/* table is NULL to create a new one */</doc>

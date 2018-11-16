@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibuscomponent.h' l='318' type='gboolean ibus_component_check_modification(IBusComponent * component)'/>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='309'>/**
+ * ibus_component_check_modification:
+ * @component: An #IBusComponent.
+ *
+ * Check whether the observed paths of component is modified.
+ *
+ * Returns: %TRUE if at least one of the observed paths is modified;
+ * %FALSE otherwise.
+ */</doc>

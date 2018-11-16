@@ -1,0 +1,7 @@
+<def f='include/x86_64-linux-gnu/bits/dirent.h' l='22' ll='34'/>
+<size>280</size>
+<mbr r='dirent::d_ino' o='0' t='__ino64_t'/>
+<mbr r='dirent::d_off' o='64' t='__off64_t'/>
+<mbr r='dirent::d_reclen' o='128' t='unsigned short'/>
+<mbr r='dirent::d_type' o='144' t='unsigned char'/>
+<mbr r='dirent::d_name' o='152' t='char [256]'/>

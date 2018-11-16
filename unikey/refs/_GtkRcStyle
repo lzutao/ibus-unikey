@@ -1,0 +1,17 @@
+<def f='include/gtk-2.0/gtk/gtkrc.h' l='60' ll='88'/>
+<size>384</size>
+<mbr r='_GtkRcStyle::parent_instance' o='0' t='GObject'/>
+<mbr r='_GtkRcStyle::name' o='192' t='gchar *'/>
+<mbr r='_GtkRcStyle::bg_pixmap_name' o='256' t='gchar *[5]'/>
+<mbr r='_GtkRcStyle::font_desc' o='576' t='PangoFontDescription *'/>
+<mbr r='_GtkRcStyle::color_flags' o='640' t='GtkRcFlags [5]'/>
+<mbr r='_GtkRcStyle::fg' o='800' t='GdkColor [5]'/>
+<mbr r='_GtkRcStyle::bg' o='1280' t='GdkColor [5]'/>
+<mbr r='_GtkRcStyle::text' o='1760' t='GdkColor [5]'/>
+<mbr r='_GtkRcStyle::base' o='2240' t='GdkColor [5]'/>
+<mbr r='_GtkRcStyle::xthickness' o='2720' t='gint'/>
+<mbr r='_GtkRcStyle::ythickness' o='2752' t='gint'/>
+<mbr r='_GtkRcStyle::rc_properties' o='2816' t='GArray *'/>
+<mbr r='_GtkRcStyle::rc_style_lists' o='2880' t='GSList *'/>
+<mbr r='_GtkRcStyle::icon_factories' o='2944' t='GSList *'/>
+<mbr r='_GtkRcStyle::engine_specified' o='3008' t='guint'/>

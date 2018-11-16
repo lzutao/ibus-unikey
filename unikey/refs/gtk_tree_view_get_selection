@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='148' type='GtkTreeSelection * gtk_tree_view_get_selection(GtkTreeView * tree_view)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='144' u='c' c='_Z30unikey_macro_dialog_load_macroP10_GtkDialog11CMacroTable'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='298' u='c' c='_Z23remove_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='329' u='c' c='_Z26removeall_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='375' u='c' c='_Z23import_macro_clicked_cbP10_GtkButtonPv'/>

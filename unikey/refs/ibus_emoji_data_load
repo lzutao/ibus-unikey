@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusemoji.h' l='215' type='GSList * ibus_emoji_data_load(const gchar * path)'/>
+<doc f='include/ibus-1.0/ibusemoji.h' l='208'>/**
+ * ibus_emoji_data_load:
+ * @path: A path of the saved dictionary file.
+ *
+ * Returns: (element-type IBusEmojiData) (transfer container):
+ * An #IBusEmojiData list loaded from the saved cache file.
+ */</doc>

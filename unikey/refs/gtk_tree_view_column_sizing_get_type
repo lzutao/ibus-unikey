@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='318' type='GType gtk_tree_view_column_sizing_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='317'>/* enumerations from &quot;gtktreeviewcolumn.h&quot; */</doc>

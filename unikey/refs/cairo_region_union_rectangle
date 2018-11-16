@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='3159' type='cairo_status_t cairo_region_union_rectangle(cairo_region_t * dst, const cairo_rectangle_int_t * rectangle)'/>

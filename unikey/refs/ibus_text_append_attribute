@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibustext.h' l='162' type='void ibus_text_append_attribute(IBusText * text, guint type, guint value, guint start_index, gint end_index)'/>
+<doc f='include/ibus-1.0/ibustext.h' l='152'>/**
+ * ibus_text_append_attribute:
+ * @text: an IBusText
+ * @type: IBusAttributeType for @text.
+ * @value: Value for the type.
+ * @start_index: The starting index, inclusive.
+ * @end_index: The ending index, exclusive.
+ *
+ * Append an IBusAttribute for IBusText.
+ */</doc>

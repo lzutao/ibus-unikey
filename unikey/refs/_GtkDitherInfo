@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkpreview.h' l='74' ll='78'/>
+<size>4</size>
+<mbr r='_GtkDitherInfo::s' o='0' t='gushort [2]'/>
+<mbr r='_GtkDitherInfo::c' o='0' t='guchar [4]'/>

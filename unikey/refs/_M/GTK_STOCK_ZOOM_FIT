@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='996'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='990'>/**
+ * GTK_STOCK_ZOOM_FIT:
+ *
+ * The &quot;Zoom to Fit&quot; item.
+ * &lt;inlinegraphic fileref=&quot;zoom-fit-best.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

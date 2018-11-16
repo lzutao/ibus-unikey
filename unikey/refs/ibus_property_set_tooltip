@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='271' type='void ibus_property_set_tooltip(IBusProperty * prop, IBusText * tooltip)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='264'>/**
+ * ibus_property_set_tooltip:
+ * @prop: An #IBusProperty.
+ * @tooltip: Text of the tooltip.
+ *
+ * Set the tooltip of #IBusProperty.
+ */</doc>

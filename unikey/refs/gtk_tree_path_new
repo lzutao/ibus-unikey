@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktreemodel.h' l='125' type='GtkTreePath * gtk_tree_path_new()'/>
+<doc f='include/gtk-2.0/gtk/gtktreemodel.h' l='124'>/* GtkTreePath operations */</doc>

@@ -1,0 +1,9 @@
+<dec f='unikey/src/engine_private.h' l='23' type='IBusPropList *'/>
+<use f='unikey/src/engine.cpp' l='339' u='r' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='341' u='r' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='398' u='w' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='451' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='452' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='499' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<offset>832</offset>
+<doc f='unikey/src/engine_private.h' l='23'>//!&lt; output charset menu</doc>

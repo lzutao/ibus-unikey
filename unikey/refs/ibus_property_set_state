@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='341' type='void ibus_property_set_state(IBusProperty * prop, IBusPropState state)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='334'>/**
+ * ibus_property_set_state:
+ * @prop: An #IBusProperty.
+ * @state: The state of the #IBusProperty.
+ *
+ * Set the state of the #IBusProperty.
+ */</doc>
+<use f='unikey/src/engine.cpp' l='301' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='303' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='346' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='348' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>

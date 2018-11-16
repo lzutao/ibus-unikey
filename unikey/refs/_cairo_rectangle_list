@@ -1,0 +1,16 @@
+<def f='include/cairo/cairo.h' l='1017' ll='1021'/>
+<size>24</size>
+<doc f='include/cairo/cairo.h' l='1006'>/**
+ * cairo_rectangle_list_t:
+ * @status: Error status of the rectangle list
+ * @rectangles: Array containing the rectangles
+ * @num_rectangles: Number of rectangles in this list
+ * 
+ * A data structure for holding a dynamically allocated
+ * array of rectangles.
+ *
+ * Since: 1.4
+ **/</doc>
+<mbr r='_cairo_rectangle_list::status' o='0' t='cairo_status_t'/>
+<mbr r='_cairo_rectangle_list::rectangles' o='64' t='cairo_rectangle_t *'/>
+<mbr r='_cairo_rectangle_list::num_rectangles' o='128' t='int'/>

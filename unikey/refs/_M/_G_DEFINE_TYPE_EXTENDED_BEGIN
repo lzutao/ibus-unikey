@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/gobject/gtype.h' l='1993'/>
+<doc f='include/glib-2.0/gobject/gtype.h' l='1990'>/* This was defined before we had G_DEFINE_TYPE_WITH_CODE_AND_PRELUDE, it&apos;s simplest
+ * to keep it.
+ */</doc>

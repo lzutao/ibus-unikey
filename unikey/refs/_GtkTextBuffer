@@ -1,0 +1,11 @@
+<def f='include/gtk-2.0/gtk/gtktextbuffer.h' l='74' ll='92'/>
+<size>72</size>
+<mbr r='_GtkTextBuffer::parent_instance' o='0' t='GObject'/>
+<mbr r='_GtkTextBuffer::tag_table' o='192' t='GtkTextTagTable *'/>
+<mbr r='_GtkTextBuffer::btree' o='256' t='GtkTextBTree *'/>
+<mbr r='_GtkTextBuffer::clipboard_contents_buffers' o='320' t='GSList *'/>
+<mbr r='_GtkTextBuffer::selection_clipboards' o='384' t='GSList *'/>
+<mbr r='_GtkTextBuffer::log_attr_cache' o='448' t='GtkTextLogAttrCache *'/>
+<mbr r='_GtkTextBuffer::user_action_count' o='512' t='guint'/>
+<mbr r='_GtkTextBuffer::modified' o='544' t='guint'/>
+<mbr r='_GtkTextBuffer::has_selection' o='545' t='guint'/>

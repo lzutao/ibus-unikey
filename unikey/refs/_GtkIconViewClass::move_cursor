@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkiconview.h' l='84' type='gboolean (*)(GtkIconView *, GtkMovementStep, gint)'/>
+<offset>7040</offset>

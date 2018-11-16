@@ -1,0 +1,2 @@
+<dec f='unikey/src/engine_private.h' l='54' type='gboolean ibus_unikey_engine_process_key_event_preedit(IBusEngine * engine, guint keyval, guint keycode, guint modifiers)'/>
+<use f='unikey/src/engine.cpp' l='560' u='c' c='_ZL36ibus_unikey_engine_process_key_eventP11_IBusEnginejjj'/>

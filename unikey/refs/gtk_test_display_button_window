@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktestutils.h' l='44' type='GtkWidget * gtk_test_display_button_window(const gchar * window_title, const gchar * dialog_text)'/>

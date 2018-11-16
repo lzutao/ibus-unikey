@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtksignal.h' l='102' type='guint gtk_signal_new(const gchar * name, GtkSignalRunType signal_flags, GType object_type, guint function_offset, GSignalCMarshaller marshaller, GType return_val, guint n_args)'/>

@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusconfig.h' l='128' type='IBusConfig * ibus_config_new_async_finish(GAsyncResult * res, GError ** error)'/>
+<doc f='include/ibus-1.0/ibusconfig.h' l='118'>/**
+ * ibus_config_new_async_finish:
+ * @res: A #GAsyncResult obtained from the #GAsyncReadyCallback pass to
+ *      ibus_config_new_async().
+ * @error: Return location for error or %NULL.
+ *
+ * Finishes an operation started with ibus_config_new_async().
+ *
+ * Returns: A newly allocated #IBusConfig.
+ */</doc>

@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gdk/gdkevents.h' l='81' type='1'/>
+<doc f='include/gtk-2.0/gdk/gdkevents.h' l='81'>/* Native event translated into a GDK event and
+                             stored in the &quot;event&quot; structure that was
+                             passed in */</doc>

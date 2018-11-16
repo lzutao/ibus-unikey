@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkexpander.h' l='60' type='void (*)(GtkExpander *)'/>
+<offset>6592</offset>
+<doc f='include/gtk-2.0/gtk/gtkexpander.h' l='57'>/* Key binding signal; to get notification on the expansion
+   * state connect to notify:expanded.
+   */</doc>

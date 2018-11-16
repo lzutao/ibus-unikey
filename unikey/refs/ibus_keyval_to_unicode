@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibuskeys.h' l='77' type='gunichar ibus_keyval_to_unicode(guint keyval)'/>
+<doc f='include/ibus-1.0/ibuskeys.h' l='67'>/**
+ * ibus_keyval_to_unicode:
+ * @keyval: an IBus key symbol
+ * 
+ * Convert from an IBus key symbol to the corresponding ISO10646 (Unicode)
+ * character.
+ * 
+ * Returns: the corresponding unicode character, or 0 if there
+ *          is no corresponding character.
+ **/</doc>

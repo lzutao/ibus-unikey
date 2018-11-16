@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='95' type='IBusBus * ibus_bus_new()'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='21' u='c' c='_Z28unikey_main_setup_dialog_newv'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='87'>/**
+ * ibus_bus_new:
+ *
+ * Creates a new #IBusBus instance.
+ *
+ * Returns: A newly allocated #IBusBus instance, and the instance is not
+ * floating.
+ */</doc>
+<use f='unikey/src/main.cpp' l='38' u='c' c='_ZL15start_componentv'/>

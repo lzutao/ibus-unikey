@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkinput.h' l='168' type='gboolean gdk_device_get_history(GdkDevice * device, GdkWindow * window, guint32 start, guint32 stop, GdkTimeCoord *** events, gint * n_events)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkbuilder.h' l='127' type='gboolean gtk_builder_value_from_string(GtkBuilder * builder, GParamSpec * pspec, const gchar * string, GValue * value, GError ** error)'/>

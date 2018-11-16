@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='174' type='gint gtk_tree_view_insert_column_with_attributes(GtkTreeView * tree_view, gint position, const gchar * title, GtkCellRenderer * cell)'/>

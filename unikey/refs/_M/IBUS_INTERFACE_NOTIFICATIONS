@@ -1,0 +1,6 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='179'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='174'>/**
+ * IBUS_INTERFACE_NOTIFICATIONS:
+ *
+ * D-Bus interface for IBus notifications.
+ */</doc>

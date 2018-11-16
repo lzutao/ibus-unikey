@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='108' type='gunichar gtk_text_iter_get_char(const GtkTextIter * iter)'/>
+<doc f='include/gtk-2.0/gtk/gtktextiter.h' l='105'>/*
+ * &quot;Dereference&quot; operators
+ */</doc>

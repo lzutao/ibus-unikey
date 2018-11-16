@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='80'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='72'>/**
+ * GTK_STOCK_ABOUT:
+ *
+ * The &quot;About&quot; item.
+ * &lt;inlinegraphic fileref=&quot;help-about.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ *
+ * Since: 2.6
+ */</doc>

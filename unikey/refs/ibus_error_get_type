@@ -1,0 +1,7 @@
+<dec f='include/ibus-1.0/ibusenumtypes.h' l='204' type='GType ibus_error_get_type()'/>
+<doc f='include/ibus-1.0/ibusenumtypes.h' l='198'>/**
+ * ibus_error_get_type:
+ * @returns: GType of IBUS_ERROR
+ *
+ * Returns the type of IBUS_ERROR as GType.
+ */</doc>

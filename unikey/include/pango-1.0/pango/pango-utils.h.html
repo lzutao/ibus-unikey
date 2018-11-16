@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>pango-utils.h source code [include/pango-1.0/pango/pango-utils.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/pango-1.0/pango/pango-utils.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>pango-1.0</a>/<a href='./'>pango</a>/<a href='pango-utils.h.html'>pango-utils.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Pango</i></td></tr>
+<tr><th id="2">2</th><td><i> * pango-utils.c: Utilities for internal functions and modules</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 2000 Red Hat Software</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="7">7</th><td><i> * modify it under the terms of the GNU Library General Public</i></td></tr>
+<tr><th id="8">8</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="9">9</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="12">12</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="13">13</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the GNU</i></td></tr>
+<tr><th id="14">14</th><td><i> * Library General Public License for more details.</i></td></tr>
+<tr><th id="15">15</th><td><i> *</i></td></tr>
+<tr><th id="16">16</th><td><i> * You should have received a copy of the GNU Library General Public</i></td></tr>
+<tr><th id="17">17</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="18">18</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="19">19</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="22">ifndef</span> <span class="macro" data-ref="_M/__PANGO_UTILS_H__">__PANGO_UTILS_H__</span></u></td></tr>
+<tr><th id="23">23</th><td><u>#define <dfn class="macro" id="_M/__PANGO_UTILS_H__" data-ref="_M/__PANGO_UTILS_H__">__PANGO_UTILS_H__</dfn></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="../../stdio.h.html">&lt;stdio.h&gt;</a></u></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="../../glib-2.0/glib.h.html">&lt;glib.h&gt;</a></u></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="pango-font.h.html">&lt;pango/pango-font.h&gt;</a></u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><a class="macro" href="pango-version-macros.h.html#335" title="__attribute__((__deprecated__)) extern" data-ref="_M/PANGO_DEPRECATED">PANGO_DEPRECATED</a></td></tr>
+<tr><th id="32">32</th><td><em>char</em> **  <dfn class="decl" id="pango_split_file_list" title='pango_split_file_list' data-ref="pango_split_file_list">pango_split_file_list</dfn> (<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="13270str" title='str' data-type='const char *' data-ref="13270str">str</dfn>);</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><a class="macro" href="pango-version-macros.h.html#335" title="__attribute__((__deprecated__)) extern" data-ref="_M/PANGO_DEPRECATED">PANGO_DEPRECATED</a></td></tr>
+<tr><th id="35">35</th><td><em>char</em>    *<dfn class="decl" id="pango_trim_string" title='pango_trim_string' data-ref="pango_trim_string">pango_trim_string</dfn>     (<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="13271str" title='str' data-type='const char *' data-ref="13271str">str</dfn>);</td></tr>
+<tr><th id="36">36</th><td><a class="macro" href="pango-version-macros.h.html#335" title="__attribute__((__deprecated__)) extern" data-ref="_M/PANGO_DEPRECATED">PANGO_DEPRECATED</a></td></tr>
+<tr><th id="37">37</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>     <dfn class="decl" id="pango_read_line" title='pango_read_line' data-ref="pango_read_line">pango_read_line</dfn>      (<a class="typedef" href="../../x86_64-linux-gnu/bits/types/FILE.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a>        *<dfn class="local col2 decl" id="13272stream" title='stream' data-type='FILE *' data-ref="13272stream">stream</dfn>,</td></tr>
+<tr><th id="38">38</th><td>			       <a class="typedef" href="../../glib-2.0/glib/gstring.h.html#GString" title='GString' data-type='struct _GString' data-ref="GString">GString</a>     *<dfn class="local col3 decl" id="13273str" title='str' data-type='GString *' data-ref="13273str">str</dfn>);</td></tr>
+<tr><th id="39">39</th><td><a class="macro" href="pango-version-macros.h.html#335" title="__attribute__((__deprecated__)) extern" data-ref="_M/PANGO_DEPRECATED">PANGO_DEPRECATED</a></td></tr>
+<tr><th id="40">40</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="pango_skip_space" title='pango_skip_space' data-ref="pango_skip_space">pango_skip_space</dfn>     (<em>const</em> <em>char</em> **<dfn class="local col4 decl" id="13274pos" title='pos' data-type='const char **' data-ref="13274pos">pos</dfn>);</td></tr>
+<tr><th id="41">41</th><td><a class="macro" href="pango-version-macros.h.html#335" title="__attribute__((__deprecated__)) extern" data-ref="_M/PANGO_DEPRECATED">PANGO_DEPRECATED</a></td></tr>
+<tr><th id="42">42</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="pango_scan_word" title='pango_scan_word' data-ref="pango_scan_word">pango_scan_word</dfn>      (<em>const</em> <em>char</em> **<dfn class="local col5 decl" id="13275pos" title='pos' data-type='const char **' data-ref="13275pos">pos</dfn>,</td></tr>
+<tr><th id="43">43</th><td>			       <a class="typedef" href="../../glib-2.0/glib/gstring.h.html#GString" title='GString' data-type='struct _GString' data-ref="GString">GString</a>     *<dfn class="local col6 decl" id="13276out" title='out' data-type='GString *' data-ref="13276out">out</dfn>);</td></tr>
+<tr><th id="44">44</th><td><a class="macro" href="pango-version-macros.h.html#335" title="__attribute__((__deprecated__)) extern" data-ref="_M/PANGO_DEPRECATED">PANGO_DEPRECATED</a></td></tr>
+<tr><th id="45">45</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="pango_scan_string" title='pango_scan_string' data-ref="pango_scan_string">pango_scan_string</dfn>    (<em>const</em> <em>char</em> **<dfn class="local col7 decl" id="13277pos" title='pos' data-type='const char **' data-ref="13277pos">pos</dfn>,</td></tr>
+<tr><th id="46">46</th><td>			       <a class="typedef" href="../../glib-2.0/glib/gstring.h.html#GString" title='GString' data-type='struct _GString' data-ref="GString">GString</a>     *<dfn class="local col8 decl" id="13278out" title='out' data-type='GString *' data-ref="13278out">out</dfn>);</td></tr>
+<tr><th id="47">47</th><td><a class="macro" href="pango-version-macros.h.html#335" title="__attribute__((__deprecated__)) extern" data-ref="_M/PANGO_DEPRECATED">PANGO_DEPRECATED</a></td></tr>
+<tr><th id="48">48</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="pango_scan_int" title='pango_scan_int' data-ref="pango_scan_int">pango_scan_int</dfn>       (<em>const</em> <em>char</em> **<dfn class="local col9 decl" id="13279pos" title='pos' data-type='const char **' data-ref="13279pos">pos</dfn>,</td></tr>
+<tr><th id="49">49</th><td>			       <em>int</em>         *<dfn class="local col0 decl" id="13280out" title='out' data-type='int *' data-ref="13280out">out</dfn>);</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><u>#<span data-ppcond="51">ifdef</span> <span class="macro" data-ref="_M/PANGO_ENABLE_BACKEND">PANGO_ENABLE_BACKEND</span></u></td></tr>
+<tr><th id="52">52</th><td>PANGO_DEPRECATED_IN_1_38</td></tr>
+<tr><th id="53">53</th><td><em>char</em> *   pango_config_key_get_system (<em>const</em> <em>char</em> *key);</td></tr>
+<tr><th id="54">54</th><td>PANGO_DEPRECATED_IN_1_38</td></tr>
+<tr><th id="55">55</th><td><em>char</em> *   pango_config_key_get (<em>const</em> <em>char</em>  *key);</td></tr>
+<tr><th id="56">56</th><td>PANGO_DEPRECATED_IN_1_32</td></tr>
+<tr><th id="57">57</th><td><em>void</em>     pango_lookup_aliases (<em>const</em> <em>char</em>   *fontname,</td></tr>
+<tr><th id="58">58</th><td>			       <em>char</em>       ***families,</td></tr>
+<tr><th id="59">59</th><td>			       <em>int</em>          *n_families);</td></tr>
+<tr><th id="60">60</th><td><u>#<span data-ppcond="51">endif</span> /* PANGO_ENABLE_BACKEND */</u></td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td><a class="macro" href="pango-version-macros.h.html#335" title="__attribute__((__deprecated__)) extern" data-ref="_M/PANGO_DEPRECATED">PANGO_DEPRECATED</a></td></tr>
+<tr><th id="63">63</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="pango_parse_enum" title='pango_parse_enum' data-ref="pango_parse_enum">pango_parse_enum</dfn>     (<a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>       <dfn class="local col1 decl" id="13281type" title='type' data-type='GType' data-ref="13281type">type</dfn>,</td></tr>
+<tr><th id="64">64</th><td>			       <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="13282str" title='str' data-type='const char *' data-ref="13282str">str</dfn>,</td></tr>
+<tr><th id="65">65</th><td>			       <em>int</em>        *<dfn class="local col3 decl" id="13283value" title='value' data-type='int *' data-ref="13283value">value</dfn>,</td></tr>
+<tr><th id="66">66</th><td>			       <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>    <dfn class="local col4 decl" id="13284warn" title='warn' data-type='gboolean' data-ref="13284warn">warn</dfn>,</td></tr>
+<tr><th id="67">67</th><td>			       <em>char</em>      **<dfn class="local col5 decl" id="13285possible_values" title='possible_values' data-type='char **' data-ref="13285possible_values">possible_values</dfn>);</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><i>/* Functions for parsing textual representations</i></td></tr>
+<tr><th id="70">70</th><td><i> * of PangoFontDescription fields. They return TRUE if the input string</i></td></tr>
+<tr><th id="71">71</th><td><i> * contains a valid value, which then has been assigned to the corresponding</i></td></tr>
+<tr><th id="72">72</th><td><i> * field in the PangoFontDescription. If the warn parameter is TRUE,</i></td></tr>
+<tr><th id="73">73</th><td><i> * a warning is printed (with g_warning) if the string does not</i></td></tr>
+<tr><th id="74">74</th><td><i> * contain a valid value.</i></td></tr>
+<tr><th id="75">75</th><td><i> */</i></td></tr>
+<tr><th id="76">76</th><td><a class="macro" href="pango-version-macros.h.html#31" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_ALL">PANGO_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="77">77</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="pango_parse_style" title='pango_parse_style' data-ref="pango_parse_style">pango_parse_style</dfn>   (<em>const</em> <em>char</em>   *<dfn class="local col6 decl" id="13286str" title='str' data-type='const char *' data-ref="13286str">str</dfn>,</td></tr>
+<tr><th id="78">78</th><td>			      <a class="typedef" href="pango-font.h.html#PangoStyle" title='PangoStyle' data-type='enum PangoStyle' data-ref="PangoStyle">PangoStyle</a>   *<dfn class="local col7 decl" id="13287style" title='style' data-type='PangoStyle *' data-ref="13287style">style</dfn>,</td></tr>
+<tr><th id="79">79</th><td>			      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>      <dfn class="local col8 decl" id="13288warn" title='warn' data-type='gboolean' data-ref="13288warn">warn</dfn>);</td></tr>
+<tr><th id="80">80</th><td><a class="macro" href="pango-version-macros.h.html#31" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_ALL">PANGO_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="81">81</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="pango_parse_variant" title='pango_parse_variant' data-ref="pango_parse_variant">pango_parse_variant</dfn> (<em>const</em> <em>char</em>   *<dfn class="local col9 decl" id="13289str" title='str' data-type='const char *' data-ref="13289str">str</dfn>,</td></tr>
+<tr><th id="82">82</th><td>			      <a class="typedef" href="pango-font.h.html#PangoVariant" title='PangoVariant' data-type='enum PangoVariant' data-ref="PangoVariant">PangoVariant</a> *<dfn class="local col0 decl" id="13290variant" title='variant' data-type='PangoVariant *' data-ref="13290variant">variant</dfn>,</td></tr>
+<tr><th id="83">83</th><td>			      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>      <dfn class="local col1 decl" id="13291warn" title='warn' data-type='gboolean' data-ref="13291warn">warn</dfn>);</td></tr>
+<tr><th id="84">84</th><td><a class="macro" href="pango-version-macros.h.html#31" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_ALL">PANGO_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="85">85</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="pango_parse_weight" title='pango_parse_weight' data-ref="pango_parse_weight">pango_parse_weight</dfn>  (<em>const</em> <em>char</em>   *<dfn class="local col2 decl" id="13292str" title='str' data-type='const char *' data-ref="13292str">str</dfn>,</td></tr>
+<tr><th id="86">86</th><td>			      <a class="typedef" href="pango-font.h.html#PangoWeight" title='PangoWeight' data-type='enum PangoWeight' data-ref="PangoWeight">PangoWeight</a>  *<dfn class="local col3 decl" id="13293weight" title='weight' data-type='PangoWeight *' data-ref="13293weight">weight</dfn>,</td></tr>
+<tr><th id="87">87</th><td>			      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>      <dfn class="local col4 decl" id="13294warn" title='warn' data-type='gboolean' data-ref="13294warn">warn</dfn>);</td></tr>
+<tr><th id="88">88</th><td><a class="macro" href="pango-version-macros.h.html#31" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_ALL">PANGO_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="89">89</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="pango_parse_stretch" title='pango_parse_stretch' data-ref="pango_parse_stretch">pango_parse_stretch</dfn> (<em>const</em> <em>char</em>   *<dfn class="local col5 decl" id="13295str" title='str' data-type='const char *' data-ref="13295str">str</dfn>,</td></tr>
+<tr><th id="90">90</th><td>			      <a class="typedef" href="pango-font.h.html#PangoStretch" title='PangoStretch' data-type='enum PangoStretch' data-ref="PangoStretch">PangoStretch</a> *<dfn class="local col6 decl" id="13296stretch" title='stretch' data-type='PangoStretch *' data-ref="13296stretch">stretch</dfn>,</td></tr>
+<tr><th id="91">91</th><td>			      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>      <dfn class="local col7 decl" id="13297warn" title='warn' data-type='gboolean' data-ref="13297warn">warn</dfn>);</td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td><u>#<span data-ppcond="93">ifdef</span> <span class="macro" data-ref="_M/PANGO_ENABLE_BACKEND">PANGO_ENABLE_BACKEND</span></u></td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><i>/* On Unix, return the name of the "pango" subdirectory of SYSCONFDIR</i></td></tr>
+<tr><th id="96">96</th><td><i> * (which is set at compile time). On Win32, return the Pango</i></td></tr>
+<tr><th id="97">97</th><td><i> * installation directory (which is set at installation time, and</i></td></tr>
+<tr><th id="98">98</th><td><i> * stored in the registry). The returned string should not be</i></td></tr>
+<tr><th id="99">99</th><td><i> * g_free'd.</i></td></tr>
+<tr><th id="100">100</th><td><i> */</i></td></tr>
+<tr><th id="101">101</th><td>PANGO_DEPRECATED</td></tr>
+<tr><th id="102">102</th><td><em>const</em> <em>char</em> *   pango_get_sysconf_subdirectory (<em>void</em>) G_GNUC_PURE;</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><i>/* Ditto for LIBDIR/pango. On Win32, use the same Pango</i></td></tr>
+<tr><th id="105">105</th><td><i> * installation directory. This returned string should not be</i></td></tr>
+<tr><th id="106">106</th><td><i> * g_free'd either.</i></td></tr>
+<tr><th id="107">107</th><td><i> */</i></td></tr>
+<tr><th id="108">108</th><td>PANGO_DEPRECATED</td></tr>
+<tr><th id="109">109</th><td><em>const</em> <em>char</em> *   pango_get_lib_subdirectory (<em>void</em>) G_GNUC_PURE;</td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td><u>#<span data-ppcond="93">endif</span> /* PANGO_ENABLE_BACKEND */</u></td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td><i>/* Hint line position and thickness.</i></td></tr>
+<tr><th id="114">114</th><td><i> */</i></td></tr>
+<tr><th id="115">115</th><td><a class="macro" href="pango-version-macros.h.html#415" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_12">PANGO_AVAILABLE_IN_1_12</a></td></tr>
+<tr><th id="116">116</th><td><em>void</em> <dfn class="decl" id="pango_quantize_line_geometry" title='pango_quantize_line_geometry' data-ref="pango_quantize_line_geometry">pango_quantize_line_geometry</dfn> (<em>int</em> *<dfn class="local col8 decl" id="13298thickness" title='thickness' data-type='int *' data-ref="13298thickness">thickness</dfn>,</td></tr>
+<tr><th id="117">117</th><td>				   <em>int</em> *<dfn class="local col9 decl" id="13299position" title='position' data-type='int *' data-ref="13299position">position</dfn>);</td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td><i>/* A routine from fribidi that we either wrap or provide ourselves.</i></td></tr>
+<tr><th id="120">120</th><td><i> */</i></td></tr>
+<tr><th id="121">121</th><td><a class="macro" href="pango-version-macros.h.html#366" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_4">PANGO_AVAILABLE_IN_1_4</a></td></tr>
+<tr><th id="122">122</th><td><span class='typedef' title='guint8' data-type='unsigned char' data-ref="guint8">guint8</span> * <dfn class="decl" id="pango_log2vis_get_embedding_levels" title='pango_log2vis_get_embedding_levels' data-ref="pango_log2vis_get_embedding_levels">pango_log2vis_get_embedding_levels</dfn> (<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col0 decl" id="13300text" title='text' data-type='const gchar *' data-ref="13300text">text</dfn>,</td></tr>
+<tr><th id="123">123</th><td>					     <em>int</em>             <dfn class="local col1 decl" id="13301length" title='length' data-type='int' data-ref="13301length">length</dfn>,</td></tr>
+<tr><th id="124">124</th><td>					     <a class="typedef" href="pango-bidi-type.h.html#PangoDirection" title='PangoDirection' data-type='enum PangoDirection' data-ref="PangoDirection">PangoDirection</a> *<dfn class="local col2 decl" id="13302pbase_dir" title='pbase_dir' data-type='PangoDirection *' data-ref="13302pbase_dir">pbase_dir</dfn>);</td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td><i>/* Unicode characters that are zero-width and should not be rendered</i></td></tr>
+<tr><th id="127">127</th><td><i> * normally.</i></td></tr>
+<tr><th id="128">128</th><td><i> */</i></td></tr>
+<tr><th id="129">129</th><td><a class="macro" href="pango-version-macros.h.html#409" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_10">PANGO_AVAILABLE_IN_1_10</a></td></tr>
+<tr><th id="130">130</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="pango_is_zero_width" title='pango_is_zero_width' data-ref="pango_is_zero_width">pango_is_zero_width</dfn> (<a class="typedef" href="../../glib-2.0/glib/gunicode.h.html#gunichar" title='gunichar' data-type='guint32' data-ref="gunichar">gunichar</a> <dfn class="local col3 decl" id="13303ch" title='ch' data-type='gunichar' data-ref="13303ch">ch</dfn>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td><i>/* Pango version checking */</i></td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td><i>/* Encode a Pango version as an integer */</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> * PANGO_VERSION_ENCODE:</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> *<span class="command"> @major</span>: the major component of the version number</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> *<span class="command"> @minor</span>: the minor component of the version number</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> *<span class="command"> @micro</span>: the micro component of the version number</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc"> * This macro encodes the given Pango version into an integer.  The numbers</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> * returned by %PANGO_VERSION and pango_version() are encoded using this macro.</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> * Two encoded version numbers can be compared as integers.</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="145">145</th><td><u>#define <dfn class="macro" id="_M/PANGO_VERSION_ENCODE" data-ref="_M/PANGO_VERSION_ENCODE">PANGO_VERSION_ENCODE</dfn>(major, minor, micro) (     \</u></td></tr>
+<tr><th id="146">146</th><td><u>	  ((major) * 10000)                             \</u></td></tr>
+<tr><th id="147">147</th><td><u>	+ ((minor) *   100)                             \</u></td></tr>
+<tr><th id="148">148</th><td><u>	+ ((micro) *     1))</u></td></tr>
+<tr><th id="149">149</th><td></td></tr>
+<tr><th id="150">150</th><td><i>/* Encoded version of Pango at compile-time */</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> * PANGO_VERSION:</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> * The version of Pango available at compile-time, encoded using PANGO_VERSION_ENCODE().</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="157">157</th><td><i class="doc"> * PANGO_VERSION_STRING:</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"> * A string literal containing the version of Pango available at compile-time.</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="162">162</th><td><i class="doc"> * PANGO_VERSION_MAJOR:</i></td></tr>
+<tr><th id="163">163</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc"> * The major component of the version of Pango available at compile-time.</i></td></tr>
+<tr><th id="165">165</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="166">166</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc"> * PANGO_VERSION_MINOR:</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="169">169</th><td><i class="doc"> * The minor component of the version of Pango available at compile-time.</i></td></tr>
+<tr><th id="170">170</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="171">171</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="172">172</th><td><i class="doc"> * PANGO_VERSION_MICRO:</i></td></tr>
+<tr><th id="173">173</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="174">174</th><td><i class="doc"> * The micro component of the version of Pango available at compile-time.</i></td></tr>
+<tr><th id="175">175</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="176">176</th><td><u>#define <dfn class="macro" id="_M/PANGO_VERSION" data-ref="_M/PANGO_VERSION">PANGO_VERSION</dfn> PANGO_VERSION_ENCODE(     \</u></td></tr>
+<tr><th id="177">177</th><td><u>	PANGO_VERSION_MAJOR,                    \</u></td></tr>
+<tr><th id="178">178</th><td><u>	PANGO_VERSION_MINOR,                    \</u></td></tr>
+<tr><th id="179">179</th><td><u>	PANGO_VERSION_MICRO)</u></td></tr>
+<tr><th id="180">180</th><td></td></tr>
+<tr><th id="181">181</th><td><i>/* Check that compile-time Pango is as new as required */</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc"> * PANGO_VERSION_CHECK:</i></td></tr>
+<tr><th id="184">184</th><td><i class="doc"> *<span class="command"> @major</span>: the major component of the version number</i></td></tr>
+<tr><th id="185">185</th><td><i class="doc"> *<span class="command"> @minor</span>: the minor component of the version number</i></td></tr>
+<tr><th id="186">186</th><td><i class="doc"> *<span class="command"> @micro</span>: the micro component of the version number</i></td></tr>
+<tr><th id="187">187</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="188">188</th><td><i class="doc"> * Checks that the version of Pango available at compile-time is not older than</i></td></tr>
+<tr><th id="189">189</th><td><i class="doc"> * the provided version number.</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="191">191</th><td><u>#define <dfn class="macro" id="_M/PANGO_VERSION_CHECK" data-ref="_M/PANGO_VERSION_CHECK">PANGO_VERSION_CHECK</dfn>(major,minor,micro)    \</u></td></tr>
+<tr><th id="192">192</th><td><u>	(PANGO_VERSION &gt;= PANGO_VERSION_ENCODE(major,minor,micro))</u></td></tr>
+<tr><th id="193">193</th><td></td></tr>
+<tr><th id="194">194</th><td></td></tr>
+<tr><th id="195">195</th><td><i>/* Return encoded version of Pango at run-time */</i></td></tr>
+<tr><th id="196">196</th><td><a class="macro" href="pango-version-macros.h.html#443" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_16">PANGO_AVAILABLE_IN_1_16</a></td></tr>
+<tr><th id="197">197</th><td><em>int</em> <dfn class="decl" id="pango_version" title='pango_version' data-ref="pango_version">pango_version</dfn> (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="198">198</th><td></td></tr>
+<tr><th id="199">199</th><td><i>/* Return run-time Pango version as an string */</i></td></tr>
+<tr><th id="200">200</th><td><a class="macro" href="pango-version-macros.h.html#443" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_16">PANGO_AVAILABLE_IN_1_16</a></td></tr>
+<tr><th id="201">201</th><td><em>const</em> <em>char</em> * <dfn class="decl" id="pango_version_string" title='pango_version_string' data-ref="pango_version_string">pango_version_string</dfn> (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="202">202</th><td></td></tr>
+<tr><th id="203">203</th><td><i>/* Check that run-time Pango is as new as required */</i></td></tr>
+<tr><th id="204">204</th><td><a class="macro" href="pango-version-macros.h.html#443" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_16">PANGO_AVAILABLE_IN_1_16</a></td></tr>
+<tr><th id="205">205</th><td><em>const</em> <em>char</em> * <dfn class="decl" id="pango_version_check" title='pango_version_check' data-ref="pango_version_check">pango_version_check</dfn> (<em>int</em> <dfn class="local col4 decl" id="13304required_major" title='required_major' data-type='int' data-ref="13304required_major">required_major</dfn>,</td></tr>
+<tr><th id="206">206</th><td>                                  <em>int</em> <dfn class="local col5 decl" id="13305required_minor" title='required_minor' data-type='int' data-ref="13305required_minor">required_minor</dfn>,</td></tr>
+<tr><th id="207">207</th><td>                                  <em>int</em> <dfn class="local col6 decl" id="13306required_micro" title='required_micro' data-type='int' data-ref="13306required_micro">required_micro</dfn>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="208">208</th><td></td></tr>
+<tr><th id="209">209</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="210">210</th><td></td></tr>
+<tr><th id="211">211</th><td><u>#<span data-ppcond="22">endif</span> /* __PANGO_UTILS_H__ */</u></td></tr>
+<tr><th id="212">212</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

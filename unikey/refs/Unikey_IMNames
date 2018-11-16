@@ -1,0 +1,13 @@
+<dec f='unikey/src/utils.h' l='9' type='const gchar *[]'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='58' u='r' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='77' u='r' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='133' u='r' c='_ZL33input_method_combo_box_changed_cbP12_GtkComboBoxPv'/>
+<use f='unikey/src/engine.cpp' l='189' u='r' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='197' u='r' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='274' u='r' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='287' u='r' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='308' u='r' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='414' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='415' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='468' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<def f='unikey/src/utils.cpp' l='24' type='const gchar *[4]'/>

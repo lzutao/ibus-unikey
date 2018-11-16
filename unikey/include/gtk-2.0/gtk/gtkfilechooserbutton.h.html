@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gtkfilechooserbutton.h source code [include/gtk-2.0/gtk/gtkfilechooserbutton.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gtk/gtkfilechooserbutton.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gtk</a>/<a href='gtkfilechooserbutton.h.html'>gtkfilechooserbutton.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GTK+: gtkfilechooserbutton.h</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright (c) 2004 James M. Cape &lt;jcape@ignore-your.tv&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="6">6</th><td><i> * modify it under the terms of the GNU Library General Public</i></td></tr>
+<tr><th id="7">7</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="8">8</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="11">11</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="12">12</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the GNU</i></td></tr>
+<tr><th id="13">13</th><td><i> * Library General Public License for more details.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> * You should have received a copy of the GNU Library General Public</i></td></tr>
+<tr><th id="16">16</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="17">17</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="18">18</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="19">19</th><td><i> */</i></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><u>#<span data-ppcond="21">ifndef</span> <span class="macro" data-ref="_M/__GTK_FILE_CHOOSER_BUTTON_H__">__GTK_FILE_CHOOSER_BUTTON_H__</span></u></td></tr>
+<tr><th id="22">22</th><td><u>#define <dfn class="macro" id="_M/__GTK_FILE_CHOOSER_BUTTON_H__" data-ref="_M/__GTK_FILE_CHOOSER_BUTTON_H__">__GTK_FILE_CHOOSER_BUTTON_H__</dfn></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="24">if</span> defined(<span class="macro" data-ref="_M/GTK_DISABLE_SINGLE_INCLUDES">GTK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gtk.h.html#30" data-ref="_M/__GTK_H_INSIDE__">__GTK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GTK_COMPILATION">GTK_COMPILATION</span>)</u></td></tr>
+<tr><th id="25">25</th><td><u>#error "Only &lt;gtk/gtk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="26">26</th><td><u>#<span data-ppcond="24">endif</span></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#include <a href="gtkhbox.h.html">&lt;gtk/gtkhbox.h&gt;</a></u></td></tr>
+<tr><th id="29">29</th><td><u>#include <a href="gtkfilechooser.h.html">&lt;gtk/gtkfilechooser.h&gt;</a></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><u>#define <dfn class="macro" id="_M/GTK_TYPE_FILE_CHOOSER_BUTTON" data-ref="_M/GTK_TYPE_FILE_CHOOSER_BUTTON">GTK_TYPE_FILE_CHOOSER_BUTTON</dfn>            (gtk_file_chooser_button_get_type ())</u></td></tr>
+<tr><th id="34">34</th><td><u>#define <dfn class="macro" id="_M/GTK_FILE_CHOOSER_BUTTON" data-ref="_M/GTK_FILE_CHOOSER_BUTTON">GTK_FILE_CHOOSER_BUTTON</dfn>(obj)            (G_TYPE_CHECK_INSTANCE_CAST ((obj), GTK_TYPE_FILE_CHOOSER_BUTTON, GtkFileChooserButton))</u></td></tr>
+<tr><th id="35">35</th><td><u>#define <dfn class="macro" id="_M/GTK_FILE_CHOOSER_BUTTON_CLASS" data-ref="_M/GTK_FILE_CHOOSER_BUTTON_CLASS">GTK_FILE_CHOOSER_BUTTON_CLASS</dfn>(klass)    (G_TYPE_CHECK_CLASS_CAST ((klass), GTK_TYPE_FILE_CHOOSER_BUTTON, GtkFileChooserButtonClass))</u></td></tr>
+<tr><th id="36">36</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_FILE_CHOOSER_BUTTON" data-ref="_M/GTK_IS_FILE_CHOOSER_BUTTON">GTK_IS_FILE_CHOOSER_BUTTON</dfn>(obj)         (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GTK_TYPE_FILE_CHOOSER_BUTTON))</u></td></tr>
+<tr><th id="37">37</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_FILE_CHOOSER_BUTTON_CLASS" data-ref="_M/GTK_IS_FILE_CHOOSER_BUTTON_CLASS">GTK_IS_FILE_CHOOSER_BUTTON_CLASS</dfn>(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), GTK_TYPE_FILE_CHOOSER_BUTTON))</u></td></tr>
+<tr><th id="38">38</th><td><u>#define <dfn class="macro" id="_M/GTK_FILE_CHOOSER_BUTTON_GET_CLASS" data-ref="_M/GTK_FILE_CHOOSER_BUTTON_GET_CLASS">GTK_FILE_CHOOSER_BUTTON_GET_CLASS</dfn>(obj)  (G_TYPE_INSTANCE_GET_CLASS ((obj), GTK_TYPE_FILE_CHOOSER_BUTTON, GtkFileChooserButtonClass))</u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkFileChooserButton" title='_GtkFileChooserButton' data-ref="_GtkFileChooserButton">_GtkFileChooserButton</a>        <dfn class="typedef" id="GtkFileChooserButton" title='GtkFileChooserButton' data-type='struct _GtkFileChooserButton' data-ref="GtkFileChooserButton">GtkFileChooserButton</dfn>;</td></tr>
+<tr><th id="41">41</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_GtkFileChooserButtonPrivate" title='_GtkFileChooserButtonPrivate' data-ref="_GtkFileChooserButtonPrivate"><a class="type" href="#_GtkFileChooserButtonPrivate" title='_GtkFileChooserButtonPrivate' data-ref="_GtkFileChooserButtonPrivate">_GtkFileChooserButtonPrivate</a></dfn> <dfn class="typedef" id="GtkFileChooserButtonPrivate" title='GtkFileChooserButtonPrivate' data-type='struct _GtkFileChooserButtonPrivate' data-ref="GtkFileChooserButtonPrivate">GtkFileChooserButtonPrivate</dfn>;</td></tr>
+<tr><th id="42">42</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkFileChooserButtonClass" title='_GtkFileChooserButtonClass' data-ref="_GtkFileChooserButtonClass">_GtkFileChooserButtonClass</a>   <dfn class="typedef" id="GtkFileChooserButtonClass" title='GtkFileChooserButtonClass' data-type='struct _GtkFileChooserButtonClass' data-ref="GtkFileChooserButtonClass">GtkFileChooserButtonClass</dfn>;</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><b>struct</b> <dfn class="type def" id="_GtkFileChooserButton" title='_GtkFileChooserButton' data-ref="_GtkFileChooserButton">_GtkFileChooserButton</dfn></td></tr>
+<tr><th id="45">45</th><td>{</td></tr>
+<tr><th id="46">46</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="47">47</th><td>  <a class="typedef" href="gtkhbox.h.html#GtkHBox" title='GtkHBox' data-type='struct _GtkHBox' data-ref="GtkHBox">GtkHBox</a> <dfn class="decl" id="_GtkFileChooserButton::parent" title='_GtkFileChooserButton::parent' data-ref="_GtkFileChooserButton::parent">parent</dfn>;</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td>  <a class="typedef" href="#GtkFileChooserButtonPrivate" title='GtkFileChooserButtonPrivate' data-type='struct _GtkFileChooserButtonPrivate' data-ref="GtkFileChooserButtonPrivate">GtkFileChooserButtonPrivate</a> *<span class="macro" title="priv" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkFileChooserButton::priv" title='_GtkFileChooserButton::priv' data-ref="_GtkFileChooserButton::priv">priv</dfn>);</td></tr>
+<tr><th id="50">50</th><td>};</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><b>struct</b> <dfn class="type def" id="_GtkFileChooserButtonClass" title='_GtkFileChooserButtonClass' data-ref="_GtkFileChooserButtonClass">_GtkFileChooserButtonClass</dfn></td></tr>
+<tr><th id="53">53</th><td>{</td></tr>
+<tr><th id="54">54</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="55">55</th><td>  <a class="typedef" href="gtkhbox.h.html#GtkHBoxClass" title='GtkHBoxClass' data-type='struct _GtkHBoxClass' data-ref="GtkHBoxClass">GtkHBoxClass</a> <dfn class="decl" id="_GtkFileChooserButtonClass::parent_class" title='_GtkFileChooserButtonClass::parent_class' data-ref="_GtkFileChooserButtonClass::parent_class">parent_class</dfn>;</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td>  <em>void</em> (* <dfn class="decl" id="_GtkFileChooserButtonClass::file_set" title='_GtkFileChooserButtonClass::file_set' data-ref="_GtkFileChooserButtonClass::file_set">file_set</dfn>) (<a class="typedef" href="#GtkFileChooserButton" title='GtkFileChooserButton' data-type='struct _GtkFileChooserButton' data-ref="GtkFileChooserButton">GtkFileChooserButton</a> *<dfn class="local col3 decl" id="21353fc" title='fc' data-type='GtkFileChooserButton *' data-ref="21353fc">fc</dfn>);</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkFileChooserButtonClass::__gtk_reserved1" title='_GtkFileChooserButtonClass::__gtk_reserved1' data-ref="_GtkFileChooserButtonClass::__gtk_reserved1">__gtk_reserved1</dfn>);</td></tr>
+<tr><th id="60">60</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkFileChooserButtonClass::__gtk_reserved2" title='_GtkFileChooserButtonClass::__gtk_reserved2' data-ref="_GtkFileChooserButtonClass::__gtk_reserved2">__gtk_reserved2</dfn>);</td></tr>
+<tr><th id="61">61</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkFileChooserButtonClass::__gtk_reserved3" title='_GtkFileChooserButtonClass::__gtk_reserved3' data-ref="_GtkFileChooserButtonClass::__gtk_reserved3">__gtk_reserved3</dfn>);</td></tr>
+<tr><th id="62">62</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkFileChooserButtonClass::__gtk_reserved4" title='_GtkFileChooserButtonClass::__gtk_reserved4' data-ref="_GtkFileChooserButtonClass::__gtk_reserved4">__gtk_reserved4</dfn>);</td></tr>
+<tr><th id="63">63</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkFileChooserButtonClass::__gtk_reserved5" title='_GtkFileChooserButtonClass::__gtk_reserved5' data-ref="_GtkFileChooserButtonClass::__gtk_reserved5">__gtk_reserved5</dfn>);</td></tr>
+<tr><th id="64">64</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkFileChooserButtonClass::__gtk_reserved6" title='_GtkFileChooserButtonClass::__gtk_reserved6' data-ref="_GtkFileChooserButtonClass::__gtk_reserved6">__gtk_reserved6</dfn>);</td></tr>
+<tr><th id="65">65</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkFileChooserButtonClass::__gtk_reserved7" title='_GtkFileChooserButtonClass::__gtk_reserved7' data-ref="_GtkFileChooserButtonClass::__gtk_reserved7">__gtk_reserved7</dfn>);</td></tr>
+<tr><th id="66">66</th><td>};</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>                 <dfn class="decl" id="gtk_file_chooser_button_get_type" title='gtk_file_chooser_button_get_type' data-ref="gtk_file_chooser_button_get_type">gtk_file_chooser_button_get_type</dfn>         (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="70">70</th><td><a class="typedef" href="gtkstyle.h.html#GtkWidget" title='GtkWidget' data-type='struct _GtkWidget' data-ref="GtkWidget">GtkWidget</a> *           <dfn class="decl" id="gtk_file_chooser_button_new" title='gtk_file_chooser_button_new' data-ref="gtk_file_chooser_button_new">gtk_file_chooser_button_new</dfn>              (<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>          *<dfn class="local col4 decl" id="21354title" title='title' data-type='const gchar *' data-ref="21354title">title</dfn>,</td></tr>
+<tr><th id="71">71</th><td>								<a class="typedef" href="gtkfilechooser.h.html#GtkFileChooserAction" title='GtkFileChooserAction' data-type='enum GtkFileChooserAction' data-ref="GtkFileChooserAction">GtkFileChooserAction</a>  <dfn class="local col5 decl" id="21355action" title='action' data-type='GtkFileChooserAction' data-ref="21355action">action</dfn>);</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td><u>#<span data-ppcond="73">ifndef</span> <span class="macro" data-ref="_M/GTK_DISABLE_DEPRECATED">GTK_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="74">74</th><td><a class="typedef" href="gtkstyle.h.html#GtkWidget" title='GtkWidget' data-type='struct _GtkWidget' data-ref="GtkWidget">GtkWidget</a> *           <dfn class="decl" id="gtk_file_chooser_button_new_with_backend" title='gtk_file_chooser_button_new_with_backend' data-ref="gtk_file_chooser_button_new_with_backend">gtk_file_chooser_button_new_with_backend</dfn> (<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>          *<dfn class="local col6 decl" id="21356title" title='title' data-type='const gchar *' data-ref="21356title">title</dfn>,</td></tr>
+<tr><th id="75">75</th><td>								<a class="typedef" href="gtkfilechooser.h.html#GtkFileChooserAction" title='GtkFileChooserAction' data-type='enum GtkFileChooserAction' data-ref="GtkFileChooserAction">GtkFileChooserAction</a>  <dfn class="local col7 decl" id="21357action" title='action' data-type='GtkFileChooserAction' data-ref="21357action">action</dfn>,</td></tr>
+<tr><th id="76">76</th><td>								<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>          *<dfn class="local col8 decl" id="21358backend" title='backend' data-type='const gchar *' data-ref="21358backend">backend</dfn>);</td></tr>
+<tr><th id="77">77</th><td><u>#<span data-ppcond="73">endif</span> /* GTK_DISABLE_DEPRECATED */</u></td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><a class="typedef" href="gtkstyle.h.html#GtkWidget" title='GtkWidget' data-type='struct _GtkWidget' data-ref="GtkWidget">GtkWidget</a> *           <dfn class="decl" id="gtk_file_chooser_button_new_with_dialog" title='gtk_file_chooser_button_new_with_dialog' data-ref="gtk_file_chooser_button_new_with_dialog">gtk_file_chooser_button_new_with_dialog</dfn>  (<a class="typedef" href="gtkstyle.h.html#GtkWidget" title='GtkWidget' data-type='struct _GtkWidget' data-ref="GtkWidget">GtkWidget</a>            *<dfn class="local col9 decl" id="21359dialog" title='dialog' data-type='GtkWidget *' data-ref="21359dialog">dialog</dfn>);</td></tr>
+<tr><th id="80">80</th><td><em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *         <dfn class="decl" id="gtk_file_chooser_button_get_title" title='gtk_file_chooser_button_get_title' data-ref="gtk_file_chooser_button_get_title">gtk_file_chooser_button_get_title</dfn>        (<a class="typedef" href="#GtkFileChooserButton" title='GtkFileChooserButton' data-type='struct _GtkFileChooserButton' data-ref="GtkFileChooserButton">GtkFileChooserButton</a> *<dfn class="local col0 decl" id="21360button" title='button' data-type='GtkFileChooserButton *' data-ref="21360button">button</dfn>);</td></tr>
+<tr><th id="81">81</th><td><em>void</em>                  <dfn class="decl" id="gtk_file_chooser_button_set_title" title='gtk_file_chooser_button_set_title' data-ref="gtk_file_chooser_button_set_title">gtk_file_chooser_button_set_title</dfn>        (<a class="typedef" href="#GtkFileChooserButton" title='GtkFileChooserButton' data-type='struct _GtkFileChooserButton' data-ref="GtkFileChooserButton">GtkFileChooserButton</a> *<dfn class="local col1 decl" id="21361button" title='button' data-type='GtkFileChooserButton *' data-ref="21361button">button</dfn>,</td></tr>
+<tr><th id="82">82</th><td>								<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>          *<dfn class="local col2 decl" id="21362title" title='title' data-type='const gchar *' data-ref="21362title">title</dfn>);</td></tr>
+<tr><th id="83">83</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>                  <dfn class="decl" id="gtk_file_chooser_button_get_width_chars" title='gtk_file_chooser_button_get_width_chars' data-ref="gtk_file_chooser_button_get_width_chars">gtk_file_chooser_button_get_width_chars</dfn>  (<a class="typedef" href="#GtkFileChooserButton" title='GtkFileChooserButton' data-type='struct _GtkFileChooserButton' data-ref="GtkFileChooserButton">GtkFileChooserButton</a> *<dfn class="local col3 decl" id="21363button" title='button' data-type='GtkFileChooserButton *' data-ref="21363button">button</dfn>);</td></tr>
+<tr><th id="84">84</th><td><em>void</em>                  <dfn class="decl" id="gtk_file_chooser_button_set_width_chars" title='gtk_file_chooser_button_set_width_chars' data-ref="gtk_file_chooser_button_set_width_chars">gtk_file_chooser_button_set_width_chars</dfn>  (<a class="typedef" href="#GtkFileChooserButton" title='GtkFileChooserButton' data-type='struct _GtkFileChooserButton' data-ref="GtkFileChooserButton">GtkFileChooserButton</a> *<dfn class="local col4 decl" id="21364button" title='button' data-type='GtkFileChooserButton *' data-ref="21364button">button</dfn>,</td></tr>
+<tr><th id="85">85</th><td>								<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>                  <dfn class="local col5 decl" id="21365n_chars" title='n_chars' data-type='gint' data-ref="21365n_chars">n_chars</dfn>);</td></tr>
+<tr><th id="86">86</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>              <dfn class="decl" id="gtk_file_chooser_button_get_focus_on_click" title='gtk_file_chooser_button_get_focus_on_click' data-ref="gtk_file_chooser_button_get_focus_on_click">gtk_file_chooser_button_get_focus_on_click</dfn> (<a class="typedef" href="#GtkFileChooserButton" title='GtkFileChooserButton' data-type='struct _GtkFileChooserButton' data-ref="GtkFileChooserButton">GtkFileChooserButton</a> *<dfn class="local col6 decl" id="21366button" title='button' data-type='GtkFileChooserButton *' data-ref="21366button">button</dfn>);</td></tr>
+<tr><th id="87">87</th><td><em>void</em>                  <dfn class="decl" id="gtk_file_chooser_button_set_focus_on_click" title='gtk_file_chooser_button_set_focus_on_click' data-ref="gtk_file_chooser_button_set_focus_on_click">gtk_file_chooser_button_set_focus_on_click</dfn> (<a class="typedef" href="#GtkFileChooserButton" title='GtkFileChooserButton' data-type='struct _GtkFileChooserButton' data-ref="GtkFileChooserButton">GtkFileChooserButton</a> *<dfn class="local col7 decl" id="21367button" title='button' data-type='GtkFileChooserButton *' data-ref="21367button">button</dfn>,</td></tr>
+<tr><th id="88">88</th><td>                                                                  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>              <dfn class="local col8 decl" id="21368focus_on_click" title='focus_on_click' data-type='gboolean' data-ref="21368focus_on_click">focus_on_click</dfn>);</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td><u>#<span data-ppcond="21">endif</span> /* !__GTK_FILE_CHOOSER_BUTTON_H__ */</u></td></tr>
+<tr><th id="93">93</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

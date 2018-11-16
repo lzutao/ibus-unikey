@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkclipboard.h' l='138' type='gboolean gtk_clipboard_wait_is_image_available(GtkClipboard * clipboard)'/>

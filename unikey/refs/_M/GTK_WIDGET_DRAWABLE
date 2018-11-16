@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='276'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='268'>/**
+ * GTK_WIDGET_DRAWABLE:
+ * @wid: a #GtkWidget.
+ *
+ * Evaluates to %TRUE if the widget is mapped and visible.
+ *
+ * Deprecated: 2.20: Use gtk_widget_is_drawable() instead.
+ */</doc>

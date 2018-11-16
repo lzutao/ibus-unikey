@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkimage.h' l='264' type='void gtk_image_set(GtkImage * image, GdkImage * val, GdkBitmap * mask)'/>
+<doc f='include/gtk-2.0/gtk/gtkimage.h' l='262'>/* These three are deprecated */</doc>

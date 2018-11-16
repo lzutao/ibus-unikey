@@ -1,0 +1,5 @@
+<dec f='include/atk-1.0/atk/atkgobjectaccessible.h' l='35'/>
+<doc f='include/atk-1.0/atk/atkgobjectaccessible.h' l='31'>/*
+ * The AtkGObjectAccessible class is provided as a basis for implementing
+ * accessibility support for objects which are not GTK+ widgets
+ */</doc>

@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='211' type='void ibus_property_set_label(IBusProperty * prop, IBusText * label)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='204'>/**
+ * ibus_property_set_label:
+ * @prop: An #IBusProperty.
+ * @label: Text shown in UI.
+ *
+ * Set the label of #IBusProperty.
+ */</doc>
+<use f='unikey/src/engine.cpp' l='288' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='333' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>

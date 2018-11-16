@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcontainer.h' l='216' type='gchar * _gtk_container_child_composite_name(GtkContainer * container, GtkWidget * child)'/>

@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/glib/gnode.h' l='116' type='void g_node_destroy(GNode * root)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='61' u='c' c='_ZL26glib_autoptr_cleanup_GNodePP6_GNode'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='61' u='r' c='_ZL30glib_listautoptr_cleanup_GNodePP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='61' u='r' c='_ZL31glib_slistautoptr_cleanup_GNodePP7_GSList'/>

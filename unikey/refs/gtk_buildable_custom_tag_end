@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkbuildable.h' l='158' type='void gtk_buildable_custom_tag_end(GtkBuildable * buildable, GtkBuilder * builder, GObject * child, const gchar * tagname, gpointer * data)'/>

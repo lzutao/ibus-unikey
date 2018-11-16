@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconview.h' l='169' type='void gtk_icon_view_set_cursor(GtkIconView * icon_view, GtkTreePath * path, GtkCellRenderer * cell, gboolean start_editing)'/>

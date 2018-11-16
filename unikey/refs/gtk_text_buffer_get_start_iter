@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='336' type='void gtk_text_buffer_get_start_iter(GtkTextBuffer * buffer, GtkTextIter * iter)'/>

@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkprogressbar.h' l='161' type='void gtk_progress_bar_set_activity_step(GtkProgressBar * pbar, guint step)'/>
+<doc f='include/gtk-2.0/gtk/gtkprogressbar.h' l='157'>/* set_activity_step() is not only deprecated, it doesn&apos;t even work.
+ * (Of course, it wasn&apos;t usable anyway, you had to set it from a size_allocate
+ * handler or something)
+ */</doc>

@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gtk/gtktable.h' l='89' ll='99'/>
+<size>8</size>
+<mbr r='_GtkTableRowCol::requisition' o='0' t='guint16'/>
+<mbr r='_GtkTableRowCol::allocation' o='16' t='guint16'/>
+<mbr r='_GtkTableRowCol::spacing' o='32' t='guint16'/>
+<mbr r='_GtkTableRowCol::need_expand' o='48' t='guint'/>
+<mbr r='_GtkTableRowCol::need_shrink' o='49' t='guint'/>
+<mbr r='_GtkTableRowCol::expand' o='50' t='guint'/>
+<mbr r='_GtkTableRowCol::shrink' o='51' t='guint'/>
+<mbr r='_GtkTableRowCol::empty' o='52' t='guint'/>

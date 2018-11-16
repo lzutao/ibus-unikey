@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkicontheme.h' l='154' type='GtkIconInfo * gtk_icon_theme_lookup_by_gicon(GtkIconTheme * icon_theme, GIcon * icon, gint size, GtkIconLookupFlags flags)'/>

@@ -1,0 +1,17 @@
+<dec f='include/glib-2.0/glib/gversionmacros.h' l='332'/>
+<use f='include/glib-2.0/glib/deprecated/gthread.h' l='118' u='c'/>
+<use f='include/glib-2.0/glib/deprecated/gthread.h' l='122' u='c'/>
+<use f='include/glib-2.0/glib/deprecated/gthread.h' l='187' u='c'/>
+<use f='include/glib-2.0/glib/deprecated/gthread.h' l='191' u='c'/>
+<use f='include/glib-2.0/glib/deprecated/gthread.h' l='236' u='c'/>
+<use f='include/glib-2.0/glib/deprecated/gthread.h' l='247' u='c'/>
+<use f='include/glib-2.0/glib/deprecated/gthread.h' l='258' u='c'/>
+<use f='include/glib-2.0/glib/deprecated/gthread.h' l='261' u='c'/>
+<use f='include/glib-2.0/glib/deprecated/gthread.h' l='264' u='c'/>
+<use f='include/glib-2.0/glib/deprecated/gthread.h' l='266' u='c'/>
+<use f='include/glib-2.0/glib/deprecated/gthread.h' l='269' u='c'/>
+<use f='include/glib-2.0/glib/deprecated/gthread.h' l='276' u='c'/>
+<use f='include/glib-2.0/glib/deprecated/gthread.h' l='278' u='c'/>
+<use f='include/glib-2.0/glib/deprecated/gthread.h' l='280' u='c'/>
+<use f='include/glib-2.0/glib/deprecated/gthread.h' l='282' u='c'/>
+<use f='include/glib-2.0/glib/deprecated/gthread.h' l='284' u='c'/>

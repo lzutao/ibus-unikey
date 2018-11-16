@@ -1,0 +1,13 @@
+<def f='include/gtk-2.0/gtk/gtkbutton.h' l='72' ll='88'/>
+<size>904</size>
+<mbr r='_GtkButtonClass::parent_class' o='0' t='GtkBinClass'/>
+<mbr r='_GtkButtonClass::pressed' o='6592' t='void (*)(GtkButton *)'/>
+<mbr r='_GtkButtonClass::released' o='6656' t='void (*)(GtkButton *)'/>
+<mbr r='_GtkButtonClass::clicked' o='6720' t='void (*)(GtkButton *)'/>
+<mbr r='_GtkButtonClass::enter' o='6784' t='void (*)(GtkButton *)'/>
+<mbr r='_GtkButtonClass::leave' o='6848' t='void (*)(GtkButton *)'/>
+<mbr r='_GtkButtonClass::activate' o='6912' t='void (*)(GtkButton *)'/>
+<mbr r='_GtkButtonClass::_gtk_reserved1' o='6976' t='void (*)()'/>
+<mbr r='_GtkButtonClass::_gtk_reserved2' o='7040' t='void (*)()'/>
+<mbr r='_GtkButtonClass::_gtk_reserved3' o='7104' t='void (*)()'/>
+<mbr r='_GtkButtonClass::_gtk_reserved4' o='7168' t='void (*)()'/>

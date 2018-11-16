@@ -1,0 +1,6 @@
+<dec f='include/atk-1.0/atk/atkrelation.h' l='39'/>
+<doc f='include/atk-1.0/atk/atkrelation.h' l='33'>/*
+ * An AtkRelation describes a relation between the object and one or more 
+ * other objects. The actual relations that an object has with other objects
+ * are defined as an AtkRelationSet, which is a set of AtkRelations. 
+ */</doc>

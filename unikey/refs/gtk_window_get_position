@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='382' type='void gtk_window_get_position(GtkWindow * window, gint * root_x, gint * root_y)'/>

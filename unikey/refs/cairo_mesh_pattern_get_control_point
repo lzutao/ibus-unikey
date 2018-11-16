@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='3004' type='cairo_status_t cairo_mesh_pattern_get_control_point(cairo_pattern_t * pattern, unsigned int patch_num, unsigned int point_num, double * x, double * y)'/>

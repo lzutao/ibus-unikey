@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='354' type='gboolean gtk_ctree_node_get_pixtext(GtkCTree * ctree, GtkCTreeNode * node, gint column, gchar ** text, guint8 * spacing, GdkPixmap ** pixmap, GdkBitmap ** mask)'/>

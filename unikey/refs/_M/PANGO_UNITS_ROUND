@@ -1,0 +1,11 @@
+<dec f='include/pango-1.0/pango/pango-types.h' l='115'/>
+<doc f='include/pango-1.0/pango/pango-types.h' l='105'>/**
+ * PANGO_UNITS_ROUND:
+ * @d: a dimension in Pango units.
+ *
+ * Rounds a dimension to whole device units, but does not
+ * convert it to device units.
+ *
+ * Return value: rounded dimension in Pango units.
+ * Since: 1.18
+ */</doc>

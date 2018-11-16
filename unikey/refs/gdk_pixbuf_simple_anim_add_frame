@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-simple-anim.h' l='59' type='void gdk_pixbuf_simple_anim_add_frame(GdkPixbufSimpleAnim * animation, GdkPixbuf * pixbuf)'/>

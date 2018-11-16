@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeviewcolumn.h' l='139' type='GList * gtk_tree_view_column_get_cell_renderers(GtkTreeViewColumn * tree_column)'/>

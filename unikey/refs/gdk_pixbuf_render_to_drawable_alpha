@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkpixbuf.h' l='65' type='void gdk_pixbuf_render_to_drawable_alpha(GdkPixbuf * pixbuf, GdkDrawable * drawable, int src_x, int src_y, int dest_x, int dest_y, int width, int height, GdkPixbufAlphaMode alpha_mode, int alpha_threshold, GdkRgbDither dither, int x_dither, int y_dither)'/>

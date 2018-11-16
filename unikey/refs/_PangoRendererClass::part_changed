@@ -1,0 +1,4 @@
+<dec f='include/pango-1.0/pango/pango-renderer.h' l='164' type='void (*)(PangoRenderer *, PangoRenderPart)'/>
+<offset>1472</offset>
+<doc f='include/pango-1.0/pango/pango-renderer.h' l='162'>/* Notification of change in rendering attributes
+   */</doc>

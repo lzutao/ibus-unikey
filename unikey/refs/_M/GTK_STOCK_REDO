@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='824'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='816'>/**
+ * GTK_STOCK_REDO:
+ *
+ * The &quot;Redo&quot; item.
+ * &lt;inlinegraphic fileref=&quot;edit-redo-ltr.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ * RTL variant
+ * &lt;inlinegraphic fileref=&quot;edit-redo-rtl.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='222' type='IBusText * ibus_property_get_symbol(IBusProperty * prop)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='214'>/**
+ * ibus_property_get_symbol:
+ * @prop: An #IBusProperty.
+ *
+ * Get the symbol of #IBusProperty.
+ *
+ * Returns: (transfer none): the symbol of #IBusProperty. Should not be freed.
+ */</doc>

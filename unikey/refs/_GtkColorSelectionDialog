@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkcolorseldialog.h' l='52' ll='60'/>
+<size>296</size>
+<mbr r='_GtkColorSelectionDialog::parent_instance' o='0' t='GtkDialog'/>
+<mbr r='_GtkColorSelectionDialog::colorsel' o='2112' t='GtkWidget *'/>
+<mbr r='_GtkColorSelectionDialog::ok_button' o='2176' t='GtkWidget *'/>
+<mbr r='_GtkColorSelectionDialog::cancel_button' o='2240' t='GtkWidget *'/>
+<mbr r='_GtkColorSelectionDialog::help_button' o='2304' t='GtkWidget *'/>

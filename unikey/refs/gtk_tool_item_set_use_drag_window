@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktoolitem.h' l='101' type='void gtk_tool_item_set_use_drag_window(GtkToolItem * tool_item, gboolean use_drag_window)'/>

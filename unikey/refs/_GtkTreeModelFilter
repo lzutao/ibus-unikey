@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtktreemodelfilter.h' l='53' ll='59'/>
+<size>32</size>
+<mbr r='_GtkTreeModelFilter::parent' o='0' t='GObject'/>
+<mbr r='_GtkTreeModelFilter::priv' o='192' t='GtkTreeModelFilterPrivate *'/>

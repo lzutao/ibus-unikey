@@ -1,0 +1,2 @@
+<def f='unikey/src/engine.cpp' l='66' macro='1' type='void ibus_unikey_engine_class_intern_init(gpointer klass)'/>
+<use f='unikey/src/engine.cpp' l='66' macro='1' u='r'/>

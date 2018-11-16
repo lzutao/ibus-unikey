@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='192' type='void gtk_tree_view_set_expander_column(GtkTreeView * tree_view, GtkTreeViewColumn * column)'/>

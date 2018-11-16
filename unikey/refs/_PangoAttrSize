@@ -1,0 +1,18 @@
+<def f='include/pango-1.0/pango/pango-attributes.h' l='377' ll='382'/>
+<size>24</size>
+<doc f='include/pango-1.0/pango/pango-attributes.h' l='364'>/**
+ * PangoAttrSize:
+ * @attr: the common portion of the attribute
+ * @size: size of font, in units of 1/%PANGO_SCALE of a point (for
+ * %PANGO_ATTR_SIZE) or of a device uni (for %PANGO_ATTR_ABSOLUTE_SIZE)
+ * @absolute: whether the font size is in device units or points.
+ * This field is only present for compatibility with Pango-1.8.0
+ * (%PANGO_ATTR_ABSOLUTE_SIZE was added in 1.8.1); and always will
+ * be %FALSE for %PANGO_ATTR_SIZE and %TRUE for %PANGO_ATTR_ABSOLUTE_SIZE.
+ *
+ * The #PangoAttrSize structure is used to represent attributes which
+ * set font size.
+ */</doc>
+<mbr r='_PangoAttrSize::attr' o='0' t='PangoAttribute'/>
+<mbr r='_PangoAttrSize::size' o='128' t='int'/>
+<mbr r='_PangoAttrSize::absolute' o='160' t='guint'/>

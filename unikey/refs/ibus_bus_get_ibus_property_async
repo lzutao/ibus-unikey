@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='1206' type='void ibus_bus_get_ibus_property_async(IBusBus * bus, const gchar * property_name, gint timeout_msec, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer user_data)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='1194'>/**
+ * ibus_bus_get_ibus_property_async:
+ * @bus: An #IBusBus.
+ * @property_name: property name in org.freedesktop.DBus.Properties.Get
+ * @timeout_msec: The timeout in milliseconds or -1 to use the default timeout.
+ * @cancellable: A #GCancellable or %NULL.
+ * @callback: A #GAsyncReadyCallback to call when the request is satisfied
+ *      or %NULL if you don&apos;t care about the result of the method invocation.
+ * @user_data: The data to pass to callback.
+ *
+ * Get org.freedesktop.DBus.Properties asynchronously.
+ */</doc>

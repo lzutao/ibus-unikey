@@ -1,0 +1,27 @@
+<def f='include/cairo/cairo.h' l='192' ll='196'/>
+<size>48</size>
+<doc f='include/cairo/cairo.h' l='173'>/**
+ * cairo_matrix_t:
+ * @xx: xx component of the affine transformation
+ * @yx: yx component of the affine transformation
+ * @xy: xy component of the affine transformation
+ * @yy: yy component of the affine transformation
+ * @x0: X translation component of the affine transformation
+ * @y0: Y translation component of the affine transformation
+ *
+ * A #cairo_matrix_t holds an affine transformation, such as a scale,
+ * rotation, shear, or a combination of those. The transformation of
+ * a point (x, y) is given by:
+ * &lt;programlisting&gt;
+ *     x_new = xx * x + xy * y + x0;
+ *     y_new = yx * x + yy * y + y0;
+ * &lt;/programlisting&gt;
+ *
+ * Since: 1.0
+ **/</doc>
+<mbr r='_cairo_matrix::xx' o='0' t='double'/>
+<mbr r='_cairo_matrix::yx' o='64' t='double'/>
+<mbr r='_cairo_matrix::xy' o='128' t='double'/>
+<mbr r='_cairo_matrix::yy' o='192' t='double'/>
+<mbr r='_cairo_matrix::x0' o='256' t='double'/>
+<mbr r='_cairo_matrix::y0' o='320' t='double'/>

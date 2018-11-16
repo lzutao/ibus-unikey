@@ -1,0 +1,5 @@
+<dec f='include/glib-2.0/glib/gmessages.h' l='337'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='24' u='c'/>
+<use f='unikey/src/engine.cpp' l='368' u='c'/>
+<use f='unikey/src/engine.cpp' l='377' u='c'/>
+<use f='unikey/src/main.cpp' l='40' u='c'/>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkcombo.h' l='91' type='void gtk_combo_set_value_in_list(GtkCombo * combo, gboolean val, gboolean ok_if_empty)'/>
+<doc f='include/gtk-2.0/gtk/gtkcombo.h' l='90'>/* the text in the entry must be or not be in the list */</doc>

@@ -1,0 +1,17 @@
+<def f='include/gtk-2.0/gdk/gdkwindow.h' l='208' ll='224'/>
+<size>88</size>
+<mbr r='_GdkWindowAttr::title' o='0' t='gchar *'/>
+<mbr r='_GdkWindowAttr::event_mask' o='64' t='gint'/>
+<mbr r='_GdkWindowAttr::x' o='96' t='gint'/>
+<mbr r='_GdkWindowAttr::y' o='128' t='gint'/>
+<mbr r='_GdkWindowAttr::width' o='160' t='gint'/>
+<mbr r='_GdkWindowAttr::height' o='192' t='gint'/>
+<mbr r='_GdkWindowAttr::wclass' o='224' t='GdkWindowClass'/>
+<mbr r='_GdkWindowAttr::visual' o='256' t='GdkVisual *'/>
+<mbr r='_GdkWindowAttr::colormap' o='320' t='GdkColormap *'/>
+<mbr r='_GdkWindowAttr::window_type' o='384' t='GdkWindowType'/>
+<mbr r='_GdkWindowAttr::cursor' o='448' t='GdkCursor *'/>
+<mbr r='_GdkWindowAttr::wmclass_name' o='512' t='gchar *'/>
+<mbr r='_GdkWindowAttr::wmclass_class' o='576' t='gchar *'/>
+<mbr r='_GdkWindowAttr::override_redirect' o='640' t='gboolean'/>
+<mbr r='_GdkWindowAttr::type_hint' o='672' t='GdkWindowTypeHint'/>

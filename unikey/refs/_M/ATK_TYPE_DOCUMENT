@@ -1,0 +1,6 @@
+<dec f='include/atk-1.0/atk/atkdocument.h' l='38'/>
+<doc f='include/atk-1.0/atk/atkdocument.h' l='32'>/*
+ * The AtkDocument interface should be supported by any object that is a container
+ * for &apos;document content&apos; as opposed to a collection of user interface elements.
+ *
+ */</doc>

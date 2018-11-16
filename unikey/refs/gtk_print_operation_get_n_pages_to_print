@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintoperation.h' l='190' type='gint gtk_print_operation_get_n_pages_to_print(GtkPrintOperation * op)'/>

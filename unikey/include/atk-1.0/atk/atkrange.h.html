@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>atkrange.h source code [include/atk-1.0/atk/atkrange.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/atk-1.0/atk/atkrange.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>atk-1.0</a>/<a href='./'>atk</a>/<a href='atkrange.h.html'>atkrange.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* ATK -  Accessibility Toolkit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright 2014 Igalia S.L.</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Author: Alejandro Piñeiro Iglesias &lt;apinheiro@igalia.com&gt;</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="7">7</th><td><i> * modify it under the terms of the GNU Library General Public</i></td></tr>
+<tr><th id="8">8</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="9">9</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="12">12</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="13">13</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="14">14</th><td><i> * Library General Public License for more details.</i></td></tr>
+<tr><th id="15">15</th><td><i> *</i></td></tr>
+<tr><th id="16">16</th><td><i> * You should have received a copy of the GNU Library General Public</i></td></tr>
+<tr><th id="17">17</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="18">18</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="19">19</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td><u>#<span data-ppcond="21">ifndef</span> <span class="macro" data-ref="_M/__ATK_RANGE_H__">__ATK_RANGE_H__</span></u></td></tr>
+<tr><th id="22">22</th><td><u>#define <dfn class="macro" id="_M/__ATK_RANGE_H__" data-ref="_M/__ATK_RANGE_H__">__ATK_RANGE_H__</dfn></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="24">if</span> defined(<span class="macro" data-ref="_M/ATK_DISABLE_SINGLE_INCLUDES">ATK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="atk.h.html#23" data-ref="_M/__ATK_H_INSIDE__">__ATK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/ATK_COMPILATION">ATK_COMPILATION</span>)</u></td></tr>
+<tr><th id="25">25</th><td><u>#error "Only &lt;atk/atk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="26">26</th><td><u>#<span data-ppcond="24">endif</span></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#include <a href="../../glib-2.0/glib-object.h.html">&lt;glib-object.h&gt;</a></u></td></tr>
+<tr><th id="29">29</th><td><u>#include <a href="atkversion.h.html">&lt;atk/atkversion.h&gt;</a></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><u>#define <dfn class="macro" id="_M/ATK_TYPE_RANGE" data-ref="_M/ATK_TYPE_RANGE">ATK_TYPE_RANGE</dfn>         (atk_range_get_type ())</u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_AtkRange" title='_AtkRange' data-ref="_AtkRange"><a class="type" href="#_AtkRange" title='_AtkRange' data-ref="_AtkRange">_AtkRange</a></dfn> <dfn class="typedef" id="AtkRange" title='AtkRange' data-type='struct _AtkRange' data-ref="AtkRange">AtkRange</dfn>;</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><i>/* AtkRange methods */</i></td></tr>
+<tr><th id="38">38</th><td><a class="macro" href="atkversion.h.html#362" title="extern" data-ref="_M/ATK_AVAILABLE_IN_2_12">ATK_AVAILABLE_IN_2_12</a></td></tr>
+<tr><th id="39">39</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a> <dfn class="decl" id="atk_range_get_type" title='atk_range_get_type' data-ref="atk_range_get_type">atk_range_get_type</dfn> (<em>void</em>);</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><a class="macro" href="atkversion.h.html#362" title="extern" data-ref="_M/ATK_AVAILABLE_IN_2_12">ATK_AVAILABLE_IN_2_12</a></td></tr>
+<tr><th id="42">42</th><td><a class="typedef" href="#AtkRange" title='AtkRange' data-type='struct _AtkRange' data-ref="AtkRange">AtkRange</a>*    <dfn class="decl" id="atk_range_copy" title='atk_range_copy' data-ref="atk_range_copy">atk_range_copy</dfn> (<a class="typedef" href="#AtkRange" title='AtkRange' data-type='struct _AtkRange' data-ref="AtkRange">AtkRange</a> *<dfn class="local col5 decl" id="16925src" title='src' data-type='AtkRange *' data-ref="16925src">src</dfn>);</td></tr>
+<tr><th id="43">43</th><td><a class="macro" href="atkversion.h.html#362" title="extern" data-ref="_M/ATK_AVAILABLE_IN_2_12">ATK_AVAILABLE_IN_2_12</a></td></tr>
+<tr><th id="44">44</th><td><em>void</em>         <dfn class="decl" id="atk_range_free" title='atk_range_free' data-ref="atk_range_free">atk_range_free</dfn> (<a class="typedef" href="#AtkRange" title='AtkRange' data-type='struct _AtkRange' data-ref="AtkRange">AtkRange</a> *<dfn class="local col6 decl" id="16926range" title='range' data-type='AtkRange *' data-ref="16926range">range</dfn>);</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><a class="macro" href="atkversion.h.html#362" title="extern" data-ref="_M/ATK_AVAILABLE_IN_2_12">ATK_AVAILABLE_IN_2_12</a></td></tr>
+<tr><th id="47">47</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>      <dfn class="decl" id="atk_range_get_lower_limit" title='atk_range_get_lower_limit' data-ref="atk_range_get_lower_limit">atk_range_get_lower_limit</dfn>  (<a class="typedef" href="#AtkRange" title='AtkRange' data-type='struct _AtkRange' data-ref="AtkRange">AtkRange</a>    *<dfn class="local col7 decl" id="16927range" title='range' data-type='AtkRange *' data-ref="16927range">range</dfn>);</td></tr>
+<tr><th id="48">48</th><td><a class="macro" href="atkversion.h.html#362" title="extern" data-ref="_M/ATK_AVAILABLE_IN_2_12">ATK_AVAILABLE_IN_2_12</a></td></tr>
+<tr><th id="49">49</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>      <dfn class="decl" id="atk_range_get_upper_limit" title='atk_range_get_upper_limit' data-ref="atk_range_get_upper_limit">atk_range_get_upper_limit</dfn>  (<a class="typedef" href="#AtkRange" title='AtkRange' data-type='struct _AtkRange' data-ref="AtkRange">AtkRange</a>    *<dfn class="local col8 decl" id="16928range" title='range' data-type='AtkRange *' data-ref="16928range">range</dfn>);</td></tr>
+<tr><th id="50">50</th><td><a class="macro" href="atkversion.h.html#362" title="extern" data-ref="_M/ATK_AVAILABLE_IN_2_12">ATK_AVAILABLE_IN_2_12</a></td></tr>
+<tr><th id="51">51</th><td><em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>* <dfn class="decl" id="atk_range_get_description" title='atk_range_get_description' data-ref="atk_range_get_description">atk_range_get_description</dfn>  (<a class="typedef" href="#AtkRange" title='AtkRange' data-type='struct _AtkRange' data-ref="AtkRange">AtkRange</a>    *<dfn class="local col9 decl" id="16929range" title='range' data-type='AtkRange *' data-ref="16929range">range</dfn>);</td></tr>
+<tr><th id="52">52</th><td><a class="macro" href="atkversion.h.html#362" title="extern" data-ref="_M/ATK_AVAILABLE_IN_2_12">ATK_AVAILABLE_IN_2_12</a></td></tr>
+<tr><th id="53">53</th><td><a class="typedef" href="#AtkRange" title='AtkRange' data-type='struct _AtkRange' data-ref="AtkRange">AtkRange</a>*    <dfn class="decl" id="atk_range_new" title='atk_range_new' data-ref="atk_range_new">atk_range_new</dfn>              (<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>      <dfn class="local col0 decl" id="16930lower_limit" title='lower_limit' data-type='gdouble' data-ref="16930lower_limit">lower_limit</dfn>,</td></tr>
+<tr><th id="54">54</th><td>                                         <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>      <dfn class="local col1 decl" id="16931upper_limit" title='upper_limit' data-type='gdouble' data-ref="16931upper_limit">upper_limit</dfn>,</td></tr>
+<tr><th id="55">55</th><td>                                         <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col2 decl" id="16932description" title='description' data-type='const gchar *' data-ref="16932description">description</dfn>);</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><u>#<span data-ppcond="21">endif</span> /* __ATK_RANGE_H__ */</u></td></tr>
+<tr><th id="60">60</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

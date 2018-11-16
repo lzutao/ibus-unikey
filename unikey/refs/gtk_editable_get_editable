@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkeditable.h' l='113' type='gboolean gtk_editable_get_editable(GtkEditable * editable)'/>

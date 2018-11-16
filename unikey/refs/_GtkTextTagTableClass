@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gtk/gtktexttagtable.h' l='60' ll='73'/>
+<size>192</size>
+<mbr r='_GtkTextTagTableClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_GtkTextTagTableClass::tag_changed' o='1088' t='void (*)(GtkTextTagTable *, GtkTextTag *, gboolean)'/>
+<mbr r='_GtkTextTagTableClass::tag_added' o='1152' t='void (*)(GtkTextTagTable *, GtkTextTag *)'/>
+<mbr r='_GtkTextTagTableClass::tag_removed' o='1216' t='void (*)(GtkTextTagTable *, GtkTextTag *)'/>
+<mbr r='_GtkTextTagTableClass::_gtk_reserved1' o='1280' t='void (*)()'/>
+<mbr r='_GtkTextTagTableClass::_gtk_reserved2' o='1344' t='void (*)()'/>
+<mbr r='_GtkTextTagTableClass::_gtk_reserved3' o='1408' t='void (*)()'/>
+<mbr r='_GtkTextTagTableClass::_gtk_reserved4' o='1472' t='void (*)()'/>

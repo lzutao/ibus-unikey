@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkvscale.h' l='71' type='GtkWidget * gtk_vscale_new_with_range(gdouble min, gdouble max, gdouble step)'/>

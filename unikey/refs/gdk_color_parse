@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkcolor.h' l='136' type='gboolean gdk_color_parse(const gchar * spec, GdkColor * color)'/>

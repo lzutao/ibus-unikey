@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkdnd.h' l='159' type='void gtk_drag_set_icon_name(GdkDragContext * context, const gchar * icon_name, gint hot_x, gint hot_y)'/>

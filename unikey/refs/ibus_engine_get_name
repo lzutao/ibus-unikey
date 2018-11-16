@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='464' type='const gchar * ibus_engine_get_name(IBusEngine * engine)'/>
+<doc f='include/ibus-1.0/ibusengine.h' l='456'>/**
+ * ibus_engine_get_name:
+ * @engine: An IBusEngine.
+ *
+ * Return the name of #IBusEngine.
+ *
+ * Returns: Name of #IBusEngine.
+ */</doc>

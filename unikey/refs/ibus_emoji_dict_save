@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusemoji.h' l='169' type='void ibus_emoji_dict_save(const gchar * path, GHashTable * dict)'/>
+<doc f='include/ibus-1.0/ibusemoji.h' l='158'>/**
+ * ibus_emoji_dict_save:
+ * @path: A path of the saved dictionary file.
+ * @dict: (element-type utf8 gpointer) (transfer none): An Emoji dictionary
+ *
+ * Saves the Emoji dictionary to the cache file.
+ * Recommend to use ibus_emoji_data_save() instead becase GSList in
+ * GHashTable does not work with Gir and Vala.
+ * Calls ibus_emoji_data_save() internally. The format of the hash table
+ * changed and now is { emoji character, #IBusEmojiData object }.
+ */</doc>

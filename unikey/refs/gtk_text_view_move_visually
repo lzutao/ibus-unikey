@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextview.h' l='306' type='gboolean gtk_text_view_move_visually(GtkTextView * text_view, GtkTextIter * iter, gint count)'/>

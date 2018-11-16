@@ -1,0 +1,10 @@
+<def f='include/atk-1.0/atk/atkaction.h' l='51' ll='69'/>
+<size>72</size>
+<mbr r='_AtkActionIface::parent' o='0' t='GTypeInterface'/>
+<mbr r='_AtkActionIface::do_action' o='128' t='gboolean (*)(AtkAction *, gint)'/>
+<mbr r='_AtkActionIface::get_n_actions' o='192' t='gint (*)(AtkAction *)'/>
+<mbr r='_AtkActionIface::get_description' o='256' t='const gchar *(*)(AtkAction *, gint)'/>
+<mbr r='_AtkActionIface::get_name' o='320' t='const gchar *(*)(AtkAction *, gint)'/>
+<mbr r='_AtkActionIface::get_keybinding' o='384' t='const gchar *(*)(AtkAction *, gint)'/>
+<mbr r='_AtkActionIface::set_description' o='448' t='gboolean (*)(AtkAction *, gint, const gchar *)'/>
+<mbr r='_AtkActionIface::get_localized_name' o='512' t='const gchar *(*)(AtkAction *, gint)'/>

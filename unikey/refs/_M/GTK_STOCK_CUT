@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='190'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='184'>/**
+ * GTK_STOCK_CUT:
+ *
+ * The &quot;Cut&quot; item.
+ * &lt;inlinegraphic fileref=&quot;edit-cut.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

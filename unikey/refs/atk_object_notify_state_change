@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='740' type='void atk_object_notify_state_change(AtkObject * accessible, AtkState state, gboolean value)'/>

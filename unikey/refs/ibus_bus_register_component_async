@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='664' type='void ibus_bus_register_component_async(IBusBus * bus, IBusComponent * component, gint timeout_msec, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer user_data)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='652'>/**
+ * ibus_bus_register_component_async:
+ * @bus: An #IBusBus.
+ * @component: A input engine component.
+ * @timeout_msec: The timeout in milliseconds or -1 to use the default timeout.
+ * @cancellable: A #GCancellable or %NULL.
+ * @callback: A #GAsyncReadyCallback to call when the request is satisfied
+ *      or %NULL if you don&apos;t care about the result of the method invocation.
+ * @user_data: The data to pass to callback.
+ *
+ * Register a componet to an #IBusBus asynchronously.
+ */</doc>

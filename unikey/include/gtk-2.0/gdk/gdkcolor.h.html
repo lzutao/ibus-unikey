@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gdkcolor.h source code [include/gtk-2.0/gdk/gdkcolor.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gdk/gdkcolor.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gdk</a>/<a href='gdkcolor.h.html'>gdkcolor.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GDK - The GIMP Drawing Kit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><i>/*</i></td></tr>
+<tr><th id="21">21</th><td><i> * Modified by the GTK+ Team and others 1997-2000.  See the AUTHORS</i></td></tr>
+<tr><th id="22">22</th><td><i> * file for a list of people on the GTK+ Team.  See the ChangeLog</i></td></tr>
+<tr><th id="23">23</th><td><i> * files for a list of changes.  These files are distributed with</i></td></tr>
+<tr><th id="24">24</th><td><i> * GTK+ at ftp://ftp.gtk.org/pub/gtk/.</i></td></tr>
+<tr><th id="25">25</th><td><i> */</i></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/__GDK_COLOR_H__">__GDK_COLOR_H__</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/__GDK_COLOR_H__" data-ref="_M/__GDK_COLOR_H__">__GDK_COLOR_H__</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><u>#<span data-ppcond="30">if</span> defined(<span class="macro" data-ref="_M/GTK_DISABLE_SINGLE_INCLUDES">GTK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gdk.h.html#30" data-ref="_M/__GDK_H_INSIDE__">__GDK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GDK_COMPILATION">GDK_COMPILATION</span>)</u></td></tr>
+<tr><th id="31">31</th><td><u>#error "Only &lt;gdk/gdk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="32">32</th><td><u>#<span data-ppcond="30">endif</span></u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><u>#include <a href="../../cairo/cairo.h.html">&lt;cairo.h&gt;</a></u></td></tr>
+<tr><th id="35">35</th><td><u>#include <a href="gdktypes.h.html">&lt;gdk/gdktypes.h&gt;</a></u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><i>/* The color type.</i></td></tr>
+<tr><th id="40">40</th><td><i> *   A color consists of red, green and blue values in the</i></td></tr>
+<tr><th id="41">41</th><td><i> *    range 0-65535 and a pixel value. The pixel value is highly</i></td></tr>
+<tr><th id="42">42</th><td><i> *    dependent on the depth and colormap which this color will</i></td></tr>
+<tr><th id="43">43</th><td><i> *    be used to draw into. Therefore, sharing colors between</i></td></tr>
+<tr><th id="44">44</th><td><i> *    colormaps is a bad idea.</i></td></tr>
+<tr><th id="45">45</th><td><i> */</i></td></tr>
+<tr><th id="46">46</th><td><b>struct</b> <dfn class="type def" id="_GdkColor" title='_GdkColor' data-ref="_GdkColor">_GdkColor</dfn></td></tr>
+<tr><th id="47">47</th><td>{</td></tr>
+<tr><th id="48">48</th><td>  <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span> <dfn class="decl" id="_GdkColor::pixel" title='_GdkColor::pixel' data-ref="_GdkColor::pixel">pixel</dfn>;</td></tr>
+<tr><th id="49">49</th><td>  <span class='typedef' title='guint16' data-type='unsigned short' data-ref="guint16">guint16</span> <dfn class="decl" id="_GdkColor::red" title='_GdkColor::red' data-ref="_GdkColor::red">red</dfn>;</td></tr>
+<tr><th id="50">50</th><td>  <span class='typedef' title='guint16' data-type='unsigned short' data-ref="guint16">guint16</span> <dfn class="decl" id="_GdkColor::green" title='_GdkColor::green' data-ref="_GdkColor::green">green</dfn>;</td></tr>
+<tr><th id="51">51</th><td>  <span class='typedef' title='guint16' data-type='unsigned short' data-ref="guint16">guint16</span> <dfn class="decl" id="_GdkColor::blue" title='_GdkColor::blue' data-ref="_GdkColor::blue">blue</dfn>;</td></tr>
+<tr><th id="52">52</th><td>};</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><i>/* The colormap type.</i></td></tr>
+<tr><th id="55">55</th><td><i> */</i></td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkColormapClass" title='_GdkColormapClass' data-ref="_GdkColormapClass">_GdkColormapClass</a> <dfn class="typedef" id="GdkColormapClass" title='GdkColormapClass' data-type='struct _GdkColormapClass' data-ref="GdkColormapClass">GdkColormapClass</dfn>;</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><u>#define <dfn class="macro" id="_M/GDK_TYPE_COLORMAP" data-ref="_M/GDK_TYPE_COLORMAP">GDK_TYPE_COLORMAP</dfn>              (gdk_colormap_get_type ())</u></td></tr>
+<tr><th id="60">60</th><td><u>#define <dfn class="macro" id="_M/GDK_COLORMAP" data-ref="_M/GDK_COLORMAP">GDK_COLORMAP</dfn>(object)           (G_TYPE_CHECK_INSTANCE_CAST ((object), GDK_TYPE_COLORMAP, GdkColormap))</u></td></tr>
+<tr><th id="61">61</th><td><u>#define <dfn class="macro" id="_M/GDK_COLORMAP_CLASS" data-ref="_M/GDK_COLORMAP_CLASS">GDK_COLORMAP_CLASS</dfn>(klass)      (G_TYPE_CHECK_CLASS_CAST ((klass), GDK_TYPE_COLORMAP, GdkColormapClass))</u></td></tr>
+<tr><th id="62">62</th><td><u>#define <dfn class="macro" id="_M/GDK_IS_COLORMAP" data-ref="_M/GDK_IS_COLORMAP">GDK_IS_COLORMAP</dfn>(object)        (G_TYPE_CHECK_INSTANCE_TYPE ((object), GDK_TYPE_COLORMAP))</u></td></tr>
+<tr><th id="63">63</th><td><u>#define <dfn class="macro" id="_M/GDK_IS_COLORMAP_CLASS" data-ref="_M/GDK_IS_COLORMAP_CLASS">GDK_IS_COLORMAP_CLASS</dfn>(klass)   (G_TYPE_CHECK_CLASS_TYPE ((klass), GDK_TYPE_COLORMAP))</u></td></tr>
+<tr><th id="64">64</th><td><u>#define <dfn class="macro" id="_M/GDK_COLORMAP_GET_CLASS" data-ref="_M/GDK_COLORMAP_GET_CLASS">GDK_COLORMAP_GET_CLASS</dfn>(obj)    (G_TYPE_INSTANCE_GET_CLASS ((obj), GDK_TYPE_COLORMAP, GdkColormapClass))</u></td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td><u>#define <dfn class="macro" id="_M/GDK_TYPE_COLOR" data-ref="_M/GDK_TYPE_COLOR">GDK_TYPE_COLOR</dfn>                 (gdk_color_get_type ())</u></td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td><b>struct</b> <dfn class="type def" id="_GdkColormap" title='_GdkColormap' data-ref="_GdkColormap">_GdkColormap</dfn></td></tr>
+<tr><th id="69">69</th><td>{</td></tr>
+<tr><th id="70">70</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="71">71</th><td>  <a class="typedef" href="../../glib-2.0/gobject/gobject.h.html#GObject" title='GObject' data-type='struct _GObject' data-ref="GObject">GObject</a> <dfn class="decl" id="_GdkColormap::parent_instance" title='_GdkColormap::parent_instance' data-ref="_GdkColormap::parent_instance">parent_instance</dfn>;</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td>  <i>/*&lt; public &gt;*/</i></td></tr>
+<tr><th id="74">74</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>      <span class="macro" title="size" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkColormap::size" title='_GdkColormap::size' data-ref="_GdkColormap::size">size</dfn>);</td></tr>
+<tr><th id="75">75</th><td>  <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a> *<span class="macro" title="colors" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkColormap::colors" title='_GdkColormap::colors' data-ref="_GdkColormap::colors">colors</dfn>);</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="78">78</th><td>  <a class="typedef" href="gdktypes.h.html#GdkVisual" title='GdkVisual' data-type='struct _GdkVisual' data-ref="GdkVisual">GdkVisual</a> *<span class="macro" title="visual" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkColormap::visual" title='_GdkColormap::visual' data-ref="_GdkColormap::visual">visual</dfn>);</td></tr>
+<tr><th id="79">79</th><td>  </td></tr>
+<tr><th id="80">80</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <span class="macro" title="windowing_data" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkColormap::windowing_data" title='_GdkColormap::windowing_data' data-ref="_GdkColormap::windowing_data">windowing_data</dfn>);</td></tr>
+<tr><th id="81">81</th><td>};</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><b>struct</b> <dfn class="type def" id="_GdkColormapClass" title='_GdkColormapClass' data-ref="_GdkColormapClass">_GdkColormapClass</dfn></td></tr>
+<tr><th id="84">84</th><td>{</td></tr>
+<tr><th id="85">85</th><td>  <a class="typedef" href="../../glib-2.0/gobject/gobject.h.html#GObjectClass" title='GObjectClass' data-type='struct _GObjectClass' data-ref="GObjectClass">GObjectClass</a> <dfn class="decl" id="_GdkColormapClass::parent_class" title='_GdkColormapClass::parent_class' data-ref="_GdkColormapClass::parent_class">parent_class</dfn>;</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td>};</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>        <dfn class="decl" id="gdk_colormap_get_type" title='gdk_colormap_get_type' data-ref="gdk_colormap_get_type">gdk_colormap_get_type</dfn> (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a>* <dfn class="decl" id="gdk_colormap_new" title='gdk_colormap_new' data-ref="gdk_colormap_new">gdk_colormap_new</dfn>	  (<a class="typedef" href="gdktypes.h.html#GdkVisual" title='GdkVisual' data-type='struct _GdkVisual' data-ref="GdkVisual">GdkVisual</a>   *<dfn class="local col1 decl" id="13311visual" title='visual' data-type='GdkVisual *' data-ref="13311visual">visual</dfn>,</td></tr>
+<tr><th id="92">92</th><td>				   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>	<dfn class="local col2 decl" id="13312allocate" title='allocate' data-type='gboolean' data-ref="13312allocate">allocate</dfn>);</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><u>#<span data-ppcond="94">ifndef</span> <span class="macro" data-ref="_M/GDK_DISABLE_DEPRECATED">GDK_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="95">95</th><td><a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a>* <dfn class="decl" id="gdk_colormap_ref" title='gdk_colormap_ref' data-ref="gdk_colormap_ref">gdk_colormap_ref</dfn>	  (<a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a> *<dfn class="local col3 decl" id="13313cmap" title='cmap' data-type='GdkColormap *' data-ref="13313cmap">cmap</dfn>);</td></tr>
+<tr><th id="96">96</th><td><em>void</em>	     <dfn class="decl" id="gdk_colormap_unref" title='gdk_colormap_unref' data-ref="gdk_colormap_unref">gdk_colormap_unref</dfn>	  (<a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a> *<dfn class="local col4 decl" id="13314cmap" title='cmap' data-type='GdkColormap *' data-ref="13314cmap">cmap</dfn>);</td></tr>
+<tr><th id="97">97</th><td><u>#<span data-ppcond="94">endif</span></u> </td></tr>
+<tr><th id="98">98</th><td></td></tr>
+<tr><th id="99">99</th><td><u>#<span data-ppcond="99">ifndef</span> <span class="macro" data-ref="_M/GDK_MULTIHEAD_SAFE">GDK_MULTIHEAD_SAFE</span></u></td></tr>
+<tr><th id="100">100</th><td><a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a>* <dfn class="decl" id="gdk_colormap_get_system" title='gdk_colormap_get_system' data-ref="gdk_colormap_get_system">gdk_colormap_get_system</dfn>	        (<em>void</em>);</td></tr>
+<tr><th id="101">101</th><td><u>#<span data-ppcond="99">endif</span></u></td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td><a class="typedef" href="gdktypes.h.html#GdkScreen" title='GdkScreen' data-type='struct _GdkScreen' data-ref="GdkScreen">GdkScreen</a> *<dfn class="decl" id="gdk_colormap_get_screen" title='gdk_colormap_get_screen' data-ref="gdk_colormap_get_screen">gdk_colormap_get_screen</dfn> (<a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a> *<dfn class="local col5 decl" id="13315cmap" title='cmap' data-type='GdkColormap *' data-ref="13315cmap">cmap</dfn>);</td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td><u>#<span data-ppcond="105">ifndef</span> <span class="macro" data-ref="_M/GDK_DISABLE_DEPRECATED">GDK_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="106">106</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="gdk_colormap_get_system_size" title='gdk_colormap_get_system_size' data-ref="gdk_colormap_get_system_size">gdk_colormap_get_system_size</dfn>  (<em>void</em>);</td></tr>
+<tr><th id="107">107</th><td><u>#<span data-ppcond="105">endif</span></u></td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><u>#<span data-ppcond="109">if</span> !defined (<span class="macro" data-ref="_M/GDK_DISABLE_DEPRECATED">GDK_DISABLE_DEPRECATED</span>) || defined (<span class="macro" data-ref="_M/GDK_COMPILATION">GDK_COMPILATION</span>)</u></td></tr>
+<tr><th id="110">110</th><td><i>/* Used by gdk_colors_store () */</i></td></tr>
+<tr><th id="111">111</th><td><em>void</em> <dfn class="decl" id="gdk_colormap_change" title='gdk_colormap_change' data-ref="gdk_colormap_change">gdk_colormap_change</dfn> (<a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a>	*<dfn class="local col6 decl" id="13316colormap" title='colormap' data-type='GdkColormap *' data-ref="13316colormap">colormap</dfn>,</td></tr>
+<tr><th id="112">112</th><td>			  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>		 <dfn class="local col7 decl" id="13317ncolors" title='ncolors' data-type='gint' data-ref="13317ncolors">ncolors</dfn>);</td></tr>
+<tr><th id="113">113</th><td><u>#<span data-ppcond="109">endif</span></u> </td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>  <dfn class="decl" id="gdk_colormap_alloc_colors" title='gdk_colormap_alloc_colors' data-ref="gdk_colormap_alloc_colors">gdk_colormap_alloc_colors</dfn>   (<a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a>    *<dfn class="local col8 decl" id="13318colormap" title='colormap' data-type='GdkColormap *' data-ref="13318colormap">colormap</dfn>,</td></tr>
+<tr><th id="116">116</th><td>				   <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a>       *<dfn class="local col9 decl" id="13319colors" title='colors' data-type='GdkColor *' data-ref="13319colors">colors</dfn>,</td></tr>
+<tr><th id="117">117</th><td>				   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>            <dfn class="local col0 decl" id="13320n_colors" title='n_colors' data-type='gint' data-ref="13320n_colors">n_colors</dfn>,</td></tr>
+<tr><th id="118">118</th><td>				   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>        <dfn class="local col1 decl" id="13321writeable" title='writeable' data-type='gboolean' data-ref="13321writeable">writeable</dfn>,</td></tr>
+<tr><th id="119">119</th><td>				   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>        <dfn class="local col2 decl" id="13322best_match" title='best_match' data-type='gboolean' data-ref="13322best_match">best_match</dfn>,</td></tr>
+<tr><th id="120">120</th><td>				   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>       *<dfn class="local col3 decl" id="13323success" title='success' data-type='gboolean *' data-ref="13323success">success</dfn>);</td></tr>
+<tr><th id="121">121</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="gdk_colormap_alloc_color" title='gdk_colormap_alloc_color' data-ref="gdk_colormap_alloc_color">gdk_colormap_alloc_color</dfn> (<a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a>    *<dfn class="local col4 decl" id="13324colormap" title='colormap' data-type='GdkColormap *' data-ref="13324colormap">colormap</dfn>,</td></tr>
+<tr><th id="122">122</th><td>				   <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a>       *<dfn class="local col5 decl" id="13325color" title='color' data-type='GdkColor *' data-ref="13325color">color</dfn>,</td></tr>
+<tr><th id="123">123</th><td>				   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>        <dfn class="local col6 decl" id="13326writeable" title='writeable' data-type='gboolean' data-ref="13326writeable">writeable</dfn>,</td></tr>
+<tr><th id="124">124</th><td>				   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>        <dfn class="local col7 decl" id="13327best_match" title='best_match' data-type='gboolean' data-ref="13327best_match">best_match</dfn>);</td></tr>
+<tr><th id="125">125</th><td><em>void</em>     <dfn class="decl" id="gdk_colormap_free_colors" title='gdk_colormap_free_colors' data-ref="gdk_colormap_free_colors">gdk_colormap_free_colors</dfn> (<a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a>    *<dfn class="local col8 decl" id="13328colormap" title='colormap' data-type='GdkColormap *' data-ref="13328colormap">colormap</dfn>,</td></tr>
+<tr><th id="126">126</th><td>				   <em>const</em> <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a> *<dfn class="local col9 decl" id="13329colors" title='colors' data-type='const GdkColor *' data-ref="13329colors">colors</dfn>,</td></tr>
+<tr><th id="127">127</th><td>				   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>            <dfn class="local col0 decl" id="13330n_colors" title='n_colors' data-type='gint' data-ref="13330n_colors">n_colors</dfn>);</td></tr>
+<tr><th id="128">128</th><td><em>void</em>     <dfn class="decl" id="gdk_colormap_query_color" title='gdk_colormap_query_color' data-ref="gdk_colormap_query_color">gdk_colormap_query_color</dfn> (<a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a>    *<dfn class="local col1 decl" id="13331colormap" title='colormap' data-type='GdkColormap *' data-ref="13331colormap">colormap</dfn>,</td></tr>
+<tr><th id="129">129</th><td>				   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gulong" title='gulong' data-type='unsigned long' data-ref="gulong">gulong</a>          <dfn class="local col2 decl" id="13332pixel" title='pixel' data-type='gulong' data-ref="13332pixel">pixel</dfn>,</td></tr>
+<tr><th id="130">130</th><td>				   <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a>       *<dfn class="local col3 decl" id="13333result" title='result' data-type='GdkColor *' data-ref="13333result">result</dfn>);</td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td><a class="typedef" href="gdktypes.h.html#GdkVisual" title='GdkVisual' data-type='struct _GdkVisual' data-ref="GdkVisual">GdkVisual</a> *<dfn class="decl" id="gdk_colormap_get_visual" title='gdk_colormap_get_visual' data-ref="gdk_colormap_get_visual">gdk_colormap_get_visual</dfn> (<a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a> *<dfn class="local col4 decl" id="13334colormap" title='colormap' data-type='GdkColormap *' data-ref="13334colormap">colormap</dfn>);</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td><a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a> *<dfn class="decl" id="gdk_color_copy" title='gdk_color_copy' data-ref="gdk_color_copy">gdk_color_copy</dfn>      (<em>const</em> <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a> *<dfn class="local col5 decl" id="13335color" title='color' data-type='const GdkColor *' data-ref="13335color">color</dfn>);</td></tr>
+<tr><th id="135">135</th><td><em>void</em>      <dfn class="decl" id="gdk_color_free" title='gdk_color_free' data-ref="gdk_color_free">gdk_color_free</dfn>      (<a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a>       *<dfn class="local col6 decl" id="13336color" title='color' data-type='GdkColor *' data-ref="13336color">color</dfn>);</td></tr>
+<tr><th id="136">136</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>  <dfn class="decl" id="gdk_color_parse" title='gdk_color_parse' data-ref="gdk_color_parse">gdk_color_parse</dfn>     (<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col7 decl" id="13337spec" title='spec' data-type='const gchar *' data-ref="13337spec">spec</dfn>,</td></tr>
+<tr><th id="137">137</th><td>			       <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a>       *<dfn class="local col8 decl" id="13338color" title='color' data-type='GdkColor *' data-ref="13338color">color</dfn>);</td></tr>
+<tr><th id="138">138</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>     <dfn class="decl" id="gdk_color_hash" title='gdk_color_hash' data-ref="gdk_color_hash">gdk_color_hash</dfn>      (<em>const</em> <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a> *<dfn class="local col9 decl" id="13339colora" title='colora' data-type='const GdkColor *' data-ref="13339colora">colora</dfn>);</td></tr>
+<tr><th id="139">139</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>  <dfn class="decl" id="gdk_color_equal" title='gdk_color_equal' data-ref="gdk_color_equal">gdk_color_equal</dfn>     (<em>const</em> <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a> *<dfn class="local col0 decl" id="13340colora" title='colora' data-type='const GdkColor *' data-ref="13340colora">colora</dfn>,</td></tr>
+<tr><th id="140">140</th><td>			       <em>const</em> <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a> *<dfn class="local col1 decl" id="13341colorb" title='colorb' data-type='const GdkColor *' data-ref="13341colorb">colorb</dfn>);</td></tr>
+<tr><th id="141">141</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *   <dfn class="decl" id="gdk_color_to_string" title='gdk_color_to_string' data-ref="gdk_color_to_string">gdk_color_to_string</dfn> (<em>const</em> <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a> *<dfn class="local col2 decl" id="13342color" title='color' data-type='const GdkColor *' data-ref="13342color">color</dfn>);</td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>     <dfn class="decl" id="gdk_color_get_type" title='gdk_color_get_type' data-ref="gdk_color_get_type">gdk_color_get_type</dfn> (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td><i>/* The following functions are deprecated */</i></td></tr>
+<tr><th id="146">146</th><td><u>#<span data-ppcond="146">ifndef</span> <span class="macro" data-ref="_M/GDK_DISABLE_DEPRECATED">GDK_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="147">147</th><td><em>void</em> <dfn class="decl" id="gdk_colors_store" title='gdk_colors_store' data-ref="gdk_colors_store">gdk_colors_store</dfn>	 (<a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a>	*<dfn class="local col3 decl" id="13343colormap" title='colormap' data-type='GdkColormap *' data-ref="13343colormap">colormap</dfn>,</td></tr>
+<tr><th id="148">148</th><td>			  <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a>	*<dfn class="local col4 decl" id="13344colors" title='colors' data-type='GdkColor *' data-ref="13344colors">colors</dfn>,</td></tr>
+<tr><th id="149">149</th><td>			  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>		 <dfn class="local col5 decl" id="13345ncolors" title='ncolors' data-type='gint' data-ref="13345ncolors">ncolors</dfn>);</td></tr>
+<tr><th id="150">150</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="gdk_color_white" title='gdk_color_white' data-ref="gdk_color_white">gdk_color_white</dfn>	 (<a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a>	*<dfn class="local col6 decl" id="13346colormap" title='colormap' data-type='GdkColormap *' data-ref="13346colormap">colormap</dfn>,</td></tr>
+<tr><th id="151">151</th><td>			  <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a>	*<dfn class="local col7 decl" id="13347color" title='color' data-type='GdkColor *' data-ref="13347color">color</dfn>);</td></tr>
+<tr><th id="152">152</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="gdk_color_black" title='gdk_color_black' data-ref="gdk_color_black">gdk_color_black</dfn>	 (<a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a>	*<dfn class="local col8 decl" id="13348colormap" title='colormap' data-type='GdkColormap *' data-ref="13348colormap">colormap</dfn>,</td></tr>
+<tr><th id="153">153</th><td>			  <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a>	*<dfn class="local col9 decl" id="13349color" title='color' data-type='GdkColor *' data-ref="13349color">color</dfn>);</td></tr>
+<tr><th id="154">154</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="gdk_color_alloc" title='gdk_color_alloc' data-ref="gdk_color_alloc">gdk_color_alloc</dfn>	 (<a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a>	*<dfn class="local col0 decl" id="13350colormap" title='colormap' data-type='GdkColormap *' data-ref="13350colormap">colormap</dfn>,</td></tr>
+<tr><th id="155">155</th><td>			  <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a>	*<dfn class="local col1 decl" id="13351color" title='color' data-type='GdkColor *' data-ref="13351color">color</dfn>);</td></tr>
+<tr><th id="156">156</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="gdk_color_change" title='gdk_color_change' data-ref="gdk_color_change">gdk_color_change</dfn>	 (<a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a>	*<dfn class="local col2 decl" id="13352colormap" title='colormap' data-type='GdkColormap *' data-ref="13352colormap">colormap</dfn>,</td></tr>
+<tr><th id="157">157</th><td>			  <a class="typedef" href="gdktypes.h.html#GdkColor" title='GdkColor' data-type='struct _GdkColor' data-ref="GdkColor">GdkColor</a>	*<dfn class="local col3 decl" id="13353color" title='color' data-type='GdkColor *' data-ref="13353color">color</dfn>);</td></tr>
+<tr><th id="158">158</th><td><u>#<span data-ppcond="146">endif</span> /* GDK_DISABLE_DEPRECATED */</u></td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td><u>#<span data-ppcond="160">if</span> !defined (<span class="macro" data-ref="_M/GDK_DISABLE_DEPRECATED">GDK_DISABLE_DEPRECATED</span>) || defined (<span class="macro" data-ref="_M/GDK_COMPILATION">GDK_COMPILATION</span>)</u></td></tr>
+<tr><th id="161">161</th><td><i>/* Used by gdk_rgb_try_colormap () */</i></td></tr>
+<tr><th id="162">162</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="gdk_colors_alloc" title='gdk_colors_alloc' data-ref="gdk_colors_alloc">gdk_colors_alloc</dfn>	 (<a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a>	*<dfn class="local col4 decl" id="13354colormap" title='colormap' data-type='GdkColormap *' data-ref="13354colormap">colormap</dfn>,</td></tr>
+<tr><th id="163">163</th><td>			  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>	 <dfn class="local col5 decl" id="13355contiguous" title='contiguous' data-type='gboolean' data-ref="13355contiguous">contiguous</dfn>,</td></tr>
+<tr><th id="164">164</th><td>			  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gulong" title='gulong' data-type='unsigned long' data-ref="gulong">gulong</a>	*<dfn class="local col6 decl" id="13356planes" title='planes' data-type='gulong *' data-ref="13356planes">planes</dfn>,</td></tr>
+<tr><th id="165">165</th><td>			  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>		 <dfn class="local col7 decl" id="13357nplanes" title='nplanes' data-type='gint' data-ref="13357nplanes">nplanes</dfn>,</td></tr>
+<tr><th id="166">166</th><td>			  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gulong" title='gulong' data-type='unsigned long' data-ref="gulong">gulong</a>	*<dfn class="local col8 decl" id="13358pixels" title='pixels' data-type='gulong *' data-ref="13358pixels">pixels</dfn>,</td></tr>
+<tr><th id="167">167</th><td>			  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>		 <dfn class="local col9 decl" id="13359npixels" title='npixels' data-type='gint' data-ref="13359npixels">npixels</dfn>);</td></tr>
+<tr><th id="168">168</th><td><em>void</em> <dfn class="decl" id="gdk_colors_free" title='gdk_colors_free' data-ref="gdk_colors_free">gdk_colors_free</dfn>	 (<a class="typedef" href="gdktypes.h.html#GdkColormap" title='GdkColormap' data-type='struct _GdkColormap' data-ref="GdkColormap">GdkColormap</a>	*<dfn class="local col0 decl" id="13360colormap" title='colormap' data-type='GdkColormap *' data-ref="13360colormap">colormap</dfn>,</td></tr>
+<tr><th id="169">169</th><td>			  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gulong" title='gulong' data-type='unsigned long' data-ref="gulong">gulong</a>	*<dfn class="local col1 decl" id="13361pixels" title='pixels' data-type='gulong *' data-ref="13361pixels">pixels</dfn>,</td></tr>
+<tr><th id="170">170</th><td>			  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>		 <dfn class="local col2 decl" id="13362npixels" title='npixels' data-type='gint' data-ref="13362npixels">npixels</dfn>,</td></tr>
+<tr><th id="171">171</th><td>			  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gulong" title='gulong' data-type='unsigned long' data-ref="gulong">gulong</a>	 <dfn class="local col3 decl" id="13363planes" title='planes' data-type='gulong' data-ref="13363planes">planes</dfn>);</td></tr>
+<tr><th id="172">172</th><td><u>#<span data-ppcond="160">endif</span> /* !GDK_DISABLE_DEPRECATED || GDK_COMPILATION */</u></td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="175">175</th><td></td></tr>
+<tr><th id="176">176</th><td><u>#<span data-ppcond="27">endif</span> /* __GDK_COLOR_H__ */</u></td></tr>
+<tr><th id="177">177</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

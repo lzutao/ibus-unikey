@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkstyle.h' l='637' type='void gtk_draw_resize_grip(GtkStyle * style, GdkWindow * window, GtkStateType state_type, GdkWindowEdge edge, gint x, gint y, gint width, gint height)'/>

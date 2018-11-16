@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtkitemfactory.h' l='79' ll='90'/>
+<size>200</size>
+<mbr r='_GtkItemFactoryClass::object_class' o='0' t='GtkObjectClass'/>
+<mbr r='_GtkItemFactoryClass::item_ht' o='1280' t='GHashTable *'/>
+<mbr r='_GtkItemFactoryClass::_gtk_reserved1' o='1344' t='void (*)()'/>
+<mbr r='_GtkItemFactoryClass::_gtk_reserved2' o='1408' t='void (*)()'/>
+<mbr r='_GtkItemFactoryClass::_gtk_reserved3' o='1472' t='void (*)()'/>
+<mbr r='_GtkItemFactoryClass::_gtk_reserved4' o='1536' t='void (*)()'/>

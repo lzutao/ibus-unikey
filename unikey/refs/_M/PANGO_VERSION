@@ -1,0 +1,6 @@
+<dec f='include/pango-1.0/pango/pango-utils.h' l='176'/>
+<doc f='include/pango-1.0/pango/pango-utils.h' l='171'>/**
+ * PANGO_VERSION_MICRO:
+ *
+ * The micro component of the version of Pango available at compile-time.
+ */</doc>

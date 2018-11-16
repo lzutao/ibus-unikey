@@ -1,0 +1,13 @@
+<def f='include/gtk-2.0/gdk/gdkcolor.h' l='46' ll='52'/>
+<size>12</size>
+<doc f='include/gtk-2.0/gdk/gdkcolor.h' l='39'>/* The color type.
+ *   A color consists of red, green and blue values in the
+ *    range 0-65535 and a pixel value. The pixel value is highly
+ *    dependent on the depth and colormap which this color will
+ *    be used to draw into. Therefore, sharing colors between
+ *    colormaps is a bad idea.
+ */</doc>
+<mbr r='_GdkColor::pixel' o='0' t='guint32'/>
+<mbr r='_GdkColor::red' o='32' t='guint16'/>
+<mbr r='_GdkColor::green' o='48' t='guint16'/>
+<mbr r='_GdkColor::blue' o='64' t='guint16'/>

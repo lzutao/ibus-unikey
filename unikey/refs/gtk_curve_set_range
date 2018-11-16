@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcurve.h' l='92' type='void gtk_curve_set_range(GtkCurve * curve, gfloat min_x, gfloat max_x, gfloat min_y, gfloat max_y)'/>

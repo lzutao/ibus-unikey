@@ -1,0 +1,12 @@
+<def f='include/ibus-1.0/ibuskeymap.h' l='98' ll='105'/>
+<size>7216</size>
+<doc f='include/ibus-1.0/ibuskeymap.h' l='91'>/**
+ * IBusKeymap:
+ * @name: The name of the keymap, such as &apos;us&apos;, &apos;jp&apos;.
+ * @keymap: Keymap table. IME developers normally don have to touch this.
+ *
+ * A keymap object in IBus.
+ */</doc>
+<mbr r='_IBusKeymap::parent' o='0' t='IBusObject'/>
+<mbr r='_IBusKeymap::name' o='320' t='gchar *'/>
+<mbr r='_IBusKeymap::keymap' o='384' t='guint [256][7]'/>

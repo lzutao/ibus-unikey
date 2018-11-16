@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1273' type='void gtk_widget_reset_shapes(GtkWidget * widget)'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='1272'>/* internal function */</doc>

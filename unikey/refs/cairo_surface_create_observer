@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='2248' type='cairo_surface_t * cairo_surface_create_observer(cairo_surface_t * target, cairo_surface_observer_mode_t mode)'/>

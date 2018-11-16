@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkframe.h' l='88' type='void gtk_frame_set_shadow_type(GtkFrame * frame, GtkShadowType type)'/>

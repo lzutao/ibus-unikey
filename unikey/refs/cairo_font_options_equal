@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='1403' type='cairo_bool_t cairo_font_options_equal(const cairo_font_options_t * options, const cairo_font_options_t * other)'/>

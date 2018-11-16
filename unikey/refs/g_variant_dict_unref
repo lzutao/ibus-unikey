@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/glib/gvariant.h' l='517' type='void g_variant_dict_unref(GVariantDict * dict)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='86' u='c' c='_ZL33glib_autoptr_cleanup_GVariantDictPP13_GVariantDict'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='86' u='r' c='_ZL37glib_listautoptr_cleanup_GVariantDictPP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='86' u='r' c='_ZL38glib_slistautoptr_cleanup_GVariantDictPP7_GSList'/>

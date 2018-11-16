@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='702' type='void gtk_clist_set_row_data_full(GtkCList * clist, gint row, gpointer data, GDestroyNotify destroy)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='701'>/* sets a data pointer for a given row with destroy notification */</doc>

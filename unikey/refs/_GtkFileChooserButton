@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkfilechooserbutton.h' l='44' ll='50'/>
+<size>136</size>
+<mbr r='_GtkFileChooserButton::parent' o='0' t='GtkHBox'/>
+<mbr r='_GtkFileChooserButton::priv' o='1024' t='GtkFileChooserButtonPrivate *'/>

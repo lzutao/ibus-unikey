@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h' l='493' type='void gdk_pixbuf_new_from_stream_at_scale_async(GInputStream * stream, gint width, gint height, gboolean preserve_aspect_ratio, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer user_data)'/>

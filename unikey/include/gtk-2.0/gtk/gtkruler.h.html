@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gtkruler.h source code [include/gtk-2.0/gtk/gtkruler.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gtk/gtkruler.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gtk</a>/<a href='gtkruler.h.html'>gtkruler.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GTK - The GIMP Toolkit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><i>/*</i></td></tr>
+<tr><th id="21">21</th><td><i> * Modified by the GTK+ Team and others 1997-2000.  See the AUTHORS</i></td></tr>
+<tr><th id="22">22</th><td><i> * file for a list of people on the GTK+ Team.  See the ChangeLog</i></td></tr>
+<tr><th id="23">23</th><td><i> * files for a list of changes.  These files are distributed with</i></td></tr>
+<tr><th id="24">24</th><td><i> * GTK+ at ftp://ftp.gtk.org/pub/gtk/.</i></td></tr>
+<tr><th id="25">25</th><td><i> */</i></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><i>/*</i></td></tr>
+<tr><th id="28">28</th><td><i> * NOTE this widget is considered too specialized/little-used for</i></td></tr>
+<tr><th id="29">29</th><td><i> * GTK+, and will in the future be moved to some other package.  If</i></td></tr>
+<tr><th id="30">30</th><td><i> * your application needs this widget, feel free to use it, as the</i></td></tr>
+<tr><th id="31">31</th><td><i> * widget does work and is useful in some applications; it's just not</i></td></tr>
+<tr><th id="32">32</th><td><i> * of general interest. However, we are not accepting new features for</i></td></tr>
+<tr><th id="33">33</th><td><i> * the widget, and it will eventually move out of the GTK+</i></td></tr>
+<tr><th id="34">34</th><td><i> * distribution.</i></td></tr>
+<tr><th id="35">35</th><td><i> */</i></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><u>#<span data-ppcond="37">if</span> defined(<span class="macro" data-ref="_M/GTK_DISABLE_SINGLE_INCLUDES">GTK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gtk.h.html#30" data-ref="_M/__GTK_H_INSIDE__">__GTK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GTK_COMPILATION">GTK_COMPILATION</span>)</u></td></tr>
+<tr><th id="38">38</th><td><u>#error "Only &lt;gtk/gtk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="39">39</th><td><u>#<span data-ppcond="37">endif</span></u></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><u>#<span data-ppcond="41">ifndef</span> <span class="macro" data-ref="_M/GTK_DISABLE_DEPRECATED">GTK_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><u>#<span data-ppcond="43">ifndef</span> <span class="macro" data-ref="_M/__GTK_RULER_H__">__GTK_RULER_H__</span></u></td></tr>
+<tr><th id="44">44</th><td><u>#define <dfn class="macro" id="_M/__GTK_RULER_H__" data-ref="_M/__GTK_RULER_H__">__GTK_RULER_H__</dfn></u></td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><u>#include <a href="gtkwidget.h.html">&lt;gtk/gtkwidget.h&gt;</a></u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><u>#define <dfn class="macro" id="_M/GTK_TYPE_RULER" data-ref="_M/GTK_TYPE_RULER">GTK_TYPE_RULER</dfn>            (gtk_ruler_get_type ())</u></td></tr>
+<tr><th id="53">53</th><td><u>#define <dfn class="macro" id="_M/GTK_RULER" data-ref="_M/GTK_RULER">GTK_RULER</dfn>(obj)            (G_TYPE_CHECK_INSTANCE_CAST ((obj), GTK_TYPE_RULER, GtkRuler))</u></td></tr>
+<tr><th id="54">54</th><td><u>#define <dfn class="macro" id="_M/GTK_RULER_CLASS" data-ref="_M/GTK_RULER_CLASS">GTK_RULER_CLASS</dfn>(klass)    (G_TYPE_CHECK_CLASS_CAST ((klass), GTK_TYPE_RULER, GtkRulerClass))</u></td></tr>
+<tr><th id="55">55</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_RULER" data-ref="_M/GTK_IS_RULER">GTK_IS_RULER</dfn>(obj)         (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GTK_TYPE_RULER))</u></td></tr>
+<tr><th id="56">56</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_RULER_CLASS" data-ref="_M/GTK_IS_RULER_CLASS">GTK_IS_RULER_CLASS</dfn>(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), GTK_TYPE_RULER))</u></td></tr>
+<tr><th id="57">57</th><td><u>#define <dfn class="macro" id="_M/GTK_RULER_GET_CLASS" data-ref="_M/GTK_RULER_GET_CLASS">GTK_RULER_GET_CLASS</dfn>(obj)  (G_TYPE_INSTANCE_GET_CLASS ((obj), GTK_TYPE_RULER, GtkRulerClass))</u></td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkRuler" title='_GtkRuler' data-ref="_GtkRuler">_GtkRuler</a>        <dfn class="typedef" id="GtkRuler" title='GtkRuler' data-type='struct _GtkRuler' data-ref="GtkRuler">GtkRuler</dfn>;</td></tr>
+<tr><th id="61">61</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkRulerClass" title='_GtkRulerClass' data-ref="_GtkRulerClass">_GtkRulerClass</a>   <dfn class="typedef" id="GtkRulerClass" title='GtkRulerClass' data-type='struct _GtkRulerClass' data-ref="GtkRulerClass">GtkRulerClass</dfn>;</td></tr>
+<tr><th id="62">62</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkRulerMetric" title='_GtkRulerMetric' data-ref="_GtkRulerMetric">_GtkRulerMetric</a>  <dfn class="typedef" id="GtkRulerMetric" title='GtkRulerMetric' data-type='struct _GtkRulerMetric' data-ref="GtkRulerMetric">GtkRulerMetric</dfn>;</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><i>/* All distances below are in 1/72nd's of an inch. (According to</i></td></tr>
+<tr><th id="65">65</th><td><i> * Adobe that's a point, but points are really 1/72.27 in.)</i></td></tr>
+<tr><th id="66">66</th><td><i> */</i></td></tr>
+<tr><th id="67">67</th><td><b>struct</b> <dfn class="type def" id="_GtkRuler" title='_GtkRuler' data-ref="_GtkRuler">_GtkRuler</dfn></td></tr>
+<tr><th id="68">68</th><td>{</td></tr>
+<tr><th id="69">69</th><td>  <a class="typedef" href="gtkstyle.h.html#GtkWidget" title='GtkWidget' data-type='struct _GtkWidget' data-ref="GtkWidget">GtkWidget</a> <dfn class="decl" id="_GtkRuler::widget" title='_GtkRuler::widget' data-ref="_GtkRuler::widget">widget</dfn>;</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td>  <a class="typedef" href="../gdk/gdktypes.h.html#GdkPixmap" title='GdkPixmap' data-type='struct _GdkDrawable' data-ref="GdkPixmap">GdkPixmap</a> *<span class="macro" title="backing_store" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkRuler::backing_store" title='_GtkRuler::backing_store' data-ref="_GtkRuler::backing_store">backing_store</dfn>);</td></tr>
+<tr><th id="72">72</th><td>  <a class="typedef" href="../gdk/gdktypes.h.html#GdkGC" title='GdkGC' data-type='struct _GdkGC' data-ref="GdkGC">GdkGC</a> *<span class="macro" title="non_gr_exp_gc" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkRuler::non_gr_exp_gc" title='_GtkRuler::non_gr_exp_gc' data-ref="_GtkRuler::non_gr_exp_gc">non_gr_exp_gc</dfn>);		<i>/* unused */</i></td></tr>
+<tr><th id="73">73</th><td>  <a class="typedef" href="#GtkRulerMetric" title='GtkRulerMetric' data-type='struct _GtkRulerMetric' data-ref="GtkRulerMetric">GtkRulerMetric</a> *<span class="macro" title="metric" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkRuler::metric" title='_GtkRuler::metric' data-ref="_GtkRuler::metric">metric</dfn>);</td></tr>
+<tr><th id="74">74</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <span class="macro" title="xsrc" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkRuler::xsrc" title='_GtkRuler::xsrc' data-ref="_GtkRuler::xsrc">xsrc</dfn>);</td></tr>
+<tr><th id="75">75</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <span class="macro" title="ysrc" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkRuler::ysrc" title='_GtkRuler::ysrc' data-ref="_GtkRuler::ysrc">ysrc</dfn>);</td></tr>
+<tr><th id="76">76</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <span class="macro" title="slider_size" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkRuler::slider_size" title='_GtkRuler::slider_size' data-ref="_GtkRuler::slider_size">slider_size</dfn>);</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td>  <i>/* The upper limit of the ruler (in points) */</i></td></tr>
+<tr><th id="79">79</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <span class="macro" title="lower" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkRuler::lower" title='_GtkRuler::lower' data-ref="_GtkRuler::lower">lower</dfn>);</td></tr>
+<tr><th id="80">80</th><td>  <i>/* The lower limit of the ruler */</i></td></tr>
+<tr><th id="81">81</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <span class="macro" title="upper" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkRuler::upper" title='_GtkRuler::upper' data-ref="_GtkRuler::upper">upper</dfn>);</td></tr>
+<tr><th id="82">82</th><td>  <i>/* The position of the mark on the ruler */</i></td></tr>
+<tr><th id="83">83</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <span class="macro" title="position" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkRuler::position" title='_GtkRuler::position' data-ref="_GtkRuler::position">position</dfn>);</td></tr>
+<tr><th id="84">84</th><td>  <i>/* The maximum size of the ruler */</i></td></tr>
+<tr><th id="85">85</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <span class="macro" title="max_size" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkRuler::max_size" title='_GtkRuler::max_size' data-ref="_GtkRuler::max_size">max_size</dfn>);</td></tr>
+<tr><th id="86">86</th><td>};</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td><b>struct</b> <dfn class="type def" id="_GtkRulerClass" title='_GtkRulerClass' data-ref="_GtkRulerClass">_GtkRulerClass</dfn></td></tr>
+<tr><th id="89">89</th><td>{</td></tr>
+<tr><th id="90">90</th><td>  <a class="typedef" href="gtkwidget.h.html#GtkWidgetClass" title='GtkWidgetClass' data-type='struct _GtkWidgetClass' data-ref="GtkWidgetClass">GtkWidgetClass</a> <dfn class="decl" id="_GtkRulerClass::parent_class" title='_GtkRulerClass::parent_class' data-ref="_GtkRulerClass::parent_class">parent_class</dfn>;</td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td>  <em>void</em> (* <dfn class="decl" id="_GtkRulerClass::draw_ticks" title='_GtkRulerClass::draw_ticks' data-ref="_GtkRulerClass::draw_ticks">draw_ticks</dfn>) (<a class="typedef" href="#GtkRuler" title='GtkRuler' data-type='struct _GtkRuler' data-ref="GtkRuler">GtkRuler</a> *<dfn class="local col0 decl" id="21480ruler" title='ruler' data-type='GtkRuler *' data-ref="21480ruler">ruler</dfn>);</td></tr>
+<tr><th id="93">93</th><td>  <em>void</em> (* <dfn class="decl" id="_GtkRulerClass::draw_pos" title='_GtkRulerClass::draw_pos' data-ref="_GtkRulerClass::draw_pos">draw_pos</dfn>)   (<a class="typedef" href="#GtkRuler" title='GtkRuler' data-type='struct _GtkRuler' data-ref="GtkRuler">GtkRuler</a> *<dfn class="local col1 decl" id="21481ruler" title='ruler' data-type='GtkRuler *' data-ref="21481ruler">ruler</dfn>);</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td>  <i>/* Padding for future expansion */</i></td></tr>
+<tr><th id="96">96</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkRulerClass::_gtk_reserved1" title='_GtkRulerClass::_gtk_reserved1' data-ref="_GtkRulerClass::_gtk_reserved1">_gtk_reserved1</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="97">97</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkRulerClass::_gtk_reserved2" title='_GtkRulerClass::_gtk_reserved2' data-ref="_GtkRulerClass::_gtk_reserved2">_gtk_reserved2</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="98">98</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkRulerClass::_gtk_reserved3" title='_GtkRulerClass::_gtk_reserved3' data-ref="_GtkRulerClass::_gtk_reserved3">_gtk_reserved3</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="99">99</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkRulerClass::_gtk_reserved4" title='_GtkRulerClass::_gtk_reserved4' data-ref="_GtkRulerClass::_gtk_reserved4">_gtk_reserved4</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="100">100</th><td>};</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td><b>struct</b> <dfn class="type def" id="_GtkRulerMetric" title='_GtkRulerMetric' data-ref="_GtkRulerMetric">_GtkRulerMetric</dfn></td></tr>
+<tr><th id="103">103</th><td>{</td></tr>
+<tr><th id="104">104</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="decl" id="_GtkRulerMetric::metric_name" title='_GtkRulerMetric::metric_name' data-ref="_GtkRulerMetric::metric_name">metric_name</dfn>;</td></tr>
+<tr><th id="105">105</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="decl" id="_GtkRulerMetric::abbrev" title='_GtkRulerMetric::abbrev' data-ref="_GtkRulerMetric::abbrev">abbrev</dfn>;</td></tr>
+<tr><th id="106">106</th><td>  <i>/* This should be points_per_unit. This is the size of the unit</i></td></tr>
+<tr><th id="107">107</th><td><i>   * in 1/72nd's of an inch and has nothing to do with screen pixels */</i></td></tr>
+<tr><th id="108">108</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <dfn class="decl" id="_GtkRulerMetric::pixels_per_unit" title='_GtkRulerMetric::pixels_per_unit' data-ref="_GtkRulerMetric::pixels_per_unit">pixels_per_unit</dfn>;</td></tr>
+<tr><th id="109">109</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <dfn class="decl" id="_GtkRulerMetric::ruler_scale" title='_GtkRulerMetric::ruler_scale' data-ref="_GtkRulerMetric::ruler_scale">ruler_scale</dfn>[<var>10</var>];</td></tr>
+<tr><th id="110">110</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="_GtkRulerMetric::subdivide" title='_GtkRulerMetric::subdivide' data-ref="_GtkRulerMetric::subdivide">subdivide</dfn>[<var>5</var>];        <i>/* five possible modes of subdivision */</i></td></tr>
+<tr><th id="111">111</th><td>};</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>           <dfn class="decl" id="gtk_ruler_get_type" title='gtk_ruler_get_type' data-ref="gtk_ruler_get_type">gtk_ruler_get_type</dfn>   (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="115">115</th><td><em>void</em>            <dfn class="decl" id="gtk_ruler_set_metric" title='gtk_ruler_set_metric' data-ref="gtk_ruler_set_metric">gtk_ruler_set_metric</dfn> (<a class="typedef" href="#GtkRuler" title='GtkRuler' data-type='struct _GtkRuler' data-ref="GtkRuler">GtkRuler</a>       *<dfn class="local col2 decl" id="21482ruler" title='ruler' data-type='GtkRuler *' data-ref="21482ruler">ruler</dfn>,</td></tr>
+<tr><th id="116">116</th><td>                                      <a class="typedef" href="gtkenums.h.html#GtkMetricType" title='GtkMetricType' data-type='enum GtkMetricType' data-ref="GtkMetricType">GtkMetricType</a>   <dfn class="local col3 decl" id="21483metric" title='metric' data-type='GtkMetricType' data-ref="21483metric">metric</dfn>);</td></tr>
+<tr><th id="117">117</th><td><a class="typedef" href="gtkenums.h.html#GtkMetricType" title='GtkMetricType' data-type='enum GtkMetricType' data-ref="GtkMetricType">GtkMetricType</a>   <dfn class="decl" id="gtk_ruler_get_metric" title='gtk_ruler_get_metric' data-ref="gtk_ruler_get_metric">gtk_ruler_get_metric</dfn> (<a class="typedef" href="#GtkRuler" title='GtkRuler' data-type='struct _GtkRuler' data-ref="GtkRuler">GtkRuler</a>       *<dfn class="local col4 decl" id="21484ruler" title='ruler' data-type='GtkRuler *' data-ref="21484ruler">ruler</dfn>);</td></tr>
+<tr><th id="118">118</th><td><em>void</em>            <dfn class="decl" id="gtk_ruler_set_range" title='gtk_ruler_set_range' data-ref="gtk_ruler_set_range">gtk_ruler_set_range</dfn>  (<a class="typedef" href="#GtkRuler" title='GtkRuler' data-type='struct _GtkRuler' data-ref="GtkRuler">GtkRuler</a>       *<dfn class="local col5 decl" id="21485ruler" title='ruler' data-type='GtkRuler *' data-ref="21485ruler">ruler</dfn>,</td></tr>
+<tr><th id="119">119</th><td>                                      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>         <dfn class="local col6 decl" id="21486lower" title='lower' data-type='gdouble' data-ref="21486lower">lower</dfn>,</td></tr>
+<tr><th id="120">120</th><td>                                      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>         <dfn class="local col7 decl" id="21487upper" title='upper' data-type='gdouble' data-ref="21487upper">upper</dfn>,</td></tr>
+<tr><th id="121">121</th><td>                                      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>         <dfn class="local col8 decl" id="21488position" title='position' data-type='gdouble' data-ref="21488position">position</dfn>,</td></tr>
+<tr><th id="122">122</th><td>                                      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>         <dfn class="local col9 decl" id="21489max_size" title='max_size' data-type='gdouble' data-ref="21489max_size">max_size</dfn>);</td></tr>
+<tr><th id="123">123</th><td><em>void</em>            <dfn class="decl" id="gtk_ruler_get_range" title='gtk_ruler_get_range' data-ref="gtk_ruler_get_range">gtk_ruler_get_range</dfn>  (<a class="typedef" href="#GtkRuler" title='GtkRuler' data-type='struct _GtkRuler' data-ref="GtkRuler">GtkRuler</a>       *<dfn class="local col0 decl" id="21490ruler" title='ruler' data-type='GtkRuler *' data-ref="21490ruler">ruler</dfn>,</td></tr>
+<tr><th id="124">124</th><td>                                      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>        *<dfn class="local col1 decl" id="21491lower" title='lower' data-type='gdouble *' data-ref="21491lower">lower</dfn>,</td></tr>
+<tr><th id="125">125</th><td>                                      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>        *<dfn class="local col2 decl" id="21492upper" title='upper' data-type='gdouble *' data-ref="21492upper">upper</dfn>,</td></tr>
+<tr><th id="126">126</th><td>                                      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>        *<dfn class="local col3 decl" id="21493position" title='position' data-type='gdouble *' data-ref="21493position">position</dfn>,</td></tr>
+<tr><th id="127">127</th><td>                                      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>        *<dfn class="local col4 decl" id="21494max_size" title='max_size' data-type='gdouble *' data-ref="21494max_size">max_size</dfn>);</td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td><em>void</em>            <dfn class="decl" id="gtk_ruler_draw_ticks" title='gtk_ruler_draw_ticks' data-ref="gtk_ruler_draw_ticks">gtk_ruler_draw_ticks</dfn> (<a class="typedef" href="#GtkRuler" title='GtkRuler' data-type='struct _GtkRuler' data-ref="GtkRuler">GtkRuler</a>       *<dfn class="local col5 decl" id="21495ruler" title='ruler' data-type='GtkRuler *' data-ref="21495ruler">ruler</dfn>);</td></tr>
+<tr><th id="130">130</th><td><em>void</em>            <dfn class="decl" id="gtk_ruler_draw_pos" title='gtk_ruler_draw_pos' data-ref="gtk_ruler_draw_pos">gtk_ruler_draw_pos</dfn>   (<a class="typedef" href="#GtkRuler" title='GtkRuler' data-type='struct _GtkRuler' data-ref="GtkRuler">GtkRuler</a>       *<dfn class="local col6 decl" id="21496ruler" title='ruler' data-type='GtkRuler *' data-ref="21496ruler">ruler</dfn>);</td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td><u>#<span data-ppcond="43">endif</span> /* __GTK_RULER_H__ */</u></td></tr>
+<tr><th id="135">135</th><td></td></tr>
+<tr><th id="136">136</th><td><u>#<span data-ppcond="41">endif</span> /* GTK_DISABLE_DEPRECATED */</u></td></tr>
+<tr><th id="137">137</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

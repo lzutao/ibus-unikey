@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuslookuptable.h' l='143' type='guint ibus_lookup_table_get_number_of_candidates(IBusLookupTable * table)'/>
+<doc f='include/ibus-1.0/ibuslookuptable.h' l='135'>/**
+ * ibus_lookup_table_get_number_of_candidates:
+ * @table: An IBusLookupTable.
+ *
+ * Return the number of candidate in the table.
+ *
+ * Returns: The number of candidates in the table
+ */</doc>

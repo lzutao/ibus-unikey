@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkstyle.h' l='754' type='void gtk_paint_tab(GtkStyle * style, GdkWindow * window, GtkStateType state_type, GtkShadowType shadow_type, const GdkRectangle * area, GtkWidget * widget, const gchar * detail, gint x, gint y, gint width, gint height)'/>

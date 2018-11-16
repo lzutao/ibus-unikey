@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkscreen.h' l='74' type='GdkVisual * gdk_screen_get_system_visual(GdkScreen * screen)'/>

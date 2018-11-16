@@ -1,0 +1,2 @@
+<dec f='include/atk-1.0/atk/atktable.h' l='46' type='AtkObject *(*)(AtkTable *, gint, gint)'/>
+<offset>128</offset>

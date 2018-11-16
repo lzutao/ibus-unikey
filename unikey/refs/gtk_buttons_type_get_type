@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='220' type='GType gtk_buttons_type_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='219'>/* enumerations from &quot;gtkmessagedialog.h&quot; */</doc>

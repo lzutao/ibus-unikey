@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-font.h' l='558' type='PangoCoverage * pango_font_get_coverage(PangoFont * font, PangoLanguage * language)'/>

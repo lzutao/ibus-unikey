@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtktoolitem.h' l='48' ll='54'/>
+<size>128</size>
+<mbr r='_GtkToolItem::parent' o='0' t='GtkBin'/>
+<mbr r='_GtkToolItem::priv' o='960' t='GtkToolItemPrivate *'/>

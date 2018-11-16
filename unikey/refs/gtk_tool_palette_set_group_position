@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktoolpalette.h' l='91' type='void gtk_tool_palette_set_group_position(GtkToolPalette * palette, GtkToolItemGroup * group, gint position)'/>

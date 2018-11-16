@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktreemodel.h' l='198' type='gboolean gtk_tree_model_get_iter(GtkTreeModel * tree_model, GtkTreeIter * iter, GtkTreePath * path)'/>
+<doc f='include/gtk-2.0/gtk/gtktreemodel.h' l='197'>/* Iterator movement */</doc>

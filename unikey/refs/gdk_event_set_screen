@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkevents.h' l='548' type='void gdk_event_set_screen(GdkEvent * event, GdkScreen * screen)'/>

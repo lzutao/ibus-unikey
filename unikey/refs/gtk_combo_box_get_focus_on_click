@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcombobox.h' l='95' type='gboolean gtk_combo_box_get_focus_on_click(GtkComboBox * combo)'/>

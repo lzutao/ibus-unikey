@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkpixmap.h' l='90' type='GdkPixmap * gdk_pixmap_colormap_create_from_xpm(GdkDrawable * drawable, GdkColormap * colormap, GdkBitmap ** mask, const GdkColor * transparent_color, const gchar * filename)'/>

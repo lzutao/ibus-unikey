@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkcolorsel.h' l='125' type='void gtk_color_selection_set_color(GtkColorSelection * colorsel, gdouble * color)'/>
+<doc f='include/gtk-2.0/gtk/gtkcolorsel.h' l='124'>/* Deprecated calls: */</doc>

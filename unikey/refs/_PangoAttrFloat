@@ -1,0 +1,12 @@
+<def f='include/pango-1.0/pango/pango-attributes.h' l='345' ll='349'/>
+<size>24</size>
+<doc f='include/pango-1.0/pango/pango-attributes.h' l='337'>/**
+ * PangoAttrFloat:
+ * @attr: the common portion of the attribute
+ * @value: the value of the attribute
+ *
+ * The #PangoAttrFloat structure is used to represent attributes with
+ * a float or double value.
+ */</doc>
+<mbr r='_PangoAttrFloat::attr' o='0' t='PangoAttribute'/>
+<mbr r='_PangoAttrFloat::value' o='128' t='double'/>

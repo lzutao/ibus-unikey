@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='469' type='void gtk_clist_set_reorderable(GtkCList * clist, gboolean reorderable)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='468'>/* enable clists reorder ability */</doc>

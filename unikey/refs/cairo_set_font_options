@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='1454' type='void cairo_set_font_options(cairo_t * cr, const cairo_font_options_t * options)'/>

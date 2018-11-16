@@ -1,0 +1,26 @@
+<def f='include/pango-1.0/pango/pango-item.h' l='67' ll='81'/>
+<size>48</size>
+<doc f='include/pango-1.0/pango/pango-item.h' l='52'>/**
+ * PangoAnalysis:
+ * @shape_engine: the engine for doing rendering-system-dependent processing.
+ * @lang_engine: the engine for doing rendering-system-independent processing.
+ * @font: the font for this segment.
+ * @level: the bidirectional level for this segment.
+ * @gravity: the glyph orientation for this segment (A #PangoGravity).
+ * @flags: boolean flags for this segment (currently only one) (Since: 1.16).
+ * @script: the detected script for this segment (A #PangoScript) (Since: 1.18).
+ * @language: the detected language for this segment.
+ * @extra_attrs: extra attributes for this segment.
+ *
+ * The #PangoAnalysis structure stores information about
+ * the properties of a segment of text.
+ */</doc>
+<mbr r='_PangoAnalysis::shape_engine' o='0' t='PangoEngineShape *'/>
+<mbr r='_PangoAnalysis::lang_engine' o='64' t='PangoEngineLang *'/>
+<mbr r='_PangoAnalysis::font' o='128' t='PangoFont *'/>
+<mbr r='_PangoAnalysis::level' o='192' t='guint8'/>
+<mbr r='_PangoAnalysis::gravity' o='200' t='guint8'/>
+<mbr r='_PangoAnalysis::flags' o='208' t='guint8'/>
+<mbr r='_PangoAnalysis::script' o='216' t='guint8'/>
+<mbr r='_PangoAnalysis::language' o='256' t='PangoLanguage *'/>
+<mbr r='_PangoAnalysis::extra_attrs' o='320' t='GSList *'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktestutils.h' l='67' type='GtkWidget * gtk_test_find_label(GtkWidget * widget, const gchar * label_pattern)'/>

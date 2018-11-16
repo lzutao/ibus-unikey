@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkactivatable.h' l='76' type='GtkAction * gtk_activatable_get_related_action(GtkActivatable * activatable)'/>

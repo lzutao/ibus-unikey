@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gdk/gdkpango.h' l='148' ll='152'/>
+<size>24</size>
+<mbr r='_GdkPangoAttrEmbossed::attr' o='0' t='PangoAttribute'/>
+<mbr r='_GdkPangoAttrEmbossed::embossed' o='128' t='gboolean'/>

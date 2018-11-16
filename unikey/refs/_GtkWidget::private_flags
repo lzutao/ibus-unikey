@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='545' type='guint16'/>
+<offset>256</offset>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='540'>/* 16 bits of internally used private flags.
+   * this will be packed into the same 4 byte alignment frame that
+   * state and saved_state go. we therefore don&apos;t waste any new
+   * space on this.
+   */</doc>

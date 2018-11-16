@@ -1,0 +1,2 @@
+<dec f='include/glib-2.0/gobject/gtype.h' l='1267' type='GType g_type_register_static_simple(GType parent_type, const gchar * type_name, guint class_size, GClassInitFunc class_init, guint instance_size, GInstanceInitFunc instance_init, GTypeFlags flags)'/>
+<use f='unikey/src/engine.cpp' l='66' macro='1' u='c'/>

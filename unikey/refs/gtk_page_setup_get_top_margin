@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkpagesetup.h' l='49' type='gdouble gtk_page_setup_get_top_margin(GtkPageSetup * setup, GtkUnit unit)'/>

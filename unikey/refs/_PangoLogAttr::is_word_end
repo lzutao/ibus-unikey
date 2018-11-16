@@ -1,0 +1,3 @@
+<dec f='include/pango-1.0/pango/pango-break.h' l='107' type='guint'/>
+<offset>6</offset>
+<doc f='include/pango-1.0/pango/pango-break.h' l='107'>/* is first non-word char after a word */</doc>

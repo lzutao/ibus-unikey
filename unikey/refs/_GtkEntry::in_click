@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='96' type='guint'/>
+<offset>1221</offset>
+<doc f='include/gtk-2.0/gtk/gtkentry.h' l='96'>/* Flag so we don&apos;t select all when clicking in entry to focus in */</doc>

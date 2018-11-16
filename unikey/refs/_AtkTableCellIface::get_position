@@ -1,0 +1,2 @@
+<dec f='include/atk-1.0/atk/atktablecell.h' l='65' type='gboolean (*)(AtkTableCell *, gint *, gint *)'/>
+<offset>256</offset>

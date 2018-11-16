@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreemodel.h' l='208' type='GtkTreePath * gtk_tree_model_get_path(GtkTreeModel * tree_model, GtkTreeIter * iter)'/>

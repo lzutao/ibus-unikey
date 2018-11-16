@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='129' type='void gtk_accel_group_connect(GtkAccelGroup * accel_group, guint accel_key, GdkModifierType accel_mods, GtkAccelFlags accel_flags, GClosure * closure)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrange.h' l='164' type='void gtk_range_get_range_rect(GtkRange * range, GdkRectangle * range_rect)'/>

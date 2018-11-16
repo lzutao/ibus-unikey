@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gtkprogressbar.h source code [include/gtk-2.0/gtk/gtkprogressbar.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gtk/gtkprogressbar.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gtk</a>/<a href='gtkprogressbar.h.html'>gtkprogressbar.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GTK - The GIMP Toolkit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><i>/*</i></td></tr>
+<tr><th id="21">21</th><td><i> * Modified by the GTK+ Team and others 1997-2000.  See the AUTHORS</i></td></tr>
+<tr><th id="22">22</th><td><i> * file for a list of people on the GTK+ Team.  See the ChangeLog</i></td></tr>
+<tr><th id="23">23</th><td><i> * files for a list of changes.  These files are distributed with</i></td></tr>
+<tr><th id="24">24</th><td><i> * GTK+ at ftp://ftp.gtk.org/pub/gtk/.</i></td></tr>
+<tr><th id="25">25</th><td><i> */</i></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/__GTK_PROGRESS_BAR_H__">__GTK_PROGRESS_BAR_H__</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/__GTK_PROGRESS_BAR_H__" data-ref="_M/__GTK_PROGRESS_BAR_H__">__GTK_PROGRESS_BAR_H__</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#<span data-ppcond="31">if</span> defined(<span class="macro" data-ref="_M/GTK_DISABLE_SINGLE_INCLUDES">GTK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gtk.h.html#30" data-ref="_M/__GTK_H_INSIDE__">__GTK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GTK_COMPILATION">GTK_COMPILATION</span>)</u></td></tr>
+<tr><th id="32">32</th><td><u>#error "Only &lt;gtk/gtk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="33">33</th><td><u>#<span data-ppcond="31">endif</span></u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><u>#include <a href="gtkprogress.h.html">&lt;gtk/gtkprogress.h&gt;</a></u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><u>#define <dfn class="macro" id="_M/GTK_TYPE_PROGRESS_BAR" data-ref="_M/GTK_TYPE_PROGRESS_BAR">GTK_TYPE_PROGRESS_BAR</dfn>            (gtk_progress_bar_get_type ())</u></td></tr>
+<tr><th id="41">41</th><td><u>#define <dfn class="macro" id="_M/GTK_PROGRESS_BAR" data-ref="_M/GTK_PROGRESS_BAR">GTK_PROGRESS_BAR</dfn>(obj)            (G_TYPE_CHECK_INSTANCE_CAST ((obj), GTK_TYPE_PROGRESS_BAR, GtkProgressBar))</u></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/GTK_PROGRESS_BAR_CLASS" data-ref="_M/GTK_PROGRESS_BAR_CLASS">GTK_PROGRESS_BAR_CLASS</dfn>(klass)    (G_TYPE_CHECK_CLASS_CAST ((klass), GTK_TYPE_PROGRESS_BAR, GtkProgressBarClass))</u></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_PROGRESS_BAR" data-ref="_M/GTK_IS_PROGRESS_BAR">GTK_IS_PROGRESS_BAR</dfn>(obj)         (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GTK_TYPE_PROGRESS_BAR))</u></td></tr>
+<tr><th id="44">44</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_PROGRESS_BAR_CLASS" data-ref="_M/GTK_IS_PROGRESS_BAR_CLASS">GTK_IS_PROGRESS_BAR_CLASS</dfn>(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), GTK_TYPE_PROGRESS_BAR))</u></td></tr>
+<tr><th id="45">45</th><td><u>#define <dfn class="macro" id="_M/GTK_PROGRESS_BAR_GET_CLASS" data-ref="_M/GTK_PROGRESS_BAR_GET_CLASS">GTK_PROGRESS_BAR_GET_CLASS</dfn>(obj)  (G_TYPE_INSTANCE_GET_CLASS ((obj), GTK_TYPE_PROGRESS_BAR, GtkProgressBarClass))</u></td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkProgressBar" title='_GtkProgressBar' data-ref="_GtkProgressBar">_GtkProgressBar</a>       <dfn class="typedef" id="GtkProgressBar" title='GtkProgressBar' data-type='struct _GtkProgressBar' data-ref="GtkProgressBar">GtkProgressBar</dfn>;</td></tr>
+<tr><th id="49">49</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkProgressBarClass" title='_GtkProgressBarClass' data-ref="_GtkProgressBarClass">_GtkProgressBarClass</a>  <dfn class="typedef" id="GtkProgressBarClass" title='GtkProgressBarClass' data-type='struct _GtkProgressBarClass' data-ref="GtkProgressBarClass">GtkProgressBarClass</dfn>;</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="52">52</th><td>{</td></tr>
+<tr><th id="53">53</th><td>  <dfn class="enum" id="GTK_PROGRESS_CONTINUOUS" title='GTK_PROGRESS_CONTINUOUS' data-ref="GTK_PROGRESS_CONTINUOUS">GTK_PROGRESS_CONTINUOUS</dfn>,</td></tr>
+<tr><th id="54">54</th><td>  <dfn class="enum" id="GTK_PROGRESS_DISCRETE" title='GTK_PROGRESS_DISCRETE' data-ref="GTK_PROGRESS_DISCRETE">GTK_PROGRESS_DISCRETE</dfn></td></tr>
+<tr><th id="55">55</th><td>} <dfn class="typedef" id="GtkProgressBarStyle" title='GtkProgressBarStyle' data-type='enum GtkProgressBarStyle' data-ref="GtkProgressBarStyle">GtkProgressBarStyle</dfn>;</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="58">58</th><td>{</td></tr>
+<tr><th id="59">59</th><td>  <dfn class="enum" id="GTK_PROGRESS_LEFT_TO_RIGHT" title='GTK_PROGRESS_LEFT_TO_RIGHT' data-ref="GTK_PROGRESS_LEFT_TO_RIGHT">GTK_PROGRESS_LEFT_TO_RIGHT</dfn>,</td></tr>
+<tr><th id="60">60</th><td>  <dfn class="enum" id="GTK_PROGRESS_RIGHT_TO_LEFT" title='GTK_PROGRESS_RIGHT_TO_LEFT' data-ref="GTK_PROGRESS_RIGHT_TO_LEFT">GTK_PROGRESS_RIGHT_TO_LEFT</dfn>,</td></tr>
+<tr><th id="61">61</th><td>  <dfn class="enum" id="GTK_PROGRESS_BOTTOM_TO_TOP" title='GTK_PROGRESS_BOTTOM_TO_TOP' data-ref="GTK_PROGRESS_BOTTOM_TO_TOP">GTK_PROGRESS_BOTTOM_TO_TOP</dfn>,</td></tr>
+<tr><th id="62">62</th><td>  <dfn class="enum" id="GTK_PROGRESS_TOP_TO_BOTTOM" title='GTK_PROGRESS_TOP_TO_BOTTOM' data-ref="GTK_PROGRESS_TOP_TO_BOTTOM">GTK_PROGRESS_TOP_TO_BOTTOM</dfn></td></tr>
+<tr><th id="63">63</th><td>} <dfn class="typedef" id="GtkProgressBarOrientation" title='GtkProgressBarOrientation' data-type='enum GtkProgressBarOrientation' data-ref="GtkProgressBarOrientation">GtkProgressBarOrientation</dfn>;</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><b>struct</b> <dfn class="type def" id="_GtkProgressBar" title='_GtkProgressBar' data-ref="_GtkProgressBar">_GtkProgressBar</dfn></td></tr>
+<tr><th id="66">66</th><td>{</td></tr>
+<tr><th id="67">67</th><td>  <a class="typedef" href="gtkprogress.h.html#GtkProgress" title='GtkProgress' data-type='struct _GtkProgress' data-ref="GtkProgress">GtkProgress</a> <dfn class="decl" id="_GtkProgressBar::progress" title='_GtkProgressBar::progress' data-ref="_GtkProgressBar::progress">progress</dfn>;</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td>  <a class="typedef" href="#GtkProgressBarStyle" title='GtkProgressBarStyle' data-type='enum GtkProgressBarStyle' data-ref="GtkProgressBarStyle">GtkProgressBarStyle</a>       <span class="macro" title="bar_style" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkProgressBar::bar_style" title='_GtkProgressBar::bar_style' data-ref="_GtkProgressBar::bar_style">bar_style</dfn>);</td></tr>
+<tr><th id="70">70</th><td>  <a class="typedef" href="#GtkProgressBarOrientation" title='GtkProgressBarOrientation' data-type='enum GtkProgressBarOrientation' data-ref="GtkProgressBarOrientation">GtkProgressBarOrientation</a> <span class="macro" title="orientation" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkProgressBar::orientation" title='_GtkProgressBar::orientation' data-ref="_GtkProgressBar::orientation">orientation</dfn>);</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <span class="macro" title="blocks" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkProgressBar::blocks" title='_GtkProgressBar::blocks' data-ref="_GtkProgressBar::blocks">blocks</dfn>);</td></tr>
+<tr><th id="73">73</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>  <span class="macro" title="in_block" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkProgressBar::in_block" title='_GtkProgressBar::in_block' data-ref="_GtkProgressBar::in_block">in_block</dfn>);</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>  <span class="macro" title="activity_pos" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkProgressBar::activity_pos" title='_GtkProgressBar::activity_pos' data-ref="_GtkProgressBar::activity_pos">activity_pos</dfn>);</td></tr>
+<tr><th id="76">76</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <span class="macro" title="activity_step" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkProgressBar::activity_step" title='_GtkProgressBar::activity_step' data-ref="_GtkProgressBar::activity_step">activity_step</dfn>);</td></tr>
+<tr><th id="77">77</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <span class="macro" title="activity_blocks" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkProgressBar::activity_blocks" title='_GtkProgressBar::activity_blocks' data-ref="_GtkProgressBar::activity_blocks">activity_blocks</dfn>);</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <span class="macro" title="pulse_fraction" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkProgressBar::pulse_fraction" title='_GtkProgressBar::pulse_fraction' data-ref="_GtkProgressBar::pulse_fraction">pulse_fraction</dfn>);</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <span class="macro" title="activity_dir" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkProgressBar::activity_dir" title='_GtkProgressBar::activity_dir' data-ref="_GtkProgressBar::activity_dir">activity_dir</dfn>) : <var>1</var>;</td></tr>
+<tr><th id="82">82</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <span class="macro" title="ellipsize" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkProgressBar::ellipsize" title='_GtkProgressBar::ellipsize' data-ref="_GtkProgressBar::ellipsize">ellipsize</dfn>) : <var>3</var>;</td></tr>
+<tr><th id="83">83</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <span class="macro" title="dirty" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkProgressBar::dirty" title='_GtkProgressBar::dirty' data-ref="_GtkProgressBar::dirty">dirty</dfn>) : <var>1</var>;</td></tr>
+<tr><th id="84">84</th><td>};</td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td><b>struct</b> <dfn class="type def" id="_GtkProgressBarClass" title='_GtkProgressBarClass' data-ref="_GtkProgressBarClass">_GtkProgressBarClass</dfn></td></tr>
+<tr><th id="87">87</th><td>{</td></tr>
+<tr><th id="88">88</th><td>  <a class="typedef" href="gtkprogress.h.html#GtkProgressClass" title='GtkProgressClass' data-type='struct _GtkProgressClass' data-ref="GtkProgressClass">GtkProgressClass</a> <dfn class="decl" id="_GtkProgressBarClass::parent_class" title='_GtkProgressBarClass::parent_class' data-ref="_GtkProgressBarClass::parent_class">parent_class</dfn>;</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td>  <i>/* Padding for future expansion */</i></td></tr>
+<tr><th id="91">91</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkProgressBarClass::_gtk_reserved1" title='_GtkProgressBarClass::_gtk_reserved1' data-ref="_GtkProgressBarClass::_gtk_reserved1">_gtk_reserved1</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="92">92</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkProgressBarClass::_gtk_reserved2" title='_GtkProgressBarClass::_gtk_reserved2' data-ref="_GtkProgressBarClass::_gtk_reserved2">_gtk_reserved2</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="93">93</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkProgressBarClass::_gtk_reserved3" title='_GtkProgressBarClass::_gtk_reserved3' data-ref="_GtkProgressBarClass::_gtk_reserved3">_gtk_reserved3</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="94">94</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkProgressBarClass::_gtk_reserved4" title='_GtkProgressBarClass::_gtk_reserved4' data-ref="_GtkProgressBarClass::_gtk_reserved4">_gtk_reserved4</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="95">95</th><td>};</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>      <dfn class="decl" id="gtk_progress_bar_get_type" title='gtk_progress_bar_get_type' data-ref="gtk_progress_bar_get_type">gtk_progress_bar_get_type</dfn>             (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="99">99</th><td><a class="typedef" href="gtkstyle.h.html#GtkWidget" title='GtkWidget' data-type='struct _GtkWidget' data-ref="GtkWidget">GtkWidget</a>* <dfn class="decl" id="gtk_progress_bar_new" title='gtk_progress_bar_new' data-ref="gtk_progress_bar_new">gtk_progress_bar_new</dfn>                  (<em>void</em>);</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td><i>/*</i></td></tr>
+<tr><th id="102">102</th><td><i> * GtkProgress/GtkProgressBar had serious problems in GTK 1.2.</i></td></tr>
+<tr><th id="103">103</th><td><i> *</i></td></tr>
+<tr><th id="104">104</th><td><i> *  - Only 3 or 4 functions are really needed for 95% of progress</i></td></tr>
+<tr><th id="105">105</th><td><i> *    interfaces; GtkProgress[Bar] had about 25 functions, and</i></td></tr>
+<tr><th id="106">106</th><td><i> *    didn't even include these 3 or 4.</i></td></tr>
+<tr><th id="107">107</th><td><i> *  - In activity mode, the API involves setting the adjustment</i></td></tr>
+<tr><th id="108">108</th><td><i> *    to any random value, just to have the side effect of</i></td></tr>
+<tr><th id="109">109</th><td><i> *    calling the progress bar update function - the adjustment</i></td></tr>
+<tr><th id="110">110</th><td><i> *    is totally ignored in activity mode</i></td></tr>
+<tr><th id="111">111</th><td><i> *  - You set the activity step as a pixel value, which means to</i></td></tr>
+<tr><th id="112">112</th><td><i> *    set the activity step you basically need to connect to</i></td></tr>
+<tr><th id="113">113</th><td><i> *    size_allocate</i></td></tr>
+<tr><th id="114">114</th><td><i> *  - There are ctree_set_expander_style()-functions, to randomly</i></td></tr>
+<tr><th id="115">115</th><td><i> *    change look-and-feel for no good reason</i></td></tr>
+<tr><th id="116">116</th><td><i> *  - The split between GtkProgress and GtkProgressBar makes no sense</i></td></tr>
+<tr><th id="117">117</th><td><i> *    to me whatsoever.</i></td></tr>
+<tr><th id="118">118</th><td><i> *</i></td></tr>
+<tr><th id="119">119</th><td><i> * This was a big wart on GTK and made people waste lots of time,</i></td></tr>
+<tr><th id="120">120</th><td><i> * both learning and using the interface.</i></td></tr>
+<tr><th id="121">121</th><td><i> *</i></td></tr>
+<tr><th id="122">122</th><td><i> * So, I have added what I feel is the correct API, and marked all the</i></td></tr>
+<tr><th id="123">123</th><td><i> * rest deprecated. However, the changes are 100% backward-compatible and</i></td></tr>
+<tr><th id="124">124</th><td><i> * should break no existing code.</i></td></tr>
+<tr><th id="125">125</th><td><i> *</i></td></tr>
+<tr><th id="126">126</th><td><i> * The following 9 functions are the new programming interface.</i></td></tr>
+<tr><th id="127">127</th><td><i> */</i></td></tr>
+<tr><th id="128">128</th><td><em>void</em>       <dfn class="decl" id="gtk_progress_bar_pulse" title='gtk_progress_bar_pulse' data-ref="gtk_progress_bar_pulse">gtk_progress_bar_pulse</dfn>                (<a class="typedef" href="#GtkProgressBar" title='GtkProgressBar' data-type='struct _GtkProgressBar' data-ref="GtkProgressBar">GtkProgressBar</a> *<dfn class="local col0 decl" id="22840pbar" title='pbar' data-type='GtkProgressBar *' data-ref="22840pbar">pbar</dfn>);</td></tr>
+<tr><th id="129">129</th><td><em>void</em>       <dfn class="decl" id="gtk_progress_bar_set_text" title='gtk_progress_bar_set_text' data-ref="gtk_progress_bar_set_text">gtk_progress_bar_set_text</dfn>             (<a class="typedef" href="#GtkProgressBar" title='GtkProgressBar' data-type='struct _GtkProgressBar' data-ref="GtkProgressBar">GtkProgressBar</a> *<dfn class="local col1 decl" id="22841pbar" title='pbar' data-type='GtkProgressBar *' data-ref="22841pbar">pbar</dfn>,</td></tr>
+<tr><th id="130">130</th><td>                                                  <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col2 decl" id="22842text" title='text' data-type='const gchar *' data-ref="22842text">text</dfn>);</td></tr>
+<tr><th id="131">131</th><td><em>void</em>       <dfn class="decl" id="gtk_progress_bar_set_fraction" title='gtk_progress_bar_set_fraction' data-ref="gtk_progress_bar_set_fraction">gtk_progress_bar_set_fraction</dfn>         (<a class="typedef" href="#GtkProgressBar" title='GtkProgressBar' data-type='struct _GtkProgressBar' data-ref="GtkProgressBar">GtkProgressBar</a> *<dfn class="local col3 decl" id="22843pbar" title='pbar' data-type='GtkProgressBar *' data-ref="22843pbar">pbar</dfn>,</td></tr>
+<tr><th id="132">132</th><td>                                                  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>         <dfn class="local col4 decl" id="22844fraction" title='fraction' data-type='gdouble' data-ref="22844fraction">fraction</dfn>);</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td><em>void</em>       <dfn class="decl" id="gtk_progress_bar_set_pulse_step" title='gtk_progress_bar_set_pulse_step' data-ref="gtk_progress_bar_set_pulse_step">gtk_progress_bar_set_pulse_step</dfn>       (<a class="typedef" href="#GtkProgressBar" title='GtkProgressBar' data-type='struct _GtkProgressBar' data-ref="GtkProgressBar">GtkProgressBar</a> *<dfn class="local col5 decl" id="22845pbar" title='pbar' data-type='GtkProgressBar *' data-ref="22845pbar">pbar</dfn>,</td></tr>
+<tr><th id="135">135</th><td>                                                  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>         <dfn class="local col6 decl" id="22846fraction" title='fraction' data-type='gdouble' data-ref="22846fraction">fraction</dfn>);</td></tr>
+<tr><th id="136">136</th><td><em>void</em>       <dfn class="decl" id="gtk_progress_bar_set_orientation" title='gtk_progress_bar_set_orientation' data-ref="gtk_progress_bar_set_orientation">gtk_progress_bar_set_orientation</dfn>      (<a class="typedef" href="#GtkProgressBar" title='GtkProgressBar' data-type='struct _GtkProgressBar' data-ref="GtkProgressBar">GtkProgressBar</a> *<dfn class="local col7 decl" id="22847pbar" title='pbar' data-type='GtkProgressBar *' data-ref="22847pbar">pbar</dfn>,</td></tr>
+<tr><th id="137">137</th><td>						  <a class="typedef" href="#GtkProgressBarOrientation" title='GtkProgressBarOrientation' data-type='enum GtkProgressBarOrientation' data-ref="GtkProgressBarOrientation">GtkProgressBarOrientation</a> <dfn class="local col8 decl" id="22848orientation" title='orientation' data-type='GtkProgressBarOrientation' data-ref="22848orientation">orientation</dfn>);</td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td><em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>*          <dfn class="decl" id="gtk_progress_bar_get_text" title='gtk_progress_bar_get_text' data-ref="gtk_progress_bar_get_text">gtk_progress_bar_get_text</dfn>       (<a class="typedef" href="#GtkProgressBar" title='GtkProgressBar' data-type='struct _GtkProgressBar' data-ref="GtkProgressBar">GtkProgressBar</a> *<dfn class="local col9 decl" id="22849pbar" title='pbar' data-type='GtkProgressBar *' data-ref="22849pbar">pbar</dfn>);</td></tr>
+<tr><th id="140">140</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>               <dfn class="decl" id="gtk_progress_bar_get_fraction" title='gtk_progress_bar_get_fraction' data-ref="gtk_progress_bar_get_fraction">gtk_progress_bar_get_fraction</dfn>   (<a class="typedef" href="#GtkProgressBar" title='GtkProgressBar' data-type='struct _GtkProgressBar' data-ref="GtkProgressBar">GtkProgressBar</a> *<dfn class="local col0 decl" id="22850pbar" title='pbar' data-type='GtkProgressBar *' data-ref="22850pbar">pbar</dfn>);</td></tr>
+<tr><th id="141">141</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>               <dfn class="decl" id="gtk_progress_bar_get_pulse_step" title='gtk_progress_bar_get_pulse_step' data-ref="gtk_progress_bar_get_pulse_step">gtk_progress_bar_get_pulse_step</dfn> (<a class="typedef" href="#GtkProgressBar" title='GtkProgressBar' data-type='struct _GtkProgressBar' data-ref="GtkProgressBar">GtkProgressBar</a> *<dfn class="local col1 decl" id="22851pbar" title='pbar' data-type='GtkProgressBar *' data-ref="22851pbar">pbar</dfn>);</td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td><a class="typedef" href="#GtkProgressBarOrientation" title='GtkProgressBarOrientation' data-type='enum GtkProgressBarOrientation' data-ref="GtkProgressBarOrientation">GtkProgressBarOrientation</a> <dfn class="decl" id="gtk_progress_bar_get_orientation" title='gtk_progress_bar_get_orientation' data-ref="gtk_progress_bar_get_orientation">gtk_progress_bar_get_orientation</dfn> (<a class="typedef" href="#GtkProgressBar" title='GtkProgressBar' data-type='struct _GtkProgressBar' data-ref="GtkProgressBar">GtkProgressBar</a> *<dfn class="local col2 decl" id="22852pbar" title='pbar' data-type='GtkProgressBar *' data-ref="22852pbar">pbar</dfn>);</td></tr>
+<tr><th id="144">144</th><td><em>void</em>               <dfn class="decl" id="gtk_progress_bar_set_ellipsize" title='gtk_progress_bar_set_ellipsize' data-ref="gtk_progress_bar_set_ellipsize">gtk_progress_bar_set_ellipsize</dfn> (<a class="typedef" href="#GtkProgressBar" title='GtkProgressBar' data-type='struct _GtkProgressBar' data-ref="GtkProgressBar">GtkProgressBar</a>     *<dfn class="local col3 decl" id="22853pbar" title='pbar' data-type='GtkProgressBar *' data-ref="22853pbar">pbar</dfn>,</td></tr>
+<tr><th id="145">145</th><td>						   <a class="typedef" href="../../pango-1.0/pango/pango-layout.h.html#PangoEllipsizeMode" title='PangoEllipsizeMode' data-type='enum PangoEllipsizeMode' data-ref="PangoEllipsizeMode">PangoEllipsizeMode</a>  <dfn class="local col4 decl" id="22854mode" title='mode' data-type='PangoEllipsizeMode' data-ref="22854mode">mode</dfn>);</td></tr>
+<tr><th id="146">146</th><td><a class="typedef" href="../../pango-1.0/pango/pango-layout.h.html#PangoEllipsizeMode" title='PangoEllipsizeMode' data-type='enum PangoEllipsizeMode' data-ref="PangoEllipsizeMode">PangoEllipsizeMode</a> <dfn class="decl" id="gtk_progress_bar_get_ellipsize" title='gtk_progress_bar_get_ellipsize' data-ref="gtk_progress_bar_get_ellipsize">gtk_progress_bar_get_ellipsize</dfn> (<a class="typedef" href="#GtkProgressBar" title='GtkProgressBar' data-type='struct _GtkProgressBar' data-ref="GtkProgressBar">GtkProgressBar</a>     *<dfn class="local col5 decl" id="22855pbar" title='pbar' data-type='GtkProgressBar *' data-ref="22855pbar">pbar</dfn>);</td></tr>
+<tr><th id="147">147</th><td></td></tr>
+<tr><th id="148">148</th><td></td></tr>
+<tr><th id="149">149</th><td><u>#<span data-ppcond="149">ifndef</span> <span class="macro" data-ref="_M/GTK_DISABLE_DEPRECATED">GTK_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="150">150</th><td></td></tr>
+<tr><th id="151">151</th><td><i>/* Everything below here is deprecated */</i></td></tr>
+<tr><th id="152">152</th><td><a class="typedef" href="gtkstyle.h.html#GtkWidget" title='GtkWidget' data-type='struct _GtkWidget' data-ref="GtkWidget">GtkWidget</a>* <dfn class="decl" id="gtk_progress_bar_new_with_adjustment" title='gtk_progress_bar_new_with_adjustment' data-ref="gtk_progress_bar_new_with_adjustment">gtk_progress_bar_new_with_adjustment</dfn>  (<a class="typedef" href="gtkadjustment.h.html#GtkAdjustment" title='GtkAdjustment' data-type='struct _GtkAdjustment' data-ref="GtkAdjustment">GtkAdjustment</a>  *<dfn class="local col6 decl" id="22856adjustment" title='adjustment' data-type='GtkAdjustment *' data-ref="22856adjustment">adjustment</dfn>);</td></tr>
+<tr><th id="153">153</th><td><em>void</em>       <dfn class="decl" id="gtk_progress_bar_set_bar_style" title='gtk_progress_bar_set_bar_style' data-ref="gtk_progress_bar_set_bar_style">gtk_progress_bar_set_bar_style</dfn>        (<a class="typedef" href="#GtkProgressBar" title='GtkProgressBar' data-type='struct _GtkProgressBar' data-ref="GtkProgressBar">GtkProgressBar</a> *<dfn class="local col7 decl" id="22857pbar" title='pbar' data-type='GtkProgressBar *' data-ref="22857pbar">pbar</dfn>,</td></tr>
+<tr><th id="154">154</th><td>						  <a class="typedef" href="#GtkProgressBarStyle" title='GtkProgressBarStyle' data-type='enum GtkProgressBarStyle' data-ref="GtkProgressBarStyle">GtkProgressBarStyle</a> <dfn class="local col8 decl" id="22858style" title='style' data-type='GtkProgressBarStyle' data-ref="22858style">style</dfn>);</td></tr>
+<tr><th id="155">155</th><td><em>void</em>       <dfn class="decl" id="gtk_progress_bar_set_discrete_blocks" title='gtk_progress_bar_set_discrete_blocks' data-ref="gtk_progress_bar_set_discrete_blocks">gtk_progress_bar_set_discrete_blocks</dfn>  (<a class="typedef" href="#GtkProgressBar" title='GtkProgressBar' data-type='struct _GtkProgressBar' data-ref="GtkProgressBar">GtkProgressBar</a> *<dfn class="local col9 decl" id="22859pbar" title='pbar' data-type='GtkProgressBar *' data-ref="22859pbar">pbar</dfn>,</td></tr>
+<tr><th id="156">156</th><td>						  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           <dfn class="local col0 decl" id="22860blocks" title='blocks' data-type='guint' data-ref="22860blocks">blocks</dfn>);</td></tr>
+<tr><th id="157">157</th><td><i>/* set_activity_step() is not only deprecated, it doesn't even work.</i></td></tr>
+<tr><th id="158">158</th><td><i> * (Of course, it wasn't usable anyway, you had to set it from a size_allocate</i></td></tr>
+<tr><th id="159">159</th><td><i> * handler or something)</i></td></tr>
+<tr><th id="160">160</th><td><i> */</i></td></tr>
+<tr><th id="161">161</th><td><em>void</em>       <dfn class="decl" id="gtk_progress_bar_set_activity_step" title='gtk_progress_bar_set_activity_step' data-ref="gtk_progress_bar_set_activity_step">gtk_progress_bar_set_activity_step</dfn>    (<a class="typedef" href="#GtkProgressBar" title='GtkProgressBar' data-type='struct _GtkProgressBar' data-ref="GtkProgressBar">GtkProgressBar</a> *<dfn class="local col1 decl" id="22861pbar" title='pbar' data-type='GtkProgressBar *' data-ref="22861pbar">pbar</dfn>,</td></tr>
+<tr><th id="162">162</th><td>                                                  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           <dfn class="local col2 decl" id="22862step" title='step' data-type='guint' data-ref="22862step">step</dfn>);</td></tr>
+<tr><th id="163">163</th><td><em>void</em>       <dfn class="decl" id="gtk_progress_bar_set_activity_blocks" title='gtk_progress_bar_set_activity_blocks' data-ref="gtk_progress_bar_set_activity_blocks">gtk_progress_bar_set_activity_blocks</dfn>  (<a class="typedef" href="#GtkProgressBar" title='GtkProgressBar' data-type='struct _GtkProgressBar' data-ref="GtkProgressBar">GtkProgressBar</a> *<dfn class="local col3 decl" id="22863pbar" title='pbar' data-type='GtkProgressBar *' data-ref="22863pbar">pbar</dfn>,</td></tr>
+<tr><th id="164">164</th><td>						  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           <dfn class="local col4 decl" id="22864blocks" title='blocks' data-type='guint' data-ref="22864blocks">blocks</dfn>);</td></tr>
+<tr><th id="165">165</th><td><em>void</em>       <dfn class="decl" id="gtk_progress_bar_update" title='gtk_progress_bar_update' data-ref="gtk_progress_bar_update">gtk_progress_bar_update</dfn>               (<a class="typedef" href="#GtkProgressBar" title='GtkProgressBar' data-type='struct _GtkProgressBar' data-ref="GtkProgressBar">GtkProgressBar</a> *<dfn class="local col5 decl" id="22865pbar" title='pbar' data-type='GtkProgressBar *' data-ref="22865pbar">pbar</dfn>,</td></tr>
+<tr><th id="166">166</th><td>						  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>         <dfn class="local col6 decl" id="22866percentage" title='percentage' data-type='gdouble' data-ref="22866percentage">percentage</dfn>);</td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td><u>#<span data-ppcond="149">endif</span> /* GTK_DISABLE_DEPRECATED */</u></td></tr>
+<tr><th id="169">169</th><td></td></tr>
+<tr><th id="170">170</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="171">171</th><td></td></tr>
+<tr><th id="172">172</th><td><u>#<span data-ppcond="27">endif</span> /* __GTK_PROGRESS_BAR_H__ */</u></td></tr>
+<tr><th id="173">173</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,4 @@
+<dec f='include/unistd.h' l='576' type='int execl(const char * __path, const char * __arg)'/>
+<doc f='include/unistd.h' l='574'>/* Execute PATH with all arguments after PATH until
+   a NULL pointer and environment from `environ&apos;.  */</doc>
+<use f='unikey/src/engine.cpp' l='372' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>

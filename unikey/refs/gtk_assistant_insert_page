@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkassistant.h' l='134' type='gint gtk_assistant_insert_page(GtkAssistant * assistant, GtkWidget * page, gint position)'/>

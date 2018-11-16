@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='178' type='GdkWindow *'/>
+<offset>1792</offset>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='176'>/* the scrolling window and its height and width to
+   * make things a little speedier */</doc>

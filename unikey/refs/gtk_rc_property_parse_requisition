@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtksettings.h' l='98' type='gboolean gtk_rc_property_parse_requisition(const GParamSpec * pspec, const GString * gstring, GValue * property_value)'/>

@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='832'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='826'>/**
+ * GTK_STOCK_REFRESH:
+ *
+ * The &quot;Refresh&quot; item.
+ * &lt;inlinegraphic fileref=&quot;view-refresh.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

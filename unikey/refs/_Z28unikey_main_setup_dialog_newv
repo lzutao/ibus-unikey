@@ -1,0 +1,3 @@
+<dec f='unikey/setup/dlg_main_setup.h' l='7' type='GtkWidget * unikey_main_setup_dialog_new()'/>
+<def f='unikey/setup/dlg_main_setup.cpp' l='18' ll='41' type='GtkWidget * unikey_main_setup_dialog_new()'/>
+<use f='unikey/setup/setup.cpp' l='55' u='c' c='main'/>

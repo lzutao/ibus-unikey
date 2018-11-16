@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkcolor.h' l='150' type='gint gdk_color_white(GdkColormap * colormap, GdkColor * color)'/>

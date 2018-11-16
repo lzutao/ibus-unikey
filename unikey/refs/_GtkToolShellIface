@@ -1,0 +1,26 @@
+<def f='include/gtk-2.0/gtk/gtktoolshell.h' l='60' ll='75'/>
+<size>88</size>
+<doc f='include/gtk-2.0/gtk/gtktoolshell.h' l='46'>/**
+ * GtkToolShellIface:
+ * @get_icon_size:        mandatory implementation of gtk_tool_shell_get_icon_size().
+ * @get_orientation:      mandatory implementation of gtk_tool_shell_get_orientation().
+ * @get_style:            mandatory implementation of gtk_tool_shell_get_style().
+ * @get_relief_style:     optional implementation of gtk_tool_shell_get_relief_style().
+ * @rebuild_menu:         optional implementation of gtk_tool_shell_rebuild_menu().
+ * @get_text_orientation: optional implementation of gtk_tool_shell_get_text_orientation().
+ * @get_text_alignment:   optional implementation of gtk_tool_shell_get_text_alignment().
+ * @get_ellipsize_mode:   optional implementation of gtk_tool_shell_get_ellipsize_mode().
+ * @get_text_size_group:  optional implementation of gtk_tool_shell_get_text_size_group().
+ *
+ * Virtual function table for the #GtkToolShell interface.
+ */</doc>
+<mbr r='_GtkToolShellIface::g_iface' o='0' t='GTypeInterface'/>
+<mbr r='_GtkToolShellIface::get_icon_size' o='128' t='GtkIconSize (*)(GtkToolShell *)'/>
+<mbr r='_GtkToolShellIface::get_orientation' o='192' t='GtkOrientation (*)(GtkToolShell *)'/>
+<mbr r='_GtkToolShellIface::get_style' o='256' t='GtkToolbarStyle (*)(GtkToolShell *)'/>
+<mbr r='_GtkToolShellIface::get_relief_style' o='320' t='GtkReliefStyle (*)(GtkToolShell *)'/>
+<mbr r='_GtkToolShellIface::rebuild_menu' o='384' t='void (*)(GtkToolShell *)'/>
+<mbr r='_GtkToolShellIface::get_text_orientation' o='448' t='GtkOrientation (*)(GtkToolShell *)'/>
+<mbr r='_GtkToolShellIface::get_text_alignment' o='512' t='gfloat (*)(GtkToolShell *)'/>
+<mbr r='_GtkToolShellIface::get_ellipsize_mode' o='576' t='PangoEllipsizeMode (*)(GtkToolShell *)'/>
+<mbr r='_GtkToolShellIface::get_text_size_group' o='640' t='GtkSizeGroup *(*)(GtkToolShell *)'/>

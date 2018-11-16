@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='16' type='GType gtk_accel_flags_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='15'>/* enumerations from &quot;gtkaccelgroup.h&quot; */</doc>

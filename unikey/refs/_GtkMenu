@@ -1,0 +1,31 @@
+<def f='include/gtk-2.0/gtk/gtkmenu.h' l='60' ll='111'/>
+<size>296</size>
+<mbr r='_GtkMenu::menu_shell' o='0' t='GtkMenuShell'/>
+<mbr r='_GtkMenu::parent_menu_item' o='1216' t='GtkWidget *'/>
+<mbr r='_GtkMenu::old_active_menu_item' o='1280' t='GtkWidget *'/>
+<mbr r='_GtkMenu::accel_group' o='1344' t='GtkAccelGroup *'/>
+<mbr r='_GtkMenu::accel_path' o='1408' t='gchar *'/>
+<mbr r='_GtkMenu::position_func' o='1472' t='GtkMenuPositionFunc'/>
+<mbr r='_GtkMenu::position_func_data' o='1536' t='gpointer'/>
+<mbr r='_GtkMenu::toggle_size' o='1600' t='guint'/>
+<mbr r='_GtkMenu::toplevel' o='1664' t='GtkWidget *'/>
+<mbr r='_GtkMenu::tearoff_window' o='1728' t='GtkWidget *'/>
+<mbr r='_GtkMenu::tearoff_hbox' o='1792' t='GtkWidget *'/>
+<mbr r='_GtkMenu::tearoff_scrollbar' o='1856' t='GtkWidget *'/>
+<mbr r='_GtkMenu::tearoff_adjustment' o='1920' t='GtkAdjustment *'/>
+<mbr r='_GtkMenu::view_window' o='1984' t='GdkWindow *'/>
+<mbr r='_GtkMenu::bin_window' o='2048' t='GdkWindow *'/>
+<mbr r='_GtkMenu::scroll_offset' o='2112' t='gint'/>
+<mbr r='_GtkMenu::saved_scroll_offset' o='2144' t='gint'/>
+<mbr r='_GtkMenu::scroll_step' o='2176' t='gint'/>
+<mbr r='_GtkMenu::timeout_id' o='2208' t='guint'/>
+<mbr r='_GtkMenu::navigation_region' o='2240' t='GdkRegion *'/>
+<mbr r='_GtkMenu::navigation_timeout' o='2304' t='guint'/>
+<mbr r='_GtkMenu::needs_destruction_ref_count' o='2336' t='guint'/>
+<mbr r='_GtkMenu::torn_off' o='2337' t='guint'/>
+<mbr r='_GtkMenu::tearoff_active' o='2338' t='guint'/>
+<mbr r='_GtkMenu::scroll_fast' o='2339' t='guint'/>
+<mbr r='_GtkMenu::upper_arrow_visible' o='2340' t='guint'/>
+<mbr r='_GtkMenu::lower_arrow_visible' o='2341' t='guint'/>
+<mbr r='_GtkMenu::upper_arrow_prelight' o='2342' t='guint'/>
+<mbr r='_GtkMenu::lower_arrow_prelight' o='2343' t='guint'/>

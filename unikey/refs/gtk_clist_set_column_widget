@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='509' type='void gtk_clist_set_column_widget(GtkCList * clist, gint column, GtkWidget * widget)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='508'>/* set a widget instead of a title for the column title button */</doc>

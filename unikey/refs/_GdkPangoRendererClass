@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gdk/gdkpango.h' l='83' ll='87'/>
+<size>248</size>
+<doc f='include/gtk-2.0/gdk/gdkpango.h' l='76'>/**
+ * GdkPangoRendererClass:
+ *
+ * #GdkPangoRenderer is the class structure for #GdkPangoRenderer.
+ *
+ * Since: 2.6
+ **/</doc>
+<mbr r='_GdkPangoRendererClass::parent_class' o='0' t='PangoRendererClass'/>

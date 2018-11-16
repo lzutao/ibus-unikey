@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-matrix.h' l='96' type='void pango_matrix_translate(PangoMatrix * matrix, double tx, double ty)'/>

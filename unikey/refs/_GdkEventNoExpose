@@ -1,0 +1,5 @@
+<def f='include/gtk-2.0/gdk/gdkevents.h' l='283' ll='288'/>
+<size>24</size>
+<mbr r='_GdkEventNoExpose::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventNoExpose::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventNoExpose::send_event' o='128' t='gint8'/>

@@ -1,0 +1,10 @@
+<def f='include/ibus-1.0/ibusproxy.h' l='81' ll='86'/>
+<size>40</size>
+<doc f='include/ibus-1.0/ibusproxy.h' l='76'>/**
+ * IBusProxy:
+ *
+ * An opaque data type representing an IBusProxy.
+ */</doc>
+<mbr r='_IBusProxy::parent' o='0' t='GDBusProxy'/>
+<mbr r='_IBusProxy::flags' o='256' t='guint32'/>
+<mbr r='_IBusProxy::own' o='288' t='gboolean'/>

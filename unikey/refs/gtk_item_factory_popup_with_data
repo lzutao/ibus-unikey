@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkitemfactory.h' l='185' type='void gtk_item_factory_popup_with_data(GtkItemFactory * ifactory, gpointer popup_data, GDestroyNotify destroy, guint x, guint y, guint mouse_button, guint32 time_)'/>

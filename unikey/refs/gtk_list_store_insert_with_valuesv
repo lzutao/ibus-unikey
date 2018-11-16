@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkliststore.h' l='118' type='void gtk_list_store_insert_with_valuesv(GtkListStore * list_store, GtkTreeIter * iter, gint position, gint * columns, GValue * values, gint n_values)'/>

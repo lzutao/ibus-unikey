@@ -1,0 +1,8 @@
+<dec f='include/gtk-2.0/gtk/gtkliststore.h' l='92' type='void gtk_list_store_set(GtkListStore * list_store, GtkTreeIter * iter)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='125' u='c' c='_Z26append_macro_to_list_storeP13_GtkListStore11CMacroTable'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='202' u='c' c='_Z24check_last_macro_in_listP13_GtkListStore'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='251' u='c' c='_Z13key_edited_cbP20_GtkCellRendererTextPKcS2_Pv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='255' u='c' c='_Z13key_edited_cbP20_GtkCellRendererTextPKcS2_Pv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='284' u='c' c='_Z15value_edited_cbP20_GtkCellRendererTextPKcS2_Pv'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='58' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='67' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>

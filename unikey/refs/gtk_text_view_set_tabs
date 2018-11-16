@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextview.h' l='367' type='void gtk_text_view_set_tabs(GtkTextView * text_view, PangoTabArray * tabs)'/>

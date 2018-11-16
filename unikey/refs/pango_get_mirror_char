@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-bidi-type.h' l='134' type='gboolean pango_get_mirror_char(gunichar ch, gunichar * mirrored_ch)'/>

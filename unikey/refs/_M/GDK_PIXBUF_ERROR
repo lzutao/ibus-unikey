@@ -1,0 +1,8 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h' l='186'/>
+<doc f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h' l='179'>/**
+ * GDK_PIXBUF_ERROR:
+ * 
+ * Error domain used for pixbuf operations. Indicates that the error code
+ * will be in the #GdkPixbufError enumeration. See #GError for
+ * information on error domains and error codes.
+ */</doc>

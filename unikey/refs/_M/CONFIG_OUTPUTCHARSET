@@ -1,0 +1,12 @@
+<dec f='unikey/src/engine_const.h' l='32'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='86' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='139' u='c'/>
+<use f='unikey/src/engine.cpp' l='202' u='c'/>
+<use f='unikey/src/engine.cpp' l='315' u='c'/>
+<use f='unikey/src/engine.cpp' l='315' u='c'/>
+<use f='unikey/src/engine.cpp' l='319' u='c'/>
+<use f='unikey/src/engine.cpp' l='330' u='c'/>
+<use f='unikey/src/engine.cpp' l='330' u='c'/>
+<use f='unikey/src/engine.cpp' l='353' u='c'/>
+<use f='unikey/src/engine.cpp' l='438' u='c'/>
+<use f='unikey/src/engine.cpp' l='491' u='c'/>

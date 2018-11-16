@@ -1,0 +1,10 @@
+<dec f='include/gtk-2.0/gtk/gtkobject.h' l='139' type='void (*)(GtkObject *)'/>
+<offset>1216</offset>
+<doc f='include/gtk-2.0/gtk/gtkobject.h' l='131'>/* Default signal handler for the ::destroy signal, which is
+   *  invoked to request that references to the widget be dropped.
+   *  If an object class overrides destroy() in order to perform class
+   *  specific destruction then it must still invoke its superclass&apos;
+   *  implementation of the method after it is finished with its
+   *  own cleanup. (See gtk_widget_real_destroy() for an example of
+   *  how to do this).
+   */</doc>

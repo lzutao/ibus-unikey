@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentrycompletion.h' l='111' type='void gtk_entry_completion_set_inline_selection(GtkEntryCompletion * completion, gboolean inline_selection)'/>

@@ -1,0 +1,15 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='389' type='void ibus_engine_register_properties(IBusEngine * engine, IBusPropList * prop_list)'/>
+<doc f='include/ibus-1.0/ibusengine.h' l='378'>/**
+ * ibus_engine_register_properties:
+ * @engine: An IBusEngine.
+ * @prop_list: Property List.
+ *
+ * Register and show properties in language bar.
+ *
+ * (Note: The prop_list object will be released, if it is floating.
+ *  If caller want to keep the object, caller should make the object
+ *  sink by g_object_ref_sink.)
+ */</doc>
+<use f='unikey/src/engine.cpp' l='141' u='c' c='_ZL27ibus_unikey_engine_focus_inP11_IBusEngine'/>
+<use f='unikey/src/engine.cpp' l='307' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='352' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>

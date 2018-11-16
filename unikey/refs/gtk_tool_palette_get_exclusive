@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktoolpalette.h' l='103' type='gboolean gtk_tool_palette_get_exclusive(GtkToolPalette * palette, GtkToolItemGroup * group)'/>

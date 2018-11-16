@@ -1,0 +1,1 @@
+<dec f='include/glib-2.0/glib/gmain.h' l='440' type='guint g_source_attach(GSource * source, GMainContext * context)'/>

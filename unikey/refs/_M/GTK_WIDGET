@@ -1,0 +1,16 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='137'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='38' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='353' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='382' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='403' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='432' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='40' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='70' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='83' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='96' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='102' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='108' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='114' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='120' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='126' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='150' u='c'/>

@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuslookuptable.h' l='319' type='gint ibus_lookup_table_get_orientation(IBusLookupTable * table)'/>
+<doc f='include/ibus-1.0/ibuslookuptable.h' l='311'>/**
+ * ibus_lookup_table_get_orientation:
+ * @table: An IBusLookupTable.
+ *
+ * Returns the orientation of the #IBusLookupTable.
+ *
+ * Returns: The orientation of the @table.
+ */</doc>

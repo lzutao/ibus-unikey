@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='547' type='void gtk_clist_set_column_width(GtkCList * clist, gint column, gint width)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='543'>/* set the pixel width of a column; this is a necessary step in
+ * creating a CList because otherwise the column width is chozen from
+ * the width of the column title, which will never be right
+ */</doc>

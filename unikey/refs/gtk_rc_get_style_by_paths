@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrc.h' l='145' type='GtkStyle * gtk_rc_get_style_by_paths(GtkSettings * settings, const char * widget_path, const char * class_path, GType type)'/>

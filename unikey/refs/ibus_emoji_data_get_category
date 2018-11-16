@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusemoji.h' l='155' type='const gchar * ibus_emoji_data_get_category(IBusEmojiData * emoji)'/>
+<doc f='include/ibus-1.0/ibusemoji.h' l='147'>/**
+ * ibus_emoji_data_get_category:
+ * @emoji : An #IBusEmojiData
+ *
+ * Gets the emoji category in #IBusEmojiData. It should not be freed.
+ *
+ * Returns: category property in #IBusEmojiData
+ */</doc>

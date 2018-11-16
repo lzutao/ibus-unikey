@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkfilesel.h' l='117' type='gboolean gtk_file_selection_get_select_multiple(GtkFileSelection * filesel)'/>

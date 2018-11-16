@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktreesortable.h' l='68' type='void (*)(GtkTreeSortable *, gint, GtkTreeIterCompareFunc, gpointer, GDestroyNotify)'/>
+<offset>320</offset>

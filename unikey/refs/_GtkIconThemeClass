@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkicontheme.h' l='54' ll='59'/>
+<size>144</size>
+<mbr r='_GtkIconThemeClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_GtkIconThemeClass::changed' o='1088' t='void (*)(GtkIconTheme *)'/>

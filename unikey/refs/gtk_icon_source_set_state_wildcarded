@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconfactory.h' l='164' type='void gtk_icon_source_set_state_wildcarded(GtkIconSource * source, gboolean setting)'/>

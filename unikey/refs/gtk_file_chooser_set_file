@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkfilechooser.h' l='194' type='gboolean gtk_file_chooser_set_file(GtkFileChooser * chooser, GFile * file, GError ** error)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='379' type='void gdk_window_restack(GdkWindow * window, GdkWindow * sibling, gboolean above)'/>

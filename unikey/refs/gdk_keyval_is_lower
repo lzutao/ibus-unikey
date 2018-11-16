@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkkeys.h' l='126' type='gboolean gdk_keyval_is_lower(guint keyval)'/>

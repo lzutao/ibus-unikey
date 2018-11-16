@@ -1,0 +1,4 @@
+<def f='include/glib-2.0/glib/gtypes.h' l='471' ll='480'/>
+<size>8</size>
+<mbr r='_GDoubleIEEE754::v_double' o='0' t='gdouble'/>
+<mbr r='_GDoubleIEEE754::mpn' o='0' t='struct (anonymous struct at /usr/include/glib-2.0/glib/gtypes.h:474:3)'/>

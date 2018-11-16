@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkselection.h' l='168' type='gboolean gtk_selection_data_set_pixbuf(GtkSelectionData * selection_data, GdkPixbuf * pixbuf)'/>

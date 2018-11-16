@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkaccessible.h' l='45' ll='54'/>
+<size>80</size>
+<doc f='include/gtk-2.0/gtk/gtkaccessible.h' l='42'>/*
+   * This object is a thin wrapper, in the GTK+ namespace, for AtkObject
+   */</doc>
+<mbr r='_GtkAccessible::parent' o='0' t='AtkObject'/>
+<mbr r='_GtkAccessible::widget' o='576' t='GtkWidget *'/>

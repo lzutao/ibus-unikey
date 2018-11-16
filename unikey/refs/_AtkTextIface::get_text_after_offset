@@ -1,0 +1,2 @@
+<dec f='include/atk-1.0/atk/atktext.h' l='254' type='gchar *(*)(AtkText *, gint, AtkTextBoundary, gint *, gint *)'/>
+<offset>192</offset>

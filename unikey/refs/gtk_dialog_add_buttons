@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkdialog.h' l='142' type='void gtk_dialog_add_buttons(GtkDialog * dialog, const gchar * first_button_text)'/>

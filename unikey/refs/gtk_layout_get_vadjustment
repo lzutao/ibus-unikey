@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtklayout.h' l='116' type='GtkAdjustment * gtk_layout_get_vadjustment(GtkLayout * layout)'/>

@@ -1,0 +1,17 @@
+<def f='include/ibus-1.0/ibusattribute.h' l='107' ll='115'/>
+<size>64</size>
+<doc f='include/ibus-1.0/ibusattribute.h' l='97'>/**
+ * IBusAttribute:
+ * @type: IBusAttributeType
+ * @value: Value for the type.
+ * @start_index: The starting index, inclusive.
+ * @end_index: The ending index, exclusive.
+ *
+ * Signify the type, value and scope of the attribute.
+ * The scope starts from @start_index till the @end_index-1.
+ */</doc>
+<mbr r='_IBusAttribute::parent' o='0' t='IBusSerializable'/>
+<mbr r='_IBusAttribute::type' o='384' t='guint'/>
+<mbr r='_IBusAttribute::value' o='416' t='guint'/>
+<mbr r='_IBusAttribute::start_index' o='448' t='guint'/>
+<mbr r='_IBusAttribute::end_index' o='480' t='guint'/>

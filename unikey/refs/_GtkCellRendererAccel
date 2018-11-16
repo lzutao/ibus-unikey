@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gtk/gtkcellrendereraccel.h' l='49' ll='62'/>
+<size>160</size>
+<mbr r='_GtkCellRendererAccel::parent' o='0' t='GtkCellRendererText'/>
+<mbr r='_GtkCellRendererAccel::accel_key' o='960' t='guint'/>
+<mbr r='_GtkCellRendererAccel::accel_mods' o='992' t='GdkModifierType'/>
+<mbr r='_GtkCellRendererAccel::keycode' o='1024' t='guint'/>
+<mbr r='_GtkCellRendererAccel::accel_mode' o='1056' t='GtkCellRendererAccelMode'/>
+<mbr r='_GtkCellRendererAccel::edit_widget' o='1088' t='GtkWidget *'/>
+<mbr r='_GtkCellRendererAccel::grab_widget' o='1152' t='GtkWidget *'/>
+<mbr r='_GtkCellRendererAccel::sizing_label' o='1216' t='GtkWidget *'/>

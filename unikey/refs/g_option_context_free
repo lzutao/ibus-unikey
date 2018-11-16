@@ -1,0 +1,5 @@
+<dec f='include/glib-2.0/glib/goption.h' l='301' type='void g_option_context_free(GOptionContext * context)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='62' u='c' c='_ZL35glib_autoptr_cleanup_GOptionContextPP15_GOptionContext'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='62' u='r' c='_ZL39glib_listautoptr_cleanup_GOptionContextPP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='62' u='r' c='_ZL40glib_slistautoptr_cleanup_GOptionContextPP7_GSList'/>
+<use f='unikey/src/main.cpp' l='109' u='c' c='main'/>

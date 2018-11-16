@@ -1,0 +1,8 @@
+<dec f='include/gtk-2.0/gtk/gtktypeutils.h' l='169' type='union (anonymous union at /usr/include/gtk-2.0/gtk/gtktypeutils.h:149:3)'/>
+<offset>128</offset>
+<doc f='include/gtk-2.0/gtk/gtktypeutils.h' l='143'>/* this union only defines the required storage types for
+   * the possibile values, thus there is no gint enum_data field,
+   * because that would just be a mere alias for gint int_data.
+   * use the GTK_VALUE_*() and GTK_RETLOC_*() macros to access
+   * the discrete memebers.
+   */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkbindings.h' l='109' type='gboolean gtk_binding_set_activate(GtkBindingSet * binding_set, guint keyval, GdkModifierType modifiers, GtkObject * object)'/>

@@ -1,0 +1,5 @@
+<dec f='include/atk-1.0/atk/atktable.h' l='114' type='void (*)(AtkTable *, gint, gint)'/>
+<offset>1984</offset>
+<doc f='include/atk-1.0/atk/atktable.h' l='111'>/*
+   * signal handlers
+   */</doc>

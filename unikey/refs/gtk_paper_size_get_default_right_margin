@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkpapersize.h' l='87' type='gdouble gtk_paper_size_get_default_right_margin(GtkPaperSize * size, GtkUnit unit)'/>

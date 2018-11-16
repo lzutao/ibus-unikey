@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdrawable.h' l='335' type='void gdk_draw_image(GdkDrawable * drawable, GdkGC * gc, GdkImage * image, gint xsrc, gint ysrc, gint xdest, gint ydest, gint width, gint height)'/>

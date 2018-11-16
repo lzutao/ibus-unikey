@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='362' type='void ibus_property_set_sub_props(IBusProperty * prop, IBusPropList * prop_list)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='355'>/**
+ * ibus_property_set_sub_props:
+ * @prop: An #IBusProperty.
+ * @prop_list: #IBusPropList that contains sub IBusProperties.
+ *
+ * Set the sub IBusProperties.
+ */</doc>

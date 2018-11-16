@@ -1,0 +1,17 @@
+<def f='include/ibus-1.0/ibusengine.h' l='80' ll='93'/>
+<size>88</size>
+<doc f='include/ibus-1.0/ibusengine.h' l='71'>/**
+ * IBusEngine:
+ * @enabled: Whether the engine is enabled.
+ * @has_focus: Whether the engine has focus.
+ * @cursor_area: Area of cursor.
+ * @client_capabilities: IBusCapabilite (client capabilities) flags.
+ *
+ * IBusEngine properties.
+ */</doc>
+<mbr r='_IBusEngine::parent' o='0' t='IBusService'/>
+<mbr r='_IBusEngine::priv' o='384' t='IBusEnginePrivate *'/>
+<mbr r='_IBusEngine::enabled' o='448' t='gboolean'/>
+<mbr r='_IBusEngine::has_focus' o='480' t='gboolean'/>
+<mbr r='_IBusEngine::cursor_area' o='512' t='IBusRectangle'/>
+<mbr r='_IBusEngine::client_capabilities' o='640' t='guint'/>

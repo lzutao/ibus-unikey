@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeviewcolumn.h' l='234' type='gboolean gtk_tree_view_column_cell_get_position(GtkTreeViewColumn * tree_column, GtkCellRenderer * cell_renderer, gint * start_pos, gint * width)'/>

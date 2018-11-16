@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconview.h' l='100' type='void gtk_icon_view_set_markup_column(GtkIconView * icon_view, gint column)'/>

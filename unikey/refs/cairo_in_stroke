@@ -1,0 +1,2 @@
+<dec f='include/cairo/cairo.h' l='957' type='cairo_bool_t cairo_in_stroke(cairo_t * cr, double x, double y)'/>
+<doc f='include/cairo/cairo.h' l='955'>/* Insideness testing */</doc>

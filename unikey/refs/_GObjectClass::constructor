@@ -1,0 +1,5 @@
+<dec f='include/glib-2.0/gobject/gobject.h' l='324' type='GObject *(*)(GType, guint, GObjectConstructParam *)'/>
+<offset>128</offset>
+<doc f='include/glib-2.0/gobject/gobject.h' l='323'>/* seldom overidden */</doc>
+<use f='unikey/src/engine.cpp' l='82' u='w' c='_ZL29ibus_unikey_engine_class_initP22_IBusUnikeyEngineClass'/>
+<use f='unikey/src/engine.cpp' l='115' u='r' c='_ZL30ibus_unikey_engine_constructormjP22_GObjectConstructParam'/>

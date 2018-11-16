@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcalendar.h' l='165' type='void gtk_calendar_select_day(GtkCalendar * calendar, guint day)'/>

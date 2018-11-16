@@ -1,0 +1,15 @@
+<def f='include/gtk-2.0/gdk/gdkimage.h' l='65' ll='86'/>
+<size>88</size>
+<mbr r='_GdkImage::parent_instance' o='0' t='GObject'/>
+<mbr r='_GdkImage::type' o='192' t='GdkImageType'/>
+<mbr r='_GdkImage::visual' o='256' t='GdkVisual *'/>
+<mbr r='_GdkImage::byte_order' o='320' t='GdkByteOrder'/>
+<mbr r='_GdkImage::width' o='352' t='gint'/>
+<mbr r='_GdkImage::height' o='384' t='gint'/>
+<mbr r='_GdkImage::depth' o='416' t='guint16'/>
+<mbr r='_GdkImage::bpp' o='432' t='guint16'/>
+<mbr r='_GdkImage::bpl' o='448' t='guint16'/>
+<mbr r='_GdkImage::bits_per_pixel' o='464' t='guint16'/>
+<mbr r='_GdkImage::mem' o='512' t='gpointer'/>
+<mbr r='_GdkImage::colormap' o='576' t='GdkColormap *'/>
+<mbr r='_GdkImage::windowing_data' o='640' t='gpointer'/>

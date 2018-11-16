@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='205' type='guint gdk_display_get_default_cursor_size(GdkDisplay * display)'/>

@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gdk/gdkevents.h' l='461' ll='468'/>
+<size>32</size>
+<mbr r='_GdkEventWindowState::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventWindowState::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventWindowState::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventWindowState::changed_mask' o='160' t='GdkWindowState'/>
+<mbr r='_GdkEventWindowState::new_window_state' o='192' t='GdkWindowState'/>

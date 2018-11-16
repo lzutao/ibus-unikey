@@ -1,0 +1,1 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='944' type='gboolean ibus_bus_is_global_engine_enabled(IBusBus * bus)'/>

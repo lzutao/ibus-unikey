@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusinputcontext.h' l='384' type='void ibus_input_context_focus_out(IBusInputContext * context)'/>
+<doc f='include/ibus-1.0/ibusinputcontext.h' l='376'>/**
+ * ibus_input_context_focus_out:
+ * @context: An #IBusInputContext.
+ *
+ * Invoked when the client application get focus. An asynchronous IPC will be performed.
+ *
+ * see_also: #IBusEngine::focus_out.
+ */</doc>

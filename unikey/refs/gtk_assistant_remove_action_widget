@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkassistant.h' l='168' type='void gtk_assistant_remove_action_widget(GtkAssistant * assistant, GtkWidget * child)'/>

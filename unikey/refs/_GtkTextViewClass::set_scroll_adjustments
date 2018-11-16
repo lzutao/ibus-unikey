@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktextview.h' l='159' type='void (*)(GtkTextView *, GtkAdjustment *, GtkAdjustment *)'/>
+<offset>6592</offset>

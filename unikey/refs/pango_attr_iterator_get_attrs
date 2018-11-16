@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-attributes.h' l='575' type='GSList * pango_attr_iterator_get_attrs(PangoAttrIterator * iterator)'/>

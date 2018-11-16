@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeselection.h' l='97' type='gint gtk_tree_selection_count_selected_rows(GtkTreeSelection * selection)'/>

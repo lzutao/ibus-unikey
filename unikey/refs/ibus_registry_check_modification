@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusregistry.h' l='193' type='gboolean ibus_registry_check_modification(IBusRegistry * registry)'/>
+<doc f='include/ibus-1.0/ibusregistry.h' l='185'>/**
+ * ibus_registry_check_modification:
+ * @registry: An #IBusRegistry.
+ *
+ * Check if the registry is updated.
+ *
+ * Returns: %TRUE if mtime is changed; %FALSE otherwise.
+ */</doc>

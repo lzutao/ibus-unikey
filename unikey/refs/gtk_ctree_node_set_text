@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='306' type='void gtk_ctree_node_set_text(GtkCTree * ctree, GtkCTreeNode * node, gint column, const gchar * text)'/>
+<doc f='include/gtk-2.0/gtk/gtkctree.h' l='302'>/***********************************************************
+ *           Analogons of GtkCList functions               *
+ ***********************************************************/</doc>

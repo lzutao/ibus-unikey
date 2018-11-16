@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='267' type='GtkImageType gtk_entry_get_icon_storage_type(GtkEntry * entry, GtkEntryIconPosition icon_pos)'/>

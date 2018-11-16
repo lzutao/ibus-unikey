@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkrelation.h' l='77' type='AtkRelation * atk_relation_new(AtkObject ** targets, gint n_targets, AtkRelationType relationship)'/>

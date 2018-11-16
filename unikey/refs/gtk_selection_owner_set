@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkselection.h' l='128' type='gboolean gtk_selection_owner_set(GtkWidget * widget, GdkAtom selection, guint32 time_)'/>
+<doc f='include/gtk-2.0/gtk/gtkselection.h' l='126'>/* Public interface */</doc>

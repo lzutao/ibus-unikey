@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='208' type='GtkWindow * gtk_window_get_transient_for(GtkWindow * window)'/>

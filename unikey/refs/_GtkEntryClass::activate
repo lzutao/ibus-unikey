@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='138' type='void (*)(GtkEntry *)'/>
+<offset>5824</offset>
+<doc f='include/gtk-2.0/gtk/gtkentry.h' l='136'>/* Action signals
+   */</doc>

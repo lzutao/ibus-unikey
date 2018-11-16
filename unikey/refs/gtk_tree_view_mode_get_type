@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='306' type='GType gtk_tree_view_mode_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='305'>/* enumerations from &quot;gtktree.h&quot; */</doc>

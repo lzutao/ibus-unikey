@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcellrenderertoggle.h' l='75' type='void gtk_cell_renderer_toggle_set_active(GtkCellRendererToggle * toggle, gboolean setting)'/>

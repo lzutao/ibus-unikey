@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdk.h' l='220' type='guint gdk_threads_add_timeout_seconds(guint interval, GSourceFunc function, gpointer data)'/>

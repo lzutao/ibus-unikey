@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusconfig.h' l='205' type='GVariant * ibus_config_get_values(IBusConfig * config, const gchar * section)'/>
+<doc f='include/ibus-1.0/ibusconfig.h' l='194'>/**
+ * ibus_config_get_values:
+ * @config: An #IBusConfig
+ * @section: Section name of the configuration option.
+ *
+ * Get all values in a section synchronously.
+ *
+ * Returns: A #GVariant or %NULL. Free with g_variant_unref().
+ *
+ * See also: ibus_config_set_value().
+ */</doc>

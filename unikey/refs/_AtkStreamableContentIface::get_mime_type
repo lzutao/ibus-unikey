@@ -1,0 +1,13 @@
+<dec f='include/atk-1.0/atk/atkstreamablecontent.h' l='61' type='const gchar *(*)(AtkStreamableContent *, gint)'/>
+<offset>192</offset>
+<doc f='include/atk-1.0/atk/atkstreamablecontent.h' l='50'>/*
+   * Gets the specified mime type supported by this object.
+   * The mime types are 0-based so the first mime type is 
+   * at index 0, the second at index 1 and so on.  The mime-type
+   * at index 0 should be considered the &quot;default&quot; data type for the stream.
+   *
+   * This assumes that the strings for the mime types are stored in the
+   * AtkStreamableContent. Alternatively the const could be removed
+   * and the caller would be responsible for calling g_free() on the
+   * returned value.
+   */</doc>

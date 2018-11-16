@@ -1,0 +1,17 @@
+<dec f='include/glib-2.0/glib/gversionmacros.h' l='510'/>
+<use f='include/glib-2.0/glib/gdate.h' l='130' u='c'/>
+<use f='include/glib-2.0/glib/gdatetime.h' l='121' u='c'/>
+<use f='include/glib-2.0/glib/gfileutils.h' l='135' u='c'/>
+<use f='include/glib-2.0/glib/gmain.h' l='579' u='c'/>
+<use f='include/glib-2.0/glib/gkeyfile.h' l='149' u='c'/>
+<use f='include/glib-2.0/glib/gmessages.h' l='285' u='c'/>
+<use f='include/glib-2.0/gio/gapplication.h' l='178' u='c'/>
+<use f='include/glib-2.0/gio/gapplication.h' l='181' u='c'/>
+<use f='include/glib-2.0/gio/gapplication.h' l='184' u='c'/>
+<use f='include/glib-2.0/gio/gfile.h' l='609' u='c'/>
+<use f='include/glib-2.0/gio/gfile.h' l='623' u='c'/>
+<use f='include/glib-2.0/gio/gfile.h' l='1256' u='c'/>
+<use f='include/glib-2.0/gio/gfile.h' l='1261' u='c'/>
+<use f='include/glib-2.0/gio/gfile.h' l='1266' u='c'/>
+<use f='include/glib-2.0/gio/gsocket.h' l='160' u='c'/>
+<use f='include/glib-2.0/gio/gsocket.h' l='166' u='c'/>

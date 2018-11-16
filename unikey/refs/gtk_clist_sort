@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='774' type='void gtk_clist_sort(GtkCList * clist)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='773'>/* sort the list with the current compare function */</doc>

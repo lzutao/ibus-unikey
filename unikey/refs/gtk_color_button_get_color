@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcolorbutton.h' l='90' type='void gtk_color_button_get_color(GtkColorButton * color_button, GdkColor * color)'/>

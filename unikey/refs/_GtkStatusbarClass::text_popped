@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkstatusbar.h' l='77' type='void (*)(GtkStatusbar *, guint, const gchar *)'/>
+<offset>6720</offset>

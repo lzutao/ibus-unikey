@@ -1,0 +1,2 @@
+<dec f='include/ibus-1.0/ibusserializable.h' l='180' type='gboolean (*)(IBusSerializable *, const IBusSerializable *)'/>
+<offset>1728</offset>

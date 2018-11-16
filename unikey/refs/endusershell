@@ -1,0 +1,2 @@
+<dec f='include/unistd.h' l='931' type='void endusershell()'/>
+<doc f='include/unistd.h' l='931'>/* Discard cached info.  */</doc>

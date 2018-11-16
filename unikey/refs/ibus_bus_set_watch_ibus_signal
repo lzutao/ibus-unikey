@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='1115' type='void ibus_bus_set_watch_ibus_signal(IBusBus * bus, gboolean watch)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='1107'>/**
+ * ibus_bus_set_watch_ibus_signal:
+ * @bus: An #IBusBus.
+ * @watch: %TRUE if you want ibusbus to emit &quot;global-engine-changed&quot; signal when
+ * ibus-daemon emits the GlobalEngineChanged IBus signal.
+ *
+ * Start or stop watching the GlobalEngineChanged IBus signal.
+ */</doc>

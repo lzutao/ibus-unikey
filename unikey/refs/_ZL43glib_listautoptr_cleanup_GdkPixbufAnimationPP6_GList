@@ -1,0 +1,1 @@
+<def f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-autocleanups.h' l='30' macro='1' type='void glib_listautoptr_cleanup_GdkPixbufAnimation(GList ** _l)'/>

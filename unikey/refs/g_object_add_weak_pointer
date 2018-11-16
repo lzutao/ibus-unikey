@@ -1,0 +1,2 @@
+<dec f='include/glib-2.0/gobject/gobject.h' l='504' type='void g_object_add_weak_pointer(GObject * object, gpointer * weak_pointer_location)'/>
+<use f='include/glib-2.0/gobject/gobject.h' l='832' u='c' c='_ZL18g_set_weak_pointerPPvP8_GObject'/>

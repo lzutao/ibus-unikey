@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='189' type='void gtk_entry_set_inner_border(GtkEntry * entry, const GtkBorder * border)'/>

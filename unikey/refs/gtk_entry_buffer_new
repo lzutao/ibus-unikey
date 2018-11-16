@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentrybuffer.h' l='95' type='GtkEntryBuffer * gtk_entry_buffer_new(const gchar * initial_chars, gint n_initial_chars)'/>

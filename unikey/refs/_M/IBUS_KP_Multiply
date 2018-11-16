@@ -1,0 +1,2 @@
+<dec f='include/ibus-1.0/ibuskeysyms-compat.h' l='191'/>
+<use f='unikey/src/engine.cpp' l='614' u='c'/>

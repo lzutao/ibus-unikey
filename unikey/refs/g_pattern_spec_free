@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/glib/gpattern.h' l='35' type='void g_pattern_spec_free(GPatternSpec * pspec)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='64' u='c' c='_ZL33glib_autoptr_cleanup_GPatternSpecPP13_GPatternSpec'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='64' u='r' c='_ZL37glib_listautoptr_cleanup_GPatternSpecPP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='64' u='r' c='_ZL38glib_slistautoptr_cleanup_GPatternSpecPP7_GSList'/>

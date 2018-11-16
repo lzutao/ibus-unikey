@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtksignal.h' l='141' type='void gtk_signal_compat_matched(GtkObject * object, GCallback func, gpointer data, GSignalMatchType match, guint action)'/>

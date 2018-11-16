@@ -1,0 +1,8 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='444' type='void gdk_window_merge_child_shapes(GdkWindow * window)'/>
+<doc f='include/gtk-2.0/gdk/gdkwindow.h' l='437'>/*
+ * This routine allows you to merge (ie ADD) child shapes to your
+ * own window&apos;s shape keeping its current shape and ADDING the child
+ * shapes to it.
+ * 
+ * - Raster
+ */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='513' type='void gdk_window_set_skip_pager_hint(GdkWindow * window, gboolean skips_pager)'/>

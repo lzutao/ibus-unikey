@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='55' type='gboolean gtk_stock_lookup(const gchar * stock_id, GtkStockItem * item)'/>

@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkcomponent.h' l='216' type='gboolean atk_component_set_size(AtkComponent * component, gint width, gint height)'/>

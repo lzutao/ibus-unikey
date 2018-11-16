@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtkcurve.h' l='74' ll='85'/>
+<size>792</size>
+<mbr r='_GtkCurveClass::parent_class' o='0' t='GtkDrawingAreaClass'/>
+<mbr r='_GtkCurveClass::curve_type_changed' o='6016' t='void (*)(GtkCurve *)'/>
+<mbr r='_GtkCurveClass::_gtk_reserved1' o='6080' t='void (*)()'/>
+<mbr r='_GtkCurveClass::_gtk_reserved2' o='6144' t='void (*)()'/>
+<mbr r='_GtkCurveClass::_gtk_reserved3' o='6208' t='void (*)()'/>
+<mbr r='_GtkCurveClass::_gtk_reserved4' o='6272' t='void (*)()'/>

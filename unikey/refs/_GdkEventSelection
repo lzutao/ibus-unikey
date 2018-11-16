@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gdk/gdkevents.h' l='402' ll='412'/>
+<size>56</size>
+<mbr r='_GdkEventSelection::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventSelection::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventSelection::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventSelection::selection' o='192' t='GdkAtom'/>
+<mbr r='_GdkEventSelection::target' o='256' t='GdkAtom'/>
+<mbr r='_GdkEventSelection::property' o='320' t='GdkAtom'/>
+<mbr r='_GdkEventSelection::time' o='384' t='guint32'/>
+<mbr r='_GdkEventSelection::requestor' o='416' t='GdkNativeWindow'/>

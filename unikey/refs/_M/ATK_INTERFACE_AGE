@@ -1,0 +1,10 @@
+<dec f='include/atk-1.0/atk/atkversion.h' l='86'/>
+<doc f='include/atk-1.0/atk/atkversion.h' l='77'>/**
+ * ATK_INTERFACE_AGE:
+ *
+ * Like atk_get_interface_age(), but from the headers used at
+ * application compile time, rather than from the library linked
+ * against at application run time.
+ *
+ * Since: 2.7.4
+ */</doc>

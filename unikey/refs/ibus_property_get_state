@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='332' type='IBusPropState ibus_property_get_state(IBusProperty * prop)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='324'>/**
+ * ibus_property_get_state:
+ * @prop: An #IBusProperty.
+ *
+ * Get the state of #IBusProperty.
+ *
+ * Returns: the state of #IBusProperty.
+ */</doc>

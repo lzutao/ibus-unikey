@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextchild.h' l='78' type='gboolean gtk_text_child_anchor_get_deleted(GtkTextChildAnchor * anchor)'/>

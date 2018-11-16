@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkdrawable.h' l='201' type='cairo_surface_t *(*)(GdkDrawable *)'/>
+<offset>2752</offset>

@@ -1,0 +1,268 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gtkobject.h source code [include/gtk-2.0/gtk/gtkobject.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gtk/gtkobject.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gtk</a>/<a href='gtkobject.h.html'>gtkobject.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GTK - The GIMP Toolkit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><i>/*</i></td></tr>
+<tr><th id="21">21</th><td><i> * Modified by the GTK+ Team and others 1997-2000.  See the AUTHORS</i></td></tr>
+<tr><th id="22">22</th><td><i> * file for a list of people on the GTK+ Team.  See the ChangeLog</i></td></tr>
+<tr><th id="23">23</th><td><i> * files for a list of changes.  These files are distributed with</i></td></tr>
+<tr><th id="24">24</th><td><i> * GTK+ at ftp://ftp.gtk.org/pub/gtk/.</i></td></tr>
+<tr><th id="25">25</th><td><i> */</i></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/__GTK_OBJECT_H__">__GTK_OBJECT_H__</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/__GTK_OBJECT_H__" data-ref="_M/__GTK_OBJECT_H__">__GTK_OBJECT_H__</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#<span data-ppcond="31">if</span> defined(<span class="macro" data-ref="_M/GTK_DISABLE_SINGLE_INCLUDES">GTK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gtk.h.html#30" data-ref="_M/__GTK_H_INSIDE__">__GTK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GTK_COMPILATION">GTK_COMPILATION</span>)</u></td></tr>
+<tr><th id="32">32</th><td><u>#error "Only &lt;gtk/gtk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="33">33</th><td><u>#<span data-ppcond="31">endif</span></u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><u>#include &lt;gdkconfig.h&gt;</u></td></tr>
+<tr><th id="36">36</th><td><u>#include <a href="gtkenums.h.html">&lt;gtk/gtkenums.h&gt;</a></u></td></tr>
+<tr><th id="37">37</th><td><u>#include <a href="gtktypeutils.h.html">&lt;gtk/gtktypeutils.h&gt;</a></u></td></tr>
+<tr><th id="38">38</th><td><u>#include <a href="gtkdebug.h.html">&lt;gtk/gtkdebug.h&gt;</a></u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><i>/* macros for casting a pointer to a GtkObject or GtkObjectClass pointer,</i></td></tr>
+<tr><th id="44">44</th><td><i> * and to test whether `object' and `klass' are of type GTK_TYPE_OBJECT.</i></td></tr>
+<tr><th id="45">45</th><td><i> * these are the standard macros for all GtkObject-derived classes.</i></td></tr>
+<tr><th id="46">46</th><td><i> */</i></td></tr>
+<tr><th id="47">47</th><td><u>#define <dfn class="macro" id="_M/GTK_TYPE_OBJECT" data-ref="_M/GTK_TYPE_OBJECT">GTK_TYPE_OBJECT</dfn>              (gtk_object_get_type ())</u></td></tr>
+<tr><th id="48">48</th><td><u>#define <dfn class="macro" id="_M/GTK_OBJECT" data-ref="_M/GTK_OBJECT">GTK_OBJECT</dfn>(object)           (G_TYPE_CHECK_INSTANCE_CAST ((object), GTK_TYPE_OBJECT, GtkObject))</u></td></tr>
+<tr><th id="49">49</th><td><u>#define <dfn class="macro" id="_M/GTK_OBJECT_CLASS" data-ref="_M/GTK_OBJECT_CLASS">GTK_OBJECT_CLASS</dfn>(klass)      (G_TYPE_CHECK_CLASS_CAST ((klass), GTK_TYPE_OBJECT, GtkObjectClass))</u></td></tr>
+<tr><th id="50">50</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_OBJECT" data-ref="_M/GTK_IS_OBJECT">GTK_IS_OBJECT</dfn>(object)        (G_TYPE_CHECK_INSTANCE_TYPE ((object), GTK_TYPE_OBJECT))</u></td></tr>
+<tr><th id="51">51</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_OBJECT_CLASS" data-ref="_M/GTK_IS_OBJECT_CLASS">GTK_IS_OBJECT_CLASS</dfn>(klass)   (G_TYPE_CHECK_CLASS_TYPE ((klass), GTK_TYPE_OBJECT))</u></td></tr>
+<tr><th id="52">52</th><td><u>#define <dfn class="macro" id="_M/GTK_OBJECT_GET_CLASS" data-ref="_M/GTK_OBJECT_GET_CLASS">GTK_OBJECT_GET_CLASS</dfn>(object) (G_TYPE_INSTANCE_GET_CLASS ((object), GTK_TYPE_OBJECT, GtkObjectClass))</u></td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><i>/* Macros for extracting various fields from GtkObject and GtkObjectClass.</i></td></tr>
+<tr><th id="55">55</th><td><i> */</i></td></tr>
+<tr><th id="56">56</th><td><u>#<span data-ppcond="56">ifndef</span> <span class="macro" data-ref="_M/GTK_DISABLE_DEPRECATED">GTK_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="57">57</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> * GTK_OBJECT_TYPE:</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"> *<span class="command"> @object</span>: a #GtkObject.</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> * Gets the type of an object.</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> * Deprecated: 2.20: Use G_OBJECT_TYPE() instead.</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="65">65</th><td><u>#define <dfn class="macro" id="_M/GTK_OBJECT_TYPE" data-ref="_M/GTK_OBJECT_TYPE">GTK_OBJECT_TYPE</dfn>                   G_OBJECT_TYPE</u></td></tr>
+<tr><th id="66">66</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> * GTK_OBJECT_TYPE_NAME:</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> *<span class="command"> @object</span>: a #GtkObject.</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> * Gets the name of an object's type.</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> * Deprecated: 2.20: Use G_OBJECT_TYPE_NAME() instead.</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="74">74</th><td><u>#define <dfn class="macro" id="_M/GTK_OBJECT_TYPE_NAME" data-ref="_M/GTK_OBJECT_TYPE_NAME">GTK_OBJECT_TYPE_NAME</dfn>              G_OBJECT_TYPE_NAME</u></td></tr>
+<tr><th id="75">75</th><td><u>#<span data-ppcond="56">endif</span></u></td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td><u>#<span data-ppcond="77">if</span> !defined (<span class="macro" data-ref="_M/GTK_DISABLE_DEPRECATED">GTK_DISABLE_DEPRECATED</span>) || defined (<span class="macro" data-ref="_M/GTK_COMPILATION">GTK_COMPILATION</span>)</u></td></tr>
+<tr><th id="78">78</th><td><i>/* GtkObject only uses the first 4 bits of the flags field.</i></td></tr>
+<tr><th id="79">79</th><td><i> * Derived objects may use the remaining bits. Though this</i></td></tr>
+<tr><th id="80">80</th><td><i> * is a kinda nasty break up, it does make the size of</i></td></tr>
+<tr><th id="81">81</th><td><i> * derived objects smaller.</i></td></tr>
+<tr><th id="82">82</th><td><i> */</i></td></tr>
+<tr><th id="83">83</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="84">84</th><td>{</td></tr>
+<tr><th id="85">85</th><td>  <dfn class="enum" id="GTK_IN_DESTRUCTION" title='GTK_IN_DESTRUCTION' data-ref="GTK_IN_DESTRUCTION">GTK_IN_DESTRUCTION</dfn>	= <var>1</var> &lt;&lt; <var>0</var>, <i>/* Used internally during dispose */</i></td></tr>
+<tr><th id="86">86</th><td>  <dfn class="enum" id="GTK_FLOATING" title='GTK_FLOATING' data-ref="GTK_FLOATING">GTK_FLOATING</dfn>		= <var>1</var> &lt;&lt; <var>1</var>,</td></tr>
+<tr><th id="87">87</th><td>  <dfn class="enum" id="GTK_RESERVED_1" title='GTK_RESERVED_1' data-ref="GTK_RESERVED_1">GTK_RESERVED_1</dfn>	= <var>1</var> &lt;&lt; <var>2</var>,</td></tr>
+<tr><th id="88">88</th><td>  <dfn class="enum" id="GTK_RESERVED_2" title='GTK_RESERVED_2' data-ref="GTK_RESERVED_2">GTK_RESERVED_2</dfn>	= <var>1</var> &lt;&lt; <var>3</var></td></tr>
+<tr><th id="89">89</th><td>} <dfn class="typedef" id="GtkObjectFlags" title='GtkObjectFlags' data-type='enum GtkObjectFlags' data-ref="GtkObjectFlags">GtkObjectFlags</dfn>;</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><i>/* Macros for extracting the object_flags from GtkObject.</i></td></tr>
+<tr><th id="92">92</th><td><i> */</i></td></tr>
+<tr><th id="93">93</th><td><u>#define <dfn class="macro" id="_M/GTK_OBJECT_FLAGS" data-ref="_M/GTK_OBJECT_FLAGS">GTK_OBJECT_FLAGS</dfn>(obj)		  (GTK_OBJECT (obj)-&gt;flags)</u></td></tr>
+<tr><th id="94">94</th><td><u>#<span data-ppcond="94">ifndef</span> <span class="macro" data-ref="_M/GTK_DISABLE_DEPRECATED">GTK_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="95">95</th><td><u>#define <dfn class="macro" id="_M/GTK_OBJECT_FLOATING" data-ref="_M/GTK_OBJECT_FLOATING">GTK_OBJECT_FLOATING</dfn>(obj)	  (g_object_is_floating (obj))</u></td></tr>
+<tr><th id="96">96</th><td><u>#<span data-ppcond="94">endif</span></u></td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td><i>/* Macros for setting and clearing bits in the object_flags field of GtkObject.</i></td></tr>
+<tr><th id="99">99</th><td><i> */</i></td></tr>
+<tr><th id="100">100</th><td><u>#define <dfn class="macro" id="_M/GTK_OBJECT_SET_FLAGS" data-ref="_M/GTK_OBJECT_SET_FLAGS">GTK_OBJECT_SET_FLAGS</dfn>(obj,flag)	  G_STMT_START{ (GTK_OBJECT_FLAGS (obj) |= (flag)); }G_STMT_END</u></td></tr>
+<tr><th id="101">101</th><td><u>#define <dfn class="macro" id="_M/GTK_OBJECT_UNSET_FLAGS" data-ref="_M/GTK_OBJECT_UNSET_FLAGS">GTK_OBJECT_UNSET_FLAGS</dfn>(obj,flag)  G_STMT_START{ (GTK_OBJECT_FLAGS (obj) &amp;= ~(flag)); }G_STMT_END</u></td></tr>
+<tr><th id="102">102</th><td><u>#<span data-ppcond="77">endif</span></u></td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkObjectClass" title='_GtkObjectClass' data-ref="_GtkObjectClass">_GtkObjectClass</a>	<dfn class="typedef" id="GtkObjectClass" title='GtkObjectClass' data-type='struct _GtkObjectClass' data-ref="GtkObjectClass">GtkObjectClass</dfn>;</td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><b>struct</b> <dfn class="type def" id="_GtkObject" title='_GtkObject' data-ref="_GtkObject">_GtkObject</dfn></td></tr>
+<tr><th id="108">108</th><td>{</td></tr>
+<tr><th id="109">109</th><td>  <a class="typedef" href="../../glib-2.0/gobject/gobject.h.html#GInitiallyUnowned" title='GInitiallyUnowned' data-type='struct _GObject' data-ref="GInitiallyUnowned">GInitiallyUnowned</a> <dfn class="decl" id="_GtkObject::parent_instance" title='_GtkObject::parent_instance' data-ref="_GtkObject::parent_instance">parent_instance</dfn>;</td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td>  <i>/* 32 bits of flags. GtkObject only uses 4 of these bits and</i></td></tr>
+<tr><th id="112">112</th><td><i>   *  GtkWidget uses the rest. This is done because structs are</i></td></tr>
+<tr><th id="113">113</th><td><i>   *  aligned on 4 or 8 byte boundaries. If a new bitfield were</i></td></tr>
+<tr><th id="114">114</th><td><i>   *  used in GtkWidget much space would be wasted.</i></td></tr>
+<tr><th id="115">115</th><td><i>   */</i></td></tr>
+<tr><th id="116">116</th><td>  <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span> <span class="macro" title="flags" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkObject::flags" title='_GtkObject::flags' data-ref="_GtkObject::flags">flags</dfn>);</td></tr>
+<tr><th id="117">117</th><td>};</td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td><b>struct</b> <dfn class="type def" id="_GtkObjectClass" title='_GtkObjectClass' data-ref="_GtkObjectClass">_GtkObjectClass</dfn></td></tr>
+<tr><th id="120">120</th><td>{</td></tr>
+<tr><th id="121">121</th><td>  <a class="typedef" href="../../glib-2.0/gobject/gobject.h.html#GInitiallyUnownedClass" title='GInitiallyUnownedClass' data-type='struct _GObjectClass' data-ref="GInitiallyUnownedClass">GInitiallyUnownedClass</a> <dfn class="decl" id="_GtkObjectClass::parent_class" title='_GtkObjectClass::parent_class' data-ref="_GtkObjectClass::parent_class">parent_class</dfn>;</td></tr>
+<tr><th id="122">122</th><td></td></tr>
+<tr><th id="123">123</th><td>  <i>/* Non overridable class methods to set and get per class arguments */</i></td></tr>
+<tr><th id="124">124</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkObjectClass::set_arg" title='_GtkObjectClass::set_arg' data-ref="_GtkObjectClass::set_arg">set_arg</dfn>) (<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a> *<dfn class="local col3 decl" id="15483object" title='object' data-type='GtkObject *' data-ref="15483object">object</dfn>,</td></tr>
+<tr><th id="125">125</th><td>		   <a class="typedef" href="gtktypeutils.h.html#GtkArg" title='GtkArg' data-type='struct _GtkArg' data-ref="GtkArg">GtkArg</a>    *<dfn class="local col4 decl" id="15484arg" title='arg' data-type='GtkArg *' data-ref="15484arg">arg</dfn>,</td></tr>
+<tr><th id="126">126</th><td>		   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>      <dfn class="local col5 decl" id="15485arg_id" title='arg_id' data-type='guint' data-ref="15485arg_id">arg_id</dfn>);</td></tr>
+<tr><th id="127">127</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkObjectClass::get_arg" title='_GtkObjectClass::get_arg' data-ref="_GtkObjectClass::get_arg">get_arg</dfn>) (<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a> *<dfn class="local col6 decl" id="15486object" title='object' data-type='GtkObject *' data-ref="15486object">object</dfn>,</td></tr>
+<tr><th id="128">128</th><td>		   <a class="typedef" href="gtktypeutils.h.html#GtkArg" title='GtkArg' data-type='struct _GtkArg' data-ref="GtkArg">GtkArg</a>    *<dfn class="local col7 decl" id="15487arg" title='arg' data-type='GtkArg *' data-ref="15487arg">arg</dfn>,</td></tr>
+<tr><th id="129">129</th><td>		   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>      <dfn class="local col8 decl" id="15488arg_id" title='arg_id' data-type='guint' data-ref="15488arg_id">arg_id</dfn>);</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td>  <i>/* Default signal handler for the ::destroy signal, which is</i></td></tr>
+<tr><th id="132">132</th><td><i>   *  invoked to request that references to the widget be dropped.</i></td></tr>
+<tr><th id="133">133</th><td><i>   *  If an object class overrides destroy() in order to perform class</i></td></tr>
+<tr><th id="134">134</th><td><i>   *  specific destruction then it must still invoke its superclass'</i></td></tr>
+<tr><th id="135">135</th><td><i>   *  implementation of the method after it is finished with its</i></td></tr>
+<tr><th id="136">136</th><td><i>   *  own cleanup. (See gtk_widget_real_destroy() for an example of</i></td></tr>
+<tr><th id="137">137</th><td><i>   *  how to do this).</i></td></tr>
+<tr><th id="138">138</th><td><i>   */</i></td></tr>
+<tr><th id="139">139</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkObjectClass::destroy" title='_GtkObjectClass::destroy' data-ref="_GtkObjectClass::destroy">destroy</dfn>)  (<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a> *<dfn class="local col9 decl" id="15489object" title='object' data-type='GtkObject *' data-ref="15489object">object</dfn>);</td></tr>
+<tr><th id="140">140</th><td>};</td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td><i>/* Application-level methods */</i></td></tr>
+<tr><th id="145">145</th><td></td></tr>
+<tr><th id="146">146</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a> <dfn class="decl" id="gtk_object_get_type" title='gtk_object_get_type' data-ref="gtk_object_get_type">gtk_object_get_type</dfn> (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="147">147</th><td></td></tr>
+<tr><th id="148">148</th><td><u>#<span data-ppcond="148">ifndef</span> <span class="macro" data-ref="_M/GTK_DISABLE_DEPRECATED">GTK_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="149">149</th><td><em>void</em> <dfn class="decl" id="gtk_object_sink" title='gtk_object_sink' data-ref="gtk_object_sink">gtk_object_sink</dfn>	  (<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a> *<dfn class="local col0 decl" id="15490object" title='object' data-type='GtkObject *' data-ref="15490object">object</dfn>);</td></tr>
+<tr><th id="150">150</th><td><u>#<span data-ppcond="148">endif</span></u></td></tr>
+<tr><th id="151">151</th><td><em>void</em> <dfn class="decl" id="gtk_object_destroy" title='gtk_object_destroy' data-ref="gtk_object_destroy">gtk_object_destroy</dfn>	  (<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a> *<dfn class="local col1 decl" id="15491object" title='object' data-type='GtkObject *' data-ref="15491object">object</dfn>);</td></tr>
+<tr><th id="152">152</th><td></td></tr>
+<tr><th id="153">153</th><td><i>/****************************************************************/</i></td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td><u>#<span data-ppcond="155">ifndef</span> <span class="macro" data-ref="_M/GTK_DISABLE_DEPRECATED">GTK_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="156">156</th><td></td></tr>
+<tr><th id="157">157</th><td><a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>*	<dfn class="decl" id="gtk_object_new" title='gtk_object_new' data-ref="gtk_object_new">gtk_object_new</dfn>		  (<a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>	       <dfn class="local col2 decl" id="15492type" title='type' data-type='GType' data-ref="15492type">type</dfn>,</td></tr>
+<tr><th id="158">158</th><td>					   <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>	      *<dfn class="local col3 decl" id="15493first_property_name" title='first_property_name' data-type='const gchar *' data-ref="15493first_property_name">first_property_name</dfn>,</td></tr>
+<tr><th id="159">159</th><td>					   ...);</td></tr>
+<tr><th id="160">160</th><td><a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>*	<dfn class="decl" id="gtk_object_ref" title='gtk_object_ref' data-ref="gtk_object_ref">gtk_object_ref</dfn>		  (<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	      *<dfn class="local col4 decl" id="15494object" title='object' data-type='GtkObject *' data-ref="15494object">object</dfn>);</td></tr>
+<tr><th id="161">161</th><td><em>void</em>		<dfn class="decl" id="gtk_object_unref" title='gtk_object_unref' data-ref="gtk_object_unref">gtk_object_unref</dfn>	  (<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	      *<dfn class="local col5 decl" id="15495object" title='object' data-type='GtkObject *' data-ref="15495object">object</dfn>);</td></tr>
+<tr><th id="162">162</th><td><em>void</em> <dfn class="decl" id="gtk_object_weakref" title='gtk_object_weakref' data-ref="gtk_object_weakref">gtk_object_weakref</dfn>	  (<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	    *<dfn class="local col6 decl" id="15496object" title='object' data-type='GtkObject *' data-ref="15496object">object</dfn>,</td></tr>
+<tr><th id="163">163</th><td>			   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#GDestroyNotify" title='GDestroyNotify' data-type='void (*)(gpointer)' data-ref="GDestroyNotify">GDestroyNotify</a>    <dfn class="local col7 decl" id="15497notify" title='notify' data-type='GDestroyNotify' data-ref="15497notify">notify</dfn>,</td></tr>
+<tr><th id="164">164</th><td>			   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>	     <dfn class="local col8 decl" id="15498data" title='data' data-type='gpointer' data-ref="15498data">data</dfn>);</td></tr>
+<tr><th id="165">165</th><td><em>void</em> <dfn class="decl" id="gtk_object_weakunref" title='gtk_object_weakunref' data-ref="gtk_object_weakunref">gtk_object_weakunref</dfn> (<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	    *<dfn class="local col9 decl" id="15499object" title='object' data-type='GtkObject *' data-ref="15499object">object</dfn>,</td></tr>
+<tr><th id="166">166</th><td>			   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#GDestroyNotify" title='GDestroyNotify' data-type='void (*)(gpointer)' data-ref="GDestroyNotify">GDestroyNotify</a>    <dfn class="local col0 decl" id="15500notify" title='notify' data-type='GDestroyNotify' data-ref="15500notify">notify</dfn>,</td></tr>
+<tr><th id="167">167</th><td>			   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>	     <dfn class="local col1 decl" id="15501data" title='data' data-type='gpointer' data-ref="15501data">data</dfn>);</td></tr>
+<tr><th id="168">168</th><td></td></tr>
+<tr><th id="169">169</th><td><i>/* Set 'data' to the "object_data" field of the object. The</i></td></tr>
+<tr><th id="170">170</th><td><i> *  data is indexed by the "key". If there is already data</i></td></tr>
+<tr><th id="171">171</th><td><i> *  associated with "key" then the new data will replace it.</i></td></tr>
+<tr><th id="172">172</th><td><i> *  If 'data' is NULL then this call is equivalent to</i></td></tr>
+<tr><th id="173">173</th><td><i> *  'gtk_object_remove_data'.</i></td></tr>
+<tr><th id="174">174</th><td><i> *  The gtk_object_set_data_full variant acts just the same,</i></td></tr>
+<tr><th id="175">175</th><td><i> *  but takes an additional argument which is a function to</i></td></tr>
+<tr><th id="176">176</th><td><i> *  be called when the data is removed.</i></td></tr>
+<tr><th id="177">177</th><td><i> *  `gtk_object_remove_data' is equivalent to the above,</i></td></tr>
+<tr><th id="178">178</th><td><i> *  where 'data' is NULL</i></td></tr>
+<tr><th id="179">179</th><td><i> *  `gtk_object_get_data' gets the data associated with "key".</i></td></tr>
+<tr><th id="180">180</th><td><i> */</i></td></tr>
+<tr><th id="181">181</th><td><em>void</em>	 <dfn class="decl" id="gtk_object_set_data" title='gtk_object_set_data' data-ref="gtk_object_set_data">gtk_object_set_data</dfn>	     (<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	     *<dfn class="local col2 decl" id="15502object" title='object' data-type='GtkObject *' data-ref="15502object">object</dfn>,</td></tr>
+<tr><th id="182">182</th><td>				      <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col3 decl" id="15503key" title='key' data-type='const gchar *' data-ref="15503key">key</dfn>,</td></tr>
+<tr><th id="183">183</th><td>				      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>	      <dfn class="local col4 decl" id="15504data" title='data' data-type='gpointer' data-ref="15504data">data</dfn>);</td></tr>
+<tr><th id="184">184</th><td><em>void</em>	 <dfn class="decl" id="gtk_object_set_data_full" title='gtk_object_set_data_full' data-ref="gtk_object_set_data_full">gtk_object_set_data_full</dfn>    (<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	     *<dfn class="local col5 decl" id="15505object" title='object' data-type='GtkObject *' data-ref="15505object">object</dfn>,</td></tr>
+<tr><th id="185">185</th><td>				      <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col6 decl" id="15506key" title='key' data-type='const gchar *' data-ref="15506key">key</dfn>,</td></tr>
+<tr><th id="186">186</th><td>				      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>	      <dfn class="local col7 decl" id="15507data" title='data' data-type='gpointer' data-ref="15507data">data</dfn>,</td></tr>
+<tr><th id="187">187</th><td>				      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#GDestroyNotify" title='GDestroyNotify' data-type='void (*)(gpointer)' data-ref="GDestroyNotify">GDestroyNotify</a>  <dfn class="local col8 decl" id="15508destroy" title='destroy' data-type='GDestroyNotify' data-ref="15508destroy">destroy</dfn>);</td></tr>
+<tr><th id="188">188</th><td><em>void</em>	 <dfn class="decl" id="gtk_object_remove_data" title='gtk_object_remove_data' data-ref="gtk_object_remove_data">gtk_object_remove_data</dfn>	     (<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	     *<dfn class="local col9 decl" id="15509object" title='object' data-type='GtkObject *' data-ref="15509object">object</dfn>,</td></tr>
+<tr><th id="189">189</th><td>				      <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col0 decl" id="15510key" title='key' data-type='const gchar *' data-ref="15510key">key</dfn>);</td></tr>
+<tr><th id="190">190</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="decl" id="gtk_object_get_data" title='gtk_object_get_data' data-ref="gtk_object_get_data">gtk_object_get_data</dfn>	     (<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	     *<dfn class="local col1 decl" id="15511object" title='object' data-type='GtkObject *' data-ref="15511object">object</dfn>,</td></tr>
+<tr><th id="191">191</th><td>				      <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col2 decl" id="15512key" title='key' data-type='const gchar *' data-ref="15512key">key</dfn>);</td></tr>
+<tr><th id="192">192</th><td><em>void</em>	 <dfn class="decl" id="gtk_object_remove_no_notify" title='gtk_object_remove_no_notify' data-ref="gtk_object_remove_no_notify">gtk_object_remove_no_notify</dfn> (<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	     *<dfn class="local col3 decl" id="15513object" title='object' data-type='GtkObject *' data-ref="15513object">object</dfn>,</td></tr>
+<tr><th id="193">193</th><td>				      <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col4 decl" id="15514key" title='key' data-type='const gchar *' data-ref="15514key">key</dfn>);</td></tr>
+<tr><th id="194">194</th><td></td></tr>
+<tr><th id="195">195</th><td><i>/* Set/get the "user_data" object data field of "object". It should</i></td></tr>
+<tr><th id="196">196</th><td><i> *  be noted that these functions are no different than calling</i></td></tr>
+<tr><th id="197">197</th><td><i> *  `gtk_object_set_data'/`gtk_object_get_data' with a key of "user_data".</i></td></tr>
+<tr><th id="198">198</th><td><i> *  They are merely provided as a convenience.</i></td></tr>
+<tr><th id="199">199</th><td><i> */</i></td></tr>
+<tr><th id="200">200</th><td><em>void</em>	 <dfn class="decl" id="gtk_object_set_user_data" title='gtk_object_set_user_data' data-ref="gtk_object_set_user_data">gtk_object_set_user_data</dfn> (<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	*<dfn class="local col5 decl" id="15515object" title='object' data-type='GtkObject *' data-ref="15515object">object</dfn>,</td></tr>
+<tr><th id="201">201</th><td>				   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>	 <dfn class="local col6 decl" id="15516data" title='data' data-type='gpointer' data-ref="15516data">data</dfn>);</td></tr>
+<tr><th id="202">202</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="decl" id="gtk_object_get_user_data" title='gtk_object_get_user_data' data-ref="gtk_object_get_user_data">gtk_object_get_user_data</dfn> (<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	*<dfn class="local col7 decl" id="15517object" title='object' data-type='GtkObject *' data-ref="15517object">object</dfn>);</td></tr>
+<tr><th id="203">203</th><td></td></tr>
+<tr><th id="204">204</th><td></td></tr>
+<tr><th id="205">205</th><td><i>/* Object-level methods */</i></td></tr>
+<tr><th id="206">206</th><td></td></tr>
+<tr><th id="207">207</th><td><i>/* Object data method variants that operate on key ids. */</i></td></tr>
+<tr><th id="208">208</th><td><em>void</em> <dfn class="decl" id="gtk_object_set_data_by_id" title='gtk_object_set_data_by_id' data-ref="gtk_object_set_data_by_id">gtk_object_set_data_by_id</dfn>		(<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	 *<dfn class="local col8 decl" id="15518object" title='object' data-type='GtkObject *' data-ref="15518object">object</dfn>,</td></tr>
+<tr><th id="209">209</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gquark.h.html#GQuark" title='GQuark' data-type='guint32' data-ref="GQuark">GQuark</a>		  <dfn class="local col9 decl" id="15519data_id" title='data_id' data-type='GQuark' data-ref="15519data_id">data_id</dfn>,</td></tr>
+<tr><th id="210">210</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>	  <dfn class="local col0 decl" id="15520data" title='data' data-type='gpointer' data-ref="15520data">data</dfn>);</td></tr>
+<tr><th id="211">211</th><td><em>void</em> <dfn class="decl" id="gtk_object_set_data_by_id_full" title='gtk_object_set_data_by_id_full' data-ref="gtk_object_set_data_by_id_full">gtk_object_set_data_by_id_full</dfn>	(<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	 *<dfn class="local col1 decl" id="15521object" title='object' data-type='GtkObject *' data-ref="15521object">object</dfn>,</td></tr>
+<tr><th id="212">212</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gquark.h.html#GQuark" title='GQuark' data-type='guint32' data-ref="GQuark">GQuark</a>		  <dfn class="local col2 decl" id="15522data_id" title='data_id' data-type='GQuark' data-ref="15522data_id">data_id</dfn>,</td></tr>
+<tr><th id="213">213</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>	  <dfn class="local col3 decl" id="15523data" title='data' data-type='gpointer' data-ref="15523data">data</dfn>,</td></tr>
+<tr><th id="214">214</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#GDestroyNotify" title='GDestroyNotify' data-type='void (*)(gpointer)' data-ref="GDestroyNotify">GDestroyNotify</a>   <dfn class="local col4 decl" id="15524destroy" title='destroy' data-type='GDestroyNotify' data-ref="15524destroy">destroy</dfn>);</td></tr>
+<tr><th id="215">215</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="decl" id="gtk_object_get_data_by_id" title='gtk_object_get_data_by_id' data-ref="gtk_object_get_data_by_id">gtk_object_get_data_by_id</dfn>	(<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	 *<dfn class="local col5 decl" id="15525object" title='object' data-type='GtkObject *' data-ref="15525object">object</dfn>,</td></tr>
+<tr><th id="216">216</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gquark.h.html#GQuark" title='GQuark' data-type='guint32' data-ref="GQuark">GQuark</a>		  <dfn class="local col6 decl" id="15526data_id" title='data_id' data-type='GQuark' data-ref="15526data_id">data_id</dfn>);</td></tr>
+<tr><th id="217">217</th><td><em>void</em>  <dfn class="decl" id="gtk_object_remove_data_by_id" title='gtk_object_remove_data_by_id' data-ref="gtk_object_remove_data_by_id">gtk_object_remove_data_by_id</dfn>	(<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	 *<dfn class="local col7 decl" id="15527object" title='object' data-type='GtkObject *' data-ref="15527object">object</dfn>,</td></tr>
+<tr><th id="218">218</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gquark.h.html#GQuark" title='GQuark' data-type='guint32' data-ref="GQuark">GQuark</a>		  <dfn class="local col8 decl" id="15528data_id" title='data_id' data-type='GQuark' data-ref="15528data_id">data_id</dfn>);</td></tr>
+<tr><th id="219">219</th><td><em>void</em>  <dfn class="decl" id="gtk_object_remove_no_notify_by_id" title='gtk_object_remove_no_notify_by_id' data-ref="gtk_object_remove_no_notify_by_id">gtk_object_remove_no_notify_by_id</dfn>	(<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	 *<dfn class="local col9 decl" id="15529object" title='object' data-type='GtkObject *' data-ref="15529object">object</dfn>,</td></tr>
+<tr><th id="220">220</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gquark.h.html#GQuark" title='GQuark' data-type='guint32' data-ref="GQuark">GQuark</a>		  <dfn class="local col0 decl" id="15530key_id" title='key_id' data-type='GQuark' data-ref="15530key_id">key_id</dfn>);</td></tr>
+<tr><th id="221">221</th><td><u>#define	<dfn class="macro" id="_M/gtk_object_data_try_key" data-ref="_M/gtk_object_data_try_key">gtk_object_data_try_key</dfn>	    g_quark_try_string</u></td></tr>
+<tr><th id="222">222</th><td><u>#define	<dfn class="macro" id="_M/gtk_object_data_force_id" data-ref="_M/gtk_object_data_force_id">gtk_object_data_force_id</dfn>    g_quark_from_string</u></td></tr>
+<tr><th id="223">223</th><td></td></tr>
+<tr><th id="224">224</th><td><i>/* GtkArg flag bits for gtk_object_add_arg_type</i></td></tr>
+<tr><th id="225">225</th><td><i> */</i></td></tr>
+<tr><th id="226">226</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="227">227</th><td>{</td></tr>
+<tr><th id="228">228</th><td>  <dfn class="enum" id="GTK_ARG_READABLE" title='GTK_ARG_READABLE' data-ref="GTK_ARG_READABLE">GTK_ARG_READABLE</dfn>	 = <a class="enum" href="../../glib-2.0/gobject/gparam.h.html#G_PARAM_READABLE" title='G_PARAM_READABLE' data-ref="G_PARAM_READABLE">G_PARAM_READABLE</a>,</td></tr>
+<tr><th id="229">229</th><td>  <dfn class="enum" id="GTK_ARG_WRITABLE" title='GTK_ARG_WRITABLE' data-ref="GTK_ARG_WRITABLE">GTK_ARG_WRITABLE</dfn>	 = <a class="enum" href="../../glib-2.0/gobject/gparam.h.html#G_PARAM_WRITABLE" title='G_PARAM_WRITABLE' data-ref="G_PARAM_WRITABLE">G_PARAM_WRITABLE</a>,</td></tr>
+<tr><th id="230">230</th><td>  <dfn class="enum" id="GTK_ARG_CONSTRUCT" title='GTK_ARG_CONSTRUCT' data-ref="GTK_ARG_CONSTRUCT">GTK_ARG_CONSTRUCT</dfn>	 = <a class="enum" href="../../glib-2.0/gobject/gparam.h.html#G_PARAM_CONSTRUCT" title='G_PARAM_CONSTRUCT' data-ref="G_PARAM_CONSTRUCT">G_PARAM_CONSTRUCT</a>,</td></tr>
+<tr><th id="231">231</th><td>  <dfn class="enum" id="GTK_ARG_CONSTRUCT_ONLY" title='GTK_ARG_CONSTRUCT_ONLY' data-ref="GTK_ARG_CONSTRUCT_ONLY">GTK_ARG_CONSTRUCT_ONLY</dfn> = <a class="enum" href="../../glib-2.0/gobject/gparam.h.html#G_PARAM_CONSTRUCT_ONLY" title='G_PARAM_CONSTRUCT_ONLY' data-ref="G_PARAM_CONSTRUCT_ONLY">G_PARAM_CONSTRUCT_ONLY</a>,</td></tr>
+<tr><th id="232">232</th><td>  <dfn class="enum" id="GTK_ARG_CHILD_ARG" title='GTK_ARG_CHILD_ARG' data-ref="GTK_ARG_CHILD_ARG">GTK_ARG_CHILD_ARG</dfn>	 = <var>1</var> &lt;&lt; <var>4</var></td></tr>
+<tr><th id="233">233</th><td>} <dfn class="typedef" id="GtkArgFlags" title='GtkArgFlags' data-type='enum GtkArgFlags' data-ref="GtkArgFlags">GtkArgFlags</dfn>;</td></tr>
+<tr><th id="234">234</th><td><u>#define	<dfn class="macro" id="_M/GTK_ARG_READWRITE" data-ref="_M/GTK_ARG_READWRITE">GTK_ARG_READWRITE</dfn>	(GTK_ARG_READABLE | GTK_ARG_WRITABLE)</u></td></tr>
+<tr><th id="235">235</th><td><em>void</em>	<dfn class="decl" id="gtk_object_get" title='gtk_object_get' data-ref="gtk_object_get">gtk_object_get</dfn>		(<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	*<dfn class="local col1 decl" id="15531object" title='object' data-type='GtkObject *' data-ref="15531object">object</dfn>,</td></tr>
+<tr><th id="236">236</th><td>				 <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>	*<dfn class="local col2 decl" id="15532first_property_name" title='first_property_name' data-type='const gchar *' data-ref="15532first_property_name">first_property_name</dfn>,</td></tr>
+<tr><th id="237">237</th><td>				 ...) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#106" title="__attribute__((__sentinel__))" data-ref="_M/G_GNUC_NULL_TERMINATED">G_GNUC_NULL_TERMINATED</a>;</td></tr>
+<tr><th id="238">238</th><td><em>void</em>	<dfn class="decl" id="gtk_object_set" title='gtk_object_set' data-ref="gtk_object_set">gtk_object_set</dfn>		(<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	*<dfn class="local col3 decl" id="15533object" title='object' data-type='GtkObject *' data-ref="15533object">object</dfn>,</td></tr>
+<tr><th id="239">239</th><td>				 <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>	*<dfn class="local col4 decl" id="15534first_property_name" title='first_property_name' data-type='const gchar *' data-ref="15534first_property_name">first_property_name</dfn>,</td></tr>
+<tr><th id="240">240</th><td>				 ...) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#106" title="__attribute__((__sentinel__))" data-ref="_M/G_GNUC_NULL_TERMINATED">G_GNUC_NULL_TERMINATED</a>;</td></tr>
+<tr><th id="241">241</th><td><em>void</em>	<dfn class="decl" id="gtk_object_add_arg_type" title='gtk_object_add_arg_type' data-ref="gtk_object_add_arg_type">gtk_object_add_arg_type</dfn>		(<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col5 decl" id="15535arg_name" title='arg_name' data-type='const gchar *' data-ref="15535arg_name">arg_name</dfn>,</td></tr>
+<tr><th id="242">242</th><td>					 <a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>           <dfn class="local col6 decl" id="15536arg_type" title='arg_type' data-type='GType' data-ref="15536arg_type">arg_type</dfn>,</td></tr>
+<tr><th id="243">243</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           <dfn class="local col7 decl" id="15537arg_flags" title='arg_flags' data-type='guint' data-ref="15537arg_flags">arg_flags</dfn>,</td></tr>
+<tr><th id="244">244</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           <dfn class="local col8 decl" id="15538arg_id" title='arg_id' data-type='guint' data-ref="15538arg_id">arg_id</dfn>);</td></tr>
+<tr><th id="245">245</th><td></td></tr>
+<tr><th id="246">246</th><td><u>#<span data-ppcond="155">endif</span> /* GTK_DISABLE_DEPRECATED */</u></td></tr>
+<tr><th id="247">247</th><td></td></tr>
+<tr><th id="248">248</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="249">249</th><td></td></tr>
+<tr><th id="250">250</th><td><u>#<span data-ppcond="27">endif</span> /* __GTK_OBJECT_H__ */</u></td></tr>
+<tr><th id="251">251</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gtk/gtkaction.h' l='67' type='void (*)(GtkAction *)'/>
+<offset>1088</offset>
+<doc f='include/gtk-2.0/gtk/gtkaction.h' l='66'>/* activation signal */</doc>

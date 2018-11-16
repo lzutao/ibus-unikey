@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='545' type='cairo_pattern_t * gdk_window_get_background_pattern(GdkWindow * window)'/>

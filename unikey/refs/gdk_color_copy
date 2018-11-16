@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkcolor.h' l='134' type='GdkColor * gdk_color_copy(const GdkColor * color)'/>

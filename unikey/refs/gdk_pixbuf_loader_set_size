@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-loader.h' l='93' type='void gdk_pixbuf_loader_set_size(GdkPixbufLoader * loader, int width, int height)'/>

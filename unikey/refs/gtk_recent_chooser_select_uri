@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentchooser.h' l='165' type='gboolean gtk_recent_chooser_select_uri(GtkRecentChooser * chooser, const gchar * uri, GError ** error)'/>

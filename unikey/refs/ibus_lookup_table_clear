@@ -1,0 +1,7 @@
+<dec f='include/ibus-1.0/ibuslookuptable.h' l='329' type='void ibus_lookup_table_clear(IBusLookupTable * table)'/>
+<doc f='include/ibus-1.0/ibuslookuptable.h' l='323'>/**
+ * ibus_lookup_table_clear:
+ * @table: An IBusLookupTable.
+ *
+ * Clear and remove all candidate from an IBusLookupTable.
+ */</doc>

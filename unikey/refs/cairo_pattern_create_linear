@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='2754' type='cairo_pattern_t * cairo_pattern_create_linear(double x0, double y0, double x1, double y1)'/>

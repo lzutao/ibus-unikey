@@ -1,0 +1,4 @@
+<dec f='include/ibus-1.0/ibuspanelservice.h' l='134' type='gpointer [5]'/>
+<offset>3776</offset>
+<doc f='include/ibus-1.0/ibuspanelservice.h' l='133'>/* padding */</doc>
+<doc f='include/ibus-1.0/ibuspanelservice.h' l='134'>// We can add 8 pointers without breaking the ABI.</doc>

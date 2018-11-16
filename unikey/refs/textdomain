@@ -1,0 +1,6 @@
+<dec f='include/libintl.h' l='82' type='char * textdomain(const char * __domainname)'/>
+<doc f='include/libintl.h' l='79'>/* Set the current default message catalog to DOMAINNAME.
+   If DOMAINNAME is null, return the current default.
+   If DOMAINNAME is &quot;&quot;, reset to the default of &quot;messages&quot;.  */</doc>
+<use f='unikey/setup/setup.cpp' l='25' u='c' c='main'/>
+<use f='unikey/src/main.cpp' l='101' u='c' c='main'/>

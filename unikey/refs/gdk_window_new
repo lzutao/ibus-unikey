@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='332' type='GdkWindow * gdk_window_new(GdkWindow * parent, GdkWindowAttr * attributes, gint attributes_mask)'/>

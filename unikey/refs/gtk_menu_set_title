@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkmenu.h' l='183' type='void gtk_menu_set_title(GtkMenu * menu, const gchar * title)'/>
+<doc f='include/gtk-2.0/gtk/gtkmenu.h' l='180'>/* This sets the window manager title for the window that
+ * appears when a menu is torn off
+ */</doc>

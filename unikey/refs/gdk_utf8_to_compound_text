@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkproperty.h' l='76' type='gboolean gdk_utf8_to_compound_text(const gchar * str, GdkAtom * encoding, gint * format, guchar ** ctext, gint * length)'/>

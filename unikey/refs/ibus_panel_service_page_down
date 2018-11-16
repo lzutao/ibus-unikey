@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibuspanelservice.h' l='189' type='void ibus_panel_service_page_down(IBusPanelService * panel)'/>
+<doc f='include/ibus-1.0/ibuspanelservice.h' l='182'>/**
+ * ibus_panel_service_page_down:
+ * @panel: An IBusPanelService
+ *
+ * Notify that the page is down
+ * by sending a &quot;PageDown&quot; to IBus service.
+ */</doc>

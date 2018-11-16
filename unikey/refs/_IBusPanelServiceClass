@@ -1,0 +1,30 @@
+<def f='include/ibus-1.0/ibuspanelservice.h' l='75' ll='135'/>
+<size>512</size>
+<mbr r='_IBusPanelServiceClass::parent' o='0' t='IBusServiceClass'/>
+<mbr r='_IBusPanelServiceClass::focus_in' o='2112' t='void (*)(IBusPanelService *, const gchar *)'/>
+<mbr r='_IBusPanelServiceClass::focus_out' o='2176' t='void (*)(IBusPanelService *, const gchar *)'/>
+<mbr r='_IBusPanelServiceClass::register_properties' o='2240' t='void (*)(IBusPanelService *, IBusPropList *)'/>
+<mbr r='_IBusPanelServiceClass::set_cursor_location' o='2304' t='void (*)(IBusPanelService *, gint, gint, gint, gint)'/>
+<mbr r='_IBusPanelServiceClass::update_auxiliary_text' o='2368' t='void (*)(IBusPanelService *, IBusText *, gboolean)'/>
+<mbr r='_IBusPanelServiceClass::update_lookup_table' o='2432' t='void (*)(IBusPanelService *, IBusLookupTable *, gboolean)'/>
+<mbr r='_IBusPanelServiceClass::update_preedit_text' o='2496' t='void (*)(IBusPanelService *, IBusText *, guint, gboolean)'/>
+<mbr r='_IBusPanelServiceClass::update_property' o='2560' t='void (*)(IBusPanelService *, IBusProperty *)'/>
+<mbr r='_IBusPanelServiceClass::cursor_down_lookup_table' o='2624' t='void (*)(IBusPanelService *)'/>
+<mbr r='_IBusPanelServiceClass::cursor_up_lookup_table' o='2688' t='void (*)(IBusPanelService *)'/>
+<mbr r='_IBusPanelServiceClass::hide_auxiliary_text' o='2752' t='void (*)(IBusPanelService *)'/>
+<mbr r='_IBusPanelServiceClass::hide_language_bar' o='2816' t='void (*)(IBusPanelService *)'/>
+<mbr r='_IBusPanelServiceClass::hide_lookup_table' o='2880' t='void (*)(IBusPanelService *)'/>
+<mbr r='_IBusPanelServiceClass::hide_preedit_text' o='2944' t='void (*)(IBusPanelService *)'/>
+<mbr r='_IBusPanelServiceClass::page_down_lookup_table' o='3008' t='void (*)(IBusPanelService *)'/>
+<mbr r='_IBusPanelServiceClass::page_up_lookup_table' o='3072' t='void (*)(IBusPanelService *)'/>
+<mbr r='_IBusPanelServiceClass::reset' o='3136' t='void (*)(IBusPanelService *)'/>
+<mbr r='_IBusPanelServiceClass::show_auxiliary_text' o='3200' t='void (*)(IBusPanelService *)'/>
+<mbr r='_IBusPanelServiceClass::show_language_bar' o='3264' t='void (*)(IBusPanelService *)'/>
+<mbr r='_IBusPanelServiceClass::show_lookup_table' o='3328' t='void (*)(IBusPanelService *)'/>
+<mbr r='_IBusPanelServiceClass::show_preedit_text' o='3392' t='void (*)(IBusPanelService *)'/>
+<mbr r='_IBusPanelServiceClass::start_setup' o='3456' t='void (*)(IBusPanelService *)'/>
+<mbr r='_IBusPanelServiceClass::state_changed' o='3520' t='void (*)(IBusPanelService *)'/>
+<mbr r='_IBusPanelServiceClass::destroy_context' o='3584' t='void (*)(IBusPanelService *, const gchar *)'/>
+<mbr r='_IBusPanelServiceClass::set_content_type' o='3648' t='void (*)(IBusPanelService *, guint, guint)'/>
+<mbr r='_IBusPanelServiceClass::set_cursor_location_relative' o='3712' t='void (*)(IBusPanelService *, gint, gint, gint, gint)'/>
+<mbr r='_IBusPanelServiceClass::pdummy' o='3776' t='gpointer [5]'/>

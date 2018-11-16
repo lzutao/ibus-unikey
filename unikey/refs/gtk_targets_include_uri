@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkselection.h' l='192' type='gboolean gtk_targets_include_uri(GdkAtom * targets, gint n_targets)'/>

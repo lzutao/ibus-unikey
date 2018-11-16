@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcombobox.h' l='88' type='void gtk_combo_box_set_add_tearoffs(GtkComboBox * combo_box, gboolean add_tearoffs)'/>

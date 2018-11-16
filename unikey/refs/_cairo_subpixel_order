@@ -1,0 +1,20 @@
+<def f='include/cairo/cairo.h' l='1302' ll='1308'/>
+<doc f='include/cairo/cairo.h' l='1283'>/**
+ * cairo_subpixel_order_t:
+ * @CAIRO_SUBPIXEL_ORDER_DEFAULT: Use the default subpixel order for
+ *   for the target device, since 1.0
+ * @CAIRO_SUBPIXEL_ORDER_RGB: Subpixel elements are arranged horizontally
+ *   with red at the left, since 1.0
+ * @CAIRO_SUBPIXEL_ORDER_BGR:  Subpixel elements are arranged horizontally
+ *   with blue at the left, since 1.0
+ * @CAIRO_SUBPIXEL_ORDER_VRGB: Subpixel elements are arranged vertically
+ *   with red at the top, since 1.0
+ * @CAIRO_SUBPIXEL_ORDER_VBGR: Subpixel elements are arranged vertically
+ *   with blue at the top, since 1.0
+ *
+ * The subpixel order specifies the order of color elements within
+ * each pixel on the display device when rendering with an
+ * antialiasing mode of %CAIRO_ANTIALIAS_SUBPIXEL.
+ *
+ * Since: 1.0
+ **/</doc>

@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtktogglebutton.h' l='74' type='GType gtk_toggle_button_get_type()'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='100' macro='1' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='106' macro='1' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='112' macro='1' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='118' macro='1' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='124' macro='1' u='c'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkitemfactory.h' l='194' type='void gtk_item_factory_set_translate_func(GtkItemFactory * ifactory, GtkTranslateFunc func, gpointer data, GDestroyNotify notify)'/>

@@ -1,0 +1,1 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='750' type='GList * ibus_bus_list_active_engines(IBusBus * bus)'/>

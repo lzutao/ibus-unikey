@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusdebug.h' l='49'/>
+<doc f='include/ibus-1.0/ibusdebug.h' l='38'>/**
+ * ibus_warning:
+ * @msg: A printf formatted message to be print.
+ * @...: Necessary arguments for @msg.
+ *
+ * A convenient wrapper for g_warning.
+ * The output format will be
+ * &lt;programlisting&gt;
+ *     source_file:line, message...
+ * &lt;/programlisting&gt;
+ */</doc>

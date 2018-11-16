@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktypeutils.h' l='254' type='GtkFlagValue * gtk_type_flags_get_values(GtkType flags_type)'/>

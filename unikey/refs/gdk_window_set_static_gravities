@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='474' type='gboolean gdk_window_set_static_gravities(GdkWindow * window, gboolean use_static)'/>
+<doc f='include/gtk-2.0/gdk/gdkwindow.h' l='471'>/* Set static bit gravity on the parent, and static
+ * window gravity on all children.
+ */</doc>

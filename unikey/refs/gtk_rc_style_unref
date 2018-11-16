@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrc.h' l='178' type='void gtk_rc_style_unref(GtkRcStyle * rc_style)'/>

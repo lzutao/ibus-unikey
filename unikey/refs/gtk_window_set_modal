@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='307' type='void gtk_window_set_modal(GtkWindow * window, gboolean modal)'/>
+<doc f='include/gtk-2.0/gtk/gtkwindow.h' l='306'>/* If window is set modal, input will be grabbed when show and released when hide */</doc>

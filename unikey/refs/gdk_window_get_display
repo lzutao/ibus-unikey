@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='340' type='GdkDisplay * gdk_window_get_display(GdkWindow * window)'/>

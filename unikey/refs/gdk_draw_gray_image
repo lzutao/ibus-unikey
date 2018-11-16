@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkrgb.h' l='109' type='void gdk_draw_gray_image(GdkDrawable * drawable, GdkGC * gc, gint x, gint y, gint width, gint height, GdkRgbDither dith, const guchar * buf, gint rowstride)'/>

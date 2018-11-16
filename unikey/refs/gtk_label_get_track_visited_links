@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtklabel.h' l='183' type='gboolean gtk_label_get_track_visited_links(GtkLabel * label)'/>

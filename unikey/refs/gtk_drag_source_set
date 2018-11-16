@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkdnd.h' l='103' type='void gtk_drag_source_set(GtkWidget * widget, GdkModifierType start_button_mask, const GtkTargetEntry * targets, gint n_targets, GdkDragAction actions)'/>
+<doc f='include/gtk-2.0/gtk/gtkdnd.h' l='101'>/* Source side */</doc>

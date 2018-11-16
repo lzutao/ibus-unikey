@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkcolor.h' l='132' type='GdkVisual * gdk_colormap_get_visual(GdkColormap * colormap)'/>

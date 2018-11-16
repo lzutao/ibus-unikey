@@ -1,0 +1,7 @@
+<dec f='include/ibus-1.0/ibusenumtypes.h' l='227'/>
+<doc f='include/ibus-1.0/ibusenumtypes.h' l='221'>/**
+ * IBUS_TYPE_INPUT_PURPOSE:
+ * @returns: GType of IBUS_INPUT_PURPOSE
+ *
+ * Returns the type of IBUS_INPUT_PURPOSE as GType.
+ */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='2735' type='void cairo_raster_source_pattern_set_finish(cairo_pattern_t * pattern, cairo_raster_source_finish_func_t finish)'/>

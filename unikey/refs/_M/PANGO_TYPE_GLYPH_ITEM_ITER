@@ -1,0 +1,8 @@
+<dec f='include/pango-1.0/pango/pango-glyph-item.h' l='150'/>
+<doc f='include/pango-1.0/pango/pango-glyph-item.h' l='143'>/**
+ * PANGO_TYPE_GLYPH_ITEM_ITER:
+ *
+ * The #GObject type for #PangoGlyphItemIter.
+ *
+ * Since: 1.22
+ */</doc>

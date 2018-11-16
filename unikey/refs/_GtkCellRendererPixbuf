@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gtk/gtkcellrendererpixbuf.h' l='43' ll='51'/>
+<size>80</size>
+<mbr r='_GtkCellRendererPixbuf::parent' o='0' t='GtkCellRenderer'/>
+<mbr r='_GtkCellRendererPixbuf::pixbuf' o='448' t='GdkPixbuf *'/>
+<mbr r='_GtkCellRendererPixbuf::pixbuf_expander_open' o='512' t='GdkPixbuf *'/>
+<mbr r='_GtkCellRendererPixbuf::pixbuf_expander_closed' o='576' t='GdkPixbuf *'/>

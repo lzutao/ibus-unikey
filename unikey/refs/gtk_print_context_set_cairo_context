@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkprintcontext.h' l='64' type='void gtk_print_context_set_cairo_context(GtkPrintContext * context, cairo_t * cr, double dpi_x, double dpi_y)'/>
+<doc f='include/gtk-2.0/gtk/gtkprintcontext.h' l='63'>/* Needed for preview implementations */</doc>

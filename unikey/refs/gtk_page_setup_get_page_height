@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkpagesetup.h' l='83' type='gdouble gtk_page_setup_get_page_height(GtkPageSetup * setup, GtkUnit unit)'/>

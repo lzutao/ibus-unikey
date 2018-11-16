@@ -1,0 +1,2 @@
+<dec f='include/glib-2.0/glib/gvariant.h' l='134' type='gboolean g_variant_get_boolean(GVariant * value)'/>
+<use f='unikey/src/utils.cpp' l='144' u='c' c='_Z30ibus_unikey_config_get_booleanP11_IBusConfigPKcS2_Pi'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='483' type='GdkWindow * gdk_window_foreign_new_for_display(GdkDisplay * display, GdkNativeWindow anid)'/>

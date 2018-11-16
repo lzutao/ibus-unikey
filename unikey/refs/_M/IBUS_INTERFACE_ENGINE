@@ -1,0 +1,6 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='158'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='153'>/**
+ * IBUS_INTERFACE_ENGINE:
+ *
+ * D-Bus interface for IBus engine.
+ */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintoperation.h' l='149' type='void gtk_print_operation_set_job_name(GtkPrintOperation * op, const gchar * job_name)'/>

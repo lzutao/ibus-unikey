@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkspinbutton.h' l='145' type='guint gtk_spin_button_get_digits(GtkSpinButton * spin_button)'/>

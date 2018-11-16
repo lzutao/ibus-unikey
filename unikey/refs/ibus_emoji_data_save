@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusemoji.h' l='205' type='void ibus_emoji_data_save(const gchar * path, GSList * list)'/>
+<doc f='include/ibus-1.0/ibusemoji.h' l='198'>/**
+ * ibus_emoji_data_save:
+ * @path: A path of the saved emoji data.
+ * @list: (element-type IBusEmojiData) (transfer none): A list of emoji data.
+ *
+ * Save the list of #IBusEmojiData to the cache file.
+ */</doc>

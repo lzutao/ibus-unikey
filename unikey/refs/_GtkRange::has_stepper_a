@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkrange.h' l='72' type='guint'/>
+<offset>866</offset>
+<doc f='include/gtk-2.0/gtk/gtkrange.h' l='68'>/* Steppers are: &lt; &gt; ---- &lt; &gt;
+   *               a b      c d
+   */</doc>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkinput.h' l='130' type='GList * gdk_devices_list()'/>
+<doc f='include/gtk-2.0/gdk/gdkinput.h' l='129'>/* Returns a list of GdkDevice * */</doc>

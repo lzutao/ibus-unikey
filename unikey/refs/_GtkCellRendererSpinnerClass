@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkcellrendererspinner.h' l='51' ll='60'/>
+<size>256</size>
+<mbr r='_GtkCellRendererSpinnerClass::parent_class' o='0' t='GtkCellRendererClass'/>
+<mbr r='_GtkCellRendererSpinnerClass::_gtk_reserved1' o='1792' t='void (*)()'/>
+<mbr r='_GtkCellRendererSpinnerClass::_gtk_reserved2' o='1856' t='void (*)()'/>
+<mbr r='_GtkCellRendererSpinnerClass::_gtk_reserved3' o='1920' t='void (*)()'/>
+<mbr r='_GtkCellRendererSpinnerClass::_gtk_reserved4' o='1984' t='void (*)()'/>

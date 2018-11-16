@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentmanager.h' l='207' type='gboolean gtk_recent_info_exists(GtkRecentInfo * info)'/>

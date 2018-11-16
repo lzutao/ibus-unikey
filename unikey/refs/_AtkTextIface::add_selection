@@ -1,0 +1,2 @@
+<dec f='include/atk-1.0/atk/atktext.h' l='294' type='gboolean (*)(AtkText *, gint, gint)'/>
+<offset>960</offset>

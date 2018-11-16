@@ -1,0 +1,7 @@
+<dec f='include/ibus-1.0/ibusutil.h' l='45' type='const gchar * ibus_get_untranslated_language_name(const gchar * _locale)'/>
+<doc f='include/ibus-1.0/ibusutil.h' l='39'>/**
+ * ibus_get_untranslated_language_name:
+ * @_locale: A const locale name.
+ *
+ * Returns: untranslated language name
+ */</doc>

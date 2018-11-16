@@ -1,0 +1,40 @@
+<def f='include/pango-1.0/pango/pango-renderer.h' l='111' ll='192'/>
+<size>248</size>
+<doc f='include/pango-1.0/pango/pango-renderer.h' l='88'>/**
+ * PangoRendererClass:
+ * @draw_glyphs: draws a #PangoGlyphString
+ * @draw_rectangle: draws a rectangle
+ * @draw_error_underline: draws a squiggly line that approximately
+ * covers the given rectangle in the style of an underline used to
+ * indicate a spelling error.
+ * @draw_shape: draw content for a glyph shaped with #PangoAttrShape.
+ *   @x, @y are the coordinates of the left edge of the baseline,
+ *   in user coordinates.
+ * @draw_trapezoid: draws a trapezoidal filled area
+ * @draw_glyph: draws a single glyph
+ * @part_changed: do renderer specific processing when rendering
+ *  attributes change
+ * @begin: Do renderer-specific initialization before drawing
+ * @end: Do renderer-specific cleanup after drawing
+ * @prepare_run: updates the renderer for a new run
+ * @draw_glyph_item: draws a #PangoGlyphItem
+ *
+ * Class structure for #PangoRenderer.
+ *
+ * Since: 1.8
+ **/</doc>
+<mbr r='_PangoRendererClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_PangoRendererClass::draw_glyphs' o='1088' t='void (*)(PangoRenderer *, PangoFont *, PangoGlyphString *, int, int)'/>
+<mbr r='_PangoRendererClass::draw_rectangle' o='1152' t='void (*)(PangoRenderer *, PangoRenderPart, int, int, int, int)'/>
+<mbr r='_PangoRendererClass::draw_error_underline' o='1216' t='void (*)(PangoRenderer *, int, int, int, int)'/>
+<mbr r='_PangoRendererClass::draw_shape' o='1280' t='void (*)(PangoRenderer *, PangoAttrShape *, int, int)'/>
+<mbr r='_PangoRendererClass::draw_trapezoid' o='1344' t='void (*)(PangoRenderer *, PangoRenderPart, double, double, double, double, double, double)'/>
+<mbr r='_PangoRendererClass::draw_glyph' o='1408' t='void (*)(PangoRenderer *, PangoFont *, PangoGlyph, double, double)'/>
+<mbr r='_PangoRendererClass::part_changed' o='1472' t='void (*)(PangoRenderer *, PangoRenderPart)'/>
+<mbr r='_PangoRendererClass::begin' o='1536' t='void (*)(PangoRenderer *)'/>
+<mbr r='_PangoRendererClass::end' o='1600' t='void (*)(PangoRenderer *)'/>
+<mbr r='_PangoRendererClass::prepare_run' o='1664' t='void (*)(PangoRenderer *, PangoLayoutRun *)'/>
+<mbr r='_PangoRendererClass::draw_glyph_item' o='1728' t='void (*)(PangoRenderer *, const char *, PangoGlyphItem *, int, int)'/>
+<mbr r='_PangoRendererClass::_pango_reserved2' o='1792' t='void (*)()'/>
+<mbr r='_PangoRendererClass::_pango_reserved3' o='1856' t='void (*)()'/>
+<mbr r='_PangoRendererClass::_pango_reserved4' o='1920' t='void (*)()'/>

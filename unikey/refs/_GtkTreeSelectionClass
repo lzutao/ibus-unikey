@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtktreeselection.h' l='62' ll='73'/>
+<size>176</size>
+<mbr r='_GtkTreeSelectionClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_GtkTreeSelectionClass::changed' o='1088' t='void (*)(GtkTreeSelection *)'/>
+<mbr r='_GtkTreeSelectionClass::_gtk_reserved1' o='1152' t='void (*)()'/>
+<mbr r='_GtkTreeSelectionClass::_gtk_reserved2' o='1216' t='void (*)()'/>
+<mbr r='_GtkTreeSelectionClass::_gtk_reserved3' o='1280' t='void (*)()'/>
+<mbr r='_GtkTreeSelectionClass::_gtk_reserved4' o='1344' t='void (*)()'/>

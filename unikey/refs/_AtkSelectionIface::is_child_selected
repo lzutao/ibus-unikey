@@ -1,0 +1,2 @@
+<dec f='include/atk-1.0/atk/atkselection.h' l='59' type='gboolean (*)(AtkSelection *, gint)'/>
+<offset>384</offset>

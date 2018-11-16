@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtksignal.h' l='138' type='void gtk_signal_emitv_by_name(GtkObject * object, const gchar * name, GtkArg * args)'/>

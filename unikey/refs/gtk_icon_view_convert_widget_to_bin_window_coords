@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconview.h' l='214' type='void gtk_icon_view_convert_widget_to_bin_window_coords(GtkIconView * icon_view, gint wx, gint wy, gint * bx, gint * by)'/>

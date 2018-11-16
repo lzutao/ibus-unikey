@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkinfobar.h' l='104' type='void gtk_info_bar_set_response_sensitive(GtkInfoBar * info_bar, gint response_id, gboolean setting)'/>

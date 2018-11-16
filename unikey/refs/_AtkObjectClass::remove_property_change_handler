@@ -1,0 +1,6 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='605' type='void (*)(AtkObject *, guint)'/>
+<offset>2112</offset>
+<doc f='include/atk-1.0/atk/atkobject.h' l='601'>/*
+   * Removes a property change handler which was specified using
+   * connect_property_change_handler
+   */</doc>

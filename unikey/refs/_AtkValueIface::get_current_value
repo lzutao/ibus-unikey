@@ -1,0 +1,3 @@
+<dec f='include/atk-1.0/atk/atkvalue.h' l='100' type='void (*)(AtkValue *, GValue *)'/>
+<offset>128</offset>
+<doc f='include/atk-1.0/atk/atkvalue.h' l='99'>/*&lt;deprecated&gt;*/</doc>

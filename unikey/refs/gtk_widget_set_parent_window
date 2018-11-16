@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1001' type='void gtk_widget_set_parent_window(GtkWidget * widget, GdkWindow * parent_window)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmenu.h' l='187' type='void gtk_menu_reorder_child(GtkMenu * menu, GtkWidget * child, gint position)'/>

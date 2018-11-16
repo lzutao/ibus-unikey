@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='415' type='void gdk_window_shape_combine_mask(GdkWindow * window, GdkBitmap * mask, gint x, gint y)'/>
+<doc f='include/gtk-2.0/gdk/gdkwindow.h' l='409'>/* 
+ * This allows for making shaped (partially transparent) windows
+ * - cool feature, needed for Drag and Drag for example.
+ *  The shape_mask can be the mask
+ *  from gdk_pixmap_create_from_xpm.   Stefan Wille
+ */</doc>

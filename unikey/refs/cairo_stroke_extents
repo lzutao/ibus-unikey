@@ -1,0 +1,2 @@
+<dec f='include/cairo/cairo.h' l='967' type='void cairo_stroke_extents(cairo_t * cr, double * x1, double * y1, double * x2, double * y2)'/>
+<doc f='include/cairo/cairo.h' l='965'>/* Rectangular extents */</doc>

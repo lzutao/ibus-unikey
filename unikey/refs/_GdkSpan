@@ -1,0 +1,5 @@
+<def f='include/gtk-2.0/gdk/gdktypes.h' l='216' ll='221'/>
+<size>12</size>
+<mbr r='_GdkSpan::x' o='0' t='gint'/>
+<mbr r='_GdkSpan::y' o='32' t='gint'/>
+<mbr r='_GdkSpan::width' o='64' t='gint'/>

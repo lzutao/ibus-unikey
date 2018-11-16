@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1211' type='void gtk_widget_push_colormap(GdkColormap * cmap)'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='1207'>/* Push/pop pairs, to change default values upon a widget&apos;s creation.
+ * This will override the values that got set by the
+ * gtk_widget_set_default_* () functions.
+ */</doc>

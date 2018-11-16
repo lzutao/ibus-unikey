@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktoolbar.h' l='257' type='GtkWidget * gtk_toolbar_insert_element(GtkToolbar * toolbar, GtkToolbarChildType type, GtkWidget * widget, const char * text, const char * tooltip_text, const char * tooltip_private_text, GtkWidget * icon, GCallback callback, gpointer user_data, gint position)'/>

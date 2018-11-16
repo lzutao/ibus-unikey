@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkactiongroup.h' l='57' ll='64'/>
+<size>32</size>
+<mbr r='_GtkActionGroup::parent' o='0' t='GObject'/>
+<mbr r='_GtkActionGroup::private_data' o='192' t='GtkActionGroupPrivate *'/>

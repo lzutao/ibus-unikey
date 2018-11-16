@@ -1,0 +1,8 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='649' type='void (*)(AtkObject *, gpointer *)'/>
+<offset>2560</offset>
+<doc f='include/atk-1.0/atk/atkobject.h' l='643'>/*
+   * The signal handler which is executed when there is a change in the
+   * &apos;active&apos; child or children of the object, for instance when 
+   * interior focus changes in a table or list.  This signal should be emitted
+   * by objects whose state includes ATK_STATE_MANAGES_DESCENDANTS.
+   */</doc>

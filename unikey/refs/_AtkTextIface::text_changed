@@ -1,0 +1,5 @@
+<dec f='include/atk-1.0/atk/atktext.h' l='309' type='void (*)(AtkText *, gint, gint)'/>
+<offset>1216</offset>
+<doc f='include/atk-1.0/atk/atktext.h' l='306'>/*
+   * signal handlers
+   */</doc>

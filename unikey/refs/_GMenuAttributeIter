@@ -1,0 +1,4 @@
+<def f='include/glib-2.0/gio/gmenumodel.h' l='232' ll='236'/>
+<size>32</size>
+<mbr r='_GMenuAttributeIter::parent_instance' o='0' t='GObject'/>
+<mbr r='_GMenuAttributeIter::priv' o='192' t='GMenuAttributeIterPrivate *'/>

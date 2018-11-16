@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='492' type='gboolean gdk_window_has_native(GdkWindow * window)'/>
+<doc f='include/gtk-2.0/gdk/gdkwindow.h' l='490'>/* GdkWindow */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='321' type='void gtk_entry_prepend_text(GtkEntry * entry, const gchar * text)'/>

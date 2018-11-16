@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkfilechooserdialog.h' l='44' ll='49'/>
+<size>272</size>
+<mbr r='_GtkFileChooserDialog::parent_instance' o='0' t='GtkDialog'/>
+<mbr r='_GtkFileChooserDialog::priv' o='2112' t='GtkFileChooserDialogPrivate *'/>

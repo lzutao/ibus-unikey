@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkscreen.h' l='103' type='gint gdk_screen_get_monitor_width_mm(GdkScreen * screen, gint monitor_num)'/>

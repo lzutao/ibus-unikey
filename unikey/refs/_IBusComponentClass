@@ -1,0 +1,3 @@
+<def f='include/ibus-1.0/ibuscomponent.h' l='96' ll='100'/>
+<size>264</size>
+<mbr r='_IBusComponentClass::parent' o='0' t='IBusSerializableClass'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintoperation.h' l='161' type='void gtk_print_operation_set_track_print_status(GtkPrintOperation * op, gboolean track_status)'/>

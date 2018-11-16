@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='759' type='void cairo_set_fill_rule(cairo_t * cr, cairo_fill_rule_t fill_rule)'/>

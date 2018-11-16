@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmain.h' l='177' type='guint gtk_timeout_add_full(guint32 interval, GtkFunction function, GtkCallbackMarshal marshal, gpointer data, GDestroyNotify destroy)'/>

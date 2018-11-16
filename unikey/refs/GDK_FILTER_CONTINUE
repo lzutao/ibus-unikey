@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkevents.h' l='80' type='0'/>
+<doc f='include/gtk-2.0/gdk/gdkevents.h' l='80'>/* Event not handled, continue processesing */</doc>

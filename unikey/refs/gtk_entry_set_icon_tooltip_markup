@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='295' type='void gtk_entry_set_icon_tooltip_markup(GtkEntry * entry, GtkEntryIconPosition icon_pos, const gchar * tooltip)'/>

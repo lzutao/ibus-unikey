@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='256' type='glong ibus_get_daemon_uid()'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='246'>/**
+ * ibus_get_daemon_uid:
+ *
+ * Get UID of ibus-daemon.
+ *
+ * Returns: UID of ibus-daemon; or 0 if UID is not available.
+ *
+ * Deprecated: This function has been deprecated and should
+ * not be used in newly written code.
+ */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdktestutils.h' l='40' type='gboolean gdk_test_simulate_button(GdkWindow * window, gint x, gint y, guint button, GdkModifierType modifiers, GdkEventType button_pressrelease)'/>

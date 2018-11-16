@@ -1,0 +1,2 @@
+<dec f='include/atk-1.0/atk/atkaction.h' l='55' type='gboolean (*)(AtkAction *, gint)'/>
+<offset>128</offset>

@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='311' type='void ibus_property_set_visible(IBusProperty * prop, gboolean visible)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='304'>/**
+ * ibus_property_set_visible:
+ * @prop: An #IBusProperty.
+ * @visible: Whether the #IBusProperty is visible.
+ *
+ * Set whether the #IBusProperty is visible.
+ */</doc>

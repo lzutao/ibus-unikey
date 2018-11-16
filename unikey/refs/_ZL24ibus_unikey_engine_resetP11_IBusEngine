@@ -1,0 +1,2 @@
+<dec f='unikey/src/engine_private.h' l='62' type='void ibus_unikey_engine_reset(IBusEngine * engine)'/>
+<use f='unikey/src/engine.cpp' l='89' u='r' c='_ZL29ibus_unikey_engine_class_initP22_IBusUnikeyEngineClass'/>

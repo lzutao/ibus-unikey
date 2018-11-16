@@ -1,0 +1,5 @@
+<dec f='unikey/src/engine_private.h' l='85' type='void ibus_unikey_engine_clean_buffer(IBusEngine * engine)'/>
+<use f='unikey/src/engine.cpp' l='148' u='c' c='_ZL28ibus_unikey_engine_focus_outP11_IBusEngine'/>
+<doc f='unikey/src/engine_private.h' l='82'>/**
+ * clean buffer
+ */</doc>

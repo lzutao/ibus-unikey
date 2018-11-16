@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1184'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='1176'>/**
+ * gtk_widget_restore_default_style:
+ * @widget: a #GtkWidget.
+ *
+ * Equivalent to &lt;literal&gt;gtk_widget_set_style (widget, NULL)&lt;/literal&gt;.
+ *
+ * Deprecated: 2.0: Use gtk_widget_set_style() with a %NULL @style argument instead.
+ */</doc>

@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusinputcontext.h' l='102' type='IBusInputContext * ibus_input_context_new(const gchar * path, GDBusConnection * connection, GCancellable * cancellable, GError ** error)'/>
+<doc f='include/ibus-1.0/ibusinputcontext.h' l='90'>/**
+ * ibus_input_context_new:
+ * @path: The path to the object that emitting the signal.
+ * @connection: A #GDBusConnection.
+ * @cancellable: A #GCancellable or %NULL.
+ * @error: Return location for error or %NULL.
+ *
+ * Creates a new #IBusInputContext.
+ *
+ * Returns: A newly allocated #IBusInputContext.
+ */</doc>

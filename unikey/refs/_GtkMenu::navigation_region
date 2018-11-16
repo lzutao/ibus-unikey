@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtkmenu.h' l='95' type='GdkRegion *'/>
+<offset>2240</offset>
+<doc f='include/gtk-2.0/gtk/gtkmenu.h' l='92'>/* When a submenu of this menu is popped up, motion in this
+   * region is ignored
+   */</doc>
+<doc f='include/gtk-2.0/gtk/gtkmenu.h' l='95'>/* unused */</doc>

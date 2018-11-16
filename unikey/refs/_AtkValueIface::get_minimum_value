@@ -1,0 +1,2 @@
+<dec f='include/atk-1.0/atk/atkvalue.h' l='104' type='void (*)(AtkValue *, GValue *)'/>
+<offset>256</offset>

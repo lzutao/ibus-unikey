@@ -1,0 +1,18 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='244' type='const gchar * ibus_get_user_name()'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='227'>/**
+ * ibus_get_user_name:
+ *
+ * Get the current user name.
+ * It is determined by:
+ * &lt;orderedlist&gt;
+ *    &lt;listitem&gt;&lt;para&gt;getlogin()&lt;/para&gt;&lt;/listitem&gt;
+ *    &lt;listitem&gt;&lt;para&gt;Environment variable SUDO_USER&lt;/para&gt;&lt;/listitem&gt;
+ *    &lt;listitem&gt;&lt;para&gt;Environment variable USERHELPER_UID&lt;/para&gt;&lt;/listitem&gt;
+ *    &lt;listitem&gt;&lt;para&gt;Environment variable USERNAME&lt;/para&gt;&lt;/listitem&gt;
+ *    &lt;listitem&gt;&lt;para&gt;Environment variable LOGNAME&lt;/para&gt;&lt;/listitem&gt;
+ *    &lt;listitem&gt;&lt;para&gt;Environment variable USER&lt;/para&gt;&lt;/listitem&gt;
+ *    &lt;listitem&gt;&lt;para&gt;Environment variable LNAME&lt;/para&gt;&lt;/listitem&gt;
+ * &lt;/orderedlist&gt;
+ *
+ * Returns: A newly allocated string that stores current user name.
+ */</doc>

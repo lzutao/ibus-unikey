@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkuimanager.h' l='123' type='GList * gtk_ui_manager_get_action_groups(GtkUIManager * self)'/>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='84' type='void (*)(GtkTreeView *, GtkTreeIter *, GtkTreePath *)'/>
+<offset>6848</offset>

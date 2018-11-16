@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkselection.h' l='167' type='guchar * gtk_selection_data_get_text(GtkSelectionData * selection_data)'/>

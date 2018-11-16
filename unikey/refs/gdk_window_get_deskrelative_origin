@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='582' type='gboolean gdk_window_get_deskrelative_origin(GdkWindow * window, gint * x, gint * y)'/>
+<doc f='include/gtk-2.0/gdk/gdkwindow.h' l='581'>/* Used by gtk_handle_box_button_changed () */</doc>

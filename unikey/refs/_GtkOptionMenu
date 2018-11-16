@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkoptionmenu.h' l='48' ll='57'/>
+<size>168</size>
+<mbr r='_GtkOptionMenu::button' o='0' t='GtkButton'/>
+<mbr r='_GtkOptionMenu::menu' o='1152' t='GtkWidget *'/>
+<mbr r='_GtkOptionMenu::menu_item' o='1216' t='GtkWidget *'/>
+<mbr r='_GtkOptionMenu::width' o='1280' t='guint16'/>
+<mbr r='_GtkOptionMenu::height' o='1296' t='guint16'/>

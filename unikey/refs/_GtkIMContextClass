@@ -1,0 +1,25 @@
+<def f='include/gtk-2.0/gtk/gtkimcontext.h' l='50' ll='100'/>
+<size>336</size>
+<mbr r='_GtkIMContextClass::parent_class' o='0' t='GtkObjectClass'/>
+<mbr r='_GtkIMContextClass::preedit_start' o='1280' t='void (*)(GtkIMContext *)'/>
+<mbr r='_GtkIMContextClass::preedit_end' o='1344' t='void (*)(GtkIMContext *)'/>
+<mbr r='_GtkIMContextClass::preedit_changed' o='1408' t='void (*)(GtkIMContext *)'/>
+<mbr r='_GtkIMContextClass::commit' o='1472' t='void (*)(GtkIMContext *, const gchar *)'/>
+<mbr r='_GtkIMContextClass::retrieve_surrounding' o='1536' t='gboolean (*)(GtkIMContext *)'/>
+<mbr r='_GtkIMContextClass::delete_surrounding' o='1600' t='gboolean (*)(GtkIMContext *, gint, gint)'/>
+<mbr r='_GtkIMContextClass::set_client_window' o='1664' t='void (*)(GtkIMContext *, GdkWindow *)'/>
+<mbr r='_GtkIMContextClass::get_preedit_string' o='1728' t='void (*)(GtkIMContext *, gchar **, PangoAttrList **, gint *)'/>
+<mbr r='_GtkIMContextClass::filter_keypress' o='1792' t='gboolean (*)(GtkIMContext *, GdkEventKey *)'/>
+<mbr r='_GtkIMContextClass::focus_in' o='1856' t='void (*)(GtkIMContext *)'/>
+<mbr r='_GtkIMContextClass::focus_out' o='1920' t='void (*)(GtkIMContext *)'/>
+<mbr r='_GtkIMContextClass::reset' o='1984' t='void (*)(GtkIMContext *)'/>
+<mbr r='_GtkIMContextClass::set_cursor_location' o='2048' t='void (*)(GtkIMContext *, GdkRectangle *)'/>
+<mbr r='_GtkIMContextClass::set_use_preedit' o='2112' t='void (*)(GtkIMContext *, gboolean)'/>
+<mbr r='_GtkIMContextClass::set_surrounding' o='2176' t='void (*)(GtkIMContext *, const gchar *, gint, gint)'/>
+<mbr r='_GtkIMContextClass::get_surrounding' o='2240' t='gboolean (*)(GtkIMContext *, gchar **, gint *)'/>
+<mbr r='_GtkIMContextClass::_gtk_reserved1' o='2304' t='void (*)()'/>
+<mbr r='_GtkIMContextClass::_gtk_reserved2' o='2368' t='void (*)()'/>
+<mbr r='_GtkIMContextClass::_gtk_reserved3' o='2432' t='void (*)()'/>
+<mbr r='_GtkIMContextClass::_gtk_reserved4' o='2496' t='void (*)()'/>
+<mbr r='_GtkIMContextClass::_gtk_reserved5' o='2560' t='void (*)()'/>
+<mbr r='_GtkIMContextClass::_gtk_reserved6' o='2624' t='void (*)()'/>

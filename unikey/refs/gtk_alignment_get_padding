@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkalignment.h' l='85' type='void gtk_alignment_get_padding(GtkAlignment * alignment, guint * padding_top, guint * padding_bottom, guint * padding_left, guint * padding_right)'/>

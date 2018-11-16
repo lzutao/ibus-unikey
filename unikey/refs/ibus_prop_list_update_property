@@ -1,0 +1,15 @@
+<dec f='include/ibus-1.0/ibusproplist.h' l='147' type='gboolean ibus_prop_list_update_property(IBusPropList * prop_list, IBusProperty * prop)'/>
+<doc f='include/ibus-1.0/ibusproplist.h' l='138'>/**
+ * ibus_prop_list_update_property:
+ * @prop_list: An IBusPropList.
+ * @prop: IBusProperty to be update.
+ *
+ * Update an IBusProperty in IBusPropList.
+ *
+ * Returns: %TRUE if succeeded, %FALSE otherwise.
+ */</doc>
+<use f='unikey/src/engine.cpp' l='428' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='451' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='480' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='501' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='517' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>

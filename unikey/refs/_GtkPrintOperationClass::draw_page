@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkprintoperation.h' l='99' type='void (*)(GtkPrintOperation *, GtkPrintContext *, gint)'/>
+<offset>1344</offset>

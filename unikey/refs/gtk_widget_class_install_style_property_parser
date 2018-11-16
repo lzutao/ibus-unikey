@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1220' type='void gtk_widget_class_install_style_property_parser(GtkWidgetClass * klass, GParamSpec * pspec, GtkRcPropertyParser parser)'/>

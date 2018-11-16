@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkaboutdialog.h' l='113' type='const gchar *const * gtk_about_dialog_get_documenters(GtkAboutDialog * about)'/>

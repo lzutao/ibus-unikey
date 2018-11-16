@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkstyle.h' l='676' type='void gtk_paint_polygon(GtkStyle * style, GdkWindow * window, GtkStateType state_type, GtkShadowType shadow_type, const GdkRectangle * area, GtkWidget * widget, const gchar * detail, const GdkPoint * points, gint n_points, gboolean fill)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextview.h' l='319' type='void gtk_text_view_add_child_in_window(GtkTextView * text_view, GtkWidget * child, GtkTextWindowType which_window, gint xpos, gint ypos)'/>

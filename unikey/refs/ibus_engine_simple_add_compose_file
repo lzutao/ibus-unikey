@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusenginesimple.h' l='164' type='gboolean ibus_engine_simple_add_compose_file(IBusEngineSimple * simple, const gchar * file)'/>
+<doc f='include/ibus-1.0/ibusenginesimple.h' l='155'>/**
+ * ibus_engine_simple_add_compose_file:
+ * @simple: An IBusEngineSimple.
+ * @file: The compose file.
+ *
+ * Call ibus_engine_simple_add_table() internally by locale.
+ *
+ * Returns: %TRUE if the @file is loaded.
+ */</doc>

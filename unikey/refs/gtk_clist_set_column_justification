@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='518' type='void gtk_clist_set_column_justification(GtkCList * clist, gint column, GtkJustification justification)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='517'>/* set the justification on a column */</doc>

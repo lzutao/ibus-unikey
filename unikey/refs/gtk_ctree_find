@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='238' type='gboolean gtk_ctree_find(GtkCTree * ctree, GtkCTreeNode * node, GtkCTreeNode * child)'/>

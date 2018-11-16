@@ -1,0 +1,8 @@
+<def f='include/atk-1.0/atk/atkimage.h' l='49' ll='63'/>
+<size>56</size>
+<mbr r='_AtkImageIface::parent' o='0' t='GTypeInterface'/>
+<mbr r='_AtkImageIface::get_image_position' o='128' t='void (*)(AtkImage *, gint *, gint *, AtkCoordType)'/>
+<mbr r='_AtkImageIface::get_image_description' o='192' t='const gchar *(*)(AtkImage *)'/>
+<mbr r='_AtkImageIface::get_image_size' o='256' t='void (*)(AtkImage *, gint *, gint *)'/>
+<mbr r='_AtkImageIface::set_image_description' o='320' t='gboolean (*)(AtkImage *, const gchar *)'/>
+<mbr r='_AtkImageIface::get_image_locale' o='384' t='const gchar *(*)(AtkImage *)'/>

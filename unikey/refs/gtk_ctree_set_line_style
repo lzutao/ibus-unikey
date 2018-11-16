@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='416' type='void gtk_ctree_set_line_style(GtkCTree * ctree, GtkCTreeLineStyle line_style)'/>

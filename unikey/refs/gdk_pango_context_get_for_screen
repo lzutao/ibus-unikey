@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkpango.h' l='107' type='PangoContext * gdk_pango_context_get_for_screen(GdkScreen * screen)'/>
+<doc f='include/gtk-2.0/gdk/gdkpango.h' l='105'>/************************************************************************/</doc>

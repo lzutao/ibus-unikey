@@ -1,0 +1,13 @@
+<def f='include/gtk-2.0/gtk/gtkctree.h' l='147' ll='164'/>
+<size>136</size>
+<mbr r='_GtkCTreeRow::row' o='0' t='GtkCListRow'/>
+<mbr r='_GtkCTreeRow::parent' o='576' t='GtkCTreeNode *'/>
+<mbr r='_GtkCTreeRow::sibling' o='640' t='GtkCTreeNode *'/>
+<mbr r='_GtkCTreeRow::children' o='704' t='GtkCTreeNode *'/>
+<mbr r='_GtkCTreeRow::pixmap_closed' o='768' t='GdkPixmap *'/>
+<mbr r='_GtkCTreeRow::mask_closed' o='832' t='GdkBitmap *'/>
+<mbr r='_GtkCTreeRow::pixmap_opened' o='896' t='GdkPixmap *'/>
+<mbr r='_GtkCTreeRow::mask_opened' o='960' t='GdkBitmap *'/>
+<mbr r='_GtkCTreeRow::level' o='1024' t='guint16'/>
+<mbr r='_GtkCTreeRow::is_leaf' o='1040' t='guint'/>
+<mbr r='_GtkCTreeRow::expanded' o='1041' t='guint'/>

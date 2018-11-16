@@ -1,0 +1,17 @@
+<def f='include/cairo/cairo.h' l='379' ll='383'/>
+<doc f='include/cairo/cairo.h' l='363'>/**
+ * cairo_content_t:
+ * @CAIRO_CONTENT_COLOR: The surface will hold color content only. (Since 1.0)
+ * @CAIRO_CONTENT_ALPHA: The surface will hold alpha content only. (Since 1.0)
+ * @CAIRO_CONTENT_COLOR_ALPHA: The surface will hold color and alpha content. (Since 1.0)
+ *
+ * #cairo_content_t is used to describe the content that a surface will
+ * contain, whether color information, alpha information (translucence
+ * vs. opacity), or both.
+ *
+ * Note: The large values here are designed to keep #cairo_content_t
+ * values distinct from #cairo_format_t values so that the
+ * implementation can detect the error if users confuse the two types.
+ *
+ * Since: 1.0
+ **/</doc>

@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusenginesimple.h' l='151' type='gboolean ibus_engine_simple_add_table_by_locale(IBusEngineSimple * simple, const gchar * locale)'/>
+<doc f='include/ibus-1.0/ibusenginesimple.h' l='141'>/**
+ * ibus_engine_simple_add_table_by_locale:
+ * @simple: An IBusEngineSimple.
+ * @locale: (allow-none): The locale name. If the locale is %NULL,
+ *                        the current locale is used.
+ *
+ * Call ibus_engine_simple_add_table() internally by locale.
+ *
+ * Returns: %TRUE if the @locale is matched to the table.
+ */</doc>

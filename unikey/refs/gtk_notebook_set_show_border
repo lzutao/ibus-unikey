@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtknotebook.h' l='220' type='void gtk_notebook_set_show_border(GtkNotebook * notebook, gboolean show_border)'/>
+<doc f='include/gtk-2.0/gtk/gtknotebook.h' l='216'>/***********************************************************
+ *            set Notebook, NotebookTab style              *
+ ***********************************************************/</doc>

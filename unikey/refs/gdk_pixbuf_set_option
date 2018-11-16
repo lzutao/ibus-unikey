@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h' l='567' type='gboolean gdk_pixbuf_set_option(GdkPixbuf * pixbuf, const gchar * key, const gchar * value)'/>

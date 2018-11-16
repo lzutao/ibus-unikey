@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='408' type='void _gtk_window_internal_set_focus(GtkWindow * window, GtkWidget * focus)'/>
+<doc f='include/gtk-2.0/gtk/gtkwindow.h' l='407'>/* --- internal functions --- */</doc>

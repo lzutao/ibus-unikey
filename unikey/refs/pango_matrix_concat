@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-matrix.h' l='107' type='void pango_matrix_concat(PangoMatrix * matrix, const PangoMatrix * new_matrix)'/>

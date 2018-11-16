@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusfactory.h' l='71'/>
+<doc f='include/ibus-1.0/ibusfactory.h' l='63'>/**
+ * IBUS_FACTORY:
+ * @obj: An object which is subject to casting.
+ *
+ * Casts an IBUS_FACTORY or derived pointer into a (IBusFactory*) pointer.
+ * Depending on the current debugging level, this function may invoke
+ * certain runtime checks to identify invalid casts.
+ */</doc>

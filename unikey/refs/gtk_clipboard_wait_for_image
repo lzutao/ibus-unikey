@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkclipboard.h' l='129' type='GdkPixbuf * gtk_clipboard_wait_for_image(GtkClipboard * clipboard)'/>

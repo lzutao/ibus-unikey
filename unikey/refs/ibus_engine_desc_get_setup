@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusenginedesc.h' l='294' type='const gchar * ibus_engine_desc_get_setup(IBusEngineDesc * info)'/>
+<doc f='include/ibus-1.0/ibusenginedesc.h' l='286'>/**
+ * ibus_engine_desc_get_setup:
+ * @info: An IBusEngineDesc
+ *
+ * Gets the setup property in IBusEngineDesc. It should not be freed.
+ *
+ * Returns: setup property in IBusEngineDesc
+ */</doc>

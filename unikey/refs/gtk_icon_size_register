@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconfactory.h' l='109' type='GtkIconSize gtk_icon_size_register(const gchar * name, gint width, gint height)'/>

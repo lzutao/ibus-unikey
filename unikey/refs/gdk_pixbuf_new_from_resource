@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h' l='330' type='GdkPixbuf * gdk_pixbuf_new_from_resource(const char * resource_path, GError ** error)'/>

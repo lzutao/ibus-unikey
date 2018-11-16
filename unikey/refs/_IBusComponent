@@ -1,0 +1,11 @@
+<def f='include/ibus-1.0/ibuscomponent.h' l='83' ll='94'/>
+<size>112</size>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='77'>/**
+ * IBusComponent:
+ *
+ * An IBusComponent stores component information.
+ * You can get extended values with g_object_get_properties.
+ */</doc>
+<mbr r='_IBusComponent::parent' o='0' t='IBusSerializable'/>
+<mbr r='_IBusComponent::priv' o='384' t='IBusComponentPrivate *'/>
+<mbr r='_IBusComponent::pdummy' o='448' t='gpointer [7]'/>

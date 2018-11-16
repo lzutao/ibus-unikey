@@ -1,0 +1,399 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ibusproperty.h source code [include/ibus-1.0/ibusproperty.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/ibus-1.0/ibusproperty.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>ibus-1.0</a>/<a href='ibusproperty.h.html'>ibusproperty.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* -*- mode: C; c-basic-offset: 4; indent-tabs-mode: nil; -*- */</i></td></tr>
+<tr><th id="2">2</th><td><i>/* vim:set et sts=4: */</i></td></tr>
+<tr><th id="3">3</th><td><i>/* IBus - The Input Bus</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 2008-2010 Peng Huang &lt;shawn.p.huang@gmail.com&gt;</i></td></tr>
+<tr><th id="5">5</th><td><i> * Copyright (C) 2008-2010 Red Hat, Inc.</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="8">8</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="9">9</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="10">10</th><td><i> * version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="11">11</th><td><i> *</i></td></tr>
+<tr><th id="12">12</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="13">13</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="14">14</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="15">15</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="18">18</th><td><i> * License along with this library; if not, write to the Free Software</i></td></tr>
+<tr><th id="19">19</th><td><i> * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301</i></td></tr>
+<tr><th id="20">20</th><td><i> * USA</i></td></tr>
+<tr><th id="21">21</th><td><i> */</i></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> !defined (<a class="macro" href="ibus.h.html#26" data-ref="_M/__IBUS_H_INSIDE__">__IBUS_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/IBUS_COMPILATION">IBUS_COMPILATION</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#error "Only &lt;ibus.h&gt; can be included directly"</u></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/__IBUS_PROPERTY_H_">__IBUS_PROPERTY_H_</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/__IBUS_PROPERTY_H_" data-ref="_M/__IBUS_PROPERTY_H_">__IBUS_PROPERTY_H_</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><u>#include <a href="ibusserializable.h.html">"ibusserializable.h"</a></u></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="ibustext.h.html">"ibustext.h"</a></u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> * SECTION: ibusproperty</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> * <span class="command">@short</span>_description: UI component for input method engine property.</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> *<span class="command"> @title</span>: IBusProperty</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> *<span class="command"> @stability</span>: Stable</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * An IBusProperty is an UI component like a button or a menu item</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * which shows the status of corresponding input method engine property.</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * End user can operate and see the current status of IME through these components.</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> * For example, ibus-chewing users change the English/Chinese input mode by</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> * pressing ctrl-space or click on the Eng/Chi switch button.</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> * And the IBusProperty shows the change correspondingly.</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> * see_also: #IBusPropList, #IBusEngine</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="48">48</th><td><a class="macro" href="../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><i>/*</i></td></tr>
+<tr><th id="51">51</th><td><i> * Type macros.</i></td></tr>
+<tr><th id="52">52</th><td><i> */</i></td></tr>
+<tr><th id="53">53</th><td><i>/* define IBusProperty macros */</i></td></tr>
+<tr><th id="54">54</th><td><u>#define <dfn class="macro" id="_M/IBUS_TYPE_PROPERTY" data-ref="_M/IBUS_TYPE_PROPERTY">IBUS_TYPE_PROPERTY</dfn>             \</u></td></tr>
+<tr><th id="55">55</th><td><u>    (ibus_property_get_type ())</u></td></tr>
+<tr><th id="56">56</th><td><u>#define <dfn class="macro" id="_M/IBUS_PROPERTY" data-ref="_M/IBUS_PROPERTY">IBUS_PROPERTY</dfn>(obj)             \</u></td></tr>
+<tr><th id="57">57</th><td><u>    (G_TYPE_CHECK_INSTANCE_CAST ((obj), IBUS_TYPE_PROPERTY, IBusProperty))</u></td></tr>
+<tr><th id="58">58</th><td><u>#define <dfn class="macro" id="_M/IBUS_PROPERTY_CLASS" data-ref="_M/IBUS_PROPERTY_CLASS">IBUS_PROPERTY_CLASS</dfn>(klass)     \</u></td></tr>
+<tr><th id="59">59</th><td><u>    (G_TYPE_CHECK_CLASS_CAST ((klass), IBUS_TYPE_PROPERTY, IBusPropertyClass))</u></td></tr>
+<tr><th id="60">60</th><td><u>#define <dfn class="macro" id="_M/IBUS_IS_PROPERTY" data-ref="_M/IBUS_IS_PROPERTY">IBUS_IS_PROPERTY</dfn>(obj)          \</u></td></tr>
+<tr><th id="61">61</th><td><u>    (G_TYPE_CHECK_INSTANCE_TYPE ((obj), IBUS_TYPE_PROPERTY))</u></td></tr>
+<tr><th id="62">62</th><td><u>#define <dfn class="macro" id="_M/IBUS_IS_PROPERTY_CLASS" data-ref="_M/IBUS_IS_PROPERTY_CLASS">IBUS_IS_PROPERTY_CLASS</dfn>(klass)  \</u></td></tr>
+<tr><th id="63">63</th><td><u>    (G_TYPE_CHECK_CLASS_TYPE ((klass), IBUS_TYPE_PROPERTY))</u></td></tr>
+<tr><th id="64">64</th><td><u>#define <dfn class="macro" id="_M/IBUS_PROPERTY_GET_CLASS" data-ref="_M/IBUS_PROPERTY_GET_CLASS">IBUS_PROPERTY_GET_CLASS</dfn>(obj)   \</u></td></tr>
+<tr><th id="65">65</th><td><u>    (G_TYPE_INSTANCE_GET_CLASS ((obj), IBUS_TYPE_PROPERTY, IBusPropertyClass))</u></td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> * IBusPropType:</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> *<span class="command"> @PROP</span>_TYPE_NORMAL: Property is shown as normal text.</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> *<span class="command"> @PROP</span>_TYPE_TOGGLE: Property is shown as a toggle button.</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> *<span class="command"> @PROP</span>_TYPE_RADIO: Property is shown as a radio selection option.</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> *<span class="command"> @PROP</span>_TYPE_MENU: Property is shown as a menu, usually imply it has sub menu</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc"> * items.</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc"> *<span class="command"> @PROP</span>_TYPE_SEPARATOR: A separator for menu.</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> * Type enumeration of IBusProperty.</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="78">78</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="79">79</th><td>    <dfn class="enum" id="PROP_TYPE_NORMAL" title='PROP_TYPE_NORMAL' data-ref="PROP_TYPE_NORMAL">PROP_TYPE_NORMAL</dfn> = <var>0</var>,</td></tr>
+<tr><th id="80">80</th><td>    <dfn class="enum" id="PROP_TYPE_TOGGLE" title='PROP_TYPE_TOGGLE' data-ref="PROP_TYPE_TOGGLE">PROP_TYPE_TOGGLE</dfn> = <var>1</var>,</td></tr>
+<tr><th id="81">81</th><td>    <dfn class="enum" id="PROP_TYPE_RADIO" title='PROP_TYPE_RADIO' data-ref="PROP_TYPE_RADIO">PROP_TYPE_RADIO</dfn> = <var>2</var>,</td></tr>
+<tr><th id="82">82</th><td>    <dfn class="enum" id="PROP_TYPE_MENU" title='PROP_TYPE_MENU' data-ref="PROP_TYPE_MENU">PROP_TYPE_MENU</dfn> = <var>3</var>,</td></tr>
+<tr><th id="83">83</th><td>    <dfn class="enum" id="PROP_TYPE_SEPARATOR" title='PROP_TYPE_SEPARATOR' data-ref="PROP_TYPE_SEPARATOR">PROP_TYPE_SEPARATOR</dfn> = <var>4</var>,</td></tr>
+<tr><th id="84">84</th><td>} <dfn class="typedef" id="IBusPropType" title='IBusPropType' data-type='enum IBusPropType' data-ref="IBusPropType">IBusPropType</dfn>;</td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> * IBusPropState:</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> *<span class="command"> @PROP</span>_STATE_UNCHECKED: Property option is unchecked.</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc"> *<span class="command"> @PROP</span>_STATE_CHECKED: Property option is checked.</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> *<span class="command"> @PROP</span>_STATE_INCONSISTENT: The state is inconsistent with the associated IME</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> * property.</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> * State of #IBusProperty. The actual effect depends on #IBusPropType of the</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> * IBusProperty.</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> * &lt;variablelist&gt;</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> *     &lt;varlistentry&gt;</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> *         &lt;term&gt;PROP_TYPE_TOGGLE&lt;/term&gt;</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"> *         &lt;listitem&gt;&lt;para&gt;Emphasized if PROP_STATE_CHECKED, normal otherwise.&lt;/para&gt;&lt;/listitem&gt;</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc"> *     &lt;/varlistentry&gt;</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc"> *     &lt;varlistentry&gt;</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> *         &lt;term&gt;PROP_TYPE_RADIO&lt;/term&gt;</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> *         &lt;listitem&gt;&lt;para&gt;Option checked if PROP_STATE_CHECKED, unchecked otherwise.&lt;/para&gt;&lt;/listitem&gt;</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> *     &lt;/varlistentry&gt;</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> * &lt;/variablelist&gt;</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"> * No effect on other types.</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="108">108</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="109">109</th><td>    <dfn class="enum" id="PROP_STATE_UNCHECKED" title='PROP_STATE_UNCHECKED' data-ref="PROP_STATE_UNCHECKED">PROP_STATE_UNCHECKED</dfn> = <var>0</var>,</td></tr>
+<tr><th id="110">110</th><td>    <dfn class="enum" id="PROP_STATE_CHECKED" title='PROP_STATE_CHECKED' data-ref="PROP_STATE_CHECKED">PROP_STATE_CHECKED</dfn> = <var>1</var>,</td></tr>
+<tr><th id="111">111</th><td>    <dfn class="enum" id="PROP_STATE_INCONSISTENT" title='PROP_STATE_INCONSISTENT' data-ref="PROP_STATE_INCONSISTENT">PROP_STATE_INCONSISTENT</dfn> = <var>2</var>,</td></tr>
+<tr><th id="112">112</th><td>} <dfn class="typedef" id="IBusPropState" title='IBusPropState' data-type='enum IBusPropState' data-ref="IBusPropState">IBusPropState</dfn>;</td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_IBusProperty" title='_IBusProperty' data-ref="_IBusProperty">_IBusProperty</a> <dfn class="typedef" id="IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</dfn>;</td></tr>
+<tr><th id="116">116</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_IBusPropertyClass" title='_IBusPropertyClass' data-ref="_IBusPropertyClass">_IBusPropertyClass</a> <dfn class="typedef" id="IBusPropertyClass" title='IBusPropertyClass' data-type='struct _IBusPropertyClass' data-ref="IBusPropertyClass">IBusPropertyClass</dfn>;</td></tr>
+<tr><th id="117">117</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_IBusPropertyPrivate" title='_IBusPropertyPrivate' data-ref="_IBusPropertyPrivate"><a class="type" href="#_IBusPropertyPrivate" title='_IBusPropertyPrivate' data-ref="_IBusPropertyPrivate">_IBusPropertyPrivate</a></dfn> <dfn class="typedef" id="IBusPropertyPrivate" title='IBusPropertyPrivate' data-type='struct _IBusPropertyPrivate' data-ref="IBusPropertyPrivate">IBusPropertyPrivate</dfn>;</td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td><u>#<span data-ppcond="119">ifndef</span> <span class="macro" data-ref="_M/__PROPLIST_DEFINED">__PROPLIST_DEFINED</span></u></td></tr>
+<tr><th id="120">120</th><td><u>#define <dfn class="macro" id="_M/__PROPLIST_DEFINED" data-ref="_M/__PROPLIST_DEFINED">__PROPLIST_DEFINED</dfn></u></td></tr>
+<tr><th id="121">121</th><td><b>typedef</b> <b>struct</b> <a class="type" href="ibusproplist.h.html#_IBusPropList" title='_IBusPropList' data-ref="_IBusPropList" id="_IBusPropList"><a class="type" href="ibusproplist.h.html#_IBusPropList" title='_IBusPropList' data-ref="_IBusPropList">_IBusPropList</a></a> <dfn class="typedef" id="IBusPropList" title='IBusPropList' data-type='struct _IBusPropList' data-ref="IBusPropList">IBusPropList</dfn>;</td></tr>
+<tr><th id="122">122</th><td><b>typedef</b> <b>struct</b> <a class="type" href="ibusproplist.h.html#_IBusPropListClass" title='_IBusPropListClass' data-ref="_IBusPropListClass" id="_IBusPropListClass"><a class="type" href="ibusproplist.h.html#_IBusPropListClass" title='_IBusPropListClass' data-ref="_IBusPropListClass">_IBusPropListClass</a></a> <dfn class="typedef" id="IBusPropListClass" title='IBusPropListClass' data-type='struct _IBusPropListClass' data-ref="IBusPropListClass">IBusPropListClass</dfn>;</td></tr>
+<tr><th id="123">123</th><td><u>#<span data-ppcond="119">endif</span></u></td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> * IBusProperty:</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> * UI component for input method engine property.</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="129">129</th><td><b>struct</b> <dfn class="type def" id="_IBusProperty" title='_IBusProperty' data-ref="_IBusProperty">_IBusProperty</dfn> {</td></tr>
+<tr><th id="130">130</th><td>    <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="131">131</th><td>    <a class="typedef" href="ibusserializable.h.html#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a> <dfn class="decl" id="_IBusProperty::parent" title='_IBusProperty::parent' data-ref="_IBusProperty::parent">parent</dfn>;</td></tr>
+<tr><th id="132">132</th><td>    <a class="typedef" href="#IBusPropertyPrivate" title='IBusPropertyPrivate' data-type='struct _IBusPropertyPrivate' data-ref="IBusPropertyPrivate">IBusPropertyPrivate</a> *<dfn class="decl" id="_IBusProperty::priv" title='_IBusProperty::priv' data-ref="_IBusProperty::priv">priv</dfn>;</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td>    <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="decl" id="_IBusProperty::pdummy" title='_IBusProperty::pdummy' data-ref="_IBusProperty::pdummy">pdummy</dfn>[<var>7</var>];</td></tr>
+<tr><th id="135">135</th><td>};</td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td><b>struct</b> <dfn class="type def" id="_IBusPropertyClass" title='_IBusPropertyClass' data-ref="_IBusPropertyClass">_IBusPropertyClass</dfn> {</td></tr>
+<tr><th id="138">138</th><td>    <a class="typedef" href="ibusserializable.h.html#IBusSerializableClass" title='IBusSerializableClass' data-type='struct _IBusSerializableClass' data-ref="IBusSerializableClass">IBusSerializableClass</a> <dfn class="decl" id="_IBusPropertyClass::parent" title='_IBusPropertyClass::parent' data-ref="_IBusPropertyClass::parent">parent</dfn>;</td></tr>
+<tr><th id="139">139</th><td>};</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td><a class="typedef" href="../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>            <dfn class="decl" id="ibus_property_get_type" title='ibus_property_get_type' data-ref="ibus_property_get_type">ibus_property_get_type</dfn>     ();</td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> * ibus_property_new:</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> *<span class="command"> @key</span>: Unique Identity for the #IBusProperty.</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> *<span class="command"> @type</span>: #IBusPropType of #IBusProperty.</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc"> *<span class="command"> @label</span>: Text shown in UI.</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> *<span class="command"> @icon</span>: (allow-none): Icon file for the #IBusProperty.</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> *<span class="command"> @tooltip</span>: Message shown if mouse hovered the  #IBusProperty.</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> *<span class="command"> @sensitive</span>: Whether the #IBusProperty is sensitive to keyboard and mouse event.</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> *<span class="command"> @visible</span>: Whether the #IBusProperty is visible.</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> *<span class="command"> @state</span>: IBusPropState of #IBusProperty.</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> *<span class="command"> @prop</span>_list: (allow-none): #IBusPropList that contains sub IBusProperties.</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc"> * Creates a new #IBusProperty.</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="157">157</th><td><i class="doc"> * Returns: A newly allocated #IBusProperty.</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="159">159</th><td><a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>    *<dfn class="decl" id="ibus_property_new" title='ibus_property_new' data-ref="ibus_property_new">ibus_property_new</dfn>          (<em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col2 decl" id="152key" title='key' data-type='const gchar *' data-ref="152key">key</dfn>,</td></tr>
+<tr><th id="160">160</th><td>                                             <a class="typedef" href="#IBusPropType" title='IBusPropType' data-type='enum IBusPropType' data-ref="IBusPropType">IBusPropType</a>    <dfn class="local col3 decl" id="153type" title='type' data-type='IBusPropType' data-ref="153type">type</dfn>,</td></tr>
+<tr><th id="161">161</th><td>                                             <a class="typedef" href="ibustext.h.html#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a>       *<dfn class="local col4 decl" id="154label" title='label' data-type='IBusText *' data-ref="154label">label</dfn>,</td></tr>
+<tr><th id="162">162</th><td>                                             <em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col5 decl" id="155icon" title='icon' data-type='const gchar *' data-ref="155icon">icon</dfn>,</td></tr>
+<tr><th id="163">163</th><td>                                             <a class="typedef" href="ibustext.h.html#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a>       *<dfn class="local col6 decl" id="156tooltip" title='tooltip' data-type='IBusText *' data-ref="156tooltip">tooltip</dfn>,</td></tr>
+<tr><th id="164">164</th><td>                                             <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>        <dfn class="local col7 decl" id="157sensitive" title='sensitive' data-type='gboolean' data-ref="157sensitive">sensitive</dfn>,</td></tr>
+<tr><th id="165">165</th><td>                                             <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>        <dfn class="local col8 decl" id="158visible" title='visible' data-type='gboolean' data-ref="158visible">visible</dfn>,</td></tr>
+<tr><th id="166">166</th><td>                                             <a class="typedef" href="#IBusPropState" title='IBusPropState' data-type='enum IBusPropState' data-ref="IBusPropState">IBusPropState</a>   <dfn class="local col9 decl" id="159state" title='state' data-type='IBusPropState' data-ref="159state">state</dfn>,</td></tr>
+<tr><th id="167">167</th><td>                                             <a class="typedef" href="#IBusPropList" title='IBusPropList' data-type='struct _IBusPropList' data-ref="IBusPropList">IBusPropList</a>   *<dfn class="local col0 decl" id="160prop_list" title='prop_list' data-type='IBusPropList *' data-ref="160prop_list">prop_list</dfn>);</td></tr>
+<tr><th id="168">168</th><td></td></tr>
+<tr><th id="169">169</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="170">170</th><td><i class="doc"> * ibus_property_new_varargs:</i></td></tr>
+<tr><th id="171">171</th><td><i class="doc"> *<span class="command"> @first</span>_property_name: Name of the first property.</i></td></tr>
+<tr><th id="172">172</th><td><i class="doc"> * @...: the NULL-terminated arguments of the properties and values.</i></td></tr>
+<tr><th id="173">173</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="174">174</th><td><i class="doc"> * Creates a new #IBusProperty.</i></td></tr>
+<tr><th id="175">175</th><td><i class="doc"> * ibus_property_new_varargs() supports the va_list format.</i></td></tr>
+<tr><th id="176">176</th><td><i class="doc"> * name property is required. e.g.</i></td></tr>
+<tr><th id="177">177</th><td><i class="doc"> * ibus_property_new_varargs("key", "TypingMode", "type", PROP_TYPE_MENU, NULL)</i></td></tr>
+<tr><th id="178">178</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="179">179</th><td><i class="doc"> * Returns: A newly allocated #IBusProperty.</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="181">181</th><td><a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>    *<dfn class="decl" id="ibus_property_new_varargs" title='ibus_property_new_varargs' data-ref="ibus_property_new_varargs">ibus_property_new_varargs</dfn>  (<em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col1 decl" id="161first_property_name" title='first_property_name' data-type='const gchar *' data-ref="161first_property_name">first_property_name</dfn>,</td></tr>
+<tr><th id="182">182</th><td>                                                             ...);</td></tr>
+<tr><th id="183">183</th><td></td></tr>
+<tr><th id="184">184</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="185">185</th><td><i class="doc"> * ibus_property_get_key:</i></td></tr>
+<tr><th id="186">186</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="187">187</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="188">188</th><td><i class="doc"> * Get the key of #IBusProperty.</i></td></tr>
+<tr><th id="189">189</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc"> * Returns: the key of #IBusProperty. Should not be freed.</i></td></tr>
+<tr><th id="191">191</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="192">192</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *    <dfn class="decl" id="ibus_property_get_key" title='ibus_property_get_key' data-ref="ibus_property_get_key">ibus_property_get_key</dfn>      (<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col2 decl" id="162prop" title='prop' data-type='IBusProperty *' data-ref="162prop">prop</dfn>);</td></tr>
+<tr><th id="193">193</th><td></td></tr>
+<tr><th id="194">194</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="195">195</th><td><i class="doc"> * ibus_property_get_label:</i></td></tr>
+<tr><th id="196">196</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="197">197</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc"> * Get the label of #IBusProperty.</i></td></tr>
+<tr><th id="199">199</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc"> * Returns: (transfer none): the label of #IBusProperty. Should not be freed.</i></td></tr>
+<tr><th id="201">201</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="202">202</th><td><a class="typedef" href="ibustext.h.html#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a> *       <dfn class="decl" id="ibus_property_get_label" title='ibus_property_get_label' data-ref="ibus_property_get_label">ibus_property_get_label</dfn>    (<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col3 decl" id="163prop" title='prop' data-type='IBusProperty *' data-ref="163prop">prop</dfn>);</td></tr>
+<tr><th id="203">203</th><td></td></tr>
+<tr><th id="204">204</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="205">205</th><td><i class="doc"> * ibus_property_set_label:</i></td></tr>
+<tr><th id="206">206</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="207">207</th><td><i class="doc"> *<span class="command"> @label</span>: Text shown in UI.</i></td></tr>
+<tr><th id="208">208</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="209">209</th><td><i class="doc"> * Set the label of #IBusProperty.</i></td></tr>
+<tr><th id="210">210</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="211">211</th><td><em>void</em>             <dfn class="decl" id="ibus_property_set_label" title='ibus_property_set_label' data-ref="ibus_property_set_label">ibus_property_set_label</dfn>    (<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col4 decl" id="164prop" title='prop' data-type='IBusProperty *' data-ref="164prop">prop</dfn>,</td></tr>
+<tr><th id="212">212</th><td>                                             <a class="typedef" href="ibustext.h.html#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a>       *<dfn class="local col5 decl" id="165label" title='label' data-type='IBusText *' data-ref="165label">label</dfn>);</td></tr>
+<tr><th id="213">213</th><td></td></tr>
+<tr><th id="214">214</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="215">215</th><td><i class="doc"> * ibus_property_get_symbol:</i></td></tr>
+<tr><th id="216">216</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="217">217</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="218">218</th><td><i class="doc"> * Get the symbol of #IBusProperty.</i></td></tr>
+<tr><th id="219">219</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="220">220</th><td><i class="doc"> * Returns: (transfer none): the symbol of #IBusProperty. Should not be freed.</i></td></tr>
+<tr><th id="221">221</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="222">222</th><td><a class="typedef" href="ibustext.h.html#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a> *       <dfn class="decl" id="ibus_property_get_symbol" title='ibus_property_get_symbol' data-ref="ibus_property_get_symbol">ibus_property_get_symbol</dfn>   (<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col6 decl" id="166prop" title='prop' data-type='IBusProperty *' data-ref="166prop">prop</dfn>);</td></tr>
+<tr><th id="223">223</th><td></td></tr>
+<tr><th id="224">224</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="225">225</th><td><i class="doc"> * ibus_property_set_symbol:</i></td></tr>
+<tr><th id="226">226</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="227">227</th><td><i class="doc"> *<span class="command"> @symbol</span>: Text shown in UI.</i></td></tr>
+<tr><th id="228">228</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="229">229</th><td><i class="doc"> * Set the symbol of #IBusProperty.</i></td></tr>
+<tr><th id="230">230</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="231">231</th><td><em>void</em>             <dfn class="decl" id="ibus_property_set_symbol" title='ibus_property_set_symbol' data-ref="ibus_property_set_symbol">ibus_property_set_symbol</dfn>   (<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col7 decl" id="167prop" title='prop' data-type='IBusProperty *' data-ref="167prop">prop</dfn>,</td></tr>
+<tr><th id="232">232</th><td>                                             <a class="typedef" href="ibustext.h.html#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a>       *<dfn class="local col8 decl" id="168symbol" title='symbol' data-type='IBusText *' data-ref="168symbol">symbol</dfn>);</td></tr>
+<tr><th id="233">233</th><td></td></tr>
+<tr><th id="234">234</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="235">235</th><td><i class="doc"> * ibus_property_get_icon:</i></td></tr>
+<tr><th id="236">236</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="237">237</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="238">238</th><td><i class="doc"> * Get the icon of #IBusProperty.</i></td></tr>
+<tr><th id="239">239</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="240">240</th><td><i class="doc"> * Returns: the icon of #IBusProperty. Should not be freed.</i></td></tr>
+<tr><th id="241">241</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="242">242</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *    <dfn class="decl" id="ibus_property_get_icon" title='ibus_property_get_icon' data-ref="ibus_property_get_icon">ibus_property_get_icon</dfn>     (<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col9 decl" id="169prop" title='prop' data-type='IBusProperty *' data-ref="169prop">prop</dfn>);</td></tr>
+<tr><th id="243">243</th><td></td></tr>
+<tr><th id="244">244</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="245">245</th><td><i class="doc"> * ibus_property_set_icon:</i></td></tr>
+<tr><th id="246">246</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="247">247</th><td><i class="doc"> *<span class="command"> @icon</span>: Icon shown in UI. It could be a full path of an icon file or an icon name.</i></td></tr>
+<tr><th id="248">248</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="249">249</th><td><i class="doc"> * Set the icon of #IBusProperty.</i></td></tr>
+<tr><th id="250">250</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="251">251</th><td><em>void</em>             <dfn class="decl" id="ibus_property_set_icon" title='ibus_property_set_icon' data-ref="ibus_property_set_icon">ibus_property_set_icon</dfn>     (<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col0 decl" id="170prop" title='prop' data-type='IBusProperty *' data-ref="170prop">prop</dfn>,</td></tr>
+<tr><th id="252">252</th><td>                                             <em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col1 decl" id="171icon" title='icon' data-type='const gchar *' data-ref="171icon">icon</dfn>);</td></tr>
+<tr><th id="253">253</th><td></td></tr>
+<tr><th id="254">254</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="255">255</th><td><i class="doc"> * ibus_property_get_tooltip:</i></td></tr>
+<tr><th id="256">256</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="257">257</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="258">258</th><td><i class="doc"> * Get the tooltip of #IBusProperty.</i></td></tr>
+<tr><th id="259">259</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="260">260</th><td><i class="doc"> * Returns: (transfer none): the tooltip of #IBusProperty. Should not be freed.</i></td></tr>
+<tr><th id="261">261</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="262">262</th><td><a class="typedef" href="ibustext.h.html#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a> *       <dfn class="decl" id="ibus_property_get_tooltip" title='ibus_property_get_tooltip' data-ref="ibus_property_get_tooltip">ibus_property_get_tooltip</dfn>  (<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col2 decl" id="172prop" title='prop' data-type='IBusProperty *' data-ref="172prop">prop</dfn>);</td></tr>
+<tr><th id="263">263</th><td></td></tr>
+<tr><th id="264">264</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="265">265</th><td><i class="doc"> * ibus_property_set_tooltip:</i></td></tr>
+<tr><th id="266">266</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="267">267</th><td><i class="doc"> *<span class="command"> @tooltip</span>: Text of the tooltip.</i></td></tr>
+<tr><th id="268">268</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="269">269</th><td><i class="doc"> * Set the tooltip of #IBusProperty.</i></td></tr>
+<tr><th id="270">270</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="271">271</th><td><em>void</em>             <dfn class="decl" id="ibus_property_set_tooltip" title='ibus_property_set_tooltip' data-ref="ibus_property_set_tooltip">ibus_property_set_tooltip</dfn>  (<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col3 decl" id="173prop" title='prop' data-type='IBusProperty *' data-ref="173prop">prop</dfn>,</td></tr>
+<tr><th id="272">272</th><td>                                             <a class="typedef" href="ibustext.h.html#IBusText" title='IBusText' data-type='struct _IBusText' data-ref="IBusText">IBusText</a>       *<dfn class="local col4 decl" id="174tooltip" title='tooltip' data-type='IBusText *' data-ref="174tooltip">tooltip</dfn>);</td></tr>
+<tr><th id="273">273</th><td></td></tr>
+<tr><th id="274">274</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="275">275</th><td><i class="doc"> * ibus_property_get_sensitive:</i></td></tr>
+<tr><th id="276">276</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="277">277</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="278">278</th><td><i class="doc"> * Get the sensitive of #IBusProperty.</i></td></tr>
+<tr><th id="279">279</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="280">280</th><td><i class="doc"> * Returns: the sensitive of #IBusProperty.</i></td></tr>
+<tr><th id="281">281</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="282">282</th><td><a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>         <dfn class="decl" id="ibus_property_get_sensitive" title='ibus_property_get_sensitive' data-ref="ibus_property_get_sensitive">ibus_property_get_sensitive</dfn>(<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col5 decl" id="175prop" title='prop' data-type='IBusProperty *' data-ref="175prop">prop</dfn>);</td></tr>
+<tr><th id="283">283</th><td></td></tr>
+<tr><th id="284">284</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="285">285</th><td><i class="doc"> * ibus_property_set_sensitive:</i></td></tr>
+<tr><th id="286">286</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="287">287</th><td><i class="doc"> *<span class="command"> @sensitive</span>: Whether the #IBusProperty is sensitive.</i></td></tr>
+<tr><th id="288">288</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="289">289</th><td><i class="doc"> * Set whether the #IBusProperty is sensitive.</i></td></tr>
+<tr><th id="290">290</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="291">291</th><td><em>void</em>             <dfn class="decl" id="ibus_property_set_sensitive" title='ibus_property_set_sensitive' data-ref="ibus_property_set_sensitive">ibus_property_set_sensitive</dfn>(<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col6 decl" id="176prop" title='prop' data-type='IBusProperty *' data-ref="176prop">prop</dfn>,</td></tr>
+<tr><th id="292">292</th><td>                                             <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>        <dfn class="local col7 decl" id="177sensitive" title='sensitive' data-type='gboolean' data-ref="177sensitive">sensitive</dfn>);</td></tr>
+<tr><th id="293">293</th><td></td></tr>
+<tr><th id="294">294</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="295">295</th><td><i class="doc"> * ibus_property_get_visible:</i></td></tr>
+<tr><th id="296">296</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="297">297</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="298">298</th><td><i class="doc"> * Get the visible of #IBusProperty.</i></td></tr>
+<tr><th id="299">299</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="300">300</th><td><i class="doc"> * Returns: the visible of #IBusProperty.</i></td></tr>
+<tr><th id="301">301</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="302">302</th><td><a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>         <dfn class="decl" id="ibus_property_get_visible" title='ibus_property_get_visible' data-ref="ibus_property_get_visible">ibus_property_get_visible</dfn>  (<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col8 decl" id="178prop" title='prop' data-type='IBusProperty *' data-ref="178prop">prop</dfn>);</td></tr>
+<tr><th id="303">303</th><td></td></tr>
+<tr><th id="304">304</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="305">305</th><td><i class="doc"> * ibus_property_set_visible:</i></td></tr>
+<tr><th id="306">306</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="307">307</th><td><i class="doc"> *<span class="command"> @visible</span>: Whether the #IBusProperty is visible.</i></td></tr>
+<tr><th id="308">308</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="309">309</th><td><i class="doc"> * Set whether the #IBusProperty is visible.</i></td></tr>
+<tr><th id="310">310</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="311">311</th><td><em>void</em>             <dfn class="decl" id="ibus_property_set_visible" title='ibus_property_set_visible' data-ref="ibus_property_set_visible">ibus_property_set_visible</dfn>  (<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col9 decl" id="179prop" title='prop' data-type='IBusProperty *' data-ref="179prop">prop</dfn>,</td></tr>
+<tr><th id="312">312</th><td>                                             <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>        <dfn class="local col0 decl" id="180visible" title='visible' data-type='gboolean' data-ref="180visible">visible</dfn>);</td></tr>
+<tr><th id="313">313</th><td></td></tr>
+<tr><th id="314">314</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="315">315</th><td><i class="doc"> * ibus_property_get_property_type:</i></td></tr>
+<tr><th id="316">316</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="317">317</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="318">318</th><td><i class="doc"> * Get the type of #IBusProperty.</i></td></tr>
+<tr><th id="319">319</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="320">320</th><td><i class="doc"> * Returns: the type of #IBusProperty.</i></td></tr>
+<tr><th id="321">321</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="322">322</th><td><a class="typedef" href="#IBusPropType" title='IBusPropType' data-type='enum IBusPropType' data-ref="IBusPropType">IBusPropType</a>     <dfn class="decl" id="ibus_property_get_prop_type" title='ibus_property_get_prop_type' data-ref="ibus_property_get_prop_type">ibus_property_get_prop_type</dfn>(<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col1 decl" id="181prop" title='prop' data-type='IBusProperty *' data-ref="181prop">prop</dfn>);</td></tr>
+<tr><th id="323">323</th><td></td></tr>
+<tr><th id="324">324</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="325">325</th><td><i class="doc"> * ibus_property_get_state:</i></td></tr>
+<tr><th id="326">326</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="327">327</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="328">328</th><td><i class="doc"> * Get the state of #IBusProperty.</i></td></tr>
+<tr><th id="329">329</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="330">330</th><td><i class="doc"> * Returns: the state of #IBusProperty.</i></td></tr>
+<tr><th id="331">331</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="332">332</th><td><a class="typedef" href="#IBusPropState" title='IBusPropState' data-type='enum IBusPropState' data-ref="IBusPropState">IBusPropState</a>    <dfn class="decl" id="ibus_property_get_state" title='ibus_property_get_state' data-ref="ibus_property_get_state">ibus_property_get_state</dfn>    (<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col2 decl" id="182prop" title='prop' data-type='IBusProperty *' data-ref="182prop">prop</dfn>);</td></tr>
+<tr><th id="333">333</th><td></td></tr>
+<tr><th id="334">334</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="335">335</th><td><i class="doc"> * ibus_property_set_state:</i></td></tr>
+<tr><th id="336">336</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="337">337</th><td><i class="doc"> *<span class="command"> @state</span>: The state of the #IBusProperty.</i></td></tr>
+<tr><th id="338">338</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="339">339</th><td><i class="doc"> * Set the state of the #IBusProperty.</i></td></tr>
+<tr><th id="340">340</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="341">341</th><td><em>void</em>             <dfn class="decl" id="ibus_property_set_state" title='ibus_property_set_state' data-ref="ibus_property_set_state">ibus_property_set_state</dfn>    (<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col3 decl" id="183prop" title='prop' data-type='IBusProperty *' data-ref="183prop">prop</dfn>,</td></tr>
+<tr><th id="342">342</th><td>                                             <a class="typedef" href="#IBusPropState" title='IBusPropState' data-type='enum IBusPropState' data-ref="IBusPropState">IBusPropState</a>   <dfn class="local col4 decl" id="184state" title='state' data-type='IBusPropState' data-ref="184state">state</dfn>);</td></tr>
+<tr><th id="343">343</th><td></td></tr>
+<tr><th id="344">344</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="345">345</th><td><i class="doc"> * ibus_property_get_sub_props:</i></td></tr>
+<tr><th id="346">346</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="347">347</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="348">348</th><td><i class="doc"> * Get the IBusPropList of #IBusProperty.</i></td></tr>
+<tr><th id="349">349</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="350">350</th><td><i class="doc"> * Returns: (transfer none): the IBusPropList of #IBusProperty.</i></td></tr>
+<tr><th id="351">351</th><td><i class="doc"> *     Should not be freed.</i></td></tr>
+<tr><th id="352">352</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="353">353</th><td><a class="typedef" href="#IBusPropList" title='IBusPropList' data-type='struct _IBusPropList' data-ref="IBusPropList">IBusPropList</a> *   <dfn class="decl" id="ibus_property_get_sub_props" title='ibus_property_get_sub_props' data-ref="ibus_property_get_sub_props">ibus_property_get_sub_props</dfn>(<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col5 decl" id="185prop" title='prop' data-type='IBusProperty *' data-ref="185prop">prop</dfn>);</td></tr>
+<tr><th id="354">354</th><td></td></tr>
+<tr><th id="355">355</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="356">356</th><td><i class="doc"> * ibus_property_set_sub_props:</i></td></tr>
+<tr><th id="357">357</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="358">358</th><td><i class="doc"> *<span class="command"> @prop</span>_list: #IBusPropList that contains sub IBusProperties.</i></td></tr>
+<tr><th id="359">359</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="360">360</th><td><i class="doc"> * Set the sub IBusProperties.</i></td></tr>
+<tr><th id="361">361</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="362">362</th><td><em>void</em>             <dfn class="decl" id="ibus_property_set_sub_props" title='ibus_property_set_sub_props' data-ref="ibus_property_set_sub_props">ibus_property_set_sub_props</dfn>(<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col6 decl" id="186prop" title='prop' data-type='IBusProperty *' data-ref="186prop">prop</dfn>,</td></tr>
+<tr><th id="363">363</th><td>                                             <a class="typedef" href="#IBusPropList" title='IBusPropList' data-type='struct _IBusPropList' data-ref="IBusPropList">IBusPropList</a>   *<dfn class="local col7 decl" id="187prop_list" title='prop_list' data-type='IBusPropList *' data-ref="187prop_list">prop_list</dfn>);</td></tr>
+<tr><th id="364">364</th><td></td></tr>
+<tr><th id="365">365</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="366">366</th><td><i class="doc"> * ibus_property_update:</i></td></tr>
+<tr><th id="367">367</th><td><i class="doc"> *<span class="command"> @prop</span>: An #IBusProperty.</i></td></tr>
+<tr><th id="368">368</th><td><i class="doc"> *<span class="command"> @prop</span>_update: #IBusPropList that contains sub IBusProperties.</i></td></tr>
+<tr><th id="369">369</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="370">370</th><td><i class="doc"> * Update the content of an #IBusProperty.</i></td></tr>
+<tr><th id="371">371</th><td><i class="doc"> * #IBusProperty<span class="command"> @prop</span>_update can either be sub-property of<span class="command"> @prop</span>,</i></td></tr>
+<tr><th id="372">372</th><td><i class="doc"> * or holds new values for<span class="command"> @prop</span>.</i></td></tr>
+<tr><th id="373">373</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="374">374</th><td><i class="doc"> * Returns: TRUE for update suceeded; FALSE otherwise.</i></td></tr>
+<tr><th id="375">375</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="376">376</th><td></td></tr>
+<tr><th id="377">377</th><td><a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>         <dfn class="decl" id="ibus_property_update" title='ibus_property_update' data-ref="ibus_property_update">ibus_property_update</dfn>       (<a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col8 decl" id="188prop" title='prop' data-type='IBusProperty *' data-ref="188prop">prop</dfn>,</td></tr>
+<tr><th id="378">378</th><td>                                             <a class="typedef" href="#IBusProperty" title='IBusProperty' data-type='struct _IBusProperty' data-ref="IBusProperty">IBusProperty</a>   *<dfn class="local col9 decl" id="189prop_update" title='prop_update' data-type='IBusProperty *' data-ref="189prop_update">prop_update</dfn>);</td></tr>
+<tr><th id="379">379</th><td></td></tr>
+<tr><th id="380">380</th><td><a class="macro" href="../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="381">381</th><td><u>#<span data-ppcond="27">endif</span></u></td></tr>
+<tr><th id="382">382</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../unikey/setup/dlg_main_setup.cpp.html'>unikey/setup/dlg_main_setup.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkpango.h' l='94' type='void gdk_pango_renderer_set_drawable(GdkPangoRenderer * gdk_renderer, GdkDrawable * drawable)'/>

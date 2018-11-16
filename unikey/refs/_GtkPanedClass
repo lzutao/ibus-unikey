@@ -1,0 +1,13 @@
+<def f='include/gtk-2.0/gtk/gtkpaned.h' l='87' ll='106'/>
+<size>904</size>
+<mbr r='_GtkPanedClass::parent_class' o='0' t='GtkContainerClass'/>
+<mbr r='_GtkPanedClass::cycle_child_focus' o='6592' t='gboolean (*)(GtkPaned *, gboolean)'/>
+<mbr r='_GtkPanedClass::toggle_handle_focus' o='6656' t='gboolean (*)(GtkPaned *)'/>
+<mbr r='_GtkPanedClass::move_handle' o='6720' t='gboolean (*)(GtkPaned *, GtkScrollType)'/>
+<mbr r='_GtkPanedClass::cycle_handle_focus' o='6784' t='gboolean (*)(GtkPaned *, gboolean)'/>
+<mbr r='_GtkPanedClass::accept_position' o='6848' t='gboolean (*)(GtkPaned *)'/>
+<mbr r='_GtkPanedClass::cancel_position' o='6912' t='gboolean (*)(GtkPaned *)'/>
+<mbr r='_GtkPanedClass::_gtk_reserved1' o='6976' t='void (*)()'/>
+<mbr r='_GtkPanedClass::_gtk_reserved2' o='7040' t='void (*)()'/>
+<mbr r='_GtkPanedClass::_gtk_reserved3' o='7104' t='void (*)()'/>
+<mbr r='_GtkPanedClass::_gtk_reserved4' o='7168' t='void (*)()'/>

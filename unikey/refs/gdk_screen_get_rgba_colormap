@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkscreen.h' l='77' type='GdkColormap * gdk_screen_get_rgba_colormap(GdkScreen * screen)'/>

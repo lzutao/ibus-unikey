@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibuskeys.h' l='43' type='const gchar * ibus_keyval_name(guint keyval)'/>
+<doc f='include/ibus-1.0/ibuskeys.h' l='33'>/**
+ * ibus_keyval_name:
+ * @keyval: Key symbol.
+ *
+ * Return the name of a key symbol.
+ *
+ * Note that the returned string is used internally, so don&apos;t free it.
+ *
+ * Returns: Corresponding key name. %NULL if no such key symbol.
+ */</doc>

@@ -1,0 +1,6 @@
+<dec f='include/ibus-1.0/ibuskeysyms-compat.h' l='97'/>
+<doc f='include/ibus-1.0/ibuskeysyms-compat.h' l='92'>/**
+ * IBUS_Henkan_Mode:
+ *
+ * Japanese keyboard support.
+ */</doc>

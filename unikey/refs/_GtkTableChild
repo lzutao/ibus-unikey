@@ -1,0 +1,15 @@
+<def f='include/gtk-2.0/gtk/gtktable.h' l='72' ll='87'/>
+<size>24</size>
+<mbr r='_GtkTableChild::widget' o='0' t='GtkWidget *'/>
+<mbr r='_GtkTableChild::left_attach' o='64' t='guint16'/>
+<mbr r='_GtkTableChild::right_attach' o='80' t='guint16'/>
+<mbr r='_GtkTableChild::top_attach' o='96' t='guint16'/>
+<mbr r='_GtkTableChild::bottom_attach' o='112' t='guint16'/>
+<mbr r='_GtkTableChild::xpadding' o='128' t='guint16'/>
+<mbr r='_GtkTableChild::ypadding' o='144' t='guint16'/>
+<mbr r='_GtkTableChild::xexpand' o='160' t='guint'/>
+<mbr r='_GtkTableChild::yexpand' o='161' t='guint'/>
+<mbr r='_GtkTableChild::xshrink' o='162' t='guint'/>
+<mbr r='_GtkTableChild::yshrink' o='163' t='guint'/>
+<mbr r='_GtkTableChild::xfill' o='164' t='guint'/>
+<mbr r='_GtkTableChild::yfill' o='165' t='guint'/>

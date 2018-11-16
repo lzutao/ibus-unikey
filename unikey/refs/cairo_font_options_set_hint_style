@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='1422' type='void cairo_font_options_set_hint_style(cairo_font_options_t * options, cairo_hint_style_t hint_style)'/>

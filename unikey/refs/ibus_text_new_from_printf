@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibustext.h' l='139' type='IBusText * ibus_text_new_from_printf(const gchar * fmt)'/>
+<doc f='include/ibus-1.0/ibustext.h' l='128'>/**
+ * ibus_text_new_from_printf:
+ * @fmt: printf format string.
+ * @...: arguments for @fmt.
+ *
+ * Creates a new #IBusText from a printf expression.
+ *
+ * The result of printf expression is stored in the new IBusText instance.
+ *
+ * Returns: A newly allocated #IBusText.
+ */</doc>

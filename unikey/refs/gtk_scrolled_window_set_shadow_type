@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkscrolledwindow.h' l='124' type='void gtk_scrolled_window_set_shadow_type(GtkScrolledWindow * scrolled_window, GtkShadowType type)'/>

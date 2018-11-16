@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='198' type='void gtk_entry_set_max_length(GtkEntry * entry, gint max)'/>
+<doc f='include/gtk-2.0/gtk/gtkentry.h' l='197'>/* text is truncated if needed */</doc>

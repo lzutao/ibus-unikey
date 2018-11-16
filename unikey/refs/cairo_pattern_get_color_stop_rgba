@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='2969' type='cairo_status_t cairo_pattern_get_color_stop_rgba(cairo_pattern_t * pattern, int index, double * offset, double * red, double * green, double * blue, double * alpha)'/>

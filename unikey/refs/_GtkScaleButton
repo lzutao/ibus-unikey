@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gtk/gtkscalebutton.h' l='58' ll='67'/>
+<size>168</size>
+<mbr r='_GtkScaleButton::parent' o='0' t='GtkButton'/>
+<mbr r='_GtkScaleButton::plus_button' o='1152' t='GtkWidget *'/>
+<mbr r='_GtkScaleButton::minus_button' o='1216' t='GtkWidget *'/>
+<mbr r='_GtkScaleButton::priv' o='1280' t='GtkScaleButtonPrivate *'/>

@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkvalue.h' l='130' type='void atk_value_get_maximum_value(AtkValue * obj, GValue * value)'/>

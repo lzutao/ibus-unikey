@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibuspanelservice.h' l='171' type='void ibus_panel_service_cursor_down(IBusPanelService * panel)'/>
+<doc f='include/ibus-1.0/ibuspanelservice.h' l='164'>/**
+ * ibus_panel_service_cursor_down:
+ * @panel: An IBusPanelService
+ *
+ * Notify that the cursor is down
+ * by sending a &quot;CursorDown&quot; to IBus service.
+ */</doc>

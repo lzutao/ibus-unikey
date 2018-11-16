@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuslookuptable.h' l='255' type='guint ibus_lookup_table_get_cursor_in_page(IBusLookupTable * table)'/>
+<doc f='include/ibus-1.0/ibuslookuptable.h' l='247'>/**
+ * ibus_lookup_table_get_cursor_in_page:
+ * @table: An IBusLookupTable.
+ *
+ * Gets the cursor position in current page of #IBusLookupTable.
+ *
+ * Returns: The position of cursor in current page.
+ */</doc>

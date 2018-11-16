@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktexttagtable.h' l='64' type='void (*)(GtkTextTagTable *, GtkTextTag *, gboolean)'/>
+<offset>1088</offset>

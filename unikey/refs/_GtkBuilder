@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkbuilder.h' l='61' ll='66'/>
+<size>32</size>
+<mbr r='_GtkBuilder::parent_instance' o='0' t='GObject'/>
+<mbr r='_GtkBuilder::priv' o='192' t='GtkBuilderPrivate *'/>

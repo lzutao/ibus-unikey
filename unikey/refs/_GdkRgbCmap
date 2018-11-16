@@ -1,0 +1,5 @@
+<def f='include/gtk-2.0/gdk/gdkrgb.h' l='49' ll='55'/>
+<size>1040</size>
+<mbr r='_GdkRgbCmap::colors' o='0' t='guint32 [256]'/>
+<mbr r='_GdkRgbCmap::n_colors' o='8192' t='gint'/>
+<mbr r='_GdkRgbCmap::info_list' o='8256' t='GSList *'/>

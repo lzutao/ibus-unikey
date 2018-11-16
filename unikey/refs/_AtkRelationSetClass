@@ -1,0 +1,5 @@
+<def f='include/atk-1.0/atk/atkrelationset.h' l='50' ll='56'/>
+<size>152</size>
+<mbr r='_AtkRelationSetClass::parent' o='0' t='GObjectClass'/>
+<mbr r='_AtkRelationSetClass::pad1' o='1088' t='AtkFunction'/>
+<mbr r='_AtkRelationSetClass::pad2' o='1152' t='AtkFunction'/>

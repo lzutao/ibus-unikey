@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkgc.h' l='289' type='void gdk_gc_set_rgb_bg_color(GdkGC * gc, const GdkColor * color)'/>

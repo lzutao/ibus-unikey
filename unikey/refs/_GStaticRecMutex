@@ -1,0 +1,5 @@
+<def f='include/glib-2.0/glib/deprecated/gthread.h' l='157' ll='172'/>
+<size>64</size>
+<mbr r='_GStaticRecMutex::mutex' o='0' t='GStaticMutex'/>
+<mbr r='_GStaticRecMutex::depth' o='384' t='guint'/>
+<mbr r='_GStaticRecMutex::unused' o='448' t='union (anonymous union at /usr/include/glib-2.0/glib/deprecated/gthread.h:164:3)'/>

@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='404' type='void ibus_engine_update_property(IBusEngine * engine, IBusProperty * prop)'/>
+<doc f='include/ibus-1.0/ibusengine.h' l='393'>/**
+ * ibus_engine_update_property:
+ * @engine: An IBusEngine.
+ * @prop: IBusProperty to be updated.
+ *
+ * Update the state displayed in language bar.
+ *
+ * (Note: The prop object will be released, if it is floating.
+ *  If caller want to keep the object, caller should make the object
+ *  sink by g_object_ref_sink.)
+ */</doc>

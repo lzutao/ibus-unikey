@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkpixmap.h' l='48' ll='57'/>
+<size>144</size>
+<mbr r='_GtkPixmap::misc' o='0' t='GtkMisc'/>
+<mbr r='_GtkPixmap::pixmap' o='896' t='GdkPixmap *'/>
+<mbr r='_GtkPixmap::mask' o='960' t='GdkBitmap *'/>
+<mbr r='_GtkPixmap::pixmap_insensitive' o='1024' t='GdkPixmap *'/>
+<mbr r='_GtkPixmap::build_insensitive' o='1088' t='guint'/>

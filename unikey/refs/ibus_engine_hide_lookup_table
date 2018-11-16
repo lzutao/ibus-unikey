@@ -1,0 +1,7 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='360' type='void ibus_engine_hide_lookup_table(IBusEngine * engine)'/>
+<doc f='include/ibus-1.0/ibusengine.h' l='354'>/**
+ * ibus_engine_hide_lookup_table:
+ * @engine: An IBusEngine.
+ *
+ * Hide the lookup table.
+ */</doc>

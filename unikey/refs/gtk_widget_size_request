@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='886' type='void gtk_widget_size_request(GtkWidget * widget, GtkRequisition * requisition)'/>

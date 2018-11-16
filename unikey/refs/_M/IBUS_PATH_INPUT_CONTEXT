@@ -1,0 +1,6 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='122'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='117'>/**
+ * IBUS_PATH_INPUT_CONTEXT:
+ *
+ * Template of D-Bus path for IBus input context.
+ */</doc>

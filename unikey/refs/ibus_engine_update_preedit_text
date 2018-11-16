@@ -1,0 +1,14 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='221' type='void ibus_engine_update_preedit_text(IBusEngine * engine, IBusText * text, guint cursor_pos, gboolean visible)'/>
+<doc f='include/ibus-1.0/ibusengine.h' l='208'>/**
+ * ibus_engine_update_preedit_text:
+ * @engine: An IBusEngine.
+ * @text: Update content.
+ * @cursor_pos: Current position of cursor
+ * @visible: Whether the pre-edit buffer is visible.
+ *
+ * Update the pre-edit buffer.
+ *
+ * (Note: The text object will be released, if it is floating.
+ *  If caller want to keep the object, caller should make the object
+ *  sink by g_object_ref_sink.)
+ */</doc>

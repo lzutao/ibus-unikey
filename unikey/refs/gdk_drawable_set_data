@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdrawable.h' l='245' type='void gdk_drawable_set_data(GdkDrawable * drawable, const gchar * key, gpointer data, GDestroyNotify destroy_func)'/>

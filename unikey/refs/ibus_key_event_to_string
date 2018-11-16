@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='303' type='const gchar * ibus_key_event_to_string(guint keyval, guint modifiers)'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='291'>/**
+ * ibus_key_event_to_string:
+ * @keyval: Key symbol.
+ * @modifiers: Modifiers such as Ctrl or Shift.
+ *
+ * Return the name of a key symbol and modifiers.
+ *
+ * For example, if press ctrl, shift, and enter, then this function returns:
+ * Shift+Control+enter.
+ *
+ * Returns: The name of a key symbol and modifier.
+ */</doc>

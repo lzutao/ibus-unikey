@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gtk/gtktoolbar.h' l='73' ll='79'/>
+<size>32</size>
+<mbr r='_GtkToolbarChild::type' o='0' t='GtkToolbarChildType'/>
+<mbr r='_GtkToolbarChild::widget' o='64' t='GtkWidget *'/>
+<mbr r='_GtkToolbarChild::icon' o='128' t='GtkWidget *'/>
+<mbr r='_GtkToolbarChild::label' o='192' t='GtkWidget *'/>

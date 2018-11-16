@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-coverage.h' l='85' type='PangoCoverage * pango_coverage_from_bytes(guchar * bytes, int n_bytes)'/>

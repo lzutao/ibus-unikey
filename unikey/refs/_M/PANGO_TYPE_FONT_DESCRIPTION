@@ -1,0 +1,6 @@
+<dec f='include/pango-1.0/pango/pango-font.h' l='215'/>
+<doc f='include/pango-1.0/pango/pango-font.h' l='210'>/**
+ * PANGO_TYPE_FONT_DESCRIPTION:
+ *
+ * The #GObject type for #PangoFontDescription.
+ */</doc>

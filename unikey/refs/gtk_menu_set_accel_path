@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmenu.h' l='157' type='void gtk_menu_set_accel_path(GtkMenu * menu, const gchar * accel_path)'/>

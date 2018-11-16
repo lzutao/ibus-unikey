@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkfont.h' l='66' type='GdkFont * gdk_fontset_load_for_display(GdkDisplay * display, const gchar * fontset_name)'/>

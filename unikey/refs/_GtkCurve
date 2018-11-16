@@ -1,0 +1,17 @@
+<def f='include/gtk-2.0/gtk/gtkcurve.h' l='50' ll='72'/>
+<size>184</size>
+<mbr r='_GtkCurve::graph' o='0' t='GtkDrawingArea'/>
+<mbr r='_GtkCurve::cursor_type' o='832' t='gint'/>
+<mbr r='_GtkCurve::min_x' o='864' t='gfloat'/>
+<mbr r='_GtkCurve::max_x' o='896' t='gfloat'/>
+<mbr r='_GtkCurve::min_y' o='928' t='gfloat'/>
+<mbr r='_GtkCurve::max_y' o='960' t='gfloat'/>
+<mbr r='_GtkCurve::pixmap' o='1024' t='GdkPixmap *'/>
+<mbr r='_GtkCurve::curve_type' o='1088' t='GtkCurveType'/>
+<mbr r='_GtkCurve::height' o='1120' t='gint'/>
+<mbr r='_GtkCurve::grab_point' o='1152' t='gint'/>
+<mbr r='_GtkCurve::last' o='1184' t='gint'/>
+<mbr r='_GtkCurve::num_points' o='1216' t='gint'/>
+<mbr r='_GtkCurve::point' o='1280' t='GdkPoint *'/>
+<mbr r='_GtkCurve::num_ctlpoints' o='1344' t='gint'/>
+<mbr r='_GtkCurve::ctlpoint' o='1408' t='gfloat (*)[2]'/>

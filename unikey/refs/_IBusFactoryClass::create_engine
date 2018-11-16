@@ -1,0 +1,3 @@
+<dec f='include/ibus-1.0/ibusfactory.h' l='134' type='IBusEngine *(*)(IBusFactory *, const gchar *)'/>
+<offset>2112</offset>
+<doc f='include/ibus-1.0/ibusfactory.h' l='132'>/* signals */</doc>

@@ -1,0 +1,3 @@
+<def f='include/atk-1.0/atk/atkregistry.h' l='46' ll='49'/>
+<size>136</size>
+<mbr r='_AtkRegistryClass::parent_class' o='0' t='GObjectClass'/>

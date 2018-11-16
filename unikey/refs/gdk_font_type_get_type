@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkenumtypes.h' l='50' type='GType gdk_font_type_get_type()'/>
+<doc f='include/gtk-2.0/gdk/gdkenumtypes.h' l='49'>/* enumerations from &quot;gdkfont.h&quot; */</doc>

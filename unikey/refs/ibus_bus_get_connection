@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='141' type='GDBusConnection * ibus_bus_get_connection(IBusBus * bus)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='132'>/**
+ * ibus_bus_get_connection:
+ * @bus: An #IBusBus.
+ *
+ * Gets a #GDBusConnection of an #IBusBus instance.
+ *
+ * Returns: (transfer none): A #GDBusConnection of an #IBusBus instance.
+ */</doc>
+<use f='unikey/src/main.cpp' l='47' u='c' c='_ZL15start_componentv'/>
+<use f='unikey/src/main.cpp' l='51' u='c' c='_ZL15start_componentv'/>

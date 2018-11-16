@@ -1,0 +1,5 @@
+<dec f='include/libintl.h' l='86' type='char * bindtextdomain(const char * __domainname, const char * __dirname)'/>
+<doc f='include/libintl.h' l='84'>/* Specify that the DOMAINNAME message catalog will be found
+   in DIRNAME rather than in the system locale data base.  */</doc>
+<use f='unikey/setup/setup.cpp' l='24' u='c' c='main'/>
+<use f='unikey/src/main.cpp' l='100' u='c' c='main'/>

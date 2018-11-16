@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintsettings.h' l='72' type='gboolean gtk_print_settings_has_key(GtkPrintSettings * settings, const gchar * key)'/>

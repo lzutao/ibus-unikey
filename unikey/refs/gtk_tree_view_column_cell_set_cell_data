@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gtk/gtktreeviewcolumn.h' l='220' type='void gtk_tree_view_column_cell_set_cell_data(GtkTreeViewColumn * tree_column, GtkTreeModel * tree_model, GtkTreeIter * iter, gboolean is_expander, gboolean is_expanded)'/>
+<doc f='include/gtk-2.0/gtk/gtktreeviewcolumn.h' l='218'>/* These functions are meant primarily for interaction between the GtkTreeView and the column.
+ */</doc>

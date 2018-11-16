@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtkwidget.h' l='816' ll='824'/>
+<size>20</size>
+<mbr r='_GtkWidgetAuxInfo::x' o='0' t='gint'/>
+<mbr r='_GtkWidgetAuxInfo::y' o='32' t='gint'/>
+<mbr r='_GtkWidgetAuxInfo::width' o='64' t='gint'/>
+<mbr r='_GtkWidgetAuxInfo::height' o='96' t='gint'/>
+<mbr r='_GtkWidgetAuxInfo::x_set' o='128' t='guint'/>
+<mbr r='_GtkWidgetAuxInfo::y_set' o='129' t='guint'/>

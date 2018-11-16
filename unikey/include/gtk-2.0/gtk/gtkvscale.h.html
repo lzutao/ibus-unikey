@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gtkvscale.h source code [include/gtk-2.0/gtk/gtkvscale.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gtk/gtkvscale.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gtk</a>/<a href='gtkvscale.h.html'>gtkvscale.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GTK - The GIMP Toolkit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><i>/*</i></td></tr>
+<tr><th id="21">21</th><td><i> * Modified by the GTK+ Team and others 1997-2000.  See the AUTHORS</i></td></tr>
+<tr><th id="22">22</th><td><i> * file for a list of people on the GTK+ Team.  See the ChangeLog</i></td></tr>
+<tr><th id="23">23</th><td><i> * files for a list of changes.  These files are distributed with</i></td></tr>
+<tr><th id="24">24</th><td><i> * GTK+ at ftp://ftp.gtk.org/pub/gtk/.</i></td></tr>
+<tr><th id="25">25</th><td><i> */</i></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/__GTK_VSCALE_H__">__GTK_VSCALE_H__</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/__GTK_VSCALE_H__" data-ref="_M/__GTK_VSCALE_H__">__GTK_VSCALE_H__</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#<span data-ppcond="31">if</span> defined(<span class="macro" data-ref="_M/GTK_DISABLE_SINGLE_INCLUDES">GTK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gtk.h.html#30" data-ref="_M/__GTK_H_INSIDE__">__GTK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GTK_COMPILATION">GTK_COMPILATION</span>)</u></td></tr>
+<tr><th id="32">32</th><td><u>#error "Only &lt;gtk/gtk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="33">33</th><td><u>#<span data-ppcond="31">endif</span></u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><u>#include <a href="gtkscale.h.html">&lt;gtk/gtkscale.h&gt;</a></u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><u>#define <dfn class="macro" id="_M/GTK_TYPE_VSCALE" data-ref="_M/GTK_TYPE_VSCALE">GTK_TYPE_VSCALE</dfn>            (gtk_vscale_get_type ())</u></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/GTK_VSCALE" data-ref="_M/GTK_VSCALE">GTK_VSCALE</dfn>(obj)            (G_TYPE_CHECK_INSTANCE_CAST ((obj), GTK_TYPE_VSCALE, GtkVScale))</u></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/GTK_VSCALE_CLASS" data-ref="_M/GTK_VSCALE_CLASS">GTK_VSCALE_CLASS</dfn>(klass)    (G_TYPE_CHECK_CLASS_CAST ((klass), GTK_TYPE_VSCALE, GtkVScaleClass))</u></td></tr>
+<tr><th id="44">44</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_VSCALE" data-ref="_M/GTK_IS_VSCALE">GTK_IS_VSCALE</dfn>(obj)         (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GTK_TYPE_VSCALE))</u></td></tr>
+<tr><th id="45">45</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_VSCALE_CLASS" data-ref="_M/GTK_IS_VSCALE_CLASS">GTK_IS_VSCALE_CLASS</dfn>(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), GTK_TYPE_VSCALE))</u></td></tr>
+<tr><th id="46">46</th><td><u>#define <dfn class="macro" id="_M/GTK_VSCALE_GET_CLASS" data-ref="_M/GTK_VSCALE_GET_CLASS">GTK_VSCALE_GET_CLASS</dfn>(obj)  (G_TYPE_INSTANCE_GET_CLASS ((obj), GTK_TYPE_VSCALE, GtkVScaleClass))</u></td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkVScale" title='_GtkVScale' data-ref="_GtkVScale">_GtkVScale</a>       <dfn class="typedef" id="GtkVScale" title='GtkVScale' data-type='struct _GtkVScale' data-ref="GtkVScale">GtkVScale</dfn>;</td></tr>
+<tr><th id="50">50</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkVScaleClass" title='_GtkVScaleClass' data-ref="_GtkVScaleClass">_GtkVScaleClass</a>  <dfn class="typedef" id="GtkVScaleClass" title='GtkVScaleClass' data-type='struct _GtkVScaleClass' data-ref="GtkVScaleClass">GtkVScaleClass</dfn>;</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> * GtkVScale:</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> * The #GtkVScale struct contains private data only, and</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> * should be accessed using the functions below.</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="58">58</th><td><b>struct</b> <dfn class="type def" id="_GtkVScale" title='_GtkVScale' data-ref="_GtkVScale">_GtkVScale</dfn></td></tr>
+<tr><th id="59">59</th><td>{</td></tr>
+<tr><th id="60">60</th><td>  <a class="typedef" href="gtkscale.h.html#GtkScale" title='GtkScale' data-type='struct _GtkScale' data-ref="GtkScale">GtkScale</a> <dfn class="decl" id="_GtkVScale::scale" title='_GtkVScale::scale' data-ref="_GtkVScale::scale">scale</dfn>;</td></tr>
+<tr><th id="61">61</th><td>};</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><b>struct</b> <dfn class="type def" id="_GtkVScaleClass" title='_GtkVScaleClass' data-ref="_GtkVScaleClass">_GtkVScaleClass</dfn></td></tr>
+<tr><th id="64">64</th><td>{</td></tr>
+<tr><th id="65">65</th><td>  <a class="typedef" href="gtkscale.h.html#GtkScaleClass" title='GtkScaleClass' data-type='struct _GtkScaleClass' data-ref="GtkScaleClass">GtkScaleClass</a> <dfn class="decl" id="_GtkVScaleClass::parent_class" title='_GtkVScaleClass::parent_class' data-ref="_GtkVScaleClass::parent_class">parent_class</dfn>;</td></tr>
+<tr><th id="66">66</th><td>};</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>      <dfn class="decl" id="gtk_vscale_get_type" title='gtk_vscale_get_type' data-ref="gtk_vscale_get_type">gtk_vscale_get_type</dfn>       (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="70">70</th><td><a class="typedef" href="gtkstyle.h.html#GtkWidget" title='GtkWidget' data-type='struct _GtkWidget' data-ref="GtkWidget">GtkWidget</a>* <dfn class="decl" id="gtk_vscale_new" title='gtk_vscale_new' data-ref="gtk_vscale_new">gtk_vscale_new</dfn>            (<a class="typedef" href="gtkadjustment.h.html#GtkAdjustment" title='GtkAdjustment' data-type='struct _GtkAdjustment' data-ref="GtkAdjustment">GtkAdjustment</a> *<dfn class="local col8 decl" id="24338adjustment" title='adjustment' data-type='GtkAdjustment *' data-ref="24338adjustment">adjustment</dfn>);</td></tr>
+<tr><th id="71">71</th><td><a class="typedef" href="gtkstyle.h.html#GtkWidget" title='GtkWidget' data-type='struct _GtkWidget' data-ref="GtkWidget">GtkWidget</a>* <dfn class="decl" id="gtk_vscale_new_with_range" title='gtk_vscale_new_with_range' data-ref="gtk_vscale_new_with_range">gtk_vscale_new_with_range</dfn> (<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>        <dfn class="local col9 decl" id="24339min" title='min' data-type='gdouble' data-ref="24339min">min</dfn>,</td></tr>
+<tr><th id="72">72</th><td>                                      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>        <dfn class="local col0 decl" id="24340max" title='max' data-type='gdouble' data-ref="24340max">max</dfn>,</td></tr>
+<tr><th id="73">73</th><td>                                      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>        <dfn class="local col1 decl" id="24341step" title='step' data-type='gdouble' data-ref="24341step">step</dfn>);</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><u>#<span data-ppcond="27">endif</span> /* __GTK_VSCALE_H__ */</u></td></tr>
+<tr><th id="80">80</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

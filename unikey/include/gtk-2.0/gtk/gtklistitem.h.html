@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gtklistitem.h source code [include/gtk-2.0/gtk/gtklistitem.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gtk/gtklistitem.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gtk</a>/<a href='gtklistitem.h.html'>gtklistitem.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GTK - The GIMP Toolkit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><i>/*</i></td></tr>
+<tr><th id="21">21</th><td><i> * Modified by the GTK+ Team and others 1997-2000.  See the AUTHORS</i></td></tr>
+<tr><th id="22">22</th><td><i> * file for a list of people on the GTK+ Team.  See the ChangeLog</i></td></tr>
+<tr><th id="23">23</th><td><i> * files for a list of changes.  These files are distributed with</i></td></tr>
+<tr><th id="24">24</th><td><i> * GTK+ at ftp://ftp.gtk.org/pub/gtk/. </i></td></tr>
+<tr><th id="25">25</th><td><i> */</i></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">if</span> !defined (<span class="macro" data-ref="_M/GTK_DISABLE_DEPRECATED">GTK_DISABLE_DEPRECATED</span>) || defined (<span class="macro" data-ref="_M/__GTK_LIST_ITEM_C__">__GTK_LIST_ITEM_C__</span>)</u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><u>#<span data-ppcond="29">ifndef</span> <span class="macro" data-ref="_M/__GTK_LIST_ITEM_H__">__GTK_LIST_ITEM_H__</span></u></td></tr>
+<tr><th id="30">30</th><td><u>#define <dfn class="macro" id="_M/__GTK_LIST_ITEM_H__" data-ref="_M/__GTK_LIST_ITEM_H__">__GTK_LIST_ITEM_H__</dfn></u></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><u>#include <a href="gtk.h.html">&lt;gtk/gtk.h&gt;</a></u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><u>#define <dfn class="macro" id="_M/GTK_TYPE_LIST_ITEM" data-ref="_M/GTK_TYPE_LIST_ITEM">GTK_TYPE_LIST_ITEM</dfn>              (gtk_list_item_get_type ())</u></td></tr>
+<tr><th id="39">39</th><td><u>#define <dfn class="macro" id="_M/GTK_LIST_ITEM" data-ref="_M/GTK_LIST_ITEM">GTK_LIST_ITEM</dfn>(obj)              (G_TYPE_CHECK_INSTANCE_CAST ((obj), GTK_TYPE_LIST_ITEM, GtkListItem))</u></td></tr>
+<tr><th id="40">40</th><td><u>#define <dfn class="macro" id="_M/GTK_LIST_ITEM_CLASS" data-ref="_M/GTK_LIST_ITEM_CLASS">GTK_LIST_ITEM_CLASS</dfn>(klass)      (G_TYPE_CHECK_CLASS_CAST ((klass), GTK_TYPE_LIST_ITEM, GtkListItemClass))</u></td></tr>
+<tr><th id="41">41</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_LIST_ITEM" data-ref="_M/GTK_IS_LIST_ITEM">GTK_IS_LIST_ITEM</dfn>(obj)           (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GTK_TYPE_LIST_ITEM))</u></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_LIST_ITEM_CLASS" data-ref="_M/GTK_IS_LIST_ITEM_CLASS">GTK_IS_LIST_ITEM_CLASS</dfn>(klass)   (G_TYPE_CHECK_CLASS_TYPE ((klass), GTK_TYPE_LIST_ITEM))</u></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/GTK_LIST_ITEM_GET_CLASS" data-ref="_M/GTK_LIST_ITEM_GET_CLASS">GTK_LIST_ITEM_GET_CLASS</dfn>(obj)    (G_TYPE_INSTANCE_GET_CLASS ((obj), GTK_TYPE_LIST_ITEM, GtkListItemClass))</u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkListItem" title='_GtkListItem' data-ref="_GtkListItem">_GtkListItem</a>       <dfn class="typedef" id="GtkListItem" title='GtkListItem' data-type='struct _GtkListItem' data-ref="GtkListItem">GtkListItem</dfn>;</td></tr>
+<tr><th id="47">47</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkListItemClass" title='_GtkListItemClass' data-ref="_GtkListItemClass">_GtkListItemClass</a>  <dfn class="typedef" id="GtkListItemClass" title='GtkListItemClass' data-type='struct _GtkListItemClass' data-ref="GtkListItemClass">GtkListItemClass</dfn>;</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><b>struct</b> <dfn class="type def" id="_GtkListItem" title='_GtkListItem' data-ref="_GtkListItem">_GtkListItem</dfn></td></tr>
+<tr><th id="50">50</th><td>{</td></tr>
+<tr><th id="51">51</th><td>  <a class="typedef" href="gtkitem.h.html#GtkItem" title='GtkItem' data-type='struct _GtkItem' data-ref="GtkItem">GtkItem</a> <dfn class="decl" id="_GtkListItem::item" title='_GtkListItem::item' data-ref="_GtkListItem::item">item</dfn>;</td></tr>
+<tr><th id="52">52</th><td>};</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><b>struct</b> <dfn class="type def" id="_GtkListItemClass" title='_GtkListItemClass' data-ref="_GtkListItemClass">_GtkListItemClass</dfn></td></tr>
+<tr><th id="55">55</th><td>{</td></tr>
+<tr><th id="56">56</th><td>  <a class="typedef" href="gtkitem.h.html#GtkItemClass" title='GtkItemClass' data-type='struct _GtkItemClass' data-ref="GtkItemClass">GtkItemClass</a> <dfn class="decl" id="_GtkListItemClass::parent_class" title='_GtkListItemClass::parent_class' data-ref="_GtkListItemClass::parent_class">parent_class</dfn>;</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkListItemClass::toggle_focus_row" title='_GtkListItemClass::toggle_focus_row' data-ref="_GtkListItemClass::toggle_focus_row">toggle_focus_row</dfn>)  (<a class="typedef" href="#GtkListItem" title='GtkListItem' data-type='struct _GtkListItem' data-ref="GtkListItem">GtkListItem</a>   *<dfn class="local col5 decl" id="25035list_item" title='list_item' data-type='GtkListItem *' data-ref="25035list_item">list_item</dfn>);</td></tr>
+<tr><th id="59">59</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkListItemClass::select_all" title='_GtkListItemClass::select_all' data-ref="_GtkListItemClass::select_all">select_all</dfn>)        (<a class="typedef" href="#GtkListItem" title='GtkListItem' data-type='struct _GtkListItem' data-ref="GtkListItem">GtkListItem</a>   *<dfn class="local col6 decl" id="25036list_item" title='list_item' data-type='GtkListItem *' data-ref="25036list_item">list_item</dfn>);</td></tr>
+<tr><th id="60">60</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkListItemClass::unselect_all" title='_GtkListItemClass::unselect_all' data-ref="_GtkListItemClass::unselect_all">unselect_all</dfn>)      (<a class="typedef" href="#GtkListItem" title='GtkListItem' data-type='struct _GtkListItem' data-ref="GtkListItem">GtkListItem</a>   *<dfn class="local col7 decl" id="25037list_item" title='list_item' data-type='GtkListItem *' data-ref="25037list_item">list_item</dfn>);</td></tr>
+<tr><th id="61">61</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkListItemClass::undo_selection" title='_GtkListItemClass::undo_selection' data-ref="_GtkListItemClass::undo_selection">undo_selection</dfn>)    (<a class="typedef" href="#GtkListItem" title='GtkListItem' data-type='struct _GtkListItem' data-ref="GtkListItem">GtkListItem</a>   *<dfn class="local col8 decl" id="25038list_item" title='list_item' data-type='GtkListItem *' data-ref="25038list_item">list_item</dfn>);</td></tr>
+<tr><th id="62">62</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkListItemClass::start_selection" title='_GtkListItemClass::start_selection' data-ref="_GtkListItemClass::start_selection">start_selection</dfn>)   (<a class="typedef" href="#GtkListItem" title='GtkListItem' data-type='struct _GtkListItem' data-ref="GtkListItem">GtkListItem</a>   *<dfn class="local col9 decl" id="25039list_item" title='list_item' data-type='GtkListItem *' data-ref="25039list_item">list_item</dfn>);</td></tr>
+<tr><th id="63">63</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkListItemClass::end_selection" title='_GtkListItemClass::end_selection' data-ref="_GtkListItemClass::end_selection">end_selection</dfn>)     (<a class="typedef" href="#GtkListItem" title='GtkListItem' data-type='struct _GtkListItem' data-ref="GtkListItem">GtkListItem</a>   *<dfn class="local col0 decl" id="25040list_item" title='list_item' data-type='GtkListItem *' data-ref="25040list_item">list_item</dfn>);</td></tr>
+<tr><th id="64">64</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkListItemClass::extend_selection" title='_GtkListItemClass::extend_selection' data-ref="_GtkListItemClass::extend_selection">extend_selection</dfn>)  (<a class="typedef" href="#GtkListItem" title='GtkListItem' data-type='struct _GtkListItem' data-ref="GtkListItem">GtkListItem</a>   *<dfn class="local col1 decl" id="25041list_item" title='list_item' data-type='GtkListItem *' data-ref="25041list_item">list_item</dfn>,</td></tr>
+<tr><th id="65">65</th><td>			     <a class="typedef" href="gtkenums.h.html#GtkScrollType" title='GtkScrollType' data-type='enum GtkScrollType' data-ref="GtkScrollType">GtkScrollType</a>  <dfn class="local col2 decl" id="25042scroll_type" title='scroll_type' data-type='GtkScrollType' data-ref="25042scroll_type">scroll_type</dfn>,</td></tr>
+<tr><th id="66">66</th><td>			     <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gfloat" title='gfloat' data-type='float' data-ref="gfloat">gfloat</a>         <dfn class="local col3 decl" id="25043position" title='position' data-type='gfloat' data-ref="25043position">position</dfn>,</td></tr>
+<tr><th id="67">67</th><td>			     <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>       <dfn class="local col4 decl" id="25044auto_start_selection" title='auto_start_selection' data-type='gboolean' data-ref="25044auto_start_selection">auto_start_selection</dfn>);</td></tr>
+<tr><th id="68">68</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkListItemClass::scroll_horizontal" title='_GtkListItemClass::scroll_horizontal' data-ref="_GtkListItemClass::scroll_horizontal">scroll_horizontal</dfn>) (<a class="typedef" href="#GtkListItem" title='GtkListItem' data-type='struct _GtkListItem' data-ref="GtkListItem">GtkListItem</a>   *<dfn class="local col5 decl" id="25045list_item" title='list_item' data-type='GtkListItem *' data-ref="25045list_item">list_item</dfn>,</td></tr>
+<tr><th id="69">69</th><td>			     <a class="typedef" href="gtkenums.h.html#GtkScrollType" title='GtkScrollType' data-type='enum GtkScrollType' data-ref="GtkScrollType">GtkScrollType</a>  <dfn class="local col6 decl" id="25046scroll_type" title='scroll_type' data-type='GtkScrollType' data-ref="25046scroll_type">scroll_type</dfn>,</td></tr>
+<tr><th id="70">70</th><td>			     <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gfloat" title='gfloat' data-type='float' data-ref="gfloat">gfloat</a>         <dfn class="local col7 decl" id="25047position" title='position' data-type='gfloat' data-ref="25047position">position</dfn>);</td></tr>
+<tr><th id="71">71</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkListItemClass::scroll_vertical" title='_GtkListItemClass::scroll_vertical' data-ref="_GtkListItemClass::scroll_vertical">scroll_vertical</dfn>)   (<a class="typedef" href="#GtkListItem" title='GtkListItem' data-type='struct _GtkListItem' data-ref="GtkListItem">GtkListItem</a>   *<dfn class="local col8 decl" id="25048list_item" title='list_item' data-type='GtkListItem *' data-ref="25048list_item">list_item</dfn>,</td></tr>
+<tr><th id="72">72</th><td>			     <a class="typedef" href="gtkenums.h.html#GtkScrollType" title='GtkScrollType' data-type='enum GtkScrollType' data-ref="GtkScrollType">GtkScrollType</a>  <dfn class="local col9 decl" id="25049scroll_type" title='scroll_type' data-type='GtkScrollType' data-ref="25049scroll_type">scroll_type</dfn>,</td></tr>
+<tr><th id="73">73</th><td>			     <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gfloat" title='gfloat' data-type='float' data-ref="gfloat">gfloat</a>         <dfn class="local col0 decl" id="25050position" title='position' data-type='gfloat' data-ref="25050position">position</dfn>);</td></tr>
+<tr><th id="74">74</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkListItemClass::toggle_add_mode" title='_GtkListItemClass::toggle_add_mode' data-ref="_GtkListItemClass::toggle_add_mode">toggle_add_mode</dfn>)   (<a class="typedef" href="#GtkListItem" title='GtkListItem' data-type='struct _GtkListItem' data-ref="GtkListItem">GtkListItem</a>   *<dfn class="local col1 decl" id="25051list_item" title='list_item' data-type='GtkListItem *' data-ref="25051list_item">list_item</dfn>);</td></tr>
+<tr><th id="75">75</th><td>};</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>      <dfn class="decl" id="gtk_list_item_get_type" title='gtk_list_item_get_type' data-ref="gtk_list_item_get_type">gtk_list_item_get_type</dfn>       (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="79">79</th><td><a class="typedef" href="gtkstyle.h.html#GtkWidget" title='GtkWidget' data-type='struct _GtkWidget' data-ref="GtkWidget">GtkWidget</a>* <dfn class="decl" id="gtk_list_item_new" title='gtk_list_item_new' data-ref="gtk_list_item_new">gtk_list_item_new</dfn>            (<em>void</em>);</td></tr>
+<tr><th id="80">80</th><td><a class="typedef" href="gtkstyle.h.html#GtkWidget" title='GtkWidget' data-type='struct _GtkWidget' data-ref="GtkWidget">GtkWidget</a>* <dfn class="decl" id="gtk_list_item_new_with_label" title='gtk_list_item_new_with_label' data-ref="gtk_list_item_new_with_label">gtk_list_item_new_with_label</dfn> (<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>      *<dfn class="local col2 decl" id="25052label" title='label' data-type='const gchar *' data-ref="25052label">label</dfn>);</td></tr>
+<tr><th id="81">81</th><td><em>void</em>       <dfn class="decl" id="gtk_list_item_select" title='gtk_list_item_select' data-ref="gtk_list_item_select">gtk_list_item_select</dfn>         (<a class="typedef" href="#GtkListItem" title='GtkListItem' data-type='struct _GtkListItem' data-ref="GtkListItem">GtkListItem</a>      *<dfn class="local col3 decl" id="25053list_item" title='list_item' data-type='GtkListItem *' data-ref="25053list_item">list_item</dfn>);</td></tr>
+<tr><th id="82">82</th><td><em>void</em>       <dfn class="decl" id="gtk_list_item_deselect" title='gtk_list_item_deselect' data-ref="gtk_list_item_deselect">gtk_list_item_deselect</dfn>       (<a class="typedef" href="#GtkListItem" title='GtkListItem' data-type='struct _GtkListItem' data-ref="GtkListItem">GtkListItem</a>      *<dfn class="local col4 decl" id="25054list_item" title='list_item' data-type='GtkListItem *' data-ref="25054list_item">list_item</dfn>);</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><u>#<span data-ppcond="29">endif</span> /* __GTK_LIST_ITEM_H__ */</u></td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><u>#<span data-ppcond="27">endif</span> /* GTK_DISABLE_DEPRECATED */</u></td></tr>
+<tr><th id="92">92</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='160' type='gboolean gdk_display_is_closed(GdkDisplay * display)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkscrolledwindow.h' l='112' type='GtkWidget * gtk_scrolled_window_get_vscrollbar(GtkScrolledWindow * scrolled_window)'/>

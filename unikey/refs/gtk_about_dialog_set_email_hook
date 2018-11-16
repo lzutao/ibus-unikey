@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkaboutdialog.h' l='145' type='GtkAboutDialogActivateLinkFunc gtk_about_dialog_set_email_hook(GtkAboutDialogActivateLinkFunc func, gpointer data, GDestroyNotify destroy)'/>

@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='453'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='447'>/**
+ * GTK_STOCK_INDEX:
+ *
+ * The &quot;Index&quot; item.
+ * &lt;inlinegraphic fileref=&quot;gtk-index.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

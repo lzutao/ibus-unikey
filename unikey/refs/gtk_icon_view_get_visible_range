@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconview.h' l='144' type='gboolean gtk_icon_view_get_visible_range(GtkIconView * icon_view, GtkTreePath ** start_path, GtkTreePath ** end_path)'/>

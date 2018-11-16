@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='251' type='void ibus_property_set_icon(IBusProperty * prop, const gchar * icon)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='244'>/**
+ * ibus_property_set_icon:
+ * @prop: An #IBusProperty.
+ * @icon: Icon shown in UI. It could be a full path of an icon file or an icon name.
+ *
+ * Set the icon of #IBusProperty.
+ */</doc>

@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtklabel.h' l='195' type='guint gtk_label_parse_uline(GtkLabel * label, const gchar * string)'/>
+<doc f='include/gtk-2.0/gtk/gtklabel.h' l='191'>/* Convenience function to set the name and pattern by parsing
+ * a string with embedded underscores, and return the appropriate
+ * key symbol for the accelerator.
+ */</doc>

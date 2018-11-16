@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkcellrenderer.h' l='106' type='GtkCellEditable *(*)(GtkCellRenderer *, GdkEvent *, GtkWidget *, const gchar *, GdkRectangle *, GdkRectangle *, GtkCellRendererState)'/>
+<offset>1472</offset>

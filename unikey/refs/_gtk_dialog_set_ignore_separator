@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkdialog.h' l='181' type='void _gtk_dialog_set_ignore_separator(GtkDialog * dialog, gboolean ignore_separator)'/>
+<doc f='include/gtk-2.0/gtk/gtkdialog.h' l='180'>/* For private use only */</doc>

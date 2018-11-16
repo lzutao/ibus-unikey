@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='413' type='void ibus_bus_remove_match_async(IBusBus * bus, const gchar * rule, gint timeout_msec, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer user_data)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='401'>/**
+ * ibus_bus_remove_match_async:
+ * @bus: An #IBusBus.
+ * @rule: Match rule.
+ * @timeout_msec: The timeout in milliseconds or -1 to use the default timeout.
+ * @cancellable: A #GCancellable or %NULL.
+ * @callback: A #GAsyncReadyCallback to call when the request is satisfied
+ *      or %NULL if you don&apos;t care about the result of the method invocation.
+ * @user_data: The data to pass to callback.
+ *
+ * Remove a match rule to an IBusBus asynchronously.
+ */</doc>

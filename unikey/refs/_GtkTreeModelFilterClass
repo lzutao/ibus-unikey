@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtktreemodelfilter.h' l='61' ll='70'/>
+<size>168</size>
+<mbr r='_GtkTreeModelFilterClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_GtkTreeModelFilterClass::_gtk_reserved0' o='1088' t='void (*)()'/>
+<mbr r='_GtkTreeModelFilterClass::_gtk_reserved1' o='1152' t='void (*)()'/>
+<mbr r='_GtkTreeModelFilterClass::_gtk_reserved2' o='1216' t='void (*)()'/>
+<mbr r='_GtkTreeModelFilterClass::_gtk_reserved3' o='1280' t='void (*)()'/>

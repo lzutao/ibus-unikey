@@ -1,0 +1,12 @@
+<def f='include/gtk-2.0/gtk/gtkiconview.h' l='67' ll='88'/>
+<size>896</size>
+<mbr r='_GtkIconViewClass::parent_class' o='0' t='GtkContainerClass'/>
+<mbr r='_GtkIconViewClass::set_scroll_adjustments' o='6592' t='void (*)(GtkIconView *, GtkAdjustment *, GtkAdjustment *)'/>
+<mbr r='_GtkIconViewClass::item_activated' o='6656' t='void (*)(GtkIconView *, GtkTreePath *)'/>
+<mbr r='_GtkIconViewClass::selection_changed' o='6720' t='void (*)(GtkIconView *)'/>
+<mbr r='_GtkIconViewClass::select_all' o='6784' t='void (*)(GtkIconView *)'/>
+<mbr r='_GtkIconViewClass::unselect_all' o='6848' t='void (*)(GtkIconView *)'/>
+<mbr r='_GtkIconViewClass::select_cursor_item' o='6912' t='void (*)(GtkIconView *)'/>
+<mbr r='_GtkIconViewClass::toggle_cursor_item' o='6976' t='void (*)(GtkIconView *)'/>
+<mbr r='_GtkIconViewClass::move_cursor' o='7040' t='gboolean (*)(GtkIconView *, GtkMovementStep, gint)'/>
+<mbr r='_GtkIconViewClass::activate_cursor_item' o='7104' t='gboolean (*)(GtkIconView *)'/>

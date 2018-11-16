@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusregistry.h' l='145' type='gboolean ibus_registry_load_cache_file(IBusRegistry * registry, const gchar * filename)'/>
+<doc f='include/ibus-1.0/ibusregistry.h' l='135'>/**
+ * ibus_registry_load_cache_file:
+ * @registry: An #IBusRegistry.
+ * @filename: The file path of the registry cache
+ *
+ * Load the registry cache @filename.
+ *
+ * Returns: %TRUE if the cache exists and is loaded successfully,
+ *           %FALSE otherwise.
+ */</doc>

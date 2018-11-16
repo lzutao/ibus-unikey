@@ -1,0 +1,8 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='622' type='GtkObjectClass'/>
+<offset>0</offset>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='616'>/* The object class structure needs to be the first
+   *  element in the widget class structure in order for
+   *  the class mechanism to work correctly. This allows a
+   *  GtkWidgetClass pointer to be cast to a GtkObjectClass
+   *  pointer.
+   */</doc>

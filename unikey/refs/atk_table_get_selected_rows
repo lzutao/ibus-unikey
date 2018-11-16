@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atktable.h' l='205' type='gint atk_table_get_selected_rows(AtkTable * table, gint ** selected)'/>

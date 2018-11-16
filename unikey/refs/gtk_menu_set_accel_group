@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkmenu.h' l='154' type='void gtk_menu_set_accel_group(GtkMenu * menu, GtkAccelGroup * accel_group)'/>
+<doc f='include/gtk-2.0/gtk/gtkmenu.h' l='151'>/* set/get the accelerator group that holds global accelerators (should
+ * be added to the corresponding toplevel with gtk_window_add_accel_group().
+ */</doc>

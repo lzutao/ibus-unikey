@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='987' type='void cairo_clip_extents(cairo_t * cr, double * x1, double * y1, double * x2, double * y2)'/>

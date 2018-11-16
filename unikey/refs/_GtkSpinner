@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkspinner.h' l='47' ll='51'/>
+<size>112</size>
+<mbr r='_GtkSpinner::parent' o='0' t='GtkDrawingArea'/>
+<mbr r='_GtkSpinner::priv' o='832' t='GtkSpinnerPrivate *'/>

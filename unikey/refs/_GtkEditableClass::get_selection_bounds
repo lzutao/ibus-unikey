@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkeditable.h' l='79' type='gboolean (*)(GtkEditable *, gint *, gint *)'/>
+<offset>576</offset>

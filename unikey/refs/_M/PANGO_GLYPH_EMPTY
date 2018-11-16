@@ -1,0 +1,11 @@
+<dec f='include/pango-1.0/pango/pango-font.h' l='677'/>
+<doc f='include/pango-1.0/pango/pango-font.h' l='667'>/**
+ * PANGO_GET_UNKNOWN_GLYPH:
+ * @wc: a Unicode character
+ *
+ * The way this unknown glyphs are rendered is backend specific.  For example,
+ * a box with the hexadecimal Unicode code-point of the character written in it
+ * is what is done in the most common backends.
+ *
+ * Returns: a #PangoGlyph value that means no glyph was found for @wc.
+ */</doc>

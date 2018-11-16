@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-attributes.h' l='567' type='PangoAttribute * pango_attr_iterator_get(PangoAttrIterator * iterator, PangoAttrType type)'/>

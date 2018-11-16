@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkimage.h' l='110' type='void gdk_image_put_pixel(GdkImage * image, gint x, gint y, guint32 pixel)'/>

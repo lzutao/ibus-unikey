@@ -1,0 +1,5 @@
+<def f='include/gtk-2.0/gdk/gdkpixmap.h' l='50' ll='57'/>
+<size>40</size>
+<mbr r='_GdkPixmapObject::parent_instance' o='0' t='GdkDrawable'/>
+<mbr r='_GdkPixmapObject::impl' o='192' t='GdkDrawable *'/>
+<mbr r='_GdkPixmapObject::depth' o='256' t='gint'/>

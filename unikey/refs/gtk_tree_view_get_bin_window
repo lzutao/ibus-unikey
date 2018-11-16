@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='245' type='GdkWindow * gtk_tree_view_get_bin_window(GtkTreeView * tree_view)'/>
+<doc f='include/gtk-2.0/gtk/gtktreeview.h' l='244'>/* Layout information */</doc>

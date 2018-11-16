@@ -1,0 +1,10 @@
+<dec f='include/pango-1.0/pango/pango-break.h' l='117' type='guint'/>
+<offset>7</offset>
+<doc f='include/pango-1.0/pango/pango-break.h' l='109'>/* There are two ways to divide sentences. The first assigns all
+   * intersentence whitespace/control/format chars to some sentence,
+   * so all chars are in some sentence; is_sentence_boundary denotes
+   * the boundaries there. The second way doesn&apos;t assign
+   * between-sentence spaces, etc. to any sentence, so
+   * is_sentence_start/is_sentence_end mark the boundaries of those
+   * sentences.
+   */</doc>

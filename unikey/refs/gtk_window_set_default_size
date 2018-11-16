@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='367' type='void gtk_window_set_default_size(GtkWindow * window, gint width, gint height)'/>
+<doc f='include/gtk-2.0/gtk/gtkwindow.h' l='364'>/* Set initial default size of the window (does not constrain user
+ * resize operations)
+ */</doc>

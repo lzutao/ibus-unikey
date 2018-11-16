@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>pango-types.h source code [include/pango-1.0/pango/pango-types.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/pango-1.0/pango/pango-types.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>pango-1.0</a>/<a href='./'>pango</a>/<a href='pango-types.h.html'>pango-types.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Pango</i></td></tr>
+<tr><th id="2">2</th><td><i> * pango-types.h:</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 1999 Red Hat Software</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="7">7</th><td><i> * modify it under the terms of the GNU Library General Public</i></td></tr>
+<tr><th id="8">8</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="9">9</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="12">12</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="13">13</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the GNU</i></td></tr>
+<tr><th id="14">14</th><td><i> * Library General Public License for more details.</i></td></tr>
+<tr><th id="15">15</th><td><i> *</i></td></tr>
+<tr><th id="16">16</th><td><i> * You should have received a copy of the GNU Library General Public</i></td></tr>
+<tr><th id="17">17</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="18">18</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="19">19</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="22">ifndef</span> <span class="macro" data-ref="_M/__PANGO_TYPES_H__">__PANGO_TYPES_H__</span></u></td></tr>
+<tr><th id="23">23</th><td><u>#define <dfn class="macro" id="_M/__PANGO_TYPES_H__" data-ref="_M/__PANGO_TYPES_H__">__PANGO_TYPES_H__</dfn></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="../../glib-2.0/glib.h.html">&lt;glib.h&gt;</a></u></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="../../glib-2.0/glib-object.h.html">&lt;glib-object.h&gt;</a></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#include <a href="pango-version-macros.h.html">&lt;pango/pango-version-macros.h&gt;</a></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><b>typedef</b> <b>struct</b> <a class="type" href="pango-break.h.html#_PangoLogAttr" title='_PangoLogAttr' data-ref="_PangoLogAttr" id="_PangoLogAttr"><a class="type" href="pango-break.h.html#_PangoLogAttr" title='_PangoLogAttr' data-ref="_PangoLogAttr">_PangoLogAttr</a></a> <dfn class="typedef" id="PangoLogAttr" title='PangoLogAttr' data-type='struct _PangoLogAttr' data-ref="PangoLogAttr">PangoLogAttr</dfn>;</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_PangoEngineLang" title='_PangoEngineLang' data-ref="_PangoEngineLang"><a class="type" href="#_PangoEngineLang" title='_PangoEngineLang' data-ref="_PangoEngineLang">_PangoEngineLang</a></dfn> <dfn class="typedef" id="PangoEngineLang" title='PangoEngineLang' data-type='struct _PangoEngineLang' data-ref="PangoEngineLang">PangoEngineLang</dfn>;</td></tr>
+<tr><th id="35">35</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_PangoEngineShape" title='_PangoEngineShape' data-ref="_PangoEngineShape"><a class="type" href="#_PangoEngineShape" title='_PangoEngineShape' data-ref="_PangoEngineShape">_PangoEngineShape</a></dfn> <dfn class="typedef" id="PangoEngineShape" title='PangoEngineShape' data-type='struct _PangoEngineShape' data-ref="PangoEngineShape">PangoEngineShape</dfn>;</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_PangoFont" title='_PangoFont' data-ref="_PangoFont"><a class="type" href="#_PangoFont" title='_PangoFont' data-ref="_PangoFont">_PangoFont</a></dfn>    <dfn class="typedef" id="PangoFont" title='PangoFont' data-type='struct _PangoFont' data-ref="PangoFont">PangoFont</dfn>;</td></tr>
+<tr><th id="38">38</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_PangoFontMap" title='_PangoFontMap' data-ref="_PangoFontMap"><a class="type" href="#_PangoFontMap" title='_PangoFontMap' data-ref="_PangoFontMap">_PangoFontMap</a></dfn> <dfn class="typedef" id="PangoFontMap" title='PangoFontMap' data-type='struct _PangoFontMap' data-ref="PangoFontMap">PangoFontMap</dfn>;</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_PangoRectangle" title='_PangoRectangle' data-ref="_PangoRectangle">_PangoRectangle</a> <dfn class="typedef" id="PangoRectangle" title='PangoRectangle' data-type='struct _PangoRectangle' data-ref="PangoRectangle">PangoRectangle</dfn>;</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><i>/* A index of a glyph into a font. Rendering system dependent */</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> * PangoGlyph:</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> * A #PangoGlyph represents a single glyph in the output form of a string.</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="50">50</th><td><b>typedef</b> <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span> <dfn class="typedef" id="PangoGlyph" title='PangoGlyph' data-type='guint32' data-ref="PangoGlyph">PangoGlyph</dfn>;</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> * PANGO_SCALE:</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> * The %PANGO_SCALE macro represents the scale between dimensions used</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> * for Pango distances and device units. (The definition of device</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"> * units is dependent on the output device; it will typically be pixels</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"> * for a screen, and points for a printer.) %PANGO_SCALE is currently</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> * 1024, but this may be changed in the future.</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> * When setting font sizes, device units are always considered to be</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> * points (as in "12 point font"), rather than pixels.</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> * PANGO_PIXELS:</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> *<span class="command"> @d</span>: a dimension in Pango units.</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> * Converts a dimension to device units by rounding.</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> * Return value: rounded dimension in device units.</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc"> * PANGO_PIXELS_FLOOR:</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> *<span class="command"> @d</span>: a dimension in Pango units.</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> * Converts a dimension to device units by flooring.</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> * Return value: floored dimension in device units.</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> * Since: 1.14</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc"> * PANGO_PIXELS_CEIL:</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> *<span class="command"> @d</span>: a dimension in Pango units.</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> * Converts a dimension to device units by ceiling.</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc"> * Return value: ceiled dimension in device units.</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> * Since: 1.14</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="92">92</th><td><u>#define <dfn class="macro" id="_M/PANGO_SCALE" data-ref="_M/PANGO_SCALE">PANGO_SCALE</dfn> 1024</u></td></tr>
+<tr><th id="93">93</th><td><u>#define <dfn class="macro" id="_M/PANGO_PIXELS" data-ref="_M/PANGO_PIXELS">PANGO_PIXELS</dfn>(d) (((int)(d) + 512) &gt;&gt; 10)</u></td></tr>
+<tr><th id="94">94</th><td><u>#define <dfn class="macro" id="_M/PANGO_PIXELS_FLOOR" data-ref="_M/PANGO_PIXELS_FLOOR">PANGO_PIXELS_FLOOR</dfn>(d) (((int)(d)) &gt;&gt; 10)</u></td></tr>
+<tr><th id="95">95</th><td><u>#define <dfn class="macro" id="_M/PANGO_PIXELS_CEIL" data-ref="_M/PANGO_PIXELS_CEIL">PANGO_PIXELS_CEIL</dfn>(d) (((int)(d) + 1023) &gt;&gt; 10)</u></td></tr>
+<tr><th id="96">96</th><td><i>/* The above expressions are just slightly wrong for floating point d;</i></td></tr>
+<tr><th id="97">97</th><td><i> * For example we'd expect PANGO_PIXELS(-512.5) =&gt; -1 but instead we get 0.</i></td></tr>
+<tr><th id="98">98</th><td><i> * That's unlikely to matter for practical use and the expression is much</i></td></tr>
+<tr><th id="99">99</th><td><i> * more compact and faster than alternatives that work exactly for both</i></td></tr>
+<tr><th id="100">100</th><td><i> * integers and floating point.</i></td></tr>
+<tr><th id="101">101</th><td><i> *</i></td></tr>
+<tr><th id="102">102</th><td><i> * PANGO_PIXELS also behaves differently for +512 and -512.</i></td></tr>
+<tr><th id="103">103</th><td><i> */</i></td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"> * PANGO_UNITS_ROUND:</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> *<span class="command"> @d</span>: a dimension in Pango units.</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> * Rounds a dimension to whole device units, but does not</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> * convert it to device units.</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> * Return value: rounded dimension in Pango units.</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc"> * Since: 1.18</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="115">115</th><td><u>#define <dfn class="macro" id="_M/PANGO_UNITS_ROUND" data-ref="_M/PANGO_UNITS_ROUND">PANGO_UNITS_ROUND</dfn>(d)				\</u></td></tr>
+<tr><th id="116">116</th><td><u>  (((d) + (PANGO_SCALE &gt;&gt; 1)) &amp; ~(PANGO_SCALE - 1))</u></td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td><a class="macro" href="pango-version-macros.h.html#443" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_16">PANGO_AVAILABLE_IN_1_16</a></td></tr>
+<tr><th id="120">120</th><td><em>int</em>    <dfn class="decl" id="pango_units_from_double" title='pango_units_from_double' data-ref="pango_units_from_double">pango_units_from_double</dfn> (<em>double</em> <dfn class="local col0 decl" id="12360d" title='d' data-type='double' data-ref="12360d">d</dfn>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="121">121</th><td><a class="macro" href="pango-version-macros.h.html#443" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_16">PANGO_AVAILABLE_IN_1_16</a></td></tr>
+<tr><th id="122">122</th><td><em>double</em> <dfn class="decl" id="pango_units_to_double" title='pango_units_to_double' data-ref="pango_units_to_double">pango_units_to_double</dfn> (<em>int</em> <dfn class="local col1 decl" id="12361i" title='i' data-type='int' data-ref="12361i">i</dfn>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> * PangoRectangle:</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> *<span class="command"> @x</span>: X coordinate of the left side of the rectangle.</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc"> *<span class="command"> @y</span>: Y coordinate of the the top side of the rectangle.</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc"> *<span class="command"> @width</span>: width of the rectangle.</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc"> *<span class="command"> @height</span>: height of the rectangle.</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> * The #PangoRectangle structure represents a rectangle. It is frequently</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> * used to represent the logical or ink extents of a single glyph or section</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> * of text. (See, for instance, pango_font_get_glyph_extents())</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="138">138</th><td><b>struct</b> <dfn class="type def" id="_PangoRectangle" title='_PangoRectangle' data-ref="_PangoRectangle">_PangoRectangle</dfn></td></tr>
+<tr><th id="139">139</th><td>{</td></tr>
+<tr><th id="140">140</th><td>  <em>int</em> <dfn class="decl" id="_PangoRectangle::x" title='_PangoRectangle::x' data-ref="_PangoRectangle::x">x</dfn>;</td></tr>
+<tr><th id="141">141</th><td>  <em>int</em> <dfn class="decl" id="_PangoRectangle::y" title='_PangoRectangle::y' data-ref="_PangoRectangle::y">y</dfn>;</td></tr>
+<tr><th id="142">142</th><td>  <em>int</em> <dfn class="decl" id="_PangoRectangle::width" title='_PangoRectangle::width' data-ref="_PangoRectangle::width">width</dfn>;</td></tr>
+<tr><th id="143">143</th><td>  <em>int</em> <dfn class="decl" id="_PangoRectangle::height" title='_PangoRectangle::height' data-ref="_PangoRectangle::height">height</dfn>;</td></tr>
+<tr><th id="144">144</th><td>};</td></tr>
+<tr><th id="145">145</th><td></td></tr>
+<tr><th id="146">146</th><td><i>/* Macros to translate from extents rectangles to ascent/descent/lbearing/rbearing</i></td></tr>
+<tr><th id="147">147</th><td><i> */</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> * PANGO_ASCENT:</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> *<span class="command"> @rect</span>: a #PangoRectangle</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> * Extracts the &lt;firstterm&gt;ascent&lt;/firstterm&gt; from a #PangoRectangle</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> * representing glyph extents. The ascent is the distance from the</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> * baseline to the highest point of the character. This is positive if the</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc"> * glyph ascends above the baseline.</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="157">157</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc"> * PANGO_DESCENT:</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"> *<span class="command"> @rect</span>: a #PangoRectangle</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc"> * Extracts the &lt;firstterm&gt;descent&lt;/firstterm&gt; from a #PangoRectangle</i></td></tr>
+<tr><th id="162">162</th><td><i class="doc"> * representing glyph extents. The descent is the distance from the</i></td></tr>
+<tr><th id="163">163</th><td><i class="doc"> * baseline to the lowest point of the character. This is positive if the</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc"> * glyph descends below the baseline.</i></td></tr>
+<tr><th id="165">165</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="166">166</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc"> * PANGO_LBEARING:</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc"> *<span class="command"> @rect</span>: a #PangoRectangle</i></td></tr>
+<tr><th id="169">169</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="170">170</th><td><i class="doc"> * Extracts the &lt;firstterm&gt;left bearing&lt;/firstterm&gt; from a #PangoRectangle</i></td></tr>
+<tr><th id="171">171</th><td><i class="doc"> * representing glyph extents. The left bearing is the distance from the</i></td></tr>
+<tr><th id="172">172</th><td><i class="doc"> * horizontal origin to the farthest left point of the character.</i></td></tr>
+<tr><th id="173">173</th><td><i class="doc"> * This is positive for characters drawn completely to the right of the</i></td></tr>
+<tr><th id="174">174</th><td><i class="doc"> * glyph origin.</i></td></tr>
+<tr><th id="175">175</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="176">176</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="177">177</th><td><i class="doc"> * PANGO_RBEARING:</i></td></tr>
+<tr><th id="178">178</th><td><i class="doc"> *<span class="command"> @rect</span>: a #PangoRectangle</i></td></tr>
+<tr><th id="179">179</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc"> * Extracts the &lt;firstterm&gt;right bearing&lt;/firstterm&gt; from a #PangoRectangle</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc"> * representing glyph extents. The right bearing is the distance from the</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc"> * horizontal origin to the farthest right point of the character.</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc"> * This is positive except for characters drawn completely to the left of the</i></td></tr>
+<tr><th id="184">184</th><td><i class="doc"> * horizontal origin.</i></td></tr>
+<tr><th id="185">185</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="186">186</th><td><u>#define <dfn class="macro" id="_M/PANGO_ASCENT" data-ref="_M/PANGO_ASCENT">PANGO_ASCENT</dfn>(rect) (-(rect).y)</u></td></tr>
+<tr><th id="187">187</th><td><u>#define <dfn class="macro" id="_M/PANGO_DESCENT" data-ref="_M/PANGO_DESCENT">PANGO_DESCENT</dfn>(rect) ((rect).y + (rect).height)</u></td></tr>
+<tr><th id="188">188</th><td><u>#define <dfn class="macro" id="_M/PANGO_LBEARING" data-ref="_M/PANGO_LBEARING">PANGO_LBEARING</dfn>(rect) ((rect).x)</u></td></tr>
+<tr><th id="189">189</th><td><u>#define <dfn class="macro" id="_M/PANGO_RBEARING" data-ref="_M/PANGO_RBEARING">PANGO_RBEARING</dfn>(rect) ((rect).x + (rect).width)</u></td></tr>
+<tr><th id="190">190</th><td></td></tr>
+<tr><th id="191">191</th><td><a class="macro" href="pango-version-macros.h.html#443" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_16">PANGO_AVAILABLE_IN_1_16</a></td></tr>
+<tr><th id="192">192</th><td><em>void</em> <dfn class="decl" id="pango_extents_to_pixels" title='pango_extents_to_pixels' data-ref="pango_extents_to_pixels">pango_extents_to_pixels</dfn> (<a class="typedef" href="#PangoRectangle" title='PangoRectangle' data-type='struct _PangoRectangle' data-ref="PangoRectangle">PangoRectangle</a> *<dfn class="local col2 decl" id="12362inclusive" title='inclusive' data-type='PangoRectangle *' data-ref="12362inclusive">inclusive</dfn>,</td></tr>
+<tr><th id="193">193</th><td>			      <a class="typedef" href="#PangoRectangle" title='PangoRectangle' data-type='struct _PangoRectangle' data-ref="PangoRectangle">PangoRectangle</a> *<dfn class="local col3 decl" id="12363nearest" title='nearest' data-type='PangoRectangle *' data-ref="12363nearest">nearest</dfn>);</td></tr>
+<tr><th id="194">194</th><td></td></tr>
+<tr><th id="195">195</th><td></td></tr>
+<tr><th id="196">196</th><td><u>#include <a href="pango-gravity.h.html">&lt;pango/pango-gravity.h&gt;</a></u></td></tr>
+<tr><th id="197">197</th><td><u>#include <a href="pango-language.h.html">&lt;pango/pango-language.h&gt;</a></u></td></tr>
+<tr><th id="198">198</th><td><u>#include <a href="pango-matrix.h.html">&lt;pango/pango-matrix.h&gt;</a></u></td></tr>
+<tr><th id="199">199</th><td><u>#include <a href="pango-script.h.html">&lt;pango/pango-script.h&gt;</a></u></td></tr>
+<tr><th id="200">200</th><td><u>#include <a href="pango-bidi-type.h.html">&lt;pango/pango-bidi-type.h&gt;</a></u></td></tr>
+<tr><th id="201">201</th><td></td></tr>
+<tr><th id="202">202</th><td></td></tr>
+<tr><th id="203">203</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="204">204</th><td></td></tr>
+<tr><th id="205">205</th><td><u>#<span data-ppcond="22">endif</span> /* __PANGO_TYPES_H__ */</u></td></tr>
+<tr><th id="206">206</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

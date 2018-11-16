@@ -1,0 +1,5 @@
+<def f='include/atk-1.0/atk/atkgobjectaccessible.h' l='53' ll='59'/>
+<size>368</size>
+<mbr r='_AtkGObjectAccessibleClass::parent_class' o='0' t='AtkObjectClass'/>
+<mbr r='_AtkGObjectAccessibleClass::pad1' o='2816' t='AtkFunction'/>
+<mbr r='_AtkGObjectAccessibleClass::pad2' o='2880' t='AtkFunction'/>

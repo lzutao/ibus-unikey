@@ -1,0 +1,5 @@
+<dec f='include/atk-1.0/atk/atkhypertext.h' l='37'/>
+<doc f='include/atk-1.0/atk/atkhypertext.h' l='32'>/*
+ * The AtkHypertext interface provides standard  mechanisms for manipulating 
+ * hyperlinks.
+ */</doc>

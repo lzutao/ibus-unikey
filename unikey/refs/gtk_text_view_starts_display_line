@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextview.h' l='304' type='gboolean gtk_text_view_starts_display_line(GtkTextView * text_view, const GtkTextIter * iter)'/>

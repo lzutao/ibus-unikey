@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkfilechooser.h' l='123' type='void gtk_file_chooser_set_local_only(GtkFileChooser * chooser, gboolean local_only)'/>

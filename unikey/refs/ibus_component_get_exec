@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuscomponent.h' l='237' type='const gchar * ibus_component_get_exec(IBusComponent * component)'/>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='229'>/**
+ * ibus_component_get_exec:
+ * @component: An #IBusComponent
+ *
+ * Gets the exec property in #IBusComponent. It should not be freed.
+ *
+ * Returns: exec property in #IBusComponent
+ */</doc>

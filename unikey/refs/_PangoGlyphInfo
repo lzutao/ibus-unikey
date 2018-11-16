@@ -1,0 +1,15 @@
+<def f='include/pango-1.0/pango/pango-glyph.h' l='98' ll='103'/>
+<size>20</size>
+<doc f='include/pango-1.0/pango/pango-glyph.h' l='88'>/**
+ * PangoGlyphInfo:
+ * @glyph: the glyph itself.
+ * @geometry: the positional information about the glyph.
+ * @attr: the visual attributes of the glyph.
+ *
+ * The #PangoGlyphInfo structure represents a single glyph together with
+ * positioning information and visual attributes.
+ * It contains the following fields.
+ */</doc>
+<mbr r='_PangoGlyphInfo::glyph' o='0' t='PangoGlyph'/>
+<mbr r='_PangoGlyphInfo::geometry' o='32' t='PangoGlyphGeometry'/>
+<mbr r='_PangoGlyphInfo::attr' o='128' t='PangoGlyphVisAttr'/>

@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusinputcontext.h' l='346' type='void ibus_input_context_set_capabilities(IBusInputContext * context, guint32 capabilities)'/>
+<doc f='include/ibus-1.0/ibusinputcontext.h' l='335'>/**
+ * ibus_input_context_set_capabilities:
+ * @context: An IBusInputContext.
+ * @capabilities: Capabilities flags of IBusEngine, see #IBusCapabilite
+ *
+ * Set the capabilities flags of client application asynchronously.
+ * When IBUS_CAP_FOCUS is not set, IBUS_CAP_PREEDIT_TEXT, IBUS_CAP_AUXILIARY_TEXT, IBUS_CAP_LOOKUP_TABLE, and IBUS_CAP_PROPERTY have to be all set.
+ * The panel component does nothing for an application that doesn&apos;t support focus.
+ *
+ * see_also: #IBusEngine::set-capabilities
+ */</doc>

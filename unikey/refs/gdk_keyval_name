@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gdk/gdkkeys.h' l='118' type='gchar * gdk_keyval_name(guint keyval)'/>
+<doc f='include/gtk-2.0/gdk/gdkkeys.h' l='116'>/* Key values
+ */</doc>

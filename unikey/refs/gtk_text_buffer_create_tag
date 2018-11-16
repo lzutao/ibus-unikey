@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='314' type='GtkTextTag * gtk_text_buffer_create_tag(GtkTextBuffer * buffer, const gchar * tag_name, const gchar * first_property_name)'/>
+<doc f='include/gtk-2.0/gtk/gtktextbuffer.h' l='311'>/* You can either ignore the return value, or use it to
+ * set the attributes of the tag. tag_name can be NULL
+ */</doc>

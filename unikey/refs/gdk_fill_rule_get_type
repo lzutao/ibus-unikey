@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkenumtypes.h' l='88' type='GType gdk_fill_rule_get_type()'/>
+<doc f='include/gtk-2.0/gdk/gdkenumtypes.h' l='87'>/* enumerations from &quot;gdkregion.h&quot; */</doc>

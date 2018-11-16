@@ -1,0 +1,15 @@
+<def f='include/pango-1.0/pango/pango-item.h' l='92' ll='98'/>
+<size>64</size>
+<doc f='include/pango-1.0/pango/pango-item.h' l='83'>/**
+ * PangoItem:
+ * @offset: byte offset of the start of this item in text.
+ * @length: length of this item in bytes.
+ * @num_chars: number of Unicode characters in the item.
+ * @analysis: analysis results for the item.
+ *
+ * The #PangoItem structure stores information about a segment of text.
+ */</doc>
+<mbr r='_PangoItem::offset' o='0' t='gint'/>
+<mbr r='_PangoItem::length' o='32' t='gint'/>
+<mbr r='_PangoItem::num_chars' o='64' t='gint'/>
+<mbr r='_PangoItem::analysis' o='128' t='PangoAnalysis'/>

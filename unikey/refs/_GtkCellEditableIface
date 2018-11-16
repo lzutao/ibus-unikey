@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gtk/gtkcelleditable.h' l='40' ll='51'/>
+<size>40</size>
+<mbr r='_GtkCellEditableIface::g_iface' o='0' t='GTypeInterface'/>
+<mbr r='_GtkCellEditableIface::editing_done' o='128' t='void (*)(GtkCellEditable *)'/>
+<mbr r='_GtkCellEditableIface::remove_widget' o='192' t='void (*)(GtkCellEditable *)'/>
+<mbr r='_GtkCellEditableIface::start_editing' o='256' t='void (*)(GtkCellEditable *, GdkEvent *)'/>

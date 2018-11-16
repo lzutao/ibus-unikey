@@ -1,0 +1,4 @@
+<def f='include/glib-2.0/gio/gresolver.h' l='40' ll='44'/>
+<size>32</size>
+<mbr r='_GResolver::parent_instance' o='0' t='GObject'/>
+<mbr r='_GResolver::priv' o='192' t='GResolverPrivate *'/>

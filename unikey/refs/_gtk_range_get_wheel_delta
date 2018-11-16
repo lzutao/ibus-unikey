@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkrange.h' l='202' type='gdouble _gtk_range_get_wheel_delta(GtkRange * range, GdkScrollDirection direction)'/>
+<doc f='include/gtk-2.0/gtk/gtkrange.h' l='201'>/* internal API */</doc>

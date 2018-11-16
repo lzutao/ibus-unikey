@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkplug.h' l='86' type='void gtk_plug_construct_for_display(GtkPlug * plug, GdkDisplay * display, GdkNativeWindow socket_id)'/>

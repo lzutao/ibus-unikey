@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktextview.h' l='372' type='GtkTextAttributes * gtk_text_view_get_default_attributes(GtkTextView * text_view)'/>
+<doc f='include/gtk-2.0/gtk/gtktextview.h' l='371'>/* note that the return value of this changes with the theme */</doc>

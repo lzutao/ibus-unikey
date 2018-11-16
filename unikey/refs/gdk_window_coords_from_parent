@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='574' type='void gdk_window_coords_from_parent(GdkWindow * window, gdouble parent_x, gdouble parent_y, gdouble * x, gdouble * y)'/>

@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='3117' type='void cairo_region_get_extents(const cairo_region_t * region, cairo_rectangle_int_t * extents)'/>

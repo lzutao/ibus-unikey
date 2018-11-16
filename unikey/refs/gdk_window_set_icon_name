@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='614' type='void gdk_window_set_icon_name(GdkWindow * window, const gchar * name)'/>

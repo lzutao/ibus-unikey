@@ -1,0 +1,12 @@
+<def f='include/gtk-2.0/gtk/gtkassistant.h' l='91' ll='106'/>
+<size>976</size>
+<mbr r='_GtkAssistantClass::parent_class' o='0' t='GtkWindowClass'/>
+<mbr r='_GtkAssistantClass::prepare' o='7232' t='void (*)(GtkAssistant *, GtkWidget *)'/>
+<mbr r='_GtkAssistantClass::apply' o='7296' t='void (*)(GtkAssistant *)'/>
+<mbr r='_GtkAssistantClass::close' o='7360' t='void (*)(GtkAssistant *)'/>
+<mbr r='_GtkAssistantClass::cancel' o='7424' t='void (*)(GtkAssistant *)'/>
+<mbr r='_GtkAssistantClass::_gtk_reserved1' o='7488' t='void (*)()'/>
+<mbr r='_GtkAssistantClass::_gtk_reserved2' o='7552' t='void (*)()'/>
+<mbr r='_GtkAssistantClass::_gtk_reserved3' o='7616' t='void (*)()'/>
+<mbr r='_GtkAssistantClass::_gtk_reserved4' o='7680' t='void (*)()'/>
+<mbr r='_GtkAssistantClass::_gtk_reserved5' o='7744' t='void (*)()'/>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='131' type='GdkWindow *(*)(GdkDisplay *, GdkWindow *, gint *, gint *, GdkModifierType *)'/>
+<offset>64</offset>

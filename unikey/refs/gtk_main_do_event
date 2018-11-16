@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkmain.h' l='143' type='void gtk_main_do_event(GdkEvent * event)'/>
+<doc f='include/gtk-2.0/gtk/gtkmain.h' l='139'>/* The following is the event func GTK+ registers with GDK
+ * we expose it mainly to allow filtering of events between
+ * GDK and GTK+.
+ */</doc>

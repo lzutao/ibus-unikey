@@ -1,0 +1,12 @@
+<dec f='include/atk-1.0/atk/atkversion.h' l='99'/>
+<doc f='include/atk-1.0/atk/atkversion.h' l='88'>/**
+ * ATK_CHECK_VERSION:
+ * @major: major version (e.g. 1 for version 1.2.5)
+ * @minor: minor version (e.g. 2 for version 1.2.5)
+ * @micro: micro version (e.g. 5 for version 1.2.5)
+ *
+ * Returns %TRUE if the version of the ATK header files is the same as
+ * or newer than the passed-in version.
+ *
+ * Since: 2.7.4
+ */</doc>

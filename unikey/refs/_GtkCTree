@@ -1,0 +1,11 @@
+<def f='include/gtk-2.0/gtk/gtkctree.h' l='108' ll='123'/>
+<size>456</size>
+<mbr r='_GtkCTree::clist' o='0' t='GtkCList'/>
+<mbr r='_GtkCTree::lines_gc' o='3392' t='GdkGC *'/>
+<mbr r='_GtkCTree::tree_indent' o='3456' t='gint'/>
+<mbr r='_GtkCTree::tree_spacing' o='3488' t='gint'/>
+<mbr r='_GtkCTree::tree_column' o='3520' t='gint'/>
+<mbr r='_GtkCTree::line_style' o='3552' t='guint'/>
+<mbr r='_GtkCTree::expander_style' o='3554' t='guint'/>
+<mbr r='_GtkCTree::show_stub' o='3556' t='guint'/>
+<mbr r='_GtkCTree::drag_compare' o='3584' t='GtkCTreeCompareDragFunc'/>

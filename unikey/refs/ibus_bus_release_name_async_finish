@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='260' type='guint ibus_bus_release_name_async_finish(IBusBus * bus, GAsyncResult * res, GError ** error)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='249'>/**
+ * ibus_bus_release_name_async_finish:
+ * @bus: An #IBusBus.
+ * @res: A #GAsyncResult obtained from the #GAsyncReadyCallback passed to
+ *   ibus_bus_release_name_async().
+ * @error: Return location for error or %NULL.
+ *
+ * Finishes an operation started with ibus_bus_release_name_async().
+ *
+ * Returns: 0 if failed; positive number otherwise.
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='include/gtk-2.0/gtk/gtkmenuitem.h' l='81' type='guint'/>
+<offset>7040</offset>
+<doc f='include/gtk-2.0/gtk/gtkmenuitem.h' l='75'>/* If the following flag is true, then we should always hide
+   * the menu when the MenuItem is activated. Otherwise, the 
+   * it is up to the caller. For instance, when navigating
+   * a menu with the keyboard, &lt;Space&gt; doesn&apos;t hide, but
+   * &lt;Return&gt; does.
+   */</doc>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkspinbutton.h' l='105' type='gint (*)(GtkSpinButton *, gdouble *)'/>
+<offset>6592</offset>

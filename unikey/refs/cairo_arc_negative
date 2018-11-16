@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='876' type='void cairo_arc_negative(cairo_t * cr, double xc, double yc, double radius, double angle1, double angle2)'/>

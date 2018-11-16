@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/glib/gmacros.h' l='159'/>
+<use f='include/ibus-1.0/ibusshare.h' l='256' u='c'/>
+<use f='include/ibus-1.0/ibusshare.h' l='289' u='c'/>
+<use f='include/ibus-1.0/ibuskeymap.h' l='128' u='c'/>

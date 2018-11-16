@@ -1,0 +1,10 @@
+<def f='include/atk-1.0/atk/atkstreamablecontent.h' l='42' ll='90'/>
+<size>72</size>
+<mbr r='_AtkStreamableContentIface::parent' o='0' t='GTypeInterface'/>
+<mbr r='_AtkStreamableContentIface::get_n_mime_types' o='128' t='gint (*)(AtkStreamableContent *)'/>
+<mbr r='_AtkStreamableContentIface::get_mime_type' o='192' t='const gchar *(*)(AtkStreamableContent *, gint)'/>
+<mbr r='_AtkStreamableContentIface::get_stream' o='256' t='GIOChannel *(*)(AtkStreamableContent *, const gchar *)'/>
+<mbr r='_AtkStreamableContentIface::get_uri' o='320' t='const gchar *(*)(AtkStreamableContent *, const gchar *)'/>
+<mbr r='_AtkStreamableContentIface::pad1' o='384' t='AtkFunction'/>
+<mbr r='_AtkStreamableContentIface::pad2' o='448' t='AtkFunction'/>
+<mbr r='_AtkStreamableContentIface::pad3' o='512' t='AtkFunction'/>

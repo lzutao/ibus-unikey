@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atktable.h' l='139' type='gint atk_table_get_index_at(AtkTable * table, gint row, gint column)'/>

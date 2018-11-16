@@ -1,0 +1,11 @@
+<dec f='include/pango-1.0/pango/pango-utils.h' l='145'/>
+<doc f='include/pango-1.0/pango/pango-utils.h' l='135'>/**
+ * PANGO_VERSION_ENCODE:
+ * @major: the major component of the version number
+ * @minor: the minor component of the version number
+ * @micro: the micro component of the version number
+ *
+ * This macro encodes the given Pango version into an integer.  The numbers
+ * returned by %PANGO_VERSION and pango_version() are encoded using this macro.
+ * Two encoded version numbers can be compared as integers.
+ */</doc>

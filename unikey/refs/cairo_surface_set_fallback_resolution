@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='2517' type='void cairo_surface_set_fallback_resolution(cairo_surface_t * surface, double x_pixels_per_inch, double y_pixels_per_inch)'/>

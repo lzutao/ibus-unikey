@@ -1,0 +1,14 @@
+<def f='unikey/src/engine_private.h' l='16' ll='32'/>
+<size>168</size>
+<doc f='unikey/src/engine_private.h' l='13'>/**
+ * IBusUnikeyEngine properties.
+ */</doc>
+<mbr r='_IBusUnikeyEngine::parent' o='0' t='IBusEngine'/>
+<mbr r='_IBusUnikeyEngine::prop_list' o='704' t='IBusPropList *'/>
+<mbr r='_IBusUnikeyEngine::menu_im' o='768' t='IBusPropList *'/>
+<mbr r='_IBusUnikeyEngine::menu_oc' o='832' t='IBusPropList *'/>
+<mbr r='_IBusUnikeyEngine::im' o='896' t='UkInputMethod'/>
+<mbr r='_IBusUnikeyEngine::oc' o='928' t='unsigned int'/>
+<mbr r='_IBusUnikeyEngine::ukopt' o='960' t='UnikeyOptions'/>
+<mbr r='_IBusUnikeyEngine::last_key_with_shift' o='1248' t='gboolean'/>
+<mbr r='_IBusUnikeyEngine::preeditstr' o='1280' t='std::string *'/>

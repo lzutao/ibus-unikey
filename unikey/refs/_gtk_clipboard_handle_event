@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclipboard.h' l='151' type='void _gtk_clipboard_handle_event(GdkEventOwnerChange * event)'/>
+<doc f='include/gtk-2.0/gtk/gtkclipboard.h' l='150'>/* private */</doc>

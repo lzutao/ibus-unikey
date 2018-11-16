@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-font.h' l='255' type='void pango_font_description_set_weight(PangoFontDescription * desc, PangoWeight weight)'/>

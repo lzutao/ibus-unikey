@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkdnd.h' l='133' type='GdkDragContext * gtk_drag_begin(GtkWidget * widget, GtkTargetList * targets, GdkDragAction actions, gint button, GdkEvent * event)'/>
+<doc f='include/gtk-2.0/gtk/gtkdnd.h' l='129'>/* There probably should be functions for setting the targets
+ * as a GtkTargetList
+ */</doc>

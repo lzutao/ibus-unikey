@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='329'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='323'>/**
+ * GTK_STOCK_FIND_AND_REPLACE:
+ *
+ * The &quot;Find and Replace&quot; item.
+ * &lt;inlinegraphic fileref=&quot;edit-find-replace.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

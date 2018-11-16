@@ -1,0 +1,13 @@
+<dec f='include/atk-1.0/atk/atkstreamablecontent.h' l='83' type='const gchar *(*)(AtkStreamableContent *, const gchar *)'/>
+<offset>320</offset>
+<doc f='include/atk-1.0/atk/atkstreamablecontent.h' l='72'>/*
+ * Returns a string representing a URI in IETF standard format
+ * (see http://www.ietf.org/rfc/rfc2396.txt) from which the object&apos;s content
+ * may be streamed in the specified mime-type.
+ * If mime_type is NULL, the URI for the default (and possibly only) mime-type is
+ * returned.
+ *
+ * returns NULL if the mime-type is not supported, or if no URI can be 
+ * constructed.  Note that it is possible for get_uri to return NULL but for
+ * get_stream to work nonetheless, since not all GIOChannels connect to URIs.
+ */</doc>

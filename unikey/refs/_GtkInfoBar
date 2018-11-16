@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkinfobar.h' l='59' ll='65'/>
+<size>136</size>
+<mbr r='_GtkInfoBar::parent' o='0' t='GtkHBox'/>
+<mbr r='_GtkInfoBar::priv' o='1024' t='GtkInfoBarPrivate *'/>

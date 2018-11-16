@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1279' type='void gtk_widget_path(GtkWidget * widget, guint * path_length, gchar ** path, gchar ** path_reversed)'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='1276'>/* Compute a widget&apos;s path in the form &quot;GtkWindow.MyLabel&quot;, and
+ * return newly alocated strings.
+ */</doc>

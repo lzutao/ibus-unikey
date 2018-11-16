@@ -1,0 +1,17 @@
+<dec f='include/ibus-1.0/ibusservice.h' l='121' type='GVariant *(*)(IBusService *, GDBusConnection *, const gchar *, const gchar *, const gchar *, const gchar *, GError **)'/>
+<offset>1664</offset>
+<doc f='include/ibus-1.0/ibusservice.h' l='106'>/**
+     * IBusServiceClass::service_get_property:
+     * @service: An #IBusService.
+     * @connection: A dbus connection.
+     * @sender: A sender.
+     * @object_path: An object path.
+     * @interface_name: An interface name.
+     * @property_name: A property name.
+     * @error: Return location for error or %NULL.
+     *
+     * The ::service_get_property class method is to connect
+     * GDBusInterfaceGetPropertyFunc().
+     *
+     * Returns: (nullable) (transfer full): A variant.
+     */</doc>

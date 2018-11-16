@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkimmulticontext.h' l='55' ll='64'/>
+<size>368</size>
+<mbr r='_GtkIMMulticontextClass::parent_class' o='0' t='GtkIMContextClass'/>
+<mbr r='_GtkIMMulticontextClass::_gtk_reserved1' o='2688' t='void (*)()'/>
+<mbr r='_GtkIMMulticontextClass::_gtk_reserved2' o='2752' t='void (*)()'/>
+<mbr r='_GtkIMMulticontextClass::_gtk_reserved3' o='2816' t='void (*)()'/>
+<mbr r='_GtkIMMulticontextClass::_gtk_reserved4' o='2880' t='void (*)()'/>

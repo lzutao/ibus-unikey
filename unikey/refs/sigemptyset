@@ -1,0 +1,2 @@
+<dec f='include/signal.h' l='196' type='int sigemptyset(sigset_t * __set)'/>
+<doc f='include/signal.h' l='195'>/* Clear all signals from SET.  */</doc>

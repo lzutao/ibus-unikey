@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='555' type='void gtk_clist_set_column_max_width(GtkCList * clist, gint column, gint max_width)'/>

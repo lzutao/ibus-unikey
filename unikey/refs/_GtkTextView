@@ -1,0 +1,50 @@
+<def f='include/gtk-2.0/gtk/gtktextview.h' l='68' ll='153'/>
+<size>352</size>
+<mbr r='_GtkTextView::parent_instance' o='0' t='GtkContainer'/>
+<mbr r='_GtkTextView::layout' o='896' t='struct _GtkTextLayout *'/>
+<mbr r='_GtkTextView::buffer' o='960' t='GtkTextBuffer *'/>
+<mbr r='_GtkTextView::selection_drag_handler' o='1024' t='guint'/>
+<mbr r='_GtkTextView::scroll_timeout' o='1056' t='guint'/>
+<mbr r='_GtkTextView::pixels_above_lines' o='1088' t='gint'/>
+<mbr r='_GtkTextView::pixels_below_lines' o='1120' t='gint'/>
+<mbr r='_GtkTextView::pixels_inside_wrap' o='1152' t='gint'/>
+<mbr r='_GtkTextView::wrap_mode' o='1184' t='GtkWrapMode'/>
+<mbr r='_GtkTextView::justify' o='1216' t='GtkJustification'/>
+<mbr r='_GtkTextView::left_margin' o='1248' t='gint'/>
+<mbr r='_GtkTextView::right_margin' o='1280' t='gint'/>
+<mbr r='_GtkTextView::indent' o='1312' t='gint'/>
+<mbr r='_GtkTextView::tabs' o='1344' t='PangoTabArray *'/>
+<mbr r='_GtkTextView::editable' o='1408' t='guint'/>
+<mbr r='_GtkTextView::overwrite_mode' o='1409' t='guint'/>
+<mbr r='_GtkTextView::cursor_visible' o='1410' t='guint'/>
+<mbr r='_GtkTextView::need_im_reset' o='1411' t='guint'/>
+<mbr r='_GtkTextView::accepts_tab' o='1412' t='guint'/>
+<mbr r='_GtkTextView::width_changed' o='1413' t='guint'/>
+<mbr r='_GtkTextView::onscreen_validated' o='1414' t='guint'/>
+<mbr r='_GtkTextView::mouse_cursor_obscured' o='1415' t='guint'/>
+<mbr r='_GtkTextView::text_window' o='1472' t='GtkTextWindow *'/>
+<mbr r='_GtkTextView::left_window' o='1536' t='GtkTextWindow *'/>
+<mbr r='_GtkTextView::right_window' o='1600' t='GtkTextWindow *'/>
+<mbr r='_GtkTextView::top_window' o='1664' t='GtkTextWindow *'/>
+<mbr r='_GtkTextView::bottom_window' o='1728' t='GtkTextWindow *'/>
+<mbr r='_GtkTextView::hadjustment' o='1792' t='GtkAdjustment *'/>
+<mbr r='_GtkTextView::vadjustment' o='1856' t='GtkAdjustment *'/>
+<mbr r='_GtkTextView::xoffset' o='1920' t='gint'/>
+<mbr r='_GtkTextView::yoffset' o='1952' t='gint'/>
+<mbr r='_GtkTextView::width' o='1984' t='gint'/>
+<mbr r='_GtkTextView::height' o='2016' t='gint'/>
+<mbr r='_GtkTextView::virtual_cursor_x' o='2048' t='gint'/>
+<mbr r='_GtkTextView::virtual_cursor_y' o='2080' t='gint'/>
+<mbr r='_GtkTextView::first_para_mark' o='2112' t='GtkTextMark *'/>
+<mbr r='_GtkTextView::first_para_pixels' o='2176' t='gint'/>
+<mbr r='_GtkTextView::dnd_mark' o='2240' t='GtkTextMark *'/>
+<mbr r='_GtkTextView::blink_timeout' o='2304' t='guint'/>
+<mbr r='_GtkTextView::first_validate_idle' o='2336' t='guint'/>
+<mbr r='_GtkTextView::incremental_validate_idle' o='2368' t='guint'/>
+<mbr r='_GtkTextView::im_context' o='2432' t='GtkIMContext *'/>
+<mbr r='_GtkTextView::popup_menu' o='2496' t='GtkWidget *'/>
+<mbr r='_GtkTextView::drag_start_x' o='2560' t='gint'/>
+<mbr r='_GtkTextView::drag_start_y' o='2592' t='gint'/>
+<mbr r='_GtkTextView::children' o='2624' t='GSList *'/>
+<mbr r='_GtkTextView::pending_scroll' o='2688' t='GtkTextPendingScroll *'/>
+<mbr r='_GtkTextView::pending_place_cursor_button' o='2752' t='gint'/>

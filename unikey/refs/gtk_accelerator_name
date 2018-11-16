@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='170' type='gchar * gtk_accelerator_name(guint accelerator_key, GdkModifierType accelerator_mods)'/>

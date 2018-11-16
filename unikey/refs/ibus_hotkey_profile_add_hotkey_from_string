@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibushotkey.h' l='121' type='gboolean ibus_hotkey_profile_add_hotkey_from_string(IBusHotkeyProfile * profile, const gchar * str, GQuark event)'/>
+<doc f='include/ibus-1.0/ibushotkey.h' l='109'>/**
+ * ibus_hotkey_profile_add_hotkey_from_string:
+ * @profile: An IBusHotkeyProfile.
+ * @str: Key in string representation.  &apos;+&apos; is the separator.
+ * @event: The event to be associated.
+ *
+ * Adds a hotkey and its associated event to an #IBusHotkeyProfile.
+ * The hotkey is in string format, such like
+ * &lt;constant&gt;Control+Shift+A&lt;/constant&gt;.
+ *
+ * Returns: FALSE if @str contains invalid symbol; TRUE otherwise.
+ */</doc>

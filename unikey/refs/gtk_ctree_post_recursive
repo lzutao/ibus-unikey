@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='212' type='void gtk_ctree_post_recursive(GtkCTree * ctree, GtkCTreeNode * node, GtkCTreeFunc func, gpointer data)'/>
+<doc f='include/gtk-2.0/gtk/gtkctree.h' l='207'>/***********************************************************
+ *  Generic recursive functions, querying / finding tree   *
+ *  information                                            *
+ ***********************************************************/</doc>

@@ -1,0 +1,23 @@
+<def f='include/gtk-2.0/gtk/gtklabel.h' l='54' ll='84'/>
+<size>184</size>
+<mbr r='_GtkLabel::misc' o='0' t='GtkMisc'/>
+<mbr r='_GtkLabel::label' o='896' t='gchar *'/>
+<mbr r='_GtkLabel::jtype' o='960' t='guint'/>
+<mbr r='_GtkLabel::wrap' o='962' t='guint'/>
+<mbr r='_GtkLabel::use_underline' o='963' t='guint'/>
+<mbr r='_GtkLabel::use_markup' o='964' t='guint'/>
+<mbr r='_GtkLabel::ellipsize' o='965' t='guint'/>
+<mbr r='_GtkLabel::single_line_mode' o='968' t='guint'/>
+<mbr r='_GtkLabel::have_transform' o='969' t='guint'/>
+<mbr r='_GtkLabel::in_click' o='970' t='guint'/>
+<mbr r='_GtkLabel::wrap_mode' o='971' t='guint'/>
+<mbr r='_GtkLabel::pattern_set' o='974' t='guint'/>
+<mbr r='_GtkLabel::track_links' o='975' t='guint'/>
+<mbr r='_GtkLabel::mnemonic_keyval' o='992' t='guint'/>
+<mbr r='_GtkLabel::text' o='1024' t='gchar *'/>
+<mbr r='_GtkLabel::attrs' o='1088' t='PangoAttrList *'/>
+<mbr r='_GtkLabel::effective_attrs' o='1152' t='PangoAttrList *'/>
+<mbr r='_GtkLabel::layout' o='1216' t='PangoLayout *'/>
+<mbr r='_GtkLabel::mnemonic_widget' o='1280' t='GtkWidget *'/>
+<mbr r='_GtkLabel::mnemonic_window' o='1344' t='GtkWindow *'/>
+<mbr r='_GtkLabel::select_info' o='1408' t='GtkLabelSelectionInfo *'/>

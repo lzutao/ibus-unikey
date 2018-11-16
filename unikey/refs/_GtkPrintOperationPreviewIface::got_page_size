@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkprintoperationpreview.h' l='49' type='void (*)(GtkPrintOperationPreview *, GtkPrintContext *, GtkPageSetup *)'/>
+<offset>192</offset>

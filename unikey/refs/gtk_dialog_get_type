@@ -1,0 +1,8 @@
+<dec f='include/gtk-2.0/gtk/gtkdialog.h' l='127' type='GType gtk_dialog_get_type()'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='355' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='405' macro='1' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='34' macro='1' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='162' macro='1' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='164' macro='1' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='168' macro='1' u='c'/>
+<use f='unikey/setup/setup.cpp' l='58' macro='1' u='c'/>

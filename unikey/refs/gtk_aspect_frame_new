@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkaspectframe.h' l='70' type='GtkWidget * gtk_aspect_frame_new(const gchar * label, gfloat xalign, gfloat yalign, gfloat ratio, gboolean obey_child)'/>

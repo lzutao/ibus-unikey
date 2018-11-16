@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-layout.h' l='417' type='void pango_layout_iter_get_line_yrange(PangoLayoutIter * iter, int * y0_, int * y1_)'/>

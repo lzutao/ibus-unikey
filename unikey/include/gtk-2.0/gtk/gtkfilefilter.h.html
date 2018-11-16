@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gtkfilefilter.h source code [include/gtk-2.0/gtk/gtkfilefilter.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gtk/gtkfilefilter.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gtk</a>/<a href='gtkfilefilter.h.html'>gtkfilefilter.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GTK - The GIMP Toolkit</i></td></tr>
+<tr><th id="2">2</th><td><i> * gtkfilefilter.h: Filters for selecting a file subset</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright (C) 2003, Red Hat, Inc.</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="6">6</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="7">7</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="8">8</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="11">11</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="12">12</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="13">13</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="16">16</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="17">17</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="18">18</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="19">19</th><td><i> */</i></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><u>#<span data-ppcond="21">ifndef</span> <span class="macro" data-ref="_M/__GTK_FILE_FILTER_H__">__GTK_FILE_FILTER_H__</span></u></td></tr>
+<tr><th id="22">22</th><td><u>#define <dfn class="macro" id="_M/__GTK_FILE_FILTER_H__" data-ref="_M/__GTK_FILE_FILTER_H__">__GTK_FILE_FILTER_H__</dfn></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="24">if</span> defined(<span class="macro" data-ref="_M/GTK_DISABLE_SINGLE_INCLUDES">GTK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gtk.h.html#30" data-ref="_M/__GTK_H_INSIDE__">__GTK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GTK_COMPILATION">GTK_COMPILATION</span>)</u></td></tr>
+<tr><th id="25">25</th><td><u>#error "Only &lt;gtk/gtk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="26">26</th><td><u>#<span data-ppcond="24">endif</span></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#include <a href="../../glib-2.0/glib-object.h.html">&lt;glib-object.h&gt;</a></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><u>#define <dfn class="macro" id="_M/GTK_TYPE_FILE_FILTER" data-ref="_M/GTK_TYPE_FILE_FILTER">GTK_TYPE_FILE_FILTER</dfn>              (gtk_file_filter_get_type ())</u></td></tr>
+<tr><th id="33">33</th><td><u>#define <dfn class="macro" id="_M/GTK_FILE_FILTER" data-ref="_M/GTK_FILE_FILTER">GTK_FILE_FILTER</dfn>(obj)              (G_TYPE_CHECK_INSTANCE_CAST ((obj), GTK_TYPE_FILE_FILTER, GtkFileFilter))</u></td></tr>
+<tr><th id="34">34</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_FILE_FILTER" data-ref="_M/GTK_IS_FILE_FILTER">GTK_IS_FILE_FILTER</dfn>(obj)           (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GTK_TYPE_FILE_FILTER))</u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_GtkFileFilter" title='_GtkFileFilter' data-ref="_GtkFileFilter"><a class="type" href="#_GtkFileFilter" title='_GtkFileFilter' data-ref="_GtkFileFilter">_GtkFileFilter</a></dfn>     <dfn class="typedef" id="GtkFileFilter" title='GtkFileFilter' data-type='struct _GtkFileFilter' data-ref="GtkFileFilter">GtkFileFilter</dfn>;</td></tr>
+<tr><th id="37">37</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkFileFilterInfo" title='_GtkFileFilterInfo' data-ref="_GtkFileFilterInfo">_GtkFileFilterInfo</a> <dfn class="typedef" id="GtkFileFilterInfo" title='GtkFileFilterInfo' data-type='struct _GtkFileFilterInfo' data-ref="GtkFileFilterInfo">GtkFileFilterInfo</dfn>;</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="40">40</th><td>  <dfn class="enum" id="GTK_FILE_FILTER_FILENAME" title='GTK_FILE_FILTER_FILENAME' data-ref="GTK_FILE_FILTER_FILENAME">GTK_FILE_FILTER_FILENAME</dfn>     = <var>1</var> &lt;&lt; <var>0</var>,</td></tr>
+<tr><th id="41">41</th><td>  <dfn class="enum" id="GTK_FILE_FILTER_URI" title='GTK_FILE_FILTER_URI' data-ref="GTK_FILE_FILTER_URI">GTK_FILE_FILTER_URI</dfn>          = <var>1</var> &lt;&lt; <var>1</var>,</td></tr>
+<tr><th id="42">42</th><td>  <dfn class="enum" id="GTK_FILE_FILTER_DISPLAY_NAME" title='GTK_FILE_FILTER_DISPLAY_NAME' data-ref="GTK_FILE_FILTER_DISPLAY_NAME">GTK_FILE_FILTER_DISPLAY_NAME</dfn> = <var>1</var> &lt;&lt; <var>2</var>,</td></tr>
+<tr><th id="43">43</th><td>  <dfn class="enum" id="GTK_FILE_FILTER_MIME_TYPE" title='GTK_FILE_FILTER_MIME_TYPE' data-ref="GTK_FILE_FILTER_MIME_TYPE">GTK_FILE_FILTER_MIME_TYPE</dfn>    = <var>1</var> &lt;&lt; <var>3</var></td></tr>
+<tr><th id="44">44</th><td>} <dfn class="typedef" id="GtkFileFilterFlags" title='GtkFileFilterFlags' data-type='enum GtkFileFilterFlags' data-ref="GtkFileFilterFlags">GtkFileFilterFlags</dfn>;</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><b>typedef</b> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> (*<dfn class="typedef" id="GtkFileFilterFunc" title='GtkFileFilterFunc' data-type='gboolean (*)(const GtkFileFilterInfo *, gpointer)' data-ref="GtkFileFilterFunc">GtkFileFilterFunc</dfn>) (<em>const</em> <a class="typedef" href="#GtkFileFilterInfo" title='GtkFileFilterInfo' data-type='struct _GtkFileFilterInfo' data-ref="GtkFileFilterInfo">GtkFileFilterInfo</a> *<dfn class="local col8 decl" id="21238filter_info" title='filter_info' data-type='const GtkFileFilterInfo *' data-ref="21238filter_info">filter_info</dfn>,</td></tr>
+<tr><th id="47">47</th><td>				       <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>                 <dfn class="local col9 decl" id="21239data" title='data' data-type='gpointer' data-ref="21239data">data</dfn>);</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><b>struct</b> <dfn class="type def" id="_GtkFileFilterInfo" title='_GtkFileFilterInfo' data-ref="_GtkFileFilterInfo">_GtkFileFilterInfo</dfn></td></tr>
+<tr><th id="50">50</th><td>{</td></tr>
+<tr><th id="51">51</th><td>  <a class="typedef" href="#GtkFileFilterFlags" title='GtkFileFilterFlags' data-type='enum GtkFileFilterFlags' data-ref="GtkFileFilterFlags">GtkFileFilterFlags</a> <dfn class="decl" id="_GtkFileFilterInfo::contains" title='_GtkFileFilterInfo::contains' data-ref="_GtkFileFilterInfo::contains">contains</dfn>;</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td>  <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="decl" id="_GtkFileFilterInfo::filename" title='_GtkFileFilterInfo::filename' data-ref="_GtkFileFilterInfo::filename">filename</dfn>;</td></tr>
+<tr><th id="54">54</th><td>  <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="decl" id="_GtkFileFilterInfo::uri" title='_GtkFileFilterInfo::uri' data-ref="_GtkFileFilterInfo::uri">uri</dfn>;</td></tr>
+<tr><th id="55">55</th><td>  <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="decl" id="_GtkFileFilterInfo::display_name" title='_GtkFileFilterInfo::display_name' data-ref="_GtkFileFilterInfo::display_name">display_name</dfn>;</td></tr>
+<tr><th id="56">56</th><td>  <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="decl" id="_GtkFileFilterInfo::mime_type" title='_GtkFileFilterInfo::mime_type' data-ref="_GtkFileFilterInfo::mime_type">mime_type</dfn>;</td></tr>
+<tr><th id="57">57</th><td>};</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a> <dfn class="decl" id="gtk_file_filter_get_type" title='gtk_file_filter_get_type' data-ref="gtk_file_filter_get_type">gtk_file_filter_get_type</dfn> (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><a class="typedef" href="#GtkFileFilter" title='GtkFileFilter' data-type='struct _GtkFileFilter' data-ref="GtkFileFilter">GtkFileFilter</a> *       <dfn class="decl" id="gtk_file_filter_new" title='gtk_file_filter_new' data-ref="gtk_file_filter_new">gtk_file_filter_new</dfn>      (<em>void</em>);</td></tr>
+<tr><th id="62">62</th><td><em>void</em>                  <dfn class="decl" id="gtk_file_filter_set_name" title='gtk_file_filter_set_name' data-ref="gtk_file_filter_set_name">gtk_file_filter_set_name</dfn> (<a class="typedef" href="#GtkFileFilter" title='GtkFileFilter' data-type='struct _GtkFileFilter' data-ref="GtkFileFilter">GtkFileFilter</a> *<dfn class="local col0 decl" id="21240filter" title='filter' data-type='GtkFileFilter *' data-ref="21240filter">filter</dfn>,</td></tr>
+<tr><th id="63">63</th><td>						<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>   *<dfn class="local col1 decl" id="21241name" title='name' data-type='const gchar *' data-ref="21241name">name</dfn>);</td></tr>
+<tr><th id="64">64</th><td><em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *         <dfn class="decl" id="gtk_file_filter_get_name" title='gtk_file_filter_get_name' data-ref="gtk_file_filter_get_name">gtk_file_filter_get_name</dfn> (<a class="typedef" href="#GtkFileFilter" title='GtkFileFilter' data-type='struct _GtkFileFilter' data-ref="GtkFileFilter">GtkFileFilter</a> *<dfn class="local col2 decl" id="21242filter" title='filter' data-type='GtkFileFilter *' data-ref="21242filter">filter</dfn>);</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td><em>void</em> <dfn class="decl" id="gtk_file_filter_add_mime_type" title='gtk_file_filter_add_mime_type' data-ref="gtk_file_filter_add_mime_type">gtk_file_filter_add_mime_type</dfn>      (<a class="typedef" href="#GtkFileFilter" title='GtkFileFilter' data-type='struct _GtkFileFilter' data-ref="GtkFileFilter">GtkFileFilter</a>      *<dfn class="local col3 decl" id="21243filter" title='filter' data-type='GtkFileFilter *' data-ref="21243filter">filter</dfn>,</td></tr>
+<tr><th id="67">67</th><td>					 <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>        *<dfn class="local col4 decl" id="21244mime_type" title='mime_type' data-type='const gchar *' data-ref="21244mime_type">mime_type</dfn>);</td></tr>
+<tr><th id="68">68</th><td><em>void</em> <dfn class="decl" id="gtk_file_filter_add_pattern" title='gtk_file_filter_add_pattern' data-ref="gtk_file_filter_add_pattern">gtk_file_filter_add_pattern</dfn>        (<a class="typedef" href="#GtkFileFilter" title='GtkFileFilter' data-type='struct _GtkFileFilter' data-ref="GtkFileFilter">GtkFileFilter</a>      *<dfn class="local col5 decl" id="21245filter" title='filter' data-type='GtkFileFilter *' data-ref="21245filter">filter</dfn>,</td></tr>
+<tr><th id="69">69</th><td>					 <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>        *<dfn class="local col6 decl" id="21246pattern" title='pattern' data-type='const gchar *' data-ref="21246pattern">pattern</dfn>);</td></tr>
+<tr><th id="70">70</th><td><em>void</em> <dfn class="decl" id="gtk_file_filter_add_pixbuf_formats" title='gtk_file_filter_add_pixbuf_formats' data-ref="gtk_file_filter_add_pixbuf_formats">gtk_file_filter_add_pixbuf_formats</dfn> (<a class="typedef" href="#GtkFileFilter" title='GtkFileFilter' data-type='struct _GtkFileFilter' data-ref="GtkFileFilter">GtkFileFilter</a>      *<dfn class="local col7 decl" id="21247filter" title='filter' data-type='GtkFileFilter *' data-ref="21247filter">filter</dfn>);</td></tr>
+<tr><th id="71">71</th><td><em>void</em> <dfn class="decl" id="gtk_file_filter_add_custom" title='gtk_file_filter_add_custom' data-ref="gtk_file_filter_add_custom">gtk_file_filter_add_custom</dfn>         (<a class="typedef" href="#GtkFileFilter" title='GtkFileFilter' data-type='struct _GtkFileFilter' data-ref="GtkFileFilter">GtkFileFilter</a>      *<dfn class="local col8 decl" id="21248filter" title='filter' data-type='GtkFileFilter *' data-ref="21248filter">filter</dfn>,</td></tr>
+<tr><th id="72">72</th><td>					 <a class="typedef" href="#GtkFileFilterFlags" title='GtkFileFilterFlags' data-type='enum GtkFileFilterFlags' data-ref="GtkFileFilterFlags">GtkFileFilterFlags</a>  <dfn class="local col9 decl" id="21249needed" title='needed' data-type='GtkFileFilterFlags' data-ref="21249needed">needed</dfn>,</td></tr>
+<tr><th id="73">73</th><td>					 <a class="typedef" href="#GtkFileFilterFunc" title='GtkFileFilterFunc' data-type='gboolean (*)(const GtkFileFilterInfo *, gpointer)' data-ref="GtkFileFilterFunc">GtkFileFilterFunc</a>   <dfn class="local col0 decl" id="21250func" title='func' data-type='GtkFileFilterFunc' data-ref="21250func">func</dfn>,</td></tr>
+<tr><th id="74">74</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>            <dfn class="local col1 decl" id="21251data" title='data' data-type='gpointer' data-ref="21251data">data</dfn>,</td></tr>
+<tr><th id="75">75</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#GDestroyNotify" title='GDestroyNotify' data-type='void (*)(gpointer)' data-ref="GDestroyNotify">GDestroyNotify</a>      <dfn class="local col2 decl" id="21252notify" title='notify' data-type='GDestroyNotify' data-ref="21252notify">notify</dfn>);</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td><a class="typedef" href="#GtkFileFilterFlags" title='GtkFileFilterFlags' data-type='enum GtkFileFilterFlags' data-ref="GtkFileFilterFlags">GtkFileFilterFlags</a> <dfn class="decl" id="gtk_file_filter_get_needed" title='gtk_file_filter_get_needed' data-ref="gtk_file_filter_get_needed">gtk_file_filter_get_needed</dfn> (<a class="typedef" href="#GtkFileFilter" title='GtkFileFilter' data-type='struct _GtkFileFilter' data-ref="GtkFileFilter">GtkFileFilter</a>           *<dfn class="local col3 decl" id="21253filter" title='filter' data-type='GtkFileFilter *' data-ref="21253filter">filter</dfn>);</td></tr>
+<tr><th id="78">78</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>           <dfn class="decl" id="gtk_file_filter_filter" title='gtk_file_filter_filter' data-ref="gtk_file_filter_filter">gtk_file_filter_filter</dfn>     (<a class="typedef" href="#GtkFileFilter" title='GtkFileFilter' data-type='struct _GtkFileFilter' data-ref="GtkFileFilter">GtkFileFilter</a>           *<dfn class="local col4 decl" id="21254filter" title='filter' data-type='GtkFileFilter *' data-ref="21254filter">filter</dfn>,</td></tr>
+<tr><th id="79">79</th><td>					       <em>const</em> <a class="typedef" href="#GtkFileFilterInfo" title='GtkFileFilterInfo' data-type='struct _GtkFileFilterInfo' data-ref="GtkFileFilterInfo">GtkFileFilterInfo</a> *<dfn class="local col5 decl" id="21255filter_info" title='filter_info' data-type='const GtkFileFilterInfo *' data-ref="21255filter_info">filter_info</dfn>);</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><u>#<span data-ppcond="21">endif</span> /* __GTK_FILE_FILTER_H__ */</u></td></tr>
+<tr><th id="84">84</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

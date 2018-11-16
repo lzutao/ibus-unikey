@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gtk/gtkcalendar.h' l='143' ll='156'/>
+<size>776</size>
+<mbr r='_GtkCalendarClass::parent_class' o='0' t='GtkWidgetClass'/>
+<mbr r='_GtkCalendarClass::month_changed' o='5760' t='void (*)(GtkCalendar *)'/>
+<mbr r='_GtkCalendarClass::day_selected' o='5824' t='void (*)(GtkCalendar *)'/>
+<mbr r='_GtkCalendarClass::day_selected_double_click' o='5888' t='void (*)(GtkCalendar *)'/>
+<mbr r='_GtkCalendarClass::prev_month' o='5952' t='void (*)(GtkCalendar *)'/>
+<mbr r='_GtkCalendarClass::next_month' o='6016' t='void (*)(GtkCalendar *)'/>
+<mbr r='_GtkCalendarClass::prev_year' o='6080' t='void (*)(GtkCalendar *)'/>
+<mbr r='_GtkCalendarClass::next_year' o='6144' t='void (*)(GtkCalendar *)'/>

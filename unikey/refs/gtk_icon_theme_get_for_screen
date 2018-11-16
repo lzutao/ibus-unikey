@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkicontheme.h' l='118' type='GtkIconTheme * gtk_icon_theme_get_for_screen(GdkScreen * screen)'/>

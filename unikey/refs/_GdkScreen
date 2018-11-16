@@ -1,0 +1,9 @@
+<def f='include/gtk-2.0/gdk/gdkscreen.h' l='46' ll='58'/>
+<size>816</size>
+<mbr r='_GdkScreen::parent_instance' o='0' t='GObject'/>
+<mbr r='_GdkScreen::closed' o='192' t='guint'/>
+<mbr r='_GdkScreen::normal_gcs' o='256' t='GdkGC *[32]'/>
+<mbr r='_GdkScreen::exposure_gcs' o='2304' t='GdkGC *[32]'/>
+<mbr r='_GdkScreen::subwindow_gcs' o='4352' t='GdkGC *[32]'/>
+<mbr r='_GdkScreen::font_options' o='6400' t='cairo_font_options_t *'/>
+<mbr r='_GdkScreen::resolution' o='6464' t='double'/>

@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='205' type='void ibus_engine_commit_text(IBusEngine * engine, IBusText * text)'/>
+<doc f='include/ibus-1.0/ibusengine.h' l='194'>/**
+ * ibus_engine_commit_text:
+ * @engine: An IBusEngine.
+ * @text: String commit to IBusEngine.
+ *
+ * Commit output of input method to IBus client.
+ *
+ * (Note: The text object will be released, if it is floating.
+ *  If caller want to keep the object, caller should make the object
+ *  sink by g_object_ref_sink.)
+ */</doc>
+<use f='unikey/src/engine.cpp' l='759' u='c' c='_ZL25ibus_unikey_engine_commitP11_IBusEngine'/>

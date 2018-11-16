@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentchooserwidget.h' l='60' type='GtkWidget * gtk_recent_chooser_widget_new_for_manager(GtkRecentManager * manager)'/>

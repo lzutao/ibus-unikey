@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentchooser.h' l='171' type='void gtk_recent_chooser_unselect_all(GtkRecentChooser * chooser)'/>

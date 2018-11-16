@@ -1,0 +1,2 @@
+<dec f='include/atk-1.0/atk/atkaction.h' l='60' type='const gchar *(*)(AtkAction *, gint)'/>
+<offset>320</offset>

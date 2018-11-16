@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gdk/gdkkeys.h' l='72' ll='79'/>
+<size>160</size>
+<mbr r='_GdkKeymapClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_GdkKeymapClass::direction_changed' o='1088' t='void (*)(GdkKeymap *)'/>
+<mbr r='_GdkKeymapClass::keys_changed' o='1152' t='void (*)(GdkKeymap *)'/>
+<mbr r='_GdkKeymapClass::state_changed' o='1216' t='void (*)(GdkKeymap *)'/>

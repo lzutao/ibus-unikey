@@ -1,0 +1,7 @@
+<dec f='include/ibus-1.0/ibusenumtypes.h' l='41'/>
+<doc f='include/ibus-1.0/ibusenumtypes.h' l='35'>/**
+ * IBUS_TYPE_ATTR_UNDERLINE:
+ * @returns: GType of IBUS_ATTR_UNDERLINE
+ *
+ * Returns the type of IBUS_ATTR_UNDERLINE as GType.
+ */</doc>

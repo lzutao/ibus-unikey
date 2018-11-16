@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='452' type='void ibus_engine_get_content_type(IBusEngine * engine, guint * purpose, guint * hints)'/>
+<doc f='include/ibus-1.0/ibusengine.h' l='441'>/**
+ * ibus_engine_get_content_type:
+ * @engine: An #IBusEngine.
+ * @purpose: (out) (allow-none): Primary purpose of the input context.
+ * @hints: (out) (allow-none): Hints that augument @purpose.
+ *
+ * Get content-type (primary purpose and hints) of the current input
+ * context.
+ *
+ * See also: #IBusEngine::set-content-type
+ */</doc>

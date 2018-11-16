@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkitemfactory.h' l='137' type='GtkItemFactory * gtk_item_factory_new(GType container_type, const gchar * path, GtkAccelGroup * accel_group)'/>
+<doc f='include/gtk-2.0/gtk/gtkitemfactory.h' l='134'>/* `container_type&apos; must be of GTK_TYPE_MENU_BAR, GTK_TYPE_MENU,
+ * or GTK_TYPE_OPTION_MENU.
+ */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkuimanager.h' l='131' type='guint gtk_ui_manager_add_ui_from_string(GtkUIManager * self, const gchar * buffer, gssize length, GError ** error)'/>

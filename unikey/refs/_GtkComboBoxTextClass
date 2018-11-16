@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkcomboboxtext.h' l='49' ll='58'/>
+<size>896</size>
+<mbr r='_GtkComboBoxTextClass::parent_class' o='0' t='GtkComboBoxClass'/>
+<mbr r='_GtkComboBoxTextClass::_gtk_reserved1' o='6912' t='void (*)()'/>
+<mbr r='_GtkComboBoxTextClass::_gtk_reserved2' o='6976' t='void (*)()'/>
+<mbr r='_GtkComboBoxTextClass::_gtk_reserved3' o='7040' t='void (*)()'/>
+<mbr r='_GtkComboBoxTextClass::_gtk_reserved4' o='7104' t='void (*)()'/>

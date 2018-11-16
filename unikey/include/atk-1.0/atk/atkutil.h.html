@@ -1,0 +1,375 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>atkutil.h source code [include/atk-1.0/atk/atkutil.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/atk-1.0/atk/atkutil.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>atk-1.0</a>/<a href='./'>atk</a>/<a href='atkutil.h.html'>atkutil.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* ATK -  Accessibility Toolkit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright 2001 Sun Microsystems Inc.</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Library General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Library General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Library General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="20">ifndef</span> <span class="macro" data-ref="_M/__ATK_UTIL_H__">__ATK_UTIL_H__</span></u></td></tr>
+<tr><th id="21">21</th><td><u>#define <dfn class="macro" id="_M/__ATK_UTIL_H__" data-ref="_M/__ATK_UTIL_H__">__ATK_UTIL_H__</dfn></u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> defined(<span class="macro" data-ref="_M/ATK_DISABLE_SINGLE_INCLUDES">ATK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="atk.h.html#23" data-ref="_M/__ATK_H_INSIDE__">__ATK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/ATK_COMPILATION">ATK_COMPILATION</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#error "Only &lt;atk/atk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="atkobject.h.html">&lt;atk/atkobject.h&gt;</a></u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#define <dfn class="macro" id="_M/ATK_TYPE_UTIL" data-ref="_M/ATK_TYPE_UTIL">ATK_TYPE_UTIL</dfn>                   (atk_util_get_type ())</u></td></tr>
+<tr><th id="32">32</th><td><u>#define <dfn class="macro" id="_M/ATK_IS_UTIL" data-ref="_M/ATK_IS_UTIL">ATK_IS_UTIL</dfn>(obj)                G_TYPE_CHECK_INSTANCE_TYPE ((obj), ATK_TYPE_UTIL)</u></td></tr>
+<tr><th id="33">33</th><td><u>#define <dfn class="macro" id="_M/ATK_UTIL" data-ref="_M/ATK_UTIL">ATK_UTIL</dfn>(obj)                   G_TYPE_CHECK_INSTANCE_CAST ((obj), ATK_TYPE_UTIL, AtkUtil)</u></td></tr>
+<tr><th id="34">34</th><td><u>#define <dfn class="macro" id="_M/ATK_UTIL_CLASS" data-ref="_M/ATK_UTIL_CLASS">ATK_UTIL_CLASS</dfn>(klass)                   (G_TYPE_CHECK_CLASS_CAST ((klass), ATK_TYPE_UTIL, AtkUtilClass))</u></td></tr>
+<tr><th id="35">35</th><td><u>#define <dfn class="macro" id="_M/ATK_IS_UTIL_CLASS" data-ref="_M/ATK_IS_UTIL_CLASS">ATK_IS_UTIL_CLASS</dfn>(klass)                (G_TYPE_CHECK_CLASS_TYPE ((klass), ATK_TYPE_UTIL))</u></td></tr>
+<tr><th id="36">36</th><td><u>#define <dfn class="macro" id="_M/ATK_UTIL_GET_CLASS" data-ref="_M/ATK_UTIL_GET_CLASS">ATK_UTIL_GET_CLASS</dfn>(obj)                 (G_TYPE_INSTANCE_GET_CLASS ((obj), ATK_TYPE_UTIL, AtkUtilClass))</u></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#<span data-ppcond="39">ifndef</span> <span class="macro" data-ref="_M/_TYPEDEF_ATK_UTIL_">_TYPEDEF_ATK_UTIL_</span></u></td></tr>
+<tr><th id="40">40</th><td><u>#define <dfn class="macro" id="_M/_TYPEDEF_ATK_UTIL_" data-ref="_M/_TYPEDEF_ATK_UTIL_">_TYPEDEF_ATK_UTIL_</dfn></u></td></tr>
+<tr><th id="41">41</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_AtkUtil" title='_AtkUtil' data-ref="_AtkUtil">_AtkUtil</a>      <dfn class="typedef" id="AtkUtil" title='AtkUtil' data-type='struct _AtkUtil' data-ref="AtkUtil">AtkUtil</dfn>;</td></tr>
+<tr><th id="42">42</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_AtkUtilClass" title='_AtkUtilClass' data-ref="_AtkUtilClass">_AtkUtilClass</a> <dfn class="typedef" id="AtkUtilClass" title='AtkUtilClass' data-type='struct _AtkUtilClass' data-ref="AtkUtilClass">AtkUtilClass</dfn>;</td></tr>
+<tr><th id="43">43</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_AtkKeyEventStruct" title='_AtkKeyEventStruct' data-ref="_AtkKeyEventStruct">_AtkKeyEventStruct</a> <dfn class="typedef" id="AtkKeyEventStruct" title='AtkKeyEventStruct' data-type='struct _AtkKeyEventStruct' data-ref="AtkKeyEventStruct">AtkKeyEventStruct</dfn>;</td></tr>
+<tr><th id="44">44</th><td><u>#<span data-ppcond="39">endif</span></u></td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> * AtkEventListener: </i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> *<span class="command"> @obj</span>: An #AtkObject instance for whom the callback will be called when</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> * the specified event (e.g. 'focus:') takes place.</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> * A function which is called when an object emits a matching event,</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> * as used in #atk_add_focus_tracker.</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> * Currently the only events for which object-specific handlers are</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> * supported are events of type "focus:".  Most clients of ATK will prefer to </i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> * attach signal handlers for the various ATK signals instead.</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> * see atk_add_focus_tracker.</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="59">59</th><td><b>typedef</b> <em>void</em>  (*<dfn class="typedef" id="AtkEventListener" title='AtkEventListener' data-type='void (*)(AtkObject *)' data-ref="AtkEventListener">AtkEventListener</dfn>) (<a class="typedef" href="atkobject.h.html#AtkObject" title='AtkObject' data-type='struct _AtkObject' data-ref="AtkObject">AtkObject</a>* <dfn class="local col4 decl" id="16534obj" title='obj' data-type='AtkObject *' data-ref="16534obj">obj</dfn>);</td></tr>
+<tr><th id="60">60</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> * AtkEventListenerInit:</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> * An #AtkEventListenerInit function is a special function that is</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> * called in order to initialize the per-object event registration system</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> * used by #AtkEventListener, if any preparation is required.  </i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> * see atk_focus_tracker_init.</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="69">69</th><td><b>typedef</b> <em>void</em>  (*<dfn class="typedef" id="AtkEventListenerInit" title='AtkEventListenerInit' data-type='void (*)()' data-ref="AtkEventListenerInit">AtkEventListenerInit</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="70">70</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> * AtkKeySnoopFunc:</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> *<span class="command"> @event</span>: an AtkKeyEventStruct containing information about the key event for which</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc"> * notification is being given.</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc"> *<span class="command"> @user</span>_data: a block of data which will be passed to the event listener, on notification.</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> * An #AtkKeySnoopFunc is a type of callback which is called whenever a key event occurs, </i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> * if registered via atk_add_key_event_listener.  It allows for pre-emptive </i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> * interception of key events via the return code as described below.</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> * Returns: TRUE (nonzero) if the event emission should be stopped and the event </i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> * discarded without being passed to the normal GUI recipient; FALSE (zero) if the </i></td></tr>
+<tr><th id="82">82</th><td><i class="doc"> * event dispatch to the client application should proceed as normal.</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc"> * see atk_add_key_event_listener.</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="86">86</th><td><b>typedef</b> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>  (*<dfn class="typedef" id="AtkKeySnoopFunc" title='AtkKeySnoopFunc' data-type='gint (*)(AtkKeyEventStruct *, gpointer)' data-ref="AtkKeySnoopFunc">AtkKeySnoopFunc</dfn>)  (<a class="typedef" href="#AtkKeyEventStruct" title='AtkKeyEventStruct' data-type='struct _AtkKeyEventStruct' data-ref="AtkKeyEventStruct">AtkKeyEventStruct</a> *<dfn class="local col5 decl" id="16535event" title='event' data-type='AtkKeyEventStruct *' data-ref="16535event">event</dfn>,</td></tr>
+<tr><th id="87">87</th><td>				   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="local col6 decl" id="16536user_data" title='user_data' data-type='gpointer' data-ref="16536user_data">user_data</dfn>);</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> * AtkKeyEventStruct:</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> *<span class="command"> @type</span>: An AtkKeyEventType, generally one of ATK_KEY_EVENT_PRESS or ATK_KEY_EVENT_RELEASE</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> *<span class="command"> @state</span>: A bitmask representing the state of the modifier keys immediately after the event takes place.   </i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> * The meaning of the bits is currently defined to match the bitmask used by GDK in</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> * GdkEventType.state, see </i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> * <a href="http://developer.gnome.org/doc/API/2.0/gdk/gdk-Event-Structures.html#GdkEventKey">http://developer.gnome.org/doc/API/2.0/gdk/gdk-Event-Structures.html#GdkEventKey</a></i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> *<span class="command"> @keyval</span>: A guint representing a keysym value corresponding to those used by GDK and X11: see</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> * /usr/X11/include/keysymdef.h.</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> *<span class="command"> @length</span>: The length of member #string.</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"> *<span class="command"> @string</span>: A string containing one of the following: either a string approximating the text that would </i></td></tr>
+<tr><th id="100">100</th><td><i class="doc"> * result from this keypress, if the key is a control or graphic character, or a symbolic name for this keypress.</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc"> * Alphanumeric and printable keys will have the symbolic key name in this string member, for instance "A". "0", </i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> * "semicolon", "aacute".  Keypad keys have the prefix "KP".</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> *<span class="command"> @keycode</span>: The raw hardware code that generated the key event.  This field is raraly useful.</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> *<span class="command"> @timestamp</span>: A timestamp in milliseconds indicating when the event occurred.  </i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> * These timestamps are relative to a starting point which should be considered arbitrary, </i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"> * and only used to compare the dispatch times of events to one another.</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> * Encapsulates information about a key event.</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="110">110</th><td><b>struct</b> <dfn class="type def" id="_AtkKeyEventStruct" title='_AtkKeyEventStruct' data-ref="_AtkKeyEventStruct">_AtkKeyEventStruct</dfn> {</td></tr>
+<tr><th id="111">111</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="_AtkKeyEventStruct::type" title='_AtkKeyEventStruct::type' data-ref="_AtkKeyEventStruct::type">type</dfn>;</td></tr>
+<tr><th id="112">112</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="decl" id="_AtkKeyEventStruct::state" title='_AtkKeyEventStruct::state' data-ref="_AtkKeyEventStruct::state">state</dfn>;</td></tr>
+<tr><th id="113">113</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="decl" id="_AtkKeyEventStruct::keyval" title='_AtkKeyEventStruct::keyval' data-ref="_AtkKeyEventStruct::keyval">keyval</dfn>;</td></tr>
+<tr><th id="114">114</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="_AtkKeyEventStruct::length" title='_AtkKeyEventStruct::length' data-ref="_AtkKeyEventStruct::length">length</dfn>;</td></tr>
+<tr><th id="115">115</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="decl" id="_AtkKeyEventStruct::string" title='_AtkKeyEventStruct::string' data-ref="_AtkKeyEventStruct::string">string</dfn>;</td></tr>
+<tr><th id="116">116</th><td>  <span class='typedef' title='guint16' data-type='unsigned short' data-ref="guint16">guint16</span> <dfn class="decl" id="_AtkKeyEventStruct::keycode" title='_AtkKeyEventStruct::keycode' data-ref="_AtkKeyEventStruct::keycode">keycode</dfn>;</td></tr>
+<tr><th id="117">117</th><td>  <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span> <dfn class="decl" id="_AtkKeyEventStruct::timestamp" title='_AtkKeyEventStruct::timestamp' data-ref="_AtkKeyEventStruct::timestamp">timestamp</dfn>;	</td></tr>
+<tr><th id="118">118</th><td>};</td></tr>
+<tr><th id="119">119</th><td></td></tr>
+<tr><th id="120">120</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"> *AtkKeyEventType:</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc"> <span class="command">*@ATK</span>_KEY_EVENT_PRESS: specifies a key press event</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> <span class="command">*@ATK</span>_KEY_EVENT_RELEASE: specifies a key release event</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> <span class="command">*@ATK</span>_KEY_EVENT_LAST_DEFINED: Not a valid value; specifies end of enumeration</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> *Specifies the type of a keyboard evemt.</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="128">128</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="129">129</th><td>{</td></tr>
+<tr><th id="130">130</th><td>  <dfn class="enum" id="ATK_KEY_EVENT_PRESS" title='ATK_KEY_EVENT_PRESS' data-ref="ATK_KEY_EVENT_PRESS">ATK_KEY_EVENT_PRESS</dfn>,</td></tr>
+<tr><th id="131">131</th><td>  <dfn class="enum" id="ATK_KEY_EVENT_RELEASE" title='ATK_KEY_EVENT_RELEASE' data-ref="ATK_KEY_EVENT_RELEASE">ATK_KEY_EVENT_RELEASE</dfn>,</td></tr>
+<tr><th id="132">132</th><td>  <dfn class="enum" id="ATK_KEY_EVENT_LAST_DEFINED" title='ATK_KEY_EVENT_LAST_DEFINED' data-ref="ATK_KEY_EVENT_LAST_DEFINED">ATK_KEY_EVENT_LAST_DEFINED</dfn></td></tr>
+<tr><th id="133">133</th><td>} <dfn class="typedef" id="AtkKeyEventType" title='AtkKeyEventType' data-type='enum AtkKeyEventType' data-ref="AtkKeyEventType">AtkKeyEventType</dfn>;</td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td><b>struct</b> <dfn class="type def" id="_AtkUtil" title='_AtkUtil' data-ref="_AtkUtil">_AtkUtil</dfn></td></tr>
+<tr><th id="136">136</th><td>{</td></tr>
+<tr><th id="137">137</th><td>  <a class="typedef" href="../../glib-2.0/gobject/gobject.h.html#GObject" title='GObject' data-type='struct _GObject' data-ref="GObject">GObject</a> <dfn class="decl" id="_AtkUtil::parent" title='_AtkUtil::parent' data-ref="_AtkUtil::parent">parent</dfn>;</td></tr>
+<tr><th id="138">138</th><td>};</td></tr>
+<tr><th id="139">139</th><td></td></tr>
+<tr><th id="140">140</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc"> * AtkUtilClass:</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> *<span class="command"> @add</span>_global_event_listener: adds the specified function to the list</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> *  of functions to be called when an ATK event occurs. ATK</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> *  implementors are discouraged from reimplementing this method.</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> *<span class="command"> @remove</span>_global_event_listener: removes the specified function to</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> *  the list of functions to be called when an ATK event occurs. ATK</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc"> *  implementors are discouraged from reimplementing this method.</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> *<span class="command"> @add</span>_key_event_listener: adds the specified function to the list of</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> *  functions to be called when a key event occurs.</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> *<span class="command"> @remove</span>_key_event_listener: remove the specified function to the</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> *  list of functions to be called when a key event occurs.</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> *<span class="command"> @get</span>_root: gets the root accessible container for the current</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> *  application.</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> *<span class="command"> @get</span>_toolkit_name: gets name string for the GUI toolkit</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc"> *  implementing ATK for this application.</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc"> *<span class="command"> @get</span>_toolkit_version: gets version string for the GUI toolkit</i></td></tr>
+<tr><th id="157">157</th><td><i class="doc"> *  implementing ATK for this application.</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="160">160</th><td><b>struct</b> <dfn class="type def" id="_AtkUtilClass" title='_AtkUtilClass' data-ref="_AtkUtilClass">_AtkUtilClass</dfn></td></tr>
+<tr><th id="161">161</th><td>{</td></tr>
+<tr><th id="162">162</th><td>   <a class="typedef" href="../../glib-2.0/gobject/gobject.h.html#GObjectClass" title='GObjectClass' data-type='struct _GObjectClass' data-ref="GObjectClass">GObjectClass</a> <dfn class="decl" id="_AtkUtilClass::parent" title='_AtkUtilClass::parent' data-ref="_AtkUtilClass::parent">parent</dfn>;</td></tr>
+<tr><th id="163">163</th><td>   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>        (* <dfn class="decl" id="_AtkUtilClass::add_global_event_listener" title='_AtkUtilClass::add_global_event_listener' data-ref="_AtkUtilClass::add_global_event_listener">add_global_event_listener</dfn>)    (<a class="typedef" href="../../glib-2.0/gobject/gsignal.h.html#GSignalEmissionHook" title='GSignalEmissionHook' data-type='gboolean (*)(GSignalInvocationHint *, guint, const GValue *, gpointer)' data-ref="GSignalEmissionHook">GSignalEmissionHook</a> <dfn class="local col7 decl" id="16537listener" title='listener' data-type='GSignalEmissionHook' data-ref="16537listener">listener</dfn>,</td></tr>
+<tr><th id="164">164</th><td>						  <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>        *<dfn class="local col8 decl" id="16538event_type" title='event_type' data-type='const gchar *' data-ref="16538event_type">event_type</dfn>);</td></tr>
+<tr><th id="165">165</th><td>   <em>void</em>         (* <dfn class="decl" id="_AtkUtilClass::remove_global_event_listener" title='_AtkUtilClass::remove_global_event_listener' data-ref="_AtkUtilClass::remove_global_event_listener">remove_global_event_listener</dfn>) (<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>               <dfn class="local col9 decl" id="16539listener_id" title='listener_id' data-type='guint' data-ref="16539listener_id">listener_id</dfn>);</td></tr>
+<tr><th id="166">166</th><td>   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>	(* <dfn class="decl" id="_AtkUtilClass::add_key_event_listener" title='_AtkUtilClass::add_key_event_listener' data-ref="_AtkUtilClass::add_key_event_listener">add_key_event_listener</dfn>) 	 (<a class="typedef" href="#AtkKeySnoopFunc" title='AtkKeySnoopFunc' data-type='gint (*)(AtkKeyEventStruct *, gpointer)' data-ref="AtkKeySnoopFunc">AtkKeySnoopFunc</a>     <dfn class="local col0 decl" id="16540listener" title='listener' data-type='AtkKeySnoopFunc' data-ref="16540listener">listener</dfn>,</td></tr>
+<tr><th id="167">167</th><td>						  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="local col1 decl" id="16541data" title='data' data-type='gpointer' data-ref="16541data">data</dfn>);</td></tr>
+<tr><th id="168">168</th><td>   <em>void</em>         (* <dfn class="decl" id="_AtkUtilClass::remove_key_event_listener" title='_AtkUtilClass::remove_key_event_listener' data-ref="_AtkUtilClass::remove_key_event_listener">remove_key_event_listener</dfn>)    (<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>               <dfn class="local col2 decl" id="16542listener_id" title='listener_id' data-type='guint' data-ref="16542listener_id">listener_id</dfn>);</td></tr>
+<tr><th id="169">169</th><td>   <a class="typedef" href="atkobject.h.html#AtkObject" title='AtkObject' data-type='struct _AtkObject' data-ref="AtkObject">AtkObject</a>*   (* <dfn class="decl" id="_AtkUtilClass::get_root" title='_AtkUtilClass::get_root' data-ref="_AtkUtilClass::get_root">get_root</dfn>)                     (<em>void</em>);</td></tr>
+<tr><th id="170">170</th><td>   <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>* (* <dfn class="decl" id="_AtkUtilClass::get_toolkit_name" title='_AtkUtilClass::get_toolkit_name' data-ref="_AtkUtilClass::get_toolkit_name">get_toolkit_name</dfn>)             (<em>void</em>);</td></tr>
+<tr><th id="171">171</th><td>   <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>* (* <dfn class="decl" id="_AtkUtilClass::get_toolkit_version" title='_AtkUtilClass::get_toolkit_version' data-ref="_AtkUtilClass::get_toolkit_version">get_toolkit_version</dfn>)          (<em>void</em>);</td></tr>
+<tr><th id="172">172</th><td>};</td></tr>
+<tr><th id="173">173</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="174">174</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a> <dfn class="decl" id="atk_util_get_type" title='atk_util_get_type' data-ref="atk_util_get_type">atk_util_get_type</dfn> (<em>void</em>);</td></tr>
+<tr><th id="175">175</th><td></td></tr>
+<tr><th id="176">176</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="177">177</th><td><i class="doc"> *AtkCoordType:</i></td></tr>
+<tr><th id="178">178</th><td><i class="doc"> <span class="command">*@ATK</span>_XY_SCREEN: specifies xy coordinates relative to the screen</i></td></tr>
+<tr><th id="179">179</th><td><i class="doc"> <span class="command">*@ATK</span>_XY_WINDOW: specifies xy coordinates relative to the widget's </i></td></tr>
+<tr><th id="180">180</th><td><i class="doc"> * top-level window</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc"> *Specifies how xy coordinates are to be interpreted. Used by functions such</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc"> *as atk_component_get_position() and atk_text_get_character_extents() </i></td></tr>
+<tr><th id="184">184</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="185">185</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="186">186</th><td>  <dfn class="enum" id="ATK_XY_SCREEN" title='ATK_XY_SCREEN' data-ref="ATK_XY_SCREEN">ATK_XY_SCREEN</dfn>,</td></tr>
+<tr><th id="187">187</th><td>  <dfn class="enum" id="ATK_XY_WINDOW" title='ATK_XY_WINDOW' data-ref="ATK_XY_WINDOW">ATK_XY_WINDOW</dfn></td></tr>
+<tr><th id="188">188</th><td>}<dfn class="typedef" id="AtkCoordType" title='AtkCoordType' data-type='enum AtkCoordType' data-ref="AtkCoordType">AtkCoordType</dfn>;</td></tr>
+<tr><th id="189">189</th><td></td></tr>
+<tr><th id="190">190</th><td><a class="macro" href="atkversion.h.html#338" title="__attribute__((__deprecated__)) extern" data-ref="_M/ATK_DEPRECATED_IN_2_10">ATK_DEPRECATED_IN_2_10</a></td></tr>
+<tr><th id="191">191</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>    <dfn class="decl" id="atk_add_focus_tracker" title='atk_add_focus_tracker' data-ref="atk_add_focus_tracker">atk_add_focus_tracker</dfn>     (<a class="typedef" href="#AtkEventListener" title='AtkEventListener' data-type='void (*)(AtkObject *)' data-ref="AtkEventListener">AtkEventListener</a>      <dfn class="local col3 decl" id="16543focus_tracker" title='focus_tracker' data-type='AtkEventListener' data-ref="16543focus_tracker">focus_tracker</dfn>);</td></tr>
+<tr><th id="192">192</th><td><a class="macro" href="atkversion.h.html#338" title="__attribute__((__deprecated__)) extern" data-ref="_M/ATK_DEPRECATED_IN_2_10">ATK_DEPRECATED_IN_2_10</a></td></tr>
+<tr><th id="193">193</th><td><em>void</em>     <dfn class="decl" id="atk_remove_focus_tracker" title='atk_remove_focus_tracker' data-ref="atk_remove_focus_tracker">atk_remove_focus_tracker</dfn>  (<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>                <dfn class="local col4 decl" id="16544tracker_id" title='tracker_id' data-type='guint' data-ref="16544tracker_id">tracker_id</dfn>);</td></tr>
+<tr><th id="194">194</th><td><a class="macro" href="atkversion.h.html#338" title="__attribute__((__deprecated__)) extern" data-ref="_M/ATK_DEPRECATED_IN_2_10">ATK_DEPRECATED_IN_2_10</a></td></tr>
+<tr><th id="195">195</th><td><em>void</em>     <dfn class="decl" id="atk_focus_tracker_init" title='atk_focus_tracker_init' data-ref="atk_focus_tracker_init">atk_focus_tracker_init</dfn>    (<a class="typedef" href="#AtkEventListenerInit" title='AtkEventListenerInit' data-type='void (*)()' data-ref="AtkEventListenerInit">AtkEventListenerInit</a>  <dfn class="local col5 decl" id="16545init" title='init' data-type='AtkEventListenerInit' data-ref="16545init">init</dfn>);</td></tr>
+<tr><th id="196">196</th><td><a class="macro" href="atkversion.h.html#338" title="__attribute__((__deprecated__)) extern" data-ref="_M/ATK_DEPRECATED_IN_2_10">ATK_DEPRECATED_IN_2_10</a></td></tr>
+<tr><th id="197">197</th><td><em>void</em>     <dfn class="decl" id="atk_focus_tracker_notify" title='atk_focus_tracker_notify' data-ref="atk_focus_tracker_notify">atk_focus_tracker_notify</dfn>  (<a class="typedef" href="atkobject.h.html#AtkObject" title='AtkObject' data-type='struct _AtkObject' data-ref="AtkObject">AtkObject</a>            *<dfn class="local col6 decl" id="16546object" title='object' data-type='AtkObject *' data-ref="16546object">object</dfn>);</td></tr>
+<tr><th id="198">198</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="199">199</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>	<dfn class="decl" id="atk_add_global_event_listener" title='atk_add_global_event_listener' data-ref="atk_add_global_event_listener">atk_add_global_event_listener</dfn> (<a class="typedef" href="../../glib-2.0/gobject/gsignal.h.html#GSignalEmissionHook" title='GSignalEmissionHook' data-type='gboolean (*)(GSignalInvocationHint *, guint, const GValue *, gpointer)' data-ref="GSignalEmissionHook">GSignalEmissionHook</a> <dfn class="local col7 decl" id="16547listener" title='listener' data-type='GSignalEmissionHook' data-ref="16547listener">listener</dfn>,</td></tr>
+<tr><th id="200">200</th><td>				       <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>        *<dfn class="local col8 decl" id="16548event_type" title='event_type' data-type='const gchar *' data-ref="16548event_type">event_type</dfn>);</td></tr>
+<tr><th id="201">201</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="202">202</th><td><em>void</em>	<dfn class="decl" id="atk_remove_global_event_listener" title='atk_remove_global_event_listener' data-ref="atk_remove_global_event_listener">atk_remove_global_event_listener</dfn> (<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="local col9 decl" id="16549listener_id" title='listener_id' data-type='guint' data-ref="16549listener_id">listener_id</dfn>);</td></tr>
+<tr><th id="203">203</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="204">204</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>	<dfn class="decl" id="atk_add_key_event_listener" title='atk_add_key_event_listener' data-ref="atk_add_key_event_listener">atk_add_key_event_listener</dfn> (<a class="typedef" href="#AtkKeySnoopFunc" title='AtkKeySnoopFunc' data-type='gint (*)(AtkKeyEventStruct *, gpointer)' data-ref="AtkKeySnoopFunc">AtkKeySnoopFunc</a> <dfn class="local col0 decl" id="16550listener" title='listener' data-type='AtkKeySnoopFunc' data-ref="16550listener">listener</dfn>, <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="local col1 decl" id="16551data" title='data' data-type='gpointer' data-ref="16551data">data</dfn>);</td></tr>
+<tr><th id="205">205</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="206">206</th><td><em>void</em>	<dfn class="decl" id="atk_remove_key_event_listener" title='atk_remove_key_event_listener' data-ref="atk_remove_key_event_listener">atk_remove_key_event_listener</dfn> (<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="local col2 decl" id="16552listener_id" title='listener_id' data-type='guint' data-ref="16552listener_id">listener_id</dfn>);</td></tr>
+<tr><th id="207">207</th><td></td></tr>
+<tr><th id="208">208</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="209">209</th><td><a class="typedef" href="atkobject.h.html#AtkObject" title='AtkObject' data-type='struct _AtkObject' data-ref="AtkObject">AtkObject</a>* <dfn class="decl" id="atk_get_root" title='atk_get_root' data-ref="atk_get_root">atk_get_root</dfn>(<em>void</em>);</td></tr>
+<tr><th id="210">210</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="211">211</th><td><a class="typedef" href="atkobject.h.html#AtkObject" title='AtkObject' data-type='struct _AtkObject' data-ref="AtkObject">AtkObject</a>* <dfn class="decl" id="atk_get_focus_object" title='atk_get_focus_object' data-ref="atk_get_focus_object">atk_get_focus_object</dfn> (<em>void</em>);</td></tr>
+<tr><th id="212">212</th><td></td></tr>
+<tr><th id="213">213</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="214">214</th><td><em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="decl" id="atk_get_toolkit_name" title='atk_get_toolkit_name' data-ref="atk_get_toolkit_name">atk_get_toolkit_name</dfn> (<em>void</em>);</td></tr>
+<tr><th id="215">215</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="216">216</th><td><em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="decl" id="atk_get_toolkit_version" title='atk_get_toolkit_version' data-ref="atk_get_toolkit_version">atk_get_toolkit_version</dfn> (<em>void</em>);</td></tr>
+<tr><th id="217">217</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="218">218</th><td><em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="decl" id="atk_get_version" title='atk_get_version' data-ref="atk_get_version">atk_get_version</dfn> (<em>void</em>);</td></tr>
+<tr><th id="219">219</th><td></td></tr>
+<tr><th id="220">220</th><td><i>/* --- GType boilerplate --- */</i></td></tr>
+<tr><th id="221">221</th><td><i>/* convenience macros for atk type implementations, which for a type GtkGadgetAccessible will:</i></td></tr>
+<tr><th id="222">222</th><td><i> * - prototype: static void     gtk_gadget_accessible_class_init (GtkGadgetClass *klass);</i></td></tr>
+<tr><th id="223">223</th><td><i> * - prototype: static void     gtk_gadget_accessible_init       (GtkGadget      *self);</i></td></tr>
+<tr><th id="224">224</th><td><i> * - define:    static gpointer gtk_gadget_accessible_parent_class = NULL;</i></td></tr>
+<tr><th id="225">225</th><td><i> *   gtk_gadget_accessible_parent_class is initialized prior to calling gtk_gadget_class_init()</i></td></tr>
+<tr><th id="226">226</th><td><i> * - implement: GType           gtk_gadget_accessible_get_type (void) { ... }</i></td></tr>
+<tr><th id="227">227</th><td><i> * - support custom code in gtk_gadget_accessible_get_type() after the type is registered.</i></td></tr>
+<tr><th id="228">228</th><td><i> *</i></td></tr>
+<tr><th id="229">229</th><td><i> * macro arguments: TypeName, type_name, TYPE_PARENT, CODE</i></td></tr>
+<tr><th id="230">230</th><td><i> * example: ATK_DEFINE_TYPE_WITH_CODE (GtkGadgetAccessible, gtk_gadget_accessible, GTK_TYPE_GADGET,</i></td></tr>
+<tr><th id="231">231</th><td><i> *                                     G_IMPLEMENT_INTERFACE (ATK_TYPE_TABLE, gtk_gadget_accessible_table_iface_init))</i></td></tr>
+<tr><th id="232">232</th><td><i> */</i></td></tr>
+<tr><th id="233">233</th><td></td></tr>
+<tr><th id="234">234</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="235">235</th><td><i class="doc"> * ATK_DEFINE_TYPE:</i></td></tr>
+<tr><th id="236">236</th><td><i class="doc"> *<span class="command"> @TN</span>: The name of the new type, in Camel case.</i></td></tr>
+<tr><th id="237">237</th><td><i class="doc"> *<span class="command"> @t</span>_n: The name of the new type, in lowercase, with words separated by '_'.</i></td></tr>
+<tr><th id="238">238</th><td><i class="doc"> *<span class="command"> @T</span>_P: The #GType of the parent type.</i></td></tr>
+<tr><th id="239">239</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="240">240</th><td><i class="doc"> * A convenience macro for type ATK implementations, which declares a class</i></td></tr>
+<tr><th id="241">241</th><td><i class="doc"> * initialization function, an instance initialization function (see #GTypeInfo</i></td></tr>
+<tr><th id="242">242</th><td><i class="doc"> * for information about these) and a static variable named</i></td></tr>
+<tr><th id="243">243</th><td><i class="doc"> *<span class="command"> @t</span>_n _parent_class pointing to the parent class. Furthermore, it</i></td></tr>
+<tr><th id="244">244</th><td><i class="doc"> * defines a _get_type() function.</i></td></tr>
+<tr><th id="245">245</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="246">246</th><td><i class="doc"> * Since: 1.22</i></td></tr>
+<tr><th id="247">247</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="248">248</th><td><u>#define <dfn class="macro" id="_M/ATK_DEFINE_TYPE" data-ref="_M/ATK_DEFINE_TYPE">ATK_DEFINE_TYPE</dfn>(TN, t_n, T_P)			       ATK_DEFINE_TYPE_EXTENDED (TN, t_n, T_P, 0, {})</u></td></tr>
+<tr><th id="249">249</th><td></td></tr>
+<tr><th id="250">250</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="251">251</th><td><i class="doc"> * ATK_DEFINE_TYPE_WITH_CODE:</i></td></tr>
+<tr><th id="252">252</th><td><i class="doc"> *<span class="command"> @TN</span>: The name of the new type, in Camel case.</i></td></tr>
+<tr><th id="253">253</th><td><i class="doc"> *<span class="command"> @t</span>_n: The name of the new type in lowercase, with words separated by '_'.</i></td></tr>
+<tr><th id="254">254</th><td><i class="doc"> *<span class="command"> @T</span>_P: The #GType of the parent type.</i></td></tr>
+<tr><th id="255">255</th><td><i class="doc"> * @_C_: Custom code that gets inserted in the _get_type() function.</i></td></tr>
+<tr><th id="256">256</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="257">257</th><td><i class="doc"> * A convenience macro for ATK type implementations.</i></td></tr>
+<tr><th id="258">258</th><td><i class="doc"> * Similar to ATK_DEFINE_TYPE(), but allows you to insert custom code into the</i></td></tr>
+<tr><th id="259">259</th><td><i class="doc"> * _get_type() function, e.g. interface implementations via G_IMPLEMENT_INTERFACE().</i></td></tr>
+<tr><th id="260">260</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="261">261</th><td><i class="doc"> * Since: 1.22</i></td></tr>
+<tr><th id="262">262</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="263">263</th><td><u>#define <dfn class="macro" id="_M/ATK_DEFINE_TYPE_WITH_CODE" data-ref="_M/ATK_DEFINE_TYPE_WITH_CODE">ATK_DEFINE_TYPE_WITH_CODE</dfn>(TN, t_n, T_P, _C_)	      _ATK_DEFINE_TYPE_EXTENDED_BEGIN (TN, t_n, T_P, 0) {_C_;} _ATK_DEFINE_TYPE_EXTENDED_END()</u></td></tr>
+<tr><th id="264">264</th><td></td></tr>
+<tr><th id="265">265</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="266">266</th><td><i class="doc"> * ATK_DEFINE_ABSTRACT_TYPE:</i></td></tr>
+<tr><th id="267">267</th><td><i class="doc"> *<span class="command"> @TN</span>: The name of the new type, in Camel case.</i></td></tr>
+<tr><th id="268">268</th><td><i class="doc"> *<span class="command"> @t</span>_n: The name of the new type, in lowercase, with words separated by '_'.</i></td></tr>
+<tr><th id="269">269</th><td><i class="doc"> *<span class="command"> @T</span>_P: The #GType of the parent type.</i></td></tr>
+<tr><th id="270">270</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="271">271</th><td><i class="doc"> * A convenience macro for ATK type implementations.</i></td></tr>
+<tr><th id="272">272</th><td><i class="doc"> * Similar to ATK_DEFINE_TYPE(), but defines an abstract type.</i></td></tr>
+<tr><th id="273">273</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="274">274</th><td><i class="doc"> * Since: 1.22</i></td></tr>
+<tr><th id="275">275</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="276">276</th><td><u>#define <dfn class="macro" id="_M/ATK_DEFINE_ABSTRACT_TYPE" data-ref="_M/ATK_DEFINE_ABSTRACT_TYPE">ATK_DEFINE_ABSTRACT_TYPE</dfn>(TN, t_n, T_P)		       ATK_DEFINE_TYPE_EXTENDED (TN, t_n, T_P, G_TYPE_FLAG_ABSTRACT, {})</u></td></tr>
+<tr><th id="277">277</th><td></td></tr>
+<tr><th id="278">278</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="279">279</th><td><i class="doc"> * ATK_DEFINE_ABSTRACT_TYPE_WITH_CODE:</i></td></tr>
+<tr><th id="280">280</th><td><i class="doc"> *<span class="command"> @TN</span>: The name of the new type, in Camel case.</i></td></tr>
+<tr><th id="281">281</th><td><i class="doc"> *<span class="command"> @t</span>_n: The name of the new type, in lowercase, with words separated by '_'.</i></td></tr>
+<tr><th id="282">282</th><td><i class="doc"> *<span class="command"> @T</span>_P: The #GType of the parent type.</i></td></tr>
+<tr><th id="283">283</th><td><i class="doc"> * @_C_: Custom code that gets inserted in the _get_type() function.</i></td></tr>
+<tr><th id="284">284</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="285">285</th><td><i class="doc"> * A convenience macro for ATK type implementations.</i></td></tr>
+<tr><th id="286">286</th><td><i class="doc"> * Similar to ATK_DEFINE_TYPE_WITH_CODE(), but defines an abstract type.</i></td></tr>
+<tr><th id="287">287</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="288">288</th><td><i class="doc"> * Since: 1.22</i></td></tr>
+<tr><th id="289">289</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="290">290</th><td><u>#define <dfn class="macro" id="_M/ATK_DEFINE_ABSTRACT_TYPE_WITH_CODE" data-ref="_M/ATK_DEFINE_ABSTRACT_TYPE_WITH_CODE">ATK_DEFINE_ABSTRACT_TYPE_WITH_CODE</dfn>(TN, t_n, T_P, _C_) _ATK_DEFINE_TYPE_EXTENDED_BEGIN (TN, t_n, T_P, G_TYPE_FLAG_ABSTRACT) {_C_;} _ATK_DEFINE_TYPE_EXTENDED_END()</u></td></tr>
+<tr><th id="291">291</th><td></td></tr>
+<tr><th id="292">292</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="293">293</th><td><i class="doc"> * ATK_DEFINE_TYPE_EXTENDED:</i></td></tr>
+<tr><th id="294">294</th><td><i class="doc"> *<span class="command"> @TN</span>: The name of the new type, in Camel case.</i></td></tr>
+<tr><th id="295">295</th><td><i class="doc"> *<span class="command"> @t</span>_n: The name of the new type, in lowercase, with words separated by '_'.</i></td></tr>
+<tr><th id="296">296</th><td><i class="doc"> *<span class="command"> @T</span>_P: The #GType of the parent type.</i></td></tr>
+<tr><th id="297">297</th><td><i class="doc"> * @_f_: #GTypeFlags to pass to g_type_register_static()</i></td></tr>
+<tr><th id="298">298</th><td><i class="doc"> * @_C_: Custom code that gets inserted in the _get_type() function.</i></td></tr>
+<tr><th id="299">299</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="300">300</th><td><i class="doc"> * The most general convenience macro for ATK type implementations, on which</i></td></tr>
+<tr><th id="301">301</th><td><i class="doc"> * ATK_DEFINE_TYPE(), etc are based.</i></td></tr>
+<tr><th id="302">302</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="303">303</th><td><i class="doc"> * Since: 1.22</i></td></tr>
+<tr><th id="304">304</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="305">305</th><td><u>#define <dfn class="macro" id="_M/ATK_DEFINE_TYPE_EXTENDED" data-ref="_M/ATK_DEFINE_TYPE_EXTENDED">ATK_DEFINE_TYPE_EXTENDED</dfn>(TN, t_n, T_P, _f_, _C_)      _ATK_DEFINE_TYPE_EXTENDED_BEGIN (TN, t_n, T_P, _f_) {_C_;} _ATK_DEFINE_TYPE_EXTENDED_END()</u></td></tr>
+<tr><th id="306">306</th><td></td></tr>
+<tr><th id="307">307</th><td><u>#define <dfn class="macro" id="_M/_ATK_DEFINE_TYPE_EXTENDED_BEGIN" data-ref="_M/_ATK_DEFINE_TYPE_EXTENDED_BEGIN">_ATK_DEFINE_TYPE_EXTENDED_BEGIN</dfn>(TypeName, type_name, TYPE, flags) \</u></td></tr>
+<tr><th id="308">308</th><td><u>\</u></td></tr>
+<tr><th id="309">309</th><td><u>static void     type_name##_init              (TypeName        *self); \</u></td></tr>
+<tr><th id="310">310</th><td><u>static void     type_name##_class_init        (TypeName##Class *klass); \</u></td></tr>
+<tr><th id="311">311</th><td><u>static gpointer type_name##_parent_class = NULL; \</u></td></tr>
+<tr><th id="312">312</th><td><u>static void     type_name##_class_intern_init (gpointer klass) \</u></td></tr>
+<tr><th id="313">313</th><td><u>{ \</u></td></tr>
+<tr><th id="314">314</th><td><u>  type_name##_parent_class = g_type_class_peek_parent (klass); \</u></td></tr>
+<tr><th id="315">315</th><td><u>  type_name##_class_init ((TypeName##Class*) klass); \</u></td></tr>
+<tr><th id="316">316</th><td><u>} \</u></td></tr>
+<tr><th id="317">317</th><td><u>\</u></td></tr>
+<tr><th id="318">318</th><td><u>ATK_AVAILABLE_IN_ALL \</u></td></tr>
+<tr><th id="319">319</th><td><u>GType \</u></td></tr>
+<tr><th id="320">320</th><td><u>type_name##_get_type (void) \</u></td></tr>
+<tr><th id="321">321</th><td><u>{ \</u></td></tr>
+<tr><th id="322">322</th><td><u>  static volatile gsize g_define_type_id__volatile = 0; \</u></td></tr>
+<tr><th id="323">323</th><td><u>  if (g_once_init_enter (&amp;g_define_type_id__volatile))  \</u></td></tr>
+<tr><th id="324">324</th><td><u>    { \</u></td></tr>
+<tr><th id="325">325</th><td><u>      AtkObjectFactory *factory; \</u></td></tr>
+<tr><th id="326">326</th><td><u>      GType derived_type; \</u></td></tr>
+<tr><th id="327">327</th><td><u>      GTypeQuery query; \</u></td></tr>
+<tr><th id="328">328</th><td><u>      GType derived_atk_type; \</u></td></tr>
+<tr><th id="329">329</th><td><u>      GType g_define_type_id; \</u></td></tr>
+<tr><th id="330">330</th><td><u>\</u></td></tr>
+<tr><th id="331">331</th><td><u>      /* Figure out the size of the class and instance we are deriving from */ \</u></td></tr>
+<tr><th id="332">332</th><td><u>      derived_type = g_type_parent (TYPE); \</u></td></tr>
+<tr><th id="333">333</th><td><u>      factory = atk_registry_get_factory (atk_get_default_registry (), \</u></td></tr>
+<tr><th id="334">334</th><td><u>                                          derived_type); \</u></td></tr>
+<tr><th id="335">335</th><td><u>      derived_atk_type = atk_object_factory_get_accessible_type (factory); \</u></td></tr>
+<tr><th id="336">336</th><td><u>      g_type_query (derived_atk_type, &amp;query); \</u></td></tr>
+<tr><th id="337">337</th><td><u>\</u></td></tr>
+<tr><th id="338">338</th><td><u>      g_define_type_id = \</u></td></tr>
+<tr><th id="339">339</th><td><u>        g_type_register_static_simple (derived_atk_type, \</u></td></tr>
+<tr><th id="340">340</th><td><u>                                       g_intern_static_string (#TypeName), \</u></td></tr>
+<tr><th id="341">341</th><td><u>                                       query.class_size, \</u></td></tr>
+<tr><th id="342">342</th><td><u>                                       (GClassInitFunc) type_name##_class_intern_init, \</u></td></tr>
+<tr><th id="343">343</th><td><u>                                       query.instance_size, \</u></td></tr>
+<tr><th id="344">344</th><td><u>                                       (GInstanceInitFunc) type_name##_init, \</u></td></tr>
+<tr><th id="345">345</th><td><u>                                       (GTypeFlags) flags); \</u></td></tr>
+<tr><th id="346">346</th><td><u>      { /* custom code follows */</u></td></tr>
+<tr><th id="347">347</th><td><u>#define <dfn class="macro" id="_M/_ATK_DEFINE_TYPE_EXTENDED_END" data-ref="_M/_ATK_DEFINE_TYPE_EXTENDED_END">_ATK_DEFINE_TYPE_EXTENDED_END</dfn>()	\</u></td></tr>
+<tr><th id="348">348</th><td><u>        /* following custom code */	\</u></td></tr>
+<tr><th id="349">349</th><td><u>      }					\</u></td></tr>
+<tr><th id="350">350</th><td><u>      g_once_init_leave (&amp;g_define_type_id__volatile, g_define_type_id); \</u></td></tr>
+<tr><th id="351">351</th><td><u>    }					\</u></td></tr>
+<tr><th id="352">352</th><td><u>  return g_define_type_id__volatile;	\</u></td></tr>
+<tr><th id="353">353</th><td><u>} /* closes type_name##_get_type() */</u></td></tr>
+<tr><th id="354">354</th><td></td></tr>
+<tr><th id="355">355</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="356">356</th><td></td></tr>
+<tr><th id="357">357</th><td><u>#<span data-ppcond="20">endif</span> /* __ATK_UTIL_H__ */</u></td></tr>
+<tr><th id="358">358</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

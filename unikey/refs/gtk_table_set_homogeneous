@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktable.h' l='141' type='void gtk_table_set_homogeneous(GtkTable * table, gboolean homogeneous)'/>

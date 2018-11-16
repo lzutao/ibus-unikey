@@ -1,0 +1,17 @@
+<dec f='include/pango-1.0/pango/pango-version-macros.h' l='493'/>
+<use f='include/pango-1.0/pango/pango-language.h' l='65' u='c'/>
+<use f='include/pango-1.0/pango/pango-bidi-type.h' l='85' u='c'/>
+<use f='include/pango-1.0/pango/pango-attributes.h' l='439' u='c'/>
+<use f='include/pango-1.0/pango/pango-fontmap.h' l='55' u='c'/>
+<use f='include/pango-1.0/pango/pango-glyph-item.h' l='152' u='c'/>
+<use f='include/pango-1.0/pango/pango-glyph-item.h' l='154' u='c'/>
+<use f='include/pango-1.0/pango/pango-glyph-item.h' l='156' u='c'/>
+<use f='include/pango-1.0/pango/pango-glyph-item.h' l='159' u='c'/>
+<use f='include/pango-1.0/pango/pango-glyph-item.h' l='163' u='c'/>
+<use f='include/pango-1.0/pango/pango-glyph-item.h' l='167' u='c'/>
+<use f='include/pango-1.0/pango/pango-glyph-item.h' l='169' u='c'/>
+<use f='include/pango-1.0/pango/pango-layout.h' l='308' u='c'/>
+<use f='include/pango-1.0/pango/pango-renderer.h' l='213' u='c'/>
+<use f='include/pango-1.0/pango/pangocairo.h' l='89' u='c'/>
+<use f='include/pango-1.0/pango/pangocairo.h' l='142' u='c'/>
+<use f='include/pango-1.0/pango/pangocairo.h' l='157' u='c'/>

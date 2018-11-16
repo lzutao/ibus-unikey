@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='2953' type='void cairo_pattern_set_filter(cairo_pattern_t * pattern, cairo_filter_t filter)'/>

@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='322' type='IBusPropType ibus_property_get_prop_type(IBusProperty * prop)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='314'>/**
+ * ibus_property_get_property_type:
+ * @prop: An #IBusProperty.
+ *
+ * Get the type of #IBusProperty.
+ *
+ * Returns: the type of #IBusProperty.
+ */</doc>

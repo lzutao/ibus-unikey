@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='174' type='void gtk_accelerator_set_default_mod_mask(GdkModifierType default_mod_mask)'/>

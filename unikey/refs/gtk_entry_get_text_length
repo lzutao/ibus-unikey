@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='201' type='guint16 gtk_entry_get_text_length(GtkEntry * entry)'/>

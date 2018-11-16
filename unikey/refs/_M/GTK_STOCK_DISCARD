@@ -1,0 +1,8 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='259'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='252'>/**
+ * GTK_STOCK_DISCARD:
+ *
+ * The &quot;Discard&quot; item.
+ *
+ * Since: 2.12
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='1240' type='void ibus_bus_set_ibus_property(IBusBus * bus, const gchar * property_name, GVariant * value)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='1232'>/**
+ * ibus_bus_set_ibus_property:
+ * @bus: An #IBusBus.
+ * @property_name: property name in org.freedesktop.DBus.Properties.Set
+ * @value: value in org.freedesktop.DBus.Properties.Set
+ *
+ * Set org.freedesktop.DBus.Properties.
+ */</doc>

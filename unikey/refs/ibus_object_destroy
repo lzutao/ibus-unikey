@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusobject.h' l='138' type='void ibus_object_destroy(IBusObject * object)'/>
+<doc f='include/ibus-1.0/ibusobject.h' l='127'>/**
+ * ibus_object_destroy:
+ * @object: an #IBusObject to destroy.
+ *
+ * Emit the &quot;destory&quot; signal notifying all reference holders that they should
+ * release the #IBusObject.
+ *
+ * The memory for the object itself won&apos;t be deleted until its reference count
+ * actually drops to 0; ibus_object_destroy merely asks reference holders to
+ * release their references. It does not free the object.
+ */</doc>

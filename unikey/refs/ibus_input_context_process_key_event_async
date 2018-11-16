@@ -1,0 +1,33 @@
+<dec f='include/ibus-1.0/ibusinputcontext.h' l='252' type='void ibus_input_context_process_key_event_async(IBusInputContext * context, guint32 keyval, guint32 keycode, guint32 state, gint timeout_msec, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer user_data)'/>
+<doc f='include/ibus-1.0/ibusinputcontext.h' l='220'>/**
+ * ibus_input_context_process_key_event_async:
+ * @context: An IBusInputContext.
+ * @keyval: Key symbol of a key event.
+ * @keycode: Keycode of a key event.
+ * @state: Key modifier flags.
+ * @timeout_msec: The timeout in milliseconds or -1 to use the default timeout.
+ * @cancellable: A GCancellable or NULL.
+ * @callback: A GAsyncReadyCallback to call when the request is satisfied or NULL
+ *      if you don&apos;t care about the result of the method invocation.
+ * @user_data: The data to pass to callback.
+ *
+ * Pass the key event to input method engine.
+ *
+ * Key symbols are characters/symbols produced by key press, for example,
+ * pressing &quot;s&quot; generates key symbol &quot;s&quot;; pressing shift-&quot;s&quot; generates key symbol &quot;S&quot;.
+ * Same key on keyboard may produce different key symbols on different keyboard layout.
+ * e.g., &quot;s&quot; key on QWERTY keyboard produces &quot;o&quot; in DVORAK layout.
+ *
+ * Unlike key symbol, keycode is only determined by the location of the key, and
+ * irrelevant of the keyboard layout.
+ *
+ * Briefly speaking, input methods that expect certain keyboard layout should use
+ * keycode; otherwise keyval is sufficient.
+ * For example, Chewing, Cangjie, Wubi expect an en-US QWERTY keyboard, these should
+ * use keycode; while pinyin can rely on keyval only, as it is less sensitive to
+ * the keyboard layout change, DVORAK users can still use DVORAK layout to input pinyin.
+ *
+ * Use ibus_keymap_lookup_keysym() to convert keycode to keysym in given keyboard layout.
+ *
+ * see_also: #IBusEngine::process-key-event
+ */</doc>

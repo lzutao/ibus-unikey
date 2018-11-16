@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkstyle.h' l='155' type='void (*)(GtkStyle *, GtkRcStyle *)'/>
+<offset>1344</offset>
+<doc f='include/gtk-2.0/gtk/gtkstyle.h' l='152'>/* Initialize the GtkStyle with the values in the GtkRcStyle.
+   * should chain to the parent implementation.
+   */</doc>

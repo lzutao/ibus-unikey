@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrc.h' l='154' type='gchar * gtk_rc_find_pixmap_in_path(GtkSettings * settings, GScanner * scanner, const gchar * pixmap_file)'/>

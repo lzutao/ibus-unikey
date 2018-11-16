@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkdnd.h' l='128' type='void gdk_drag_status(GdkDragContext * context, GdkDragAction action, guint32 time_)'/>
+<doc f='include/gtk-2.0/gdk/gdkdnd.h' l='126'>/* Destination side */</doc>

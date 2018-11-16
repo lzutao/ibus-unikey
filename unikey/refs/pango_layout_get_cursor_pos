@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-layout.h' l='274' type='void pango_layout_get_cursor_pos(PangoLayout * layout, int index_, PangoRectangle * strong_pos, PangoRectangle * weak_pos)'/>

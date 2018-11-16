@@ -1,0 +1,9 @@
+<def f='include/gtk-2.0/gtk/gtkadjustment.h' l='63' ll='75'/>
+<size>208</size>
+<mbr r='_GtkAdjustmentClass::parent_class' o='0' t='GtkObjectClass'/>
+<mbr r='_GtkAdjustmentClass::changed' o='1280' t='void (*)(GtkAdjustment *)'/>
+<mbr r='_GtkAdjustmentClass::value_changed' o='1344' t='void (*)(GtkAdjustment *)'/>
+<mbr r='_GtkAdjustmentClass::_gtk_reserved1' o='1408' t='void (*)()'/>
+<mbr r='_GtkAdjustmentClass::_gtk_reserved2' o='1472' t='void (*)()'/>
+<mbr r='_GtkAdjustmentClass::_gtk_reserved3' o='1536' t='void (*)()'/>
+<mbr r='_GtkAdjustmentClass::_gtk_reserved4' o='1600' t='void (*)()'/>

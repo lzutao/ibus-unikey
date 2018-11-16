@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmodules.h' l='43' type='void _gtk_modules_settings_changed(GtkSettings * settings, const gchar * modules)'/>

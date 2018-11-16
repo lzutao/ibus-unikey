@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextview.h' l='285' type='GdkWindow * gtk_text_view_get_window(GtkTextView * text_view, GtkTextWindowType win)'/>

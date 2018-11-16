@@ -1,0 +1,23 @@
+<dec f='include/glib-2.0/gobject/gclosure.h' l='70'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='49' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='52' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='55' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='58' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='61' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='64' u='c'/>
+<doc f='include/glib-2.0/gobject/gclosure.h' l='64'>/**
+ * G_CALLBACK:
+ * @f: a function pointer.
+ * 
+ * Cast a function pointer to a #GCallback.
+ */</doc>
+<use f='unikey/setup/dlg_main_setup.cpp' l='28' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='71' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='84' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='97' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='103' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='109' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='115' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='121' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='127' u='c'/>
+<use f='unikey/src/main.cpp' l='44' u='c'/>

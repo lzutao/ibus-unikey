@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='152' type='void gdk_display_keyboard_ungrab(GdkDisplay * display, guint32 time_)'/>

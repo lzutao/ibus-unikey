@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='256' type='gboolean gtk_text_iter_forward_to_tag_toggle(GtkTextIter * iter, GtkTextTag * tag)'/>
+<doc f='include/gtk-2.0/gtk/gtktextiter.h' l='252'>/* returns TRUE if a toggle was found; NULL for the tag pointer
+ * means &quot;any tag toggle&quot;, otherwise the next toggle of the
+ * specified tag is located.
+ */</doc>

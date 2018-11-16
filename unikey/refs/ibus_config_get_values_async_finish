@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusconfig.h' l='240' type='GVariant * ibus_config_get_values_async_finish(IBusConfig * config, GAsyncResult * result, GError ** error)'/>
+<doc f='include/ibus-1.0/ibusconfig.h' l='228'>/**
+ * ibus_config_get_values_async_finish:
+ * @config: A #IBusConfig.
+ * @result: A #GAsyncResult.
+ * @error: Return location for error or %NULL.
+ * 
+ * Finish get values in a section.
+ *
+ * Returns: A #GVariant or %NULL if error is set. Free with g_variant_unref().
+ *
+ * See also: ibus_config_get_values_async().
+ */</doc>

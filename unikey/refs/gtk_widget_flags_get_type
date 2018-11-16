@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='326' type='GType gtk_widget_flags_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='325'>/* enumerations from &quot;gtkwidget.h&quot; */</doc>

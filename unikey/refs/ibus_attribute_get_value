@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusattribute.h' l='167' type='guint ibus_attribute_get_value(IBusAttribute * attr)'/>
+<doc f='include/ibus-1.0/ibusattribute.h' l='156'>/**
+ * ibus_attribute_get_value:
+ * @attr: An #IBusAttribute
+ *
+ * Gets an unsigned int value relative with #IBusAttrType.
+ * If the type is %IBUS_ATTR_TYPE_UNDERLINE, the return value is
+ * #IBusAttrUnderline. If the type is %IBUS_ATTR_TYPE_FOREGROUND,
+ * the return value is the color RGB.
+ *
+ * Returns: An unsigned int value relative with #IBusAttrType.
+ */</doc>

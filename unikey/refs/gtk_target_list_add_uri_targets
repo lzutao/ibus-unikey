@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkselection.h' l='110' type='void gtk_target_list_add_uri_targets(GtkTargetList * list, guint info)'/>

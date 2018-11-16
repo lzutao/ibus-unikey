@@ -1,0 +1,2 @@
+<dec f='include/cairo/cairo.h' l='2207' type='cairo_surface_t * cairo_surface_create_similar(cairo_surface_t * other, cairo_content_t content, int width, int height)'/>
+<doc f='include/cairo/cairo.h' l='2204'>/* Surface manipulation */</doc>

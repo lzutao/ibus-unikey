@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkcombo.h' l='98' type='void gtk_combo_set_use_arrows_always(GtkCombo * combo, gboolean val)'/>
+<doc f='include/gtk-2.0/gtk/gtkcombo.h' l='97'>/* up/down arrows change value if current value not in list */</doc>

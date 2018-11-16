@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-script.h' l='314' type='void pango_script_iter_get_range(PangoScriptIter * iter, const char ** start, const char ** end, PangoScript * script)'/>

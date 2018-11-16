@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1111' type='void gtk_widget_set_colormap(GtkWidget * widget, GdkColormap * colormap)'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='1105'>/* The following functions must not be called on an already
+ * realized widget. Because it is possible that somebody
+ * can call get_colormap() or get_visual() and save the
+ * result, these functions are probably only safe to
+ * call in a widget&apos;s init() function.
+ */</doc>

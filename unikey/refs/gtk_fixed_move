@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkfixed.h' l='78' type='void gtk_fixed_move(GtkFixed * fixed, GtkWidget * widget, gint x, gint y)'/>

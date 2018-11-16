@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1090'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='1085'>/**
+ * gtk_widget_pop_visual:
+ *
+ * This function is deprecated; it does nothing.
+ */</doc>

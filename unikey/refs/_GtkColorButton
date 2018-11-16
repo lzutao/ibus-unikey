@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkcolorbutton.h' l='62' ll='68'/>
+<size>152</size>
+<mbr r='_GtkColorButton::button' o='0' t='GtkButton'/>
+<mbr r='_GtkColorButton::priv' o='1152' t='GtkColorButtonPrivate *'/>

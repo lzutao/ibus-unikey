@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeselection.h' l='103' type='void gtk_tree_selection_unselect_path(GtkTreeSelection * selection, GtkTreePath * path)'/>

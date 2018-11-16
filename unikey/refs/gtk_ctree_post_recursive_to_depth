@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='216' type='void gtk_ctree_post_recursive_to_depth(GtkCTree * ctree, GtkCTreeNode * node, gint depth, GtkCTreeFunc func, gpointer data)'/>

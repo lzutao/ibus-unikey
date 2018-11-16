@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkhyperlink.h' l='110' type='gboolean atk_hyperlink_is_selected_link(AtkHyperlink * link_)'/>

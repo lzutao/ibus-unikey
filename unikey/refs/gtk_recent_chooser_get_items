@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentchooser.h' l='172' type='GList * gtk_recent_chooser_get_items(GtkRecentChooser * chooser)'/>

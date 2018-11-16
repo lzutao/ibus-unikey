@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='262' type='IBusText * ibus_property_get_tooltip(IBusProperty * prop)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='254'>/**
+ * ibus_property_get_tooltip:
+ * @prop: An #IBusProperty.
+ *
+ * Get the tooltip of #IBusProperty.
+ *
+ * Returns: (transfer none): the tooltip of #IBusProperty. Should not be freed.
+ */</doc>

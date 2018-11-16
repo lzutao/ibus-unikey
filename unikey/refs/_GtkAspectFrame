@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtkaspectframe.h' l='51' ll='61'/>
+<size>192</size>
+<mbr r='_GtkAspectFrame::frame' o='0' t='GtkFrame'/>
+<mbr r='_GtkAspectFrame::xalign' o='1280' t='gfloat'/>
+<mbr r='_GtkAspectFrame::yalign' o='1312' t='gfloat'/>
+<mbr r='_GtkAspectFrame::ratio' o='1344' t='gfloat'/>
+<mbr r='_GtkAspectFrame::obey_child' o='1376' t='gboolean'/>
+<mbr r='_GtkAspectFrame::center_allocation' o='1408' t='GtkAllocation'/>

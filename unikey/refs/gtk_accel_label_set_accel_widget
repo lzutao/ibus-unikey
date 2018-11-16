@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkaccellabel.h' l='101' type='void gtk_accel_label_set_accel_widget(GtkAccelLabel * accel_label, GtkWidget * accel_widget)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='165' type='gint gtk_text_iter_get_bytes_in_line(const GtkTextIter * iter)'/>

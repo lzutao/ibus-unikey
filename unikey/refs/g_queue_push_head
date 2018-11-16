@@ -1,0 +1,1 @@
+<dec f='include/glib-2.0/glib/gqueue.h' l='108' type='void g_queue_push_head(GQueue * queue, gpointer data)'/>

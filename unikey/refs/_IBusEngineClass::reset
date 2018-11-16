@@ -1,0 +1,4 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='109' type='void (*)(IBusEngine *)'/>
+<offset>2304</offset>
+<use f='unikey/src/engine.cpp' l='89' u='w' c='_ZL29ibus_unikey_engine_class_initP22_IBusUnikeyEngineClass'/>
+<use f='unikey/src/engine.cpp' l='157' u='r' c='_ZL24ibus_unikey_engine_resetP11_IBusEngine'/>

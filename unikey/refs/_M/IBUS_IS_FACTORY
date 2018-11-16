@@ -1,0 +1,7 @@
+<dec f='include/ibus-1.0/ibusfactory.h' l='89'/>
+<doc f='include/ibus-1.0/ibusfactory.h' l='83'>/**
+ * IBUS_IS_FACTORY:
+ * @obj: Instance to check for being a IBUS_FACTORY.
+ *
+ * Checks whether a valid GTypeInstance pointer is of type IBUS_FACTORY.
+ */</doc>

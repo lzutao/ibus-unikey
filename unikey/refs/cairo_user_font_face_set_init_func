@@ -1,0 +1,2 @@
+<dec f='include/cairo/cairo.h' l='1893' type='void cairo_user_font_face_set_init_func(cairo_font_face_t * font_face, cairo_user_scaled_font_init_func_t init_func)'/>
+<doc f='include/cairo/cairo.h' l='1890'>/* User-font method setters */</doc>

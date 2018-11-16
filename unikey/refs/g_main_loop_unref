@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/glib/gmain.h' l='423' type='void g_main_loop_unref(GMainLoop * loop)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='57' u='c' c='_ZL30glib_autoptr_cleanup_GMainLoopPP10_GMainLoop'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='57' u='r' c='_ZL34glib_listautoptr_cleanup_GMainLoopPP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='57' u='r' c='_ZL35glib_slistautoptr_cleanup_GMainLoopPP7_GSList'/>

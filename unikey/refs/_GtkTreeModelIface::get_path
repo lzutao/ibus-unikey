@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktreemodel.h' l='95' type='GtkTreePath *(*)(GtkTreeModel *, GtkTreeIter *)'/>
+<offset>704</offset>

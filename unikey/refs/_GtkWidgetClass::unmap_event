@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='707' type='gboolean (*)(GtkWidget *, GdkEventAny *)'/>
+<offset>3712</offset>

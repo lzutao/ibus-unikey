@@ -1,0 +1,4 @@
+<def f='include/ibus-1.0/ibushotkey.h' l='73' ll='79'/>
+<size>272</size>
+<mbr r='_IBusHotkeyProfileClass::parent' o='0' t='IBusSerializableClass'/>
+<mbr r='_IBusHotkeyProfileClass::trigger' o='2112' t='void (*)(IBusHotkeyProfile *, GQuark, gpointer)'/>

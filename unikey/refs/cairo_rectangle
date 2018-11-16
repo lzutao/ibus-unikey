@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='902' type='void cairo_rectangle(cairo_t * cr, double x, double y, double width, double height)'/>

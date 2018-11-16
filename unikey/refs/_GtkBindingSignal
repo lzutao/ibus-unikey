@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gtk/gtkbindings.h' l='91' ll='97'/>
+<size>32</size>
+<mbr r='_GtkBindingSignal::next' o='0' t='GtkBindingSignal *'/>
+<mbr r='_GtkBindingSignal::signal_name' o='64' t='gchar *'/>
+<mbr r='_GtkBindingSignal::n_args' o='128' t='guint'/>
+<mbr r='_GtkBindingSignal::args' o='192' t='GtkBindingArg *'/>

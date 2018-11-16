@@ -1,0 +1,5 @@
+<def f='include/gtk-2.0/gtk/gtkselection.h' l='69' ll='73'/>
+<size>16</size>
+<mbr r='_GtkTargetEntry::target' o='0' t='gchar *'/>
+<mbr r='_GtkTargetEntry::flags' o='64' t='guint'/>
+<mbr r='_GtkTargetEntry::info' o='96' t='guint'/>

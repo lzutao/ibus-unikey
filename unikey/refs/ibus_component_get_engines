@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibuscomponent.h' l='281' type='GList * ibus_component_get_engines(IBusComponent * component)'/>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='272'>/**
+ * ibus_component_get_engines:
+ * @component: An #IBusComponent.
+ *
+ * Gets the engines of this component.
+ *
+ * Returns: (transfer container) (element-type IBusEngineDesc):
+ * A newly allocated GList that contains engines.
+ */</doc>
+<use f='unikey/src/main.cpp' l='53' u='c' c='_ZL15start_componentv'/>

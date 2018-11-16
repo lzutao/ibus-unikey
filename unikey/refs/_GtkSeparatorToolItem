@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkseparatortoolitem.h' l='44' ll='50'/>
+<size>136</size>
+<mbr r='_GtkSeparatorToolItem::parent' o='0' t='GtkToolItem'/>
+<mbr r='_GtkSeparatorToolItem::priv' o='1024' t='GtkSeparatorToolItemPrivate *'/>

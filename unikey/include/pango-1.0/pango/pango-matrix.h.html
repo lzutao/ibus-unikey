@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>pango-matrix.h source code [include/pango-1.0/pango/pango-matrix.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/pango-1.0/pango/pango-matrix.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>pango-1.0</a>/<a href='./'>pango</a>/<a href='pango-matrix.h.html'>pango-matrix.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Pango</i></td></tr>
+<tr><th id="2">2</th><td><i> * pango-matrix.h: Matrix manipulation routines</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 2002, 2006 Red Hat Software</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="7">7</th><td><i> * modify it under the terms of the GNU Library General Public</i></td></tr>
+<tr><th id="8">8</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="9">9</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="12">12</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="13">13</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the GNU</i></td></tr>
+<tr><th id="14">14</th><td><i> * Library General Public License for more details.</i></td></tr>
+<tr><th id="15">15</th><td><i> *</i></td></tr>
+<tr><th id="16">16</th><td><i> * You should have received a copy of the GNU Library General Public</i></td></tr>
+<tr><th id="17">17</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="18">18</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="19">19</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="22">ifndef</span> <span class="macro" data-ref="_M/__PANGO_MATRIX_H__">__PANGO_MATRIX_H__</span></u></td></tr>
+<tr><th id="23">23</th><td><u>#define <dfn class="macro" id="_M/__PANGO_MATRIX_H__" data-ref="_M/__PANGO_MATRIX_H__">__PANGO_MATRIX_H__</dfn></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="../../glib-2.0/glib.h.html">&lt;glib.h&gt;</a></u></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="../../glib-2.0/glib-object.h.html">&lt;glib-object.h&gt;</a></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_PangoMatrix" title='_PangoMatrix' data-ref="_PangoMatrix">_PangoMatrix</a>    <dfn class="typedef" id="PangoMatrix" title='PangoMatrix' data-type='struct _PangoMatrix' data-ref="PangoMatrix">PangoMatrix</dfn>;</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> * PangoMatrix:</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> *<span class="command"> @xx</span>: 1st component of the transformation matrix</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> *<span class="command"> @xy</span>: 2nd component of the transformation matrix</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> *<span class="command"> @yx</span>: 3rd component of the transformation matrix</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> *<span class="command"> @yy</span>: 4th component of the transformation matrix</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> *<span class="command"> @x0</span>: x translation</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> *<span class="command"> @y0</span>: y translation</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * A structure specifying a transformation between user-space</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> * coordinates and device coordinates. The transformation</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> * is given by</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> * &lt;programlisting&gt;</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> * x_device = x_user * matrix-&gt;xx + y_user * matrix-&gt;xy + matrix-&gt;x0;</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> * y_device = x_user * matrix-&gt;yx + y_user * matrix-&gt;yy + matrix-&gt;y0;</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> * &lt;/programlisting&gt;</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> * Since: 1.6</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="52">52</th><td><b>struct</b> <dfn class="type def" id="_PangoMatrix" title='_PangoMatrix' data-ref="_PangoMatrix">_PangoMatrix</dfn></td></tr>
+<tr><th id="53">53</th><td>{</td></tr>
+<tr><th id="54">54</th><td>  <em>double</em> <dfn class="decl" id="_PangoMatrix::xx" title='_PangoMatrix::xx' data-ref="_PangoMatrix::xx">xx</dfn>;</td></tr>
+<tr><th id="55">55</th><td>  <em>double</em> <dfn class="decl" id="_PangoMatrix::xy" title='_PangoMatrix::xy' data-ref="_PangoMatrix::xy">xy</dfn>;</td></tr>
+<tr><th id="56">56</th><td>  <em>double</em> <dfn class="decl" id="_PangoMatrix::yx" title='_PangoMatrix::yx' data-ref="_PangoMatrix::yx">yx</dfn>;</td></tr>
+<tr><th id="57">57</th><td>  <em>double</em> <dfn class="decl" id="_PangoMatrix::yy" title='_PangoMatrix::yy' data-ref="_PangoMatrix::yy">yy</dfn>;</td></tr>
+<tr><th id="58">58</th><td>  <em>double</em> <dfn class="decl" id="_PangoMatrix::x0" title='_PangoMatrix::x0' data-ref="_PangoMatrix::x0">x0</dfn>;</td></tr>
+<tr><th id="59">59</th><td>  <em>double</em> <dfn class="decl" id="_PangoMatrix::y0" title='_PangoMatrix::y0' data-ref="_PangoMatrix::y0">y0</dfn>;</td></tr>
+<tr><th id="60">60</th><td>};</td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> * PANGO_TYPE_MATRIX:</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> * The GObject type for #PangoMatrix</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="67">67</th><td><u>#define <dfn class="macro" id="_M/PANGO_TYPE_MATRIX" data-ref="_M/PANGO_TYPE_MATRIX">PANGO_TYPE_MATRIX</dfn> (pango_matrix_get_type ())</u></td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> * PANGO_MATRIX_INIT:</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> * Constant that can be used to initialize a PangoMatrix to</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc"> * the identity transform.</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc"> * &lt;informalexample&gt;&lt;programlisting&gt;</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> * PangoMatrix matrix = PANGO_MATRIX_INIT;</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> * pango_matrix_rotate (&amp;amp;matrix, 45.);</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> * &lt;/programlisting&gt;&lt;/informalexample&gt;</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> * Since: 1.6</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="82">82</th><td><u>#define <dfn class="macro" id="_M/PANGO_MATRIX_INIT" data-ref="_M/PANGO_MATRIX_INIT">PANGO_MATRIX_INIT</dfn> { 1., 0., 0., 1., 0., 0. }</u></td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td><i>/* for PangoRectangle */</i></td></tr>
+<tr><th id="85">85</th><td><u>#include <a href="pango-types.h.html">&lt;pango/pango-types.h&gt;</a></u></td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td><a class="macro" href="pango-version-macros.h.html#381" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_6">PANGO_AVAILABLE_IN_1_6</a></td></tr>
+<tr><th id="88">88</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a> <dfn class="decl" id="pango_matrix_get_type" title='pango_matrix_get_type' data-ref="pango_matrix_get_type">pango_matrix_get_type</dfn> (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td><a class="macro" href="pango-version-macros.h.html#381" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_6">PANGO_AVAILABLE_IN_1_6</a></td></tr>
+<tr><th id="91">91</th><td><a class="typedef" href="#PangoMatrix" title='PangoMatrix' data-type='struct _PangoMatrix' data-ref="PangoMatrix">PangoMatrix</a> *<dfn class="decl" id="pango_matrix_copy" title='pango_matrix_copy' data-ref="pango_matrix_copy">pango_matrix_copy</dfn>   (<em>const</em> <a class="typedef" href="#PangoMatrix" title='PangoMatrix' data-type='struct _PangoMatrix' data-ref="PangoMatrix">PangoMatrix</a> *<dfn class="local col4 decl" id="12364matrix" title='matrix' data-type='const PangoMatrix *' data-ref="12364matrix">matrix</dfn>);</td></tr>
+<tr><th id="92">92</th><td><a class="macro" href="pango-version-macros.h.html#381" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_6">PANGO_AVAILABLE_IN_1_6</a></td></tr>
+<tr><th id="93">93</th><td><em>void</em>         <dfn class="decl" id="pango_matrix_free" title='pango_matrix_free' data-ref="pango_matrix_free">pango_matrix_free</dfn>   (<a class="typedef" href="#PangoMatrix" title='PangoMatrix' data-type='struct _PangoMatrix' data-ref="PangoMatrix">PangoMatrix</a> *<dfn class="local col5 decl" id="12365matrix" title='matrix' data-type='PangoMatrix *' data-ref="12365matrix">matrix</dfn>);</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><a class="macro" href="pango-version-macros.h.html#381" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_6">PANGO_AVAILABLE_IN_1_6</a></td></tr>
+<tr><th id="96">96</th><td><em>void</em> <dfn class="decl" id="pango_matrix_translate" title='pango_matrix_translate' data-ref="pango_matrix_translate">pango_matrix_translate</dfn> (<a class="typedef" href="#PangoMatrix" title='PangoMatrix' data-type='struct _PangoMatrix' data-ref="PangoMatrix">PangoMatrix</a> *<dfn class="local col6 decl" id="12366matrix" title='matrix' data-type='PangoMatrix *' data-ref="12366matrix">matrix</dfn>,</td></tr>
+<tr><th id="97">97</th><td>			     <em>double</em>       <dfn class="local col7 decl" id="12367tx" title='tx' data-type='double' data-ref="12367tx">tx</dfn>,</td></tr>
+<tr><th id="98">98</th><td>			     <em>double</em>       <dfn class="local col8 decl" id="12368ty" title='ty' data-type='double' data-ref="12368ty">ty</dfn>);</td></tr>
+<tr><th id="99">99</th><td><a class="macro" href="pango-version-macros.h.html#381" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_6">PANGO_AVAILABLE_IN_1_6</a></td></tr>
+<tr><th id="100">100</th><td><em>void</em> <dfn class="decl" id="pango_matrix_scale" title='pango_matrix_scale' data-ref="pango_matrix_scale">pango_matrix_scale</dfn>     (<a class="typedef" href="#PangoMatrix" title='PangoMatrix' data-type='struct _PangoMatrix' data-ref="PangoMatrix">PangoMatrix</a> *<dfn class="local col9 decl" id="12369matrix" title='matrix' data-type='PangoMatrix *' data-ref="12369matrix">matrix</dfn>,</td></tr>
+<tr><th id="101">101</th><td>			     <em>double</em>       <dfn class="local col0 decl" id="12370scale_x" title='scale_x' data-type='double' data-ref="12370scale_x">scale_x</dfn>,</td></tr>
+<tr><th id="102">102</th><td>			     <em>double</em>       <dfn class="local col1 decl" id="12371scale_y" title='scale_y' data-type='double' data-ref="12371scale_y">scale_y</dfn>);</td></tr>
+<tr><th id="103">103</th><td><a class="macro" href="pango-version-macros.h.html#381" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_6">PANGO_AVAILABLE_IN_1_6</a></td></tr>
+<tr><th id="104">104</th><td><em>void</em> <dfn class="decl" id="pango_matrix_rotate" title='pango_matrix_rotate' data-ref="pango_matrix_rotate">pango_matrix_rotate</dfn>    (<a class="typedef" href="#PangoMatrix" title='PangoMatrix' data-type='struct _PangoMatrix' data-ref="PangoMatrix">PangoMatrix</a> *<dfn class="local col2 decl" id="12372matrix" title='matrix' data-type='PangoMatrix *' data-ref="12372matrix">matrix</dfn>,</td></tr>
+<tr><th id="105">105</th><td>			     <em>double</em>       <dfn class="local col3 decl" id="12373degrees" title='degrees' data-type='double' data-ref="12373degrees">degrees</dfn>);</td></tr>
+<tr><th id="106">106</th><td><a class="macro" href="pango-version-macros.h.html#381" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_6">PANGO_AVAILABLE_IN_1_6</a></td></tr>
+<tr><th id="107">107</th><td><em>void</em> <dfn class="decl" id="pango_matrix_concat" title='pango_matrix_concat' data-ref="pango_matrix_concat">pango_matrix_concat</dfn>    (<a class="typedef" href="#PangoMatrix" title='PangoMatrix' data-type='struct _PangoMatrix' data-ref="PangoMatrix">PangoMatrix</a>       *<dfn class="local col4 decl" id="12374matrix" title='matrix' data-type='PangoMatrix *' data-ref="12374matrix">matrix</dfn>,</td></tr>
+<tr><th id="108">108</th><td>			     <em>const</em> <a class="typedef" href="#PangoMatrix" title='PangoMatrix' data-type='struct _PangoMatrix' data-ref="PangoMatrix">PangoMatrix</a> *<dfn class="local col5 decl" id="12375new_matrix" title='new_matrix' data-type='const PangoMatrix *' data-ref="12375new_matrix">new_matrix</dfn>);</td></tr>
+<tr><th id="109">109</th><td><a class="macro" href="pango-version-macros.h.html#443" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_16">PANGO_AVAILABLE_IN_1_16</a></td></tr>
+<tr><th id="110">110</th><td><em>void</em> <dfn class="decl" id="pango_matrix_transform_point" title='pango_matrix_transform_point' data-ref="pango_matrix_transform_point">pango_matrix_transform_point</dfn>    (<em>const</em> <a class="typedef" href="#PangoMatrix" title='PangoMatrix' data-type='struct _PangoMatrix' data-ref="PangoMatrix">PangoMatrix</a> *<dfn class="local col6 decl" id="12376matrix" title='matrix' data-type='const PangoMatrix *' data-ref="12376matrix">matrix</dfn>,</td></tr>
+<tr><th id="111">111</th><td>				      <em>double</em>            *<dfn class="local col7 decl" id="12377x" title='x' data-type='double *' data-ref="12377x">x</dfn>,</td></tr>
+<tr><th id="112">112</th><td>				      <em>double</em>            *<dfn class="local col8 decl" id="12378y" title='y' data-type='double *' data-ref="12378y">y</dfn>);</td></tr>
+<tr><th id="113">113</th><td><a class="macro" href="pango-version-macros.h.html#443" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_16">PANGO_AVAILABLE_IN_1_16</a></td></tr>
+<tr><th id="114">114</th><td><em>void</em> <dfn class="decl" id="pango_matrix_transform_distance" title='pango_matrix_transform_distance' data-ref="pango_matrix_transform_distance">pango_matrix_transform_distance</dfn> (<em>const</em> <a class="typedef" href="#PangoMatrix" title='PangoMatrix' data-type='struct _PangoMatrix' data-ref="PangoMatrix">PangoMatrix</a> *<dfn class="local col9 decl" id="12379matrix" title='matrix' data-type='const PangoMatrix *' data-ref="12379matrix">matrix</dfn>,</td></tr>
+<tr><th id="115">115</th><td>				      <em>double</em>            *<dfn class="local col0 decl" id="12380dx" title='dx' data-type='double *' data-ref="12380dx">dx</dfn>,</td></tr>
+<tr><th id="116">116</th><td>				      <em>double</em>            *<dfn class="local col1 decl" id="12381dy" title='dy' data-type='double *' data-ref="12381dy">dy</dfn>);</td></tr>
+<tr><th id="117">117</th><td><a class="macro" href="pango-version-macros.h.html#443" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_16">PANGO_AVAILABLE_IN_1_16</a></td></tr>
+<tr><th id="118">118</th><td><em>void</em> <dfn class="decl" id="pango_matrix_transform_rectangle" title='pango_matrix_transform_rectangle' data-ref="pango_matrix_transform_rectangle">pango_matrix_transform_rectangle</dfn> (<em>const</em> <a class="typedef" href="#PangoMatrix" title='PangoMatrix' data-type='struct _PangoMatrix' data-ref="PangoMatrix">PangoMatrix</a> *<dfn class="local col2 decl" id="12382matrix" title='matrix' data-type='const PangoMatrix *' data-ref="12382matrix">matrix</dfn>,</td></tr>
+<tr><th id="119">119</th><td>				       <a class="typedef" href="pango-types.h.html#PangoRectangle" title='PangoRectangle' data-type='struct _PangoRectangle' data-ref="PangoRectangle">PangoRectangle</a>    *<dfn class="local col3 decl" id="12383rect" title='rect' data-type='PangoRectangle *' data-ref="12383rect">rect</dfn>);</td></tr>
+<tr><th id="120">120</th><td><a class="macro" href="pango-version-macros.h.html#443" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_16">PANGO_AVAILABLE_IN_1_16</a></td></tr>
+<tr><th id="121">121</th><td><em>void</em> <dfn class="decl" id="pango_matrix_transform_pixel_rectangle" title='pango_matrix_transform_pixel_rectangle' data-ref="pango_matrix_transform_pixel_rectangle">pango_matrix_transform_pixel_rectangle</dfn> (<em>const</em> <a class="typedef" href="#PangoMatrix" title='PangoMatrix' data-type='struct _PangoMatrix' data-ref="PangoMatrix">PangoMatrix</a> *<dfn class="local col4 decl" id="12384matrix" title='matrix' data-type='const PangoMatrix *' data-ref="12384matrix">matrix</dfn>,</td></tr>
+<tr><th id="122">122</th><td>					     <a class="typedef" href="pango-types.h.html#PangoRectangle" title='PangoRectangle' data-type='struct _PangoRectangle' data-ref="PangoRectangle">PangoRectangle</a>    *<dfn class="local col5 decl" id="12385rect" title='rect' data-type='PangoRectangle *' data-ref="12385rect">rect</dfn>);</td></tr>
+<tr><th id="123">123</th><td><a class="macro" href="pango-version-macros.h.html#415" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_12">PANGO_AVAILABLE_IN_1_12</a></td></tr>
+<tr><th id="124">124</th><td><em>double</em> <dfn class="decl" id="pango_matrix_get_font_scale_factor" title='pango_matrix_get_font_scale_factor' data-ref="pango_matrix_get_font_scale_factor">pango_matrix_get_font_scale_factor</dfn> (<em>const</em> <a class="typedef" href="#PangoMatrix" title='PangoMatrix' data-type='struct _PangoMatrix' data-ref="PangoMatrix">PangoMatrix</a> *<dfn class="local col6 decl" id="12386matrix" title='matrix' data-type='const PangoMatrix *' data-ref="12386matrix">matrix</dfn>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#98" title="__attribute__((__pure__))" data-ref="_M/G_GNUC_PURE">G_GNUC_PURE</a>;</td></tr>
+<tr><th id="125">125</th><td><a class="macro" href="pango-version-macros.h.html#605" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_38">PANGO_AVAILABLE_IN_1_38</a></td></tr>
+<tr><th id="126">126</th><td><em>void</em> <dfn class="decl" id="pango_matrix_get_font_scale_factors" title='pango_matrix_get_font_scale_factors' data-ref="pango_matrix_get_font_scale_factors">pango_matrix_get_font_scale_factors</dfn> (<em>const</em> <a class="typedef" href="#PangoMatrix" title='PangoMatrix' data-type='struct _PangoMatrix' data-ref="PangoMatrix">PangoMatrix</a> *<dfn class="local col7 decl" id="12387matrix" title='matrix' data-type='const PangoMatrix *' data-ref="12387matrix">matrix</dfn>,</td></tr>
+<tr><th id="127">127</th><td>					  <em>double</em> *<dfn class="local col8 decl" id="12388xscale" title='xscale' data-type='double *' data-ref="12388xscale">xscale</dfn>, <em>double</em> *<dfn class="local col9 decl" id="12389yscale" title='yscale' data-type='double *' data-ref="12389yscale">yscale</dfn>);</td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td></td></tr>
+<tr><th id="130">130</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td><u>#<span data-ppcond="22">endif</span> /* __PANGO_MATRIX_H__ */</u></td></tr>
+<tr><th id="133">133</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

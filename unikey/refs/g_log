@@ -1,0 +1,9 @@
+<dec f='include/glib-2.0/glib/gmessages.h' l='102' type='void g_log(const gchar * log_domain, GLogLevelFlags log_level, const gchar * format)'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='24' macro='1' u='c'/>
+<use f='unikey/src/engine.cpp' l='368' macro='1' u='c'/>
+<use f='unikey/src/engine.cpp' l='377' macro='1' u='c'/>
+<use f='unikey/src/main.cpp' l='40' macro='1' u='c'/>
+<use f='unikey/src/main.cpp' l='68' macro='1' u='c'/>
+<use f='unikey/src/main.cpp' l='76' macro='1' u='c'/>
+<use f='unikey/src/utils.cpp' l='132' macro='1' u='c'/>
+<use f='unikey/src/utils.cpp' l='159' macro='1' u='c'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='932' type='void gtk_widget_freeze_child_notify(GtkWidget * widget)'/>

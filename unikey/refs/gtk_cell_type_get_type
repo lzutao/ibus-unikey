@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='42' type='GType gtk_cell_type_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='41'>/* enumerations from &quot;gtkclist.h&quot; */</doc>

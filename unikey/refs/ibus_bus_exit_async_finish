@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='531' type='gboolean ibus_bus_exit_async_finish(IBusBus * bus, GAsyncResult * res, GError ** error)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='520'>/**
+ * ibus_bus_exit_async_finish:
+ * @bus: An #IBusBus.
+ * @res: A #GAsyncResult obtained from the #GAsyncReadyCallback passed to
+ *   ibus_bus_exit_async().
+ * @error: Return location for error or %NULL.
+ *
+ * Finishes an operation started with ibus_bus_exit_async().
+ *
+ * Returns: %TRUE if the &quot;Exit&quot; call is suceeded, %FALSE otherwise.
+ */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrange.h' l='160' type='void gtk_range_set_min_slider_size(GtkRange * range, gboolean min_size)'/>

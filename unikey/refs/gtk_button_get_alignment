@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkbutton.h' l='124' type='void gtk_button_get_alignment(GtkButton * button, gfloat * xalign, gfloat * yalign)'/>

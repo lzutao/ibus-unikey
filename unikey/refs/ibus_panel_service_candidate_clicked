@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibuspanelservice.h' l='159' type='void ibus_panel_service_candidate_clicked(IBusPanelService * panel, guint index, guint button, guint state)'/>
+<doc f='include/ibus-1.0/ibuspanelservice.h' l='149'>/**
+ * ibus_panel_service_candidate_clicked:
+ * @panel: An IBusPanelService
+ * @index: Index in the Lookup table
+ * @button: GdkEventButton::button (1: left button, etc.)
+ * @state: GdkEventButton::state (key modifier flags)
+ *
+ * Notify that a candidate is clicked
+ * by sending a &quot;CandidateClicked&quot; to IBus service.
+ */</doc>

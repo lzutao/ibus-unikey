@@ -1,0 +1,32 @@
+<def f='include/gtk-2.0/gdk/gdkwindow.h' l='272' ll='320'/>
+<size>152</size>
+<doc f='include/gtk-2.0/gdk/gdkwindow.h' l='271'>/**** DON&apos;T CHANGE THIS STRUCT, the real version is in gdkinternals.h ****/</doc>
+<mbr r='_GdkWindowObject::parent_instance' o='0' t='GdkDrawable'/>
+<mbr r='_GdkWindowObject::impl' o='192' t='GdkDrawable *'/>
+<mbr r='_GdkWindowObject::parent' o='256' t='GdkWindowObject *'/>
+<mbr r='_GdkWindowObject::user_data' o='320' t='gpointer'/>
+<mbr r='_GdkWindowObject::x' o='384' t='gint'/>
+<mbr r='_GdkWindowObject::y' o='416' t='gint'/>
+<mbr r='_GdkWindowObject::extension_events' o='448' t='gint'/>
+<mbr r='_GdkWindowObject::filters' o='512' t='GList *'/>
+<mbr r='_GdkWindowObject::children' o='576' t='GList *'/>
+<mbr r='_GdkWindowObject::bg_color' o='640' t='GdkColor'/>
+<mbr r='_GdkWindowObject::bg_pixmap' o='768' t='GdkPixmap *'/>
+<mbr r='_GdkWindowObject::paint_stack' o='832' t='GSList *'/>
+<mbr r='_GdkWindowObject::update_area' o='896' t='GdkRegion *'/>
+<mbr r='_GdkWindowObject::update_freeze_count' o='960' t='guint'/>
+<mbr r='_GdkWindowObject::window_type' o='992' t='guint8'/>
+<mbr r='_GdkWindowObject::depth' o='1000' t='guint8'/>
+<mbr r='_GdkWindowObject::resize_count' o='1008' t='guint8'/>
+<mbr r='_GdkWindowObject::state' o='1024' t='GdkWindowState'/>
+<mbr r='_GdkWindowObject::guffaw_gravity' o='1056' t='guint'/>
+<mbr r='_GdkWindowObject::input_only' o='1057' t='guint'/>
+<mbr r='_GdkWindowObject::modal_hint' o='1058' t='guint'/>
+<mbr r='_GdkWindowObject::composited' o='1059' t='guint'/>
+<mbr r='_GdkWindowObject::destroyed' o='1060' t='guint'/>
+<mbr r='_GdkWindowObject::accept_focus' o='1062' t='guint'/>
+<mbr r='_GdkWindowObject::focus_on_map' o='1063' t='guint'/>
+<mbr r='_GdkWindowObject::shaped' o='1064' t='guint'/>
+<mbr r='_GdkWindowObject::event_mask' o='1088' t='GdkEventMask'/>
+<mbr r='_GdkWindowObject::update_and_descendants_freeze_count' o='1120' t='guint'/>
+<mbr r='_GdkWindowObject::redirect' o='1152' t='GdkWindowRedirect *'/>

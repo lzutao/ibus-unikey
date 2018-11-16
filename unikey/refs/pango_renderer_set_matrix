@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-renderer.h' l='274' type='void pango_renderer_set_matrix(PangoRenderer * renderer, const PangoMatrix * matrix)'/>

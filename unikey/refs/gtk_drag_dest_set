@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkdnd.h' l='74' type='void gtk_drag_dest_set(GtkWidget * widget, GtkDestDefaults flags, const GtkTargetEntry * targets, gint n_targets, GdkDragAction actions)'/>

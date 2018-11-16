@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='547' type='void gdk_window_set_cursor(GdkWindow * window, GdkCursor * cursor)'/>

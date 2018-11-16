@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkspinbutton.h' l='138' type='void gtk_spin_button_set_adjustment(GtkSpinButton * spin_button, GtkAdjustment * adjustment)'/>

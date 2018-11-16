@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkscreen.h' l='89' type='GList * gdk_screen_list_visuals(GdkScreen * screen)'/>

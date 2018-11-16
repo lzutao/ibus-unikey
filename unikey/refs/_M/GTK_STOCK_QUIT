@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='814'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='808'>/**
+ * GTK_STOCK_QUIT:
+ *
+ * The &quot;Quit&quot; item.
+ * &lt;inlinegraphic fileref=&quot;application-exit.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

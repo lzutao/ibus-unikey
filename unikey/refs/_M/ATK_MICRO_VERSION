@@ -1,0 +1,10 @@
+<dec f='include/atk-1.0/atk/atkversion.h' l='64'/>
+<doc f='include/atk-1.0/atk/atkversion.h' l='55'>/**
+ * ATK_MICRO_VERSION:
+ *
+ * Like atk_get_micro_version(), but from the headers used at
+ * application compile time, rather than from the library linked
+ * against at application run time.
+ *
+ * Since: 2.7.4
+ */</doc>

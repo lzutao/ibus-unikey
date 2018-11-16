@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkaction.h' l='138' type='void gtk_action_set_accel_path(GtkAction * action, const gchar * accel_path)'/>
+<doc f='include/gtk-2.0/gtk/gtkaction.h' l='137'>/* protected ... for use by action groups */</doc>

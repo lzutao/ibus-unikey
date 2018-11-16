@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkcellrenderercombo.h' l='42' ll='52'/>
+<size>144</size>
+<mbr r='_GtkCellRendererCombo::parent' o='0' t='GtkCellRendererText'/>
+<mbr r='_GtkCellRendererCombo::model' o='960' t='GtkTreeModel *'/>
+<mbr r='_GtkCellRendererCombo::text_column' o='1024' t='gint'/>
+<mbr r='_GtkCellRendererCombo::has_entry' o='1056' t='gboolean'/>
+<mbr r='_GtkCellRendererCombo::focus_out_id' o='1088' t='guint'/>

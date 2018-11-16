@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1103' type='AtkObject * gtk_widget_get_accessible(GtkWidget * widget)'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='1102'>/* Accessibility support */</doc>

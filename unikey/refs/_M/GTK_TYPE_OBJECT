@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkobject.h' l='47'/>
+<doc f='include/gtk-2.0/gtk/gtkobject.h' l='43'>/* macros for casting a pointer to a GtkObject or GtkObjectClass pointer,
+ * and to test whether `object&apos; and `klass&apos; are of type GTK_TYPE_OBJECT.
+ * these are the standard macros for all GtkObject-derived classes.
+ */</doc>

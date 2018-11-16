@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-simple-anim.h' l='62' type='void gdk_pixbuf_simple_anim_set_loop(GdkPixbufSimpleAnim * animation, gboolean loop)'/>

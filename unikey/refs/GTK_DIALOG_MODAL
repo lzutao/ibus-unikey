@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkdialog.h' l='43' type='1'/>
+<doc f='include/gtk-2.0/gtk/gtkdialog.h' l='43'>/* call gtk_window_set_modal (win, TRUE) */</doc>

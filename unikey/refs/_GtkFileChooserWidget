@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkfilechooserwidget.h' l='44' ll='49'/>
+<size>136</size>
+<mbr r='_GtkFileChooserWidget::parent_instance' o='0' t='GtkVBox'/>
+<mbr r='_GtkFileChooserWidget::priv' o='1024' t='GtkFileChooserWidgetPrivate *'/>

@@ -1,0 +1,4 @@
+<def f='include/atk-1.0/atk/atkplug.h' l='49' ll='57'/>
+<size>360</size>
+<mbr r='_AtkPlugClass::parent_class' o='0' t='AtkObjectClass'/>
+<mbr r='_AtkPlugClass::get_object_id' o='2816' t='gchar *(*)(AtkPlug *)'/>

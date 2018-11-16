@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkinfobar.h' l='114' type='void gtk_info_bar_set_message_type(GtkInfoBar * info_bar, GtkMessageType message_type)'/>

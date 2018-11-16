@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkfont.h' l='79' type='gint gdk_string_width(GdkFont * font, const gchar * string)'/>

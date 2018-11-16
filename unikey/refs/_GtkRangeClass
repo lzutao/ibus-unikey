@@ -1,0 +1,13 @@
+<def f='include/gtk-2.0/gtk/gtkrange.h' l='105' ll='133'/>
+<size>800</size>
+<mbr r='_GtkRangeClass::parent_class' o='0' t='GtkWidgetClass'/>
+<mbr r='_GtkRangeClass::slider_detail' o='5760' t='gchar *'/>
+<mbr r='_GtkRangeClass::stepper_detail' o='5824' t='gchar *'/>
+<mbr r='_GtkRangeClass::value_changed' o='5888' t='void (*)(GtkRange *)'/>
+<mbr r='_GtkRangeClass::adjust_bounds' o='5952' t='void (*)(GtkRange *, gdouble)'/>
+<mbr r='_GtkRangeClass::move_slider' o='6016' t='void (*)(GtkRange *, GtkScrollType)'/>
+<mbr r='_GtkRangeClass::get_range_border' o='6080' t='void (*)(GtkRange *, GtkBorder *)'/>
+<mbr r='_GtkRangeClass::change_value' o='6144' t='gboolean (*)(GtkRange *, GtkScrollType, gdouble)'/>
+<mbr r='_GtkRangeClass::_gtk_reserved1' o='6208' t='void (*)()'/>
+<mbr r='_GtkRangeClass::_gtk_reserved2' o='6272' t='void (*)()'/>
+<mbr r='_GtkRangeClass::_gtk_reserved3' o='6336' t='void (*)()'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdnd.h' l='170' type='gboolean gdk_drag_motion(GdkDragContext * context, GdkWindow * dest_window, GdkDragProtocol protocol, gint x_root, gint y_root, GdkDragAction suggested_action, GdkDragAction possible_actions, guint32 time_)'/>

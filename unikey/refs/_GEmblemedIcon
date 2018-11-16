@@ -1,0 +1,4 @@
+<def f='include/glib-2.0/gio/gemblemedicon.h' l='50' ll='56'/>
+<size>32</size>
+<mbr r='_GEmblemedIcon::parent_instance' o='0' t='GObject'/>
+<mbr r='_GEmblemedIcon::priv' o='192' t='GEmblemedIconPrivate *'/>

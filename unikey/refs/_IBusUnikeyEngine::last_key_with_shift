@@ -1,0 +1,5 @@
+<dec f='unikey/src/engine_private.h' l='29' type='gboolean'/>
+<use f='unikey/src/engine.cpp' l='565' u='w' c='_ZL36ibus_unikey_engine_process_key_eventP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='567' u='w' c='_ZL36ibus_unikey_engine_process_key_eventP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='668' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<offset>1248</offset>

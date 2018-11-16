@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='165' type='gboolean gtk_accelerator_valid(guint keyval, GdkModifierType modifiers)'/>
+<doc f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='164'>/* --- Accelerators--- */</doc>

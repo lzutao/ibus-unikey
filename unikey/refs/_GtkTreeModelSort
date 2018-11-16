@@ -1,0 +1,19 @@
+<def f='include/gtk-2.0/gtk/gtktreemodelsort.h' l='43' ll='70'/>
+<size>120</size>
+<mbr r='_GtkTreeModelSort::parent' o='0' t='GObject'/>
+<mbr r='_GtkTreeModelSort::root' o='192' t='gpointer'/>
+<mbr r='_GtkTreeModelSort::stamp' o='256' t='gint'/>
+<mbr r='_GtkTreeModelSort::child_flags' o='288' t='guint'/>
+<mbr r='_GtkTreeModelSort::child_model' o='320' t='GtkTreeModel *'/>
+<mbr r='_GtkTreeModelSort::zero_ref_count' o='384' t='gint'/>
+<mbr r='_GtkTreeModelSort::sort_list' o='448' t='GList *'/>
+<mbr r='_GtkTreeModelSort::sort_column_id' o='512' t='gint'/>
+<mbr r='_GtkTreeModelSort::order' o='544' t='GtkSortType'/>
+<mbr r='_GtkTreeModelSort::default_sort_func' o='576' t='GtkTreeIterCompareFunc'/>
+<mbr r='_GtkTreeModelSort::default_sort_data' o='640' t='gpointer'/>
+<mbr r='_GtkTreeModelSort::default_sort_destroy' o='704' t='GDestroyNotify'/>
+<mbr r='_GtkTreeModelSort::changed_id' o='768' t='guint'/>
+<mbr r='_GtkTreeModelSort::inserted_id' o='800' t='guint'/>
+<mbr r='_GtkTreeModelSort::has_child_toggled_id' o='832' t='guint'/>
+<mbr r='_GtkTreeModelSort::deleted_id' o='864' t='guint'/>
+<mbr r='_GtkTreeModelSort::reordered_id' o='896' t='guint'/>

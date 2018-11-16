@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkitemfactory.h' l='165' type='void gtk_item_factory_create_item(GtkItemFactory * ifactory, GtkItemFactoryEntry * entry, gpointer callback_data, guint callback_type)'/>

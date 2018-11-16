@@ -1,0 +1,13 @@
+<def f='include/gtk-2.0/gtk/gtkeditable.h' l='50' ll='85'/>
+<size>96</size>
+<mbr r='_GtkEditableClass::base_iface' o='0' t='GTypeInterface'/>
+<mbr r='_GtkEditableClass::insert_text' o='128' t='void (*)(GtkEditable *, const gchar *, gint, gint *)'/>
+<mbr r='_GtkEditableClass::delete_text' o='192' t='void (*)(GtkEditable *, gint, gint)'/>
+<mbr r='_GtkEditableClass::changed' o='256' t='void (*)(GtkEditable *)'/>
+<mbr r='_GtkEditableClass::do_insert_text' o='320' t='void (*)(GtkEditable *, const gchar *, gint, gint *)'/>
+<mbr r='_GtkEditableClass::do_delete_text' o='384' t='void (*)(GtkEditable *, gint, gint)'/>
+<mbr r='_GtkEditableClass::get_chars' o='448' t='gchar *(*)(GtkEditable *, gint, gint)'/>
+<mbr r='_GtkEditableClass::set_selection_bounds' o='512' t='void (*)(GtkEditable *, gint, gint)'/>
+<mbr r='_GtkEditableClass::get_selection_bounds' o='576' t='gboolean (*)(GtkEditable *, gint *, gint *)'/>
+<mbr r='_GtkEditableClass::set_position' o='640' t='void (*)(GtkEditable *, gint)'/>
+<mbr r='_GtkEditableClass::get_position' o='704' t='gint (*)(GtkEditable *)'/>

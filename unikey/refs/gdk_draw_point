@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdrawable.h' l='275' type='void gdk_draw_point(GdkDrawable * drawable, GdkGC * gc, gint x, gint y)'/>

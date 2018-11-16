@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-font.h' l='561' type='PangoEngineShape * pango_font_find_shaper(PangoFont * font, PangoLanguage * language, guint32 ch)'/>

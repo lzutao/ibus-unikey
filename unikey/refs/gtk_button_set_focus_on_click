@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkbutton.h' l='118' type='void gtk_button_set_focus_on_click(GtkButton * button, gboolean focus_on_click)'/>

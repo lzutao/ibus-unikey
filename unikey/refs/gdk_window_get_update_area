@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='675' type='GdkRegion * gdk_window_get_update_area(GdkWindow * window)'/>

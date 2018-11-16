@@ -1,0 +1,8 @@
+<dec f='include/cairo/cairo.h' l='890' type='void cairo_rel_move_to(cairo_t * cr, double dx, double dy)'/>
+<doc f='include/cairo/cairo.h' l='881'>/* XXX: NYI
+cairo_public void
+cairo_arc_to (cairo_t *cr,
+	      double x1, double y1,
+	      double x2, double y2,
+	      double radius);
+*/</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='224' type='void gtk_window_set_accept_focus(GtkWindow * window, gboolean setting)'/>

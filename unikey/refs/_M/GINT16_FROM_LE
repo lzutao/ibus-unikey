@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/glib/gtypes.h' l='345'/>
+<doc f='include/glib-2.0/glib/gtypes.h' l='342'>/* The G*_TO_?E() macros are defined in glibconfig.h.
+ * The transformation is symmetric, so the FROM just maps to the TO.
+ */</doc>

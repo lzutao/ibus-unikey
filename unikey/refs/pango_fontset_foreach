@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-fontset.h' l='73' type='void pango_fontset_foreach(PangoFontset * fontset, PangoFontsetForeachFunc func, gpointer data)'/>

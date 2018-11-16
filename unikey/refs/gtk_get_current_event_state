@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmain.h' l='211' type='gboolean gtk_get_current_event_state(GdkModifierType * state)'/>

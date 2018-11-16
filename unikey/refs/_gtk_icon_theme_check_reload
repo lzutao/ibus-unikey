@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkicontheme.h' l='193' type='void _gtk_icon_theme_check_reload(GdkDisplay * display)'/>
+<doc f='include/gtk-2.0/gtk/gtkicontheme.h' l='192'>/* Non-public methods */</doc>

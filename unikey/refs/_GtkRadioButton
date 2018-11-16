@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkradiobutton.h' l='51' ll='56'/>
+<size>160</size>
+<mbr r='_GtkRadioButton::check_button' o='0' t='GtkCheckButton'/>
+<mbr r='_GtkRadioButton::group' o='1216' t='GSList *'/>

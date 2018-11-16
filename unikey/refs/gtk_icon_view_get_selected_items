@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconview.h' l='164' type='GList * gtk_icon_view_get_selected_items(GtkIconView * icon_view)'/>

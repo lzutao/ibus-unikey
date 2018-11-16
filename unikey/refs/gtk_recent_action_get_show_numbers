@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentaction.h' l='68' type='gboolean gtk_recent_action_get_show_numbers(GtkRecentAction * action)'/>

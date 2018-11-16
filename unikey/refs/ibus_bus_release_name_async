@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='240' type='void ibus_bus_release_name_async(IBusBus * bus, const gchar * name, gint timeout_msec, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer user_data)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='228'>/**
+ * ibus_bus_release_name_async:
+ * @bus: An #IBusBus.
+ * @name: Name to be released.
+ * @timeout_msec: The timeout in milliseconds or -1 to use the default timeout.
+ * @cancellable: A #GCancellable or %NULL.
+ * @callback: A #GAsyncReadyCallback to call when the request is satisfied
+ *      or %NULL if you don&apos;t care about the result of the method invocation.
+ * @user_data: The data to pass to callback.
+ *
+ * Release a name to IBus daemon asynchronously.
+ */</doc>

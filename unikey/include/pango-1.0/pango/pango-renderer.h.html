@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>pango-renderer.h source code [include/pango-1.0/pango/pango-renderer.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/pango-1.0/pango/pango-renderer.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>pango-1.0</a>/<a href='./'>pango</a>/<a href='pango-renderer.h.html'>pango-renderer.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Pango</i></td></tr>
+<tr><th id="2">2</th><td><i> * pango-renderer.h: Base class for rendering</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 2004, Red Hat, Inc.</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="7">7</th><td><i> * modify it under the terms of the GNU Library General Public</i></td></tr>
+<tr><th id="8">8</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="9">9</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="12">12</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="13">13</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the GNU</i></td></tr>
+<tr><th id="14">14</th><td><i> * Library General Public License for more details.</i></td></tr>
+<tr><th id="15">15</th><td><i> *</i></td></tr>
+<tr><th id="16">16</th><td><i> * You should have received a copy of the GNU Library General Public</i></td></tr>
+<tr><th id="17">17</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="18">18</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="19">19</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td><u>#<span data-ppcond="21">ifndef</span> <span class="macro" data-ref="_M/__PANGO_RENDERER_H_">__PANGO_RENDERER_H_</span></u></td></tr>
+<tr><th id="22">22</th><td><u>#define <dfn class="macro" id="_M/__PANGO_RENDERER_H_" data-ref="_M/__PANGO_RENDERER_H_">__PANGO_RENDERER_H_</dfn></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="pango-layout.h.html">&lt;pango/pango-layout.h&gt;</a></u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/PANGO_TYPE_RENDERER" data-ref="_M/PANGO_TYPE_RENDERER">PANGO_TYPE_RENDERER</dfn>            (pango_renderer_get_type())</u></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/PANGO_RENDERER" data-ref="_M/PANGO_RENDERER">PANGO_RENDERER</dfn>(object)         (G_TYPE_CHECK_INSTANCE_CAST ((object), PANGO_TYPE_RENDERER, PangoRenderer))</u></td></tr>
+<tr><th id="30">30</th><td><u>#define <dfn class="macro" id="_M/PANGO_IS_RENDERER" data-ref="_M/PANGO_IS_RENDERER">PANGO_IS_RENDERER</dfn>(object)      (G_TYPE_CHECK_INSTANCE_TYPE ((object), PANGO_TYPE_RENDERER))</u></td></tr>
+<tr><th id="31">31</th><td><u>#define <dfn class="macro" id="_M/PANGO_RENDERER_CLASS" data-ref="_M/PANGO_RENDERER_CLASS">PANGO_RENDERER_CLASS</dfn>(klass)    (G_TYPE_CHECK_CLASS_CAST ((klass), PANGO_TYPE_RENDERER, PangoRendererClass))</u></td></tr>
+<tr><th id="32">32</th><td><u>#define <dfn class="macro" id="_M/PANGO_IS_RENDERER_CLASS" data-ref="_M/PANGO_IS_RENDERER_CLASS">PANGO_IS_RENDERER_CLASS</dfn>(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), PANGO_TYPE_RENDERER))</u></td></tr>
+<tr><th id="33">33</th><td><u>#define <dfn class="macro" id="_M/PANGO_RENDERER_GET_CLASS" data-ref="_M/PANGO_RENDERER_GET_CLASS">PANGO_RENDERER_GET_CLASS</dfn>(obj)  (G_TYPE_INSTANCE_GET_CLASS ((obj), PANGO_TYPE_RENDERER, PangoRendererClass))</u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_PangoRenderer" title='_PangoRenderer' data-ref="_PangoRenderer">_PangoRenderer</a>        <dfn class="typedef" id="PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</dfn>;</td></tr>
+<tr><th id="36">36</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_PangoRendererClass" title='_PangoRendererClass' data-ref="_PangoRendererClass">_PangoRendererClass</a>   <dfn class="typedef" id="PangoRendererClass" title='PangoRendererClass' data-type='struct _PangoRendererClass' data-ref="PangoRendererClass">PangoRendererClass</dfn>;</td></tr>
+<tr><th id="37">37</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_PangoRendererPrivate" title='_PangoRendererPrivate' data-ref="_PangoRendererPrivate"><a class="type" href="#_PangoRendererPrivate" title='_PangoRendererPrivate' data-ref="_PangoRendererPrivate">_PangoRendererPrivate</a></dfn> <dfn class="typedef" id="PangoRendererPrivate" title='PangoRendererPrivate' data-type='struct _PangoRendererPrivate' data-ref="PangoRendererPrivate">PangoRendererPrivate</dfn>;</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * PangoRenderPart:</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> *<span class="command"> @PANGO</span>_RENDER_PART_FOREGROUND: the text itself</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> *<span class="command"> @PANGO</span>_RENDER_PART_BACKGROUND: the area behind the text</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> *<span class="command"> @PANGO</span>_RENDER_PART_UNDERLINE: underlines</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> *<span class="command"> @PANGO</span>_RENDER_PART_STRIKETHROUGH: strikethrough lines</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> * #PangoRenderPart defines different items to render for such</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> * purposes as setting colors.</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> * Since: 1.8</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="51">51</th><td><i>/* When extending, note N_RENDER_PARTS #define in pango-renderer.c */</i></td></tr>
+<tr><th id="52">52</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="53">53</th><td>{</td></tr>
+<tr><th id="54">54</th><td>  <dfn class="enum" id="PANGO_RENDER_PART_FOREGROUND" title='PANGO_RENDER_PART_FOREGROUND' data-ref="PANGO_RENDER_PART_FOREGROUND">PANGO_RENDER_PART_FOREGROUND</dfn>,</td></tr>
+<tr><th id="55">55</th><td>  <dfn class="enum" id="PANGO_RENDER_PART_BACKGROUND" title='PANGO_RENDER_PART_BACKGROUND' data-ref="PANGO_RENDER_PART_BACKGROUND">PANGO_RENDER_PART_BACKGROUND</dfn>,</td></tr>
+<tr><th id="56">56</th><td>  <dfn class="enum" id="PANGO_RENDER_PART_UNDERLINE" title='PANGO_RENDER_PART_UNDERLINE' data-ref="PANGO_RENDER_PART_UNDERLINE">PANGO_RENDER_PART_UNDERLINE</dfn>,</td></tr>
+<tr><th id="57">57</th><td>  <dfn class="enum" id="PANGO_RENDER_PART_STRIKETHROUGH" title='PANGO_RENDER_PART_STRIKETHROUGH' data-ref="PANGO_RENDER_PART_STRIKETHROUGH">PANGO_RENDER_PART_STRIKETHROUGH</dfn></td></tr>
+<tr><th id="58">58</th><td>} <dfn class="typedef" id="PangoRenderPart" title='PangoRenderPart' data-type='enum PangoRenderPart' data-ref="PangoRenderPart">PangoRenderPart</dfn>;</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> * PangoRenderer:</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> *<span class="command"> @matrix</span>: (nullable): the current transformation matrix for</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> *    the Renderer; may be %NULL, which should be treated the</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> *    same as the identity matrix.</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> * #PangoRenderer is a base class for objects that are used to</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> * render Pango objects such as #PangoGlyphString and</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> * #PangoLayout.</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> * Since: 1.8</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="72">72</th><td><b>struct</b> <dfn class="type def" id="_PangoRenderer" title='_PangoRenderer' data-ref="_PangoRenderer">_PangoRenderer</dfn></td></tr>
+<tr><th id="73">73</th><td>{</td></tr>
+<tr><th id="74">74</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="75">75</th><td>  <a class="typedef" href="../../glib-2.0/gobject/gobject.h.html#GObject" title='GObject' data-type='struct _GObject' data-ref="GObject">GObject</a> <dfn class="decl" id="_PangoRenderer::parent_instance" title='_PangoRenderer::parent_instance' data-ref="_PangoRenderer::parent_instance">parent_instance</dfn>;</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td>  <a class="typedef" href="pango-attributes.h.html#PangoUnderline" title='PangoUnderline' data-type='enum PangoUnderline' data-ref="PangoUnderline">PangoUnderline</a> <dfn class="decl" id="_PangoRenderer::underline" title='_PangoRenderer::underline' data-ref="_PangoRenderer::underline">underline</dfn>;</td></tr>
+<tr><th id="78">78</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="_PangoRenderer::strikethrough" title='_PangoRenderer::strikethrough' data-ref="_PangoRenderer::strikethrough">strikethrough</dfn>;</td></tr>
+<tr><th id="79">79</th><td>  <em>int</em> <dfn class="decl" id="_PangoRenderer::active_count" title='_PangoRenderer::active_count' data-ref="_PangoRenderer::active_count">active_count</dfn>;</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td>  <i>/*&lt; public &gt;*/</i></td></tr>
+<tr><th id="82">82</th><td>  <a class="typedef" href="pango-matrix.h.html#PangoMatrix" title='PangoMatrix' data-type='struct _PangoMatrix' data-ref="PangoMatrix">PangoMatrix</a> *<dfn class="decl" id="_PangoRenderer::matrix" title='_PangoRenderer::matrix' data-ref="_PangoRenderer::matrix">matrix</dfn>;		<i>/* May be NULL */</i></td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="85">85</th><td>  <a class="typedef" href="#PangoRendererPrivate" title='PangoRendererPrivate' data-type='struct _PangoRendererPrivate' data-ref="PangoRendererPrivate">PangoRendererPrivate</a> *<dfn class="decl" id="_PangoRenderer::priv" title='_PangoRenderer::priv' data-ref="_PangoRenderer::priv">priv</dfn>;</td></tr>
+<tr><th id="86">86</th><td>};</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc"> * PangoRendererClass:</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> *<span class="command"> @draw</span>_glyphs: draws a #PangoGlyphString</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> *<span class="command"> @draw</span>_rectangle: draws a rectangle</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> *<span class="command"> @draw</span>_error_underline: draws a squiggly line that approximately</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> * covers the given rectangle in the style of an underline used to</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> * indicate a spelling error.</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> *<span class="command"> @draw</span>_shape: draw content for a glyph shaped with #PangoAttrShape.</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> *  <span class="command"> @x</span>,<span class="command"> @y</span> are the coordinates of the left edge of the baseline,</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> *   in user coordinates.</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> *<span class="command"> @draw</span>_trapezoid: draws a trapezoidal filled area</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"> *<span class="command"> @draw</span>_glyph: draws a single glyph</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc"> * <span class="command">@par</span>t_changed: do renderer specific processing when rendering</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc"> *  attributes change</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> *<span class="command"> @begin</span>: Do renderer-specific initialization before drawing</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> *<span class="command"> @end</span>: Do renderer-specific cleanup after drawing</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> *<span class="command"> @prepare</span>_run: updates the renderer for a new run</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> *<span class="command"> @draw</span>_glyph_item: draws a #PangoGlyphItem</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> * Class structure for #PangoRenderer.</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> * Since: 1.8</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="111">111</th><td><b>struct</b> <dfn class="type def" id="_PangoRendererClass" title='_PangoRendererClass' data-ref="_PangoRendererClass">_PangoRendererClass</dfn></td></tr>
+<tr><th id="112">112</th><td>{</td></tr>
+<tr><th id="113">113</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="114">114</th><td>  <a class="typedef" href="../../glib-2.0/gobject/gobject.h.html#GObjectClass" title='GObjectClass' data-type='struct _GObjectClass' data-ref="GObjectClass">GObjectClass</a> <dfn class="decl" id="_PangoRendererClass::parent_class" title='_PangoRendererClass::parent_class' data-ref="_PangoRendererClass::parent_class">parent_class</dfn>;</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td>  <i>/* vtable - not signals */</i></td></tr>
+<tr><th id="117">117</th><td>  <i>/*&lt; public &gt;*/</i></td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td>  <i>/* All of the following have default implementations</i></td></tr>
+<tr><th id="120">120</th><td><i>   * and take as coordinates user coordinates in Pango units</i></td></tr>
+<tr><th id="121">121</th><td><i>   */</i></td></tr>
+<tr><th id="122">122</th><td>  <em>void</em> (*<dfn class="decl" id="_PangoRendererClass::draw_glyphs" title='_PangoRendererClass::draw_glyphs' data-ref="_PangoRendererClass::draw_glyphs">draw_glyphs</dfn>) (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>     *<dfn class="local col5 decl" id="12955renderer" title='renderer' data-type='PangoRenderer *' data-ref="12955renderer">renderer</dfn>,</td></tr>
+<tr><th id="123">123</th><td>		       <a class="typedef" href="pango-types.h.html#PangoFont" title='PangoFont' data-type='struct _PangoFont' data-ref="PangoFont">PangoFont</a>         *<dfn class="local col6 decl" id="12956font" title='font' data-type='PangoFont *' data-ref="12956font">font</dfn>,</td></tr>
+<tr><th id="124">124</th><td>		       <a class="typedef" href="pango-glyph.h.html#PangoGlyphString" title='PangoGlyphString' data-type='struct _PangoGlyphString' data-ref="PangoGlyphString">PangoGlyphString</a>  *<dfn class="local col7 decl" id="12957glyphs" title='glyphs' data-type='PangoGlyphString *' data-ref="12957glyphs">glyphs</dfn>,</td></tr>
+<tr><th id="125">125</th><td>		       <em>int</em>                <dfn class="local col8 decl" id="12958x" title='x' data-type='int' data-ref="12958x">x</dfn>,</td></tr>
+<tr><th id="126">126</th><td>		       <em>int</em>                <dfn class="local col9 decl" id="12959y" title='y' data-type='int' data-ref="12959y">y</dfn>);</td></tr>
+<tr><th id="127">127</th><td>  <em>void</em> (*<dfn class="decl" id="_PangoRendererClass::draw_rectangle" title='_PangoRendererClass::draw_rectangle' data-ref="_PangoRendererClass::draw_rectangle">draw_rectangle</dfn>) (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>     *<dfn class="local col0 decl" id="12960renderer" title='renderer' data-type='PangoRenderer *' data-ref="12960renderer">renderer</dfn>,</td></tr>
+<tr><th id="128">128</th><td>			  <a class="typedef" href="#PangoRenderPart" title='PangoRenderPart' data-type='enum PangoRenderPart' data-ref="PangoRenderPart">PangoRenderPart</a>    <dfn class="local col1 decl" id="12961part" title='part' data-type='PangoRenderPart' data-ref="12961part">part</dfn>,</td></tr>
+<tr><th id="129">129</th><td>			  <em>int</em>                <dfn class="local col2 decl" id="12962x" title='x' data-type='int' data-ref="12962x">x</dfn>,</td></tr>
+<tr><th id="130">130</th><td>			  <em>int</em>                <dfn class="local col3 decl" id="12963y" title='y' data-type='int' data-ref="12963y">y</dfn>,</td></tr>
+<tr><th id="131">131</th><td>			  <em>int</em>                <dfn class="local col4 decl" id="12964width" title='width' data-type='int' data-ref="12964width">width</dfn>,</td></tr>
+<tr><th id="132">132</th><td>			  <em>int</em>                <dfn class="local col5 decl" id="12965height" title='height' data-type='int' data-ref="12965height">height</dfn>);</td></tr>
+<tr><th id="133">133</th><td>  <em>void</em> (*<dfn class="decl" id="_PangoRendererClass::draw_error_underline" title='_PangoRendererClass::draw_error_underline' data-ref="_PangoRendererClass::draw_error_underline">draw_error_underline</dfn>) (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>     *<dfn class="local col6 decl" id="12966renderer" title='renderer' data-type='PangoRenderer *' data-ref="12966renderer">renderer</dfn>,</td></tr>
+<tr><th id="134">134</th><td>				<em>int</em>                <dfn class="local col7 decl" id="12967x" title='x' data-type='int' data-ref="12967x">x</dfn>,</td></tr>
+<tr><th id="135">135</th><td>				<em>int</em>                <dfn class="local col8 decl" id="12968y" title='y' data-type='int' data-ref="12968y">y</dfn>,</td></tr>
+<tr><th id="136">136</th><td>				<em>int</em>                <dfn class="local col9 decl" id="12969width" title='width' data-type='int' data-ref="12969width">width</dfn>,</td></tr>
+<tr><th id="137">137</th><td>				<em>int</em>                <dfn class="local col0 decl" id="12970height" title='height' data-type='int' data-ref="12970height">height</dfn>);</td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td>  <i>/* Nothing is drawn for shaped glyphs unless this is implemented */</i></td></tr>
+<tr><th id="140">140</th><td>  <em>void</em> (*<dfn class="decl" id="_PangoRendererClass::draw_shape" title='_PangoRendererClass::draw_shape' data-ref="_PangoRendererClass::draw_shape">draw_shape</dfn>) (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>  *<dfn class="local col1 decl" id="12971renderer" title='renderer' data-type='PangoRenderer *' data-ref="12971renderer">renderer</dfn>,</td></tr>
+<tr><th id="141">141</th><td>		      <a class="typedef" href="pango-attributes.h.html#PangoAttrShape" title='PangoAttrShape' data-type='struct _PangoAttrShape' data-ref="PangoAttrShape">PangoAttrShape</a> *<dfn class="local col2 decl" id="12972attr" title='attr' data-type='PangoAttrShape *' data-ref="12972attr">attr</dfn>,</td></tr>
+<tr><th id="142">142</th><td>		      <em>int</em>             <dfn class="local col3 decl" id="12973x" title='x' data-type='int' data-ref="12973x">x</dfn>,</td></tr>
+<tr><th id="143">143</th><td>		      <em>int</em>             <dfn class="local col4 decl" id="12974y" title='y' data-type='int' data-ref="12974y">y</dfn>);</td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td>  <i>/* These two must be implemented and take coordinates in</i></td></tr>
+<tr><th id="146">146</th><td><i>   * device space as doubles.</i></td></tr>
+<tr><th id="147">147</th><td><i>   */</i></td></tr>
+<tr><th id="148">148</th><td>  <em>void</em> (*<dfn class="decl" id="_PangoRendererClass::draw_trapezoid" title='_PangoRendererClass::draw_trapezoid' data-ref="_PangoRendererClass::draw_trapezoid">draw_trapezoid</dfn>) (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>  *<dfn class="local col5 decl" id="12975renderer" title='renderer' data-type='PangoRenderer *' data-ref="12975renderer">renderer</dfn>,</td></tr>
+<tr><th id="149">149</th><td>			  <a class="typedef" href="#PangoRenderPart" title='PangoRenderPart' data-type='enum PangoRenderPart' data-ref="PangoRenderPart">PangoRenderPart</a> <dfn class="local col6 decl" id="12976part" title='part' data-type='PangoRenderPart' data-ref="12976part">part</dfn>,</td></tr>
+<tr><th id="150">150</th><td>			  <em>double</em>          <dfn class="local col7 decl" id="12977y1_" title='y1_' data-type='double' data-ref="12977y1_">y1_</dfn>,</td></tr>
+<tr><th id="151">151</th><td>			  <em>double</em>          <dfn class="local col8 decl" id="12978x11" title='x11' data-type='double' data-ref="12978x11">x11</dfn>,</td></tr>
+<tr><th id="152">152</th><td>			  <em>double</em>          <dfn class="local col9 decl" id="12979x21" title='x21' data-type='double' data-ref="12979x21">x21</dfn>,</td></tr>
+<tr><th id="153">153</th><td>			  <em>double</em>          <dfn class="local col0 decl" id="12980y2" title='y2' data-type='double' data-ref="12980y2">y2</dfn>,</td></tr>
+<tr><th id="154">154</th><td>			  <em>double</em>          <dfn class="local col1 decl" id="12981x12" title='x12' data-type='double' data-ref="12981x12">x12</dfn>,</td></tr>
+<tr><th id="155">155</th><td>			  <em>double</em>          <dfn class="local col2 decl" id="12982x22" title='x22' data-type='double' data-ref="12982x22">x22</dfn>);</td></tr>
+<tr><th id="156">156</th><td>  <em>void</em> (*<dfn class="decl" id="_PangoRendererClass::draw_glyph" title='_PangoRendererClass::draw_glyph' data-ref="_PangoRendererClass::draw_glyph">draw_glyph</dfn>) (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a> *<dfn class="local col3 decl" id="12983renderer" title='renderer' data-type='PangoRenderer *' data-ref="12983renderer">renderer</dfn>,</td></tr>
+<tr><th id="157">157</th><td>		      <a class="typedef" href="pango-types.h.html#PangoFont" title='PangoFont' data-type='struct _PangoFont' data-ref="PangoFont">PangoFont</a>     *<dfn class="local col4 decl" id="12984font" title='font' data-type='PangoFont *' data-ref="12984font">font</dfn>,</td></tr>
+<tr><th id="158">158</th><td>		      <a class="typedef" href="pango-types.h.html#PangoGlyph" title='PangoGlyph' data-type='guint32' data-ref="PangoGlyph">PangoGlyph</a>     <dfn class="local col5 decl" id="12985glyph" title='glyph' data-type='PangoGlyph' data-ref="12985glyph">glyph</dfn>,</td></tr>
+<tr><th id="159">159</th><td>		      <em>double</em>         <dfn class="local col6 decl" id="12986x" title='x' data-type='double' data-ref="12986x">x</dfn>,</td></tr>
+<tr><th id="160">160</th><td>		      <em>double</em>         <dfn class="local col7 decl" id="12987y" title='y' data-type='double' data-ref="12987y">y</dfn>);</td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td>  <i>/* Notification of change in rendering attributes</i></td></tr>
+<tr><th id="163">163</th><td><i>   */</i></td></tr>
+<tr><th id="164">164</th><td>  <em>void</em> (*<dfn class="decl" id="_PangoRendererClass::part_changed" title='_PangoRendererClass::part_changed' data-ref="_PangoRendererClass::part_changed">part_changed</dfn>) (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>   *<dfn class="local col8 decl" id="12988renderer" title='renderer' data-type='PangoRenderer *' data-ref="12988renderer">renderer</dfn>,</td></tr>
+<tr><th id="165">165</th><td>			<a class="typedef" href="#PangoRenderPart" title='PangoRenderPart' data-type='enum PangoRenderPart' data-ref="PangoRenderPart">PangoRenderPart</a>  <dfn class="local col9 decl" id="12989part" title='part' data-type='PangoRenderPart' data-ref="12989part">part</dfn>);</td></tr>
+<tr><th id="166">166</th><td></td></tr>
+<tr><th id="167">167</th><td>  <i>/* Paired around drawing operations</i></td></tr>
+<tr><th id="168">168</th><td><i>   */</i></td></tr>
+<tr><th id="169">169</th><td>  <em>void</em> (*<dfn class="decl" id="_PangoRendererClass::begin" title='_PangoRendererClass::begin' data-ref="_PangoRendererClass::begin">begin</dfn>) (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a> *<dfn class="local col0 decl" id="12990renderer" title='renderer' data-type='PangoRenderer *' data-ref="12990renderer">renderer</dfn>);</td></tr>
+<tr><th id="170">170</th><td>  <em>void</em> (*<dfn class="decl" id="_PangoRendererClass::end" title='_PangoRendererClass::end' data-ref="_PangoRendererClass::end">end</dfn>)   (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a> *<dfn class="local col1 decl" id="12991renderer" title='renderer' data-type='PangoRenderer *' data-ref="12991renderer">renderer</dfn>);</td></tr>
+<tr><th id="171">171</th><td></td></tr>
+<tr><th id="172">172</th><td>  <i>/* Hooks into the details of layout rendering</i></td></tr>
+<tr><th id="173">173</th><td><i>   */</i></td></tr>
+<tr><th id="174">174</th><td>  <em>void</em> (*<dfn class="decl" id="_PangoRendererClass::prepare_run" title='_PangoRendererClass::prepare_run' data-ref="_PangoRendererClass::prepare_run">prepare_run</dfn>) (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>  *<dfn class="local col2 decl" id="12992renderer" title='renderer' data-type='PangoRenderer *' data-ref="12992renderer">renderer</dfn>,</td></tr>
+<tr><th id="175">175</th><td>		       <a class="typedef" href="pango-layout.h.html#PangoLayoutRun" title='PangoLayoutRun' data-type='PangoGlyphItem' data-ref="PangoLayoutRun">PangoLayoutRun</a> *<dfn class="local col3 decl" id="12993run" title='run' data-type='PangoLayoutRun *' data-ref="12993run">run</dfn>);</td></tr>
+<tr><th id="176">176</th><td></td></tr>
+<tr><th id="177">177</th><td>  <i>/* All of the following have default implementations</i></td></tr>
+<tr><th id="178">178</th><td><i>   * and take as coordinates user coordinates in Pango units</i></td></tr>
+<tr><th id="179">179</th><td><i>   */</i></td></tr>
+<tr><th id="180">180</th><td>  <em>void</em> (*<dfn class="decl" id="_PangoRendererClass::draw_glyph_item" title='_PangoRendererClass::draw_glyph_item' data-ref="_PangoRendererClass::draw_glyph_item">draw_glyph_item</dfn>) (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>     *<dfn class="local col4 decl" id="12994renderer" title='renderer' data-type='PangoRenderer *' data-ref="12994renderer">renderer</dfn>,</td></tr>
+<tr><th id="181">181</th><td>			   <em>const</em> <em>char</em>        *<dfn class="local col5 decl" id="12995text" title='text' data-type='const char *' data-ref="12995text">text</dfn>,</td></tr>
+<tr><th id="182">182</th><td>			   <a class="typedef" href="pango-glyph-item.h.html#PangoGlyphItem" title='PangoGlyphItem' data-type='struct _PangoGlyphItem' data-ref="PangoGlyphItem">PangoGlyphItem</a>    *<dfn class="local col6 decl" id="12996glyph_item" title='glyph_item' data-type='PangoGlyphItem *' data-ref="12996glyph_item">glyph_item</dfn>,</td></tr>
+<tr><th id="183">183</th><td>			   <em>int</em>                <dfn class="local col7 decl" id="12997x" title='x' data-type='int' data-ref="12997x">x</dfn>,</td></tr>
+<tr><th id="184">184</th><td>			   <em>int</em>                <dfn class="local col8 decl" id="12998y" title='y' data-type='int' data-ref="12998y">y</dfn>);</td></tr>
+<tr><th id="185">185</th><td></td></tr>
+<tr><th id="186">186</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="187">187</th><td></td></tr>
+<tr><th id="188">188</th><td>  <i>/* Padding for future expansion */</i></td></tr>
+<tr><th id="189">189</th><td>  <em>void</em> (*<dfn class="decl" id="_PangoRendererClass::_pango_reserved2" title='_PangoRendererClass::_pango_reserved2' data-ref="_PangoRendererClass::_pango_reserved2">_pango_reserved2</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="190">190</th><td>  <em>void</em> (*<dfn class="decl" id="_PangoRendererClass::_pango_reserved3" title='_PangoRendererClass::_pango_reserved3' data-ref="_PangoRendererClass::_pango_reserved3">_pango_reserved3</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="191">191</th><td>  <em>void</em> (*<dfn class="decl" id="_PangoRendererClass::_pango_reserved4" title='_PangoRendererClass::_pango_reserved4' data-ref="_PangoRendererClass::_pango_reserved4">_pango_reserved4</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="192">192</th><td>};</td></tr>
+<tr><th id="193">193</th><td></td></tr>
+<tr><th id="194">194</th><td><a class="macro" href="pango-version-macros.h.html#395" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_8">PANGO_AVAILABLE_IN_1_8</a></td></tr>
+<tr><th id="195">195</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a> <dfn class="decl" id="pango_renderer_get_type" title='pango_renderer_get_type' data-ref="pango_renderer_get_type">pango_renderer_get_type</dfn>    (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="196">196</th><td></td></tr>
+<tr><th id="197">197</th><td><a class="macro" href="pango-version-macros.h.html#395" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_8">PANGO_AVAILABLE_IN_1_8</a></td></tr>
+<tr><th id="198">198</th><td><em>void</em> <dfn class="decl" id="pango_renderer_draw_layout" title='pango_renderer_draw_layout' data-ref="pango_renderer_draw_layout">pango_renderer_draw_layout</dfn>          (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>    *<dfn class="local col9 decl" id="12999renderer" title='renderer' data-type='PangoRenderer *' data-ref="12999renderer">renderer</dfn>,</td></tr>
+<tr><th id="199">199</th><td>					  <a class="typedef" href="pango-layout.h.html#PangoLayout" title='PangoLayout' data-type='struct _PangoLayout' data-ref="PangoLayout">PangoLayout</a>      *<dfn class="local col0 decl" id="13000layout" title='layout' data-type='PangoLayout *' data-ref="13000layout">layout</dfn>,</td></tr>
+<tr><th id="200">200</th><td>					  <em>int</em>               <dfn class="local col1 decl" id="13001x" title='x' data-type='int' data-ref="13001x">x</dfn>,</td></tr>
+<tr><th id="201">201</th><td>					  <em>int</em>               <dfn class="local col2 decl" id="13002y" title='y' data-type='int' data-ref="13002y">y</dfn>);</td></tr>
+<tr><th id="202">202</th><td><a class="macro" href="pango-version-macros.h.html#395" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_8">PANGO_AVAILABLE_IN_1_8</a></td></tr>
+<tr><th id="203">203</th><td><em>void</em> <dfn class="decl" id="pango_renderer_draw_layout_line" title='pango_renderer_draw_layout_line' data-ref="pango_renderer_draw_layout_line">pango_renderer_draw_layout_line</dfn>     (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>    *<dfn class="local col3 decl" id="13003renderer" title='renderer' data-type='PangoRenderer *' data-ref="13003renderer">renderer</dfn>,</td></tr>
+<tr><th id="204">204</th><td>					  <a class="typedef" href="pango-layout.h.html#PangoLayoutLine" title='PangoLayoutLine' data-type='struct _PangoLayoutLine' data-ref="PangoLayoutLine">PangoLayoutLine</a>  *<dfn class="local col4 decl" id="13004line" title='line' data-type='PangoLayoutLine *' data-ref="13004line">line</dfn>,</td></tr>
+<tr><th id="205">205</th><td>					  <em>int</em>               <dfn class="local col5 decl" id="13005x" title='x' data-type='int' data-ref="13005x">x</dfn>,</td></tr>
+<tr><th id="206">206</th><td>					  <em>int</em>               <dfn class="local col6 decl" id="13006y" title='y' data-type='int' data-ref="13006y">y</dfn>);</td></tr>
+<tr><th id="207">207</th><td><a class="macro" href="pango-version-macros.h.html#395" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_8">PANGO_AVAILABLE_IN_1_8</a></td></tr>
+<tr><th id="208">208</th><td><em>void</em> <dfn class="decl" id="pango_renderer_draw_glyphs" title='pango_renderer_draw_glyphs' data-ref="pango_renderer_draw_glyphs">pango_renderer_draw_glyphs</dfn>          (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>    *<dfn class="local col7 decl" id="13007renderer" title='renderer' data-type='PangoRenderer *' data-ref="13007renderer">renderer</dfn>,</td></tr>
+<tr><th id="209">209</th><td>					  <a class="typedef" href="pango-types.h.html#PangoFont" title='PangoFont' data-type='struct _PangoFont' data-ref="PangoFont">PangoFont</a>        *<dfn class="local col8 decl" id="13008font" title='font' data-type='PangoFont *' data-ref="13008font">font</dfn>,</td></tr>
+<tr><th id="210">210</th><td>					  <a class="typedef" href="pango-glyph.h.html#PangoGlyphString" title='PangoGlyphString' data-type='struct _PangoGlyphString' data-ref="PangoGlyphString">PangoGlyphString</a> *<dfn class="local col9 decl" id="13009glyphs" title='glyphs' data-type='PangoGlyphString *' data-ref="13009glyphs">glyphs</dfn>,</td></tr>
+<tr><th id="211">211</th><td>					  <em>int</em>               <dfn class="local col0 decl" id="13010x" title='x' data-type='int' data-ref="13010x">x</dfn>,</td></tr>
+<tr><th id="212">212</th><td>					  <em>int</em>               <dfn class="local col1 decl" id="13011y" title='y' data-type='int' data-ref="13011y">y</dfn>);</td></tr>
+<tr><th id="213">213</th><td><a class="macro" href="pango-version-macros.h.html#493" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_22">PANGO_AVAILABLE_IN_1_22</a></td></tr>
+<tr><th id="214">214</th><td><em>void</em> <dfn class="decl" id="pango_renderer_draw_glyph_item" title='pango_renderer_draw_glyph_item' data-ref="pango_renderer_draw_glyph_item">pango_renderer_draw_glyph_item</dfn>      (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>    *<dfn class="local col2 decl" id="13012renderer" title='renderer' data-type='PangoRenderer *' data-ref="13012renderer">renderer</dfn>,</td></tr>
+<tr><th id="215">215</th><td>					  <em>const</em> <em>char</em>       *<dfn class="local col3 decl" id="13013text" title='text' data-type='const char *' data-ref="13013text">text</dfn>,</td></tr>
+<tr><th id="216">216</th><td>					  <a class="typedef" href="pango-glyph-item.h.html#PangoGlyphItem" title='PangoGlyphItem' data-type='struct _PangoGlyphItem' data-ref="PangoGlyphItem">PangoGlyphItem</a>   *<dfn class="local col4 decl" id="13014glyph_item" title='glyph_item' data-type='PangoGlyphItem *' data-ref="13014glyph_item">glyph_item</dfn>,</td></tr>
+<tr><th id="217">217</th><td>					  <em>int</em>               <dfn class="local col5 decl" id="13015x" title='x' data-type='int' data-ref="13015x">x</dfn>,</td></tr>
+<tr><th id="218">218</th><td>					  <em>int</em>               <dfn class="local col6 decl" id="13016y" title='y' data-type='int' data-ref="13016y">y</dfn>);</td></tr>
+<tr><th id="219">219</th><td><a class="macro" href="pango-version-macros.h.html#395" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_8">PANGO_AVAILABLE_IN_1_8</a></td></tr>
+<tr><th id="220">220</th><td><em>void</em> <dfn class="decl" id="pango_renderer_draw_rectangle" title='pango_renderer_draw_rectangle' data-ref="pango_renderer_draw_rectangle">pango_renderer_draw_rectangle</dfn>       (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>    *<dfn class="local col7 decl" id="13017renderer" title='renderer' data-type='PangoRenderer *' data-ref="13017renderer">renderer</dfn>,</td></tr>
+<tr><th id="221">221</th><td>					  <a class="typedef" href="#PangoRenderPart" title='PangoRenderPart' data-type='enum PangoRenderPart' data-ref="PangoRenderPart">PangoRenderPart</a>   <dfn class="local col8 decl" id="13018part" title='part' data-type='PangoRenderPart' data-ref="13018part">part</dfn>,</td></tr>
+<tr><th id="222">222</th><td>					  <em>int</em>               <dfn class="local col9 decl" id="13019x" title='x' data-type='int' data-ref="13019x">x</dfn>,</td></tr>
+<tr><th id="223">223</th><td>					  <em>int</em>               <dfn class="local col0 decl" id="13020y" title='y' data-type='int' data-ref="13020y">y</dfn>,</td></tr>
+<tr><th id="224">224</th><td>					  <em>int</em>               <dfn class="local col1 decl" id="13021width" title='width' data-type='int' data-ref="13021width">width</dfn>,</td></tr>
+<tr><th id="225">225</th><td>					  <em>int</em>               <dfn class="local col2 decl" id="13022height" title='height' data-type='int' data-ref="13022height">height</dfn>);</td></tr>
+<tr><th id="226">226</th><td><a class="macro" href="pango-version-macros.h.html#395" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_8">PANGO_AVAILABLE_IN_1_8</a></td></tr>
+<tr><th id="227">227</th><td><em>void</em> <dfn class="decl" id="pango_renderer_draw_error_underline" title='pango_renderer_draw_error_underline' data-ref="pango_renderer_draw_error_underline">pango_renderer_draw_error_underline</dfn> (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>    *<dfn class="local col3 decl" id="13023renderer" title='renderer' data-type='PangoRenderer *' data-ref="13023renderer">renderer</dfn>,</td></tr>
+<tr><th id="228">228</th><td>					  <em>int</em>               <dfn class="local col4 decl" id="13024x" title='x' data-type='int' data-ref="13024x">x</dfn>,</td></tr>
+<tr><th id="229">229</th><td>					  <em>int</em>               <dfn class="local col5 decl" id="13025y" title='y' data-type='int' data-ref="13025y">y</dfn>,</td></tr>
+<tr><th id="230">230</th><td>					  <em>int</em>               <dfn class="local col6 decl" id="13026width" title='width' data-type='int' data-ref="13026width">width</dfn>,</td></tr>
+<tr><th id="231">231</th><td>					  <em>int</em>               <dfn class="local col7 decl" id="13027height" title='height' data-type='int' data-ref="13027height">height</dfn>);</td></tr>
+<tr><th id="232">232</th><td><a class="macro" href="pango-version-macros.h.html#395" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_8">PANGO_AVAILABLE_IN_1_8</a></td></tr>
+<tr><th id="233">233</th><td><em>void</em> <dfn class="decl" id="pango_renderer_draw_trapezoid" title='pango_renderer_draw_trapezoid' data-ref="pango_renderer_draw_trapezoid">pango_renderer_draw_trapezoid</dfn>       (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>    *<dfn class="local col8 decl" id="13028renderer" title='renderer' data-type='PangoRenderer *' data-ref="13028renderer">renderer</dfn>,</td></tr>
+<tr><th id="234">234</th><td>					  <a class="typedef" href="#PangoRenderPart" title='PangoRenderPart' data-type='enum PangoRenderPart' data-ref="PangoRenderPart">PangoRenderPart</a>   <dfn class="local col9 decl" id="13029part" title='part' data-type='PangoRenderPart' data-ref="13029part">part</dfn>,</td></tr>
+<tr><th id="235">235</th><td>					  <em>double</em>            <dfn class="local col0 decl" id="13030y1_" title='y1_' data-type='double' data-ref="13030y1_">y1_</dfn>,</td></tr>
+<tr><th id="236">236</th><td>					  <em>double</em>            <dfn class="local col1 decl" id="13031x11" title='x11' data-type='double' data-ref="13031x11">x11</dfn>,</td></tr>
+<tr><th id="237">237</th><td>					  <em>double</em>            <dfn class="local col2 decl" id="13032x21" title='x21' data-type='double' data-ref="13032x21">x21</dfn>,</td></tr>
+<tr><th id="238">238</th><td>					  <em>double</em>            <dfn class="local col3 decl" id="13033y2" title='y2' data-type='double' data-ref="13033y2">y2</dfn>,</td></tr>
+<tr><th id="239">239</th><td>					  <em>double</em>            <dfn class="local col4 decl" id="13034x12" title='x12' data-type='double' data-ref="13034x12">x12</dfn>,</td></tr>
+<tr><th id="240">240</th><td>					  <em>double</em>            <dfn class="local col5 decl" id="13035x22" title='x22' data-type='double' data-ref="13035x22">x22</dfn>);</td></tr>
+<tr><th id="241">241</th><td><a class="macro" href="pango-version-macros.h.html#395" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_8">PANGO_AVAILABLE_IN_1_8</a></td></tr>
+<tr><th id="242">242</th><td><em>void</em> <dfn class="decl" id="pango_renderer_draw_glyph" title='pango_renderer_draw_glyph' data-ref="pango_renderer_draw_glyph">pango_renderer_draw_glyph</dfn>           (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>    *<dfn class="local col6 decl" id="13036renderer" title='renderer' data-type='PangoRenderer *' data-ref="13036renderer">renderer</dfn>,</td></tr>
+<tr><th id="243">243</th><td>					  <a class="typedef" href="pango-types.h.html#PangoFont" title='PangoFont' data-type='struct _PangoFont' data-ref="PangoFont">PangoFont</a>        *<dfn class="local col7 decl" id="13037font" title='font' data-type='PangoFont *' data-ref="13037font">font</dfn>,</td></tr>
+<tr><th id="244">244</th><td>					  <a class="typedef" href="pango-types.h.html#PangoGlyph" title='PangoGlyph' data-type='guint32' data-ref="PangoGlyph">PangoGlyph</a>        <dfn class="local col8 decl" id="13038glyph" title='glyph' data-type='PangoGlyph' data-ref="13038glyph">glyph</dfn>,</td></tr>
+<tr><th id="245">245</th><td>					  <em>double</em>            <dfn class="local col9 decl" id="13039x" title='x' data-type='double' data-ref="13039x">x</dfn>,</td></tr>
+<tr><th id="246">246</th><td>					  <em>double</em>            <dfn class="local col0 decl" id="13040y" title='y' data-type='double' data-ref="13040y">y</dfn>);</td></tr>
+<tr><th id="247">247</th><td></td></tr>
+<tr><th id="248">248</th><td><a class="macro" href="pango-version-macros.h.html#395" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_8">PANGO_AVAILABLE_IN_1_8</a></td></tr>
+<tr><th id="249">249</th><td><em>void</em> <dfn class="decl" id="pango_renderer_activate" title='pango_renderer_activate' data-ref="pango_renderer_activate">pango_renderer_activate</dfn>             (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>    *<dfn class="local col1 decl" id="13041renderer" title='renderer' data-type='PangoRenderer *' data-ref="13041renderer">renderer</dfn>);</td></tr>
+<tr><th id="250">250</th><td><a class="macro" href="pango-version-macros.h.html#395" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_8">PANGO_AVAILABLE_IN_1_8</a></td></tr>
+<tr><th id="251">251</th><td><em>void</em> <dfn class="decl" id="pango_renderer_deactivate" title='pango_renderer_deactivate' data-ref="pango_renderer_deactivate">pango_renderer_deactivate</dfn>           (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>    *<dfn class="local col2 decl" id="13042renderer" title='renderer' data-type='PangoRenderer *' data-ref="13042renderer">renderer</dfn>);</td></tr>
+<tr><th id="252">252</th><td></td></tr>
+<tr><th id="253">253</th><td><a class="macro" href="pango-version-macros.h.html#395" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_8">PANGO_AVAILABLE_IN_1_8</a></td></tr>
+<tr><th id="254">254</th><td><em>void</em>        <dfn class="decl" id="pango_renderer_part_changed" title='pango_renderer_part_changed' data-ref="pango_renderer_part_changed">pango_renderer_part_changed</dfn> (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>   *<dfn class="local col3 decl" id="13043renderer" title='renderer' data-type='PangoRenderer *' data-ref="13043renderer">renderer</dfn>,</td></tr>
+<tr><th id="255">255</th><td>					 <a class="typedef" href="#PangoRenderPart" title='PangoRenderPart' data-type='enum PangoRenderPart' data-ref="PangoRenderPart">PangoRenderPart</a>  <dfn class="local col4 decl" id="13044part" title='part' data-type='PangoRenderPart' data-ref="13044part">part</dfn>);</td></tr>
+<tr><th id="256">256</th><td></td></tr>
+<tr><th id="257">257</th><td><a class="macro" href="pango-version-macros.h.html#395" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_8">PANGO_AVAILABLE_IN_1_8</a></td></tr>
+<tr><th id="258">258</th><td><em>void</em>        <dfn class="decl" id="pango_renderer_set_color" title='pango_renderer_set_color' data-ref="pango_renderer_set_color">pango_renderer_set_color</dfn> (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>    *<dfn class="local col5 decl" id="13045renderer" title='renderer' data-type='PangoRenderer *' data-ref="13045renderer">renderer</dfn>,</td></tr>
+<tr><th id="259">259</th><td>				      <a class="typedef" href="#PangoRenderPart" title='PangoRenderPart' data-type='enum PangoRenderPart' data-ref="PangoRenderPart">PangoRenderPart</a>   <dfn class="local col6 decl" id="13046part" title='part' data-type='PangoRenderPart' data-ref="13046part">part</dfn>,</td></tr>
+<tr><th id="260">260</th><td>				      <em>const</em> <a class="typedef" href="pango-attributes.h.html#PangoColor" title='PangoColor' data-type='struct _PangoColor' data-ref="PangoColor">PangoColor</a> *<dfn class="local col7 decl" id="13047color" title='color' data-type='const PangoColor *' data-ref="13047color">color</dfn>);</td></tr>
+<tr><th id="261">261</th><td><a class="macro" href="pango-version-macros.h.html#395" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_8">PANGO_AVAILABLE_IN_1_8</a></td></tr>
+<tr><th id="262">262</th><td><a class="typedef" href="pango-attributes.h.html#PangoColor" title='PangoColor' data-type='struct _PangoColor' data-ref="PangoColor">PangoColor</a> *<dfn class="decl" id="pango_renderer_get_color" title='pango_renderer_get_color' data-ref="pango_renderer_get_color">pango_renderer_get_color</dfn> (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>    *<dfn class="local col8 decl" id="13048renderer" title='renderer' data-type='PangoRenderer *' data-ref="13048renderer">renderer</dfn>,</td></tr>
+<tr><th id="263">263</th><td>				      <a class="typedef" href="#PangoRenderPart" title='PangoRenderPart' data-type='enum PangoRenderPart' data-ref="PangoRenderPart">PangoRenderPart</a>   <dfn class="local col9 decl" id="13049part" title='part' data-type='PangoRenderPart' data-ref="13049part">part</dfn>);</td></tr>
+<tr><th id="264">264</th><td></td></tr>
+<tr><th id="265">265</th><td><a class="macro" href="pango-version-macros.h.html#605" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_38">PANGO_AVAILABLE_IN_1_38</a></td></tr>
+<tr><th id="266">266</th><td><em>void</em>        <dfn class="decl" id="pango_renderer_set_alpha" title='pango_renderer_set_alpha' data-ref="pango_renderer_set_alpha">pango_renderer_set_alpha</dfn> (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>    *<dfn class="local col0 decl" id="13050renderer" title='renderer' data-type='PangoRenderer *' data-ref="13050renderer">renderer</dfn>,</td></tr>
+<tr><th id="267">267</th><td>				      <a class="typedef" href="#PangoRenderPart" title='PangoRenderPart' data-type='enum PangoRenderPart' data-ref="PangoRenderPart">PangoRenderPart</a>   <dfn class="local col1 decl" id="13051part" title='part' data-type='PangoRenderPart' data-ref="13051part">part</dfn>,</td></tr>
+<tr><th id="268">268</th><td>				      <span class='typedef' title='guint16' data-type='unsigned short' data-ref="guint16">guint16</span>           <dfn class="local col2 decl" id="13052alpha" title='alpha' data-type='guint16' data-ref="13052alpha">alpha</dfn>);</td></tr>
+<tr><th id="269">269</th><td><a class="macro" href="pango-version-macros.h.html#605" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_38">PANGO_AVAILABLE_IN_1_38</a></td></tr>
+<tr><th id="270">270</th><td><span class='typedef' title='guint16' data-type='unsigned short' data-ref="guint16">guint16</span>     <dfn class="decl" id="pango_renderer_get_alpha" title='pango_renderer_get_alpha' data-ref="pango_renderer_get_alpha">pango_renderer_get_alpha</dfn> (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>    *<dfn class="local col3 decl" id="13053renderer" title='renderer' data-type='PangoRenderer *' data-ref="13053renderer">renderer</dfn>,</td></tr>
+<tr><th id="271">271</th><td>				      <a class="typedef" href="#PangoRenderPart" title='PangoRenderPart' data-type='enum PangoRenderPart' data-ref="PangoRenderPart">PangoRenderPart</a>   <dfn class="local col4 decl" id="13054part" title='part' data-type='PangoRenderPart' data-ref="13054part">part</dfn>);</td></tr>
+<tr><th id="272">272</th><td></td></tr>
+<tr><th id="273">273</th><td><a class="macro" href="pango-version-macros.h.html#395" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_8">PANGO_AVAILABLE_IN_1_8</a></td></tr>
+<tr><th id="274">274</th><td><em>void</em>                        <dfn class="decl" id="pango_renderer_set_matrix" title='pango_renderer_set_matrix' data-ref="pango_renderer_set_matrix">pango_renderer_set_matrix</dfn> (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>     *<dfn class="local col5 decl" id="13055renderer" title='renderer' data-type='PangoRenderer *' data-ref="13055renderer">renderer</dfn>,</td></tr>
+<tr><th id="275">275</th><td>						       <em>const</em> <a class="typedef" href="pango-matrix.h.html#PangoMatrix" title='PangoMatrix' data-type='struct _PangoMatrix' data-ref="PangoMatrix">PangoMatrix</a> *<dfn class="local col6 decl" id="13056matrix" title='matrix' data-type='const PangoMatrix *' data-ref="13056matrix">matrix</dfn>);</td></tr>
+<tr><th id="276">276</th><td><a class="macro" href="pango-version-macros.h.html#395" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_8">PANGO_AVAILABLE_IN_1_8</a></td></tr>
+<tr><th id="277">277</th><td><em>const</em> <a class="typedef" href="pango-matrix.h.html#PangoMatrix" title='PangoMatrix' data-type='struct _PangoMatrix' data-ref="PangoMatrix">PangoMatrix</a>          *<dfn class="decl" id="pango_renderer_get_matrix" title='pango_renderer_get_matrix' data-ref="pango_renderer_get_matrix">pango_renderer_get_matrix</dfn> (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>     *<dfn class="local col7 decl" id="13057renderer" title='renderer' data-type='PangoRenderer *' data-ref="13057renderer">renderer</dfn>);</td></tr>
+<tr><th id="278">278</th><td></td></tr>
+<tr><th id="279">279</th><td><a class="macro" href="pango-version-macros.h.html#479" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_20">PANGO_AVAILABLE_IN_1_20</a></td></tr>
+<tr><th id="280">280</th><td><a class="typedef" href="pango-layout.h.html#PangoLayout" title='PangoLayout' data-type='struct _PangoLayout' data-ref="PangoLayout">PangoLayout</a>     *<dfn class="decl" id="pango_renderer_get_layout" title='pango_renderer_get_layout' data-ref="pango_renderer_get_layout">pango_renderer_get_layout</dfn>      (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>     *<dfn class="local col8 decl" id="13058renderer" title='renderer' data-type='PangoRenderer *' data-ref="13058renderer">renderer</dfn>);</td></tr>
+<tr><th id="281">281</th><td><a class="macro" href="pango-version-macros.h.html#479" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_20">PANGO_AVAILABLE_IN_1_20</a></td></tr>
+<tr><th id="282">282</th><td><a class="typedef" href="pango-layout.h.html#PangoLayoutLine" title='PangoLayoutLine' data-type='struct _PangoLayoutLine' data-ref="PangoLayoutLine">PangoLayoutLine</a> *<dfn class="decl" id="pango_renderer_get_layout_line" title='pango_renderer_get_layout_line' data-ref="pango_renderer_get_layout_line">pango_renderer_get_layout_line</dfn> (<a class="typedef" href="#PangoRenderer" title='PangoRenderer' data-type='struct _PangoRenderer' data-ref="PangoRenderer">PangoRenderer</a>     *<dfn class="local col9 decl" id="13059renderer" title='renderer' data-type='PangoRenderer *' data-ref="13059renderer">renderer</dfn>);</td></tr>
+<tr><th id="283">283</th><td></td></tr>
+<tr><th id="284">284</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="285">285</th><td></td></tr>
+<tr><th id="286">286</th><td><u>#<span data-ppcond="21">endif</span> /* __PANGO_RENDERER_H_ */</u></td></tr>
+<tr><th id="287">287</th><td></td></tr>
+<tr><th id="288">288</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

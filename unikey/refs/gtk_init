@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkmain.h' l='94' type='void gtk_init(int * argc, char *** argv)'/>
+<use f='unikey/setup/setup.cpp' l='51' u='c' c='main'/>

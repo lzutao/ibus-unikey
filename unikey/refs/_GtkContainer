@@ -1,0 +1,9 @@
+<def f='include/gtk-2.0/gtk/gtkcontainer.h' l='54' ll='67'/>
+<size>112</size>
+<mbr r='_GtkContainer::widget' o='0' t='GtkWidget'/>
+<mbr r='_GtkContainer::focus_child' o='768' t='GtkWidget *'/>
+<mbr r='_GtkContainer::border_width' o='832' t='guint'/>
+<mbr r='_GtkContainer::need_resize' o='848' t='guint'/>
+<mbr r='_GtkContainer::resize_mode' o='849' t='guint'/>
+<mbr r='_GtkContainer::reallocate_redraws' o='851' t='guint'/>
+<mbr r='_GtkContainer::has_focus_chain' o='852' t='guint'/>

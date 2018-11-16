@@ -1,0 +1,18 @@
+<dec f='include/glib-2.0/gobject/gtype.h' l='1756'/>
+<doc f='include/glib-2.0/gobject/gtype.h' l='1739'>/**
+ * G_DEFINE_INTERFACE:
+ * @TN: The name of the new type, in Camel case.
+ * @t_n: The name of the new type, in lowercase, with words separated by &apos;_&apos;.
+ * @T_P: The #GType of the prerequisite type for the interface, or 0
+ * (%G_TYPE_INVALID) for no prerequisite type.
+ *
+ * A convenience macro for #GTypeInterface definitions, which declares
+ * a default vtable initialization function and defines a *_get_type()
+ * function.
+ *
+ * The macro expects the interface initialization function to have the
+ * name `t_n ## _default_init`, and the interface structure to have the
+ * name `TN ## Interface`.
+ *
+ * Since: 2.24
+ */</doc>

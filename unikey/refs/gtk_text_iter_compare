@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='293' type='gint gtk_text_iter_compare(const GtkTextIter * lhs, const GtkTextIter * rhs)'/>

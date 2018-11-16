@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='346' type='void ibus_quit()'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='338'>/**
+ * ibus_quit:
+ *
+ * Stops an IBus from running.
+ *
+ * Any calls to ibus_quit() for the loop will return.
+ * See also: ibus_main().
+ */</doc>
+<use f='unikey/src/main.cpp' l='30' u='c' c='_ZL20ibus_disconnected_cbP8_IBusBusPv'/>

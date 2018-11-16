@@ -1,0 +1,6 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='656' type='AtkAttributeSet *(*)(AtkObject *)'/>
+<offset>2624</offset>
+<doc f='include/atk-1.0/atk/atkobject.h' l='652'>/*    	
+   * Gets a list of properties applied to this object as a whole, as an #AtkAttributeSet consisting of name-value pairs. 
+   * Since ATK 1.12
+   */</doc>

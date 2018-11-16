@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='900'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='894'>/**
+ * GTK_STOCK_SORT_ASCENDING:
+ *
+ * The &quot;Ascending&quot; item.
+ * &lt;inlinegraphic fileref=&quot;view-sort-ascending.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentrycompletion.h' l='119' type='gboolean gtk_entry_completion_get_popup_set_width(GtkEntryCompletion * completion)'/>

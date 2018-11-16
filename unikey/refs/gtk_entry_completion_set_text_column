@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkentrycompletion.h' l='126' type='void gtk_entry_completion_set_text_column(GtkEntryCompletion * completion, gint column)'/>
+<doc f='include/gtk-2.0/gtk/gtkentrycompletion.h' l='125'>/* convenience */</doc>

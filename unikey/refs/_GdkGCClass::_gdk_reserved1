@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gdk/gdkgc.h' l='216' type='void (*)()'/>
+<offset>1280</offset>
+<doc f='include/gtk-2.0/gdk/gdkgc.h' l='215'>/* Padding for future expansion */</doc>

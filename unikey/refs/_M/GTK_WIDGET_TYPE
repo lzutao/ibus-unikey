@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='154'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='146'>/**
+ * GTK_WIDGET_TYPE:
+ * @wid: a #GtkWidget.
+ *
+ * Gets the type of a widget.
+ *
+ * Deprecated: 2.20: Use G_OBJECT_TYPE() instead.
+ */</doc>

@@ -1,0 +1,10 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='376'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='367'>/**
+ * GTK_WIDGET_HAS_GRAB:
+ * @wid: a #GtkWidget.
+ *
+ * Evaluates to %TRUE if the widget is in the grab_widgets stack, and will be
+ * the preferred one for receiving events other than ones of cosmetic value.
+ *
+ * Deprecated: 2.20: Use gtk_widget_has_grab() instead.
+ */</doc>

@@ -1,0 +1,10 @@
+<dec f='include/atk-1.0/atk/atkversion.h' l='75'/>
+<doc f='include/atk-1.0/atk/atkversion.h' l='66'>/**
+ * ATK_BINARY_AGE:
+ *
+ * Like atk_get_binary_age(), but from the headers used at
+ * application compile time, rather than from the library linked
+ * against at application run time.
+ *
+ * Since: 2.7.4
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusemoji.h' l='123' type='void ibus_emoji_data_set_annotations(IBusEmojiData * emoji, GSList * annotations)'/>
+<doc f='include/ibus-1.0/ibusemoji.h' l='116'>/**
+ * ibus_emoji_data_set_annotations:
+ * @emoji : An #IBusEmojiData
+ * @annotations: (transfer full) (element-type utf8): List of emoji annotations
+ *
+ * Sets the annotation list in #IBusEmojiData.
+ */</doc>

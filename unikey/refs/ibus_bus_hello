@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='162' type='const gchar * ibus_bus_hello(IBusBus * bus)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='153'>/**
+ * ibus_bus_hello:
+ * @bus: An #IBusBus.
+ *
+ * This function sends a &quot;HELLO&quot; message to DBus daemon,
+ * which replies the unique name of current IBus process.
+ *
+ * Returns: The unique name of IBus process in DBus.
+ */</doc>

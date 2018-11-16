@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktexttagtable.h' l='80' type='void gtk_text_tag_table_remove(GtkTextTagTable * table, GtkTextTag * tag)'/>

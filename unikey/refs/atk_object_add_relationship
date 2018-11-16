@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='755' type='gboolean atk_object_add_relationship(AtkObject * object, AtkRelationType relationship, AtkObject * target)'/>

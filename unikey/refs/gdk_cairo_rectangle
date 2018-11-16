@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkcairo.h' l='52' type='void gdk_cairo_rectangle(cairo_t * cr, const GdkRectangle * rectangle)'/>

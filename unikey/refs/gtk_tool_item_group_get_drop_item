@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktoolitemgroup.h' l='93' type='GtkToolItem * gtk_tool_item_group_get_drop_item(GtkToolItemGroup * group, gint x, gint y)'/>

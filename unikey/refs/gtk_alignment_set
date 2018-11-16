@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkalignment.h' l='73' type='void gtk_alignment_set(GtkAlignment * alignment, gfloat xalign, gfloat yalign, gfloat xscale, gfloat yscale)'/>

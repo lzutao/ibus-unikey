@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='426' type='void _gtk_window_unset_focus_and_default(GtkWindow * window, GtkWidget * widget)'/>

@@ -1,0 +1,6 @@
+<dec f='include/ibus-1.0/ibuskeysyms-compat.h' l='132'/>
+<doc f='include/ibus-1.0/ibuskeysyms-compat.h' l='127'>/**
+ * IBUS_Hiragana_Katakana:
+ *
+ * Japanese keyboard support.
+ */</doc>

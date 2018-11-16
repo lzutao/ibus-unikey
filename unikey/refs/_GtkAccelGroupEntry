@@ -1,0 +1,5 @@
+<def f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='187' ll='192'/>
+<size>32</size>
+<mbr r='_GtkAccelGroupEntry::key' o='0' t='GtkAccelKey'/>
+<mbr r='_GtkAccelGroupEntry::closure' o='128' t='GClosure *'/>
+<mbr r='_GtkAccelGroupEntry::accel_path_quark' o='192' t='GQuark'/>

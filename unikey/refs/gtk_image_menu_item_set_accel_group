@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkimagemenuitem.h' l='81' type='void gtk_image_menu_item_set_accel_group(GtkImageMenuItem * image_menu_item, GtkAccelGroup * accel_group)'/>

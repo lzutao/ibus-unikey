@@ -1,0 +1,2 @@
+<dec f='include/cairo/cairo.h' l='1926' type='cairo_operator_t cairo_get_operator(cairo_t * cr)'/>
+<doc f='include/cairo/cairo.h' l='1923'>/* Query functions */</doc>

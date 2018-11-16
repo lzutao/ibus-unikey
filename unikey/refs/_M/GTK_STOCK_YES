@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='980'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='974'>/**
+ * GTK_STOCK_YES:
+ *
+ * The &quot;Yes&quot; item.
+ * &lt;inlinegraphic fileref=&quot;gtk-yes.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

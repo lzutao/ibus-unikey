@@ -1,0 +1,2 @@
+<dec f='include/glib-2.0/gobject/gobject.h' l='488' type='gboolean g_object_is_floating(gpointer object)'/>
+<use f='unikey/src/engine.cpp' l='101' u='c' c='_ZL23ibus_unikey_engine_initP17_IBusUnikeyEngine'/>

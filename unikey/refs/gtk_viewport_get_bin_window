@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkviewport.h' l='86' type='GdkWindow * gtk_viewport_get_bin_window(GtkViewport * viewport)'/>

@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkimage.h' l='80' type='void atk_image_get_image_position(AtkImage * image, gint * x, gint * y, AtkCoordType coord_type)'/>

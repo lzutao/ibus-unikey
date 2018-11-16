@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkrange.h' l='95' type='guint'/>
+<offset>1184</offset>
+<doc f='include/gtk-2.0/gtk/gtkrange.h' l='94'>/*&lt; private &gt;*/</doc>
+<doc f='include/gtk-2.0/gtk/gtkrange.h' l='95'>/* trough click was on the forward side of slider */</doc>

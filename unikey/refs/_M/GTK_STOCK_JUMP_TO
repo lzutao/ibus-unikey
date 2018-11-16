@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='493'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='485'>/**
+ * GTK_STOCK_JUMP_TO:
+ *
+ * The &quot;Jump to&quot; item.
+ * &lt;inlinegraphic fileref=&quot;go-jump-ltr.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ * RTL-variant
+ * &lt;inlinegraphic fileref=&quot;go-jump-rtl.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

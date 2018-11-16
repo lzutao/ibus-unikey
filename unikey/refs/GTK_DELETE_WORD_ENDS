@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkenums.h' l='110' type='1'/>
+<doc f='include/gtk-2.0/gtk/gtkenums.h' l='110'>/* delete only the portion of the word to the
+                                   * left/right of cursor if we&apos;re in the middle
+                                   * of a word */</doc>

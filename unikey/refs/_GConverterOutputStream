@@ -1,0 +1,4 @@
+<def f='include/glib-2.0/gio/gconverteroutputstream.h' l='49' ll='55'/>
+<size>48</size>
+<mbr r='_GConverterOutputStream::parent_instance' o='0' t='GFilterOutputStream'/>
+<mbr r='_GConverterOutputStream::priv' o='320' t='GConverterOutputStreamPrivate *'/>

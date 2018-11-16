@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='188' type='GdkWindow * gdk_display_get_window_at_pointer(GdkDisplay * display, gint * win_x, gint * win_y)'/>

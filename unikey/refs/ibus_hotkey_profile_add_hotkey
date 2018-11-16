@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibushotkey.h' l='104' type='gboolean ibus_hotkey_profile_add_hotkey(IBusHotkeyProfile * profile, guint keyval, guint modifiers, GQuark event)'/>
+<doc f='include/ibus-1.0/ibushotkey.h' l='93'>/**
+ * ibus_hotkey_profile_add_hotkey :
+ * @profile: An IBusHotkeyProfile.
+ * @keyval: Keycode of the hotkey.
+ * @modifiers: Modifiers of the hotkey.
+ * @event: The event to be associated.
+ *
+ * Adds a hotkey and its associated event to an #IBusHotkeyProfile.
+ *
+ * Returns: Always %TRUE.
+ */</doc>

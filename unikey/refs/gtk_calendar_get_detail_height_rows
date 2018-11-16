@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcalendar.h' l='200' type='gint gtk_calendar_get_detail_height_rows(GtkCalendar * calendar)'/>

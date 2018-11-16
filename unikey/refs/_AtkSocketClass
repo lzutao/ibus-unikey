@@ -1,0 +1,4 @@
+<def f='include/atk-1.0/atk/atksocket.h' l='52' ll='60'/>
+<size>360</size>
+<mbr r='_AtkSocketClass::parent_class' o='0' t='AtkObjectClass'/>
+<mbr r='_AtkSocketClass::embed' o='2816' t='void (*)(AtkSocket *, gchar *)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkicontheme.h' l='174' type='GtkIconInfo * gtk_icon_info_new_for_pixbuf(GtkIconTheme * icon_theme, GdkPixbuf * pixbuf)'/>

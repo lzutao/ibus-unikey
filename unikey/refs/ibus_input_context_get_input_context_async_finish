@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusinputcontext.h' l='180' type='IBusInputContext * ibus_input_context_get_input_context_async_finish(GAsyncResult * res, GError ** error)'/>
+<doc f='include/ibus-1.0/ibusinputcontext.h' l='168'>/**
+ * ibus_input_context_get_input_context_async_finish:
+ * @res: A #GAsyncResult obtained from the #GAsyncReadyCallback pass to
+ *      ibus_input_context_get_input_context_async().
+ * @error: Return location for error or %NULL.
+ *
+ * Finishes an operation started with
+ * ibus_input_context_get_input_context_async().
+ *
+ * Returns: (transfer none): An existing #IBusInputContext.
+ */</doc>

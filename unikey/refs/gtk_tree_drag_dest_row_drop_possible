@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktreednd.h' l='108' type='gboolean gtk_tree_drag_dest_row_drop_possible(GtkTreeDragDest * drag_dest, GtkTreePath * dest_path, GtkSelectionData * selection_data)'/>
+<doc f='include/gtk-2.0/gtk/gtktreednd.h' l='107'>/* Returns TRUE if we can drop before path; path may not exist. */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktypeutils.h' l='237' type='GtkType gtk_type_unique(GtkType parent_type, const GtkTypeInfo * gtkinfo)'/>

@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkimage.h' l='86' type='const gchar * atk_image_get_image_locale(AtkImage * image)'/>

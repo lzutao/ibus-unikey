@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkrc.h' l='112' type='void (*)(GtkRcStyle *, GtkRcStyle *)'/>
+<offset>1216</offset>
+<doc f='include/gtk-2.0/gtk/gtkrc.h' l='109'>/* Combine RC style data from src into dest. If overridden, this
+   * function should chain to the parent.
+   */</doc>

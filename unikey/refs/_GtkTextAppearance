@@ -1,0 +1,17 @@
+<def f='include/gtk-2.0/gtk/gtktexttag.h' l='172' ll='212'/>
+<size>64</size>
+<mbr r='_GtkTextAppearance::bg_color' o='0' t='GdkColor'/>
+<mbr r='_GtkTextAppearance::fg_color' o='96' t='GdkColor'/>
+<mbr r='_GtkTextAppearance::bg_stipple' o='192' t='GdkBitmap *'/>
+<mbr r='_GtkTextAppearance::fg_stipple' o='256' t='GdkBitmap *'/>
+<mbr r='_GtkTextAppearance::rise' o='320' t='gint'/>
+<mbr r='_GtkTextAppearance::padding1' o='384' t='gpointer'/>
+<mbr r='_GtkTextAppearance::underline' o='448' t='guint'/>
+<mbr r='_GtkTextAppearance::strikethrough' o='452' t='guint'/>
+<mbr r='_GtkTextAppearance::draw_bg' o='453' t='guint'/>
+<mbr r='_GtkTextAppearance::inside_selection' o='454' t='guint'/>
+<mbr r='_GtkTextAppearance::is_text' o='455' t='guint'/>
+<mbr r='_GtkTextAppearance::pad1' o='456' t='guint'/>
+<mbr r='_GtkTextAppearance::pad2' o='457' t='guint'/>
+<mbr r='_GtkTextAppearance::pad3' o='458' t='guint'/>
+<mbr r='_GtkTextAppearance::pad4' o='459' t='guint'/>

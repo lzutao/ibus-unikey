@@ -1,0 +1,10 @@
+<def f='include/ibus-1.0/ibusproplist.h' l='87' ll='92'/>
+<size>56</size>
+<doc f='include/ibus-1.0/ibusproplist.h' l='81'>/**
+ * IBusPropList:
+ * @properties: GArray that holds IBusProperties.
+ *
+ * An array of IBusProperties.
+ */</doc>
+<mbr r='_IBusPropList::parent' o='0' t='IBusSerializable'/>
+<mbr r='_IBusPropList::properties' o='384' t='GArray *'/>

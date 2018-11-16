@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusattribute.h' l='201' type='IBusAttribute * ibus_attr_underline_new(guint underline_type, guint start_index, guint end_index)'/>
+<doc f='include/ibus-1.0/ibusattribute.h' l='191'>/**
+ * ibus_attr_underline_new:
+ * @underline_type: Type of underline.
+ * @start_index: Where attribute starts.
+ * @end_index: Where attribute ends.
+ *
+ * Creates a new underline #IBusAttribute.
+ *
+ * Returns: (transfer none): A newly allocated #IBusAttribute.
+ */</doc>

@@ -1,0 +1,2 @@
+<dec f='include/unistd.h' l='622' type='long sysconf(int __name)'/>
+<doc f='include/unistd.h' l='621'>/* Get the value of the system variable NAME.  */</doc>

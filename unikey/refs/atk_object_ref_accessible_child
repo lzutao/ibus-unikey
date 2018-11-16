@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='700' type='AtkObject * atk_object_ref_accessible_child(AtkObject * accessible, gint i)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreemodel.h' l='126' type='GtkTreePath * gtk_tree_path_new_from_string(const gchar * path)'/>

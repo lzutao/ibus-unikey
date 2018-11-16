@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gtk/gtkitem.h' l='56' ll='69'/>
+<size>880</size>
+<mbr r='_GtkItemClass::parent_class' o='0' t='GtkBinClass'/>
+<mbr r='_GtkItemClass::select' o='6592' t='void (*)(GtkItem *)'/>
+<mbr r='_GtkItemClass::deselect' o='6656' t='void (*)(GtkItem *)'/>
+<mbr r='_GtkItemClass::toggle' o='6720' t='void (*)(GtkItem *)'/>
+<mbr r='_GtkItemClass::_gtk_reserved1' o='6784' t='void (*)()'/>
+<mbr r='_GtkItemClass::_gtk_reserved2' o='6848' t='void (*)()'/>
+<mbr r='_GtkItemClass::_gtk_reserved3' o='6912' t='void (*)()'/>
+<mbr r='_GtkItemClass::_gtk_reserved4' o='6976' t='void (*)()'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkdnd.h' l='118' type='void gtk_drag_source_set_icon(GtkWidget * widget, GdkColormap * colormap, GdkPixmap * pixmap, GdkBitmap * mask)'/>

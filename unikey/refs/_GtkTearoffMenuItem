@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtktearoffmenuitem.h' l='51' ll='56'/>
+<size>168</size>
+<mbr r='_GtkTearoffMenuItem::menu_item' o='0' t='GtkMenuItem'/>
+<mbr r='_GtkTearoffMenuItem::torn_off' o='1280' t='guint'/>

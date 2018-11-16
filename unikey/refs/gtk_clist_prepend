@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='680' type='gint gtk_clist_prepend(GtkCList * clist, gchar ** text)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='677'>/* prepend/append returns the index of the row you just added,
+ * making it easier to append and modify a row
+ */</doc>

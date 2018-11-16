@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusregistry.h' l='107' type='void ibus_registry_load(IBusRegistry * registry)'/>
+<doc f='include/ibus-1.0/ibusregistry.h' l='98'>/**
+ * ibus_registry_load:
+ * @registry: An #IBusRegistry.
+ *
+ * Read all XML files in a IBus component directory (typically
+ * /usr/share/ibus/component/ *.xml) and update the registry object.
+ * IBUS_COMPONENT_PATH environment valuable is also available for
+ * the custom component directories, whose delimiter is &apos;:&apos;.
+ */</doc>

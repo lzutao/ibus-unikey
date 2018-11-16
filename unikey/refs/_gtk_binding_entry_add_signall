@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkbindings.h' l='150' type='void _gtk_binding_entry_add_signall(GtkBindingSet * binding_set, guint keyval, GdkModifierType modifiers, const gchar * signal_name, GSList * binding_args)'/>

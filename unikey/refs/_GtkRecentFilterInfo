@@ -1,0 +1,9 @@
+<def f='include/gtk-2.0/gtk/gtkrecentfilter.h' l='51' ll='62'/>
+<size>56</size>
+<mbr r='_GtkRecentFilterInfo::contains' o='0' t='GtkRecentFilterFlags'/>
+<mbr r='_GtkRecentFilterInfo::uri' o='64' t='const gchar *'/>
+<mbr r='_GtkRecentFilterInfo::display_name' o='128' t='const gchar *'/>
+<mbr r='_GtkRecentFilterInfo::mime_type' o='192' t='const gchar *'/>
+<mbr r='_GtkRecentFilterInfo::applications' o='256' t='const gchar **'/>
+<mbr r='_GtkRecentFilterInfo::groups' o='320' t='const gchar **'/>
+<mbr r='_GtkRecentFilterInfo::age' o='384' t='gint'/>

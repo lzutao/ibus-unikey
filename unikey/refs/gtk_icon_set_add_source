@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconfactory.h' l='139' type='void gtk_icon_set_add_source(GtkIconSet * icon_set, const GtkIconSource * source)'/>

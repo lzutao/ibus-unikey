@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-fontmap.h' l='67' type='void pango_font_map_list_families(PangoFontMap * fontmap, PangoFontFamily *** families, int * n_families)'/>

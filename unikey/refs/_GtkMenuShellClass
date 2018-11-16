@@ -1,0 +1,15 @@
+<def f='include/gtk-2.0/gtk/gtkmenushell.h' l='71' ll='97'/>
+<size>920</size>
+<mbr r='_GtkMenuShellClass::parent_class' o='0' t='GtkContainerClass'/>
+<mbr r='_GtkMenuShellClass::submenu_placement' o='6592' t='guint'/>
+<mbr r='_GtkMenuShellClass::deactivate' o='6656' t='void (*)(GtkMenuShell *)'/>
+<mbr r='_GtkMenuShellClass::selection_done' o='6720' t='void (*)(GtkMenuShell *)'/>
+<mbr r='_GtkMenuShellClass::move_current' o='6784' t='void (*)(GtkMenuShell *, GtkMenuDirectionType)'/>
+<mbr r='_GtkMenuShellClass::activate_current' o='6848' t='void (*)(GtkMenuShell *, gboolean)'/>
+<mbr r='_GtkMenuShellClass::cancel' o='6912' t='void (*)(GtkMenuShell *)'/>
+<mbr r='_GtkMenuShellClass::select_item' o='6976' t='void (*)(GtkMenuShell *, GtkWidget *)'/>
+<mbr r='_GtkMenuShellClass::insert' o='7040' t='void (*)(GtkMenuShell *, GtkWidget *, gint)'/>
+<mbr r='_GtkMenuShellClass::get_popup_delay' o='7104' t='gint (*)(GtkMenuShell *)'/>
+<mbr r='_GtkMenuShellClass::move_selected' o='7168' t='gboolean (*)(GtkMenuShell *, gint)'/>
+<mbr r='_GtkMenuShellClass::_gtk_reserved1' o='7232' t='void (*)()'/>
+<mbr r='_GtkMenuShellClass::_gtk_reserved2' o='7296' t='void (*)()'/>

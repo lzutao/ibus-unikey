@@ -1,0 +1,9 @@
+<def f='include/gtk-2.0/gtk/gtkvseparator.h' l='58' ll='61'/>
+<size>96</size>
+<doc f='include/gtk-2.0/gtk/gtkvseparator.h' l='52'>/**
+ * GtkVSeparator:
+ *
+ * The #GtkVSeparator struct contains private data only, and
+ * should be accessed using the functions below.
+ */</doc>
+<mbr r='_GtkVSeparator::separator' o='0' t='GtkSeparator'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktoggletoolbutton.h' l='73' type='gboolean gtk_toggle_tool_button_get_active(GtkToggleToolButton * button)'/>

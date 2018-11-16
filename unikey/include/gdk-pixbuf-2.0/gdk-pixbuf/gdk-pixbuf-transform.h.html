@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gdk-pixbuf-transform.h source code [include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-transform.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-transform.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gdk-pixbuf-2.0</a>/<a href='./'>gdk-pixbuf</a>/<a href='gdk-pixbuf-transform.h.html'>gdk-pixbuf-transform.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GdkPixbuf library - transformations</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright (C) 2003 The Free Software Foundation</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * Authors: Mark Crichton &lt;crichton@gimp.org&gt;</i></td></tr>
+<tr><th id="6">6</th><td><i> *          Miguel de Icaza &lt;miguel@gnu.org&gt;</i></td></tr>
+<tr><th id="7">7</th><td><i> *          Federico Mena-Quintero &lt;federico@gimp.org&gt;</i></td></tr>
+<tr><th id="8">8</th><td><i> *          Havoc Pennington &lt;hp@redhat.com&gt;</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="11">11</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="12">12</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="13">13</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="14">14</th><td><i> *</i></td></tr>
+<tr><th id="15">15</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="16">16</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="17">17</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="18">18</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="19">19</th><td><i> *</i></td></tr>
+<tr><th id="20">20</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="21">21</th><td><i> * License along with this library; if not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="22">22</th><td><i> */</i></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="24">ifndef</span> <span class="macro" data-ref="_M/GDK_PIXBUF_TRANSFORM_H">GDK_PIXBUF_TRANSFORM_H</span></u></td></tr>
+<tr><th id="25">25</th><td><u>#define <dfn class="macro" id="_M/GDK_PIXBUF_TRANSFORM_H" data-ref="_M/GDK_PIXBUF_TRANSFORM_H">GDK_PIXBUF_TRANSFORM_H</dfn></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">if</span> defined(<span class="macro" data-ref="_M/GDK_PIXBUF_DISABLE_SINGLE_INCLUDES">GDK_PIXBUF_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gdk-pixbuf.h.html#27" data-ref="_M/GDK_PIXBUF_H_INSIDE">GDK_PIXBUF_H_INSIDE</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GDK_PIXBUF_COMPILATION">GDK_PIXBUF_COMPILATION</span>)</u></td></tr>
+<tr><th id="28">28</th><td><u>#error "Only &lt;gdk-pixbuf/gdk-pixbuf.h&gt; can be included directly."</u></td></tr>
+<tr><th id="29">29</th><td><u>#<span data-ppcond="27">endif</span></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="../../glib-2.0/glib.h.html">&lt;glib.h&gt;</a></u></td></tr>
+<tr><th id="32">32</th><td><u>#include <a href="gdk-pixbuf-core.h.html">&lt;gdk-pixbuf/gdk-pixbuf-core.h&gt;</a></u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><i>/* Scaling */</i></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * GdkInterpType:</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> *<span class="command"> @GDK</span>_INTERP_NEAREST: Nearest neighbor sampling; this is the fastest</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> *  and lowest quality mode. Quality is normally unacceptable when scaling </i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> *  down, but may be OK when scaling up.</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> *<span class="command"> @GDK</span>_INTERP_TILES: This is an accurate simulation of the PostScript</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> *  image operator without any interpolation enabled.  Each pixel is</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> *  rendered as a tiny parallelogram of solid color, the edges of which</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> *  are implemented with antialiasing.  It resembles nearest neighbor for</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> *  enlargement, and bilinear for reduction.</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> *<span class="command"> @GDK</span>_INTERP_BILINEAR: Best quality/speed balance; use this mode by</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> *  default. Bilinear interpolation.  For enlargement, it is</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> *  equivalent to point-sampling the ideal bilinear-interpolated image.</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> *  For reduction, it is equivalent to laying down small tiles and</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> *  integrating over the coverage area.</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> *<span class="command"> @GDK</span>_INTERP_HYPER: This is the slowest and highest quality</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> *  reconstruction function. It is derived from the hyperbolic filters in</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> *  Wolberg's "Digital Image Warping", and is formally defined as the</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> *  hyperbolic-filter sampling the ideal hyperbolic-filter interpolated</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> *  image (the filter is designed to be idempotent for 1:1 pixel mapping).</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"> *  This enumeration describes the different interpolation modes that</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> *  can be used with the scaling functions.<span class="command"> @GDK</span>_INTERP_NEAREST is </i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> *  the fastest scaling method, but has horrible quality when </i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> *  scaling down.<span class="command"> @GDK</span>_INTERP_BILINEAR is the best choice if you </i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> *  aren't sure what to choose, it has a good speed/quality balance.</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> *  &lt;note&gt;</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> * 	Cubic filtering is missing from the list; hyperbolic</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> * 	interpolation is just as fast and results in higher quality.</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> *  &lt;/note&gt;</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="71">71</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="72">72</th><td>	<dfn class="enum" id="GDK_INTERP_NEAREST" title='GDK_INTERP_NEAREST' data-ref="GDK_INTERP_NEAREST">GDK_INTERP_NEAREST</dfn>,</td></tr>
+<tr><th id="73">73</th><td>	<dfn class="enum" id="GDK_INTERP_TILES" title='GDK_INTERP_TILES' data-ref="GDK_INTERP_TILES">GDK_INTERP_TILES</dfn>,</td></tr>
+<tr><th id="74">74</th><td>	<dfn class="enum" id="GDK_INTERP_BILINEAR" title='GDK_INTERP_BILINEAR' data-ref="GDK_INTERP_BILINEAR">GDK_INTERP_BILINEAR</dfn>,</td></tr>
+<tr><th id="75">75</th><td>	<dfn class="enum" id="GDK_INTERP_HYPER" title='GDK_INTERP_HYPER' data-ref="GDK_INTERP_HYPER">GDK_INTERP_HYPER</dfn></td></tr>
+<tr><th id="76">76</th><td>} <dfn class="typedef" id="GdkInterpType" title='GdkInterpType' data-type='enum GdkInterpType' data-ref="GdkInterpType">GdkInterpType</dfn>;</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> * GdkPixbufRotation:</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> *<span class="command"> @GDK</span>_PIXBUF_ROTATE_NONE: No rotation.</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> *<span class="command"> @GDK</span>_PIXBUF_ROTATE_COUNTERCLOCKWISE: Rotate by 90 degrees.</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc"> *<span class="command"> @GDK</span>_PIXBUF_ROTATE_UPSIDEDOWN: Rotate by 180 degrees.</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc"> *<span class="command"> @GDK</span>_PIXBUF_ROTATE_CLOCKWISE: Rotate by 270 degrees.</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> * The possible rotations which can be passed to gdk_pixbuf_rotate_simple().</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> * To make them easier to use, their numerical values are the actual degrees.</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="88">88</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="89">89</th><td>	<dfn class="enum" id="GDK_PIXBUF_ROTATE_NONE" title='GDK_PIXBUF_ROTATE_NONE' data-ref="GDK_PIXBUF_ROTATE_NONE">GDK_PIXBUF_ROTATE_NONE</dfn>             =   <var>0</var>,</td></tr>
+<tr><th id="90">90</th><td>	<dfn class="enum" id="GDK_PIXBUF_ROTATE_COUNTERCLOCKWISE" title='GDK_PIXBUF_ROTATE_COUNTERCLOCKWISE' data-ref="GDK_PIXBUF_ROTATE_COUNTERCLOCKWISE">GDK_PIXBUF_ROTATE_COUNTERCLOCKWISE</dfn> =  <var>90</var>,</td></tr>
+<tr><th id="91">91</th><td>	<dfn class="enum" id="GDK_PIXBUF_ROTATE_UPSIDEDOWN" title='GDK_PIXBUF_ROTATE_UPSIDEDOWN' data-ref="GDK_PIXBUF_ROTATE_UPSIDEDOWN">GDK_PIXBUF_ROTATE_UPSIDEDOWN</dfn>       = <var>180</var>,</td></tr>
+<tr><th id="92">92</th><td>	<dfn class="enum" id="GDK_PIXBUF_ROTATE_CLOCKWISE" title='GDK_PIXBUF_ROTATE_CLOCKWISE' data-ref="GDK_PIXBUF_ROTATE_CLOCKWISE">GDK_PIXBUF_ROTATE_CLOCKWISE</dfn>        = <var>270</var></td></tr>
+<tr><th id="93">93</th><td>} <dfn class="typedef" id="GdkPixbufRotation" title='GdkPixbufRotation' data-type='enum GdkPixbufRotation' data-ref="GdkPixbufRotation">GdkPixbufRotation</dfn>;</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="96">96</th><td><em>void</em> <dfn class="decl" id="gdk_pixbuf_scale" title='gdk_pixbuf_scale' data-ref="gdk_pixbuf_scale">gdk_pixbuf_scale</dfn>           (<em>const</em> <a class="typedef" href="gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col3 decl" id="13903src" title='src' data-type='const GdkPixbuf *' data-ref="13903src">src</dfn>,</td></tr>
+<tr><th id="97">97</th><td>				 <a class="typedef" href="gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>       *<dfn class="local col4 decl" id="13904dest" title='dest' data-type='GdkPixbuf *' data-ref="13904dest">dest</dfn>,</td></tr>
+<tr><th id="98">98</th><td>				 <em>int</em>              <dfn class="local col5 decl" id="13905dest_x" title='dest_x' data-type='int' data-ref="13905dest_x">dest_x</dfn>,</td></tr>
+<tr><th id="99">99</th><td>				 <em>int</em>              <dfn class="local col6 decl" id="13906dest_y" title='dest_y' data-type='int' data-ref="13906dest_y">dest_y</dfn>,</td></tr>
+<tr><th id="100">100</th><td>				 <em>int</em>              <dfn class="local col7 decl" id="13907dest_width" title='dest_width' data-type='int' data-ref="13907dest_width">dest_width</dfn>,</td></tr>
+<tr><th id="101">101</th><td>				 <em>int</em>              <dfn class="local col8 decl" id="13908dest_height" title='dest_height' data-type='int' data-ref="13908dest_height">dest_height</dfn>,</td></tr>
+<tr><th id="102">102</th><td>				 <em>double</em>           <dfn class="local col9 decl" id="13909offset_x" title='offset_x' data-type='double' data-ref="13909offset_x">offset_x</dfn>,</td></tr>
+<tr><th id="103">103</th><td>				 <em>double</em>           <dfn class="local col0 decl" id="13910offset_y" title='offset_y' data-type='double' data-ref="13910offset_y">offset_y</dfn>,</td></tr>
+<tr><th id="104">104</th><td>				 <em>double</em>           <dfn class="local col1 decl" id="13911scale_x" title='scale_x' data-type='double' data-ref="13911scale_x">scale_x</dfn>,</td></tr>
+<tr><th id="105">105</th><td>				 <em>double</em>           <dfn class="local col2 decl" id="13912scale_y" title='scale_y' data-type='double' data-ref="13912scale_y">scale_y</dfn>,</td></tr>
+<tr><th id="106">106</th><td>				 <a class="typedef" href="#GdkInterpType" title='GdkInterpType' data-type='enum GdkInterpType' data-ref="GdkInterpType">GdkInterpType</a>    <dfn class="local col3 decl" id="13913interp_type" title='interp_type' data-type='GdkInterpType' data-ref="13913interp_type">interp_type</dfn>);</td></tr>
+<tr><th id="107">107</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="108">108</th><td><em>void</em> <dfn class="decl" id="gdk_pixbuf_composite" title='gdk_pixbuf_composite' data-ref="gdk_pixbuf_composite">gdk_pixbuf_composite</dfn>       (<em>const</em> <a class="typedef" href="gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col4 decl" id="13914src" title='src' data-type='const GdkPixbuf *' data-ref="13914src">src</dfn>,</td></tr>
+<tr><th id="109">109</th><td>				 <a class="typedef" href="gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>       *<dfn class="local col5 decl" id="13915dest" title='dest' data-type='GdkPixbuf *' data-ref="13915dest">dest</dfn>,</td></tr>
+<tr><th id="110">110</th><td>				 <em>int</em>              <dfn class="local col6 decl" id="13916dest_x" title='dest_x' data-type='int' data-ref="13916dest_x">dest_x</dfn>,</td></tr>
+<tr><th id="111">111</th><td>				 <em>int</em>              <dfn class="local col7 decl" id="13917dest_y" title='dest_y' data-type='int' data-ref="13917dest_y">dest_y</dfn>,</td></tr>
+<tr><th id="112">112</th><td>				 <em>int</em>              <dfn class="local col8 decl" id="13918dest_width" title='dest_width' data-type='int' data-ref="13918dest_width">dest_width</dfn>,</td></tr>
+<tr><th id="113">113</th><td>				 <em>int</em>              <dfn class="local col9 decl" id="13919dest_height" title='dest_height' data-type='int' data-ref="13919dest_height">dest_height</dfn>,</td></tr>
+<tr><th id="114">114</th><td>				 <em>double</em>           <dfn class="local col0 decl" id="13920offset_x" title='offset_x' data-type='double' data-ref="13920offset_x">offset_x</dfn>,</td></tr>
+<tr><th id="115">115</th><td>				 <em>double</em>           <dfn class="local col1 decl" id="13921offset_y" title='offset_y' data-type='double' data-ref="13921offset_y">offset_y</dfn>,</td></tr>
+<tr><th id="116">116</th><td>				 <em>double</em>           <dfn class="local col2 decl" id="13922scale_x" title='scale_x' data-type='double' data-ref="13922scale_x">scale_x</dfn>,</td></tr>
+<tr><th id="117">117</th><td>				 <em>double</em>           <dfn class="local col3 decl" id="13923scale_y" title='scale_y' data-type='double' data-ref="13923scale_y">scale_y</dfn>,</td></tr>
+<tr><th id="118">118</th><td>				 <a class="typedef" href="#GdkInterpType" title='GdkInterpType' data-type='enum GdkInterpType' data-ref="GdkInterpType">GdkInterpType</a>    <dfn class="local col4 decl" id="13924interp_type" title='interp_type' data-type='GdkInterpType' data-ref="13924interp_type">interp_type</dfn>,</td></tr>
+<tr><th id="119">119</th><td>				 <em>int</em>              <dfn class="local col5 decl" id="13925overall_alpha" title='overall_alpha' data-type='int' data-ref="13925overall_alpha">overall_alpha</dfn>);</td></tr>
+<tr><th id="120">120</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="121">121</th><td><em>void</em> <dfn class="decl" id="gdk_pixbuf_composite_color" title='gdk_pixbuf_composite_color' data-ref="gdk_pixbuf_composite_color">gdk_pixbuf_composite_color</dfn> (<em>const</em> <a class="typedef" href="gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col6 decl" id="13926src" title='src' data-type='const GdkPixbuf *' data-ref="13926src">src</dfn>,</td></tr>
+<tr><th id="122">122</th><td>				 <a class="typedef" href="gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>       *<dfn class="local col7 decl" id="13927dest" title='dest' data-type='GdkPixbuf *' data-ref="13927dest">dest</dfn>,</td></tr>
+<tr><th id="123">123</th><td>				 <em>int</em>              <dfn class="local col8 decl" id="13928dest_x" title='dest_x' data-type='int' data-ref="13928dest_x">dest_x</dfn>,</td></tr>
+<tr><th id="124">124</th><td>				 <em>int</em>              <dfn class="local col9 decl" id="13929dest_y" title='dest_y' data-type='int' data-ref="13929dest_y">dest_y</dfn>,</td></tr>
+<tr><th id="125">125</th><td>				 <em>int</em>              <dfn class="local col0 decl" id="13930dest_width" title='dest_width' data-type='int' data-ref="13930dest_width">dest_width</dfn>,</td></tr>
+<tr><th id="126">126</th><td>				 <em>int</em>              <dfn class="local col1 decl" id="13931dest_height" title='dest_height' data-type='int' data-ref="13931dest_height">dest_height</dfn>,</td></tr>
+<tr><th id="127">127</th><td>				 <em>double</em>           <dfn class="local col2 decl" id="13932offset_x" title='offset_x' data-type='double' data-ref="13932offset_x">offset_x</dfn>,</td></tr>
+<tr><th id="128">128</th><td>				 <em>double</em>           <dfn class="local col3 decl" id="13933offset_y" title='offset_y' data-type='double' data-ref="13933offset_y">offset_y</dfn>,</td></tr>
+<tr><th id="129">129</th><td>				 <em>double</em>           <dfn class="local col4 decl" id="13934scale_x" title='scale_x' data-type='double' data-ref="13934scale_x">scale_x</dfn>,</td></tr>
+<tr><th id="130">130</th><td>				 <em>double</em>           <dfn class="local col5 decl" id="13935scale_y" title='scale_y' data-type='double' data-ref="13935scale_y">scale_y</dfn>,</td></tr>
+<tr><th id="131">131</th><td>				 <a class="typedef" href="#GdkInterpType" title='GdkInterpType' data-type='enum GdkInterpType' data-ref="GdkInterpType">GdkInterpType</a>    <dfn class="local col6 decl" id="13936interp_type" title='interp_type' data-type='GdkInterpType' data-ref="13936interp_type">interp_type</dfn>,</td></tr>
+<tr><th id="132">132</th><td>				 <em>int</em>              <dfn class="local col7 decl" id="13937overall_alpha" title='overall_alpha' data-type='int' data-ref="13937overall_alpha">overall_alpha</dfn>,</td></tr>
+<tr><th id="133">133</th><td>				 <em>int</em>              <dfn class="local col8 decl" id="13938check_x" title='check_x' data-type='int' data-ref="13938check_x">check_x</dfn>,</td></tr>
+<tr><th id="134">134</th><td>				 <em>int</em>              <dfn class="local col9 decl" id="13939check_y" title='check_y' data-type='int' data-ref="13939check_y">check_y</dfn>,</td></tr>
+<tr><th id="135">135</th><td>				 <em>int</em>              <dfn class="local col0 decl" id="13940check_size" title='check_size' data-type='int' data-ref="13940check_size">check_size</dfn>,</td></tr>
+<tr><th id="136">136</th><td>				 <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span>          <dfn class="local col1 decl" id="13941color1" title='color1' data-type='guint32' data-ref="13941color1">color1</dfn>,</td></tr>
+<tr><th id="137">137</th><td>				 <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span>          <dfn class="local col2 decl" id="13942color2" title='color2' data-type='guint32' data-ref="13942color2">color2</dfn>);</td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="140">140</th><td><a class="typedef" href="gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_scale_simple" title='gdk_pixbuf_scale_simple' data-ref="gdk_pixbuf_scale_simple">gdk_pixbuf_scale_simple</dfn>           (<em>const</em> <a class="typedef" href="gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col3 decl" id="13943src" title='src' data-type='const GdkPixbuf *' data-ref="13943src">src</dfn>,</td></tr>
+<tr><th id="141">141</th><td>					      <em>int</em>              <dfn class="local col4 decl" id="13944dest_width" title='dest_width' data-type='int' data-ref="13944dest_width">dest_width</dfn>,</td></tr>
+<tr><th id="142">142</th><td>					      <em>int</em>              <dfn class="local col5 decl" id="13945dest_height" title='dest_height' data-type='int' data-ref="13945dest_height">dest_height</dfn>,</td></tr>
+<tr><th id="143">143</th><td>					      <a class="typedef" href="#GdkInterpType" title='GdkInterpType' data-type='enum GdkInterpType' data-ref="GdkInterpType">GdkInterpType</a>    <dfn class="local col6 decl" id="13946interp_type" title='interp_type' data-type='GdkInterpType' data-ref="13946interp_type">interp_type</dfn>);</td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="146">146</th><td><a class="typedef" href="gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_composite_color_simple" title='gdk_pixbuf_composite_color_simple' data-ref="gdk_pixbuf_composite_color_simple">gdk_pixbuf_composite_color_simple</dfn> (<em>const</em> <a class="typedef" href="gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="local col7 decl" id="13947src" title='src' data-type='const GdkPixbuf *' data-ref="13947src">src</dfn>,</td></tr>
+<tr><th id="147">147</th><td>					      <em>int</em>              <dfn class="local col8 decl" id="13948dest_width" title='dest_width' data-type='int' data-ref="13948dest_width">dest_width</dfn>,</td></tr>
+<tr><th id="148">148</th><td>					      <em>int</em>              <dfn class="local col9 decl" id="13949dest_height" title='dest_height' data-type='int' data-ref="13949dest_height">dest_height</dfn>,</td></tr>
+<tr><th id="149">149</th><td>					      <a class="typedef" href="#GdkInterpType" title='GdkInterpType' data-type='enum GdkInterpType' data-ref="GdkInterpType">GdkInterpType</a>    <dfn class="local col0 decl" id="13950interp_type" title='interp_type' data-type='GdkInterpType' data-ref="13950interp_type">interp_type</dfn>,</td></tr>
+<tr><th id="150">150</th><td>					      <em>int</em>              <dfn class="local col1 decl" id="13951overall_alpha" title='overall_alpha' data-type='int' data-ref="13951overall_alpha">overall_alpha</dfn>,</td></tr>
+<tr><th id="151">151</th><td>					      <em>int</em>              <dfn class="local col2 decl" id="13952check_size" title='check_size' data-type='int' data-ref="13952check_size">check_size</dfn>,</td></tr>
+<tr><th id="152">152</th><td>					      <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span>          <dfn class="local col3 decl" id="13953color1" title='color1' data-type='guint32' data-ref="13953color1">color1</dfn>,</td></tr>
+<tr><th id="153">153</th><td>					      <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span>          <dfn class="local col4 decl" id="13954color2" title='color2' data-type='guint32' data-ref="13954color2">color2</dfn>);</td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#388" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_6">GDK_PIXBUF_AVAILABLE_IN_2_6</a></td></tr>
+<tr><th id="156">156</th><td><a class="typedef" href="gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_rotate_simple" title='gdk_pixbuf_rotate_simple' data-ref="gdk_pixbuf_rotate_simple">gdk_pixbuf_rotate_simple</dfn>          (<em>const</em> <a class="typedef" href="gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>   *<dfn class="local col5 decl" id="13955src" title='src' data-type='const GdkPixbuf *' data-ref="13955src">src</dfn>,</td></tr>
+<tr><th id="157">157</th><td>				              <a class="typedef" href="#GdkPixbufRotation" title='GdkPixbufRotation' data-type='enum GdkPixbufRotation' data-ref="GdkPixbufRotation">GdkPixbufRotation</a>  <dfn class="local col6 decl" id="13956angle" title='angle' data-type='GdkPixbufRotation' data-ref="13956angle">angle</dfn>);</td></tr>
+<tr><th id="158">158</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#388" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_6">GDK_PIXBUF_AVAILABLE_IN_2_6</a></td></tr>
+<tr><th id="159">159</th><td><a class="typedef" href="gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a> *<dfn class="decl" id="gdk_pixbuf_flip" title='gdk_pixbuf_flip' data-ref="gdk_pixbuf_flip">gdk_pixbuf_flip</dfn>                   (<em>const</em> <a class="typedef" href="gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>   *<dfn class="local col7 decl" id="13957src" title='src' data-type='const GdkPixbuf *' data-ref="13957src">src</dfn>,</td></tr>
+<tr><th id="160">160</th><td>				              <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>           <dfn class="local col8 decl" id="13958horizontal" title='horizontal' data-type='gboolean' data-ref="13958horizontal">horizontal</dfn>);</td></tr>
+<tr><th id="161">161</th><td>				     </td></tr>
+<tr><th id="162">162</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="163">163</th><td></td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td><u>#<span data-ppcond="24">endif</span>  /* GDK_PIXBUF_TRANSFORM_H */</u></td></tr>
+<tr><th id="166">166</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

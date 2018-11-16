@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='481' type='void gtk_clist_freeze(GtkCList * clist)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='477'>/* freeze all visual updates of the list, and then thaw the list after
+ * you have made a number of changes and the updates wil occure in a
+ * more efficent mannor than if you made them on a unfrozen list
+ */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='671' type='void gdk_window_invalidate_maybe_recurse(GdkWindow * window, const GdkRegion * region, gboolean (*)(GdkWindow *, gpointer) child_func, gpointer user_data)'/>

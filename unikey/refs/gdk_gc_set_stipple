@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkgc.h' l='250' type='void gdk_gc_set_stipple(GdkGC * gc, GdkPixmap * stipple)'/>

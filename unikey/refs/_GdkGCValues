@@ -1,0 +1,20 @@
+<def f='include/gtk-2.0/gdk/gdkgc.h' l='160' ll='180'/>
+<size>104</size>
+<mbr r='_GdkGCValues::foreground' o='0' t='GdkColor'/>
+<mbr r='_GdkGCValues::background' o='96' t='GdkColor'/>
+<mbr r='_GdkGCValues::font' o='192' t='GdkFont *'/>
+<mbr r='_GdkGCValues::function' o='256' t='GdkFunction'/>
+<mbr r='_GdkGCValues::fill' o='288' t='GdkFill'/>
+<mbr r='_GdkGCValues::tile' o='320' t='GdkPixmap *'/>
+<mbr r='_GdkGCValues::stipple' o='384' t='GdkPixmap *'/>
+<mbr r='_GdkGCValues::clip_mask' o='448' t='GdkPixmap *'/>
+<mbr r='_GdkGCValues::subwindow_mode' o='512' t='GdkSubwindowMode'/>
+<mbr r='_GdkGCValues::ts_x_origin' o='544' t='gint'/>
+<mbr r='_GdkGCValues::ts_y_origin' o='576' t='gint'/>
+<mbr r='_GdkGCValues::clip_x_origin' o='608' t='gint'/>
+<mbr r='_GdkGCValues::clip_y_origin' o='640' t='gint'/>
+<mbr r='_GdkGCValues::graphics_exposures' o='672' t='gint'/>
+<mbr r='_GdkGCValues::line_width' o='704' t='gint'/>
+<mbr r='_GdkGCValues::line_style' o='736' t='GdkLineStyle'/>
+<mbr r='_GdkGCValues::cap_style' o='768' t='GdkCapStyle'/>
+<mbr r='_GdkGCValues::join_style' o='800' t='GdkJoinStyle'/>

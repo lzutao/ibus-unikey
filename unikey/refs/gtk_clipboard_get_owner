@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkclipboard.h' l='93' type='GObject * gtk_clipboard_get_owner(GtkClipboard * clipboard)'/>

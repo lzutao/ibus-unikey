@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-attributes.h' l='443' type='void pango_attribute_init(PangoAttribute * attr, const PangoAttrClass * klass)'/>

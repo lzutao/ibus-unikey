@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='412' type='void gtk_ctree_set_spacing(GtkCTree * ctree, gint spacing)'/>

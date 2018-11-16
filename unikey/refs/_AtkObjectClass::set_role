@@ -1,0 +1,5 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='593' type='void (*)(AtkObject *, AtkRole)'/>
+<offset>1984</offset>
+<doc f='include/atk-1.0/atk/atkobject.h' l='590'>/*
+   * Sets the accessible role of the object
+   */</doc>

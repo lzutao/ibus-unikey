@@ -1,0 +1,13 @@
+<def f='include/gtk-2.0/gdk/gdkevents.h' l='328' ll='340'/>
+<size>72</size>
+<mbr r='_GdkEventScroll::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventScroll::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventScroll::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventScroll::time' o='160' t='guint32'/>
+<mbr r='_GdkEventScroll::x' o='192' t='gdouble'/>
+<mbr r='_GdkEventScroll::y' o='256' t='gdouble'/>
+<mbr r='_GdkEventScroll::state' o='320' t='guint'/>
+<mbr r='_GdkEventScroll::direction' o='352' t='GdkScrollDirection'/>
+<mbr r='_GdkEventScroll::device' o='384' t='GdkDevice *'/>
+<mbr r='_GdkEventScroll::x_root' o='448' t='gdouble'/>
+<mbr r='_GdkEventScroll::y_root' o='512' t='gdouble'/>

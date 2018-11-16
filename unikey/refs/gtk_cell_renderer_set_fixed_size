@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcellrenderer.h' l='156' type='void gtk_cell_renderer_set_fixed_size(GtkCellRenderer * cell, gint width, gint height)'/>

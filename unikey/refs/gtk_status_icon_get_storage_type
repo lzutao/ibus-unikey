@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkstatusicon.h' l='100' type='GtkImageType gtk_status_icon_get_storage_type(GtkStatusIcon * status_icon)'/>

@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-matrix.h' l='126' type='void pango_matrix_get_font_scale_factors(const PangoMatrix * matrix, double * xscale, double * yscale)'/>

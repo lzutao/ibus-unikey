@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusenginedesc.h' l='202' type='const gchar * ibus_engine_desc_get_license(IBusEngineDesc * info)'/>
+<doc f='include/ibus-1.0/ibusenginedesc.h' l='194'>/**
+ * ibus_engine_desc_get_license:
+ * @info: An IBusEngineDesc
+ *
+ * Gets the license property in IBusEngineDesc. It should not be freed.
+ *
+ * Returns: license property in IBusEngineDesc
+ */</doc>

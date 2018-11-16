@@ -1,0 +1,11 @@
+<def f='include/gtk-2.0/gtk/gtkfontsel.h' l='103' ll='125'/>
+<size>320</size>
+<mbr r='_GtkFontSelectionDialog::parent_instance' o='0' t='GtkDialog'/>
+<mbr r='_GtkFontSelectionDialog::fontsel' o='2112' t='GtkWidget *'/>
+<mbr r='_GtkFontSelectionDialog::main_vbox' o='2176' t='GtkWidget *'/>
+<mbr r='_GtkFontSelectionDialog::action_area' o='2240' t='GtkWidget *'/>
+<mbr r='_GtkFontSelectionDialog::ok_button' o='2304' t='GtkWidget *'/>
+<mbr r='_GtkFontSelectionDialog::apply_button' o='2368' t='GtkWidget *'/>
+<mbr r='_GtkFontSelectionDialog::cancel_button' o='2432' t='GtkWidget *'/>
+<mbr r='_GtkFontSelectionDialog::dialog_width' o='2496' t='gint'/>
+<mbr r='_GtkFontSelectionDialog::auto_resize' o='2528' t='gboolean'/>

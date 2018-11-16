@@ -1,0 +1,11 @@
+<def f='include/gtk-2.0/gtk/gtkcellrenderer.h' l='80' ll='123'/>
+<size>224</size>
+<mbr r='_GtkCellRendererClass::parent_class' o='0' t='GtkObjectClass'/>
+<mbr r='_GtkCellRendererClass::get_size' o='1280' t='void (*)(GtkCellRenderer *, GtkWidget *, GdkRectangle *, gint *, gint *, gint *, gint *)'/>
+<mbr r='_GtkCellRendererClass::render' o='1344' t='void (*)(GtkCellRenderer *, GdkDrawable *, GtkWidget *, GdkRectangle *, GdkRectangle *, GdkRectangle *, GtkCellRendererState)'/>
+<mbr r='_GtkCellRendererClass::activate' o='1408' t='gboolean (*)(GtkCellRenderer *, GdkEvent *, GtkWidget *, const gchar *, GdkRectangle *, GdkRectangle *, GtkCellRendererState)'/>
+<mbr r='_GtkCellRendererClass::start_editing' o='1472' t='GtkCellEditable *(*)(GtkCellRenderer *, GdkEvent *, GtkWidget *, const gchar *, GdkRectangle *, GdkRectangle *, GtkCellRendererState)'/>
+<mbr r='_GtkCellRendererClass::editing_canceled' o='1536' t='void (*)(GtkCellRenderer *)'/>
+<mbr r='_GtkCellRendererClass::editing_started' o='1600' t='void (*)(GtkCellRenderer *, GtkCellEditable *, const gchar *)'/>
+<mbr r='_GtkCellRendererClass::_gtk_reserved1' o='1664' t='void (*)()'/>
+<mbr r='_GtkCellRendererClass::_gtk_reserved2' o='1728' t='void (*)()'/>

@@ -1,0 +1,9 @@
+<dec f='include/glib-2.0/gobject/gobject.h' l='58'/>
+<doc f='include/glib-2.0/gobject/gobject.h' l='52'>/**
+ * G_OBJECT_CLASS:
+ * @class: a valid #GObjectClass
+ * 
+ * Casts a derived #GObjectClass structure into a #GObjectClass structure.
+ */</doc>
+<use f='unikey/src/engine.cpp' l='81' u='c'/>
+<use f='unikey/src/engine.cpp' l='114' u='c'/>

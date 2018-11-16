@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtklist.h' l='108' type='gint gtk_list_child_position(GtkList * list, GtkWidget * child)'/>

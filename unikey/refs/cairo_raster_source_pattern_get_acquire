@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='2717' type='void cairo_raster_source_pattern_get_acquire(cairo_pattern_t * pattern, cairo_raster_source_acquire_func_t * acquire, cairo_raster_source_release_func_t * release)'/>

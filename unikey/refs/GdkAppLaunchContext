@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gdk/gdkapplaunchcontext.h' l='46' ll='51'/>
+<size>40</size>
+<mbr r='GdkAppLaunchContext::parent_instance' o='0' t='GAppLaunchContext'/>
+<mbr r='GdkAppLaunchContext::priv' o='256' t='GdkAppLaunchContextPrivate *'/>

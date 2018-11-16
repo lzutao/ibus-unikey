@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-transform.h' l='146' type='GdkPixbuf * gdk_pixbuf_composite_color_simple(const GdkPixbuf * src, int dest_width, int dest_height, GdkInterpType interp_type, int overall_alpha, int check_size, guint32 color1, guint32 color2)'/>

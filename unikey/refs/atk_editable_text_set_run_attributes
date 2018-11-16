@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkeditabletext.h' l='79' type='gboolean atk_editable_text_set_run_attributes(AtkEditableText * text, AtkAttributeSet * attrib_set, gint start_offset, gint end_offset)'/>

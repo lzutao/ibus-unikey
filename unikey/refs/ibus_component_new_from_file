@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibuscomponent.h' l='167' type='IBusComponent * ibus_component_new_from_file(const gchar * filename)'/>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='156'>/**
+ * ibus_component_new_from_file:
+ * @filename: An XML file that contains component information.
+ *
+ * Creates a new #IBusComponent from an XML file.
+ * Note that a component file usually contains engine descriptions,
+ * if it does, ibus_engine_desc_new_from_xml_node() will be called
+ * to load the engine descriptions.
+ *
+ * Returns: A newly allocated #IBusComponent.
+ */</doc>

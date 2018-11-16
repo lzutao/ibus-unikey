@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtktreednd.h' l='116' type='gboolean gtk_tree_set_row_drag_data(GtkSelectionData * selection_data, GtkTreeModel * tree_model, GtkTreePath * path)'/>
+<doc f='include/gtk-2.0/gtk/gtktreednd.h' l='113'>/* The selection data would normally have target type GTK_TREE_MODEL_ROW in this
+ * case. If the target is wrong these functions return FALSE.
+ */</doc>

@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gdk/gdkcolor.h' l='68' ll='81'/>
+<size>56</size>
+<mbr r='_GdkColormap::parent_instance' o='0' t='GObject'/>
+<mbr r='_GdkColormap::size' o='192' t='gint'/>
+<mbr r='_GdkColormap::colors' o='256' t='GdkColor *'/>
+<mbr r='_GdkColormap::visual' o='320' t='GdkVisual *'/>
+<mbr r='_GdkColormap::windowing_data' o='384' t='gpointer'/>

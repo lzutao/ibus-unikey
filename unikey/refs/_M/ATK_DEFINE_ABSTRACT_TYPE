@@ -1,0 +1,12 @@
+<dec f='include/atk-1.0/atk/atkutil.h' l='276'/>
+<doc f='include/atk-1.0/atk/atkutil.h' l='265'>/**
+ * ATK_DEFINE_ABSTRACT_TYPE:
+ * @TN: The name of the new type, in Camel case.
+ * @t_n: The name of the new type, in lowercase, with words separated by &apos;_&apos;.
+ * @T_P: The #GType of the parent type.
+ *
+ * A convenience macro for ATK type implementations.
+ * Similar to ATK_DEFINE_TYPE(), but defines an abstract type.
+ *
+ * Since: 1.22
+ */</doc>

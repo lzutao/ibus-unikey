@@ -1,0 +1,6 @@
+<dec f='include/ibus-1.0/ibusfactory.h' l='60'/>
+<doc f='include/ibus-1.0/ibusfactory.h' l='55'>/**
+ * IBUS_TYPE_FACTORY:
+ *
+ * Return GType of IBus factory.
+ */</doc>

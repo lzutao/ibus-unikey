@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkfont.h' l='114' type='void gdk_text_extents_wc(GdkFont * font, const GdkWChar * text, gint text_length, gint * lbearing, gint * rbearing, gint * width, gint * ascent, gint * descent)'/>

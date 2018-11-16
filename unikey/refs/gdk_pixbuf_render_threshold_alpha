@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkpixbuf.h' l='43' type='void gdk_pixbuf_render_threshold_alpha(GdkPixbuf * pixbuf, GdkBitmap * bitmap, int src_x, int src_y, int dest_x, int dest_y, int width, int height, int alpha_threshold)'/>
+<doc f='include/gtk-2.0/gdk/gdkpixbuf.h' l='41'>/* Rendering to a drawable */</doc>

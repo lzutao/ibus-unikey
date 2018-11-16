@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkplug.h' l='83' type='GtkWidget * gtk_plug_new(GdkNativeWindow socket_id)'/>

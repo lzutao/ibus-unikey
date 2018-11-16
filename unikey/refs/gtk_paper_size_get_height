@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkpapersize.h' l='72' type='gdouble gtk_paper_size_get_height(GtkPaperSize * size, GtkUnit unit)'/>

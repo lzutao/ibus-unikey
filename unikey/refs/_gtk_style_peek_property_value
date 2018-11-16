@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkstyle.h' l='900' type='const GValue * _gtk_style_peek_property_value(GtkStyle * style, GType widget_type, GParamSpec * pspec, GtkRcPropertyParser parser)'/>
+<doc f='include/gtk-2.0/gtk/gtkstyle.h' l='899'>/* --- private API --- */</doc>

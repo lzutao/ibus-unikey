@@ -1,0 +1,5 @@
+<dec f='include/glib-2.0/glib/gmessages.h' l='64' type='128'/>
+<use f='unikey/src/main.cpp' l='68' macro='1' u='r'/>
+<use f='unikey/src/main.cpp' l='76' macro='1' u='r'/>
+<use f='unikey/src/utils.cpp' l='132' macro='1' u='r'/>
+<use f='unikey/src/utils.cpp' l='159' macro='1' u='r'/>

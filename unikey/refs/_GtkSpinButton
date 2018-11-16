@@ -1,0 +1,18 @@
+<def f='include/gtk-2.0/gtk/gtkspinbutton.h' l='75' ll='99'/>
+<size>256</size>
+<mbr r='_GtkSpinButton::entry' o='0' t='GtkEntry'/>
+<mbr r='_GtkSpinButton::adjustment' o='1664' t='GtkAdjustment *'/>
+<mbr r='_GtkSpinButton::panel' o='1728' t='GdkWindow *'/>
+<mbr r='_GtkSpinButton::timer' o='1792' t='guint32'/>
+<mbr r='_GtkSpinButton::climb_rate' o='1856' t='gdouble'/>
+<mbr r='_GtkSpinButton::timer_step' o='1920' t='gdouble'/>
+<mbr r='_GtkSpinButton::update_policy' o='1984' t='GtkSpinButtonUpdatePolicy'/>
+<mbr r='_GtkSpinButton::in_child' o='2016' t='guint'/>
+<mbr r='_GtkSpinButton::click_child' o='2018' t='guint'/>
+<mbr r='_GtkSpinButton::button' o='2020' t='guint'/>
+<mbr r='_GtkSpinButton::need_timer' o='2022' t='guint'/>
+<mbr r='_GtkSpinButton::timer_calls' o='2023' t='guint'/>
+<mbr r='_GtkSpinButton::digits' o='2026' t='guint'/>
+<mbr r='_GtkSpinButton::numeric' o='2036' t='guint'/>
+<mbr r='_GtkSpinButton::wrap' o='2037' t='guint'/>
+<mbr r='_GtkSpinButton::snap_to_ticks' o='2038' t='guint'/>

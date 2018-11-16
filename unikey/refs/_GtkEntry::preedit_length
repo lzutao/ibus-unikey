@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='115' type='guint16'/>
+<offset>1472</offset>
+<doc f='include/gtk-2.0/gtk/gtkentry.h' l='115'>/* length of preedit string, in bytes */</doc>

@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='575' type='GtkStyle *'/>
+<offset>384</offset>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='570'>/* The style for the widget. The style contains the
+   *  colors the widget should be drawn in for each state
+   *  along with graphics contexts used to draw with and
+   *  the font to use for text.
+   */</doc>

@@ -1,0 +1,6 @@
+<dec f='include/atk-1.0/atk/atkimage.h' l='38'/>
+<doc f='include/atk-1.0/atk/atkimage.h' l='32'>/*
+ * The AtkImage interface should be supported by any object that has an 
+ * associated image. This interface provides the standard mechanism for 
+ * an assistive technology to get descriptive information about images.
+ */</doc>

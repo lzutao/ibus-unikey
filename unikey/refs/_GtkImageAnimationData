@@ -1,0 +1,5 @@
+<def f='include/gtk-2.0/gtk/gtkimage.h' l='86' ll='91'/>
+<size>24</size>
+<mbr r='_GtkImageAnimationData::anim' o='0' t='GdkPixbufAnimation *'/>
+<mbr r='_GtkImageAnimationData::iter' o='64' t='GdkPixbufAnimationIter *'/>
+<mbr r='_GtkImageAnimationData::frame_timeout' o='128' t='guint'/>

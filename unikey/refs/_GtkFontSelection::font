@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkfontsel.h' l='87' type='GdkFont *'/>
+<offset>1856</offset>
+<doc f='include/gtk-2.0/gtk/gtkfontsel.h' l='87'>/* Cache for gdk_font_selection_get_font, so we can preserve
+                                         * refcounting behavior
+                                         */</doc>

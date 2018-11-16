@@ -1,0 +1,3 @@
+<dec f='unikey/setup/dlg_macro_table.cpp' l='23' type='void value_edited_cb(GtkCellRendererText * celltext, const gchar * string_path, const gchar * newvalue, gpointer data)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='52' u='r' c='_Z23unikey_macro_dialog_newv'/>
+<def f='unikey/setup/dlg_macro_table.cpp' l='261' ll='286' type='void value_edited_cb(GtkCellRendererText * celltext, const gchar * string_path, const gchar * newvalue, gpointer data)'/>

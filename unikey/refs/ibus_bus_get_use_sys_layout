@@ -1,0 +1,1 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='827' type='gboolean ibus_bus_get_use_sys_layout(IBusBus * bus)'/>

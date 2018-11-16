@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='473' type='void gtk_clist_set_button_actions(GtkCList * clist, guint button, guint8 button_actions)'/>

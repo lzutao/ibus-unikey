@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkgc.h' l='235' type='void gdk_gc_set_values(GdkGC * gc, GdkGCValues * values, GdkGCValuesMask values_mask)'/>

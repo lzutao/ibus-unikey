@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='164' type='gint gtk_text_buffer_get_char_count(GtkTextBuffer * buffer)'/>

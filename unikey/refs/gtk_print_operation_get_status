@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintoperation.h' l='175' type='GtkPrintStatus gtk_print_operation_get_status(GtkPrintOperation * op)'/>

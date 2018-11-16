@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkitemfactory.h' l='177' type='void gtk_item_factory_delete_entries(GtkItemFactory * ifactory, guint n_entries, GtkItemFactoryEntry * entries)'/>

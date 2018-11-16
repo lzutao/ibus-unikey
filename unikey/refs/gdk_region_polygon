@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkregion.h' l='69' type='GdkRegion * gdk_region_polygon(const GdkPoint * points, gint n_points, GdkFillRule fill_rule)'/>

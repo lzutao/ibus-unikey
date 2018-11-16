@@ -1,0 +1,14 @@
+<def f='include/gtk-2.0/gdk/gdkevents.h' l='313' ll='326'/>
+<size>80</size>
+<mbr r='_GdkEventButton::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventButton::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventButton::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventButton::time' o='160' t='guint32'/>
+<mbr r='_GdkEventButton::x' o='192' t='gdouble'/>
+<mbr r='_GdkEventButton::y' o='256' t='gdouble'/>
+<mbr r='_GdkEventButton::axes' o='320' t='gdouble *'/>
+<mbr r='_GdkEventButton::state' o='384' t='guint'/>
+<mbr r='_GdkEventButton::button' o='416' t='guint'/>
+<mbr r='_GdkEventButton::device' o='448' t='GdkDevice *'/>
+<mbr r='_GdkEventButton::x_root' o='512' t='gdouble'/>
+<mbr r='_GdkEventButton::y_root' o='576' t='gdouble'/>

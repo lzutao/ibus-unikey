@@ -1,0 +1,7 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='296' type='void ibus_engine_show_auxiliary_text(IBusEngine * engine)'/>
+<doc f='include/ibus-1.0/ibusengine.h' l='290'>/**
+ * ibus_engine_show_auxiliary_text:
+ * @engine: An IBusEngine.
+ *
+ * Show the auxiliary bar.
+ */</doc>

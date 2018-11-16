@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibushotkey.h' l='136' type='gboolean ibus_hotkey_profile_remove_hotkey(IBusHotkeyProfile * profile, guint keyval, guint modifiers)'/>
+<doc f='include/ibus-1.0/ibushotkey.h' l='126'>/**
+ * ibus_hotkey_profile_remove_hotkey:
+ * @profile: An IBusHotkeyProfile.
+ * @keyval: Keycode of the hotkey.
+ * @modifiers: Modifiers of the hotkey.
+ *
+ * Removes the hotkey for an #IBusHotkeyProfile.
+ *
+ * Returns: %FALSE if the key is not in @profile, %TRUE otherwise.
+ */</doc>

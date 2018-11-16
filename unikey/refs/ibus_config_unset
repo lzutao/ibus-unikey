@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusconfig.h' l='318' type='gboolean ibus_config_unset(IBusConfig * config, const gchar * section, const gchar * name)'/>
+<doc f='include/ibus-1.0/ibusconfig.h' l='306'>/**
+ * ibus_config_unset:
+ * @config: An #IBusConfig
+ * @section: Section name of the configuration option.
+ * @name: Name of the configure option its self.
+ *
+ * Remove an entry of a configuration option.
+ *
+ * Returns: %TRUE if succeed; %FALSE otherwise.
+ *
+ * See also: ibus_config_get_value().
+ */</doc>

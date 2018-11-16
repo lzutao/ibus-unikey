@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintsettings.h' l='183' type='void gtk_print_settings_set_n_copies(GtkPrintSettings * settings, gint num_copies)'/>

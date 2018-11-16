@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkpango.h' l='96' type='void gdk_pango_renderer_set_gc(GdkPangoRenderer * gdk_renderer, GdkGC * gc)'/>

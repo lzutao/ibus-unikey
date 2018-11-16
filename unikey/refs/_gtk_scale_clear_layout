@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkscale.h' l='102' type='void _gtk_scale_clear_layout(GtkScale * scale)'/>
+<doc f='include/gtk-2.0/gtk/gtkscale.h' l='101'>/* internal API */</doc>

@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>utils.cpp source code [unikey/src/utils.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'unikey/src/utils.cpp'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>unikey</a>/<a href='./'>src</a>/<a href='utils.cpp.html'>utils.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifdef</span> <span class="macro" data-ref="_M/HAVE_CONFIG_H">HAVE_CONFIG_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="../builddir/config.h.html">"config.h"</a></u></td></tr>
+<tr><th id="3">3</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="../../include/libintl.h.html">&lt;libintl.h&gt;</a></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="../../include/ibus-1.0/ibus.h.html">&lt;ibus.h&gt;</a></u></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="../ukengine/ukengine.h.html">"ukengine.h"</a></u></td></tr>
+<tr><th id="9">9</th><td><u>#include <a href="utils.h.html">"utils.h"</a></u></td></tr>
+<tr><th id="10">10</th><td><u>#include <a href="engine_const.h.html">"engine_const.h"</a></u></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#define <dfn class="macro" id="_M/_" data-ref="_M/_">_</dfn>(string) <a class="ref" href="../../include/libintl.h.html#gettext" title='gettext' data-ref="gettext">gettext</a>(string)</u></td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><u>#define <dfn class="macro" id="_M/IU_DESC" data-ref="_M/IU_DESC">IU_DESC</dfn> _("Vietnamese Input Method Engine for IBus using Unikey Engine\n\</u></td></tr>
+<tr><th id="15">15</th><td><u>Usage:\n\</u></td></tr>
+<tr><th id="16">16</th><td><u>  - Choose input method, output charset, options in language bar.\n\</u></td></tr>
+<tr><th id="17">17</th><td><u>  - There are 4 input methods: Telex, Vni, STelex (simple telex) \</u></td></tr>
+<tr><th id="18">18</th><td><u>and STelex2 (which same as STelex, the difference is it use w as ư).\n\</u></td></tr>
+<tr><th id="19">19</th><td><u>  - And 7 output charsets: Unicode (UTF-8), TCVN3, VNI Win, VIQR, CString, NCR Decimal and NCR Hex.\n\</u></td></tr>
+<tr><th id="20">20</th><td><u>  - Use &lt;Shift&gt;+&lt;Space&gt; or &lt;Shift&gt;+&lt;Shift&gt; to restore keystrokes.\n\</u></td></tr>
+<tr><th id="21">21</th><td><u>  - Use &lt;Control&gt; to commit a word.\</u></td></tr>
+<tr><th id="22">22</th><td><u>")</u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><em>const</em> <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>          *<dfn class="decl def" id="Unikey_IMNames" title='Unikey_IMNames' data-ref="Unikey_IMNames">Unikey_IMNames</dfn>[]  = {<q>"Telex"</q>, <q>"Vni"</q>, <q>"STelex"</q>, <q>"STelex2"</q>};</td></tr>
+<tr><th id="25">25</th><td><em>const</em> <a class="typedef" href="../ukengine/keycons.h.html#UkInputMethod" title='UkInputMethod' data-type='enum UkInputMethod' data-ref="UkInputMethod">UkInputMethod</a>   <dfn class="decl def" id="Unikey_IM" title='Unikey_IM' data-ref="Unikey_IM">Unikey_IM</dfn>[]       = {<a class="enum" href="../ukengine/keycons.h.html#UkTelex" title='UkTelex' data-ref="UkTelex">UkTelex</a>, <a class="enum" href="../ukengine/keycons.h.html#UkVni" title='UkVni' data-ref="UkVni">UkVni</a>, <a class="enum" href="../ukengine/keycons.h.html#UkSimpleTelex" title='UkSimpleTelex' data-ref="UkSimpleTelex">UkSimpleTelex</a>, <a class="enum" href="../ukengine/keycons.h.html#UkSimpleTelex2" title='UkSimpleTelex2' data-ref="UkSimpleTelex2">UkSimpleTelex2</a>};</td></tr>
+<tr><th id="26">26</th><td><em>const</em> <em>unsigned</em> <em>int</em>    <dfn class="decl def" id="NUM_INPUTMETHOD" title='NUM_INPUTMETHOD' data-ref="NUM_INPUTMETHOD">NUM_INPUTMETHOD</dfn>   = <var>4u</var>; <i class="doc">//!&lt; len(Unikey_IM)</i></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><em>const</em> <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>          *<dfn class="decl def" id="Unikey_OCNames" title='Unikey_OCNames' data-ref="Unikey_OCNames">Unikey_OCNames</dfn>[]  = {<q>"Unicode"</q>,</td></tr>
+<tr><th id="29">29</th><td>                                           <q>"TCVN3"</q>,</td></tr>
+<tr><th id="30">30</th><td>                                           <q>"VNI Win"</q>,</td></tr>
+<tr><th id="31">31</th><td>                                           <q>"VIQR"</q>,</td></tr>
+<tr><th id="32">32</th><td>                                           <q>"BK HCM 2"</q>,</td></tr>
+<tr><th id="33">33</th><td>                                           <q>"CString"</q>,</td></tr>
+<tr><th id="34">34</th><td>                                           <q>"NCR Decimal"</q>,</td></tr>
+<tr><th id="35">35</th><td>                                           <q>"NCR Hex"</q>};</td></tr>
+<tr><th id="36">36</th><td><em>const</em> <em>unsigned</em> <em>int</em>    <dfn class="decl def" id="Unikey_OC" title='Unikey_OC' data-ref="Unikey_OC">Unikey_OC</dfn>[]       = {<a class="macro" href="../ukengine/vnconv.h.html#52" title="12" data-ref="_M/CONV_CHARSET_XUTF8">CONV_CHARSET_XUTF8</a>,</td></tr>
+<tr><th id="37">37</th><td>                                           <a class="macro" href="../ukengine/vnconv.h.html#54" title="20" data-ref="_M/CONV_CHARSET_TCVN3">CONV_CHARSET_TCVN3</a>,</td></tr>
+<tr><th id="38">38</th><td>                                           <a class="macro" href="../ukengine/vnconv.h.html#61" title="40" data-ref="_M/CONV_CHARSET_VNIWIN">CONV_CHARSET_VNIWIN</a>,</td></tr>
+<tr><th id="39">39</th><td>                                           <a class="macro" href="../ukengine/vnconv.h.html#50" title="10" data-ref="_M/CONV_CHARSET_VIQR">CONV_CHARSET_VIQR</a>,</td></tr>
+<tr><th id="40">40</th><td>                                           <a class="macro" href="../ukengine/vnconv.h.html#62" title="41" data-ref="_M/CONV_CHARSET_BKHCM2">CONV_CHARSET_BKHCM2</a>,</td></tr>
+<tr><th id="41">41</th><td>                                           <a class="macro" href="../ukengine/vnconv.h.html#47" title="6" data-ref="_M/CONV_CHARSET_UNI_CSTRING">CONV_CHARSET_UNI_CSTRING</a>,</td></tr>
+<tr><th id="42">42</th><td>                                           <a class="macro" href="../ukengine/vnconv.h.html#43" title="2" data-ref="_M/CONV_CHARSET_UNIREF">CONV_CHARSET_UNIREF</a>,</td></tr>
+<tr><th id="43">43</th><td>                                           <a class="macro" href="../ukengine/vnconv.h.html#44" title="3" data-ref="_M/CONV_CHARSET_UNIREF_HEX">CONV_CHARSET_UNIREF_HEX</a>};</td></tr>
+<tr><th id="44">44</th><td><em>const</em> <em>unsigned</em> <em>int</em>    <dfn class="decl def" id="NUM_OUTPUTCHARSET" title='NUM_OUTPUTCHARSET' data-ref="NUM_OUTPUTCHARSET">NUM_OUTPUTCHARSET</dfn> = <var>8u</var>; <i class="doc">//!&lt; len(Unikey_OC)</i></td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><a class="typedef" href="../../include/ibus-1.0/ibuscomponent.h.html#IBusComponent" title='IBusComponent' data-type='struct _IBusComponent' data-ref="IBusComponent">IBusComponent</a> *<dfn class="decl def" id="_Z25ibus_unikey_get_componentv" title='ibus_unikey_get_component' data-ref="_Z25ibus_unikey_get_componentv">ibus_unikey_get_component</dfn>()</td></tr>
+<tr><th id="47">47</th><td>{</td></tr>
+<tr><th id="48">48</th><td>    <a class="typedef" href="../../include/ibus-1.0/ibuscomponent.h.html#IBusComponent" title='IBusComponent' data-type='struct _IBusComponent' data-ref="IBusComponent">IBusComponent</a> *<dfn class="local col1 decl" id="1component" title='component' data-type='IBusComponent *' data-ref="1component">component</dfn> = <a class="ref" href="../../include/ibus-1.0/ibuscomponent.h.html#ibus_component_new" title='ibus_component_new' data-ref="ibus_component_new">ibus_component_new</a>(</td></tr>
+<tr><th id="49">49</th><td>            <a class="macro" href="engine_const.h.html#18" title="&quot;org.freedesktop.IBus.Unikey&quot;" data-ref="_M/UNIKEY_DBUS_NAME">UNIKEY_DBUS_NAME</a>,</td></tr>
+<tr><th id="50">50</th><td>            <q>"Unikey"</q>,</td></tr>
+<tr><th id="51">51</th><td>            <a class="macro" href="../builddir/config.h.html#48" title="&quot;0.6.2&quot;" data-ref="_M/PACKAGE_VERSION">PACKAGE_VERSION</a>,</td></tr>
+<tr><th id="52">52</th><td>            <q>"GPLv3"</q>,</td></tr>
+<tr><th id="53">53</th><td>            <q>"Lê Quốc Tuấn &lt;mr.lequoctuan@gmail.com&gt;"</q>,</td></tr>
+<tr><th id="54">54</th><td>            <a class="macro" href="../builddir/config.h.html#42" title="&quot;https://github.com/vn-input/ibus-unikey&quot;" data-ref="_M/PACKAGE_BUGREPORT">PACKAGE_BUGREPORT</a>,</td></tr>
+<tr><th id="55">55</th><td>            <q>""</q>,</td></tr>
+<tr><th id="56">56</th><td>            <a class="macro" href="../builddir/config.h.html#44" title="&quot;ibus-unikey&quot;" data-ref="_M/PACKAGE_NAME">PACKAGE_NAME</a>);</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td>    <a class="typedef" href="../../include/ibus-1.0/ibusenginedesc.h.html#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col2 decl" id="2engine" title='engine' data-type='IBusEngineDesc *' data-ref="2engine">engine</dfn> = <a class="ref" href="../../include/ibus-1.0/ibusenginedesc.h.html#ibus_engine_desc_new_varargs" title='ibus_engine_desc_new_varargs' data-ref="ibus_engine_desc_new_varargs">ibus_engine_desc_new_varargs</a>(</td></tr>
+<tr><th id="59">59</th><td>            <q>"name"</q>       , <q>"Unikey"</q>,</td></tr>
+<tr><th id="60">60</th><td>            <q>"longname"</q>   , <q>"Unikey"</q>,</td></tr>
+<tr><th id="61">61</th><td>            <q>"description"</q>, <a class="macro" href="#14" title="gettext(&quot;Vietnamese Input Method Engine for IBus using Unikey Engine\nUsage:\n  - Choose input method, output charset, options in language bar.\n  - There are 4 input methods: Telex, Vni, STelex (simple telex) and STelex2 (which same as STelex, the difference is it use w as ư).\n  - And 7 output charsets: Unicode (UTF-8), TCVN3, VNI Win, VIQR, CString, NCR Decimal and NCR Hex.\n  - Use &lt;Shift&gt;+&lt;Space&gt; or &lt;Shift&gt;+&lt;Shift&gt; to restore keystrokes.\n  - Use &lt;Control&gt; to commit a word.&quot;)" data-ref="_M/IU_DESC">IU_DESC</a>,</td></tr>
+<tr><th id="62">62</th><td>            <q>"language"</q>   , <q>"vi"</q>,</td></tr>
+<tr><th id="63">63</th><td>            <q>"license"</q>    , <q>"GPLv3"</q>,</td></tr>
+<tr><th id="64">64</th><td>            <q>"author"</q>     , <q>"Lê Quốc Tuấn &lt;mr.lequoctuan@gmail.com&gt;"</q>,</td></tr>
+<tr><th id="65">65</th><td>            <q>"icon"</q>       , <span class="macro" title="&quot;/usr/local/share&quot;" data-ref="_M/PKGDATADIR">PKGDATADIR</span> <q>"/icons/ibus-unikey.png"</q>,</td></tr>
+<tr><th id="66">66</th><td>            <q>"layout"</q>     , <q>"default"</q>,</td></tr>
+<tr><th id="67">67</th><td>            <q>"rank"</q>       , <var>99</var>,</td></tr>
+<tr><th id="68">68</th><td>            <q>"setup"</q>      , <span class="macro" title="&quot;/usr/local/libexec&quot;" data-ref="_M/LIBEXECDIR">LIBEXECDIR</span> <q>"/ibus-setup-unikey"</q>,</td></tr>
+<tr><th id="69">69</th><td>            <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td>    <a class="ref" href="../../include/ibus-1.0/ibuscomponent.h.html#ibus_component_add_engine" title='ibus_component_add_engine' data-ref="ibus_component_add_engine">ibus_component_add_engine</a>(<a class="local col1 ref" href="#1component" title='component' data-ref="1component">component</a>, <a class="local col2 ref" href="#2engine" title='engine' data-ref="2engine">engine</a>);</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td>    <b>return</b> <a class="local col1 ref" href="#1component" title='component' data-ref="1component">component</a>;</td></tr>
+<tr><th id="74">74</th><td>}</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><i>// code from x-unikey, for convert charset that not is XUtf-8</i></td></tr>
+<tr><th id="77">77</th><td><em>int</em> <dfn class="decl def" id="_Z10latinToUtfPhS_iPi" title='latinToUtf' data-ref="_Z10latinToUtfPhS_iPi">latinToUtf</dfn>(<em>unsigned</em> <em>char</em> *<dfn class="local col3 decl" id="3dst" title='dst' data-type='unsigned char *' data-ref="3dst">dst</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col4 decl" id="4src" title='src' data-type='unsigned char *' data-ref="4src">src</dfn>, <em>int</em> <dfn class="local col5 decl" id="5inSize" title='inSize' data-type='int' data-ref="5inSize">inSize</dfn>, <em>int</em> *<dfn class="local col6 decl" id="6pOutSize" title='pOutSize' data-type='int *' data-ref="6pOutSize">pOutSize</dfn>)</td></tr>
+<tr><th id="78">78</th><td>{</td></tr>
+<tr><th id="79">79</th><td>    <em>int</em> <dfn class="local col7 decl" id="7i" title='i' data-type='int' data-ref="7i">i</dfn>;</td></tr>
+<tr><th id="80">80</th><td>    <em>int</em> <dfn class="local col8 decl" id="8outLeft" title='outLeft' data-type='int' data-ref="8outLeft">outLeft</dfn>;</td></tr>
+<tr><th id="81">81</th><td>    <em>unsigned</em> <em>char</em> <dfn class="local col9 decl" id="9ch" title='ch' data-type='unsigned char' data-ref="9ch">ch</dfn>;</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td>    <a class="local col8 ref" href="#8outLeft" title='outLeft' data-ref="8outLeft">outLeft</a> = *<a class="local col6 ref" href="#6pOutSize" title='pOutSize' data-ref="6pOutSize">pOutSize</a>;</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td>    <b>for</b> (<a class="local col7 ref" href="#7i" title='i' data-ref="7i">i</a> = <var>0</var>; <a class="local col7 ref" href="#7i" title='i' data-ref="7i">i</a> &lt; <a class="local col5 ref" href="#5inSize" title='inSize' data-ref="5inSize">inSize</a>; <a class="local col7 ref" href="#7i" title='i' data-ref="7i">i</a>++)</td></tr>
+<tr><th id="86">86</th><td>    {</td></tr>
+<tr><th id="87">87</th><td>        <a class="local col9 ref" href="#9ch" title='ch' data-ref="9ch">ch</a> = *<a class="local col4 ref" href="#4src" title='src' data-ref="4src">src</a>++;</td></tr>
+<tr><th id="88">88</th><td>        <b>if</b> (<a class="local col9 ref" href="#9ch" title='ch' data-ref="9ch">ch</a> &lt; <var>0x80</var>)</td></tr>
+<tr><th id="89">89</th><td>        {</td></tr>
+<tr><th id="90">90</th><td>            <a class="local col8 ref" href="#8outLeft" title='outLeft' data-ref="8outLeft">outLeft</a> -= <var>1</var>;</td></tr>
+<tr><th id="91">91</th><td>            <b>if</b> (<a class="local col8 ref" href="#8outLeft" title='outLeft' data-ref="8outLeft">outLeft</a> &gt;= <var>0</var>)</td></tr>
+<tr><th id="92">92</th><td>                *<a class="local col3 ref" href="#3dst" title='dst' data-ref="3dst">dst</a>++ = <a class="local col9 ref" href="#9ch" title='ch' data-ref="9ch">ch</a>;</td></tr>
+<tr><th id="93">93</th><td>        }</td></tr>
+<tr><th id="94">94</th><td>        <b>else</b></td></tr>
+<tr><th id="95">95</th><td>        {</td></tr>
+<tr><th id="96">96</th><td>            <a class="local col8 ref" href="#8outLeft" title='outLeft' data-ref="8outLeft">outLeft</a> -= <var>2</var>;</td></tr>
+<tr><th id="97">97</th><td>            <b>if</b> (<a class="local col8 ref" href="#8outLeft" title='outLeft' data-ref="8outLeft">outLeft</a> &gt;= <var>0</var>)</td></tr>
+<tr><th id="98">98</th><td>            {</td></tr>
+<tr><th id="99">99</th><td>                *<a class="local col3 ref" href="#3dst" title='dst' data-ref="3dst">dst</a>++ = (<var>0xC0</var> | <a class="local col9 ref" href="#9ch" title='ch' data-ref="9ch">ch</a> &gt;&gt; <var>6</var>);</td></tr>
+<tr><th id="100">100</th><td>                *<a class="local col3 ref" href="#3dst" title='dst' data-ref="3dst">dst</a>++ = (<var>0x80</var> | (<a class="local col9 ref" href="#9ch" title='ch' data-ref="9ch">ch</a> &amp; <var>0x3F</var>));</td></tr>
+<tr><th id="101">101</th><td>            }</td></tr>
+<tr><th id="102">102</th><td>        }</td></tr>
+<tr><th id="103">103</th><td>    }</td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td>    *<a class="local col6 ref" href="#6pOutSize" title='pOutSize' data-ref="6pOutSize">pOutSize</a> = <a class="local col8 ref" href="#8outLeft" title='outLeft' data-ref="8outLeft">outLeft</a>;</td></tr>
+<tr><th id="106">106</th><td>    <b>return</b> (<a class="local col8 ref" href="#8outLeft" title='outLeft' data-ref="8outLeft">outLeft</a> &gt;= <var>0</var>);</td></tr>
+<tr><th id="107">107</th><td>}</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl def" id="_Z29ibus_unikey_config_get_stringP11_IBusConfigPKcS2_PPc" title='ibus_unikey_config_get_string' data-ref="_Z29ibus_unikey_config_get_stringP11_IBusConfigPKcS2_PPc">ibus_unikey_config_get_string</dfn>(<a class="typedef" href="../../include/ibus-1.0/ibusconfig.h.html#IBusConfig" title='IBusConfig' data-type='struct _IBusConfig' data-ref="IBusConfig">IBusConfig</a>  *<dfn class="local col0 decl" id="10config" title='config' data-type='IBusConfig *' data-ref="10config">config</dfn>,</td></tr>
+<tr><th id="110">110</th><td>                                       <em>const</em> <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col1 decl" id="11section" title='section' data-type='const gchar *' data-ref="11section">section</dfn>,</td></tr>
+<tr><th id="111">111</th><td>                                       <em>const</em> <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col2 decl" id="12name" title='name' data-type='const gchar *' data-ref="12name">name</dfn>,</td></tr>
+<tr><th id="112">112</th><td>                                       <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>      **<dfn class="local col3 decl" id="13result" title='result' data-type='gchar **' data-ref="13result">result</dfn>)</td></tr>
+<tr><th id="113">113</th><td>{</td></tr>
+<tr><th id="114">114</th><td>    <a class="typedef" href="../../include/glib-2.0/glib/gvariant.h.html#GVariant" title='GVariant' data-type='struct _GVariant' data-ref="GVariant">GVariant</a> *<dfn class="local col4 decl" id="14value" title='value' data-type='GVariant *' data-ref="14value">value</dfn> = <a class="ref" href="../../include/ibus-1.0/ibusconfig.h.html#ibus_config_get_value" title='ibus_config_get_value' data-ref="ibus_config_get_value">ibus_config_get_value</a>(<a class="local col0 ref" href="#10config" title='config' data-ref="10config">config</a>, <a class="local col1 ref" href="#11section" title='section' data-ref="11section">section</a>, <a class="local col2 ref" href="#12name" title='name' data-ref="12name">name</a>);</td></tr>
+<tr><th id="115">115</th><td>    <b>if</b> (<a class="local col4 ref" href="#14value" title='value' data-ref="14value">value</a>)</td></tr>
+<tr><th id="116">116</th><td>    {</td></tr>
+<tr><th id="117">117</th><td>        *<a class="local col3 ref" href="#13result" title='result' data-ref="13result">result</a> = <a class="ref" href="../../include/glib-2.0/glib/gvariant.h.html#g_variant_dup_string" title='g_variant_dup_string' data-ref="g_variant_dup_string">g_variant_dup_string</a>(<a class="local col4 ref" href="#14value" title='value' data-ref="14value">value</a>, <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="118">118</th><td>        <a class="ref" href="../../include/glib-2.0/glib/gvariant.h.html#g_variant_unref" title='g_variant_unref' data-ref="g_variant_unref">g_variant_unref</a>(<a class="local col4 ref" href="#14value" title='value' data-ref="14value">value</a>);</td></tr>
+<tr><th id="119">119</th><td>        <b>return</b> <a class="macro" href="../../include/glib-2.0/glib/gmacros.h.html#293" title="(!(0))" data-ref="_M/TRUE">TRUE</a>;</td></tr>
+<tr><th id="120">120</th><td>    }</td></tr>
+<tr><th id="121">121</th><td>    <b>return</b> <a class="macro" href="../../include/glib-2.0/glib/gmacros.h.html#289" title="(0)" data-ref="_M/FALSE">FALSE</a>;</td></tr>
+<tr><th id="122">122</th><td>}</td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td><em>void</em> <dfn class="decl def" id="_Z29ibus_unikey_config_set_stringP11_IBusConfigPKcS2_S2_" title='ibus_unikey_config_set_string' data-ref="_Z29ibus_unikey_config_set_stringP11_IBusConfigPKcS2_S2_">ibus_unikey_config_set_string</dfn>(<a class="typedef" href="../../include/ibus-1.0/ibusconfig.h.html#IBusConfig" title='IBusConfig' data-type='struct _IBusConfig' data-ref="IBusConfig">IBusConfig</a>  *<dfn class="local col5 decl" id="15config" title='config' data-type='IBusConfig *' data-ref="15config">config</dfn>,</td></tr>
+<tr><th id="125">125</th><td>                                   <em>const</em> <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col6 decl" id="16section" title='section' data-type='const gchar *' data-ref="16section">section</dfn>,</td></tr>
+<tr><th id="126">126</th><td>                                   <em>const</em> <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col7 decl" id="17name" title='name' data-type='const gchar *' data-ref="17name">name</dfn>,</td></tr>
+<tr><th id="127">127</th><td>                                   <em>const</em> <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col8 decl" id="18value" title='value' data-type='const gchar *' data-ref="18value">value</dfn>)</td></tr>
+<tr><th id="128">128</th><td>{</td></tr>
+<tr><th id="129">129</th><td>    <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="local col9 decl" id="19ok" title='ok' data-type='gboolean' data-ref="19ok">ok</dfn> = <a class="ref" href="../../include/ibus-1.0/ibusconfig.h.html#ibus_config_set_value" title='ibus_config_set_value' data-ref="ibus_config_set_value">ibus_config_set_value</a>(<a class="local col5 ref" href="#15config" title='config' data-ref="15config">config</a>, <a class="local col6 ref" href="#16section" title='section' data-ref="16section">section</a>, <a class="local col7 ref" href="#17name" title='name' data-ref="17name">name</a>, <a class="ref" href="../../include/glib-2.0/glib/gvariant.h.html#g_variant_new_string" title='g_variant_new_string' data-ref="g_variant_new_string">g_variant_new_string</a>(<a class="local col8 ref" href="#18value" title='value' data-ref="18value">value</a>));</td></tr>
+<tr><th id="130">130</th><td>    <b>if</b> (!<a class="local col9 ref" href="#19ok" title='ok' data-ref="19ok">ok</a>)</td></tr>
+<tr><th id="131">131</th><td>    {</td></tr>
+<tr><th id="132">132</th><td>        <a class="macro" href="../../include/glib-2.0/glib/gmessages.h.html#343" title="g_log (((gchar*) 0), G_LOG_LEVEL_DEBUG, &quot;ibus_unikey_config_set_string: Cannot set value.\n&quot;)" data-ref="_M/g_debug">g_debug</a>(<q>"ibus_unikey_config_set_string: Cannot set value.\n"</q>);</td></tr>
+<tr><th id="133">133</th><td>    }</td></tr>
+<tr><th id="134">134</th><td>}</td></tr>
+<tr><th id="135">135</th><td></td></tr>
+<tr><th id="136">136</th><td><a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl def" id="_Z30ibus_unikey_config_get_booleanP11_IBusConfigPKcS2_Pi" title='ibus_unikey_config_get_boolean' data-ref="_Z30ibus_unikey_config_get_booleanP11_IBusConfigPKcS2_Pi">ibus_unikey_config_get_boolean</dfn>(<a class="typedef" href="../../include/ibus-1.0/ibusconfig.h.html#IBusConfig" title='IBusConfig' data-type='struct _IBusConfig' data-ref="IBusConfig">IBusConfig</a>  *<dfn class="local col0 decl" id="20config" title='config' data-type='IBusConfig *' data-ref="20config">config</dfn>,</td></tr>
+<tr><th id="137">137</th><td>                                        <em>const</em> <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col1 decl" id="21section" title='section' data-type='const gchar *' data-ref="21section">section</dfn>,</td></tr>
+<tr><th id="138">138</th><td>                                        <em>const</em> <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col2 decl" id="22name" title='name' data-type='const gchar *' data-ref="22name">name</dfn>,</td></tr>
+<tr><th id="139">139</th><td>                                        <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>    *<dfn class="local col3 decl" id="23result" title='result' data-type='gboolean *' data-ref="23result">result</dfn>)</td></tr>
+<tr><th id="140">140</th><td>{</td></tr>
+<tr><th id="141">141</th><td>    <a class="typedef" href="../../include/glib-2.0/glib/gvariant.h.html#GVariant" title='GVariant' data-type='struct _GVariant' data-ref="GVariant">GVariant</a> *<dfn class="local col4 decl" id="24value" title='value' data-type='GVariant *' data-ref="24value">value</dfn> = <a class="ref" href="../../include/ibus-1.0/ibusconfig.h.html#ibus_config_get_value" title='ibus_config_get_value' data-ref="ibus_config_get_value">ibus_config_get_value</a>(<a class="local col0 ref" href="#20config" title='config' data-ref="20config">config</a>, <a class="local col1 ref" href="#21section" title='section' data-ref="21section">section</a>, <a class="local col2 ref" href="#22name" title='name' data-ref="22name">name</a>);</td></tr>
+<tr><th id="142">142</th><td>    <b>if</b> (<a class="local col4 ref" href="#24value" title='value' data-ref="24value">value</a>)</td></tr>
+<tr><th id="143">143</th><td>    {</td></tr>
+<tr><th id="144">144</th><td>        *<a class="local col3 ref" href="#23result" title='result' data-ref="23result">result</a> = <a class="ref" href="../../include/glib-2.0/glib/gvariant.h.html#g_variant_get_boolean" title='g_variant_get_boolean' data-ref="g_variant_get_boolean">g_variant_get_boolean</a>(<a class="local col4 ref" href="#24value" title='value' data-ref="24value">value</a>);</td></tr>
+<tr><th id="145">145</th><td>        <a class="ref" href="../../include/glib-2.0/glib/gvariant.h.html#g_variant_unref" title='g_variant_unref' data-ref="g_variant_unref">g_variant_unref</a>(<a class="local col4 ref" href="#24value" title='value' data-ref="24value">value</a>);</td></tr>
+<tr><th id="146">146</th><td>        <b>return</b> <a class="macro" href="../../include/glib-2.0/glib/gmacros.h.html#293" title="(!(0))" data-ref="_M/TRUE">TRUE</a>;</td></tr>
+<tr><th id="147">147</th><td>    }</td></tr>
+<tr><th id="148">148</th><td>    <b>return</b> <a class="macro" href="../../include/glib-2.0/glib/gmacros.h.html#289" title="(0)" data-ref="_M/FALSE">FALSE</a>;</td></tr>
+<tr><th id="149">149</th><td>}</td></tr>
+<tr><th id="150">150</th><td></td></tr>
+<tr><th id="151">151</th><td><em>void</em> <dfn class="decl def" id="_Z30ibus_unikey_config_set_booleanP11_IBusConfigPKcS2_i" title='ibus_unikey_config_set_boolean' data-ref="_Z30ibus_unikey_config_set_booleanP11_IBusConfigPKcS2_i">ibus_unikey_config_set_boolean</dfn>(<a class="typedef" href="../../include/ibus-1.0/ibusconfig.h.html#IBusConfig" title='IBusConfig' data-type='struct _IBusConfig' data-ref="IBusConfig">IBusConfig</a>  *<dfn class="local col5 decl" id="25config" title='config' data-type='IBusConfig *' data-ref="25config">config</dfn>,</td></tr>
+<tr><th id="152">152</th><td>                                    <em>const</em> <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col6 decl" id="26section" title='section' data-type='const gchar *' data-ref="26section">section</dfn>,</td></tr>
+<tr><th id="153">153</th><td>                                    <em>const</em> <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col7 decl" id="27name" title='name' data-type='const gchar *' data-ref="27name">name</dfn>,</td></tr>
+<tr><th id="154">154</th><td>                                    <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>     <dfn class="local col8 decl" id="28value" title='value' data-type='gboolean' data-ref="28value">value</dfn>)</td></tr>
+<tr><th id="155">155</th><td>{</td></tr>
+<tr><th id="156">156</th><td>    <a class="typedef" href="../../include/glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="local col9 decl" id="29ok" title='ok' data-type='gboolean' data-ref="29ok">ok</dfn> =<a class="ref" href="../../include/ibus-1.0/ibusconfig.h.html#ibus_config_set_value" title='ibus_config_set_value' data-ref="ibus_config_set_value">ibus_config_set_value</a>(<a class="local col5 ref" href="#25config" title='config' data-ref="25config">config</a>, <a class="local col6 ref" href="#26section" title='section' data-ref="26section">section</a>, <a class="local col7 ref" href="#27name" title='name' data-ref="27name">name</a>, <a class="ref" href="../../include/glib-2.0/glib/gvariant.h.html#g_variant_new_boolean" title='g_variant_new_boolean' data-ref="g_variant_new_boolean">g_variant_new_boolean</a>(<a class="local col8 ref" href="#28value" title='value' data-ref="28value">value</a>));</td></tr>
+<tr><th id="157">157</th><td>    <b>if</b> (!<a class="local col9 ref" href="#29ok" title='ok' data-ref="29ok">ok</a>)</td></tr>
+<tr><th id="158">158</th><td>    {</td></tr>
+<tr><th id="159">159</th><td>        <a class="macro" href="../../include/glib-2.0/glib/gmessages.h.html#343" title="g_log (((gchar*) 0), G_LOG_LEVEL_DEBUG, &quot;ibus_unikey_config_set_boolean: Cannot set boolean.\n&quot;)" data-ref="_M/g_debug">g_debug</a>(<q>"ibus_unikey_config_set_boolean: Cannot set boolean.\n"</q>);</td></tr>
+<tr><th id="160">160</th><td>    }</td></tr>
+<tr><th id="161">161</th><td>}</td></tr>
+<tr><th id="162">162</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2018-Nov-16</em> from project unikey revision <em>0.6.1</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

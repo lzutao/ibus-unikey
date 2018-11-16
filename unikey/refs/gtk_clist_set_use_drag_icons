@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='471' type='void gtk_clist_set_use_drag_icons(GtkCList * clist, gboolean use_icons)'/>

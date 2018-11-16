@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplaymanager.h' l='63' type='GSList * gdk_display_manager_list_displays(GdkDisplayManager * display_manager)'/>

@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-item.h' l='112' type='PangoItem * pango_item_split(PangoItem * orig, int split_index, int split_offset)'/>

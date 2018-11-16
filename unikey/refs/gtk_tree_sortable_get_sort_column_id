@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreesortable.h' l='84' type='gboolean gtk_tree_sortable_get_sort_column_id(GtkTreeSortable * sortable, gint * sort_column_id, GtkSortType * order)'/>

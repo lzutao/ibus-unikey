@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkcombo.h' l='101' type='void gtk_combo_set_case_sensitive(GtkCombo * combo, gboolean val)'/>
+<doc f='include/gtk-2.0/gtk/gtkcombo.h' l='100'>/* perform case-sensitive compares */</doc>

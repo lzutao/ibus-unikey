@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='306' type='GdkWindow * gtk_entry_get_icon_window(GtkEntry * entry, GtkEntryIconPosition icon_pos)'/>

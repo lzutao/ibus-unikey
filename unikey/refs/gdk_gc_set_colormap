@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkgc.h' l='284' type='void gdk_gc_set_colormap(GdkGC * gc, GdkColormap * colormap)'/>

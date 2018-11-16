@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtktexttagtable.h' l='49' ll='58'/>
+<size>56</size>
+<mbr r='_GtkTextTagTable::parent_instance' o='0' t='GObject'/>
+<mbr r='_GtkTextTagTable::hash' o='192' t='GHashTable *'/>
+<mbr r='_GtkTextTagTable::anonymous' o='256' t='GSList *'/>
+<mbr r='_GtkTextTagTable::anon_count' o='320' t='gint'/>
+<mbr r='_GtkTextTagTable::buffers' o='384' t='GSList *'/>

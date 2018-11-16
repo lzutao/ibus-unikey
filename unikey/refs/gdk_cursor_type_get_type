@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkenumtypes.h' l='16' type='GType gdk_cursor_type_get_type()'/>
+<doc f='include/gtk-2.0/gdk/gdkenumtypes.h' l='15'>/* enumerations from &quot;gdkcursor.h&quot; */</doc>

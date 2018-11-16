@@ -1,0 +1,44 @@
+<def f='include/gtk-2.0/gtk/gtkentry.h' l='66' ll='126'/>
+<size>208</size>
+<mbr r='_GtkEntry::widget' o='0' t='GtkWidget'/>
+<mbr r='_GtkEntry::text' o='768' t='gchar *'/>
+<mbr r='_GtkEntry::editable' o='832' t='guint'/>
+<mbr r='_GtkEntry::visible' o='833' t='guint'/>
+<mbr r='_GtkEntry::overwrite_mode' o='834' t='guint'/>
+<mbr r='_GtkEntry::in_drag' o='835' t='guint'/>
+<mbr r='_GtkEntry::text_length' o='848' t='guint16'/>
+<mbr r='_GtkEntry::text_max_length' o='864' t='guint16'/>
+<mbr r='_GtkEntry::text_area' o='896' t='GdkWindow *'/>
+<mbr r='_GtkEntry::im_context' o='960' t='GtkIMContext *'/>
+<mbr r='_GtkEntry::popup_menu' o='1024' t='GtkWidget *'/>
+<mbr r='_GtkEntry::current_pos' o='1088' t='gint'/>
+<mbr r='_GtkEntry::selection_bound' o='1120' t='gint'/>
+<mbr r='_GtkEntry::cached_layout' o='1152' t='PangoLayout *'/>
+<mbr r='_GtkEntry::cache_includes_preedit' o='1216' t='guint'/>
+<mbr r='_GtkEntry::need_im_reset' o='1217' t='guint'/>
+<mbr r='_GtkEntry::has_frame' o='1218' t='guint'/>
+<mbr r='_GtkEntry::activates_default' o='1219' t='guint'/>
+<mbr r='_GtkEntry::cursor_visible' o='1220' t='guint'/>
+<mbr r='_GtkEntry::in_click' o='1221' t='guint'/>
+<mbr r='_GtkEntry::is_cell_renderer' o='1222' t='guint'/>
+<mbr r='_GtkEntry::editing_canceled' o='1223' t='guint'/>
+<mbr r='_GtkEntry::mouse_cursor_obscured' o='1224' t='guint'/>
+<mbr r='_GtkEntry::select_words' o='1225' t='guint'/>
+<mbr r='_GtkEntry::select_lines' o='1226' t='guint'/>
+<mbr r='_GtkEntry::resolved_dir' o='1227' t='guint'/>
+<mbr r='_GtkEntry::truncate_multiline' o='1231' t='guint'/>
+<mbr r='_GtkEntry::button' o='1248' t='guint'/>
+<mbr r='_GtkEntry::blink_timeout' o='1280' t='guint'/>
+<mbr r='_GtkEntry::recompute_idle' o='1312' t='guint'/>
+<mbr r='_GtkEntry::scroll_offset' o='1344' t='gint'/>
+<mbr r='_GtkEntry::ascent' o='1376' t='gint'/>
+<mbr r='_GtkEntry::descent' o='1408' t='gint'/>
+<mbr r='_GtkEntry::x_text_size' o='1440' t='guint16'/>
+<mbr r='_GtkEntry::x_n_bytes' o='1456' t='guint16'/>
+<mbr r='_GtkEntry::preedit_length' o='1472' t='guint16'/>
+<mbr r='_GtkEntry::preedit_cursor' o='1488' t='guint16'/>
+<mbr r='_GtkEntry::dnd_position' o='1504' t='gint'/>
+<mbr r='_GtkEntry::drag_start_x' o='1536' t='gint'/>
+<mbr r='_GtkEntry::drag_start_y' o='1568' t='gint'/>
+<mbr r='_GtkEntry::invisible_char' o='1600' t='gunichar'/>
+<mbr r='_GtkEntry::width_chars' o='1632' t='gint'/>

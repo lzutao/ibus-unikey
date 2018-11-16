@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdrawable.h' l='249' type='gpointer gdk_drawable_get_data(GdkDrawable * drawable, const gchar * key)'/>

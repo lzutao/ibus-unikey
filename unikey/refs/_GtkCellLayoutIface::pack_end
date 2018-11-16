@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkcelllayout.h' l='57' type='void (*)(GtkCellLayout *, GtkCellRenderer *, gboolean)'/>
+<offset>192</offset>

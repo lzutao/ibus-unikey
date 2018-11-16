@@ -1,0 +1,2 @@
+<dec f='include/cairo/cairo.h' l='1514' type='cairo_font_face_t * cairo_font_face_reference(cairo_font_face_t * font_face)'/>
+<doc f='include/cairo/cairo.h' l='1511'>/* Generic identifier for a font style */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktoggleaction.h' l='84' type='void gtk_toggle_action_set_draw_as_radio(GtkToggleAction * action, gboolean draw_as_radio)'/>

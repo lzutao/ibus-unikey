@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusenginedesc.h' l='180' type='const gchar * ibus_engine_desc_get_description(IBusEngineDesc * info)'/>
+<doc f='include/ibus-1.0/ibusenginedesc.h' l='172'>/**
+ * ibus_engine_desc_get_description:
+ * @info: An IBusEngineDesc
+ *
+ * Gets the description property in IBusEngineDesc. It should not be freed.
+ *
+ * Returns: description property in IBusEngineDesc
+ */</doc>

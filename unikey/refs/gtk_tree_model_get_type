@@ -1,0 +1,15 @@
+<dec f='include/gtk-2.0/gtk/gtktreemodel.h' l='190' type='GType gtk_tree_model_get_type()'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='95' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='98' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='105' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='145' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='160' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='183' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='188' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='191' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='304' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='331' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='366' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='367' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='376' macro='1' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='411' macro='1' u='c'/>

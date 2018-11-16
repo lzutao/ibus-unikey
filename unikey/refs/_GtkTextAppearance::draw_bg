@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtktexttag.h' l='198' type='guint'/>
+<offset>453</offset>
+<doc f='include/gtk-2.0/gtk/gtktexttag.h' l='193'>/* Whether to use background-related values; this is irrelevant for
+   * the values struct when in a tag, but is used for the composite
+   * values struct; it&apos;s true if any of the tags being composited
+   * had background stuff set.
+   */</doc>

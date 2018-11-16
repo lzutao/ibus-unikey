@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintoperation.h' l='165' type='void gtk_print_operation_set_allow_async(GtkPrintOperation * op, gboolean allow_async)'/>

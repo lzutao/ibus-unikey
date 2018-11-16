@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='898' type='gboolean gtk_widget_remove_accelerator(GtkWidget * widget, GtkAccelGroup * accel_group, guint accel_key, GdkModifierType accel_mods)'/>

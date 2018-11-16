@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='175' type='GType gtk_ctree_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtkctree.h' l='171'>/***********************************************************
+ *           Creation, insertion, deletion                 *
+ ***********************************************************/</doc>

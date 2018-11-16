@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusemoji.h' l='134' type='const gchar * ibus_emoji_data_get_description(IBusEmojiData * emoji)'/>
+<doc f='include/ibus-1.0/ibusemoji.h' l='126'>/**
+ * ibus_emoji_data_get_description:
+ * @emoji : An #IBusEmojiData
+ *
+ * Gets the emoji description in #IBusEmojiData. It should not be freed.
+ *
+ * Returns: description property in #IBusEmojiData
+ */</doc>

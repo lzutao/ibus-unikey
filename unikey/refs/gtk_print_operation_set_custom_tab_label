@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintoperation.h' l='167' type='void gtk_print_operation_set_custom_tab_label(GtkPrintOperation * op, const gchar * label)'/>

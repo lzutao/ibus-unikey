@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='372' type='void gdk_window_clear_area_e(GdkWindow * window, gint x, gint y, gint width, gint height)'/>

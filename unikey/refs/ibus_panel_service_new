@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuspanelservice.h' l='147' type='IBusPanelService * ibus_panel_service_new(GDBusConnection * connection)'/>
+<doc f='include/ibus-1.0/ibuspanelservice.h' l='139'>/**
+ * ibus_panel_service_new:
+ * @connection: An GDBusConnection.
+ *
+ * Creates a new #IBusPanelService from an #GDBusConnection.
+ *
+ * Returns: A newly allocated #IBusPanelService.
+ */</doc>

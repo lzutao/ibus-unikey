@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='181' type='IBusProperty * ibus_property_new_varargs(const gchar * first_property_name)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='169'>/**
+ * ibus_property_new_varargs:
+ * @first_property_name: Name of the first property.
+ * @...: the NULL-terminated arguments of the properties and values.
+ *
+ * Creates a new #IBusProperty.
+ * ibus_property_new_varargs() supports the va_list format.
+ * name property is required. e.g.
+ * ibus_property_new_varargs(&quot;key&quot;, &quot;TypingMode&quot;, &quot;type&quot;, PROP_TYPE_MENU, NULL)
+ *
+ * Returns: A newly allocated #IBusProperty.
+ */</doc>

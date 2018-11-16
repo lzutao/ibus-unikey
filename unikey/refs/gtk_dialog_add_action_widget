@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkdialog.h' l='136' type='void gtk_dialog_add_action_widget(GtkDialog * dialog, GtkWidget * child, gint response_id)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkkeys.h' l='110' type='gboolean gdk_keymap_get_caps_lock_state(GdkKeymap * keymap)'/>

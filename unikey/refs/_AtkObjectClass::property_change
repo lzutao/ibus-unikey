@@ -1,0 +1,6 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='628' type='void (*)(AtkObject *, AtkPropertyValues *)'/>
+<offset>2368</offset>
+<doc f='include/atk-1.0/atk/atkobject.h' l='624'>/*
+   * The signal handler which is executed  when there is a property_change 
+   * signal for an object.
+   */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/glib-2.0/glib/gmain.h' l='451' type='void g_source_set_can_recurse(GSource * source, gboolean can_recurse)'/>

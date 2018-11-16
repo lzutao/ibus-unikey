@@ -1,0 +1,26 @@
+<def f='include/cairo/cairo.h' l='2093' ll='2097'/>
+<size>24</size>
+<doc f='include/cairo/cairo.h' l='2072'>/**
+ * cairo_path_t:
+ * @status: the current error status
+ * @data: the elements in the path
+ * @num_data: the number of elements in the data array
+ *
+ * A data structure for holding a path. This data structure serves as
+ * the return value for cairo_copy_path() and
+ * cairo_copy_path_flat() as well the input value for
+ * cairo_append_path().
+ *
+ * See #cairo_path_data_t for hints on how to iterate over the
+ * actual data within the path.
+ *
+ * The num_data member gives the number of elements in the data
+ * array. This number is larger than the number of independent path
+ * portions (defined in #cairo_path_data_type_t), since the data
+ * includes both headers and coordinates for each portion.
+ *
+ * Since: 1.0
+ **/</doc>
+<mbr r='cairo_path::status' o='0' t='cairo_status_t'/>
+<mbr r='cairo_path::data' o='64' t='cairo_path_data_t *'/>
+<mbr r='cairo_path::num_data' o='128' t='int'/>

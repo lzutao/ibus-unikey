@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtksignal.h' l='132' type='void gtk_signal_emit(GtkObject * object, guint signal_id)'/>

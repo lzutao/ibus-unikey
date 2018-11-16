@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gdk/gdkcursor.h' l='127' ll='132'/>
+<size>8</size>
+<mbr r='_GdkCursor::type' o='0' t='GdkCursorType'/>
+<mbr r='_GdkCursor::ref_count' o='32' t='guint'/>

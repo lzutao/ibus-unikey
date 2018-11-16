@@ -1,0 +1,2 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='56'/>
+<use f='unikey/src/engine.cpp' l='87' u='c'/>

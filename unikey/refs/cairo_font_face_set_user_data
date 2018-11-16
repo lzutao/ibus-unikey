@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='1581' type='cairo_status_t cairo_font_face_set_user_data(cairo_font_face_t * font_face, const cairo_user_data_key_t * key, void * user_data, cairo_destroy_func_t destroy)'/>

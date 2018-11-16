@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkdnd.h' l='141' type='GdkDragContext * gdk_drag_begin(GdkWindow * window, GList * targets)'/>
+<doc f='include/gtk-2.0/gdk/gdkdnd.h' l='139'>/* Source side */</doc>

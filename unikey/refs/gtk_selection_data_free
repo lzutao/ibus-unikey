@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkselection.h' l='215' type='void gtk_selection_data_free(GtkSelectionData * data)'/>

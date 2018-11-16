@@ -1,0 +1,12 @@
+<def f='include/gtk-2.0/gtk/gtkbuilder.h' l='68' ll='84'/>
+<size>208</size>
+<mbr r='_GtkBuilderClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_GtkBuilderClass::get_type_from_name' o='1088' t='GType (*)(GtkBuilder *, const char *)'/>
+<mbr r='_GtkBuilderClass::_gtk_reserved1' o='1152' t='void (*)()'/>
+<mbr r='_GtkBuilderClass::_gtk_reserved2' o='1216' t='void (*)()'/>
+<mbr r='_GtkBuilderClass::_gtk_reserved3' o='1280' t='void (*)()'/>
+<mbr r='_GtkBuilderClass::_gtk_reserved4' o='1344' t='void (*)()'/>
+<mbr r='_GtkBuilderClass::_gtk_reserved5' o='1408' t='void (*)()'/>
+<mbr r='_GtkBuilderClass::_gtk_reserved6' o='1472' t='void (*)()'/>
+<mbr r='_GtkBuilderClass::_gtk_reserved7' o='1536' t='void (*)()'/>
+<mbr r='_GtkBuilderClass::_gtk_reserved8' o='1600' t='void (*)()'/>

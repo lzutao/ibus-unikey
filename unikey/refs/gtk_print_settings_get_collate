@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintsettings.h' l='170' type='gboolean gtk_print_settings_get_collate(GtkPrintSettings * settings)'/>

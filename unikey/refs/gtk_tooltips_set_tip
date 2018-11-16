@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktooltips.h' l='94' type='void gtk_tooltips_set_tip(GtkTooltips * tooltips, GtkWidget * widget, const gchar * tip_text, const gchar * tip_private)'/>

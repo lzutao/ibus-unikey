@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkfontsel.h' l='92' ll='101'/>
+<size>856</size>
+<mbr r='_GtkFontSelectionClass::parent_class' o='0' t='GtkVBoxClass'/>
+<mbr r='_GtkFontSelectionClass::_gtk_reserved1' o='6592' t='void (*)()'/>
+<mbr r='_GtkFontSelectionClass::_gtk_reserved2' o='6656' t='void (*)()'/>
+<mbr r='_GtkFontSelectionClass::_gtk_reserved3' o='6720' t='void (*)()'/>
+<mbr r='_GtkFontSelectionClass::_gtk_reserved4' o='6784' t='void (*)()'/>

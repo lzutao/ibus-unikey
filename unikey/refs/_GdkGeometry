@@ -1,0 +1,13 @@
+<def f='include/gtk-2.0/gdk/gdkwindow.h' l='226' ll='239'/>
+<size>56</size>
+<mbr r='_GdkGeometry::min_width' o='0' t='gint'/>
+<mbr r='_GdkGeometry::min_height' o='32' t='gint'/>
+<mbr r='_GdkGeometry::max_width' o='64' t='gint'/>
+<mbr r='_GdkGeometry::max_height' o='96' t='gint'/>
+<mbr r='_GdkGeometry::base_width' o='128' t='gint'/>
+<mbr r='_GdkGeometry::base_height' o='160' t='gint'/>
+<mbr r='_GdkGeometry::width_inc' o='192' t='gint'/>
+<mbr r='_GdkGeometry::height_inc' o='224' t='gint'/>
+<mbr r='_GdkGeometry::min_aspect' o='256' t='gdouble'/>
+<mbr r='_GdkGeometry::max_aspect' o='320' t='gdouble'/>
+<mbr r='_GdkGeometry::win_gravity' o='384' t='GdkGravity'/>

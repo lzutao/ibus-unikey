@@ -1,0 +1,16 @@
+<def f='include/gtk-2.0/gtk/gtkcontainer.h' l='69' ll='103'/>
+<size>824</size>
+<mbr r='_GtkContainerClass::parent_class' o='0' t='GtkWidgetClass'/>
+<mbr r='_GtkContainerClass::add' o='5760' t='void (*)(GtkContainer *, GtkWidget *)'/>
+<mbr r='_GtkContainerClass::remove' o='5824' t='void (*)(GtkContainer *, GtkWidget *)'/>
+<mbr r='_GtkContainerClass::check_resize' o='5888' t='void (*)(GtkContainer *)'/>
+<mbr r='_GtkContainerClass::forall' o='5952' t='void (*)(GtkContainer *, gboolean, GtkCallback, gpointer)'/>
+<mbr r='_GtkContainerClass::set_focus_child' o='6016' t='void (*)(GtkContainer *, GtkWidget *)'/>
+<mbr r='_GtkContainerClass::child_type' o='6080' t='GType (*)(GtkContainer *)'/>
+<mbr r='_GtkContainerClass::composite_name' o='6144' t='gchar *(*)(GtkContainer *, GtkWidget *)'/>
+<mbr r='_GtkContainerClass::set_child_property' o='6208' t='void (*)(GtkContainer *, GtkWidget *, guint, const GValue *, GParamSpec *)'/>
+<mbr r='_GtkContainerClass::get_child_property' o='6272' t='void (*)(GtkContainer *, GtkWidget *, guint, GValue *, GParamSpec *)'/>
+<mbr r='_GtkContainerClass::_gtk_reserved1' o='6336' t='void (*)()'/>
+<mbr r='_GtkContainerClass::_gtk_reserved2' o='6400' t='void (*)()'/>
+<mbr r='_GtkContainerClass::_gtk_reserved3' o='6464' t='void (*)()'/>
+<mbr r='_GtkContainerClass::_gtk_reserved4' o='6528' t='void (*)()'/>

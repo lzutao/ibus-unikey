@@ -1,0 +1,6 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='115'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='110'>/**
+ * IBUS_PATH_NOTIFICATIONS:
+ *
+ * D-Bus path for IBus notifications.
+ */</doc>

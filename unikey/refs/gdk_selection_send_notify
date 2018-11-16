@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkselection.h' l='95' type='void gdk_selection_send_notify(GdkNativeWindow requestor, GdkAtom selection, GdkAtom target, GdkAtom property, guint32 time_)'/>

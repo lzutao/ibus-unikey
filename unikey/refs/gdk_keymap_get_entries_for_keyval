@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkkeys.h' l='99' type='gboolean gdk_keymap_get_entries_for_keyval(GdkKeymap * keymap, guint keyval, GdkKeymapKey ** keys, gint * n_keys)'/>

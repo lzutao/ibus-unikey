@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-glyph.h' l='172' type='void pango_glyph_string_get_logical_widths(PangoGlyphString * glyphs, const char * text, int length, int embedding_level, int * logical_widths)'/>

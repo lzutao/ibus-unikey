@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconview.h' l='203' type='void gtk_icon_view_get_drag_dest_item(GtkIconView * icon_view, GtkTreePath ** path, GtkIconViewDropPosition * pos)'/>

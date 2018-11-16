@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='944' type='void gtk_widget_set_can_default(GtkWidget * widget, gboolean can_default)'/>

@@ -1,0 +1,16 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='340' type='void ibus_engine_update_lookup_table_fast(IBusEngine * engine, IBusLookupTable * lookup_table, gboolean visible)'/>
+<doc f='include/ibus-1.0/ibusengine.h' l='325'>/**
+ * ibus_engine_update_lookup_table_fast:
+ * @engine: An IBusEngine.
+ * @lookup_table: An lookup_table.
+ * @visible: Whether the lookup_table is visible.
+ *
+ * Fast update for big lookup table.
+ *
+ * If size of lookup table is not over table page size *4,
+ * then it calls ibus_engine_update_lookup_table().
+ *
+ * (Note: The table object will be released, if it is floating.
+ *  If caller want to keep the object, caller should make the object
+ *  sink by g_object_ref_sink.)
+ */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atktext.h' l='383' type='void atk_text_get_character_extents(AtkText * text, gint offset, gint * x, gint * y, gint * width, gint * height, AtkCoordType coords)'/>

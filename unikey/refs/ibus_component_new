@@ -1,0 +1,17 @@
+<dec f='include/ibus-1.0/ibuscomponent.h' l='119' type='IBusComponent * ibus_component_new(const gchar * name, const gchar * description, const gchar * version, const gchar * license, const gchar * author, const gchar * homepage, const gchar * command_line, const gchar * textdomain)'/>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='104'>/**
+ * ibus_component_new:
+ * @name: Name of the component.
+ * @description: Detailed description of component.
+ * @version: Component version.
+ * @license: Distribution license of this component.
+ * @author: Author(s) of the component.
+ * @homepage: Homepage of the component.
+ * @command_line: path to component executable.
+ * @textdomain: Domain name for dgettext()
+ *
+ * Creates a new #IBusComponent.
+ *
+ * Returns: A newly allocated #IBusComponent.
+ */</doc>
+<use f='unikey/src/utils.cpp' l='48' u='c' c='_Z25ibus_unikey_get_componentv'/>

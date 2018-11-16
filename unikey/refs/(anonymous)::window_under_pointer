@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='66' type='GdkWindow *'/>
+<offset>64</offset>
+<doc f='include/gtk-2.0/gdk/gdkdisplay.h' l='66'>/* The window that last got sent a normal enter event */</doc>

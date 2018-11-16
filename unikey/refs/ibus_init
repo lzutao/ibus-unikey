@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='327' type='void ibus_init()'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='20' u='c' c='_Z28unikey_main_setup_dialog_newv'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='322'>/**
+ * ibus_init:
+ *
+ * Initialize the ibus types.
+ */</doc>
+<use f='unikey/src/main.cpp' l='36' u='c' c='_ZL15start_componentv'/>

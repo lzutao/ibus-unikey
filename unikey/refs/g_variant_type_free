@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/glib/gvarianttype.h' l='304' type='void g_variant_type_free(GVariantType * type)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='88' u='c' c='_ZL33glib_autoptr_cleanup_GVariantTypePP13_GVariantType'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='88' u='r' c='_ZL37glib_listautoptr_cleanup_GVariantTypePP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='88' u='r' c='_ZL38glib_slistautoptr_cleanup_GVariantTypePP7_GSList'/>

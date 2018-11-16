@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtkcolorbutton.h' l='51'/>
+<doc f='include/gtk-2.0/gtk/gtkcolorbutton.h' l='45'>/* The GtkColorButton widget is a simple color picker in a button.
+ * The button displays a sample of the currently selected color.  When
+ * the user clicks on the button, a color selection dialog pops up.
+ * The color picker emits the &quot;color_set&quot; signal when the color is set.
+ */</doc>

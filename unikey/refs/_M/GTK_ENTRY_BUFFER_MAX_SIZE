@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkentrybuffer.h' l='32'/>
+<doc f='include/gtk-2.0/gtk/gtkentrybuffer.h' l='31'>/* Maximum size of text buffer, in bytes */</doc>

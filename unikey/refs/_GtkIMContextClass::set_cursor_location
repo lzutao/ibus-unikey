@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkimcontext.h' l='81' type='void (*)(GtkIMContext *, GdkRectangle *)'/>
+<offset>2048</offset>

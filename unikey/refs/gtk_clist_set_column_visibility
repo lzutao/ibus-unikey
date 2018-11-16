@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='523' type='void gtk_clist_set_column_visibility(GtkCList * clist, gint column, gboolean visible)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='522'>/* set visibility of a column */</doc>

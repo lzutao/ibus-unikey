@@ -1,0 +1,15 @@
+<dec f='include/ibus-1.0/ibusservice.h' l='234' type='gboolean ibus_service_emit_signal(IBusService * service, const gchar * dest_bus_name, const gchar * interface_name, const gchar * signal_name, GVariant * parameters, GError ** error)'/>
+<doc f='include/ibus-1.0/ibusservice.h' l='220'>/**
+ * ibus_service_send_signal:
+ * @service: An IBusService.
+ * @interface: The interface the signal is emitted from.
+ * @name: Name of the signal.
+ * @first_arg_type: Type of first argument.
+ * @...: Rest of arguments, NULL to mark the end.
+ *
+ * Sends signal to all the #IBusConnections of an #IBusService.
+ *
+ * Returns: %TRUE if succeed; %FALSE otherwise.
+ *
+ * see_also: g_dbus_connection_emit_signal()
+ */</doc>

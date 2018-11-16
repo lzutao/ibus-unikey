@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtklayout.h' l='132' type='void gtk_layout_freeze(GtkLayout * layout)'/>
+<doc f='include/gtk-2.0/gtk/gtklayout.h' l='124'>/* These disable and enable moving and repainting the scrolling window
+ * of the GtkLayout, respectively.  If you want to update the layout&apos;s
+ * offsets but do not want it to repaint itself, you should use these
+ * functions.
+ *
+ * - I don&apos;t understand these are supposed to work, so I suspect
+ * - they don&apos;t now.                    OWT 1/20/98
+ */</doc>

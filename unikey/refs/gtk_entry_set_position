@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='323' type='void gtk_entry_set_position(GtkEntry * entry, gint position)'/>

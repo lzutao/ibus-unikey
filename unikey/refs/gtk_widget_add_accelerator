@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='892' type='void gtk_widget_add_accelerator(GtkWidget * widget, const gchar * accel_signal, GtkAccelGroup * accel_group, guint accel_key, GdkModifierType accel_mods, GtkAccelFlags accel_flags)'/>

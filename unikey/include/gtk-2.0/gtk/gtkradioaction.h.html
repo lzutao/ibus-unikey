@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gtkradioaction.h source code [include/gtk-2.0/gtk/gtkradioaction.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gtk/gtkradioaction.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gtk</a>/<a href='gtkradioaction.h.html'>gtkradioaction.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * GTK - The GIMP Toolkit</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright (C) 1998, 1999 Red Hat, Inc.</i></td></tr>
+<tr><th id="4">4</th><td><i> * All rights reserved.</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * This Library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="7">7</th><td><i> * modify it under the terms of the GNU Library General Public License as</i></td></tr>
+<tr><th id="8">8</th><td><i> * published by the Free Software Foundation; either version 2 of the</i></td></tr>
+<tr><th id="9">9</th><td><i> * License, or (at your option) any later version.</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * This Library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="12">12</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="13">13</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="14">14</th><td><i> * Library General Public License for more details.</i></td></tr>
+<tr><th id="15">15</th><td><i> *</i></td></tr>
+<tr><th id="16">16</th><td><i> * You should have received a copy of the GNU Library General Public</i></td></tr>
+<tr><th id="17">17</th><td><i> * License along with the Gnome Library; see the file COPYING.LIB.  If not,</i></td></tr>
+<tr><th id="18">18</th><td><i> * write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="19">19</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><i>/*</i></td></tr>
+<tr><th id="23">23</th><td><i> * Author: James Henstridge &lt;james@daa.com.au&gt;</i></td></tr>
+<tr><th id="24">24</th><td><i> *</i></td></tr>
+<tr><th id="25">25</th><td><i> * Modified by the GTK+ Team and others 2003.  See the AUTHORS</i></td></tr>
+<tr><th id="26">26</th><td><i> * file for a list of people on the GTK+ Team.  See the ChangeLog</i></td></tr>
+<tr><th id="27">27</th><td><i> * files for a list of changes.  These files are distributed with</i></td></tr>
+<tr><th id="28">28</th><td><i> * GTK+ at ftp://ftp.gtk.org/pub/gtk/.</i></td></tr>
+<tr><th id="29">29</th><td><i> */</i></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#<span data-ppcond="31">ifndef</span> <span class="macro" data-ref="_M/__GTK_RADIO_ACTION_H__">__GTK_RADIO_ACTION_H__</span></u></td></tr>
+<tr><th id="32">32</th><td><u>#define <dfn class="macro" id="_M/__GTK_RADIO_ACTION_H__" data-ref="_M/__GTK_RADIO_ACTION_H__">__GTK_RADIO_ACTION_H__</dfn></u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><u>#<span data-ppcond="34">if</span> defined(<span class="macro" data-ref="_M/GTK_DISABLE_SINGLE_INCLUDES">GTK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gtk.h.html#30" data-ref="_M/__GTK_H_INSIDE__">__GTK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GTK_COMPILATION">GTK_COMPILATION</span>)</u></td></tr>
+<tr><th id="35">35</th><td><u>#error "Only &lt;gtk/gtk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="36">36</th><td><u>#<span data-ppcond="34">endif</span></u></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><u>#include <a href="gtktoggleaction.h.html">&lt;gtk/gtktoggleaction.h&gt;</a></u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/GTK_TYPE_RADIO_ACTION" data-ref="_M/GTK_TYPE_RADIO_ACTION">GTK_TYPE_RADIO_ACTION</dfn>            (gtk_radio_action_get_type ())</u></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/GTK_RADIO_ACTION" data-ref="_M/GTK_RADIO_ACTION">GTK_RADIO_ACTION</dfn>(obj)            (G_TYPE_CHECK_INSTANCE_CAST ((obj), GTK_TYPE_RADIO_ACTION, GtkRadioAction))</u></td></tr>
+<tr><th id="44">44</th><td><u>#define <dfn class="macro" id="_M/GTK_RADIO_ACTION_CLASS" data-ref="_M/GTK_RADIO_ACTION_CLASS">GTK_RADIO_ACTION_CLASS</dfn>(klass)    (G_TYPE_CHECK_CLASS_CAST ((klass), GTK_TYPE_RADIO_ACTION, GtkRadioActionClass))</u></td></tr>
+<tr><th id="45">45</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_RADIO_ACTION" data-ref="_M/GTK_IS_RADIO_ACTION">GTK_IS_RADIO_ACTION</dfn>(obj)         (G_TYPE_CHECK_INSTANCE_TYPE ((obj), GTK_TYPE_RADIO_ACTION))</u></td></tr>
+<tr><th id="46">46</th><td><u>#define <dfn class="macro" id="_M/GTK_IS_RADIO_ACTION_CLASS" data-ref="_M/GTK_IS_RADIO_ACTION_CLASS">GTK_IS_RADIO_ACTION_CLASS</dfn>(klass) (G_TYPE_CHECK_CLASS_TYPE ((klass), GTK_TYPE_RADIO_ACTION))</u></td></tr>
+<tr><th id="47">47</th><td><u>#define <dfn class="macro" id="_M/GTK_RADIO_ACTION_GET_CLASS" data-ref="_M/GTK_RADIO_ACTION_GET_CLASS">GTK_RADIO_ACTION_GET_CLASS</dfn>(obj)  (G_TYPE_INSTANCE_GET_CLASS((obj), GTK_TYPE_RADIO_ACTION, GtkRadioActionClass))</u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkRadioAction" title='_GtkRadioAction' data-ref="_GtkRadioAction">_GtkRadioAction</a>        <dfn class="typedef" id="GtkRadioAction" title='GtkRadioAction' data-type='struct _GtkRadioAction' data-ref="GtkRadioAction">GtkRadioAction</dfn>;</td></tr>
+<tr><th id="50">50</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_GtkRadioActionPrivate" title='_GtkRadioActionPrivate' data-ref="_GtkRadioActionPrivate"><a class="type" href="#_GtkRadioActionPrivate" title='_GtkRadioActionPrivate' data-ref="_GtkRadioActionPrivate">_GtkRadioActionPrivate</a></dfn> <dfn class="typedef" id="GtkRadioActionPrivate" title='GtkRadioActionPrivate' data-type='struct _GtkRadioActionPrivate' data-ref="GtkRadioActionPrivate">GtkRadioActionPrivate</dfn>;</td></tr>
+<tr><th id="51">51</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GtkRadioActionClass" title='_GtkRadioActionClass' data-ref="_GtkRadioActionClass">_GtkRadioActionClass</a>   <dfn class="typedef" id="GtkRadioActionClass" title='GtkRadioActionClass' data-type='struct _GtkRadioActionClass' data-ref="GtkRadioActionClass">GtkRadioActionClass</dfn>;</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><b>struct</b> <dfn class="type def" id="_GtkRadioAction" title='_GtkRadioAction' data-ref="_GtkRadioAction">_GtkRadioAction</dfn></td></tr>
+<tr><th id="54">54</th><td>{</td></tr>
+<tr><th id="55">55</th><td>  <a class="typedef" href="gtktoggleaction.h.html#GtkToggleAction" title='GtkToggleAction' data-type='struct _GtkToggleAction' data-ref="GtkToggleAction">GtkToggleAction</a> <dfn class="decl" id="_GtkRadioAction::parent" title='_GtkRadioAction::parent' data-ref="_GtkRadioAction::parent">parent</dfn>;</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td>  <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td>  <a class="typedef" href="#GtkRadioActionPrivate" title='GtkRadioActionPrivate' data-type='struct _GtkRadioActionPrivate' data-ref="GtkRadioActionPrivate">GtkRadioActionPrivate</a> *<span class="macro" title="private_data" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GtkRadioAction::private_data" title='_GtkRadioAction::private_data' data-ref="_GtkRadioAction::private_data">private_data</dfn>);</td></tr>
+<tr><th id="60">60</th><td>};</td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td><b>struct</b> <dfn class="type def" id="_GtkRadioActionClass" title='_GtkRadioActionClass' data-ref="_GtkRadioActionClass">_GtkRadioActionClass</dfn></td></tr>
+<tr><th id="63">63</th><td>{</td></tr>
+<tr><th id="64">64</th><td>  <a class="typedef" href="gtktoggleaction.h.html#GtkToggleActionClass" title='GtkToggleActionClass' data-type='struct _GtkToggleActionClass' data-ref="GtkToggleActionClass">GtkToggleActionClass</a> <dfn class="decl" id="_GtkRadioActionClass::parent_class" title='_GtkRadioActionClass::parent_class' data-ref="_GtkRadioActionClass::parent_class">parent_class</dfn>;</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td>  <em>void</em>       (* <dfn class="decl" id="_GtkRadioActionClass::changed" title='_GtkRadioActionClass::changed' data-ref="_GtkRadioActionClass::changed">changed</dfn>) (<a class="typedef" href="#GtkRadioAction" title='GtkRadioAction' data-type='struct _GtkRadioAction' data-ref="GtkRadioAction">GtkRadioAction</a> *<dfn class="local col9 decl" id="22879action" title='action' data-type='GtkRadioAction *' data-ref="22879action">action</dfn>, <a class="typedef" href="#GtkRadioAction" title='GtkRadioAction' data-type='struct _GtkRadioAction' data-ref="GtkRadioAction">GtkRadioAction</a> *<dfn class="local col0 decl" id="22880current" title='current' data-type='GtkRadioAction *' data-ref="22880current">current</dfn>);</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td>  <i>/* Padding for future expansion */</i></td></tr>
+<tr><th id="69">69</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkRadioActionClass::_gtk_reserved1" title='_GtkRadioActionClass::_gtk_reserved1' data-ref="_GtkRadioActionClass::_gtk_reserved1">_gtk_reserved1</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="70">70</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkRadioActionClass::_gtk_reserved2" title='_GtkRadioActionClass::_gtk_reserved2' data-ref="_GtkRadioActionClass::_gtk_reserved2">_gtk_reserved2</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="71">71</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkRadioActionClass::_gtk_reserved3" title='_GtkRadioActionClass::_gtk_reserved3' data-ref="_GtkRadioActionClass::_gtk_reserved3">_gtk_reserved3</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="72">72</th><td>  <em>void</em> (*<dfn class="decl" id="_GtkRadioActionClass::_gtk_reserved4" title='_GtkRadioActionClass::_gtk_reserved4' data-ref="_GtkRadioActionClass::_gtk_reserved4">_gtk_reserved4</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="73">73</th><td>};</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>           <dfn class="decl" id="gtk_radio_action_get_type" title='gtk_radio_action_get_type' data-ref="gtk_radio_action_get_type">gtk_radio_action_get_type</dfn>          (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="76">76</th><td><a class="typedef" href="#GtkRadioAction" title='GtkRadioAction' data-type='struct _GtkRadioAction' data-ref="GtkRadioAction">GtkRadioAction</a> *<dfn class="decl" id="gtk_radio_action_new" title='gtk_radio_action_new' data-ref="gtk_radio_action_new">gtk_radio_action_new</dfn>               (<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>           *<dfn class="local col1 decl" id="22881name" title='name' data-type='const gchar *' data-ref="22881name">name</dfn>,</td></tr>
+<tr><th id="77">77</th><td>                                                    <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>           *<dfn class="local col2 decl" id="22882label" title='label' data-type='const gchar *' data-ref="22882label">label</dfn>,</td></tr>
+<tr><th id="78">78</th><td>                                                    <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>           *<dfn class="local col3 decl" id="22883tooltip" title='tooltip' data-type='const gchar *' data-ref="22883tooltip">tooltip</dfn>,</td></tr>
+<tr><th id="79">79</th><td>                                                    <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>           *<dfn class="local col4 decl" id="22884stock_id" title='stock_id' data-type='const gchar *' data-ref="22884stock_id">stock_id</dfn>,</td></tr>
+<tr><th id="80">80</th><td>                                                    <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>                   <dfn class="local col5 decl" id="22885value" title='value' data-type='gint' data-ref="22885value">value</dfn>);</td></tr>
+<tr><th id="81">81</th><td><a class="typedef" href="../../glib-2.0/glib/gslist.h.html#GSList" title='GSList' data-type='struct _GSList' data-ref="GSList">GSList</a>         *<dfn class="decl" id="gtk_radio_action_get_group" title='gtk_radio_action_get_group' data-ref="gtk_radio_action_get_group">gtk_radio_action_get_group</dfn>         (<a class="typedef" href="#GtkRadioAction" title='GtkRadioAction' data-type='struct _GtkRadioAction' data-ref="GtkRadioAction">GtkRadioAction</a>        *<dfn class="local col6 decl" id="22886action" title='action' data-type='GtkRadioAction *' data-ref="22886action">action</dfn>);</td></tr>
+<tr><th id="82">82</th><td><em>void</em>            <dfn class="decl" id="gtk_radio_action_set_group" title='gtk_radio_action_set_group' data-ref="gtk_radio_action_set_group">gtk_radio_action_set_group</dfn>         (<a class="typedef" href="#GtkRadioAction" title='GtkRadioAction' data-type='struct _GtkRadioAction' data-ref="GtkRadioAction">GtkRadioAction</a>        *<dfn class="local col7 decl" id="22887action" title='action' data-type='GtkRadioAction *' data-ref="22887action">action</dfn>,</td></tr>
+<tr><th id="83">83</th><td>                                                    <a class="typedef" href="../../glib-2.0/glib/gslist.h.html#GSList" title='GSList' data-type='struct _GSList' data-ref="GSList">GSList</a>                *<dfn class="local col8 decl" id="22888group" title='group' data-type='GSList *' data-ref="22888group">group</dfn>);</td></tr>
+<tr><th id="84">84</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>            <dfn class="decl" id="gtk_radio_action_get_current_value" title='gtk_radio_action_get_current_value' data-ref="gtk_radio_action_get_current_value">gtk_radio_action_get_current_value</dfn> (<a class="typedef" href="#GtkRadioAction" title='GtkRadioAction' data-type='struct _GtkRadioAction' data-ref="GtkRadioAction">GtkRadioAction</a>        *<dfn class="local col9 decl" id="22889action" title='action' data-type='GtkRadioAction *' data-ref="22889action">action</dfn>);</td></tr>
+<tr><th id="85">85</th><td><em>void</em>            <dfn class="decl" id="gtk_radio_action_set_current_value" title='gtk_radio_action_set_current_value' data-ref="gtk_radio_action_set_current_value">gtk_radio_action_set_current_value</dfn> (<a class="typedef" href="#GtkRadioAction" title='GtkRadioAction' data-type='struct _GtkRadioAction' data-ref="GtkRadioAction">GtkRadioAction</a>        *<dfn class="local col0 decl" id="22890action" title='action' data-type='GtkRadioAction *' data-ref="22890action">action</dfn>,</td></tr>
+<tr><th id="86">86</th><td>                                                    <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>                   <dfn class="local col1 decl" id="22891current_value" title='current_value' data-type='gint' data-ref="22891current_value">current_value</dfn>);</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td><u>#<span data-ppcond="31">endif</span>  /* __GTK_RADIO_ACTION_H__ */</u></td></tr>
+<tr><th id="91">91</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

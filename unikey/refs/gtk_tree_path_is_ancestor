@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreemodel.h' l='149' type='gboolean gtk_tree_path_is_ancestor(GtkTreePath * path, GtkTreePath * descendant)'/>

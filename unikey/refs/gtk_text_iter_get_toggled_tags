@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='133' type='GSList * gtk_text_iter_get_toggled_tags(const GtkTextIter * iter, gboolean toggled_on)'/>
+<doc f='include/gtk-2.0/gtk/gtktextiter.h' l='130'>/* Return list of tags toggled at this point (toggled_on determines
+ * whether the list is of on-toggles or off-toggles)
+ */</doc>

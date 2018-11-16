@@ -1,0 +1,9 @@
+<def f='include/gtk-2.0/gtk/gtkscale.h' l='60' ll='77'/>
+<size>848</size>
+<mbr r='_GtkScaleClass::parent_class' o='0' t='GtkRangeClass'/>
+<mbr r='_GtkScaleClass::format_value' o='6400' t='gchar *(*)(GtkScale *, gdouble)'/>
+<mbr r='_GtkScaleClass::draw_value' o='6464' t='void (*)(GtkScale *)'/>
+<mbr r='_GtkScaleClass::get_layout_offsets' o='6528' t='void (*)(GtkScale *, gint *, gint *)'/>
+<mbr r='_GtkScaleClass::_gtk_reserved1' o='6592' t='void (*)()'/>
+<mbr r='_GtkScaleClass::_gtk_reserved2' o='6656' t='void (*)()'/>
+<mbr r='_GtkScaleClass::_gtk_reserved3' o='6720' t='void (*)()'/>

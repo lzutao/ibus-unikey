@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkexpander.h' l='73' type='void gtk_expander_set_spacing(GtkExpander * expander, gint spacing)'/>
+<doc f='include/gtk-2.0/gtk/gtkexpander.h' l='72'>/* Spacing between the expander/label and the child */</doc>

@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusservice.h' l='183' type='const gchar * ibus_service_get_object_path(IBusService * service)'/>
+<doc f='include/ibus-1.0/ibusservice.h' l='175'>/**
+ * ibus_service_get_object_path:
+ * @service: An IBusService.
+ *
+ * Gets the object path of an IBusService.
+ *
+ * Returns: The object path of @service
+ */</doc>

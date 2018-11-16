@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkkeys.h' l='91' type='gboolean gdk_keymap_translate_keyboard_state(GdkKeymap * keymap, guint hardware_keycode, GdkModifierType state, gint group, guint * keyval, gint * effective_group, gint * level, GdkModifierType * consumed_modifiers)'/>

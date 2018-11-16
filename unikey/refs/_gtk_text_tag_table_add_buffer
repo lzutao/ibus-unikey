@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtktexttagtable.h' l='93' type='void _gtk_text_tag_table_add_buffer(GtkTextTagTable * table, gpointer buffer)'/>
+<doc f='include/gtk-2.0/gtk/gtktexttagtable.h' l='90'>/* INTERNAL private stuff - not even exported from the library on
+ * many platforms
+ */</doc>

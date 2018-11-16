@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtklabel.h' l='202' type='void _gtk_label_mnemonics_visible_apply_recursively(GtkWidget * widget, gboolean mnemonics_visible)'/>
+<doc f='include/gtk-2.0/gtk/gtklabel.h' l='200'>/* private */</doc>

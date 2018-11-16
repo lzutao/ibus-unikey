@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gdk/gdkevents.h' l='290' ll='296'/>
+<size>24</size>
+<mbr r='_GdkEventVisibility::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventVisibility::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventVisibility::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventVisibility::state' o='160' t='GdkVisibilityState'/>

@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtktoggletoolbutton.h' l='53' ll='65'/>
+<size>968</size>
+<mbr r='_GtkToggleToolButtonClass::parent_class' o='0' t='GtkToolButtonClass'/>
+<mbr r='_GtkToggleToolButtonClass::toggled' o='7424' t='void (*)(GtkToggleToolButton *)'/>
+<mbr r='_GtkToggleToolButtonClass::_gtk_reserved1' o='7488' t='void (*)()'/>
+<mbr r='_GtkToggleToolButtonClass::_gtk_reserved2' o='7552' t='void (*)()'/>
+<mbr r='_GtkToggleToolButtonClass::_gtk_reserved3' o='7616' t='void (*)()'/>
+<mbr r='_GtkToggleToolButtonClass::_gtk_reserved4' o='7680' t='void (*)()'/>

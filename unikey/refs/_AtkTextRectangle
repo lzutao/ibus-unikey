@@ -1,0 +1,6 @@
+<def f='include/atk-1.0/atk/atktext.h' l='187' ll='192'/>
+<size>16</size>
+<mbr r='_AtkTextRectangle::x' o='0' t='gint'/>
+<mbr r='_AtkTextRectangle::y' o='32' t='gint'/>
+<mbr r='_AtkTextRectangle::width' o='64' t='gint'/>
+<mbr r='_AtkTextRectangle::height' o='96' t='gint'/>

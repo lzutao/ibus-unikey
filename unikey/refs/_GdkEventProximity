@@ -1,0 +1,9 @@
+<def f='include/gtk-2.0/gdk/gdkevents.h' l='429' ll='436'/>
+<size>32</size>
+<doc f='include/gtk-2.0/gdk/gdkevents.h' l='426'>/* This event type will be used pretty rarely. It only is important
+   for XInput aware programs that are drawing their own cursor */</doc>
+<mbr r='_GdkEventProximity::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventProximity::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventProximity::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventProximity::time' o='160' t='guint32'/>
+<mbr r='_GdkEventProximity::device' o='192' t='GdkDevice *'/>

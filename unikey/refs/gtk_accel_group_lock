@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='127' type='void gtk_accel_group_lock(GtkAccelGroup * accel_group)'/>

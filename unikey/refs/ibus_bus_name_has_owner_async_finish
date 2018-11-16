@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='324' type='gboolean ibus_bus_name_has_owner_async_finish(IBusBus * bus, GAsyncResult * res, GError ** error)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='313'>/**
+ * ibus_bus_name_has_owner_async_finish:
+ * @bus: An #IBusBus.
+ * @res: A #GAsyncResult obtained from the #GAsyncReadyCallback passed to
+ *   ibus_bus_name_has_owner_async().
+ * @error: Return location for error or %NULL.
+ *
+ * Finishes an operation started with ibus_bus_name_has_owner_async().
+ *
+ * Returns: %TRUE if the name has owner, %FALSE otherwise.
+ */</doc>

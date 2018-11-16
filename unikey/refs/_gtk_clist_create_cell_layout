@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='782' type='PangoLayout * _gtk_clist_create_cell_layout(GtkCList * clist, GtkCListRow * clist_row, gint column)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='780'>/* Private function for clist, ctree */</doc>

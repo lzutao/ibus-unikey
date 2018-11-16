@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkapplaunchcontext.h' l='63' type='void gdk_app_launch_context_set_screen(GdkAppLaunchContext * context, GdkScreen * screen)'/>

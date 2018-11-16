@@ -1,0 +1,9 @@
+<def f='include/ibus-1.0/ibusconfig.h' l='72' ll='78'/>
+<size>48</size>
+<doc f='include/ibus-1.0/ibusconfig.h' l='67'>/**
+ * IBusConfig:
+ *
+ * An opaque data type representing an IBusConfig.
+ */</doc>
+<mbr r='_IBusConfig::parent' o='0' t='IBusProxy'/>
+<mbr r='_IBusConfig::priv' o='320' t='IBusConfigPrivate *'/>

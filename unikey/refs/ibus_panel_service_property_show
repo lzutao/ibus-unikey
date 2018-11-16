@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuspanelservice.h' l='220' type='void ibus_panel_service_property_show(IBusPanelService * panel, const gchar * prop_name)'/>
+<doc f='include/ibus-1.0/ibuspanelservice.h' l='212'>/**
+ * ibus_panel_service_property_show:
+ * @panel: An IBusPanelService
+ * @prop_name: A property name
+ *
+ * Notify that a property is shown
+ * by sending a &quot;ValueChanged&quot; message to IBus service.
+ */</doc>

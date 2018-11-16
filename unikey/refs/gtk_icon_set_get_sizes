@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconfactory.h' l='142' type='void gtk_icon_set_get_sizes(GtkIconSet * icon_set, GtkIconSize ** sizes, gint * n_sizes)'/>

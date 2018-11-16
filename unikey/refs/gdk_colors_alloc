@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkcolor.h' l='162' type='gint gdk_colors_alloc(GdkColormap * colormap, gboolean contiguous, gulong * planes, gint nplanes, gulong * pixels, gint npixels)'/>
+<doc f='include/gtk-2.0/gdk/gdkcolor.h' l='161'>/* Used by gdk_rgb_try_colormap () */</doc>

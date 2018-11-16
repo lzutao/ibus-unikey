@@ -1,0 +1,14 @@
+<def f='include/ibus-1.0/ibustext.h' l='75' ll='83'/>
+<size>72</size>
+<doc f='include/ibus-1.0/ibustext.h' l='67'>/**
+ * IBusText:
+ * @is_static: Whether @text is static, i.e., no need and will not be freed. Only TRUE if IBusText is newed from ibus_text_new_from_static_string().
+ * @text: The string content of IBusText in UTF-8.
+ * @attrs: Associated IBusAttributes.
+ *
+ * A text object in IBus.
+ */</doc>
+<mbr r='_IBusText::parent' o='0' t='IBusSerializable'/>
+<mbr r='_IBusText::is_static' o='384' t='gboolean'/>
+<mbr r='_IBusText::text' o='448' t='gchar *'/>
+<mbr r='_IBusText::attrs' o='512' t='IBusAttrList *'/>

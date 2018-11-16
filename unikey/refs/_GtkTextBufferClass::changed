@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='118' type='void (*)(GtkTextBuffer *)'/>
+<offset>1344</offset>
+<doc f='include/gtk-2.0/gtk/gtktextbuffer.h' l='115'>/* Only for text/widgets/pixbuf changed, marks/tags don&apos;t cause this
+   * to be emitted
+   */</doc>

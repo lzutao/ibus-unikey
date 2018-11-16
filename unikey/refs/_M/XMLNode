@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusxml.h' l='61'/>
+<use f='include/ibus-1.0/ibusxml.h' l='78' u='c'/>
+<use f='include/ibus-1.0/ibusxml.h' l='78' u='c'/>
+<use f='include/ibus-1.0/ibusxml.h' l='88' u='c'/>
+<use f='include/ibus-1.0/ibusxml.h' l='99' u='c'/>
+<use f='include/ibus-1.0/ibusxml.h' l='107' u='c'/>
+<use f='include/ibus-1.0/ibusxml.h' l='116' u='c'/>
+<use f='include/ibus-1.0/ibusenginedesc.h' l='151' u='c'/>
+<use f='include/ibus-1.0/ibusobservedpath.h' l='103' u='c'/>
+<use f='include/ibus-1.0/ibuscomponent.h' l='154' u='c'/>

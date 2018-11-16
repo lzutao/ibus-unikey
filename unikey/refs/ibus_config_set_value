@@ -1,0 +1,17 @@
+<dec f='include/ibus-1.0/ibusconfig.h' l='259' type='gboolean ibus_config_set_value(IBusConfig * config, const gchar * section, const gchar * name, GVariant * value)'/>
+<doc f='include/ibus-1.0/ibusconfig.h' l='245'>/**
+ * ibus_config_set_value:
+ * @config: An #IBusConfig
+ * @section: Section name of the configuration option.
+ * @name: Name of the configure option its self.
+ * @value: A #GVariant that holds the value. If the value is floating, the
+ * function takes ownership of it.
+ *
+ * Set the value of a configuration option synchronously.
+ *
+ * Returns: %TRUE if succeed; %FALSE otherwise.
+ *
+ * See also: ibus_config_get_value().
+ */</doc>
+<use f='unikey/src/utils.cpp' l='129' u='c' c='_Z29ibus_unikey_config_set_stringP11_IBusConfigPKcS2_S2_'/>
+<use f='unikey/src/utils.cpp' l='156' u='c' c='_Z30ibus_unikey_config_set_booleanP11_IBusConfigPKcS2_i'/>

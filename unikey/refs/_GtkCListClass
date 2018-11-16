@@ -1,0 +1,32 @@
+<def f='include/gtk-2.0/gtk/gtkclist.h' l='245' ll='322'/>
+<size>1056</size>
+<mbr r='_GtkCListClass::parent_class' o='0' t='GtkContainerClass'/>
+<mbr r='_GtkCListClass::set_scroll_adjustments' o='6592' t='void (*)(GtkCList *, GtkAdjustment *, GtkAdjustment *)'/>
+<mbr r='_GtkCListClass::refresh' o='6656' t='void (*)(GtkCList *)'/>
+<mbr r='_GtkCListClass::select_row' o='6720' t='void (*)(GtkCList *, gint, gint, GdkEvent *)'/>
+<mbr r='_GtkCListClass::unselect_row' o='6784' t='void (*)(GtkCList *, gint, gint, GdkEvent *)'/>
+<mbr r='_GtkCListClass::row_move' o='6848' t='void (*)(GtkCList *, gint, gint)'/>
+<mbr r='_GtkCListClass::click_column' o='6912' t='void (*)(GtkCList *, gint)'/>
+<mbr r='_GtkCListClass::resize_column' o='6976' t='void (*)(GtkCList *, gint, gint)'/>
+<mbr r='_GtkCListClass::toggle_focus_row' o='7040' t='void (*)(GtkCList *)'/>
+<mbr r='_GtkCListClass::select_all' o='7104' t='void (*)(GtkCList *)'/>
+<mbr r='_GtkCListClass::unselect_all' o='7168' t='void (*)(GtkCList *)'/>
+<mbr r='_GtkCListClass::undo_selection' o='7232' t='void (*)(GtkCList *)'/>
+<mbr r='_GtkCListClass::start_selection' o='7296' t='void (*)(GtkCList *)'/>
+<mbr r='_GtkCListClass::end_selection' o='7360' t='void (*)(GtkCList *)'/>
+<mbr r='_GtkCListClass::extend_selection' o='7424' t='void (*)(GtkCList *, GtkScrollType, gfloat, gboolean)'/>
+<mbr r='_GtkCListClass::scroll_horizontal' o='7488' t='void (*)(GtkCList *, GtkScrollType, gfloat)'/>
+<mbr r='_GtkCListClass::scroll_vertical' o='7552' t='void (*)(GtkCList *, GtkScrollType, gfloat)'/>
+<mbr r='_GtkCListClass::toggle_add_mode' o='7616' t='void (*)(GtkCList *)'/>
+<mbr r='_GtkCListClass::abort_column_resize' o='7680' t='void (*)(GtkCList *)'/>
+<mbr r='_GtkCListClass::resync_selection' o='7744' t='void (*)(GtkCList *, GdkEvent *)'/>
+<mbr r='_GtkCListClass::selection_find' o='7808' t='GList *(*)(GtkCList *, gint, GList *)'/>
+<mbr r='_GtkCListClass::draw_row' o='7872' t='void (*)(GtkCList *, GdkRectangle *, gint, GtkCListRow *)'/>
+<mbr r='_GtkCListClass::draw_drag_highlight' o='7936' t='void (*)(GtkCList *, GtkCListRow *, gint, GtkCListDragPos)'/>
+<mbr r='_GtkCListClass::clear' o='8000' t='void (*)(GtkCList *)'/>
+<mbr r='_GtkCListClass::fake_unselect_all' o='8064' t='void (*)(GtkCList *, gint)'/>
+<mbr r='_GtkCListClass::sort_list' o='8128' t='void (*)(GtkCList *)'/>
+<mbr r='_GtkCListClass::insert_row' o='8192' t='gint (*)(GtkCList *, gint, gchar **)'/>
+<mbr r='_GtkCListClass::remove_row' o='8256' t='void (*)(GtkCList *, gint)'/>
+<mbr r='_GtkCListClass::set_cell_contents' o='8320' t='void (*)(GtkCList *, GtkCListRow *, gint, GtkCellType, const gchar *, guint8, GdkPixmap *, GdkBitmap *)'/>
+<mbr r='_GtkCListClass::cell_size_request' o='8384' t='void (*)(GtkCList *, GtkCListRow *, gint, GtkRequisition *)'/>

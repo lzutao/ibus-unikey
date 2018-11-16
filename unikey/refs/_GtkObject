@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkobject.h' l='107' ll='117'/>
+<size>32</size>
+<mbr r='_GtkObject::parent_instance' o='0' t='GInitiallyUnowned'/>
+<mbr r='_GtkObject::flags' o='192' t='guint32'/>

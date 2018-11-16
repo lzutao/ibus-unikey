@@ -1,0 +1,5 @@
+<def f='include/atk-1.0/atk/atkrelation.h' l='49' ll='55'/>
+<size>40</size>
+<mbr r='_AtkRelation::parent' o='0' t='GObject'/>
+<mbr r='_AtkRelation::target' o='192' t='GPtrArray *'/>
+<mbr r='_AtkRelation::relationship' o='256' t='AtkRelationType'/>

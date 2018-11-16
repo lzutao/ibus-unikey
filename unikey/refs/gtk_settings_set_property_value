@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtksettings.h' l='106' type='void gtk_settings_set_property_value(GtkSettings * settings, const gchar * name, const GtkSettingsValue * svalue)'/>
+<doc f='include/gtk-2.0/gtk/gtksettings.h' l='105'>/*&lt; private &gt;*/</doc>

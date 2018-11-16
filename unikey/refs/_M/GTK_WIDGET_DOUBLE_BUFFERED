@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='438'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='430'>/**
+ * GTK_WIDGET_DOUBLE_BUFFERED:
+ * @wid: a #GtkWidget.
+ *
+ * Evaluates to %TRUE if the #GTK_DOUBLE_BUFFERED flag has been set on the widget.
+ *
+ * Deprecated: 2.20: Use gtk_widget_get_double_buffered() instead.
+ */</doc>

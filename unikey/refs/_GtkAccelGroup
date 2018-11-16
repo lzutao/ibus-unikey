@@ -1,0 +1,13 @@
+<def f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='86' ll='95'/>
+<size>56</size>
+<doc f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='81'>/**
+ * GtkAccelGroup:
+ * 
+ * An object representing and maintaining a group of accelerators.
+ */</doc>
+<mbr r='_GtkAccelGroup::parent' o='0' t='GObject'/>
+<mbr r='_GtkAccelGroup::lock_count' o='192' t='guint'/>
+<mbr r='_GtkAccelGroup::modifier_mask' o='224' t='GdkModifierType'/>
+<mbr r='_GtkAccelGroup::acceleratables' o='256' t='GSList *'/>
+<mbr r='_GtkAccelGroup::n_accels' o='320' t='guint'/>
+<mbr r='_GtkAccelGroup::priv_accels' o='384' t='GtkAccelGroupEntry *'/>

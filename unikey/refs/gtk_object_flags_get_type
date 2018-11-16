@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='228' type='GType gtk_object_flags_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='227'>/* enumerations from &quot;gtkobject.h&quot; */</doc>

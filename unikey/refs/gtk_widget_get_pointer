@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1115' type='void gtk_widget_get_pointer(GtkWidget * widget, gint * x, gint * y)'/>

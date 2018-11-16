@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='391' type='void gtk_window_reshow_with_initial_size(GtkWindow * window)'/>
+<doc f='include/gtk-2.0/gtk/gtkwindow.h' l='390'>/* Ignore this unless you are writing a GUI builder */</doc>

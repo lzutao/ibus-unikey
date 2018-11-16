@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1324' type='void _gtk_widget_grab_notify(GtkWidget * widget, gboolean was_grabbed)'/>

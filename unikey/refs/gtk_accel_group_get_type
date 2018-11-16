@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='122' type='GType gtk_accel_group_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtkaccelgroup.h' l='121'>/* -- Accelerator Groups --- */</doc>

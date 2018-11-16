@@ -1,0 +1,17 @@
+<dec f='include/ibus-1.0/ibusconfig.h' l='280' type='void ibus_config_set_value_async(IBusConfig * config, const gchar * section, const gchar * name, GVariant * value, gint timeout_ms, GCancellable * cancellable, GAsyncReadyCallback callback, gpointer user_data)'/>
+<doc f='include/ibus-1.0/ibusconfig.h' l='264'>/**
+ * ibus_config_set_value_async:
+ * @config: An #IBusConfig
+ * @section: Section name of the configuration option.
+ * @name: Name of the configure option.
+ * @value: A #GVariant that holds the value. If the value is floating, the
+ * function takes ownership of it.
+ * @timeout_ms: The timeout in milliseconds or -1 to use the default timeout.
+ * @cancellable: A #GCancellable or %NULL.
+ * @callback: Callback function to invoke when the return value is ready.
+ * @user_data: The data to pass to callback.
+ *
+ * Set the value of a configuration option asynchronously.
+ *
+ * See also: ibus_config_set_value().
+ */</doc>

@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/glib/gregex.h' l='454' type='void g_regex_unref(GRegex * regex)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='68' u='c' c='_ZL27glib_autoptr_cleanup_GRegexPP7_GRegex'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='68' u='r' c='_ZL31glib_listautoptr_cleanup_GRegexPP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='68' u='r' c='_ZL32glib_slistautoptr_cleanup_GRegexPP7_GSList'/>

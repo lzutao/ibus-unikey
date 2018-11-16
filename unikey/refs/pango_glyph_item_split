@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-glyph-item.h' l='62' type='PangoGlyphItem * pango_glyph_item_split(PangoGlyphItem * orig, const char * text, int split_index)'/>

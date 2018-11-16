@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkfilechooser.h' l='59' type='1'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='398' u='r' c='_Z23export_macro_clicked_cbP10_GtkButtonPv'/>

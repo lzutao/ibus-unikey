@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gdk/gdkpango.h' l='123' type='GdkRegion * gdk_pango_layout_line_get_clip_region(PangoLayoutLine * line, gint x_origin, gint y_origin, const gint * index_ranges, gint n_ranges)'/>
+<doc f='include/gtk-2.0/gdk/gdkpango.h' l='117'>/* Get a clip region to draw only part of a layout or
+ * line. index_ranges contains alternating range starts/stops. The
+ * region is the region which contains the given ranges, i.e. if you
+ * draw with the region as clip, only the given ranges are drawn.
+ */</doc>

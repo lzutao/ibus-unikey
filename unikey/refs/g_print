@@ -1,0 +1,5 @@
+<dec f='include/glib-2.0/glib/gmessages.h' l='465' type='void g_print(const gchar * format)'/>
+<use f='unikey/setup/setup.cpp' l='35' u='c' c='main'/>
+<use f='unikey/setup/setup.cpp' l='42' u='c' c='main'/>
+<use f='unikey/src/main.cpp' l='111' u='c' c='main'/>
+<use f='unikey/src/main.cpp' l='118' u='c' c='main'/>

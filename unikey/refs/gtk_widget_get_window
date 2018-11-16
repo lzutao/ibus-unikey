@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1011' type='GdkWindow * gtk_widget_get_window(GtkWidget * widget)'/>

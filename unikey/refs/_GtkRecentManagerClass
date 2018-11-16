@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtkrecentmanager.h' l='92' ll='104'/>
+<size>176</size>
+<mbr r='_GtkRecentManagerClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_GtkRecentManagerClass::changed' o='1088' t='void (*)(GtkRecentManager *)'/>
+<mbr r='_GtkRecentManagerClass::_gtk_recent1' o='1152' t='void (*)()'/>
+<mbr r='_GtkRecentManagerClass::_gtk_recent2' o='1216' t='void (*)()'/>
+<mbr r='_GtkRecentManagerClass::_gtk_recent3' o='1280' t='void (*)()'/>
+<mbr r='_GtkRecentManagerClass::_gtk_recent4' o='1344' t='void (*)()'/>

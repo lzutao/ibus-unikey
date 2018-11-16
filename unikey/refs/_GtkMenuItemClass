@@ -1,0 +1,12 @@
+<def f='include/gtk-2.0/gtk/gtkmenuitem.h' l='71' ll='96'/>
+<size>952</size>
+<mbr r='_GtkMenuItemClass::parent_class' o='0' t='GtkItemClass'/>
+<mbr r='_GtkMenuItemClass::hide_on_activate' o='7040' t='guint'/>
+<mbr r='_GtkMenuItemClass::activate' o='7104' t='void (*)(GtkMenuItem *)'/>
+<mbr r='_GtkMenuItemClass::activate_item' o='7168' t='void (*)(GtkMenuItem *)'/>
+<mbr r='_GtkMenuItemClass::toggle_size_request' o='7232' t='void (*)(GtkMenuItem *, gint *)'/>
+<mbr r='_GtkMenuItemClass::toggle_size_allocate' o='7296' t='void (*)(GtkMenuItem *, gint)'/>
+<mbr r='_GtkMenuItemClass::set_label' o='7360' t='void (*)(GtkMenuItem *, const gchar *)'/>
+<mbr r='_GtkMenuItemClass::get_label' o='7424' t='const gchar *(*)(GtkMenuItem *)'/>
+<mbr r='_GtkMenuItemClass::_gtk_reserved1' o='7488' t='void (*)()'/>
+<mbr r='_GtkMenuItemClass::_gtk_reserved2' o='7552' t='void (*)()'/>

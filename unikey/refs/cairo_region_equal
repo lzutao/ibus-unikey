@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='3111' type='cairo_bool_t cairo_region_equal(const cairo_region_t * a, const cairo_region_t * b)'/>

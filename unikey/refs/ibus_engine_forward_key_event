@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusengine.h' l='372' type='void ibus_engine_forward_key_event(IBusEngine * engine, guint keyval, guint keycode, guint state)'/>
+<doc f='include/ibus-1.0/ibusengine.h' l='363'>/**
+ * ibus_engine_forward_key_event:
+ * @engine: An IBusEngine.
+ * @keyval: KeySym.
+ * @keycode: keyboard scancode.
+ * @state: Key modifier flags.
+ *
+ * Forward the key event.
+ */</doc>

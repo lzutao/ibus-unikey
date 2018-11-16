@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='326' type='void gtk_text_buffer_get_iter_at_line_index(GtkTextBuffer * buffer, GtkTextIter * iter, gint line_number, gint byte_index)'/>

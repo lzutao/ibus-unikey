@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmenutoolbutton.h' l='76' type='void gtk_menu_tool_button_set_arrow_tooltip(GtkMenuToolButton * button, GtkTooltips * tooltips, const gchar * tip_text, const gchar * tip_private)'/>

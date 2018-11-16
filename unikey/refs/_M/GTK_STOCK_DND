@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='277'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='271'>/**
+ * GTK_STOCK_DND:
+ *
+ * The &quot;Drag-And-Drop&quot; icon.
+ * &lt;inlinegraphic fileref=&quot;gtk-dnd.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

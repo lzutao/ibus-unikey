@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='268' type='void gtk_ctree_move(GtkCTree * ctree, GtkCTreeNode * node, GtkCTreeNode * new_parent, GtkCTreeNode * new_sibling)'/>
+<doc f='include/gtk-2.0/gtk/gtkctree.h' l='264'>/***********************************************************
+ *   Tree signals : move, expand, collapse, (un)select     *
+ ***********************************************************/</doc>

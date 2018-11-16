@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkdnd.h' l='166' type='gboolean gtk_drag_check_threshold(GtkWidget * widget, gint start_x, gint start_y, gint current_x, gint current_y)'/>

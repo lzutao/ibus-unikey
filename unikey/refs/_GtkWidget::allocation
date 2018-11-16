@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='583' type='GtkAllocation'/>
+<offset>512</offset>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='581'>/* The widget&apos;s allocated size.
+   */</doc>

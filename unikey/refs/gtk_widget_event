@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='912' type='gboolean gtk_widget_event(GtkWidget * widget, GdkEvent * event)'/>

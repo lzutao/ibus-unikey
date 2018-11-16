@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='866'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='860'>/**
+ * GTK_STOCK_SAVE_AS:
+ *
+ * The &quot;Save As&quot; item.
+ * &lt;inlinegraphic fileref=&quot;document-save-as.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

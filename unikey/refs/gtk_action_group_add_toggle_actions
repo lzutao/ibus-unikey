@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkactiongroup.h' l='134' type='void gtk_action_group_add_toggle_actions(GtkActionGroup * action_group, const GtkToggleActionEntry * entries, guint n_entries, gpointer user_data)'/>

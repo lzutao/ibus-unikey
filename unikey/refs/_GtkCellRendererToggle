@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gtk/gtkcellrenderertoggle.h' l='43' ll='51'/>
+<size>64</size>
+<mbr r='_GtkCellRendererToggle::parent' o='0' t='GtkCellRenderer'/>
+<mbr r='_GtkCellRendererToggle::active' o='448' t='guint'/>
+<mbr r='_GtkCellRendererToggle::activatable' o='449' t='guint'/>
+<mbr r='_GtkCellRendererToggle::radio' o='450' t='guint'/>

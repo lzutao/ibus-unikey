@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtkfilechooser.h' l='96'/>
+<doc f='include/gtk-2.0/gtk/gtkfilechooser.h' l='91'>/**
+ * GTK_FILE_CHOOSER_ERROR:
+ *
+ * Used to get the #GError quark for #GtkFileChooser errors.
+ */</doc>

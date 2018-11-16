@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusproplist.h' l='122' type='void ibus_prop_list_append(IBusPropList * prop_list, IBusProperty * prop)'/>
+<doc f='include/ibus-1.0/ibusproplist.h' l='115'>/**
+ * ibus_prop_list_append:
+ * @prop_list: An IBusPropList.
+ * @prop: IBusProperty to be append to @prop_list.
+ *
+ * Append an IBusProperty to an IBusPropList, and increase reference.
+ */</doc>
+<use f='unikey/src/engine.cpp' l='429' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='452' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='481' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='502' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='518' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>

@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='1004'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='998'>/**
+ * GTK_STOCK_ZOOM_IN:
+ *
+ * The &quot;Zoom In&quot; item.
+ * &lt;inlinegraphic fileref=&quot;zoom-in.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

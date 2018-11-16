@@ -1,0 +1,6 @@
+<dec f='include/pango-1.0/pango/pango-tabs.h' l='55'/>
+<doc f='include/pango-1.0/pango/pango-tabs.h' l='50'>/**
+ * PANGO_TYPE_TAB_ARRAY:
+ *
+ * The #GObject type for #PangoTabArray.
+ */</doc>

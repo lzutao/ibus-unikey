@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentchooser.h' l='146' type='void gtk_recent_chooser_set_show_icons(GtkRecentChooser * chooser, gboolean show_icons)'/>

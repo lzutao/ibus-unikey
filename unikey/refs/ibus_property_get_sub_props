@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusproperty.h' l='353' type='IBusPropList * ibus_property_get_sub_props(IBusProperty * prop)'/>
+<doc f='include/ibus-1.0/ibusproperty.h' l='344'>/**
+ * ibus_property_get_sub_props:
+ * @prop: An #IBusProperty.
+ *
+ * Get the IBusPropList of #IBusProperty.
+ *
+ * Returns: (transfer none): the IBusPropList of #IBusProperty.
+ *     Should not be freed.
+ */</doc>

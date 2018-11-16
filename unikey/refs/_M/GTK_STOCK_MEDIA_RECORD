@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='611'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='603'>/**
+ * GTK_STOCK_MEDIA_RECORD:
+ *
+ * The &quot;Media Record&quot; item.
+ * &lt;inlinegraphic fileref=&quot;media-record.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ *
+ * Since: 2.6
+ */</doc>

@@ -1,0 +1,4 @@
+<def f='include/atk-1.0/atk/atkobject.h' l='416' ll='419'/>
+<size>16</size>
+<mbr r='_AtkAttribute::name' o='0' t='gchar *'/>
+<mbr r='_AtkAttribute::value' o='64' t='gchar *'/>

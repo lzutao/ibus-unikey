@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='1610' type='void * cairo_scaled_font_get_user_data(cairo_scaled_font_t * scaled_font, const cairo_user_data_key_t * key)'/>

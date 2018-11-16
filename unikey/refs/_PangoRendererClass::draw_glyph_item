@@ -1,0 +1,5 @@
+<dec f='include/pango-1.0/pango/pango-renderer.h' l='180' type='void (*)(PangoRenderer *, const char *, PangoGlyphItem *, int, int)'/>
+<offset>1728</offset>
+<doc f='include/pango-1.0/pango/pango-renderer.h' l='177'>/* All of the following have default implementations
+   * and take as coordinates user coordinates in Pango units
+   */</doc>

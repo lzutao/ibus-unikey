@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atktext.h' l='375' type='gchar * atk_text_get_string_at_offset(AtkText * text, gint offset, AtkTextGranularity granularity, gint * start_offset, gint * end_offset)'/>

@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtkoptionmenu.h' l='59' ll='70'/>
+<size>944</size>
+<mbr r='_GtkOptionMenuClass::parent_class' o='0' t='GtkButtonClass'/>
+<mbr r='_GtkOptionMenuClass::changed' o='7232' t='void (*)(GtkOptionMenu *)'/>
+<mbr r='_GtkOptionMenuClass::_gtk_reserved1' o='7296' t='void (*)()'/>
+<mbr r='_GtkOptionMenuClass::_gtk_reserved2' o='7360' t='void (*)()'/>
+<mbr r='_GtkOptionMenuClass::_gtk_reserved3' o='7424' t='void (*)()'/>
+<mbr r='_GtkOptionMenuClass::_gtk_reserved4' o='7488' t='void (*)()'/>

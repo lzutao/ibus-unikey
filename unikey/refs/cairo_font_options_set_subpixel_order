@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='1416' type='void cairo_font_options_set_subpixel_order(cairo_font_options_t * options, cairo_subpixel_order_t subpixel_order)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdk.h' l='112' type='GdkGrabStatus gdk_pointer_grab(GdkWindow * window, gboolean owner_events, GdkEventMask event_mask, GdkWindow * confine_to, GdkCursor * cursor, guint32 time_)'/>

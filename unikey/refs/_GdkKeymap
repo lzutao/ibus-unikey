@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gdk/gdkkeys.h' l='66' ll='70'/>
+<size>32</size>
+<mbr r='_GdkKeymap::parent_instance' o='0' t='GObject'/>
+<mbr r='_GdkKeymap::display' o='192' t='GdkDisplay *'/>

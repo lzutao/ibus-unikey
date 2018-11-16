@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcombobox.h' l='148' type='AtkObject * gtk_combo_box_get_popup_accessible(GtkComboBox * combo_box)'/>

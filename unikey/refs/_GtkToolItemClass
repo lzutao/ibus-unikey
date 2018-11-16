@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gtk/gtktoolitem.h' l='56' ll='77'/>
+<size>880</size>
+<mbr r='_GtkToolItemClass::parent_class' o='0' t='GtkBinClass'/>
+<mbr r='_GtkToolItemClass::create_menu_proxy' o='6592' t='gboolean (*)(GtkToolItem *)'/>
+<mbr r='_GtkToolItemClass::toolbar_reconfigured' o='6656' t='void (*)(GtkToolItem *)'/>
+<mbr r='_GtkToolItemClass::set_tooltip' o='6720' t='gboolean (*)(GtkToolItem *, GtkTooltips *, const gchar *, const gchar *)'/>
+<mbr r='_GtkToolItemClass::_gtk_reserved1' o='6784' t='void (*)()'/>
+<mbr r='_GtkToolItemClass::_gtk_reserved2' o='6848' t='void (*)()'/>
+<mbr r='_GtkToolItemClass::_gtk_reserved3' o='6912' t='void (*)()'/>
+<mbr r='_GtkToolItemClass::_gtk_reserved4' o='6976' t='void (*)()'/>

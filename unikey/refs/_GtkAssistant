@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gtk/gtkassistant.h' l='76' ll='89'/>
+<size>296</size>
+<mbr r='_GtkAssistant::parent' o='0' t='GtkWindow'/>
+<mbr r='_GtkAssistant::cancel' o='1920' t='GtkWidget *'/>
+<mbr r='_GtkAssistant::forward' o='1984' t='GtkWidget *'/>
+<mbr r='_GtkAssistant::back' o='2048' t='GtkWidget *'/>
+<mbr r='_GtkAssistant::apply' o='2112' t='GtkWidget *'/>
+<mbr r='_GtkAssistant::close' o='2176' t='GtkWidget *'/>
+<mbr r='_GtkAssistant::last' o='2240' t='GtkWidget *'/>
+<mbr r='_GtkAssistant::priv' o='2304' t='GtkAssistantPrivate *'/>

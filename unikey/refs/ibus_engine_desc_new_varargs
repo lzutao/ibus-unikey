@@ -1,0 +1,14 @@
+<dec f='include/ibus-1.0/ibusenginedesc.h' l='134' type='IBusEngineDesc * ibus_engine_desc_new_varargs(const gchar * first_property_name)'/>
+<doc f='include/ibus-1.0/ibusenginedesc.h' l='122'>/**
+ * ibus_engine_desc_new_varargs:
+ * @first_property_name: Name of the first property.
+ * @...: the NULL-terminated arguments of the properties and values.
+ *
+ * Creates a new #IBusEngineDesc.
+ * ibus_engine_desc_new_varargs() supports the va_list format.
+ * name property is required. e.g.
+ * ibus_engine_desc_new_varargs(&quot;name&quot;, &quot;ibus-foo&quot;, &quot;language&quot;, &quot;us&quot;, NULL)
+ *
+ * Returns: A newly allocated IBusEngineDesc.
+ */</doc>
+<use f='unikey/src/utils.cpp' l='58' u='c' c='_Z25ibus_unikey_get_componentv'/>

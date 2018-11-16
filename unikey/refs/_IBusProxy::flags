@@ -1,0 +1,3 @@
+<dec f='include/ibus-1.0/ibusproxy.h' l='84' type='guint32'/>
+<offset>256</offset>
+<doc f='include/ibus-1.0/ibusproxy.h' l='83'>/* instance members */</doc>

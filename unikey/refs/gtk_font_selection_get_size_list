@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkfontsel.h' l='150' type='GtkWidget * gtk_font_selection_get_size_list(GtkFontSelection * fontsel)'/>

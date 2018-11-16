@@ -1,0 +1,3 @@
+<dec f='include/pango-1.0/pango/pango-layout.h' l='122' type='guint'/>
+<offset>192</offset>
+<doc f='include/pango-1.0/pango/pango-layout.h' l='122'>/* TRUE if this is the first line of the paragraph */</doc>

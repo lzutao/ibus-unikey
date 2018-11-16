@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='188' type='gboolean gtk_text_buffer_insert_interactive_at_cursor(GtkTextBuffer * buffer, const gchar * text, gint len, gboolean default_editable)'/>

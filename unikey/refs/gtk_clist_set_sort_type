@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='770' type='void gtk_clist_set_sort_type(GtkCList * clist, GtkSortType sort_type)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='769'>/* how to sort : ascending or descending */</doc>

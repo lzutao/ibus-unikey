@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkpagesetup.h' l='92' type='gboolean gtk_page_setup_to_file(GtkPageSetup * setup, const char * file_name, GError ** error)'/>

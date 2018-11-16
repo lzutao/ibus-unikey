@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='986' type='void gtk_widget_set_app_paintable(GtkWidget * widget, gboolean app_paintable)'/>

@@ -1,0 +1,15 @@
+<def f='include/gtk-2.0/gtk/gtkmenuitem.h' l='51' ll='69'/>
+<size>160</size>
+<mbr r='_GtkMenuItem::item' o='0' t='GtkItem'/>
+<mbr r='_GtkMenuItem::submenu' o='960' t='GtkWidget *'/>
+<mbr r='_GtkMenuItem::event_window' o='1024' t='GdkWindow *'/>
+<mbr r='_GtkMenuItem::toggle_size' o='1088' t='guint16'/>
+<mbr r='_GtkMenuItem::accelerator_width' o='1104' t='guint16'/>
+<mbr r='_GtkMenuItem::accel_path' o='1152' t='gchar *'/>
+<mbr r='_GtkMenuItem::show_submenu_indicator' o='1216' t='guint'/>
+<mbr r='_GtkMenuItem::submenu_placement' o='1217' t='guint'/>
+<mbr r='_GtkMenuItem::submenu_direction' o='1218' t='guint'/>
+<mbr r='_GtkMenuItem::right_justify' o='1219' t='guint'/>
+<mbr r='_GtkMenuItem::timer_from_keypress' o='1220' t='guint'/>
+<mbr r='_GtkMenuItem::from_menubar' o='1221' t='guint'/>
+<mbr r='_GtkMenuItem::timer' o='1248' t='guint'/>

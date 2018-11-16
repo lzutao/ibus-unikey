@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='581' type='GtkCellType gtk_clist_get_cell_type(GtkCList * clist, gint row, gint column)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='580'>/* returns the cell type */</doc>

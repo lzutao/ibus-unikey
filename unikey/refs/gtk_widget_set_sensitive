@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='964' type='void gtk_widget_set_sensitive(GtkWidget * widget, gboolean sensitive)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='353' u='c' c='_Z23import_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='382' u='c' c='_Z23import_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='403' u='c' c='_Z23export_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='432' u='c' c='_Z23export_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='152' u='c' c='_ZL20macro_edit_button_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='184' u='c' c='_ZL20macro_edit_button_cbP10_GtkButtonPv'/>

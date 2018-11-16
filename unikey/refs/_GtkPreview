@@ -1,0 +1,11 @@
+<def f='include/gtk-2.0/gtk/gtkpreview.h' l='50' ll='65'/>
+<size>120</size>
+<mbr r='_GtkPreview::widget' o='0' t='GtkWidget'/>
+<mbr r='_GtkPreview::buffer' o='768' t='guchar *'/>
+<mbr r='_GtkPreview::buffer_width' o='832' t='guint16'/>
+<mbr r='_GtkPreview::buffer_height' o='848' t='guint16'/>
+<mbr r='_GtkPreview::bpp' o='864' t='guint16'/>
+<mbr r='_GtkPreview::rowstride' o='880' t='guint16'/>
+<mbr r='_GtkPreview::dither' o='896' t='GdkRgbDither'/>
+<mbr r='_GtkPreview::type' o='928' t='guint'/>
+<mbr r='_GtkPreview::expand' o='929' t='guint'/>

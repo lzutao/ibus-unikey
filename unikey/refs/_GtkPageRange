@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkprintsettings.h' l='43' ll='47'/>
+<size>8</size>
+<mbr r='_GtkPageRange::start' o='0' t='gint'/>
+<mbr r='_GtkPageRange::end' o='32' t='gint'/>

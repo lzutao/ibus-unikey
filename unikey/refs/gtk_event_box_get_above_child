@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkeventbox.h' l='65' type='gboolean gtk_event_box_get_above_child(GtkEventBox * event_box)'/>

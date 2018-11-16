@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtkrc.h' l='105' type='guint (*)(GtkRcStyle *, GtkSettings *, GScanner *)'/>
+<offset>1152</offset>
+<doc f='include/gtk-2.0/gtk/gtkrc.h' l='101'>/* Fill in engine specific parts of GtkRcStyle by parsing contents
+   * of brackets. Returns G_TOKEN_NONE if successful, otherwise returns
+   * the token it expected but didn&apos;t get.
+   */</doc>

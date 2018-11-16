@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktestutils.h' l='65' type='GtkWidget * gtk_test_find_sibling(GtkWidget * base_widget, GType widget_type)'/>
+<doc f='include/gtk-2.0/gtk/gtktestutils.h' l='64'>/* --- Gtk+ Test low-level API --- */</doc>

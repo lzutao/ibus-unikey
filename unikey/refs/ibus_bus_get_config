@@ -1,0 +1,12 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='1129' type='IBusConfig * ibus_bus_get_config(IBusBus * bus)'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='29' u='c' c='_Z28unikey_main_setup_dialog_newv'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='1120'>/**
+ * ibus_bus_get_config:
+ * @bus: An #IBusBus.
+ *
+ * Get the config instance from #IBusBus.
+ *
+ * Returns: (transfer none): An #IBusConfig object which is configurable with
+ * @bus.
+ */</doc>
+<use f='unikey/src/engine.cpp' l='71' u='c' c='_Z16ibus_unikey_initP8_IBusBus'/>

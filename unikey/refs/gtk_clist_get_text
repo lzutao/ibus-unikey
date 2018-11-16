@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='594' type='gint gtk_clist_get_text(GtkCList * clist, gint row, gint column, gchar ** text)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='591'>/* for the &quot;get&quot; functions, any of the return pointer can be
+ * NULL if you are not interested
+ */</doc>

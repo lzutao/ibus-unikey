@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-tabs.h' l='61' type='PangoTabArray * pango_tab_array_new_with_positions(gint size, gboolean positions_in_pixels, PangoTabAlign first_alignment, gint first_position)'/>

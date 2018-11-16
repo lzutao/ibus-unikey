@@ -1,0 +1,25 @@
+<def f='include/gtk-2.0/gtk/gtkfilesel.h' l='49' ll='81'/>
+<size>440</size>
+<mbr r='_GtkFileSelection::parent_instance' o='0' t='GtkDialog'/>
+<mbr r='_GtkFileSelection::dir_list' o='2112' t='GtkWidget *'/>
+<mbr r='_GtkFileSelection::file_list' o='2176' t='GtkWidget *'/>
+<mbr r='_GtkFileSelection::selection_entry' o='2240' t='GtkWidget *'/>
+<mbr r='_GtkFileSelection::selection_text' o='2304' t='GtkWidget *'/>
+<mbr r='_GtkFileSelection::main_vbox' o='2368' t='GtkWidget *'/>
+<mbr r='_GtkFileSelection::ok_button' o='2432' t='GtkWidget *'/>
+<mbr r='_GtkFileSelection::cancel_button' o='2496' t='GtkWidget *'/>
+<mbr r='_GtkFileSelection::help_button' o='2560' t='GtkWidget *'/>
+<mbr r='_GtkFileSelection::history_pulldown' o='2624' t='GtkWidget *'/>
+<mbr r='_GtkFileSelection::history_menu' o='2688' t='GtkWidget *'/>
+<mbr r='_GtkFileSelection::history_list' o='2752' t='GList *'/>
+<mbr r='_GtkFileSelection::fileop_dialog' o='2816' t='GtkWidget *'/>
+<mbr r='_GtkFileSelection::fileop_entry' o='2880' t='GtkWidget *'/>
+<mbr r='_GtkFileSelection::fileop_file' o='2944' t='gchar *'/>
+<mbr r='_GtkFileSelection::cmpl_state' o='3008' t='gpointer'/>
+<mbr r='_GtkFileSelection::fileop_c_dir' o='3072' t='GtkWidget *'/>
+<mbr r='_GtkFileSelection::fileop_del_file' o='3136' t='GtkWidget *'/>
+<mbr r='_GtkFileSelection::fileop_ren_file' o='3200' t='GtkWidget *'/>
+<mbr r='_GtkFileSelection::button_area' o='3264' t='GtkWidget *'/>
+<mbr r='_GtkFileSelection::action_area' o='3328' t='GtkWidget *'/>
+<mbr r='_GtkFileSelection::selected_names' o='3392' t='GPtrArray *'/>
+<mbr r='_GtkFileSelection::last_selected' o='3456' t='gchar *'/>

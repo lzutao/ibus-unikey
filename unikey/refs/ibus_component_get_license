@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuscomponent.h' l='207' type='const gchar * ibus_component_get_license(IBusComponent * component)'/>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='199'>/**
+ * ibus_component_get_license:
+ * @component: An #IBusComponent
+ *
+ * Gets the license property in #IBusComponent. It should not be freed.
+ *
+ * Returns: license property in #IBusComponent
+ */</doc>

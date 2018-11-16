@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkmountoperation.h' l='59' ll='68'/>
+<size>288</size>
+<mbr r='_GtkMountOperationClass::parent_class' o='0' t='GMountOperationClass'/>
+<mbr r='_GtkMountOperationClass::_gtk_reserved1' o='2048' t='void (*)()'/>
+<mbr r='_GtkMountOperationClass::_gtk_reserved2' o='2112' t='void (*)()'/>
+<mbr r='_GtkMountOperationClass::_gtk_reserved3' o='2176' t='void (*)()'/>
+<mbr r='_GtkMountOperationClass::_gtk_reserved4' o='2240' t='void (*)()'/>

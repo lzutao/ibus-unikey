@@ -1,0 +1,26 @@
+<dec f='include/ibus-1.0/ibustext.h' l='126' type='IBusText * ibus_text_new_from_static_string(const gchar * str)'/>
+<doc f='include/ibus-1.0/ibustext.h' l='115'>/**
+ * ibus_text_new_from_static_string: (skip)
+ * @str: An text string to be set.
+ *
+ * Creates a new #IBusText from a static string.
+ *
+ * Since @str is a static string which won&apos;t be freed.
+ * This function will NOT duplicate @str.
+ *
+ * Returns: A newly allocated #IBusText.
+ */</doc>
+<use f='unikey/src/engine.cpp' l='287' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='332' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='410' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='414' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='434' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='437' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='468' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='469' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='489' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='490' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='505' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='506' u='c' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='525' u='c' c='_ZL40ibus_unikey_engine_update_preedit_stringP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='758' u='c' c='_ZL25ibus_unikey_engine_commitP11_IBusEngine'/>

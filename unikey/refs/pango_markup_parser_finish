@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-attributes.h' l='590' type='gboolean pango_markup_parser_finish(GMarkupParseContext * context, PangoAttrList ** attr_list, char ** text, gunichar * accel_char, GError ** error)'/>

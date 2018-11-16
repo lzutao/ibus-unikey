@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkdocument.h' l='103' type='gboolean atk_document_set_attribute_value(AtkDocument * document, const gchar * attribute_name, const gchar * attribute_value)'/>

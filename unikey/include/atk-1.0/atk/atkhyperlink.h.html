@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>atkhyperlink.h source code [include/atk-1.0/atk/atkhyperlink.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/atk-1.0/atk/atkhyperlink.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>atk-1.0</a>/<a href='./'>atk</a>/<a href='atkhyperlink.h.html'>atkhyperlink.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* ATK -  Accessibility Toolkit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright 2001 Sun Microsystems Inc.</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Library General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Library General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Library General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="20">ifndef</span> <span class="macro" data-ref="_M/__ATK_HYPERLINK_H__">__ATK_HYPERLINK_H__</span></u></td></tr>
+<tr><th id="21">21</th><td><u>#define <dfn class="macro" id="_M/__ATK_HYPERLINK_H__" data-ref="_M/__ATK_HYPERLINK_H__">__ATK_HYPERLINK_H__</dfn></u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> defined(<span class="macro" data-ref="_M/ATK_DISABLE_SINGLE_INCLUDES">ATK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="atk.h.html#23" data-ref="_M/__ATK_H_INSIDE__">__ATK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/ATK_COMPILATION">ATK_COMPILATION</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#error "Only &lt;atk/atk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="atkaction.h.html">&lt;atk/atkaction.h&gt;</a></u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><i>/*</i></td></tr>
+<tr><th id="32">32</th><td><i> * AtkHyperlink encapsulates a link or set of links in a hypertext document.</i></td></tr>
+<tr><th id="33">33</th><td><i> *</i></td></tr>
+<tr><th id="34">34</th><td><i> * It implements the AtkAction interface.</i></td></tr>
+<tr><th id="35">35</th><td><i> */</i></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> *AtkHyperlinkStateFlags:</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> <span class="command">*@ATK</span>_HYPERLINK_IS_INLINE: Link is inline</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> *Describes the type of link</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> **/</i> </td></tr>
+<tr><th id="43">43</th><td><b>typedef</b> <b>enum</b> </td></tr>
+<tr><th id="44">44</th><td>{</td></tr>
+<tr><th id="45">45</th><td>  <dfn class="enum" id="ATK_HYPERLINK_IS_INLINE" title='ATK_HYPERLINK_IS_INLINE' data-ref="ATK_HYPERLINK_IS_INLINE">ATK_HYPERLINK_IS_INLINE</dfn> = <var>1</var> &lt;&lt; <var>0</var></td></tr>
+<tr><th id="46">46</th><td>} <dfn class="typedef" id="AtkHyperlinkStateFlags" title='AtkHyperlinkStateFlags' data-type='enum AtkHyperlinkStateFlags' data-ref="AtkHyperlinkStateFlags">AtkHyperlinkStateFlags</dfn>;</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><u>#define <dfn class="macro" id="_M/ATK_TYPE_HYPERLINK" data-ref="_M/ATK_TYPE_HYPERLINK">ATK_TYPE_HYPERLINK</dfn>                        (atk_hyperlink_get_type ())</u></td></tr>
+<tr><th id="49">49</th><td><u>#define <dfn class="macro" id="_M/ATK_HYPERLINK" data-ref="_M/ATK_HYPERLINK">ATK_HYPERLINK</dfn>(obj)                        (G_TYPE_CHECK_INSTANCE_CAST ((obj), ATK_TYPE_HYPERLINK, AtkHyperlink))</u></td></tr>
+<tr><th id="50">50</th><td><u>#define <dfn class="macro" id="_M/ATK_HYPERLINK_CLASS" data-ref="_M/ATK_HYPERLINK_CLASS">ATK_HYPERLINK_CLASS</dfn>(klass)                (G_TYPE_CHECK_CLASS_CAST ((klass), ATK_TYPE_HYPERLINK, AtkHyperlinkClass))</u></td></tr>
+<tr><th id="51">51</th><td><u>#define <dfn class="macro" id="_M/ATK_IS_HYPERLINK" data-ref="_M/ATK_IS_HYPERLINK">ATK_IS_HYPERLINK</dfn>(obj)                     (G_TYPE_CHECK_INSTANCE_TYPE ((obj), ATK_TYPE_HYPERLINK))</u></td></tr>
+<tr><th id="52">52</th><td><u>#define <dfn class="macro" id="_M/ATK_IS_HYPERLINK_CLASS" data-ref="_M/ATK_IS_HYPERLINK_CLASS">ATK_IS_HYPERLINK_CLASS</dfn>(klass)             (G_TYPE_CHECK_CLASS_TYPE ((klass), ATK_TYPE_HYPERLINK))</u></td></tr>
+<tr><th id="53">53</th><td><u>#define <dfn class="macro" id="_M/ATK_HYPERLINK_GET_CLASS" data-ref="_M/ATK_HYPERLINK_GET_CLASS">ATK_HYPERLINK_GET_CLASS</dfn>(obj)              (G_TYPE_INSTANCE_GET_CLASS ((obj), ATK_TYPE_HYPERLINK, AtkHyperlinkClass))</u></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_AtkHyperlink" title='_AtkHyperlink' data-ref="_AtkHyperlink">_AtkHyperlink</a>                      <dfn class="typedef" id="AtkHyperlink" title='AtkHyperlink' data-type='struct _AtkHyperlink' data-ref="AtkHyperlink">AtkHyperlink</dfn>;</td></tr>
+<tr><th id="56">56</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_AtkHyperlinkClass" title='_AtkHyperlinkClass' data-ref="_AtkHyperlinkClass">_AtkHyperlinkClass</a>                 <dfn class="typedef" id="AtkHyperlinkClass" title='AtkHyperlinkClass' data-type='struct _AtkHyperlinkClass' data-ref="AtkHyperlinkClass">AtkHyperlinkClass</dfn>;</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><b>struct</b> <dfn class="type def" id="_AtkHyperlink" title='_AtkHyperlink' data-ref="_AtkHyperlink">_AtkHyperlink</dfn></td></tr>
+<tr><th id="59">59</th><td>{</td></tr>
+<tr><th id="60">60</th><td>  <a class="typedef" href="../../glib-2.0/gobject/gobject.h.html#GObject" title='GObject' data-type='struct _GObject' data-ref="GObject">GObject</a> <dfn class="decl" id="_AtkHyperlink::parent" title='_AtkHyperlink::parent' data-ref="_AtkHyperlink::parent">parent</dfn>;</td></tr>
+<tr><th id="61">61</th><td>};</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><b>struct</b> <dfn class="type def" id="_AtkHyperlinkClass" title='_AtkHyperlinkClass' data-ref="_AtkHyperlinkClass">_AtkHyperlinkClass</dfn></td></tr>
+<tr><th id="64">64</th><td>{</td></tr>
+<tr><th id="65">65</th><td>  <a class="typedef" href="../../glib-2.0/gobject/gobject.h.html#GObjectClass" title='GObjectClass' data-type='struct _GObjectClass' data-ref="GObjectClass">GObjectClass</a> <dfn class="decl" id="_AtkHyperlinkClass::parent" title='_AtkHyperlinkClass::parent' data-ref="_AtkHyperlinkClass::parent">parent</dfn>;</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>*           (* <dfn class="decl" id="_AtkHyperlinkClass::get_uri" title='_AtkHyperlinkClass::get_uri' data-ref="_AtkHyperlinkClass::get_uri">get_uri</dfn>)             (<a class="typedef" href="#AtkHyperlink" title='AtkHyperlink' data-type='struct _AtkHyperlink' data-ref="AtkHyperlink">AtkHyperlink</a>     *<dfn class="local col9 decl" id="16859link_" title='link_' data-type='AtkHyperlink *' data-ref="16859link_">link_</dfn>,</td></tr>
+<tr><th id="68">68</th><td>                                            <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>             <dfn class="local col0 decl" id="16860i" title='i' data-type='gint' data-ref="16860i">i</dfn>);</td></tr>
+<tr><th id="69">69</th><td>  <a class="typedef" href="atkobject.h.html#AtkObject" title='AtkObject' data-type='struct _AtkObject' data-ref="AtkObject">AtkObject</a>*       (* <dfn class="decl" id="_AtkHyperlinkClass::get_object" title='_AtkHyperlinkClass::get_object' data-ref="_AtkHyperlinkClass::get_object">get_object</dfn>)          (<a class="typedef" href="#AtkHyperlink" title='AtkHyperlink' data-type='struct _AtkHyperlink' data-ref="AtkHyperlink">AtkHyperlink</a>     *<dfn class="local col1 decl" id="16861link_" title='link_' data-type='AtkHyperlink *' data-ref="16861link_">link_</dfn>,</td></tr>
+<tr><th id="70">70</th><td>                                            <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>             <dfn class="local col2 decl" id="16862i" title='i' data-type='gint' data-ref="16862i">i</dfn>);</td></tr>
+<tr><th id="71">71</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>             (* <dfn class="decl" id="_AtkHyperlinkClass::get_end_index" title='_AtkHyperlinkClass::get_end_index' data-ref="_AtkHyperlinkClass::get_end_index">get_end_index</dfn>)       (<a class="typedef" href="#AtkHyperlink" title='AtkHyperlink' data-type='struct _AtkHyperlink' data-ref="AtkHyperlink">AtkHyperlink</a>     *<dfn class="local col3 decl" id="16863link_" title='link_' data-type='AtkHyperlink *' data-ref="16863link_">link_</dfn>);</td></tr>
+<tr><th id="72">72</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>             (* <dfn class="decl" id="_AtkHyperlinkClass::get_start_index" title='_AtkHyperlinkClass::get_start_index' data-ref="_AtkHyperlinkClass::get_start_index">get_start_index</dfn>)     (<a class="typedef" href="#AtkHyperlink" title='AtkHyperlink' data-type='struct _AtkHyperlink' data-ref="AtkHyperlink">AtkHyperlink</a>     *<dfn class="local col4 decl" id="16864link_" title='link_' data-type='AtkHyperlink *' data-ref="16864link_">link_</dfn>);</td></tr>
+<tr><th id="73">73</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>         (* <dfn class="decl" id="_AtkHyperlinkClass::is_valid" title='_AtkHyperlinkClass::is_valid' data-ref="_AtkHyperlinkClass::is_valid">is_valid</dfn>)            (<a class="typedef" href="#AtkHyperlink" title='AtkHyperlink' data-type='struct _AtkHyperlink' data-ref="AtkHyperlink">AtkHyperlink</a>     *<dfn class="local col5 decl" id="16865link_" title='link_' data-type='AtkHyperlink *' data-ref="16865link_">link_</dfn>);</td></tr>
+<tr><th id="74">74</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>	           (* <dfn class="decl" id="_AtkHyperlinkClass::get_n_anchors" title='_AtkHyperlinkClass::get_n_anchors' data-ref="_AtkHyperlinkClass::get_n_anchors">get_n_anchors</dfn>)	   (<a class="typedef" href="#AtkHyperlink" title='AtkHyperlink' data-type='struct _AtkHyperlink' data-ref="AtkHyperlink">AtkHyperlink</a>     *<dfn class="local col6 decl" id="16866link_" title='link_' data-type='AtkHyperlink *' data-ref="16866link_">link_</dfn>);</td></tr>
+<tr><th id="75">75</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>	           (* <dfn class="decl" id="_AtkHyperlinkClass::link_state" title='_AtkHyperlinkClass::link_state' data-ref="_AtkHyperlinkClass::link_state">link_state</dfn>)	   (<a class="typedef" href="#AtkHyperlink" title='AtkHyperlink' data-type='struct _AtkHyperlink' data-ref="AtkHyperlink">AtkHyperlink</a>     *<dfn class="local col7 decl" id="16867link_" title='link_' data-type='AtkHyperlink *' data-ref="16867link_">link_</dfn>);</td></tr>
+<tr><th id="76">76</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>         (* <dfn class="decl" id="_AtkHyperlinkClass::is_selected_link" title='_AtkHyperlinkClass::is_selected_link' data-ref="_AtkHyperlinkClass::is_selected_link">is_selected_link</dfn>)    (<a class="typedef" href="#AtkHyperlink" title='AtkHyperlink' data-type='struct _AtkHyperlink' data-ref="AtkHyperlink">AtkHyperlink</a>     *<dfn class="local col8 decl" id="16868link_" title='link_' data-type='AtkHyperlink *' data-ref="16868link_">link_</dfn>);</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td>  <i>/* Signals */</i></td></tr>
+<tr><th id="79">79</th><td>  <em>void</em>             ( *<dfn class="decl" id="_AtkHyperlinkClass::link_activated" title='_AtkHyperlinkClass::link_activated' data-ref="_AtkHyperlinkClass::link_activated">link_activated</dfn>)      (<a class="typedef" href="#AtkHyperlink" title='AtkHyperlink' data-type='struct _AtkHyperlink' data-ref="AtkHyperlink">AtkHyperlink</a>     *<dfn class="local col9 decl" id="16869link_" title='link_' data-type='AtkHyperlink *' data-ref="16869link_">link_</dfn>);</td></tr>
+<tr><th id="80">80</th><td>  <a class="typedef" href="atkobject.h.html#AtkFunction" title='AtkFunction' data-type='gboolean (*)(gpointer)' data-ref="AtkFunction">AtkFunction</a>      <dfn class="decl" id="_AtkHyperlinkClass::pad1" title='_AtkHyperlinkClass::pad1' data-ref="_AtkHyperlinkClass::pad1">pad1</dfn>;</td></tr>
+<tr><th id="81">81</th><td>};</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="84">84</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>            <dfn class="decl" id="atk_hyperlink_get_type" title='atk_hyperlink_get_type' data-ref="atk_hyperlink_get_type">atk_hyperlink_get_type</dfn>             (<em>void</em>);</td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="87">87</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>*           <dfn class="decl" id="atk_hyperlink_get_uri" title='atk_hyperlink_get_uri' data-ref="atk_hyperlink_get_uri">atk_hyperlink_get_uri</dfn>              (<a class="typedef" href="#AtkHyperlink" title='AtkHyperlink' data-type='struct _AtkHyperlink' data-ref="AtkHyperlink">AtkHyperlink</a>     *<dfn class="local col0 decl" id="16870link_" title='link_' data-type='AtkHyperlink *' data-ref="16870link_">link_</dfn>,</td></tr>
+<tr><th id="88">88</th><td>                                                     <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>             <dfn class="local col1 decl" id="16871i" title='i' data-type='gint' data-ref="16871i">i</dfn>);</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="91">91</th><td><a class="typedef" href="atkobject.h.html#AtkObject" title='AtkObject' data-type='struct _AtkObject' data-ref="AtkObject">AtkObject</a>*       <dfn class="decl" id="atk_hyperlink_get_object" title='atk_hyperlink_get_object' data-ref="atk_hyperlink_get_object">atk_hyperlink_get_object</dfn>           (<a class="typedef" href="#AtkHyperlink" title='AtkHyperlink' data-type='struct _AtkHyperlink' data-ref="AtkHyperlink">AtkHyperlink</a>     *<dfn class="local col2 decl" id="16872link_" title='link_' data-type='AtkHyperlink *' data-ref="16872link_">link_</dfn>,</td></tr>
+<tr><th id="92">92</th><td>                                                     <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>             <dfn class="local col3 decl" id="16873i" title='i' data-type='gint' data-ref="16873i">i</dfn>);</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="95">95</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>             <dfn class="decl" id="atk_hyperlink_get_end_index" title='atk_hyperlink_get_end_index' data-ref="atk_hyperlink_get_end_index">atk_hyperlink_get_end_index</dfn>        (<a class="typedef" href="#AtkHyperlink" title='AtkHyperlink' data-type='struct _AtkHyperlink' data-ref="AtkHyperlink">AtkHyperlink</a>     *<dfn class="local col4 decl" id="16874link_" title='link_' data-type='AtkHyperlink *' data-ref="16874link_">link_</dfn>);</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="98">98</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>             <dfn class="decl" id="atk_hyperlink_get_start_index" title='atk_hyperlink_get_start_index' data-ref="atk_hyperlink_get_start_index">atk_hyperlink_get_start_index</dfn>      (<a class="typedef" href="#AtkHyperlink" title='AtkHyperlink' data-type='struct _AtkHyperlink' data-ref="AtkHyperlink">AtkHyperlink</a>     *<dfn class="local col5 decl" id="16875link_" title='link_' data-type='AtkHyperlink *' data-ref="16875link_">link_</dfn>);</td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="101">101</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>         <dfn class="decl" id="atk_hyperlink_is_valid" title='atk_hyperlink_is_valid' data-ref="atk_hyperlink_is_valid">atk_hyperlink_is_valid</dfn>             (<a class="typedef" href="#AtkHyperlink" title='AtkHyperlink' data-type='struct _AtkHyperlink' data-ref="AtkHyperlink">AtkHyperlink</a>     *<dfn class="local col6 decl" id="16876link_" title='link_' data-type='AtkHyperlink *' data-ref="16876link_">link_</dfn>);</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="104">104</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>         <dfn class="decl" id="atk_hyperlink_is_inline" title='atk_hyperlink_is_inline' data-ref="atk_hyperlink_is_inline">atk_hyperlink_is_inline</dfn>             (<a class="typedef" href="#AtkHyperlink" title='AtkHyperlink' data-type='struct _AtkHyperlink' data-ref="AtkHyperlink">AtkHyperlink</a>     *<dfn class="local col7 decl" id="16877link_" title='link_' data-type='AtkHyperlink *' data-ref="16877link_">link_</dfn>);</td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="107">107</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>		 <dfn class="decl" id="atk_hyperlink_get_n_anchors" title='atk_hyperlink_get_n_anchors' data-ref="atk_hyperlink_get_n_anchors">atk_hyperlink_get_n_anchors</dfn>        (<a class="typedef" href="#AtkHyperlink" title='AtkHyperlink' data-type='struct _AtkHyperlink' data-ref="AtkHyperlink">AtkHyperlink</a>     *<dfn class="local col8 decl" id="16878link_" title='link_' data-type='AtkHyperlink *' data-ref="16878link_">link_</dfn>);</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><a class="macro" href="atkversion.h.html#272" title="__attribute__((__deprecated__)) extern" data-ref="_M/ATK_DEPRECATED">ATK_DEPRECATED</a></td></tr>
+<tr><th id="110">110</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>         <dfn class="decl" id="atk_hyperlink_is_selected_link" title='atk_hyperlink_is_selected_link' data-ref="atk_hyperlink_is_selected_link">atk_hyperlink_is_selected_link</dfn>     (<a class="typedef" href="#AtkHyperlink" title='AtkHyperlink' data-type='struct _AtkHyperlink' data-ref="AtkHyperlink">AtkHyperlink</a>     *<dfn class="local col9 decl" id="16879link_" title='link_' data-type='AtkHyperlink *' data-ref="16879link_">link_</dfn>);</td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><u>#<span data-ppcond="20">endif</span> /* __ATK_HYPERLINK_H__ */</u></td></tr>
+<tr><th id="115">115</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

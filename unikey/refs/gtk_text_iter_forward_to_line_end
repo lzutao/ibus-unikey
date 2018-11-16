@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='245' type='gboolean gtk_text_iter_forward_to_line_end(GtkTextIter * iter)'/>

@@ -1,0 +1,17 @@
+<dec f='include/ibus-1.0/ibuskeysyms-compat.h' l='47'/>
+<doc f='include/ibus-1.0/ibuskeysyms-compat.h' l='29'>/**
+ * SECTION: ibuskeysyms
+ * @short_description: Key symbol definition.
+ * @title: IBusKeysyms
+ * @stability: Stable
+ *
+ * This section defines the key symbols (keysym) used in IBus.
+ * Those keysym data is converted from keysymdef.h in
+ * FreeDesktop.
+ *
+ * Most of the key symbols are not explicit documented,
+ * because they are self-explaining.
+ *
+ * see_also: #IBusKeymap, #IBusHotkeyProfile
+ *
+ */</doc>

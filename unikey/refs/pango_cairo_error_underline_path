@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pangocairo.h' l='190' type='void pango_cairo_error_underline_path(cairo_t * cr, double x, double y, double width, double height)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='159' type='gboolean gtk_tree_view_get_headers_clickable(GtkTreeView * tree_view)'/>

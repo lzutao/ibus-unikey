@@ -1,0 +1,4 @@
+<def f='include/atk-1.0/atk/atksocket.h' l='41' ll='47'/>
+<size>80</size>
+<mbr r='_AtkSocket::parent' o='0' t='AtkObject'/>
+<mbr r='_AtkSocket::embedded_plug_id' o='576' t='gchar *'/>

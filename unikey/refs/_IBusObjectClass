@@ -1,0 +1,5 @@
+<def f='include/ibus-1.0/ibusobject.h' l='105' ll='114'/>
+<size>200</size>
+<mbr r='_IBusObjectClass::parent' o='0' t='GInitiallyUnownedClass'/>
+<mbr r='_IBusObjectClass::destroy' o='1088' t='void (*)(IBusObject *)'/>
+<mbr r='_IBusObjectClass::pdummy' o='1152' t='gpointer [7]'/>

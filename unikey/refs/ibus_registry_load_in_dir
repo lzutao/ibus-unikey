@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusregistry.h' l='119' type='void ibus_registry_load_in_dir(IBusRegistry * registry, const gchar * dirname)'/>
+<doc f='include/ibus-1.0/ibusregistry.h' l='109'>/**
+ * ibus_registry_load_in_dir:
+ * @registry: An #IBusRegistry.
+ * @dirname: IBus component directory which includes XML files.
+ *
+ * Read all XML files in @dirname, create a #IBusComponent object for each file,
+ * and add the component objects to the registry.
+ * If @dirname is &quot;/usr/share/ibus/component&quot;, this API and
+ * ibus_registry_load() are same.
+ */</doc>

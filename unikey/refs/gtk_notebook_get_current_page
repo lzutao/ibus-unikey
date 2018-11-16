@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtknotebook.h' l='205' type='gint gtk_notebook_get_current_page(GtkNotebook * notebook)'/>
+<doc f='include/gtk-2.0/gtk/gtknotebook.h' l='201'>/***********************************************************
+ *            query, set current NotebookPage              *
+ ***********************************************************/</doc>

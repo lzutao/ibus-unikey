@@ -1,0 +1,7 @@
+<dec f='include/ibus-1.0/ibusregistry.h' l='227' type='void ibus_registry_start_monitor_changes(IBusRegistry * registry)'/>
+<doc f='include/ibus-1.0/ibusregistry.h' l='221'>/**
+ * ibus_registry_start_monitor_changes:
+ * @registry: An #IBusRegistry.
+ *
+ * Start to monitor observed paths.
+ */</doc>

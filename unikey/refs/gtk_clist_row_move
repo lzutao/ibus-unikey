@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='757' type='void gtk_clist_row_move(GtkCList * clist, gint source_row, gint dest_row)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='756'>/* move row from source_row position to dest_row position */</doc>

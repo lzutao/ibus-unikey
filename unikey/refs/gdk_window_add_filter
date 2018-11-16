@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='394' type='void gdk_window_add_filter(GdkWindow * window, GdkFilterFunc function, gpointer data)'/>

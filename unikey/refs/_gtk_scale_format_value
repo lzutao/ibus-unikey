@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkscale.h' l='106' type='gchar * _gtk_scale_format_value(GtkScale * scale, gdouble value)'/>

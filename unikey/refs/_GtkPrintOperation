@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkprintoperation.h' l='78' ll='83'/>
+<size>32</size>
+<mbr r='_GtkPrintOperation::parent_instance' o='0' t='GObject'/>
+<mbr r='_GtkPrintOperation::priv' o='192' t='GtkPrintOperationPrivate *'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1122' type='gboolean gtk_widget_translate_coordinates(GtkWidget * src_widget, GtkWidget * dest_widget, gint src_x, gint src_y, gint * dest_x, gint * dest_y)'/>

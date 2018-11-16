@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkinput.h' l='138' type='void gdk_device_get_key(GdkDevice * device, guint index, guint * keyval, GdkModifierType * modifiers)'/>

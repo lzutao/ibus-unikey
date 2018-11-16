@@ -1,0 +1,8 @@
+<def f='include/ibus-1.0/ibusconfigservice.h' l='168' ll='174'/>
+<size>48</size>
+<doc f='include/ibus-1.0/ibusconfigservice.h' l='163'>/**
+ * IBusConfigService:
+ *
+ * An opaque data type representing a configure service.
+ */</doc>
+<mbr r='_IBusConfigService::parent' o='0' t='IBusService'/>

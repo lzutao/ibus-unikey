@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>atkaction.h source code [include/atk-1.0/atk/atkaction.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/atk-1.0/atk/atkaction.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>atk-1.0</a>/<a href='./'>atk</a>/<a href='atkaction.h.html'>atkaction.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* ATK -  Accessibility Toolkit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright 2001 Sun Microsystems Inc.</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Library General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Library General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Library General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="20">ifndef</span> <span class="macro" data-ref="_M/__ATK_ACTION_H__">__ATK_ACTION_H__</span></u></td></tr>
+<tr><th id="21">21</th><td><u>#define <dfn class="macro" id="_M/__ATK_ACTION_H__" data-ref="_M/__ATK_ACTION_H__">__ATK_ACTION_H__</dfn></u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> defined(<span class="macro" data-ref="_M/ATK_DISABLE_SINGLE_INCLUDES">ATK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="atk.h.html#23" data-ref="_M/__ATK_H_INSIDE__">__ATK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/ATK_COMPILATION">ATK_COMPILATION</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#error "Only &lt;atk/atk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="atkobject.h.html">&lt;atk/atkobject.h&gt;</a></u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><i>/*</i></td></tr>
+<tr><th id="32">32</th><td><i> * The interface AtkAction should be supported by any object that can </i></td></tr>
+<tr><th id="33">33</th><td><i> * perform one or more actions. The interface provides the standard </i></td></tr>
+<tr><th id="34">34</th><td><i> * mechanism for an assistive technology to determine what those actions </i></td></tr>
+<tr><th id="35">35</th><td><i> * are as well as tell the object to perform them. Any object that can </i></td></tr>
+<tr><th id="36">36</th><td><i> * be manipulated should support this interface.</i></td></tr>
+<tr><th id="37">37</th><td><i> */</i></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><u>#define <dfn class="macro" id="_M/ATK_TYPE_ACTION" data-ref="_M/ATK_TYPE_ACTION">ATK_TYPE_ACTION</dfn>                    (atk_action_get_type ())</u></td></tr>
+<tr><th id="41">41</th><td><u>#define <dfn class="macro" id="_M/ATK_IS_ACTION" data-ref="_M/ATK_IS_ACTION">ATK_IS_ACTION</dfn>(obj)                 G_TYPE_CHECK_INSTANCE_TYPE ((obj), ATK_TYPE_ACTION)</u></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/ATK_ACTION" data-ref="_M/ATK_ACTION">ATK_ACTION</dfn>(obj)                    G_TYPE_CHECK_INSTANCE_CAST ((obj), ATK_TYPE_ACTION, AtkAction)</u></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/ATK_ACTION_GET_IFACE" data-ref="_M/ATK_ACTION_GET_IFACE">ATK_ACTION_GET_IFACE</dfn>(obj)          (G_TYPE_INSTANCE_GET_INTERFACE ((obj), ATK_TYPE_ACTION, AtkActionIface))</u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><u>#<span data-ppcond="45">ifndef</span> <span class="macro" data-ref="_M/_TYPEDEF_ATK_ACTION_">_TYPEDEF_ATK_ACTION_</span></u></td></tr>
+<tr><th id="46">46</th><td><u>#define <dfn class="macro" id="_M/_TYPEDEF_ATK_ACTION_" data-ref="_M/_TYPEDEF_ATK_ACTION_">_TYPEDEF_ATK_ACTION_</dfn></u></td></tr>
+<tr><th id="47">47</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_AtkAction" title='_AtkAction' data-ref="_AtkAction"><a class="type" href="#_AtkAction" title='_AtkAction' data-ref="_AtkAction">_AtkAction</a></dfn> <dfn class="typedef" id="AtkAction" title='AtkAction' data-type='struct _AtkAction' data-ref="AtkAction">AtkAction</dfn>;</td></tr>
+<tr><th id="48">48</th><td><u>#<span data-ppcond="45">endif</span></u></td></tr>
+<tr><th id="49">49</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_AtkActionIface" title='_AtkActionIface' data-ref="_AtkActionIface">_AtkActionIface</a> <dfn class="typedef" id="AtkActionIface" title='AtkActionIface' data-type='struct _AtkActionIface' data-ref="AtkActionIface">AtkActionIface</dfn>;</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><b>struct</b> <dfn class="type def" id="_AtkActionIface" title='_AtkActionIface' data-ref="_AtkActionIface">_AtkActionIface</dfn></td></tr>
+<tr><th id="52">52</th><td>{</td></tr>
+<tr><th id="53">53</th><td>  <a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GTypeInterface" title='GTypeInterface' data-type='struct _GTypeInterface' data-ref="GTypeInterface">GTypeInterface</a> <dfn class="decl" id="_AtkActionIface::parent" title='_AtkActionIface::parent' data-ref="_AtkActionIface::parent">parent</dfn>;</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>                (*<dfn class="decl" id="_AtkActionIface::do_action" title='_AtkActionIface::do_action' data-ref="_AtkActionIface::do_action">do_action</dfn>)         (<a class="typedef" href="#AtkAction" title='AtkAction' data-type='struct _AtkAction' data-ref="AtkAction">AtkAction</a>         *<dfn class="local col6 decl" id="16506action" title='action' data-type='AtkAction *' data-ref="16506action">action</dfn>,</td></tr>
+<tr><th id="56">56</th><td>                                                <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>              <dfn class="local col7 decl" id="16507i" title='i' data-type='gint' data-ref="16507i">i</dfn>);</td></tr>
+<tr><th id="57">57</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>                    (*<dfn class="decl" id="_AtkActionIface::get_n_actions" title='_AtkActionIface::get_n_actions' data-ref="_AtkActionIface::get_n_actions">get_n_actions</dfn>)     (<a class="typedef" href="#AtkAction" title='AtkAction' data-type='struct _AtkAction' data-ref="AtkAction">AtkAction</a>         *<dfn class="local col8 decl" id="16508action" title='action' data-type='AtkAction *' data-ref="16508action">action</dfn>);</td></tr>
+<tr><th id="58">58</th><td>  <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>*            (*<dfn class="decl" id="_AtkActionIface::get_description" title='_AtkActionIface::get_description' data-ref="_AtkActionIface::get_description">get_description</dfn>)   (<a class="typedef" href="#AtkAction" title='AtkAction' data-type='struct _AtkAction' data-ref="AtkAction">AtkAction</a>         *<dfn class="local col9 decl" id="16509action" title='action' data-type='AtkAction *' data-ref="16509action">action</dfn>,</td></tr>
+<tr><th id="59">59</th><td>                                                <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>              <dfn class="local col0 decl" id="16510i" title='i' data-type='gint' data-ref="16510i">i</dfn>);</td></tr>
+<tr><th id="60">60</th><td>  <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>*            (*<dfn class="decl" id="_AtkActionIface::get_name" title='_AtkActionIface::get_name' data-ref="_AtkActionIface::get_name">get_name</dfn>)          (<a class="typedef" href="#AtkAction" title='AtkAction' data-type='struct _AtkAction' data-ref="AtkAction">AtkAction</a>         *<dfn class="local col1 decl" id="16511action" title='action' data-type='AtkAction *' data-ref="16511action">action</dfn>,</td></tr>
+<tr><th id="61">61</th><td>                                                <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>              <dfn class="local col2 decl" id="16512i" title='i' data-type='gint' data-ref="16512i">i</dfn>);</td></tr>
+<tr><th id="62">62</th><td>  <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>*            (*<dfn class="decl" id="_AtkActionIface::get_keybinding" title='_AtkActionIface::get_keybinding' data-ref="_AtkActionIface::get_keybinding">get_keybinding</dfn>)    (<a class="typedef" href="#AtkAction" title='AtkAction' data-type='struct _AtkAction' data-ref="AtkAction">AtkAction</a>         *<dfn class="local col3 decl" id="16513action" title='action' data-type='AtkAction *' data-ref="16513action">action</dfn>,</td></tr>
+<tr><th id="63">63</th><td>                                                <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>              <dfn class="local col4 decl" id="16514i" title='i' data-type='gint' data-ref="16514i">i</dfn>);</td></tr>
+<tr><th id="64">64</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>                (*<dfn class="decl" id="_AtkActionIface::set_description" title='_AtkActionIface::set_description' data-ref="_AtkActionIface::set_description">set_description</dfn>)   (<a class="typedef" href="#AtkAction" title='AtkAction' data-type='struct _AtkAction' data-ref="AtkAction">AtkAction</a>         *<dfn class="local col5 decl" id="16515action" title='action' data-type='AtkAction *' data-ref="16515action">action</dfn>,</td></tr>
+<tr><th id="65">65</th><td>                                                <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>              <dfn class="local col6 decl" id="16516i" title='i' data-type='gint' data-ref="16516i">i</dfn>,</td></tr>
+<tr><th id="66">66</th><td>                                                <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>       *<dfn class="local col7 decl" id="16517desc" title='desc' data-type='const gchar *' data-ref="16517desc">desc</dfn>);</td></tr>
+<tr><th id="67">67</th><td>  <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>*            (*<dfn class="decl" id="_AtkActionIface::get_localized_name" title='_AtkActionIface::get_localized_name' data-ref="_AtkActionIface::get_localized_name">get_localized_name</dfn>)(<a class="typedef" href="#AtkAction" title='AtkAction' data-type='struct _AtkAction' data-ref="AtkAction">AtkAction</a>         *<dfn class="local col8 decl" id="16518action" title='action' data-type='AtkAction *' data-ref="16518action">action</dfn>,</td></tr>
+<tr><th id="68">68</th><td>						<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>              <dfn class="local col9 decl" id="16519i" title='i' data-type='gint' data-ref="16519i">i</dfn>);</td></tr>
+<tr><th id="69">69</th><td>};</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="72">72</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a> <dfn class="decl" id="atk_action_get_type" title='atk_action_get_type' data-ref="atk_action_get_type">atk_action_get_type</dfn> (<em>void</em>);</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td><i>/*</i></td></tr>
+<tr><th id="75">75</th><td><i> * These are the function which would be called by an application with</i></td></tr>
+<tr><th id="76">76</th><td><i> * the argument being a AtkObject object cast to (AtkAction).</i></td></tr>
+<tr><th id="77">77</th><td><i> *</i></td></tr>
+<tr><th id="78">78</th><td><i> * The function will just check that * the corresponding</i></td></tr>
+<tr><th id="79">79</th><td><i> * function pointer is not NULL and will call it.</i></td></tr>
+<tr><th id="80">80</th><td><i> *</i></td></tr>
+<tr><th id="81">81</th><td><i> * The "real" implementation of the function for accessible will be</i></td></tr>
+<tr><th id="82">82</th><td><i> * provided in a support library</i></td></tr>
+<tr><th id="83">83</th><td><i> */</i></td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="86">86</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>   <dfn class="decl" id="atk_action_do_action" title='atk_action_do_action' data-ref="atk_action_do_action">atk_action_do_action</dfn>                (<a class="typedef" href="#AtkAction" title='AtkAction' data-type='struct _AtkAction' data-ref="AtkAction">AtkAction</a>         *<dfn class="local col0 decl" id="16520action" title='action' data-type='AtkAction *' data-ref="16520action">action</dfn>,</td></tr>
+<tr><th id="87">87</th><td>                                            <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>              <dfn class="local col1 decl" id="16521i" title='i' data-type='gint' data-ref="16521i">i</dfn>);</td></tr>
+<tr><th id="88">88</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="89">89</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>   <dfn class="decl" id="atk_action_get_n_actions" title='atk_action_get_n_actions' data-ref="atk_action_get_n_actions">atk_action_get_n_actions</dfn>            (<a class="typedef" href="#AtkAction" title='AtkAction' data-type='struct _AtkAction' data-ref="AtkAction">AtkAction</a> *<dfn class="local col2 decl" id="16522action" title='action' data-type='AtkAction *' data-ref="16522action">action</dfn>);</td></tr>
+<tr><th id="90">90</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="91">91</th><td><em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>*          <dfn class="decl" id="atk_action_get_description" title='atk_action_get_description' data-ref="atk_action_get_description">atk_action_get_description</dfn>  (<a class="typedef" href="#AtkAction" title='AtkAction' data-type='struct _AtkAction' data-ref="AtkAction">AtkAction</a>         *<dfn class="local col3 decl" id="16523action" title='action' data-type='AtkAction *' data-ref="16523action">action</dfn>,</td></tr>
+<tr><th id="92">92</th><td>                                                   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>              <dfn class="local col4 decl" id="16524i" title='i' data-type='gint' data-ref="16524i">i</dfn>);</td></tr>
+<tr><th id="93">93</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="94">94</th><td><em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>*          <dfn class="decl" id="atk_action_get_name" title='atk_action_get_name' data-ref="atk_action_get_name">atk_action_get_name</dfn>         (<a class="typedef" href="#AtkAction" title='AtkAction' data-type='struct _AtkAction' data-ref="AtkAction">AtkAction</a>         *<dfn class="local col5 decl" id="16525action" title='action' data-type='AtkAction *' data-ref="16525action">action</dfn>,</td></tr>
+<tr><th id="95">95</th><td>                                                   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>              <dfn class="local col6 decl" id="16526i" title='i' data-type='gint' data-ref="16526i">i</dfn>);</td></tr>
+<tr><th id="96">96</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="97">97</th><td><em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>*          <dfn class="decl" id="atk_action_get_keybinding" title='atk_action_get_keybinding' data-ref="atk_action_get_keybinding">atk_action_get_keybinding</dfn>   (<a class="typedef" href="#AtkAction" title='AtkAction' data-type='struct _AtkAction' data-ref="AtkAction">AtkAction</a>         *<dfn class="local col7 decl" id="16527action" title='action' data-type='AtkAction *' data-ref="16527action">action</dfn>,</td></tr>
+<tr><th id="98">98</th><td>                                                   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>              <dfn class="local col8 decl" id="16528i" title='i' data-type='gint' data-ref="16528i">i</dfn>);</td></tr>
+<tr><th id="99">99</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="100">100</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>              <dfn class="decl" id="atk_action_set_description" title='atk_action_set_description' data-ref="atk_action_set_description">atk_action_set_description</dfn>  (<a class="typedef" href="#AtkAction" title='AtkAction' data-type='struct _AtkAction' data-ref="AtkAction">AtkAction</a>         *<dfn class="local col9 decl" id="16529action" title='action' data-type='AtkAction *' data-ref="16529action">action</dfn>,</td></tr>
+<tr><th id="101">101</th><td>                                                   <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>              <dfn class="local col0 decl" id="16530i" title='i' data-type='gint' data-ref="16530i">i</dfn>,</td></tr>
+<tr><th id="102">102</th><td>                                                   <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>       *<dfn class="local col1 decl" id="16531desc" title='desc' data-type='const gchar *' data-ref="16531desc">desc</dfn>);</td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><i>/* NEW in ATK 1.1: */</i></td></tr>
+<tr><th id="105">105</th><td><a class="macro" href="atkversion.h.html#277" title="extern" data-ref="_M/ATK_AVAILABLE_IN_ALL">ATK_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="106">106</th><td><em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>* <dfn class="decl" id="atk_action_get_localized_name" title='atk_action_get_localized_name' data-ref="atk_action_get_localized_name">atk_action_get_localized_name</dfn> (<a class="typedef" href="#AtkAction" title='AtkAction' data-type='struct _AtkAction' data-ref="AtkAction">AtkAction</a>       *<dfn class="local col2 decl" id="16532action" title='action' data-type='AtkAction *' data-ref="16532action">action</dfn>,</td></tr>
+<tr><th id="107">107</th><td>						     <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>            <dfn class="local col3 decl" id="16533i" title='i' data-type='gint' data-ref="16533i">i</dfn>);</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><i>/*</i></td></tr>
+<tr><th id="110">110</th><td><i> * Additional GObject properties exported by AtkAction:</i></td></tr>
+<tr><th id="111">111</th><td><i> *    "accessible_action"</i></td></tr>
+<tr><th id="112">112</th><td><i> *       (an accessible action, or the list of actions, has changed)</i></td></tr>
+<tr><th id="113">113</th><td><i> */</i></td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><u>#<span data-ppcond="20">endif</span> /* __ATK_ACTION_H__ */</u></td></tr>
+<tr><th id="118">118</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

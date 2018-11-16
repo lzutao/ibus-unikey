@@ -1,0 +1,5 @@
+<def f='include/gtk-2.0/gtk/gtkimage.h' l='93' ll='98'/>
+<size>24</size>
+<mbr r='_GtkImageIconNameData::icon_name' o='0' t='gchar *'/>
+<mbr r='_GtkImageIconNameData::pixbuf' o='64' t='GdkPixbuf *'/>
+<mbr r='_GtkImageIconNameData::theme_change_id' o='128' t='guint'/>

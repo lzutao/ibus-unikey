@@ -1,0 +1,4 @@
+<def f='include/pango-1.0/pango/pango-glyph-item.h' l='45' ll='49'/>
+<size>16</size>
+<mbr r='_PangoGlyphItem::item' o='0' t='PangoItem *'/>
+<mbr r='_PangoGlyphItem::glyphs' o='64' t='PangoGlyphString *'/>

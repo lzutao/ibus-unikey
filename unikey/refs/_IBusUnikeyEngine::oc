@@ -1,0 +1,12 @@
+<dec f='unikey/src/engine_private.h' l='26' type='unsigned int'/>
+<use f='unikey/src/engine.cpp' l='178' u='w' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='208' u='w' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='255' u='r' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='321' u='w' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='386' u='r' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='439' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='486' u='r' c='_ZL39ibus_unikey_engine_create_property_listP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='642' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='697' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<offset>928</offset>
+<doc f='unikey/src/engine_private.h' l='26'>//!&lt; output charset</doc>

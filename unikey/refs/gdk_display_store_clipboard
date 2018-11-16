@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='217' type='void gdk_display_store_clipboard(GdkDisplay * display, GdkWindow * clipboard_window, guint32 time_, const GdkAtom * targets, gint n_targets)'/>

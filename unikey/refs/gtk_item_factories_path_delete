@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkitemfactory.h' l='228' type='void gtk_item_factories_path_delete(const gchar * ifactory_path, const gchar * path)'/>

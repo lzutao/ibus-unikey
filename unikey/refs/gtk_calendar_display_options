@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcalendar.h' l='180' type='void gtk_calendar_display_options(GtkCalendar * calendar, GtkCalendarDisplayOptions flags)'/>

@@ -1,0 +1,11 @@
+<def f='include/gtk-2.0/gtk/gtktipsquery.h' l='71' ll='92'/>
+<size>840</size>
+<mbr r='_GtkTipsQueryClass::parent_class' o='0' t='GtkLabelClass'/>
+<mbr r='_GtkTipsQueryClass::start_query' o='6208' t='void (*)(GtkTipsQuery *)'/>
+<mbr r='_GtkTipsQueryClass::stop_query' o='6272' t='void (*)(GtkTipsQuery *)'/>
+<mbr r='_GtkTipsQueryClass::widget_entered' o='6336' t='void (*)(GtkTipsQuery *, GtkWidget *, const gchar *, const gchar *)'/>
+<mbr r='_GtkTipsQueryClass::widget_selected' o='6400' t='gint (*)(GtkTipsQuery *, GtkWidget *, const gchar *, const gchar *, GdkEventButton *)'/>
+<mbr r='_GtkTipsQueryClass::_gtk_reserved1' o='6464' t='void (*)()'/>
+<mbr r='_GtkTipsQueryClass::_gtk_reserved2' o='6528' t='void (*)()'/>
+<mbr r='_GtkTipsQueryClass::_gtk_reserved3' o='6592' t='void (*)()'/>
+<mbr r='_GtkTipsQueryClass::_gtk_reserved4' o='6656' t='void (*)()'/>

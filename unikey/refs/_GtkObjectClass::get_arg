@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkobject.h' l='127' type='void (*)(GtkObject *, GtkArg *, guint)'/>
+<offset>1152</offset>

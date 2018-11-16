@@ -1,0 +1,30 @@
+<def f='include/atk-1.0/atk/atkdocument.h' l='68' ll='83'/>
+<size>80</size>
+<doc f='include/atk-1.0/atk/atkdocument.h' l='49'>/**
+ * AtkDocumentIface:
+ * @get_document_type: gets a string indicating the document
+ *   type. This virtual function is deprecated since 2.12 and it
+ *   should not be overriden.
+ * @get_document: a #GObject instance that implements
+ *   AtkDocumentIface. This virtual method is deprecated since 2.12
+ *   and it should not be overriden.
+ * @get_document_locale: gets locale. This virtual function is
+ *   deprecated since 2.7.90 and it should not be overriden.
+ * @get_document_attributes: gets an AtkAttributeSet which describes
+ *   document-wide attributes as name-value pairs.
+ * @get_document_attribute_value: returns a string value assocciated
+ *   with the named attribute for this document, or NULL
+ * @set_document_attribute: sets the value of an attribute. Returns
+ *   TRUE on success, FALSE otherwise
+ * @get_current_page_number: gets the current page number. Since 2.12
+ * @get_page_count: gets the page count of the document. Since 2.12
+ */</doc>
+<mbr r='_AtkDocumentIface::parent' o='0' t='GTypeInterface'/>
+<mbr r='_AtkDocumentIface::get_document_type' o='128' t='const gchar *(*)(AtkDocument *)'/>
+<mbr r='_AtkDocumentIface::get_document' o='192' t='gpointer (*)(AtkDocument *)'/>
+<mbr r='_AtkDocumentIface::get_document_locale' o='256' t='const gchar *(*)(AtkDocument *)'/>
+<mbr r='_AtkDocumentIface::get_document_attributes' o='320' t='AtkAttributeSet *(*)(AtkDocument *)'/>
+<mbr r='_AtkDocumentIface::get_document_attribute_value' o='384' t='const gchar *(*)(AtkDocument *, const gchar *)'/>
+<mbr r='_AtkDocumentIface::set_document_attribute' o='448' t='gboolean (*)(AtkDocument *, const gchar *, const gchar *)'/>
+<mbr r='_AtkDocumentIface::get_current_page_number' o='512' t='gint (*)(AtkDocument *)'/>
+<mbr r='_AtkDocumentIface::get_page_count' o='576' t='gint (*)(AtkDocument *)'/>

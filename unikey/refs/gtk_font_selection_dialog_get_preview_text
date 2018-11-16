@@ -1,0 +1,3 @@
+<dec f='include/gtk-2.0/gtk/gtkfontsel.h' l='209' type='const gchar * gtk_font_selection_dialog_get_preview_text(GtkFontSelectionDialog * fsd)'/>
+<doc f='include/gtk-2.0/gtk/gtkfontsel.h' l='206'>/* This returns the text in the preview entry. You should copy the returned
+   text if you need it. */</doc>

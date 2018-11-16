@@ -1,0 +1,15 @@
+<dec f='include/ibus-1.0/ibusinputcontext.h' l='294' type='gboolean ibus_input_context_process_key_event(IBusInputContext * context, guint32 keyval, guint32 keycode, guint32 state)'/>
+<doc f='include/ibus-1.0/ibusinputcontext.h' l='280'>/**
+ * ibus_input_context_process_key_event:
+ * @context: An #IBusInputContext.
+ * @keyval: Key symbol of a key event.
+ * @keycode: Keycode of a key event.
+ * @state: Key modifier flags.
+ *
+ * Pass the key event to input method engine and wait for the reply from
+ * ibus (i.e. synchronous IPC).
+ *
+ * Returns: %TRUE for successfully process the key; %FALSE otherwise.
+ *
+ * See also: ibus_input_context_process_key_event_async()
+ */</doc>

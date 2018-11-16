@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-layout.h' l='402' type='void pango_layout_iter_get_cluster_extents(PangoLayoutIter * iter, PangoRectangle * ink_rect, PangoRectangle * logical_rect)'/>

@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtktogglebutton.h' l='41'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='100' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='106' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='112' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='118' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='124' u='c'/>

@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkutil.h' l='204' type='guint atk_add_key_event_listener(AtkKeySnoopFunc listener, gpointer data)'/>

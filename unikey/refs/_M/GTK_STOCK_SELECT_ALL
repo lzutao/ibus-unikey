@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='876'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='868'>/**
+ * GTK_STOCK_SELECT_ALL:
+ *
+ * The &quot;Select All&quot; item.
+ * &lt;inlinegraphic fileref=&quot;edit-select-all.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ *
+ * Since: 2.10
+ */</doc>

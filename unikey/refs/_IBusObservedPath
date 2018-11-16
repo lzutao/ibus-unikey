@@ -1,0 +1,16 @@
+<def f='include/ibus-1.0/ibusobservedpath.h' l='74' ll='84'/>
+<size>72</size>
+<doc f='include/ibus-1.0/ibusobservedpath.h' l='65'>/**
+ * IBusObservedPath:
+ * @path: Path to be handled.
+ * @mtime: Modified time.
+ * @is_dir: Whether the file is the path directory.
+ * @is_exist: Whether the file exists.
+ *
+ * Data structure of IBusObservedPath.
+ */</doc>
+<mbr r='_IBusObservedPath::parent' o='0' t='IBusSerializable'/>
+<mbr r='_IBusObservedPath::path' o='384' t='gchar *'/>
+<mbr r='_IBusObservedPath::mtime' o='448' t='glong'/>
+<mbr r='_IBusObservedPath::is_dir' o='512' t='gboolean'/>
+<mbr r='_IBusObservedPath::is_exist' o='544' t='gboolean'/>

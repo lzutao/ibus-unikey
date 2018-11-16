@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='322' type='GtkEntry * gtk_tree_view_get_search_entry(GtkTreeView * tree_view)'/>

@@ -1,0 +1,8 @@
+<def f='include/ibus-1.0/ibushotkey.h' l='67' ll='71'/>
+<size>48</size>
+<doc f='include/ibus-1.0/ibushotkey.h' l='62'>/**
+ * IBusHotkeyProfile:
+ *
+ * An opaque data type representing an IBusHotkeyProfile.
+ */</doc>
+<mbr r='_IBusHotkeyProfile::parent' o='0' t='IBusSerializable'/>

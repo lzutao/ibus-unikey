@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtktexttag.h' l='187' type='gpointer'/>
+<offset>384</offset>
+<doc f='include/gtk-2.0/gtk/gtktexttag.h' l='184'>/* I&apos;m not sure this can really be used without breaking some things
+   * an app might do :-/
+   */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextview.h' l='269' type='void gtk_text_view_buffer_to_window_coords(GtkTextView * text_view, GtkTextWindowType win, gint buffer_x, gint buffer_y, gint * window_x, gint * window_y)'/>

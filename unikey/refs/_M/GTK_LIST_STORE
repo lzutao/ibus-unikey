@@ -1,0 +1,12 @@
+<dec f='include/gtk-2.0/gtk/gtkliststore.h' l='36'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='41' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='136' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='251' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='255' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='258' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='284' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='300' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='323' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='364' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='53' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='62' u='c'/>

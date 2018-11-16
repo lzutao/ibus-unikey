@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuscomponent.h' l='269' type='void ibus_component_add_engine(IBusComponent * component, IBusEngineDesc * engine)'/>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='262'>/**
+ * ibus_component_add_engine:
+ * @component: An #IBusComponent
+ * @engine: A description of an engine.
+ *
+ * Add an engine to #IBusComponent according to the description in @engine.
+ */</doc>
+<use f='unikey/src/utils.cpp' l='71' u='c' c='_Z25ibus_unikey_get_componentv'/>

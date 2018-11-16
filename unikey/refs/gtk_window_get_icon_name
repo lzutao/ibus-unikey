@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='294' type='const gchar * gtk_window_get_icon_name(GtkWindow * window)'/>

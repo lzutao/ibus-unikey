@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkfontsel.h' l='151' type='GtkWidget * gtk_font_selection_get_preview_entry(GtkFontSelection * fontsel)'/>

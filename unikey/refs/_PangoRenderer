@@ -1,0 +1,20 @@
+<def f='include/pango-1.0/pango/pango-renderer.h' l='72' ll='86'/>
+<size>56</size>
+<doc f='include/pango-1.0/pango/pango-renderer.h' l='60'>/**
+ * PangoRenderer:
+ * @matrix: (nullable): the current transformation matrix for
+ *    the Renderer; may be %NULL, which should be treated the
+ *    same as the identity matrix.
+ *
+ * #PangoRenderer is a base class for objects that are used to
+ * render Pango objects such as #PangoGlyphString and
+ * #PangoLayout.
+ *
+ * Since: 1.8
+ **/</doc>
+<mbr r='_PangoRenderer::parent_instance' o='0' t='GObject'/>
+<mbr r='_PangoRenderer::underline' o='192' t='PangoUnderline'/>
+<mbr r='_PangoRenderer::strikethrough' o='224' t='gboolean'/>
+<mbr r='_PangoRenderer::active_count' o='256' t='int'/>
+<mbr r='_PangoRenderer::matrix' o='320' t='PangoMatrix *'/>
+<mbr r='_PangoRenderer::priv' o='384' t='PangoRendererPrivate *'/>

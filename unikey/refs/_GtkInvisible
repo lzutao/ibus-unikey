@@ -1,0 +1,5 @@
+<def f='include/gtk-2.0/gtk/gtkinvisible.h' l='49' ll='55'/>
+<size>112</size>
+<mbr r='_GtkInvisible::widget' o='0' t='GtkWidget'/>
+<mbr r='_GtkInvisible::has_user_ref_count' o='768' t='gboolean'/>
+<mbr r='_GtkInvisible::screen' o='832' t='GdkScreen *'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkselection.h' l='93' type='GtkTargetList * gtk_target_list_new(const GtkTargetEntry * targets, guint ntargets)'/>

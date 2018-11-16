@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='708' type='GdkPixmap * gdk_offscreen_window_get_pixmap(GdkWindow * window)'/>
+<doc f='include/gtk-2.0/gdk/gdkwindow.h' l='707'>/* Offscreen redirection */</doc>

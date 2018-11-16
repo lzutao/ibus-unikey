@@ -1,0 +1,2 @@
+<dec f='include/ibus-1.0/ibusconfigservice.h' l='204' type='GVariant *(*)(IBusConfigService *, const gchar *, GError **)'/>
+<offset>2304</offset>

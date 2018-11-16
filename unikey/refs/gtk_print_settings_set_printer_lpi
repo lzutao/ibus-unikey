@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintsettings.h' l='200' type='void gtk_print_settings_set_printer_lpi(GtkPrintSettings * settings, gdouble lpi)'/>

@@ -1,0 +1,2 @@
+<dec f='unikey/src/engine_private.h' l='49' type='gboolean ibus_unikey_engine_process_key_event(IBusEngine * engine, guint keyval, guint keycode, guint modifiers)'/>
+<use f='unikey/src/engine.cpp' l='88' u='r' c='_ZL29ibus_unikey_engine_class_initP22_IBusUnikeyEngineClass'/>

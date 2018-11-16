@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcombobox.h' l='80' type='gint gtk_combo_box_get_row_span_column(GtkComboBox * combo_box)'/>

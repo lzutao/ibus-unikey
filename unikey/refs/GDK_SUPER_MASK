@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gdk/gdktypes.h' l='146' type='67108864'/>
+<doc f='include/gtk-2.0/gdk/gdktypes.h' l='142'>/* The next few modifiers are used by XKB, so we skip to the end.
+   * Bits 15 - 25 are currently unused. Bit 29 is used internally.
+   */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmountoperation.h' l='74' type='void gtk_mount_operation_set_parent(GtkMountOperation * op, GtkWindow * parent)'/>

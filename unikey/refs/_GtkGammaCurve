@@ -1,0 +1,9 @@
+<def f='include/gtk-2.0/gtk/gtkgamma.h' l='49' ll='60'/>
+<size>208</size>
+<mbr r='_GtkGammaCurve::vbox' o='0' t='GtkVBox'/>
+<mbr r='_GtkGammaCurve::table' o='1024' t='GtkWidget *'/>
+<mbr r='_GtkGammaCurve::curve' o='1088' t='GtkWidget *'/>
+<mbr r='_GtkGammaCurve::button' o='1152' t='GtkWidget *[5]'/>
+<mbr r='_GtkGammaCurve::gamma' o='1472' t='gfloat'/>
+<mbr r='_GtkGammaCurve::gamma_dialog' o='1536' t='GtkWidget *'/>
+<mbr r='_GtkGammaCurve::gamma_text' o='1600' t='GtkWidget *'/>

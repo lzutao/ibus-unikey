@@ -1,0 +1,9 @@
+<def f='include/gtk-2.0/gtk/gtksocket.h' l='72' ll='84'/>
+<size>872</size>
+<mbr r='_GtkSocketClass::parent_class' o='0' t='GtkContainerClass'/>
+<mbr r='_GtkSocketClass::plug_added' o='6592' t='void (*)(GtkSocket *)'/>
+<mbr r='_GtkSocketClass::plug_removed' o='6656' t='gboolean (*)(GtkSocket *)'/>
+<mbr r='_GtkSocketClass::_gtk_reserved1' o='6720' t='void (*)()'/>
+<mbr r='_GtkSocketClass::_gtk_reserved2' o='6784' t='void (*)()'/>
+<mbr r='_GtkSocketClass::_gtk_reserved3' o='6848' t='void (*)()'/>
+<mbr r='_GtkSocketClass::_gtk_reserved4' o='6912' t='void (*)()'/>

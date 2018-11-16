@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='160' type='GdkRectangle'/>
+<offset>1120</offset>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='158'>/* allocation rectangle after the container_border_width
+   * and the width of the shadow border */</doc>

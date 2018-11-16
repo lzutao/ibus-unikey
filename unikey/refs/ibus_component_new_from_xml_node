@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuscomponent.h' l='153' type='IBusComponent * ibus_component_new_from_xml_node(IBusXML * node)'/>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='145'>/**
+ * ibus_component_new_from_xml_node:
+ * @node: Root node of component XML tree.
+ *
+ * Creates a new #IBusComponent from an XML tree.
+ *
+ * Returns: A newly allocated #IBusComponent.
+ */</doc>

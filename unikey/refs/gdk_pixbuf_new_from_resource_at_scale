@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h' l='333' type='GdkPixbuf * gdk_pixbuf_new_from_resource_at_scale(const char * resource_path, int width, int height, gboolean preserve_aspect_ratio, GError ** error)'/>

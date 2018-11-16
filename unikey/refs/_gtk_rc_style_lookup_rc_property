@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrc.h' l='255' type='const GtkRcProperty * _gtk_rc_style_lookup_rc_property(GtkRcStyle * rc_style, GQuark type_name, GQuark property_name)'/>

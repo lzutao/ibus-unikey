@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkstyle.h' l='459' type='void gtk_style_apply_default_background(GtkStyle * style, GdkWindow * window, gboolean set_bg, GtkStateType state_type, const GdkRectangle * area, gint x, gint y, gint width, gint height)'/>

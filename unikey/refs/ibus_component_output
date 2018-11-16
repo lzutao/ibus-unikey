@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibuscomponent.h' l='292' type='void ibus_component_output(IBusComponent * component, GString * output, gint indent)'/>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='283'>/**
+ * ibus_component_output:
+ * @component: An #IBusComponent.
+ * @output: GString that holds the result.
+ * @indent: level of indent.
+ *
+ * Output #IBusComponent as an XML-formatted string.
+ * The output string can be then shown on the screen or written to file.
+ */</doc>

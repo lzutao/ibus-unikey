@@ -1,0 +1,2 @@
+<dec f='include/glib-2.0/glib/gtestutils.h' l='187'/>
+<doc f='include/glib-2.0/glib/gtestutils.h' l='186'>/* hook up a test with fixture under test path */</doc>

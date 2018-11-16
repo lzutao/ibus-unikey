@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gdk/gdkdisplay.h' l='108' ll='122'/>
+<size>176</size>
+<mbr r='_GdkDisplayClass::parent_class' o='0' t='GObjectClass'/>
+<mbr r='_GdkDisplayClass::get_display_name' o='1088' t='const gchar *(*)(GdkDisplay *)'/>
+<mbr r='_GdkDisplayClass::get_n_screens' o='1152' t='gint (*)(GdkDisplay *)'/>
+<mbr r='_GdkDisplayClass::get_screen' o='1216' t='GdkScreen *(*)(GdkDisplay *, gint)'/>
+<mbr r='_GdkDisplayClass::get_default_screen' o='1280' t='GdkScreen *(*)(GdkDisplay *)'/>
+<mbr r='_GdkDisplayClass::closed' o='1344' t='void (*)(GdkDisplay *, gboolean)'/>

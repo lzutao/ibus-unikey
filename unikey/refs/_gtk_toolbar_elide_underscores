@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktoolbar.h' l='178' type='gchar * _gtk_toolbar_elide_underscores(const gchar * original)'/>
+<doc f='include/gtk-2.0/gtk/gtktoolbar.h' l='177'>/* internal functions */</doc>

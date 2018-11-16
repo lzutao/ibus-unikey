@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusconfigservice.h' l='223' type='IBusConfigService * ibus_config_service_new(GDBusConnection * connection)'/>
+<doc f='include/ibus-1.0/ibusconfigservice.h' l='215'>/**
+ * ibus_config_service_new:
+ * @connection: An #GDBusConnection.
+ *
+ * Creates an new #IBusConfigService from an #GDBusConnection.
+ *
+ * Returns: A newly allocated #IBusConfigServices.
+ */</doc>

@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ibusenginedesc.h source code [include/ibus-1.0/ibusenginedesc.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/ibus-1.0/ibusenginedesc.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>ibus-1.0</a>/<a href='ibusenginedesc.h.html'>ibusenginedesc.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* -*- mode: C; c-basic-offset: 4; indent-tabs-mode: nil; -*- */</i></td></tr>
+<tr><th id="2">2</th><td><i>/* vim:set et sts=4: */</i></td></tr>
+<tr><th id="3">3</th><td><i>/* bus - The Input Bus</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 2008-2015 Peng Huang &lt;shawn.p.huang@gmail.com&gt;</i></td></tr>
+<tr><th id="5">5</th><td><i> * Copyright (C) 2008-2015 Red Hat, Inc.</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="8">8</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="9">9</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="10">10</th><td><i> * version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="11">11</th><td><i> *</i></td></tr>
+<tr><th id="12">12</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="13">13</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="14">14</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="15">15</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="18">18</th><td><i> * License along with this library; if not, write to the Free Software</i></td></tr>
+<tr><th id="19">19</th><td><i> * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301</i></td></tr>
+<tr><th id="20">20</th><td><i> * USA</i></td></tr>
+<tr><th id="21">21</th><td><i> */</i></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> !defined (<a class="macro" href="ibus.h.html#26" data-ref="_M/__IBUS_H_INSIDE__">__IBUS_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/IBUS_COMPILATION">IBUS_COMPILATION</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#error "Only &lt;ibus.h&gt; can be included directly"</u></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/__IBUS_ENGINE_DESC_H_">__IBUS_ENGINE_DESC_H_</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/__IBUS_ENGINE_DESC_H_" data-ref="_M/__IBUS_ENGINE_DESC_H_">__IBUS_ENGINE_DESC_H_</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> * SECTION: ibusenginedesc</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> * <span class="command">@short</span>_description:  Input method engine description data.</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> *<span class="command"> @title</span>: IBusEngineDesc</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> *<span class="command"> @stability</span>: Stable</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * An IBusEngineDesc stores description data of IBusEngine.</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> * The description data can either be passed to ibus_engine_desc_new(),</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * or loaded from an XML node through ibus_engine_desc_new_from_xml_node()</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * to construct IBusEngineDesc.</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * However, the recommended way to load engine description data is</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> * using ibus_component_new_from_file() to load a component file,</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> * which also includes engine description data.</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> * see_also: #IBusComponent, #IBusEngine</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><u>#include <a href="ibusserializable.h.html">"ibusserializable.h"</a></u></td></tr>
+<tr><th id="50">50</th><td><u>#include <a href="ibusxml.h.html">"ibusxml.h"</a></u></td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><i>/*</i></td></tr>
+<tr><th id="53">53</th><td><i> * Type macros.</i></td></tr>
+<tr><th id="54">54</th><td><i> */</i></td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><i>/* define GOBJECT macros */</i></td></tr>
+<tr><th id="57">57</th><td><u>#define <dfn class="macro" id="_M/IBUS_TYPE_ENGINE_DESC" data-ref="_M/IBUS_TYPE_ENGINE_DESC">IBUS_TYPE_ENGINE_DESC</dfn>             \</u></td></tr>
+<tr><th id="58">58</th><td><u>    (ibus_engine_desc_get_type ())</u></td></tr>
+<tr><th id="59">59</th><td><u>#define <dfn class="macro" id="_M/IBUS_ENGINE_DESC" data-ref="_M/IBUS_ENGINE_DESC">IBUS_ENGINE_DESC</dfn>(obj)             \</u></td></tr>
+<tr><th id="60">60</th><td><u>    (G_TYPE_CHECK_INSTANCE_CAST ((obj), IBUS_TYPE_ENGINE_DESC, IBusEngineDesc))</u></td></tr>
+<tr><th id="61">61</th><td><u>#define <dfn class="macro" id="_M/IBUS_ENGINE_DESC_CLASS" data-ref="_M/IBUS_ENGINE_DESC_CLASS">IBUS_ENGINE_DESC_CLASS</dfn>(klass)     \</u></td></tr>
+<tr><th id="62">62</th><td><u>    (G_TYPE_CHECK_CLASS_CAST ((klass), IBUS_TYPE_ENGINE_DESC, IBusEngineDescClass))</u></td></tr>
+<tr><th id="63">63</th><td><u>#define <dfn class="macro" id="_M/IBUS_IS_ENGINE_DESC" data-ref="_M/IBUS_IS_ENGINE_DESC">IBUS_IS_ENGINE_DESC</dfn>(obj)          \</u></td></tr>
+<tr><th id="64">64</th><td><u>    (G_TYPE_CHECK_INSTANCE_TYPE ((obj), IBUS_TYPE_ENGINE_DESC))</u></td></tr>
+<tr><th id="65">65</th><td><u>#define <dfn class="macro" id="_M/IBUS_IS_ENGINE_DESC_CLASS" data-ref="_M/IBUS_IS_ENGINE_DESC_CLASS">IBUS_IS_ENGINE_DESC_CLASS</dfn>(klass)  \</u></td></tr>
+<tr><th id="66">66</th><td><u>    (G_TYPE_CHECK_CLASS_TYPE ((klass), IBUS_TYPE_ENGINE_DESC))</u></td></tr>
+<tr><th id="67">67</th><td><u>#define <dfn class="macro" id="_M/IBUS_ENGINE_DESC_GET_CLASS" data-ref="_M/IBUS_ENGINE_DESC_GET_CLASS">IBUS_ENGINE_DESC_GET_CLASS</dfn>(obj)   \</u></td></tr>
+<tr><th id="68">68</th><td><u>    (G_TYPE_INSTANCE_GET_CLASS ((obj), IBUS_TYPE_ENGINE_DESC, IBusEngineDescClass))</u></td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><a class="macro" href="../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_IBusEngineDesc" title='_IBusEngineDesc' data-ref="_IBusEngineDesc">_IBusEngineDesc</a> <dfn class="typedef" id="IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</dfn>;</td></tr>
+<tr><th id="73">73</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_IBusEngineDescPrivate" title='_IBusEngineDescPrivate' data-ref="_IBusEngineDescPrivate"><a class="type" href="#_IBusEngineDescPrivate" title='_IBusEngineDescPrivate' data-ref="_IBusEngineDescPrivate">_IBusEngineDescPrivate</a></dfn> <dfn class="typedef" id="IBusEngineDescPrivate" title='IBusEngineDescPrivate' data-type='struct _IBusEngineDescPrivate' data-ref="IBusEngineDescPrivate">IBusEngineDescPrivate</dfn>;</td></tr>
+<tr><th id="74">74</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_IBusEngineDescClass" title='_IBusEngineDescClass' data-ref="_IBusEngineDescClass">_IBusEngineDescClass</a> <dfn class="typedef" id="IBusEngineDescClass" title='IBusEngineDescClass' data-type='struct _IBusEngineDescClass' data-ref="IBusEngineDescClass">IBusEngineDescClass</dfn>;</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> * IBusEngineDesc:</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> * Input method engine description data.</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> * You can get extended values with g_object_get_properties.</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="82">82</th><td><b>struct</b> <dfn class="type def" id="_IBusEngineDesc" title='_IBusEngineDesc' data-ref="_IBusEngineDesc">_IBusEngineDesc</dfn> {</td></tr>
+<tr><th id="83">83</th><td>    <a class="typedef" href="ibusserializable.h.html#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a> <dfn class="decl" id="_IBusEngineDesc::parent" title='_IBusEngineDesc::parent' data-ref="_IBusEngineDesc::parent">parent</dfn>;</td></tr>
+<tr><th id="84">84</th><td>    <i>/* instance members */</i></td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td>    <i>/*&lt; public &gt;*/</i></td></tr>
+<tr><th id="87">87</th><td>    <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="88">88</th><td>    <a class="typedef" href="#IBusEngineDescPrivate" title='IBusEngineDescPrivate' data-type='struct _IBusEngineDescPrivate' data-ref="IBusEngineDescPrivate">IBusEngineDescPrivate</a> *<dfn class="decl" id="_IBusEngineDesc::priv" title='_IBusEngineDesc::priv' data-ref="_IBusEngineDesc::priv">priv</dfn>;</td></tr>
+<tr><th id="89">89</th><td>};</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><b>struct</b> <dfn class="type def" id="_IBusEngineDescClass" title='_IBusEngineDescClass' data-ref="_IBusEngineDescClass">_IBusEngineDescClass</dfn> {</td></tr>
+<tr><th id="92">92</th><td>    <a class="typedef" href="ibusserializable.h.html#IBusSerializableClass" title='IBusSerializableClass' data-type='struct _IBusSerializableClass' data-ref="IBusSerializableClass">IBusSerializableClass</a> <dfn class="decl" id="_IBusEngineDescClass::parent" title='_IBusEngineDescClass::parent' data-ref="_IBusEngineDescClass::parent">parent</dfn>;</td></tr>
+<tr><th id="93">93</th><td>    <i>/* class members */</i></td></tr>
+<tr><th id="94">94</th><td>};</td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td><a class="typedef" href="../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>            <dfn class="decl" id="ibus_engine_desc_get_type" title='ibus_engine_desc_get_type' data-ref="ibus_engine_desc_get_type">ibus_engine_desc_get_type</dfn>      (<em>void</em>);</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"> * ibus_engine_desc_new:</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc"> * <span class="command">@name</span>:<span class="verb"> Name of the engine.</span></i></td></tr>
+<tr><th id="101">101</th><td><i class="doc"> *<span class="command"> @longname</span>: Long name of the input method engine.</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> *<span class="command"> @description</span>: Input method engine description.</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> *<span class="command"> @language</span>: Language (e.g. zh, jp) supported by this input method engine.</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> *<span class="command"> @license</span>: License of the input method engine.</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> * <span class="command">@author</span>: Author of the input method engine.</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"> *<span class="command"> @icon</span>: Icon file of this engine.</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> *<span class="command"> @layout</span>: Keyboard layout</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> * Creates a new #IBusEngineDesc.</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> * Returns: A newly allocated IBusEngineDesc.</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="113">113</th><td><a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a>  *<dfn class="decl" id="ibus_engine_desc_new" title='ibus_engine_desc_new' data-ref="ibus_engine_desc_new">ibus_engine_desc_new</dfn>           (<em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col3 decl" id="313name" title='name' data-type='const gchar *' data-ref="313name">name</dfn>,</td></tr>
+<tr><th id="114">114</th><td>                                                 <em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col4 decl" id="314longname" title='longname' data-type='const gchar *' data-ref="314longname">longname</dfn>,</td></tr>
+<tr><th id="115">115</th><td>                                                 <em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col5 decl" id="315description" title='description' data-type='const gchar *' data-ref="315description">description</dfn>,</td></tr>
+<tr><th id="116">116</th><td>                                                 <em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col6 decl" id="316language" title='language' data-type='const gchar *' data-ref="316language">language</dfn>,</td></tr>
+<tr><th id="117">117</th><td>                                                 <em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col7 decl" id="317license" title='license' data-type='const gchar *' data-ref="317license">license</dfn>,</td></tr>
+<tr><th id="118">118</th><td>                                                 <em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col8 decl" id="318author" title='author' data-type='const gchar *' data-ref="318author">author</dfn>,</td></tr>
+<tr><th id="119">119</th><td>                                                 <em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col9 decl" id="319icon" title='icon' data-type='const gchar *' data-ref="319icon">icon</dfn>,</td></tr>
+<tr><th id="120">120</th><td>                                                 <em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col0 decl" id="320layout" title='layout' data-type='const gchar *' data-ref="320layout">layout</dfn>);</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> * ibus_engine_desc_new_varargs:</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> *<span class="command"> @first</span>_property_name: Name of the first property.</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc"> * @...: the NULL-terminated arguments of the properties and values.</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> * Creates a new #IBusEngineDesc.</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> * ibus_engine_desc_new_varargs() supports the va_list format.</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc"> * name property is required. e.g.</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc"> * ibus_engine_desc_new_varargs("name", "ibus-foo", "language", "us", NULL)</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> * Returns: A newly allocated IBusEngineDesc.</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="134">134</th><td><a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a>  *<dfn class="decl" id="ibus_engine_desc_new_varargs" title='ibus_engine_desc_new_varargs' data-ref="ibus_engine_desc_new_varargs">ibus_engine_desc_new_varargs</dfn>   (<em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col1 decl" id="321first_property_name" title='first_property_name' data-type='const gchar *' data-ref="321first_property_name">first_property_name</dfn>,</td></tr>
+<tr><th id="135">135</th><td>                                                 ...);</td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> * ibus_engine_desc_new_from_xml_node:</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc"> *<span class="command"> @node</span>: An XML node</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> * Creates a new IBusEngineDesc from an XML node.</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> * &lt;note&gt;&lt;para&gt;This function is called by ibus_component_new_from_file(),</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> *  so developers normally do not need to call it directly.</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> * &lt;/para&gt;&lt;/note&gt;</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc"> * Returns: A newly allocated IBusEngineDesc that contains description from</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> *<span class="command"> @node</span>.</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="150">150</th><td><a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a>  *<dfn class="decl" id="ibus_engine_desc_new_from_xml_node" title='ibus_engine_desc_new_from_xml_node' data-ref="ibus_engine_desc_new_from_xml_node">ibus_engine_desc_new_from_xml_node</dfn></td></tr>
+<tr><th id="151">151</th><td>                                                (<a class="macro" href="ibusxml.h.html#61" title="IBusXML" data-ref="_M/XMLNode">XMLNode</a>        *<dfn class="local col2 decl" id="322node" title='node' data-type='IBusXML *' data-ref="322node">node</dfn>);</td></tr>
+<tr><th id="152">152</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> * ibus_engine_desc_get_name:</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> *<span class="command"> @info</span>: An IBusEngineDesc</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc"> * Gets the name property in IBusEngineDesc. It should not be freed.</i></td></tr>
+<tr><th id="157">157</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc"> * Returns: name property in IBusEngineDesc</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="160">160</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="ibus_engine_desc_get_name" title='ibus_engine_desc_get_name' data-ref="ibus_engine_desc_get_name">ibus_engine_desc_get_name</dfn>      (<a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col3 decl" id="323info" title='info' data-type='IBusEngineDesc *' data-ref="323info">info</dfn>);</td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="163">163</th><td><i class="doc"> * ibus_engine_desc_get_longname:</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc"> *<span class="command"> @info</span>: An IBusEngineDesc</i></td></tr>
+<tr><th id="165">165</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="166">166</th><td><i class="doc"> * Gets the longname property in IBusEngineDesc. It should not be freed.</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc"> * Returns: longname property in IBusEngineDesc</i></td></tr>
+<tr><th id="169">169</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="170">170</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="ibus_engine_desc_get_longname" title='ibus_engine_desc_get_longname' data-ref="ibus_engine_desc_get_longname">ibus_engine_desc_get_longname</dfn>  (<a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col4 decl" id="324info" title='info' data-type='IBusEngineDesc *' data-ref="324info">info</dfn>);</td></tr>
+<tr><th id="171">171</th><td></td></tr>
+<tr><th id="172">172</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="173">173</th><td><i class="doc"> * ibus_engine_desc_get_description:</i></td></tr>
+<tr><th id="174">174</th><td><i class="doc"> *<span class="command"> @info</span>: An IBusEngineDesc</i></td></tr>
+<tr><th id="175">175</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="176">176</th><td><i class="doc"> * Gets the description property in IBusEngineDesc. It should not be freed.</i></td></tr>
+<tr><th id="177">177</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="178">178</th><td><i class="doc"> * Returns: description property in IBusEngineDesc</i></td></tr>
+<tr><th id="179">179</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="180">180</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="ibus_engine_desc_get_description" title='ibus_engine_desc_get_description' data-ref="ibus_engine_desc_get_description">ibus_engine_desc_get_description</dfn></td></tr>
+<tr><th id="181">181</th><td>                                                (<a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col5 decl" id="325info" title='info' data-type='IBusEngineDesc *' data-ref="325info">info</dfn>);</td></tr>
+<tr><th id="182">182</th><td></td></tr>
+<tr><th id="183">183</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="184">184</th><td><i class="doc"> * ibus_engine_desc_get_language:</i></td></tr>
+<tr><th id="185">185</th><td><i class="doc"> *<span class="command"> @info</span>: An IBusEngineDesc</i></td></tr>
+<tr><th id="186">186</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="187">187</th><td><i class="doc"> * Gets the language property in IBusEngineDesc. It should not be freed.</i></td></tr>
+<tr><th id="188">188</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="189">189</th><td><i class="doc"> * Returns: language property in IBusEngineDesc</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="191">191</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="ibus_engine_desc_get_language" title='ibus_engine_desc_get_language' data-ref="ibus_engine_desc_get_language">ibus_engine_desc_get_language</dfn>  (<a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col6 decl" id="326info" title='info' data-type='IBusEngineDesc *' data-ref="326info">info</dfn>);</td></tr>
+<tr><th id="192">192</th><td></td></tr>
+<tr><th id="193">193</th><td></td></tr>
+<tr><th id="194">194</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="195">195</th><td><i class="doc"> * ibus_engine_desc_get_license:</i></td></tr>
+<tr><th id="196">196</th><td><i class="doc"> *<span class="command"> @info</span>: An IBusEngineDesc</i></td></tr>
+<tr><th id="197">197</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc"> * Gets the license property in IBusEngineDesc. It should not be freed.</i></td></tr>
+<tr><th id="199">199</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc"> * Returns: license property in IBusEngineDesc</i></td></tr>
+<tr><th id="201">201</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="202">202</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="ibus_engine_desc_get_license" title='ibus_engine_desc_get_license' data-ref="ibus_engine_desc_get_license">ibus_engine_desc_get_license</dfn>   (<a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col7 decl" id="327info" title='info' data-type='IBusEngineDesc *' data-ref="327info">info</dfn>);</td></tr>
+<tr><th id="203">203</th><td></td></tr>
+<tr><th id="204">204</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="205">205</th><td><i class="doc"> * ibus_engine_desc_get_author:</i></td></tr>
+<tr><th id="206">206</th><td><i class="doc"> *<span class="command"> @info</span>: An IBusEngineDesc</i></td></tr>
+<tr><th id="207">207</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="208">208</th><td><i class="doc"> * Gets the author property in IBusEngineDesc. It should not be freed.</i></td></tr>
+<tr><th id="209">209</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="210">210</th><td><i class="doc"> * Returns: author property in IBusEngineDesc</i></td></tr>
+<tr><th id="211">211</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="212">212</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="ibus_engine_desc_get_author" title='ibus_engine_desc_get_author' data-ref="ibus_engine_desc_get_author">ibus_engine_desc_get_author</dfn>    (<a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col8 decl" id="328info" title='info' data-type='IBusEngineDesc *' data-ref="328info">info</dfn>);</td></tr>
+<tr><th id="213">213</th><td></td></tr>
+<tr><th id="214">214</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="215">215</th><td><i class="doc"> * ibus_engine_desc_get_icon:</i></td></tr>
+<tr><th id="216">216</th><td><i class="doc"> *<span class="command"> @info</span>: An IBusEngineDesc</i></td></tr>
+<tr><th id="217">217</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="218">218</th><td><i class="doc"> * Gets the icon property in IBusEngineDesc. It should not be freed.</i></td></tr>
+<tr><th id="219">219</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="220">220</th><td><i class="doc"> * Returns: icon property in IBusEngineDesc</i></td></tr>
+<tr><th id="221">221</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="222">222</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="ibus_engine_desc_get_icon" title='ibus_engine_desc_get_icon' data-ref="ibus_engine_desc_get_icon">ibus_engine_desc_get_icon</dfn>      (<a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col9 decl" id="329info" title='info' data-type='IBusEngineDesc *' data-ref="329info">info</dfn>);</td></tr>
+<tr><th id="223">223</th><td></td></tr>
+<tr><th id="224">224</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="225">225</th><td><i class="doc"> * ibus_engine_desc_get_layout:</i></td></tr>
+<tr><th id="226">226</th><td><i class="doc"> *<span class="command"> @info</span>: An IBusEngineDesc</i></td></tr>
+<tr><th id="227">227</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="228">228</th><td><i class="doc"> * Gets the layout property in IBusEngineDesc. It should not be freed.</i></td></tr>
+<tr><th id="229">229</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="230">230</th><td><i class="doc"> * Returns: layout property in IBusEngineDesc</i></td></tr>
+<tr><th id="231">231</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="232">232</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="ibus_engine_desc_get_layout" title='ibus_engine_desc_get_layout' data-ref="ibus_engine_desc_get_layout">ibus_engine_desc_get_layout</dfn>    (<a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col0 decl" id="330info" title='info' data-type='IBusEngineDesc *' data-ref="330info">info</dfn>);</td></tr>
+<tr><th id="233">233</th><td></td></tr>
+<tr><th id="234">234</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="235">235</th><td><i class="doc"> * ibus_engine_desc_get_layout_variant:</i></td></tr>
+<tr><th id="236">236</th><td><i class="doc"> *<span class="command"> @info</span>: An IBusEngineDesc</i></td></tr>
+<tr><th id="237">237</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="238">238</th><td><i class="doc"> * Gets the keyboard variant property in IBusEngineDesc. It should not be freed.</i></td></tr>
+<tr><th id="239">239</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="240">240</th><td><i class="doc"> * Returns: keyboard variant property in IBusEngineDesc</i></td></tr>
+<tr><th id="241">241</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="242">242</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="ibus_engine_desc_get_layout_variant" title='ibus_engine_desc_get_layout_variant' data-ref="ibus_engine_desc_get_layout_variant">ibus_engine_desc_get_layout_variant</dfn></td></tr>
+<tr><th id="243">243</th><td>                                                (<a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col1 decl" id="331info" title='info' data-type='IBusEngineDesc *' data-ref="331info">info</dfn>);</td></tr>
+<tr><th id="244">244</th><td></td></tr>
+<tr><th id="245">245</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="246">246</th><td><i class="doc"> * ibus_engine_desc_get_layout_option:</i></td></tr>
+<tr><th id="247">247</th><td><i class="doc"> *<span class="command"> @info</span>: An IBusEngineDesc</i></td></tr>
+<tr><th id="248">248</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="249">249</th><td><i class="doc"> * Gets the keyboard option property in IBusEngineDesc. It should not be freed.</i></td></tr>
+<tr><th id="250">250</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="251">251</th><td><i class="doc"> * Returns: keyboard option property in IBusEngineDesc</i></td></tr>
+<tr><th id="252">252</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="253">253</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="ibus_engine_desc_get_layout_option" title='ibus_engine_desc_get_layout_option' data-ref="ibus_engine_desc_get_layout_option">ibus_engine_desc_get_layout_option</dfn></td></tr>
+<tr><th id="254">254</th><td>                                                (<a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col2 decl" id="332info" title='info' data-type='IBusEngineDesc *' data-ref="332info">info</dfn>);</td></tr>
+<tr><th id="255">255</th><td></td></tr>
+<tr><th id="256">256</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="257">257</th><td><i class="doc"> * ibus_engine_desc_get_rank:</i></td></tr>
+<tr><th id="258">258</th><td><i class="doc"> *<span class="command"> @info</span>: An IBusEngineDesc</i></td></tr>
+<tr><th id="259">259</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="260">260</th><td><i class="doc"> * Gets the rank property in IBusEngineDesc.</i></td></tr>
+<tr><th id="261">261</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="262">262</th><td><i class="doc"> * Returns: rank property in IBusEngineDesc</i></td></tr>
+<tr><th id="263">263</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="264">264</th><td><a class="typedef" href="../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>            <dfn class="decl" id="ibus_engine_desc_get_rank" title='ibus_engine_desc_get_rank' data-ref="ibus_engine_desc_get_rank">ibus_engine_desc_get_rank</dfn>      (<a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col3 decl" id="333info" title='info' data-type='IBusEngineDesc *' data-ref="333info">info</dfn>);</td></tr>
+<tr><th id="265">265</th><td></td></tr>
+<tr><th id="266">266</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="267">267</th><td><i class="doc"> * ibus_engine_desc_get_hotkeys:</i></td></tr>
+<tr><th id="268">268</th><td><i class="doc"> *<span class="command"> @info</span>: An IBusEngineDesc</i></td></tr>
+<tr><th id="269">269</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="270">270</th><td><i class="doc"> * Gets the hotkeys property in IBusEngineDesc. It should not be freed.</i></td></tr>
+<tr><th id="271">271</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="272">272</th><td><i class="doc"> * Returns: hotkeys property in IBusEngineDesc</i></td></tr>
+<tr><th id="273">273</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="274">274</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="ibus_engine_desc_get_hotkeys" title='ibus_engine_desc_get_hotkeys' data-ref="ibus_engine_desc_get_hotkeys">ibus_engine_desc_get_hotkeys</dfn>   (<a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col4 decl" id="334info" title='info' data-type='IBusEngineDesc *' data-ref="334info">info</dfn>);</td></tr>
+<tr><th id="275">275</th><td></td></tr>
+<tr><th id="276">276</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="277">277</th><td><i class="doc"> * ibus_engine_desc_get_symbol:</i></td></tr>
+<tr><th id="278">278</th><td><i class="doc"> *<span class="command"> @info</span>: An IBusEngineDesc</i></td></tr>
+<tr><th id="279">279</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="280">280</th><td><i class="doc"> * Gets the symbol property in IBusEngineDesc. It should not be freed.</i></td></tr>
+<tr><th id="281">281</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="282">282</th><td><i class="doc"> * Returns: symbol property in IBusEngineDesc</i></td></tr>
+<tr><th id="283">283</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="284">284</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="ibus_engine_desc_get_symbol" title='ibus_engine_desc_get_symbol' data-ref="ibus_engine_desc_get_symbol">ibus_engine_desc_get_symbol</dfn>    (<a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col5 decl" id="335info" title='info' data-type='IBusEngineDesc *' data-ref="335info">info</dfn>);</td></tr>
+<tr><th id="285">285</th><td></td></tr>
+<tr><th id="286">286</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="287">287</th><td><i class="doc"> * ibus_engine_desc_get_setup:</i></td></tr>
+<tr><th id="288">288</th><td><i class="doc"> *<span class="command"> @info</span>: An IBusEngineDesc</i></td></tr>
+<tr><th id="289">289</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="290">290</th><td><i class="doc"> * Gets the setup property in IBusEngineDesc. It should not be freed.</i></td></tr>
+<tr><th id="291">291</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="292">292</th><td><i class="doc"> * Returns: setup property in IBusEngineDesc</i></td></tr>
+<tr><th id="293">293</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="294">294</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="ibus_engine_desc_get_setup" title='ibus_engine_desc_get_setup' data-ref="ibus_engine_desc_get_setup">ibus_engine_desc_get_setup</dfn>     (<a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col6 decl" id="336info" title='info' data-type='IBusEngineDesc *' data-ref="336info">info</dfn>);</td></tr>
+<tr><th id="295">295</th><td></td></tr>
+<tr><th id="296">296</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="297">297</th><td><i class="doc"> * ibus_engine_desc_get_version:</i></td></tr>
+<tr><th id="298">298</th><td><i class="doc"> *<span class="command"> @info</span>: An IBusEngineDesc</i></td></tr>
+<tr><th id="299">299</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="300">300</th><td><i class="doc"> * Gets the version property in IBusEngineDesc. It should not be freed.</i></td></tr>
+<tr><th id="301">301</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="302">302</th><td><i class="doc"> * Returns: version in IBusEngineDesc</i></td></tr>
+<tr><th id="303">303</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="304">304</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="ibus_engine_desc_get_version" title='ibus_engine_desc_get_version' data-ref="ibus_engine_desc_get_version">ibus_engine_desc_get_version</dfn>   (<a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col7 decl" id="337info" title='info' data-type='IBusEngineDesc *' data-ref="337info">info</dfn>);</td></tr>
+<tr><th id="305">305</th><td></td></tr>
+<tr><th id="306">306</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="307">307</th><td><i class="doc"> * ibus_engine_desc_get_textdomain:</i></td></tr>
+<tr><th id="308">308</th><td><i class="doc"> *<span class="command"> @info</span>: An IBusEngineDesc</i></td></tr>
+<tr><th id="309">309</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="310">310</th><td><i class="doc"> * Gets the textdomain property in IBusEngineDesc. It should not be freed.</i></td></tr>
+<tr><th id="311">311</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="312">312</th><td><i class="doc"> * Returns: textdomain in IBusEngineDesc</i></td></tr>
+<tr><th id="313">313</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="314">314</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="ibus_engine_desc_get_textdomain" title='ibus_engine_desc_get_textdomain' data-ref="ibus_engine_desc_get_textdomain">ibus_engine_desc_get_textdomain</dfn></td></tr>
+<tr><th id="315">315</th><td>                                                (<a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col8 decl" id="338info" title='info' data-type='IBusEngineDesc *' data-ref="338info">info</dfn>);</td></tr>
+<tr><th id="316">316</th><td></td></tr>
+<tr><th id="317">317</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="318">318</th><td><i class="doc"> * ibus_engine_desc_get_icon_prop_key:</i></td></tr>
+<tr><th id="319">319</th><td><i class="doc"> *<span class="command"> @info</span>: An IBusEngineDesc</i></td></tr>
+<tr><th id="320">320</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="321">321</th><td><i class="doc"> * Gets the key of IBusProperty to load the panel icon dynamically</i></td></tr>
+<tr><th id="322">322</th><td><i class="doc"> * in IBusEngineDesc. It should not be freed.</i></td></tr>
+<tr><th id="323">323</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="324">324</th><td><i class="doc"> * Returns: IBusProperty.key for dynamic panel icon in IBusEngineDesc</i></td></tr>
+<tr><th id="325">325</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="326">326</th><td><em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>     *<dfn class="decl" id="ibus_engine_desc_get_icon_prop_key" title='ibus_engine_desc_get_icon_prop_key' data-ref="ibus_engine_desc_get_icon_prop_key">ibus_engine_desc_get_icon_prop_key</dfn></td></tr>
+<tr><th id="327">327</th><td>                                                (<a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col9 decl" id="339info" title='info' data-type='IBusEngineDesc *' data-ref="339info">info</dfn>);</td></tr>
+<tr><th id="328">328</th><td></td></tr>
+<tr><th id="329">329</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="330">330</th><td><i class="doc"> * ibus_engine_desc_output:</i></td></tr>
+<tr><th id="331">331</th><td><i class="doc"> *<span class="command"> @info</span>: An IBusEngineDesc</i></td></tr>
+<tr><th id="332">332</th><td><i class="doc"> *<span class="command"> @output</span>: XML-formatted Input method engine description.</i></td></tr>
+<tr><th id="333">333</th><td><i class="doc"> *<span class="command"> @indent</span>: Number of indent (showed as 4 spaces).</i></td></tr>
+<tr><th id="334">334</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="335">335</th><td><i class="doc"> * Output XML-formatted input method engine description.</i></td></tr>
+<tr><th id="336">336</th><td><i class="doc"> * The result will be append to GString specified in<span class="command"> @output</span>.</i></td></tr>
+<tr><th id="337">337</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="338">338</th><td><em>void</em>             <dfn class="decl" id="ibus_engine_desc_output" title='ibus_engine_desc_output' data-ref="ibus_engine_desc_output">ibus_engine_desc_output</dfn>        (<a class="typedef" href="#IBusEngineDesc" title='IBusEngineDesc' data-type='struct _IBusEngineDesc' data-ref="IBusEngineDesc">IBusEngineDesc</a> *<dfn class="local col0 decl" id="340info" title='info' data-type='IBusEngineDesc *' data-ref="340info">info</dfn>,</td></tr>
+<tr><th id="339">339</th><td>                                                 <a class="typedef" href="../glib-2.0/glib/gstring.h.html#GString" title='GString' data-type='struct _GString' data-ref="GString">GString</a>        *<dfn class="local col1 decl" id="341output" title='output' data-type='GString *' data-ref="341output">output</dfn>,</td></tr>
+<tr><th id="340">340</th><td>                                                 <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>            <dfn class="local col2 decl" id="342indent" title='indent' data-type='gint' data-ref="342indent">indent</dfn>);</td></tr>
+<tr><th id="341">341</th><td><a class="macro" href="../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="342">342</th><td><u>#<span data-ppcond="27">endif</span></u></td></tr>
+<tr><th id="343">343</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../unikey/setup/dlg_main_setup.cpp.html'>unikey/setup/dlg_main_setup.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

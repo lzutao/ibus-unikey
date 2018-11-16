@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkcursor.h' l='150' type='GdkCursor * gdk_cursor_new_from_pixbuf(GdkDisplay * display, GdkPixbuf * pixbuf, gint x, gint y)'/>

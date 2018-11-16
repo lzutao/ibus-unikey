@@ -1,0 +1,2 @@
+<dec f='include/atk-1.0/atk/atkcomponent.h' l='130' type='void (*)(AtkComponent *, gint *, gint *)'/>
+<offset>448</offset>

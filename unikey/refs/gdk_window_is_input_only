@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='466' type='gboolean gdk_window_is_input_only(GdkWindow * window)'/>

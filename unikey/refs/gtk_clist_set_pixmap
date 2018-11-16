@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='600' type='void gtk_clist_set_pixmap(GtkCList * clist, gint row, gint column, GdkPixmap * pixmap, GdkBitmap * mask)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='599'>/* sets a given cell&apos;s pixmap, replacing its current contents */</doc>

@@ -1,0 +1,3 @@
+<def f='include/atk-1.0/atk/atkhyperlink.h' l='58' ll='61'/>
+<size>24</size>
+<mbr r='_AtkHyperlink::parent' o='0' t='GObject'/>

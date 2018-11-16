@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='538' type='void gdk_window_set_transient_for(GdkWindow * window, GdkWindow * parent)'/>

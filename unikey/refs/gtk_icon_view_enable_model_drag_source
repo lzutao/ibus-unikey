@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkiconview.h' l='183' type='void gtk_icon_view_enable_model_drag_source(GtkIconView * icon_view, GdkModifierType start_button_mask, const GtkTargetEntry * targets, gint n_targets, GdkDragAction actions)'/>
+<doc f='include/gtk-2.0/gtk/gtkiconview.h' l='182'>/* Drag-and-Drop support */</doc>

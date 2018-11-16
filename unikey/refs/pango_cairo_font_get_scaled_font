@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pangocairo.h' l='111' type='cairo_scaled_font_t * pango_cairo_font_get_scaled_font(PangoCairoFont * font)'/>

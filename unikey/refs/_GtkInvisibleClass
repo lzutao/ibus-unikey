@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkinvisible.h' l='57' ll='66'/>
+<size>752</size>
+<mbr r='_GtkInvisibleClass::parent_class' o='0' t='GtkWidgetClass'/>
+<mbr r='_GtkInvisibleClass::_gtk_reserved1' o='5760' t='void (*)()'/>
+<mbr r='_GtkInvisibleClass::_gtk_reserved2' o='5824' t='void (*)()'/>
+<mbr r='_GtkInvisibleClass::_gtk_reserved3' o='5888' t='void (*)()'/>
+<mbr r='_GtkInvisibleClass::_gtk_reserved4' o='5952' t='void (*)()'/>

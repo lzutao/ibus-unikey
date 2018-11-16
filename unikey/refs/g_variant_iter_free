@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/glib/gvariant.h' l='284' type='void g_variant_iter_free(GVariantIter * iter)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='85' u='c' c='_ZL33glib_autoptr_cleanup_GVariantIterPP13_GVariantIter'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='85' u='r' c='_ZL37glib_listautoptr_cleanup_GVariantIterPP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='85' u='r' c='_ZL38glib_slistautoptr_cleanup_GVariantIterPP7_GSList'/>

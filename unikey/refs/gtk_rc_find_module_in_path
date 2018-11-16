@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrc.h' l='181' type='gchar * gtk_rc_find_module_in_path(const gchar * module_file)'/>

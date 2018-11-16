@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreemodel.h' l='193' type='GType gtk_tree_model_get_column_type(GtkTreeModel * tree_model, gint index_)'/>

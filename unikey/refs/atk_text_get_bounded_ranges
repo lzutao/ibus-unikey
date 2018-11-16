@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atktext.h' l='434' type='AtkTextRange ** atk_text_get_bounded_ranges(AtkText * text, AtkTextRectangle * rect, AtkCoordType coord_type, AtkTextClipType x_clip_type, AtkTextClipType y_clip_type)'/>

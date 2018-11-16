@@ -1,0 +1,3 @@
+<def f='include/gtk-2.0/gdk/gdkpixmap.h' l='59' ll='63'/>
+<size>448</size>
+<mbr r='_GdkPixmapObjectClass::parent_class' o='0' t='GdkDrawableClass'/>

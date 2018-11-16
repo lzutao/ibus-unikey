@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='464' type='gboolean gdk_window_is_visible(GdkWindow * window)'/>
+<doc f='include/gtk-2.0/gdk/gdkwindow.h' l='458'>/*
+ * Check if a window has been shown, and whether all its
+ * parents up to a toplevel have been shown, respectively.
+ * Note that a window that is_viewable below is not necessarily
+ * viewable in the X sense.
+ */</doc>

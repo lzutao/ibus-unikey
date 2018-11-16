@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkfilechooserdialog.h' l='64' type='GtkWidget * gtk_file_chooser_dialog_new_with_backend(const gchar * title, GtkWindow * parent, GtkFileChooserAction action, const gchar * backend, const gchar * first_button_text)'/>

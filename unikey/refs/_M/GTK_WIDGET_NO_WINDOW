@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='228'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='220'>/**
+ * GTK_WIDGET_NO_WINDOW:
+ * @wid: a #GtkWidget.
+ *
+ * Evaluates to %TRUE if the widget doesn&apos;t have an own #GdkWindow.
+ *
+ * Deprecated: 2.20: Use gtk_widget_get_has_window() instead.
+ */</doc>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='216' type='const gchar * gtk_entry_get_text(GtkEntry * entry)'/>
+<doc f='include/gtk-2.0/gtk/gtkentry.h' l='215'>/* returns a reference to the text */</doc>

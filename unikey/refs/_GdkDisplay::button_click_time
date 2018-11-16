@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='84' type='guint32 [2]'/>
+<offset>320</offset>
+<doc f='include/gtk-2.0/gdk/gdkdisplay.h' l='81'>/* Information for determining if the latest button click
+   * is part of a double-click or triple-click
+   */</doc>
+<doc f='include/gtk-2.0/gdk/gdkdisplay.h' l='84'>/* The last 2 button click times. */</doc>

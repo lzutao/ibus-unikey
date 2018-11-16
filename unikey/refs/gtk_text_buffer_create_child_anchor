@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='252' type='GtkTextChildAnchor * gtk_text_buffer_create_child_anchor(GtkTextBuffer * buffer, GtkTextIter * iter)'/>
+<doc f='include/gtk-2.0/gtk/gtktextbuffer.h' l='251'>/* Convenience, create and insert a child anchor */</doc>

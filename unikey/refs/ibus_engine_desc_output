@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusenginedesc.h' l='338' type='void ibus_engine_desc_output(IBusEngineDesc * info, GString * output, gint indent)'/>
+<doc f='include/ibus-1.0/ibusenginedesc.h' l='329'>/**
+ * ibus_engine_desc_output:
+ * @info: An IBusEngineDesc
+ * @output: XML-formatted Input method engine description.
+ * @indent: Number of indent (showed as 4 spaces).
+ *
+ * Output XML-formatted input method engine description.
+ * The result will be append to GString specified in @output.
+ */</doc>

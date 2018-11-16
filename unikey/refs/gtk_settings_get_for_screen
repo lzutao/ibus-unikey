@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtksettings.h' l='82' type='GtkSettings * gtk_settings_get_for_screen(GdkScreen * screen)'/>

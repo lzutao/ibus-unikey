@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='283' type='void gtk_text_buffer_select_range(GtkTextBuffer * buffer, const GtkTextIter * ins, const GtkTextIter * bound)'/>

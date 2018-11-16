@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtkcheckbutton.h' l='56' ll='68'/>
+<size>984</size>
+<mbr r='_GtkCheckButtonClass::parent_class' o='0' t='GtkToggleButtonClass'/>
+<mbr r='_GtkCheckButtonClass::draw_indicator' o='7552' t='void (*)(GtkCheckButton *, GdkRectangle *)'/>
+<mbr r='_GtkCheckButtonClass::_gtk_reserved1' o='7616' t='void (*)()'/>
+<mbr r='_GtkCheckButtonClass::_gtk_reserved2' o='7680' t='void (*)()'/>
+<mbr r='_GtkCheckButtonClass::_gtk_reserved3' o='7744' t='void (*)()'/>
+<mbr r='_GtkCheckButtonClass::_gtk_reserved4' o='7808' t='void (*)()'/>

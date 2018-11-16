@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>atktablecell.h source code [include/atk-1.0/atk/atktablecell.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/atk-1.0/atk/atktablecell.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>atk-1.0</a>/<a href='./'>atk</a>/<a href='atktablecell.h.html'>atktablecell.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* ATK -  Accessibility Toolkit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright 2014 SUSE LLC.</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Library General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Library General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Library General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="20">ifndef</span> <span class="macro" data-ref="_M/__ATK_TABLE_CELL_H__">__ATK_TABLE_CELL_H__</span></u></td></tr>
+<tr><th id="21">21</th><td><u>#define <dfn class="macro" id="_M/__ATK_TABLE_CELL_H__" data-ref="_M/__ATK_TABLE_CELL_H__">__ATK_TABLE_CELL_H__</dfn></u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> defined(<span class="macro" data-ref="_M/ATK_DISABLE_SINGLE_INCLUDES">ATK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="atk.h.html#23" data-ref="_M/__ATK_H_INSIDE__">__ATK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/ATK_COMPILATION">ATK_COMPILATION</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#error "Only &lt;atk/atk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="atkobject.h.html">&lt;atk/atkobject.h&gt;</a></u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#define <dfn class="macro" id="_M/ATK_TYPE_TABLE_CELL" data-ref="_M/ATK_TYPE_TABLE_CELL">ATK_TYPE_TABLE_CELL</dfn>                    (atk_table_cell_get_type ())</u></td></tr>
+<tr><th id="32">32</th><td><u>#define <dfn class="macro" id="_M/ATK_IS_TABLE_CELL" data-ref="_M/ATK_IS_TABLE_CELL">ATK_IS_TABLE_CELL</dfn>(obj)                 G_TYPE_CHECK_INSTANCE_TYPE ((obj), ATK_TYPE_TABLE_CELL)</u></td></tr>
+<tr><th id="33">33</th><td><u>#define <dfn class="macro" id="_M/ATK_TABLE_CELL" data-ref="_M/ATK_TABLE_CELL">ATK_TABLE_CELL</dfn>(obj)                    G_TYPE_CHECK_INSTANCE_CAST ((obj), ATK_TYPE_TABLE_CELL, AtkTableCell)</u></td></tr>
+<tr><th id="34">34</th><td><u>#define <dfn class="macro" id="_M/ATK_TABLE_CELL_GET_IFACE" data-ref="_M/ATK_TABLE_CELL_GET_IFACE">ATK_TABLE_CELL_GET_IFACE</dfn>(obj)          (G_TYPE_INSTANCE_GET_INTERFACE ((obj), ATK_TYPE_TABLE_CELL, AtkTableCellIface))</u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><u>#<span data-ppcond="36">ifndef</span> <span class="macro" data-ref="_M/_TYPEDEF_ATK_TABLE_CELL_">_TYPEDEF_ATK_TABLE_CELL_</span></u></td></tr>
+<tr><th id="37">37</th><td><u>#define <dfn class="macro" id="_M/_TYPEDEF_ATK_TABLE_CELL_" data-ref="_M/_TYPEDEF_ATK_TABLE_CELL_">_TYPEDEF_ATK_TABLE_CELL_</dfn></u></td></tr>
+<tr><th id="38">38</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_AtkTableCell" title='_AtkTableCell' data-ref="_AtkTableCell"><a class="type" href="#_AtkTableCell" title='_AtkTableCell' data-ref="_AtkTableCell">_AtkTableCell</a></dfn> <dfn class="typedef" id="AtkTableCell" title='AtkTableCell' data-type='struct _AtkTableCell' data-ref="AtkTableCell">AtkTableCell</dfn>;</td></tr>
+<tr><th id="39">39</th><td><u>#<span data-ppcond="36">endif</span></u></td></tr>
+<tr><th id="40">40</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_AtkTableCellIface" title='_AtkTableCellIface' data-ref="_AtkTableCellIface">_AtkTableCellIface</a> <dfn class="typedef" id="AtkTableCellIface" title='AtkTableCellIface' data-type='struct _AtkTableCellIface' data-ref="AtkTableCellIface">AtkTableCellIface</dfn>;</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> * AtkTableCellIface:</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> *<span class="command"> @get</span>_column_span: virtual function that returns the number of</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> * columns occupied by this cell accessible. <span class="command">@Since</span>: 2.12</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> *<span class="command"> @get</span>_column_header_cells: virtual function that returns the column</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> * headers as an array of cell accessibles. <span class="command">@Since</span>: 2.12</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> *<span class="command"> @get</span>_position: virtual function that retrieves the tabular position</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> * of this cell. <span class="command">@Since</span>: 2.12</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> *<span class="command"> @get</span>_row_span: virtual function that returns the number of rows</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> * occupied by this cell. <span class="command">@Since</span>: 2.12</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> *<span class="command"> @get</span>_row_header_cells: virtual function that returns the row</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> * headers as an array of cell accessibles. <span class="command">@Since</span>: 2.12</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> *<span class="command"> @get</span>_row_column_span: virtual function that get the row an column</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> * indexes and span of this cell. <span class="command">@Since</span>: 2.12</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> *<span class="command"> @get</span>_table: virtual function that returns a reference to the</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> * accessible of the containing table. <span class="command">@Since</span>: 2.12</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="59">59</th><td><b>struct</b> <dfn class="type def" id="_AtkTableCellIface" title='_AtkTableCellIface' data-ref="_AtkTableCellIface">_AtkTableCellIface</dfn></td></tr>
+<tr><th id="60">60</th><td>{</td></tr>
+<tr><th id="61">61</th><td>  <a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GTypeInterface" title='GTypeInterface' data-type='struct _GTypeInterface' data-ref="GTypeInterface">GTypeInterface</a> <dfn class="decl" id="_AtkTableCellIface::parent" title='_AtkTableCellIface::parent' data-ref="_AtkTableCellIface::parent">parent</dfn>;</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>          (*<dfn class="decl" id="_AtkTableCellIface::get_column_span" title='_AtkTableCellIface::get_column_span' data-ref="_AtkTableCellIface::get_column_span">get_column_span</dfn>)         (<a class="typedef" href="#AtkTableCell" title='AtkTableCell' data-type='struct _AtkTableCell' data-ref="AtkTableCell">AtkTableCell</a> *<dfn class="local col2 decl" id="17172cell" title='cell' data-type='AtkTableCell *' data-ref="17172cell">cell</dfn>);</td></tr>
+<tr><th id="64">64</th><td>  <a class="typedef" href="../../glib-2.0/glib/garray.h.html#GPtrArray" title='GPtrArray' data-type='struct _GPtrArray' data-ref="GPtrArray">GPtrArray</a> *   (*<dfn class="decl" id="_AtkTableCellIface::get_column_header_cells" title='_AtkTableCellIface::get_column_header_cells' data-ref="_AtkTableCellIface::get_column_header_cells">get_column_header_cells</dfn>) (<a class="typedef" href="#AtkTableCell" title='AtkTableCell' data-type='struct _AtkTableCell' data-ref="AtkTableCell">AtkTableCell</a> *<dfn class="local col3 decl" id="17173cell" title='cell' data-type='AtkTableCell *' data-ref="17173cell">cell</dfn>);</td></tr>
+<tr><th id="65">65</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>      (*<dfn class="decl" id="_AtkTableCellIface::get_position" title='_AtkTableCellIface::get_position' data-ref="_AtkTableCellIface::get_position">get_position</dfn>)            (<a class="typedef" href="#AtkTableCell" title='AtkTableCell' data-type='struct _AtkTableCell' data-ref="AtkTableCell">AtkTableCell</a> *<dfn class="local col4 decl" id="17174cell" title='cell' data-type='AtkTableCell *' data-ref="17174cell">cell</dfn>,</td></tr>
+<tr><th id="66">66</th><td>                                            <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>         *<dfn class="local col5 decl" id="17175row" title='row' data-type='gint *' data-ref="17175row">row</dfn>,</td></tr>
+<tr><th id="67">67</th><td>                                            <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>         *<dfn class="local col6 decl" id="17176column" title='column' data-type='gint *' data-ref="17176column">column</dfn>);</td></tr>
+<tr><th id="68">68</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>          (*<dfn class="decl" id="_AtkTableCellIface::get_row_span" title='_AtkTableCellIface::get_row_span' data-ref="_AtkTableCellIface::get_row_span">get_row_span</dfn>)            (<a class="typedef" href="#AtkTableCell" title='AtkTableCell' data-type='struct _AtkTableCell' data-ref="AtkTableCell">AtkTableCell</a> *<dfn class="local col7 decl" id="17177cell" title='cell' data-type='AtkTableCell *' data-ref="17177cell">cell</dfn>);</td></tr>
+<tr><th id="69">69</th><td>  <a class="typedef" href="../../glib-2.0/glib/garray.h.html#GPtrArray" title='GPtrArray' data-type='struct _GPtrArray' data-ref="GPtrArray">GPtrArray</a> *   (*<dfn class="decl" id="_AtkTableCellIface::get_row_header_cells" title='_AtkTableCellIface::get_row_header_cells' data-ref="_AtkTableCellIface::get_row_header_cells">get_row_header_cells</dfn>)    (<a class="typedef" href="#AtkTableCell" title='AtkTableCell' data-type='struct _AtkTableCell' data-ref="AtkTableCell">AtkTableCell</a> *<dfn class="local col8 decl" id="17178cell" title='cell' data-type='AtkTableCell *' data-ref="17178cell">cell</dfn>);</td></tr>
+<tr><th id="70">70</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>      (*<dfn class="decl" id="_AtkTableCellIface::get_row_column_span" title='_AtkTableCellIface::get_row_column_span' data-ref="_AtkTableCellIface::get_row_column_span">get_row_column_span</dfn>)     (<a class="typedef" href="#AtkTableCell" title='AtkTableCell' data-type='struct _AtkTableCell' data-ref="AtkTableCell">AtkTableCell</a> *<dfn class="local col9 decl" id="17179cell" title='cell' data-type='AtkTableCell *' data-ref="17179cell">cell</dfn>,</td></tr>
+<tr><th id="71">71</th><td>                                            <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>         *<dfn class="local col0 decl" id="17180row" title='row' data-type='gint *' data-ref="17180row">row</dfn>,</td></tr>
+<tr><th id="72">72</th><td>                                            <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>         *<dfn class="local col1 decl" id="17181column" title='column' data-type='gint *' data-ref="17181column">column</dfn>,</td></tr>
+<tr><th id="73">73</th><td>                                            <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>         *<dfn class="local col2 decl" id="17182row_span" title='row_span' data-type='gint *' data-ref="17182row_span">row_span</dfn>,</td></tr>
+<tr><th id="74">74</th><td>                                            <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>         *<dfn class="local col3 decl" id="17183column_span" title='column_span' data-type='gint *' data-ref="17183column_span">column_span</dfn>);</td></tr>
+<tr><th id="75">75</th><td>  <a class="typedef" href="atkobject.h.html#AtkObject" title='AtkObject' data-type='struct _AtkObject' data-ref="AtkObject">AtkObject</a> *   (*<dfn class="decl" id="_AtkTableCellIface::get_table" title='_AtkTableCellIface::get_table' data-ref="_AtkTableCellIface::get_table">get_table</dfn>)               (<a class="typedef" href="#AtkTableCell" title='AtkTableCell' data-type='struct _AtkTableCell' data-ref="AtkTableCell">AtkTableCell</a> *<dfn class="local col4 decl" id="17184cell" title='cell' data-type='AtkTableCell *' data-ref="17184cell">cell</dfn>);</td></tr>
+<tr><th id="76">76</th><td>};</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><a class="macro" href="atkversion.h.html#362" title="extern" data-ref="_M/ATK_AVAILABLE_IN_2_12">ATK_AVAILABLE_IN_2_12</a></td></tr>
+<tr><th id="79">79</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a> <dfn class="decl" id="atk_table_cell_get_type" title='atk_table_cell_get_type' data-ref="atk_table_cell_get_type">atk_table_cell_get_type</dfn> (<em>void</em>);</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td><a class="macro" href="atkversion.h.html#362" title="extern" data-ref="_M/ATK_AVAILABLE_IN_2_12">ATK_AVAILABLE_IN_2_12</a></td></tr>
+<tr><th id="82">82</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>        <dfn class="decl" id="atk_table_cell_get_column_span" title='atk_table_cell_get_column_span' data-ref="atk_table_cell_get_column_span">atk_table_cell_get_column_span</dfn>         (<a class="typedef" href="#AtkTableCell" title='AtkTableCell' data-type='struct _AtkTableCell' data-ref="AtkTableCell">AtkTableCell</a> *<dfn class="local col5 decl" id="17185cell" title='cell' data-type='AtkTableCell *' data-ref="17185cell">cell</dfn>);</td></tr>
+<tr><th id="83">83</th><td><a class="macro" href="atkversion.h.html#362" title="extern" data-ref="_M/ATK_AVAILABLE_IN_2_12">ATK_AVAILABLE_IN_2_12</a></td></tr>
+<tr><th id="84">84</th><td><a class="typedef" href="../../glib-2.0/glib/garray.h.html#GPtrArray" title='GPtrArray' data-type='struct _GPtrArray' data-ref="GPtrArray">GPtrArray</a> * <dfn class="decl" id="atk_table_cell_get_column_header_cells" title='atk_table_cell_get_column_header_cells' data-ref="atk_table_cell_get_column_header_cells">atk_table_cell_get_column_header_cells</dfn> (<a class="typedef" href="#AtkTableCell" title='AtkTableCell' data-type='struct _AtkTableCell' data-ref="AtkTableCell">AtkTableCell</a> *<dfn class="local col6 decl" id="17186cell" title='cell' data-type='AtkTableCell *' data-ref="17186cell">cell</dfn>);</td></tr>
+<tr><th id="85">85</th><td><a class="macro" href="atkversion.h.html#362" title="extern" data-ref="_M/ATK_AVAILABLE_IN_2_12">ATK_AVAILABLE_IN_2_12</a></td></tr>
+<tr><th id="86">86</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>    <dfn class="decl" id="atk_table_cell_get_position" title='atk_table_cell_get_position' data-ref="atk_table_cell_get_position">atk_table_cell_get_position</dfn>            (<a class="typedef" href="#AtkTableCell" title='AtkTableCell' data-type='struct _AtkTableCell' data-ref="AtkTableCell">AtkTableCell</a> *<dfn class="local col7 decl" id="17187cell" title='cell' data-type='AtkTableCell *' data-ref="17187cell">cell</dfn>,</td></tr>
+<tr><th id="87">87</th><td>                                                    <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>         *<dfn class="local col8 decl" id="17188row" title='row' data-type='gint *' data-ref="17188row">row</dfn>,</td></tr>
+<tr><th id="88">88</th><td>                                                    <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>         *<dfn class="local col9 decl" id="17189column" title='column' data-type='gint *' data-ref="17189column">column</dfn>);</td></tr>
+<tr><th id="89">89</th><td><a class="macro" href="atkversion.h.html#362" title="extern" data-ref="_M/ATK_AVAILABLE_IN_2_12">ATK_AVAILABLE_IN_2_12</a></td></tr>
+<tr><th id="90">90</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>        <dfn class="decl" id="atk_table_cell_get_row_span" title='atk_table_cell_get_row_span' data-ref="atk_table_cell_get_row_span">atk_table_cell_get_row_span</dfn>            (<a class="typedef" href="#AtkTableCell" title='AtkTableCell' data-type='struct _AtkTableCell' data-ref="AtkTableCell">AtkTableCell</a> *<dfn class="local col0 decl" id="17190cell" title='cell' data-type='AtkTableCell *' data-ref="17190cell">cell</dfn>);</td></tr>
+<tr><th id="91">91</th><td><a class="macro" href="atkversion.h.html#362" title="extern" data-ref="_M/ATK_AVAILABLE_IN_2_12">ATK_AVAILABLE_IN_2_12</a></td></tr>
+<tr><th id="92">92</th><td><a class="typedef" href="../../glib-2.0/glib/garray.h.html#GPtrArray" title='GPtrArray' data-type='struct _GPtrArray' data-ref="GPtrArray">GPtrArray</a> * <dfn class="decl" id="atk_table_cell_get_row_header_cells" title='atk_table_cell_get_row_header_cells' data-ref="atk_table_cell_get_row_header_cells">atk_table_cell_get_row_header_cells</dfn>    (<a class="typedef" href="#AtkTableCell" title='AtkTableCell' data-type='struct _AtkTableCell' data-ref="AtkTableCell">AtkTableCell</a> *<dfn class="local col1 decl" id="17191cell" title='cell' data-type='AtkTableCell *' data-ref="17191cell">cell</dfn>);</td></tr>
+<tr><th id="93">93</th><td><a class="macro" href="atkversion.h.html#362" title="extern" data-ref="_M/ATK_AVAILABLE_IN_2_12">ATK_AVAILABLE_IN_2_12</a></td></tr>
+<tr><th id="94">94</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>    <dfn class="decl" id="atk_table_cell_get_row_column_span" title='atk_table_cell_get_row_column_span' data-ref="atk_table_cell_get_row_column_span">atk_table_cell_get_row_column_span</dfn>     (<a class="typedef" href="#AtkTableCell" title='AtkTableCell' data-type='struct _AtkTableCell' data-ref="AtkTableCell">AtkTableCell</a> *<dfn class="local col2 decl" id="17192cell" title='cell' data-type='AtkTableCell *' data-ref="17192cell">cell</dfn>,</td></tr>
+<tr><th id="95">95</th><td>                                                    <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>         *<dfn class="local col3 decl" id="17193row" title='row' data-type='gint *' data-ref="17193row">row</dfn>,</td></tr>
+<tr><th id="96">96</th><td>                                                    <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>         *<dfn class="local col4 decl" id="17194column" title='column' data-type='gint *' data-ref="17194column">column</dfn>,</td></tr>
+<tr><th id="97">97</th><td>                                                    <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>         *<dfn class="local col5 decl" id="17195row_span" title='row_span' data-type='gint *' data-ref="17195row_span">row_span</dfn>,</td></tr>
+<tr><th id="98">98</th><td>                                                    <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>         *<dfn class="local col6 decl" id="17196column_span" title='column_span' data-type='gint *' data-ref="17196column_span">column_span</dfn>);</td></tr>
+<tr><th id="99">99</th><td><a class="macro" href="atkversion.h.html#362" title="extern" data-ref="_M/ATK_AVAILABLE_IN_2_12">ATK_AVAILABLE_IN_2_12</a></td></tr>
+<tr><th id="100">100</th><td><a class="typedef" href="atkobject.h.html#AtkObject" title='AtkObject' data-type='struct _AtkObject' data-ref="AtkObject">AtkObject</a> * <dfn class="decl" id="atk_table_cell_get_table" title='atk_table_cell_get_table' data-ref="atk_table_cell_get_table">atk_table_cell_get_table</dfn>               (<a class="typedef" href="#AtkTableCell" title='AtkTableCell' data-type='struct _AtkTableCell' data-ref="AtkTableCell">AtkTableCell</a> *<dfn class="local col7 decl" id="17197cell" title='cell' data-type='AtkTableCell *' data-ref="17197cell">cell</dfn>);</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><u>#<span data-ppcond="20">endif</span> /* __ATK_TABLE_CELL_H__ */</u></td></tr>
+<tr><th id="105">105</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

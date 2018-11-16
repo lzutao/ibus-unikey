@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtklistitem.h' l='64' type='void (*)(GtkListItem *, GtkScrollType, gfloat, gboolean)'/>
+<offset>7424</offset>

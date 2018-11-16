@@ -1,0 +1,6 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='151'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='146'>/**
+ * IBUS_INTERFACE_FACTORY:
+ *
+ * D-Bus interface for IBus factory.
+ */</doc>

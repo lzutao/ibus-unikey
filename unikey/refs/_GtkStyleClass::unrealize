@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtkstyle.h' l='138' type='void (*)(GtkStyle *)'/>
+<offset>1152</offset>
+<doc f='include/gtk-2.0/gtk/gtkstyle.h' l='135'>/* Clean up for a particular colormap/depth combination. Will
+   * typically chain to parent.
+   */</doc>

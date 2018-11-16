@@ -1,0 +1,20 @@
+<def f='include/gtk-2.0/gdk/gdkdisplay.h' l='73' ll='106'/>
+<size>216</size>
+<mbr r='_GdkDisplay::parent_instance' o='0' t='GObject'/>
+<mbr r='_GdkDisplay::queued_events' o='192' t='GList *'/>
+<mbr r='_GdkDisplay::queued_tail' o='256' t='GList *'/>
+<mbr r='_GdkDisplay::button_click_time' o='320' t='guint32 [2]'/>
+<mbr r='_GdkDisplay::button_window' o='384' t='GdkWindow *[2]'/>
+<mbr r='_GdkDisplay::button_number' o='512' t='gint [2]'/>
+<mbr r='_GdkDisplay::double_click_time' o='576' t='guint'/>
+<mbr r='_GdkDisplay::core_pointer' o='640' t='GdkDevice *'/>
+<mbr r='_GdkDisplay::pointer_hooks' o='704' t='const GdkDisplayPointerHooks *'/>
+<mbr r='_GdkDisplay::closed' o='768' t='guint'/>
+<mbr r='_GdkDisplay::ignore_core_events' o='769' t='guint'/>
+<mbr r='_GdkDisplay::double_click_distance' o='800' t='guint'/>
+<mbr r='_GdkDisplay::button_x' o='832' t='gint [2]'/>
+<mbr r='_GdkDisplay::button_y' o='896' t='gint [2]'/>
+<mbr r='_GdkDisplay::pointer_grabs' o='960' t='GList *'/>
+<mbr r='_GdkDisplay::keyboard_grab' o='1024' t='GdkKeyboardGrabInfo'/>
+<mbr r='_GdkDisplay::pointer_info' o='1280' t='GdkPointerWindowInfo'/>
+<mbr r='_GdkDisplay::last_event_time' o='1664' t='guint32'/>

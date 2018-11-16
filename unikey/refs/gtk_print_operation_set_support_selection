@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintoperation.h' l='181' type='void gtk_print_operation_set_support_selection(GtkPrintOperation * op, gboolean support_selection)'/>

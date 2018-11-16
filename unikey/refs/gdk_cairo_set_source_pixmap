@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkcairo.h' l='43' type='void gdk_cairo_set_source_pixmap(cairo_t * cr, GdkPixmap * pixmap, double pixmap_x, double pixmap_y)'/>

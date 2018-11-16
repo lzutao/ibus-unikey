@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtkalignment.h' l='52' ll='60'/>
+<size>136</size>
+<mbr r='_GtkAlignment::bin' o='0' t='GtkBin'/>
+<mbr r='_GtkAlignment::xalign' o='960' t='gfloat'/>
+<mbr r='_GtkAlignment::yalign' o='992' t='gfloat'/>
+<mbr r='_GtkAlignment::xscale' o='1024' t='gfloat'/>
+<mbr r='_GtkAlignment::yscale' o='1056' t='gfloat'/>

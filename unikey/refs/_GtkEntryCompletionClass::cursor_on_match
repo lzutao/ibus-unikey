@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkentrycompletion.h' l='70' type='gboolean (*)(GtkEntryCompletion *, GtkTreeModel *, GtkTreeIter *)'/>
+<offset>1280</offset>

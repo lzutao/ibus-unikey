@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='2705' type='void cairo_raster_source_pattern_set_callback_data(cairo_pattern_t * pattern, void * data)'/>

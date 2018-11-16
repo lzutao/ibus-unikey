@@ -1,0 +1,15 @@
+<dec f='include/ibus-1.0/ibusproplist.h' l='135' type='IBusProperty * ibus_prop_list_get(IBusPropList * prop_list, guint index)'/>
+<doc f='include/ibus-1.0/ibusproplist.h' l='125'>/**
+ * ibus_prop_list_get:
+ * @prop_list: An IBusPropList.
+ * @index: Index of an IBusPropList.
+ *
+ * Gets #IBusProperty at given index. Borrowed reference.
+ *
+ * Returns: (transfer none): #IBusProperty at given index, %NULL if no such
+ *     #IBusProperty.
+ */</doc>
+<use f='unikey/src/engine.cpp' l='281' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='296' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='326' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='341' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>

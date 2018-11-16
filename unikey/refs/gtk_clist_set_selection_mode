@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='465' type='void gtk_clist_set_selection_mode(GtkCList * clist, GtkSelectionMode mode)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='464'>/* set the clist&apos;s selection mode */</doc>

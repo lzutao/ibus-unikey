@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gtk/gtkitemfactory.h' l='65' ll='77'/>
+<size>88</size>
+<mbr r='_GtkItemFactory::object' o='0' t='GtkObject'/>
+<mbr r='_GtkItemFactory::path' o='256' t='gchar *'/>
+<mbr r='_GtkItemFactory::accel_group' o='320' t='GtkAccelGroup *'/>
+<mbr r='_GtkItemFactory::widget' o='384' t='GtkWidget *'/>
+<mbr r='_GtkItemFactory::items' o='448' t='GSList *'/>
+<mbr r='_GtkItemFactory::translate_func' o='512' t='GtkTranslateFunc'/>
+<mbr r='_GtkItemFactory::translate_data' o='576' t='gpointer'/>
+<mbr r='_GtkItemFactory::translate_notify' o='640' t='GDestroyNotify'/>

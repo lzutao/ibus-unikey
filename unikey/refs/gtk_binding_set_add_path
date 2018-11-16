@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkbindings.h' l='140' type='void gtk_binding_set_add_path(GtkBindingSet * binding_set, GtkPathType path_type, const gchar * path_pattern, GtkPathPriorityType priority)'/>

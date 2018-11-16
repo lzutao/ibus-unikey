@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/glib/gtimezone.h' l='65' type='void g_time_zone_unref(GTimeZone * tz)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='80' u='c' c='_ZL30glib_autoptr_cleanup_GTimeZonePP10_GTimeZone'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='80' u='r' c='_ZL34glib_listautoptr_cleanup_GTimeZonePP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='80' u='r' c='_ZL35glib_slistautoptr_cleanup_GTimeZonePP7_GSList'/>

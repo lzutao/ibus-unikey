@@ -1,0 +1,12 @@
+<dec f='include/pango-1.0/pango/pango-gravity.h' l='108'/>
+<doc f='include/pango-1.0/pango/pango-gravity.h' l='97'>/**
+ * PANGO_GRAVITY_IS_IMPROPER:
+ * @gravity: the #PangoGravity to check
+ *
+ * Whether a #PangoGravity represents a gravity that results in reversal of text direction.
+ *
+ * Returns: %TRUE if @gravity is %PANGO_GRAVITY_WEST or %PANGO_GRAVITY_NORTH,
+ *          %FALSE otherwise.
+ *
+ * Since: 1.32
+ **/</doc>

@@ -1,0 +1,5 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='583' type='void (*)(AtkObject *, const gchar *)'/>
+<offset>1856</offset>
+<doc f='include/atk-1.0/atk/atkobject.h' l='580'>/*
+   * Sets the accessible description of the object
+   */</doc>

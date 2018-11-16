@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1291' type='void gtk_widget_remove_mnemonic_label(GtkWidget * widget, GtkWidget * label)'/>

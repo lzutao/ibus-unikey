@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='137' type='void (*)(GtkTextBuffer *, GtkTextTag *, const GtkTextIter *, const GtkTextIter *)'/>
+<offset>1664</offset>

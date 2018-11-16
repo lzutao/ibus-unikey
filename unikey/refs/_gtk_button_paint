@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkbutton.h' l='138' type='void _gtk_button_paint(GtkButton * button, const GdkRectangle * area, GtkStateType state_type, GtkShadowType shadow_type, const gchar * main_detail, const gchar * default_detail)'/>

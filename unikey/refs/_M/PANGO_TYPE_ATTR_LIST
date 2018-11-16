@@ -1,0 +1,6 @@
+<dec f='include/pango-1.0/pango/pango-attributes.h' l='90'/>
+<doc f='include/pango-1.0/pango/pango-attributes.h' l='85'>/**
+ * PANGO_TYPE_ATTR_LIST:
+ *
+ * The #GObject type for #PangoAttrList.
+ */</doc>

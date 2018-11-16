@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkuimanager.h' l='127' type='GSList * gtk_ui_manager_get_toplevels(GtkUIManager * self, GtkUIManagerItemType types)'/>

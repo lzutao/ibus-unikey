@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkcombobox.h' l='70' type='GType gtk_combo_box_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtkcombobox.h' l='69'>/* construction */</doc>
+<use f='unikey/setup/dlg_main_setup.cpp' l='81' macro='1' u='c'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='94' macro='1' u='c'/>

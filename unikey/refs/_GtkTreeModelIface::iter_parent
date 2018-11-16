@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktreemodel.h' l='114' type='gboolean (*)(GtkTreeModel *, GtkTreeIter *, GtkTreeIter *)'/>
+<offset>1152</offset>

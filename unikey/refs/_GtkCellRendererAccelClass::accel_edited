@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkcellrendereraccel.h' l='68' type='void (*)(GtkCellRendererAccel *, const gchar *, guint, GdkModifierType, guint)'/>
+<offset>2112</offset>

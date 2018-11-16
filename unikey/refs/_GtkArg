@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gtk/gtktypeutils.h' l='138' ll='170'/>
+<size>32</size>
+<doc f='include/gtk-2.0/gtk/gtktypeutils.h' l='137'>/* GtkArg, used to hold differently typed values */</doc>
+<mbr r='_GtkArg::type' o='0' t='GType'/>
+<mbr r='_GtkArg::name' o='64' t='gchar *'/>
+<mbr r='_GtkArg::d' o='128' t='union (anonymous union at /usr/include/gtk-2.0/gtk/gtktypeutils.h:149:3)'/>

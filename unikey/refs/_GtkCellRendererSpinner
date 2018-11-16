@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkcellrendererspinner.h' l='45' ll='49'/>
+<size>64</size>
+<mbr r='_GtkCellRendererSpinner::parent' o='0' t='GtkCellRenderer'/>
+<mbr r='_GtkCellRendererSpinner::priv' o='448' t='GtkCellRendererSpinnerPrivate *'/>

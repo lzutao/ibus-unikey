@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gdkinput.h source code [include/gtk-2.0/gdk/gdkinput.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gdk/gdkinput.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gdk</a>/<a href='gdkinput.h.html'>gdkinput.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GDK - The GIMP Drawing Kit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><i>/*</i></td></tr>
+<tr><th id="21">21</th><td><i> * Modified by the GTK+ Team and others 1997-2000.  See the AUTHORS</i></td></tr>
+<tr><th id="22">22</th><td><i> * file for a list of people on the GTK+ Team.  See the ChangeLog</i></td></tr>
+<tr><th id="23">23</th><td><i> * files for a list of changes.  These files are distributed with</i></td></tr>
+<tr><th id="24">24</th><td><i> * GTK+ at ftp://ftp.gtk.org/pub/gtk/.</i></td></tr>
+<tr><th id="25">25</th><td><i> */</i></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/__GDK_INPUT_H__">__GDK_INPUT_H__</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/__GDK_INPUT_H__" data-ref="_M/__GDK_INPUT_H__">__GDK_INPUT_H__</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><u>#<span data-ppcond="30">if</span> defined(<span class="macro" data-ref="_M/GTK_DISABLE_SINGLE_INCLUDES">GTK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gdk.h.html#30" data-ref="_M/__GDK_H_INSIDE__">__GDK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GDK_COMPILATION">GDK_COMPILATION</span>)</u></td></tr>
+<tr><th id="31">31</th><td><u>#error "Only &lt;gdk/gdk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="32">32</th><td><u>#<span data-ppcond="30">endif</span></u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><u>#include <a href="gdktypes.h.html">&lt;gdk/gdktypes.h&gt;</a></u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><u>#define <dfn class="macro" id="_M/GDK_TYPE_DEVICE" data-ref="_M/GDK_TYPE_DEVICE">GDK_TYPE_DEVICE</dfn>              (gdk_device_get_type ())</u></td></tr>
+<tr><th id="39">39</th><td><u>#define <dfn class="macro" id="_M/GDK_DEVICE" data-ref="_M/GDK_DEVICE">GDK_DEVICE</dfn>(object)           (G_TYPE_CHECK_INSTANCE_CAST ((object), GDK_TYPE_DEVICE, GdkDevice))</u></td></tr>
+<tr><th id="40">40</th><td><u>#define <dfn class="macro" id="_M/GDK_DEVICE_CLASS" data-ref="_M/GDK_DEVICE_CLASS">GDK_DEVICE_CLASS</dfn>(klass)      (G_TYPE_CHECK_CLASS_CAST ((klass), GDK_TYPE_DEVICE, GdkDeviceClass))</u></td></tr>
+<tr><th id="41">41</th><td><u>#define <dfn class="macro" id="_M/GDK_IS_DEVICE" data-ref="_M/GDK_IS_DEVICE">GDK_IS_DEVICE</dfn>(object)        (G_TYPE_CHECK_INSTANCE_TYPE ((object), GDK_TYPE_DEVICE))</u></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/GDK_IS_DEVICE_CLASS" data-ref="_M/GDK_IS_DEVICE_CLASS">GDK_IS_DEVICE_CLASS</dfn>(klass)   (G_TYPE_CHECK_CLASS_TYPE ((klass), GDK_TYPE_DEVICE))</u></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/GDK_DEVICE_GET_CLASS" data-ref="_M/GDK_DEVICE_GET_CLASS">GDK_DEVICE_GET_CLASS</dfn>(obj)    (G_TYPE_INSTANCE_GET_CLASS ((obj), GDK_TYPE_DEVICE, GdkDeviceClass))</u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkDeviceKey" title='_GdkDeviceKey' data-ref="_GdkDeviceKey">_GdkDeviceKey</a>	    <dfn class="typedef" id="GdkDeviceKey" title='GdkDeviceKey' data-type='struct _GdkDeviceKey' data-ref="GdkDeviceKey">GdkDeviceKey</dfn>;</td></tr>
+<tr><th id="46">46</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkDeviceAxis" title='_GdkDeviceAxis' data-ref="_GdkDeviceAxis">_GdkDeviceAxis</a>	    <dfn class="typedef" id="GdkDeviceAxis" title='GdkDeviceAxis' data-type='struct _GdkDeviceAxis' data-ref="GdkDeviceAxis">GdkDeviceAxis</dfn>;</td></tr>
+<tr><th id="47">47</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkDevice" title='_GdkDevice' data-ref="_GdkDevice">_GdkDevice</a>	    <dfn class="typedef" id="GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</dfn>;</td></tr>
+<tr><th id="48">48</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_GdkDeviceClass" title='_GdkDeviceClass' data-ref="_GdkDeviceClass"><a class="type" href="#_GdkDeviceClass" title='_GdkDeviceClass' data-ref="_GdkDeviceClass">_GdkDeviceClass</a></dfn>	    <dfn class="typedef" id="GdkDeviceClass" title='GdkDeviceClass' data-type='struct _GdkDeviceClass' data-ref="GdkDeviceClass">GdkDeviceClass</dfn>;</td></tr>
+<tr><th id="49">49</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkTimeCoord" title='_GdkTimeCoord' data-ref="_GdkTimeCoord">_GdkTimeCoord</a>	    <dfn class="typedef" id="GdkTimeCoord" title='GdkTimeCoord' data-type='struct _GdkTimeCoord' data-ref="GdkTimeCoord">GdkTimeCoord</dfn>;</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="52">52</th><td>{</td></tr>
+<tr><th id="53">53</th><td>  <dfn class="enum" id="GDK_EXTENSION_EVENTS_NONE" title='GDK_EXTENSION_EVENTS_NONE' data-ref="GDK_EXTENSION_EVENTS_NONE">GDK_EXTENSION_EVENTS_NONE</dfn>,</td></tr>
+<tr><th id="54">54</th><td>  <dfn class="enum" id="GDK_EXTENSION_EVENTS_ALL" title='GDK_EXTENSION_EVENTS_ALL' data-ref="GDK_EXTENSION_EVENTS_ALL">GDK_EXTENSION_EVENTS_ALL</dfn>,</td></tr>
+<tr><th id="55">55</th><td>  <dfn class="enum" id="GDK_EXTENSION_EVENTS_CURSOR" title='GDK_EXTENSION_EVENTS_CURSOR' data-ref="GDK_EXTENSION_EVENTS_CURSOR">GDK_EXTENSION_EVENTS_CURSOR</dfn></td></tr>
+<tr><th id="56">56</th><td>} <dfn class="typedef" id="GdkExtensionMode" title='GdkExtensionMode' data-type='enum GdkExtensionMode' data-ref="GdkExtensionMode">GdkExtensionMode</dfn>;</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="59">59</th><td>{</td></tr>
+<tr><th id="60">60</th><td>  <dfn class="enum" id="GDK_SOURCE_MOUSE" title='GDK_SOURCE_MOUSE' data-ref="GDK_SOURCE_MOUSE">GDK_SOURCE_MOUSE</dfn>,</td></tr>
+<tr><th id="61">61</th><td>  <dfn class="enum" id="GDK_SOURCE_PEN" title='GDK_SOURCE_PEN' data-ref="GDK_SOURCE_PEN">GDK_SOURCE_PEN</dfn>,</td></tr>
+<tr><th id="62">62</th><td>  <dfn class="enum" id="GDK_SOURCE_ERASER" title='GDK_SOURCE_ERASER' data-ref="GDK_SOURCE_ERASER">GDK_SOURCE_ERASER</dfn>,</td></tr>
+<tr><th id="63">63</th><td>  <dfn class="enum" id="GDK_SOURCE_CURSOR" title='GDK_SOURCE_CURSOR' data-ref="GDK_SOURCE_CURSOR">GDK_SOURCE_CURSOR</dfn></td></tr>
+<tr><th id="64">64</th><td>} <dfn class="typedef" id="GdkInputSource" title='GdkInputSource' data-type='enum GdkInputSource' data-ref="GdkInputSource">GdkInputSource</dfn>;</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="67">67</th><td>{</td></tr>
+<tr><th id="68">68</th><td>  <dfn class="enum" id="GDK_MODE_DISABLED" title='GDK_MODE_DISABLED' data-ref="GDK_MODE_DISABLED">GDK_MODE_DISABLED</dfn>,</td></tr>
+<tr><th id="69">69</th><td>  <dfn class="enum" id="GDK_MODE_SCREEN" title='GDK_MODE_SCREEN' data-ref="GDK_MODE_SCREEN">GDK_MODE_SCREEN</dfn>,</td></tr>
+<tr><th id="70">70</th><td>  <dfn class="enum" id="GDK_MODE_WINDOW" title='GDK_MODE_WINDOW' data-ref="GDK_MODE_WINDOW">GDK_MODE_WINDOW</dfn></td></tr>
+<tr><th id="71">71</th><td>} <dfn class="typedef" id="GdkInputMode" title='GdkInputMode' data-type='enum GdkInputMode' data-ref="GdkInputMode">GdkInputMode</dfn>;</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="74">74</th><td>{</td></tr>
+<tr><th id="75">75</th><td>  <dfn class="enum" id="GDK_AXIS_IGNORE" title='GDK_AXIS_IGNORE' data-ref="GDK_AXIS_IGNORE">GDK_AXIS_IGNORE</dfn>,</td></tr>
+<tr><th id="76">76</th><td>  <dfn class="enum" id="GDK_AXIS_X" title='GDK_AXIS_X' data-ref="GDK_AXIS_X">GDK_AXIS_X</dfn>,</td></tr>
+<tr><th id="77">77</th><td>  <dfn class="enum" id="GDK_AXIS_Y" title='GDK_AXIS_Y' data-ref="GDK_AXIS_Y">GDK_AXIS_Y</dfn>,</td></tr>
+<tr><th id="78">78</th><td>  <dfn class="enum" id="GDK_AXIS_PRESSURE" title='GDK_AXIS_PRESSURE' data-ref="GDK_AXIS_PRESSURE">GDK_AXIS_PRESSURE</dfn>,</td></tr>
+<tr><th id="79">79</th><td>  <dfn class="enum" id="GDK_AXIS_XTILT" title='GDK_AXIS_XTILT' data-ref="GDK_AXIS_XTILT">GDK_AXIS_XTILT</dfn>,</td></tr>
+<tr><th id="80">80</th><td>  <dfn class="enum" id="GDK_AXIS_YTILT" title='GDK_AXIS_YTILT' data-ref="GDK_AXIS_YTILT">GDK_AXIS_YTILT</dfn>,</td></tr>
+<tr><th id="81">81</th><td>  <dfn class="enum" id="GDK_AXIS_WHEEL" title='GDK_AXIS_WHEEL' data-ref="GDK_AXIS_WHEEL">GDK_AXIS_WHEEL</dfn>,</td></tr>
+<tr><th id="82">82</th><td>  <dfn class="enum" id="GDK_AXIS_LAST" title='GDK_AXIS_LAST' data-ref="GDK_AXIS_LAST">GDK_AXIS_LAST</dfn></td></tr>
+<tr><th id="83">83</th><td>} <dfn class="typedef" id="GdkAxisUse" title='GdkAxisUse' data-type='enum GdkAxisUse' data-ref="GdkAxisUse">GdkAxisUse</dfn>;</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><b>struct</b> <dfn class="type def" id="_GdkDeviceKey" title='_GdkDeviceKey' data-ref="_GdkDeviceKey">_GdkDeviceKey</dfn></td></tr>
+<tr><th id="86">86</th><td>{</td></tr>
+<tr><th id="87">87</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="decl" id="_GdkDeviceKey::keyval" title='_GdkDeviceKey::keyval' data-ref="_GdkDeviceKey::keyval">keyval</dfn>;</td></tr>
+<tr><th id="88">88</th><td>  <a class="typedef" href="gdktypes.h.html#GdkModifierType" title='GdkModifierType' data-type='enum GdkModifierType' data-ref="GdkModifierType">GdkModifierType</a> <dfn class="decl" id="_GdkDeviceKey::modifiers" title='_GdkDeviceKey::modifiers' data-ref="_GdkDeviceKey::modifiers">modifiers</dfn>;</td></tr>
+<tr><th id="89">89</th><td>};</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><b>struct</b> <dfn class="type def" id="_GdkDeviceAxis" title='_GdkDeviceAxis' data-ref="_GdkDeviceAxis">_GdkDeviceAxis</dfn></td></tr>
+<tr><th id="92">92</th><td>{</td></tr>
+<tr><th id="93">93</th><td>  <a class="typedef" href="#GdkAxisUse" title='GdkAxisUse' data-type='enum GdkAxisUse' data-ref="GdkAxisUse">GdkAxisUse</a> <dfn class="decl" id="_GdkDeviceAxis::use" title='_GdkDeviceAxis::use' data-ref="_GdkDeviceAxis::use">use</dfn>;</td></tr>
+<tr><th id="94">94</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>    <dfn class="decl" id="_GdkDeviceAxis::min" title='_GdkDeviceAxis::min' data-ref="_GdkDeviceAxis::min">min</dfn>;</td></tr>
+<tr><th id="95">95</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>    <dfn class="decl" id="_GdkDeviceAxis::max" title='_GdkDeviceAxis::max' data-ref="_GdkDeviceAxis::max">max</dfn>;</td></tr>
+<tr><th id="96">96</th><td>};</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td><b>struct</b> <dfn class="type def" id="_GdkDevice" title='_GdkDevice' data-ref="_GdkDevice">_GdkDevice</dfn></td></tr>
+<tr><th id="99">99</th><td>{</td></tr>
+<tr><th id="100">100</th><td>  <a class="typedef" href="../../glib-2.0/gobject/gobject.h.html#GObject" title='GObject' data-type='struct _GObject' data-ref="GObject">GObject</a> <dfn class="decl" id="_GdkDevice::parent_instance" title='_GdkDevice::parent_instance' data-ref="_GdkDevice::parent_instance">parent_instance</dfn>;</td></tr>
+<tr><th id="101">101</th><td>  <i>/* All fields are read-only */</i></td></tr>
+<tr><th id="102">102</th><td>	  </td></tr>
+<tr><th id="103">103</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<span class="macro" title="name" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkDevice::name" title='_GdkDevice::name' data-ref="_GdkDevice::name">name</dfn>);</td></tr>
+<tr><th id="104">104</th><td>  <a class="typedef" href="#GdkInputSource" title='GdkInputSource' data-type='enum GdkInputSource' data-ref="GdkInputSource">GdkInputSource</a> <span class="macro" title="source" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkDevice::source" title='_GdkDevice::source' data-ref="_GdkDevice::source">source</dfn>);</td></tr>
+<tr><th id="105">105</th><td>  <a class="typedef" href="#GdkInputMode" title='GdkInputMode' data-type='enum GdkInputMode' data-ref="GdkInputMode">GdkInputMode</a> <span class="macro" title="mode" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkDevice::mode" title='_GdkDevice::mode' data-ref="_GdkDevice::mode">mode</dfn>);</td></tr>
+<tr><th id="106">106</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <span class="macro" title="has_cursor" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkDevice::has_cursor" title='_GdkDevice::has_cursor' data-ref="_GdkDevice::has_cursor">has_cursor</dfn>);   <i>/* TRUE if the X pointer follows device motion */</i></td></tr>
+<tr><th id="107">107</th><td>	  </td></tr>
+<tr><th id="108">108</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <span class="macro" title="num_axes" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkDevice::num_axes" title='_GdkDevice::num_axes' data-ref="_GdkDevice::num_axes">num_axes</dfn>);</td></tr>
+<tr><th id="109">109</th><td>  <a class="typedef" href="#GdkDeviceAxis" title='GdkDeviceAxis' data-type='struct _GdkDeviceAxis' data-ref="GdkDeviceAxis">GdkDeviceAxis</a> *<span class="macro" title="axes" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkDevice::axes" title='_GdkDevice::axes' data-ref="_GdkDevice::axes">axes</dfn>);</td></tr>
+<tr><th id="110">110</th><td>	  </td></tr>
+<tr><th id="111">111</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <span class="macro" title="num_keys" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkDevice::num_keys" title='_GdkDevice::num_keys' data-ref="_GdkDevice::num_keys">num_keys</dfn>);</td></tr>
+<tr><th id="112">112</th><td>  <a class="typedef" href="#GdkDeviceKey" title='GdkDeviceKey' data-type='struct _GdkDeviceKey' data-ref="GdkDeviceKey">GdkDeviceKey</a> *<span class="macro" title="keys" data-ref="_M/GSEAL">GSEAL</span> (<dfn class="decl" id="_GdkDevice::keys" title='_GdkDevice::keys' data-ref="_GdkDevice::keys">keys</dfn>);</td></tr>
+<tr><th id="113">113</th><td>};</td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><i>/* We don't allocate each coordinate this big, but we use it to</i></td></tr>
+<tr><th id="116">116</th><td><i> * be ANSI compliant and avoid accessing past the defined limits.</i></td></tr>
+<tr><th id="117">117</th><td><i> */</i></td></tr>
+<tr><th id="118">118</th><td><u>#define <dfn class="macro" id="_M/GDK_MAX_TIMECOORD_AXES" data-ref="_M/GDK_MAX_TIMECOORD_AXES">GDK_MAX_TIMECOORD_AXES</dfn> 128</u></td></tr>
+<tr><th id="119">119</th><td></td></tr>
+<tr><th id="120">120</th><td><b>struct</b> <dfn class="type def" id="_GdkTimeCoord" title='_GdkTimeCoord' data-ref="_GdkTimeCoord">_GdkTimeCoord</dfn></td></tr>
+<tr><th id="121">121</th><td>{</td></tr>
+<tr><th id="122">122</th><td>  <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span> <dfn class="decl" id="_GdkTimeCoord::time" title='_GdkTimeCoord::time' data-ref="_GdkTimeCoord::time">time</dfn>;</td></tr>
+<tr><th id="123">123</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <dfn class="decl" id="_GdkTimeCoord::axes" title='_GdkTimeCoord::axes' data-ref="_GdkTimeCoord::axes">axes</dfn>[<a class="macro" href="#118" title="128" data-ref="_M/GDK_MAX_TIMECOORD_AXES">GDK_MAX_TIMECOORD_AXES</a>];</td></tr>
+<tr><th id="124">124</th><td>};</td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>          <dfn class="decl" id="gdk_device_get_type" title='gdk_device_get_type' data-ref="gdk_device_get_type">gdk_device_get_type</dfn>      (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="127">127</th><td></td></tr>
+<tr><th id="128">128</th><td><u>#<span data-ppcond="128">ifndef</span> <span class="macro" data-ref="_M/GDK_MULTIHEAD_SAFE">GDK_MULTIHEAD_SAFE</span></u></td></tr>
+<tr><th id="129">129</th><td><i>/* Returns a list of GdkDevice * */</i>	  </td></tr>
+<tr><th id="130">130</th><td><a class="typedef" href="../../glib-2.0/glib/glist.h.html#GList" title='GList' data-type='struct _GList' data-ref="GList">GList</a> *        <dfn class="decl" id="gdk_devices_list" title='gdk_devices_list' data-ref="gdk_devices_list">gdk_devices_list</dfn>              (<em>void</em>);</td></tr>
+<tr><th id="131">131</th><td><u>#<span data-ppcond="128">endif</span> /* GDK_MULTIHEAD_SAFE */</u></td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td><em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *         <dfn class="decl" id="gdk_device_get_name" title='gdk_device_get_name' data-ref="gdk_device_get_name">gdk_device_get_name</dfn>       (<a class="typedef" href="#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a> *<dfn class="local col6 decl" id="13416device" title='device' data-type='GdkDevice *' data-ref="13416device">device</dfn>);</td></tr>
+<tr><th id="134">134</th><td><a class="typedef" href="#GdkInputSource" title='GdkInputSource' data-type='enum GdkInputSource' data-ref="GdkInputSource">GdkInputSource</a>        <dfn class="decl" id="gdk_device_get_source" title='gdk_device_get_source' data-ref="gdk_device_get_source">gdk_device_get_source</dfn>     (<a class="typedef" href="#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a> *<dfn class="local col7 decl" id="13417device" title='device' data-type='GdkDevice *' data-ref="13417device">device</dfn>);</td></tr>
+<tr><th id="135">135</th><td><a class="typedef" href="#GdkInputMode" title='GdkInputMode' data-type='enum GdkInputMode' data-ref="GdkInputMode">GdkInputMode</a>          <dfn class="decl" id="gdk_device_get_mode" title='gdk_device_get_mode' data-ref="gdk_device_get_mode">gdk_device_get_mode</dfn>       (<a class="typedef" href="#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a> *<dfn class="local col8 decl" id="13418device" title='device' data-type='GdkDevice *' data-ref="13418device">device</dfn>);</td></tr>
+<tr><th id="136">136</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>              <dfn class="decl" id="gdk_device_get_has_cursor" title='gdk_device_get_has_cursor' data-ref="gdk_device_get_has_cursor">gdk_device_get_has_cursor</dfn> (<a class="typedef" href="#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a> *<dfn class="local col9 decl" id="13419device" title='device' data-type='GdkDevice *' data-ref="13419device">device</dfn>);</td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td><em>void</em>                  <dfn class="decl" id="gdk_device_get_key" title='gdk_device_get_key' data-ref="gdk_device_get_key">gdk_device_get_key</dfn>        (<a class="typedef" href="#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a>       *<dfn class="local col0 decl" id="13420device" title='device' data-type='GdkDevice *' data-ref="13420device">device</dfn>,</td></tr>
+<tr><th id="139">139</th><td>                                                 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>            <dfn class="local col1 decl" id="13421index" title='index' data-type='guint' data-ref="13421index">index</dfn>,</td></tr>
+<tr><th id="140">140</th><td>                                                 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           *<dfn class="local col2 decl" id="13422keyval" title='keyval' data-type='guint *' data-ref="13422keyval">keyval</dfn>,</td></tr>
+<tr><th id="141">141</th><td>                                                 <a class="typedef" href="gdktypes.h.html#GdkModifierType" title='GdkModifierType' data-type='enum GdkModifierType' data-ref="GdkModifierType">GdkModifierType</a> *<dfn class="local col3 decl" id="13423modifiers" title='modifiers' data-type='GdkModifierType *' data-ref="13423modifiers">modifiers</dfn>);</td></tr>
+<tr><th id="142">142</th><td><a class="typedef" href="#GdkAxisUse" title='GdkAxisUse' data-type='enum GdkAxisUse' data-ref="GdkAxisUse">GdkAxisUse</a>            <dfn class="decl" id="gdk_device_get_axis_use" title='gdk_device_get_axis_use' data-ref="gdk_device_get_axis_use">gdk_device_get_axis_use</dfn>   (<a class="typedef" href="#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a>       *<dfn class="local col4 decl" id="13424device" title='device' data-type='GdkDevice *' data-ref="13424device">device</dfn>,</td></tr>
+<tr><th id="143">143</th><td>                                                 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>            <dfn class="local col5 decl" id="13425index" title='index' data-type='guint' data-ref="13425index">index</dfn>);</td></tr>
+<tr><th id="144">144</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>                  <dfn class="decl" id="gdk_device_get_n_keys" title='gdk_device_get_n_keys' data-ref="gdk_device_get_n_keys">gdk_device_get_n_keys</dfn>     (<a class="typedef" href="#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a>       *<dfn class="local col6 decl" id="13426device" title='device' data-type='GdkDevice *' data-ref="13426device">device</dfn>);</td></tr>
+<tr><th id="145">145</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>                  <dfn class="decl" id="gdk_device_get_n_axes" title='gdk_device_get_n_axes' data-ref="gdk_device_get_n_axes">gdk_device_get_n_axes</dfn>     (<a class="typedef" href="#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a>       *<dfn class="local col7 decl" id="13427device" title='device' data-type='GdkDevice *' data-ref="13427device">device</dfn>);</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td><i>/* Functions to configure a device */</i></td></tr>
+<tr><th id="148">148</th><td><em>void</em>           <dfn class="decl" id="gdk_device_set_source" title='gdk_device_set_source' data-ref="gdk_device_set_source">gdk_device_set_source</dfn>    (<a class="typedef" href="#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a>      *<dfn class="local col8 decl" id="13428device" title='device' data-type='GdkDevice *' data-ref="13428device">device</dfn>,</td></tr>
+<tr><th id="149">149</th><td>					 <a class="typedef" href="#GdkInputSource" title='GdkInputSource' data-type='enum GdkInputSource' data-ref="GdkInputSource">GdkInputSource</a>  <dfn class="local col9 decl" id="13429source" title='source' data-type='GdkInputSource' data-ref="13429source">source</dfn>);</td></tr>
+<tr><th id="150">150</th><td>	  </td></tr>
+<tr><th id="151">151</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>       <dfn class="decl" id="gdk_device_set_mode" title='gdk_device_set_mode' data-ref="gdk_device_set_mode">gdk_device_set_mode</dfn>      (<a class="typedef" href="#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a>      *<dfn class="local col0 decl" id="13430device" title='device' data-type='GdkDevice *' data-ref="13430device">device</dfn>,</td></tr>
+<tr><th id="152">152</th><td>					 <a class="typedef" href="#GdkInputMode" title='GdkInputMode' data-type='enum GdkInputMode' data-ref="GdkInputMode">GdkInputMode</a>    <dfn class="local col1 decl" id="13431mode" title='mode' data-type='GdkInputMode' data-ref="13431mode">mode</dfn>);</td></tr>
+<tr><th id="153">153</th><td></td></tr>
+<tr><th id="154">154</th><td><em>void</em>           <dfn class="decl" id="gdk_device_set_key" title='gdk_device_set_key' data-ref="gdk_device_set_key">gdk_device_set_key</dfn>       (<a class="typedef" href="#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a>      *<dfn class="local col2 decl" id="13432device" title='device' data-type='GdkDevice *' data-ref="13432device">device</dfn>,</td></tr>
+<tr><th id="155">155</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           <dfn class="local col3 decl" id="13433index_" title='index_' data-type='guint' data-ref="13433index_">index_</dfn>,</td></tr>
+<tr><th id="156">156</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>           <dfn class="local col4 decl" id="13434keyval" title='keyval' data-type='guint' data-ref="13434keyval">keyval</dfn>,</td></tr>
+<tr><th id="157">157</th><td>					 <a class="typedef" href="gdktypes.h.html#GdkModifierType" title='GdkModifierType' data-type='enum GdkModifierType' data-ref="GdkModifierType">GdkModifierType</a> <dfn class="local col5 decl" id="13435modifiers" title='modifiers' data-type='GdkModifierType' data-ref="13435modifiers">modifiers</dfn>);</td></tr>
+<tr><th id="158">158</th><td></td></tr>
+<tr><th id="159">159</th><td><em>void</em>     <dfn class="decl" id="gdk_device_set_axis_use" title='gdk_device_set_axis_use' data-ref="gdk_device_set_axis_use">gdk_device_set_axis_use</dfn> (<a class="typedef" href="#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a>         *<dfn class="local col6 decl" id="13436device" title='device' data-type='GdkDevice *' data-ref="13436device">device</dfn>,</td></tr>
+<tr><th id="160">160</th><td>				  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>              <dfn class="local col7 decl" id="13437index_" title='index_' data-type='guint' data-ref="13437index_">index_</dfn>,</td></tr>
+<tr><th id="161">161</th><td>				  <a class="typedef" href="#GdkAxisUse" title='GdkAxisUse' data-type='enum GdkAxisUse' data-ref="GdkAxisUse">GdkAxisUse</a>         <dfn class="local col8 decl" id="13438use" title='use' data-type='GdkAxisUse' data-ref="13438use">use</dfn>);</td></tr>
+<tr><th id="162">162</th><td></td></tr>
+<tr><th id="163">163</th><td><em>void</em>     <dfn class="decl" id="gdk_device_get_state" title='gdk_device_get_state' data-ref="gdk_device_get_state">gdk_device_get_state</dfn>    (<a class="typedef" href="#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a>         *<dfn class="local col9 decl" id="13439device" title='device' data-type='GdkDevice *' data-ref="13439device">device</dfn>,</td></tr>
+<tr><th id="164">164</th><td>				  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a>         *<dfn class="local col0 decl" id="13440window" title='window' data-type='GdkWindow *' data-ref="13440window">window</dfn>,</td></tr>
+<tr><th id="165">165</th><td>				  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>           *<dfn class="local col1 decl" id="13441axes" title='axes' data-type='gdouble *' data-ref="13441axes">axes</dfn>,</td></tr>
+<tr><th id="166">166</th><td>				  <a class="typedef" href="gdktypes.h.html#GdkModifierType" title='GdkModifierType' data-type='enum GdkModifierType' data-ref="GdkModifierType">GdkModifierType</a>   *<dfn class="local col2 decl" id="13442mask" title='mask' data-type='GdkModifierType *' data-ref="13442mask">mask</dfn>);</td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="gdk_device_get_history" title='gdk_device_get_history' data-ref="gdk_device_get_history">gdk_device_get_history</dfn>  (<a class="typedef" href="#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a>         *<dfn class="local col3 decl" id="13443device" title='device' data-type='GdkDevice *' data-ref="13443device">device</dfn>,</td></tr>
+<tr><th id="169">169</th><td>				  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a>         *<dfn class="local col4 decl" id="13444window" title='window' data-type='GdkWindow *' data-ref="13444window">window</dfn>,</td></tr>
+<tr><th id="170">170</th><td>				  <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span>            <dfn class="local col5 decl" id="13445start" title='start' data-type='guint32' data-ref="13445start">start</dfn>,</td></tr>
+<tr><th id="171">171</th><td>				  <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span>            <dfn class="local col6 decl" id="13446stop" title='stop' data-type='guint32' data-ref="13446stop">stop</dfn>,</td></tr>
+<tr><th id="172">172</th><td>				  <a class="typedef" href="#GdkTimeCoord" title='GdkTimeCoord' data-type='struct _GdkTimeCoord' data-ref="GdkTimeCoord">GdkTimeCoord</a>    ***<dfn class="local col7 decl" id="13447events" title='events' data-type='GdkTimeCoord ***' data-ref="13447events">events</dfn>,</td></tr>
+<tr><th id="173">173</th><td>				  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>              *<dfn class="local col8 decl" id="13448n_events" title='n_events' data-type='gint *' data-ref="13448n_events">n_events</dfn>);</td></tr>
+<tr><th id="174">174</th><td></td></tr>
+<tr><th id="175">175</th><td><em>void</em>     <dfn class="decl" id="gdk_device_free_history" title='gdk_device_free_history' data-ref="gdk_device_free_history">gdk_device_free_history</dfn> (<a class="typedef" href="#GdkTimeCoord" title='GdkTimeCoord' data-type='struct _GdkTimeCoord' data-ref="GdkTimeCoord">GdkTimeCoord</a>     **<dfn class="local col9 decl" id="13449events" title='events' data-type='GdkTimeCoord **' data-ref="13449events">events</dfn>,</td></tr>
+<tr><th id="176">176</th><td>				  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>               <dfn class="local col0 decl" id="13450n_events" title='n_events' data-type='gint' data-ref="13450n_events">n_events</dfn>);</td></tr>
+<tr><th id="177">177</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="gdk_device_get_axis" title='gdk_device_get_axis' data-ref="gdk_device_get_axis">gdk_device_get_axis</dfn>     (<a class="typedef" href="#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a>         *<dfn class="local col1 decl" id="13451device" title='device' data-type='GdkDevice *' data-ref="13451device">device</dfn>,</td></tr>
+<tr><th id="178">178</th><td>				  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>           *<dfn class="local col2 decl" id="13452axes" title='axes' data-type='gdouble *' data-ref="13452axes">axes</dfn>,</td></tr>
+<tr><th id="179">179</th><td>				  <a class="typedef" href="#GdkAxisUse" title='GdkAxisUse' data-type='enum GdkAxisUse' data-ref="GdkAxisUse">GdkAxisUse</a>         <dfn class="local col3 decl" id="13453use" title='use' data-type='GdkAxisUse' data-ref="13453use">use</dfn>,</td></tr>
+<tr><th id="180">180</th><td>				  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>           *<dfn class="local col4 decl" id="13454value" title='value' data-type='gdouble *' data-ref="13454value">value</dfn>);</td></tr>
+<tr><th id="181">181</th><td></td></tr>
+<tr><th id="182">182</th><td><em>void</em> <dfn class="decl" id="gdk_input_set_extension_events" title='gdk_input_set_extension_events' data-ref="gdk_input_set_extension_events">gdk_input_set_extension_events</dfn> (<a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a>        *<dfn class="local col5 decl" id="13455window" title='window' data-type='GdkWindow *' data-ref="13455window">window</dfn>,</td></tr>
+<tr><th id="183">183</th><td>				     <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>              <dfn class="local col6 decl" id="13456mask" title='mask' data-type='gint' data-ref="13456mask">mask</dfn>,</td></tr>
+<tr><th id="184">184</th><td>				     <a class="typedef" href="#GdkExtensionMode" title='GdkExtensionMode' data-type='enum GdkExtensionMode' data-ref="GdkExtensionMode">GdkExtensionMode</a>  <dfn class="local col7 decl" id="13457mode" title='mode' data-type='GdkExtensionMode' data-ref="13457mode">mode</dfn>);</td></tr>
+<tr><th id="185">185</th><td></td></tr>
+<tr><th id="186">186</th><td><u>#<span data-ppcond="186">ifndef</span> <span class="macro" data-ref="_M/GDK_MULTIHEAD_SAFE">GDK_MULTIHEAD_SAFE</span></u></td></tr>
+<tr><th id="187">187</th><td><a class="typedef" href="#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a> *<dfn class="decl" id="gdk_device_get_core_pointer" title='gdk_device_get_core_pointer' data-ref="gdk_device_get_core_pointer">gdk_device_get_core_pointer</dfn> (<em>void</em>);</td></tr>
+<tr><th id="188">188</th><td><u>#<span data-ppcond="186">endif</span></u></td></tr>
+<tr><th id="189">189</th><td> </td></tr>
+<tr><th id="190">190</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="191">191</th><td></td></tr>
+<tr><th id="192">192</th><td><u>#<span data-ppcond="27">endif</span> /* __GDK_INPUT_H__ */</u></td></tr>
+<tr><th id="193">193</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

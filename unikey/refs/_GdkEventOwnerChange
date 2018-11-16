@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gdk/gdkevents.h' l='414' ll='424'/>
+<size>48</size>
+<mbr r='_GdkEventOwnerChange::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventOwnerChange::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventOwnerChange::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventOwnerChange::owner' o='160' t='GdkNativeWindow'/>
+<mbr r='_GdkEventOwnerChange::reason' o='192' t='GdkOwnerChange'/>
+<mbr r='_GdkEventOwnerChange::selection' o='256' t='GdkAtom'/>
+<mbr r='_GdkEventOwnerChange::time' o='320' t='guint32'/>
+<mbr r='_GdkEventOwnerChange::selection_time' o='352' t='guint32'/>

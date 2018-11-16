@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreestore.h' l='94' type='void gtk_tree_store_set_valuesv(GtkTreeStore * tree_store, GtkTreeIter * iter, gint * columns, GValue * values, gint n_values)'/>

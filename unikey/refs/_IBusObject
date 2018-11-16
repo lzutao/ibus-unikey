@@ -1,0 +1,11 @@
+<def f='include/ibus-1.0/ibusobject.h' l='95' ll='101'/>
+<size>40</size>
+<doc f='include/ibus-1.0/ibusobject.h' l='89'>/**
+ * IBusObject:
+ *
+ * All the fields in the &lt;structname&gt;IBusObject&lt;/structname&gt; structure are
+ * private to the #IBusObject and should never be accessed directly.
+ */</doc>
+<mbr r='_IBusObject::parent' o='0' t='GInitiallyUnowned'/>
+<mbr r='_IBusObject::flags' o='192' t='guint32'/>
+<mbr r='_IBusObject::priv' o='256' t='IBusObjectPrivate *'/>

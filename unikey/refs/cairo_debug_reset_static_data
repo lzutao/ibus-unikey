@@ -1,0 +1,2 @@
+<dec f='include/cairo/cairo.h' l='3171' type='void cairo_debug_reset_static_data()'/>
+<doc f='include/cairo/cairo.h' l='3169'>/* Functions to be used while debugging (not intended for use in production code) */</doc>

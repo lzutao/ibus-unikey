@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreemodelsort.h' l='93' type='GtkTreePath * gtk_tree_model_sort_convert_path_to_child_path(GtkTreeModelSort * tree_model_sort, GtkTreePath * sorted_path)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcolorbutton.h' l='98' type='const gchar * gtk_color_button_get_title(GtkColorButton * color_button)'/>

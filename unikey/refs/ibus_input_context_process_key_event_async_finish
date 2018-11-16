@@ -1,0 +1,14 @@
+<dec f='include/ibus-1.0/ibusinputcontext.h' l='275' type='gboolean ibus_input_context_process_key_event_async_finish(IBusInputContext * context, GAsyncResult * res, GError ** error)'/>
+<doc f='include/ibus-1.0/ibusinputcontext.h' l='262'>/**
+ * ibus_input_context_process_key_event_async_finish:
+ * @context: An #IBusInputContext.
+ * @res: A #GAsyncResult obtained from the #GAsyncReadyCallback passed to
+ *      ibus_input_context_process_key_event_async().
+ * @error: Return location for error or %NULL.
+ *
+ * Finishes an operation started with
+ *      ibus_input_context_process_key_event_async().
+ *
+ * Returns: %TRUE if the key event is processed;
+ *      %FALSE otherwise or some errors happen and the @error will be set.
+ */</doc>

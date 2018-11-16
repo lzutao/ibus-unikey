@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkbindings.h' l='148' type='guint _gtk_binding_parse_binding(GScanner * scanner)'/>
+<doc f='include/gtk-2.0/gtk/gtkbindings.h' l='146'>/* Non-public methods */</doc>

@@ -1,0 +1,7 @@
+<dec f='include/pango-1.0/pango/pango-font.h' l='383'/>
+<doc f='include/pango-1.0/pango/pango-font.h' l='377'>/**
+ * PANGO_IS_FONT_FAMILY:
+ * @object: a #GObject.
+ *
+ * Returns: %TRUE if @object is a #PangoFontFamily.
+ */</doc>

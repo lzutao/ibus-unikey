@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtklabel.h' l='150' type='void gtk_label_set_pattern(GtkLabel * label, const gchar * pattern)'/>

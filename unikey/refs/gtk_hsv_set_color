@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkhsv.h' l='83' type='void gtk_hsv_set_color(GtkHSV * hsv, double h, double s, double v)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkinput.h' l='159' type='void gdk_device_set_axis_use(GdkDevice * device, guint index_, GdkAxisUse use)'/>

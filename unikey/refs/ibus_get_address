@@ -1,0 +1,15 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='215' type='const gchar * ibus_get_address()'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='201'>/**
+ * ibus_get_address:
+ *
+ * Return the D-Bus address of IBus.
+ * It will find the address from following source:
+ * &lt;orderedlist&gt;
+ *    &lt;listitem&gt;&lt;para&gt;Environment variable IBUS_ADDRESS&lt;/para&gt;&lt;/listitem&gt;
+ *    &lt;listitem&gt;&lt;para&gt;Socket file under ~/.config/ibus/bus/&lt;/para&gt;&lt;/listitem&gt;
+ * &lt;/orderedlist&gt;
+ *
+ * Returns: D-Bus address of IBus. %NULL for not found.
+ *
+ * See also: ibus_write_address().
+ */</doc>

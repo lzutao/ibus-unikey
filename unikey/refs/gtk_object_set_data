@@ -1,0 +1,13 @@
+<dec f='include/gtk-2.0/gtk/gtkobject.h' l='181' type='void gtk_object_set_data(GtkObject * object, const gchar * key, gpointer data)'/>
+<doc f='include/gtk-2.0/gtk/gtkobject.h' l='169'>/* Set &apos;data&apos; to the &quot;object_data&quot; field of the object. The
+ *  data is indexed by the &quot;key&quot;. If there is already data
+ *  associated with &quot;key&quot; then the new data will replace it.
+ *  If &apos;data&apos; is NULL then this call is equivalent to
+ *  &apos;gtk_object_remove_data&apos;.
+ *  The gtk_object_set_data_full variant acts just the same,
+ *  but takes an additional argument which is a function to
+ *  be called when the data is removed.
+ *  `gtk_object_remove_data&apos; is equivalent to the above,
+ *  where &apos;data&apos; is NULL
+ *  `gtk_object_get_data&apos; gets the data associated with &quot;key&quot;.
+ */</doc>

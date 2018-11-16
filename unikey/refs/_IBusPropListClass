@@ -1,0 +1,9 @@
+<def f='include/ibus-1.0/ibusproplist.h' l='100' ll='102'/>
+<size>264</size>
+<doc f='include/ibus-1.0/ibusproplist.h' l='94'>/**
+ * IBusPropListClass:
+ * @parent: The parent class.
+ *
+ * Class structure for #IBusPropList.
+ */</doc>
+<mbr r='_IBusPropListClass::parent' o='0' t='IBusSerializableClass'/>

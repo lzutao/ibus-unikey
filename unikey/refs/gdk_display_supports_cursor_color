@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdisplay.h' l='204' type='gboolean gdk_display_supports_cursor_color(GdkDisplay * display)'/>

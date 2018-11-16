@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkctree.h' l='200' type='GNode * gtk_ctree_export_to_gnode(GtkCTree * ctree, GNode * parent, GNode * sibling, GtkCTreeNode * node, GtkCTreeGNodeFunc func, gpointer data)'/>

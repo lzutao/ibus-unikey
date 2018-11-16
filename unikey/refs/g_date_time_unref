@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/glib/gdatetime.h' l='100' type='void g_date_time_unref(GDateTime * datetime)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='45' u='c' c='_ZL30glib_autoptr_cleanup_GDateTimePP10_GDateTime'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='45' u='r' c='_ZL34glib_listautoptr_cleanup_GDateTimePP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='45' u='r' c='_ZL35glib_slistautoptr_cleanup_GDateTimePP7_GSList'/>

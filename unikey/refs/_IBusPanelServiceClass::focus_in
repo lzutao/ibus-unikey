@@ -1,0 +1,3 @@
+<dec f='include/ibus-1.0/ibuspanelservice.h' l='79' type='void (*)(IBusPanelService *, const gchar *)'/>
+<offset>2112</offset>
+<doc f='include/ibus-1.0/ibuspanelservice.h' l='78'>/* class members */</doc>

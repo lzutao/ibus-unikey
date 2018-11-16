@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='166'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='158'>/**
+ * GTK_WIDGET_STATE:
+ * @wid: a #GtkWidget.
+ *
+ * Returns the current state of the widget, as a #GtkStateType.
+ *
+ * Deprecated: 2.20: Use gtk_widget_get_state() instead.
+ */</doc>

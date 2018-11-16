@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkenumtypes.h' l='84' type='GType gdk_prop_mode_get_type()'/>
+<doc f='include/gtk-2.0/gdk/gdkenumtypes.h' l='83'>/* enumerations from &quot;gdkproperty.h&quot; */</doc>

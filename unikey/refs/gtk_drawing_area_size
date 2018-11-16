@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkdrawingarea.h' l='74' type='void gtk_drawing_area_size(GtkDrawingArea * darea, gint width, gint height)'/>

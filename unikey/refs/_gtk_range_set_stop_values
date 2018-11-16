@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrange.h' l='205' type='void _gtk_range_set_stop_values(GtkRange * range, gdouble * values, gint n_values)'/>

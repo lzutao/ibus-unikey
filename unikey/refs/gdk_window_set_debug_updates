@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='688' type='void gdk_window_set_debug_updates(gboolean setting)'/>
+<doc f='include/gtk-2.0/gdk/gdkwindow.h' l='687'>/* Enable/disable flicker, so you can tell if your code is inefficient. */</doc>

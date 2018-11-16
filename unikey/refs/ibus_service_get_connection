@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusservice.h' l='193' type='GDBusConnection * ibus_service_get_connection(IBusService * service)'/>
+<doc f='include/ibus-1.0/ibusservice.h' l='185'>/**
+ * ibus_service_get_connection:
+ * @service: An IBusService.
+ *
+ * Gets a connections.
+ *
+ * Returns: (transfer none): A #GDBusConnection of an #IBusService instance.
+ */</doc>

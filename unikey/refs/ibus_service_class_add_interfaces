@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusservice.h' l='250' type='gboolean ibus_service_class_add_interfaces(IBusServiceClass * klass, const gchar * xml_data)'/>
+<doc f='include/ibus-1.0/ibusservice.h' l='240'>/**
+ * ibus_service_class_add_interfaces:
+ * @klass: An IBusServiceClass.
+ * @xml_data: The introspection xml data.
+ *
+ * Set the interface introspection information with the service class.
+ *
+ * Returns: %TRUE if @xml_data is valid and succeeded to be added;
+ *          %FALSE otherwise.
+ */</doc>

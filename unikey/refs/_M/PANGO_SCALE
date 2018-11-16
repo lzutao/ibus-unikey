@@ -1,0 +1,10 @@
+<dec f='include/pango-1.0/pango/pango-types.h' l='92'/>
+<doc f='include/pango-1.0/pango/pango-types.h' l='83'>/**
+ * PANGO_PIXELS_CEIL:
+ * @d: a dimension in Pango units.
+ *
+ * Converts a dimension to device units by ceiling.
+ *
+ * Return value: ceiled dimension in device units.
+ * Since: 1.14
+ */</doc>

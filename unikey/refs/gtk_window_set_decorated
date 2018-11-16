@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='275' type='void gtk_window_set_decorated(GtkWindow * window, gboolean setting)'/>

@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='503' type='void * cairo_get_user_data(cairo_t * cr, const cairo_user_data_key_t * key)'/>

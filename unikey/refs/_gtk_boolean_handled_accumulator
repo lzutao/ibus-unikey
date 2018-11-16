@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmain.h' l='221' type='gboolean _gtk_boolean_handled_accumulator(GSignalInvocationHint * ihint, GValue * return_accu, const GValue * handler_return, gpointer dummy)'/>

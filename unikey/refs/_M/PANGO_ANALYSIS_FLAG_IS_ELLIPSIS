@@ -1,0 +1,9 @@
+<dec f='include/pango-1.0/pango/pango-item.h' l='50'/>
+<doc f='include/pango-1.0/pango/pango-item.h' l='42'>/**
+ * PANGO_ANALYSIS_FLAG_IS_ELLIPSIS:
+ *
+ * This flag is used to mark runs that hold ellipsized text,
+ * in an ellipsized layout.
+ *
+ * Since: 1.36.7
+ */</doc>

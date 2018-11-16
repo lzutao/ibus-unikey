@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='216' type='GType gtk_image_type_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='215'>/* enumerations from &quot;gtkimage.h&quot; */</doc>

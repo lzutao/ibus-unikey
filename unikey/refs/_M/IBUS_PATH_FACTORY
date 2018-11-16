@@ -1,0 +1,6 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='94'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='89'>/**
+ * IBUS_PATH_FACTORY:
+ *
+ * D-Bus path for IBus factory.
+ */</doc>

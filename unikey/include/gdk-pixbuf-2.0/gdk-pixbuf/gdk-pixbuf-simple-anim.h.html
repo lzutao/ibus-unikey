@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gdk-pixbuf-simple-anim.h source code [include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-simple-anim.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-simple-anim.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gdk-pixbuf-2.0</a>/<a href='./'>gdk-pixbuf</a>/<a href='gdk-pixbuf-simple-anim.h.html'>gdk-pixbuf-simple-anim.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* -*- Mode: C; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 8 -*- */</i></td></tr>
+<tr><th id="2">2</th><td><i>/* GdkPixbuf library - Simple frame-based animations</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 2004 Dom Lachowicz</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * Authors: Dom Lachowicz &lt;cinamod@hotmail.com&gt;</i></td></tr>
+<tr><th id="7">7</th><td><i> *</i></td></tr>
+<tr><th id="8">8</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="9">9</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="10">10</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="11">11</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="12">12</th><td><i> *</i></td></tr>
+<tr><th id="13">13</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="14">14</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="15">15</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="16">16</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="17">17</th><td><i> *</i></td></tr>
+<tr><th id="18">18</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="19">19</th><td><i> * License along with this library; if not, see &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="22">ifndef</span> <span class="macro" data-ref="_M/GDK_PIXBUF_SIMPLE_ANIM_H">GDK_PIXBUF_SIMPLE_ANIM_H</span></u></td></tr>
+<tr><th id="23">23</th><td><u>#define <dfn class="macro" id="_M/GDK_PIXBUF_SIMPLE_ANIM_H" data-ref="_M/GDK_PIXBUF_SIMPLE_ANIM_H">GDK_PIXBUF_SIMPLE_ANIM_H</dfn></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="25">if</span> defined(<span class="macro" data-ref="_M/GDK_PIXBUF_DISABLE_SINGLE_INCLUDES">GDK_PIXBUF_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gdk-pixbuf.h.html#27" data-ref="_M/GDK_PIXBUF_H_INSIDE">GDK_PIXBUF_H_INSIDE</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GDK_PIXBUF_COMPILATION">GDK_PIXBUF_COMPILATION</span>)</u></td></tr>
+<tr><th id="26">26</th><td><u>#error "Only &lt;gdk-pixbuf/gdk-pixbuf.h&gt; can be included directly."</u></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="25">endif</span></u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><u>#include <a href="gdk-pixbuf-animation.h.html">&lt;gdk-pixbuf/gdk-pixbuf-animation.h&gt;</a></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> * GdkPixbufSimpleAnim:</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> * </i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * An opaque struct representing a simple animation.</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="38">38</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_GdkPixbufSimpleAnim" title='_GdkPixbufSimpleAnim' data-ref="_GdkPixbufSimpleAnim"><a class="type" href="#_GdkPixbufSimpleAnim" title='_GdkPixbufSimpleAnim' data-ref="_GdkPixbufSimpleAnim">_GdkPixbufSimpleAnim</a></dfn> <dfn class="typedef" id="GdkPixbufSimpleAnim" title='GdkPixbufSimpleAnim' data-type='struct _GdkPixbufSimpleAnim' data-ref="GdkPixbufSimpleAnim">GdkPixbufSimpleAnim</dfn>;</td></tr>
+<tr><th id="39">39</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_GdkPixbufSimpleAnimClass" title='_GdkPixbufSimpleAnimClass' data-ref="_GdkPixbufSimpleAnimClass"><a class="type" href="#_GdkPixbufSimpleAnimClass" title='_GdkPixbufSimpleAnimClass' data-ref="_GdkPixbufSimpleAnimClass">_GdkPixbufSimpleAnimClass</a></dfn> <dfn class="typedef" id="GdkPixbufSimpleAnimClass" title='GdkPixbufSimpleAnimClass' data-type='struct _GdkPixbufSimpleAnimClass' data-ref="GdkPixbufSimpleAnimClass">GdkPixbufSimpleAnimClass</dfn>;</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><u>#define <dfn class="macro" id="_M/GDK_TYPE_PIXBUF_SIMPLE_ANIM" data-ref="_M/GDK_TYPE_PIXBUF_SIMPLE_ANIM">GDK_TYPE_PIXBUF_SIMPLE_ANIM</dfn>              (gdk_pixbuf_simple_anim_get_type ())</u></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/GDK_PIXBUF_SIMPLE_ANIM" data-ref="_M/GDK_PIXBUF_SIMPLE_ANIM">GDK_PIXBUF_SIMPLE_ANIM</dfn>(object)           (G_TYPE_CHECK_INSTANCE_CAST ((object), GDK_TYPE_PIXBUF_SIMPLE_ANIM, GdkPixbufSimpleAnim))</u></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/GDK_IS_PIXBUF_SIMPLE_ANIM" data-ref="_M/GDK_IS_PIXBUF_SIMPLE_ANIM">GDK_IS_PIXBUF_SIMPLE_ANIM</dfn>(object)        (G_TYPE_CHECK_INSTANCE_TYPE ((object), GDK_TYPE_PIXBUF_SIMPLE_ANIM))</u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><u>#define <dfn class="macro" id="_M/GDK_PIXBUF_SIMPLE_ANIM_CLASS" data-ref="_M/GDK_PIXBUF_SIMPLE_ANIM_CLASS">GDK_PIXBUF_SIMPLE_ANIM_CLASS</dfn>(klass)      (G_TYPE_CHECK_CLASS_CAST ((klass), GDK_TYPE_PIXBUF_SIMPLE_ANIM, GdkPixbufSimpleAnimClass))</u></td></tr>
+<tr><th id="46">46</th><td><u>#define <dfn class="macro" id="_M/GDK_IS_PIXBUF_SIMPLE_ANIM_CLASS" data-ref="_M/GDK_IS_PIXBUF_SIMPLE_ANIM_CLASS">GDK_IS_PIXBUF_SIMPLE_ANIM_CLASS</dfn>(klass)   (G_TYPE_CHECK_CLASS_TYPE ((klass), GDK_TYPE_PIXBUF_SIMPLE_ANIM))</u></td></tr>
+<tr><th id="47">47</th><td><u>#define <dfn class="macro" id="_M/GDK_PIXBUF_SIMPLE_ANIM_GET_CLASS" data-ref="_M/GDK_PIXBUF_SIMPLE_ANIM_GET_CLASS">GDK_PIXBUF_SIMPLE_ANIM_GET_CLASS</dfn>(obj)    (G_TYPE_INSTANCE_GET_CLASS ((obj), GDK_TYPE_PIXBUF_SIMPLE_ANIM, GdkPixbufSimpleAnimClass))</u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="50">50</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a> <dfn class="decl" id="gdk_pixbuf_simple_anim_get_type" title='gdk_pixbuf_simple_anim_get_type' data-ref="gdk_pixbuf_simple_anim_get_type">gdk_pixbuf_simple_anim_get_type</dfn> (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="51">51</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="52">52</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a> <dfn class="decl" id="gdk_pixbuf_simple_anim_iter_get_type" title='gdk_pixbuf_simple_anim_iter_get_type' data-ref="gdk_pixbuf_simple_anim_iter_get_type">gdk_pixbuf_simple_anim_iter_get_type</dfn> (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#406" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_8">GDK_PIXBUF_AVAILABLE_IN_2_8</a></td></tr>
+<tr><th id="55">55</th><td><a class="typedef" href="#GdkPixbufSimpleAnim" title='GdkPixbufSimpleAnim' data-type='struct _GdkPixbufSimpleAnim' data-ref="GdkPixbufSimpleAnim">GdkPixbufSimpleAnim</a> *<dfn class="decl" id="gdk_pixbuf_simple_anim_new" title='gdk_pixbuf_simple_anim_new' data-ref="gdk_pixbuf_simple_anim_new">gdk_pixbuf_simple_anim_new</dfn>           (<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>   <dfn class="local col5 decl" id="13985width" title='width' data-type='gint' data-ref="13985width">width</dfn>, </td></tr>
+<tr><th id="56">56</th><td>                                                           <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>   <dfn class="local col6 decl" id="13986height" title='height' data-type='gint' data-ref="13986height">height</dfn>,</td></tr>
+<tr><th id="57">57</th><td>                                                           <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gfloat" title='gfloat' data-type='float' data-ref="gfloat">gfloat</a> <dfn class="local col7 decl" id="13987rate" title='rate' data-type='gfloat' data-ref="13987rate">rate</dfn>);</td></tr>
+<tr><th id="58">58</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#406" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_2_8">GDK_PIXBUF_AVAILABLE_IN_2_8</a></td></tr>
+<tr><th id="59">59</th><td><em>void</em>                 <dfn class="decl" id="gdk_pixbuf_simple_anim_add_frame" title='gdk_pixbuf_simple_anim_add_frame' data-ref="gdk_pixbuf_simple_anim_add_frame">gdk_pixbuf_simple_anim_add_frame</dfn>     (<a class="typedef" href="#GdkPixbufSimpleAnim" title='GdkPixbufSimpleAnim' data-type='struct _GdkPixbufSimpleAnim' data-ref="GdkPixbufSimpleAnim">GdkPixbufSimpleAnim</a> *<dfn class="local col8 decl" id="13988animation" title='animation' data-type='GdkPixbufSimpleAnim *' data-ref="13988animation">animation</dfn>,</td></tr>
+<tr><th id="60">60</th><td>                                                           <a class="typedef" href="gdk-pixbuf-core.h.html#GdkPixbuf" title='GdkPixbuf' data-type='struct _GdkPixbuf' data-ref="GdkPixbuf">GdkPixbuf</a>           *<dfn class="local col9 decl" id="13989pixbuf" title='pixbuf' data-type='GdkPixbuf *' data-ref="13989pixbuf">pixbuf</dfn>);</td></tr>
+<tr><th id="61">61</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="62">62</th><td><em>void</em>                 <dfn class="decl" id="gdk_pixbuf_simple_anim_set_loop" title='gdk_pixbuf_simple_anim_set_loop' data-ref="gdk_pixbuf_simple_anim_set_loop">gdk_pixbuf_simple_anim_set_loop</dfn>      (<a class="typedef" href="#GdkPixbufSimpleAnim" title='GdkPixbufSimpleAnim' data-type='struct _GdkPixbufSimpleAnim' data-ref="GdkPixbufSimpleAnim">GdkPixbufSimpleAnim</a> *<dfn class="local col0 decl" id="13990animation" title='animation' data-type='GdkPixbufSimpleAnim *' data-ref="13990animation">animation</dfn>,</td></tr>
+<tr><th id="63">63</th><td>                                                           <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>             <dfn class="local col1 decl" id="13991loop" title='loop' data-type='gboolean' data-ref="13991loop">loop</dfn>);</td></tr>
+<tr><th id="64">64</th><td><a class="macro" href="gdk-pixbuf-macros.h.html#315" title="extern" data-ref="_M/GDK_PIXBUF_AVAILABLE_IN_ALL">GDK_PIXBUF_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="65">65</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>             <dfn class="decl" id="gdk_pixbuf_simple_anim_get_loop" title='gdk_pixbuf_simple_anim_get_loop' data-ref="gdk_pixbuf_simple_anim_get_loop">gdk_pixbuf_simple_anim_get_loop</dfn>      (<a class="typedef" href="#GdkPixbufSimpleAnim" title='GdkPixbufSimpleAnim' data-type='struct _GdkPixbufSimpleAnim' data-ref="GdkPixbufSimpleAnim">GdkPixbufSimpleAnim</a> *<dfn class="local col2 decl" id="13992animation" title='animation' data-type='GdkPixbufSimpleAnim *' data-ref="13992animation">animation</dfn>);</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><u>#<span data-ppcond="22">endif</span>  /* GDK_PIXBUF_SIMPLE_ANIM_H */</u></td></tr>
+<tr><th id="71">71</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

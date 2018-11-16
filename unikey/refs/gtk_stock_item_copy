@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='63' type='GtkStockItem * gtk_stock_item_copy(const GtkStockItem * item)'/>

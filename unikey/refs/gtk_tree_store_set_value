@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktreestore.h' l='87' type='void gtk_tree_store_set_value(GtkTreeStore * tree_store, GtkTreeIter * iter, gint column, GValue * value)'/>
+<doc f='include/gtk-2.0/gtk/gtktreestore.h' l='85'>/* NOTE: use gtk_tree_model_get to get values from a GtkTreeStore */</doc>

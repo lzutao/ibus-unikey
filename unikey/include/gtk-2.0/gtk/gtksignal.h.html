@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gtksignal.h source code [include/gtk-2.0/gtk/gtksignal.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gtk/gtksignal.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gtk</a>/<a href='gtksignal.h.html'>gtksignal.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GTK - The GIMP Toolkit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><i>/*</i></td></tr>
+<tr><th id="21">21</th><td><i> * Modified by the GTK+ Team and others 1997-2000.  See the AUTHORS</i></td></tr>
+<tr><th id="22">22</th><td><i> * file for a list of people on the GTK+ Team.  See the ChangeLog</i></td></tr>
+<tr><th id="23">23</th><td><i> * files for a list of changes.  These files are distributed with</i></td></tr>
+<tr><th id="24">24</th><td><i> * GTK+ at ftp://ftp.gtk.org/pub/gtk/.</i></td></tr>
+<tr><th id="25">25</th><td><i> */</i></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/GTK_DISABLE_DEPRECATED">GTK_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><u>#<span data-ppcond="29">ifndef</span> <span class="macro" data-ref="_M/__GTK_SIGNAL_H__">__GTK_SIGNAL_H__</span></u></td></tr>
+<tr><th id="30">30</th><td><u>#define <dfn class="macro" id="_M/__GTK_SIGNAL_H__" data-ref="_M/__GTK_SIGNAL_H__">__GTK_SIGNAL_H__</dfn></u></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><u>#include <a href="gtkenums.h.html">&lt;gtk/gtkenums.h&gt;</a></u></td></tr>
+<tr><th id="33">33</th><td><u>#include <a href="gtktypeutils.h.html">&lt;gtk/gtktypeutils.h&gt;</a></u></td></tr>
+<tr><th id="34">34</th><td><u>#include <a href="gtkobject.h.html">&lt;gtk/gtkobject.h&gt;</a></u></td></tr>
+<tr><th id="35">35</th><td><u>#include <a href="gtkmarshal.h.html">&lt;gtk/gtkmarshal.h&gt;</a></u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_default_marshaller" data-ref="_M/gtk_signal_default_marshaller">gtk_signal_default_marshaller</dfn>	g_cclosure_marshal_VOID__VOID</u></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><i>/* --- compat defines --- */</i></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/GTK_SIGNAL_OFFSET" data-ref="_M/GTK_SIGNAL_OFFSET">GTK_SIGNAL_OFFSET</dfn>	                      G_STRUCT_OFFSET</u></td></tr>
+<tr><th id="44">44</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_lookup" data-ref="_M/gtk_signal_lookup">gtk_signal_lookup</dfn>(name,object_type)	                                       \</u></td></tr>
+<tr><th id="45">45</th><td><u>   g_signal_lookup ((name), (object_type))</u></td></tr>
+<tr><th id="46">46</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_name" data-ref="_M/gtk_signal_name">gtk_signal_name</dfn>(signal_id)                                                     \</u></td></tr>
+<tr><th id="47">47</th><td><u>   g_signal_name (signal_id)</u></td></tr>
+<tr><th id="48">48</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_emit_stop" data-ref="_M/gtk_signal_emit_stop">gtk_signal_emit_stop</dfn>(object,signal_id)                                         \</u></td></tr>
+<tr><th id="49">49</th><td><u>   g_signal_stop_emission ((object), (signal_id), 0)</u></td></tr>
+<tr><th id="50">50</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_connect" data-ref="_M/gtk_signal_connect">gtk_signal_connect</dfn>(object,name,func,func_data)                                 \</u></td></tr>
+<tr><th id="51">51</th><td><u>   gtk_signal_connect_full ((object), (name), (func), NULL, (func_data), NULL, 0, 0)</u></td></tr>
+<tr><th id="52">52</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_connect_after" data-ref="_M/gtk_signal_connect_after">gtk_signal_connect_after</dfn>(object,name,func,func_data)                           \</u></td></tr>
+<tr><th id="53">53</th><td><u>   gtk_signal_connect_full ((object), (name), (func), NULL, (func_data), NULL, 0, 1)</u></td></tr>
+<tr><th id="54">54</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_connect_object" data-ref="_M/gtk_signal_connect_object">gtk_signal_connect_object</dfn>(object,name,func,slot_object)                        \</u></td></tr>
+<tr><th id="55">55</th><td><u>   gtk_signal_connect_full ((object), (name), (func), NULL, (slot_object), NULL, 1, 0)</u></td></tr>
+<tr><th id="56">56</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_connect_object_after" data-ref="_M/gtk_signal_connect_object_after">gtk_signal_connect_object_after</dfn>(object,name,func,slot_object)                  \</u></td></tr>
+<tr><th id="57">57</th><td><u>   gtk_signal_connect_full ((object), (name), (func), NULL, (slot_object), NULL, 1, 1)</u></td></tr>
+<tr><th id="58">58</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_disconnect" data-ref="_M/gtk_signal_disconnect">gtk_signal_disconnect</dfn>(object,handler_id)                                       \</u></td></tr>
+<tr><th id="59">59</th><td><u>   g_signal_handler_disconnect ((object), (handler_id))</u></td></tr>
+<tr><th id="60">60</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_handler_block" data-ref="_M/gtk_signal_handler_block">gtk_signal_handler_block</dfn>(object,handler_id)                                    \</u></td></tr>
+<tr><th id="61">61</th><td><u>   g_signal_handler_block ((object), (handler_id))</u></td></tr>
+<tr><th id="62">62</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_handler_unblock" data-ref="_M/gtk_signal_handler_unblock">gtk_signal_handler_unblock</dfn>(object,handler_id)                                  \</u></td></tr>
+<tr><th id="63">63</th><td><u>   g_signal_handler_unblock ((object), (handler_id))</u></td></tr>
+<tr><th id="64">64</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_disconnect_by_func" data-ref="_M/gtk_signal_disconnect_by_func">gtk_signal_disconnect_by_func</dfn>(object,func,data)	                               \</u></td></tr>
+<tr><th id="65">65</th><td><u>   gtk_signal_compat_matched ((object), (func), (data),                                \</u></td></tr>
+<tr><th id="66">66</th><td><u>			      (GSignalMatchType)(G_SIGNAL_MATCH_FUNC |                 \</u></td></tr>
+<tr><th id="67">67</th><td><u>						 G_SIGNAL_MATCH_DATA), 0)</u></td></tr>
+<tr><th id="68">68</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_disconnect_by_data" data-ref="_M/gtk_signal_disconnect_by_data">gtk_signal_disconnect_by_data</dfn>(object,data)                                     \</u></td></tr>
+<tr><th id="69">69</th><td><u>   gtk_signal_compat_matched ((object), 0, (data), G_SIGNAL_MATCH_DATA, 0)</u></td></tr>
+<tr><th id="70">70</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_handler_block_by_func" data-ref="_M/gtk_signal_handler_block_by_func">gtk_signal_handler_block_by_func</dfn>(object,func,data)                             \</u></td></tr>
+<tr><th id="71">71</th><td><u>   gtk_signal_compat_matched ((object), (func), (data),                                \</u></td></tr>
+<tr><th id="72">72</th><td><u>			      (GSignalMatchType)(G_SIGNAL_MATCH_FUNC |                 \</u></td></tr>
+<tr><th id="73">73</th><td><u>						 G_SIGNAL_MATCH_DATA), 1)</u></td></tr>
+<tr><th id="74">74</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_handler_block_by_data" data-ref="_M/gtk_signal_handler_block_by_data">gtk_signal_handler_block_by_data</dfn>(object,data)                                  \</u></td></tr>
+<tr><th id="75">75</th><td><u>   gtk_signal_compat_matched ((object), 0, (data), G_SIGNAL_MATCH_DATA, 1)</u></td></tr>
+<tr><th id="76">76</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_handler_unblock_by_func" data-ref="_M/gtk_signal_handler_unblock_by_func">gtk_signal_handler_unblock_by_func</dfn>(object,func,data)                           \</u></td></tr>
+<tr><th id="77">77</th><td><u>   gtk_signal_compat_matched ((object), (func), (data),                                \</u></td></tr>
+<tr><th id="78">78</th><td><u>			      (GSignalMatchType)(G_SIGNAL_MATCH_FUNC |                 \</u></td></tr>
+<tr><th id="79">79</th><td><u>						 G_SIGNAL_MATCH_DATA), 2)</u></td></tr>
+<tr><th id="80">80</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_handler_unblock_by_data" data-ref="_M/gtk_signal_handler_unblock_by_data">gtk_signal_handler_unblock_by_data</dfn>(object,data)                                \</u></td></tr>
+<tr><th id="81">81</th><td><u>   gtk_signal_compat_matched ((object), 0, (data), G_SIGNAL_MATCH_DATA, 2)</u></td></tr>
+<tr><th id="82">82</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_handler_pending" data-ref="_M/gtk_signal_handler_pending">gtk_signal_handler_pending</dfn>(object,signal_id,may_be_blocked)                    \</u></td></tr>
+<tr><th id="83">83</th><td><u>   g_signal_has_handler_pending ((object), (signal_id), 0, (may_be_blocked))</u></td></tr>
+<tr><th id="84">84</th><td><u>#define	<dfn class="macro" id="_M/gtk_signal_handler_pending_by_func" data-ref="_M/gtk_signal_handler_pending_by_func">gtk_signal_handler_pending_by_func</dfn>(object,signal_id,may_be_blocked,func,data)  \</u></td></tr>
+<tr><th id="85">85</th><td><u>   (g_signal_handler_find ((object),                                                             \</u></td></tr>
+<tr><th id="86">86</th><td><u>			   (GSignalMatchType)(G_SIGNAL_MATCH_ID |                                \</u></td></tr>
+<tr><th id="87">87</th><td><u>                                              G_SIGNAL_MATCH_FUNC |                              \</u></td></tr>
+<tr><th id="88">88</th><td><u>                                              G_SIGNAL_MATCH_DATA |                              \</u></td></tr>
+<tr><th id="89">89</th><td><u>                                              ((may_be_blocked) ? 0 : G_SIGNAL_MATCH_UNBLOCKED)),\</u></td></tr>
+<tr><th id="90">90</th><td><u>                           (signal_id), 0, 0, (func), (data)) != 0)</u></td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td><i>/* --- compat functions --- */</i></td></tr>
+<tr><th id="94">94</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>	<dfn class="decl" id="gtk_signal_newv" title='gtk_signal_newv' data-ref="gtk_signal_newv">gtk_signal_newv</dfn>				(<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>	    *<dfn class="local col6 decl" id="19176name" title='name' data-type='const gchar *' data-ref="19176name">name</dfn>,</td></tr>
+<tr><th id="95">95</th><td>						 <a class="typedef" href="gtkenums.h.html#GtkSignalRunType" title='GtkSignalRunType' data-type='enum GtkSignalRunType' data-ref="GtkSignalRunType">GtkSignalRunType</a>    <dfn class="local col7 decl" id="19177signal_flags" title='signal_flags' data-type='GtkSignalRunType' data-ref="19177signal_flags">signal_flags</dfn>,</td></tr>
+<tr><th id="96">96</th><td>						 <a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>               <dfn class="local col8 decl" id="19178object_type" title='object_type' data-type='GType' data-ref="19178object_type">object_type</dfn>,</td></tr>
+<tr><th id="97">97</th><td>						 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>		     <dfn class="local col9 decl" id="19179function_offset" title='function_offset' data-type='guint' data-ref="19179function_offset">function_offset</dfn>,</td></tr>
+<tr><th id="98">98</th><td>						 <a class="typedef" href="../../glib-2.0/gobject/gsignal.h.html#GSignalCMarshaller" title='GSignalCMarshaller' data-type='GClosureMarshal' data-ref="GSignalCMarshaller">GSignalCMarshaller</a>  <dfn class="local col0 decl" id="19180marshaller" title='marshaller' data-type='GSignalCMarshaller' data-ref="19180marshaller">marshaller</dfn>,</td></tr>
+<tr><th id="99">99</th><td>						 <a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>               <dfn class="local col1 decl" id="19181return_val" title='return_val' data-type='GType' data-ref="19181return_val">return_val</dfn>,</td></tr>
+<tr><th id="100">100</th><td>						 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>		     <dfn class="local col2 decl" id="19182n_args" title='n_args' data-type='guint' data-ref="19182n_args">n_args</dfn>,</td></tr>
+<tr><th id="101">101</th><td>						 <a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>              *<dfn class="local col3 decl" id="19183args" title='args' data-type='GType *' data-ref="19183args">args</dfn>);</td></tr>
+<tr><th id="102">102</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>	<dfn class="decl" id="gtk_signal_new" title='gtk_signal_new' data-ref="gtk_signal_new">gtk_signal_new</dfn>				(<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>	    *<dfn class="local col4 decl" id="19184name" title='name' data-type='const gchar *' data-ref="19184name">name</dfn>,</td></tr>
+<tr><th id="103">103</th><td>						 <a class="typedef" href="gtkenums.h.html#GtkSignalRunType" title='GtkSignalRunType' data-type='enum GtkSignalRunType' data-ref="GtkSignalRunType">GtkSignalRunType</a>    <dfn class="local col5 decl" id="19185signal_flags" title='signal_flags' data-type='GtkSignalRunType' data-ref="19185signal_flags">signal_flags</dfn>,</td></tr>
+<tr><th id="104">104</th><td>						 <a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>               <dfn class="local col6 decl" id="19186object_type" title='object_type' data-type='GType' data-ref="19186object_type">object_type</dfn>,</td></tr>
+<tr><th id="105">105</th><td>						 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>		     <dfn class="local col7 decl" id="19187function_offset" title='function_offset' data-type='guint' data-ref="19187function_offset">function_offset</dfn>,</td></tr>
+<tr><th id="106">106</th><td>						 <a class="typedef" href="../../glib-2.0/gobject/gsignal.h.html#GSignalCMarshaller" title='GSignalCMarshaller' data-type='GClosureMarshal' data-ref="GSignalCMarshaller">GSignalCMarshaller</a>  <dfn class="local col8 decl" id="19188marshaller" title='marshaller' data-type='GSignalCMarshaller' data-ref="19188marshaller">marshaller</dfn>,</td></tr>
+<tr><th id="107">107</th><td>						 <a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>               <dfn class="local col9 decl" id="19189return_val" title='return_val' data-type='GType' data-ref="19189return_val">return_val</dfn>,</td></tr>
+<tr><th id="108">108</th><td>						 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>		     <dfn class="local col0 decl" id="19190n_args" title='n_args' data-type='guint' data-ref="19190n_args">n_args</dfn>,</td></tr>
+<tr><th id="109">109</th><td>						 ...);</td></tr>
+<tr><th id="110">110</th><td><em>void</em>	<dfn class="decl" id="gtk_signal_emit_stop_by_name" title='gtk_signal_emit_stop_by_name' data-ref="gtk_signal_emit_stop_by_name">gtk_signal_emit_stop_by_name</dfn>		(<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	    *<dfn class="local col1 decl" id="19191object" title='object' data-type='GtkObject *' data-ref="19191object">object</dfn>,</td></tr>
+<tr><th id="111">111</th><td>						 <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>	    *<dfn class="local col2 decl" id="19192name" title='name' data-type='const gchar *' data-ref="19192name">name</dfn>);</td></tr>
+<tr><th id="112">112</th><td><em>void</em>	<dfn class="decl" id="gtk_signal_connect_object_while_alive" title='gtk_signal_connect_object_while_alive' data-ref="gtk_signal_connect_object_while_alive">gtk_signal_connect_object_while_alive</dfn>	(<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	    *<dfn class="local col3 decl" id="19193object" title='object' data-type='GtkObject *' data-ref="19193object">object</dfn>,</td></tr>
+<tr><th id="113">113</th><td>						 <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>        *<dfn class="local col4 decl" id="19194name" title='name' data-type='const gchar *' data-ref="19194name">name</dfn>,</td></tr>
+<tr><th id="114">114</th><td>						 <a class="typedef" href="../../glib-2.0/gobject/gclosure.h.html#GCallback" title='GCallback' data-type='void (*)()' data-ref="GCallback">GCallback</a>	     <dfn class="local col5 decl" id="19195func" title='func' data-type='GCallback' data-ref="19195func">func</dfn>,</td></tr>
+<tr><th id="115">115</th><td>						 <a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	    *<dfn class="local col6 decl" id="19196alive_object" title='alive_object' data-type='GtkObject *' data-ref="19196alive_object">alive_object</dfn>);</td></tr>
+<tr><th id="116">116</th><td><em>void</em>	<dfn class="decl" id="gtk_signal_connect_while_alive" title='gtk_signal_connect_while_alive' data-ref="gtk_signal_connect_while_alive">gtk_signal_connect_while_alive</dfn>		(<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	    *<dfn class="local col7 decl" id="19197object" title='object' data-type='GtkObject *' data-ref="19197object">object</dfn>,</td></tr>
+<tr><th id="117">117</th><td>						 <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>        *<dfn class="local col8 decl" id="19198name" title='name' data-type='const gchar *' data-ref="19198name">name</dfn>,</td></tr>
+<tr><th id="118">118</th><td>						 <a class="typedef" href="../../glib-2.0/gobject/gclosure.h.html#GCallback" title='GCallback' data-type='void (*)()' data-ref="GCallback">GCallback</a>	     <dfn class="local col9 decl" id="19199func" title='func' data-type='GCallback' data-ref="19199func">func</dfn>,</td></tr>
+<tr><th id="119">119</th><td>						 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>	     <dfn class="local col0 decl" id="19200func_data" title='func_data' data-type='gpointer' data-ref="19200func_data">func_data</dfn>,</td></tr>
+<tr><th id="120">120</th><td>						 <a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	    *<dfn class="local col1 decl" id="19201alive_object" title='alive_object' data-type='GtkObject *' data-ref="19201alive_object">alive_object</dfn>);</td></tr>
+<tr><th id="121">121</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gulong" title='gulong' data-type='unsigned long' data-ref="gulong">gulong</a>	<dfn class="decl" id="gtk_signal_connect_full" title='gtk_signal_connect_full' data-ref="gtk_signal_connect_full">gtk_signal_connect_full</dfn>			(<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	    *<dfn class="local col2 decl" id="19202object" title='object' data-type='GtkObject *' data-ref="19202object">object</dfn>,</td></tr>
+<tr><th id="122">122</th><td>						 <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>	    *<dfn class="local col3 decl" id="19203name" title='name' data-type='const gchar *' data-ref="19203name">name</dfn>,</td></tr>
+<tr><th id="123">123</th><td>						 <a class="typedef" href="../../glib-2.0/gobject/gclosure.h.html#GCallback" title='GCallback' data-type='void (*)()' data-ref="GCallback">GCallback</a>	     <dfn class="local col4 decl" id="19204func" title='func' data-type='GCallback' data-ref="19204func">func</dfn>,</td></tr>
+<tr><th id="124">124</th><td>						 <a class="typedef" href="gtktypeutils.h.html#GtkCallbackMarshal" title='GtkCallbackMarshal' data-type='void (*)(GtkObject *, gpointer, guint, GtkArg *)' data-ref="GtkCallbackMarshal">GtkCallbackMarshal</a>  <dfn class="local col5 decl" id="19205unsupported" title='unsupported' data-type='GtkCallbackMarshal' data-ref="19205unsupported">unsupported</dfn>,</td></tr>
+<tr><th id="125">125</th><td>						 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>	     <dfn class="local col6 decl" id="19206data" title='data' data-type='gpointer' data-ref="19206data">data</dfn>,</td></tr>
+<tr><th id="126">126</th><td>						 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#GDestroyNotify" title='GDestroyNotify' data-type='void (*)(gpointer)' data-ref="GDestroyNotify">GDestroyNotify</a>      <dfn class="local col7 decl" id="19207destroy_func" title='destroy_func' data-type='GDestroyNotify' data-ref="19207destroy_func">destroy_func</dfn>,</td></tr>
+<tr><th id="127">127</th><td>						 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>		     <dfn class="local col8 decl" id="19208object_signal" title='object_signal' data-type='gint' data-ref="19208object_signal">object_signal</dfn>,</td></tr>
+<tr><th id="128">128</th><td>						 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>		     <dfn class="local col9 decl" id="19209after" title='after' data-type='gint' data-ref="19209after">after</dfn>);</td></tr>
+<tr><th id="129">129</th><td><em>void</em>	<dfn class="decl" id="gtk_signal_emitv" title='gtk_signal_emitv' data-ref="gtk_signal_emitv">gtk_signal_emitv</dfn>			(<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	    *<dfn class="local col0 decl" id="19210object" title='object' data-type='GtkObject *' data-ref="19210object">object</dfn>,</td></tr>
+<tr><th id="130">130</th><td>						 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>		     <dfn class="local col1 decl" id="19211signal_id" title='signal_id' data-type='guint' data-ref="19211signal_id">signal_id</dfn>,</td></tr>
+<tr><th id="131">131</th><td>						 <a class="typedef" href="gtktypeutils.h.html#GtkArg" title='GtkArg' data-type='struct _GtkArg' data-ref="GtkArg">GtkArg</a>		    *<dfn class="local col2 decl" id="19212args" title='args' data-type='GtkArg *' data-ref="19212args">args</dfn>);</td></tr>
+<tr><th id="132">132</th><td><em>void</em>	<dfn class="decl" id="gtk_signal_emit" title='gtk_signal_emit' data-ref="gtk_signal_emit">gtk_signal_emit</dfn>				(<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	    *<dfn class="local col3 decl" id="19213object" title='object' data-type='GtkObject *' data-ref="19213object">object</dfn>,</td></tr>
+<tr><th id="133">133</th><td>						 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>		     <dfn class="local col4 decl" id="19214signal_id" title='signal_id' data-type='guint' data-ref="19214signal_id">signal_id</dfn>,</td></tr>
+<tr><th id="134">134</th><td>						 ...);</td></tr>
+<tr><th id="135">135</th><td><em>void</em>	<dfn class="decl" id="gtk_signal_emit_by_name" title='gtk_signal_emit_by_name' data-ref="gtk_signal_emit_by_name">gtk_signal_emit_by_name</dfn>			(<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	    *<dfn class="local col5 decl" id="19215object" title='object' data-type='GtkObject *' data-ref="19215object">object</dfn>,</td></tr>
+<tr><th id="136">136</th><td>						 <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>	    *<dfn class="local col6 decl" id="19216name" title='name' data-type='const gchar *' data-ref="19216name">name</dfn>,</td></tr>
+<tr><th id="137">137</th><td>						 ...);</td></tr>
+<tr><th id="138">138</th><td><em>void</em>	<dfn class="decl" id="gtk_signal_emitv_by_name" title='gtk_signal_emitv_by_name' data-ref="gtk_signal_emitv_by_name">gtk_signal_emitv_by_name</dfn>		(<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	    *<dfn class="local col7 decl" id="19217object" title='object' data-type='GtkObject *' data-ref="19217object">object</dfn>,</td></tr>
+<tr><th id="139">139</th><td>						 <em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>	    *<dfn class="local col8 decl" id="19218name" title='name' data-type='const gchar *' data-ref="19218name">name</dfn>,</td></tr>
+<tr><th id="140">140</th><td>						 <a class="typedef" href="gtktypeutils.h.html#GtkArg" title='GtkArg' data-type='struct _GtkArg' data-ref="GtkArg">GtkArg</a>		    *<dfn class="local col9 decl" id="19219args" title='args' data-type='GtkArg *' data-ref="19219args">args</dfn>);</td></tr>
+<tr><th id="141">141</th><td><em>void</em>	<dfn class="decl" id="gtk_signal_compat_matched" title='gtk_signal_compat_matched' data-ref="gtk_signal_compat_matched">gtk_signal_compat_matched</dfn>		(<a class="typedef" href="gtktypeutils.h.html#GtkObject" title='GtkObject' data-type='struct _GtkObject' data-ref="GtkObject">GtkObject</a>	    *<dfn class="local col0 decl" id="19220object" title='object' data-type='GtkObject *' data-ref="19220object">object</dfn>,</td></tr>
+<tr><th id="142">142</th><td>						 <a class="typedef" href="../../glib-2.0/gobject/gclosure.h.html#GCallback" title='GCallback' data-type='void (*)()' data-ref="GCallback">GCallback</a> 	     <dfn class="local col1 decl" id="19221func" title='func' data-type='GCallback' data-ref="19221func">func</dfn>,</td></tr>
+<tr><th id="143">143</th><td>						 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>      	     <dfn class="local col2 decl" id="19222data" title='data' data-type='gpointer' data-ref="19222data">data</dfn>,</td></tr>
+<tr><th id="144">144</th><td>						 <a class="typedef" href="../../glib-2.0/gobject/gsignal.h.html#GSignalMatchType" title='GSignalMatchType' data-type='enum GSignalMatchType' data-ref="GSignalMatchType">GSignalMatchType</a>    <dfn class="local col3 decl" id="19223match" title='match' data-type='GSignalMatchType' data-ref="19223match">match</dfn>,</td></tr>
+<tr><th id="145">145</th><td>						 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>               <dfn class="local col4 decl" id="19224action" title='action' data-type='guint' data-ref="19224action">action</dfn>);</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="148">148</th><td></td></tr>
+<tr><th id="149">149</th><td><u>#<span data-ppcond="29">endif</span> /* __GTK_SIGNAL_H__ */</u></td></tr>
+<tr><th id="150">150</th><td></td></tr>
+<tr><th id="151">151</th><td><u>#<span data-ppcond="27">endif</span> /* GTK_DISABLE_DEPRECATED */</u></td></tr>
+<tr><th id="152">152</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

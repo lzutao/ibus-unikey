@@ -1,0 +1,1 @@
+<dec f='include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-loader.h' l='87' type='GdkPixbufLoader * gdk_pixbuf_loader_new_with_type(const char * image_type, GError ** error)'/>

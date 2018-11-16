@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='782' type='gboolean (*)(GtkWidget *, GtkWidgetHelpType)'/>
+<offset>5120</offset>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='777'>/* If a widget has multiple tooltips/whatsthis, it should show the
+   * one for the current focus location, or if that doesn&apos;t make
+   * sense, should cycle through them showing each tip alongside
+   * whatever piece of the widget it applies to.
+   */</doc>

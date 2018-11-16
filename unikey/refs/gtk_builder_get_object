@@ -1,0 +1,22 @@
+<dec f='include/gtk-2.0/gtk/gtkbuilder.h' l='113' type='GObject * gtk_builder_get_object(GtkBuilder * builder, const gchar * name)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='38' u='c' c='_Z23unikey_macro_dialog_newv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='41' u='c' c='_Z23unikey_macro_dialog_newv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='44' u='c' c='_Z23unikey_macro_dialog_newv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='48' u='c' c='_Z23unikey_macro_dialog_newv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='51' u='c' c='_Z23unikey_macro_dialog_newv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='54' u='c' c='_Z23unikey_macro_dialog_newv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='57' u='c' c='_Z23unikey_macro_dialog_newv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='60' u='c' c='_Z23unikey_macro_dialog_newv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='63' u='c' c='_Z23unikey_macro_dialog_newv'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='34' u='c' c='_Z28unikey_main_setup_dialog_newv'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='53' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='62' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='70' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='83' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='96' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='102' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='108' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='114' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='120' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='126' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='127' u='c' c='_ZL20init_dialog_controlsP11_GtkBuilder'/>

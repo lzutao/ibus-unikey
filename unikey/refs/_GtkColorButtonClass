@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtkcolorbutton.h' l='70' ll='80'/>
+<size>944</size>
+<mbr r='_GtkColorButtonClass::parent_class' o='0' t='GtkButtonClass'/>
+<mbr r='_GtkColorButtonClass::color_set' o='7232' t='void (*)(GtkColorButton *)'/>
+<mbr r='_GtkColorButtonClass::_gtk_reserved1' o='7296' t='void (*)()'/>
+<mbr r='_GtkColorButtonClass::_gtk_reserved2' o='7360' t='void (*)()'/>
+<mbr r='_GtkColorButtonClass::_gtk_reserved3' o='7424' t='void (*)()'/>
+<mbr r='_GtkColorButtonClass::_gtk_reserved4' o='7488' t='void (*)()'/>

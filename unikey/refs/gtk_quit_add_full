@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkmain.h' l='167' type='guint gtk_quit_add_full(guint main_level, GtkFunction function, GtkCallbackMarshal marshal, gpointer data, GDestroyNotify destroy)'/>

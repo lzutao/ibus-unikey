@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtkitemfactory.h' l='122' type='gconstpointer'/>
+<offset>320</offset>
+<doc f='include/gtk-2.0/gtk/gtkitemfactory.h' l='118'>/* Extra data for some item types:
+   *  ImageItem  -&gt; pointer to inlined pixbuf stream
+   *  StockItem  -&gt; name of stock item
+   */</doc>

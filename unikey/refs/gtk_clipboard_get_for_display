@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkclipboard.h' l='72' type='GtkClipboard * gtk_clipboard_get_for_display(GdkDisplay * display, GdkAtom selection)'/>

@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='2547' type='cairo_surface_t * cairo_image_surface_create_for_data(unsigned char * data, cairo_format_t format, int width, int height, int stride)'/>

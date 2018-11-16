@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtkaccessible.h' l='56' ll='67'/>
+<size>392</size>
+<mbr r='_GtkAccessibleClass::parent_class' o='0' t='AtkObjectClass'/>
+<mbr r='_GtkAccessibleClass::connect_widget_destroyed' o='2816' t='void (*)(GtkAccessible *)'/>
+<mbr r='_GtkAccessibleClass::_gtk_reserved1' o='2880' t='void (*)()'/>
+<mbr r='_GtkAccessibleClass::_gtk_reserved2' o='2944' t='void (*)()'/>
+<mbr r='_GtkAccessibleClass::_gtk_reserved3' o='3008' t='void (*)()'/>
+<mbr r='_GtkAccessibleClass::_gtk_reserved4' o='3072' t='void (*)()'/>

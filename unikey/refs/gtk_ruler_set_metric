@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkruler.h' l='115' type='void gtk_ruler_set_metric(GtkRuler * ruler, GtkMetricType metric)'/>

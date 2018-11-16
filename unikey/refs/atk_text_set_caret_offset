@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atktext.h' l='424' type='gboolean atk_text_set_caret_offset(AtkText * text, gint offset)'/>

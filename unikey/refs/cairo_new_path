@@ -1,0 +1,2 @@
+<dec f='include/cairo/cairo.h' l='852' type='void cairo_new_path(cairo_t * cr)'/>
+<doc f='include/cairo/cairo.h' l='850'>/* Path creation functions */</doc>

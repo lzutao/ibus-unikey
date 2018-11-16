@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextview.h' l='346' type='void gtk_text_view_set_pixels_above_lines(GtkTextView * text_view, gint pixels_above_lines)'/>

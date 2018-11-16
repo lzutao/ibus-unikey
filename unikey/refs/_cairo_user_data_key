@@ -1,0 +1,15 @@
+<def f='include/cairo/cairo.h' l='246' ll='248'/>
+<size>4</size>
+<doc f='include/cairo/cairo.h' l='234'>/**
+ * cairo_user_data_key_t:
+ * @unused: not used; ignore.
+ *
+ * #cairo_user_data_key_t is used for attaching user data to cairo
+ * data structures.  The actual contents of the struct is never used,
+ * and there is no need to initialize the object; only the unique
+ * address of a #cairo_data_key_t object is used.  Typically, you
+ * would just use the address of a static #cairo_data_key_t object.
+ *
+ * Since: 1.0
+ **/</doc>
+<mbr r='_cairo_user_data_key::unused' o='0' t='int'/>

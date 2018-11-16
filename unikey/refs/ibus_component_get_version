@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuscomponent.h' l='197' type='const gchar * ibus_component_get_version(IBusComponent * component)'/>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='189'>/**
+ * ibus_component_get_version:
+ * @component: An #IBusComponent
+ *
+ * Gets the version property in #IBusComponent. It should not be freed.
+ *
+ * Returns: version property in #IBusComponent
+ */</doc>

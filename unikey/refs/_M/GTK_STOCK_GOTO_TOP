@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='383'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='377'>/**
+ * GTK_STOCK_GOTO_TOP:
+ *
+ * The &quot;Top&quot; item.
+ * &lt;inlinegraphic fileref=&quot;go-top.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

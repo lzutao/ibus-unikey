@@ -1,0 +1,5 @@
+<dec f='include/glib-2.0/glib/gversionmacros.h' l='444'/>
+<use f='include/glib-2.0/glib/gtrashstack.h' l='42' u='c'/>
+<use f='include/glib-2.0/glib/gtrashstack.h' l='45' u='c'/>
+<use f='include/glib-2.0/glib/gtrashstack.h' l='47' u='c'/>
+<use f='include/glib-2.0/glib/gtrashstack.h' l='49' u='c'/>

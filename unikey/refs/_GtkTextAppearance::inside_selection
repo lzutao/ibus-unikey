@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtktexttag.h' l='204' type='guint'/>
+<offset>454</offset>
+<doc f='include/gtk-2.0/gtk/gtktexttag.h' l='200'>/* These are only used when we are actually laying out and rendering
+   * a paragraph; not when a GtkTextAppearance is part of a
+   * GtkTextAttributes.
+   */</doc>

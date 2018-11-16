@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkscreen.h' l='121' type='const cairo_font_options_t * gdk_screen_get_font_options(GdkScreen * screen)'/>

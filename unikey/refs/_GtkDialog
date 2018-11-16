@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gtk/gtkdialog.h' l='97' ll='107'/>
+<size>264</size>
+<mbr r='_GtkDialog::window' o='0' t='GtkWindow'/>
+<mbr r='_GtkDialog::vbox' o='1920' t='GtkWidget *'/>
+<mbr r='_GtkDialog::action_area' o='1984' t='GtkWidget *'/>
+<mbr r='_GtkDialog::separator' o='2048' t='GtkWidget *'/>

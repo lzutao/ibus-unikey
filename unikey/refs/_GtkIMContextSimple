@@ -1,0 +1,9 @@
+<def f='include/gtk-2.0/gtk/gtkimcontextsimple.h' l='46' ll='58'/>
+<size>80</size>
+<mbr r='_GtkIMContextSimple::object' o='0' t='GtkIMContext'/>
+<mbr r='_GtkIMContextSimple::tables' o='192' t='GSList *'/>
+<mbr r='_GtkIMContextSimple::compose_buffer' o='256' t='guint [8]'/>
+<mbr r='_GtkIMContextSimple::tentative_match' o='512' t='gunichar'/>
+<mbr r='_GtkIMContextSimple::tentative_match_len' o='544' t='gint'/>
+<mbr r='_GtkIMContextSimple::in_hex_sequence' o='576' t='guint'/>
+<mbr r='_GtkIMContextSimple::modifiers_dropped' o='577' t='guint'/>

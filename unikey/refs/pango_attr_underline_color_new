@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-attributes.h' l='483' type='PangoAttribute * pango_attr_underline_color_new(guint16 red, guint16 green, guint16 blue)'/>

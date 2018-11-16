@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusconfig.h' l='359' type='gboolean ibus_config_unwatch(IBusConfig * config, const gchar * section, const gchar * name)'/>
+<doc f='include/ibus-1.0/ibusconfig.h' l='347'>/**
+ * ibus_config_unwatch:
+ * @config: An #IBusConfig
+ * @section: (allow-none): Section name of the configuration option.
+ * @name: (allow-none): Name of the configure option its self.
+ *
+ * Unsubscribe from the configuration option change notification.
+ *
+ * Returns: %TRUE if succeed; %FALSE otherwise.
+ *
+ * See also: ibus_config_watch.
+ */</doc>

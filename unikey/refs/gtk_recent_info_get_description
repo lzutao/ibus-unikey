@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentmanager.h' l='181' type='const gchar * gtk_recent_info_get_description(GtkRecentInfo * info)'/>

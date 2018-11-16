@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconfactory.h' l='76' type='void gtk_icon_factory_add(GtkIconFactory * factory, const gchar * stock_id, GtkIconSet * icon_set)'/>

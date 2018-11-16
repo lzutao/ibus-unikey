@@ -1,0 +1,17 @@
+<def f='include/gtk-2.0/gtk/gtkrecentchooser.h' l='81' ll='116'/>
+<size>128</size>
+<mbr r='_GtkRecentChooserIface::base_iface' o='0' t='GTypeInterface'/>
+<mbr r='_GtkRecentChooserIface::set_current_uri' o='128' t='gboolean (*)(GtkRecentChooser *, const gchar *, GError **)'/>
+<mbr r='_GtkRecentChooserIface::get_current_uri' o='192' t='gchar *(*)(GtkRecentChooser *)'/>
+<mbr r='_GtkRecentChooserIface::select_uri' o='256' t='gboolean (*)(GtkRecentChooser *, const gchar *, GError **)'/>
+<mbr r='_GtkRecentChooserIface::unselect_uri' o='320' t='void (*)(GtkRecentChooser *, const gchar *)'/>
+<mbr r='_GtkRecentChooserIface::select_all' o='384' t='void (*)(GtkRecentChooser *)'/>
+<mbr r='_GtkRecentChooserIface::unselect_all' o='448' t='void (*)(GtkRecentChooser *)'/>
+<mbr r='_GtkRecentChooserIface::get_items' o='512' t='GList *(*)(GtkRecentChooser *)'/>
+<mbr r='_GtkRecentChooserIface::get_recent_manager' o='576' t='GtkRecentManager *(*)(GtkRecentChooser *)'/>
+<mbr r='_GtkRecentChooserIface::add_filter' o='640' t='void (*)(GtkRecentChooser *, GtkRecentFilter *)'/>
+<mbr r='_GtkRecentChooserIface::remove_filter' o='704' t='void (*)(GtkRecentChooser *, GtkRecentFilter *)'/>
+<mbr r='_GtkRecentChooserIface::list_filters' o='768' t='GSList *(*)(GtkRecentChooser *)'/>
+<mbr r='_GtkRecentChooserIface::set_sort_func' o='832' t='void (*)(GtkRecentChooser *, GtkRecentSortFunc, gpointer, GDestroyNotify)'/>
+<mbr r='_GtkRecentChooserIface::item_activated' o='896' t='void (*)(GtkRecentChooser *)'/>
+<mbr r='_GtkRecentChooserIface::selection_changed' o='960' t='void (*)(GtkRecentChooser *)'/>

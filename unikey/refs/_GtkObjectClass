@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gtk/gtkobject.h' l='119' ll='140'/>
+<size>160</size>
+<mbr r='_GtkObjectClass::parent_class' o='0' t='GInitiallyUnownedClass'/>
+<mbr r='_GtkObjectClass::set_arg' o='1088' t='void (*)(GtkObject *, GtkArg *, guint)'/>
+<mbr r='_GtkObjectClass::get_arg' o='1152' t='void (*)(GtkObject *, GtkArg *, guint)'/>
+<mbr r='_GtkObjectClass::destroy' o='1216' t='void (*)(GtkObject *)'/>

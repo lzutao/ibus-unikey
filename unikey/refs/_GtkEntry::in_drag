@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='75' type='guint'/>
+<offset>835</offset>
+<doc f='include/gtk-2.0/gtk/gtkentry.h' l='75'>/* FIXME: Should be private?
+                                                       Dragging within the selection */</doc>

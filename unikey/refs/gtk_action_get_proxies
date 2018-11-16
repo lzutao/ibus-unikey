@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkaction.h' l='108' type='GSList * gtk_action_get_proxies(GtkAction * action)'/>

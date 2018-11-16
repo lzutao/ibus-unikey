@@ -1,0 +1,2 @@
+<dec f='include/atk-1.0/atk/atkcomponent.h' l='111' type='gboolean (*)(AtkComponent *, gint, gint, AtkCoordType)'/>
+<offset>192</offset>

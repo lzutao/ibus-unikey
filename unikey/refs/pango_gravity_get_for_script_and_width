@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-gravity.h' l='123' type='PangoGravity pango_gravity_get_for_script_and_width(PangoScript script, gboolean wide, PangoGravity base_gravity, PangoGravityHint hint)'/>

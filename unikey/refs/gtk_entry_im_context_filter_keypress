@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkentry.h' l='309' type='gboolean gtk_entry_im_context_filter_keypress(GtkEntry * entry, GdkEventKey * event)'/>

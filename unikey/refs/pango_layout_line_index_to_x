@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-layout.h' l='341' type='void pango_layout_line_index_to_x(PangoLayoutLine * line, int index_, gboolean trailing, int * x_pos)'/>

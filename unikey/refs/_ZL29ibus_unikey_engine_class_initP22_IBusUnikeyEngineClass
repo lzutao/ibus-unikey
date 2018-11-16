@@ -1,0 +1,4 @@
+<dec f='unikey/src/engine_private.h' l='40' type='void ibus_unikey_engine_class_init(IBusUnikeyEngineClass * kclass)'/>
+<dec f='unikey/src/engine.cpp' l='66' macro='1' type='void ibus_unikey_engine_class_init(IBusUnikeyEngineClass * klass)'/>
+<use f='unikey/src/engine.cpp' l='66' macro='1' u='c'/>
+<doc f='unikey/src/engine_private.h' l='39'>/* functions prototype */</doc>

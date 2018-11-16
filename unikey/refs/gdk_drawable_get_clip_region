@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdrawable.h' l='431' type='GdkRegion * gdk_drawable_get_clip_region(GdkDrawable * drawable)'/>

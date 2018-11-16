@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gdk/gdkpango.h' l='142' ll='146'/>
+<size>24</size>
+<mbr r='_GdkPangoAttrStipple::attr' o='0' t='PangoAttribute'/>
+<mbr r='_GdkPangoAttrStipple::stipple' o='128' t='GdkBitmap *'/>

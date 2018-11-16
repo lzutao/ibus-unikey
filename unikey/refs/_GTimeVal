@@ -1,0 +1,4 @@
+<def f='include/glib-2.0/glib/gtypes.h' l='507' ll='511'/>
+<size>16</size>
+<mbr r='_GTimeVal::tv_sec' o='0' t='glong'/>
+<mbr r='_GTimeVal::tv_usec' o='64' t='glong'/>

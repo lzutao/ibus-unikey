@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkenumtypes.h' l='70' type='GType gdk_image_type_get_type()'/>
+<doc f='include/gtk-2.0/gdk/gdkenumtypes.h' l='69'>/* enumerations from &quot;gdkimage.h&quot; */</doc>

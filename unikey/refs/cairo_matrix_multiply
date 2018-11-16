@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='3045' type='void cairo_matrix_multiply(cairo_matrix_t * result, const cairo_matrix_t * a, const cairo_matrix_t * b)'/>

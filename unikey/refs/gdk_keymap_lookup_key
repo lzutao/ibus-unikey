@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkkeys.h' l='89' type='guint gdk_keymap_lookup_key(GdkKeymap * keymap, const GdkKeymapKey * key)'/>

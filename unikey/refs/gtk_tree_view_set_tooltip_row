@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='409' type='void gtk_tree_view_set_tooltip_row(GtkTreeView * tree_view, GtkTooltip * tooltip, GtkTreePath * path)'/>
+<doc f='include/gtk-2.0/gtk/gtktreeview.h' l='408'>/* Convenience functions for setting tooltips */</doc>

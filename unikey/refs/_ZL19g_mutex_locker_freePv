@@ -1,0 +1,12 @@
+<def f='include/glib-2.0/glib/gthread.h' l='333' ll='337' type='void g_mutex_locker_free(GMutexLocker * locker)'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='77' u='c' c='_ZL33glib_autoptr_cleanup_GMutexLockerPPv'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='77' u='r' c='_ZL37glib_listautoptr_cleanup_GMutexLockerPP6_GList'/>
+<use f='include/glib-2.0/glib/glib-autocleanups.h' l='77' u='r' c='_ZL38glib_slistautoptr_cleanup_GMutexLockerPP7_GSList'/>
+<doc f='include/glib-2.0/glib/gthread.h' l='325'>/**
+ * g_mutex_locker_free:
+ * @locker: a GMutexLocker
+ *
+ * Unlock @locker&apos;s mutex. See g_mutex_locker_new() for details.
+ *
+ * Since: 2.44
+ */</doc>

@@ -1,0 +1,10 @@
+<def f='include/gtk-2.0/gtk/gtktoolpalette.h' l='71' ll='86'/>
+<size>880</size>
+<mbr r='_GtkToolPaletteClass::parent_class' o='0' t='GtkContainerClass'/>
+<mbr r='_GtkToolPaletteClass::set_scroll_adjustments' o='6592' t='void (*)(GtkWidget *, GtkAdjustment *, GtkAdjustment *)'/>
+<mbr r='_GtkToolPaletteClass::_gtk_reserved1' o='6656' t='void (*)()'/>
+<mbr r='_GtkToolPaletteClass::_gtk_reserved2' o='6720' t='void (*)()'/>
+<mbr r='_GtkToolPaletteClass::_gtk_reserved3' o='6784' t='void (*)()'/>
+<mbr r='_GtkToolPaletteClass::_gtk_reserved4' o='6848' t='void (*)()'/>
+<mbr r='_GtkToolPaletteClass::_gtk_reserved5' o='6912' t='void (*)()'/>
+<mbr r='_GtkToolPaletteClass::_gtk_reserved6' o='6976' t='void (*)()'/>

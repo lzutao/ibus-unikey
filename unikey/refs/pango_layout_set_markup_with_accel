@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-layout.h' l='169' type='void pango_layout_set_markup_with_accel(PangoLayout * layout, const char * markup, int length, gunichar accel_marker, gunichar * accel_char)'/>

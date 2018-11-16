@@ -1,0 +1,13 @@
+<def f='include/gtk-2.0/gtk/gtklayout.h' l='56' ll='77'/>
+<size>168</size>
+<mbr r='_GtkLayout::container' o='0' t='GtkContainer'/>
+<mbr r='_GtkLayout::children' o='896' t='GList *'/>
+<mbr r='_GtkLayout::width' o='960' t='guint'/>
+<mbr r='_GtkLayout::height' o='992' t='guint'/>
+<mbr r='_GtkLayout::hadjustment' o='1024' t='GtkAdjustment *'/>
+<mbr r='_GtkLayout::vadjustment' o='1088' t='GtkAdjustment *'/>
+<mbr r='_GtkLayout::bin_window' o='1152' t='GdkWindow *'/>
+<mbr r='_GtkLayout::visibility' o='1216' t='GdkVisibilityState'/>
+<mbr r='_GtkLayout::scroll_x' o='1248' t='gint'/>
+<mbr r='_GtkLayout::scroll_y' o='1280' t='gint'/>
+<mbr r='_GtkLayout::freeze_count' o='1312' t='guint'/>

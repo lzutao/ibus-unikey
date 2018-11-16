@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ibuskeymap.h source code [include/ibus-1.0/ibuskeymap.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/ibus-1.0/ibuskeymap.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>ibus-1.0</a>/<a href='ibuskeymap.h.html'>ibuskeymap.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* -*- mode: C; c-basic-offset: 4; indent-tabs-mode: nil; -*- */</i></td></tr>
+<tr><th id="2">2</th><td><i>/* vim:set et sts=4: */</i></td></tr>
+<tr><th id="3">3</th><td><i>/* IBus - The Input Bus</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 2008-2010 Peng Huang &lt;shawn.p.huang@gmail.com&gt;</i></td></tr>
+<tr><th id="5">5</th><td><i> * Copyright (C) 2008-2010 Red Hat, Inc.</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="8">8</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="9">9</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="10">10</th><td><i> * version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="11">11</th><td><i> *</i></td></tr>
+<tr><th id="12">12</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="13">13</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="14">14</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="15">15</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="18">18</th><td><i> * License along with this library; if not, write to the Free Software</i></td></tr>
+<tr><th id="19">19</th><td><i> * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301</i></td></tr>
+<tr><th id="20">20</th><td><i> * USA</i></td></tr>
+<tr><th id="21">21</th><td><i> */</i></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> !defined (<a class="macro" href="ibus.h.html#26" data-ref="_M/__IBUS_H_INSIDE__">__IBUS_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/IBUS_COMPILATION">IBUS_COMPILATION</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#error "Only &lt;ibus.h&gt; can be included directly"</u></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/__IBUS_KEYMAP_H_">__IBUS_KEYMAP_H_</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/__IBUS_KEYMAP_H_" data-ref="_M/__IBUS_KEYMAP_H_">__IBUS_KEYMAP_H_</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> * SECTION: ibuskeymap</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> * <span class="command">@short</span>_description: Keyboard mapping handling.</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> *<span class="command"> @title</span>: IBusKeymap</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> *<span class="command"> @stability</span>: Stable</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * An IBusKeymap defines the mapping between keyboard scancodes and</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> * keyboard symbols such as numbers, alphabets, and punctuation marks.</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * Some input methods assume certain keyboard layout</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * (such as Chewing and Wubi requires an US-QWERTY layout),</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> * and expect key symbols to be arranged in that order.</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> * These input methods should new an IBusKeymap</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> * instance and define the keyboard layout.</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> * Then ibus_keymap_lookup_keysym() can</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> * convert scancodes back to the key symbols.</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> * see_also: #IBusComponent, #IBusEngineDesc</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><u>#include <a href="ibusobject.h.html">"ibusobject.h"</a></u></td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><i>/*</i></td></tr>
+<tr><th id="54">54</th><td><i> * Type macros.</i></td></tr>
+<tr><th id="55">55</th><td><i> */</i></td></tr>
+<tr><th id="56">56</th><td><i>/* define IBusKeymap macros */</i></td></tr>
+<tr><th id="57">57</th><td><u>#define <dfn class="macro" id="_M/IBUS_TYPE_KEYMAP" data-ref="_M/IBUS_TYPE_KEYMAP">IBUS_TYPE_KEYMAP</dfn>             \</u></td></tr>
+<tr><th id="58">58</th><td><u>    (ibus_keymap_get_type ())</u></td></tr>
+<tr><th id="59">59</th><td><u>#define <dfn class="macro" id="_M/IBUS_KEYMAP" data-ref="_M/IBUS_KEYMAP">IBUS_KEYMAP</dfn>(obj)             \</u></td></tr>
+<tr><th id="60">60</th><td><u>    (G_TYPE_CHECK_INSTANCE_CAST ((obj), IBUS_TYPE_KEYMAP, IBusKeymap))</u></td></tr>
+<tr><th id="61">61</th><td><u>#define <dfn class="macro" id="_M/IBUS_KEYMAP_CLASS" data-ref="_M/IBUS_KEYMAP_CLASS">IBUS_KEYMAP_CLASS</dfn>(klass)     \</u></td></tr>
+<tr><th id="62">62</th><td><u>    (G_TYPE_CHECK_CLASS_CAST ((klass), IBUS_TYPE_KEYMAP, IBusKeymapClass))</u></td></tr>
+<tr><th id="63">63</th><td><u>#define <dfn class="macro" id="_M/IBUS_IS_KEYMAP" data-ref="_M/IBUS_IS_KEYMAP">IBUS_IS_KEYMAP</dfn>(obj)          \</u></td></tr>
+<tr><th id="64">64</th><td><u>    (G_TYPE_CHECK_INSTANCE_TYPE ((obj), IBUS_TYPE_KEYMAP))</u></td></tr>
+<tr><th id="65">65</th><td><u>#define <dfn class="macro" id="_M/IBUS_IS_KEYMAP_CLASS" data-ref="_M/IBUS_IS_KEYMAP_CLASS">IBUS_IS_KEYMAP_CLASS</dfn>(klass)  \</u></td></tr>
+<tr><th id="66">66</th><td><u>    (G_TYPE_CHECK_CLASS_TYPE ((klass), IBUS_TYPE_KEYMAP))</u></td></tr>
+<tr><th id="67">67</th><td><u>#define <dfn class="macro" id="_M/IBUS_KEYMAP_GET_CLASS" data-ref="_M/IBUS_KEYMAP_GET_CLASS">IBUS_KEYMAP_GET_CLASS</dfn>(obj)   \</u></td></tr>
+<tr><th id="68">68</th><td><u>    (G_TYPE_INSTANCE_GET_CLASS ((obj), IBUS_TYPE_KEYMAP, IBusKeymapClass))</u></td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><a class="macro" href="../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_IBusKeymap" title='_IBusKeymap' data-ref="_IBusKeymap">_IBusKeymap</a> <dfn class="typedef" id="IBusKeymap" title='IBusKeymap' data-type='struct _IBusKeymap' data-ref="IBusKeymap">IBusKeymap</dfn>;</td></tr>
+<tr><th id="73">73</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_IBusKeymapClass" title='_IBusKeymapClass' data-ref="_IBusKeymapClass">_IBusKeymapClass</a> <dfn class="typedef" id="IBusKeymapClass" title='IBusKeymapClass' data-type='struct _IBusKeymapClass' data-ref="IBusKeymapClass">IBusKeymapClass</dfn>;</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> * KEYMAP:</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> * Data structure for storing keymap.</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> * keymap[.][i]</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> * i:</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> *  0 - without modifer</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc"> *  1 - shift</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc"> *  2 - caplock</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc"> *  3 - shift caplock</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> *  4 - altgr</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> *  5 - shift altgr</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> *  6 - numlock</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="89">89</th><td><i>/* typedef guint KEYMAP[256][7]; */</i></td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> * IBusKeymap:</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> * <span class="command">@name</span>:<span class="verb"> The name of the keymap, such as 'us', 'jp'.</span></i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> *<span class="command"> @keymap</span>: Keymap table. IME developers normally don have to touch this.</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> * A keymap object in IBus.</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="98">98</th><td><b>struct</b> <dfn class="type def" id="_IBusKeymap" title='_IBusKeymap' data-ref="_IBusKeymap">_IBusKeymap</dfn> {</td></tr>
+<tr><th id="99">99</th><td>    <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="100">100</th><td>    <a class="typedef" href="ibusobject.h.html#IBusObject" title='IBusObject' data-type='struct _IBusObject' data-ref="IBusObject">IBusObject</a> <dfn class="decl" id="_IBusKeymap::parent" title='_IBusKeymap::parent' data-ref="_IBusKeymap::parent">parent</dfn>;</td></tr>
+<tr><th id="101">101</th><td>    <i>/* members */</i></td></tr>
+<tr><th id="102">102</th><td>    <i>/*&lt; public &gt;*/</i></td></tr>
+<tr><th id="103">103</th><td>    <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="decl" id="_IBusKeymap::name" title='_IBusKeymap::name' data-ref="_IBusKeymap::name">name</dfn>;</td></tr>
+<tr><th id="104">104</th><td>    <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="decl" id="_IBusKeymap::keymap" title='_IBusKeymap::keymap' data-ref="_IBusKeymap::keymap">keymap</dfn>[<var>256</var>][<var>7</var>];</td></tr>
+<tr><th id="105">105</th><td>};</td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><b>struct</b> <dfn class="type def" id="_IBusKeymapClass" title='_IBusKeymapClass' data-ref="_IBusKeymapClass">_IBusKeymapClass</dfn> {</td></tr>
+<tr><th id="108">108</th><td>    <a class="typedef" href="ibusobject.h.html#IBusObjectClass" title='IBusObjectClass' data-type='struct _IBusObjectClass' data-ref="IBusObjectClass">IBusObjectClass</a> <dfn class="decl" id="_IBusKeymapClass::parent" title='_IBusKeymapClass::parent' data-ref="_IBusKeymapClass::parent">parent</dfn>;</td></tr>
+<tr><th id="109">109</th><td>};</td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td><a class="typedef" href="../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>            <dfn class="decl" id="ibus_keymap_get_type" title='ibus_keymap_get_type' data-ref="ibus_keymap_get_type">ibus_keymap_get_type</dfn>               (<em>void</em>);</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc"> * ibus_keymap_new:</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc"> * <span class="command">@name</span>:<span class="verb"> The keymap file to be loaded, such as 'us', 'jp'.</span></i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc"> * Get an #IBusKeymap associated with the giving name.</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> * This function loads the keymap file specified in <span class="command">@name</span></i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> * in the IBUS_DATA_DIR/keymaps directory.</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc"> * Returns: An #IBusKeymap associated with the giving name; or %NULL if failed.</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> * Deprecated: This function has been deprecated and should</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc"> * not be used in newly written code. Please use ibus_keymap_get().</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="127">127</th><td><a class="typedef" href="#IBusKeymap" title='IBusKeymap' data-type='struct _IBusKeymap' data-ref="IBusKeymap">IBusKeymap</a>        *<dfn class="decl" id="ibus_keymap_new" title='ibus_keymap_new' data-ref="ibus_keymap_new">ibus_keymap_new</dfn>                  (<em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>        *<dfn class="local col4 decl" id="744name" title='name' data-type='const gchar *' data-ref="744name">name</dfn>)</td></tr>
+<tr><th id="128">128</th><td>    <a class="macro" href="../glib-2.0/glib/gmacros.h.html#159" title="__attribute__((__deprecated__))" data-ref="_M/G_GNUC_DEPRECATED">G_GNUC_DEPRECATED</a>;</td></tr>
+<tr><th id="129">129</th><td></td></tr>
+<tr><th id="130">130</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc"> * ibus_keymap_get:</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> * <span class="command">@name</span>:<span class="verb"> The keymap file to be loaded, such as 'us', 'jp'.</span></i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> * Get an IBusKeymap associated with the giving name.</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> * This function loads the keymap file specified in <span class="command">@name</span></i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> * in the IBUS_DATA_DIR/keymaps directory.</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> * Returns: (transfer full): An #IBusKeymap associated with the giving name;</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc"> * or %NULL if failed.</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="142">142</th><td><a class="typedef" href="#IBusKeymap" title='IBusKeymap' data-type='struct _IBusKeymap' data-ref="IBusKeymap">IBusKeymap</a>        *<dfn class="decl" id="ibus_keymap_get" title='ibus_keymap_get' data-ref="ibus_keymap_get">ibus_keymap_get</dfn>                  (<em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>        *<dfn class="local col5 decl" id="745name" title='name' data-type='const gchar *' data-ref="745name">name</dfn>);</td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> * ibus_keymap_lookup_keysym:</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> *<span class="command"> @keymap</span>: An IBusKeymap.</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc"> *<span class="command"> @keycode</span>: A scancode to be converted.</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> *<span class="command"> @state</span>: Modifier flags(such as Ctrl, Shift).</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> * Converts the scancode to keysym, given the keymap.</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> * Returns: Corresponding keysym.</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="154">154</th><td><a class="typedef" href="../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a>              <dfn class="decl" id="ibus_keymap_lookup_keysym" title='ibus_keymap_lookup_keysym' data-ref="ibus_keymap_lookup_keysym">ibus_keymap_lookup_keysym</dfn>        (<a class="typedef" href="#IBusKeymap" title='IBusKeymap' data-type='struct _IBusKeymap' data-ref="IBusKeymap">IBusKeymap</a>         *<dfn class="local col6 decl" id="746keymap" title='keymap' data-type='IBusKeymap *' data-ref="746keymap">keymap</dfn>,</td></tr>
+<tr><th id="155">155</th><td>                                                     <span class='typedef' title='guint16' data-type='unsigned short' data-ref="guint16">guint16</span>             <dfn class="local col7 decl" id="747keycode" title='keycode' data-type='guint16' data-ref="747keycode">keycode</dfn>,</td></tr>
+<tr><th id="156">156</th><td>                                                     <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span>             <dfn class="local col8 decl" id="748state" title='state' data-type='guint32' data-ref="748state">state</dfn>);</td></tr>
+<tr><th id="157">157</th><td></td></tr>
+<tr><th id="158">158</th><td><a class="macro" href="../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="159">159</th><td><u>#<span data-ppcond="27">endif</span></u></td></tr>
+<tr><th id="160">160</th><td></td></tr>
+<tr><th id="161">161</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../unikey/setup/dlg_main_setup.cpp.html'>unikey/setup/dlg_main_setup.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

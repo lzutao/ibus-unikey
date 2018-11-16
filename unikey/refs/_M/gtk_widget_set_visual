@@ -1,0 +1,8 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1075'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='1068'>/**
+ * gtk_widget_set_visual:
+ * @widget: a #GtkWidget
+ * @visual: a visual
+ *
+ * This function is deprecated; it does nothing.
+ */</doc>

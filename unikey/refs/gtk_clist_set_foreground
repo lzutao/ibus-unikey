@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='632' type='void gtk_clist_set_foreground(GtkCList * clist, gint row, const GdkColor * color)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='629'>/* sets the foreground color of a row, the color must already
+ * be allocated
+ */</doc>

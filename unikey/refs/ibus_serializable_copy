@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusserializable.h' l='251' type='IBusSerializable * ibus_serializable_copy(IBusSerializable * serializable)'/>
+<doc f='include/ibus-1.0/ibusserializable.h' l='239'>/**
+ * ibus_serializable_copy:
+ * @serializable: An #IBusSerializable.
+ *
+ * Clone an #IBusSerializable.
+ * The copy method should be implemented in extended class.
+ *
+ * Returns: (transfer none): A newly allocated clone object; or %NULL
+ *     if @object is not serializable.
+ *
+ * See also: IBusSerializableCopyFunc().
+ */</doc>

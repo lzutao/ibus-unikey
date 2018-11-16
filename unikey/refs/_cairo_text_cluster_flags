@@ -1,0 +1,10 @@
+<def f='include/cairo/cairo.h' l='1160' ll='1162'/>
+<doc f='include/cairo/cairo.h' l='1151'>/**
+ * cairo_text_cluster_flags_t:
+ * @CAIRO_TEXT_CLUSTER_FLAG_BACKWARD: The clusters in the cluster array
+ * map to glyphs in the glyph array from end to start. (Since 1.8)
+ *
+ * Specifies properties of a text cluster mapping.
+ *
+ * Since: 1.8
+ **/</doc>

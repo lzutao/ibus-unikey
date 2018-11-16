@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='325'/>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='317'>/**
+ * GTK_WIDGET_CAN_FOCUS:
+ * @wid: a #GtkWidget.
+ *
+ * Evaluates to %TRUE if the widget is able to handle focus grabs.
+ *
+ * Deprecated: 2.20: Use gtk_widget_get_can_focus() instead.
+ */</doc>

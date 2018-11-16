@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkimmulticontext.h' l='73' type='void gtk_im_multicontext_set_context_id(GtkIMMulticontext * context, const char * context_id)'/>

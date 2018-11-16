@@ -1,0 +1,5 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='543' type='AtkObject *(*)(AtkObject *)'/>
+<offset>1216</offset>
+<doc f='include/atk-1.0/atk/atkobject.h' l='540'>/*
+   * Gets the accessible parent of the object
+   */</doc>

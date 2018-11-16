@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkdrawable.h' l='386' type='void gdk_draw_layout_line_with_colors(GdkDrawable * drawable, GdkGC * gc, gint x, gint y, PangoLayoutLine * line, const GdkColor * foreground, const GdkColor * background)'/>

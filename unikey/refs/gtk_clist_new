@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='446' type='GtkWidget * gtk_clist_new(gint columns)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='445'>/* create a new GtkCList */</doc>

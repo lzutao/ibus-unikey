@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='648' type='gboolean ibus_bus_register_component(IBusBus * bus, IBusComponent * component)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='639'>/**
+ * ibus_bus_register_component:
+ * @bus: An #IBusBus.
+ * @component: A input engine component.
+ *
+ * Register a componet to an #IBusBus synchronously.
+ *
+ * Returns: %TRUE if the &quot;RegisterComponent&quot; call is suceeded, %FALSE otherwise.
+ */</doc>
+<use f='unikey/src/main.cpp' l='74' u='c' c='_ZL15start_componentv'/>

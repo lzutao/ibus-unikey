@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtkplug.h' l='52' ll='62'/>
+<size>280</size>
+<mbr r='_GtkPlug::window' o='0' t='GtkWindow'/>
+<mbr r='_GtkPlug::socket_window' o='1920' t='GdkWindow *'/>
+<mbr r='_GtkPlug::modality_window' o='1984' t='GtkWidget *'/>
+<mbr r='_GtkPlug::modality_group' o='2048' t='GtkWindowGroup *'/>
+<mbr r='_GtkPlug::grabbed_keys' o='2112' t='GHashTable *'/>
+<mbr r='_GtkPlug::same_app' o='2176' t='guint'/>

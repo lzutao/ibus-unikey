@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreeview.h' l='301' type='gboolean gtk_tree_view_get_dest_row_at_pos(GtkTreeView * tree_view, gint drag_x, gint drag_y, GtkTreePath ** path, GtkTreeViewDropPosition * pos)'/>

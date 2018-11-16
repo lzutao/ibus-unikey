@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkdnd.h' l='64' type='void gtk_drag_finish(GdkDragContext * context, gboolean success, gboolean del, guint32 time_)'/>

@@ -1,0 +1,7 @@
+<def f='include/gtk-2.0/gtk/gtklinkbutton.h' l='58' ll='66'/>
+<size>936</size>
+<mbr r='_GtkLinkButtonClass::parent_class' o='0' t='GtkButtonClass'/>
+<mbr r='_GtkLinkButtonClass::_gtk_padding1' o='7232' t='void (*)()'/>
+<mbr r='_GtkLinkButtonClass::_gtk_padding2' o='7296' t='void (*)()'/>
+<mbr r='_GtkLinkButtonClass::_gtk_padding3' o='7360' t='void (*)()'/>
+<mbr r='_GtkLinkButtonClass::_gtk_padding4' o='7424' t='void (*)()'/>

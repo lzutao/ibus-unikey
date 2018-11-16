@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkicontheme.h' l='161' type='GList * gtk_icon_theme_list_contexts(GtkIconTheme * icon_theme)'/>

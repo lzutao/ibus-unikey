@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktestutils.h' l='60' type='void gtk_test_text_set(GtkWidget * widget, const gchar * string)'/>
+<doc f='include/gtk-2.0/gtk/gtktestutils.h' l='59'>/* operate on GtkEntry, GtkText, GtkTextView or GtkLabel */</doc>

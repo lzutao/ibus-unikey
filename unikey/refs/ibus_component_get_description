@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuscomponent.h' l='187' type='const gchar * ibus_component_get_description(IBusComponent * component)'/>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='179'>/**
+ * ibus_component_get_description:
+ * @component: An #IBusComponent
+ *
+ * Gets the description property in #IBusComponent. It should not be freed.
+ *
+ * Returns: description property in #IBusComponent
+ */</doc>

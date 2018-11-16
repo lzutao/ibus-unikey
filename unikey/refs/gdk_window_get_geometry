@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='552' type='void gdk_window_get_geometry(GdkWindow * window, gint * x, gint * y, gint * width, gint * height, gint * depth)'/>

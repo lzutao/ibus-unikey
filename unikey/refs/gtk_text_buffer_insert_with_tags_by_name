@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='210' type='void gtk_text_buffer_insert_with_tags_by_name(GtkTextBuffer * buffer, GtkTextIter * iter, const gchar * text, gint len, const gchar * first_tag_name)'/>

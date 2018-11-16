@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ibusserializable.h source code [include/ibus-1.0/ibusserializable.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/ibus-1.0/ibusserializable.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>ibus-1.0</a>/<a href='ibusserializable.h.html'>ibusserializable.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* -*- mode: C; c-basic-offset: 4; indent-tabs-mode: nil; -*- */</i></td></tr>
+<tr><th id="2">2</th><td><i>/* vim:set et sts=4: */</i></td></tr>
+<tr><th id="3">3</th><td><i>/* ibus - The Input Bus</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 2008-2013 Peng Huang &lt;shawn.p.huang@gmail.com&gt;</i></td></tr>
+<tr><th id="5">5</th><td><i> * Copyright (C) 2008-2013 Red Hat, Inc.</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="8">8</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="9">9</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="10">10</th><td><i> * version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="11">11</th><td><i> *</i></td></tr>
+<tr><th id="12">12</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="13">13</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="14">14</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="15">15</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="18">18</th><td><i> * License along with this library; if not, write to the Free Software</i></td></tr>
+<tr><th id="19">19</th><td><i> * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301</i></td></tr>
+<tr><th id="20">20</th><td><i> * USA</i></td></tr>
+<tr><th id="21">21</th><td><i> */</i></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> !defined (<a class="macro" href="ibus.h.html#26" data-ref="_M/__IBUS_H_INSIDE__">__IBUS_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/IBUS_COMPILATION">IBUS_COMPILATION</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#error "Only &lt;ibus.h&gt; can be included directly"</u></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/__IBUS_SERIALIZABLE_H_">__IBUS_SERIALIZABLE_H_</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/__IBUS_SERIALIZABLE_H_" data-ref="_M/__IBUS_SERIALIZABLE_H_">__IBUS_SERIALIZABLE_H_</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> * SECTION: ibusserializable</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> * <span class="command">@short</span>_description: A serializable object.</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> *<span class="command"> @stability</span>: Stable</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> * An #IBusSerializable is an IBus object which can be serialized, that is,</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * to be to and from a #GVariant.</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * This class is to be extended by other class that requires serialization.</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> * An extended class should overrides following methods:</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * &lt;itemizedlist&gt;</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> *    &lt;listitem&gt;</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> *       &lt;para&gt;&lt;function&gt;serialize(object,iter)&lt;/function&gt;: for serialize.&lt;/para&gt;</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> *    &lt;/listitem&gt;</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> *    &lt;listitem&gt;</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> *       &lt;para&gt;&lt;function&gt;deserialize(object,iter)&lt;/function&gt;: for deserialize.&lt;/para&gt;</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> *    &lt;/listitem&gt;</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> *    &lt;listitem&gt;</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> *       &lt;para&gt;&lt;function&gt;copy(desc,src)&lt;/function&gt;: for copy between IBusSerializable.&lt;/para&gt;</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> *    &lt;/listitem&gt;</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> * &lt;/itemizedlist&gt;</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> * See IBusSerializableSerializeFunc(), IBusSerializableDeserializeFunc(), IBusSerializableCopyFunc()</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> * for function prototype.</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><u>#include <a href="ibusobject.h.html">"ibusobject.h"</a></u></td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><i>/*</i></td></tr>
+<tr><th id="58">58</th><td><i> * Type macros.</i></td></tr>
+<tr><th id="59">59</th><td><i> */</i></td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><i>/* define IBusSerializable macros */</i></td></tr>
+<tr><th id="62">62</th><td><u>#define <dfn class="macro" id="_M/IBUS_TYPE_SERIALIZABLE" data-ref="_M/IBUS_TYPE_SERIALIZABLE">IBUS_TYPE_SERIALIZABLE</dfn>             \</u></td></tr>
+<tr><th id="63">63</th><td><u>    (ibus_serializable_get_type ())</u></td></tr>
+<tr><th id="64">64</th><td><u>#define <dfn class="macro" id="_M/IBUS_SERIALIZABLE" data-ref="_M/IBUS_SERIALIZABLE">IBUS_SERIALIZABLE</dfn>(obj)             \</u></td></tr>
+<tr><th id="65">65</th><td><u>    (G_TYPE_CHECK_INSTANCE_CAST ((obj), IBUS_TYPE_SERIALIZABLE, IBusSerializable))</u></td></tr>
+<tr><th id="66">66</th><td><u>#define <dfn class="macro" id="_M/IBUS_SERIALIZABLE_CLASS" data-ref="_M/IBUS_SERIALIZABLE_CLASS">IBUS_SERIALIZABLE_CLASS</dfn>(klass)     \</u></td></tr>
+<tr><th id="67">67</th><td><u>    (G_TYPE_CHECK_CLASS_CAST ((klass), IBUS_TYPE_SERIALIZABLE, IBusSerializableClass))</u></td></tr>
+<tr><th id="68">68</th><td><u>#define <dfn class="macro" id="_M/IBUS_IS_SERIALIZABLE" data-ref="_M/IBUS_IS_SERIALIZABLE">IBUS_IS_SERIALIZABLE</dfn>(obj)          \</u></td></tr>
+<tr><th id="69">69</th><td><u>    (G_TYPE_CHECK_INSTANCE_TYPE ((obj), IBUS_TYPE_SERIALIZABLE))</u></td></tr>
+<tr><th id="70">70</th><td><u>#define <dfn class="macro" id="_M/IBUS_IS_SERIALIZABLE_CLASS" data-ref="_M/IBUS_IS_SERIALIZABLE_CLASS">IBUS_IS_SERIALIZABLE_CLASS</dfn>(klass)  \</u></td></tr>
+<tr><th id="71">71</th><td><u>    (G_TYPE_CHECK_CLASS_TYPE ((klass), IBUS_TYPE_SERIALIZABLE))</u></td></tr>
+<tr><th id="72">72</th><td><u>#define <dfn class="macro" id="_M/IBUS_SERIALIZABLE_GET_CLASS" data-ref="_M/IBUS_SERIALIZABLE_GET_CLASS">IBUS_SERIALIZABLE_GET_CLASS</dfn>(obj)   \</u></td></tr>
+<tr><th id="73">73</th><td><u>    (G_TYPE_INSTANCE_GET_CLASS ((obj), IBUS_TYPE_SERIALIZABLE, IBusSerializableClass))</u></td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> * ibus_serializable_set_attachment:</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> *<span class="command"> @o</span>: An IBusSerializable.</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> *<span class="command"> @k</span>: String formatted key for indexing value.</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> *<span class="command"> @v</span>: Value to be attached. Should be also serializable.</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> * Attach a value to an IBusSerializable.</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc"> * This macro is an convenient wrapper of ibus_serializable_set_qattachment().</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="84">84</th><td><u>#define <dfn class="macro" id="_M/ibus_serializable_set_attachment" data-ref="_M/ibus_serializable_set_attachment">ibus_serializable_set_attachment</dfn>(o, k, v)  \</u></td></tr>
+<tr><th id="85">85</th><td><u>    ibus_serializable_set_qattachment (o, g_quark_from_string (k), v)</u></td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> * ibus_serializable_get_attachment:</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc"> *<span class="command"> @o</span>: An #IBusSerializable.</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> *<span class="command"> @k</span>: String formatted key for indexing value.</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> * Get a value from attachment of an #IBusSerializable.</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> * This macro is an convenient wrapper of ibus_serializable_get_qattachment().</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="95">95</th><td><u>#define <dfn class="macro" id="_M/ibus_serializable_get_attachment" data-ref="_M/ibus_serializable_get_attachment">ibus_serializable_get_attachment</dfn>(o, k)  \</u></td></tr>
+<tr><th id="96">96</th><td><u>    ibus_serializable_get_qattachment (o, g_quark_from_string (k))</u></td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"> * ibus_serializable_remove_attachment:</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc"> *<span class="command"> @o</span>: An #IBusSerializable.</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc"> *<span class="command"> @k</span>: String formatted key for indexing value.</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> * Remove a value from attachment of an #IBusSerializable.</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> * This macro is an convenient wrapper of ibus_serializable_remove_qattachment().</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="106">106</th><td><u>#define <dfn class="macro" id="_M/ibus_serializable_remove_attachment" data-ref="_M/ibus_serializable_remove_attachment">ibus_serializable_remove_attachment</dfn>(o, k)  \</u></td></tr>
+<tr><th id="107">107</th><td><u>    ibus_serializable_remove_qattachment (o, g_quark_from_string (k))</u></td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><a class="macro" href="../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_IBusSerializable" title='_IBusSerializable' data-ref="_IBusSerializable">_IBusSerializable</a> <dfn class="typedef" id="IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</dfn>;</td></tr>
+<tr><th id="112">112</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_IBusSerializableClass" title='_IBusSerializableClass' data-ref="_IBusSerializableClass">_IBusSerializableClass</a> <dfn class="typedef" id="IBusSerializableClass" title='IBusSerializableClass' data-type='struct _IBusSerializableClass' data-ref="IBusSerializableClass">IBusSerializableClass</dfn>;</td></tr>
+<tr><th id="113">113</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_IBusSerializablePrivate" title='_IBusSerializablePrivate' data-ref="_IBusSerializablePrivate"><a class="type" href="#_IBusSerializablePrivate" title='_IBusSerializablePrivate' data-ref="_IBusSerializablePrivate">_IBusSerializablePrivate</a></dfn> <dfn class="typedef" id="IBusSerializablePrivate" title='IBusSerializablePrivate' data-type='struct _IBusSerializablePrivate' data-ref="IBusSerializablePrivate">IBusSerializablePrivate</dfn>;</td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> * IBusSerializable:</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc"> * All the fields in the &lt;structname&gt;IBusSerializable&lt;/structname&gt; structure are</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> * private to the #IBusSerializable and should never be accessed directly.</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="121">121</th><td><b>struct</b> <dfn class="type def" id="_IBusSerializable" title='_IBusSerializable' data-ref="_IBusSerializable">_IBusSerializable</dfn> {</td></tr>
+<tr><th id="122">122</th><td>    <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="123">123</th><td>    <a class="typedef" href="ibusobject.h.html#IBusObject" title='IBusObject' data-type='struct _IBusObject' data-ref="IBusObject">IBusObject</a> <dfn class="decl" id="_IBusSerializable::parent" title='_IBusSerializable::parent' data-ref="_IBusSerializable::parent">parent</dfn>;</td></tr>
+<tr><th id="124">124</th><td>    <a class="typedef" href="#IBusSerializablePrivate" title='IBusSerializablePrivate' data-type='struct _IBusSerializablePrivate' data-ref="IBusSerializablePrivate">IBusSerializablePrivate</a> *<dfn class="decl" id="_IBusSerializable::priv" title='_IBusSerializable::priv' data-ref="_IBusSerializable::priv">priv</dfn>;</td></tr>
+<tr><th id="125">125</th><td>    <i>/* instance members */</i></td></tr>
+<tr><th id="126">126</th><td>};</td></tr>
+<tr><th id="127">127</th><td></td></tr>
+<tr><th id="128">128</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc"> * IBusSerializableSerializeFunc:</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc"> *<span class="command"> @serializable</span>: An #IBusSerializable.</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc"> *<span class="command"> @builder</span>: A #GVariantBuilder.</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> * Prototype of serialize function.</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> * Serialize function convert an #IBusSerializable to #GVariantBuilder.</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> * Returns a gboolean value which indicates whether the conversion is success.</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> * Return %TRUE if succeed.</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> * Returns: %TRUE if succeed; %FALSE otherwise.</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="140">140</th><td><b>typedef</b> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>    (* <dfn class="typedef" id="IBusSerializableSerializeFunc" title='IBusSerializableSerializeFunc' data-type='gboolean (*)(IBusSerializable *, GVariantBuilder *)' data-ref="IBusSerializableSerializeFunc">IBusSerializableSerializeFunc</dfn>)   (<a class="typedef" href="#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a>       *<dfn class="local col4 decl" id="14serializable" title='serializable' data-type='IBusSerializable *' data-ref="14serializable">serializable</dfn>,</td></tr>
+<tr><th id="141">141</th><td>                                                         <a class="typedef" href="../glib-2.0/glib/gvariant.h.html#GVariantBuilder" title='GVariantBuilder' data-type='struct _GVariantBuilder' data-ref="GVariantBuilder">GVariantBuilder</a>        *<dfn class="local col5 decl" id="15builder" title='builder' data-type='GVariantBuilder *' data-ref="15builder">builder</dfn>);</td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> * IBusSerializableDeserializeFunc:</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> *<span class="command"> @serializable</span>: An #IBusSerializable.</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> *<span class="command"> @variant</span>: A #GVariant contains a tuple.</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> * Prototype of deserialize function.</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> * Deserialize function convert a #GVariant to #IBusSerializable.</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> * Returns an integer value which indicates how many values in</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> * the variant(tuple) are consumed.</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> * Returns: The number of values in the variant(tuple) are consumed.</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="155">155</th><td><b>typedef</b> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>        (* <dfn class="typedef" id="IBusSerializableDeserializeFunc" title='IBusSerializableDeserializeFunc' data-type='gint (*)(IBusSerializable *, GVariant *)' data-ref="IBusSerializableDeserializeFunc">IBusSerializableDeserializeFunc</dfn>) (<a class="typedef" href="#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a>       *<dfn class="local col6 decl" id="16serializable" title='serializable' data-type='IBusSerializable *' data-ref="16serializable">serializable</dfn>,</td></tr>
+<tr><th id="156">156</th><td>                                                         <a class="typedef" href="../glib-2.0/glib/gvariant.h.html#GVariant" title='GVariant' data-type='struct _GVariant' data-ref="GVariant">GVariant</a>               *<dfn class="local col7 decl" id="17variant" title='variant' data-type='GVariant *' data-ref="17variant">variant</dfn>);</td></tr>
+<tr><th id="157">157</th><td></td></tr>
+<tr><th id="158">158</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"> * IBusSerializableCopyFunc:</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc"> *<span class="command"> @dest</span>: The destination #IBusSerializable.</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc"> *<span class="command"> @src</span>: A source #IBusSerializable.</i></td></tr>
+<tr><th id="162">162</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="163">163</th><td><i class="doc"> * Prototype of copy function.</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc"> * Copy function copy from source #IBusSerializable to the destination one.</i></td></tr>
+<tr><th id="165">165</th><td><i class="doc"> * Returns a gboolean value which indicates whether the copying is success.</i></td></tr>
+<tr><th id="166">166</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc"> * Returns: %TRUE if succeed; %FALSE otherwise.</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="169">169</th><td><b>typedef</b> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>    (* <dfn class="typedef" id="IBusSerializableCopyFunc" title='IBusSerializableCopyFunc' data-type='gboolean (*)(IBusSerializable *, const IBusSerializable *)' data-ref="IBusSerializableCopyFunc">IBusSerializableCopyFunc</dfn>)        (<a class="typedef" href="#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a>       *<dfn class="local col8 decl" id="18dest" title='dest' data-type='IBusSerializable *' data-ref="18dest">dest</dfn>,</td></tr>
+<tr><th id="170">170</th><td>                                                         <em>const</em> <a class="typedef" href="#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a> *<dfn class="local col9 decl" id="19src" title='src' data-type='const IBusSerializable *' data-ref="19src">src</dfn>);</td></tr>
+<tr><th id="171">171</th><td><b>struct</b> <dfn class="type def" id="_IBusSerializableClass" title='_IBusSerializableClass' data-ref="_IBusSerializableClass">_IBusSerializableClass</dfn> {</td></tr>
+<tr><th id="172">172</th><td>    <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="173">173</th><td>    <a class="typedef" href="ibusobject.h.html#IBusObjectClass" title='IBusObjectClass' data-type='struct _IBusObjectClass' data-ref="IBusObjectClass">IBusObjectClass</a> <dfn class="decl" id="_IBusSerializableClass::parent" title='_IBusSerializableClass::parent' data-ref="_IBusSerializableClass::parent">parent</dfn>;</td></tr>
+<tr><th id="174">174</th><td></td></tr>
+<tr><th id="175">175</th><td>    <i>/* virtual table */</i></td></tr>
+<tr><th id="176">176</th><td>    <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>    (* <dfn class="decl" id="_IBusSerializableClass::serialize" title='_IBusSerializableClass::serialize' data-ref="_IBusSerializableClass::serialize">serialize</dfn>)   (<a class="typedef" href="#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a>       *<dfn class="local col0 decl" id="20object" title='object' data-type='IBusSerializable *' data-ref="20object">object</dfn>,</td></tr>
+<tr><th id="177">177</th><td>                                 <a class="typedef" href="../glib-2.0/glib/gvariant.h.html#GVariantBuilder" title='GVariantBuilder' data-type='struct _GVariantBuilder' data-ref="GVariantBuilder">GVariantBuilder</a>        *<dfn class="local col1 decl" id="21builder" title='builder' data-type='GVariantBuilder *' data-ref="21builder">builder</dfn>);</td></tr>
+<tr><th id="178">178</th><td>    <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a>        (* <dfn class="decl" id="_IBusSerializableClass::deserialize" title='_IBusSerializableClass::deserialize' data-ref="_IBusSerializableClass::deserialize">deserialize</dfn>) (<a class="typedef" href="#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a>       *<dfn class="local col2 decl" id="22object" title='object' data-type='IBusSerializable *' data-ref="22object">object</dfn>,</td></tr>
+<tr><th id="179">179</th><td>                                 <a class="typedef" href="../glib-2.0/glib/gvariant.h.html#GVariant" title='GVariant' data-type='struct _GVariant' data-ref="GVariant">GVariant</a>               *<dfn class="local col3 decl" id="23variant" title='variant' data-type='GVariant *' data-ref="23variant">variant</dfn>);</td></tr>
+<tr><th id="180">180</th><td>    <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>    (* <dfn class="decl" id="_IBusSerializableClass::copy" title='_IBusSerializableClass::copy' data-ref="_IBusSerializableClass::copy">copy</dfn>)        (<a class="typedef" href="#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a>       *<dfn class="local col4 decl" id="24dest" title='dest' data-type='IBusSerializable *' data-ref="24dest">dest</dfn>,</td></tr>
+<tr><th id="181">181</th><td>                                 <em>const</em> <a class="typedef" href="#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a> *<dfn class="local col5 decl" id="25src" title='src' data-type='const IBusSerializable *' data-ref="25src">src</dfn>);</td></tr>
+<tr><th id="182">182</th><td>    <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="183">183</th><td>    <i>/* padding */</i></td></tr>
+<tr><th id="184">184</th><td>    <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="decl" id="_IBusSerializableClass::pdummy" title='_IBusSerializableClass::pdummy' data-ref="_IBusSerializableClass::pdummy">pdummy</dfn>[<var>5</var>];</td></tr>
+<tr><th id="185">185</th><td>};</td></tr>
+<tr><th id="186">186</th><td></td></tr>
+<tr><th id="187">187</th><td><a class="typedef" href="../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>                <dfn class="decl" id="ibus_serializable_get_type" title='ibus_serializable_get_type' data-ref="ibus_serializable_get_type">ibus_serializable_get_type</dfn>         (<em>void</em>);</td></tr>
+<tr><th id="188">188</th><td></td></tr>
+<tr><th id="189">189</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc"> * ibus_serializable_new:</i></td></tr>
+<tr><th id="191">191</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="192">192</th><td><i class="doc"> * Creates a new instance of an #IBusSerializable.</i></td></tr>
+<tr><th id="193">193</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="194">194</th><td><i class="doc"> * Returns: a new instance of #IBusSerializable.</i></td></tr>
+<tr><th id="195">195</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="196">196</th><td><a class="typedef" href="#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a>    *<dfn class="decl" id="ibus_serializable_new" title='ibus_serializable_new' data-ref="ibus_serializable_new">ibus_serializable_new</dfn>              (<em>void</em>);</td></tr>
+<tr><th id="197">197</th><td></td></tr>
+<tr><th id="198">198</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="199">199</th><td><i class="doc"> * ibus_serializable_set_qattachment:</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc"> *<span class="command"> @serializable</span>: An #IBusSerializable.</i></td></tr>
+<tr><th id="201">201</th><td><i class="doc"> *<span class="command"> @key</span>: String formatted key for indexing value.</i></td></tr>
+<tr><th id="202">202</th><td><i class="doc"> * <span class="command">@value</span>: Value to be attached or %NULL to remove any prevoius value.</i></td></tr>
+<tr><th id="203">203</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="204">204</th><td><i class="doc"> * Attach a value to an #IBusSerializable. If the value is floating,</i></td></tr>
+<tr><th id="205">205</th><td><i class="doc"> * the serializable will take the ownership.</i></td></tr>
+<tr><th id="206">206</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="207">207</th><td><i class="doc"> * See also: ibus_serializable_set_attachment().</i></td></tr>
+<tr><th id="208">208</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="209">209</th><td><em>void</em>                 <dfn class="decl" id="ibus_serializable_set_qattachment" title='ibus_serializable_set_qattachment' data-ref="ibus_serializable_set_qattachment">ibus_serializable_set_qattachment</dfn>  (<a class="typedef" href="#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a>   *<dfn class="local col6 decl" id="26serializable" title='serializable' data-type='IBusSerializable *' data-ref="26serializable">serializable</dfn>,</td></tr>
+<tr><th id="210">210</th><td>                                                         <a class="typedef" href="../glib-2.0/glib/gquark.h.html#GQuark" title='GQuark' data-type='guint32' data-ref="GQuark">GQuark</a>              <dfn class="local col7 decl" id="27key" title='key' data-type='GQuark' data-ref="27key">key</dfn>,</td></tr>
+<tr><th id="211">211</th><td>                                                         <a class="typedef" href="../glib-2.0/glib/gvariant.h.html#GVariant" title='GVariant' data-type='struct _GVariant' data-ref="GVariant">GVariant</a>           *<dfn class="local col8 decl" id="28value" title='value' data-type='GVariant *' data-ref="28value">value</dfn>);</td></tr>
+<tr><th id="212">212</th><td></td></tr>
+<tr><th id="213">213</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="214">214</th><td><i class="doc"> * ibus_serializable_get_qattachment:</i></td></tr>
+<tr><th id="215">215</th><td><i class="doc"> *<span class="command"> @serializable</span>: An #IBusSerializable.</i></td></tr>
+<tr><th id="216">216</th><td><i class="doc"> *<span class="command"> @key</span>: String formatted key for indexing value.</i></td></tr>
+<tr><th id="217">217</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="218">218</th><td><i class="doc"> * Gets a value from attachment of an #IBusSerializable.</i></td></tr>
+<tr><th id="219">219</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="220">220</th><td><i class="doc"> * Returns: The attached value; or %NULL if fail to retrieve the value.</i></td></tr>
+<tr><th id="221">221</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="222">222</th><td><i class="doc"> * See also: ibus_serializable_set_attachment().</i></td></tr>
+<tr><th id="223">223</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="224">224</th><td><a class="typedef" href="../glib-2.0/glib/gvariant.h.html#GVariant" title='GVariant' data-type='struct _GVariant' data-ref="GVariant">GVariant</a>            *<dfn class="decl" id="ibus_serializable_get_qattachment" title='ibus_serializable_get_qattachment' data-ref="ibus_serializable_get_qattachment">ibus_serializable_get_qattachment</dfn>  (<a class="typedef" href="#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a>   *<dfn class="local col9 decl" id="29serializable" title='serializable' data-type='IBusSerializable *' data-ref="29serializable">serializable</dfn>,</td></tr>
+<tr><th id="225">225</th><td>                                                         <a class="typedef" href="../glib-2.0/glib/gquark.h.html#GQuark" title='GQuark' data-type='guint32' data-ref="GQuark">GQuark</a>              <dfn class="local col0 decl" id="30key" title='key' data-type='GQuark' data-ref="30key">key</dfn>);</td></tr>
+<tr><th id="226">226</th><td></td></tr>
+<tr><th id="227">227</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="228">228</th><td><i class="doc"> * ibus_serializable_remove_qattachment:</i></td></tr>
+<tr><th id="229">229</th><td><i class="doc"> *<span class="command"> @serializable</span>: An #IBusSerializable.</i></td></tr>
+<tr><th id="230">230</th><td><i class="doc"> *<span class="command"> @key</span>: String formatted key for indexing value.</i></td></tr>
+<tr><th id="231">231</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="232">232</th><td><i class="doc"> * Remove a value from attachment of an #IBusSerializable.</i></td></tr>
+<tr><th id="233">233</th><td><i class="doc"> * See also: ibus_serializable_remove_attachment().</i></td></tr>
+<tr><th id="234">234</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="235">235</th><td><em>void</em>                 <dfn class="decl" id="ibus_serializable_remove_qattachment" title='ibus_serializable_remove_qattachment' data-ref="ibus_serializable_remove_qattachment">ibus_serializable_remove_qattachment</dfn></td></tr>
+<tr><th id="236">236</th><td>                                                        (<a class="typedef" href="#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a>   *<dfn class="local col1 decl" id="31serializable" title='serializable' data-type='IBusSerializable *' data-ref="31serializable">serializable</dfn>,</td></tr>
+<tr><th id="237">237</th><td>                                                         <a class="typedef" href="../glib-2.0/glib/gquark.h.html#GQuark" title='GQuark' data-type='guint32' data-ref="GQuark">GQuark</a>              <dfn class="local col2 decl" id="32key" title='key' data-type='GQuark' data-ref="32key">key</dfn>);</td></tr>
+<tr><th id="238">238</th><td></td></tr>
+<tr><th id="239">239</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="240">240</th><td><i class="doc"> * ibus_serializable_copy:</i></td></tr>
+<tr><th id="241">241</th><td><i class="doc"> *<span class="command"> @serializable</span>: An #IBusSerializable.</i></td></tr>
+<tr><th id="242">242</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="243">243</th><td><i class="doc"> * Clone an #IBusSerializable.</i></td></tr>
+<tr><th id="244">244</th><td><i class="doc"> * The copy method should be implemented in extended class.</i></td></tr>
+<tr><th id="245">245</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="246">246</th><td><i class="doc"> * Returns: (transfer none): A newly allocated clone object; or %NULL</i></td></tr>
+<tr><th id="247">247</th><td><i class="doc"> *     if<span class="command"> @object</span> is not serializable.</i></td></tr>
+<tr><th id="248">248</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="249">249</th><td><i class="doc"> * See also: IBusSerializableCopyFunc().</i></td></tr>
+<tr><th id="250">250</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="251">251</th><td><a class="typedef" href="#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a>    *<dfn class="decl" id="ibus_serializable_copy" title='ibus_serializable_copy' data-ref="ibus_serializable_copy">ibus_serializable_copy</dfn>             (<a class="typedef" href="#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a>   *<dfn class="local col3 decl" id="33serializable" title='serializable' data-type='IBusSerializable *' data-ref="33serializable">serializable</dfn>);</td></tr>
+<tr><th id="252">252</th><td></td></tr>
+<tr><th id="253">253</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="254">254</th><td><i class="doc"> * ibus_serializable_serialize:</i></td></tr>
+<tr><th id="255">255</th><td><i class="doc"> *<span class="command"> @serializable</span>: An #IBusSerializable.</i></td></tr>
+<tr><th id="256">256</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="257">257</th><td><i class="doc"> * Serialize an #IBusSerializable to a #GVariant.</i></td></tr>
+<tr><th id="258">258</th><td><i class="doc"> * The serialize method should be implemented in extended class.</i></td></tr>
+<tr><th id="259">259</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="260">260</th><td><i class="doc"> * Returns: A #GVariant.</i></td></tr>
+<tr><th id="261">261</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="262">262</th><td><i class="doc"> * See also: IBusSerializableCopyFunc().</i></td></tr>
+<tr><th id="263">263</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="264">264</th><td><a class="typedef" href="../glib-2.0/glib/gvariant.h.html#GVariant" title='GVariant' data-type='struct _GVariant' data-ref="GVariant">GVariant</a>            *<dfn class="decl" id="ibus_serializable_serialize" title='ibus_serializable_serialize' data-ref="ibus_serializable_serialize">ibus_serializable_serialize</dfn>        (<a class="typedef" href="#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a>   *<dfn class="local col4 decl" id="34serializable" title='serializable' data-type='IBusSerializable *' data-ref="34serializable">serializable</dfn>);</td></tr>
+<tr><th id="265">265</th><td></td></tr>
+<tr><th id="266">266</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="267">267</th><td><i class="doc"> * ibus_serializable_deserialize:</i></td></tr>
+<tr><th id="268">268</th><td><i class="doc"> *<span class="command"> @variant</span>: A #GVariant.</i></td></tr>
+<tr><th id="269">269</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="270">270</th><td><i class="doc"> * Deserialize a #GVariant to an #IBusSerializable/</i></td></tr>
+<tr><th id="271">271</th><td><i class="doc"> * The deserialize method should be implemented in extended class.</i></td></tr>
+<tr><th id="272">272</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="273">273</th><td><i class="doc"> * Returns: (transfer none): The deserialized #IBusSerializable.</i></td></tr>
+<tr><th id="274">274</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="275">275</th><td><i class="doc"> * See also: IBusSerializableCopyFunc().</i></td></tr>
+<tr><th id="276">276</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="277">277</th><td><a class="typedef" href="#IBusSerializable" title='IBusSerializable' data-type='struct _IBusSerializable' data-ref="IBusSerializable">IBusSerializable</a>    *<dfn class="decl" id="ibus_serializable_deserialize" title='ibus_serializable_deserialize' data-ref="ibus_serializable_deserialize">ibus_serializable_deserialize</dfn>      (<a class="typedef" href="../glib-2.0/glib/gvariant.h.html#GVariant" title='GVariant' data-type='struct _GVariant' data-ref="GVariant">GVariant</a>           *<dfn class="local col5 decl" id="35variant" title='variant' data-type='GVariant *' data-ref="35variant">variant</dfn>);</td></tr>
+<tr><th id="278">278</th><td></td></tr>
+<tr><th id="279">279</th><td><a class="macro" href="../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="280">280</th><td><u>#<span data-ppcond="27">endif</span></u></td></tr>
+<tr><th id="281">281</th><td></td></tr>
+<tr><th id="282">282</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../unikey/setup/dlg_main_setup.cpp.html'>unikey/setup/dlg_main_setup.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

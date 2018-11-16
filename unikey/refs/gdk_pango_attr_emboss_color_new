@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkpango.h' l='162' type='PangoAttribute * gdk_pango_attr_emboss_color_new(const GdkColor * color)'/>

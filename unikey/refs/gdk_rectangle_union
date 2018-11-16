@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdk.h' l='154' type='void gdk_rectangle_union(const GdkRectangle * src1, const GdkRectangle * src2, GdkRectangle * dest)'/>

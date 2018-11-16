@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkentrycompletion.h' l='51' ll='57'/>
+<size>32</size>
+<mbr r='_GtkEntryCompletion::parent_instance' o='0' t='GObject'/>
+<mbr r='_GtkEntryCompletion::priv' o='192' t='GtkEntryCompletionPrivate *'/>

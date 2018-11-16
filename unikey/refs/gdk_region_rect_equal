@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkregion.h' l='87' type='gboolean gdk_region_rect_equal(const GdkRegion * region, const GdkRectangle * rectangle)'/>

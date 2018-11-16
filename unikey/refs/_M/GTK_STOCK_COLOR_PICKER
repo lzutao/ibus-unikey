@@ -1,0 +1,9 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='156'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='148'>/**
+ * GTK_STOCK_COLOR_PICKER:
+ *
+ * The &quot;Color Picker&quot; item.
+ * &lt;inlinegraphic fileref=&quot;gtk-color-picker.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ *
+ * Since: 2.2
+ */</doc>

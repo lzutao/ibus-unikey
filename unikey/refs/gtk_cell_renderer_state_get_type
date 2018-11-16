@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='32' type='GType gtk_cell_renderer_state_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='31'>/* enumerations from &quot;gtkcellrenderer.h&quot; */</doc>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='708' type='gpointer gtk_clist_get_row_data(GtkCList * clist, gint row)'/>
+<doc f='include/gtk-2.0/gtk/gtkclist.h' l='707'>/* returns the data set for a row */</doc>

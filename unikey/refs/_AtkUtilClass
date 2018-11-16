@@ -1,0 +1,30 @@
+<def f='include/atk-1.0/atk/atkutil.h' l='160' ll='172'/>
+<size>192</size>
+<doc f='include/atk-1.0/atk/atkutil.h' l='140'>/**
+ * AtkUtilClass:
+ * @add_global_event_listener: adds the specified function to the list
+ *  of functions to be called when an ATK event occurs. ATK
+ *  implementors are discouraged from reimplementing this method.
+ * @remove_global_event_listener: removes the specified function to
+ *  the list of functions to be called when an ATK event occurs. ATK
+ *  implementors are discouraged from reimplementing this method.
+ * @add_key_event_listener: adds the specified function to the list of
+ *  functions to be called when a key event occurs.
+ * @remove_key_event_listener: remove the specified function to the
+ *  list of functions to be called when a key event occurs.
+ * @get_root: gets the root accessible container for the current
+ *  application.
+ * @get_toolkit_name: gets name string for the GUI toolkit
+ *  implementing ATK for this application.
+ * @get_toolkit_version: gets version string for the GUI toolkit
+ *  implementing ATK for this application.
+ *
+ */</doc>
+<mbr r='_AtkUtilClass::parent' o='0' t='GObjectClass'/>
+<mbr r='_AtkUtilClass::add_global_event_listener' o='1088' t='guint (*)(GSignalEmissionHook, const gchar *)'/>
+<mbr r='_AtkUtilClass::remove_global_event_listener' o='1152' t='void (*)(guint)'/>
+<mbr r='_AtkUtilClass::add_key_event_listener' o='1216' t='guint (*)(AtkKeySnoopFunc, gpointer)'/>
+<mbr r='_AtkUtilClass::remove_key_event_listener' o='1280' t='void (*)(guint)'/>
+<mbr r='_AtkUtilClass::get_root' o='1344' t='AtkObject *(*)()'/>
+<mbr r='_AtkUtilClass::get_toolkit_name' o='1408' t='const gchar *(*)()'/>
+<mbr r='_AtkUtilClass::get_toolkit_version' o='1472' t='const gchar *(*)()'/>

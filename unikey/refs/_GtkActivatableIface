@@ -1,0 +1,17 @@
+<def f='include/gtk-2.0/gtk/gtkactivatable.h' l='56' ll='66'/>
+<size>32</size>
+<doc f='include/gtk-2.0/gtk/gtkactivatable.h' l='43'>/**
+ * GtkActivatableIface:
+ * @update: Called to update the activatable when its related action&apos;s properties change.
+ * You must check the #GtkActivatable:use-action-appearance property only apply action
+ * properties that are meant to effect the appearance accordingly.
+ * @sync_action_properties: Called to update the activatable completely, this is called internally when
+ * #GtkActivatable::related-action property is set or unset and by the implementor when
+ * #GtkActivatable::use-action-appearance changes.&lt;note&gt;&lt;para&gt;This method can be called
+ * with a %NULL action at times&lt;/para&gt;&lt;/note&gt;
+ *
+ * Since: 2.16
+ */</doc>
+<mbr r='_GtkActivatableIface::g_iface' o='0' t='GTypeInterface'/>
+<mbr r='_GtkActivatableIface::update' o='128' t='void (*)(GtkActivatable *, GtkAction *, const gchar *)'/>
+<mbr r='_GtkActivatableIface::sync_action_properties' o='192' t='void (*)(GtkActivatable *, GtkAction *)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='941' type='gboolean gtk_widget_is_focus(GtkWidget * widget)'/>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentfilter.h' l='71' type='void gtk_recent_filter_add_mime_type(GtkRecentFilter * filter, const gchar * mime_type)'/>

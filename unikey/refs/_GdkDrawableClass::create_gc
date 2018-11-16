@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkdrawable.h' l='62' type='GdkGC *(*)(GdkDrawable *, GdkGCValues *, GdkGCValuesMask)'/>
+<offset>1088</offset>

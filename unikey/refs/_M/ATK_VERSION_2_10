@@ -1,0 +1,11 @@
+<dec f='include/atk-1.0/atk/atkversion.h' l='158'/>
+<use f='include/atk-1.0/atk/atkversion.h' l='337' u='c'/>
+<use f='include/atk-1.0/atk/atkversion.h' l='345' u='c'/>
+<doc f='include/atk-1.0/atk/atkversion.h' l='149'>/**
+ * ATK_VERSION_2_10:
+ *
+ * A macro that evaluates to the 2.10 version of ATK, in a format
+ * that can be used by the C pre-processor.
+ *
+ * Since: 2.14
+ */</doc>

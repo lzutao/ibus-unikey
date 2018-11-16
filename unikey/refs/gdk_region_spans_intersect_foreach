@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkregion.h' l='116' type='void gdk_region_spans_intersect_foreach(GdkRegion * region, const GdkSpan * spans, int n_spans, gboolean sorted, GdkSpanFunc function, gpointer data)'/>

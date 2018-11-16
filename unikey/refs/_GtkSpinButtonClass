@@ -1,0 +1,11 @@
+<def f='include/gtk-2.0/gtk/gtkspinbutton.h' l='101' ll='120'/>
+<size>888</size>
+<mbr r='_GtkSpinButtonClass::parent_class' o='0' t='GtkEntryClass'/>
+<mbr r='_GtkSpinButtonClass::input' o='6592' t='gint (*)(GtkSpinButton *, gdouble *)'/>
+<mbr r='_GtkSpinButtonClass::output' o='6656' t='gint (*)(GtkSpinButton *)'/>
+<mbr r='_GtkSpinButtonClass::value_changed' o='6720' t='void (*)(GtkSpinButton *)'/>
+<mbr r='_GtkSpinButtonClass::change_value' o='6784' t='void (*)(GtkSpinButton *, GtkScrollType)'/>
+<mbr r='_GtkSpinButtonClass::wrapped' o='6848' t='void (*)(GtkSpinButton *)'/>
+<mbr r='_GtkSpinButtonClass::_gtk_reserved1' o='6912' t='void (*)()'/>
+<mbr r='_GtkSpinButtonClass::_gtk_reserved2' o='6976' t='void (*)()'/>
+<mbr r='_GtkSpinButtonClass::_gtk_reserved3' o='7040' t='void (*)()'/>

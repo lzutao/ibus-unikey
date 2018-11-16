@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='914' type='gint gtk_widget_send_expose(GtkWidget * widget, GdkEvent * event)'/>

@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>pango-script.h source code [include/pango-1.0/pango/pango-script.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/pango-1.0/pango/pango-script.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>pango-1.0</a>/<a href='./'>pango</a>/<a href='pango-script.h.html'>pango-script.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Pango</i></td></tr>
+<tr><th id="2">2</th><td><i> * pango-script.h: Script tag handling</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 2002 Red Hat Software</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="7">7</th><td><i> * modify it under the terms of the GNU Library General Public</i></td></tr>
+<tr><th id="8">8</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="9">9</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="12">12</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="13">13</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the GNU</i></td></tr>
+<tr><th id="14">14</th><td><i> * Library General Public License for more details.</i></td></tr>
+<tr><th id="15">15</th><td><i> *</i></td></tr>
+<tr><th id="16">16</th><td><i> * You should have received a copy of the GNU Library General Public</i></td></tr>
+<tr><th id="17">17</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="18">18</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="19">19</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="22">ifndef</span> <span class="macro" data-ref="_M/__PANGO_SCRIPT_H__">__PANGO_SCRIPT_H__</span></u></td></tr>
+<tr><th id="23">23</th><td><u>#define <dfn class="macro" id="_M/__PANGO_SCRIPT_H__" data-ref="_M/__PANGO_SCRIPT_H__">__PANGO_SCRIPT_H__</dfn></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="../../glib-2.0/glib.h.html">&lt;glib.h&gt;</a></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="30">30</th><td><i class="doc"> * PangoScriptIter:</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> * A #PangoScriptIter is used to iterate through a string</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> * and identify ranges in different scripts.</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="35">35</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_PangoScriptIter" title='_PangoScriptIter' data-ref="_PangoScriptIter"><a class="type" href="#_PangoScriptIter" title='_PangoScriptIter' data-ref="_PangoScriptIter">_PangoScriptIter</a></dfn> <dfn class="typedef" id="PangoScriptIter" title='PangoScriptIter' data-type='struct _PangoScriptIter' data-ref="PangoScriptIter">PangoScriptIter</dfn>;</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * PangoScript:</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_INVALID_CODE: a value never returned from pango_script_for_unichar()</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_COMMON: a character used by multiple different scripts</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_INHERITED: a mark glyph that takes its script from the</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> * base glyph to which it is attached</i></td></tr>
+<tr><th id="43">43</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_ARABIC: 	Arabic</i></td></tr>
+<tr><th id="44">44</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_ARMENIAN: Armenian</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_BENGALI: 	Bengali</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_BOPOMOFO: Bopomofo</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_CHEROKEE: 	Cherokee</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_COPTIC: 	Coptic</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_CYRILLIC: 	Cyrillic</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_DESERET: 	Deseret</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_DEVANAGARI: 	Devanagari</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_ETHIOPIC: 	Ethiopic</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_GEORGIAN: 	Georgian</i></td></tr>
+<tr><th id="54">54</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_GOTHIC: 	Gothic</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_GREEK: 	Greek</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_GUJARATI: 	Gujarati</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_GURMUKHI: 	Gurmukhi</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_HAN: 	Han</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_HANGUL: 	Hangul</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_HEBREW: 	Hebrew</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_HIRAGANA: 	Hiragana</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_KANNADA: 	Kannada</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_KATAKANA: 	Katakana</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_KHMER: 	Khmer</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_LAO: 	Lao</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_LATIN: 	Latin</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_MALAYALAM: 	Malayalam</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_MONGOLIAN: 	Mongolian</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_MYANMAR: 	Myanmar</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_OGHAM: 	Ogham</i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_OLD_ITALIC: 	Old Italic</i></td></tr>
+<tr><th id="72">72</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_ORIYA: 	Oriya</i></td></tr>
+<tr><th id="73">73</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_RUNIC: 	Runic</i></td></tr>
+<tr><th id="74">74</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_SINHALA: 	Sinhala</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_SYRIAC: 	Syriac</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_TAMIL: 	Tamil</i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_TELUGU: 	Telugu</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_THAANA: 	Thaana</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_THAI: 	Thai</i></td></tr>
+<tr><th id="80">80</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_TIBETAN: 	Tibetan</i></td></tr>
+<tr><th id="81">81</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_CANADIAN_ABORIGINAL: 	Canadian Aboriginal</i></td></tr>
+<tr><th id="82">82</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_YI: 	Yi</i></td></tr>
+<tr><th id="83">83</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_TAGALOG: 	Tagalog</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_HANUNOO: 	Hanunoo</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_BUHID: 	Buhid</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_TAGBANWA: 	Tagbanwa</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_BRAILLE: 	Braille</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_CYPRIOT: 	Cypriot</i></td></tr>
+<tr><th id="89">89</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_LIMBU: 	Limbu</i></td></tr>
+<tr><th id="90">90</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_OSMANYA: 	Osmanya</i></td></tr>
+<tr><th id="91">91</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_SHAVIAN: 	Shavian</i></td></tr>
+<tr><th id="92">92</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_LINEAR_B: 	Linear B</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_TAI_LE: 	Tai Le</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_UGARITIC: 	Ugaritic</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_NEW_TAI_LUE: 	New Tai Lue. Since 1.10</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_BUGINESE: 	Buginese. Since 1.10</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_GLAGOLITIC: 	Glagolitic. Since 1.10</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_TIFINAGH: 	Tifinagh. Since 1.10</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_SYLOTI_NAGRI: 	Syloti Nagri. Since 1.10</i></td></tr>
+<tr><th id="100">100</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_OLD_PERSIAN: 	Old Persian. Since 1.10</i></td></tr>
+<tr><th id="101">101</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_KHAROSHTHI: 	Kharoshthi. Since 1.10</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_UNKNOWN: 		an unassigned code point. Since 1.14</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_BALINESE: 		Balinese. Since 1.14</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_CUNEIFORM: 	Cuneiform. Since 1.14</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_PHOENICIAN: 	Phoenician. Since 1.14</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_PHAGS_PA: 		Phags-pa. Since 1.14</i></td></tr>
+<tr><th id="107">107</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_NKO: 		N'Ko. Since 1.14</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_KAYAH_LI:   Kayah Li. Since 1.20.1</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_LEPCHA:     Lepcha. Since 1.20.1</i></td></tr>
+<tr><th id="110">110</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_REJANG:     Rejang. Since 1.20.1</i></td></tr>
+<tr><th id="111">111</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_SUNDANESE:  Sundanese. Since 1.20.1</i></td></tr>
+<tr><th id="112">112</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_SAURASHTRA: Saurashtra. Since 1.20.1</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_CHAM:       Cham. Since 1.20.1</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_OL_CHIKI:   Ol Chiki. Since 1.20.1</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_VAI:        Vai. Since 1.20.1</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_CARIAN:     Carian. Since 1.20.1</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_LYCIAN:     Lycian. Since 1.20.1</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_LYDIAN:     Lydian. Since 1.20.1</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_BATAK:      Batak. Since 1.32</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_BRAHMI:     Brahmi. Since 1.32</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_MANDAIC:    Mandaic. Since 1.32</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_CHAKMA:               Chakma. Since: 1.32</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_MEROITIC_CURSIVE:     Meroitic Cursive. Since: 1.32</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_MEROITIC_HIEROGLYPHS: Meroitic Hieroglyphs. Since: 1.32</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_MIAO:                 Miao. Since: 1.32</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_SHARADA:              Sharada. Since: 1.32</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_SORA_SOMPENG:         Sora Sompeng. Since: 1.32</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_TAKRI:                Takri. Since: 1.32</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_BASSA_VAH:            Bassa. Since: 1.40</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_CAUCASIAN_ALBANIAN:   Caucasian Albanian. Since: 1.40</i></td></tr>
+<tr><th id="131">131</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_DUPLOYAN:             Duployan. Since: 1.40</i></td></tr>
+<tr><th id="132">132</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_ELBASAN:              Elbasan. Since: 1.40</i></td></tr>
+<tr><th id="133">133</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_GRANTHA:              Grantha. Since: 1.40</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_KHOJKI:               Kjohki. Since: 1.40</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_KHUDAWADI:            Khudawadi, Sindhi. Since: 1.40</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_LINEAR_A:             Linear A. Since: 1.40</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_MAHAJANI:             Mahajani. Since: 1.40</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_MANICHAEAN:           Manichaean. Since: 1.40</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_MENDE_KIKAKUI:        Mende Kikakui. Since: 1.40</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_MODI:                 Modi. Since: 1.40</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_MRO:                  Mro. Since: 1.40</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_NABATAEAN:            Nabataean. Since: 1.40</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_OLD_NORTH_ARABIAN:    Old North Arabian. Since: 1.40</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_OLD_PERMIC:           Old Permic. Since: 1.40</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_PAHAWH_HMONG:         Pahawh Hmong. Since: 1.40</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_PALMYRENE:            Palmyrene. Since: 1.40</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_PAU_CIN_HAU:          Pau Cin Hau. Since: 1.40</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_PSALTER_PAHLAVI:      Psalter Pahlavi. Since: 1.40</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_SIDDHAM:              Siddham. Since: 1.40</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_TIRHUTA:              Tirhuta. Since: 1.40</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_WARANG_CITI:          Warang Citi. Since: 1.40</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_AHOM:                 Ahom. Since: 1.40</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_ANATOLIAN_HIEROGLYPHS: Anatolian Hieroglyphs. Since: 1.40</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_HATRAN:               Hatran. Since: 1.40</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_MULTANI:              Multani. Since: 1.40</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_OLD_HUNGARIAN:        Old Hungarian. Since: 1.40</i></td></tr>
+<tr><th id="157">157</th><td><i class="doc"> *<span class="command"> @PANGO</span>_SCRIPT_SIGNWRITING:          Signwriting. Since: 1.40</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"> * The #PangoScript enumeration identifies different writing</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc"> * systems. The values correspond to the names as defined in the</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc"> * Unicode standard.</i></td></tr>
+<tr><th id="162">162</th><td><i class="doc"> * Note that new types may be added in the future. Applications should be ready</i></td></tr>
+<tr><th id="163">163</th><td><i class="doc"> * to handle unknown values.  This enumeration is interchangeable with</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc"> * #GUnicodeScript.  See &lt;ulink</i></td></tr>
+<tr><th id="165">165</th><td><i class="doc"> * url="<a href="http://www.unicode.org/reports/tr24/">http://www.unicode.org/reports/tr24/</a>"&gt;Unicode Standard Annex</i></td></tr>
+<tr><th id="166">166</th><td><i class="doc"> * #24: Script names&lt;/ulink&gt;.</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="168">168</th><td><b>typedef</b> <b>enum</b> {                         <i>/* ISO 15924 code */</i></td></tr>
+<tr><th id="169">169</th><td>      <dfn class="enum" id="PANGO_SCRIPT_INVALID_CODE" title='PANGO_SCRIPT_INVALID_CODE' data-ref="PANGO_SCRIPT_INVALID_CODE">PANGO_SCRIPT_INVALID_CODE</dfn> = -<var>1</var>,</td></tr>
+<tr><th id="170">170</th><td>      <dfn class="enum" id="PANGO_SCRIPT_COMMON" title='PANGO_SCRIPT_COMMON' data-ref="PANGO_SCRIPT_COMMON">PANGO_SCRIPT_COMMON</dfn>       = <var>0</var>,   <i>/* Zyyy */</i></td></tr>
+<tr><th id="171">171</th><td>      <dfn class="enum" id="PANGO_SCRIPT_INHERITED" title='PANGO_SCRIPT_INHERITED' data-ref="PANGO_SCRIPT_INHERITED">PANGO_SCRIPT_INHERITED</dfn>,          <i>/* Qaai */</i></td></tr>
+<tr><th id="172">172</th><td>      <dfn class="enum" id="PANGO_SCRIPT_ARABIC" title='PANGO_SCRIPT_ARABIC' data-ref="PANGO_SCRIPT_ARABIC">PANGO_SCRIPT_ARABIC</dfn>,             <i>/* Arab */</i></td></tr>
+<tr><th id="173">173</th><td>      <dfn class="enum" id="PANGO_SCRIPT_ARMENIAN" title='PANGO_SCRIPT_ARMENIAN' data-ref="PANGO_SCRIPT_ARMENIAN">PANGO_SCRIPT_ARMENIAN</dfn>,           <i>/* Armn */</i></td></tr>
+<tr><th id="174">174</th><td>      <dfn class="enum" id="PANGO_SCRIPT_BENGALI" title='PANGO_SCRIPT_BENGALI' data-ref="PANGO_SCRIPT_BENGALI">PANGO_SCRIPT_BENGALI</dfn>,            <i>/* Beng */</i></td></tr>
+<tr><th id="175">175</th><td>      <dfn class="enum" id="PANGO_SCRIPT_BOPOMOFO" title='PANGO_SCRIPT_BOPOMOFO' data-ref="PANGO_SCRIPT_BOPOMOFO">PANGO_SCRIPT_BOPOMOFO</dfn>,           <i>/* Bopo */</i></td></tr>
+<tr><th id="176">176</th><td>      <dfn class="enum" id="PANGO_SCRIPT_CHEROKEE" title='PANGO_SCRIPT_CHEROKEE' data-ref="PANGO_SCRIPT_CHEROKEE">PANGO_SCRIPT_CHEROKEE</dfn>,           <i>/* Cher */</i></td></tr>
+<tr><th id="177">177</th><td>      <dfn class="enum" id="PANGO_SCRIPT_COPTIC" title='PANGO_SCRIPT_COPTIC' data-ref="PANGO_SCRIPT_COPTIC">PANGO_SCRIPT_COPTIC</dfn>,             <i>/* Qaac */</i></td></tr>
+<tr><th id="178">178</th><td>      <dfn class="enum" id="PANGO_SCRIPT_CYRILLIC" title='PANGO_SCRIPT_CYRILLIC' data-ref="PANGO_SCRIPT_CYRILLIC">PANGO_SCRIPT_CYRILLIC</dfn>,           <i>/* Cyrl (Cyrs) */</i></td></tr>
+<tr><th id="179">179</th><td>      <dfn class="enum" id="PANGO_SCRIPT_DESERET" title='PANGO_SCRIPT_DESERET' data-ref="PANGO_SCRIPT_DESERET">PANGO_SCRIPT_DESERET</dfn>,            <i>/* Dsrt */</i></td></tr>
+<tr><th id="180">180</th><td>      <dfn class="enum" id="PANGO_SCRIPT_DEVANAGARI" title='PANGO_SCRIPT_DEVANAGARI' data-ref="PANGO_SCRIPT_DEVANAGARI">PANGO_SCRIPT_DEVANAGARI</dfn>,         <i>/* Deva */</i></td></tr>
+<tr><th id="181">181</th><td>      <dfn class="enum" id="PANGO_SCRIPT_ETHIOPIC" title='PANGO_SCRIPT_ETHIOPIC' data-ref="PANGO_SCRIPT_ETHIOPIC">PANGO_SCRIPT_ETHIOPIC</dfn>,           <i>/* Ethi */</i></td></tr>
+<tr><th id="182">182</th><td>      <dfn class="enum" id="PANGO_SCRIPT_GEORGIAN" title='PANGO_SCRIPT_GEORGIAN' data-ref="PANGO_SCRIPT_GEORGIAN">PANGO_SCRIPT_GEORGIAN</dfn>,           <i>/* Geor (Geon, Geoa) */</i></td></tr>
+<tr><th id="183">183</th><td>      <dfn class="enum" id="PANGO_SCRIPT_GOTHIC" title='PANGO_SCRIPT_GOTHIC' data-ref="PANGO_SCRIPT_GOTHIC">PANGO_SCRIPT_GOTHIC</dfn>,             <i>/* Goth */</i></td></tr>
+<tr><th id="184">184</th><td>      <dfn class="enum" id="PANGO_SCRIPT_GREEK" title='PANGO_SCRIPT_GREEK' data-ref="PANGO_SCRIPT_GREEK">PANGO_SCRIPT_GREEK</dfn>,              <i>/* Grek */</i></td></tr>
+<tr><th id="185">185</th><td>      <dfn class="enum" id="PANGO_SCRIPT_GUJARATI" title='PANGO_SCRIPT_GUJARATI' data-ref="PANGO_SCRIPT_GUJARATI">PANGO_SCRIPT_GUJARATI</dfn>,           <i>/* Gujr */</i></td></tr>
+<tr><th id="186">186</th><td>      <dfn class="enum" id="PANGO_SCRIPT_GURMUKHI" title='PANGO_SCRIPT_GURMUKHI' data-ref="PANGO_SCRIPT_GURMUKHI">PANGO_SCRIPT_GURMUKHI</dfn>,           <i>/* Guru */</i></td></tr>
+<tr><th id="187">187</th><td>      <dfn class="enum" id="PANGO_SCRIPT_HAN" title='PANGO_SCRIPT_HAN' data-ref="PANGO_SCRIPT_HAN">PANGO_SCRIPT_HAN</dfn>,                <i>/* Hani */</i></td></tr>
+<tr><th id="188">188</th><td>      <dfn class="enum" id="PANGO_SCRIPT_HANGUL" title='PANGO_SCRIPT_HANGUL' data-ref="PANGO_SCRIPT_HANGUL">PANGO_SCRIPT_HANGUL</dfn>,             <i>/* Hang */</i></td></tr>
+<tr><th id="189">189</th><td>      <dfn class="enum" id="PANGO_SCRIPT_HEBREW" title='PANGO_SCRIPT_HEBREW' data-ref="PANGO_SCRIPT_HEBREW">PANGO_SCRIPT_HEBREW</dfn>,             <i>/* Hebr */</i></td></tr>
+<tr><th id="190">190</th><td>      <dfn class="enum" id="PANGO_SCRIPT_HIRAGANA" title='PANGO_SCRIPT_HIRAGANA' data-ref="PANGO_SCRIPT_HIRAGANA">PANGO_SCRIPT_HIRAGANA</dfn>,           <i>/* Hira */</i></td></tr>
+<tr><th id="191">191</th><td>      <dfn class="enum" id="PANGO_SCRIPT_KANNADA" title='PANGO_SCRIPT_KANNADA' data-ref="PANGO_SCRIPT_KANNADA">PANGO_SCRIPT_KANNADA</dfn>,            <i>/* Knda */</i></td></tr>
+<tr><th id="192">192</th><td>      <dfn class="enum" id="PANGO_SCRIPT_KATAKANA" title='PANGO_SCRIPT_KATAKANA' data-ref="PANGO_SCRIPT_KATAKANA">PANGO_SCRIPT_KATAKANA</dfn>,           <i>/* Kana */</i></td></tr>
+<tr><th id="193">193</th><td>      <dfn class="enum" id="PANGO_SCRIPT_KHMER" title='PANGO_SCRIPT_KHMER' data-ref="PANGO_SCRIPT_KHMER">PANGO_SCRIPT_KHMER</dfn>,              <i>/* Khmr */</i></td></tr>
+<tr><th id="194">194</th><td>      <dfn class="enum" id="PANGO_SCRIPT_LAO" title='PANGO_SCRIPT_LAO' data-ref="PANGO_SCRIPT_LAO">PANGO_SCRIPT_LAO</dfn>,                <i>/* Laoo */</i></td></tr>
+<tr><th id="195">195</th><td>      <dfn class="enum" id="PANGO_SCRIPT_LATIN" title='PANGO_SCRIPT_LATIN' data-ref="PANGO_SCRIPT_LATIN">PANGO_SCRIPT_LATIN</dfn>,              <i>/* Latn (Latf, Latg) */</i></td></tr>
+<tr><th id="196">196</th><td>      <dfn class="enum" id="PANGO_SCRIPT_MALAYALAM" title='PANGO_SCRIPT_MALAYALAM' data-ref="PANGO_SCRIPT_MALAYALAM">PANGO_SCRIPT_MALAYALAM</dfn>,          <i>/* Mlym */</i></td></tr>
+<tr><th id="197">197</th><td>      <dfn class="enum" id="PANGO_SCRIPT_MONGOLIAN" title='PANGO_SCRIPT_MONGOLIAN' data-ref="PANGO_SCRIPT_MONGOLIAN">PANGO_SCRIPT_MONGOLIAN</dfn>,          <i>/* Mong */</i></td></tr>
+<tr><th id="198">198</th><td>      <dfn class="enum" id="PANGO_SCRIPT_MYANMAR" title='PANGO_SCRIPT_MYANMAR' data-ref="PANGO_SCRIPT_MYANMAR">PANGO_SCRIPT_MYANMAR</dfn>,            <i>/* Mymr */</i></td></tr>
+<tr><th id="199">199</th><td>      <dfn class="enum" id="PANGO_SCRIPT_OGHAM" title='PANGO_SCRIPT_OGHAM' data-ref="PANGO_SCRIPT_OGHAM">PANGO_SCRIPT_OGHAM</dfn>,              <i>/* Ogam */</i></td></tr>
+<tr><th id="200">200</th><td>      <dfn class="enum" id="PANGO_SCRIPT_OLD_ITALIC" title='PANGO_SCRIPT_OLD_ITALIC' data-ref="PANGO_SCRIPT_OLD_ITALIC">PANGO_SCRIPT_OLD_ITALIC</dfn>,         <i>/* Ital */</i></td></tr>
+<tr><th id="201">201</th><td>      <dfn class="enum" id="PANGO_SCRIPT_ORIYA" title='PANGO_SCRIPT_ORIYA' data-ref="PANGO_SCRIPT_ORIYA">PANGO_SCRIPT_ORIYA</dfn>,              <i>/* Orya */</i></td></tr>
+<tr><th id="202">202</th><td>      <dfn class="enum" id="PANGO_SCRIPT_RUNIC" title='PANGO_SCRIPT_RUNIC' data-ref="PANGO_SCRIPT_RUNIC">PANGO_SCRIPT_RUNIC</dfn>,              <i>/* Runr */</i></td></tr>
+<tr><th id="203">203</th><td>      <dfn class="enum" id="PANGO_SCRIPT_SINHALA" title='PANGO_SCRIPT_SINHALA' data-ref="PANGO_SCRIPT_SINHALA">PANGO_SCRIPT_SINHALA</dfn>,            <i>/* Sinh */</i></td></tr>
+<tr><th id="204">204</th><td>      <dfn class="enum" id="PANGO_SCRIPT_SYRIAC" title='PANGO_SCRIPT_SYRIAC' data-ref="PANGO_SCRIPT_SYRIAC">PANGO_SCRIPT_SYRIAC</dfn>,             <i>/* Syrc (Syrj, Syrn, Syre) */</i></td></tr>
+<tr><th id="205">205</th><td>      <dfn class="enum" id="PANGO_SCRIPT_TAMIL" title='PANGO_SCRIPT_TAMIL' data-ref="PANGO_SCRIPT_TAMIL">PANGO_SCRIPT_TAMIL</dfn>,              <i>/* Taml */</i></td></tr>
+<tr><th id="206">206</th><td>      <dfn class="enum" id="PANGO_SCRIPT_TELUGU" title='PANGO_SCRIPT_TELUGU' data-ref="PANGO_SCRIPT_TELUGU">PANGO_SCRIPT_TELUGU</dfn>,             <i>/* Telu */</i></td></tr>
+<tr><th id="207">207</th><td>      <dfn class="enum" id="PANGO_SCRIPT_THAANA" title='PANGO_SCRIPT_THAANA' data-ref="PANGO_SCRIPT_THAANA">PANGO_SCRIPT_THAANA</dfn>,             <i>/* Thaa */</i></td></tr>
+<tr><th id="208">208</th><td>      <dfn class="enum" id="PANGO_SCRIPT_THAI" title='PANGO_SCRIPT_THAI' data-ref="PANGO_SCRIPT_THAI">PANGO_SCRIPT_THAI</dfn>,               <i>/* Thai */</i></td></tr>
+<tr><th id="209">209</th><td>      <dfn class="enum" id="PANGO_SCRIPT_TIBETAN" title='PANGO_SCRIPT_TIBETAN' data-ref="PANGO_SCRIPT_TIBETAN">PANGO_SCRIPT_TIBETAN</dfn>,            <i>/* Tibt */</i></td></tr>
+<tr><th id="210">210</th><td>      <dfn class="enum" id="PANGO_SCRIPT_CANADIAN_ABORIGINAL" title='PANGO_SCRIPT_CANADIAN_ABORIGINAL' data-ref="PANGO_SCRIPT_CANADIAN_ABORIGINAL">PANGO_SCRIPT_CANADIAN_ABORIGINAL</dfn>, <i>/* Cans */</i></td></tr>
+<tr><th id="211">211</th><td>      <dfn class="enum" id="PANGO_SCRIPT_YI" title='PANGO_SCRIPT_YI' data-ref="PANGO_SCRIPT_YI">PANGO_SCRIPT_YI</dfn>,                 <i>/* Yiii */</i></td></tr>
+<tr><th id="212">212</th><td>      <dfn class="enum" id="PANGO_SCRIPT_TAGALOG" title='PANGO_SCRIPT_TAGALOG' data-ref="PANGO_SCRIPT_TAGALOG">PANGO_SCRIPT_TAGALOG</dfn>,            <i>/* Tglg */</i></td></tr>
+<tr><th id="213">213</th><td>      <dfn class="enum" id="PANGO_SCRIPT_HANUNOO" title='PANGO_SCRIPT_HANUNOO' data-ref="PANGO_SCRIPT_HANUNOO">PANGO_SCRIPT_HANUNOO</dfn>,            <i>/* Hano */</i></td></tr>
+<tr><th id="214">214</th><td>      <dfn class="enum" id="PANGO_SCRIPT_BUHID" title='PANGO_SCRIPT_BUHID' data-ref="PANGO_SCRIPT_BUHID">PANGO_SCRIPT_BUHID</dfn>,              <i>/* Buhd */</i></td></tr>
+<tr><th id="215">215</th><td>      <dfn class="enum" id="PANGO_SCRIPT_TAGBANWA" title='PANGO_SCRIPT_TAGBANWA' data-ref="PANGO_SCRIPT_TAGBANWA">PANGO_SCRIPT_TAGBANWA</dfn>,           <i>/* Tagb */</i></td></tr>
+<tr><th id="216">216</th><td></td></tr>
+<tr><th id="217">217</th><td>      <i>/* Unicode-4.0 additions */</i></td></tr>
+<tr><th id="218">218</th><td>      <dfn class="enum" id="PANGO_SCRIPT_BRAILLE" title='PANGO_SCRIPT_BRAILLE' data-ref="PANGO_SCRIPT_BRAILLE">PANGO_SCRIPT_BRAILLE</dfn>,            <i>/* Brai */</i></td></tr>
+<tr><th id="219">219</th><td>      <dfn class="enum" id="PANGO_SCRIPT_CYPRIOT" title='PANGO_SCRIPT_CYPRIOT' data-ref="PANGO_SCRIPT_CYPRIOT">PANGO_SCRIPT_CYPRIOT</dfn>,            <i>/* Cprt */</i></td></tr>
+<tr><th id="220">220</th><td>      <dfn class="enum" id="PANGO_SCRIPT_LIMBU" title='PANGO_SCRIPT_LIMBU' data-ref="PANGO_SCRIPT_LIMBU">PANGO_SCRIPT_LIMBU</dfn>,              <i>/* Limb */</i></td></tr>
+<tr><th id="221">221</th><td>      <dfn class="enum" id="PANGO_SCRIPT_OSMANYA" title='PANGO_SCRIPT_OSMANYA' data-ref="PANGO_SCRIPT_OSMANYA">PANGO_SCRIPT_OSMANYA</dfn>,            <i>/* Osma */</i></td></tr>
+<tr><th id="222">222</th><td>      <dfn class="enum" id="PANGO_SCRIPT_SHAVIAN" title='PANGO_SCRIPT_SHAVIAN' data-ref="PANGO_SCRIPT_SHAVIAN">PANGO_SCRIPT_SHAVIAN</dfn>,            <i>/* Shaw */</i></td></tr>
+<tr><th id="223">223</th><td>      <dfn class="enum" id="PANGO_SCRIPT_LINEAR_B" title='PANGO_SCRIPT_LINEAR_B' data-ref="PANGO_SCRIPT_LINEAR_B">PANGO_SCRIPT_LINEAR_B</dfn>,           <i>/* Linb */</i></td></tr>
+<tr><th id="224">224</th><td>      <dfn class="enum" id="PANGO_SCRIPT_TAI_LE" title='PANGO_SCRIPT_TAI_LE' data-ref="PANGO_SCRIPT_TAI_LE">PANGO_SCRIPT_TAI_LE</dfn>,             <i>/* Tale */</i></td></tr>
+<tr><th id="225">225</th><td>      <dfn class="enum" id="PANGO_SCRIPT_UGARITIC" title='PANGO_SCRIPT_UGARITIC' data-ref="PANGO_SCRIPT_UGARITIC">PANGO_SCRIPT_UGARITIC</dfn>,           <i>/* Ugar */</i></td></tr>
+<tr><th id="226">226</th><td></td></tr>
+<tr><th id="227">227</th><td>      <i>/* Unicode-4.1 additions */</i></td></tr>
+<tr><th id="228">228</th><td>      <dfn class="enum" id="PANGO_SCRIPT_NEW_TAI_LUE" title='PANGO_SCRIPT_NEW_TAI_LUE' data-ref="PANGO_SCRIPT_NEW_TAI_LUE">PANGO_SCRIPT_NEW_TAI_LUE</dfn>,        <i>/* Talu */</i></td></tr>
+<tr><th id="229">229</th><td>      <dfn class="enum" id="PANGO_SCRIPT_BUGINESE" title='PANGO_SCRIPT_BUGINESE' data-ref="PANGO_SCRIPT_BUGINESE">PANGO_SCRIPT_BUGINESE</dfn>,           <i>/* Bugi */</i></td></tr>
+<tr><th id="230">230</th><td>      <dfn class="enum" id="PANGO_SCRIPT_GLAGOLITIC" title='PANGO_SCRIPT_GLAGOLITIC' data-ref="PANGO_SCRIPT_GLAGOLITIC">PANGO_SCRIPT_GLAGOLITIC</dfn>,         <i>/* Glag */</i></td></tr>
+<tr><th id="231">231</th><td>      <dfn class="enum" id="PANGO_SCRIPT_TIFINAGH" title='PANGO_SCRIPT_TIFINAGH' data-ref="PANGO_SCRIPT_TIFINAGH">PANGO_SCRIPT_TIFINAGH</dfn>,           <i>/* Tfng */</i></td></tr>
+<tr><th id="232">232</th><td>      <dfn class="enum" id="PANGO_SCRIPT_SYLOTI_NAGRI" title='PANGO_SCRIPT_SYLOTI_NAGRI' data-ref="PANGO_SCRIPT_SYLOTI_NAGRI">PANGO_SCRIPT_SYLOTI_NAGRI</dfn>,       <i>/* Sylo */</i></td></tr>
+<tr><th id="233">233</th><td>      <dfn class="enum" id="PANGO_SCRIPT_OLD_PERSIAN" title='PANGO_SCRIPT_OLD_PERSIAN' data-ref="PANGO_SCRIPT_OLD_PERSIAN">PANGO_SCRIPT_OLD_PERSIAN</dfn>,        <i>/* Xpeo */</i></td></tr>
+<tr><th id="234">234</th><td>      <dfn class="enum" id="PANGO_SCRIPT_KHAROSHTHI" title='PANGO_SCRIPT_KHAROSHTHI' data-ref="PANGO_SCRIPT_KHAROSHTHI">PANGO_SCRIPT_KHAROSHTHI</dfn>,         <i>/* Khar */</i></td></tr>
+<tr><th id="235">235</th><td></td></tr>
+<tr><th id="236">236</th><td>      <i>/* Unicode-5.0 additions */</i></td></tr>
+<tr><th id="237">237</th><td>      <dfn class="enum" id="PANGO_SCRIPT_UNKNOWN" title='PANGO_SCRIPT_UNKNOWN' data-ref="PANGO_SCRIPT_UNKNOWN">PANGO_SCRIPT_UNKNOWN</dfn>,            <i>/* Zzzz */</i></td></tr>
+<tr><th id="238">238</th><td>      <dfn class="enum" id="PANGO_SCRIPT_BALINESE" title='PANGO_SCRIPT_BALINESE' data-ref="PANGO_SCRIPT_BALINESE">PANGO_SCRIPT_BALINESE</dfn>,           <i>/* Bali */</i></td></tr>
+<tr><th id="239">239</th><td>      <dfn class="enum" id="PANGO_SCRIPT_CUNEIFORM" title='PANGO_SCRIPT_CUNEIFORM' data-ref="PANGO_SCRIPT_CUNEIFORM">PANGO_SCRIPT_CUNEIFORM</dfn>,          <i>/* Xsux */</i></td></tr>
+<tr><th id="240">240</th><td>      <dfn class="enum" id="PANGO_SCRIPT_PHOENICIAN" title='PANGO_SCRIPT_PHOENICIAN' data-ref="PANGO_SCRIPT_PHOENICIAN">PANGO_SCRIPT_PHOENICIAN</dfn>,         <i>/* Phnx */</i></td></tr>
+<tr><th id="241">241</th><td>      <dfn class="enum" id="PANGO_SCRIPT_PHAGS_PA" title='PANGO_SCRIPT_PHAGS_PA' data-ref="PANGO_SCRIPT_PHAGS_PA">PANGO_SCRIPT_PHAGS_PA</dfn>,           <i>/* Phag */</i></td></tr>
+<tr><th id="242">242</th><td>      <dfn class="enum" id="PANGO_SCRIPT_NKO" title='PANGO_SCRIPT_NKO' data-ref="PANGO_SCRIPT_NKO">PANGO_SCRIPT_NKO</dfn>,                <i>/* Nkoo */</i></td></tr>
+<tr><th id="243">243</th><td></td></tr>
+<tr><th id="244">244</th><td>      <i>/* Unicode-5.1 additions */</i></td></tr>
+<tr><th id="245">245</th><td>      <dfn class="enum" id="PANGO_SCRIPT_KAYAH_LI" title='PANGO_SCRIPT_KAYAH_LI' data-ref="PANGO_SCRIPT_KAYAH_LI">PANGO_SCRIPT_KAYAH_LI</dfn>,           <i>/* Kali */</i></td></tr>
+<tr><th id="246">246</th><td>      <dfn class="enum" id="PANGO_SCRIPT_LEPCHA" title='PANGO_SCRIPT_LEPCHA' data-ref="PANGO_SCRIPT_LEPCHA">PANGO_SCRIPT_LEPCHA</dfn>,             <i>/* Lepc */</i></td></tr>
+<tr><th id="247">247</th><td>      <dfn class="enum" id="PANGO_SCRIPT_REJANG" title='PANGO_SCRIPT_REJANG' data-ref="PANGO_SCRIPT_REJANG">PANGO_SCRIPT_REJANG</dfn>,             <i>/* Rjng */</i></td></tr>
+<tr><th id="248">248</th><td>      <dfn class="enum" id="PANGO_SCRIPT_SUNDANESE" title='PANGO_SCRIPT_SUNDANESE' data-ref="PANGO_SCRIPT_SUNDANESE">PANGO_SCRIPT_SUNDANESE</dfn>,          <i>/* Sund */</i></td></tr>
+<tr><th id="249">249</th><td>      <dfn class="enum" id="PANGO_SCRIPT_SAURASHTRA" title='PANGO_SCRIPT_SAURASHTRA' data-ref="PANGO_SCRIPT_SAURASHTRA">PANGO_SCRIPT_SAURASHTRA</dfn>,         <i>/* Saur */</i></td></tr>
+<tr><th id="250">250</th><td>      <dfn class="enum" id="PANGO_SCRIPT_CHAM" title='PANGO_SCRIPT_CHAM' data-ref="PANGO_SCRIPT_CHAM">PANGO_SCRIPT_CHAM</dfn>,               <i>/* Cham */</i></td></tr>
+<tr><th id="251">251</th><td>      <dfn class="enum" id="PANGO_SCRIPT_OL_CHIKI" title='PANGO_SCRIPT_OL_CHIKI' data-ref="PANGO_SCRIPT_OL_CHIKI">PANGO_SCRIPT_OL_CHIKI</dfn>,           <i>/* Olck */</i></td></tr>
+<tr><th id="252">252</th><td>      <dfn class="enum" id="PANGO_SCRIPT_VAI" title='PANGO_SCRIPT_VAI' data-ref="PANGO_SCRIPT_VAI">PANGO_SCRIPT_VAI</dfn>,                <i>/* Vaii */</i></td></tr>
+<tr><th id="253">253</th><td>      <dfn class="enum" id="PANGO_SCRIPT_CARIAN" title='PANGO_SCRIPT_CARIAN' data-ref="PANGO_SCRIPT_CARIAN">PANGO_SCRIPT_CARIAN</dfn>,             <i>/* Cari */</i></td></tr>
+<tr><th id="254">254</th><td>      <dfn class="enum" id="PANGO_SCRIPT_LYCIAN" title='PANGO_SCRIPT_LYCIAN' data-ref="PANGO_SCRIPT_LYCIAN">PANGO_SCRIPT_LYCIAN</dfn>,             <i>/* Lyci */</i></td></tr>
+<tr><th id="255">255</th><td>      <dfn class="enum" id="PANGO_SCRIPT_LYDIAN" title='PANGO_SCRIPT_LYDIAN' data-ref="PANGO_SCRIPT_LYDIAN">PANGO_SCRIPT_LYDIAN</dfn>,             <i>/* Lydi */</i></td></tr>
+<tr><th id="256">256</th><td></td></tr>
+<tr><th id="257">257</th><td>      <i>/* Unicode-6.0 additions */</i></td></tr>
+<tr><th id="258">258</th><td>      <dfn class="enum" id="PANGO_SCRIPT_BATAK" title='PANGO_SCRIPT_BATAK' data-ref="PANGO_SCRIPT_BATAK">PANGO_SCRIPT_BATAK</dfn>,              <i>/* Batk */</i></td></tr>
+<tr><th id="259">259</th><td>      <dfn class="enum" id="PANGO_SCRIPT_BRAHMI" title='PANGO_SCRIPT_BRAHMI' data-ref="PANGO_SCRIPT_BRAHMI">PANGO_SCRIPT_BRAHMI</dfn>,             <i>/* Brah */</i></td></tr>
+<tr><th id="260">260</th><td>      <dfn class="enum" id="PANGO_SCRIPT_MANDAIC" title='PANGO_SCRIPT_MANDAIC' data-ref="PANGO_SCRIPT_MANDAIC">PANGO_SCRIPT_MANDAIC</dfn>,            <i>/* Mand */</i></td></tr>
+<tr><th id="261">261</th><td></td></tr>
+<tr><th id="262">262</th><td>      <i>/* Unicode-6.1 additions */</i></td></tr>
+<tr><th id="263">263</th><td>      <dfn class="enum" id="PANGO_SCRIPT_CHAKMA" title='PANGO_SCRIPT_CHAKMA' data-ref="PANGO_SCRIPT_CHAKMA">PANGO_SCRIPT_CHAKMA</dfn>,             <i>/* Cakm */</i></td></tr>
+<tr><th id="264">264</th><td>      <dfn class="enum" id="PANGO_SCRIPT_MEROITIC_CURSIVE" title='PANGO_SCRIPT_MEROITIC_CURSIVE' data-ref="PANGO_SCRIPT_MEROITIC_CURSIVE">PANGO_SCRIPT_MEROITIC_CURSIVE</dfn>,   <i>/* Merc */</i></td></tr>
+<tr><th id="265">265</th><td>      <dfn class="enum" id="PANGO_SCRIPT_MEROITIC_HIEROGLYPHS" title='PANGO_SCRIPT_MEROITIC_HIEROGLYPHS' data-ref="PANGO_SCRIPT_MEROITIC_HIEROGLYPHS">PANGO_SCRIPT_MEROITIC_HIEROGLYPHS</dfn>,<i>/* Mero */</i></td></tr>
+<tr><th id="266">266</th><td>      <dfn class="enum" id="PANGO_SCRIPT_MIAO" title='PANGO_SCRIPT_MIAO' data-ref="PANGO_SCRIPT_MIAO">PANGO_SCRIPT_MIAO</dfn>,               <i>/* Plrd */</i></td></tr>
+<tr><th id="267">267</th><td>      <dfn class="enum" id="PANGO_SCRIPT_SHARADA" title='PANGO_SCRIPT_SHARADA' data-ref="PANGO_SCRIPT_SHARADA">PANGO_SCRIPT_SHARADA</dfn>,            <i>/* Shrd */</i></td></tr>
+<tr><th id="268">268</th><td>      <dfn class="enum" id="PANGO_SCRIPT_SORA_SOMPENG" title='PANGO_SCRIPT_SORA_SOMPENG' data-ref="PANGO_SCRIPT_SORA_SOMPENG">PANGO_SCRIPT_SORA_SOMPENG</dfn>,       <i>/* Sora */</i></td></tr>
+<tr><th id="269">269</th><td>      <dfn class="enum" id="PANGO_SCRIPT_TAKRI" title='PANGO_SCRIPT_TAKRI' data-ref="PANGO_SCRIPT_TAKRI">PANGO_SCRIPT_TAKRI</dfn>,              <i>/* Takr */</i></td></tr>
+<tr><th id="270">270</th><td></td></tr>
+<tr><th id="271">271</th><td>      <i>/* Unicode 7.0 additions */</i></td></tr>
+<tr><th id="272">272</th><td>      <dfn class="enum" id="PANGO_SCRIPT_BASSA_VAH" title='PANGO_SCRIPT_BASSA_VAH' data-ref="PANGO_SCRIPT_BASSA_VAH">PANGO_SCRIPT_BASSA_VAH</dfn>,              <i>/* Bass */</i></td></tr>
+<tr><th id="273">273</th><td>      <dfn class="enum" id="PANGO_SCRIPT_CAUCASIAN_ALBANIAN" title='PANGO_SCRIPT_CAUCASIAN_ALBANIAN' data-ref="PANGO_SCRIPT_CAUCASIAN_ALBANIAN">PANGO_SCRIPT_CAUCASIAN_ALBANIAN</dfn>,     <i>/* Aghb */</i></td></tr>
+<tr><th id="274">274</th><td>      <dfn class="enum" id="PANGO_SCRIPT_DUPLOYAN" title='PANGO_SCRIPT_DUPLOYAN' data-ref="PANGO_SCRIPT_DUPLOYAN">PANGO_SCRIPT_DUPLOYAN</dfn>,               <i>/* Dupl */</i></td></tr>
+<tr><th id="275">275</th><td>      <dfn class="enum" id="PANGO_SCRIPT_ELBASAN" title='PANGO_SCRIPT_ELBASAN' data-ref="PANGO_SCRIPT_ELBASAN">PANGO_SCRIPT_ELBASAN</dfn>,                <i>/* Elba */</i></td></tr>
+<tr><th id="276">276</th><td>      <dfn class="enum" id="PANGO_SCRIPT_GRANTHA" title='PANGO_SCRIPT_GRANTHA' data-ref="PANGO_SCRIPT_GRANTHA">PANGO_SCRIPT_GRANTHA</dfn>,                <i>/* Gran */</i></td></tr>
+<tr><th id="277">277</th><td>      <dfn class="enum" id="PANGO_SCRIPT_KHOJKI" title='PANGO_SCRIPT_KHOJKI' data-ref="PANGO_SCRIPT_KHOJKI">PANGO_SCRIPT_KHOJKI</dfn>,                 <i>/* Khoj */</i></td></tr>
+<tr><th id="278">278</th><td>      <dfn class="enum" id="PANGO_SCRIPT_KHUDAWADI" title='PANGO_SCRIPT_KHUDAWADI' data-ref="PANGO_SCRIPT_KHUDAWADI">PANGO_SCRIPT_KHUDAWADI</dfn>,              <i>/* Sind */</i></td></tr>
+<tr><th id="279">279</th><td>      <dfn class="enum" id="PANGO_SCRIPT_LINEAR_A" title='PANGO_SCRIPT_LINEAR_A' data-ref="PANGO_SCRIPT_LINEAR_A">PANGO_SCRIPT_LINEAR_A</dfn>,               <i>/* Lina */</i></td></tr>
+<tr><th id="280">280</th><td>      <dfn class="enum" id="PANGO_SCRIPT_MAHAJANI" title='PANGO_SCRIPT_MAHAJANI' data-ref="PANGO_SCRIPT_MAHAJANI">PANGO_SCRIPT_MAHAJANI</dfn>,               <i>/* Mahj */</i></td></tr>
+<tr><th id="281">281</th><td>      <dfn class="enum" id="PANGO_SCRIPT_MANICHAEAN" title='PANGO_SCRIPT_MANICHAEAN' data-ref="PANGO_SCRIPT_MANICHAEAN">PANGO_SCRIPT_MANICHAEAN</dfn>,             <i>/* Manu */</i></td></tr>
+<tr><th id="282">282</th><td>      <dfn class="enum" id="PANGO_SCRIPT_MENDE_KIKAKUI" title='PANGO_SCRIPT_MENDE_KIKAKUI' data-ref="PANGO_SCRIPT_MENDE_KIKAKUI">PANGO_SCRIPT_MENDE_KIKAKUI</dfn>,          <i>/* Mend */</i></td></tr>
+<tr><th id="283">283</th><td>      <dfn class="enum" id="PANGO_SCRIPT_MODI" title='PANGO_SCRIPT_MODI' data-ref="PANGO_SCRIPT_MODI">PANGO_SCRIPT_MODI</dfn>,                   <i>/* Modi */</i></td></tr>
+<tr><th id="284">284</th><td>      <dfn class="enum" id="PANGO_SCRIPT_MRO" title='PANGO_SCRIPT_MRO' data-ref="PANGO_SCRIPT_MRO">PANGO_SCRIPT_MRO</dfn>,                    <i>/* Mroo */</i></td></tr>
+<tr><th id="285">285</th><td>      <dfn class="enum" id="PANGO_SCRIPT_NABATAEAN" title='PANGO_SCRIPT_NABATAEAN' data-ref="PANGO_SCRIPT_NABATAEAN">PANGO_SCRIPT_NABATAEAN</dfn>,              <i>/* Nbat */</i></td></tr>
+<tr><th id="286">286</th><td>      <dfn class="enum" id="PANGO_SCRIPT_OLD_NORTH_ARABIAN" title='PANGO_SCRIPT_OLD_NORTH_ARABIAN' data-ref="PANGO_SCRIPT_OLD_NORTH_ARABIAN">PANGO_SCRIPT_OLD_NORTH_ARABIAN</dfn>,      <i>/* Narb */</i></td></tr>
+<tr><th id="287">287</th><td>      <dfn class="enum" id="PANGO_SCRIPT_OLD_PERMIC" title='PANGO_SCRIPT_OLD_PERMIC' data-ref="PANGO_SCRIPT_OLD_PERMIC">PANGO_SCRIPT_OLD_PERMIC</dfn>,             <i>/* Perm */</i></td></tr>
+<tr><th id="288">288</th><td>      <dfn class="enum" id="PANGO_SCRIPT_PAHAWH_HMONG" title='PANGO_SCRIPT_PAHAWH_HMONG' data-ref="PANGO_SCRIPT_PAHAWH_HMONG">PANGO_SCRIPT_PAHAWH_HMONG</dfn>,           <i>/* Hmng */</i></td></tr>
+<tr><th id="289">289</th><td>      <dfn class="enum" id="PANGO_SCRIPT_PALMYRENE" title='PANGO_SCRIPT_PALMYRENE' data-ref="PANGO_SCRIPT_PALMYRENE">PANGO_SCRIPT_PALMYRENE</dfn>,              <i>/* Palm */</i></td></tr>
+<tr><th id="290">290</th><td>      <dfn class="enum" id="PANGO_SCRIPT_PAU_CIN_HAU" title='PANGO_SCRIPT_PAU_CIN_HAU' data-ref="PANGO_SCRIPT_PAU_CIN_HAU">PANGO_SCRIPT_PAU_CIN_HAU</dfn>,            <i>/* Pauc */</i></td></tr>
+<tr><th id="291">291</th><td>      <dfn class="enum" id="PANGO_SCRIPT_PSALTER_PAHLAVI" title='PANGO_SCRIPT_PSALTER_PAHLAVI' data-ref="PANGO_SCRIPT_PSALTER_PAHLAVI">PANGO_SCRIPT_PSALTER_PAHLAVI</dfn>,        <i>/* Phlp */</i></td></tr>
+<tr><th id="292">292</th><td>      <dfn class="enum" id="PANGO_SCRIPT_SIDDHAM" title='PANGO_SCRIPT_SIDDHAM' data-ref="PANGO_SCRIPT_SIDDHAM">PANGO_SCRIPT_SIDDHAM</dfn>,                <i>/* Sidd */</i></td></tr>
+<tr><th id="293">293</th><td>      <dfn class="enum" id="PANGO_SCRIPT_TIRHUTA" title='PANGO_SCRIPT_TIRHUTA' data-ref="PANGO_SCRIPT_TIRHUTA">PANGO_SCRIPT_TIRHUTA</dfn>,                <i>/* Tirh */</i></td></tr>
+<tr><th id="294">294</th><td>      <dfn class="enum" id="PANGO_SCRIPT_WARANG_CITI" title='PANGO_SCRIPT_WARANG_CITI' data-ref="PANGO_SCRIPT_WARANG_CITI">PANGO_SCRIPT_WARANG_CITI</dfn>,            <i>/* Wara */</i></td></tr>
+<tr><th id="295">295</th><td></td></tr>
+<tr><th id="296">296</th><td>      <i>/* Unicode 8.0 additions */</i></td></tr>
+<tr><th id="297">297</th><td>      <dfn class="enum" id="PANGO_SCRIPT_AHOM" title='PANGO_SCRIPT_AHOM' data-ref="PANGO_SCRIPT_AHOM">PANGO_SCRIPT_AHOM</dfn>,                   <i>/* Ahom */</i></td></tr>
+<tr><th id="298">298</th><td>      <dfn class="enum" id="PANGO_SCRIPT_ANATOLIAN_HIEROGLYPHS" title='PANGO_SCRIPT_ANATOLIAN_HIEROGLYPHS' data-ref="PANGO_SCRIPT_ANATOLIAN_HIEROGLYPHS">PANGO_SCRIPT_ANATOLIAN_HIEROGLYPHS</dfn>,  <i>/* Hluw */</i></td></tr>
+<tr><th id="299">299</th><td>      <dfn class="enum" id="PANGO_SCRIPT_HATRAN" title='PANGO_SCRIPT_HATRAN' data-ref="PANGO_SCRIPT_HATRAN">PANGO_SCRIPT_HATRAN</dfn>,                 <i>/* Hatr */</i></td></tr>
+<tr><th id="300">300</th><td>      <dfn class="enum" id="PANGO_SCRIPT_MULTANI" title='PANGO_SCRIPT_MULTANI' data-ref="PANGO_SCRIPT_MULTANI">PANGO_SCRIPT_MULTANI</dfn>,                <i>/* Mult */</i></td></tr>
+<tr><th id="301">301</th><td>      <dfn class="enum" id="PANGO_SCRIPT_OLD_HUNGARIAN" title='PANGO_SCRIPT_OLD_HUNGARIAN' data-ref="PANGO_SCRIPT_OLD_HUNGARIAN">PANGO_SCRIPT_OLD_HUNGARIAN</dfn>,          <i>/* Hung */</i></td></tr>
+<tr><th id="302">302</th><td>      <dfn class="enum" id="PANGO_SCRIPT_SIGNWRITING" title='PANGO_SCRIPT_SIGNWRITING' data-ref="PANGO_SCRIPT_SIGNWRITING">PANGO_SCRIPT_SIGNWRITING</dfn>             <i>/* Sgnw */</i></td></tr>
+<tr><th id="303">303</th><td>} <dfn class="typedef" id="PangoScript" title='PangoScript' data-type='enum PangoScript' data-ref="PangoScript">PangoScript</dfn>;</td></tr>
+<tr><th id="304">304</th><td></td></tr>
+<tr><th id="305">305</th><td><u>#include <a href="pango-version-macros.h.html">&lt;pango/pango-version-macros.h&gt;</a></u></td></tr>
+<tr><th id="306">306</th><td></td></tr>
+<tr><th id="307">307</th><td><a class="macro" href="pango-version-macros.h.html#366" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_4">PANGO_AVAILABLE_IN_1_4</a></td></tr>
+<tr><th id="308">308</th><td><a class="typedef" href="#PangoScript" title='PangoScript' data-type='enum PangoScript' data-ref="PangoScript">PangoScript</a> <dfn class="decl" id="pango_script_for_unichar" title='pango_script_for_unichar' data-ref="pango_script_for_unichar">pango_script_for_unichar</dfn>         (<a class="typedef" href="../../glib-2.0/glib/gunicode.h.html#gunichar" title='gunichar' data-type='guint32' data-ref="gunichar">gunichar</a>             <dfn class="local col0 decl" id="12390ch" title='ch' data-type='gunichar' data-ref="12390ch">ch</dfn>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="309">309</th><td></td></tr>
+<tr><th id="310">310</th><td><a class="macro" href="pango-version-macros.h.html#366" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_4">PANGO_AVAILABLE_IN_1_4</a></td></tr>
+<tr><th id="311">311</th><td><a class="typedef" href="#PangoScriptIter" title='PangoScriptIter' data-type='struct _PangoScriptIter' data-ref="PangoScriptIter">PangoScriptIter</a> *<dfn class="decl" id="pango_script_iter_new" title='pango_script_iter_new' data-ref="pango_script_iter_new">pango_script_iter_new</dfn>       (<em>const</em> <em>char</em>          *<dfn class="local col1 decl" id="12391text" title='text' data-type='const char *' data-ref="12391text">text</dfn>,</td></tr>
+<tr><th id="312">312</th><td>					      <em>int</em>                  <dfn class="local col2 decl" id="12392length" title='length' data-type='int' data-ref="12392length">length</dfn>);</td></tr>
+<tr><th id="313">313</th><td><a class="macro" href="pango-version-macros.h.html#366" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_4">PANGO_AVAILABLE_IN_1_4</a></td></tr>
+<tr><th id="314">314</th><td><em>void</em>             <dfn class="decl" id="pango_script_iter_get_range" title='pango_script_iter_get_range' data-ref="pango_script_iter_get_range">pango_script_iter_get_range</dfn> (<a class="typedef" href="#PangoScriptIter" title='PangoScriptIter' data-type='struct _PangoScriptIter' data-ref="PangoScriptIter">PangoScriptIter</a>     *<dfn class="local col3 decl" id="12393iter" title='iter' data-type='PangoScriptIter *' data-ref="12393iter">iter</dfn>,</td></tr>
+<tr><th id="315">315</th><td>                                              <em>const</em> <em>char</em>         **<dfn class="local col4 decl" id="12394start" title='start' data-type='const char **' data-ref="12394start">start</dfn>,</td></tr>
+<tr><th id="316">316</th><td>                                              <em>const</em> <em>char</em>         **<dfn class="local col5 decl" id="12395end" title='end' data-type='const char **' data-ref="12395end">end</dfn>,</td></tr>
+<tr><th id="317">317</th><td>                                              <a class="typedef" href="#PangoScript" title='PangoScript' data-type='enum PangoScript' data-ref="PangoScript">PangoScript</a>         *<dfn class="local col6 decl" id="12396script" title='script' data-type='PangoScript *' data-ref="12396script">script</dfn>);</td></tr>
+<tr><th id="318">318</th><td><a class="macro" href="pango-version-macros.h.html#366" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_4">PANGO_AVAILABLE_IN_1_4</a></td></tr>
+<tr><th id="319">319</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>         <dfn class="decl" id="pango_script_iter_next" title='pango_script_iter_next' data-ref="pango_script_iter_next">pango_script_iter_next</dfn>      (<a class="typedef" href="#PangoScriptIter" title='PangoScriptIter' data-type='struct _PangoScriptIter' data-ref="PangoScriptIter">PangoScriptIter</a>     *<dfn class="local col7 decl" id="12397iter" title='iter' data-type='PangoScriptIter *' data-ref="12397iter">iter</dfn>);</td></tr>
+<tr><th id="320">320</th><td><a class="macro" href="pango-version-macros.h.html#366" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_4">PANGO_AVAILABLE_IN_1_4</a></td></tr>
+<tr><th id="321">321</th><td><em>void</em>             <dfn class="decl" id="pango_script_iter_free" title='pango_script_iter_free' data-ref="pango_script_iter_free">pango_script_iter_free</dfn>      (<a class="typedef" href="#PangoScriptIter" title='PangoScriptIter' data-type='struct _PangoScriptIter' data-ref="PangoScriptIter">PangoScriptIter</a>     *<dfn class="local col8 decl" id="12398iter" title='iter' data-type='PangoScriptIter *' data-ref="12398iter">iter</dfn>);</td></tr>
+<tr><th id="322">322</th><td></td></tr>
+<tr><th id="323">323</th><td><u>#include <a href="pango-language.h.html">&lt;pango/pango-language.h&gt;</a></u></td></tr>
+<tr><th id="324">324</th><td></td></tr>
+<tr><th id="325">325</th><td><a class="macro" href="pango-version-macros.h.html#366" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_4">PANGO_AVAILABLE_IN_1_4</a></td></tr>
+<tr><th id="326">326</th><td><a class="typedef" href="pango-language.h.html#PangoLanguage" title='PangoLanguage' data-type='struct _PangoLanguage' data-ref="PangoLanguage">PangoLanguage</a> *<dfn class="decl" id="pango_script_get_sample_language" title='pango_script_get_sample_language' data-ref="pango_script_get_sample_language">pango_script_get_sample_language</dfn> (<a class="typedef" href="#PangoScript" title='PangoScript' data-type='enum PangoScript' data-ref="PangoScript">PangoScript</a>    <dfn class="local col8 decl" id="12408script" title='script' data-type='PangoScript' data-ref="12408script">script</dfn>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#98" title="__attribute__((__pure__))" data-ref="_M/G_GNUC_PURE">G_GNUC_PURE</a>;</td></tr>
+<tr><th id="327">327</th><td></td></tr>
+<tr><th id="328">328</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="329">329</th><td></td></tr>
+<tr><th id="330">330</th><td><u>#<span data-ppcond="22">endif</span> /* __PANGO_SCRIPT_H__ */</u></td></tr>
+<tr><th id="331">331</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='1191' type='GVariant * ibus_bus_get_ibus_property(IBusBus * bus, const gchar * property_name)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='1181'>/**
+ * ibus_bus_get_ibus_property:
+ * @bus: An #IBusBus.
+ * @property_name: property name in org.freedesktop.DBus.Properties.Get
+ *
+ * Get org.freedesktop.DBus.Properties.
+ *
+ * Returns: (transfer full): The value in org.freedesktop.DBus.Properties.Get
+ *           The returned value must be freed with g_variant_unref().
+ */</doc>

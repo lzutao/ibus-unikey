@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibustext.h' l='101' type='IBusText * ibus_text_new_from_string(const gchar * str)'/>
+<doc f='include/ibus-1.0/ibustext.h' l='91'>/**
+ * ibus_text_new_from_string:
+ * @str: An text string to be set.
+ *
+ * Creates a new #IBusText from a string.
+ * @str will be duplicated in #IBusText, so feel free to free @str after this
+ * function.
+ *
+ * Returns: A newly allocated #IBusText.
+ */</doc>

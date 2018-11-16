@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcalendar.h' l='189' type='void gtk_calendar_set_detail_func(GtkCalendar * calendar, GtkCalendarDetailFunc func, gpointer data, GDestroyNotify destroy)'/>

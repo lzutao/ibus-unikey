@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkpagesetup.h' l='95' type='GtkPageSetup * gtk_page_setup_new_from_key_file(GKeyFile * key_file, const gchar * group_name, GError ** error)'/>

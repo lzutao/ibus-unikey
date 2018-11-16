@@ -1,0 +1,26 @@
+<def f='include/gtk-2.0/gtk/gtktexttag.h' l='214' ll='274'/>
+<size>160</size>
+<mbr r='_GtkTextAttributes::refcount' o='0' t='guint'/>
+<mbr r='_GtkTextAttributes::appearance' o='64' t='GtkTextAppearance'/>
+<mbr r='_GtkTextAttributes::justification' o='576' t='GtkJustification'/>
+<mbr r='_GtkTextAttributes::direction' o='608' t='GtkTextDirection'/>
+<mbr r='_GtkTextAttributes::font' o='640' t='PangoFontDescription *'/>
+<mbr r='_GtkTextAttributes::font_scale' o='704' t='gdouble'/>
+<mbr r='_GtkTextAttributes::left_margin' o='768' t='gint'/>
+<mbr r='_GtkTextAttributes::indent' o='800' t='gint'/>
+<mbr r='_GtkTextAttributes::right_margin' o='832' t='gint'/>
+<mbr r='_GtkTextAttributes::pixels_above_lines' o='864' t='gint'/>
+<mbr r='_GtkTextAttributes::pixels_below_lines' o='896' t='gint'/>
+<mbr r='_GtkTextAttributes::pixels_inside_wrap' o='928' t='gint'/>
+<mbr r='_GtkTextAttributes::tabs' o='960' t='PangoTabArray *'/>
+<mbr r='_GtkTextAttributes::wrap_mode' o='1024' t='GtkWrapMode'/>
+<mbr r='_GtkTextAttributes::language' o='1088' t='PangoLanguage *'/>
+<mbr r='_GtkTextAttributes::pg_bg_color' o='1152' t='GdkColor *'/>
+<mbr r='_GtkTextAttributes::invisible' o='1216' t='guint'/>
+<mbr r='_GtkTextAttributes::bg_full_height' o='1217' t='guint'/>
+<mbr r='_GtkTextAttributes::editable' o='1218' t='guint'/>
+<mbr r='_GtkTextAttributes::realized' o='1219' t='guint'/>
+<mbr r='_GtkTextAttributes::pad1' o='1220' t='guint'/>
+<mbr r='_GtkTextAttributes::pad2' o='1221' t='guint'/>
+<mbr r='_GtkTextAttributes::pad3' o='1222' t='guint'/>
+<mbr r='_GtkTextAttributes::pad4' o='1223' t='guint'/>

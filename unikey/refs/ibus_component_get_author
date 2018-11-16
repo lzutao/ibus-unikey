@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuscomponent.h' l='217' type='const gchar * ibus_component_get_author(IBusComponent * component)'/>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='209'>/**
+ * ibus_component_get_author:
+ * @component: An #IBusComponent
+ *
+ * Gets the author property in #IBusComponent. It should not be freed.
+ *
+ * Returns: author property in #IBusComponent
+ */</doc>

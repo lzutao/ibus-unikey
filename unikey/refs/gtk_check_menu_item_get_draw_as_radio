@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcheckmenuitem.h' l='91' type='gboolean gtk_check_menu_item_get_draw_as_radio(GtkCheckMenuItem * check_menu_item)'/>

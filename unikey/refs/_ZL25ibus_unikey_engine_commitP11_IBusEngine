@@ -1,0 +1,9 @@
+<dec f='unikey/src/engine_private.h' l='90' type='void ibus_unikey_engine_commit(IBusEngine * engine)'/>
+<use f='unikey/src/engine.cpp' l='155' u='c' c='_ZL24ibus_unikey_engine_resetP11_IBusEngine'/>
+<use f='unikey/src/engine.cpp' l='603' u='c' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='616' u='c' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='727' u='c' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='739' u='c' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<doc f='unikey/src/engine_private.h' l='87'>/**
+ * commit text from buffer to input
+ */</doc>

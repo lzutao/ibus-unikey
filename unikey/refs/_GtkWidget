@@ -1,0 +1,17 @@
+<def f='include/gtk-2.0/gtk/gtkwidget.h' l='530' ll='594'/>
+<size>96</size>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='525'>/* The widget is the base of the tree for displayable objects.
+ *  (A displayable object is one which takes up some amount
+ *  of screen real estate). It provides a common base and interface
+ *  which actual widgets must adhere to.
+ */</doc>
+<mbr r='_GtkWidget::object' o='0' t='GtkObject'/>
+<mbr r='_GtkWidget::private_flags' o='256' t='guint16'/>
+<mbr r='_GtkWidget::state' o='272' t='guint8'/>
+<mbr r='_GtkWidget::saved_state' o='280' t='guint8'/>
+<mbr r='_GtkWidget::name' o='320' t='gchar *'/>
+<mbr r='_GtkWidget::style' o='384' t='GtkStyle *'/>
+<mbr r='_GtkWidget::requisition' o='448' t='GtkRequisition'/>
+<mbr r='_GtkWidget::allocation' o='512' t='GtkAllocation'/>
+<mbr r='_GtkWidget::window' o='640' t='GdkWindow *'/>
+<mbr r='_GtkWidget::parent' o='704' t='GtkWidget *'/>

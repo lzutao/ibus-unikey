@@ -1,0 +1,4 @@
+<dec f='include/glib-2.0/glib/gerror.h' l='47' type='gchar *'/>
+<offset>64</offset>
+<use f='unikey/setup/setup.cpp' l='35' u='r' c='main'/>
+<use f='unikey/src/main.cpp' l='111' u='r' c='main'/>

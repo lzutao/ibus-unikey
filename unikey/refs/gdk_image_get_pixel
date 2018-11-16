@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkimage.h' l='114' type='guint32 gdk_image_get_pixel(GdkImage * image, gint x, gint y)'/>

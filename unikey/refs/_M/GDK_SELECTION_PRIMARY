@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gdk/gdkselection.h' l='41'/>
+<doc f='include/gtk-2.0/gdk/gdkselection.h' l='38'>/* Predefined atoms relating to selections. In general, one will need to use
+ * gdk_intern_atom
+ */</doc>

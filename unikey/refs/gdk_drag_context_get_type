@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkdnd.h' l='106' type='GType gdk_drag_context_get_type()'/>
+<doc f='include/gtk-2.0/gdk/gdkdnd.h' l='104'>/* Drag and Drop */</doc>

@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='840'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='834'>/**
+ * GTK_STOCK_REMOVE:
+ *
+ * The &quot;Remove&quot; item.
+ * &lt;inlinegraphic fileref=&quot;list-remove.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkcontainer.h' l='192' type='void gtk_container_child_get_valist(GtkContainer * container, GtkWidget * child, const gchar * first_property_name, __va_list_tag * var_args)'/>

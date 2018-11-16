@@ -1,0 +1,10 @@
+<dec f='include/ibus-1.0/ibusversion.h' l='65'/>
+<doc f='include/ibus-1.0/ibusversion.h' l='56'>/**
+ * IBUS_CHECK_VERSION:
+ * @major: Major version of ibus.
+ * @minor: Minor version of ibus.
+ * @micro: Micro version of ibus.
+ *
+ * Check whether the current IBus version is equal to or greater than
+ * given major.minor.micro.
+ */</doc>

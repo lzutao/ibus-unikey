@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='235' type='gboolean gtk_window_get_mnemonics_visible(GtkWindow * window)'/>

@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkrecentchooserdialog.h' l='46' ll='52'/>
+<size>272</size>
+<mbr r='_GtkRecentChooserDialog::parent_instance' o='0' t='GtkDialog'/>
+<mbr r='_GtkRecentChooserDialog::priv' o='2112' t='GtkRecentChooserDialogPrivate *'/>

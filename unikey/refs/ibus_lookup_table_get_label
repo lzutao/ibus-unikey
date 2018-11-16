@@ -1,0 +1,11 @@
+<dec f='include/ibus-1.0/ibuslookuptable.h' l='198' type='IBusText * ibus_lookup_table_get_label(IBusLookupTable * table, guint index)'/>
+<doc f='include/ibus-1.0/ibuslookuptable.h' l='188'>/**
+ * ibus_lookup_table_get_label:
+ * @table: An IBusLookupTable.
+ * @index: Index in the Lookup table.
+ *
+ * Return #IBusText at the given index. Borrowed reference.
+ *
+ * Returns: (transfer none): #IBusText at the given index; %NULL if no such
+ *         #IBusText.
+ */</doc>

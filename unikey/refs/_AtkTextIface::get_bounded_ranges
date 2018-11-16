@@ -1,0 +1,2 @@
+<dec f='include/atk-1.0/atk/atktext.h' l='325' type='AtkTextRange **(*)(AtkText *, AtkTextRectangle *, AtkCoordType, AtkTextClipType, AtkTextClipType)'/>
+<offset>1536</offset>

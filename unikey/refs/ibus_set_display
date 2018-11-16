@@ -1,0 +1,7 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='199' type='void ibus_set_display(const gchar * display)'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='193'>/**
+ * ibus_set_display:
+ * @display: Display address, as in DISPLAY environment for X.
+ *
+ * Set the display address.
+ */</doc>

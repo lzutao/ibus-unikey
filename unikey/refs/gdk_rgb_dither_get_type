@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkenumtypes.h' l='94' type='GType gdk_rgb_dither_get_type()'/>
+<doc f='include/gtk-2.0/gdk/gdkenumtypes.h' l='93'>/* enumerations from &quot;gdkrgb.h&quot; */</doc>

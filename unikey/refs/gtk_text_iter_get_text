@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktextiter.h' l='117' type='gchar * gtk_text_iter_get_text(const GtkTextIter * start, const GtkTextIter * end)'/>
+<doc f='include/gtk-2.0/gtk/gtktextiter.h' l='116'>/* includes only text, no 0xFFFC */</doc>

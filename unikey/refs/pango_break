@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pango-break.h' l='139' type='void pango_break(const gchar * text, int length, PangoAnalysis * analysis, PangoLogAttr * attrs, int attrs_len)'/>

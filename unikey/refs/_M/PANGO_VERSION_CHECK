@@ -1,0 +1,10 @@
+<dec f='include/pango-1.0/pango/pango-utils.h' l='191'/>
+<doc f='include/pango-1.0/pango/pango-utils.h' l='182'>/**
+ * PANGO_VERSION_CHECK:
+ * @major: the major component of the version number
+ * @minor: the minor component of the version number
+ * @micro: the micro component of the version number
+ *
+ * Checks that the version of Pango available at compile-time is not older than
+ * the provided version number.
+ */</doc>

@@ -1,0 +1,7 @@
+<dec f='include/gtk-2.0/gtk/gtkstock.h' l='130'/>
+<doc f='include/gtk-2.0/gtk/gtkstock.h' l='124'>/**
+ * GTK_STOCK_CDROM:
+ *
+ * The &quot;CD-Rom&quot; item.
+ * &lt;inlinegraphic fileref=&quot;media-optical.png&quot; format=&quot;PNG&quot;&gt;&lt;/inlinegraphic&gt;
+ */</doc>

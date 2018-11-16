@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkstatusicon.h' l='145' type='gboolean gtk_status_icon_get_geometry(GtkStatusIcon * status_icon, GdkScreen ** screen, GdkRectangle * area, GtkOrientation * orientation)'/>

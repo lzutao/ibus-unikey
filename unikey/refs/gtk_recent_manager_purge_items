@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentmanager.h' l='170' type='gint gtk_recent_manager_purge_items(GtkRecentManager * manager, GError ** error)'/>

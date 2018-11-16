@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkcursor.h' l='139' type='GdkCursor * gdk_cursor_new_for_display(GdkDisplay * display, GdkCursorType cursor_type)'/>

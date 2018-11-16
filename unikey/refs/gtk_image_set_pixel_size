@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkimage.h' l='234' type='void gtk_image_set_pixel_size(GtkImage * image, gint pixel_size)'/>

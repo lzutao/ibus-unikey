@@ -1,0 +1,6 @@
+<def f='include/gtk-2.0/gdk/gdkevents.h' l='374' ll='380'/>
+<size>24</size>
+<mbr r='_GdkEventFocus::type' o='0' t='GdkEventType'/>
+<mbr r='_GdkEventFocus::window' o='64' t='GdkWindow *'/>
+<mbr r='_GdkEventFocus::send_event' o='128' t='gint8'/>
+<mbr r='_GdkEventFocus::in' o='144' t='gint16'/>

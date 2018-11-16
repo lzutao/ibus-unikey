@@ -1,0 +1,16 @@
+<dec f='include/ibus-1.0/ibusservice.h' l='96' type='void (*)(IBusService *, GDBusConnection *, const gchar *, const gchar *, const gchar *, const gchar *, GVariant *, GDBusMethodInvocation *)'/>
+<offset>1600</offset>
+<doc f='include/ibus-1.0/ibusservice.h' l='82'>/**
+     * IBusServiceClass::service_method_call:
+     * @service: An #IBusService.
+     * @connection: A dbus connection.
+     * @sender: A sender.
+     * @object_path: An object path.
+     * @interface_name: An interface name.
+     * @method_name: A method name.
+     * @parameters: A parameters.
+     * @invocation: A dbus method invocation.
+     *
+     * The ::service_method_call class method is to connect
+     * GDBusInterfaceMethodCallFunc().
+     */</doc>

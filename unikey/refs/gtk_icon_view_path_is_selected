@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconview.h' l='158' type='gboolean gtk_icon_view_path_is_selected(GtkIconView * icon_view, GtkTreePath * path)'/>

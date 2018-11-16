@@ -1,0 +1,2 @@
+<dec f='include/cairo/cairo.h' l='2582' type='cairo_surface_t * cairo_recording_surface_create(cairo_content_t content, const cairo_rectangle_t * extents)'/>
+<doc f='include/cairo/cairo.h' l='2579'>/* Recording-surface functions */</doc>

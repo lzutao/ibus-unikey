@@ -1,0 +1,5 @@
+<dec f='include/gtk-2.0/gtk/gtktextview.h' l='103' type='guint'/>
+<offset>1414</offset>
+<doc f='include/gtk-2.0/gtk/gtktextview.h' l='100'>/* debug flag - means that we&apos;ve validated onscreen since the
+   * last &quot;invalidate&quot; signal from the layout
+   */</doc>

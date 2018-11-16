@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkclist.h' l='653' type='void gtk_clist_set_row_style(GtkCList * clist, gint row, GtkStyle * style)'/>

@@ -1,0 +1,18 @@
+<def f='include/gtk-2.0/gtk/gtkcombo.h' l='49' ll='75'/>
+<size>184</size>
+<doc f='include/gtk-2.0/gtk/gtkcombo.h' l='48'>/* you should access only the entry and list fields directly */</doc>
+<mbr r='_GtkCombo::hbox' o='0' t='GtkHBox'/>
+<mbr r='_GtkCombo::entry' o='1024' t='GtkWidget *'/>
+<mbr r='_GtkCombo::button' o='1088' t='GtkWidget *'/>
+<mbr r='_GtkCombo::popup' o='1152' t='GtkWidget *'/>
+<mbr r='_GtkCombo::popwin' o='1216' t='GtkWidget *'/>
+<mbr r='_GtkCombo::list' o='1280' t='GtkWidget *'/>
+<mbr r='_GtkCombo::entry_change_id' o='1344' t='guint'/>
+<mbr r='_GtkCombo::list_change_id' o='1376' t='guint'/>
+<mbr r='_GtkCombo::value_in_list' o='1408' t='guint'/>
+<mbr r='_GtkCombo::ok_if_empty' o='1409' t='guint'/>
+<mbr r='_GtkCombo::case_sensitive' o='1410' t='guint'/>
+<mbr r='_GtkCombo::use_arrows' o='1411' t='guint'/>
+<mbr r='_GtkCombo::use_arrows_always' o='1412' t='guint'/>
+<mbr r='_GtkCombo::current_button' o='1424' t='guint16'/>
+<mbr r='_GtkCombo::activate_id' o='1440' t='guint'/>

@@ -1,0 +1,9 @@
+<def f='include/gtk-2.0/gtk/gtkmountoperation.h' l='52' ll='57'/>
+<size>40</size>
+<doc f='include/gtk-2.0/gtk/gtkmountoperation.h' l='47'>/**
+ * GtkMountOperation:
+ *
+ * This should not be accessed directly. Use the accessor functions below.
+ */</doc>
+<mbr r='_GtkMountOperation::parent_instance' o='0' t='GMountOperation'/>
+<mbr r='_GtkMountOperation::priv' o='256' t='GtkMountOperationPrivate *'/>

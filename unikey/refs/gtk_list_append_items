@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtklist.h' l='89' type='void gtk_list_append_items(GtkList * list, GList * items)'/>

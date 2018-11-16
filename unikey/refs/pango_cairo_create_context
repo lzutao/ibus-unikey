@@ -1,0 +1,1 @@
+<dec f='include/pango-1.0/pango/pangocairo.h' l='143' type='PangoContext * pango_cairo_create_context(cairo_t * cr)'/>

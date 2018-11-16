@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkassistant.h' l='141' type='void gtk_assistant_set_page_type(GtkAssistant * assistant, GtkWidget * page, GtkAssistantPageType type)'/>

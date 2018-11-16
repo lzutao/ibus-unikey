@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>pangocairo.h source code [include/pango-1.0/pango/pangocairo.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/pango-1.0/pango/pangocairo.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>pango-1.0</a>/<a href='./'>pango</a>/<a href='pangocairo.h.html'>pangocairo.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Pango</i></td></tr>
+<tr><th id="2">2</th><td><i> * pangocairo.h:</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 1999, 2004 Red Hat, Inc.</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="7">7</th><td><i> * modify it under the terms of the GNU Library General Public</i></td></tr>
+<tr><th id="8">8</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="9">9</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="12">12</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="13">13</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the GNU</i></td></tr>
+<tr><th id="14">14</th><td><i> * Library General Public License for more details.</i></td></tr>
+<tr><th id="15">15</th><td><i> *</i></td></tr>
+<tr><th id="16">16</th><td><i> * You should have received a copy of the GNU Library General Public</i></td></tr>
+<tr><th id="17">17</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="18">18</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="19">19</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="22">ifndef</span> <span class="macro" data-ref="_M/__PANGOCAIRO_H__">__PANGOCAIRO_H__</span></u></td></tr>
+<tr><th id="23">23</th><td><u>#define <dfn class="macro" id="_M/__PANGOCAIRO_H__" data-ref="_M/__PANGOCAIRO_H__">__PANGOCAIRO_H__</dfn></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="pango.h.html">&lt;pango/pango.h&gt;</a></u></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="../../cairo/cairo.h.html">&lt;cairo.h&gt;</a></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> * PangoCairoFont:</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> * #PangoCairoFont is an interface exported by fonts for</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> * use with Cairo. The actual type of the font will depend</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> * on the particular font technology Cairo was compiled to use.</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> * Since: 1.18</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="39">39</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_PangoCairoFont" title='_PangoCairoFont' data-ref="_PangoCairoFont"><a class="type" href="#_PangoCairoFont" title='_PangoCairoFont' data-ref="_PangoCairoFont">_PangoCairoFont</a></dfn>      <dfn class="typedef" id="PangoCairoFont" title='PangoCairoFont' data-type='struct _PangoCairoFont' data-ref="PangoCairoFont">PangoCairoFont</dfn>;</td></tr>
+<tr><th id="40">40</th><td><u>#define <dfn class="macro" id="_M/PANGO_TYPE_CAIRO_FONT" data-ref="_M/PANGO_TYPE_CAIRO_FONT">PANGO_TYPE_CAIRO_FONT</dfn>       (pango_cairo_font_get_type ())</u></td></tr>
+<tr><th id="41">41</th><td><u>#define <dfn class="macro" id="_M/PANGO_CAIRO_FONT" data-ref="_M/PANGO_CAIRO_FONT">PANGO_CAIRO_FONT</dfn>(object)    (G_TYPE_CHECK_INSTANCE_CAST ((object), PANGO_TYPE_CAIRO_FONT, PangoCairoFont))</u></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/PANGO_IS_CAIRO_FONT" data-ref="_M/PANGO_IS_CAIRO_FONT">PANGO_IS_CAIRO_FONT</dfn>(object) (G_TYPE_CHECK_INSTANCE_TYPE ((object), PANGO_TYPE_CAIRO_FONT))</u></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="45">45</th><td><i class="doc"> * PangoCairoFontMap:</i></td></tr>
+<tr><th id="46">46</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="47">47</th><td><i class="doc"> * #PangoCairoFontMap is an interface exported by font maps for</i></td></tr>
+<tr><th id="48">48</th><td><i class="doc"> * use with Cairo. The actual type of the font map will depend</i></td></tr>
+<tr><th id="49">49</th><td><i class="doc"> * on the particular font technology Cairo was compiled to use.</i></td></tr>
+<tr><th id="50">50</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="51">51</th><td><i class="doc"> * Since: 1.10</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> **/</i></td></tr>
+<tr><th id="53">53</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_PangoCairoFontMap" title='_PangoCairoFontMap' data-ref="_PangoCairoFontMap"><a class="type" href="#_PangoCairoFontMap" title='_PangoCairoFontMap' data-ref="_PangoCairoFontMap">_PangoCairoFontMap</a></dfn>        <dfn class="typedef" id="PangoCairoFontMap" title='PangoCairoFontMap' data-type='struct _PangoCairoFontMap' data-ref="PangoCairoFontMap">PangoCairoFontMap</dfn>;</td></tr>
+<tr><th id="54">54</th><td><u>#define <dfn class="macro" id="_M/PANGO_TYPE_CAIRO_FONT_MAP" data-ref="_M/PANGO_TYPE_CAIRO_FONT_MAP">PANGO_TYPE_CAIRO_FONT_MAP</dfn>       (pango_cairo_font_map_get_type ())</u></td></tr>
+<tr><th id="55">55</th><td><u>#define <dfn class="macro" id="_M/PANGO_CAIRO_FONT_MAP" data-ref="_M/PANGO_CAIRO_FONT_MAP">PANGO_CAIRO_FONT_MAP</dfn>(object)    (G_TYPE_CHECK_INSTANCE_CAST ((object), PANGO_TYPE_CAIRO_FONT_MAP, PangoCairoFontMap))</u></td></tr>
+<tr><th id="56">56</th><td><u>#define <dfn class="macro" id="_M/PANGO_IS_CAIRO_FONT_MAP" data-ref="_M/PANGO_IS_CAIRO_FONT_MAP">PANGO_IS_CAIRO_FONT_MAP</dfn>(object) (G_TYPE_CHECK_INSTANCE_TYPE ((object), PANGO_TYPE_CAIRO_FONT_MAP))</u></td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"> * PangoCairoShapeRendererFunc:</i></td></tr>
+<tr><th id="60">60</th><td><i class="doc"> *<span class="command"> @cr</span><span class="arg">:</span> a Cairo context with current point set to where the shape should</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> * be rendered</i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> *<span class="command"> @attr</span>: the %PANGO_ATTR_SHAPE to render</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> * <span class="command">@do<span class="verb">_path: whether only the shape path should be appended to current</span></span></i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"><span class="command"><span class="verb"></span></span> *<span class="verb"> path of @cr and no filling/stroking done.  This will be set</span></i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"><span class="verb"></span> *<span class="verb"> to %TRUE when called from pango_cairo_layout_path() and</span></i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"><span class="verb"></span> *<span class="verb"> pango_cairo_layout_line_path() rendering functions.</span></i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"><span class="verb"></span> *<span class="verb"> @data: user data passed to pango_cairo_context_set_shape_renderer()</span></i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"><span class="verb"></span> *<span class="verb"></span></i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"><span class="verb"></span> *<span class="verb"> Function type for rendering attributes of type %PANGO_ATTR_SHAPE</span></i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"><span class="verb"></span> *<span class="verb"> with Pango's Cairo renderer.</span></i></td></tr>
+<tr><th id="71">71</th><td><i class="doc"><span class="verb"></span><span class="verb"> *</span>/</i><span class="verb"></span></td></tr>
+<tr><th id="72">72</th><td><span class="verb"></span><b>typedef</b> <em>void</em> (* <dfn class="typedef" id="PangoCairoShapeRendererFunc" title='PangoCairoShapeRendererFunc' data-type='void (*)(cairo_t *, PangoAttrShape *, gboolean, gpointer)' data-ref="PangoCairoShapeRendererFunc">PangoCairoShapeRendererFunc</dfn>) (<a class="typedef" href="../../cairo/cairo.h.html#cairo_t" title='cairo_t' data-type='struct _cairo' data-ref="cairo_t">cairo_t</a>        *<dfn class="local col8 decl" id="14108cr" title='cr' data-type='cairo_t *' data-ref="14108cr">cr</dfn>,</td></tr>
+<tr><th id="73">73</th><td>					      <a class="typedef" href="pango-attributes.h.html#PangoAttrShape" title='PangoAttrShape' data-type='struct _PangoAttrShape' data-ref="PangoAttrShape">PangoAttrShape</a> *<dfn class="local col9 decl" id="14109attr" title='attr' data-type='PangoAttrShape *' data-ref="14109attr">attr</dfn>,</td></tr>
+<tr><th id="74">74</th><td>					      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>        <dfn class="local col0 decl" id="14110do_path" title='do_path' data-type='gboolean' data-ref="14110do_path">do_path</dfn>,</td></tr>
+<tr><th id="75">75</th><td>					      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>        <dfn class="local col1 decl" id="14111data" title='data' data-type='gpointer' data-ref="14111data">data</dfn>);</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td><i>/*</i></td></tr>
+<tr><th id="78">78</th><td><i> * PangoCairoFontMap</i></td></tr>
+<tr><th id="79">79</th><td><i> */</i></td></tr>
+<tr><th id="80">80</th><td><a class="macro" href="pango-version-macros.h.html#409" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_10">PANGO_AVAILABLE_IN_1_10</a></td></tr>
+<tr><th id="81">81</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>         <dfn class="decl" id="pango_cairo_font_map_get_type" title='pango_cairo_font_map_get_type' data-ref="pango_cairo_font_map_get_type">pango_cairo_font_map_get_type</dfn>          (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><a class="macro" href="pango-version-macros.h.html#409" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_10">PANGO_AVAILABLE_IN_1_10</a></td></tr>
+<tr><th id="84">84</th><td><a class="typedef" href="pango-types.h.html#PangoFontMap" title='PangoFontMap' data-type='struct _PangoFontMap' data-ref="PangoFontMap">PangoFontMap</a> *<dfn class="decl" id="pango_cairo_font_map_new" title='pango_cairo_font_map_new' data-ref="pango_cairo_font_map_new">pango_cairo_font_map_new</dfn>               (<em>void</em>);</td></tr>
+<tr><th id="85">85</th><td><a class="macro" href="pango-version-macros.h.html#465" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_18">PANGO_AVAILABLE_IN_1_18</a></td></tr>
+<tr><th id="86">86</th><td><a class="typedef" href="pango-types.h.html#PangoFontMap" title='PangoFontMap' data-type='struct _PangoFontMap' data-ref="PangoFontMap">PangoFontMap</a> *<dfn class="decl" id="pango_cairo_font_map_new_for_font_type" title='pango_cairo_font_map_new_for_font_type' data-ref="pango_cairo_font_map_new_for_font_type">pango_cairo_font_map_new_for_font_type</dfn> (<a class="typedef" href="../../cairo/cairo.h.html#cairo_font_type_t" title='cairo_font_type_t' data-type='enum _cairo_font_type' data-ref="cairo_font_type_t">cairo_font_type_t</a> <dfn class="local col2 decl" id="14112fonttype" title='fonttype' data-type='cairo_font_type_t' data-ref="14112fonttype">fonttype</dfn>);</td></tr>
+<tr><th id="87">87</th><td><a class="macro" href="pango-version-macros.h.html#409" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_10">PANGO_AVAILABLE_IN_1_10</a></td></tr>
+<tr><th id="88">88</th><td><a class="typedef" href="pango-types.h.html#PangoFontMap" title='PangoFontMap' data-type='struct _PangoFontMap' data-ref="PangoFontMap">PangoFontMap</a> *<dfn class="decl" id="pango_cairo_font_map_get_default" title='pango_cairo_font_map_get_default' data-ref="pango_cairo_font_map_get_default">pango_cairo_font_map_get_default</dfn>       (<em>void</em>);</td></tr>
+<tr><th id="89">89</th><td><a class="macro" href="pango-version-macros.h.html#493" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_22">PANGO_AVAILABLE_IN_1_22</a></td></tr>
+<tr><th id="90">90</th><td><em>void</em>          <dfn class="decl" id="pango_cairo_font_map_set_default" title='pango_cairo_font_map_set_default' data-ref="pango_cairo_font_map_set_default">pango_cairo_font_map_set_default</dfn>       (<a class="typedef" href="#PangoCairoFontMap" title='PangoCairoFontMap' data-type='struct _PangoCairoFontMap' data-ref="PangoCairoFontMap">PangoCairoFontMap</a> *<dfn class="local col3 decl" id="14113fontmap" title='fontmap' data-type='PangoCairoFontMap *' data-ref="14113fontmap">fontmap</dfn>);</td></tr>
+<tr><th id="91">91</th><td><a class="macro" href="pango-version-macros.h.html#465" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_18">PANGO_AVAILABLE_IN_1_18</a></td></tr>
+<tr><th id="92">92</th><td><a class="typedef" href="../../cairo/cairo.h.html#cairo_font_type_t" title='cairo_font_type_t' data-type='enum _cairo_font_type' data-ref="cairo_font_type_t">cairo_font_type_t</a> <dfn class="decl" id="pango_cairo_font_map_get_font_type" title='pango_cairo_font_map_get_font_type' data-ref="pango_cairo_font_map_get_font_type">pango_cairo_font_map_get_font_type</dfn> (<a class="typedef" href="#PangoCairoFontMap" title='PangoCairoFontMap' data-type='struct _PangoCairoFontMap' data-ref="PangoCairoFontMap">PangoCairoFontMap</a> *<dfn class="local col4 decl" id="14114fontmap" title='fontmap' data-type='PangoCairoFontMap *' data-ref="14114fontmap">fontmap</dfn>);</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><a class="macro" href="pango-version-macros.h.html#409" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_10">PANGO_AVAILABLE_IN_1_10</a></td></tr>
+<tr><th id="95">95</th><td><em>void</em>          <dfn class="decl" id="pango_cairo_font_map_set_resolution" title='pango_cairo_font_map_set_resolution' data-ref="pango_cairo_font_map_set_resolution">pango_cairo_font_map_set_resolution</dfn> (<a class="typedef" href="#PangoCairoFontMap" title='PangoCairoFontMap' data-type='struct _PangoCairoFontMap' data-ref="PangoCairoFontMap">PangoCairoFontMap</a> *<dfn class="local col5 decl" id="14115fontmap" title='fontmap' data-type='PangoCairoFontMap *' data-ref="14115fontmap">fontmap</dfn>,</td></tr>
+<tr><th id="96">96</th><td>						   <em>double</em>             <dfn class="local col6 decl" id="14116dpi" title='dpi' data-type='double' data-ref="14116dpi">dpi</dfn>);</td></tr>
+<tr><th id="97">97</th><td><a class="macro" href="pango-version-macros.h.html#409" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_10">PANGO_AVAILABLE_IN_1_10</a></td></tr>
+<tr><th id="98">98</th><td><em>double</em>        <dfn class="decl" id="pango_cairo_font_map_get_resolution" title='pango_cairo_font_map_get_resolution' data-ref="pango_cairo_font_map_get_resolution">pango_cairo_font_map_get_resolution</dfn> (<a class="typedef" href="#PangoCairoFontMap" title='PangoCairoFontMap' data-type='struct _PangoCairoFontMap' data-ref="PangoCairoFontMap">PangoCairoFontMap</a> *<dfn class="local col7 decl" id="14117fontmap" title='fontmap' data-type='PangoCairoFontMap *' data-ref="14117fontmap">fontmap</dfn>);</td></tr>
+<tr><th id="99">99</th><td><u>#<span data-ppcond="99">ifndef</span> <span class="macro" data-ref="_M/PANGO_DISABLE_DEPRECATED">PANGO_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="100">100</th><td><a class="macro" href="pango-version-macros.h.html#484" title="__attribute__((__deprecated__)) extern" data-ref="_M/PANGO_DEPRECATED_IN_1_22_FOR">PANGO_DEPRECATED_IN_1_22_FOR</a>(pango_font_map_create_context)</td></tr>
+<tr><th id="101">101</th><td><a class="typedef" href="pango-fontmap.h.html#PangoContext" title='PangoContext' data-type='struct _PangoContext' data-ref="PangoContext">PangoContext</a> *<dfn class="decl" id="pango_cairo_font_map_create_context" title='pango_cairo_font_map_create_context' data-ref="pango_cairo_font_map_create_context">pango_cairo_font_map_create_context</dfn> (<a class="typedef" href="#PangoCairoFontMap" title='PangoCairoFontMap' data-type='struct _PangoCairoFontMap' data-ref="PangoCairoFontMap">PangoCairoFontMap</a> *<dfn class="local col8 decl" id="14118fontmap" title='fontmap' data-type='PangoCairoFontMap *' data-ref="14118fontmap">fontmap</dfn>);</td></tr>
+<tr><th id="102">102</th><td><u>#<span data-ppcond="99">endif</span></u></td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><i>/*</i></td></tr>
+<tr><th id="105">105</th><td><i> * PangoCairoFont</i></td></tr>
+<tr><th id="106">106</th><td><i> */</i></td></tr>
+<tr><th id="107">107</th><td><a class="macro" href="pango-version-macros.h.html#465" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_18">PANGO_AVAILABLE_IN_1_18</a></td></tr>
+<tr><th id="108">108</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>         <dfn class="decl" id="pango_cairo_font_get_type" title='pango_cairo_font_get_type' data-ref="pango_cairo_font_get_type">pango_cairo_font_get_type</dfn>               (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><a class="macro" href="pango-version-macros.h.html#465" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_18">PANGO_AVAILABLE_IN_1_18</a></td></tr>
+<tr><th id="111">111</th><td><a class="typedef" href="../../cairo/cairo.h.html#cairo_scaled_font_t" title='cairo_scaled_font_t' data-type='struct _cairo_scaled_font' data-ref="cairo_scaled_font_t">cairo_scaled_font_t</a> *<dfn class="decl" id="pango_cairo_font_get_scaled_font" title='pango_cairo_font_get_scaled_font' data-ref="pango_cairo_font_get_scaled_font">pango_cairo_font_get_scaled_font</dfn> (<a class="typedef" href="#PangoCairoFont" title='PangoCairoFont' data-type='struct _PangoCairoFont' data-ref="PangoCairoFont">PangoCairoFont</a> *<dfn class="local col9 decl" id="14119font" title='font' data-type='PangoCairoFont *' data-ref="14119font">font</dfn>);</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td><i>/* Update a Pango context for the current state of a cairo context</i></td></tr>
+<tr><th id="114">114</th><td><i> */</i></td></tr>
+<tr><th id="115">115</th><td><a class="macro" href="pango-version-macros.h.html#409" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_10">PANGO_AVAILABLE_IN_1_10</a></td></tr>
+<tr><th id="116">116</th><td><em>void</em>         <dfn class="decl" id="pango_cairo_update_context" title='pango_cairo_update_context' data-ref="pango_cairo_update_context">pango_cairo_update_context</dfn> (<a class="typedef" href="../../cairo/cairo.h.html#cairo_t" title='cairo_t' data-type='struct _cairo' data-ref="cairo_t">cairo_t</a>      *<dfn class="local col0 decl" id="14120cr" title='cr' data-type='cairo_t *' data-ref="14120cr">cr</dfn>,</td></tr>
+<tr><th id="117">117</th><td>					 <a class="typedef" href="pango-fontmap.h.html#PangoContext" title='PangoContext' data-type='struct _PangoContext' data-ref="PangoContext">PangoContext</a> *<dfn class="local col1 decl" id="14121context" title='context' data-type='PangoContext *' data-ref="14121context">context</dfn>);</td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td><a class="macro" href="pango-version-macros.h.html#409" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_10">PANGO_AVAILABLE_IN_1_10</a></td></tr>
+<tr><th id="120">120</th><td><em>void</em>                        <dfn class="decl" id="pango_cairo_context_set_font_options" title='pango_cairo_context_set_font_options' data-ref="pango_cairo_context_set_font_options">pango_cairo_context_set_font_options</dfn> (<a class="typedef" href="pango-fontmap.h.html#PangoContext" title='PangoContext' data-type='struct _PangoContext' data-ref="PangoContext">PangoContext</a>               *<dfn class="local col2 decl" id="14122context" title='context' data-type='PangoContext *' data-ref="14122context">context</dfn>,</td></tr>
+<tr><th id="121">121</th><td>								  <em>const</em> <a class="typedef" href="../../cairo/cairo.h.html#cairo_font_options_t" title='cairo_font_options_t' data-type='struct _cairo_font_options' data-ref="cairo_font_options_t">cairo_font_options_t</a> *<dfn class="local col3 decl" id="14123options" title='options' data-type='const cairo_font_options_t *' data-ref="14123options">options</dfn>);</td></tr>
+<tr><th id="122">122</th><td><a class="macro" href="pango-version-macros.h.html#409" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_10">PANGO_AVAILABLE_IN_1_10</a></td></tr>
+<tr><th id="123">123</th><td><em>const</em> <a class="typedef" href="../../cairo/cairo.h.html#cairo_font_options_t" title='cairo_font_options_t' data-type='struct _cairo_font_options' data-ref="cairo_font_options_t">cairo_font_options_t</a> *<dfn class="decl" id="pango_cairo_context_get_font_options" title='pango_cairo_context_get_font_options' data-ref="pango_cairo_context_get_font_options">pango_cairo_context_get_font_options</dfn> (<a class="typedef" href="pango-fontmap.h.html#PangoContext" title='PangoContext' data-type='struct _PangoContext' data-ref="PangoContext">PangoContext</a>               *<dfn class="local col4 decl" id="14124context" title='context' data-type='PangoContext *' data-ref="14124context">context</dfn>);</td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td><a class="macro" href="pango-version-macros.h.html#409" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_10">PANGO_AVAILABLE_IN_1_10</a></td></tr>
+<tr><th id="126">126</th><td><em>void</em>               <dfn class="decl" id="pango_cairo_context_set_resolution" title='pango_cairo_context_set_resolution' data-ref="pango_cairo_context_set_resolution">pango_cairo_context_set_resolution</dfn>     (<a class="typedef" href="pango-fontmap.h.html#PangoContext" title='PangoContext' data-type='struct _PangoContext' data-ref="PangoContext">PangoContext</a>       *<dfn class="local col5 decl" id="14125context" title='context' data-type='PangoContext *' data-ref="14125context">context</dfn>,</td></tr>
+<tr><th id="127">127</th><td>							   <em>double</em>              <dfn class="local col6 decl" id="14126dpi" title='dpi' data-type='double' data-ref="14126dpi">dpi</dfn>);</td></tr>
+<tr><th id="128">128</th><td><a class="macro" href="pango-version-macros.h.html#409" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_10">PANGO_AVAILABLE_IN_1_10</a></td></tr>
+<tr><th id="129">129</th><td><em>double</em>             <dfn class="decl" id="pango_cairo_context_get_resolution" title='pango_cairo_context_get_resolution' data-ref="pango_cairo_context_get_resolution">pango_cairo_context_get_resolution</dfn>     (<a class="typedef" href="pango-fontmap.h.html#PangoContext" title='PangoContext' data-type='struct _PangoContext' data-ref="PangoContext">PangoContext</a>       *<dfn class="local col7 decl" id="14127context" title='context' data-type='PangoContext *' data-ref="14127context">context</dfn>);</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td><a class="macro" href="pango-version-macros.h.html#465" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_18">PANGO_AVAILABLE_IN_1_18</a></td></tr>
+<tr><th id="132">132</th><td><em>void</em>                        <dfn class="decl" id="pango_cairo_context_set_shape_renderer" title='pango_cairo_context_set_shape_renderer' data-ref="pango_cairo_context_set_shape_renderer">pango_cairo_context_set_shape_renderer</dfn> (<a class="typedef" href="pango-fontmap.h.html#PangoContext" title='PangoContext' data-type='struct _PangoContext' data-ref="PangoContext">PangoContext</a>                *<dfn class="local col8 decl" id="14128context" title='context' data-type='PangoContext *' data-ref="14128context">context</dfn>,</td></tr>
+<tr><th id="133">133</th><td>								    <a class="typedef" href="#PangoCairoShapeRendererFunc" title='PangoCairoShapeRendererFunc' data-type='void (*)(cairo_t *, PangoAttrShape *, gboolean, gpointer)' data-ref="PangoCairoShapeRendererFunc">PangoCairoShapeRendererFunc</a>  <dfn class="local col9 decl" id="14129func" title='func' data-type='PangoCairoShapeRendererFunc' data-ref="14129func">func</dfn>,</td></tr>
+<tr><th id="134">134</th><td>								    <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>                     <dfn class="local col0 decl" id="14130data" title='data' data-type='gpointer' data-ref="14130data">data</dfn>,</td></tr>
+<tr><th id="135">135</th><td>								    <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#GDestroyNotify" title='GDestroyNotify' data-type='void (*)(gpointer)' data-ref="GDestroyNotify">GDestroyNotify</a>               <dfn class="local col1 decl" id="14131dnotify" title='dnotify' data-type='GDestroyNotify' data-ref="14131dnotify">dnotify</dfn>);</td></tr>
+<tr><th id="136">136</th><td><a class="macro" href="pango-version-macros.h.html#465" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_18">PANGO_AVAILABLE_IN_1_18</a></td></tr>
+<tr><th id="137">137</th><td><a class="typedef" href="#PangoCairoShapeRendererFunc" title='PangoCairoShapeRendererFunc' data-type='void (*)(cairo_t *, PangoAttrShape *, gboolean, gpointer)' data-ref="PangoCairoShapeRendererFunc">PangoCairoShapeRendererFunc</a> <dfn class="decl" id="pango_cairo_context_get_shape_renderer" title='pango_cairo_context_get_shape_renderer' data-ref="pango_cairo_context_get_shape_renderer">pango_cairo_context_get_shape_renderer</dfn> (<a class="typedef" href="pango-fontmap.h.html#PangoContext" title='PangoContext' data-type='struct _PangoContext' data-ref="PangoContext">PangoContext</a>                *<dfn class="local col2 decl" id="14132context" title='context' data-type='PangoContext *' data-ref="14132context">context</dfn>,</td></tr>
+<tr><th id="138">138</th><td>								    <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>                    *<dfn class="local col3 decl" id="14133data" title='data' data-type='gpointer *' data-ref="14133data">data</dfn>);</td></tr>
+<tr><th id="139">139</th><td></td></tr>
+<tr><th id="140">140</th><td><i>/* Convenience</i></td></tr>
+<tr><th id="141">141</th><td><i> */</i></td></tr>
+<tr><th id="142">142</th><td><a class="macro" href="pango-version-macros.h.html#493" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_22">PANGO_AVAILABLE_IN_1_22</a></td></tr>
+<tr><th id="143">143</th><td><a class="typedef" href="pango-fontmap.h.html#PangoContext" title='PangoContext' data-type='struct _PangoContext' data-ref="PangoContext">PangoContext</a> *<dfn class="decl" id="pango_cairo_create_context" title='pango_cairo_create_context' data-ref="pango_cairo_create_context">pango_cairo_create_context</dfn> (<a class="typedef" href="../../cairo/cairo.h.html#cairo_t" title='cairo_t' data-type='struct _cairo' data-ref="cairo_t">cairo_t</a>   *<dfn class="local col4 decl" id="14134cr" title='cr' data-type='cairo_t *' data-ref="14134cr">cr</dfn>);</td></tr>
+<tr><th id="144">144</th><td><a class="macro" href="pango-version-macros.h.html#31" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_ALL">PANGO_AVAILABLE_IN_ALL</a></td></tr>
+<tr><th id="145">145</th><td><a class="typedef" href="pango-layout.h.html#PangoLayout" title='PangoLayout' data-type='struct _PangoLayout' data-ref="PangoLayout">PangoLayout</a> *<dfn class="decl" id="pango_cairo_create_layout" title='pango_cairo_create_layout' data-ref="pango_cairo_create_layout">pango_cairo_create_layout</dfn> (<a class="typedef" href="../../cairo/cairo.h.html#cairo_t" title='cairo_t' data-type='struct _cairo' data-ref="cairo_t">cairo_t</a>     *<dfn class="local col5 decl" id="14135cr" title='cr' data-type='cairo_t *' data-ref="14135cr">cr</dfn>);</td></tr>
+<tr><th id="146">146</th><td><a class="macro" href="pango-version-macros.h.html#409" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_10">PANGO_AVAILABLE_IN_1_10</a></td></tr>
+<tr><th id="147">147</th><td><em>void</em>         <dfn class="decl" id="pango_cairo_update_layout" title='pango_cairo_update_layout' data-ref="pango_cairo_update_layout">pango_cairo_update_layout</dfn> (<a class="typedef" href="../../cairo/cairo.h.html#cairo_t" title='cairo_t' data-type='struct _cairo' data-ref="cairo_t">cairo_t</a>     *<dfn class="local col6 decl" id="14136cr" title='cr' data-type='cairo_t *' data-ref="14136cr">cr</dfn>,</td></tr>
+<tr><th id="148">148</th><td>					<a class="typedef" href="pango-layout.h.html#PangoLayout" title='PangoLayout' data-type='struct _PangoLayout' data-ref="PangoLayout">PangoLayout</a> *<dfn class="local col7 decl" id="14137layout" title='layout' data-type='PangoLayout *' data-ref="14137layout">layout</dfn>);</td></tr>
+<tr><th id="149">149</th><td></td></tr>
+<tr><th id="150">150</th><td><i>/*</i></td></tr>
+<tr><th id="151">151</th><td><i> * Rendering</i></td></tr>
+<tr><th id="152">152</th><td><i> */</i></td></tr>
+<tr><th id="153">153</th><td><a class="macro" href="pango-version-macros.h.html#409" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_10">PANGO_AVAILABLE_IN_1_10</a></td></tr>
+<tr><th id="154">154</th><td><em>void</em> <dfn class="decl" id="pango_cairo_show_glyph_string" title='pango_cairo_show_glyph_string' data-ref="pango_cairo_show_glyph_string">pango_cairo_show_glyph_string</dfn> (<a class="typedef" href="../../cairo/cairo.h.html#cairo_t" title='cairo_t' data-type='struct _cairo' data-ref="cairo_t">cairo_t</a>          *<dfn class="local col8 decl" id="14138cr" title='cr' data-type='cairo_t *' data-ref="14138cr">cr</dfn>,</td></tr>
+<tr><th id="155">155</th><td>				    <a class="typedef" href="pango-types.h.html#PangoFont" title='PangoFont' data-type='struct _PangoFont' data-ref="PangoFont">PangoFont</a>        *<dfn class="local col9 decl" id="14139font" title='font' data-type='PangoFont *' data-ref="14139font">font</dfn>,</td></tr>
+<tr><th id="156">156</th><td>				    <a class="typedef" href="pango-glyph.h.html#PangoGlyphString" title='PangoGlyphString' data-type='struct _PangoGlyphString' data-ref="PangoGlyphString">PangoGlyphString</a> *<dfn class="local col0 decl" id="14140glyphs" title='glyphs' data-type='PangoGlyphString *' data-ref="14140glyphs">glyphs</dfn>);</td></tr>
+<tr><th id="157">157</th><td><a class="macro" href="pango-version-macros.h.html#493" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_22">PANGO_AVAILABLE_IN_1_22</a></td></tr>
+<tr><th id="158">158</th><td><em>void</em> <dfn class="decl" id="pango_cairo_show_glyph_item" title='pango_cairo_show_glyph_item' data-ref="pango_cairo_show_glyph_item">pango_cairo_show_glyph_item</dfn>   (<a class="typedef" href="../../cairo/cairo.h.html#cairo_t" title='cairo_t' data-type='struct _cairo' data-ref="cairo_t">cairo_t</a>          *<dfn class="local col1 decl" id="14141cr" title='cr' data-type='cairo_t *' data-ref="14141cr">cr</dfn>,</td></tr>
+<tr><th id="159">159</th><td>				    <em>const</em> <em>char</em>       *<dfn class="local col2 decl" id="14142text" title='text' data-type='const char *' data-ref="14142text">text</dfn>,</td></tr>
+<tr><th id="160">160</th><td>				    <a class="typedef" href="pango-glyph-item.h.html#PangoGlyphItem" title='PangoGlyphItem' data-type='struct _PangoGlyphItem' data-ref="PangoGlyphItem">PangoGlyphItem</a>   *<dfn class="local col3 decl" id="14143glyph_item" title='glyph_item' data-type='PangoGlyphItem *' data-ref="14143glyph_item">glyph_item</dfn>);</td></tr>
+<tr><th id="161">161</th><td><a class="macro" href="pango-version-macros.h.html#409" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_10">PANGO_AVAILABLE_IN_1_10</a></td></tr>
+<tr><th id="162">162</th><td><em>void</em> <dfn class="decl" id="pango_cairo_show_layout_line" title='pango_cairo_show_layout_line' data-ref="pango_cairo_show_layout_line">pango_cairo_show_layout_line</dfn>  (<a class="typedef" href="../../cairo/cairo.h.html#cairo_t" title='cairo_t' data-type='struct _cairo' data-ref="cairo_t">cairo_t</a>          *<dfn class="local col4 decl" id="14144cr" title='cr' data-type='cairo_t *' data-ref="14144cr">cr</dfn>,</td></tr>
+<tr><th id="163">163</th><td>				    <a class="typedef" href="pango-layout.h.html#PangoLayoutLine" title='PangoLayoutLine' data-type='struct _PangoLayoutLine' data-ref="PangoLayoutLine">PangoLayoutLine</a>  *<dfn class="local col5 decl" id="14145line" title='line' data-type='PangoLayoutLine *' data-ref="14145line">line</dfn>);</td></tr>
+<tr><th id="164">164</th><td><a class="macro" href="pango-version-macros.h.html#409" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_10">PANGO_AVAILABLE_IN_1_10</a></td></tr>
+<tr><th id="165">165</th><td><em>void</em> <dfn class="decl" id="pango_cairo_show_layout" title='pango_cairo_show_layout' data-ref="pango_cairo_show_layout">pango_cairo_show_layout</dfn>       (<a class="typedef" href="../../cairo/cairo.h.html#cairo_t" title='cairo_t' data-type='struct _cairo' data-ref="cairo_t">cairo_t</a>          *<dfn class="local col6 decl" id="14146cr" title='cr' data-type='cairo_t *' data-ref="14146cr">cr</dfn>,</td></tr>
+<tr><th id="166">166</th><td>				    <a class="typedef" href="pango-layout.h.html#PangoLayout" title='PangoLayout' data-type='struct _PangoLayout' data-ref="PangoLayout">PangoLayout</a>      *<dfn class="local col7 decl" id="14147layout" title='layout' data-type='PangoLayout *' data-ref="14147layout">layout</dfn>);</td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td><a class="macro" href="pango-version-macros.h.html#429" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_14">PANGO_AVAILABLE_IN_1_14</a></td></tr>
+<tr><th id="169">169</th><td><em>void</em> <dfn class="decl" id="pango_cairo_show_error_underline" title='pango_cairo_show_error_underline' data-ref="pango_cairo_show_error_underline">pango_cairo_show_error_underline</dfn> (<a class="typedef" href="../../cairo/cairo.h.html#cairo_t" title='cairo_t' data-type='struct _cairo' data-ref="cairo_t">cairo_t</a>       *<dfn class="local col8 decl" id="14148cr" title='cr' data-type='cairo_t *' data-ref="14148cr">cr</dfn>,</td></tr>
+<tr><th id="170">170</th><td>				       <em>double</em>         <dfn class="local col9 decl" id="14149x" title='x' data-type='double' data-ref="14149x">x</dfn>,</td></tr>
+<tr><th id="171">171</th><td>				       <em>double</em>         <dfn class="local col0 decl" id="14150y" title='y' data-type='double' data-ref="14150y">y</dfn>,</td></tr>
+<tr><th id="172">172</th><td>				       <em>double</em>         <dfn class="local col1 decl" id="14151width" title='width' data-type='double' data-ref="14151width">width</dfn>,</td></tr>
+<tr><th id="173">173</th><td>				       <em>double</em>         <dfn class="local col2 decl" id="14152height" title='height' data-type='double' data-ref="14152height">height</dfn>);</td></tr>
+<tr><th id="174">174</th><td></td></tr>
+<tr><th id="175">175</th><td><i>/*</i></td></tr>
+<tr><th id="176">176</th><td><i> * Rendering to a path</i></td></tr>
+<tr><th id="177">177</th><td><i> */</i></td></tr>
+<tr><th id="178">178</th><td><a class="macro" href="pango-version-macros.h.html#409" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_10">PANGO_AVAILABLE_IN_1_10</a></td></tr>
+<tr><th id="179">179</th><td><em>void</em> <dfn class="decl" id="pango_cairo_glyph_string_path" title='pango_cairo_glyph_string_path' data-ref="pango_cairo_glyph_string_path">pango_cairo_glyph_string_path</dfn> (<a class="typedef" href="../../cairo/cairo.h.html#cairo_t" title='cairo_t' data-type='struct _cairo' data-ref="cairo_t">cairo_t</a>          *<dfn class="local col3 decl" id="14153cr" title='cr' data-type='cairo_t *' data-ref="14153cr">cr</dfn>,</td></tr>
+<tr><th id="180">180</th><td>				    <a class="typedef" href="pango-types.h.html#PangoFont" title='PangoFont' data-type='struct _PangoFont' data-ref="PangoFont">PangoFont</a>        *<dfn class="local col4 decl" id="14154font" title='font' data-type='PangoFont *' data-ref="14154font">font</dfn>,</td></tr>
+<tr><th id="181">181</th><td>				    <a class="typedef" href="pango-glyph.h.html#PangoGlyphString" title='PangoGlyphString' data-type='struct _PangoGlyphString' data-ref="PangoGlyphString">PangoGlyphString</a> *<dfn class="local col5 decl" id="14155glyphs" title='glyphs' data-type='PangoGlyphString *' data-ref="14155glyphs">glyphs</dfn>);</td></tr>
+<tr><th id="182">182</th><td><a class="macro" href="pango-version-macros.h.html#409" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_10">PANGO_AVAILABLE_IN_1_10</a></td></tr>
+<tr><th id="183">183</th><td><em>void</em> <dfn class="decl" id="pango_cairo_layout_line_path" title='pango_cairo_layout_line_path' data-ref="pango_cairo_layout_line_path">pango_cairo_layout_line_path</dfn>  (<a class="typedef" href="../../cairo/cairo.h.html#cairo_t" title='cairo_t' data-type='struct _cairo' data-ref="cairo_t">cairo_t</a>          *<dfn class="local col6 decl" id="14156cr" title='cr' data-type='cairo_t *' data-ref="14156cr">cr</dfn>,</td></tr>
+<tr><th id="184">184</th><td>				    <a class="typedef" href="pango-layout.h.html#PangoLayoutLine" title='PangoLayoutLine' data-type='struct _PangoLayoutLine' data-ref="PangoLayoutLine">PangoLayoutLine</a>  *<dfn class="local col7 decl" id="14157line" title='line' data-type='PangoLayoutLine *' data-ref="14157line">line</dfn>);</td></tr>
+<tr><th id="185">185</th><td><a class="macro" href="pango-version-macros.h.html#409" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_10">PANGO_AVAILABLE_IN_1_10</a></td></tr>
+<tr><th id="186">186</th><td><em>void</em> <dfn class="decl" id="pango_cairo_layout_path" title='pango_cairo_layout_path' data-ref="pango_cairo_layout_path">pango_cairo_layout_path</dfn>       (<a class="typedef" href="../../cairo/cairo.h.html#cairo_t" title='cairo_t' data-type='struct _cairo' data-ref="cairo_t">cairo_t</a>          *<dfn class="local col8 decl" id="14158cr" title='cr' data-type='cairo_t *' data-ref="14158cr">cr</dfn>,</td></tr>
+<tr><th id="187">187</th><td>				    <a class="typedef" href="pango-layout.h.html#PangoLayout" title='PangoLayout' data-type='struct _PangoLayout' data-ref="PangoLayout">PangoLayout</a>      *<dfn class="local col9 decl" id="14159layout" title='layout' data-type='PangoLayout *' data-ref="14159layout">layout</dfn>);</td></tr>
+<tr><th id="188">188</th><td></td></tr>
+<tr><th id="189">189</th><td><a class="macro" href="pango-version-macros.h.html#429" title="extern" data-ref="_M/PANGO_AVAILABLE_IN_1_14">PANGO_AVAILABLE_IN_1_14</a></td></tr>
+<tr><th id="190">190</th><td><em>void</em> <dfn class="decl" id="pango_cairo_error_underline_path" title='pango_cairo_error_underline_path' data-ref="pango_cairo_error_underline_path">pango_cairo_error_underline_path</dfn> (<a class="typedef" href="../../cairo/cairo.h.html#cairo_t" title='cairo_t' data-type='struct _cairo' data-ref="cairo_t">cairo_t</a>       *<dfn class="local col0 decl" id="14160cr" title='cr' data-type='cairo_t *' data-ref="14160cr">cr</dfn>,</td></tr>
+<tr><th id="191">191</th><td>				       <em>double</em>         <dfn class="local col1 decl" id="14161x" title='x' data-type='double' data-ref="14161x">x</dfn>,</td></tr>
+<tr><th id="192">192</th><td>				       <em>double</em>         <dfn class="local col2 decl" id="14162y" title='y' data-type='double' data-ref="14162y">y</dfn>,</td></tr>
+<tr><th id="193">193</th><td>				       <em>double</em>         <dfn class="local col3 decl" id="14163width" title='width' data-type='double' data-ref="14163width">width</dfn>,</td></tr>
+<tr><th id="194">194</th><td>				       <em>double</em>         <dfn class="local col4 decl" id="14164height" title='height' data-type='double' data-ref="14164height">height</dfn>);</td></tr>
+<tr><th id="195">195</th><td></td></tr>
+<tr><th id="196">196</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="197">197</th><td></td></tr>
+<tr><th id="198">198</th><td><u>#<span data-ppcond="22">endif</span> /* __PANGOCAIRO_H__ */</u></td></tr>
+<tr><th id="199">199</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

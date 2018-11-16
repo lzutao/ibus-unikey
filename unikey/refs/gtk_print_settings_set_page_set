@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprintsettings.h' l='214' type='void gtk_print_settings_set_page_set(GtkPrintSettings * settings, GtkPageSet page_set)'/>

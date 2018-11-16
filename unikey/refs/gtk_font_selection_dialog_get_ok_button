@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkfontsel.h' l='178' type='GtkWidget * gtk_font_selection_dialog_get_ok_button(GtkFontSelectionDialog * fsd)'/>

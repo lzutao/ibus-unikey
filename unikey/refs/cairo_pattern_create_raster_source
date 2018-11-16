@@ -1,0 +1,1 @@
+<dec f='include/cairo/cairo.h' l='2700' type='cairo_pattern_t * cairo_pattern_create_raster_source(void * user_data, cairo_content_t content, int width, int height)'/>

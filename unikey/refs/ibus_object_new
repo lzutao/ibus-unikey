@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusobject.h' l='125' type='IBusObject * ibus_object_new()'/>
+<doc f='include/ibus-1.0/ibusobject.h' l='118'>/**
+ * ibus_object_new:
+ *
+ * Creates  a new #IBusObject.
+ *
+ * Returns: A newly allocated #IBusObject
+ */</doc>

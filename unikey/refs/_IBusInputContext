@@ -1,0 +1,8 @@
+<def f='include/ibus-1.0/ibusinputcontext.h' l='74' ll='77'/>
+<size>40</size>
+<doc f='include/ibus-1.0/ibusinputcontext.h' l='69'>/**
+ * IBusInputContext:
+ *
+ * An opaque data type representing an IBusInputContext.
+ */</doc>
+<mbr r='_IBusInputContext::parent' o='0' t='IBusProxy'/>

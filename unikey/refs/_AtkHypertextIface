@@ -1,0 +1,7 @@
+<def f='include/atk-1.0/atk/atkhypertext.h' l='48' ll='63'/>
+<size>48</size>
+<mbr r='_AtkHypertextIface::parent' o='0' t='GTypeInterface'/>
+<mbr r='_AtkHypertextIface::get_link' o='128' t='AtkHyperlink *(*)(AtkHypertext *, gint)'/>
+<mbr r='_AtkHypertextIface::get_n_links' o='192' t='gint (*)(AtkHypertext *)'/>
+<mbr r='_AtkHypertextIface::get_link_index' o='256' t='gint (*)(AtkHypertext *, gint)'/>
+<mbr r='_AtkHypertextIface::link_selected' o='320' t='void (*)(AtkHypertext *, gint)'/>

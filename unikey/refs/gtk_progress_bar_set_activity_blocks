@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkprogressbar.h' l='163' type='void gtk_progress_bar_set_activity_blocks(GtkProgressBar * pbar, guint blocks)'/>

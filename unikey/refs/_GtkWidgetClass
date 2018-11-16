@@ -1,0 +1,92 @@
+<def f='include/gtk-2.0/gtk/gtkwidget.h' l='614' ll='814'/>
+<size>720</size>
+<doc f='include/gtk-2.0/gtk/gtkwidget.h' l='596'>/**
+ * GtkWidgetClass:
+ * @parent_class:
+ * @activate_signal:
+ * @set_scroll_adjustments_signal:
+ *
+ * &lt;structfield&gt;activate_signal&lt;/structfield&gt;
+ * The signal to emit when a widget of this class is activated,
+ * gtk_widget_activate() handles the emission. Implementation of this
+ * signal is optional.
+ *
+ *
+ * &lt;structfield&gt;set_scroll_adjustment_signal&lt;/structfield&gt;
+ * This signal is emitted  when a widget of this class is added
+ * to a scrolling aware parent, gtk_widget_set_scroll_adjustments()
+ * handles the emission.
+ * Implementation of this signal is optional.
+ */</doc>
+<mbr r='_GtkWidgetClass::parent_class' o='0' t='GtkObjectClass'/>
+<mbr r='_GtkWidgetClass::activate_signal' o='1280' t='guint'/>
+<mbr r='_GtkWidgetClass::set_scroll_adjustments_signal' o='1312' t='guint'/>
+<mbr r='_GtkWidgetClass::dispatch_child_properties_changed' o='1344' t='void (*)(GtkWidget *, guint, GParamSpec **)'/>
+<mbr r='_GtkWidgetClass::show' o='1408' t='void (*)(GtkWidget *)'/>
+<mbr r='_GtkWidgetClass::show_all' o='1472' t='void (*)(GtkWidget *)'/>
+<mbr r='_GtkWidgetClass::hide' o='1536' t='void (*)(GtkWidget *)'/>
+<mbr r='_GtkWidgetClass::hide_all' o='1600' t='void (*)(GtkWidget *)'/>
+<mbr r='_GtkWidgetClass::map' o='1664' t='void (*)(GtkWidget *)'/>
+<mbr r='_GtkWidgetClass::unmap' o='1728' t='void (*)(GtkWidget *)'/>
+<mbr r='_GtkWidgetClass::realize' o='1792' t='void (*)(GtkWidget *)'/>
+<mbr r='_GtkWidgetClass::unrealize' o='1856' t='void (*)(GtkWidget *)'/>
+<mbr r='_GtkWidgetClass::size_request' o='1920' t='void (*)(GtkWidget *, GtkRequisition *)'/>
+<mbr r='_GtkWidgetClass::size_allocate' o='1984' t='void (*)(GtkWidget *, GtkAllocation *)'/>
+<mbr r='_GtkWidgetClass::state_changed' o='2048' t='void (*)(GtkWidget *, GtkStateType)'/>
+<mbr r='_GtkWidgetClass::parent_set' o='2112' t='void (*)(GtkWidget *, GtkWidget *)'/>
+<mbr r='_GtkWidgetClass::hierarchy_changed' o='2176' t='void (*)(GtkWidget *, GtkWidget *)'/>
+<mbr r='_GtkWidgetClass::style_set' o='2240' t='void (*)(GtkWidget *, GtkStyle *)'/>
+<mbr r='_GtkWidgetClass::direction_changed' o='2304' t='void (*)(GtkWidget *, GtkTextDirection)'/>
+<mbr r='_GtkWidgetClass::grab_notify' o='2368' t='void (*)(GtkWidget *, gboolean)'/>
+<mbr r='_GtkWidgetClass::child_notify' o='2432' t='void (*)(GtkWidget *, GParamSpec *)'/>
+<mbr r='_GtkWidgetClass::mnemonic_activate' o='2496' t='gboolean (*)(GtkWidget *, gboolean)'/>
+<mbr r='_GtkWidgetClass::grab_focus' o='2560' t='void (*)(GtkWidget *)'/>
+<mbr r='_GtkWidgetClass::focus' o='2624' t='gboolean (*)(GtkWidget *, GtkDirectionType)'/>
+<mbr r='_GtkWidgetClass::event' o='2688' t='gboolean (*)(GtkWidget *, GdkEvent *)'/>
+<mbr r='_GtkWidgetClass::button_press_event' o='2752' t='gboolean (*)(GtkWidget *, GdkEventButton *)'/>
+<mbr r='_GtkWidgetClass::button_release_event' o='2816' t='gboolean (*)(GtkWidget *, GdkEventButton *)'/>
+<mbr r='_GtkWidgetClass::scroll_event' o='2880' t='gboolean (*)(GtkWidget *, GdkEventScroll *)'/>
+<mbr r='_GtkWidgetClass::motion_notify_event' o='2944' t='gboolean (*)(GtkWidget *, GdkEventMotion *)'/>
+<mbr r='_GtkWidgetClass::delete_event' o='3008' t='gboolean (*)(GtkWidget *, GdkEventAny *)'/>
+<mbr r='_GtkWidgetClass::destroy_event' o='3072' t='gboolean (*)(GtkWidget *, GdkEventAny *)'/>
+<mbr r='_GtkWidgetClass::expose_event' o='3136' t='gboolean (*)(GtkWidget *, GdkEventExpose *)'/>
+<mbr r='_GtkWidgetClass::key_press_event' o='3200' t='gboolean (*)(GtkWidget *, GdkEventKey *)'/>
+<mbr r='_GtkWidgetClass::key_release_event' o='3264' t='gboolean (*)(GtkWidget *, GdkEventKey *)'/>
+<mbr r='_GtkWidgetClass::enter_notify_event' o='3328' t='gboolean (*)(GtkWidget *, GdkEventCrossing *)'/>
+<mbr r='_GtkWidgetClass::leave_notify_event' o='3392' t='gboolean (*)(GtkWidget *, GdkEventCrossing *)'/>
+<mbr r='_GtkWidgetClass::configure_event' o='3456' t='gboolean (*)(GtkWidget *, GdkEventConfigure *)'/>
+<mbr r='_GtkWidgetClass::focus_in_event' o='3520' t='gboolean (*)(GtkWidget *, GdkEventFocus *)'/>
+<mbr r='_GtkWidgetClass::focus_out_event' o='3584' t='gboolean (*)(GtkWidget *, GdkEventFocus *)'/>
+<mbr r='_GtkWidgetClass::map_event' o='3648' t='gboolean (*)(GtkWidget *, GdkEventAny *)'/>
+<mbr r='_GtkWidgetClass::unmap_event' o='3712' t='gboolean (*)(GtkWidget *, GdkEventAny *)'/>
+<mbr r='_GtkWidgetClass::property_notify_event' o='3776' t='gboolean (*)(GtkWidget *, GdkEventProperty *)'/>
+<mbr r='_GtkWidgetClass::selection_clear_event' o='3840' t='gboolean (*)(GtkWidget *, GdkEventSelection *)'/>
+<mbr r='_GtkWidgetClass::selection_request_event' o='3904' t='gboolean (*)(GtkWidget *, GdkEventSelection *)'/>
+<mbr r='_GtkWidgetClass::selection_notify_event' o='3968' t='gboolean (*)(GtkWidget *, GdkEventSelection *)'/>
+<mbr r='_GtkWidgetClass::proximity_in_event' o='4032' t='gboolean (*)(GtkWidget *, GdkEventProximity *)'/>
+<mbr r='_GtkWidgetClass::proximity_out_event' o='4096' t='gboolean (*)(GtkWidget *, GdkEventProximity *)'/>
+<mbr r='_GtkWidgetClass::visibility_notify_event' o='4160' t='gboolean (*)(GtkWidget *, GdkEventVisibility *)'/>
+<mbr r='_GtkWidgetClass::client_event' o='4224' t='gboolean (*)(GtkWidget *, GdkEventClient *)'/>
+<mbr r='_GtkWidgetClass::no_expose_event' o='4288' t='gboolean (*)(GtkWidget *, GdkEventAny *)'/>
+<mbr r='_GtkWidgetClass::window_state_event' o='4352' t='gboolean (*)(GtkWidget *, GdkEventWindowState *)'/>
+<mbr r='_GtkWidgetClass::selection_get' o='4416' t='void (*)(GtkWidget *, GtkSelectionData *, guint, guint)'/>
+<mbr r='_GtkWidgetClass::selection_received' o='4480' t='void (*)(GtkWidget *, GtkSelectionData *, guint)'/>
+<mbr r='_GtkWidgetClass::drag_begin' o='4544' t='void (*)(GtkWidget *, GdkDragContext *)'/>
+<mbr r='_GtkWidgetClass::drag_end' o='4608' t='void (*)(GtkWidget *, GdkDragContext *)'/>
+<mbr r='_GtkWidgetClass::drag_data_get' o='4672' t='void (*)(GtkWidget *, GdkDragContext *, GtkSelectionData *, guint, guint)'/>
+<mbr r='_GtkWidgetClass::drag_data_delete' o='4736' t='void (*)(GtkWidget *, GdkDragContext *)'/>
+<mbr r='_GtkWidgetClass::drag_leave' o='4800' t='void (*)(GtkWidget *, GdkDragContext *, guint)'/>
+<mbr r='_GtkWidgetClass::drag_motion' o='4864' t='gboolean (*)(GtkWidget *, GdkDragContext *, gint, gint, guint)'/>
+<mbr r='_GtkWidgetClass::drag_drop' o='4928' t='gboolean (*)(GtkWidget *, GdkDragContext *, gint, gint, guint)'/>
+<mbr r='_GtkWidgetClass::drag_data_received' o='4992' t='void (*)(GtkWidget *, GdkDragContext *, gint, gint, GtkSelectionData *, guint, guint)'/>
+<mbr r='_GtkWidgetClass::popup_menu' o='5056' t='gboolean (*)(GtkWidget *)'/>
+<mbr r='_GtkWidgetClass::show_help' o='5120' t='gboolean (*)(GtkWidget *, GtkWidgetHelpType)'/>
+<mbr r='_GtkWidgetClass::get_accessible' o='5184' t='AtkObject *(*)(GtkWidget *)'/>
+<mbr r='_GtkWidgetClass::screen_changed' o='5248' t='void (*)(GtkWidget *, GdkScreen *)'/>
+<mbr r='_GtkWidgetClass::can_activate_accel' o='5312' t='gboolean (*)(GtkWidget *, guint)'/>
+<mbr r='_GtkWidgetClass::grab_broken_event' o='5376' t='gboolean (*)(GtkWidget *, GdkEventGrabBroken *)'/>
+<mbr r='_GtkWidgetClass::composited_changed' o='5440' t='void (*)(GtkWidget *)'/>
+<mbr r='_GtkWidgetClass::query_tooltip' o='5504' t='gboolean (*)(GtkWidget *, gint, gint, gboolean, GtkTooltip *)'/>
+<mbr r='_GtkWidgetClass::_gtk_reserved5' o='5568' t='void (*)()'/>
+<mbr r='_GtkWidgetClass::_gtk_reserved6' o='5632' t='void (*)()'/>
+<mbr r='_GtkWidgetClass::_gtk_reserved7' o='5696' t='void (*)()'/>

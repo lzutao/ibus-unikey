@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkiconfactory.h' l='130' type='GdkPixbuf * gtk_icon_set_render_icon(GtkIconSet * icon_set, GtkStyle * style, GtkTextDirection direction, GtkStateType state, GtkIconSize size, GtkWidget * widget, const char * detail)'/>
+<doc f='include/gtk-2.0/gtk/gtkiconfactory.h' l='127'>/* Get one of the icon variants in the set, creating the variant if
+ * necessary.
+ */</doc>

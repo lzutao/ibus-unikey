@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gdk/gdkinput.h' l='85' ll='89'/>
+<size>8</size>
+<mbr r='_GdkDeviceKey::keyval' o='0' t='guint'/>
+<mbr r='_GdkDeviceKey::modifiers' o='32' t='GdkModifierType'/>

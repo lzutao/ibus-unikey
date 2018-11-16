@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gdk/gdkenumtypes.h' l='54' type='GType gdk_cap_style_get_type()'/>
+<doc f='include/gtk-2.0/gdk/gdkenumtypes.h' l='53'>/* enumerations from &quot;gdkgc.h&quot; */</doc>

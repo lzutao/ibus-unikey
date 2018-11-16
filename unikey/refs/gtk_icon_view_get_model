@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkiconview.h' l='96' type='GtkTreeModel * gtk_icon_view_get_model(GtkIconView * icon_view)'/>

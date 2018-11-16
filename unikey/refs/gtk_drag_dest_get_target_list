@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkdnd.h' l='90' type='GtkTargetList * gtk_drag_dest_get_target_list(GtkWidget * widget)'/>

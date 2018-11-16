@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwidget.h' l='1060' type='GtkSettings * gtk_widget_get_settings(GtkWidget * widget)'/>

@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='212' type='GType gtk_icon_view_drop_position_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='211'>/* enumerations from &quot;gtkiconview.h&quot; */</doc>

@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkwindow.h' l='388' type='gboolean gtk_window_has_group(GtkWindow * window)'/>

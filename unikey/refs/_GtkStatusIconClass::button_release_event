@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkstatusicon.h' l='66' type='gboolean (*)(GtkStatusIcon *, GdkEventButton *)'/>
+<offset>1344</offset>

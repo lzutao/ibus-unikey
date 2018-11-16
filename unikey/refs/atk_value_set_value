@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atkvalue.h' l='153' type='void atk_value_set_value(AtkValue * obj, const gdouble new_value)'/>

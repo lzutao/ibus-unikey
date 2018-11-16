@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktoolpalette.h' l='129' type='void gtk_tool_palette_add_drag_dest(GtkToolPalette * palette, GtkWidget * widget, GtkDestDefaults flags, GtkToolPaletteDragTargets targets, GdkDragAction actions)'/>

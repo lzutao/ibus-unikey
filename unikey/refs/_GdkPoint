@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gdk/gdktypes.h' l='194' ll='198'/>
+<size>8</size>
+<mbr r='_GdkPoint::x' o='0' t='gint'/>
+<mbr r='_GdkPoint::y' o='32' t='gint'/>

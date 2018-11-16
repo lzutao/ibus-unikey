@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='400' type='const PangoLogAttr * _gtk_text_buffer_get_line_log_attrs(GtkTextBuffer * buffer, const GtkTextIter * anywhere_in_line, gint * char_len)'/>

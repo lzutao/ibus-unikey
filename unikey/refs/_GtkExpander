@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkexpander.h' l='46' ll='51'/>
+<size>128</size>
+<mbr r='_GtkExpander::bin' o='0' t='GtkBin'/>
+<mbr r='_GtkExpander::priv' o='960' t='GtkExpanderPrivate *'/>

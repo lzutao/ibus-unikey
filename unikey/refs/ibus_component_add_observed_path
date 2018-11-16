@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuscomponent.h' l='257' type='void ibus_component_add_observed_path(IBusComponent * component, const gchar * path, gboolean access_fs)'/>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='249'>/**
+ * ibus_component_add_observed_path:
+ * @component: An #IBusComponent
+ * @path: Observed path to be added.
+ * @access_fs: %TRUE for filling the file status; %FALSE otherwise.
+ *
+ * Add an observed path to #IBusComponent.
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibusattribute.h' l='153' type='guint ibus_attribute_get_attr_type(IBusAttribute * attr)'/>
+<doc f='include/ibus-1.0/ibusattribute.h' l='145'>/**
+ * ibus_attribute_get_attr_type:
+ * @attr: An #IBusAttribute
+ *
+ * Gets an enum of #IBusAttrType.
+ *
+ * Returns: An enum of #IBusAttrType.
+ */</doc>

@@ -1,0 +1,13 @@
+<dec f='include/ibus-1.0/ibusbus.h' l='1227' type='GVariant * ibus_bus_get_ibus_property_async_finish(IBusBus * bus, GAsyncResult * res, GError ** error)'/>
+<doc f='include/ibus-1.0/ibusbus.h' l='1215'>/**
+ * ibus_bus_get_ibus_property_async_finish:
+ * @bus: An #IBusBus.
+ * @res: A #GAsyncResult obtained from the #GAsyncReadyCallback passed to
+ *   ibus_bus_get_ibus_property_async().
+ * @error: Return location for error or %NULL.
+ *
+ * Finishes an operation started with ibus_bus_get_ibus_property_async().
+ *
+ * Returns: (transfer full): The value in org.freedesktop.DBus.Properties.Get
+ *           The returned value must be freed with g_variant_unref().
+ */</doc>

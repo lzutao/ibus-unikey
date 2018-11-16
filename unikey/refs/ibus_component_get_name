@@ -1,0 +1,9 @@
+<dec f='include/ibus-1.0/ibuscomponent.h' l='177' type='const gchar * ibus_component_get_name(IBusComponent * component)'/>
+<doc f='include/ibus-1.0/ibuscomponent.h' l='169'>/**
+ * ibus_component_get_name:
+ * @component: An #IBusComponent
+ *
+ * Gets the name property in #IBusComponent. It should not be freed.
+ *
+ * Returns: name property in #IBusComponent
+ */</doc>

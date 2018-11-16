@@ -1,0 +1,5 @@
+<dec f='include/atk-1.0/atk/atkobject.h' l='574' type='AtkStateSet *(*)(AtkObject *)'/>
+<offset>1728</offset>
+<doc f='include/atk-1.0/atk/atkobject.h' l='571'>/*
+   * Gets the state set of the object
+   */</doc>

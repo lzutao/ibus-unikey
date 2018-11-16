@@ -1,0 +1,584 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gdkevents.h source code [include/gtk-2.0/gdk/gdkevents.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/gtk-2.0/gdk/gdkevents.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>gtk-2.0</a>/<a href='./'>gdk</a>/<a href='gdkevents.h.html'>gdkevents.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* GDK - The GIMP Drawing Kit</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 1995-1997 Peter Mattis, Spencer Kimball and Josh MacDonald</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="5">5</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="6">6</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="7">7</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="10">10</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="11">11</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="12">12</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="13">13</th><td><i> *</i></td></tr>
+<tr><th id="14">14</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="15">15</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="16">16</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="17">17</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="18">18</th><td><i> */</i></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><i>/*</i></td></tr>
+<tr><th id="21">21</th><td><i> * Modified by the GTK+ Team and others 1997-2000.  See the AUTHORS</i></td></tr>
+<tr><th id="22">22</th><td><i> * file for a list of people on the GTK+ Team.  See the ChangeLog</i></td></tr>
+<tr><th id="23">23</th><td><i> * files for a list of changes.  These files are distributed with</i></td></tr>
+<tr><th id="24">24</th><td><i> * GTK+ at ftp://ftp.gtk.org/pub/gtk/.</i></td></tr>
+<tr><th id="25">25</th><td><i> */</i></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/__GDK_EVENTS_H__">__GDK_EVENTS_H__</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/__GDK_EVENTS_H__" data-ref="_M/__GDK_EVENTS_H__">__GDK_EVENTS_H__</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><u>#<span data-ppcond="30">if</span> defined(<span class="macro" data-ref="_M/GTK_DISABLE_SINGLE_INCLUDES">GTK_DISABLE_SINGLE_INCLUDES</span>) &amp;&amp; !defined (<a class="macro" href="gdk.h.html#30" data-ref="_M/__GDK_H_INSIDE__">__GDK_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/GDK_COMPILATION">GDK_COMPILATION</span>)</u></td></tr>
+<tr><th id="31">31</th><td><u>#error "Only &lt;gdk/gdk.h&gt; can be included directly."</u></td></tr>
+<tr><th id="32">32</th><td><u>#<span data-ppcond="30">endif</span></u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><u>#include <a href="gdkcolor.h.html">&lt;gdk/gdkcolor.h&gt;</a></u></td></tr>
+<tr><th id="35">35</th><td><u>#include <a href="gdktypes.h.html">&lt;gdk/gdktypes.h&gt;</a></u></td></tr>
+<tr><th id="36">36</th><td><u>#include <a href="gdkdnd.h.html">&lt;gdk/gdkdnd.h&gt;</a></u></td></tr>
+<tr><th id="37">37</th><td><u>#include <a href="gdkinput.h.html">&lt;gdk/gdkinput.h&gt;</a></u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><u>#define <dfn class="macro" id="_M/GDK_TYPE_EVENT" data-ref="_M/GDK_TYPE_EVENT">GDK_TYPE_EVENT</dfn>          (gdk_event_get_type ())</u></td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/GDK_PRIORITY_EVENTS" data-ref="_M/GDK_PRIORITY_EVENTS">GDK_PRIORITY_EVENTS</dfn>	(G_PRIORITY_DEFAULT)</u></td></tr>
+<tr><th id="44">44</th><td><u>#define <dfn class="macro" id="_M/GDK_PRIORITY_REDRAW" data-ref="_M/GDK_PRIORITY_REDRAW">GDK_PRIORITY_REDRAW</dfn>     (G_PRIORITY_HIGH_IDLE + 20)</u></td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventAny" title='_GdkEventAny' data-ref="_GdkEventAny">_GdkEventAny</a>	    <dfn class="typedef" id="GdkEventAny" title='GdkEventAny' data-type='struct _GdkEventAny' data-ref="GdkEventAny">GdkEventAny</dfn>;</td></tr>
+<tr><th id="48">48</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventExpose" title='_GdkEventExpose' data-ref="_GdkEventExpose">_GdkEventExpose</a>	    <dfn class="typedef" id="GdkEventExpose" title='GdkEventExpose' data-type='struct _GdkEventExpose' data-ref="GdkEventExpose">GdkEventExpose</dfn>;</td></tr>
+<tr><th id="49">49</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventNoExpose" title='_GdkEventNoExpose' data-ref="_GdkEventNoExpose">_GdkEventNoExpose</a>    <dfn class="typedef" id="GdkEventNoExpose" title='GdkEventNoExpose' data-type='struct _GdkEventNoExpose' data-ref="GdkEventNoExpose">GdkEventNoExpose</dfn>;</td></tr>
+<tr><th id="50">50</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventVisibility" title='_GdkEventVisibility' data-ref="_GdkEventVisibility">_GdkEventVisibility</a>  <dfn class="typedef" id="GdkEventVisibility" title='GdkEventVisibility' data-type='struct _GdkEventVisibility' data-ref="GdkEventVisibility">GdkEventVisibility</dfn>;</td></tr>
+<tr><th id="51">51</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventMotion" title='_GdkEventMotion' data-ref="_GdkEventMotion">_GdkEventMotion</a>	    <dfn class="typedef" id="GdkEventMotion" title='GdkEventMotion' data-type='struct _GdkEventMotion' data-ref="GdkEventMotion">GdkEventMotion</dfn>;</td></tr>
+<tr><th id="52">52</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventButton" title='_GdkEventButton' data-ref="_GdkEventButton">_GdkEventButton</a>	    <dfn class="typedef" id="GdkEventButton" title='GdkEventButton' data-type='struct _GdkEventButton' data-ref="GdkEventButton">GdkEventButton</dfn>;</td></tr>
+<tr><th id="53">53</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventScroll" title='_GdkEventScroll' data-ref="_GdkEventScroll">_GdkEventScroll</a>      <dfn class="typedef" id="GdkEventScroll" title='GdkEventScroll' data-type='struct _GdkEventScroll' data-ref="GdkEventScroll">GdkEventScroll</dfn>;  </td></tr>
+<tr><th id="54">54</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventKey" title='_GdkEventKey' data-ref="_GdkEventKey">_GdkEventKey</a>	    <dfn class="typedef" id="GdkEventKey" title='GdkEventKey' data-type='struct _GdkEventKey' data-ref="GdkEventKey">GdkEventKey</dfn>;</td></tr>
+<tr><th id="55">55</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventFocus" title='_GdkEventFocus' data-ref="_GdkEventFocus">_GdkEventFocus</a>	    <dfn class="typedef" id="GdkEventFocus" title='GdkEventFocus' data-type='struct _GdkEventFocus' data-ref="GdkEventFocus">GdkEventFocus</dfn>;</td></tr>
+<tr><th id="56">56</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventCrossing" title='_GdkEventCrossing' data-ref="_GdkEventCrossing">_GdkEventCrossing</a>    <dfn class="typedef" id="GdkEventCrossing" title='GdkEventCrossing' data-type='struct _GdkEventCrossing' data-ref="GdkEventCrossing">GdkEventCrossing</dfn>;</td></tr>
+<tr><th id="57">57</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventConfigure" title='_GdkEventConfigure' data-ref="_GdkEventConfigure">_GdkEventConfigure</a>   <dfn class="typedef" id="GdkEventConfigure" title='GdkEventConfigure' data-type='struct _GdkEventConfigure' data-ref="GdkEventConfigure">GdkEventConfigure</dfn>;</td></tr>
+<tr><th id="58">58</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventProperty" title='_GdkEventProperty' data-ref="_GdkEventProperty">_GdkEventProperty</a>    <dfn class="typedef" id="GdkEventProperty" title='GdkEventProperty' data-type='struct _GdkEventProperty' data-ref="GdkEventProperty">GdkEventProperty</dfn>;</td></tr>
+<tr><th id="59">59</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventSelection" title='_GdkEventSelection' data-ref="_GdkEventSelection">_GdkEventSelection</a>   <dfn class="typedef" id="GdkEventSelection" title='GdkEventSelection' data-type='struct _GdkEventSelection' data-ref="GdkEventSelection">GdkEventSelection</dfn>;</td></tr>
+<tr><th id="60">60</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventOwnerChange" title='_GdkEventOwnerChange' data-ref="_GdkEventOwnerChange">_GdkEventOwnerChange</a> <dfn class="typedef" id="GdkEventOwnerChange" title='GdkEventOwnerChange' data-type='struct _GdkEventOwnerChange' data-ref="GdkEventOwnerChange">GdkEventOwnerChange</dfn>;</td></tr>
+<tr><th id="61">61</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventProximity" title='_GdkEventProximity' data-ref="_GdkEventProximity">_GdkEventProximity</a>   <dfn class="typedef" id="GdkEventProximity" title='GdkEventProximity' data-type='struct _GdkEventProximity' data-ref="GdkEventProximity">GdkEventProximity</dfn>;</td></tr>
+<tr><th id="62">62</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventClient" title='_GdkEventClient' data-ref="_GdkEventClient">_GdkEventClient</a>	    <dfn class="typedef" id="GdkEventClient" title='GdkEventClient' data-type='struct _GdkEventClient' data-ref="GdkEventClient">GdkEventClient</dfn>;</td></tr>
+<tr><th id="63">63</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventDND" title='_GdkEventDND' data-ref="_GdkEventDND">_GdkEventDND</a>         <dfn class="typedef" id="GdkEventDND" title='GdkEventDND' data-type='struct _GdkEventDND' data-ref="GdkEventDND">GdkEventDND</dfn>;</td></tr>
+<tr><th id="64">64</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventWindowState" title='_GdkEventWindowState' data-ref="_GdkEventWindowState">_GdkEventWindowState</a> <dfn class="typedef" id="GdkEventWindowState" title='GdkEventWindowState' data-type='struct _GdkEventWindowState' data-ref="GdkEventWindowState">GdkEventWindowState</dfn>;</td></tr>
+<tr><th id="65">65</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventSetting" title='_GdkEventSetting' data-ref="_GdkEventSetting">_GdkEventSetting</a>     <dfn class="typedef" id="GdkEventSetting" title='GdkEventSetting' data-type='struct _GdkEventSetting' data-ref="GdkEventSetting">GdkEventSetting</dfn>;</td></tr>
+<tr><th id="66">66</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_GdkEventGrabBroken" title='_GdkEventGrabBroken' data-ref="_GdkEventGrabBroken">_GdkEventGrabBroken</a>  <dfn class="typedef" id="GdkEventGrabBroken" title='GdkEventGrabBroken' data-type='struct _GdkEventGrabBroken' data-ref="GdkEventGrabBroken">GdkEventGrabBroken</dfn>;</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td><b>typedef</b> <b>union</b>  <a class="type" href="#_GdkEvent" title='_GdkEvent' data-ref="_GdkEvent">_GdkEvent</a>	    <dfn class="typedef" id="GdkEvent" title='GdkEvent' data-type='union _GdkEvent' data-ref="GdkEvent">GdkEvent</dfn>;</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><b>typedef</b> <em>void</em> (*<dfn class="typedef" id="GdkEventFunc" title='GdkEventFunc' data-type='void (*)(GdkEvent *, gpointer)' data-ref="GdkEventFunc">GdkEventFunc</dfn>) (<a class="typedef" href="#GdkEvent" title='GdkEvent' data-type='union _GdkEvent' data-ref="GdkEvent">GdkEvent</a> *<dfn class="local col8 decl" id="13458event" title='event' data-type='GdkEvent *' data-ref="13458event">event</dfn>,</td></tr>
+<tr><th id="71">71</th><td>			      <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>	<dfn class="local col9 decl" id="13459data" title='data' data-type='gpointer' data-ref="13459data">data</dfn>);</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td><i>/* Event filtering */</i></td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td><b>typedef</b> <em>void</em> <dfn class="typedef" id="GdkXEvent" title='GdkXEvent' data-type='void' data-ref="GdkXEvent">GdkXEvent</dfn>;	  <i>/* Can be cast to window system specific</i></td></tr>
+<tr><th id="76">76</th><td><i>			   * even type, XEvent on X11, MSG on Win32.</i></td></tr>
+<tr><th id="77">77</th><td><i>			   */</i></td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><b>typedef</b> <b>enum</b> {</td></tr>
+<tr><th id="80">80</th><td>  <dfn class="enum" id="GDK_FILTER_CONTINUE" title='GDK_FILTER_CONTINUE' data-ref="GDK_FILTER_CONTINUE">GDK_FILTER_CONTINUE</dfn>,	  <i>/* Event not handled, continue processesing */</i></td></tr>
+<tr><th id="81">81</th><td>  <dfn class="enum" id="GDK_FILTER_TRANSLATE" title='GDK_FILTER_TRANSLATE' data-ref="GDK_FILTER_TRANSLATE">GDK_FILTER_TRANSLATE</dfn>,	  <i>/* Native event translated into a GDK event and</i></td></tr>
+<tr><th id="82">82</th><td><i>                             stored in the "event" structure that was</i></td></tr>
+<tr><th id="83">83</th><td><i>                             passed in */</i></td></tr>
+<tr><th id="84">84</th><td>  <dfn class="enum" id="GDK_FILTER_REMOVE" title='GDK_FILTER_REMOVE' data-ref="GDK_FILTER_REMOVE">GDK_FILTER_REMOVE</dfn>	  <i>/* Terminate processing, removing event */</i></td></tr>
+<tr><th id="85">85</th><td>} <dfn class="typedef" id="GdkFilterReturn" title='GdkFilterReturn' data-type='enum GdkFilterReturn' data-ref="GdkFilterReturn">GdkFilterReturn</dfn>;</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td><b>typedef</b> <a class="typedef" href="#GdkFilterReturn" title='GdkFilterReturn' data-type='enum GdkFilterReturn' data-ref="GdkFilterReturn">GdkFilterReturn</a> (*<dfn class="typedef" id="GdkFilterFunc" title='GdkFilterFunc' data-type='GdkFilterReturn (*)(GdkXEvent *, GdkEvent *, gpointer)' data-ref="GdkFilterFunc">GdkFilterFunc</dfn>) (<a class="typedef" href="#GdkXEvent" title='GdkXEvent' data-type='void' data-ref="GdkXEvent">GdkXEvent</a> *<dfn class="local col0 decl" id="13460xevent" title='xevent' data-type='GdkXEvent *' data-ref="13460xevent">xevent</dfn>,</td></tr>
+<tr><th id="88">88</th><td>					  <a class="typedef" href="#GdkEvent" title='GdkEvent' data-type='union _GdkEvent' data-ref="GdkEvent">GdkEvent</a> *<dfn class="local col1 decl" id="13461event" title='event' data-type='GdkEvent *' data-ref="13461event">event</dfn>,</td></tr>
+<tr><th id="89">89</th><td>					  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>  <dfn class="local col2 decl" id="13462data" title='data' data-type='gpointer' data-ref="13462data">data</dfn>);</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td><i>/* Event types.</i></td></tr>
+<tr><th id="93">93</th><td><i> *   Nothing: No event occurred.</i></td></tr>
+<tr><th id="94">94</th><td><i> *   Delete: A window delete event was sent by the window manager.</i></td></tr>
+<tr><th id="95">95</th><td><i> *	     The specified window should be deleted.</i></td></tr>
+<tr><th id="96">96</th><td><i> *   Destroy: A window has been destroyed.</i></td></tr>
+<tr><th id="97">97</th><td><i> *   Expose: Part of a window has been uncovered.</i></td></tr>
+<tr><th id="98">98</th><td><i> *   NoExpose: Same as expose, but no expose event was generated.</i></td></tr>
+<tr><th id="99">99</th><td><i> *   VisibilityNotify: A window has become fully/partially/not obscured.</i></td></tr>
+<tr><th id="100">100</th><td><i> *   MotionNotify: The mouse has moved.</i></td></tr>
+<tr><th id="101">101</th><td><i> *   ButtonPress: A mouse button was pressed.</i></td></tr>
+<tr><th id="102">102</th><td><i> *   ButtonRelease: A mouse button was release.</i></td></tr>
+<tr><th id="103">103</th><td><i> *   KeyPress: A key was pressed.</i></td></tr>
+<tr><th id="104">104</th><td><i> *   KeyRelease: A key was released.</i></td></tr>
+<tr><th id="105">105</th><td><i> *   EnterNotify: A window was entered.</i></td></tr>
+<tr><th id="106">106</th><td><i> *   LeaveNotify: A window was exited.</i></td></tr>
+<tr><th id="107">107</th><td><i> *   FocusChange: The focus window has changed. (The focus window gets</i></td></tr>
+<tr><th id="108">108</th><td><i> *		  keyboard events).</i></td></tr>
+<tr><th id="109">109</th><td><i> *   Resize: A window has been resized.</i></td></tr>
+<tr><th id="110">110</th><td><i> *   Map: A window has been mapped. (It is now visible on the screen).</i></td></tr>
+<tr><th id="111">111</th><td><i> *   Unmap: A window has been unmapped. (It is no longer visible on</i></td></tr>
+<tr><th id="112">112</th><td><i> *	    the screen).</i></td></tr>
+<tr><th id="113">113</th><td><i> *   Scroll: A mouse wheel was scrolled either up or down.</i></td></tr>
+<tr><th id="114">114</th><td><i> */</i></td></tr>
+<tr><th id="115">115</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="116">116</th><td>{</td></tr>
+<tr><th id="117">117</th><td>  <dfn class="enum" id="GDK_NOTHING" title='GDK_NOTHING' data-ref="GDK_NOTHING">GDK_NOTHING</dfn>		= -<var>1</var>,</td></tr>
+<tr><th id="118">118</th><td>  <dfn class="enum" id="GDK_DELETE" title='GDK_DELETE' data-ref="GDK_DELETE">GDK_DELETE</dfn>		= <var>0</var>,</td></tr>
+<tr><th id="119">119</th><td>  <dfn class="enum" id="GDK_DESTROY" title='GDK_DESTROY' data-ref="GDK_DESTROY">GDK_DESTROY</dfn>		= <var>1</var>,</td></tr>
+<tr><th id="120">120</th><td>  <dfn class="enum" id="GDK_EXPOSE" title='GDK_EXPOSE' data-ref="GDK_EXPOSE">GDK_EXPOSE</dfn>		= <var>2</var>,</td></tr>
+<tr><th id="121">121</th><td>  <dfn class="enum" id="GDK_MOTION_NOTIFY" title='GDK_MOTION_NOTIFY' data-ref="GDK_MOTION_NOTIFY">GDK_MOTION_NOTIFY</dfn>	= <var>3</var>,</td></tr>
+<tr><th id="122">122</th><td>  <dfn class="enum" id="GDK_BUTTON_PRESS" title='GDK_BUTTON_PRESS' data-ref="GDK_BUTTON_PRESS">GDK_BUTTON_PRESS</dfn>	= <var>4</var>,</td></tr>
+<tr><th id="123">123</th><td>  <dfn class="enum" id="GDK_2BUTTON_PRESS" title='GDK_2BUTTON_PRESS' data-ref="GDK_2BUTTON_PRESS">GDK_2BUTTON_PRESS</dfn>	= <var>5</var>,</td></tr>
+<tr><th id="124">124</th><td>  <dfn class="enum" id="GDK_3BUTTON_PRESS" title='GDK_3BUTTON_PRESS' data-ref="GDK_3BUTTON_PRESS">GDK_3BUTTON_PRESS</dfn>	= <var>6</var>,</td></tr>
+<tr><th id="125">125</th><td>  <dfn class="enum" id="GDK_BUTTON_RELEASE" title='GDK_BUTTON_RELEASE' data-ref="GDK_BUTTON_RELEASE">GDK_BUTTON_RELEASE</dfn>	= <var>7</var>,</td></tr>
+<tr><th id="126">126</th><td>  <dfn class="enum" id="GDK_KEY_PRESS" title='GDK_KEY_PRESS' data-ref="GDK_KEY_PRESS">GDK_KEY_PRESS</dfn>		= <var>8</var>,</td></tr>
+<tr><th id="127">127</th><td>  <dfn class="enum" id="GDK_KEY_RELEASE" title='GDK_KEY_RELEASE' data-ref="GDK_KEY_RELEASE">GDK_KEY_RELEASE</dfn>	= <var>9</var>,</td></tr>
+<tr><th id="128">128</th><td>  <dfn class="enum" id="GDK_ENTER_NOTIFY" title='GDK_ENTER_NOTIFY' data-ref="GDK_ENTER_NOTIFY">GDK_ENTER_NOTIFY</dfn>	= <var>10</var>,</td></tr>
+<tr><th id="129">129</th><td>  <dfn class="enum" id="GDK_LEAVE_NOTIFY" title='GDK_LEAVE_NOTIFY' data-ref="GDK_LEAVE_NOTIFY">GDK_LEAVE_NOTIFY</dfn>	= <var>11</var>,</td></tr>
+<tr><th id="130">130</th><td>  <dfn class="enum" id="GDK_FOCUS_CHANGE" title='GDK_FOCUS_CHANGE' data-ref="GDK_FOCUS_CHANGE">GDK_FOCUS_CHANGE</dfn>	= <var>12</var>,</td></tr>
+<tr><th id="131">131</th><td>  <dfn class="enum" id="GDK_CONFIGURE" title='GDK_CONFIGURE' data-ref="GDK_CONFIGURE">GDK_CONFIGURE</dfn>		= <var>13</var>,</td></tr>
+<tr><th id="132">132</th><td>  <dfn class="enum" id="GDK_MAP" title='GDK_MAP' data-ref="GDK_MAP">GDK_MAP</dfn>		= <var>14</var>,</td></tr>
+<tr><th id="133">133</th><td>  <dfn class="enum" id="GDK_UNMAP" title='GDK_UNMAP' data-ref="GDK_UNMAP">GDK_UNMAP</dfn>		= <var>15</var>,</td></tr>
+<tr><th id="134">134</th><td>  <dfn class="enum" id="GDK_PROPERTY_NOTIFY" title='GDK_PROPERTY_NOTIFY' data-ref="GDK_PROPERTY_NOTIFY">GDK_PROPERTY_NOTIFY</dfn>	= <var>16</var>,</td></tr>
+<tr><th id="135">135</th><td>  <dfn class="enum" id="GDK_SELECTION_CLEAR" title='GDK_SELECTION_CLEAR' data-ref="GDK_SELECTION_CLEAR">GDK_SELECTION_CLEAR</dfn>	= <var>17</var>,</td></tr>
+<tr><th id="136">136</th><td>  <dfn class="enum" id="GDK_SELECTION_REQUEST" title='GDK_SELECTION_REQUEST' data-ref="GDK_SELECTION_REQUEST">GDK_SELECTION_REQUEST</dfn> = <var>18</var>,</td></tr>
+<tr><th id="137">137</th><td>  <dfn class="enum" id="GDK_SELECTION_NOTIFY" title='GDK_SELECTION_NOTIFY' data-ref="GDK_SELECTION_NOTIFY">GDK_SELECTION_NOTIFY</dfn>	= <var>19</var>,</td></tr>
+<tr><th id="138">138</th><td>  <dfn class="enum" id="GDK_PROXIMITY_IN" title='GDK_PROXIMITY_IN' data-ref="GDK_PROXIMITY_IN">GDK_PROXIMITY_IN</dfn>	= <var>20</var>,</td></tr>
+<tr><th id="139">139</th><td>  <dfn class="enum" id="GDK_PROXIMITY_OUT" title='GDK_PROXIMITY_OUT' data-ref="GDK_PROXIMITY_OUT">GDK_PROXIMITY_OUT</dfn>	= <var>21</var>,</td></tr>
+<tr><th id="140">140</th><td>  <dfn class="enum" id="GDK_DRAG_ENTER" title='GDK_DRAG_ENTER' data-ref="GDK_DRAG_ENTER">GDK_DRAG_ENTER</dfn>        = <var>22</var>,</td></tr>
+<tr><th id="141">141</th><td>  <dfn class="enum" id="GDK_DRAG_LEAVE" title='GDK_DRAG_LEAVE' data-ref="GDK_DRAG_LEAVE">GDK_DRAG_LEAVE</dfn>        = <var>23</var>,</td></tr>
+<tr><th id="142">142</th><td>  <dfn class="enum" id="GDK_DRAG_MOTION" title='GDK_DRAG_MOTION' data-ref="GDK_DRAG_MOTION">GDK_DRAG_MOTION</dfn>       = <var>24</var>,</td></tr>
+<tr><th id="143">143</th><td>  <dfn class="enum" id="GDK_DRAG_STATUS" title='GDK_DRAG_STATUS' data-ref="GDK_DRAG_STATUS">GDK_DRAG_STATUS</dfn>       = <var>25</var>,</td></tr>
+<tr><th id="144">144</th><td>  <dfn class="enum" id="GDK_DROP_START" title='GDK_DROP_START' data-ref="GDK_DROP_START">GDK_DROP_START</dfn>        = <var>26</var>,</td></tr>
+<tr><th id="145">145</th><td>  <dfn class="enum" id="GDK_DROP_FINISHED" title='GDK_DROP_FINISHED' data-ref="GDK_DROP_FINISHED">GDK_DROP_FINISHED</dfn>     = <var>27</var>,</td></tr>
+<tr><th id="146">146</th><td>  <dfn class="enum" id="GDK_CLIENT_EVENT" title='GDK_CLIENT_EVENT' data-ref="GDK_CLIENT_EVENT">GDK_CLIENT_EVENT</dfn>	= <var>28</var>,</td></tr>
+<tr><th id="147">147</th><td>  <dfn class="enum" id="GDK_VISIBILITY_NOTIFY" title='GDK_VISIBILITY_NOTIFY' data-ref="GDK_VISIBILITY_NOTIFY">GDK_VISIBILITY_NOTIFY</dfn> = <var>29</var>,</td></tr>
+<tr><th id="148">148</th><td>  <dfn class="enum" id="GDK_NO_EXPOSE" title='GDK_NO_EXPOSE' data-ref="GDK_NO_EXPOSE">GDK_NO_EXPOSE</dfn>		= <var>30</var>,</td></tr>
+<tr><th id="149">149</th><td>  <dfn class="enum" id="GDK_SCROLL" title='GDK_SCROLL' data-ref="GDK_SCROLL">GDK_SCROLL</dfn>            = <var>31</var>,</td></tr>
+<tr><th id="150">150</th><td>  <dfn class="enum" id="GDK_WINDOW_STATE" title='GDK_WINDOW_STATE' data-ref="GDK_WINDOW_STATE">GDK_WINDOW_STATE</dfn>      = <var>32</var>,</td></tr>
+<tr><th id="151">151</th><td>  <dfn class="enum" id="GDK_SETTING" title='GDK_SETTING' data-ref="GDK_SETTING">GDK_SETTING</dfn>           = <var>33</var>,</td></tr>
+<tr><th id="152">152</th><td>  <dfn class="enum" id="GDK_OWNER_CHANGE" title='GDK_OWNER_CHANGE' data-ref="GDK_OWNER_CHANGE">GDK_OWNER_CHANGE</dfn>      = <var>34</var>,</td></tr>
+<tr><th id="153">153</th><td>  <dfn class="enum" id="GDK_GRAB_BROKEN" title='GDK_GRAB_BROKEN' data-ref="GDK_GRAB_BROKEN">GDK_GRAB_BROKEN</dfn>       = <var>35</var>,</td></tr>
+<tr><th id="154">154</th><td>  <dfn class="enum" id="GDK_DAMAGE" title='GDK_DAMAGE' data-ref="GDK_DAMAGE">GDK_DAMAGE</dfn>            = <var>36</var>,</td></tr>
+<tr><th id="155">155</th><td>  <dfn class="enum" id="GDK_EVENT_LAST" title='GDK_EVENT_LAST' data-ref="GDK_EVENT_LAST">GDK_EVENT_LAST</dfn>        <i>/* helper variable for decls */</i></td></tr>
+<tr><th id="156">156</th><td>} <dfn class="typedef" id="GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</dfn>;</td></tr>
+<tr><th id="157">157</th><td></td></tr>
+<tr><th id="158">158</th><td><i>/* Event masks. (Used to select what types of events a window</i></td></tr>
+<tr><th id="159">159</th><td><i> *  will receive).</i></td></tr>
+<tr><th id="160">160</th><td><i> */</i></td></tr>
+<tr><th id="161">161</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="162">162</th><td>{</td></tr>
+<tr><th id="163">163</th><td>  <dfn class="enum" id="GDK_EXPOSURE_MASK" title='GDK_EXPOSURE_MASK' data-ref="GDK_EXPOSURE_MASK">GDK_EXPOSURE_MASK</dfn>		= <var>1</var> &lt;&lt; <var>1</var>,</td></tr>
+<tr><th id="164">164</th><td>  <dfn class="enum" id="GDK_POINTER_MOTION_MASK" title='GDK_POINTER_MOTION_MASK' data-ref="GDK_POINTER_MOTION_MASK">GDK_POINTER_MOTION_MASK</dfn>	= <var>1</var> &lt;&lt; <var>2</var>,</td></tr>
+<tr><th id="165">165</th><td>  <dfn class="enum" id="GDK_POINTER_MOTION_HINT_MASK" title='GDK_POINTER_MOTION_HINT_MASK' data-ref="GDK_POINTER_MOTION_HINT_MASK">GDK_POINTER_MOTION_HINT_MASK</dfn>	= <var>1</var> &lt;&lt; <var>3</var>,</td></tr>
+<tr><th id="166">166</th><td>  <dfn class="enum" id="GDK_BUTTON_MOTION_MASK" title='GDK_BUTTON_MOTION_MASK' data-ref="GDK_BUTTON_MOTION_MASK">GDK_BUTTON_MOTION_MASK</dfn>	= <var>1</var> &lt;&lt; <var>4</var>,</td></tr>
+<tr><th id="167">167</th><td>  <dfn class="enum" id="GDK_BUTTON1_MOTION_MASK" title='GDK_BUTTON1_MOTION_MASK' data-ref="GDK_BUTTON1_MOTION_MASK">GDK_BUTTON1_MOTION_MASK</dfn>	= <var>1</var> &lt;&lt; <var>5</var>,</td></tr>
+<tr><th id="168">168</th><td>  <dfn class="enum" id="GDK_BUTTON2_MOTION_MASK" title='GDK_BUTTON2_MOTION_MASK' data-ref="GDK_BUTTON2_MOTION_MASK">GDK_BUTTON2_MOTION_MASK</dfn>	= <var>1</var> &lt;&lt; <var>6</var>,</td></tr>
+<tr><th id="169">169</th><td>  <dfn class="enum" id="GDK_BUTTON3_MOTION_MASK" title='GDK_BUTTON3_MOTION_MASK' data-ref="GDK_BUTTON3_MOTION_MASK">GDK_BUTTON3_MOTION_MASK</dfn>	= <var>1</var> &lt;&lt; <var>7</var>,</td></tr>
+<tr><th id="170">170</th><td>  <dfn class="enum" id="GDK_BUTTON_PRESS_MASK" title='GDK_BUTTON_PRESS_MASK' data-ref="GDK_BUTTON_PRESS_MASK">GDK_BUTTON_PRESS_MASK</dfn>		= <var>1</var> &lt;&lt; <var>8</var>,</td></tr>
+<tr><th id="171">171</th><td>  <dfn class="enum" id="GDK_BUTTON_RELEASE_MASK" title='GDK_BUTTON_RELEASE_MASK' data-ref="GDK_BUTTON_RELEASE_MASK">GDK_BUTTON_RELEASE_MASK</dfn>	= <var>1</var> &lt;&lt; <var>9</var>,</td></tr>
+<tr><th id="172">172</th><td>  <dfn class="enum" id="GDK_KEY_PRESS_MASK" title='GDK_KEY_PRESS_MASK' data-ref="GDK_KEY_PRESS_MASK">GDK_KEY_PRESS_MASK</dfn>		= <var>1</var> &lt;&lt; <var>10</var>,</td></tr>
+<tr><th id="173">173</th><td>  <dfn class="enum" id="GDK_KEY_RELEASE_MASK" title='GDK_KEY_RELEASE_MASK' data-ref="GDK_KEY_RELEASE_MASK">GDK_KEY_RELEASE_MASK</dfn>		= <var>1</var> &lt;&lt; <var>11</var>,</td></tr>
+<tr><th id="174">174</th><td>  <dfn class="enum" id="GDK_ENTER_NOTIFY_MASK" title='GDK_ENTER_NOTIFY_MASK' data-ref="GDK_ENTER_NOTIFY_MASK">GDK_ENTER_NOTIFY_MASK</dfn>		= <var>1</var> &lt;&lt; <var>12</var>,</td></tr>
+<tr><th id="175">175</th><td>  <dfn class="enum" id="GDK_LEAVE_NOTIFY_MASK" title='GDK_LEAVE_NOTIFY_MASK' data-ref="GDK_LEAVE_NOTIFY_MASK">GDK_LEAVE_NOTIFY_MASK</dfn>		= <var>1</var> &lt;&lt; <var>13</var>,</td></tr>
+<tr><th id="176">176</th><td>  <dfn class="enum" id="GDK_FOCUS_CHANGE_MASK" title='GDK_FOCUS_CHANGE_MASK' data-ref="GDK_FOCUS_CHANGE_MASK">GDK_FOCUS_CHANGE_MASK</dfn>		= <var>1</var> &lt;&lt; <var>14</var>,</td></tr>
+<tr><th id="177">177</th><td>  <dfn class="enum" id="GDK_STRUCTURE_MASK" title='GDK_STRUCTURE_MASK' data-ref="GDK_STRUCTURE_MASK">GDK_STRUCTURE_MASK</dfn>		= <var>1</var> &lt;&lt; <var>15</var>,</td></tr>
+<tr><th id="178">178</th><td>  <dfn class="enum" id="GDK_PROPERTY_CHANGE_MASK" title='GDK_PROPERTY_CHANGE_MASK' data-ref="GDK_PROPERTY_CHANGE_MASK">GDK_PROPERTY_CHANGE_MASK</dfn>	= <var>1</var> &lt;&lt; <var>16</var>,</td></tr>
+<tr><th id="179">179</th><td>  <dfn class="enum" id="GDK_VISIBILITY_NOTIFY_MASK" title='GDK_VISIBILITY_NOTIFY_MASK' data-ref="GDK_VISIBILITY_NOTIFY_MASK">GDK_VISIBILITY_NOTIFY_MASK</dfn>	= <var>1</var> &lt;&lt; <var>17</var>,</td></tr>
+<tr><th id="180">180</th><td>  <dfn class="enum" id="GDK_PROXIMITY_IN_MASK" title='GDK_PROXIMITY_IN_MASK' data-ref="GDK_PROXIMITY_IN_MASK">GDK_PROXIMITY_IN_MASK</dfn>		= <var>1</var> &lt;&lt; <var>18</var>,</td></tr>
+<tr><th id="181">181</th><td>  <dfn class="enum" id="GDK_PROXIMITY_OUT_MASK" title='GDK_PROXIMITY_OUT_MASK' data-ref="GDK_PROXIMITY_OUT_MASK">GDK_PROXIMITY_OUT_MASK</dfn>	= <var>1</var> &lt;&lt; <var>19</var>,</td></tr>
+<tr><th id="182">182</th><td>  <dfn class="enum" id="GDK_SUBSTRUCTURE_MASK" title='GDK_SUBSTRUCTURE_MASK' data-ref="GDK_SUBSTRUCTURE_MASK">GDK_SUBSTRUCTURE_MASK</dfn>		= <var>1</var> &lt;&lt; <var>20</var>,</td></tr>
+<tr><th id="183">183</th><td>  <dfn class="enum" id="GDK_SCROLL_MASK" title='GDK_SCROLL_MASK' data-ref="GDK_SCROLL_MASK">GDK_SCROLL_MASK</dfn>               = <var>1</var> &lt;&lt; <var>21</var>,</td></tr>
+<tr><th id="184">184</th><td>  <dfn class="enum" id="GDK_ALL_EVENTS_MASK" title='GDK_ALL_EVENTS_MASK' data-ref="GDK_ALL_EVENTS_MASK">GDK_ALL_EVENTS_MASK</dfn>		= <var>0x3FFFFE</var></td></tr>
+<tr><th id="185">185</th><td>} <dfn class="typedef" id="GdkEventMask" title='GdkEventMask' data-type='enum GdkEventMask' data-ref="GdkEventMask">GdkEventMask</dfn>;</td></tr>
+<tr><th id="186">186</th><td></td></tr>
+<tr><th id="187">187</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="188">188</th><td>{</td></tr>
+<tr><th id="189">189</th><td>  <dfn class="enum" id="GDK_VISIBILITY_UNOBSCURED" title='GDK_VISIBILITY_UNOBSCURED' data-ref="GDK_VISIBILITY_UNOBSCURED">GDK_VISIBILITY_UNOBSCURED</dfn>,</td></tr>
+<tr><th id="190">190</th><td>  <dfn class="enum" id="GDK_VISIBILITY_PARTIAL" title='GDK_VISIBILITY_PARTIAL' data-ref="GDK_VISIBILITY_PARTIAL">GDK_VISIBILITY_PARTIAL</dfn>,</td></tr>
+<tr><th id="191">191</th><td>  <dfn class="enum" id="GDK_VISIBILITY_FULLY_OBSCURED" title='GDK_VISIBILITY_FULLY_OBSCURED' data-ref="GDK_VISIBILITY_FULLY_OBSCURED">GDK_VISIBILITY_FULLY_OBSCURED</dfn></td></tr>
+<tr><th id="192">192</th><td>} <dfn class="typedef" id="GdkVisibilityState" title='GdkVisibilityState' data-type='enum GdkVisibilityState' data-ref="GdkVisibilityState">GdkVisibilityState</dfn>;</td></tr>
+<tr><th id="193">193</th><td></td></tr>
+<tr><th id="194">194</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="195">195</th><td>{</td></tr>
+<tr><th id="196">196</th><td>  <dfn class="enum" id="GDK_SCROLL_UP" title='GDK_SCROLL_UP' data-ref="GDK_SCROLL_UP">GDK_SCROLL_UP</dfn>,</td></tr>
+<tr><th id="197">197</th><td>  <dfn class="enum" id="GDK_SCROLL_DOWN" title='GDK_SCROLL_DOWN' data-ref="GDK_SCROLL_DOWN">GDK_SCROLL_DOWN</dfn>,</td></tr>
+<tr><th id="198">198</th><td>  <dfn class="enum" id="GDK_SCROLL_LEFT" title='GDK_SCROLL_LEFT' data-ref="GDK_SCROLL_LEFT">GDK_SCROLL_LEFT</dfn>,</td></tr>
+<tr><th id="199">199</th><td>  <dfn class="enum" id="GDK_SCROLL_RIGHT" title='GDK_SCROLL_RIGHT' data-ref="GDK_SCROLL_RIGHT">GDK_SCROLL_RIGHT</dfn></td></tr>
+<tr><th id="200">200</th><td>} <dfn class="typedef" id="GdkScrollDirection" title='GdkScrollDirection' data-type='enum GdkScrollDirection' data-ref="GdkScrollDirection">GdkScrollDirection</dfn>;</td></tr>
+<tr><th id="201">201</th><td></td></tr>
+<tr><th id="202">202</th><td><i>/* Types of enter/leave notifications.</i></td></tr>
+<tr><th id="203">203</th><td><i> *   Ancestor:</i></td></tr>
+<tr><th id="204">204</th><td><i> *   Virtual:</i></td></tr>
+<tr><th id="205">205</th><td><i> *   Inferior:</i></td></tr>
+<tr><th id="206">206</th><td><i> *   Nonlinear:</i></td></tr>
+<tr><th id="207">207</th><td><i> *   NonlinearVirtual:</i></td></tr>
+<tr><th id="208">208</th><td><i> *   Unknown: An unknown type of enter/leave event occurred.</i></td></tr>
+<tr><th id="209">209</th><td><i> */</i></td></tr>
+<tr><th id="210">210</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="211">211</th><td>{</td></tr>
+<tr><th id="212">212</th><td>  <dfn class="enum" id="GDK_NOTIFY_ANCESTOR" title='GDK_NOTIFY_ANCESTOR' data-ref="GDK_NOTIFY_ANCESTOR">GDK_NOTIFY_ANCESTOR</dfn>		= <var>0</var>,</td></tr>
+<tr><th id="213">213</th><td>  <dfn class="enum" id="GDK_NOTIFY_VIRTUAL" title='GDK_NOTIFY_VIRTUAL' data-ref="GDK_NOTIFY_VIRTUAL">GDK_NOTIFY_VIRTUAL</dfn>		= <var>1</var>,</td></tr>
+<tr><th id="214">214</th><td>  <dfn class="enum" id="GDK_NOTIFY_INFERIOR" title='GDK_NOTIFY_INFERIOR' data-ref="GDK_NOTIFY_INFERIOR">GDK_NOTIFY_INFERIOR</dfn>		= <var>2</var>,</td></tr>
+<tr><th id="215">215</th><td>  <dfn class="enum" id="GDK_NOTIFY_NONLINEAR" title='GDK_NOTIFY_NONLINEAR' data-ref="GDK_NOTIFY_NONLINEAR">GDK_NOTIFY_NONLINEAR</dfn>		= <var>3</var>,</td></tr>
+<tr><th id="216">216</th><td>  <dfn class="enum" id="GDK_NOTIFY_NONLINEAR_VIRTUAL" title='GDK_NOTIFY_NONLINEAR_VIRTUAL' data-ref="GDK_NOTIFY_NONLINEAR_VIRTUAL">GDK_NOTIFY_NONLINEAR_VIRTUAL</dfn>	= <var>4</var>,</td></tr>
+<tr><th id="217">217</th><td>  <dfn class="enum" id="GDK_NOTIFY_UNKNOWN" title='GDK_NOTIFY_UNKNOWN' data-ref="GDK_NOTIFY_UNKNOWN">GDK_NOTIFY_UNKNOWN</dfn>		= <var>5</var></td></tr>
+<tr><th id="218">218</th><td>} <dfn class="typedef" id="GdkNotifyType" title='GdkNotifyType' data-type='enum GdkNotifyType' data-ref="GdkNotifyType">GdkNotifyType</dfn>;</td></tr>
+<tr><th id="219">219</th><td></td></tr>
+<tr><th id="220">220</th><td><i>/* Enter/leave event modes.</i></td></tr>
+<tr><th id="221">221</th><td><i> *   NotifyNormal</i></td></tr>
+<tr><th id="222">222</th><td><i> *   NotifyGrab</i></td></tr>
+<tr><th id="223">223</th><td><i> *   NotifyUngrab</i></td></tr>
+<tr><th id="224">224</th><td><i> */</i></td></tr>
+<tr><th id="225">225</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="226">226</th><td>{</td></tr>
+<tr><th id="227">227</th><td>  <dfn class="enum" id="GDK_CROSSING_NORMAL" title='GDK_CROSSING_NORMAL' data-ref="GDK_CROSSING_NORMAL">GDK_CROSSING_NORMAL</dfn>,</td></tr>
+<tr><th id="228">228</th><td>  <dfn class="enum" id="GDK_CROSSING_GRAB" title='GDK_CROSSING_GRAB' data-ref="GDK_CROSSING_GRAB">GDK_CROSSING_GRAB</dfn>,</td></tr>
+<tr><th id="229">229</th><td>  <dfn class="enum" id="GDK_CROSSING_UNGRAB" title='GDK_CROSSING_UNGRAB' data-ref="GDK_CROSSING_UNGRAB">GDK_CROSSING_UNGRAB</dfn>,</td></tr>
+<tr><th id="230">230</th><td>  <dfn class="enum" id="GDK_CROSSING_GTK_GRAB" title='GDK_CROSSING_GTK_GRAB' data-ref="GDK_CROSSING_GTK_GRAB">GDK_CROSSING_GTK_GRAB</dfn>,</td></tr>
+<tr><th id="231">231</th><td>  <dfn class="enum" id="GDK_CROSSING_GTK_UNGRAB" title='GDK_CROSSING_GTK_UNGRAB' data-ref="GDK_CROSSING_GTK_UNGRAB">GDK_CROSSING_GTK_UNGRAB</dfn>,</td></tr>
+<tr><th id="232">232</th><td>  <dfn class="enum" id="GDK_CROSSING_STATE_CHANGED" title='GDK_CROSSING_STATE_CHANGED' data-ref="GDK_CROSSING_STATE_CHANGED">GDK_CROSSING_STATE_CHANGED</dfn></td></tr>
+<tr><th id="233">233</th><td>} <dfn class="typedef" id="GdkCrossingMode" title='GdkCrossingMode' data-type='enum GdkCrossingMode' data-ref="GdkCrossingMode">GdkCrossingMode</dfn>;</td></tr>
+<tr><th id="234">234</th><td></td></tr>
+<tr><th id="235">235</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="236">236</th><td>{</td></tr>
+<tr><th id="237">237</th><td>  <dfn class="enum" id="GDK_PROPERTY_NEW_VALUE" title='GDK_PROPERTY_NEW_VALUE' data-ref="GDK_PROPERTY_NEW_VALUE">GDK_PROPERTY_NEW_VALUE</dfn>,</td></tr>
+<tr><th id="238">238</th><td>  <dfn class="enum" id="GDK_PROPERTY_DELETE" title='GDK_PROPERTY_DELETE' data-ref="GDK_PROPERTY_DELETE">GDK_PROPERTY_DELETE</dfn></td></tr>
+<tr><th id="239">239</th><td>} <dfn class="typedef" id="GdkPropertyState" title='GdkPropertyState' data-type='enum GdkPropertyState' data-ref="GdkPropertyState">GdkPropertyState</dfn>;</td></tr>
+<tr><th id="240">240</th><td></td></tr>
+<tr><th id="241">241</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="242">242</th><td>{</td></tr>
+<tr><th id="243">243</th><td>  <dfn class="enum" id="GDK_WINDOW_STATE_WITHDRAWN" title='GDK_WINDOW_STATE_WITHDRAWN' data-ref="GDK_WINDOW_STATE_WITHDRAWN">GDK_WINDOW_STATE_WITHDRAWN</dfn>  = <var>1</var> &lt;&lt; <var>0</var>,</td></tr>
+<tr><th id="244">244</th><td>  <dfn class="enum" id="GDK_WINDOW_STATE_ICONIFIED" title='GDK_WINDOW_STATE_ICONIFIED' data-ref="GDK_WINDOW_STATE_ICONIFIED">GDK_WINDOW_STATE_ICONIFIED</dfn>  = <var>1</var> &lt;&lt; <var>1</var>,</td></tr>
+<tr><th id="245">245</th><td>  <dfn class="enum" id="GDK_WINDOW_STATE_MAXIMIZED" title='GDK_WINDOW_STATE_MAXIMIZED' data-ref="GDK_WINDOW_STATE_MAXIMIZED">GDK_WINDOW_STATE_MAXIMIZED</dfn>  = <var>1</var> &lt;&lt; <var>2</var>,</td></tr>
+<tr><th id="246">246</th><td>  <dfn class="enum" id="GDK_WINDOW_STATE_STICKY" title='GDK_WINDOW_STATE_STICKY' data-ref="GDK_WINDOW_STATE_STICKY">GDK_WINDOW_STATE_STICKY</dfn>     = <var>1</var> &lt;&lt; <var>3</var>,</td></tr>
+<tr><th id="247">247</th><td>  <dfn class="enum" id="GDK_WINDOW_STATE_FULLSCREEN" title='GDK_WINDOW_STATE_FULLSCREEN' data-ref="GDK_WINDOW_STATE_FULLSCREEN">GDK_WINDOW_STATE_FULLSCREEN</dfn> = <var>1</var> &lt;&lt; <var>4</var>,</td></tr>
+<tr><th id="248">248</th><td>  <dfn class="enum" id="GDK_WINDOW_STATE_ABOVE" title='GDK_WINDOW_STATE_ABOVE' data-ref="GDK_WINDOW_STATE_ABOVE">GDK_WINDOW_STATE_ABOVE</dfn>      = <var>1</var> &lt;&lt; <var>5</var>,</td></tr>
+<tr><th id="249">249</th><td>  <dfn class="enum" id="GDK_WINDOW_STATE_BELOW" title='GDK_WINDOW_STATE_BELOW' data-ref="GDK_WINDOW_STATE_BELOW">GDK_WINDOW_STATE_BELOW</dfn>      = <var>1</var> &lt;&lt; <var>6</var></td></tr>
+<tr><th id="250">250</th><td>} <dfn class="typedef" id="GdkWindowState" title='GdkWindowState' data-type='enum GdkWindowState' data-ref="GdkWindowState">GdkWindowState</dfn>;</td></tr>
+<tr><th id="251">251</th><td></td></tr>
+<tr><th id="252">252</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="253">253</th><td>{</td></tr>
+<tr><th id="254">254</th><td>  <dfn class="enum" id="GDK_SETTING_ACTION_NEW" title='GDK_SETTING_ACTION_NEW' data-ref="GDK_SETTING_ACTION_NEW">GDK_SETTING_ACTION_NEW</dfn>,</td></tr>
+<tr><th id="255">255</th><td>  <dfn class="enum" id="GDK_SETTING_ACTION_CHANGED" title='GDK_SETTING_ACTION_CHANGED' data-ref="GDK_SETTING_ACTION_CHANGED">GDK_SETTING_ACTION_CHANGED</dfn>,</td></tr>
+<tr><th id="256">256</th><td>  <dfn class="enum" id="GDK_SETTING_ACTION_DELETED" title='GDK_SETTING_ACTION_DELETED' data-ref="GDK_SETTING_ACTION_DELETED">GDK_SETTING_ACTION_DELETED</dfn></td></tr>
+<tr><th id="257">257</th><td>} <dfn class="typedef" id="GdkSettingAction" title='GdkSettingAction' data-type='enum GdkSettingAction' data-ref="GdkSettingAction">GdkSettingAction</dfn>;</td></tr>
+<tr><th id="258">258</th><td></td></tr>
+<tr><th id="259">259</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="260">260</th><td>{</td></tr>
+<tr><th id="261">261</th><td>  <dfn class="enum" id="GDK_OWNER_CHANGE_NEW_OWNER" title='GDK_OWNER_CHANGE_NEW_OWNER' data-ref="GDK_OWNER_CHANGE_NEW_OWNER">GDK_OWNER_CHANGE_NEW_OWNER</dfn>,</td></tr>
+<tr><th id="262">262</th><td>  <dfn class="enum" id="GDK_OWNER_CHANGE_DESTROY" title='GDK_OWNER_CHANGE_DESTROY' data-ref="GDK_OWNER_CHANGE_DESTROY">GDK_OWNER_CHANGE_DESTROY</dfn>,</td></tr>
+<tr><th id="263">263</th><td>  <dfn class="enum" id="GDK_OWNER_CHANGE_CLOSE" title='GDK_OWNER_CHANGE_CLOSE' data-ref="GDK_OWNER_CHANGE_CLOSE">GDK_OWNER_CHANGE_CLOSE</dfn></td></tr>
+<tr><th id="264">264</th><td>} <dfn class="typedef" id="GdkOwnerChange" title='GdkOwnerChange' data-type='enum GdkOwnerChange' data-ref="GdkOwnerChange">GdkOwnerChange</dfn>;</td></tr>
+<tr><th id="265">265</th><td></td></tr>
+<tr><th id="266">266</th><td><b>struct</b> <dfn class="type def" id="_GdkEventAny" title='_GdkEventAny' data-ref="_GdkEventAny">_GdkEventAny</dfn></td></tr>
+<tr><th id="267">267</th><td>{</td></tr>
+<tr><th id="268">268</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventAny::type" title='_GdkEventAny::type' data-ref="_GdkEventAny::type">type</dfn>;</td></tr>
+<tr><th id="269">269</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventAny::window" title='_GdkEventAny::window' data-ref="_GdkEventAny::window">window</dfn>;</td></tr>
+<tr><th id="270">270</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventAny::send_event" title='_GdkEventAny::send_event' data-ref="_GdkEventAny::send_event">send_event</dfn>;</td></tr>
+<tr><th id="271">271</th><td>};</td></tr>
+<tr><th id="272">272</th><td></td></tr>
+<tr><th id="273">273</th><td><b>struct</b> <dfn class="type def" id="_GdkEventExpose" title='_GdkEventExpose' data-ref="_GdkEventExpose">_GdkEventExpose</dfn></td></tr>
+<tr><th id="274">274</th><td>{</td></tr>
+<tr><th id="275">275</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventExpose::type" title='_GdkEventExpose::type' data-ref="_GdkEventExpose::type">type</dfn>;</td></tr>
+<tr><th id="276">276</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventExpose::window" title='_GdkEventExpose::window' data-ref="_GdkEventExpose::window">window</dfn>;</td></tr>
+<tr><th id="277">277</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventExpose::send_event" title='_GdkEventExpose::send_event' data-ref="_GdkEventExpose::send_event">send_event</dfn>;</td></tr>
+<tr><th id="278">278</th><td>  <a class="typedef" href="gdktypes.h.html#GdkRectangle" title='GdkRectangle' data-type='struct _GdkRectangle' data-ref="GdkRectangle">GdkRectangle</a> <dfn class="decl" id="_GdkEventExpose::area" title='_GdkEventExpose::area' data-ref="_GdkEventExpose::area">area</dfn>;</td></tr>
+<tr><th id="279">279</th><td>  <a class="typedef" href="gdktypes.h.html#GdkRegion" title='GdkRegion' data-type='struct _GdkRegion' data-ref="GdkRegion">GdkRegion</a> *<dfn class="decl" id="_GdkEventExpose::region" title='_GdkEventExpose::region' data-ref="_GdkEventExpose::region">region</dfn>;</td></tr>
+<tr><th id="280">280</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="_GdkEventExpose::count" title='_GdkEventExpose::count' data-ref="_GdkEventExpose::count">count</dfn>; <i>/* If non-zero, how many more events follow. */</i></td></tr>
+<tr><th id="281">281</th><td>};</td></tr>
+<tr><th id="282">282</th><td></td></tr>
+<tr><th id="283">283</th><td><b>struct</b> <dfn class="type def" id="_GdkEventNoExpose" title='_GdkEventNoExpose' data-ref="_GdkEventNoExpose">_GdkEventNoExpose</dfn></td></tr>
+<tr><th id="284">284</th><td>{</td></tr>
+<tr><th id="285">285</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventNoExpose::type" title='_GdkEventNoExpose::type' data-ref="_GdkEventNoExpose::type">type</dfn>;</td></tr>
+<tr><th id="286">286</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventNoExpose::window" title='_GdkEventNoExpose::window' data-ref="_GdkEventNoExpose::window">window</dfn>;</td></tr>
+<tr><th id="287">287</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventNoExpose::send_event" title='_GdkEventNoExpose::send_event' data-ref="_GdkEventNoExpose::send_event">send_event</dfn>;</td></tr>
+<tr><th id="288">288</th><td>};</td></tr>
+<tr><th id="289">289</th><td></td></tr>
+<tr><th id="290">290</th><td><b>struct</b> <dfn class="type def" id="_GdkEventVisibility" title='_GdkEventVisibility' data-ref="_GdkEventVisibility">_GdkEventVisibility</dfn></td></tr>
+<tr><th id="291">291</th><td>{</td></tr>
+<tr><th id="292">292</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventVisibility::type" title='_GdkEventVisibility::type' data-ref="_GdkEventVisibility::type">type</dfn>;</td></tr>
+<tr><th id="293">293</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventVisibility::window" title='_GdkEventVisibility::window' data-ref="_GdkEventVisibility::window">window</dfn>;</td></tr>
+<tr><th id="294">294</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventVisibility::send_event" title='_GdkEventVisibility::send_event' data-ref="_GdkEventVisibility::send_event">send_event</dfn>;</td></tr>
+<tr><th id="295">295</th><td>  <a class="typedef" href="#GdkVisibilityState" title='GdkVisibilityState' data-type='enum GdkVisibilityState' data-ref="GdkVisibilityState">GdkVisibilityState</a> <dfn class="decl" id="_GdkEventVisibility::state" title='_GdkEventVisibility::state' data-ref="_GdkEventVisibility::state">state</dfn>;</td></tr>
+<tr><th id="296">296</th><td>};</td></tr>
+<tr><th id="297">297</th><td></td></tr>
+<tr><th id="298">298</th><td><b>struct</b> <dfn class="type def" id="_GdkEventMotion" title='_GdkEventMotion' data-ref="_GdkEventMotion">_GdkEventMotion</dfn></td></tr>
+<tr><th id="299">299</th><td>{</td></tr>
+<tr><th id="300">300</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventMotion::type" title='_GdkEventMotion::type' data-ref="_GdkEventMotion::type">type</dfn>;</td></tr>
+<tr><th id="301">301</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventMotion::window" title='_GdkEventMotion::window' data-ref="_GdkEventMotion::window">window</dfn>;</td></tr>
+<tr><th id="302">302</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventMotion::send_event" title='_GdkEventMotion::send_event' data-ref="_GdkEventMotion::send_event">send_event</dfn>;</td></tr>
+<tr><th id="303">303</th><td>  <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span> <dfn class="decl" id="_GdkEventMotion::time" title='_GdkEventMotion::time' data-ref="_GdkEventMotion::time">time</dfn>;</td></tr>
+<tr><th id="304">304</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <dfn class="decl" id="_GdkEventMotion::x" title='_GdkEventMotion::x' data-ref="_GdkEventMotion::x">x</dfn>;</td></tr>
+<tr><th id="305">305</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <dfn class="decl" id="_GdkEventMotion::y" title='_GdkEventMotion::y' data-ref="_GdkEventMotion::y">y</dfn>;</td></tr>
+<tr><th id="306">306</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> *<dfn class="decl" id="_GdkEventMotion::axes" title='_GdkEventMotion::axes' data-ref="_GdkEventMotion::axes">axes</dfn>;</td></tr>
+<tr><th id="307">307</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="decl" id="_GdkEventMotion::state" title='_GdkEventMotion::state' data-ref="_GdkEventMotion::state">state</dfn>;</td></tr>
+<tr><th id="308">308</th><td>  <span class='typedef' title='gint16' data-type='short' data-ref="gint16">gint16</span> <dfn class="decl" id="_GdkEventMotion::is_hint" title='_GdkEventMotion::is_hint' data-ref="_GdkEventMotion::is_hint">is_hint</dfn>;</td></tr>
+<tr><th id="309">309</th><td>  <a class="typedef" href="gdkinput.h.html#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a> *<dfn class="decl" id="_GdkEventMotion::device" title='_GdkEventMotion::device' data-ref="_GdkEventMotion::device">device</dfn>;</td></tr>
+<tr><th id="310">310</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <dfn class="decl" id="_GdkEventMotion::x_root" title='_GdkEventMotion::x_root' data-ref="_GdkEventMotion::x_root">x_root</dfn>, <dfn class="decl" id="_GdkEventMotion::y_root" title='_GdkEventMotion::y_root' data-ref="_GdkEventMotion::y_root">y_root</dfn>;</td></tr>
+<tr><th id="311">311</th><td>};</td></tr>
+<tr><th id="312">312</th><td></td></tr>
+<tr><th id="313">313</th><td><b>struct</b> <dfn class="type def" id="_GdkEventButton" title='_GdkEventButton' data-ref="_GdkEventButton">_GdkEventButton</dfn></td></tr>
+<tr><th id="314">314</th><td>{</td></tr>
+<tr><th id="315">315</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventButton::type" title='_GdkEventButton::type' data-ref="_GdkEventButton::type">type</dfn>;</td></tr>
+<tr><th id="316">316</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventButton::window" title='_GdkEventButton::window' data-ref="_GdkEventButton::window">window</dfn>;</td></tr>
+<tr><th id="317">317</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventButton::send_event" title='_GdkEventButton::send_event' data-ref="_GdkEventButton::send_event">send_event</dfn>;</td></tr>
+<tr><th id="318">318</th><td>  <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span> <dfn class="decl" id="_GdkEventButton::time" title='_GdkEventButton::time' data-ref="_GdkEventButton::time">time</dfn>;</td></tr>
+<tr><th id="319">319</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <dfn class="decl" id="_GdkEventButton::x" title='_GdkEventButton::x' data-ref="_GdkEventButton::x">x</dfn>;</td></tr>
+<tr><th id="320">320</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <dfn class="decl" id="_GdkEventButton::y" title='_GdkEventButton::y' data-ref="_GdkEventButton::y">y</dfn>;</td></tr>
+<tr><th id="321">321</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> *<dfn class="decl" id="_GdkEventButton::axes" title='_GdkEventButton::axes' data-ref="_GdkEventButton::axes">axes</dfn>;</td></tr>
+<tr><th id="322">322</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="decl" id="_GdkEventButton::state" title='_GdkEventButton::state' data-ref="_GdkEventButton::state">state</dfn>;</td></tr>
+<tr><th id="323">323</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="decl" id="_GdkEventButton::button" title='_GdkEventButton::button' data-ref="_GdkEventButton::button">button</dfn>;</td></tr>
+<tr><th id="324">324</th><td>  <a class="typedef" href="gdkinput.h.html#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a> *<dfn class="decl" id="_GdkEventButton::device" title='_GdkEventButton::device' data-ref="_GdkEventButton::device">device</dfn>;</td></tr>
+<tr><th id="325">325</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <dfn class="decl" id="_GdkEventButton::x_root" title='_GdkEventButton::x_root' data-ref="_GdkEventButton::x_root">x_root</dfn>, <dfn class="decl" id="_GdkEventButton::y_root" title='_GdkEventButton::y_root' data-ref="_GdkEventButton::y_root">y_root</dfn>;</td></tr>
+<tr><th id="326">326</th><td>};</td></tr>
+<tr><th id="327">327</th><td></td></tr>
+<tr><th id="328">328</th><td><b>struct</b> <dfn class="type def" id="_GdkEventScroll" title='_GdkEventScroll' data-ref="_GdkEventScroll">_GdkEventScroll</dfn></td></tr>
+<tr><th id="329">329</th><td>{</td></tr>
+<tr><th id="330">330</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventScroll::type" title='_GdkEventScroll::type' data-ref="_GdkEventScroll::type">type</dfn>;</td></tr>
+<tr><th id="331">331</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventScroll::window" title='_GdkEventScroll::window' data-ref="_GdkEventScroll::window">window</dfn>;</td></tr>
+<tr><th id="332">332</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventScroll::send_event" title='_GdkEventScroll::send_event' data-ref="_GdkEventScroll::send_event">send_event</dfn>;</td></tr>
+<tr><th id="333">333</th><td>  <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span> <dfn class="decl" id="_GdkEventScroll::time" title='_GdkEventScroll::time' data-ref="_GdkEventScroll::time">time</dfn>;</td></tr>
+<tr><th id="334">334</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <dfn class="decl" id="_GdkEventScroll::x" title='_GdkEventScroll::x' data-ref="_GdkEventScroll::x">x</dfn>;</td></tr>
+<tr><th id="335">335</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <dfn class="decl" id="_GdkEventScroll::y" title='_GdkEventScroll::y' data-ref="_GdkEventScroll::y">y</dfn>;</td></tr>
+<tr><th id="336">336</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="decl" id="_GdkEventScroll::state" title='_GdkEventScroll::state' data-ref="_GdkEventScroll::state">state</dfn>;</td></tr>
+<tr><th id="337">337</th><td>  <a class="typedef" href="#GdkScrollDirection" title='GdkScrollDirection' data-type='enum GdkScrollDirection' data-ref="GdkScrollDirection">GdkScrollDirection</a> <dfn class="decl" id="_GdkEventScroll::direction" title='_GdkEventScroll::direction' data-ref="_GdkEventScroll::direction">direction</dfn>;</td></tr>
+<tr><th id="338">338</th><td>  <a class="typedef" href="gdkinput.h.html#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a> *<dfn class="decl" id="_GdkEventScroll::device" title='_GdkEventScroll::device' data-ref="_GdkEventScroll::device">device</dfn>;</td></tr>
+<tr><th id="339">339</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <dfn class="decl" id="_GdkEventScroll::x_root" title='_GdkEventScroll::x_root' data-ref="_GdkEventScroll::x_root">x_root</dfn>, <dfn class="decl" id="_GdkEventScroll::y_root" title='_GdkEventScroll::y_root' data-ref="_GdkEventScroll::y_root">y_root</dfn>;</td></tr>
+<tr><th id="340">340</th><td>};</td></tr>
+<tr><th id="341">341</th><td></td></tr>
+<tr><th id="342">342</th><td><b>struct</b> <dfn class="type def" id="_GdkEventKey" title='_GdkEventKey' data-ref="_GdkEventKey">_GdkEventKey</dfn></td></tr>
+<tr><th id="343">343</th><td>{</td></tr>
+<tr><th id="344">344</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventKey::type" title='_GdkEventKey::type' data-ref="_GdkEventKey::type">type</dfn>;</td></tr>
+<tr><th id="345">345</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventKey::window" title='_GdkEventKey::window' data-ref="_GdkEventKey::window">window</dfn>;</td></tr>
+<tr><th id="346">346</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventKey::send_event" title='_GdkEventKey::send_event' data-ref="_GdkEventKey::send_event">send_event</dfn>;</td></tr>
+<tr><th id="347">347</th><td>  <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span> <dfn class="decl" id="_GdkEventKey::time" title='_GdkEventKey::time' data-ref="_GdkEventKey::time">time</dfn>;</td></tr>
+<tr><th id="348">348</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="decl" id="_GdkEventKey::state" title='_GdkEventKey::state' data-ref="_GdkEventKey::state">state</dfn>;</td></tr>
+<tr><th id="349">349</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="decl" id="_GdkEventKey::keyval" title='_GdkEventKey::keyval' data-ref="_GdkEventKey::keyval">keyval</dfn>;</td></tr>
+<tr><th id="350">350</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="_GdkEventKey::length" title='_GdkEventKey::length' data-ref="_GdkEventKey::length">length</dfn>;</td></tr>
+<tr><th id="351">351</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="decl" id="_GdkEventKey::string" title='_GdkEventKey::string' data-ref="_GdkEventKey::string">string</dfn>;</td></tr>
+<tr><th id="352">352</th><td>  <span class='typedef' title='guint16' data-type='unsigned short' data-ref="guint16">guint16</span> <dfn class="decl" id="_GdkEventKey::hardware_keycode" title='_GdkEventKey::hardware_keycode' data-ref="_GdkEventKey::hardware_keycode">hardware_keycode</dfn>;</td></tr>
+<tr><th id="353">353</th><td>  <span class='typedef' title='guint8' data-type='unsigned char' data-ref="guint8">guint8</span> <dfn class="decl" id="_GdkEventKey::group" title='_GdkEventKey::group' data-ref="_GdkEventKey::group">group</dfn>;</td></tr>
+<tr><th id="354">354</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="decl" id="_GdkEventKey::is_modifier" title='_GdkEventKey::is_modifier' data-ref="_GdkEventKey::is_modifier">is_modifier</dfn> : <var>1</var>;</td></tr>
+<tr><th id="355">355</th><td>};</td></tr>
+<tr><th id="356">356</th><td></td></tr>
+<tr><th id="357">357</th><td><b>struct</b> <dfn class="type def" id="_GdkEventCrossing" title='_GdkEventCrossing' data-ref="_GdkEventCrossing">_GdkEventCrossing</dfn></td></tr>
+<tr><th id="358">358</th><td>{</td></tr>
+<tr><th id="359">359</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventCrossing::type" title='_GdkEventCrossing::type' data-ref="_GdkEventCrossing::type">type</dfn>;</td></tr>
+<tr><th id="360">360</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventCrossing::window" title='_GdkEventCrossing::window' data-ref="_GdkEventCrossing::window">window</dfn>;</td></tr>
+<tr><th id="361">361</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventCrossing::send_event" title='_GdkEventCrossing::send_event' data-ref="_GdkEventCrossing::send_event">send_event</dfn>;</td></tr>
+<tr><th id="362">362</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventCrossing::subwindow" title='_GdkEventCrossing::subwindow' data-ref="_GdkEventCrossing::subwindow">subwindow</dfn>;</td></tr>
+<tr><th id="363">363</th><td>  <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span> <dfn class="decl" id="_GdkEventCrossing::time" title='_GdkEventCrossing::time' data-ref="_GdkEventCrossing::time">time</dfn>;</td></tr>
+<tr><th id="364">364</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <dfn class="decl" id="_GdkEventCrossing::x" title='_GdkEventCrossing::x' data-ref="_GdkEventCrossing::x">x</dfn>;</td></tr>
+<tr><th id="365">365</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <dfn class="decl" id="_GdkEventCrossing::y" title='_GdkEventCrossing::y' data-ref="_GdkEventCrossing::y">y</dfn>;</td></tr>
+<tr><th id="366">366</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <dfn class="decl" id="_GdkEventCrossing::x_root" title='_GdkEventCrossing::x_root' data-ref="_GdkEventCrossing::x_root">x_root</dfn>;</td></tr>
+<tr><th id="367">367</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a> <dfn class="decl" id="_GdkEventCrossing::y_root" title='_GdkEventCrossing::y_root' data-ref="_GdkEventCrossing::y_root">y_root</dfn>;</td></tr>
+<tr><th id="368">368</th><td>  <a class="typedef" href="#GdkCrossingMode" title='GdkCrossingMode' data-type='enum GdkCrossingMode' data-ref="GdkCrossingMode">GdkCrossingMode</a> <dfn class="decl" id="_GdkEventCrossing::mode" title='_GdkEventCrossing::mode' data-ref="_GdkEventCrossing::mode">mode</dfn>;</td></tr>
+<tr><th id="369">369</th><td>  <a class="typedef" href="#GdkNotifyType" title='GdkNotifyType' data-type='enum GdkNotifyType' data-ref="GdkNotifyType">GdkNotifyType</a> <dfn class="decl" id="_GdkEventCrossing::detail" title='_GdkEventCrossing::detail' data-ref="_GdkEventCrossing::detail">detail</dfn>;</td></tr>
+<tr><th id="370">370</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="_GdkEventCrossing::focus" title='_GdkEventCrossing::focus' data-ref="_GdkEventCrossing::focus">focus</dfn>;</td></tr>
+<tr><th id="371">371</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="decl" id="_GdkEventCrossing::state" title='_GdkEventCrossing::state' data-ref="_GdkEventCrossing::state">state</dfn>;</td></tr>
+<tr><th id="372">372</th><td>};</td></tr>
+<tr><th id="373">373</th><td></td></tr>
+<tr><th id="374">374</th><td><b>struct</b> <dfn class="type def" id="_GdkEventFocus" title='_GdkEventFocus' data-ref="_GdkEventFocus">_GdkEventFocus</dfn></td></tr>
+<tr><th id="375">375</th><td>{</td></tr>
+<tr><th id="376">376</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventFocus::type" title='_GdkEventFocus::type' data-ref="_GdkEventFocus::type">type</dfn>;</td></tr>
+<tr><th id="377">377</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventFocus::window" title='_GdkEventFocus::window' data-ref="_GdkEventFocus::window">window</dfn>;</td></tr>
+<tr><th id="378">378</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventFocus::send_event" title='_GdkEventFocus::send_event' data-ref="_GdkEventFocus::send_event">send_event</dfn>;</td></tr>
+<tr><th id="379">379</th><td>  <span class='typedef' title='gint16' data-type='short' data-ref="gint16">gint16</span> <dfn class="decl" id="_GdkEventFocus::in" title='_GdkEventFocus::in' data-ref="_GdkEventFocus::in">in</dfn>;</td></tr>
+<tr><th id="380">380</th><td>};</td></tr>
+<tr><th id="381">381</th><td></td></tr>
+<tr><th id="382">382</th><td><b>struct</b> <dfn class="type def" id="_GdkEventConfigure" title='_GdkEventConfigure' data-ref="_GdkEventConfigure">_GdkEventConfigure</dfn></td></tr>
+<tr><th id="383">383</th><td>{</td></tr>
+<tr><th id="384">384</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventConfigure::type" title='_GdkEventConfigure::type' data-ref="_GdkEventConfigure::type">type</dfn>;</td></tr>
+<tr><th id="385">385</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventConfigure::window" title='_GdkEventConfigure::window' data-ref="_GdkEventConfigure::window">window</dfn>;</td></tr>
+<tr><th id="386">386</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventConfigure::send_event" title='_GdkEventConfigure::send_event' data-ref="_GdkEventConfigure::send_event">send_event</dfn>;</td></tr>
+<tr><th id="387">387</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="_GdkEventConfigure::x" title='_GdkEventConfigure::x' data-ref="_GdkEventConfigure::x">x</dfn>, <dfn class="decl" id="_GdkEventConfigure::y" title='_GdkEventConfigure::y' data-ref="_GdkEventConfigure::y">y</dfn>;</td></tr>
+<tr><th id="388">388</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="_GdkEventConfigure::width" title='_GdkEventConfigure::width' data-ref="_GdkEventConfigure::width">width</dfn>;</td></tr>
+<tr><th id="389">389</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gint" title='gint' data-type='int' data-ref="gint">gint</a> <dfn class="decl" id="_GdkEventConfigure::height" title='_GdkEventConfigure::height' data-ref="_GdkEventConfigure::height">height</dfn>;</td></tr>
+<tr><th id="390">390</th><td>};</td></tr>
+<tr><th id="391">391</th><td></td></tr>
+<tr><th id="392">392</th><td><b>struct</b> <dfn class="type def" id="_GdkEventProperty" title='_GdkEventProperty' data-ref="_GdkEventProperty">_GdkEventProperty</dfn></td></tr>
+<tr><th id="393">393</th><td>{</td></tr>
+<tr><th id="394">394</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventProperty::type" title='_GdkEventProperty::type' data-ref="_GdkEventProperty::type">type</dfn>;</td></tr>
+<tr><th id="395">395</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventProperty::window" title='_GdkEventProperty::window' data-ref="_GdkEventProperty::window">window</dfn>;</td></tr>
+<tr><th id="396">396</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventProperty::send_event" title='_GdkEventProperty::send_event' data-ref="_GdkEventProperty::send_event">send_event</dfn>;</td></tr>
+<tr><th id="397">397</th><td>  <a class="typedef" href="gdktypes.h.html#GdkAtom" title='GdkAtom' data-type='struct _GdkAtom *' data-ref="GdkAtom">GdkAtom</a> <dfn class="decl" id="_GdkEventProperty::atom" title='_GdkEventProperty::atom' data-ref="_GdkEventProperty::atom">atom</dfn>;</td></tr>
+<tr><th id="398">398</th><td>  <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span> <dfn class="decl" id="_GdkEventProperty::time" title='_GdkEventProperty::time' data-ref="_GdkEventProperty::time">time</dfn>;</td></tr>
+<tr><th id="399">399</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#guint" title='guint' data-type='unsigned int' data-ref="guint">guint</a> <dfn class="decl" id="_GdkEventProperty::state" title='_GdkEventProperty::state' data-ref="_GdkEventProperty::state">state</dfn>;</td></tr>
+<tr><th id="400">400</th><td>};</td></tr>
+<tr><th id="401">401</th><td></td></tr>
+<tr><th id="402">402</th><td><b>struct</b> <dfn class="type def" id="_GdkEventSelection" title='_GdkEventSelection' data-ref="_GdkEventSelection">_GdkEventSelection</dfn></td></tr>
+<tr><th id="403">403</th><td>{</td></tr>
+<tr><th id="404">404</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventSelection::type" title='_GdkEventSelection::type' data-ref="_GdkEventSelection::type">type</dfn>;</td></tr>
+<tr><th id="405">405</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventSelection::window" title='_GdkEventSelection::window' data-ref="_GdkEventSelection::window">window</dfn>;</td></tr>
+<tr><th id="406">406</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventSelection::send_event" title='_GdkEventSelection::send_event' data-ref="_GdkEventSelection::send_event">send_event</dfn>;</td></tr>
+<tr><th id="407">407</th><td>  <a class="typedef" href="gdktypes.h.html#GdkAtom" title='GdkAtom' data-type='struct _GdkAtom *' data-ref="GdkAtom">GdkAtom</a> <dfn class="decl" id="_GdkEventSelection::selection" title='_GdkEventSelection::selection' data-ref="_GdkEventSelection::selection">selection</dfn>;</td></tr>
+<tr><th id="408">408</th><td>  <a class="typedef" href="gdktypes.h.html#GdkAtom" title='GdkAtom' data-type='struct _GdkAtom *' data-ref="GdkAtom">GdkAtom</a> <dfn class="decl" id="_GdkEventSelection::target" title='_GdkEventSelection::target' data-ref="_GdkEventSelection::target">target</dfn>;</td></tr>
+<tr><th id="409">409</th><td>  <a class="typedef" href="gdktypes.h.html#GdkAtom" title='GdkAtom' data-type='struct _GdkAtom *' data-ref="GdkAtom">GdkAtom</a> <dfn class="decl" id="_GdkEventSelection::property" title='_GdkEventSelection::property' data-ref="_GdkEventSelection::property">property</dfn>;</td></tr>
+<tr><th id="410">410</th><td>  <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span> <dfn class="decl" id="_GdkEventSelection::time" title='_GdkEventSelection::time' data-ref="_GdkEventSelection::time">time</dfn>;</td></tr>
+<tr><th id="411">411</th><td>  <a class="typedef" href="gdktypes.h.html#GdkNativeWindow" title='GdkNativeWindow' data-type='guint32' data-ref="GdkNativeWindow">GdkNativeWindow</a> <dfn class="decl" id="_GdkEventSelection::requestor" title='_GdkEventSelection::requestor' data-ref="_GdkEventSelection::requestor">requestor</dfn>;</td></tr>
+<tr><th id="412">412</th><td>};</td></tr>
+<tr><th id="413">413</th><td></td></tr>
+<tr><th id="414">414</th><td><b>struct</b> <dfn class="type def" id="_GdkEventOwnerChange" title='_GdkEventOwnerChange' data-ref="_GdkEventOwnerChange">_GdkEventOwnerChange</dfn></td></tr>
+<tr><th id="415">415</th><td>{</td></tr>
+<tr><th id="416">416</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventOwnerChange::type" title='_GdkEventOwnerChange::type' data-ref="_GdkEventOwnerChange::type">type</dfn>;</td></tr>
+<tr><th id="417">417</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventOwnerChange::window" title='_GdkEventOwnerChange::window' data-ref="_GdkEventOwnerChange::window">window</dfn>;</td></tr>
+<tr><th id="418">418</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventOwnerChange::send_event" title='_GdkEventOwnerChange::send_event' data-ref="_GdkEventOwnerChange::send_event">send_event</dfn>;</td></tr>
+<tr><th id="419">419</th><td>  <a class="typedef" href="gdktypes.h.html#GdkNativeWindow" title='GdkNativeWindow' data-type='guint32' data-ref="GdkNativeWindow">GdkNativeWindow</a> <dfn class="decl" id="_GdkEventOwnerChange::owner" title='_GdkEventOwnerChange::owner' data-ref="_GdkEventOwnerChange::owner">owner</dfn>;</td></tr>
+<tr><th id="420">420</th><td>  <a class="typedef" href="#GdkOwnerChange" title='GdkOwnerChange' data-type='enum GdkOwnerChange' data-ref="GdkOwnerChange">GdkOwnerChange</a> <dfn class="decl" id="_GdkEventOwnerChange::reason" title='_GdkEventOwnerChange::reason' data-ref="_GdkEventOwnerChange::reason">reason</dfn>;</td></tr>
+<tr><th id="421">421</th><td>  <a class="typedef" href="gdktypes.h.html#GdkAtom" title='GdkAtom' data-type='struct _GdkAtom *' data-ref="GdkAtom">GdkAtom</a> <dfn class="decl" id="_GdkEventOwnerChange::selection" title='_GdkEventOwnerChange::selection' data-ref="_GdkEventOwnerChange::selection">selection</dfn>;</td></tr>
+<tr><th id="422">422</th><td>  <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span> <dfn class="decl" id="_GdkEventOwnerChange::time" title='_GdkEventOwnerChange::time' data-ref="_GdkEventOwnerChange::time">time</dfn>;</td></tr>
+<tr><th id="423">423</th><td>  <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span> <dfn class="decl" id="_GdkEventOwnerChange::selection_time" title='_GdkEventOwnerChange::selection_time' data-ref="_GdkEventOwnerChange::selection_time">selection_time</dfn>;</td></tr>
+<tr><th id="424">424</th><td>};</td></tr>
+<tr><th id="425">425</th><td></td></tr>
+<tr><th id="426">426</th><td><i>/* This event type will be used pretty rarely. It only is important</i></td></tr>
+<tr><th id="427">427</th><td><i>   for XInput aware programs that are drawing their own cursor */</i></td></tr>
+<tr><th id="428">428</th><td></td></tr>
+<tr><th id="429">429</th><td><b>struct</b> <dfn class="type def" id="_GdkEventProximity" title='_GdkEventProximity' data-ref="_GdkEventProximity">_GdkEventProximity</dfn></td></tr>
+<tr><th id="430">430</th><td>{</td></tr>
+<tr><th id="431">431</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventProximity::type" title='_GdkEventProximity::type' data-ref="_GdkEventProximity::type">type</dfn>;</td></tr>
+<tr><th id="432">432</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventProximity::window" title='_GdkEventProximity::window' data-ref="_GdkEventProximity::window">window</dfn>;</td></tr>
+<tr><th id="433">433</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventProximity::send_event" title='_GdkEventProximity::send_event' data-ref="_GdkEventProximity::send_event">send_event</dfn>;</td></tr>
+<tr><th id="434">434</th><td>  <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span> <dfn class="decl" id="_GdkEventProximity::time" title='_GdkEventProximity::time' data-ref="_GdkEventProximity::time">time</dfn>;</td></tr>
+<tr><th id="435">435</th><td>  <a class="typedef" href="gdkinput.h.html#GdkDevice" title='GdkDevice' data-type='struct _GdkDevice' data-ref="GdkDevice">GdkDevice</a> *<dfn class="decl" id="_GdkEventProximity::device" title='_GdkEventProximity::device' data-ref="_GdkEventProximity::device">device</dfn>;</td></tr>
+<tr><th id="436">436</th><td>};</td></tr>
+<tr><th id="437">437</th><td></td></tr>
+<tr><th id="438">438</th><td><b>struct</b> <dfn class="type def" id="_GdkEventClient" title='_GdkEventClient' data-ref="_GdkEventClient">_GdkEventClient</dfn></td></tr>
+<tr><th id="439">439</th><td>{</td></tr>
+<tr><th id="440">440</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventClient::type" title='_GdkEventClient::type' data-ref="_GdkEventClient::type">type</dfn>;</td></tr>
+<tr><th id="441">441</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventClient::window" title='_GdkEventClient::window' data-ref="_GdkEventClient::window">window</dfn>;</td></tr>
+<tr><th id="442">442</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventClient::send_event" title='_GdkEventClient::send_event' data-ref="_GdkEventClient::send_event">send_event</dfn>;</td></tr>
+<tr><th id="443">443</th><td>  <a class="typedef" href="gdktypes.h.html#GdkAtom" title='GdkAtom' data-type='struct _GdkAtom *' data-ref="GdkAtom">GdkAtom</a> <dfn class="decl" id="_GdkEventClient::message_type" title='_GdkEventClient::message_type' data-ref="_GdkEventClient::message_type">message_type</dfn>;</td></tr>
+<tr><th id="444">444</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gushort" title='gushort' data-type='unsigned short' data-ref="gushort">gushort</a> <dfn class="decl" id="_GdkEventClient::data_format" title='_GdkEventClient::data_format' data-ref="_GdkEventClient::data_format">data_format</dfn>;</td></tr>
+<tr><th id="445">445</th><td>  <b>union</b> {</td></tr>
+<tr><th id="446">446</th><td>    <em>char</em> <dfn class="decl" id="_GdkEventClient::(anonymous)::b" title='_GdkEventClient::(anonymous union)::b' data-ref="_GdkEventClient::(anonymous)::b">b</dfn>[<var>20</var>];</td></tr>
+<tr><th id="447">447</th><td>    <em>short</em> <dfn class="decl" id="_GdkEventClient::(anonymous)::s" title='_GdkEventClient::(anonymous union)::s' data-ref="_GdkEventClient::(anonymous)::s">s</dfn>[<var>10</var>];</td></tr>
+<tr><th id="448">448</th><td>    <em>long</em> <dfn class="decl" id="_GdkEventClient::(anonymous)::l" title='_GdkEventClient::(anonymous union)::l' data-ref="_GdkEventClient::(anonymous)::l">l</dfn>[<var>5</var>];</td></tr>
+<tr><th id="449">449</th><td>  } <dfn class="decl" id="_GdkEventClient::data" title='_GdkEventClient::data' data-ref="_GdkEventClient::data">data</dfn>;</td></tr>
+<tr><th id="450">450</th><td>};</td></tr>
+<tr><th id="451">451</th><td></td></tr>
+<tr><th id="452">452</th><td><b>struct</b> <dfn class="type def" id="_GdkEventSetting" title='_GdkEventSetting' data-ref="_GdkEventSetting">_GdkEventSetting</dfn></td></tr>
+<tr><th id="453">453</th><td>{</td></tr>
+<tr><th id="454">454</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventSetting::type" title='_GdkEventSetting::type' data-ref="_GdkEventSetting::type">type</dfn>;</td></tr>
+<tr><th id="455">455</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventSetting::window" title='_GdkEventSetting::window' data-ref="_GdkEventSetting::window">window</dfn>;</td></tr>
+<tr><th id="456">456</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventSetting::send_event" title='_GdkEventSetting::send_event' data-ref="_GdkEventSetting::send_event">send_event</dfn>;</td></tr>
+<tr><th id="457">457</th><td>  <a class="typedef" href="#GdkSettingAction" title='GdkSettingAction' data-type='enum GdkSettingAction' data-ref="GdkSettingAction">GdkSettingAction</a> <dfn class="decl" id="_GdkEventSetting::action" title='_GdkEventSetting::action' data-ref="_GdkEventSetting::action">action</dfn>;</td></tr>
+<tr><th id="458">458</th><td>  <em>char</em> *<dfn class="decl" id="_GdkEventSetting::name" title='_GdkEventSetting::name' data-ref="_GdkEventSetting::name">name</dfn>;</td></tr>
+<tr><th id="459">459</th><td>};</td></tr>
+<tr><th id="460">460</th><td></td></tr>
+<tr><th id="461">461</th><td><b>struct</b> <dfn class="type def" id="_GdkEventWindowState" title='_GdkEventWindowState' data-ref="_GdkEventWindowState">_GdkEventWindowState</dfn></td></tr>
+<tr><th id="462">462</th><td>{</td></tr>
+<tr><th id="463">463</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventWindowState::type" title='_GdkEventWindowState::type' data-ref="_GdkEventWindowState::type">type</dfn>;</td></tr>
+<tr><th id="464">464</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventWindowState::window" title='_GdkEventWindowState::window' data-ref="_GdkEventWindowState::window">window</dfn>;</td></tr>
+<tr><th id="465">465</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventWindowState::send_event" title='_GdkEventWindowState::send_event' data-ref="_GdkEventWindowState::send_event">send_event</dfn>;</td></tr>
+<tr><th id="466">466</th><td>  <a class="typedef" href="#GdkWindowState" title='GdkWindowState' data-type='enum GdkWindowState' data-ref="GdkWindowState">GdkWindowState</a> <dfn class="decl" id="_GdkEventWindowState::changed_mask" title='_GdkEventWindowState::changed_mask' data-ref="_GdkEventWindowState::changed_mask">changed_mask</dfn>;</td></tr>
+<tr><th id="467">467</th><td>  <a class="typedef" href="#GdkWindowState" title='GdkWindowState' data-type='enum GdkWindowState' data-ref="GdkWindowState">GdkWindowState</a> <dfn class="decl" id="_GdkEventWindowState::new_window_state" title='_GdkEventWindowState::new_window_state' data-ref="_GdkEventWindowState::new_window_state">new_window_state</dfn>;</td></tr>
+<tr><th id="468">468</th><td>};</td></tr>
+<tr><th id="469">469</th><td></td></tr>
+<tr><th id="470">470</th><td><b>struct</b> <dfn class="type def" id="_GdkEventGrabBroken" title='_GdkEventGrabBroken' data-ref="_GdkEventGrabBroken">_GdkEventGrabBroken</dfn> {</td></tr>
+<tr><th id="471">471</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventGrabBroken::type" title='_GdkEventGrabBroken::type' data-ref="_GdkEventGrabBroken::type">type</dfn>;</td></tr>
+<tr><th id="472">472</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventGrabBroken::window" title='_GdkEventGrabBroken::window' data-ref="_GdkEventGrabBroken::window">window</dfn>;</td></tr>
+<tr><th id="473">473</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventGrabBroken::send_event" title='_GdkEventGrabBroken::send_event' data-ref="_GdkEventGrabBroken::send_event">send_event</dfn>;</td></tr>
+<tr><th id="474">474</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="_GdkEventGrabBroken::keyboard" title='_GdkEventGrabBroken::keyboard' data-ref="_GdkEventGrabBroken::keyboard">keyboard</dfn>;</td></tr>
+<tr><th id="475">475</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="_GdkEventGrabBroken::implicit" title='_GdkEventGrabBroken::implicit' data-ref="_GdkEventGrabBroken::implicit">implicit</dfn>;</td></tr>
+<tr><th id="476">476</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventGrabBroken::grab_window" title='_GdkEventGrabBroken::grab_window' data-ref="_GdkEventGrabBroken::grab_window">grab_window</dfn>;</td></tr>
+<tr><th id="477">477</th><td>};</td></tr>
+<tr><th id="478">478</th><td></td></tr>
+<tr><th id="479">479</th><td><i>/* Event types for DND */</i></td></tr>
+<tr><th id="480">480</th><td></td></tr>
+<tr><th id="481">481</th><td><b>struct</b> <dfn class="type def" id="_GdkEventDND" title='_GdkEventDND' data-ref="_GdkEventDND">_GdkEventDND</dfn> {</td></tr>
+<tr><th id="482">482</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a> <dfn class="decl" id="_GdkEventDND::type" title='_GdkEventDND::type' data-ref="_GdkEventDND::type">type</dfn>;</td></tr>
+<tr><th id="483">483</th><td>  <a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> *<dfn class="decl" id="_GdkEventDND::window" title='_GdkEventDND::window' data-ref="_GdkEventDND::window">window</dfn>;</td></tr>
+<tr><th id="484">484</th><td>  <span class='typedef' title='gint8' data-type='signed char' data-ref="gint8">gint8</span> <dfn class="decl" id="_GdkEventDND::send_event" title='_GdkEventDND::send_event' data-ref="_GdkEventDND::send_event">send_event</dfn>;</td></tr>
+<tr><th id="485">485</th><td>  <a class="typedef" href="gdkdnd.h.html#GdkDragContext" title='GdkDragContext' data-type='struct _GdkDragContext' data-ref="GdkDragContext">GdkDragContext</a> *<dfn class="decl" id="_GdkEventDND::context" title='_GdkEventDND::context' data-ref="_GdkEventDND::context">context</dfn>;</td></tr>
+<tr><th id="486">486</th><td></td></tr>
+<tr><th id="487">487</th><td>  <span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span> <dfn class="decl" id="_GdkEventDND::time" title='_GdkEventDND::time' data-ref="_GdkEventDND::time">time</dfn>;</td></tr>
+<tr><th id="488">488</th><td>  <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gshort" title='gshort' data-type='short' data-ref="gshort">gshort</a> <dfn class="decl" id="_GdkEventDND::x_root" title='_GdkEventDND::x_root' data-ref="_GdkEventDND::x_root">x_root</dfn>, <dfn class="decl" id="_GdkEventDND::y_root" title='_GdkEventDND::y_root' data-ref="_GdkEventDND::y_root">y_root</dfn>;</td></tr>
+<tr><th id="489">489</th><td>};</td></tr>
+<tr><th id="490">490</th><td></td></tr>
+<tr><th id="491">491</th><td><b>union</b> <dfn class="type def" id="_GdkEvent" title='_GdkEvent' data-ref="_GdkEvent">_GdkEvent</dfn></td></tr>
+<tr><th id="492">492</th><td>{</td></tr>
+<tr><th id="493">493</th><td>  <a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a>		    <dfn class="decl" id="_GdkEvent::type" title='_GdkEvent::type' data-ref="_GdkEvent::type">type</dfn>;</td></tr>
+<tr><th id="494">494</th><td>  <a class="typedef" href="#GdkEventAny" title='GdkEventAny' data-type='struct _GdkEventAny' data-ref="GdkEventAny">GdkEventAny</a>		    <dfn class="decl" id="_GdkEvent::any" title='_GdkEvent::any' data-ref="_GdkEvent::any">any</dfn>;</td></tr>
+<tr><th id="495">495</th><td>  <a class="typedef" href="#GdkEventExpose" title='GdkEventExpose' data-type='struct _GdkEventExpose' data-ref="GdkEventExpose">GdkEventExpose</a>	    <dfn class="decl" id="_GdkEvent::expose" title='_GdkEvent::expose' data-ref="_GdkEvent::expose">expose</dfn>;</td></tr>
+<tr><th id="496">496</th><td>  <a class="typedef" href="#GdkEventNoExpose" title='GdkEventNoExpose' data-type='struct _GdkEventNoExpose' data-ref="GdkEventNoExpose">GdkEventNoExpose</a>	    <dfn class="decl" id="_GdkEvent::no_expose" title='_GdkEvent::no_expose' data-ref="_GdkEvent::no_expose">no_expose</dfn>;</td></tr>
+<tr><th id="497">497</th><td>  <a class="typedef" href="#GdkEventVisibility" title='GdkEventVisibility' data-type='struct _GdkEventVisibility' data-ref="GdkEventVisibility">GdkEventVisibility</a>	    <dfn class="decl" id="_GdkEvent::visibility" title='_GdkEvent::visibility' data-ref="_GdkEvent::visibility">visibility</dfn>;</td></tr>
+<tr><th id="498">498</th><td>  <a class="typedef" href="#GdkEventMotion" title='GdkEventMotion' data-type='struct _GdkEventMotion' data-ref="GdkEventMotion">GdkEventMotion</a>	    <dfn class="decl" id="_GdkEvent::motion" title='_GdkEvent::motion' data-ref="_GdkEvent::motion">motion</dfn>;</td></tr>
+<tr><th id="499">499</th><td>  <a class="typedef" href="#GdkEventButton" title='GdkEventButton' data-type='struct _GdkEventButton' data-ref="GdkEventButton">GdkEventButton</a>	    <dfn class="decl" id="_GdkEvent::button" title='_GdkEvent::button' data-ref="_GdkEvent::button">button</dfn>;</td></tr>
+<tr><th id="500">500</th><td>  <a class="typedef" href="#GdkEventScroll" title='GdkEventScroll' data-type='struct _GdkEventScroll' data-ref="GdkEventScroll">GdkEventScroll</a>            <dfn class="decl" id="_GdkEvent::scroll" title='_GdkEvent::scroll' data-ref="_GdkEvent::scroll">scroll</dfn>;</td></tr>
+<tr><th id="501">501</th><td>  <a class="typedef" href="#GdkEventKey" title='GdkEventKey' data-type='struct _GdkEventKey' data-ref="GdkEventKey">GdkEventKey</a>		    <dfn class="decl" id="_GdkEvent::key" title='_GdkEvent::key' data-ref="_GdkEvent::key">key</dfn>;</td></tr>
+<tr><th id="502">502</th><td>  <a class="typedef" href="#GdkEventCrossing" title='GdkEventCrossing' data-type='struct _GdkEventCrossing' data-ref="GdkEventCrossing">GdkEventCrossing</a>	    <dfn class="decl" id="_GdkEvent::crossing" title='_GdkEvent::crossing' data-ref="_GdkEvent::crossing">crossing</dfn>;</td></tr>
+<tr><th id="503">503</th><td>  <a class="typedef" href="#GdkEventFocus" title='GdkEventFocus' data-type='struct _GdkEventFocus' data-ref="GdkEventFocus">GdkEventFocus</a>		    <dfn class="decl" id="_GdkEvent::focus_change" title='_GdkEvent::focus_change' data-ref="_GdkEvent::focus_change">focus_change</dfn>;</td></tr>
+<tr><th id="504">504</th><td>  <a class="typedef" href="#GdkEventConfigure" title='GdkEventConfigure' data-type='struct _GdkEventConfigure' data-ref="GdkEventConfigure">GdkEventConfigure</a>	    <dfn class="decl" id="_GdkEvent::configure" title='_GdkEvent::configure' data-ref="_GdkEvent::configure">configure</dfn>;</td></tr>
+<tr><th id="505">505</th><td>  <a class="typedef" href="#GdkEventProperty" title='GdkEventProperty' data-type='struct _GdkEventProperty' data-ref="GdkEventProperty">GdkEventProperty</a>	    <dfn class="decl" id="_GdkEvent::property" title='_GdkEvent::property' data-ref="_GdkEvent::property">property</dfn>;</td></tr>
+<tr><th id="506">506</th><td>  <a class="typedef" href="#GdkEventSelection" title='GdkEventSelection' data-type='struct _GdkEventSelection' data-ref="GdkEventSelection">GdkEventSelection</a>	    <dfn class="decl" id="_GdkEvent::selection" title='_GdkEvent::selection' data-ref="_GdkEvent::selection">selection</dfn>;</td></tr>
+<tr><th id="507">507</th><td>  <a class="typedef" href="#GdkEventOwnerChange" title='GdkEventOwnerChange' data-type='struct _GdkEventOwnerChange' data-ref="GdkEventOwnerChange">GdkEventOwnerChange</a>  	    <dfn class="decl" id="_GdkEvent::owner_change" title='_GdkEvent::owner_change' data-ref="_GdkEvent::owner_change">owner_change</dfn>;</td></tr>
+<tr><th id="508">508</th><td>  <a class="typedef" href="#GdkEventProximity" title='GdkEventProximity' data-type='struct _GdkEventProximity' data-ref="GdkEventProximity">GdkEventProximity</a>	    <dfn class="decl" id="_GdkEvent::proximity" title='_GdkEvent::proximity' data-ref="_GdkEvent::proximity">proximity</dfn>;</td></tr>
+<tr><th id="509">509</th><td>  <a class="typedef" href="#GdkEventClient" title='GdkEventClient' data-type='struct _GdkEventClient' data-ref="GdkEventClient">GdkEventClient</a>	    <dfn class="decl" id="_GdkEvent::client" title='_GdkEvent::client' data-ref="_GdkEvent::client">client</dfn>;</td></tr>
+<tr><th id="510">510</th><td>  <a class="typedef" href="#GdkEventDND" title='GdkEventDND' data-type='struct _GdkEventDND' data-ref="GdkEventDND">GdkEventDND</a>               <dfn class="decl" id="_GdkEvent::dnd" title='_GdkEvent::dnd' data-ref="_GdkEvent::dnd">dnd</dfn>;</td></tr>
+<tr><th id="511">511</th><td>  <a class="typedef" href="#GdkEventWindowState" title='GdkEventWindowState' data-type='struct _GdkEventWindowState' data-ref="GdkEventWindowState">GdkEventWindowState</a>       <dfn class="decl" id="_GdkEvent::window_state" title='_GdkEvent::window_state' data-ref="_GdkEvent::window_state">window_state</dfn>;</td></tr>
+<tr><th id="512">512</th><td>  <a class="typedef" href="#GdkEventSetting" title='GdkEventSetting' data-type='struct _GdkEventSetting' data-ref="GdkEventSetting">GdkEventSetting</a>           <dfn class="decl" id="_GdkEvent::setting" title='_GdkEvent::setting' data-ref="_GdkEvent::setting">setting</dfn>;</td></tr>
+<tr><th id="513">513</th><td>  <a class="typedef" href="#GdkEventGrabBroken" title='GdkEventGrabBroken' data-type='struct _GdkEventGrabBroken' data-ref="GdkEventGrabBroken">GdkEventGrabBroken</a>        <dfn class="decl" id="_GdkEvent::grab_broken" title='_GdkEvent::grab_broken' data-ref="_GdkEvent::grab_broken">grab_broken</dfn>;</td></tr>
+<tr><th id="514">514</th><td>};</td></tr>
+<tr><th id="515">515</th><td></td></tr>
+<tr><th id="516">516</th><td><a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>     <dfn class="decl" id="gdk_event_get_type" title='gdk_event_get_type' data-ref="gdk_event_get_type">gdk_event_get_type</dfn>            (<em>void</em>) <a class="macro" href="../../glib-2.0/glib/gmacros.h.html#142" title="__attribute__((__const__))" data-ref="_M/G_GNUC_CONST">G_GNUC_CONST</a>;</td></tr>
+<tr><th id="517">517</th><td></td></tr>
+<tr><th id="518">518</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>  <dfn class="decl" id="gdk_events_pending" title='gdk_events_pending' data-ref="gdk_events_pending">gdk_events_pending</dfn>	 	(<em>void</em>);</td></tr>
+<tr><th id="519">519</th><td><a class="typedef" href="#GdkEvent" title='GdkEvent' data-type='union _GdkEvent' data-ref="GdkEvent">GdkEvent</a>* <dfn class="decl" id="gdk_event_get" title='gdk_event_get' data-ref="gdk_event_get">gdk_event_get</dfn>			(<em>void</em>);</td></tr>
+<tr><th id="520">520</th><td></td></tr>
+<tr><th id="521">521</th><td><a class="typedef" href="#GdkEvent" title='GdkEvent' data-type='union _GdkEvent' data-ref="GdkEvent">GdkEvent</a>* <dfn class="decl" id="gdk_event_peek" title='gdk_event_peek' data-ref="gdk_event_peek">gdk_event_peek</dfn>                (<em>void</em>);</td></tr>
+<tr><th id="522">522</th><td><u>#<span data-ppcond="522">ifndef</span> <span class="macro" data-ref="_M/GDK_DISABLE_DEPRECATED">GDK_DISABLE_DEPRECATED</span></u></td></tr>
+<tr><th id="523">523</th><td><a class="typedef" href="#GdkEvent" title='GdkEvent' data-type='union _GdkEvent' data-ref="GdkEvent">GdkEvent</a>* <dfn class="decl" id="gdk_event_get_graphics_expose" title='gdk_event_get_graphics_expose' data-ref="gdk_event_get_graphics_expose">gdk_event_get_graphics_expose</dfn> (<a class="typedef" href="gdktypes.h.html#GdkWindow" title='GdkWindow' data-type='struct _GdkDrawable' data-ref="GdkWindow">GdkWindow</a> 	*<dfn class="local col3 decl" id="13463window" title='window' data-type='GdkWindow *' data-ref="13463window">window</dfn>);</td></tr>
+<tr><th id="524">524</th><td><u>#<span data-ppcond="522">endif</span></u></td></tr>
+<tr><th id="525">525</th><td><em>void</em>      <dfn class="decl" id="gdk_event_put" title='gdk_event_put' data-ref="gdk_event_put">gdk_event_put</dfn>	 		(<em>const</em> <a class="typedef" href="#GdkEvent" title='GdkEvent' data-type='union _GdkEvent' data-ref="GdkEvent">GdkEvent</a> *<dfn class="local col4 decl" id="13464event" title='event' data-type='const GdkEvent *' data-ref="13464event">event</dfn>);</td></tr>
+<tr><th id="526">526</th><td></td></tr>
+<tr><th id="527">527</th><td><a class="typedef" href="#GdkEvent" title='GdkEvent' data-type='union _GdkEvent' data-ref="GdkEvent">GdkEvent</a>* <dfn class="decl" id="gdk_event_new" title='gdk_event_new' data-ref="gdk_event_new">gdk_event_new</dfn>                 (<a class="typedef" href="#GdkEventType" title='GdkEventType' data-type='enum GdkEventType' data-ref="GdkEventType">GdkEventType</a>    <dfn class="local col5 decl" id="13465type" title='type' data-type='GdkEventType' data-ref="13465type">type</dfn>);</td></tr>
+<tr><th id="528">528</th><td><a class="typedef" href="#GdkEvent" title='GdkEvent' data-type='union _GdkEvent' data-ref="GdkEvent">GdkEvent</a>* <dfn class="decl" id="gdk_event_copy" title='gdk_event_copy' data-ref="gdk_event_copy">gdk_event_copy</dfn>     		(<em>const</em> <a class="typedef" href="#GdkEvent" title='GdkEvent' data-type='union _GdkEvent' data-ref="GdkEvent">GdkEvent</a> *<dfn class="local col6 decl" id="13466event" title='event' data-type='const GdkEvent *' data-ref="13466event">event</dfn>);</td></tr>
+<tr><th id="529">529</th><td><em>void</em>	  <dfn class="decl" id="gdk_event_free" title='gdk_event_free' data-ref="gdk_event_free">gdk_event_free</dfn>     		(<a class="typedef" href="#GdkEvent" title='GdkEvent' data-type='union _GdkEvent' data-ref="GdkEvent">GdkEvent</a> 	*<dfn class="local col7 decl" id="13467event" title='event' data-type='GdkEvent *' data-ref="13467event">event</dfn>);</td></tr>
+<tr><th id="530">530</th><td></td></tr>
+<tr><th id="531">531</th><td><span class='typedef' title='guint32' data-type='unsigned int' data-ref="guint32">guint32</span>   <dfn class="decl" id="gdk_event_get_time" title='gdk_event_get_time' data-ref="gdk_event_get_time">gdk_event_get_time</dfn>            (<em>const</em> <a class="typedef" href="#GdkEvent" title='GdkEvent' data-type='union _GdkEvent' data-ref="GdkEvent">GdkEvent</a>  *<dfn class="local col8 decl" id="13468event" title='event' data-type='const GdkEvent *' data-ref="13468event">event</dfn>);</td></tr>
+<tr><th id="532">532</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>  <dfn class="decl" id="gdk_event_get_state" title='gdk_event_get_state' data-ref="gdk_event_get_state">gdk_event_get_state</dfn>           (<em>const</em> <a class="typedef" href="#GdkEvent" title='GdkEvent' data-type='union _GdkEvent' data-ref="GdkEvent">GdkEvent</a>  *<dfn class="local col9 decl" id="13469event" title='event' data-type='const GdkEvent *' data-ref="13469event">event</dfn>,</td></tr>
+<tr><th id="533">533</th><td>                                         <a class="typedef" href="gdktypes.h.html#GdkModifierType" title='GdkModifierType' data-type='enum GdkModifierType' data-ref="GdkModifierType">GdkModifierType</a> *<dfn class="local col0 decl" id="13470state" title='state' data-type='GdkModifierType *' data-ref="13470state">state</dfn>);</td></tr>
+<tr><th id="534">534</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>  <dfn class="decl" id="gdk_event_get_coords" title='gdk_event_get_coords' data-ref="gdk_event_get_coords">gdk_event_get_coords</dfn>		(<em>const</em> <a class="typedef" href="#GdkEvent" title='GdkEvent' data-type='union _GdkEvent' data-ref="GdkEvent">GdkEvent</a>  *<dfn class="local col1 decl" id="13471event" title='event' data-type='const GdkEvent *' data-ref="13471event">event</dfn>,</td></tr>
+<tr><th id="535">535</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>	 *<dfn class="local col2 decl" id="13472x_win" title='x_win' data-type='gdouble *' data-ref="13472x_win">x_win</dfn>,</td></tr>
+<tr><th id="536">536</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>	 *<dfn class="local col3 decl" id="13473y_win" title='y_win' data-type='gdouble *' data-ref="13473y_win">y_win</dfn>);</td></tr>
+<tr><th id="537">537</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>  <dfn class="decl" id="gdk_event_get_root_coords" title='gdk_event_get_root_coords' data-ref="gdk_event_get_root_coords">gdk_event_get_root_coords</dfn>	(<em>const</em> <a class="typedef" href="#GdkEvent" title='GdkEvent' data-type='union _GdkEvent' data-ref="GdkEvent">GdkEvent</a>  *<dfn class="local col4 decl" id="13474event" title='event' data-type='const GdkEvent *' data-ref="13474event">event</dfn>,</td></tr>
+<tr><th id="538">538</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>	 *<dfn class="local col5 decl" id="13475x_root" title='x_root' data-type='gdouble *' data-ref="13475x_root">x_root</dfn>,</td></tr>
+<tr><th id="539">539</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>	 *<dfn class="local col6 decl" id="13476y_root" title='y_root' data-type='gdouble *' data-ref="13476y_root">y_root</dfn>);</td></tr>
+<tr><th id="540">540</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>  <dfn class="decl" id="gdk_event_get_axis" title='gdk_event_get_axis' data-ref="gdk_event_get_axis">gdk_event_get_axis</dfn>            (<em>const</em> <a class="typedef" href="#GdkEvent" title='GdkEvent' data-type='union _GdkEvent' data-ref="GdkEvent">GdkEvent</a>  *<dfn class="local col7 decl" id="13477event" title='event' data-type='const GdkEvent *' data-ref="13477event">event</dfn>,</td></tr>
+<tr><th id="541">541</th><td>                                         <a class="typedef" href="gdkinput.h.html#GdkAxisUse" title='GdkAxisUse' data-type='enum GdkAxisUse' data-ref="GdkAxisUse">GdkAxisUse</a>       <dfn class="local col8 decl" id="13478axis_use" title='axis_use' data-type='GdkAxisUse' data-ref="13478axis_use">axis_use</dfn>,</td></tr>
+<tr><th id="542">542</th><td>                                         <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gdouble" title='gdouble' data-type='double' data-ref="gdouble">gdouble</a>         *<dfn class="local col9 decl" id="13479value" title='value' data-type='gdouble *' data-ref="13479value">value</dfn>);</td></tr>
+<tr><th id="543">543</th><td><em>void</em>      <dfn class="decl" id="gdk_event_request_motions" title='gdk_event_request_motions' data-ref="gdk_event_request_motions">gdk_event_request_motions</dfn>     (<em>const</em> <a class="typedef" href="#GdkEventMotion" title='GdkEventMotion' data-type='struct _GdkEventMotion' data-ref="GdkEventMotion">GdkEventMotion</a> *<dfn class="local col0 decl" id="13480event" title='event' data-type='const GdkEventMotion *' data-ref="13480event">event</dfn>);</td></tr>
+<tr><th id="544">544</th><td><em>void</em>	  <dfn class="decl" id="gdk_event_handler_set" title='gdk_event_handler_set' data-ref="gdk_event_handler_set">gdk_event_handler_set</dfn> 	(<a class="typedef" href="#GdkEventFunc" title='GdkEventFunc' data-type='void (*)(GdkEvent *, gpointer)' data-ref="GdkEventFunc">GdkEventFunc</a>    <dfn class="local col1 decl" id="13481func" title='func' data-type='GdkEventFunc' data-ref="13481func">func</dfn>,</td></tr>
+<tr><th id="545">545</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>        <dfn class="local col2 decl" id="13482data" title='data' data-type='gpointer' data-ref="13482data">data</dfn>,</td></tr>
+<tr><th id="546">546</th><td>					 <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#GDestroyNotify" title='GDestroyNotify' data-type='void (*)(gpointer)' data-ref="GDestroyNotify">GDestroyNotify</a>  <dfn class="local col3 decl" id="13483notify" title='notify' data-type='GDestroyNotify' data-ref="13483notify">notify</dfn>);</td></tr>
+<tr><th id="547">547</th><td></td></tr>
+<tr><th id="548">548</th><td><em>void</em>       <dfn class="decl" id="gdk_event_set_screen" title='gdk_event_set_screen' data-ref="gdk_event_set_screen">gdk_event_set_screen</dfn>         (<a class="typedef" href="#GdkEvent" title='GdkEvent' data-type='union _GdkEvent' data-ref="GdkEvent">GdkEvent</a>        *<dfn class="local col4 decl" id="13484event" title='event' data-type='GdkEvent *' data-ref="13484event">event</dfn>,</td></tr>
+<tr><th id="549">549</th><td>                                         <a class="typedef" href="gdktypes.h.html#GdkScreen" title='GdkScreen' data-type='struct _GdkScreen' data-ref="GdkScreen">GdkScreen</a>       *<dfn class="local col5 decl" id="13485screen" title='screen' data-type='GdkScreen *' data-ref="13485screen">screen</dfn>);</td></tr>
+<tr><th id="550">550</th><td><a class="typedef" href="gdktypes.h.html#GdkScreen" title='GdkScreen' data-type='struct _GdkScreen' data-ref="GdkScreen">GdkScreen</a> *<dfn class="decl" id="gdk_event_get_screen" title='gdk_event_get_screen' data-ref="gdk_event_get_screen">gdk_event_get_screen</dfn>         (<em>const</em> <a class="typedef" href="#GdkEvent" title='GdkEvent' data-type='union _GdkEvent' data-ref="GdkEvent">GdkEvent</a>  *<dfn class="local col6 decl" id="13486event" title='event' data-type='const GdkEvent *' data-ref="13486event">event</dfn>);</td></tr>
+<tr><th id="551">551</th><td></td></tr>
+<tr><th id="552">552</th><td><em>void</em>	  <dfn class="decl" id="gdk_set_show_events" title='gdk_set_show_events' data-ref="gdk_set_show_events">gdk_set_show_events</dfn>		(<a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>	 <dfn class="local col7 decl" id="13487show_events" title='show_events' data-type='gboolean' data-ref="13487show_events">show_events</dfn>);</td></tr>
+<tr><th id="553">553</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a>  <dfn class="decl" id="gdk_get_show_events" title='gdk_get_show_events' data-ref="gdk_get_show_events">gdk_get_show_events</dfn>		(<em>void</em>);</td></tr>
+<tr><th id="554">554</th><td></td></tr>
+<tr><th id="555">555</th><td><u>#<span data-ppcond="555">ifndef</span> <span class="macro" data-ref="_M/GDK_MULTIHEAD_SAFE">GDK_MULTIHEAD_SAFE</span></u></td></tr>
+<tr><th id="556">556</th><td><em>void</em> <dfn class="decl" id="gdk_add_client_message_filter" title='gdk_add_client_message_filter' data-ref="gdk_add_client_message_filter">gdk_add_client_message_filter</dfn> (<a class="typedef" href="gdktypes.h.html#GdkAtom" title='GdkAtom' data-type='struct _GdkAtom *' data-ref="GdkAtom">GdkAtom</a>       <dfn class="local col8 decl" id="13488message_type" title='message_type' data-type='GdkAtom' data-ref="13488message_type">message_type</dfn>,</td></tr>
+<tr><th id="557">557</th><td>				    <a class="typedef" href="#GdkFilterFunc" title='GdkFilterFunc' data-type='GdkFilterReturn (*)(GdkXEvent *, GdkEvent *, gpointer)' data-ref="GdkFilterFunc">GdkFilterFunc</a> <dfn class="local col9 decl" id="13489func" title='func' data-type='GdkFilterFunc' data-ref="13489func">func</dfn>,</td></tr>
+<tr><th id="558">558</th><td>				    <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a>      <dfn class="local col0 decl" id="13490data" title='data' data-type='gpointer' data-ref="13490data">data</dfn>);</td></tr>
+<tr><th id="559">559</th><td></td></tr>
+<tr><th id="560">560</th><td><a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gboolean" title='gboolean' data-type='gint' data-ref="gboolean">gboolean</a> <dfn class="decl" id="gdk_setting_get" title='gdk_setting_get' data-ref="gdk_setting_get">gdk_setting_get</dfn> (<em>const</em> <a class="typedef" href="../../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a> *<dfn class="local col1 decl" id="13491name" title='name' data-type='const gchar *' data-ref="13491name">name</dfn>,</td></tr>
+<tr><th id="561">561</th><td>			  <a class="typedef" href="../../glib-2.0/gobject/gtype.h.html#GValue" title='GValue' data-type='struct _GValue' data-ref="GValue">GValue</a>      *<dfn class="local col2 decl" id="13492value" title='value' data-type='GValue *' data-ref="13492value">value</dfn>); </td></tr>
+<tr><th id="562">562</th><td><u>#<span data-ppcond="555">endif</span> /* GDK_MULTIHEAD_SAFE */</u></td></tr>
+<tr><th id="563">563</th><td></td></tr>
+<tr><th id="564">564</th><td><a class="macro" href="../../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="565">565</th><td></td></tr>
+<tr><th id="566">566</th><td><u>#<span data-ppcond="27">endif</span> /* __GDK_EVENTS_H__ */</u></td></tr>
+<tr><th id="567">567</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

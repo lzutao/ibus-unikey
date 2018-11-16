@@ -1,0 +1,3 @@
+<def f='include/ibus-1.0/ibusemoji.h' l='74' ll='77'/>
+<size>264</size>
+<mbr r='_IBusEmojiDataClass::parent' o='0' t='IBusSerializableClass'/>

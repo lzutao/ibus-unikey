@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkrgb.h' l='118' type='void gdk_draw_indexed_image(GdkDrawable * drawable, GdkGC * gc, gint x, gint y, gint width, gint height, GdkRgbDither dith, const guchar * buf, gint rowstride, GdkRgbCmap * cmap)'/>

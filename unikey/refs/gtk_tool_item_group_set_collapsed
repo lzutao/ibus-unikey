@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktoolitemgroup.h' l='68' type='void gtk_tool_item_group_set_collapsed(GtkToolItemGroup * group, gboolean collapsed)'/>

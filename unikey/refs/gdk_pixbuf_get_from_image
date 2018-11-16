@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkpixbuf.h' l='103' type='GdkPixbuf * gdk_pixbuf_get_from_image(GdkPixbuf * dest, GdkImage * src, GdkColormap * cmap, int src_x, int src_y, int dest_x, int dest_y, int width, int height)'/>

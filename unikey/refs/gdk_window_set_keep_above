@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='644' type='void gdk_window_set_keep_above(GdkWindow * window, gboolean setting)'/>

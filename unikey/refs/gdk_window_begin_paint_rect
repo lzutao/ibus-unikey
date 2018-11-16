@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkwindow.h' l='525' type='void gdk_window_begin_paint_rect(GdkWindow * window, const GdkRectangle * rectangle)'/>

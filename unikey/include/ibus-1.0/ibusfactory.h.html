@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ibusfactory.h source code [include/ibus-1.0/ibusfactory.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/ibus-1.0/ibusfactory.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>include</a>/<a href='./'>ibus-1.0</a>/<a href='ibusfactory.h.html'>ibusfactory.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* -*- mode: C; c-basic-offset: 4; indent-tabs-mode: nil; -*- */</i></td></tr>
+<tr><th id="2">2</th><td><i>/* vim:set et sts=4: */</i></td></tr>
+<tr><th id="3">3</th><td><i>/* ibus - The Input Bus</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 2008-2013 Peng Huang &lt;shawn.p.huang@gmail.com&gt;</i></td></tr>
+<tr><th id="5">5</th><td><i> * Copyright (C) 2008-2013 Red Hat, Inc.</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="8">8</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="9">9</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="10">10</th><td><i> * version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="11">11</th><td><i> *</i></td></tr>
+<tr><th id="12">12</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="13">13</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="14">14</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="15">15</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="18">18</th><td><i> * License along with this library; if not, write to the Free Software</i></td></tr>
+<tr><th id="19">19</th><td><i> * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301</i></td></tr>
+<tr><th id="20">20</th><td><i> * USA</i></td></tr>
+<tr><th id="21">21</th><td><i> */</i></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#<span data-ppcond="23">if</span> !defined (<a class="macro" href="ibus.h.html#26" data-ref="_M/__IBUS_H_INSIDE__">__IBUS_H_INSIDE__</a>) &amp;&amp; !defined (<span class="macro" data-ref="_M/IBUS_COMPILATION">IBUS_COMPILATION</span>)</u></td></tr>
+<tr><th id="24">24</th><td><u>#error "Only &lt;ibus.h&gt; can be included directly"</u></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="27">ifndef</span> <span class="macro" data-ref="_M/__IBUS_FACTORY_H_">__IBUS_FACTORY_H_</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/__IBUS_FACTORY_H_" data-ref="_M/__IBUS_FACTORY_H_">__IBUS_FACTORY_H_</dfn></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="31">31</th><td><i class="doc"> * SECTION: ibusfactory</i></td></tr>
+<tr><th id="32">32</th><td><i class="doc"> * <span class="command">@short</span>_description: Factory for creating engine instances.</i></td></tr>
+<tr><th id="33">33</th><td><i class="doc"> *<span class="command"> @title</span>: IBusFactory</i></td></tr>
+<tr><th id="34">34</th><td><i class="doc"> *<span class="command"> @stability</span>: Stable</i></td></tr>
+<tr><th id="35">35</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="36">36</th><td><i class="doc"> * An IBusFactory is an #IBusService that creates input method engine (IME) instance.</i></td></tr>
+<tr><th id="37">37</th><td><i class="doc"> * It provides CreateEngine remote method, which creates an IME instance by name,</i></td></tr>
+<tr><th id="38">38</th><td><i class="doc"> * and returns the D-Bus object path to IBus daemon.</i></td></tr>
+<tr><th id="39">39</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="40">40</th><td><i class="doc"> * see_also: #IBusEngine</i></td></tr>
+<tr><th id="41">41</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="42">42</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><u>#include <a href="ibusservice.h.html">"ibusservice.h"</a></u></td></tr>
+<tr><th id="45">45</th><td><u>#include <a href="ibusserializable.h.html">"ibusserializable.h"</a></u></td></tr>
+<tr><th id="46">46</th><td><u>#include <a href="ibusengine.h.html">"ibusengine.h"</a></u></td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><a class="macro" href="../glib-2.0/glib/gmacros.h.html#268" title="extern &quot;C&quot; {" data-ref="_M/G_BEGIN_DECLS">G_BEGIN_DECLS</a></td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><i>/*</i></td></tr>
+<tr><th id="51">51</th><td><i> * Type macros.</i></td></tr>
+<tr><th id="52">52</th><td><i> */</i></td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><i>/* define GOBJECT macros */</i></td></tr>
+<tr><th id="55">55</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="56">56</th><td><i class="doc"> * IBUS_TYPE_FACTORY:</i></td></tr>
+<tr><th id="57">57</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="58">58</th><td><i class="doc"> * Return GType of IBus factory.</i></td></tr>
+<tr><th id="59">59</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="60">60</th><td><u>#define <dfn class="macro" id="_M/IBUS_TYPE_FACTORY" data-ref="_M/IBUS_TYPE_FACTORY">IBUS_TYPE_FACTORY</dfn>               \</u></td></tr>
+<tr><th id="61">61</th><td><u>    (ibus_factory_get_type ())</u></td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> * IBUS_FACTORY:</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> *<span class="command"> @obj</span>: An object which is subject to casting.</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="67">67</th><td><i class="doc"> * Casts an IBUS_FACTORY or derived pointer into a (IBusFactory*) pointer.</i></td></tr>
+<tr><th id="68">68</th><td><i class="doc"> * Depending on the current debugging level, this function may invoke</i></td></tr>
+<tr><th id="69">69</th><td><i class="doc"> * certain runtime checks to identify invalid casts.</i></td></tr>
+<tr><th id="70">70</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="71">71</th><td><u>#define <dfn class="macro" id="_M/IBUS_FACTORY" data-ref="_M/IBUS_FACTORY">IBUS_FACTORY</dfn>(obj)               \</u></td></tr>
+<tr><th id="72">72</th><td><u>    (G_TYPE_CHECK_INSTANCE_CAST ((obj), IBUS_TYPE_FACTORY, IBusFactory))</u></td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="75">75</th><td><i class="doc"> * IBUS_FACTORY_CLASS:</i></td></tr>
+<tr><th id="76">76</th><td><i class="doc"> * <span class="command">@klass</span>:<span class="verb"> A class to be casted.</span></i></td></tr>
+<tr><th id="77">77</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="78">78</th><td><i class="doc"> * Casts a derived IBusFactoryClass structure into a IBusFactoryClass structure.</i></td></tr>
+<tr><th id="79">79</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="80">80</th><td><u>#define <dfn class="macro" id="_M/IBUS_FACTORY_CLASS" data-ref="_M/IBUS_FACTORY_CLASS">IBUS_FACTORY_CLASS</dfn>(klass)       \</u></td></tr>
+<tr><th id="81">81</th><td><u>    (G_TYPE_CHECK_CLASS_CAST ((klass), IBUS_TYPE_FACTORY, IBusFactoryClass))</u></td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="84">84</th><td><i class="doc"> * IBUS_IS_FACTORY:</i></td></tr>
+<tr><th id="85">85</th><td><i class="doc"> *<span class="command"> @obj</span>: Instance to check for being a IBUS_FACTORY.</i></td></tr>
+<tr><th id="86">86</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="87">87</th><td><i class="doc"> * Checks whether a valid GTypeInstance pointer is of type IBUS_FACTORY.</i></td></tr>
+<tr><th id="88">88</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="89">89</th><td><u>#define <dfn class="macro" id="_M/IBUS_IS_FACTORY" data-ref="_M/IBUS_IS_FACTORY">IBUS_IS_FACTORY</dfn>(obj)            \</u></td></tr>
+<tr><th id="90">90</th><td><u>    (G_TYPE_CHECK_INSTANCE_TYPE ((obj), IBUS_TYPE_FACTORY))</u></td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="93">93</th><td><i class="doc"> * IBUS_IS_FACTORY_CLASS:</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> * <span class="command">@klass</span>:<span class="verb"> A class to be checked.</span></i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> * Checks whether class "is a" valid IBusFactoryClass structure of type IBUS_FACTORY or derived.</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="98">98</th><td><u>#define <dfn class="macro" id="_M/IBUS_IS_FACTORY_CLASS" data-ref="_M/IBUS_IS_FACTORY_CLASS">IBUS_IS_FACTORY_CLASS</dfn>(klass)    \</u></td></tr>
+<tr><th id="99">99</th><td><u>    (G_TYPE_CHECK_CLASS_TYPE ((klass), IBUS_TYPE_FACTORY))</u></td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="102">102</th><td><i class="doc"> * IBUS_FACTORY_GET_CLASS:</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> *<span class="command"> @obj</span>: An object.</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="105">105</th><td><i class="doc"> * Get the class of a given object and cast the class to IBusFactoryClass.</i></td></tr>
+<tr><th id="106">106</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="107">107</th><td><u>#define <dfn class="macro" id="_M/IBUS_FACTORY_GET_CLASS" data-ref="_M/IBUS_FACTORY_GET_CLASS">IBUS_FACTORY_GET_CLASS</dfn>(obj)     \</u></td></tr>
+<tr><th id="108">108</th><td><u>    (G_TYPE_INSTANCE_GET_CLASS ((obj), IBUS_TYPE_FACTORY, IBusFactoryClass))</u></td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_IBusFactory" title='_IBusFactory' data-ref="_IBusFactory">_IBusFactory</a> <dfn class="typedef" id="IBusFactory" title='IBusFactory' data-type='struct _IBusFactory' data-ref="IBusFactory">IBusFactory</dfn>;</td></tr>
+<tr><th id="111">111</th><td><b>typedef</b> <b>struct</b> <a class="type" href="#_IBusFactoryClass" title='_IBusFactoryClass' data-ref="_IBusFactoryClass">_IBusFactoryClass</a> <dfn class="typedef" id="IBusFactoryClass" title='IBusFactoryClass' data-type='struct _IBusFactoryClass' data-ref="IBusFactoryClass">IBusFactoryClass</dfn>;</td></tr>
+<tr><th id="112">112</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="_IBusFactoryPrivate" title='_IBusFactoryPrivate' data-ref="_IBusFactoryPrivate"><a class="type" href="#_IBusFactoryPrivate" title='_IBusFactoryPrivate' data-ref="_IBusFactoryPrivate">_IBusFactoryPrivate</a></dfn> <dfn class="typedef" id="IBusFactoryPrivate" title='IBusFactoryPrivate' data-type='struct _IBusFactoryPrivate' data-ref="IBusFactoryPrivate">IBusFactoryPrivate</dfn>;</td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="115">115</th><td><i class="doc"> * IBusFactory:</i></td></tr>
+<tr><th id="116">116</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="117">117</th><td><i class="doc"> * An opaque data type representing an IBusFactory.</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="119">119</th><td><b>struct</b> <dfn class="type def" id="_IBusFactory" title='_IBusFactory' data-ref="_IBusFactory">_IBusFactory</dfn> {</td></tr>
+<tr><th id="120">120</th><td>    <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="121">121</th><td>    <a class="typedef" href="ibusservice.h.html#IBusService" title='IBusService' data-type='struct _IBusService' data-ref="IBusService">IBusService</a> <dfn class="decl" id="_IBusFactory::parent" title='_IBusFactory::parent' data-ref="_IBusFactory::parent">parent</dfn>;</td></tr>
+<tr><th id="122">122</th><td>    <a class="typedef" href="#IBusFactoryPrivate" title='IBusFactoryPrivate' data-type='struct _IBusFactoryPrivate' data-ref="IBusFactoryPrivate">IBusFactoryPrivate</a> *<dfn class="decl" id="_IBusFactory::priv" title='_IBusFactory::priv' data-ref="_IBusFactory::priv">priv</dfn>;</td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td>    <i>/* instance members */</i></td></tr>
+<tr><th id="125">125</th><td>};</td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td><b>struct</b> <dfn class="type def" id="_IBusFactoryClass" title='_IBusFactoryClass' data-ref="_IBusFactoryClass">_IBusFactoryClass</dfn> {</td></tr>
+<tr><th id="128">128</th><td>    <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="129">129</th><td>    <a class="typedef" href="ibusservice.h.html#IBusServiceClass" title='IBusServiceClass' data-type='struct _IBusServiceClass' data-ref="IBusServiceClass">IBusServiceClass</a> <dfn class="decl" id="_IBusFactoryClass::parent" title='_IBusFactoryClass::parent' data-ref="_IBusFactoryClass::parent">parent</dfn>;</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td>    <i>/*&lt; public &gt;*/</i></td></tr>
+<tr><th id="132">132</th><td>    <i>/* signals */</i></td></tr>
+<tr><th id="133">133</th><td>    <a class="typedef" href="ibusengine.h.html#IBusEngine" title='IBusEngine' data-type='struct _IBusEngine' data-ref="IBusEngine">IBusEngine</a> *</td></tr>
+<tr><th id="134">134</th><td>                (* <dfn class="decl" id="_IBusFactoryClass::create_engine" title='_IBusFactoryClass::create_engine' data-ref="_IBusFactoryClass::create_engine">create_engine</dfn>)</td></tr>
+<tr><th id="135">135</th><td>                                    (<a class="typedef" href="#IBusFactory" title='IBusFactory' data-type='struct _IBusFactory' data-ref="IBusFactory">IBusFactory</a>    *<dfn class="local col1 decl" id="291factory" title='factory' data-type='IBusFactory *' data-ref="291factory">factory</dfn>,</td></tr>
+<tr><th id="136">136</th><td>                                     <em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col2 decl" id="292engine_name" title='engine_name' data-type='const gchar *' data-ref="292engine_name">engine_name</dfn>);</td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td>    <i>/*&lt; private &gt;*/</i></td></tr>
+<tr><th id="139">139</th><td>    <i>/* padding */</i></td></tr>
+<tr><th id="140">140</th><td>    <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gpointer" title='gpointer' data-type='void *' data-ref="gpointer">gpointer</a> <dfn class="decl" id="_IBusFactoryClass::pdummy" title='_IBusFactoryClass::pdummy' data-ref="_IBusFactoryClass::pdummy">pdummy</dfn>[<var>7</var>];</td></tr>
+<tr><th id="141">141</th><td>};</td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> * ibus_factory_info_get_type:</i></td></tr>
+<tr><th id="145">145</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="146">146</th><td><i class="doc"> * Gets GType of IBus factory information.</i></td></tr>
+<tr><th id="147">147</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> * Returns: GType of IBus factory information.</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="150">150</th><td><a class="typedef" href="../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>            <dfn class="decl" id="ibus_factory_get_type" title='ibus_factory_get_type' data-ref="ibus_factory_get_type">ibus_factory_get_type</dfn>          (<em>void</em>);</td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> * ibus_factory_new:</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> *<span class="command"> @connection</span>: An GDBusConnection.</i></td></tr>
+<tr><th id="155">155</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="156">156</th><td><i class="doc"> * Creates a new #IBusFactory.</i></td></tr>
+<tr><th id="157">157</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc"> * Returns: A newly allocated #IBusFactory.</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="160">160</th><td><a class="typedef" href="#IBusFactory" title='IBusFactory' data-type='struct _IBusFactory' data-ref="IBusFactory">IBusFactory</a>     *<dfn class="decl" id="ibus_factory_new" title='ibus_factory_new' data-ref="ibus_factory_new">ibus_factory_new</dfn>               (<a class="typedef" href="../glib-2.0/gio/giotypes.h.html#GDBusConnection" title='GDBusConnection' data-type='struct _GDBusConnection' data-ref="GDBusConnection">GDBusConnection</a> *<dfn class="local col3 decl" id="293connection" title='connection' data-type='GDBusConnection *' data-ref="293connection">connection</dfn>);</td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="163">163</th><td><i class="doc"> * ibus_factory_add_engine:</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc"> *<span class="command"> @factory</span>: An IBusFactory.</i></td></tr>
+<tr><th id="165">165</th><td><i class="doc"> *<span class="command"> @engine</span>_name: Name of an engine.</i></td></tr>
+<tr><th id="166">166</th><td><i class="doc"> *<span class="command"> @engine</span>_type: GType of an engine.</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc"> * Add an engine to the factory.</i></td></tr>
+<tr><th id="169">169</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="170">170</th><td><em>void</em>             <dfn class="decl" id="ibus_factory_add_engine" title='ibus_factory_add_engine' data-ref="ibus_factory_add_engine">ibus_factory_add_engine</dfn>        (<a class="typedef" href="#IBusFactory" title='IBusFactory' data-type='struct _IBusFactory' data-ref="IBusFactory">IBusFactory</a>    *<dfn class="local col4 decl" id="294factory" title='factory' data-type='IBusFactory *' data-ref="294factory">factory</dfn>,</td></tr>
+<tr><th id="171">171</th><td>                                                 <em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col5 decl" id="295engine_name" title='engine_name' data-type='const gchar *' data-ref="295engine_name">engine_name</dfn>,</td></tr>
+<tr><th id="172">172</th><td>                                                 <a class="typedef" href="../glib-2.0/gobject/gtype.h.html#GType" title='GType' data-type='gulong' data-ref="GType">GType</a>           <dfn class="local col6 decl" id="296engine_type" title='engine_type' data-type='GType' data-ref="296engine_type">engine_type</dfn>);</td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="175">175</th><td><i class="doc"> * ibus_factory_create_engine:</i></td></tr>
+<tr><th id="176">176</th><td><i class="doc"> *<span class="command"> @factory</span>: An #IBusFactory.</i></td></tr>
+<tr><th id="177">177</th><td><i class="doc"> *<span class="command"> @engine</span>_name: Name of an engine.</i></td></tr>
+<tr><th id="178">178</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="179">179</th><td><i class="doc"> * Creates an #IBusEngine with<span class="command"> @engine</span>_name.</i></td></tr>
+<tr><th id="180">180</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="181">181</th><td><i class="doc"> * Returns: (transfer full): #IBusEngine with<span class="command"> @engine</span>_name.</i></td></tr>
+<tr><th id="182">182</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="183">183</th><td><a class="typedef" href="ibusengine.h.html#IBusEngine" title='IBusEngine' data-type='struct _IBusEngine' data-ref="IBusEngine">IBusEngine</a>      *<dfn class="decl" id="ibus_factory_create_engine" title='ibus_factory_create_engine' data-ref="ibus_factory_create_engine">ibus_factory_create_engine</dfn>     (<a class="typedef" href="#IBusFactory" title='IBusFactory' data-type='struct _IBusFactory' data-ref="IBusFactory">IBusFactory</a>    *<dfn class="local col7 decl" id="297factory" title='factory' data-type='IBusFactory *' data-ref="297factory">factory</dfn>,</td></tr>
+<tr><th id="184">184</th><td>                                                 <em>const</em> <a class="typedef" href="../glib-2.0/glib/gtypes.h.html#gchar" title='gchar' data-type='char' data-ref="gchar">gchar</a>    *<dfn class="local col8 decl" id="298engine_name" title='engine_name' data-type='const gchar *' data-ref="298engine_name">engine_name</dfn>);</td></tr>
+<tr><th id="185">185</th><td></td></tr>
+<tr><th id="186">186</th><td><a class="macro" href="../glib-2.0/glib/gmacros.h.html#269" title="}" data-ref="_M/G_END_DECLS">G_END_DECLS</a></td></tr>
+<tr><th id="187">187</th><td><u>#<span data-ppcond="27">endif</span></u></td></tr>
+<tr><th id="188">188</th><td></td></tr>
+<tr><th id="189">189</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../unikey/setup/dlg_main_setup.cpp.html'>unikey/setup/dlg_main_setup.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

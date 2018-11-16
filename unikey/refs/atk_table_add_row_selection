@@ -1,0 +1,1 @@
+<dec f='include/atk-1.0/atk/atktable.h' l='218' type='gboolean atk_table_add_row_selection(AtkTable * table, gint row)'/>

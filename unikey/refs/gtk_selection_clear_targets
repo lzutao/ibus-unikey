@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkselection.h' l='144' type='void gtk_selection_clear_targets(GtkWidget * widget, GdkAtom selection)'/>

@@ -1,0 +1,11 @@
+<def f='include/gtk-2.0/gtk/gtkbindings.h' l='65' ll='79'/>
+<size>48</size>
+<mbr r='_GtkBindingEntry::keyval' o='0' t='guint'/>
+<mbr r='_GtkBindingEntry::modifiers' o='32' t='GdkModifierType'/>
+<mbr r='_GtkBindingEntry::binding_set' o='64' t='GtkBindingSet *'/>
+<mbr r='_GtkBindingEntry::destroyed' o='128' t='guint'/>
+<mbr r='_GtkBindingEntry::in_emission' o='129' t='guint'/>
+<mbr r='_GtkBindingEntry::marks_unbound' o='130' t='guint'/>
+<mbr r='_GtkBindingEntry::set_next' o='192' t='GtkBindingEntry *'/>
+<mbr r='_GtkBindingEntry::hash_next' o='256' t='GtkBindingEntry *'/>
+<mbr r='_GtkBindingEntry::signals' o='320' t='GtkBindingSignal *'/>

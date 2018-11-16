@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkrecentchooser.h' l='152' type='void gtk_recent_chooser_set_sort_func(GtkRecentChooser * chooser, GtkRecentSortFunc sort_func, gpointer sort_data, GDestroyNotify data_destroy)'/>

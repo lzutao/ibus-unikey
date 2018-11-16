@@ -1,0 +1,4 @@
+<def f='include/gtk-2.0/gtk/gtkbindings.h' l='81' ll='89'/>
+<size>16</size>
+<mbr r='_GtkBindingArg::arg_type' o='0' t='GType'/>
+<mbr r='_GtkBindingArg::d' o='64' t='union (anonymous union at /usr/include/gtk-2.0/gtk/gtkbindings.h:84:3)'/>

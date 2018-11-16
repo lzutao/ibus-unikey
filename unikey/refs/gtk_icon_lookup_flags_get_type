@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='206' type='GType gtk_icon_lookup_flags_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtktypebuiltins.h' l='205'>/* enumerations from &quot;gtkicontheme.h&quot; */</doc>

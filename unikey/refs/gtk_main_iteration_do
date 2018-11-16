@@ -1,0 +1,2 @@
+<dec f='include/gtk-2.0/gtk/gtkmain.h' l='150' type='gboolean gtk_main_iteration_do(gboolean blocking)'/>
+<doc f='include/gtk-2.0/gtk/gtkmain.h' l='149'>/* gtk_main_iteration() calls gtk_main_iteration_do(TRUE) */</doc>

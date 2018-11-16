@@ -1,0 +1,8 @@
+<dec f='include/ibus-1.0/ibusshare.h' l='265' type='const gchar * ibus_get_socket_path()'/>
+<doc f='include/ibus-1.0/ibusshare.h' l='258'>/**
+ * ibus_get_socket_path:
+ *
+ * Get the path of socket file.
+ *
+ * Returns: A newly allocated string that stores the path of socket file.
+ */</doc>

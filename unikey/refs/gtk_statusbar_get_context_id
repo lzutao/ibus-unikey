@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtkstatusbar.h' l='94' type='guint gtk_statusbar_get_context_id(GtkStatusbar * statusbar, const gchar * context_description)'/>
+<doc f='include/gtk-2.0/gtk/gtkstatusbar.h' l='91'>/* If you don&apos;t want to use contexts, 0 is a predefined global
+ * context_id you can pass to push/pop/remove
+ */</doc>

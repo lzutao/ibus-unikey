@@ -1,0 +1,2 @@
+<dec f='include/ibus-1.0/ibusobject.h' l='116' type='GType ibus_object_get_type()'/>
+<use f='unikey/src/engine.cpp' l='84' macro='1' u='c'/>

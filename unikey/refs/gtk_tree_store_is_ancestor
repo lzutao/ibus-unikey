@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtktreestore.h' l='134' type='gboolean gtk_tree_store_is_ancestor(GtkTreeStore * tree_store, GtkTreeIter * iter, GtkTreeIter * descendant)'/>

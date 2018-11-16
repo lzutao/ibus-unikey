@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtknotebook.h' l='151' type='GType gtk_notebook_get_type()'/>
+<doc f='include/gtk-2.0/gtk/gtknotebook.h' l='147'>/***********************************************************
+ *           Creation, insertion, deletion                 *
+ ***********************************************************/</doc>

@@ -1,0 +1,8 @@
+<def f='include/gtk-2.0/gtk/gtkframe.h' l='52' ll='62'/>
+<size>160</size>
+<mbr r='_GtkFrame::bin' o='0' t='GtkBin'/>
+<mbr r='_GtkFrame::label_widget' o='960' t='GtkWidget *'/>
+<mbr r='_GtkFrame::shadow_type' o='1024' t='gint16'/>
+<mbr r='_GtkFrame::label_xalign' o='1056' t='gfloat'/>
+<mbr r='_GtkFrame::label_yalign' o='1088' t='gfloat'/>
+<mbr r='_GtkFrame::child_allocation' o='1120' t='GtkAllocation'/>

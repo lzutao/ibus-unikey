@@ -1,0 +1,6 @@
+<dec f='include/gtk-2.0/gtk/gtkstyle.h' l='133' type='void (*)(GtkStyle *)'/>
+<offset>1088</offset>
+<doc f='include/gtk-2.0/gtk/gtkstyle.h' l='129'>/* Initialize for a particular colormap/depth
+   * combination. style-&gt;colormap/style-&gt;depth will have
+   * been set at this point. Will typically chain to parent.
+   */</doc>

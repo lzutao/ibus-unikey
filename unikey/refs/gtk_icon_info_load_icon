@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gtk/gtkicontheme.h' l='180' type='GdkPixbuf * gtk_icon_info_load_icon(GtkIconInfo * icon_info, GError ** error)'/>

@@ -1,0 +1,6 @@
+<dec f='include/ibus-1.0/ibustext.h' l='214' type='void ibus_text_set_attributes(IBusText * text, IBusAttrList * attrs)'/>
+<doc f='include/ibus-1.0/ibustext.h' l='209'>/**
+ * ibus_text_set_attributes:
+ * @text: An IBusText.
+ * @attrs: An IBusAttrList
+ */</doc>

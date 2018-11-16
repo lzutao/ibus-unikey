@@ -1,0 +1,5 @@
+<dec f='include/glib-2.0/gobject/gobject.h' l='571' type='gpointer g_object_get_data(GObject * object, const gchar * key)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='135' u='c' c='_Z30unikey_macro_dialog_load_macroP10_GtkDialog11CMacroTable'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='159' u='c' c='_Z30unikey_macro_dialog_save_macroP10_GtkDialogP11CMacroTable'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='363' u='c' c='_Z23import_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='410' u='c' c='_Z23export_macro_clicked_cbP10_GtkButtonPv'/>

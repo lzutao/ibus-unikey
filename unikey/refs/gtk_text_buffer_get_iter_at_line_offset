@@ -1,0 +1,4 @@
+<dec f='include/gtk-2.0/gtk/gtktextbuffer.h' l='322' type='void gtk_text_buffer_get_iter_at_line_offset(GtkTextBuffer * buffer, GtkTextIter * iter, gint line_number, gint char_offset)'/>
+<doc f='include/gtk-2.0/gtk/gtktextbuffer.h' l='319'>/* Obtain iterators pointed at various places, then you can move the
+ * iterator around using the GtkTextIter operators
+ */</doc>

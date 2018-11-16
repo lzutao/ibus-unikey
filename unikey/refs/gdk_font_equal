@@ -1,0 +1,1 @@
+<dec f='include/gtk-2.0/gdk/gdkfont.h' l='61' type='gboolean gdk_font_equal(const GdkFont * fonta, const GdkFont * fontb)'/>
