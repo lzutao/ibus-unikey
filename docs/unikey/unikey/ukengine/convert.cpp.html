@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>convert.cpp source code [unikey/ukengine/convert.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'unikey/ukengine/convert.cpp'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>unikey</a>/<a href='./'>ukengine</a>/<a href='convert.cpp.html'>convert.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>// -*- coding:unix; mode:c++; tab-width:4; c-basic-offset:4; indent-tabs-mode:nil -*-</i></td></tr>
+<tr><th id="2">2</th><td><i>/*------------------------------------------------------------------------------</i></td></tr>
+<tr><th id="3">3</th><td><i>VnConv: Vietnamese Encoding Converter Library</i></td></tr>
+<tr><th id="4">4</th><td><i>UniKey Project: <a href="http://unikey.sourceforge.net">http://unikey.sourceforge.net</a></i></td></tr>
+<tr><th id="5">5</th><td><i>Copyleft (C) 1998-2002 Pham Kim Long</i></td></tr>
+<tr><th id="6">6</th><td><i>Contact: longp@cslab.felk.cvut.cz</i></td></tr>
+<tr><th id="7">7</th><td><i></i></td></tr>
+<tr><th id="8">8</th><td><i>This program is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="9">9</th><td><i>modify it under the terms of the GNU General Public License</i></td></tr>
+<tr><th id="10">10</th><td><i>as published by the Free Software Foundation; either version 2</i></td></tr>
+<tr><th id="11">11</th><td><i>of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="12">12</th><td><i></i></td></tr>
+<tr><th id="13">13</th><td><i>This program is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="14">14</th><td><i>but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="15">15</th><td><i>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</i></td></tr>
+<tr><th id="16">16</th><td><i>GNU General Public License for more details.</i></td></tr>
+<tr><th id="17">17</th><td><i></i></td></tr>
+<tr><th id="18">18</th><td><i>You should have received a copy of the GNU General Public License</i></td></tr>
+<tr><th id="19">19</th><td><i>along with this program; if not, write to the Free Software</i></td></tr>
+<tr><th id="20">20</th><td><i>Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.</i></td></tr>
+<tr><th id="21">21</th><td><i>--------------------------------------------------------------------------------*/</i></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="charset.h.html">"charset.h"</a></u></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="../../include/stdio.h.html">&lt;stdio.h&gt;</a></u></td></tr>
+<tr><th id="25">25</th><td><u>#include <a href="../../include/c++/7/stdlib.h.html">&lt;stdlib.h&gt;</a></u></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="../../include/string.h.html">&lt;string.h&gt;</a></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#<span data-ppcond="28">if</span> defined(<span class="macro" data-ref="_M/_WIN32">_WIN32</span>)</u></td></tr>
+<tr><th id="29">29</th><td>	<u>#include &lt;io.h&gt;</u></td></tr>
+<tr><th id="30">30</th><td>	<u>#include &lt;fcntl.h&gt;</u></td></tr>
+<tr><th id="31">31</th><td><u>#<span data-ppcond="28">endif</span></u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><u>#include <a href="vnconv.h.html">"vnconv.h"</a></u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><em>int</em> <a class="decl" href="#_Z19vnFileStreamConvertiiP8_IO_FILES0_" title='vnFileStreamConvert' data-ref="_Z19vnFileStreamConvertiiP8_IO_FILES0_">vnFileStreamConvert</a>(<em>int</em> <dfn class="local col1 decl" id="1inCharset" title='inCharset' data-type='int' data-ref="1inCharset">inCharset</dfn>, <em>int</em> <dfn class="local col2 decl" id="2outCharset" title='outCharset' data-type='int' data-ref="2outCharset">outCharset</dfn>, <a class="typedef" href="../../include/x86_64-linux-gnu/bits/types/FILE.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> * <dfn class="local col3 decl" id="3inf" title='inf' data-type='FILE *' data-ref="3inf">inf</dfn>, <a class="typedef" href="../../include/x86_64-linux-gnu/bits/types/FILE.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col4 decl" id="4outf" title='outf' data-type='FILE *' data-ref="4outf">outf</dfn>);</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><a class="macro" href="vnconv.h.html#37" title="" data-ref="_M/DllExport">DllExport</a> <em>int</em> <dfn class="decl def" id="_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream" title='genConvert' data-ref="_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream">genConvert</dfn>(<a class="type" href="charset.h.html#VnCharset" title='VnCharset' data-ref="VnCharset">VnCharset</a> &amp; <dfn class="local col5 decl" id="5incs" title='incs' data-type='VnCharset &amp;' data-ref="5incs">incs</dfn>, <a class="type" href="charset.h.html#VnCharset" title='VnCharset' data-ref="VnCharset">VnCharset</a> &amp; <dfn class="local col6 decl" id="6outcs" title='outcs' data-type='VnCharset &amp;' data-ref="6outcs">outcs</dfn>, <a class="type" href="byteio.h.html#ByteInStream" title='ByteInStream' data-ref="ByteInStream">ByteInStream</a> &amp; <dfn class="local col7 decl" id="7input" title='input' data-type='ByteInStream &amp;' data-ref="7input">input</dfn>, <a class="type" href="byteio.h.html#ByteOutStream" title='ByteOutStream' data-ref="ByteOutStream">ByteOutStream</a> &amp; <dfn class="local col8 decl" id="8output" title='output' data-type='ByteOutStream &amp;' data-ref="8output">output</dfn>)</td></tr>
+<tr><th id="38">38</th><td>{</td></tr>
+<tr><th id="39">39</th><td>	<a class="typedef" href="charset.h.html#StdVnChar" title='StdVnChar' data-type='uint32_t' data-ref="StdVnChar">StdVnChar</a> <dfn class="local col9 decl" id="9stdChar" title='stdChar' data-type='StdVnChar' data-ref="9stdChar">stdChar</dfn>;</td></tr>
+<tr><th id="40">40</th><td>	<em>int</em> <dfn class="local col0 decl" id="10bytesRead" title='bytesRead' data-type='int' data-ref="10bytesRead">bytesRead</dfn>, <dfn class="local col1 decl" id="11bytesWritten" title='bytesWritten' data-type='int' data-ref="11bytesWritten">bytesWritten</dfn>;</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td>	<a class="local col5 ref" href="#5incs" title='incs' data-ref="5incs">incs</a>.<a class="virtual ref" href="charset.h.html#_ZN9VnCharset10startInputEv" title='VnCharset::startInput' data-ref="_ZN9VnCharset10startInputEv">startInput</a>();</td></tr>
+<tr><th id="43">43</th><td>	<a class="local col6 ref" href="#6outcs" title='outcs' data-ref="6outcs">outcs</a>.<a class="virtual ref" href="charset.h.html#_ZN9VnCharset11startOutputEv" title='VnCharset::startOutput' data-ref="_ZN9VnCharset11startOutputEv">startOutput</a>();</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td>	<em>int</em> <dfn class="local col2 decl" id="12ret" title='ret' data-type='int' data-ref="12ret">ret</dfn> = <var>1</var>;</td></tr>
+<tr><th id="46">46</th><td>	<b>while</b> (!<a class="local col7 ref" href="#7input" title='input' data-ref="7input">input</a>.<a class="virtual ref" href="byteio.h.html#_ZN12ByteInStream3eosEv" title='ByteInStream::eos' data-ref="_ZN12ByteInStream3eosEv">eos</a>()) {</td></tr>
+<tr><th id="47">47</th><td>        <a class="local col9 ref" href="#9stdChar" title='stdChar' data-ref="9stdChar">stdChar</a> = <var>0</var>;</td></tr>
+<tr><th id="48">48</th><td>		<b>if</b> (<a class="local col5 ref" href="#5incs" title='incs' data-ref="5incs">incs</a>.<a class="virtual ref" href="charset.h.html#_ZN9VnCharset9nextInputER12ByteInStreamRjRi" title='VnCharset::nextInput' data-ref="_ZN9VnCharset9nextInputER12ByteInStreamRjRi">nextInput</a>(<span class='refarg'><a class="local col7 ref" href="#7input" title='input' data-ref="7input">input</a></span>, <span class='refarg'><a class="local col9 ref" href="#9stdChar" title='stdChar' data-ref="9stdChar">stdChar</a></span>, <span class='refarg'><a class="local col0 ref" href="#10bytesRead" title='bytesRead' data-ref="10bytesRead">bytesRead</a></span>)) {</td></tr>
+<tr><th id="49">49</th><td>			<b>if</b> (<a class="local col9 ref" href="#9stdChar" title='stdChar' data-ref="9stdChar">stdChar</a> != <a class="ref" href="charset.h.html#INVALID_STD_CHAR" title='INVALID_STD_CHAR' data-ref="INVALID_STD_CHAR">INVALID_STD_CHAR</a>) {</td></tr>
+<tr><th id="50">50</th><td>			  <b>if</b> (<a class="ref" href="charset.h.html#VnCharsetLibObj" title='VnCharsetLibObj' data-ref="VnCharsetLibObj">VnCharsetLibObj</a>.<a class="ref" href="charset.h.html#CVnCharsetLib::m_options" title='CVnCharsetLib::m_options' data-ref="CVnCharsetLib::m_options">m_options</a>.<a class="ref" href="vnconv.h.html#_VnConvOptions::toLower" title='_VnConvOptions::toLower' data-ref="_VnConvOptions::toLower">toLower</a>)</td></tr>
+<tr><th id="51">51</th><td>			    <a class="local col9 ref" href="#9stdChar" title='stdChar' data-ref="9stdChar">stdChar</a> = <a class="ref" href="charset.h.html#_Z12StdVnToLowerj" title='StdVnToLower' data-ref="_Z12StdVnToLowerj">StdVnToLower</a>(<a class="local col9 ref" href="#9stdChar" title='stdChar' data-ref="9stdChar">stdChar</a>);</td></tr>
+<tr><th id="52">52</th><td>			  <b>else</b> <b>if</b> (<a class="ref" href="charset.h.html#VnCharsetLibObj" title='VnCharsetLibObj' data-ref="VnCharsetLibObj">VnCharsetLibObj</a>.<a class="ref" href="charset.h.html#CVnCharsetLib::m_options" title='CVnCharsetLib::m_options' data-ref="CVnCharsetLib::m_options">m_options</a>.<a class="ref" href="vnconv.h.html#_VnConvOptions::toUpper" title='_VnConvOptions::toUpper' data-ref="_VnConvOptions::toUpper">toUpper</a>)</td></tr>
+<tr><th id="53">53</th><td>			    <a class="local col9 ref" href="#9stdChar" title='stdChar' data-ref="9stdChar">stdChar</a> = <a class="ref" href="charset.h.html#_Z12StdVnToUpperj" title='StdVnToUpper' data-ref="_Z12StdVnToUpperj">StdVnToUpper</a>(<a class="local col9 ref" href="#9stdChar" title='stdChar' data-ref="9stdChar">stdChar</a>);</td></tr>
+<tr><th id="54">54</th><td>			  <b>if</b> (<a class="ref" href="charset.h.html#VnCharsetLibObj" title='VnCharsetLibObj' data-ref="VnCharsetLibObj">VnCharsetLibObj</a>.<a class="ref" href="charset.h.html#CVnCharsetLib::m_options" title='CVnCharsetLib::m_options' data-ref="CVnCharsetLib::m_options">m_options</a>.<a class="ref" href="vnconv.h.html#_VnConvOptions::removeTone" title='_VnConvOptions::removeTone' data-ref="_VnConvOptions::removeTone">removeTone</a>)</td></tr>
+<tr><th id="55">55</th><td>			    <a class="local col9 ref" href="#9stdChar" title='stdChar' data-ref="9stdChar">stdChar</a> = <a class="ref" href="charset.h.html#_Z12StdVnGetRootj" title='StdVnGetRoot' data-ref="_Z12StdVnGetRootj">StdVnGetRoot</a>(<a class="local col9 ref" href="#9stdChar" title='stdChar' data-ref="9stdChar">stdChar</a>);</td></tr>
+<tr><th id="56">56</th><td>			  <a class="local col2 ref" href="#12ret" title='ret' data-ref="12ret">ret</a> = <a class="local col6 ref" href="#6outcs" title='outcs' data-ref="6outcs">outcs</a>.<a class="virtual ref" href="charset.h.html#_ZN9VnCharset7putCharER13ByteOutStreamjRi" title='VnCharset::putChar' data-ref="_ZN9VnCharset7putCharER13ByteOutStreamjRi">putChar</a>(<span class='refarg'><a class="local col8 ref" href="#8output" title='output' data-ref="8output">output</a></span>, <a class="local col9 ref" href="#9stdChar" title='stdChar' data-ref="9stdChar">stdChar</a>, <span class='refarg'><a class="local col1 ref" href="#11bytesWritten" title='bytesWritten' data-ref="11bytesWritten">bytesWritten</a></span>);</td></tr>
+<tr><th id="57">57</th><td>			}</td></tr>
+<tr><th id="58">58</th><td>		}</td></tr>
+<tr><th id="59">59</th><td>		<b>else</b> <b>break</b>;</td></tr>
+<tr><th id="60">60</th><td>	}</td></tr>
+<tr><th id="61">61</th><td>	<b>return</b> (<a class="local col2 ref" href="#12ret" title='ret' data-ref="12ret">ret</a>? <var>0</var> : <a class="enum" href="vnconv.h.html#VnConvError::VNCONV_OUT_OF_MEMORY" title='VnConvError::VNCONV_OUT_OF_MEMORY' data-ref="VnConvError::VNCONV_OUT_OF_MEMORY">VNCONV_OUT_OF_MEMORY</a>);</td></tr>
+<tr><th id="62">62</th><td>}</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><i>//----------------------------------------------</i></td></tr>
+<tr><th id="65">65</th><td><i>// Arguments:</i></td></tr>
+<tr><th id="66">66</th><td><i>//       inCharset: charset of input</i></td></tr>
+<tr><th id="67">67</th><td><i>//       outCharset: charset of output</i></td></tr>
+<tr><th id="68">68</th><td><i>//       input: input data</i></td></tr>
+<tr><th id="69">69</th><td><i>//       output: output data</i></td></tr>
+<tr><th id="70">70</th><td><i>//       inLen: [in]  size of input. if inLen = -1, input data is null-terminated.</i></td></tr>
+<tr><th id="71">71</th><td><i>//              [out] if input inLen != -1, output iLen is the numbers of byte left in input.</i></td></tr>
+<tr><th id="72">72</th><td><i>//       maxOutLen: [in] size of output.</i></td></tr>
+<tr><th id="73">73</th><td><i>//                  [out] number of bytes output, if enough memory</i></td></tr>
+<tr><th id="74">74</th><td><i>//                        number of bytes needed for output, if not enough memory</i></td></tr>
+<tr><th id="75">75</th><td><i>// Returns:  0 if successful</i></td></tr>
+<tr><th id="76">76</th><td><i>//           error code: if failed</i></td></tr>
+<tr><th id="77">77</th><td><i>//----------------------------------------------</i></td></tr>
+<tr><th id="78">78</th><td><i>//int VnConvert(int inCharset, int outCharset, UKBYTE *input, UKBYTE *output, int &amp; inLen, int &amp; maxOutLen)</i></td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td><a class="macro" href="vnconv.h.html#37" title="" data-ref="_M/DllExport">DllExport</a> <em>int</em> <dfn class="decl def" id="VnConvert" title='VnConvert' data-ref="VnConvert">VnConvert</dfn>(<em>int</em> <dfn class="local col3 decl" id="13inCharset" title='inCharset' data-type='int' data-ref="13inCharset">inCharset</dfn>, <em>int</em> <dfn class="local col4 decl" id="14outCharset" title='outCharset' data-type='int' data-ref="14outCharset">outCharset</dfn>, <a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> *<dfn class="local col5 decl" id="15input" title='input' data-type='UKBYTE *' data-ref="15input">input</dfn>, <a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> *<dfn class="local col6 decl" id="16output" title='output' data-type='UKBYTE *' data-ref="16output">output</dfn>, </td></tr>
+<tr><th id="81">81</th><td>	      <em>int</em> * <dfn class="local col7 decl" id="17pInLen" title='pInLen' data-type='int *' data-ref="17pInLen">pInLen</dfn>, <em>int</em> * <dfn class="local col8 decl" id="18pMaxOutLen" title='pMaxOutLen' data-type='int *' data-ref="18pMaxOutLen">pMaxOutLen</dfn>)</td></tr>
+<tr><th id="82">82</th><td>{</td></tr>
+<tr><th id="83">83</th><td>	<em>int</em> <dfn class="local col9 decl" id="19inLen" title='inLen' data-type='int' data-ref="19inLen">inLen</dfn>, <dfn class="local col0 decl" id="20maxOutLen" title='maxOutLen' data-type='int' data-ref="20maxOutLen">maxOutLen</dfn>;</td></tr>
+<tr><th id="84">84</th><td>	<em>int</em> <dfn class="local col1 decl" id="21ret" title='ret' data-type='int' data-ref="21ret">ret</dfn> = -<var>1</var>;</td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td>	<a class="local col9 ref" href="#19inLen" title='inLen' data-ref="19inLen">inLen</a> = *<a class="local col7 ref" href="#17pInLen" title='pInLen' data-ref="17pInLen">pInLen</a>;</td></tr>
+<tr><th id="87">87</th><td>	<a class="local col0 ref" href="#20maxOutLen" title='maxOutLen' data-ref="20maxOutLen">maxOutLen</a> = *<a class="local col8 ref" href="#18pMaxOutLen" title='pMaxOutLen' data-ref="18pMaxOutLen">pMaxOutLen</a>;</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td>	<b>if</b> (<a class="local col9 ref" href="#19inLen" title='inLen' data-ref="19inLen">inLen</a> != -<var>1</var> &amp;&amp; <a class="local col9 ref" href="#19inLen" title='inLen' data-ref="19inLen">inLen</a> &lt; <var>0</var>) <i>// invalid inLen</i></td></tr>
+<tr><th id="90">90</th><td>		<b>return</b> <a class="local col1 ref" href="#21ret" title='ret' data-ref="21ret">ret</a>;</td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td>	<a class="type" href="charset.h.html#VnCharset" title='VnCharset' data-ref="VnCharset">VnCharset</a> *<dfn class="local col2 decl" id="22pInCharset" title='pInCharset' data-type='VnCharset *' data-ref="22pInCharset">pInCharset</dfn> = <a class="ref" href="charset.h.html#VnCharsetLibObj" title='VnCharsetLibObj' data-ref="VnCharsetLibObj">VnCharsetLibObj</a>.<a class="ref" href="charset.h.html#_ZN13CVnCharsetLib12getVnCharsetEi" title='CVnCharsetLib::getVnCharset' data-ref="_ZN13CVnCharsetLib12getVnCharsetEi">getVnCharset</a>(<a class="local col3 ref" href="#13inCharset" title='inCharset' data-ref="13inCharset">inCharset</a>);</td></tr>
+<tr><th id="93">93</th><td>	<a class="type" href="charset.h.html#VnCharset" title='VnCharset' data-ref="VnCharset">VnCharset</a> *<dfn class="local col3 decl" id="23pOutCharset" title='pOutCharset' data-type='VnCharset *' data-ref="23pOutCharset">pOutCharset</dfn> = <a class="ref" href="charset.h.html#VnCharsetLibObj" title='VnCharsetLibObj' data-ref="VnCharsetLibObj">VnCharsetLibObj</a>.<a class="ref" href="charset.h.html#_ZN13CVnCharsetLib12getVnCharsetEi" title='CVnCharsetLib::getVnCharset' data-ref="_ZN13CVnCharsetLib12getVnCharsetEi">getVnCharset</a>(<a class="local col4 ref" href="#14outCharset" title='outCharset' data-ref="14outCharset">outCharset</a>);</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td>	<b>if</b> (!<a class="local col2 ref" href="#22pInCharset" title='pInCharset' data-ref="22pInCharset">pInCharset</a> || !<a class="local col3 ref" href="#23pOutCharset" title='pOutCharset' data-ref="23pOutCharset">pOutCharset</a>)</td></tr>
+<tr><th id="96">96</th><td>		<b>return</b> <a class="enum" href="vnconv.h.html#VnConvError::VNCONV_INVALID_CHARSET" title='VnConvError::VNCONV_INVALID_CHARSET' data-ref="VnConvError::VNCONV_INVALID_CHARSET">VNCONV_INVALID_CHARSET</a>;</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td>	<a class="type" href="byteio.h.html#StringBIStream" title='StringBIStream' data-ref="StringBIStream">StringBIStream</a> <dfn class="local col4 decl" id="24is" title='is' data-type='StringBIStream' data-ref="24is">is</dfn><a class="ref" href="byteio.h.html#_ZN14StringBIStreamC1EPhii" title='StringBIStream::StringBIStream' data-ref="_ZN14StringBIStreamC1EPhii">(</a><a class="local col5 ref" href="#15input" title='input' data-ref="15input">input</a>, <a class="local col9 ref" href="#19inLen" title='inLen' data-ref="19inLen">inLen</a>, <a class="local col2 ref" href="#22pInCharset" title='pInCharset' data-ref="22pInCharset">pInCharset</a>-&gt;<a class="virtual ref" href="charset.h.html#_ZN9VnCharset11elementSizeEv" title='VnCharset::elementSize' data-ref="_ZN9VnCharset11elementSizeEv">elementSize</a>());</td></tr>
+<tr><th id="99">99</th><td>	<a class="type" href="byteio.h.html#StringBOStream" title='StringBOStream' data-ref="StringBOStream">StringBOStream</a> <dfn class="local col5 decl" id="25os" title='os' data-type='StringBOStream' data-ref="25os">os</dfn><a class="ref" href="byteio.h.html#_ZN14StringBOStreamC1EPhi" title='StringBOStream::StringBOStream' data-ref="_ZN14StringBOStreamC1EPhi">(</a><a class="local col6 ref" href="#16output" title='output' data-ref="16output">output</a>, <a class="local col0 ref" href="#20maxOutLen" title='maxOutLen' data-ref="20maxOutLen">maxOutLen</a>);</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td>	<a class="local col1 ref" href="#21ret" title='ret' data-ref="21ret">ret</a> = <a class="ref" href="#_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream" title='genConvert' data-ref="_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream">genConvert</a>(<span class='refarg'>*<a class="local col2 ref" href="#22pInCharset" title='pInCharset' data-ref="22pInCharset">pInCharset</a></span>, <span class='refarg'>*<a class="local col3 ref" href="#23pOutCharset" title='pOutCharset' data-ref="23pOutCharset">pOutCharset</a></span>, <span class='refarg'><a class="local col4 ref" href="#24is" title='is' data-ref="24is">is</a></span>, <span class='refarg'><a class="local col5 ref" href="#25os" title='os' data-ref="25os">os</a></span>);</td></tr>
+<tr><th id="102">102</th><td>	*<a class="local col8 ref" href="#18pMaxOutLen" title='pMaxOutLen' data-ref="18pMaxOutLen">pMaxOutLen</a> = <a class="local col5 ref" href="#25os" title='os' data-ref="25os">os</a>.<a class="ref" href="byteio.h.html#_ZN14StringBOStream11getOutBytesEv" title='StringBOStream::getOutBytes' data-ref="_ZN14StringBOStream11getOutBytesEv">getOutBytes</a>();</td></tr>
+<tr><th id="103">103</th><td>	*<a class="local col7 ref" href="#17pInLen" title='pInLen' data-ref="17pInLen">pInLen</a> = <a class="local col4 ref" href="#24is" title='is' data-ref="24is">is</a>.<a class="ref" href="byteio.h.html#_ZN14StringBIStream4leftEv" title='StringBIStream::left' data-ref="_ZN14StringBIStream4leftEv">left</a>();</td></tr>
+<tr><th id="104">104</th><td>	<b>return</b> <a class="local col1 ref" href="#21ret" title='ret' data-ref="21ret">ret</a>;</td></tr>
+<tr><th id="105">105</th><td>}</td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><i>//---------------------------------------</i></td></tr>
+<tr><th id="108">108</th><td><i>// Arguments:</i></td></tr>
+<tr><th id="109">109</th><td><i>//   inFile: input file name. NULL if STDIN is used</i></td></tr>
+<tr><th id="110">110</th><td><i>//   outFile: output file name, NULL if STDOUT is used</i></td></tr>
+<tr><th id="111">111</th><td><i>// Returns:</i></td></tr>
+<tr><th id="112">112</th><td><i>//     0: successful</i></td></tr>
+<tr><th id="113">113</th><td><i>//     errCode: if failed</i></td></tr>
+<tr><th id="114">114</th><td><i>//---------------------------------------</i></td></tr>
+<tr><th id="115">115</th><td><a class="macro" href="vnconv.h.html#37" title="" data-ref="_M/DllExport">DllExport</a> <em>int</em> <dfn class="decl def" id="VnFileConvert" title='VnFileConvert' data-ref="VnFileConvert">VnFileConvert</dfn>(<em>int</em> <dfn class="local col6 decl" id="26inCharset" title='inCharset' data-type='int' data-ref="26inCharset">inCharset</dfn>, <em>int</em> <dfn class="local col7 decl" id="27outCharset" title='outCharset' data-type='int' data-ref="27outCharset">outCharset</dfn>, <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="28inFile" title='inFile' data-type='const char *' data-ref="28inFile">inFile</dfn>, <em>const</em> <em>char</em> *<dfn class="local col9 decl" id="29outFile" title='outFile' data-type='const char *' data-ref="29outFile">outFile</dfn>)</td></tr>
+<tr><th id="116">116</th><td>{</td></tr>
+<tr><th id="117">117</th><td>	<a class="typedef" href="../../include/x86_64-linux-gnu/bits/types/FILE.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col0 decl" id="30inf" title='inf' data-type='FILE *' data-ref="30inf">inf</dfn> = <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="118">118</th><td>	<a class="typedef" href="../../include/x86_64-linux-gnu/bits/types/FILE.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col1 decl" id="31outf" title='outf' data-type='FILE *' data-ref="31outf">outf</dfn> = <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="119">119</th><td>	<em>int</em> <dfn class="local col2 decl" id="32ret" title='ret' data-type='int' data-ref="32ret">ret</dfn> = <var>0</var>;</td></tr>
+<tr><th id="120">120</th><td>	<em>char</em> <dfn class="local col3 decl" id="33tmpName" title='tmpName' data-type='char [32]' data-ref="33tmpName">tmpName</dfn>[<var>32</var>];</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td>	<b>if</b> (<a class="local col8 ref" href="#28inFile" title='inFile' data-ref="28inFile">inFile</a> == <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="123">123</th><td>		<a class="local col0 ref" href="#30inf" title='inf' data-ref="30inf">inf</a> = <a class="macro" href="../../include/stdio.h.html#139" title="stdin" data-ref="_M/stdin">stdin</a>;</td></tr>
+<tr><th id="124">124</th><td><u>#<span data-ppcond="124">if</span> defined(<span class="macro" data-ref="_M/_WIN32">_WIN32</span>)</u></td></tr>
+<tr><th id="125">125</th><td>		_setmode( _fileno(stdin), _O_BINARY);</td></tr>
+<tr><th id="126">126</th><td><u>#<span data-ppcond="124">endif</span></u></td></tr>
+<tr><th id="127">127</th><td>	}</td></tr>
+<tr><th id="128">128</th><td>	<b>else</b> {</td></tr>
+<tr><th id="129">129</th><td>		<a class="local col0 ref" href="#30inf" title='inf' data-ref="30inf">inf</a> = <a class="ref" href="../../include/stdio.h.html#243" title='fopen' data-ref="fopen64">fopen</a>(<a class="local col8 ref" href="#28inFile" title='inFile' data-ref="28inFile">inFile</a>, <q>"rb"</q>);</td></tr>
+<tr><th id="130">130</th><td>		<b>if</b> (<a class="local col0 ref" href="#30inf" title='inf' data-ref="30inf">inf</a> == <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="131">131</th><td>			<a class="local col2 ref" href="#32ret" title='ret' data-ref="32ret">ret</a> = <a class="enum" href="vnconv.h.html#VnConvError::VNCONV_ERR_INPUT_FILE" title='VnConvError::VNCONV_ERR_INPUT_FILE' data-ref="VnConvError::VNCONV_ERR_INPUT_FILE">VNCONV_ERR_INPUT_FILE</a>;</td></tr>
+<tr><th id="132">132</th><td>			<b>goto</b> <a class="lbl" href="#34end" data-ref="34end">end</a>;</td></tr>
+<tr><th id="133">133</th><td>		}</td></tr>
+<tr><th id="134">134</th><td>	}</td></tr>
+<tr><th id="135">135</th><td></td></tr>
+<tr><th id="136">136</th><td>	<b>if</b> (<a class="local col9 ref" href="#29outFile" title='outFile' data-ref="29outFile">outFile</a> == <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>)</td></tr>
+<tr><th id="137">137</th><td>		<a class="local col1 ref" href="#31outf" title='outf' data-ref="31outf">outf</a> = <a class="macro" href="../../include/stdio.h.html#140" title="stdout" data-ref="_M/stdout">stdout</a>;</td></tr>
+<tr><th id="138">138</th><td>	<b>else</b> {</td></tr>
+<tr><th id="139">139</th><td>		<i>// setup temporary output file (because real output file may be the same as input file</i></td></tr>
+<tr><th id="140">140</th><td>		<em>char</em> <dfn class="local col5 decl" id="35outDir" title='outDir' data-type='char [256]' data-ref="35outDir">outDir</dfn>[<var>256</var>];</td></tr>
+<tr><th id="141">141</th><td>		<a class="ref" href="../../include/string.h.html#strcpy" title='strcpy' data-ref="strcpy">strcpy</a>(<a class="local col5 ref" href="#35outDir" title='outDir' data-ref="35outDir">outDir</a>, <a class="local col9 ref" href="#29outFile" title='outFile' data-ref="29outFile">outFile</a>);</td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td><u>#<span data-ppcond="143">if</span> defined(<span class="macro" data-ref="_M/_WIN32">_WIN32</span>)</u></td></tr>
+<tr><th id="144">144</th><td>		<em>char</em> *p = strrchr(outDir, <kbd>'\\'</kbd>);</td></tr>
+<tr><th id="145">145</th><td><u>#<span data-ppcond="143">else</span></u></td></tr>
+<tr><th id="146">146</th><td>		<em>char</em> *<dfn class="local col6 decl" id="36p" title='p' data-type='char *' data-ref="36p">p</dfn> = <a class="ref" href="../../include/string.h.html#strrchr" title='strrchr' data-ref="strrchr">strrchr</a>(<a class="local col5 ref" href="#35outDir" title='outDir' data-ref="35outDir">outDir</a>, <kbd>'/'</kbd>);</td></tr>
+<tr><th id="147">147</th><td><u>#<span data-ppcond="143">endif</span></u></td></tr>
+<tr><th id="148">148</th><td></td></tr>
+<tr><th id="149">149</th><td>		<b>if</b> (<a class="local col6 ref" href="#36p" title='p' data-ref="36p">p</a> == <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>)</td></tr>
+<tr><th id="150">150</th><td>			<a class="local col5 ref" href="#35outDir" title='outDir' data-ref="35outDir">outDir</a>[<var>0</var>] = <var>0</var>;</td></tr>
+<tr><th id="151">151</th><td>		<b>else</b></td></tr>
+<tr><th id="152">152</th><td>			*<a class="local col6 ref" href="#36p" title='p' data-ref="36p">p</a> = <var>0</var>;</td></tr>
+<tr><th id="153">153</th><td></td></tr>
+<tr><th id="154">154</th><td>		<a class="ref" href="../../include/string.h.html#strcpy" title='strcpy' data-ref="strcpy">strcpy</a>(<a class="local col3 ref" href="#33tmpName" title='tmpName' data-ref="33tmpName">tmpName</a>, <a class="local col5 ref" href="#35outDir" title='outDir' data-ref="35outDir">outDir</a>);</td></tr>
+<tr><th id="155">155</th><td>        <a class="ref" href="../../include/string.h.html#strcat" title='strcat' data-ref="strcat">strcat</a>(<a class="local col3 ref" href="#33tmpName" title='tmpName' data-ref="33tmpName">tmpName</a>, <q>"XXXXXX"</q>);</td></tr>
+<tr><th id="156">156</th><td></td></tr>
+<tr><th id="157">157</th><td>		<b>if</b> (<a class="ref" href="../../include/stdlib.h.html#688" title='mkstemp' data-ref="mkstemp64">mkstemp</a>(<a class="local col3 ref" href="#33tmpName" title='tmpName' data-ref="33tmpName">tmpName</a>) == -<var>1</var>) {</td></tr>
+<tr><th id="158">158</th><td>			<a class="ref" href="../../include/stdio.h.html#fclose" title='fclose' data-ref="fclose">fclose</a>(<a class="local col0 ref" href="#30inf" title='inf' data-ref="30inf">inf</a>);</td></tr>
+<tr><th id="159">159</th><td>			<a class="local col2 ref" href="#32ret" title='ret' data-ref="32ret">ret</a> = <a class="enum" href="vnconv.h.html#VnConvError::VNCONV_ERR_OUTPUT_FILE" title='VnConvError::VNCONV_ERR_OUTPUT_FILE' data-ref="VnConvError::VNCONV_ERR_OUTPUT_FILE">VNCONV_ERR_OUTPUT_FILE</a>;</td></tr>
+<tr><th id="160">160</th><td>			<b>goto</b> <a class="lbl" href="#34end" data-ref="34end">end</a>;</td></tr>
+<tr><th id="161">161</th><td>		}</td></tr>
+<tr><th id="162">162</th><td>		<a class="local col1 ref" href="#31outf" title='outf' data-ref="31outf">outf</a> = <a class="ref" href="../../include/stdio.h.html#243" title='fopen' data-ref="fopen64">fopen</a>(<a class="local col3 ref" href="#33tmpName" title='tmpName' data-ref="33tmpName">tmpName</a>, <q>"wb"</q>);</td></tr>
+<tr><th id="163">163</th><td></td></tr>
+<tr><th id="164">164</th><td>		<b>if</b> (<a class="local col1 ref" href="#31outf" title='outf' data-ref="31outf">outf</a> == <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="165">165</th><td>			<a class="ref" href="../../include/stdio.h.html#fclose" title='fclose' data-ref="fclose">fclose</a>(<a class="local col0 ref" href="#30inf" title='inf' data-ref="30inf">inf</a>);</td></tr>
+<tr><th id="166">166</th><td>			<a class="local col2 ref" href="#32ret" title='ret' data-ref="32ret">ret</a> = <a class="enum" href="vnconv.h.html#VnConvError::VNCONV_ERR_OUTPUT_FILE" title='VnConvError::VNCONV_ERR_OUTPUT_FILE' data-ref="VnConvError::VNCONV_ERR_OUTPUT_FILE">VNCONV_ERR_OUTPUT_FILE</a>; </td></tr>
+<tr><th id="167">167</th><td>			<b>goto</b> <a class="lbl" href="#34end" data-ref="34end">end</a>;</td></tr>
+<tr><th id="168">168</th><td>		}</td></tr>
+<tr><th id="169">169</th><td>	}</td></tr>
+<tr><th id="170">170</th><td></td></tr>
+<tr><th id="171">171</th><td></td></tr>
+<tr><th id="172">172</th><td>	<a class="local col2 ref" href="#32ret" title='ret' data-ref="32ret">ret</a> = <a class="ref" href="#_Z19vnFileStreamConvertiiP8_IO_FILES0_" title='vnFileStreamConvert' data-ref="_Z19vnFileStreamConvertiiP8_IO_FILES0_">vnFileStreamConvert</a>(<a class="local col6 ref" href="#26inCharset" title='inCharset' data-ref="26inCharset">inCharset</a>, <a class="local col7 ref" href="#27outCharset" title='outCharset' data-ref="27outCharset">outCharset</a>, <a class="local col0 ref" href="#30inf" title='inf' data-ref="30inf">inf</a>, <a class="local col1 ref" href="#31outf" title='outf' data-ref="31outf">outf</a>);</td></tr>
+<tr><th id="173">173</th><td>	<b>if</b> (<a class="local col0 ref" href="#30inf" title='inf' data-ref="30inf">inf</a> != <a class="macro" href="../../include/stdio.h.html#139" title="stdin" data-ref="_M/stdin">stdin</a>)</td></tr>
+<tr><th id="174">174</th><td>		<a class="ref" href="../../include/stdio.h.html#fclose" title='fclose' data-ref="fclose">fclose</a>(<a class="local col0 ref" href="#30inf" title='inf' data-ref="30inf">inf</a>);</td></tr>
+<tr><th id="175">175</th><td>	<b>if</b> (<a class="local col1 ref" href="#31outf" title='outf' data-ref="31outf">outf</a> != <a class="macro" href="../../include/stdio.h.html#140" title="stdout" data-ref="_M/stdout">stdout</a>) {</td></tr>
+<tr><th id="176">176</th><td>		<a class="ref" href="../../include/stdio.h.html#fclose" title='fclose' data-ref="fclose">fclose</a>(<a class="local col1 ref" href="#31outf" title='outf' data-ref="31outf">outf</a>);</td></tr>
+<tr><th id="177">177</th><td></td></tr>
+<tr><th id="178">178</th><td>		<i>// delete output file if exisits</i></td></tr>
+<tr><th id="179">179</th><td>		<b>if</b> (<a class="local col2 ref" href="#32ret" title='ret' data-ref="32ret">ret</a> == <var>0</var>) {</td></tr>
+<tr><th id="180">180</th><td>			<a class="ref" href="../../include/stdio.h.html#remove" title='remove' data-ref="remove">remove</a>(<a class="local col9 ref" href="#29outFile" title='outFile' data-ref="29outFile">outFile</a>);</td></tr>
+<tr><th id="181">181</th><td><u>#<span data-ppcond="181">if</span> !defined(<span class="macro" data-ref="_M/_WIN32">_WIN32</span>)</u></td></tr>
+<tr><th id="182">182</th><td>			<em>char</em> <dfn class="local col7 decl" id="37cmd" title='cmd' data-type='char [256]' data-ref="37cmd">cmd</dfn>[<var>256</var>];</td></tr>
+<tr><th id="183">183</th><td>			<a class="ref" href="../../include/stdio.h.html#sprintf" title='sprintf' data-ref="sprintf">sprintf</a>(<a class="local col7 ref" href="#37cmd" title='cmd' data-ref="37cmd">cmd</a>, <q>"mv %s %s"</q>, <a class="local col3 ref" href="#33tmpName" title='tmpName' data-ref="33tmpName">tmpName</a>, <a class="local col9 ref" href="#29outFile" title='outFile' data-ref="29outFile">outFile</a>);</td></tr>
+<tr><th id="184">184</th><td>			<a class="local col7 ref" href="#37cmd" title='cmd' data-ref="37cmd">cmd</a>[<var>0</var>] = <a class="ref" href="../../include/stdlib.h.html#system" title='system' data-ref="system">system</a>(<a class="local col7 ref" href="#37cmd" title='cmd' data-ref="37cmd">cmd</a>);</td></tr>
+<tr><th id="185">185</th><td><u>#<span data-ppcond="181">else</span></u></td></tr>
+<tr><th id="186">186</th><td>			<b>if</b> (rename(tmpName, outFile) != <var>0</var>) {</td></tr>
+<tr><th id="187">187</th><td>				remove(tmpName);</td></tr>
+<tr><th id="188">188</th><td>				ret = VNCONV_ERR_OUTPUT_FILE;</td></tr>
+<tr><th id="189">189</th><td>				<b>goto</b> end;</td></tr>
+<tr><th id="190">190</th><td>			}</td></tr>
+<tr><th id="191">191</th><td><u>#<span data-ppcond="181">endif</span></u></td></tr>
+<tr><th id="192">192</th><td>		}</td></tr>
+<tr><th id="193">193</th><td>		<b>else</b> </td></tr>
+<tr><th id="194">194</th><td>			<a class="ref" href="../../include/stdio.h.html#remove" title='remove' data-ref="remove">remove</a>(<a class="local col3 ref" href="#33tmpName" title='tmpName' data-ref="33tmpName">tmpName</a>);</td></tr>
+<tr><th id="195">195</th><td>	}</td></tr>
+<tr><th id="196">196</th><td></td></tr>
+<tr><th id="197">197</th><td><dfn class="lbl" id="34end" data-ref="34end">end</dfn>:</td></tr>
+<tr><th id="198">198</th><td><u>#<span data-ppcond="198">if</span> defined(<span class="macro" data-ref="_M/_WIN32">_WIN32</span>)</u></td></tr>
+<tr><th id="199">199</th><td>	<b>if</b> (inf == stdin) {</td></tr>
+<tr><th id="200">200</th><td>		_setmode( _fileno(stdin), _O_BINARY);</td></tr>
+<tr><th id="201">201</th><td>	}</td></tr>
+<tr><th id="202">202</th><td><u>#<span data-ppcond="198">endif</span></u></td></tr>
+<tr><th id="203">203</th><td>	<b>return</b> <a class="local col2 ref" href="#32ret" title='ret' data-ref="32ret">ret</a>;</td></tr>
+<tr><th id="204">204</th><td>}</td></tr>
+<tr><th id="205">205</th><td></td></tr>
+<tr><th id="206">206</th><td><i>//------------------------------------------------</i></td></tr>
+<tr><th id="207">207</th><td><i>// Returns:</i></td></tr>
+<tr><th id="208">208</th><td><i>//     0: successful</i></td></tr>
+<tr><th id="209">209</th><td><i>//     errCode: if failed</i></td></tr>
+<tr><th id="210">210</th><td><i>//---------------------------------------</i></td></tr>
+<tr><th id="211">211</th><td><em>int</em> <dfn class="decl def" id="_Z19vnFileStreamConvertiiP8_IO_FILES0_" title='vnFileStreamConvert' data-ref="_Z19vnFileStreamConvertiiP8_IO_FILES0_">vnFileStreamConvert</dfn>(<em>int</em> <dfn class="local col8 decl" id="38inCharset" title='inCharset' data-type='int' data-ref="38inCharset">inCharset</dfn>, <em>int</em> <dfn class="local col9 decl" id="39outCharset" title='outCharset' data-type='int' data-ref="39outCharset">outCharset</dfn>, <a class="typedef" href="../../include/x86_64-linux-gnu/bits/types/FILE.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> * <dfn class="local col0 decl" id="40inf" title='inf' data-type='FILE *' data-ref="40inf">inf</dfn>, <a class="typedef" href="../../include/x86_64-linux-gnu/bits/types/FILE.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col1 decl" id="41outf" title='outf' data-type='FILE *' data-ref="41outf">outf</dfn>)</td></tr>
+<tr><th id="212">212</th><td>{</td></tr>
+<tr><th id="213">213</th><td>	<a class="type" href="charset.h.html#VnCharset" title='VnCharset' data-ref="VnCharset">VnCharset</a> *<dfn class="local col2 decl" id="42pInCharset" title='pInCharset' data-type='VnCharset *' data-ref="42pInCharset">pInCharset</dfn> = <a class="ref" href="charset.h.html#VnCharsetLibObj" title='VnCharsetLibObj' data-ref="VnCharsetLibObj">VnCharsetLibObj</a>.<a class="ref" href="charset.h.html#_ZN13CVnCharsetLib12getVnCharsetEi" title='CVnCharsetLib::getVnCharset' data-ref="_ZN13CVnCharsetLib12getVnCharsetEi">getVnCharset</a>(<a class="local col8 ref" href="#38inCharset" title='inCharset' data-ref="38inCharset">inCharset</a>);</td></tr>
+<tr><th id="214">214</th><td>	<a class="type" href="charset.h.html#VnCharset" title='VnCharset' data-ref="VnCharset">VnCharset</a> *<dfn class="local col3 decl" id="43pOutCharset" title='pOutCharset' data-type='VnCharset *' data-ref="43pOutCharset">pOutCharset</dfn> = <a class="ref" href="charset.h.html#VnCharsetLibObj" title='VnCharsetLibObj' data-ref="VnCharsetLibObj">VnCharsetLibObj</a>.<a class="ref" href="charset.h.html#_ZN13CVnCharsetLib12getVnCharsetEi" title='CVnCharsetLib::getVnCharset' data-ref="_ZN13CVnCharsetLib12getVnCharsetEi">getVnCharset</a>(<a class="local col9 ref" href="#39outCharset" title='outCharset' data-ref="39outCharset">outCharset</a>);</td></tr>
+<tr><th id="215">215</th><td></td></tr>
+<tr><th id="216">216</th><td>	<b>if</b> (!<a class="local col2 ref" href="#42pInCharset" title='pInCharset' data-ref="42pInCharset">pInCharset</a> || !<a class="local col3 ref" href="#43pOutCharset" title='pOutCharset' data-ref="43pOutCharset">pOutCharset</a>)</td></tr>
+<tr><th id="217">217</th><td>		<b>return</b> <a class="enum" href="vnconv.h.html#VnConvError::VNCONV_INVALID_CHARSET" title='VnConvError::VNCONV_INVALID_CHARSET' data-ref="VnConvError::VNCONV_INVALID_CHARSET">VNCONV_INVALID_CHARSET</a>;</td></tr>
+<tr><th id="218">218</th><td></td></tr>
+<tr><th id="219">219</th><td>	<b>if</b> (<a class="local col9 ref" href="#39outCharset" title='outCharset' data-ref="39outCharset">outCharset</a> == <a class="macro" href="vnconv.h.html#41" title="0" data-ref="_M/CONV_CHARSET_UNICODE">CONV_CHARSET_UNICODE</a>) {</td></tr>
+<tr><th id="220">220</th><td>		<a class="typedef" href="byteio.h.html#UKWORD" title='UKWORD' data-type='uint16_t' data-ref="UKWORD">UKWORD</a> <dfn class="local col4 decl" id="44sign" title='sign' data-type='UKWORD' data-ref="44sign">sign</dfn> = <var>0xFEFF</var>;</td></tr>
+<tr><th id="221">221</th><td>		<a class="ref" href="../../include/stdio.h.html#fwrite" title='fwrite' data-ref="fwrite">fwrite</a>(&amp;<a class="local col4 ref" href="#44sign" title='sign' data-ref="44sign">sign</a>, <b>sizeof</b>(<a class="typedef" href="byteio.h.html#UKWORD" title='UKWORD' data-type='uint16_t' data-ref="UKWORD">UKWORD</a>), <var>1</var>, <a class="local col1 ref" href="#41outf" title='outf' data-ref="41outf">outf</a>);</td></tr>
+<tr><th id="222">222</th><td>	}</td></tr>
+<tr><th id="223">223</th><td></td></tr>
+<tr><th id="224">224</th><td>	<a class="type" href="byteio.h.html#FileBIStream" title='FileBIStream' data-ref="FileBIStream">FileBIStream</a> <a class="ref fake" href="byteio.h.html#_ZN12FileBIStreamC1EiPc" title='FileBIStream::FileBIStream' data-ref="_ZN12FileBIStreamC1EiPc"></a><dfn class="local col5 decl" id="45is" title='is' data-type='FileBIStream' data-ref="45is">is</dfn>;</td></tr>
+<tr><th id="225">225</th><td>	<a class="type" href="byteio.h.html#FileBOStream" title='FileBOStream' data-ref="FileBOStream">FileBOStream</a> <a class="ref fake" href="byteio.h.html#_ZN12FileBOStreamC1EiPc" title='FileBOStream::FileBOStream' data-ref="_ZN12FileBOStreamC1EiPc"></a><dfn class="local col6 decl" id="46os" title='os' data-type='FileBOStream' data-ref="46os">os</dfn>;</td></tr>
+<tr><th id="226">226</th><td></td></tr>
+<tr><th id="227">227</th><td>	<a class="local col5 ref" href="#45is" title='is' data-ref="45is">is</a>.<a class="ref" href="byteio.h.html#_ZN12FileBIStream6attachEP8_IO_FILE" title='FileBIStream::attach' data-ref="_ZN12FileBIStream6attachEP8_IO_FILE">attach</a>(<a class="local col0 ref" href="#40inf" title='inf' data-ref="40inf">inf</a>);</td></tr>
+<tr><th id="228">228</th><td>	<a class="local col6 ref" href="#46os" title='os' data-ref="46os">os</a>.<a class="ref" href="byteio.h.html#_ZN12FileBOStream6attachEP8_IO_FILE" title='FileBOStream::attach' data-ref="_ZN12FileBOStream6attachEP8_IO_FILE">attach</a>(<a class="local col1 ref" href="#41outf" title='outf' data-ref="41outf">outf</a>);</td></tr>
+<tr><th id="229">229</th><td></td></tr>
+<tr><th id="230">230</th><td>	<b>return</b> <a class="ref" href="#_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream" title='genConvert' data-ref="_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream">genConvert</a>(<span class='refarg'>*<a class="local col2 ref" href="#42pInCharset" title='pInCharset' data-ref="42pInCharset">pInCharset</a></span>, <span class='refarg'>*<a class="local col3 ref" href="#43pOutCharset" title='pOutCharset' data-ref="43pOutCharset">pOutCharset</a></span>, <span class='refarg'><a class="local col5 ref" href="#45is" title='is' data-ref="45is">is</a></span>, <span class='refarg'><a class="local col6 ref" href="#46os" title='os' data-ref="46os">os</a></span>);</td></tr>
+<tr><th id="231">231</th><td>}</td></tr>
+<tr><th id="232">232</th><td></td></tr>
+<tr><th id="233">233</th><td><em>const</em> <em>char</em> *<dfn class="decl def" id="ErrTable" title='ErrTable' data-ref="ErrTable">ErrTable</dfn>[<a class="enum" href="vnconv.h.html#VnConvError::VNCONV_LAST_ERROR" title='VnConvError::VNCONV_LAST_ERROR' data-ref="VnConvError::VNCONV_LAST_ERROR">VNCONV_LAST_ERROR</a>] = </td></tr>
+<tr><th id="234">234</th><td>{<q>"No error"</q>,</td></tr>
+<tr><th id="235">235</th><td> <q>"Unknown error"</q>,</td></tr>
+<tr><th id="236">236</th><td> <q>"Invalid charset"</q>,</td></tr>
+<tr><th id="237">237</th><td> <q>"Error opening input file"</q>,</td></tr>
+<tr><th id="238">238</th><td> <q>"Error opening output file"</q>,</td></tr>
+<tr><th id="239">239</th><td> <q>"Error writing to output stream"</q>,</td></tr>
+<tr><th id="240">240</th><td> <q>"Not enough memory"</q>,</td></tr>
+<tr><th id="241">241</th><td>};</td></tr>
+<tr><th id="242">242</th><td></td></tr>
+<tr><th id="243">243</th><td><a class="macro" href="vnconv.h.html#37" title="" data-ref="_M/DllExport">DllExport</a> <em>const</em> <em>char</em> * <dfn class="decl def" id="_Z12VnConvErrMsgi" title='VnConvErrMsg' data-ref="_Z12VnConvErrMsgi">VnConvErrMsg</dfn>(<em>int</em> <dfn class="local col7 decl" id="47errCode" title='errCode' data-type='int' data-ref="47errCode">errCode</dfn>)</td></tr>
+<tr><th id="244">244</th><td>{</td></tr>
+<tr><th id="245">245</th><td>	<b>if</b> (<a class="local col7 ref" href="#47errCode" title='errCode' data-ref="47errCode">errCode</a> &lt; <var>0</var> || <a class="local col7 ref" href="#47errCode" title='errCode' data-ref="47errCode">errCode</a> &gt;= <a class="enum" href="vnconv.h.html#VnConvError::VNCONV_LAST_ERROR" title='VnConvError::VNCONV_LAST_ERROR' data-ref="VnConvError::VNCONV_LAST_ERROR">VNCONV_LAST_ERROR</a>)</td></tr>
+<tr><th id="246">246</th><td>		<a class="local col7 ref" href="#47errCode" title='errCode' data-ref="47errCode">errCode</a> = <a class="enum" href="vnconv.h.html#VnConvError::VNCONV_UNKNOWN_ERROR" title='VnConvError::VNCONV_UNKNOWN_ERROR' data-ref="VnConvError::VNCONV_UNKNOWN_ERROR">VNCONV_UNKNOWN_ERROR</a>;</td></tr>
+<tr><th id="247">247</th><td>	<b>return</b> <a class="ref" href="#ErrTable" title='ErrTable' data-ref="ErrTable">ErrTable</a>[<a class="local col7 ref" href="#47errCode" title='errCode' data-ref="47errCode">errCode</a>];</td></tr>
+<tr><th id="248">248</th><td>}</td></tr>
+<tr><th id="249">249</th><td></td></tr>
+<tr><th id="250">250</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2018-Nov-16</em> from project unikey revision <em>0.6.1</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

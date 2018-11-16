@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/byteio.h' l='125' type='int FileBIStream::peekNext(UKBYTE &amp; b)'/>
+<inh f='unikey/ukengine/byteio.h' l='24' c='_ZN12ByteInStream8peekNextERh'/>
+<def f='unikey/ukengine/byteio.cpp' l='340' ll='352' type='int FileBIStream::peekNext(UKBYTE &amp; b)'/>
+<doc f='unikey/ukengine/byteio.cpp' l='339'>//----------------------------------------------------</doc>

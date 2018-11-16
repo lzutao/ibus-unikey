@@ -1,0 +1,4 @@
+<dec f='include/ctype.h' l='117' type='int isupper(int )'/>
+<use f='unikey/ukengine/inputproc.cpp' l='333' u='c' c='_ZN16UkInputProcessor10useBuiltInEP12UkKeyMapping'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1203' u='c' c='_ZN8UkEngine13processTelexWER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1225' u='c' c='_ZN8UkEngine13processTelexWER10UkKeyEvent'/>

@@ -1,0 +1,20 @@
+<dec f='unikey/ukengine/ukengine.h' l='109' type='int'/>
+<offset>24896</offset>
+<use f='unikey/ukengine/ukengine.cpp' l='1806' u='w' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1807' u='r' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1808' u='r' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1925' u='r' c='_ZN8UkEngine20synchKeyStrokeBufferEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1926' u='w' c='_ZN8UkEngine20synchKeyStrokeBufferEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1930' u='r' c='_ZN8UkEngine20synchKeyStrokeBufferEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1930' u='r' c='_ZN8UkEngine20synchKeyStrokeBufferEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1932' u='w' c='_ZN8UkEngine20synchKeyStrokeBufferEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2001' u='w' c='_ZN8UkEngine5resetEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2009' u='w' c='_ZN8UkEngine11resetKeyBufEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2023' u='w' c='_ZN8UkEngineC1Ev'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2053' u='r' c='_ZN8UkEngine13prepareBufferEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2053' u='r' c='_ZN8UkEngine13prepareBufferEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2055' u='r' c='_ZN8UkEngine13prepareBufferEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2056' u='r' c='_ZN8UkEngine13prepareBufferEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2057' u='w' c='_ZN8UkEngine13prepareBufferEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2214' u='r' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2238' u='r' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>

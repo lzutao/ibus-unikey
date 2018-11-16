@@ -1,0 +1,64 @@
+<def f='include/c++/7/bits/char_traits.h' l='269' ll='270'/>
+<def f='include/c++/7/bits/char_traits.h' l='274' ll='382'/>
+<def f='include/c++/7/bits/char_traits.h' l='387' ll='492'/>
+<def f='include/c++/7/bits/char_traits.h' l='507' ll='602'/>
+<def f='include/c++/7/bits/char_traits.h' l='604' ll='699'/>
+<size>1</size>
+<doc f='include/c++/7/bits/char_traits.h' l='273'>/// 21.1.3.1  char_traits specializations</doc>
+<doc f='include/c++/7/bits/char_traits.h' l='386'>/// 21.1.3.2  char_traits specializations</doc>
+<fun r='_ZNSt11char_traitsIcE6assignERcRKc'/>
+<fun r='_ZNSt11char_traitsIcE2eqERKcS2_'/>
+<fun r='_ZNSt11char_traitsIcE2ltERKcS2_'/>
+<fun r='_ZNSt11char_traitsIcE7compareEPKcS2_m'/>
+<fun r='_ZNSt11char_traitsIcE6lengthEPKc'/>
+<fun r='_ZNSt11char_traitsIcE4findEPKcmRS1_'/>
+<fun r='_ZNSt11char_traitsIcE4moveEPcPKcm'/>
+<fun r='_ZNSt11char_traitsIcE4copyEPcPKcm'/>
+<fun r='_ZNSt11char_traitsIcE6assignEPcmc'/>
+<fun r='_ZNSt11char_traitsIcE12to_char_typeERKi'/>
+<fun r='_ZNSt11char_traitsIcE11to_int_typeERKc'/>
+<fun r='_ZNSt11char_traitsIcE11eq_int_typeERKiS2_'/>
+<fun r='_ZNSt11char_traitsIcE3eofEv'/>
+<fun r='_ZNSt11char_traitsIcE7not_eofERKi'/>
+<fun r='_ZNSt11char_traitsIwE6assignERwRKw'/>
+<fun r='_ZNSt11char_traitsIwE2eqERKwS2_'/>
+<fun r='_ZNSt11char_traitsIwE2ltERKwS2_'/>
+<fun r='_ZNSt11char_traitsIwE7compareEPKwS2_m'/>
+<fun r='_ZNSt11char_traitsIwE6lengthEPKw'/>
+<fun r='_ZNSt11char_traitsIwE4findEPKwmRS1_'/>
+<fun r='_ZNSt11char_traitsIwE4moveEPwPKwm'/>
+<fun r='_ZNSt11char_traitsIwE4copyEPwPKwm'/>
+<fun r='_ZNSt11char_traitsIwE6assignEPwmw'/>
+<fun r='_ZNSt11char_traitsIwE12to_char_typeERKj'/>
+<fun r='_ZNSt11char_traitsIwE11to_int_typeERKw'/>
+<fun r='_ZNSt11char_traitsIwE11eq_int_typeERKjS2_'/>
+<fun r='_ZNSt11char_traitsIwE3eofEv'/>
+<fun r='_ZNSt11char_traitsIwE7not_eofERKj'/>
+<fun r='_ZNSt11char_traitsIDsE6assignERDsRKDs'/>
+<fun r='_ZNSt11char_traitsIDsE2eqERKDsS2_'/>
+<fun r='_ZNSt11char_traitsIDsE2ltERKDsS2_'/>
+<fun r='_ZNSt11char_traitsIDsE7compareEPKDsS2_m'/>
+<fun r='_ZNSt11char_traitsIDsE6lengthEPKDs'/>
+<fun r='_ZNSt11char_traitsIDsE4findEPKDsmRS1_'/>
+<fun r='_ZNSt11char_traitsIDsE4moveEPDsPKDsm'/>
+<fun r='_ZNSt11char_traitsIDsE4copyEPDsPKDsm'/>
+<fun r='_ZNSt11char_traitsIDsE6assignEPDsmDs'/>
+<fun r='_ZNSt11char_traitsIDsE12to_char_typeERKt'/>
+<fun r='_ZNSt11char_traitsIDsE11to_int_typeERKDs'/>
+<fun r='_ZNSt11char_traitsIDsE11eq_int_typeERKtS2_'/>
+<fun r='_ZNSt11char_traitsIDsE3eofEv'/>
+<fun r='_ZNSt11char_traitsIDsE7not_eofERKt'/>
+<fun r='_ZNSt11char_traitsIDiE6assignERDiRKDi'/>
+<fun r='_ZNSt11char_traitsIDiE2eqERKDiS2_'/>
+<fun r='_ZNSt11char_traitsIDiE2ltERKDiS2_'/>
+<fun r='_ZNSt11char_traitsIDiE7compareEPKDiS2_m'/>
+<fun r='_ZNSt11char_traitsIDiE6lengthEPKDi'/>
+<fun r='_ZNSt11char_traitsIDiE4findEPKDimRS1_'/>
+<fun r='_ZNSt11char_traitsIDiE4moveEPDiPKDim'/>
+<fun r='_ZNSt11char_traitsIDiE4copyEPDiPKDim'/>
+<fun r='_ZNSt11char_traitsIDiE6assignEPDimDi'/>
+<fun r='_ZNSt11char_traitsIDiE12to_char_typeERKj'/>
+<fun r='_ZNSt11char_traitsIDiE11to_int_typeERKDi'/>
+<fun r='_ZNSt11char_traitsIDiE11eq_int_typeERKjS2_'/>
+<fun r='_ZNSt11char_traitsIDiE3eofEv'/>
+<fun r='_ZNSt11char_traitsIDiE7not_eofERKj'/>

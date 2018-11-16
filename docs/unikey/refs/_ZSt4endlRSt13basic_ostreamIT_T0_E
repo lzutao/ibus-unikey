@@ -1,0 +1,5 @@
+<def f='include/c++/7/ostream' l='589' ll='591' type='basic_ostream&lt;_CharT, _Traits&gt; &amp; std::endl(basic_ostream&lt;_CharT, _Traits&gt; &amp; __os)'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='162' u='r' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='206' u='r' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='211' u='r' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='243' u='r' c='_Z18UkStoreKeyOrderMapPKcP12UkKeyMapPairi'/>

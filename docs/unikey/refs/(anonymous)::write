@@ -1,0 +1,3 @@
+<dec f='include/x86_64-linux-gnu/bits/libio.h' l='371' type='__io_write_fn *'/>
+<offset>64</offset>
+<doc f='include/x86_64-linux-gnu/bits/libio.h' l='371'>/* Write bytes.  */</doc>

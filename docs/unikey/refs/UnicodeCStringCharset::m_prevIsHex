@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/charset.h' l='184' type='int'/>
+<offset>6976</offset>
+<use f='unikey/ukengine/charset.cpp' l='522' u='w' c='_ZN21UnicodeCStringCharset10startInputEv'/>
+<use f='unikey/ukengine/charset.cpp' l='589' u='w' c='_ZN21UnicodeCStringCharset7putCharER13ByteOutStreamjRi'/>

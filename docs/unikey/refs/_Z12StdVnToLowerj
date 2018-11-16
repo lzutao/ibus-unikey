@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/charset.h' l='302' type='StdVnChar StdVnToLower(StdVnChar ch)'/>
+<def f='unikey/ukengine/charset.cpp' l='1287' ll='1294' type='StdVnChar StdVnToLower(StdVnChar ch)'/>
+<doc f='unikey/ukengine/charset.cpp' l='1286'>//----------------------------------------</doc>
+<use f='unikey/ukengine/convert.cpp' l='51' u='c' c='_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2163' u='c' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>

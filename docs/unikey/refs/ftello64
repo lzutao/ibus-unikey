@@ -1,0 +1,2 @@
+<dec f='include/stdio.h' l='718' type='__off64_t ftello(FILE * __stream)'/>
+<dec f='include/stdio.h' l='751' type='__off64_t ftello64(FILE * __stream)'/>

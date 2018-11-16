@@ -1,0 +1,3 @@
+<dec f='unikey/test/test_inputproc.cc' l='8' type='bool compare_event(const UkKeyEvent &amp; event, const UkKeyEvent &amp; other)'/>
+<use f='unikey/test/test_inputproc.cc' l='63' u='c' c='_ZL18testKeyCodeToEventi'/>
+<def f='unikey/test/test_inputproc.cc' l='103' ll='107' type='bool compare_event(const UkKeyEvent &amp; event, const UkKeyEvent &amp; other)'/>

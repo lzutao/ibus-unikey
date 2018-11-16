@@ -1,0 +1,2 @@
+<dec f='include/stdio.h' l='340' type='int snprintf(char *__restrict __s, size_t __maxlen, const char *__restrict __format)'/>
+<doc f='include/stdio.h' l='339'>/* Maximum chars of output to write in MAXLEN.  */</doc>

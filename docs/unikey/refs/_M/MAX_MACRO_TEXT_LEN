@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/keycons.h' l='29'/>
+<doc f='unikey/ukengine/keycons.h' l='28'>//#define MAX_MACRO_TEXT_LEN 256</doc>
+<use f='unikey/ukengine/mactab.cpp' l='227' u='c'/>
+<use f='unikey/ukengine/mactab.cpp' l='291' u='c'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2082' u='c'/>

@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/unikey.h' l='99' type='void UnikeySetInputMethod(UkInputMethod im)'/>
+<def f='unikey/ukengine/unikey.cpp' l='49' ll='62' type='void UnikeySetInputMethod(UkInputMethod im)'/>
+<use f='unikey/ukengine/unikey.cpp' l='129' u='c' c='UnikeySetup'/>
+<doc f='unikey/ukengine/unikey.cpp' l='48'>//--------------------------------------------</doc>
+<doc f='unikey/ukengine/unikey.h' l='97'>// set input method
+  //   im: TELEX_INPUT, VNI_INPUT, VIQR_INPUT, VIQR_STAR_INPUT</doc>

@@ -1,0 +1,4 @@
+<def f='unikey/ukengine/charset.cpp' l='690' ll='699' type='const char *[8]'/>
+<use f='unikey/ukengine/charset.cpp' l='701' u='r'/>
+<use f='unikey/ukengine/charset.cpp' l='1028' u='r' c='_ZN13CVnCharsetLibC1Ev'/>
+<use f='unikey/ukengine/charset.cpp' l='1029' u='r' c='_ZN13CVnCharsetLibC1Ev'/>

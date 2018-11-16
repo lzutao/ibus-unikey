@@ -1,0 +1,2 @@
+<def f='include/c++/7/bits/stl_iterator.h' l='712' ll='714' type='insert_iterator&lt;_Container&gt; &amp; std::insert_iterator::operator++()'/>
+<doc f='include/c++/7/bits/stl_iterator.h' l='711'>/// Simply returns *this.  (This %iterator does not @a move.)</doc>

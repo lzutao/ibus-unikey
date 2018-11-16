@@ -1,0 +1,3 @@
+<dec f='unikey/ukengine/inputproc.h' l='95' type='void UkInputProcessor::getKeyMap(int * map)'/>
+<def f='unikey/ukengine/inputproc.cpp' l='395' ll='400' type='void UkInputProcessor::getKeyMap(int * map)'/>
+<doc f='unikey/ukengine/inputproc.cpp' l='394'>//-------------------------------------------</doc>

@@ -1,0 +1,12 @@
+<dec f='unikey/ukengine/byteio.h' l='112' type='int'/>
+<offset>416</offset>
+<use f='unikey/ukengine/byteio.cpp' l='273' u='w' c='_ZN12FileBIStreamC1EiPc'/>
+<use f='unikey/ukengine/byteio.cpp' l='292' u='w' c='_ZN12FileBIStream4openEPKc'/>
+<use f='unikey/ukengine/byteio.cpp' l='312' u='w' c='_ZN12FileBIStream6attachEP8_IO_FILE'/>
+<use f='unikey/ukengine/byteio.cpp' l='319' u='r' c='_ZN12FileBIStream3eosEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='327' u='r' c='_ZN12FileBIStream7getNextERh'/>
+<use f='unikey/ukengine/byteio.cpp' l='328' u='w' c='_ZN12FileBIStream7getNextERh'/>
+<use f='unikey/ukengine/byteio.cpp' l='342' u='r' c='_ZN12FileBIStream8peekNextERh'/>
+<use f='unikey/ukengine/byteio.cpp' l='359' u='w' c='_ZN12FileBIStream5ungetEh'/>
+<use f='unikey/ukengine/byteio.cpp' l='406' u='w' c='_ZN12FileBIStream9peekNextWERt'/>
+<use f='unikey/ukengine/byteio.cpp' l='412' u='w' c='_ZN12FileBIStream9peekNextWERt'/>

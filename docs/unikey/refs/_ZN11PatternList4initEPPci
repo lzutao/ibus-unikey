@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/pattern.h' l='55' type='void PatternList::init(char ** patterns, int count)'/>
+<use f='unikey/ukengine/charset.cpp' l='1028' u='c' c='_ZN13CVnCharsetLibC1Ev'/>
+<use f='unikey/ukengine/charset.cpp' l='1029' u='c' c='_ZN13CVnCharsetLibC1Ev'/>
+<def f='unikey/ukengine/pattern.cpp' l='71' ll='78' type='void PatternList::init(char ** patterns, int count)'/>
+<doc f='unikey/ukengine/pattern.cpp' l='70'>//-----------------------------------------------------</doc>

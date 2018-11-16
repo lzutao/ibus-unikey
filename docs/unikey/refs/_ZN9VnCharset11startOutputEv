@@ -1,0 +1,7 @@
+<def f='unikey/ukengine/charset.h' l='90' type='void VnCharset::startOutput()'/>
+<ovr f='unikey/ukengine/charset.cpp' l='840' c='_ZN11VIQRCharset11startOutputEv'/>
+<ovr f='unikey/ukengine/charset.cpp' l='958' c='_ZN15UTF8VIQRCharset11startOutputEv'/>
+<use f='unikey/ukengine/charset.cpp' l='960' u='c' c='_ZN15UTF8VIQRCharset11startOutputEv'/>
+<use f='unikey/ukengine/convert.cpp' l='43' u='c' c='_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1842' u='c' c='_ZN8UkEngine11writeOutputEPhRi'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1884' u='c' c='_ZN8UkEngine11getSeqStepsEii'/>

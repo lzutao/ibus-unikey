@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/bits/endian.h' l='7'/>
+<use f='include/endian.h' l='51' u='c'/>
+<use f='include/endian.h' l='63' u='c'/>
+<use f='include/ctype.h' l='40' u='c'/>
+<use f='include/x86_64-linux-gnu/bits/wctype-wchar.h' l='46' u='c'/>

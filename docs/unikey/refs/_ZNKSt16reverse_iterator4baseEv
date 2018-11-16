@@ -1,0 +1,4 @@
+<def f='include/c++/7/bits/stl_iterator.h' l='153' ll='155' type='iterator_type std::reverse_iterator::base() const'/>
+<doc f='include/c++/7/bits/stl_iterator.h' l='150'>/**
+       *  @return  @c current, the %iterator used for underlying work.
+      */</doc>

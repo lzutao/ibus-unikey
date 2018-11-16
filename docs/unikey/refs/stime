@@ -1,0 +1,3 @@
+<dec f='include/time.h' l='181' type='int stime(const time_t * __when)'/>
+<doc f='include/time.h' l='179'>/* Set the system time to *WHEN.
+   This call is restricted to the superuser.  */</doc>

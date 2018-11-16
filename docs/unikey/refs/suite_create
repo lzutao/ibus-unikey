@@ -1,0 +1,17 @@
+<dec f='include/check.h' l='131' type='Suite * suite_create(const char * name)'/>
+<use f='unikey/test/test_inputproc.cc' l='69' u='c' c='_Z9test_suitv'/>
+<doc f='include/check.h' l='117'>/**
+ * Creates a test suite with the given name.
+ *
+ * Create a suite, which will contain test cases. Once
+ * created, use suite_add_tcase() to add test cases.
+ * When finished, create a suite runner from the
+ * suite using srunner_create()
+ *
+ * @param name name of the suite
+ *
+ * @return suite
+ *
+ * @since 0.6.0
+ */</doc>
+<use f='unikey/test/test_ukengine.cc' l='13' u='c' c='_Z9test_suitv'/>

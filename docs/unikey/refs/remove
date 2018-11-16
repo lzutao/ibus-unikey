@@ -1,0 +1,4 @@
+<dec f='include/stdio.h' l='144' type='int remove(const char * __filename)'/>
+<doc f='include/stdio.h' l='143'>/* Remove file FILENAME.  */</doc>
+<use f='unikey/ukengine/convert.cpp' l='180' u='c' c='VnFileConvert'/>
+<use f='unikey/ukengine/convert.cpp' l='194' u='c' c='VnFileConvert'/>

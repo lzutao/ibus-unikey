@@ -1,0 +1,3 @@
+<dec f='unikey/ukengine/vnlexi.h' l='154' type='26'/>
+<use f='unikey/ukengine/ukengine.cpp' l='687' u='r' c='_ZN8UkEngine17processHookWithUOER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='727' u='r' c='_ZN8UkEngine17processHookWithUOER10UkKeyEvent'/>

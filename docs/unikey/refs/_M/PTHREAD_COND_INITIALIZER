@@ -1,0 +1,2 @@
+<dec f='include/pthread.h' l='187'/>
+<doc f='include/pthread.h' l='186'>/* Conditional variable handling.  */</doc>

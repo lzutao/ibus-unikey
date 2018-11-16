@@ -1,0 +1,7 @@
+<def f='unikey/ukengine/ukengine.cpp' l='396' ll='425' type='bool isValidCVC(ConSeq c1, VowelSeq v, ConSeq c2)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='589' u='c' c='_ZN8UkEngine11processRoofER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='901' u='c' c='_ZN8UkEngine11processHookER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1584' u='c' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1661' u='c' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2364' u='c' c='_ZN8UkEngine15lastWordIsNonVnEv'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='395'>//----------------------------------------------------------</doc>

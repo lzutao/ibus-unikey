@@ -1,0 +1,24 @@
+<inh f='unikey/ukengine/byteio.h' l='20' c='ByteInStream'/>
+<def f='unikey/ukengine/byteio.h' l='57' ll='93'/>
+<size>80</size>
+<doc f='unikey/ukengine/byteio.h' l='56'>//----------------------------------------------------</doc>
+<mbr r='StringBIStream::m_eos' o='64' t='int'/>
+<mbr r='StringBIStream::m_data' o='128' t='UKBYTE *'/>
+<mbr r='StringBIStream::m_current' o='192' t='UKBYTE *'/>
+<mbr r='StringBIStream::m_len' o='256' t='int'/>
+<mbr r='StringBIStream::m_left' o='288' t='int'/>
+<mbr r='StringBIStream::m_bookmark' o='320' t='struct (anonymous struct at /home/phaptc/builddir/ibus-unikey/builddir/../test/../ukengine/byteio.h:64:2)'/>
+<mbr r='StringBIStream::m_didBookmark' o='576' t='int'/>
+<fun r='_ZN14StringBIStreamC1EPhii'/>
+<fun r='_ZN14StringBIStream7getNextERh'/>
+<fun r='_ZN14StringBIStream8peekNextERh'/>
+<fun r='_ZN14StringBIStream5ungetEh'/>
+<fun r='_ZN14StringBIStream8getNextWERt'/>
+<fun r='_ZN14StringBIStream9peekNextWERt'/>
+<fun r='_ZN14StringBIStream9getNextDWERj'/>
+<fun r='_ZN14StringBIStream3eosEv'/>
+<fun r='_ZN14StringBIStream5closeEv'/>
+<fun r='_ZN14StringBIStream8bookmarkEv'/>
+<fun r='_ZN14StringBIStream12gotoBookmarkEv'/>
+<fun r='_ZN14StringBIStream6reopenEv'/>
+<fun r='_ZN14StringBIStream4leftEv'/>

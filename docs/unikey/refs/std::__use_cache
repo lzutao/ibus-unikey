@@ -1,0 +1,5 @@
+<def f='include/c++/7/bits/locale_facets.tcc' l='42' ll='46'/>
+<def f='include/c++/7/bits/locale_facets.tcc' l='49' ll='74'/>
+<doc f='include/c++/7/bits/locale_facets.tcc' l='48'>// Specializations.</doc>
+<fun r='_ZNKSt11__use_cacheclERKSt6locale'/>
+<fun r='_ZNKSt11__use_cacheISt16__numpunct_cacheIT_EEclERKSt6locale'/>

@@ -1,0 +1,9 @@
+<dec f='include/check.h' l='882' type='int tr_lno(TestResult * tr)'/>
+<doc f='include/check.h' l='874'>/**
+ * Retrieve line number at which a failure occurred, if applicable.
+ *
+ * @return If the test resulted in a failure, returns the line number
+ *          that the failure occurred on; otherwise returns -1.
+ *
+ * @since 0.6.0
+ */</doc>

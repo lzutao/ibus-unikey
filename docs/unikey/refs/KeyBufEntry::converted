@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/ukengine.h' l='55' type='bool'/>
+<offset>160</offset>
+<use f='unikey/ukengine/ukengine.cpp' l='1808' u='w' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2215' u='r' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2243' u='w' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>

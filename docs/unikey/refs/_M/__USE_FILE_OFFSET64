@@ -1,0 +1,14 @@
+<dec f='include/features.h' l='364'/>
+<use f='include/features.h' l='429' u='a'/>
+<use f='include/stdio.h' l='56' u='a'/>
+<use f='include/stdio.h' l='77' u='a'/>
+<use f='include/stdio.h' l='158' u='a'/>
+<use f='include/stdio.h' l='227' u='a'/>
+<use f='include/stdio.h' l='702' u='a'/>
+<use f='include/stdio.h' l='726' u='a'/>
+<use f='include/x86_64-linux-gnu/sys/types.h' l='47' u='a'/>
+<use f='include/x86_64-linux-gnu/sys/types.h' l='217' u='a'/>
+<use f='include/stdlib.h' l='684' u='a'/>
+<use f='include/stdlib.h' l='706' u='a'/>
+<use f='include/stdlib.h' l='738' u='a'/>
+<use f='include/stdlib.h' l='758' u='a'/>

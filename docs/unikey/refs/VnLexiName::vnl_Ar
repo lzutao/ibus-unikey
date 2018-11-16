@@ -1,0 +1,13 @@
+<dec f='unikey/ukengine/vnlexi.h' l='30' type='12'/>
+<use f='unikey/ukengine/inputproc.cpp' l='63'/>
+<use f='unikey/ukengine/inputproc.cpp' l='63'/>
+<use f='unikey/ukengine/inputproc.cpp' l='63'/>
+<use f='unikey/ukengine/inputproc.cpp' l='63'/>
+<use f='unikey/ukengine/inputproc.cpp' l='193' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='193' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='193' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='193' u='r'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='65' u='r'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='65' u='r'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='65' u='r'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='65' u='r'/>

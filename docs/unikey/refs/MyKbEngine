@@ -1,0 +1,13 @@
+<def f='unikey/ukengine/unikey.cpp' l='37' type='UkEngine'/>
+<use f='unikey/ukengine/unikey.cpp' l='53' u='m' c='UnikeySetInputMethod'/>
+<use f='unikey/ukengine/unikey.cpp' l='58' u='m' c='UnikeySetInputMethod'/>
+<use f='unikey/ukengine/unikey.cpp' l='77' u='m' c='UnikeySetOutputCharset'/>
+<use f='unikey/ukengine/unikey.cpp' l='127' u='m' c='UnikeySetup'/>
+<use f='unikey/ukengine/unikey.cpp' l='128' u='m' c='UnikeySetup'/>
+<use f='unikey/ukengine/unikey.cpp' l='145' u='m' c='UnikeyFilter'/>
+<use f='unikey/ukengine/unikey.cpp' l='151' u='m' c='UnikeyPutChar'/>
+<use f='unikey/ukengine/unikey.cpp' l='159' u='m' c='UnikeyResetBuf'/>
+<use f='unikey/ukengine/unikey.cpp' l='165' u='m' c='UnikeySetSingleMode'/>
+<use f='unikey/ukengine/unikey.cpp' l='172' u='m' c='UnikeyBackspacePress'/>
+<use f='unikey/ukengine/unikey.cpp' l='197' u='m' c='UnikeyRestoreKeyStrokes'/>
+<use f='unikey/ukengine/unikey.cpp' l='202' u='m' c='UnikeyAtWordBeginning'/>

@@ -1,0 +1,7 @@
+<dec f='unikey/ukengine/ukengine.h' l='144' type='void UkEngine::prepareBuffer()'/>
+<doc f='unikey/ukengine/ukengine.h' l='144'>//make sure we have a least 10 entries available</doc>
+<use f='unikey/ukengine/ukengine.cpp' l='1754' u='c' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<def f='unikey/ukengine/ukengine.cpp' l='2034' ll='2060' type='void UkEngine::prepareBuffer()'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='2031'>//----------------------------------------------------
+// make sure there are at least 10 entries available
+//----------------------------------------------------</doc>

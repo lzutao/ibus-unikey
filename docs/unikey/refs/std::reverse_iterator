@@ -1,0 +1,18 @@
+<def f='include/c++/7/bits/stl_iterator.h' l='101' ll='285'/>
+<mbr r='std::reverse_iterator::current' t='_Iterator'/>
+<fun r='_ZNSt16reverse_iteratorC1Ev'/>
+<fun r='_ZNSt16reverse_iteratorC1ET_'/>
+<fun r='_ZNSt16reverse_iteratorC1ERKSt16reverse_iteratorIT_E'/>
+<fun r='_ZNSt16reverse_iteratorC1ERKSt16reverse_iteratorIT_E'/>
+<fun r='_ZNKSt16reverse_iterator4baseEv'/>
+<fun r='_ZNKSt16reverse_iteratordeEv'/>
+<fun r='_ZNKSt16reverse_iteratorptEv'/>
+<fun r='_ZNSt16reverse_iteratorppEv'/>
+<fun r='_ZNSt16reverse_iteratorppEi'/>
+<fun r='_ZNSt16reverse_iteratormmEv'/>
+<fun r='_ZNSt16reverse_iteratormmEi'/>
+<fun r='_ZNKSt16reverse_iteratorplENSt15iterator_traitsIT_E15difference_typeE'/>
+<fun r='_ZNSt16reverse_iteratorpLENSt15iterator_traitsIT_E15difference_typeE'/>
+<fun r='_ZNKSt16reverse_iteratormiENSt15iterator_traitsIT_E15difference_typeE'/>
+<fun r='_ZNSt16reverse_iteratormIENSt15iterator_traitsIT_E15difference_typeE'/>
+<fun r='_ZNKSt16reverse_iteratorixENSt15iterator_traitsIT_E15difference_typeE'/>

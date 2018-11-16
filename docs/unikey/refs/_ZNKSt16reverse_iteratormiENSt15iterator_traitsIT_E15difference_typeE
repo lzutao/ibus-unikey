@@ -1,0 +1,6 @@
+<def f='include/c++/7/bits/stl_iterator.h' l='260' ll='262' type='reverse_iterator&lt;_Iterator&gt; std::reverse_iterator::operator-(difference_type __n) const'/>
+<doc f='include/c++/7/bits/stl_iterator.h' l='255'>/**
+       *  @return  A reverse_iterator that refers to @c current - @a __n
+       *
+       *  The underlying iterator must be a Random Access Iterator.
+      */</doc>

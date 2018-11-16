@@ -1,0 +1,7 @@
+<def f='unikey/ukengine/inputproc.h' l='62' ll='68'/>
+<size>20</size>
+<mbr r='UkKeyEvent::evType' o='0' t='int'/>
+<mbr r='UkKeyEvent::chType' o='32' t='UkCharType'/>
+<mbr r='UkKeyEvent::vnSym' o='64' t='VnLexiName'/>
+<mbr r='UkKeyEvent::keyCode' o='96' t='unsigned int'/>
+<mbr r='UkKeyEvent::tone' o='128' t='int'/>

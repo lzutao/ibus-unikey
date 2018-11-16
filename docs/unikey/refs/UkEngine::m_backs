@@ -1,0 +1,14 @@
+<dec f='unikey/ukengine/ukengine.h' l='101' type='int'/>
+<offset>160</offset>
+<use f='unikey/ukengine/ukengine.cpp' l='1755' u='w' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1818' u='r' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1913' u='w' c='_ZN8UkEngine10markChangeEi'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1947' u='w' c='_ZN8UkEngine16processBackspaceERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1960' u='r' c='_ZN8UkEngine16processBackspaceERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1980' u='r' c='_ZN8UkEngine16processBackspaceERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1992' u='r' c='_ZN8UkEngine16processBackspaceERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2191' u='r' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2194' u='w' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2209' u='w' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2232' u='r' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2311' u='a' c='_ZN8UkEngine14processWordEndER10UkKeyEvent'/>

@@ -1,0 +1,10 @@
+<def f='unikey/ukengine/ukengine.h' l='121' ll='137'/>
+<size>36</size>
+<mbr r='UkEngine::WordInfo::form' o='0' t='VnWordForm'/>
+<mbr r='UkEngine::WordInfo::c1Offset' o='32' t='int'/>
+<mbr r='UkEngine::WordInfo::vOffset' o='64' t='int'/>
+<mbr r='UkEngine::WordInfo::c2Offset' o='96' t='int'/>
+<mbr r='UkEngine::WordInfo::caps' o='160' t='int'/>
+<mbr r='UkEngine::WordInfo::tone' o='192' t='int'/>
+<mbr r='UkEngine::WordInfo::vnSym' o='224' t='VnLexiName'/>
+<mbr r='UkEngine::WordInfo::keyCode' o='256' t='int'/>

@@ -1,0 +1,12 @@
+<dec f='unikey/ukengine/pattern.h' l='56' type='int PatternList::foundAtNextChar(char ch)'/>
+<use f='unikey/ukengine/charset.cpp' l='753' u='c' c='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='864' u='c' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='904' u='c' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='920' u='c' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='925' u='c' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<def f='unikey/ukengine/pattern.cpp' l='85' ll='93' type='int PatternList::foundAtNextChar(char ch)'/>
+<doc f='unikey/ukengine/pattern.cpp' l='80'>//-----------------------------------------------------
+// return the order number of the pattern that is found.
+// If more than 1 pattern is found, returns any pattern
+// Returns -1 if no pattern is found
+//-----------------------------------------------------</doc>

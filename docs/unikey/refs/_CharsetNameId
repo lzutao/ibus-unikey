@@ -1,0 +1,4 @@
+<def f='unikey/ukengine/vnconv.h' l='102' ll='105'/>
+<size>16</size>
+<mbr r='_CharsetNameId::name' o='0' t='const char *'/>
+<mbr r='_CharsetNameId::id' o='64' t='int'/>

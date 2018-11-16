@@ -1,0 +1,2 @@
+<def f='include/c++/7/bits/basic_string.h' l='6361' ll='6364' type='int std::__cxx11::stoi(const string &amp; __str, size_t * __idx = 0, int __base = 10)'/>
+<doc f='include/c++/7/bits/basic_string.h' l='6360'>// 21.4 Numeric Conversions [string.conversions].</doc>

@@ -1,0 +1,2 @@
+<def f='include/x86_64-linux-gnu/bits/libio.h' l='180' ll='186'/>
+<doc f='include/x86_64-linux-gnu/bits/libio.h' l='179'>/* This is the structure from the libstdc++ codecvt class.  */</doc>

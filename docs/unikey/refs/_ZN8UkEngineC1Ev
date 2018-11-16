@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/ukengine.h' l='61' type='void UkEngine::UkEngine()'/>
+<use f='unikey/test/test_ukengine.cc' l='8' u='c' c='_ZL18testKeyCodeToEventi'/>
+<def f='unikey/ukengine/ukengine.cpp' l='2013' ll='2029' type='void UkEngine::UkEngine()'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='2012'>//------------------------------------------------</doc>
+<use f='unikey/ukengine/unikey.cpp' l='37' u='c'/>

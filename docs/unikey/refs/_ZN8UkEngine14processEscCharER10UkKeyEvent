@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/ukengine.h' l='93' type='int UkEngine::processEscChar(UkKeyEvent &amp; ev)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='289' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='289' u='a'/>
+<def f='unikey/ukengine/ukengine.cpp' l='1705' ll='1712' type='int UkEngine::processEscChar(UkKeyEvent &amp; ev)'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='1704'>//----------------------------------------------------------</doc>

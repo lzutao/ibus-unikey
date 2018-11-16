@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/unikey.h' l='89' type='void UnikeyRestoreKeyStrokes()'/>
+<def f='unikey/ukengine/unikey.cpp' l='194' ll='198' type='void UnikeyRestoreKeyStrokes()'/>
+<doc f='unikey/ukengine/unikey.cpp' l='193'>//--------------------------------------------</doc>
+<doc f='unikey/ukengine/unikey.h' l='88'>// call this to restore to original key strokes</doc>

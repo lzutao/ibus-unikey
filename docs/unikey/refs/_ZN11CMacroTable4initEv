@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/mactab.h' l='55' type='void CMacroTable::init()'/>
+<def f='unikey/ukengine/mactab.cpp' l='35' ll='40' type='void CMacroTable::init()'/>
+<doc f='unikey/ukengine/mactab.cpp' l='34'>//---------------------------------------------------------------</doc>
+<use f='unikey/ukengine/unikey.cpp' l='124' u='c' c='UnikeySetup'/>

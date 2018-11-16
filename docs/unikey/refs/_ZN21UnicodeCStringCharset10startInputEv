@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/charset.h' l='189' type='void UnicodeCStringCharset::startInput()'/>
+<inh f='unikey/ukengine/charset.h' l='89' c='_ZN9VnCharset10startInputEv'/>
+<def f='unikey/ukengine/charset.cpp' l='520' ll='523' type='void UnicodeCStringCharset::startInput()'/>
+<doc f='unikey/ukengine/charset.cpp' l='517'>/////////////////////////////////
+// Class UnicodeCStringCharset  /
+/////////////////////////////////</doc>

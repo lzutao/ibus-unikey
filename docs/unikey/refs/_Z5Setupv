@@ -1,0 +1,2 @@
+<def f='unikey/test/test_inputproc.cc' l='12' ll='14' type='void Setup()'/>
+<use f='unikey/test/test_inputproc.cc' l='75' u='r' c='_Z9test_suitv'/>

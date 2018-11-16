@@ -1,0 +1,9 @@
+<dec f='unikey/ukengine/ukengine.h' l='49' type='6'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1005' u='r' c='_ZN8UkEngine11processToneER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1409' c='_ZN8UkEngine11appendVowelER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1609' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1644' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1653' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1685' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1956' u='r' c='_ZN8UkEngine16processBackspaceERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2354' c='_ZN8UkEngine15lastWordIsNonVnEv'/>

@@ -1,0 +1,12 @@
+<dec f='unikey/ukengine/keycons.h' l='42' type='int'/>
+<offset>0</offset>
+<use f='unikey/ukengine/ukengine.cpp' l='558' u='r' c='_ZN8UkEngine11processRoofER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='599' u='r' c='_ZN8UkEngine11processRoofER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='658' u='r' c='_ZN8UkEngine17processHookWithUOER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='836' u='r' c='_ZN8UkEngine11processHookER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='907' u='r' c='_ZN8UkEngine11processHookER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1002' u='r' c='_ZN8UkEngine11processToneER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1062' u='r' c='_ZN8UkEngine9processDdER10UkKeyEvent'/>
+<use f='unikey/ukengine/unikey.cpp' l='84' u='w' c='UnikeySetOptions'/>
+<use f='unikey/ukengine/unikey.cpp' l='84' u='r' c='UnikeySetOptions'/>
+<use f='unikey/ukengine/unikey.cpp' l='102' u='w' c='CreateDefaultUnikeyOptions'/>

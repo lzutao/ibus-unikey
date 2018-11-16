@@ -1,0 +1,9 @@
+<dec f='include/check.h' l='1099' type='const char * srunner_log_fname(SRunner * sr)'/>
+<doc f='include/check.h' l='1091'>/**
+ * Retrieves the name of the currently assigned file
+ * for log output, if any exists.
+ *
+ * @return the name of the log file, or NULL if none is configured
+ *
+ * @since 0.7.1
+ */</doc>

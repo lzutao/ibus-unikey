@@ -1,0 +1,4 @@
+<def f='include/c++/7/bits/stl_iterator.h' l='131' ll='132' type='void std::reverse_iterator::reverse_iterator&lt;_Iterator&gt;(iterator_type __x)'/>
+<doc f='include/c++/7/bits/stl_iterator.h' l='128'>/**
+       *  This %iterator will move in the opposite direction that @p x does.
+      */</doc>

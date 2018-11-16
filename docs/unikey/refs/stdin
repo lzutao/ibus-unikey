@@ -1,0 +1,5 @@
+<dec f='include/stdio.h' l='135' type='struct _IO_FILE *'/>
+<doc f='include/stdio.h' l='134'>/* Standard streams.  */</doc>
+<doc f='include/stdio.h' l='135'>/* Standard input stream.  */</doc>
+<use f='unikey/ukengine/convert.cpp' l='123' macro='1' u='r'/>
+<use f='unikey/ukengine/convert.cpp' l='173' macro='1' u='r'/>

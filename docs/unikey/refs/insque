@@ -1,0 +1,2 @@
+<dec f='include/search.h' l='44' type='void insque(void * __elem, void * __prev)'/>
+<doc f='include/search.h' l='43'>/* Insert ELEM into a doubly-linked list, after PREV.  */</doc>

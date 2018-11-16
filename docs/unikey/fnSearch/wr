@@ -1,0 +1,4 @@
+_ZNSt13basic_ostream5writeEPKT_l|std::basic_ostream::write
+_ZN11CMacroTable11writeHeaderEP8_IO_FILE|CMacroTable::writeHeader
+_ZN11CMacroTable11writeToFileEPKc|CMacroTable::writeToFile
+_ZN8UkEngine11writeOutputEPhRi|UkEngine::writeOutput

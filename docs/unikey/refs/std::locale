@@ -1,0 +1,55 @@
+<def f='include/c++/7/bits/locale_classes.h' l='62' ll='357'/>
+<size>8</size>
+<doc f='include/c++/7/bits/locale_classes.h' l='48'>/**
+   *  @brief  Container class for localization functionality.
+   *  @ingroup locales
+   *
+   *  The locale class is first a class wrapper for C library locales.  It is
+   *  also an extensible container for user-defined localization.  A locale is
+   *  a collection of facets that implement various localization features such
+   *  as money, time, and number printing.
+   *
+   *  Constructing C++ locales does not change the C library locale.
+   *
+   *  This library supports efficient construction and copying of locales
+   *  through a reference counting implementation of the locale class.
+  */</doc>
+<smbr r='std::locale::none' t='const category'/>
+<smbr r='std::locale::ctype' t='const category'/>
+<smbr r='std::locale::numeric' t='const category'/>
+<smbr r='std::locale::collate' t='const category'/>
+<smbr r='std::locale::time' t='const category'/>
+<smbr r='std::locale::monetary' t='const category'/>
+<smbr r='std::locale::messages' t='const category'/>
+<smbr r='std::locale::all' t='const category'/>
+<fun r='_ZNSt6localeC1Ev'/>
+<fun r='_ZNSt6localeC1ERKS_'/>
+<fun r='_ZNSt6localeC1EPKc'/>
+<fun r='_ZNSt6localeC1ERKS_PKci'/>
+<fun r='_ZNSt6localeC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNSt6localeC1ERKS_RKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
+<fun r='_ZNSt6localeC1ERKS_S1_i'/>
+<fun r='_ZNSt6localeC1ERKS_PT_'/>
+<fun r='_ZNSt6localeD1Ev'/>
+<fun r='_ZNSt6localeaSERKS_'/>
+<fun r='_ZNKSt6locale7combineERKS_'/>
+<fun r='_ZNKSt6locale4nameB5cxx11Ev'/>
+<fun r='_ZNKSt6localeeqERKS_'/>
+<fun r='_ZNKSt6localeneERKS_'/>
+<fun r='_ZNKSt6localeclERKNSt7__cxx1112basic_stringIT_T0_T1_EES7_'/>
+<fun r='_ZNSt6locale6globalERKS_'/>
+<fun r='_ZNSt6locale7classicEv'/>
+<mbr r='std::locale::_M_impl' o='0' t='std::locale::_Impl *'/>
+<smbr r='std::locale::_S_classic' t='std::locale::_Impl *'/>
+<smbr r='std::locale::_S_global' t='std::locale::_Impl *'/>
+<smbr r='std::locale::_S_categories' t='const char *const *const'/>
+<smbr r='std::locale::_S_once' t='__gthread_once_t'/>
+<fun r='_ZNSt6localeC1EPNS_5_ImplE'/>
+<fun r='_ZNSt6locale13_S_initializeEv'/>
+<fun r='_ZNSt6locale18_S_initialize_onceEv'/>
+<fun r='_ZNSt6locale21_S_normalize_categoryEi'/>
+<fun r='_ZNSt6locale11_M_coalesceERKS_S1_i'/>
+<smbr r='std::locale::_S_twinned_facets' t='const std::locale::id *const []'/>
+<fun r='_ZNSt6localeC1ERKS_PT_'/>
+<fun r='_ZNKSt6locale7combineERKS_'/>
+<fun r='_ZNKSt6localeclERKNSt7__cxx1112basic_stringIT_T0_T1_EES7_'/>

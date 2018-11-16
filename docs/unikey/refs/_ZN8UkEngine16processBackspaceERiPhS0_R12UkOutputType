@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/ukengine.h' l='78' type='int UkEngine::processBackspace(int &amp; backs, unsigned char * outBuf, int &amp; outSize, UkOutputType &amp; outType)'/>
+<def f='unikey/ukengine/ukengine.cpp' l='1938' ll='1995' type='int UkEngine::processBackspace(int &amp; backs, unsigned char * outBuf, int &amp; outSize, UkOutputType &amp; outType)'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='1937'>//---------------------------------------------</doc>
+<use f='unikey/ukengine/unikey.cpp' l='172' u='c' c='UnikeyBackspacePress'/>

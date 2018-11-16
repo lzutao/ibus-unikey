@@ -1,0 +1,10 @@
+<dec f='unikey/ukengine/pattern.h' l='53' type='PatternState *'/>
+<use f='unikey/ukengine/pattern.h' l='61' u='w' c='_ZN11PatternListC1Ev'/>
+<use f='unikey/ukengine/pattern.h' l='66' u='r' c='_ZN11PatternListD1Ev'/>
+<use f='unikey/ukengine/pattern.h' l='67' u='r' c='_ZN11PatternListD1Ev'/>
+<offset>0</offset>
+<use f='unikey/ukengine/pattern.cpp' l='74' u='r' c='_ZN11PatternList4initEPPci'/>
+<use f='unikey/ukengine/pattern.cpp' l='75' u='w' c='_ZN11PatternList4initEPPci'/>
+<use f='unikey/ukengine/pattern.cpp' l='77' u='r' c='_ZN11PatternList4initEPPci'/>
+<use f='unikey/ukengine/pattern.cpp' l='89' u='r' c='_ZN11PatternList15foundAtNextCharEc'/>
+<use f='unikey/ukengine/pattern.cpp' l='99' u='r' c='_ZN11PatternList5resetEv'/>

@@ -1,0 +1,21 @@
+<def f='include/c++/7/bits/char_traits.h' l='87' ll='144'/>
+<fun r='__gnu_cxx::char_traits::assign'/>
+<fun r='__gnu_cxx::char_traits::eq'/>
+<fun r='__gnu_cxx::char_traits::lt'/>
+<fun r='__gnu_cxx::char_traits::compare'/>
+<fun r='__gnu_cxx::char_traits::length'/>
+<fun r='__gnu_cxx::char_traits::find'/>
+<fun r='__gnu_cxx::char_traits::move'/>
+<fun r='__gnu_cxx::char_traits::copy'/>
+<fun r='__gnu_cxx::char_traits::assign'/>
+<fun r='__gnu_cxx::char_traits::to_char_type'/>
+<fun r='__gnu_cxx::char_traits::to_int_type'/>
+<fun r='__gnu_cxx::char_traits::eq_int_type'/>
+<fun r='__gnu_cxx::char_traits::eof'/>
+<fun r='__gnu_cxx::char_traits::not_eof'/>
+<fun r='__gnu_cxx::char_traits::compare'/>
+<fun r='__gnu_cxx::char_traits::length'/>
+<fun r='__gnu_cxx::char_traits::find'/>
+<fun r='__gnu_cxx::char_traits::move'/>
+<fun r='__gnu_cxx::char_traits::copy'/>
+<fun r='__gnu_cxx::char_traits::assign'/>

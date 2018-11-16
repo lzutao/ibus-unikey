@@ -1,0 +1,6 @@
+<use f='unikey/ukengine/inputproc.h' l='88' u='r' c='_ZN16UkInputProcessor5getIMEv'/>
+<dec f='unikey/ukengine/inputproc.h' l='102' type='UkInputMethod'/>
+<offset>0</offset>
+<use f='unikey/ukengine/inputproc.cpp' l='277' u='w' c='_ZN16UkInputProcessor5setIME13UkInputMethod'/>
+<use f='unikey/ukengine/inputproc.cpp' l='298' u='w' c='_ZN16UkInputProcessor5setIME13UkInputMethod'/>
+<use f='unikey/ukengine/inputproc.cpp' l='308' u='w' c='_ZN16UkInputProcessor5setIMEPi'/>

@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/ukengine.h' l='76' type='void UkEngine::setSingleMode()'/>
+<def f='unikey/ukengine/ukengine.cpp' l='2253' ll='2256' type='void UkEngine::setSingleMode()'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='2252'>//--------------------------------------------------</doc>
+<use f='unikey/ukengine/unikey.cpp' l='165' u='c' c='UnikeySetSingleMode'/>

@@ -1,0 +1,2 @@
+<def f='unikey/ukengine/charset.h' l='122' type='void VnInternalCharset::VnInternalCharset()'/>
+<use f='unikey/ukengine/charset.cpp' l='1110' u='c' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>

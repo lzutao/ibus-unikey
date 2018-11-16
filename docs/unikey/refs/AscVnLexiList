@@ -1,0 +1,8 @@
+<def f='unikey/ukengine/inputproc.cpp' l='60' ll='94' type='_ascVnLexi [33]'/>
+<use f='unikey/ukengine/inputproc.cpp' l='231' u='m' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='232' u='m' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='251' u='m' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='252' u='m' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='252' u='m' c='_Z25SetupInputClassifierTablev'/>
+<doc f='unikey/ukengine/inputproc.cpp' l='58'>//List of western characters outside range A-Z that are
+//also Vietnamese characters</doc>

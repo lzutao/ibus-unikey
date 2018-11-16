@@ -1,0 +1,3 @@
+<dec f='unikey/ukengine/vnconv.h' l='92' type='2'/>
+<use f='unikey/ukengine/convert.cpp' l='96' u='r' c='VnConvert'/>
+<use f='unikey/ukengine/convert.cpp' l='217' u='r' c='_Z19vnFileStreamConvertiiP8_IO_FILES0_'/>

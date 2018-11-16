@@ -1,0 +1,9 @@
+<dec f='unikey/ukengine/ukengine.h' l='79' type='void UkEngine::reset()'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1321' u='c' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<def f='unikey/ukengine/ukengine.cpp' l='1998' ll='2004' type='void UkEngine::reset()'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2192' u='c' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='1997'>//------------------------------------------------</doc>
+<use f='unikey/ukengine/unikey.cpp' l='53' u='c' c='UnikeySetInputMethod'/>
+<use f='unikey/ukengine/unikey.cpp' l='58' u='c' c='UnikeySetInputMethod'/>
+<use f='unikey/ukengine/unikey.cpp' l='77' u='c' c='UnikeySetOutputCharset'/>
+<use f='unikey/ukengine/unikey.cpp' l='159' u='c' c='UnikeyResetBuf'/>

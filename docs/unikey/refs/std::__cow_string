@@ -1,0 +1,11 @@
+<def f='include/c++/7/stdexcept' l='48' ll='65'/>
+<size>8</size>
+<doc f='include/c++/7/stdexcept' l='47'>// Emulates an old COW string when the new std::string is in use.</doc>
+<fun r='_ZNSt12__cow_stringC1Ev'/>
+<fun r='_ZNSt12__cow_stringC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNSt12__cow_stringC1EPKcm'/>
+<fun r='_ZNSt12__cow_stringC1ERKS_'/>
+<fun r='_ZNSt12__cow_stringaSERKS_'/>
+<fun r='_ZNSt12__cow_stringD1Ev'/>
+<fun r='_ZNSt12__cow_stringC1EOS_'/>
+<fun r='_ZNSt12__cow_stringaSEOS_'/>

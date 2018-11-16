@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/charset.h' l='145' type='UKWORD *'/>
+<offset>11008</offset>
+<use f='unikey/ukengine/charset.cpp' l='599' u='w' c='_ZN17DoubleByteCharsetC1EPt'/>
+<use f='unikey/ukengine/charset.cpp' l='648' u='r' c='_ZN17DoubleByteCharset7putCharER13ByteOutStreamjRi'/>

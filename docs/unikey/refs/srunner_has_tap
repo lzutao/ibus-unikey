@@ -1,0 +1,11 @@
+<dec f='include/check.h' l='1169' type='int srunner_has_tap(SRunner * sr)'/>
+<doc f='include/check.h' l='1159'>/**
+ * Checks if the suite runner is assigned a file for TAP output.
+ *
+ * @param sr suite runner to check
+ *
+ * @return 1 iff the suite runner currently is configured to output
+ *         in TAP format; 0 otherwise
+ *
+ * @since 0.9.12
+ */</doc>

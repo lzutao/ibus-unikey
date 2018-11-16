@@ -1,0 +1,20 @@
+<inh f='unikey/ukengine/charset.h' l='87' c='VnCharset'/>
+<def f='unikey/ukengine/charset.h' l='225' ll='244'/>
+<size>568</size>
+<doc f='unikey/ukengine/charset.h' l='224'>//--------------------------------------------------</doc>
+<mbr r='VIQRCharset::m_vnChars' o='64' t='UKDWORD *'/>
+<mbr r='VIQRCharset::m_stdMap' o='128' t='UKWORD [256]'/>
+<mbr r='VIQRCharset::m_atWordBeginning' o='4224' t='int'/>
+<mbr r='VIQRCharset::m_escapeBowl' o='4256' t='int'/>
+<mbr r='VIQRCharset::m_escapeRoof' o='4288' t='int'/>
+<mbr r='VIQRCharset::m_escapeHook' o='4320' t='int'/>
+<mbr r='VIQRCharset::m_escapeTone' o='4352' t='int'/>
+<mbr r='VIQRCharset::m_gotTone' o='4384' t='int'/>
+<mbr r='VIQRCharset::m_escAll' o='4416' t='int'/>
+<mbr r='VIQRCharset::m_noOutEsc' o='4448' t='int'/>
+<mbr r='VIQRCharset::m_suspicious' o='4480' t='int'/>
+<fun r='_ZN11VIQRCharsetC1EPj'/>
+<fun r='_ZN11VIQRCharset10startInputEv'/>
+<fun r='_ZN11VIQRCharset11startOutputEv'/>
+<fun r='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<fun r='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>

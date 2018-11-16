@@ -1,0 +1,7 @@
+<dec f='unikey/ukengine/ukengine.h' l='91' type='int UkEngine::processMapChar(UkKeyEvent &amp; ev)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='288' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='288' u='a'/>
+<def f='unikey/ukengine/ukengine.cpp' l='1109' ll='1186' type='int UkEngine::processMapChar(UkKeyEvent &amp; ev)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1207' u='c' c='_ZN8UkEngine13processTelexWER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1230' u='c' c='_ZN8UkEngine13processTelexWER10UkKeyEvent'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='1108'>//----------------------------------------------------------</doc>

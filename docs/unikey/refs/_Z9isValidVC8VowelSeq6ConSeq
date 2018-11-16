@@ -1,0 +1,4 @@
+<def f='unikey/ukengine/ukengine.cpp' l='373' ll='393' type='bool isValidVC(VowelSeq v, ConSeq c)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='402' u='c' c='_Z10isValidCVC6ConSeq8VowelSeqS_'/>
+<use f='unikey/ukengine/ukengine.cpp' l='408' u='c' c='_Z10isValidCVC6ConSeq8VowelSeqS_'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='372'>//----------------------------------------------------------</doc>

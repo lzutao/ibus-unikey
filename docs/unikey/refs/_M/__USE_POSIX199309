@@ -1,0 +1,5 @@
+<dec f='include/features.h' l='308'/>
+<use f='include/x86_64-linux-gnu/bits/time.h' l='44' u='a'/>
+<use f='include/time.h' l='41' u='a'/>
+<use f='include/time.h' l='45' u='a'/>
+<use f='include/time.h' l='206' u='a'/>

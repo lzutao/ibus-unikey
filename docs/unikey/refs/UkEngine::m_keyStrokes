@@ -1,0 +1,14 @@
+<dec f='unikey/ukengine/ukengine.h' l='108' type='KeyBufEntry [128]'/>
+<offset>320</offset>
+<doc f='unikey/ukengine/ukengine.h' l='107'>//unsigned int m_keyStrokes[MAX_UK_ENGINE];</doc>
+<use f='unikey/ukengine/ukengine.cpp' l='1807' u='m' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1808' u='m' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1930' u='m' c='_ZN8UkEngine20synchKeyStrokeBufferEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2056' u='r' c='_ZN8UkEngine13prepareBufferEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2056' u='r' c='_ZN8UkEngine13prepareBufferEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2056' u='r' c='_ZN8UkEngine13prepareBufferEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2214' u='m' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2215' u='m' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2240' u='m' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2242' u='m' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2243' u='m' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>

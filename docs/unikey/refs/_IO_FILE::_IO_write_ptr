@@ -1,0 +1,3 @@
+<dec f='include/x86_64-linux-gnu/bits/libio.h' l='255' type='char *'/>
+<offset>320</offset>
+<doc f='include/x86_64-linux-gnu/bits/libio.h' l='255'>/* Current put pointer. */</doc>

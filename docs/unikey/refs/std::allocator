@@ -1,0 +1,19 @@
+<def f='include/c++/7/bits/allocator.h' l='67' ll='97'/>
+<def f='include/c++/7/bits/allocator.h' l='108' ll='142'/>
+<inh f='include/c++/7/ext/new_allocator.h' l='58' c='__gnu_cxx::new_allocator'/>
+<def f='include/c++/7/bits/allocator.h' l='173'/>
+<inh f='include/c++/7/ext/new_allocator.h' l='58' c='__gnu_cxx::new_allocator'/>
+<def f='include/c++/7/bits/allocator.h' l='174'/>
+<size>1</size>
+<doc f='include/c++/7/bits/allocator.h' l='61'>/**
+   *  @addtogroup allocators
+   *  @{
+   */
+
+  /// allocator&lt;void&gt; specialization.</doc>
+<fun r='_ZNSaIvE9constructEPT_DpOT0_'/>
+<fun r='_ZNSaIvE7destroyEPT_'/>
+<fun r='_ZNSt9allocatorC1Ev'/>
+<fun r='_ZNSt9allocatorC1ERKSaIT_E'/>
+<fun r='_ZNSt9allocatorC1ERKSaIT_E'/>
+<fun r='_ZNSt9allocatorD1Ev'/>

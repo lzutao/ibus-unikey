@@ -1,0 +1,10 @@
+<dec f='unikey/ukengine/inputproc.h' l='105' type='void UkInputProcessor::useBuiltIn(UkKeyMapping * map)'/>
+<use f='unikey/ukengine/inputproc.cpp' l='280' u='c' c='_ZN16UkInputProcessor5setIME13UkInputMethod'/>
+<use f='unikey/ukengine/inputproc.cpp' l='283' u='c' c='_ZN16UkInputProcessor5setIME13UkInputMethod'/>
+<use f='unikey/ukengine/inputproc.cpp' l='286' u='c' c='_ZN16UkInputProcessor5setIME13UkInputMethod'/>
+<use f='unikey/ukengine/inputproc.cpp' l='289' u='c' c='_ZN16UkInputProcessor5setIME13UkInputMethod'/>
+<use f='unikey/ukengine/inputproc.cpp' l='292' u='c' c='_ZN16UkInputProcessor5setIME13UkInputMethod'/>
+<use f='unikey/ukengine/inputproc.cpp' l='295' u='c' c='_ZN16UkInputProcessor5setIME13UkInputMethod'/>
+<use f='unikey/ukengine/inputproc.cpp' l='299' u='c' c='_ZN16UkInputProcessor5setIME13UkInputMethod'/>
+<def f='unikey/ukengine/inputproc.cpp' l='324' ll='338' type='void UkInputProcessor::useBuiltIn(UkKeyMapping * map)'/>
+<doc f='unikey/ukengine/inputproc.cpp' l='323'>//-------------------------------------------</doc>

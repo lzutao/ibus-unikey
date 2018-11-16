@@ -1,0 +1,21 @@
+<dec f='include/check.h' l='1243' type='pid_t check_fork()'/>
+<doc f='include/check.h' l='1223'>/**
+ * Invoke fork() during a test and assign the child to the same
+ * process group that the rest of the test case uses.
+ *
+ * One can invoke fork() directly during a test; however doing so
+ * may not guarantee that any children processes are destroyed once
+ * the test finishes. Once a test has completed, all processes in
+ * the process group will be killed; using this wrapper will prevent
+ * orphan processes.
+ *
+ * If Check is compiled without fork() support this call simply
+ * return -1 and does nothing.
+ *
+ * @return On success, the PID of the child process is returned in
+ *          the parent, and 0 is returned in the child.  On failure,
+ *          a value of -1 is returned to the parent process and no
+ *          child process is created.
+ *
+ * @since 0.9.3
+ */</doc>

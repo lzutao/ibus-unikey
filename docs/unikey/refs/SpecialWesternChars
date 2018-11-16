@@ -1,0 +1,4 @@
+<def f='unikey/ukengine/ukengine.cpp' l='55' ll='59' type='unsigned char [28]'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2270' u='r' c='_Z17SetupUnikeyEnginev'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2271' u='r' c='_Z17SetupUnikeyEnginev'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='54'>//see vnconv/data.cpp for explanation of these characters</doc>

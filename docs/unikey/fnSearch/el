@@ -1,0 +1,4 @@
+_ZN14UnicodeCharset11elementSizeEv|UnicodeCharset::elementSize
+_ZN18UnicodeCompCharset11elementSizeEv|UnicodeCompCharset::elementSize
+_ZN9VnCharset11elementSizeEv|VnCharset::elementSize
+_ZN17VnInternalCharset11elementSizeEv|VnInternalCharset::elementSize

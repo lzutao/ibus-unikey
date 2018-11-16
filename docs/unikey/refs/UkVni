@@ -1,0 +1,27 @@
+<dec f='unikey/ukengine/keycons.h' l='37' type='1'/>
+<use f='unikey/test/test_inputproc.cc' l='35' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='35' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='36' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='36' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='37' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='37' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='38' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='38' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='39' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='39' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='40' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='40' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='35' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='35' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='36' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='36' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='37' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='37' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='38' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='38' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='39' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='39' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='40' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='40' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/ukengine/inputproc.cpp' l='288' c='_ZN16UkInputProcessor5setIME13UkInputMethod'/>
+<use f='unikey/ukengine/unikey.cpp' l='51' u='r' c='UnikeySetInputMethod'/>

@@ -1,0 +1,9 @@
+<def f='include/c++/7/bits/basic_string.h' l='1797' ll='1805' type='iterator std::__cxx11::basic_string::erase(__const_iterator __position)'/>
+<doc f='include/c++/7/bits/basic_string.h' l='1789'>/**
+       *  @brief  Remove one character.
+       *  @param __position  Iterator referencing the character to remove.
+       *  @return  iterator referencing same location after removal.
+       *
+       *  Removes the character at @a __position from this string. The value
+       *  of the string doesn&apos;t change if an error is thrown.
+      */</doc>

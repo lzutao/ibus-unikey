@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/vnlexi.h' l='136' type='8'/>
+<use f='unikey/ukengine/ukengine.cpp' l='355' u='r' c='_Z9isValidCV6ConSeq8VowelSeq'/>
+<use f='unikey/ukengine/ukengine.cpp' l='421' u='r' c='_Z10isValidCVC6ConSeq8VowelSeqS_'/>
+<use f='unikey/ukengine/ukengine.cpp' l='977' u='r' c='_ZN8UkEngine11processToneER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='978' u='r' c='_ZN8UkEngine11processToneER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1500' u='r' c='_ZN8UkEngine11appendVowelER10UkKeyEvent'/>

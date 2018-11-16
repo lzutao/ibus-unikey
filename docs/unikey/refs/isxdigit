@@ -1,0 +1,4 @@
+<dec f='include/ctype.h' l='118' type='int isxdigit(int )'/>
+<use f='unikey/ukengine/charset.cpp' l='419' u='c' c='_ZN17UnicodeRefCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='541' u='c' c='_ZN21UnicodeCStringCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='566' u='c' c='_ZN21UnicodeCStringCharset7putCharER13ByteOutStreamjRi'/>

@@ -1,0 +1,3 @@
+<def f='unikey/ukengine/charset.h' l='166' type='void UnicodeRefCharset::UnicodeRefCharset(UnicodeChar * vnChars)'/>
+<use f='unikey/ukengine/charset.h' l='176' u='c' c='_ZN17UnicodeHexCharsetC1EPt'/>
+<use f='unikey/ukengine/charset.cpp' l='1085' u='c' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>

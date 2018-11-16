@@ -1,0 +1,10 @@
+<def f='include/stdlib.h' l='490' ll='498'/>
+<size>24</size>
+<doc f='include/stdlib.h' l='487'>/* Data structure for communication with thread safe versions.  This
+   type is to be regarded as opaque.  It&apos;s only exported because users
+   have to allocate objects of this type.  */</doc>
+<mbr r='drand48_data::__x' o='0' t='unsigned short [3]'/>
+<mbr r='drand48_data::__old_x' o='48' t='unsigned short [3]'/>
+<mbr r='drand48_data::__c' o='96' t='unsigned short'/>
+<mbr r='drand48_data::__init' o='112' t='unsigned short'/>
+<mbr r='drand48_data::__a' o='128' t='unsigned long long'/>

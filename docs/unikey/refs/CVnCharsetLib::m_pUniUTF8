@@ -1,0 +1,11 @@
+<dec f='unikey/ukengine/charset.h' l='269' type='UnicodeUTF8Charset *'/>
+<offset>768</offset>
+<use f='unikey/ukengine/charset.cpp' l='1012' u='w' c='_ZN13CVnCharsetLibC1Ev'/>
+<use f='unikey/ukengine/charset.cpp' l='1038' u='r' c='_ZN13CVnCharsetLibD1Ev'/>
+<use f='unikey/ukengine/charset.cpp' l='1039' u='r' c='_ZN13CVnCharsetLibD1Ev'/>
+<use f='unikey/ukengine/charset.cpp' l='1079' u='r' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>
+<use f='unikey/ukengine/charset.cpp' l='1080' u='w' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>
+<use f='unikey/ukengine/charset.cpp' l='1081' u='r' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>
+<use f='unikey/ukengine/charset.cpp' l='1118' u='r' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>
+<use f='unikey/ukengine/charset.cpp' l='1119' u='w' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>
+<use f='unikey/ukengine/charset.cpp' l='1120' u='r' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>

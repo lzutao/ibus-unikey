@@ -1,0 +1,3 @@
+<dec f='include/x86_64-linux-gnu/bits/libio.h' l='284' type='_IO_lock_t *'/>
+<offset>1088</offset>
+<doc f='include/x86_64-linux-gnu/bits/libio.h' l='282'>/*  char* _save_gptr;  char* _save_egptr; */</doc>

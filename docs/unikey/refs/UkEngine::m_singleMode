@@ -1,0 +1,17 @@
+<dec f='unikey/ukengine/ukengine.h' l='104' type='int'/>
+<offset>256</offset>
+<use f='unikey/ukengine/ukengine.cpp' l='634' u='w' c='_ZN8UkEngine11processRoofER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='790' u='w' c='_ZN8UkEngine17processHookWithUOER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='937' u='w' c='_ZN8UkEngine11processHookER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='984' u='w' c='_ZN8UkEngine11processToneER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1020' u='w' c='_ZN8UkEngine11processToneER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1045' u='w' c='_ZN8UkEngine9processDdER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1070' u='w' c='_ZN8UkEngine9processDdER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1079' u='w' c='_ZN8UkEngine9processDdER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1181' u='w' c='_ZN8UkEngine14processMapCharER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1324' u='w' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1787' u='r' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2002' u='w' c='_ZN8UkEngine5resetEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2024' u='w' c='_ZN8UkEngineC1Ev'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2255' u='w' c='_ZN8UkEngine13setSingleModeEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2297' u='r' c='_ZN8UkEngine14processWordEndER10UkKeyEvent'/>

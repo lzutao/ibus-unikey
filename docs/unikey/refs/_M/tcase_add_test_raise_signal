@@ -1,0 +1,13 @@
+<dec f='include/check.h' l='194'/>
+<doc f='include/check.h' l='182'>/**
+ * Add a test function with signal handling to a test case
+ *
+ * The added test is expected to terminate by throwing the given signal
+ *
+ * @param tc test case to add test to
+ * @param tf test function to add to test case
+ * @param signal expected signal for test function to throw in order for
+ *                the test to be considered passing
+ *
+ * @since 0.9.2
+ * */</doc>

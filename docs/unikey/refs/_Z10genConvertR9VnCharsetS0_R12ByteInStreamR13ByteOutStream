@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/charset.h' l='299' type='int genConvert(VnCharset &amp; incs, VnCharset &amp; outcs, ByteInStream &amp; input, ByteOutStream &amp; output)'/>
+<def f='unikey/ukengine/convert.cpp' l='37' ll='62' type='int genConvert(VnCharset &amp; incs, VnCharset &amp; outcs, ByteInStream &amp; input, ByteOutStream &amp; output)'/>
+<use f='unikey/ukengine/convert.cpp' l='101' u='c' c='VnConvert'/>
+<use f='unikey/ukengine/convert.cpp' l='230' u='c' c='_Z19vnFileStreamConvertiiP8_IO_FILES0_'/>

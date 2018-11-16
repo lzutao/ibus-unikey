@@ -1,0 +1,7 @@
+<def f='unikey/ukengine/inputproc.h' l='119' ll='122' type='VnLexiName IsoToVnLexi(unsigned int keyCode)'/>
+<use f='unikey/ukengine/inputproc.cpp' l='346' u='c' c='_ZN16UkInputProcessor14keyCodeToEventEjR10UkKeyEvent'/>
+<use f='unikey/ukengine/inputproc.cpp' l='363' u='c' c='_ZN16UkInputProcessor14keyCodeToEventEjR10UkKeyEvent'/>
+<use f='unikey/ukengine/inputproc.cpp' l='377' u='c' c='_ZN16UkInputProcessor15keyCodeToSymbolEjR10UkKeyEvent'/>
+<use f='unikey/ukengine/inputproc.cpp' l='390' u='c' c='_ZN16UkInputProcessor11getCharTypeEj'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1178' u='c' c='_ZN8UkEngine14processMapCharER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2275' u='c' c='_Z17SetupUnikeyEnginev'/>

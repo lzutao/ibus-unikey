@@ -1,0 +1,21 @@
+<inh f='include/c++/7/bits/locale_classes.h' l='371' c='std::locale::facet'/>
+<def f='include/c++/7/bits/locale_facets.h' l='1591' ll='1636'/>
+<mbr r='std::__numpunct_cache::_M_grouping' t='const char *'/>
+<mbr r='std::__numpunct_cache::_M_grouping_size' t='size_t'/>
+<mbr r='std::__numpunct_cache::_M_use_grouping' t='bool'/>
+<mbr r='std::__numpunct_cache::_M_truename' t='const _CharT *'/>
+<mbr r='std::__numpunct_cache::_M_truename_size' t='size_t'/>
+<mbr r='std::__numpunct_cache::_M_falsename' t='const _CharT *'/>
+<mbr r='std::__numpunct_cache::_M_falsename_size' t='size_t'/>
+<mbr r='std::__numpunct_cache::_M_decimal_point' t='_CharT'/>
+<mbr r='std::__numpunct_cache::_M_thousands_sep' t='_CharT'/>
+<mbr r='std::__numpunct_cache::_M_atoms_out' t='_CharT [36]'/>
+<mbr r='std::__numpunct_cache::_M_atoms_in' t='_CharT [26]'/>
+<mbr r='std::__numpunct_cache::_M_allocated' t='bool'/>
+<fun r='_ZNSt16__numpunct_cacheC1Em'/>
+<fun r='_ZNSt16__numpunct_cacheD1Ev'/>
+<fun r='_ZNSt16__numpunct_cache8_M_cacheERKSt6locale'/>
+<fun r='_ZNSt16__numpunct_cacheaSERKSt16__numpunct_cacheIT_E'/>
+<fun r='_ZNSt16__numpunct_cacheC1ERKSt16__numpunct_cacheIT_E'/>
+<fun r='_ZNSt16__numpunct_cacheD1Ev'/>
+<fun r='_ZNSt16__numpunct_cache8_M_cacheERKSt6locale'/>

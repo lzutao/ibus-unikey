@@ -1,0 +1,2 @@
+<dec f='include/stdlib.h' l='631' type='char * getenv(const char * __name)'/>
+<doc f='include/stdlib.h' l='630'>/* Return the value of envariable NAME, or NULL if it doesn&apos;t exist.  */</doc>

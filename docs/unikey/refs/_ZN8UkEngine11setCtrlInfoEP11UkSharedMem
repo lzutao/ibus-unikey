@@ -1,0 +1,2 @@
+<def f='unikey/ukengine/ukengine.h' l='62' ll='65' type='void UkEngine::setCtrlInfo(UkSharedMem * p)'/>
+<use f='unikey/ukengine/unikey.cpp' l='127' u='c' c='UnikeySetup'/>

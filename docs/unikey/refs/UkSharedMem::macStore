@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/ukengine.h' l='44' type='CMacroTable'/>
+<offset>16832</offset>
+<use f='unikey/ukengine/ukengine.cpp' l='2116' u='m' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2123' u='m' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>
+<use f='unikey/ukengine/unikey.cpp' l='124' u='m' c='UnikeySetup'/>
+<use f='unikey/ukengine/unikey.cpp' l='179' u='m' c='UnikeyLoadMacroTable'/>

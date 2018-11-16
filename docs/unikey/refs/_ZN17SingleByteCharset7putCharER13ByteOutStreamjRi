@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/charset.h' l='116' type='int SingleByteCharset::putChar(ByteOutStream &amp; os, StdVnChar stdChar, int &amp; outLen)'/>
+<inh f='unikey/ukengine/charset.h' l='103' c='_ZN9VnCharset7putCharER13ByteOutStreamjRi'/>
+<def f='unikey/ukengine/charset.cpp' l='103' ll='129' type='int SingleByteCharset::putChar(ByteOutStream &amp; os, StdVnChar stdChar, int &amp; outLen)'/>
+<doc f='unikey/ukengine/charset.cpp' l='102'>//-------------------------------------------</doc>

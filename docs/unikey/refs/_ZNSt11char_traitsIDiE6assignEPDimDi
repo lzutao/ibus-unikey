@@ -1,0 +1,1 @@
+<def f='include/c++/7/bits/char_traits.h' l='672' ll='678' type='static char_type * std::char_traits&lt;char32_t&gt;::assign(char_type * __s, size_t __n, char_type __a)'/>

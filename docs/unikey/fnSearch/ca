@@ -1,0 +1,2 @@
+_ZNKSt10error_code8categoryEv|std::error_code::category
+_ZNKSt15error_condition8categoryEv|std::error_condition::category

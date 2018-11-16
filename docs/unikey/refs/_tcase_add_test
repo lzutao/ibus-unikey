@@ -1,0 +1,6 @@
+<dec f='include/check.h' l='274' type='void _tcase_add_test(TCase * tc, TFun tf, const char * fname, int _signal, int allowed_exit_value, int start, int end)'/>
+<use f='unikey/test/test_inputproc.cc' l='77' macro='1' u='c'/>
+<doc f='include/check.h' l='271'>/* Add a test function to a test case
+  (function version -- use this when the macro won&apos;t work
+*/</doc>
+<use f='unikey/test/test_ukengine.cc' l='21' macro='1' u='c'/>

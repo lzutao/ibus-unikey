@@ -1,0 +1,4 @@
+<def f='include/check.h' l='1184' ll='1189'/>
+<doc f='include/check.h' l='1181'>/**
+ * Enum describing the current fork usage.
+ */</doc>

@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/mactab.h' l='59' type='const StdVnChar * CMacroTable::lookup(StdVnChar * key)'/>
+<def f='unikey/ukengine/mactab.cpp' l='105' ll='112' type='const StdVnChar * CMacroTable::lookup(StdVnChar * key)'/>
+<doc f='unikey/ukengine/mactab.cpp' l='104'>//---------------------------------------------------------------</doc>
+<use f='unikey/ukengine/ukengine.cpp' l='2116' u='c' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2123' u='c' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>

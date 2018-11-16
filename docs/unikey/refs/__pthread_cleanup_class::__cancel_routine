@@ -1,0 +1,4 @@
+<dec f='include/pthread.h' l='554' type='void (*)(void *)'/>
+<use f='include/pthread.h' l='561' u='w' c='__pthread_cleanup_class::__pthread_cleanup_class'/>
+<use f='include/pthread.h' l='562' u='r' c='__pthread_cleanup_class::~__pthread_cleanup_class'/>
+<offset>0</offset>

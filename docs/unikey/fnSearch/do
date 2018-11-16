@@ -1,0 +1,5 @@
+_ZN17DoubleByteCharsetC1EPt|DoubleByteCharset::DoubleByteCharset
+_ZN17DoubleByteCharset9nextInputER12ByteInStreamRjRi|DoubleByteCharset::nextInput
+_ZN17DoubleByteCharset7putCharER13ByteOutStreamjRi|DoubleByteCharset::putChar
+_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRl|std::num_get::do_get
+_ZNKSt7num_put6do_putET0_RSt8ios_baseT_l|std::num_put::do_put

@@ -1,0 +1,6 @@
+<def f='include/c++/7/backward/binders.h' l='143' ll='165'/>
+<mbr r='std::binder2nd::op' t='_Operation'/>
+<mbr r='std::binder2nd::value' t='typename _Operation::second_argument_type'/>
+<fun r='_ZNSt9binder2ndC1ERKT_RKNS0_20second_argument_typeE'/>
+<fun r='_ZNKSt9binder2ndclERKNT_19first_argument_typeE'/>
+<fun r='_ZNKSt9binder2ndclERNT_19first_argument_typeE'/>

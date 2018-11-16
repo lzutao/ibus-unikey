@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/ukengine.h' l='89' type='int UkEngine::appendConsonnant(UkKeyEvent &amp; ev)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1351' u='c' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1355' u='c' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<def f='unikey/ukengine/ukengine.cpp' l='1522' ll='1702' type='int UkEngine::appendConsonnant(UkKeyEvent &amp; ev)'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='1521'>//----------------------------------------------------------</doc>

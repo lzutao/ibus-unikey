@@ -1,0 +1,6 @@
+_ZN16WinCP1258CharsetC1EPtS0_|WinCP1258Charset::WinCP1258Charset
+_ZN16WinCP1258Charset9nextInputER12ByteInStreamRjRi|WinCP1258Charset::nextInput
+_ZN16WinCP1258Charset7putCharER13ByteOutStreamjRi|WinCP1258Charset::putChar
+_Z15wideCharComparePKvS0_|wideCharCompare
+_ZNKSt9basic_ios5widenEc|std::basic_ios::widen
+_ZNKSt8ios_base5widthEv|std::ios_base::width

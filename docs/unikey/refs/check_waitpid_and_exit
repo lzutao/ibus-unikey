@@ -1,0 +1,16 @@
+<dec f='include/check.h' l='1260' type='void check_waitpid_and_exit(pid_t pid)'/>
+<doc f='include/check.h' l='1245'>/**
+ * Wait for the pid and exit.
+ *
+ * This is to be used in conjunction with check_fork(). When called,
+ * will wait for the given process to terminate. If the process
+ * exited without error, exit(EXIT_SUCCESS) is invoked; otherwise
+ * exit(EXIT_FAILURE) is invoked.
+ *
+ * If Check is compiled without support for fork(), this invokes
+ * exit(EXIT_FAILURE).
+ *
+ * @param pid process to wait for, created by check_fork()
+ *
+ * @since 0.9.3
+ */</doc>

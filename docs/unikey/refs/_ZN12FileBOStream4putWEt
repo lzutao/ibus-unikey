@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/byteio.h' l='187' type='int FileBOStream::putW(UKWORD w)'/>
+<inh f='unikey/ukengine/byteio.h' l='51' c='_ZN13ByteOutStream4putWEt'/>
+<def f='unikey/ukengine/byteio.cpp' l='498' ll='508' type='int FileBOStream::putW(UKWORD w)'/>
+<doc f='unikey/ukengine/byteio.cpp' l='497'>//----------------------------------------------------</doc>

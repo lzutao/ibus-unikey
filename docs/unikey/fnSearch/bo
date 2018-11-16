@@ -1,0 +1,4 @@
+_ZN12ByteInStream8bookmarkEv|ByteInStream::bookmark
+_ZN12FileBIStream8bookmarkEv|FileBIStream::bookmark
+_ZN14StringBIStream8bookmarkEv|StringBIStream::bookmark
+_ZSt9boolalphaRSt8ios_base|std::boolalpha

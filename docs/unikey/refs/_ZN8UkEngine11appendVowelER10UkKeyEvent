@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/ukengine.h' l='88' type='int UkEngine::appendVowel(UkKeyEvent &amp; ev)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1353' u='c' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<def f='unikey/ukengine/ukengine.cpp' l='1364' ll='1519' type='int UkEngine::appendVowel(UkKeyEvent &amp; ev)'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='1363'>//----------------------------------------------------------</doc>

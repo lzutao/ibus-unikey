@@ -1,0 +1,2 @@
+<dec f='include/x86_64-linux-gnu/bits/libio.h' l='380' type='void _IO_cookie_init(struct _IO_cookie_file * __cfile, int __read_write, void * __cookie, _IO_cookie_io_functions_t __fns)'/>
+<doc f='include/x86_64-linux-gnu/bits/libio.h' l='379'>/* Initialize one of those.  */</doc>

@@ -1,0 +1,16 @@
+<def f='include/c++/7/bits/basic_string.h' l='1994' ll='2001' type='basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; std::__cxx11::basic_string::replace(__const_iterator __i1, __const_iterator __i2, const _CharT * __s, size_type __n)'/>
+<doc f='include/c++/7/bits/basic_string.h' l='1979'>/**
+       *  @brief  Replace range of characters with C substring.
+       *  @param __i1  Iterator referencing start of range to replace.
+       *  @param __i2  Iterator referencing end of range to replace.
+       *  @param __s  C string value to insert.
+       *  @param __n  Number of characters from s to insert.
+       *  @return  Reference to this string.
+       *  @throw  std::length_error  If new length exceeds @c max_size().
+       *
+       *  Removes the characters in the range [__i1,__i2).  In place,
+       *  the first @a __n characters of @a __s are inserted.  If the
+       *  length of result exceeds max_size(), length_error is thrown.
+       *  The value of the string doesn&apos;t change if an error is
+       *  thrown.
+      */</doc>

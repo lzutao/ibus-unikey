@@ -1,0 +1,27 @@
+<dec f='unikey/ukengine/byteio.h' l='23' type='int ByteInStream::getNext(UKBYTE &amp; b)'/>
+<ovr f='unikey/ukengine/byteio.cpp' l='30' c='_ZN14StringBIStream7getNextERh'/>
+<ovr f='unikey/ukengine/byteio.cpp' l='325' c='_ZN12FileBIStream7getNextERh'/>
+<use f='unikey/ukengine/charset.cpp' l='91' u='c' c='_ZN17SingleByteCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='289' u='c' c='_ZN18UnicodeUTF8Charset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='303' u='c' c='_ZN18UnicodeUTF8Charset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='317' u='c' c='_ZN18UnicodeUTF8Charset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='325' u='c' c='_ZN18UnicodeUTF8Charset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='389' u='c' c='_ZN17UnicodeRefCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='395' u='c' c='_ZN17UnicodeRefCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='403' u='c' c='_ZN17UnicodeRefCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='409' u='c' c='_ZN17UnicodeRefCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='415' u='c' c='_ZN17UnicodeRefCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='420' u='c' c='_ZN17UnicodeRefCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='426' u='c' c='_ZN17UnicodeRefCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='531' u='c' c='_ZN21UnicodeCStringCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='537' u='c' c='_ZN21UnicodeCStringCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='542' u='c' c='_ZN21UnicodeCStringCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='618' u='c' c='_ZN17DoubleByteCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='636' u='c' c='_ZN17DoubleByteCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='747' u='c' c='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='763' u='c' c='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='780' u='c' c='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='809' u='c' c='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='820' u='c' c='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='1214' u='c' c='_ZN16WinCP1258Charset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='1232' u='c' c='_ZN16WinCP1258Charset9nextInputER12ByteInStreamRjRi'/>

@@ -1,0 +1,11 @@
+<dec f='include/check.h' l='779'/>
+<doc f='include/check.h' l='769'>/**
+ * Mark the last point reached in a unit test.
+ *
+ * If the test throws a signal or exits, the location noted with the
+ * failure is the last location of a ck_assert*() or ck_abort() call.
+ * Use mark_point() to record intermediate locations (useful for tracking down
+ * crashes or exits).
+ *
+ * @since 0.6.0
+*/</doc>

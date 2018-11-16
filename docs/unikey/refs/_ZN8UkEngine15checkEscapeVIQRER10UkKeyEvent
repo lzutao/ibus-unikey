@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/ukengine.h' l='150' type='int UkEngine::checkEscapeVIQR(UkKeyEvent &amp; ev)'/>
+<def f='unikey/ukengine/ukengine.cpp' l='1236' ll='1307' type='int UkEngine::checkEscapeVIQR(UkKeyEvent &amp; ev)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1328' u='c' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='1235'>//----------------------------------------------------------</doc>

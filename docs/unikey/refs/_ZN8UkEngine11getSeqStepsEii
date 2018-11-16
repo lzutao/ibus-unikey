@@ -1,0 +1,8 @@
+<dec f='unikey/ukengine/ukengine.h' l='147' type='int UkEngine::getSeqSteps(int first, int last)'/>
+<doc f='unikey/ukengine/ukengine.h' l='146'>//int getSeqLength(int first, int last);</doc>
+<def f='unikey/ukengine/ukengine.cpp' l='1869' ll='1907' type='int UkEngine::getSeqSteps(int first, int last)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1913' u='c' c='_ZN8UkEngine10markChangeEi'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='1865'>//---------------------------------------------
+// Returns the number of backspaces needed to
+// go back from last to first
+//---------------------------------------------</doc>

@@ -1,0 +1,18 @@
+<dec f='include/check.h' l='963' type='void srunner_run_all(SRunner * sr, enum print_output print_mode)'/>
+<use f='unikey/test/test_inputproc.cc' l='91' u='c' c='main'/>
+<doc f='include/check.h' l='948'>/**
+ * Runs a suite runner and all contained suite, printing results to
+ * stdout as specified by the print_mode.
+ *
+ * In addition to running all suites, if the suite runner has been
+ * configured to output to a log, that is also performed.
+ *
+ * Note that if the CK_RUN_CASE and/or CK_RUN_SUITE environment variables
+ * are defined, then only the named suite and/or test case is run.
+ *
+ * @param sr suite runner to run all suites from
+ * @param print_mode the verbosity in which to report results to stdout
+ *
+ * @since 0.6.0
+ */</doc>
+<use f='unikey/test/test_ukengine.cc' l='35' u='c' c='main'/>

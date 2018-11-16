@@ -1,0 +1,7 @@
+<dec f='unikey/ukengine/usrkeymap.h' l='29' type='unsigned char'/>
+<offset>0</offset>
+<use f='unikey/ukengine/usrkeymap.cpp' l='140' u='r' c='_Z12UkLoadKeyMapPKcPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='142' u='r' c='_Z12UkLoadKeyMapPKcPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='195' u='w' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='199' u='w' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='251' u='r' c='_Z18UkStoreKeyOrderMapPKcP12UkKeyMapPairi'/>

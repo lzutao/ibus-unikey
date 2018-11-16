@@ -1,0 +1,2 @@
+<dec f='include/check.h' l='419' type='void _ck_assert_failed(const char * file, int line, const char * expr)'/>
+<use f='unikey/test/test_inputproc.cc' l='63' macro='1' u='c'/>

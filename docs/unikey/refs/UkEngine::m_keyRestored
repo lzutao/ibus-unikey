@@ -1,0 +1,7 @@
+<dec f='unikey/ukengine/ukengine.h' l='117' type='bool'/>
+<offset>25104</offset>
+<use f='unikey/ukengine/ukengine.cpp' l='1761' u='w' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1808' u='r' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2028' u='w' c='_ZN8UkEngineC1Ev'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2312' u='w' c='_ZN8UkEngine14processWordEndER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2325' u='r' c='_ZN8UkEngine14processWordEndER10UkKeyEvent'/>

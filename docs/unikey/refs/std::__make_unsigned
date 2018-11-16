@@ -1,0 +1,11 @@
+<def f='include/c++/7/type_traits' l='1716' ll='1717'/>
+<def f='include/c++/7/type_traits' l='1719' ll='1721'/>
+<def f='include/c++/7/type_traits' l='1723' ll='1725'/>
+<def f='include/c++/7/type_traits' l='1727' ll='1729'/>
+<def f='include/c++/7/type_traits' l='1731' ll='1733'/>
+<def f='include/c++/7/type_traits' l='1735' ll='1737'/>
+<def f='include/c++/7/type_traits' l='1739' ll='1741'/>
+<ovr f='include/c++/7/type_traits' l='1745' c='std::__make_unsigned'/>
+<inh f='include/c++/7/type_traits' l='1732' c='std::__make_unsigned'/>
+<def f='include/c++/7/type_traits' l='1744' ll='1746'/>
+<size>1</size>

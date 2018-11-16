@@ -1,0 +1,9 @@
+<inh f='unikey/ukengine/charset.h' l='129' c='UnicodeCharset'/>
+<def f='unikey/ukengine/charset.h' l='181' ll='190'/>
+<size>880</size>
+<doc f='unikey/ukengine/charset.h' l='180'>//--------------------------------------------------</doc>
+<mbr r='UnicodeCStringCharset::m_prevIsHex' o='6976' t='int'/>
+<fun r='_ZN21UnicodeCStringCharsetC1EPt'/>
+<fun r='_ZN21UnicodeCStringCharset9nextInputER12ByteInStreamRjRi'/>
+<fun r='_ZN21UnicodeCStringCharset7putCharER13ByteOutStreamjRi'/>
+<fun r='_ZN21UnicodeCStringCharset10startInputEv'/>

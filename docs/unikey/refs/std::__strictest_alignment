@@ -1,0 +1,6 @@
+<def f='include/c++/7/type_traits' l='2048' ll='2052'/>
+<def f='include/c++/7/type_traits' l='2054' ll='2063'/>
+<smbr r='std::__strictest_alignment::_S_alignment' t='const size_t'/>
+<smbr r='std::__strictest_alignment::_S_size' t='const size_t'/>
+<smbr r='std::__strictest_alignment{type-parameter-0-0,type-parameter-0-1...}::_S_alignment' t='const size_t'/>
+<smbr r='std::__strictest_alignment{type-parameter-0-0,type-parameter-0-1...}::_S_size' t='const size_t'/>

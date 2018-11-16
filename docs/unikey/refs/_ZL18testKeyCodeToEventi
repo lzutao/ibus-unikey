@@ -1,0 +1,4 @@
+<def f='unikey/test/test_inputproc.cc' l='16' ll='66' macro='1' type='void testKeyCodeToEvent(int _i)'/>
+<use f='unikey/test/test_inputproc.cc' l='77' u='r' c='_Z9test_suitv'/>
+<def f='unikey/test/test_ukengine.cc' l='7' ll='10' macro='1' type='void testKeyCodeToEvent(int _i)'/>
+<use f='unikey/test/test_ukengine.cc' l='21' u='r' c='_Z9test_suitv'/>

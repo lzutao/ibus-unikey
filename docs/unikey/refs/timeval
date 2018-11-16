@@ -1,0 +1,6 @@
+<def f='include/x86_64-linux-gnu/bits/types/struct_timeval.h' l='8' ll='12'/>
+<size>16</size>
+<doc f='include/x86_64-linux-gnu/bits/types/struct_timeval.h' l='6'>/* A time value that is accurate to the nearest
+   microsecond but also has a range of years.  */</doc>
+<mbr r='timeval::tv_sec' o='0' t='__time_t'/>
+<mbr r='timeval::tv_usec' o='64' t='__suseconds_t'/>

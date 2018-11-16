@@ -1,0 +1,3 @@
+<dec f='unikey/ukengine/mactab.h' l='61' type='const StdVnChar * CMacroTable::getText(int idx)'/>
+<def f='unikey/ukengine/mactab.cpp' l='341' ll='346' type='const StdVnChar * CMacroTable::getText(int idx)'/>
+<doc f='unikey/ukengine/mactab.cpp' l='340'>//---------------------------------------------------------------</doc>

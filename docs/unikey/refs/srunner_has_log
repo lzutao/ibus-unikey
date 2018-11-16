@@ -1,0 +1,11 @@
+<dec f='include/check.h' l='1089' type='int srunner_has_log(SRunner * sr)'/>
+<doc f='include/check.h' l='1079'>/**
+ * Checks if the suite runner is assigned a file for log output.
+ *
+ * @param sr suite runner to check
+ *
+ * @return 1 iff the suite runner currently is configured to output
+ *         in log format; 0 otherwise
+ *
+ * @since 0.7.1
+ */</doc>

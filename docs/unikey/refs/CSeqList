@@ -1,0 +1,9 @@
+<def f='unikey/ukengine/ukengine.cpp' l='161' ll='192' type='ConSeqInfo [30]'/>
+<use f='unikey/ukengine/ukengine.cpp' l='201' u='r'/>
+<use f='unikey/ukengine/ukengine.cpp' l='382' u='a' c='_Z9isValidVC8VowelSeq6ConSeq'/>
+<use f='unikey/ukengine/ukengine.cpp' l='440' u='m' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1646' u='m' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1648' u='m' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1649' u='m' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1649' u='m' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1651' u='m' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>

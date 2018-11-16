@@ -1,0 +1,11 @@
+<inh f='unikey/ukengine/charset.h' l='87' c='VnCharset'/>
+<def f='unikey/ukengine/charset.h' l='247' ll='259'/>
+<size>24</size>
+<doc f='unikey/ukengine/charset.h' l='246'>//--------------------------------------------------</doc>
+<mbr r='UTF8VIQRCharset::m_pViqr' o='64' t='VIQRCharset *'/>
+<mbr r='UTF8VIQRCharset::m_pUtf' o='128' t='UnicodeUTF8Charset *'/>
+<fun r='_ZN15UTF8VIQRCharsetC1EP18UnicodeUTF8CharsetP11VIQRCharset'/>
+<fun r='_ZN15UTF8VIQRCharset10startInputEv'/>
+<fun r='_ZN15UTF8VIQRCharset11startOutputEv'/>
+<fun r='_ZN15UTF8VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<fun r='_ZN15UTF8VIQRCharset7putCharER13ByteOutStreamjRi'/>

@@ -1,0 +1,13 @@
+<dec f='include/check.h' l='732'/>
+<doc f='include/check.h' l='720'>/**
+ * Check two strings to determine if 0&gt;=strcmp(X,Y) (e.g. strcmp(X,Y)&lt;=0)
+ *
+ * If not 0&gt;=strcmp(X,Y), the test fails.
+ *
+ * @param X string
+ * @param Y string to compare against X
+ *
+ * @note If the check fails, the remaining of the test is aborted
+ *
+ * @since 0.9.10
+ */</doc>

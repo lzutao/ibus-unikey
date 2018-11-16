@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/ukengine.h' l='41' type='int [256]'/>
+<offset>8608</offset>
+<use f='unikey/ukengine/unikey.cpp' l='57' u='r' c='UnikeySetInputMethod'/>
+<use f='unikey/ukengine/unikey.cpp' l='185' u='r' c='UnikeyLoadUserKeyMap'/>

@@ -1,0 +1,11 @@
+<dec f='include/check.h' l='436'/>
+<use f='unikey/test/test_inputproc.cc' l='63' u='c'/>
+<doc f='include/check.h' l='427'>/**
+ * Fail the test if expression is false
+ *
+ * @param expr expression to evaluate
+ *
+ * @note If the check fails, the remaining of the test is aborted
+ *
+ * @since 0.9.6
+ */</doc>

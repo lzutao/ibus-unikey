@@ -1,0 +1,2 @@
+<dec f='unikey/ukengine/usrkeymap.h' l='35' type='int UkStoreKeyOrderMap(const char * fileName, UkKeyMapPair * pMap, int mapCount)'/>
+<def f='unikey/ukengine/usrkeymap.cpp' l='234' ll='257' type='int UkStoreKeyOrderMap(const char * fileName, UkKeyMapPair * pMap, int mapCount)'/>

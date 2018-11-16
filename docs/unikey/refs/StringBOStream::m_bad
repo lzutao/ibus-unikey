@@ -1,0 +1,16 @@
+<dec f='unikey/ukengine/byteio.h' l='149' type='int'/>
+<offset>256</offset>
+<use f='unikey/ukengine/byteio.cpp' l='170' u='w' c='_ZN14StringBOStreamC1EPhi'/>
+<use f='unikey/ukengine/byteio.cpp' l='183' u='r' c='_ZN14StringBOStream4putBEh'/>
+<use f='unikey/ukengine/byteio.cpp' l='195' u='w' c='_ZN14StringBOStream4putBEh'/>
+<use f='unikey/ukengine/byteio.cpp' l='203' u='r' c='_ZN14StringBOStream4putWEt'/>
+<use f='unikey/ukengine/byteio.cpp' l='210' u='w' c='_ZN14StringBOStream4putWEt'/>
+<use f='unikey/ukengine/byteio.cpp' l='224' u='r' c='_ZN14StringBOStream4putsEPKci'/>
+<use f='unikey/ukengine/byteio.cpp' l='225' u='w' c='_ZN14StringBOStream4putsEPKci'/>
+<use f='unikey/ukengine/byteio.cpp' l='226' u='r' c='_ZN14StringBOStream4putsEPKci'/>
+<use f='unikey/ukengine/byteio.cpp' l='230' u='r' c='_ZN14StringBOStream4putsEPKci'/>
+<use f='unikey/ukengine/byteio.cpp' l='239' u='r' c='_ZN14StringBOStream4putsEPKci'/>
+<use f='unikey/ukengine/byteio.cpp' l='240' u='w' c='_ZN14StringBOStream4putsEPKci'/>
+<use f='unikey/ukengine/byteio.cpp' l='241' u='r' c='_ZN14StringBOStream4putsEPKci'/>
+<use f='unikey/ukengine/byteio.cpp' l='249' u='w' c='_ZN14StringBOStream6reopenEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='256' u='r' c='_ZN14StringBOStream4isOKEv'/>

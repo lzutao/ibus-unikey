@@ -1,0 +1,8 @@
+<dec f='unikey/ukengine/inputproc.h' l='92' type='void UkInputProcessor::keyCodeToSymbol(unsigned int keyCode, UkKeyEvent &amp; ev)'/>
+<def f='unikey/ukengine/inputproc.cpp' l='373' ll='384' type='void UkInputProcessor::keyCodeToSymbol(unsigned int keyCode, UkKeyEvent &amp; ev)'/>
+<doc f='unikey/ukengine/inputproc.cpp' l='368'>//----------------------------------------------------------------
+// This method translates a key stroke to a symbol.
+// Key strokes are simply considered character input, not action keys as in
+// keyCodeToEvent method
+//----------------------------------------------------------------</doc>
+<use f='unikey/ukengine/ukengine.cpp' l='2242' u='c' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>

@@ -1,0 +1,5 @@
+<dec f='include/stdio.h' l='646' type='size_t fread(void *__restrict __ptr, size_t __size, size_t __n, FILE *__restrict __stream)'/>
+<doc f='include/stdio.h' l='642'>/* Read chunks of generic data from STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>

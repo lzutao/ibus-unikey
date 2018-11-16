@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>unikey.h source code [unikey/ukengine/unikey.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'unikey/ukengine/unikey.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>unikey</a>/<a href='./'>ukengine</a>/<a href='unikey.h.html'>unikey.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>// -*- coding:unix; mode:c++; tab-width:4; c-basic-offset:4; indent-tabs-mode:nil -*-</i></td></tr>
+<tr><th id="2">2</th><td><i>/*------------------------------------------------------------------------------</i></td></tr>
+<tr><th id="3">3</th><td><i>UniKey - Open-source Vietnamese Keyboard</i></td></tr>
+<tr><th id="4">4</th><td><i>Copyright (C) 2000-2005 Pham Kim Long</i></td></tr>
+<tr><th id="5">5</th><td><i>Contact:</i></td></tr>
+<tr><th id="6">6</th><td><i>  unikey@gmail.com</i></td></tr>
+<tr><th id="7">7</th><td><i>  <a href="http://unikey.org">http://unikey.org</a></i></td></tr>
+<tr><th id="8">8</th><td><i></i></td></tr>
+<tr><th id="9">9</th><td><i>This program is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="10">10</th><td><i>modify it under the terms of the GNU General Public License</i></td></tr>
+<tr><th id="11">11</th><td><i>as published by the Free Software Foundation; either version 2</i></td></tr>
+<tr><th id="12">12</th><td><i>of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="13">13</th><td><i></i></td></tr>
+<tr><th id="14">14</th><td><i>This program is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="15">15</th><td><i>but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="16">16</th><td><i>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</i></td></tr>
+<tr><th id="17">17</th><td><i>GNU General Public License for more details.</i></td></tr>
+<tr><th id="18">18</th><td><i></i></td></tr>
+<tr><th id="19">19</th><td><i>You should have received a copy of the GNU General Public License</i></td></tr>
+<tr><th id="20">20</th><td><i>along with this program; if not, write to the Free Software</i></td></tr>
+<tr><th id="21">21</th><td><i>Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.</i></td></tr>
+<tr><th id="22">22</th><td><i>--------------------------------------------------------------------------------*/</i></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="24">ifndef</span> <span class="macro" data-ref="_M/__UNIKEY_H">__UNIKEY_H</span></u></td></tr>
+<tr><th id="25">25</th><td><u>#define <dfn class="macro" id="_M/__UNIKEY_H" data-ref="_M/__UNIKEY_H">__UNIKEY_H</dfn></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="keycons.h.html">"keycons.h"</a></u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><i>/*----------------------------------------------------</i></td></tr>
+<tr><th id="30">30</th><td><i>Initialization steps:</i></td></tr>
+<tr><th id="31">31</th><td><i>   1. UnikeySetup: This will initialized Unikey module,</i></td></tr>
+<tr><th id="32">32</th><td><i>      with default options, input method = TELEX, output format = UTF-8</i></td></tr>
+<tr><th id="33">33</th><td><i>   2. If you want a different settings:</i></td></tr>
+<tr><th id="34">34</th><td><i>     + Call UnikeySetInputMethod to change input method</i></td></tr>
+<tr><th id="35">35</th><td><i>     + Call UnikeySetOutputVIQR/UTF8 to chang output format</i></td></tr>
+<tr><th id="36">36</th><td><i>     + Call UnikeySetOptions to change extra options</i></td></tr>
+<tr><th id="37">37</th><td><i></i></td></tr>
+<tr><th id="38">38</th><td><i>Key event handling:</i></td></tr>
+<tr><th id="39">39</th><td><i></i></td></tr>
+<tr><th id="40">40</th><td><i>- Call UnikeyFilter when a key event occurs, examine results in</i></td></tr>
+<tr><th id="41">41</th><td><i>    + UnikeyBackspaces: number of backspaces that need to be sent</i></td></tr>
+<tr><th id="42">42</th><td><i>    + UnikeyBufChars: number of chars in buffer that need to be sent</i></td></tr>
+<tr><th id="43">43</th><td><i>    + UnikeyAnsiBuf: buffer containing output characters.</i></td></tr>
+<tr><th id="44">44</th><td><i>    + UnikeyUniBuf: not used</i></td></tr>
+<tr><th id="45">45</th><td><i></i></td></tr>
+<tr><th id="46">46</th><td><i>  You should also call UnikeySetCapsState() before calling UnikeyFilter.</i></td></tr>
+<tr><th id="47">47</th><td><i></i></td></tr>
+<tr><th id="48">48</th><td><i>  To make this module portable across platforms, UnikeyFilter should not</i></td></tr>
+<tr><th id="49">49</th><td><i>  be called on special keys: Enter, Tab, movement keys, delete, backspace...</i></td></tr>
+<tr><th id="50">50</th><td><i></i></td></tr>
+<tr><th id="51">51</th><td><i>- Special events:</i></td></tr>
+<tr><th id="52">52</th><td><i>    + Call UnikeyResetBuf to reset the engine's state in situations such as:</i></td></tr>
+<tr><th id="53">53</th><td><i>      focus lost, movement keys: arrow keys, pgup, pgdown....</i></td></tr>
+<tr><th id="54">54</th><td><i>    + If a backspace is received, call UnikeyBackspacePress,</i></td></tr>
+<tr><th id="55">55</th><td><i>      then examine the result:</i></td></tr>
+<tr><th id="56">56</th><td><i>      UnikeyBackspaces is the number of backspaces actually required to</i></td></tr>
+<tr><th id="57">57</th><td><i>      remove one character.</i></td></tr>
+<tr><th id="58">58</th><td><i></i></td></tr>
+<tr><th id="59">59</th><td><i>Clean up:</i></td></tr>
+<tr><th id="60">60</th><td><i>- When the Engine is no longer needed, call UnikeyCleanup</i></td></tr>
+<tr><th id="61">61</th><td><i>------------------------------------------------------*/</i></td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><u>#<span data-ppcond="63">if</span> defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>)</u></td></tr>
+<tr><th id="64">64</th><td><b>extern</b> <q>"C"</q> {</td></tr>
+<tr><th id="65">65</th><td><u>#<span data-ppcond="63">endif</span></u></td></tr>
+<tr><th id="66">66</th><td>    <b>extern</b> <em>unsigned</em> <em>char</em> <dfn class="decl" id="UnikeyBuf" title='UnikeyBuf' data-ref="UnikeyBuf">UnikeyBuf</dfn>[];</td></tr>
+<tr><th id="67">67</th><td>    <b>extern</b> <em>int</em> <dfn class="decl" id="UnikeyBackspaces" title='UnikeyBackspaces' data-ref="UnikeyBackspaces">UnikeyBackspaces</dfn>;</td></tr>
+<tr><th id="68">68</th><td>    <b>extern</b> <em>int</em> <dfn class="decl" id="UnikeyBufChars" title='UnikeyBufChars' data-ref="UnikeyBufChars">UnikeyBufChars</dfn>;</td></tr>
+<tr><th id="69">69</th><td>    <b>extern</b> <a class="typedef" href="keycons.h.html#UkOutputType" title='UkOutputType' data-type='enum UkOutputType' data-ref="UkOutputType">UkOutputType</a> <dfn class="decl" id="UnikeyOutput" title='UnikeyOutput' data-ref="UnikeyOutput">UnikeyOutput</dfn>;</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeySetup" title='UnikeySetup' data-ref="UnikeySetup" id="UnikeySetup">UnikeySetup</a>(); <i>// always call this first</i></td></tr>
+<tr><th id="72">72</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeyCleanup" title='UnikeyCleanup' data-ref="UnikeyCleanup" id="UnikeyCleanup">UnikeyCleanup</a>(); <i>// call this when unloading unikey module</i></td></tr>
+<tr><th id="73">73</th><td>  </td></tr>
+<tr><th id="74">74</th><td>  <i>// call this to reset Unikey's state when focus, context is changed or</i></td></tr>
+<tr><th id="75">75</th><td><i>  // some control key is pressed</i></td></tr>
+<tr><th id="76">76</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeyResetBuf" title='UnikeyResetBuf' data-ref="UnikeyResetBuf" id="UnikeyResetBuf">UnikeyResetBuf</a>(); </td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td> <i>// main handler, call every time a character input is received</i></td></tr>
+<tr><th id="79">79</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeyFilter" title='UnikeyFilter' data-ref="UnikeyFilter" id="UnikeyFilter">UnikeyFilter</a>(<em>unsigned</em> <em>int</em> <dfn class="local col1 decl" id="1ch" title='ch' data-type='unsigned int' data-ref="1ch">ch</dfn>);</td></tr>
+<tr><th id="80">80</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeyPutChar" title='UnikeyPutChar' data-ref="UnikeyPutChar" id="UnikeyPutChar">UnikeyPutChar</a>(<em>unsigned</em> <em>int</em> <dfn class="local col2 decl" id="2ch" title='ch' data-type='unsigned int' data-ref="2ch">ch</dfn>); <i>// put new char without filtering</i></td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td>  <i>// call this before UnikeyFilter for correctly processing some TELEX shortcuts</i></td></tr>
+<tr><th id="83">83</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeySetCapsState" title='UnikeySetCapsState' data-ref="UnikeySetCapsState" id="UnikeySetCapsState">UnikeySetCapsState</a>(<em>int</em> <dfn class="local col3 decl" id="3shiftPressed" title='shiftPressed' data-type='int' data-ref="3shiftPressed">shiftPressed</dfn>, <em>int</em> <dfn class="local col4 decl" id="4CapsLockOn" title='CapsLockOn' data-type='int' data-ref="4CapsLockOn">CapsLockOn</dfn>);</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td> <i>// call this when backspace is pressed</i></td></tr>
+<tr><th id="86">86</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeyBackspacePress" title='UnikeyBackspacePress' data-ref="UnikeyBackspacePress" id="UnikeyBackspacePress">UnikeyBackspacePress</a>();</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td>  <i>// call this to restore to original key strokes</i></td></tr>
+<tr><th id="89">89</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeyRestoreKeyStrokes" title='UnikeyRestoreKeyStrokes' data-ref="UnikeyRestoreKeyStrokes" id="UnikeyRestoreKeyStrokes">UnikeyRestoreKeyStrokes</a>();</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td> <i>//set extra options</i></td></tr>
+<tr><th id="92">92</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeySetOptions" title='UnikeySetOptions' data-ref="UnikeySetOptions" id="UnikeySetOptions">UnikeySetOptions</a>(<a class="typedef" href="keycons.h.html#UnikeyOptions" title='UnikeyOptions' data-type='struct _UnikeyOptions' data-ref="UnikeyOptions">UnikeyOptions</a> *<dfn class="local col5 decl" id="5pOpt" title='pOpt' data-type='UnikeyOptions *' data-ref="5pOpt">pOpt</dfn>); </td></tr>
+<tr><th id="93">93</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#CreateDefaultUnikeyOptions" title='CreateDefaultUnikeyOptions' data-ref="CreateDefaultUnikeyOptions" id="CreateDefaultUnikeyOptions">CreateDefaultUnikeyOptions</a>(<a class="typedef" href="keycons.h.html#UnikeyOptions" title='UnikeyOptions' data-type='struct _UnikeyOptions' data-ref="UnikeyOptions">UnikeyOptions</a> *<dfn class="local col6 decl" id="6pOpt" title='pOpt' data-type='UnikeyOptions *' data-ref="6pOpt">pOpt</dfn>);</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeyGetOptions" title='UnikeyGetOptions' data-ref="UnikeyGetOptions" id="UnikeyGetOptions">UnikeyGetOptions</a>(<a class="typedef" href="keycons.h.html#UnikeyOptions" title='UnikeyOptions' data-type='struct _UnikeyOptions' data-ref="UnikeyOptions">UnikeyOptions</a> *<dfn class="local col7 decl" id="7pOpt" title='pOpt' data-type='UnikeyOptions *' data-ref="7pOpt">pOpt</dfn>);</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td>  <i>// set input method</i></td></tr>
+<tr><th id="98">98</th><td><i>  //   im: TELEX_INPUT, VNI_INPUT, VIQR_INPUT, VIQR_STAR_INPUT</i></td></tr>
+<tr><th id="99">99</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeySetInputMethod" title='UnikeySetInputMethod' data-ref="UnikeySetInputMethod" id="UnikeySetInputMethod">UnikeySetInputMethod</a>(<a class="typedef" href="keycons.h.html#UkInputMethod" title='UkInputMethod' data-type='enum UkInputMethod' data-ref="UkInputMethod">UkInputMethod</a> <dfn class="local col8 decl" id="8im" title='im' data-type='UkInputMethod' data-ref="8im">im</dfn>);</td></tr>
+<tr><th id="100">100</th><td>  <i>// set output format</i></td></tr>
+<tr><th id="101">101</th><td><i>  //  void UnikeySetOutputVIQR();</i></td></tr>
+<tr><th id="102">102</th><td><i>  // void UnikeySetOutputUTF8();</i></td></tr>
+<tr><th id="103">103</th><td>  <em>int</em> <a class="decl" href="unikey.cpp.html#UnikeySetOutputCharset" title='UnikeySetOutputCharset' data-ref="UnikeySetOutputCharset" id="UnikeySetOutputCharset">UnikeySetOutputCharset</a>(<em>int</em> <dfn class="local col9 decl" id="9charset" title='charset' data-type='int' data-ref="9charset">charset</dfn>);</td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td>  <em>int</em> <a class="decl" href="unikey.cpp.html#UnikeyLoadMacroTable" title='UnikeyLoadMacroTable' data-ref="UnikeyLoadMacroTable" id="UnikeyLoadMacroTable">UnikeyLoadMacroTable</a>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="10fileName" title='fileName' data-type='const char *' data-ref="10fileName">fileName</dfn>);</td></tr>
+<tr><th id="106">106</th><td>  <em>int</em> <a class="decl" href="unikey.cpp.html#UnikeyLoadUserKeyMap" title='UnikeyLoadUserKeyMap' data-ref="UnikeyLoadUserKeyMap" id="UnikeyLoadUserKeyMap">UnikeyLoadUserKeyMap</a>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="11fileName" title='fileName' data-type='const char *' data-ref="11fileName">fileName</dfn>);</td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td>  <i>//call this to enable typing vietnamese even in a non-vn sequence</i></td></tr>
+<tr><th id="109">109</th><td><i>  //e.g: GD&amp;DDT,QDDND...</i></td></tr>
+<tr><th id="110">110</th><td><i>  //The engine will return to normal mode when a word-break occurs.</i></td></tr>
+<tr><th id="111">111</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeySetSingleMode" title='UnikeySetSingleMode' data-ref="UnikeySetSingleMode" id="UnikeySetSingleMode">UnikeySetSingleMode</a>();</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td>  <em>bool</em> <a class="decl" href="unikey.cpp.html#UnikeyAtWordBeginning" title='UnikeyAtWordBeginning' data-ref="UnikeyAtWordBeginning" id="UnikeyAtWordBeginning">UnikeyAtWordBeginning</a>();</td></tr>
+<tr><th id="114">114</th><td><u>#<span data-ppcond="114">if</span> defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>)</u></td></tr>
+<tr><th id="115">115</th><td>}</td></tr>
+<tr><th id="116">116</th><td><u>#<span data-ppcond="114">endif</span></u></td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><u>#<span data-ppcond="24">endif</span></u></td></tr>
+<tr><th id="119">119</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='unikey.cpp.html'>unikey/ukengine/unikey.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project unikey revision <em>0.6.1</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

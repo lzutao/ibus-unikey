@@ -1,0 +1,12 @@
+<dec f='unikey/ukengine/byteio.h' l='68' type='struct (anonymous struct at /home/phaptc/builddir/ibus-unikey/builddir/../test/../ukengine/byteio.h:64:2)'/>
+<offset>320</offset>
+<use f='unikey/ukengine/byteio.cpp' l='133' u='m' c='_ZN14StringBIStream8bookmarkEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='134' u='m' c='_ZN14StringBIStream8bookmarkEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='135' u='m' c='_ZN14StringBIStream8bookmarkEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='136' u='m' c='_ZN14StringBIStream8bookmarkEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='137' u='m' c='_ZN14StringBIStream8bookmarkEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='146' u='m' c='_ZN14StringBIStream12gotoBookmarkEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='147' u='m' c='_ZN14StringBIStream12gotoBookmarkEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='148' u='m' c='_ZN14StringBIStream12gotoBookmarkEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='149' u='m' c='_ZN14StringBIStream12gotoBookmarkEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='150' u='m' c='_ZN14StringBIStream12gotoBookmarkEv'/>

@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/charset.h' l='297' type='int [213]'/>
+<use f='unikey/ukengine/charset.cpp' l='1300' u='r' c='_Z12StdVnGetRootj'/>
+<def f='unikey/ukengine/data.cpp' l='521' ll='545' type='int [213]'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2392' u='r' c='_ZN8UkEngine17lastWordHasVnMarkEv'/>

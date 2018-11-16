@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/byteio.h' l='120' type='int FileBIStream::open(const char * fileName)'/>
+<doc f='unikey/ukengine/byteio.h' l='118'>//	FileBIStream(char *fileName, int bufsize = 8192, void *buf = NULL);</doc>
+<def f='unikey/ukengine/byteio.cpp' l='285' ll='295' type='int FileBIStream::open(const char * fileName)'/>
+<doc f='unikey/ukengine/byteio.cpp' l='284'>//----------------------------------------------------</doc>

@@ -1,0 +1,11 @@
+<dec f='include/stdio.h' l='517' type='int fputc(int __c, FILE * __stream)'/>
+<doc f='include/stdio.h' l='510'>/* Write a character to STREAM.
+
+   These functions are possible cancellation points and therefore not
+   marked with __THROW.
+
+   These functions is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>
+<use f='unikey/ukengine/byteio.cpp' l='493' u='c' c='_ZN12FileBOStream4putBEh'/>
+<use f='unikey/ukengine/byteio.cpp' l='503' u='c' c='_ZN12FileBOStream4putWEt'/>
+<use f='unikey/ukengine/byteio.cpp' l='506' u='c' c='_ZN12FileBOStream4putWEt'/>

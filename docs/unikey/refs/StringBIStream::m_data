@@ -1,0 +1,8 @@
+<dec f='unikey/ukengine/byteio.h' l='61' type='UKBYTE *'/>
+<offset>128</offset>
+<use f='unikey/ukengine/byteio.cpp' l='8' u='w' c='_ZN14StringBIStreamC1EPhii'/>
+<use f='unikey/ukengine/byteio.cpp' l='48' u='r' c='_ZN14StringBIStream5ungetEh'/>
+<use f='unikey/ukengine/byteio.cpp' l='120' u='r' c='_ZN14StringBIStream6reopenEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='123' u='r' c='_ZN14StringBIStream6reopenEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='134' u='r' c='_ZN14StringBIStream8bookmarkEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='147' u='w' c='_ZN14StringBIStream12gotoBookmarkEv'/>

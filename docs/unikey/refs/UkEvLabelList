@@ -1,0 +1,8 @@
+<def f='unikey/ukengine/usrkeymap.cpp' l='44' ll='77' type='UkEventLabelPair [32]'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='79' u='r'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='185' u='m' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='192' u='m' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='193' u='m' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='196' u='m' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='251' u='m' c='_Z18UkStoreKeyOrderMapPKcP12UkKeyMapPairi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='263' u='m' c='_Z13getLabelIndexi'/>

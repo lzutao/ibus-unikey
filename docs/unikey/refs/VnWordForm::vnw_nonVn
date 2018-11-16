@@ -1,0 +1,20 @@
+<dec f='unikey/ukengine/ukengine.h' l='49' type='0'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1041' u='r' c='_ZN8UkEngine9processDdER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1124' u='r' c='_ZN8UkEngine14processMapCharER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1137' u='r' c='_ZN8UkEngine14processMapCharER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1262' u='r' c='_ZN8UkEngine15checkEscapeVIQRER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1288' u='r' c='_ZN8UkEngine15checkEscapeVIQRER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1295' u='r' c='_ZN8UkEngine15checkEscapeVIQRER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1333' u='r' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1408' c='_ZN8UkEngine11appendVowelER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1411' u='r' c='_ZN8UkEngine11appendVowelER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1439' u='r' c='_ZN8UkEngine11appendVowelER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1489' u='r' c='_ZN8UkEngine11appendVowelER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1554' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1555' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1630' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1668' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1708' u='r' c='_ZN8UkEngine14processEscCharER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1785' u='r' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1953' u='r' c='_ZN8UkEngine16processBackspaceERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2345' c='_ZN8UkEngine15lastWordIsNonVnEv'/>

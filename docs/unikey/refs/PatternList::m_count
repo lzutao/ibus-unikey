@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/pattern.h' l='54' type='int'/>
+<use f='unikey/ukengine/pattern.h' l='60' u='w' c='_ZN11PatternListC1Ev'/>
+<offset>64</offset>
+<use f='unikey/ukengine/pattern.cpp' l='73' u='w' c='_ZN11PatternList4initEPPci'/>
+<use f='unikey/ukengine/pattern.cpp' l='88' u='r' c='_ZN11PatternList15foundAtNextCharEc'/>
+<use f='unikey/ukengine/pattern.cpp' l='98' u='r' c='_ZN11PatternList5resetEv'/>

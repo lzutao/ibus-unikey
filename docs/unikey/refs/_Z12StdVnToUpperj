@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/charset.h' l='301' type='StdVnChar StdVnToUpper(StdVnChar ch)'/>
+<def f='unikey/ukengine/charset.cpp' l='1277' ll='1284' type='StdVnChar StdVnToUpper(StdVnChar ch)'/>
+<use f='unikey/ukengine/convert.cpp' l='53' u='c' c='_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2161' u='c' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>

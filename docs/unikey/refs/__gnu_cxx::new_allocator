@@ -1,0 +1,14 @@
+<def f='include/c++/7/ext/new_allocator.h' l='58' ll='151'/>
+<ovr f='include/c++/7/bits/allocator.h' l='173' c='std::allocator'/>
+<ovr f='include/c++/7/bits/allocator.h' l='174' c='std::allocator'/>
+<fun r='__gnu_cxx::new_allocator::new_allocator{_Tp}'/>
+<fun r='__gnu_cxx::new_allocator::new_allocator{_Tp}'/>
+<fun r='__gnu_cxx::new_allocator::new_allocator{_Tp}'/>
+<fun r='__gnu_cxx::new_allocator::~new_allocator{_Tp}'/>
+<fun r='__gnu_cxx::new_allocator::address'/>
+<fun r='__gnu_cxx::new_allocator::address'/>
+<fun r='__gnu_cxx::new_allocator::allocate'/>
+<fun r='__gnu_cxx::new_allocator::deallocate'/>
+<fun r='__gnu_cxx::new_allocator::max_size'/>
+<fun r='__gnu_cxx::new_allocator::construct'/>
+<fun r='__gnu_cxx::new_allocator::destroy'/>

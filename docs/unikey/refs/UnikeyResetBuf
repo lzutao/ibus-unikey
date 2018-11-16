@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/unikey.h' l='76' type='void UnikeyResetBuf()'/>
+<def f='unikey/ukengine/unikey.cpp' l='157' ll='160' type='void UnikeyResetBuf()'/>
+<doc f='unikey/ukengine/unikey.cpp' l='156'>//--------------------------------------------</doc>
+<doc f='unikey/ukengine/unikey.h' l='74'>// call this to reset Unikey&apos;s state when focus, context is changed or
+  // some control key is pressed</doc>

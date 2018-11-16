@@ -1,0 +1,27 @@
+<dec f='unikey/ukengine/inputproc.h' l='66' type='unsigned int'/>
+<use f='unikey/test/test_inputproc.cc' l='100' u='r' c='_Z11print_eventR10UkKeyEvent'/>
+<use f='unikey/test/test_inputproc.cc' l='105' u='r' c='_Z13compare_eventRK10UkKeyEventS1_'/>
+<use f='unikey/test/test_inputproc.cc' l='105' u='r' c='_Z13compare_eventRK10UkKeyEventS1_'/>
+<offset>96</offset>
+<use f='unikey/ukengine/inputproc.cpp' l='343' u='w' c='_ZN16UkInputProcessor14keyCodeToEventEjR10UkKeyEvent'/>
+<use f='unikey/ukengine/inputproc.cpp' l='375' u='w' c='_ZN16UkInputProcessor15keyCodeToSymbolEjR10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1177' u='r' c='_ZN8UkEngine14processMapCharER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1178' u='r' c='_ZN8UkEngine14processMapCharER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1203' u='r' c='_ZN8UkEngine13processTelexWER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1225' u='r' c='_ZN8UkEngine13processTelexWER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1243' u='r' c='_ZN8UkEngine15checkEscapeVIQRER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1264' u='r' c='_ZN8UkEngine15checkEscapeVIQRER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1297' u='r' c='_ZN8UkEngine15checkEscapeVIQRER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1302' u='r' c='_ZN8UkEngine15checkEscapeVIQRER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1335' u='r' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1377' u='r' c='_ZN8UkEngine11appendVowelER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1532' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1805' u='r' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2073' u='r' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2073' u='r' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2184' u='r' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2240' u='r' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2242' u='r' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2302' u='r' c='_ZN8UkEngine14processWordEndER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2321' u='r' c='_ZN8UkEngine14processWordEndER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2326' u='r' c='_ZN8UkEngine14processWordEndER10UkKeyEvent'/>

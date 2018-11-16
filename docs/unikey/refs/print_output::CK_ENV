@@ -1,0 +1,6 @@
+<dec f='include/check.h' l='805' type='4'/>
+<doc f='include/check.h' l='805'>/**&lt; Look at environment var CK_VERBOSITY
+                                     for what verbosity to use, which can be
+                                     either &quot;silent&quot;, &quot;minimal&quot;, &quot;normal&quot;,
+                                     or &quot;verbose&quot;. If the environment variable
+                                     is not set, then CK_NORMAL will be used.*/</doc>

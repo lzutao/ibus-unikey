@@ -1,0 +1,6 @@
+<dec f='include/c++/7/iostream' l='62' type='ostream'/>
+<doc f='include/c++/7/iostream' l='62'>/// Linked to standard error (unbuffered)</doc>
+<use f='unikey/ukengine/usrkeymap.cpp' l='162' u='a' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='206' u='a' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='210' u='a' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='243' u='a' c='_Z18UkStoreKeyOrderMapPKcP12UkKeyMapPairi'/>

@@ -1,0 +1,9 @@
+<inh f='include/c++/7/bits/stl_iterator_base_types.h' l='118' c='std::iterator'/>
+<def f='include/c++/7/bits/stl_iterator.h' l='544' ll='606'/>
+<mbr r='std::front_insert_iterator::container' t='_Container *'/>
+<fun r='_ZNSt21front_insert_iteratorC1ERT_'/>
+<fun r='_ZNSt21front_insert_iteratoraSERKNT_10value_typeE'/>
+<fun r='_ZNSt21front_insert_iteratoraSEONT_10value_typeE'/>
+<fun r='_ZNSt21front_insert_iteratordeEv'/>
+<fun r='_ZNSt21front_insert_iteratorppEv'/>
+<fun r='_ZNSt21front_insert_iteratorppEi'/>

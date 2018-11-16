@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/byteio.h' l='138' type='void FileBIStream::~FileBIStream()'/>
+<inh f='unikey/ukengine/byteio.h' l='20' c='_ZN12ByteInStreamD1Ev'/>
+<def f='unikey/ukengine/byteio.cpp' l='278' ll='282' type='void FileBIStream::~FileBIStream()'/>
+<doc f='unikey/ukengine/byteio.cpp' l='277'>//----------------------------------------------------</doc>

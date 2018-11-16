@@ -1,0 +1,3 @@
+<dec f='unikey/ukengine/byteio.h' l='162' type='void StringBOStream::reopen()'/>
+<def f='unikey/ukengine/byteio.cpp' l='245' ll='250' type='void StringBOStream::reopen()'/>
+<doc f='unikey/ukengine/byteio.cpp' l='244'>//------------------------------------------------</doc>

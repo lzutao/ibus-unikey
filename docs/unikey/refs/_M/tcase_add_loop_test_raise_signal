@@ -1,0 +1,19 @@
+<dec f='include/check.h' l='247'/>
+<doc f='include/check.h' l='229'>/**
+ * Add a looping test function with signal handling to a test case
+ *
+ * The test will be called in a for(i = s; i &lt; e; i++) loop with each
+ * iteration being executed in a new context. The loop variable &apos;i&apos; is
+ * available in the test.
+ *
+ * The added test is expected to terminate by throwing the given signal
+ *
+ * @param tc test case to add test to
+ * @param tf function to add to test case
+ * @param signal expected signal for test function to throw in order for
+ *                the test to be considered passing
+ * @param s starting index for value &quot;i&quot; in test
+ * @param e ending index for value &quot;i&quot; in test
+ *
+ * @since 0.9.5
+ */</doc>

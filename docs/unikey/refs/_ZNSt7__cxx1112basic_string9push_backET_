@@ -1,0 +1,5 @@
+<def f='include/c++/7/bits/basic_string.h' l='1329' ll='1337' type='void std::__cxx11::basic_string::push_back(_CharT __c)'/>
+<doc f='include/c++/7/bits/basic_string.h' l='1325'>/**
+       *  @brief  Append a single character.
+       *  @param __c  Character to append.
+       */</doc>

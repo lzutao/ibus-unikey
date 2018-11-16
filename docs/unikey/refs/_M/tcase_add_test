@@ -1,0 +1,11 @@
+<dec f='include/check.h' l='180'/>
+<use f='unikey/test/test_inputproc.cc' l='77' u='c'/>
+<doc f='include/check.h' l='172'>/**
+ * Add a test function to a test case
+ *
+ * @param tc test case to add test to
+ * @param tf test function to add to test case
+ *
+ * @since 0.6.0
+ * */</doc>
+<use f='unikey/test/test_ukengine.cc' l='21' u='c'/>

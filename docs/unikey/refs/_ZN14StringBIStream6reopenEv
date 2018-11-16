@@ -1,0 +1,14 @@
+<dec f='unikey/ukengine/byteio.h' l='89' type='void StringBIStream::reopen()'/>
+<def f='unikey/ukengine/byteio.cpp' l='118' ll='127' type='void StringBIStream::reopen()'/>
+<doc f='unikey/ukengine/byteio.cpp' l='106'>/*
+//------------------------------------------------
+int StringBIStream::peekNextDW(UKDWORD &amp; dw)
+{
+	if (m_eos)
+		return 0;
+	dw = *((UKDWORD *)m_current);
+	return 1;
+}
+*/
+
+//------------------------------------------------</doc>

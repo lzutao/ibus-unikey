@@ -1,0 +1,2 @@
+<dec f='include/string.h' l='180'/>
+<doc f='include/string.h' l='179'>/* Duplicate S, returning an identical alloca&apos;d string.  */</doc>

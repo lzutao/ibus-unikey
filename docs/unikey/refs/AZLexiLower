@@ -1,0 +1,4 @@
+<def f='unikey/ukengine/inputproc.cpp' l='46' ll='49' type='VnLexiName [26]'/>
+<use f='unikey/ukengine/inputproc.cpp' l='256' u='r' c='_Z25SetupInputClassifierTablev'/>
+<dec f='unikey/ukengine/ukengine.cpp' l='52' type='VnLexiName []'/>
+<use f='unikey/ukengine/ukengine.cpp' l='460' u='r' c='_Z15engineClassInitv'/>

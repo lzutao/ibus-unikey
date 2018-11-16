@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/charset.h' l='255' type='void UTF8VIQRCharset::startInput()'/>
+<inh f='unikey/ukengine/charset.h' l='89' c='_ZN9VnCharset10startInputEv'/>
+<def f='unikey/ukengine/charset.cpp' l='951' ll='955' type='void UTF8VIQRCharset::startInput()'/>
+<doc f='unikey/ukengine/charset.cpp' l='950'>//-----------------------------------------</doc>

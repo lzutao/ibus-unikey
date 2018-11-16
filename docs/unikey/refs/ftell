@@ -1,0 +1,6 @@
+<dec f='include/stdio.h' l='689' type='long ftell(FILE * __stream)'/>
+<doc f='include/stdio.h' l='685'>/* Return the current position of STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>
+<use f='unikey/ukengine/byteio.cpp' l='424' u='c' c='_ZN12FileBIStream8bookmarkEv'/>

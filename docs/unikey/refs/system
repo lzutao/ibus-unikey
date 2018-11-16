@@ -1,0 +1,6 @@
+<dec f='include/stdlib.h' l='781' type='int system(const char * __command)'/>
+<doc f='include/stdlib.h' l='777'>/* Execute the given line as a shell command.
+
+   This function is a cancellation point and therefore not marked with
+   __THROW.  */</doc>
+<use f='unikey/ukengine/convert.cpp' l='184' u='c' c='VnFileConvert'/>

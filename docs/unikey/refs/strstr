@@ -1,0 +1,2 @@
+<dec f='include/string.h' l='329' type='char * strstr(const char * __haystack, const char * __needle)'/>
+<use f='unikey/ukengine/mactab.cpp' l='143' u='c' c='_ZN11CMacroTable10readHeaderEP8_IO_FILERi'/>

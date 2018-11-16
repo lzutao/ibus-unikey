@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/charset.h' l='114' type='void SingleByteCharset::SingleByteCharset(unsigned char * vnChars)'/>
+<def f='unikey/ukengine/charset.cpp' l='76' ll='85' type='void SingleByteCharset::SingleByteCharset(unsigned char * vnChars)'/>
+<use f='unikey/ukengine/charset.cpp' l='1128' u='c' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>
+<doc f='unikey/ukengine/charset.cpp' l='75'>//-------------------------------------------</doc>

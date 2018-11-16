@@ -1,0 +1,5 @@
+<def f='unikey/ukengine/ukengine.cpp' l='206' type='CSeqPair [30]'/>
+<use f='unikey/ukengine/ukengine.cpp' l='440' u='m' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='441' u='m' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='445' u='r' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='494' u='r' c='_Z10lookupCSeq10VnLexiNameS_S_'/>

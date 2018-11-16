@@ -1,0 +1,3 @@
+<dec f='include/x86_64-linux-gnu/bits/libio.h' l='166' type='int'/>
+<offset>128</offset>
+<doc f='include/x86_64-linux-gnu/bits/libio.h' l='165'>/* if _pos &lt; 0, it points to _buf-&gt;eBptr()+_pos. FIXME comment */</doc>

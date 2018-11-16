@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/ukengine.h' l='92' type='int UkEngine::processTelexW(UkKeyEvent &amp; ev)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='287' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='287' u='a'/>
+<def f='unikey/ukengine/ukengine.cpp' l='1189' ll='1233' type='int UkEngine::processTelexW(UkKeyEvent &amp; ev)'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='1188'>//----------------------------------------------------------</doc>

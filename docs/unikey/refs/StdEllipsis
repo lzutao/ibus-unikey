@@ -1,0 +1,3 @@
+<def f='unikey/ukengine/data.h' l='9' type='const StdVnChar'/>
+<use f='unikey/ukengine/charset.cpp' l='113' u='r' c='_ZN17SingleByteCharset7putCharER13ByteOutStreamjRi'/>
+<doc f='unikey/ukengine/data.h' l='9'>// 0x85 in Western charet.</doc>

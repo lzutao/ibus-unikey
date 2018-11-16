@@ -1,0 +1,6 @@
+<def f='include/c++/7/bits/alloc_traits.h' l='494' ll='496' type='static size_type std::allocator_traits&lt;allocator&lt;type-parameter-0-0&gt; &gt;::max_size(const allocator_type &amp; __a)'/>
+<doc f='include/c++/7/bits/alloc_traits.h' l='489'>/**
+       *  @brief  The maximum supported allocation size
+       *  @param  __a  An allocator.
+       *  @return @c __a.max_size()
+      */</doc>

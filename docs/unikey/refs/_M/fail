@@ -1,0 +1,6 @@
+<dec f='include/check.h' l='408'/>
+<doc f='include/check.h' l='403'>/*
+ * Fail the test
+ *
+ * This call is deprecated.
+ */</doc>

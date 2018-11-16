@@ -1,0 +1,16 @@
+<dec f='include/check.h' l='981' type='void srunner_run(SRunner * sr, const char * sname, const char * tcname, enum print_output print_mode)'/>
+<doc f='include/check.h' l='966'>/**
+ * Run a specific suite or test case from a suite runner, printing results
+ * to stdout as specified by the print_mode.
+ *
+ * In addition to running any applicable suites or test cases, if the
+ * suite runner has been configured to output to a log, that is also
+ * performed.
+ *
+ * @param sr suite runner where the given suite or test case must be
+ * @param sname suite name to run. A NULL means &quot;any suite&quot;.
+ * @param tcname test case name to run. A NULL means &quot;any test case&quot;
+ * @param print_mode the verbosity in which to report results to stdout
+ *
+ * @since 0.9.9
+ */</doc>

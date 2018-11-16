@@ -1,0 +1,12 @@
+<dec f='unikey/ukengine/charset.h' l='195' type='UKWORD [256]'/>
+<offset>64</offset>
+<use f='unikey/ukengine/charset.cpp' l='1173' u='r' c='_ZN16WinCP1258CharsetC1EPtS0_'/>
+<use f='unikey/ukengine/charset.cpp' l='1178' u='w' c='_ZN16WinCP1258CharsetC1EPtS0_'/>
+<use f='unikey/ukengine/charset.cpp' l='1179' u='r' c='_ZN16WinCP1258CharsetC1EPtS0_'/>
+<use f='unikey/ukengine/charset.cpp' l='1180' u='w' c='_ZN16WinCP1258CharsetC1EPtS0_'/>
+<use f='unikey/ukengine/charset.cpp' l='1191' u='w' c='_ZN16WinCP1258CharsetC1EPtS0_'/>
+<use f='unikey/ukengine/charset.cpp' l='1192' u='r' c='_ZN16WinCP1258CharsetC1EPtS0_'/>
+<use f='unikey/ukengine/charset.cpp' l='1193' u='w' c='_ZN16WinCP1258CharsetC1EPtS0_'/>
+<use f='unikey/ukengine/charset.cpp' l='1217' u='r' c='_ZN16WinCP1258Charset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='1255' u='r' c='_ZN16WinCP1258Charset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='1262' u='r' c='_ZN16WinCP1258Charset7putCharER13ByteOutStreamjRi'/>

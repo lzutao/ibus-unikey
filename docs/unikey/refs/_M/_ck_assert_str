@@ -1,0 +1,2 @@
+<dec f='include/check.h' l='649'/>
+<doc f='include/check.h' l='648'>/* The x and y parameter swap in strcmp() is needed to handle &gt;, &gt;=, &lt;, &lt;= operators */</doc>

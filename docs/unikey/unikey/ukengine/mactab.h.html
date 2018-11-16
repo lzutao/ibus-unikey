@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>mactab.h source code [unikey/ukengine/mactab.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="CMacroTable,MacroDef "/>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'unikey/ukengine/mactab.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>unikey</a>/<a href='./'>ukengine</a>/<a href='mactab.h.html'>mactab.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>// -*- coding:unix; mode:c++; tab-width:4; c-basic-offset:4; indent-tabs-mode:nil -*-</i></td></tr>
+<tr><th id="2">2</th><td><i>/* Unikey Vietnamese Input Method</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright (C) 2000-2005 Pham Kim Long</i></td></tr>
+<tr><th id="4">4</th><td><i> * Contact:</i></td></tr>
+<tr><th id="5">5</th><td><i> *   unikey@gmail.com</i></td></tr>
+<tr><th id="6">6</th><td><i> *   UniKey project: <a href="http://unikey.org">http://unikey.org</a></i></td></tr>
+<tr><th id="7">7</th><td><i> *</i></td></tr>
+<tr><th id="8">8</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="9">9</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="10">10</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="11">11</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="12">12</th><td><i> *</i></td></tr>
+<tr><th id="13">13</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="14">14</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="15">15</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="16">16</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="17">17</th><td><i> *</i></td></tr>
+<tr><th id="18">18</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="19">19</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="20">20</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="21">21</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="22">22</th><td><i> */</i></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="24">ifndef</span> <span class="macro" data-ref="_M/__MACRO_TABLE_H">__MACRO_TABLE_H</span></u></td></tr>
+<tr><th id="25">25</th><td><u>#define <dfn class="macro" id="_M/__MACRO_TABLE_H" data-ref="_M/__MACRO_TABLE_H">__MACRO_TABLE_H</dfn></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="keycons.h.html">"keycons.h"</a></u></td></tr>
+<tr><th id="28">28</th><td><u>#include <a href="charset.h.html">"charset.h"</a></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><u>#<span data-ppcond="30">if</span> defined(<span class="macro" data-ref="_M/_WIN32">_WIN32</span>)</u></td></tr>
+<tr><th id="31">31</th><td>    <u>#if defined(UNIKEYHOOK)</u></td></tr>
+<tr><th id="32">32</th><td>        <u>#define DllInterface   __declspec( dllexport )</u></td></tr>
+<tr><th id="33">33</th><td>    <u>#else</u></td></tr>
+<tr><th id="34">34</th><td>        <u>#define DllInterface   __declspec( dllimport )</u></td></tr>
+<tr><th id="35">35</th><td>    <u>#endif</u></td></tr>
+<tr><th id="36">36</th><td><u>#<span data-ppcond="30">else</span></u></td></tr>
+<tr><th id="37">37</th><td>    <u>#define <dfn class="macro" id="_M/DllInterface" data-ref="_M/DllInterface">DllInterface</dfn> //not used</u></td></tr>
+<tr><th id="38">38</th><td>    <u>#define <dfn class="macro" id="_M/DllExport" data-ref="_M/DllExport">DllExport</dfn></u></td></tr>
+<tr><th id="39">39</th><td>    <u>#define <dfn class="macro" id="_M/DllImport" data-ref="_M/DllImport">DllImport</dfn></u></td></tr>
+<tr><th id="40">40</th><td><u>#<span data-ppcond="30">endif</span></u></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><b>struct</b> <dfn class="type def" id="MacroDef" title='MacroDef' data-ref="MacroDef">MacroDef</dfn></td></tr>
+<tr><th id="43">43</th><td>{</td></tr>
+<tr><th id="44">44</th><td>  <em>int</em> <dfn class="decl" id="MacroDef::keyOffset" title='MacroDef::keyOffset' data-ref="MacroDef::keyOffset">keyOffset</dfn>;</td></tr>
+<tr><th id="45">45</th><td>  <em>int</em> <dfn class="decl" id="MacroDef::textOffset" title='MacroDef::textOffset' data-ref="MacroDef::textOffset">textOffset</dfn>;</td></tr>
+<tr><th id="46">46</th><td>};</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><u>#<span data-ppcond="48">if</span> !defined(<span class="macro" data-ref="_M/WIN32">WIN32</span>)</u></td></tr>
+<tr><th id="49">49</th><td><b>typedef</b> <em>char</em> <dfn class="typedef" id="TCHAR" title='TCHAR' data-type='char' data-ref="TCHAR">TCHAR</dfn>;</td></tr>
+<tr><th id="50">50</th><td><u>#<span data-ppcond="48">endif</span></u></td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><b>class</b> <a class="macro" href="#37" title="" data-ref="_M/DllInterface">DllInterface</a> <dfn class="type def" id="CMacroTable" title='CMacroTable' data-ref="CMacroTable">CMacroTable</dfn></td></tr>
+<tr><th id="53">53</th><td>{</td></tr>
+<tr><th id="54">54</th><td><b>public</b>:</td></tr>
+<tr><th id="55">55</th><td>    <em>void</em> <dfn class="decl" id="_ZN11CMacroTable4initEv" title='CMacroTable::init' data-ref="_ZN11CMacroTable4initEv">init</dfn>();</td></tr>
+<tr><th id="56">56</th><td>    <em>int</em> <dfn class="decl" id="_ZN11CMacroTable12loadFromFileEPKc" title='CMacroTable::loadFromFile' data-ref="_ZN11CMacroTable12loadFromFileEPKc">loadFromFile</dfn>(<em>const</em> <em>char</em> *<dfn class="local col9 decl" id="159fname" title='fname' data-type='const char *' data-ref="159fname">fname</dfn>);</td></tr>
+<tr><th id="57">57</th><td>    <em>int</em> <dfn class="decl" id="_ZN11CMacroTable11writeToFileEPKc" title='CMacroTable::writeToFile' data-ref="_ZN11CMacroTable11writeToFileEPKc">writeToFile</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="160fname" title='fname' data-type='const char *' data-ref="160fname">fname</dfn>);</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td>    <em>const</em> <a class="typedef" href="charset.h.html#StdVnChar" title='StdVnChar' data-type='uint32_t' data-ref="StdVnChar">StdVnChar</a> *<dfn class="decl" id="_ZN11CMacroTable6lookupEPj" title='CMacroTable::lookup' data-ref="_ZN11CMacroTable6lookupEPj">lookup</dfn>(<a class="typedef" href="charset.h.html#StdVnChar" title='StdVnChar' data-type='uint32_t' data-ref="StdVnChar">StdVnChar</a> *<dfn class="local col1 decl" id="161key" title='key' data-type='StdVnChar *' data-ref="161key">key</dfn>);</td></tr>
+<tr><th id="60">60</th><td>    <em>const</em> <a class="typedef" href="charset.h.html#StdVnChar" title='StdVnChar' data-type='uint32_t' data-ref="StdVnChar">StdVnChar</a> *<dfn class="decl" id="_ZN11CMacroTable6getKeyEi" title='CMacroTable::getKey' data-ref="_ZN11CMacroTable6getKeyEi">getKey</dfn>(<em>int</em> <dfn class="local col2 decl" id="162idx" title='idx' data-type='int' data-ref="162idx">idx</dfn>);</td></tr>
+<tr><th id="61">61</th><td>    <em>const</em> <a class="typedef" href="charset.h.html#StdVnChar" title='StdVnChar' data-type='uint32_t' data-ref="StdVnChar">StdVnChar</a> *<dfn class="decl" id="_ZN11CMacroTable7getTextEi" title='CMacroTable::getText' data-ref="_ZN11CMacroTable7getTextEi">getText</dfn>(<em>int</em> <dfn class="local col3 decl" id="163idx" title='idx' data-type='int' data-ref="163idx">idx</dfn>);</td></tr>
+<tr><th id="62">62</th><td>    <em>int</em> <dfn class="decl def" id="_ZN11CMacroTable8getCountEv" title='CMacroTable::getCount' data-ref="_ZN11CMacroTable8getCountEv">getCount</dfn>() { <b>return</b> <a class="member" href="#CMacroTable::m_count" title='CMacroTable::m_count' data-ref="CMacroTable::m_count">m_count</a>; }</td></tr>
+<tr><th id="63">63</th><td>    <em>void</em> <dfn class="decl" id="_ZN11CMacroTable12resetContentEv" title='CMacroTable::resetContent' data-ref="_ZN11CMacroTable12resetContentEv">resetContent</dfn>();</td></tr>
+<tr><th id="64">64</th><td>    <em>int</em> <dfn class="decl" id="_ZN11CMacroTable7addItemEPKci" title='CMacroTable::addItem' data-ref="_ZN11CMacroTable7addItemEPKci">addItem</dfn>(<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="164item" title='item' data-type='const char *' data-ref="164item">item</dfn>, <em>int</em> <dfn class="local col5 decl" id="165charset" title='charset' data-type='int' data-ref="165charset">charset</dfn>);</td></tr>
+<tr><th id="65">65</th><td>    <em>int</em> <dfn class="decl" id="_ZN11CMacroTable7addItemEPKvS1_i" title='CMacroTable::addItem' data-ref="_ZN11CMacroTable7addItemEPKvS1_i">addItem</dfn>(<em>const</em> <em>void</em> *<dfn class="local col6 decl" id="166key" title='key' data-type='const void *' data-ref="166key">key</dfn>, <em>const</em> <em>void</em> *<dfn class="local col7 decl" id="167text" title='text' data-type='const void *' data-ref="167text">text</dfn>, <em>int</em> <dfn class="local col8 decl" id="168charset" title='charset' data-type='int' data-ref="168charset">charset</dfn>);</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td><b>protected</b>:</td></tr>
+<tr><th id="68">68</th><td>    <em>bool</em> <dfn class="decl" id="_ZN11CMacroTable10readHeaderEP8_IO_FILERi" title='CMacroTable::readHeader' data-ref="_ZN11CMacroTable10readHeaderEP8_IO_FILERi">readHeader</dfn>(<a class="typedef" href="../../include/x86_64-linux-gnu/bits/types/FILE.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col9 decl" id="169f" title='f' data-type='FILE *' data-ref="169f">f</dfn>, <em>int</em> &amp; <dfn class="local col0 decl" id="170version" title='version' data-type='int &amp;' data-ref="170version">version</dfn>);</td></tr>
+<tr><th id="69">69</th><td>    <em>void</em> <dfn class="decl" id="_ZN11CMacroTable11writeHeaderEP8_IO_FILE" title='CMacroTable::writeHeader' data-ref="_ZN11CMacroTable11writeHeaderEP8_IO_FILE">writeHeader</dfn>(<a class="typedef" href="../../include/x86_64-linux-gnu/bits/types/FILE.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col1 decl" id="171f" title='f' data-type='FILE *' data-ref="171f">f</dfn>);</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td>    <a class="type" href="#MacroDef" title='MacroDef' data-ref="MacroDef">MacroDef</a> <dfn class="decl" id="CMacroTable::m_table" title='CMacroTable::m_table' data-ref="CMacroTable::m_table">m_table</dfn>[<a class="macro" href="keycons.h.html#30" title="1024" data-ref="_M/MAX_MACRO_ITEMS">MAX_MACRO_ITEMS</a>];</td></tr>
+<tr><th id="72">72</th><td>    <em>char</em> <dfn class="decl" id="CMacroTable::m_macroMem" title='CMacroTable::m_macroMem' data-ref="CMacroTable::m_macroMem">m_macroMem</dfn>[<a class="macro" href="keycons.h.html#33" title="(1024*128)" data-ref="_M/MACRO_MEM_SIZE">MACRO_MEM_SIZE</a>];</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td>    <em>int</em> <dfn class="decl" id="CMacroTable::m_count" title='CMacroTable::m_count' data-ref="CMacroTable::m_count">m_count</dfn>;</td></tr>
+<tr><th id="75">75</th><td>    <em>int</em> <dfn class="decl" id="CMacroTable::m_memSize" title='CMacroTable::m_memSize' data-ref="CMacroTable::m_memSize">m_memSize</dfn>, <dfn class="decl" id="CMacroTable::m_occupied" title='CMacroTable::m_occupied' data-ref="CMacroTable::m_occupied">m_occupied</dfn>;</td></tr>
+<tr><th id="76">76</th><td>};</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><u>#<span data-ppcond="24">endif</span></u></td></tr>
+<tr><th id="79">79</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../test/test_ukengine.cc.html'>unikey/test/test_ukengine.cc</a><br/>Generated on <em>2018-Nov-16</em> from project unikey revision <em>0.6.1</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,3 @@
+<dec f='include/search.h' l='150' type='void twalk(const void * __root, __action_fn_t __action)'/>
+<doc f='include/search.h' l='148'>/* Walk through the whole tree and call the ACTION callback for every node
+   or leaf.  */</doc>

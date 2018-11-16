@@ -1,0 +1,6 @@
+<def f='include/c++/7/bits/ios_base.h' l='567' ll='572'/>
+<size>16</size>
+<doc f='include/c++/7/bits/ios_base.h' l='566'>// 27.4.2.5  Members for iword/pword storage</doc>
+<mbr r='std::ios_base::_Words::_M_pword' o='0' t='void *'/>
+<mbr r='std::ios_base::_Words::_M_iword' o='64' t='long'/>
+<fun r='_ZNSt8ios_base6_WordsC1Ev'/>

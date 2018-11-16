@@ -1,0 +1,13 @@
+<inh f='unikey/ukengine/charset.h' l='87' c='VnCharset'/>
+<def f='unikey/ukengine/charset.h' l='129' ll='138'/>
+<ovr f='unikey/ukengine/charset.h' l='153' c='UnicodeUTF8Charset'/>
+<ovr f='unikey/ukengine/charset.h' l='163' c='UnicodeRefCharset'/>
+<ovr f='unikey/ukengine/charset.h' l='181' c='UnicodeCStringCharset'/>
+<size>872</size>
+<doc f='unikey/ukengine/charset.h' l='128'>//--------------------------------------------------</doc>
+<mbr r='UnicodeCharset::m_vnChars' o='64' t='UKDWORD [213]'/>
+<mbr r='UnicodeCharset::m_toUnicode' o='6912' t='UnicodeChar *'/>
+<fun r='_ZN14UnicodeCharsetC1EPt'/>
+<fun r='_ZN14UnicodeCharset9nextInputER12ByteInStreamRjRi'/>
+<fun r='_ZN14UnicodeCharset7putCharER13ByteOutStreamjRi'/>
+<fun r='_ZN14UnicodeCharset11elementSizeEv'/>

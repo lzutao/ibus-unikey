@@ -1,0 +1,14 @@
+<dec f='include/check.h' l='997' type='int srunner_ntests_failed(SRunner * sr)'/>
+<use f='unikey/test/test_inputproc.cc' l='92' u='c' c='main'/>
+<doc f='include/check.h' l='986'>/**
+ * Retrieve the number of failed tests executed by a suite runner.
+ *
+ * This value represents both test failures and errors.
+ *
+ * @param sr suite runner to query for all failed tests
+ *
+ * @return number of test failures and errors found by the suite runner
+ *
+ * @since 0.6.1
+ */</doc>
+<use f='unikey/test/test_ukengine.cc' l='36' u='c' c='main'/>

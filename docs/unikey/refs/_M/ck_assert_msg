@@ -1,0 +1,11 @@
+<dec f='include/check.h' l='451'/>
+<doc f='include/check.h' l='441'>/**
+ * Fail the test if the expression is false; print message on failure
+ *
+ * @param expr expression to evaluate
+ * @param ... message to print (in printf format) if expression is false
+ *
+ * @note If the check fails, the remaining of the test is aborted
+ *
+ * @since 0.9.6
+ */</doc>

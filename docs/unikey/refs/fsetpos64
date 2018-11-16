@@ -1,0 +1,2 @@
+<dec f='include/stdio.h' l='741' type='int fsetpos(FILE * __stream, const fpos_t * __pos)'/>
+<dec f='include/stdio.h' l='753' type='int fsetpos64(FILE * __stream, const fpos64_t * __pos)'/>

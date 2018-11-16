@@ -1,0 +1,7 @@
+<def f='include/pthread.h' l='191' ll='197'/>
+<size>32</size>
+<doc f='include/pthread.h' l='190'>/* Cleanup buffers */</doc>
+<mbr r='_pthread_cleanup_buffer::__routine' o='0' t='void (*)(void *)'/>
+<mbr r='_pthread_cleanup_buffer::__arg' o='64' t='void *'/>
+<mbr r='_pthread_cleanup_buffer::__canceltype' o='128' t='int'/>
+<mbr r='_pthread_cleanup_buffer::__prev' o='192' t='struct _pthread_cleanup_buffer *'/>

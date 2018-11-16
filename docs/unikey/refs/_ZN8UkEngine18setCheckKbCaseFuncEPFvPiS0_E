@@ -1,0 +1,2 @@
+<def f='unikey/ukengine/ukengine.h' l='67' ll='70' type='void UkEngine::setCheckKbCaseFunc(CheckKeyboardCaseCb pFunc)'/>
+<use f='unikey/ukengine/unikey.cpp' l='128' u='c' c='UnikeySetup'/>

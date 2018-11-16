@@ -1,0 +1,9 @@
+<def f='include/c++/7/streambuf' l='250' ll='253' type='pos_type std::basic_streambuf::pubseekoff(off_type __off, ios_base::seekdir __way, ios_base::openmode __mode = ios_base::in | ios_base::out)'/>
+<doc f='include/c++/7/streambuf' l='242'>/**
+       *  @brief  Alters the stream position.
+       *  @param  __off  Offset.
+       *  @param  __way  Value for ios_base::seekdir.
+       *  @param  __mode Value for ios_base::openmode.
+       *
+       *  Calls virtual seekoff function.
+      */</doc>

@@ -1,0 +1,11 @@
+<dec f='include/check.h' l='155' type='void suite_add_tcase(Suite * s, TCase * tc)'/>
+<use f='unikey/test/test_inputproc.cc' l='79' u='c' c='_Z9test_suitv'/>
+<doc f='include/check.h' l='147'>/**
+ * Add a test case to a suite
+ *
+ * @param s suite to add test case to
+ * @param tc test case to add to suite
+ *
+ * @since 0.6.0
+ */</doc>
+<use f='unikey/test/test_ukengine.cc' l='23' u='c' c='_Z9test_suitv'/>

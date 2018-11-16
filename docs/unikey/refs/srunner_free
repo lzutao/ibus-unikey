@@ -1,0 +1,14 @@
+<dec f='include/check.h' l='946' type='void srunner_free(SRunner * sr)'/>
+<use f='unikey/test/test_inputproc.cc' l='93' u='c' c='main'/>
+<doc f='include/check.h' l='935'>/**
+ * Frees a suite runner, including all contained suite and test cases.
+ *
+ * This call is responsible for freeing all resources related to a
+ * suite runner and all contained suites and test cases. Suite and
+ * test cases need not be freed individually, as this call handles that.
+ *
+ * @param sr suite runner to free
+ *
+ * @since 0.6.0
+ */</doc>
+<use f='unikey/test/test_ukengine.cc' l='37' u='c' c='main'/>

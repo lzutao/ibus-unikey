@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/ukengine.h' l='96' type='bool'/>
+<def f='unikey/ukengine/ukengine.cpp' l='297' type='bool'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2015' u='r' c='_ZN8UkEngineC1Ev'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2017' u='w' c='_ZN8UkEngineC1Ev'/>

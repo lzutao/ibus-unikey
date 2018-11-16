@@ -1,0 +1,8 @@
+<inh f='unikey/ukengine/charset.h' l='129' c='UnicodeCharset'/>
+<def f='unikey/ukengine/charset.h' l='163' ll='170'/>
+<ovr f='unikey/ukengine/charset.h' l='173' c='UnicodeHexCharset'/>
+<size>872</size>
+<doc f='unikey/ukengine/charset.h' l='162'>//--------------------------------------------------</doc>
+<fun r='_ZN17UnicodeRefCharsetC1EPt'/>
+<fun r='_ZN17UnicodeRefCharset9nextInputER12ByteInStreamRjRi'/>
+<fun r='_ZN17UnicodeRefCharset7putCharER13ByteOutStreamjRi'/>

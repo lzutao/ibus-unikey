@@ -1,0 +1,7 @@
+<dec f='unikey/ukengine/ukengine.h' l='155' type='bool UkEngine::lastWordIsNonVn()'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2309' u='c' c='_ZN8UkEngine14processWordEndER10UkKeyEvent'/>
+<def f='unikey/ukengine/ukengine.cpp' l='2339' ll='2378' type='bool UkEngine::lastWordIsNonVn()'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='2335'>//---------------------------------------------------------------------------
+// Test if last word is a non-Vietnamese word, so that
+// the engine can restore key strokes if it is indeed not a Vietnamese word
+//---------------------------------------------------------------------------</doc>

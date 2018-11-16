@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/unikey.h' l='111' type='void UnikeySetSingleMode()'/>
+<def f='unikey/ukengine/unikey.cpp' l='163' ll='166' type='void UnikeySetSingleMode()'/>
+<doc f='unikey/ukengine/unikey.cpp' l='162'>//--------------------------------------------</doc>
+<doc f='unikey/ukengine/unikey.h' l='108'>//call this to enable typing vietnamese even in a non-vn sequence
+  //e.g: GD&amp;DDT,QDDND...
+  //The engine will return to normal mode when a word-break occurs.</doc>

@@ -1,0 +1,4 @@
+<def f='unikey/ukengine/ukengine.cpp' l='300' ll='312' type='int tripleVowelCompare(const void * p1, const void * p2)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='444' u='r' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='480' u='r' c='_Z10lookupVSeq10VnLexiNameS_S_'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='299'>//------------------------------------------------</doc>

@@ -1,0 +1,2 @@
+<dec f='include/search.h' l='93' type='void hdestroy()'/>
+<doc f='include/search.h' l='92'>/* Destroy current internal hashing table.  */</doc>

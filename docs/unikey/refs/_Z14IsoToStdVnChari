@@ -1,0 +1,2 @@
+<def f='unikey/ukengine/ukengine.cpp' l='63' ll='66' type='StdVnChar IsoToStdVnChar(int keyCode)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1854' u='c' c='_ZN8UkEngine11writeOutputEPhRi'/>

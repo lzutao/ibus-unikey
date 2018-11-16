@@ -1,0 +1,5 @@
+_ZN12FileBIStream8peekNextERh|FileBIStream::peekNext
+_ZN12FileBIStream9peekNextWERt|FileBIStream::peekNextW
+_ZN14StringBIStream8peekNextERh|StringBIStream::peekNext
+_ZN14StringBIStream9peekNextWERt|StringBIStream::peekNextW
+_ZNSt13basic_istream4peekEv|std::basic_istream::peek

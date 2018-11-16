@@ -1,0 +1,19 @@
+<def f='unikey/ukengine/mactab.h' l='52' ll='76'/>
+<size>139276</size>
+<fun r='_ZN11CMacroTable4initEv'/>
+<fun r='_ZN11CMacroTable12loadFromFileEPKc'/>
+<fun r='_ZN11CMacroTable11writeToFileEPKc'/>
+<fun r='_ZN11CMacroTable6lookupEPj'/>
+<fun r='_ZN11CMacroTable6getKeyEi'/>
+<fun r='_ZN11CMacroTable7getTextEi'/>
+<fun r='_ZN11CMacroTable8getCountEv'/>
+<fun r='_ZN11CMacroTable12resetContentEv'/>
+<fun r='_ZN11CMacroTable7addItemEPKci'/>
+<fun r='_ZN11CMacroTable7addItemEPKvS1_i'/>
+<fun r='_ZN11CMacroTable10readHeaderEP8_IO_FILERi'/>
+<fun r='_ZN11CMacroTable11writeHeaderEP8_IO_FILE'/>
+<mbr r='CMacroTable::m_table' o='0' t='MacroDef [1024]'/>
+<mbr r='CMacroTable::m_macroMem' o='65536' t='char [131072]'/>
+<mbr r='CMacroTable::m_count' o='1114112' t='int'/>
+<mbr r='CMacroTable::m_memSize' o='1114144' t='int'/>
+<mbr r='CMacroTable::m_occupied' o='1114176' t='int'/>

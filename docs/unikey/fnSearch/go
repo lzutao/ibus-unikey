@@ -1,0 +1,4 @@
+_ZN12ByteInStream12gotoBookmarkEv|ByteInStream::gotoBookmark
+_ZN12FileBIStream12gotoBookmarkEv|FileBIStream::gotoBookmark
+_ZN14StringBIStream12gotoBookmarkEv|StringBIStream::gotoBookmark
+_ZNKSt9basic_ios4goodEv|std::basic_ios::good

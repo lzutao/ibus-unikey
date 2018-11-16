@@ -1,0 +1,20 @@
+<dec f='unikey/ukengine/ukengine.h' l='148' type='int UkEngine::getTonePosition(VowelSeq vs, bool terminated)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='531' u='c' c='_ZN8UkEngine11processRoofER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='616' u='c' c='_ZN8UkEngine11processRoofER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='665' u='c' c='_ZN8UkEngine17processHookWithUOER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='772' u='c' c='_ZN8UkEngine17processHookWithUOER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='824' u='c' c='_ZN8UkEngine11processHookER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='919' u='c' c='_ZN8UkEngine11processHookER10UkKeyEvent'/>
+<def f='unikey/ukengine/ukengine.cpp' l='946' ll='968' type='int UkEngine::getTonePosition(VowelSeq vs, bool terminated)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1012' u='c' c='_ZN8UkEngine11processToneER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1150' u='c' c='_ZN8UkEngine14processMapCharER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1159' u='c' c='_ZN8UkEngine14processMapCharER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1418' u='c' c='_ZN8UkEngine11appendVowelER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1458' u='c' c='_ZN8UkEngine11appendVowelER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1465' u='c' c='_ZN8UkEngine11appendVowelER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1617' u='c' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1619' u='c' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1973' u='c' c='_ZN8UkEngine16processBackspaceERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1974' u='c' c='_ZN8UkEngine16processBackspaceERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2368' u='c' c='_ZN8UkEngine15lastWordIsNonVnEv'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='945'>//----------------------------------------------------------</doc>

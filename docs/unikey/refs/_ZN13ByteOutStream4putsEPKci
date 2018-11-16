@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/byteio.h' l='52' type='int ByteOutStream::puts(const char * s, int size = -1)'/>
+<doc f='unikey/ukengine/byteio.h' l='52'>// write an 8-bit string</doc>
+<ovr f='unikey/ukengine/byteio.cpp' l='215' c='_ZN14StringBOStream4putsEPKci'/>
+<ovr f='unikey/ukengine/byteio.cpp' l='511' c='_ZN12FileBOStream4putsEPKci'/>

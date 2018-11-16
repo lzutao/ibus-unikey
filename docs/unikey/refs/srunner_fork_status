@@ -1,0 +1,8 @@
+<dec f='include/check.h' l='1198' type='enum fork_status srunner_fork_status(SRunner * sr)'/>
+<doc f='include/check.h' l='1191'>/**
+ * Retrieve the current fork status for the given suite runner
+ *
+ * @param sr suite runner to check fork status of
+ *
+ * @since 0.8.0
+ */</doc>

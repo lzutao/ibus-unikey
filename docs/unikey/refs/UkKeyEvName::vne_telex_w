@@ -1,0 +1,14 @@
+<dec f='unikey/ukengine/inputproc.h' l='48' type='16'/>
+<doc f='unikey/ukengine/inputproc.h' l='48'>//special for telex</doc>
+<use f='unikey/ukengine/inputproc.cpp' l='107'/>
+<use f='unikey/ukengine/inputproc.cpp' l='107'/>
+<use f='unikey/ukengine/inputproc.cpp' l='107'/>
+<use f='unikey/ukengine/inputproc.cpp' l='107'/>
+<use f='unikey/ukengine/inputproc.cpp' l='141'/>
+<use f='unikey/ukengine/inputproc.cpp' l='141'/>
+<use f='unikey/ukengine/inputproc.cpp' l='141'/>
+<use f='unikey/ukengine/inputproc.cpp' l='141'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='61'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='61'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='61'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='61'/>

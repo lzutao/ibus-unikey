@@ -1,0 +1,2 @@
+<dec f='unikey/ukengine/unikey.h' l='113' type='bool UnikeyAtWordBeginning()'/>
+<def f='unikey/ukengine/unikey.cpp' l='200' ll='203' type='bool UnikeyAtWordBeginning()'/>

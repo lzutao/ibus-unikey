@@ -1,0 +1,4 @@
+<def f='unikey/ukengine/ukengine.cpp' l='330' ll='345' type='int VCPairCompare(const void * p1, const void * p2)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='389' u='r' c='_Z9isValidVC8VowelSeq6ConSeq'/>
+<use f='unikey/ukengine/ukengine.cpp' l='446' u='r' c='_Z15engineClassInitv'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='329'>//------------------------------------------------</doc>

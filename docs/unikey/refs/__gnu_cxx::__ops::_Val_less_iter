@@ -1,0 +1,5 @@
+<def f='include/c++/7/bits/predefined_ops.h' l='76' ll='91'/>
+<size>1</size>
+<fun r='__gnu_cxx::__ops::_Val_less_iter::_Val_less_iter'/>
+<fun r='__gnu_cxx::__ops::_Val_less_iter::_Val_less_iter'/>
+<fun r='__gnu_cxx::__ops::_Val_less_iter::operator()'/>

@@ -1,0 +1,3 @@
+<dec f='unikey/ukengine/vnconv.h' l='97' type='7'/>
+<use f='unikey/ukengine/convert.cpp' l='233'/>
+<use f='unikey/ukengine/convert.cpp' l='245' u='r' c='_Z12VnConvErrMsgi'/>

@@ -1,0 +1,10 @@
+<dec f='unikey/ukengine/byteio.h' l='151' type='void StringBOStream::StringBOStream(UKBYTE * buf, int len)'/>
+<def f='unikey/ukengine/byteio.cpp' l='165' ll='171' type='void StringBOStream::StringBOStream(UKBYTE * buf, int len)'/>
+<doc f='unikey/ukengine/byteio.cpp' l='160'>//////////////////////////////////////////////////
+// Class StringBOStream
+//////////////////////////////////////////////////
+
+//------------------------------------------------</doc>
+<use f='unikey/ukengine/convert.cpp' l='99' u='c' c='VnConvert'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1840' u='c' c='_ZN8UkEngine11writeOutputEPhRi'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1880' u='c' c='_ZN8UkEngine11getSeqStepsEii'/>

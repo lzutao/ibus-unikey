@@ -1,0 +1,7 @@
+<dec f='include/stdio.h' l='639' type='int ungetc(int __c, FILE * __stream)'/>
+<doc f='include/stdio.h' l='635'>/* Push a character back onto the input buffer of STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>
+<use f='unikey/ukengine/byteio.cpp' l='350' u='c' c='_ZN12FileBIStream8peekNextERh'/>
+<use f='unikey/ukengine/byteio.cpp' l='364' u='c' c='_ZN12FileBIStream5ungetEh'/>

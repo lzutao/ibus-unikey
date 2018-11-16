@@ -1,0 +1,10 @@
+<dec f='include/check.h' l='1058' type='void srunner_print(SRunner * sr, enum print_output print_mode)'/>
+<doc f='include/check.h' l='1049'>/**
+ * Print the results contained in an SRunner to stdout.
+ *
+ * @param sr suite runner to print results for to stdout
+ * @param print_mode the print_output (verbosity) to use to report
+ *         the result
+ *
+ * @since 0.7.0
+ */</doc>

@@ -1,0 +1,5 @@
+<def f='include/c++/7/bits/basic_string.h' l='875' ll='877' type='const_iterator std::__cxx11::basic_string::cbegin() const'/>
+<doc f='include/c++/7/bits/basic_string.h' l='871'>/**
+       *  Returns a read-only (constant) iterator that points to the first
+       *  character in the %string.
+       */</doc>

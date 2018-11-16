@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/ukengine.h' l='72' type='bool UkEngine::atWordBeginning()'/>
+<def f='unikey/ukengine/ukengine.cpp' l='2282' ll='2285' type='bool UkEngine::atWordBeginning()'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='2281'>//--------------------------------------------------</doc>
+<use f='unikey/ukengine/unikey.cpp' l='202' u='c' c='UnikeyAtWordBeginning'/>

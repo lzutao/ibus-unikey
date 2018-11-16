@@ -1,0 +1,14 @@
+<def f='include/c++/7/ostream' l='425' ll='477'/>
+<doc f='include/c++/7/ostream' l='418'>/**
+   *  @brief  Performs setup work for output streams.
+   *
+   *  Objects of this class are created before all of the standard
+   *  inserters are run.  It is responsible for &lt;em&gt;exception-safe prefix and
+   *  suffix operations&lt;/em&gt;.
+  */</doc>
+<mbr r='std::basic_ostream::sentry::_M_ok' t='bool'/>
+<mbr r='std::basic_ostream::sentry::_M_os' t='basic_ostream&lt;_CharT, _Traits&gt; &amp;'/>
+<fun r='_ZNSt13basic_ostream6sentryC1ERSt13basic_ostreamIT_T0_E'/>
+<fun r='_ZNSt13basic_ostream6sentryD1Ev'/>
+<fun r='_ZNKSt13basic_ostream6sentrycvbEv'/>
+<fun r='_ZNSt13basic_ostream6sentryC1ERSt13basic_ostreamIT_T0_E'/>

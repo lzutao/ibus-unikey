@@ -1,0 +1,13 @@
+<dec f='include/check.h' l='863' type='enum ck_result_ctx tr_ctx(TestResult * tr)'/>
+<doc f='include/check.h' l='851'>/**
+ * Retrieve context in which the result occurred for the given test result.
+ *
+ * The types of contents include the test setup, teardown, or the
+ * body of the test itself.
+ *
+ * @param tr test result to retrieve context from
+ *
+ * @return context to which the given test result applies
+ *
+ * @since 0.8.0
+ */</doc>

@@ -1,0 +1,8 @@
+<dec f='include/c++/7/bits/stl_iterator.h' l='644' type='typename _Container::iterator'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='655' u='w' c='_ZNSt15insert_iteratorC1ERT_NS0_8iteratorE'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='692' u='w' c='_ZNSt15insert_iteratoraSERKNT_10value_typeE'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='692' c='_ZNSt15insert_iteratoraSERKNT_10value_typeE'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='693' u='w' c='_ZNSt15insert_iteratoraSERKNT_10value_typeE'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='700' u='w' c='_ZNSt15insert_iteratoraSEONT_10value_typeE'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='700' c='_ZNSt15insert_iteratoraSEONT_10value_typeE'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='701' u='w' c='_ZNSt15insert_iteratoraSEONT_10value_typeE'/>

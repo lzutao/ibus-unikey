@@ -1,0 +1,13 @@
+<inh f='include/c++/7/type_traits' l='69' c='std::integral_constant'/>
+<def f='include/c++/7/bits/functional_hash.h' l='264' ll='265'/>
+<inh f='include/c++/7/type_traits' l='69' c='std::integral_constant'/>
+<def f='include/c++/7/bits/functional_hash.h' l='267' ll='269'/>
+<inh f='include/c++/7/type_traits' l='69' c='std::integral_constant'/>
+<def f='include/c++/7/bits/basic_string.h' l='6597' ll='6599'/>
+<inh f='include/c++/7/type_traits' l='69' c='std::integral_constant'/>
+<def f='include/c++/7/bits/basic_string.h' l='6613' ll='6615'/>
+<inh f='include/c++/7/type_traits' l='69' c='std::integral_constant'/>
+<def f='include/c++/7/bits/basic_string.h' l='6631' ll='6633'/>
+<inh f='include/c++/7/type_traits' l='69' c='std::integral_constant'/>
+<def f='include/c++/7/bits/basic_string.h' l='6646' ll='6648'/>
+<size>1</size>

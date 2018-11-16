@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/ukengine.h' l='47'/>
+<use f='unikey/ukengine/ukengine.h' l='108' u='c'/>
+<use f='unikey/ukengine/ukengine.h' l='139' u='c'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2020' u='c'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2021' u='c'/>

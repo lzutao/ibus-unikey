@@ -1,0 +1,38 @@
+<dec f='include/c++/7/bits/basic_string.h' l='101' type='const size_type'/>
+<use f='include/c++/7/bits/basic_string.h' l='456' c='_ZNSt7__cxx1112basic_stringC1ERKNS_12basic_stringIT_T0_T1_EEN9__gnu_cxx14__alloc_traitsINSA_IS4_E6rebindIS2_E5otherEE9size_typeERKS4_'/>
+<use f='include/c++/7/bits/basic_string.h' l='511' c='_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_'/>
+<use f='include/c++/7/bits/basic_string.h' l='1219' c='_ZNSt7__cxx1112basic_string6appendERKNS_12basic_stringIT_T0_T1_EEN9__gnu_cxx14__alloc_traitsINSA_IS4_E6rebindIS2_E5otherEE9size_typeESG_'/>
+<use f='include/c++/7/bits/basic_string.h' l='1384' c='_ZNSt7__cxx1112basic_string6assignERKNS_12basic_stringIT_T0_T1_EEN9__gnu_cxx14__alloc_traitsINSA_IS4_E6rebindIS2_E5otherEE9size_typeESG_'/>
+<use f='include/c++/7/bits/basic_string.h' l='1636' c='_ZNSt7__cxx1112basic_string6insertEN9__gnu_cxx14__alloc_traitsINS2_IT1_E6rebindIT_E5otherEE9size_typeERKNS_12basic_stringIS6_T0_S3_EESA_SA_'/>
+<use f='include/c++/7/bits/basic_string.h' l='1779' c='_ZNSt7__cxx1112basic_string5eraseEN9__gnu_cxx14__alloc_traitsINS2_IT1_E6rebindIT_E5otherEE9size_typeESA_'/>
+<use f='include/c++/7/bits/basic_string.h' l='1782' c='_ZNSt7__cxx1112basic_string5eraseEN9__gnu_cxx14__alloc_traitsINS2_IT1_E6rebindIT_E5otherEE9size_typeESA_'/>
+<use f='include/c++/7/bits/basic_string.h' l='1884' c='_ZNSt7__cxx1112basic_string7replaceEN9__gnu_cxx14__alloc_traitsINS2_IT1_E6rebindIT_E5otherEE9size_typeESA_RKNS_12basic_stringIS6_T0_S3_EESA_SA_'/>
+<use f='include/c++/7/bits/basic_string.h' l='2394' c='_ZNKSt7__cxx1112basic_string5rfindERKNS_12basic_stringIT_T0_T1_EEN9__gnu_cxx14__alloc_traitsINSA_IS4_E6rebindIS2_E5otherEE9size_typeE'/>
+<use f='include/c++/7/bits/basic_string.h' l='2442' c='_ZNKSt7__cxx1112basic_string5rfindEPKT_N9__gnu_cxx14__alloc_traitsINS5_IT1_E6rebindIS1_E5otherEE9size_typeE'/>
+<use f='include/c++/7/bits/basic_string.h' l='2459' c='_ZNKSt7__cxx1112basic_string5rfindET_N9__gnu_cxx14__alloc_traitsINS3_IT1_E6rebindIS1_E5otherEE9size_typeE'/>
+<use f='include/c++/7/bits/basic_string.h' l='2557' c='_ZNKSt7__cxx1112basic_string12find_last_ofERKNS_12basic_stringIT_T0_T1_EEN9__gnu_cxx14__alloc_traitsINSA_IS4_E6rebindIS2_E5otherEE9size_typeE'/>
+<use f='include/c++/7/bits/basic_string.h' l='2606' c='_ZNKSt7__cxx1112basic_string12find_last_ofEPKT_N9__gnu_cxx14__alloc_traitsINS5_IT1_E6rebindIS1_E5otherEE9size_typeE'/>
+<use f='include/c++/7/bits/basic_string.h' l='2626' c='_ZNKSt7__cxx1112basic_string12find_last_ofET_N9__gnu_cxx14__alloc_traitsINS3_IT1_E6rebindIS1_E5otherEE9size_typeE'/>
+<use f='include/c++/7/bits/basic_string.h' l='2722' c='_ZNKSt7__cxx1112basic_string16find_last_not_ofERKNS_12basic_stringIT_T0_T1_EEN9__gnu_cxx14__alloc_traitsINSA_IS4_E6rebindIS2_E5otherEE9size_typeE'/>
+<use f='include/c++/7/bits/basic_string.h' l='2771' c='_ZNKSt7__cxx1112basic_string16find_last_not_ofEPKT_N9__gnu_cxx14__alloc_traitsINS5_IT1_E6rebindIS1_E5otherEE9size_typeE'/>
+<use f='include/c++/7/bits/basic_string.h' l='2789' c='_ZNKSt7__cxx1112basic_string16find_last_not_ofET_N9__gnu_cxx14__alloc_traitsINS3_IT1_E6rebindIS1_E5otherEE9size_typeE'/>
+<use f='include/c++/7/bits/basic_string.h' l='2805' c='_ZNKSt7__cxx1112basic_string6substrEN9__gnu_cxx14__alloc_traitsINS2_IT1_E6rebindIT_E5otherEE9size_typeESA_'/>
+<use f='include/c++/7/bits/basic_string.h' l='2944' c='_ZNKSt7__cxx1112basic_string7compareEN9__gnu_cxx14__alloc_traitsINS2_IT1_E6rebindIT_E5otherEE9size_typeESA_RKNS_12basic_stringIS6_T0_S3_EESA_SA_'/>
+<def f='include/c++/7/bits/basic_string.tcc' l='52' ll='54' type='const typename basic_string&lt;_CharT, _Traits, _Alloc&gt;::size_type'/>
+<use f='include/c++/7/bits/basic_string.tcc' l='1195' u='r' c='_ZNKSt7__cxx1112basic_string4findEPKT_N9__gnu_cxx14__alloc_traitsINS5_IT1_E6rebindIS1_E5otherEE9size_typeESC_'/>
+<use f='include/c++/7/bits/basic_string.tcc' l='1197' u='r' c='_ZNKSt7__cxx1112basic_string4findEPKT_N9__gnu_cxx14__alloc_traitsINS5_IT1_E6rebindIS1_E5otherEE9size_typeESC_'/>
+<use f='include/c++/7/bits/basic_string.tcc' l='1210' u='r' c='_ZNKSt7__cxx1112basic_string4findEPKT_N9__gnu_cxx14__alloc_traitsINS5_IT1_E6rebindIS1_E5otherEE9size_typeESC_'/>
+<use f='include/c++/7/bits/basic_string.tcc' l='1218' u='r' c='_ZNKSt7__cxx1112basic_string4findEPKT_N9__gnu_cxx14__alloc_traitsINS5_IT1_E6rebindIS1_E5otherEE9size_typeESC_'/>
+<use f='include/c++/7/bits/basic_string.tcc' l='1226' u='r' c='_ZNKSt7__cxx1112basic_string4findET_N9__gnu_cxx14__alloc_traitsINS3_IT1_E6rebindIS1_E5otherEE9size_typeE'/>
+<use f='include/c++/7/bits/basic_string.tcc' l='1258' u='r' c='_ZNKSt7__cxx1112basic_string5rfindEPKT_N9__gnu_cxx14__alloc_traitsINS5_IT1_E6rebindIS1_E5otherEE9size_typeESC_'/>
+<use f='include/c++/7/bits/basic_string.h' l='2459' c='_ZNKSt7__cxx1112basic_string5rfindET_N9__gnu_cxx14__alloc_traitsINS3_IT1_E6rebindIS1_E5otherEE9size_typeE'/>
+<use f='include/c++/7/bits/basic_string.tcc' l='1275' u='r' c='_ZNKSt7__cxx1112basic_string5rfindET_N9__gnu_cxx14__alloc_traitsINS3_IT1_E6rebindIS1_E5otherEE9size_typeE'/>
+<use f='include/c++/7/bits/basic_string.tcc' l='1291' u='r' c='_ZNKSt7__cxx1112basic_string13find_first_ofEPKT_N9__gnu_cxx14__alloc_traitsINS5_IT1_E6rebindIS1_E5otherEE9size_typeESC_'/>
+<use f='include/c++/7/bits/basic_string.tcc' l='1313' u='r' c='_ZNKSt7__cxx1112basic_string12find_last_ofEPKT_N9__gnu_cxx14__alloc_traitsINS5_IT1_E6rebindIS1_E5otherEE9size_typeESC_'/>
+<use f='include/c++/7/bits/basic_string.tcc' l='1326' u='r' c='_ZNKSt7__cxx1112basic_string17find_first_not_ofEPKT_N9__gnu_cxx14__alloc_traitsINS5_IT1_E6rebindIS1_E5otherEE9size_typeESC_'/>
+<use f='include/c++/7/bits/basic_string.tcc' l='1337' u='r' c='_ZNKSt7__cxx1112basic_string17find_first_not_ofET_N9__gnu_cxx14__alloc_traitsINS3_IT1_E6rebindIS1_E5otherEE9size_typeE'/>
+<use f='include/c++/7/bits/basic_string.tcc' l='1359' u='r' c='_ZNKSt7__cxx1112basic_string16find_last_not_ofEPKT_N9__gnu_cxx14__alloc_traitsINS5_IT1_E6rebindIS1_E5otherEE9size_typeESC_'/>
+<use f='include/c++/7/bits/basic_string.h' l='2789' c='_ZNKSt7__cxx1112basic_string16find_last_not_ofET_N9__gnu_cxx14__alloc_traitsINS3_IT1_E6rebindIS1_E5otherEE9size_typeE'/>
+<use f='include/c++/7/bits/basic_string.tcc' l='1379' u='r' c='_ZNKSt7__cxx1112basic_string16find_last_not_ofET_N9__gnu_cxx14__alloc_traitsINS3_IT1_E6rebindIS1_E5otherEE9size_typeE'/>
+<use f='include/c++/7/bits/basic_string.h' l='2944' c='_ZNKSt7__cxx1112basic_string7compareEN9__gnu_cxx14__alloc_traitsINS2_IT1_E6rebindIT_E5otherEE9size_typeESA_RKNS_12basic_stringIS6_T0_S3_EESA_SA_'/>
+<doc f='include/c++/7/bits/basic_string.h' l='100'>///  Value returned by various member functions when they fail.</doc>

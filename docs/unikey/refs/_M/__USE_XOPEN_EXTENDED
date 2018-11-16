@@ -1,0 +1,16 @@
+<dec f='include/features.h' l='332'/>
+<use f='include/string.h' l='163' u='a'/>
+<use f='include/search.h' l='29' u='a'/>
+<use f='include/x86_64-linux-gnu/bits/waitflags.h' l='29' u='a'/>
+<use f='include/x86_64-linux-gnu/bits/waitflags.h' l='42' u='a'/>
+<use f='include/stdlib.h' l='381' u='a'/>
+<use f='include/stdlib.h' l='393' u='a'/>
+<use f='include/stdlib.h' l='569' u='a'/>
+<use f='include/stdlib.h' l='666' u='a'/>
+<use f='include/stdlib.h' l='675' u='a'/>
+<use f='include/stdlib.h' l='791' u='a'/>
+<use f='include/stdlib.h' l='861' u='a'/>
+<use f='include/stdlib.h' l='947' u='a'/>
+<use f='include/stdlib.h' l='974' u='a'/>
+<use f='include/stdlib.h' l='1010' u='a'/>
+<use f='include/time.h' l='268' u='a'/>

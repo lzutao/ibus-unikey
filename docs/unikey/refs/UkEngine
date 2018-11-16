@@ -1,0 +1,56 @@
+<def f='unikey/ukengine/ukengine.h' l='58' ll='156'/>
+<size>7752</size>
+<fun r='_ZN8UkEngineC1Ev'/>
+<fun r='_ZN8UkEngine11setCtrlInfoEP11UkSharedMem'/>
+<fun r='_ZN8UkEngine18setCheckKbCaseFuncEPFvPiS0_E'/>
+<fun r='_ZN8UkEngine15atWordBeginningEv'/>
+<fun r='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<fun r='_ZN8UkEngine4passEi'/>
+<fun r='_ZN8UkEngine13setSingleModeEv'/>
+<fun r='_ZN8UkEngine16processBackspaceERiPhS0_R12UkOutputType'/>
+<fun r='_ZN8UkEngine5resetEv'/>
+<fun r='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>
+<fun r='_ZN8UkEngine11processToneER10UkKeyEvent'/>
+<fun r='_ZN8UkEngine11processRoofER10UkKeyEvent'/>
+<fun r='_ZN8UkEngine11processHookER10UkKeyEvent'/>
+<fun r='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<fun r='_ZN8UkEngine11appendVowelER10UkKeyEvent'/>
+<fun r='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<fun r='_ZN8UkEngine9processDdER10UkKeyEvent'/>
+<fun r='_ZN8UkEngine14processMapCharER10UkKeyEvent'/>
+<fun r='_ZN8UkEngine13processTelexWER10UkKeyEvent'/>
+<fun r='_ZN8UkEngine14processEscCharER10UkKeyEvent'/>
+<smbr r='UkEngine::m_classInit' t='bool'/>
+<mbr r='UkEngine::m_keyCheckFunc' o='0' t='CheckKeyboardCaseCb'/>
+<mbr r='UkEngine::m_pCtrl' o='64' t='UkSharedMem *'/>
+<mbr r='UkEngine::m_changePos' o='128' t='int'/>
+<mbr r='UkEngine::m_backs' o='160' t='int'/>
+<mbr r='UkEngine::m_bufSize' o='192' t='int'/>
+<mbr r='UkEngine::m_current' o='224' t='int'/>
+<mbr r='UkEngine::m_singleMode' o='256' t='int'/>
+<mbr r='UkEngine::m_keyBufSize' o='288' t='int'/>
+<mbr r='UkEngine::m_keyStrokes' o='320' t='KeyBufEntry [128]'/>
+<mbr r='UkEngine::m_keyCurrent' o='24896' t='int'/>
+<mbr r='UkEngine::m_toEscape' o='24928' t='bool'/>
+<mbr r='UkEngine::m_pOutBuf' o='24960' t='unsigned char *'/>
+<mbr r='UkEngine::m_pOutSize' o='25024' t='int *'/>
+<mbr r='UkEngine::m_outputWritten' o='25088' t='bool'/>
+<mbr r='UkEngine::m_reverted' o='25096' t='bool'/>
+<mbr r='UkEngine::m_keyRestored' o='25104' t='bool'/>
+<mbr r='UkEngine::m_keyRestoring' o='25112' t='bool'/>
+<mbr r='UkEngine::m_outType' o='25120' t='UkOutputType'/>
+<mbr r='UkEngine::m_buffer' o='25152' t='UkEngine::WordInfo [128]'/>
+<fun r='_ZN8UkEngine17processHookWithUOER10UkKeyEvent'/>
+<fun r='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>
+<fun r='_ZN8UkEngine10markChangeEi'/>
+<fun r='_ZN8UkEngine13prepareBufferEv'/>
+<fun r='_ZN8UkEngine11writeOutputEPhRi'/>
+<fun r='_ZN8UkEngine11getSeqStepsEii'/>
+<fun r='_ZN8UkEngine15getTonePositionE8VowelSeqb'/>
+<fun r='_ZN8UkEngine11resetKeyBufEv'/>
+<fun r='_ZN8UkEngine15checkEscapeVIQRER10UkKeyEvent'/>
+<fun r='_ZN8UkEngine19processNoSpellCheckER10UkKeyEvent'/>
+<fun r='_ZN8UkEngine14processWordEndER10UkKeyEvent'/>
+<fun r='_ZN8UkEngine20synchKeyStrokeBufferEv'/>
+<fun r='_ZN8UkEngine17lastWordHasVnMarkEv'/>
+<fun r='_ZN8UkEngine15lastWordIsNonVnEv'/>

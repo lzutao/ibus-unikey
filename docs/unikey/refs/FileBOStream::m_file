@@ -1,0 +1,15 @@
+<dec f='unikey/ukengine/byteio.h' l='172' type='FILE *'/>
+<offset>64</offset>
+<use f='unikey/ukengine/byteio.cpp' l='444' u='w' c='_ZN12FileBOStreamC1EiPc'/>
+<use f='unikey/ukengine/byteio.cpp' l='461' u='w' c='_ZN12FileBOStream4openEPKc'/>
+<use f='unikey/ukengine/byteio.cpp' l='462' u='r' c='_ZN12FileBOStream4openEPKc'/>
+<use f='unikey/ukengine/byteio.cpp' l='465' u='r' c='_ZN12FileBOStream4openEPKc'/>
+<use f='unikey/ukengine/byteio.cpp' l='473' u='w' c='_ZN12FileBOStream6attachEP8_IO_FILE'/>
+<use f='unikey/ukengine/byteio.cpp' l='481' u='r' c='_ZN12FileBOStream5closeEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='482' u='r' c='_ZN12FileBOStream5closeEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='483' u='w' c='_ZN12FileBOStream5closeEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='493' u='r' c='_ZN12FileBOStream4putBEh'/>
+<use f='unikey/ukengine/byteio.cpp' l='503' u='r' c='_ZN12FileBOStream4putWEt'/>
+<use f='unikey/ukengine/byteio.cpp' l='506' u='r' c='_ZN12FileBOStream4putWEt'/>
+<use f='unikey/ukengine/byteio.cpp' l='516' u='r' c='_ZN12FileBOStream4putsEPKci'/>
+<use f='unikey/ukengine/byteio.cpp' l='519' u='r' c='_ZN12FileBOStream4putsEPKci'/>

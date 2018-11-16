@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/byteio.h' l='184' type='int FileBOStream::close()'/>
+<use f='unikey/ukengine/byteio.cpp' l='455' u='c' c='_ZN12FileBOStreamD1Ev'/>
+<def f='unikey/ukengine/byteio.cpp' l='479' ll='486' type='int FileBOStream::close()'/>
+<doc f='unikey/ukengine/byteio.cpp' l='478'>//----------------------------------------------------</doc>

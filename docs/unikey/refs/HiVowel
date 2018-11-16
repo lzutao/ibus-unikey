@@ -1,0 +1,11 @@
+<def f='unikey/ukengine/charset.cpp' l='33' type='int [26]'/>
+<use f='unikey/ukengine/charset.cpp' l='35' u='r' c='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='35' u='r' c='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='35' u='r' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='1002' u='w' c='_ZN13CVnCharsetLibC1Ev'/>
+<use f='unikey/ukengine/charset.cpp' l='1003' u='w' c='_ZN13CVnCharsetLibC1Ev'/>
+<use f='unikey/ukengine/charset.cpp' l='1004' u='w' c='_ZN13CVnCharsetLibC1Ev'/>
+<use f='unikey/ukengine/charset.cpp' l='1005' u='w' c='_ZN13CVnCharsetLibC1Ev'/>
+<use f='unikey/ukengine/charset.cpp' l='1006' u='w' c='_ZN13CVnCharsetLibC1Ev'/>
+<use f='unikey/ukengine/charset.cpp' l='1007' u='w' c='_ZN13CVnCharsetLibC1Ev'/>
+<use f='unikey/ukengine/charset.cpp' l='1008' u='w' c='_ZN13CVnCharsetLibC1Ev'/>

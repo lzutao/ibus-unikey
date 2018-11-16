@@ -1,0 +1,4 @@
+<def f='include/x86_64-linux-gnu/bits/sched.h' l='75' ll='78'/>
+<size>4</size>
+<doc f='include/x86_64-linux-gnu/bits/sched.h' l='74'>/* Data structure to describe a process&apos; schedulability.  */</doc>
+<mbr r='sched_param::sched_priority' o='0' t='int'/>

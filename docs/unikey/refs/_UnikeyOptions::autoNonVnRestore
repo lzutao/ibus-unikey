@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/keycons.h' l='50' type='int'/>
+<offset>256</offset>
+<use f='unikey/ukengine/ukengine.cpp' l='2309' u='r' c='_ZN8UkEngine14processWordEndER10UkKeyEvent'/>
+<use f='unikey/ukengine/unikey.cpp' l='90' u='w' c='UnikeySetOptions'/>
+<use f='unikey/ukengine/unikey.cpp' l='90' u='r' c='UnikeySetOptions'/>
+<use f='unikey/ukengine/unikey.cpp' l='108' u='w' c='CreateDefaultUnikeyOptions'/>

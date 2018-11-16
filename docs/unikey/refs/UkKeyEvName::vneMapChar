@@ -1,0 +1,13 @@
+<dec f='unikey/ukengine/inputproc.h' l='49' type='17'/>
+<use f='unikey/test/test_inputproc.cc' l='33' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='33' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='33' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='33' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='33' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='33' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='33' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='33' u='r' c='_ZL18testKeyCodeToEventi'/>
+<doc f='unikey/ukengine/inputproc.h' l='49'>//e.g. [ -&gt; u+ , ] -&gt; o+</doc>
+<use f='unikey/ukengine/inputproc.cpp' l='360' u='r' c='_ZN16UkInputProcessor14keyCodeToEventEjR10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1202' u='r' c='_ZN8UkEngine13processTelexWER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1224' u='r' c='_ZN8UkEngine13processTelexWER10UkKeyEvent'/>

@@ -1,0 +1,26 @@
+<dec f='unikey/ukengine/inputproc.h' l='38'/>
+<use f='unikey/ukengine/inputproc.h' l='112' u='c'/>
+<use f='unikey/ukengine/inputproc.h' l='113' u='c'/>
+<use f='unikey/ukengine/inputproc.h' l='114' u='c'/>
+<use f='unikey/ukengine/inputproc.h' l='115' u='c'/>
+<use f='unikey/ukengine/inputproc.h' l='116' u='c'/>
+<dec f='unikey/ukengine/charset.h' l='37'/>
+<dec f='unikey/ukengine/vnconv.h' l='36'/>
+<use f='unikey/ukengine/vnconv.h' l='78' u='c'/>
+<use f='unikey/ukengine/vnconv.h' l='81' u='c'/>
+<use f='unikey/ukengine/vnconv.h' l='87' u='c'/>
+<use f='unikey/ukengine/vnconv.h' l='118' u='c'/>
+<use f='unikey/ukengine/vnconv.h' l='119' u='c'/>
+<use f='unikey/ukengine/vnconv.h' l='120' u='c'/>
+<dec f='unikey/ukengine/pattern.h' l='33'/>
+<use f='unikey/ukengine/pattern.h' l='38' u='c'/>
+<use f='unikey/ukengine/pattern.h' l='50' u='c'/>
+<use f='unikey/ukengine/charset.h' l='87' u='c'/>
+<use f='unikey/ukengine/charset.h' l='263' u='c'/>
+<use f='unikey/ukengine/charset.h' l='294' u='c'/>
+<use f='unikey/ukengine/charset.h' l='299' u='c'/>
+<dec f='unikey/ukengine/mactab.h' l='37'/>
+<use f='unikey/ukengine/mactab.h' l='52' u='c'/>
+<use f='unikey/ukengine/usrkeymap.h' l='33' u='c'/>
+<use f='unikey/ukengine/usrkeymap.h' l='34' u='c'/>
+<use f='unikey/ukengine/usrkeymap.h' l='35' u='c'/>

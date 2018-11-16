@@ -1,0 +1,9 @@
+<dec f='unikey/ukengine/ukengine.h' l='100' type='int'/>
+<offset>128</offset>
+<use f='unikey/ukengine/ukengine.cpp' l='1756' u='w' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1844' u='r' c='_ZN8UkEngine11writeOutputEPhRi'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1912' u='r' c='_ZN8UkEngine10markChangeEi'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1913' u='r' c='_ZN8UkEngine10markChangeEi'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1914' u='w' c='_ZN8UkEngine10markChangeEi'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1948' u='w' c='_ZN8UkEngine16processBackspaceERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2210' u='w' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>

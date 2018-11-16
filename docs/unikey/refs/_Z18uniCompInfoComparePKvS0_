@@ -1,0 +1,8 @@
+<def f='unikey/ukengine/charset.cpp' l='185' ll='190' type='int uniCompInfoCompare(const void * ele1, const void * ele2)'/>
+<use f='unikey/ukengine/charset.cpp' l='211' u='r' c='_ZN18UnicodeCompCharsetC1EPtPj'/>
+<use f='unikey/ukengine/charset.cpp' l='229' u='r' c='_ZN18UnicodeCompCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='239' u='r' c='_ZN18UnicodeCompCharset9nextInputER12ByteInStreamRjRi'/>
+<doc f='unikey/ukengine/charset.cpp' l='181'>////////////////////////////////////////
+// Unicode decomposed
+////////////////////////////////////////
+//-------------------------------------------</doc>

@@ -1,0 +1,9 @@
+<def f='include/c++/7/streambuf' l='508' ll='514' type='void std::basic_streambuf::setg(char_type * __gbeg, char_type * __gnext, char_type * __gend)'/>
+<doc f='include/c++/7/streambuf' l='500'>/**
+       *  @brief  Setting the three read area pointers.
+       *  @param  __gbeg  A pointer.
+       *  @param  __gnext  A pointer.
+       *  @param  __gend  A pointer.
+       *  @post  @a __gbeg == @c eback(), @a __gnext == @c gptr(), and
+       *         @a __gend == @c egptr()
+      */</doc>

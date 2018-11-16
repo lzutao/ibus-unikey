@@ -1,0 +1,2 @@
+<dec f='include/search.h' l='138' type='void * tdelete(const void *__restrict __key, void **__restrict __rootp, __compar_fn_t __compar)'/>
+<doc f='include/search.h' l='137'>/* Remove the element matching KEY from the tree pointed to by *ROOTP.  */</doc>

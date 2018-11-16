@@ -1,0 +1,2 @@
+<dec f='include/time.h' l='219' type='int clock_gettime(clockid_t __clock_id, struct timespec * __tp)'/>
+<doc f='include/time.h' l='218'>/* Get current value of clock CLOCK_ID and store it in TP.  */</doc>

@@ -1,0 +1,11 @@
+<def f='unikey/ukengine/charset.cpp' l='132' ll='137' type='int wideCharCompare(const void * ele1, const void * ele2)'/>
+<use f='unikey/ukengine/charset.cpp' l='146' u='r' c='_ZN14UnicodeCharsetC1EPt'/>
+<use f='unikey/ukengine/charset.cpp' l='159' u='r' c='_ZN14UnicodeCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='339' u='r' c='_ZN18UnicodeUTF8Charset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='437' u='r' c='_ZN17UnicodeRefCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='553' u='r' c='_ZN21UnicodeCStringCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='608' u='r' c='_ZN17DoubleByteCharsetC1EPt'/>
+<use f='unikey/ukengine/charset.cpp' l='632' u='r' c='_ZN17DoubleByteCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='1200' u='r' c='_ZN16WinCP1258CharsetC1EPtS0_'/>
+<use f='unikey/ukengine/charset.cpp' l='1228' u='r' c='_ZN16WinCP1258Charset9nextInputER12ByteInStreamRjRi'/>
+<doc f='unikey/ukengine/charset.cpp' l='131'>//-------------------------------------------</doc>

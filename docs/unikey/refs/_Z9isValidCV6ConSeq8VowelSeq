@@ -1,0 +1,6 @@
+<def f='unikey/ukengine/ukengine.cpp' l='348' ll='370' type='bool isValidCV(ConSeq c, VowelSeq v)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='405' u='c' c='_Z10isValidCVC6ConSeq8VowelSeqS_'/>
+<use f='unikey/ukengine/ukengine.cpp' l='407' u='c' c='_Z10isValidCVC6ConSeq8VowelSeqS_'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1434' u='c' c='_ZN8UkEngine11appendVowelER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1488' u='c' c='_ZN8UkEngine11appendVowelER10UkKeyEvent'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='347'>//----------------------------------------------------------</doc>

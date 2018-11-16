@@ -1,0 +1,9 @@
+<def f='unikey/ukengine/pattern.h' l='50' ll='69'/>
+<size>16</size>
+<mbr r='PatternList::m_patterns' o='0' t='PatternState *'/>
+<mbr r='PatternList::m_count' o='64' t='int'/>
+<fun r='_ZN11PatternList4initEPPci'/>
+<fun r='_ZN11PatternList15foundAtNextCharEc'/>
+<fun r='_ZN11PatternList5resetEv'/>
+<fun r='_ZN11PatternListC1Ev'/>
+<fun r='_ZN11PatternListD1Ev'/>

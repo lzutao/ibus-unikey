@@ -1,0 +1,7 @@
+<dec f='include/stdio.h' l='759' type='int feof(FILE * __stream)'/>
+<doc f='include/stdio.h' l='758'>/* Return the EOF indicator for STREAM.  */</doc>
+<use f='unikey/ukengine/byteio.cpp' l='321' u='c' c='_ZN12FileBIStream3eosEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='336' u='c' c='_ZN12FileBIStream7getNextERh'/>
+<use f='unikey/ukengine/byteio.cpp' l='348' u='c' c='_ZN12FileBIStream8peekNextERh'/>
+<use f='unikey/ukengine/mactab.cpp' l='125' u='c' c='_ZN11CMacroTable10readHeaderEP8_IO_FILERi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='172' u='c' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>

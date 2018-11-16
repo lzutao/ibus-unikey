@@ -1,0 +1,2 @@
+<def f='unikey/ukengine/mactab.cpp' l='50' ll='75' type='int macCompare(const void * p1, const void * p2)'/>
+<use f='unikey/ukengine/mactab.cpp' l='202' u='r' c='_ZN11CMacroTable12loadFromFileEPKc'/>

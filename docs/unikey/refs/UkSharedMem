@@ -1,0 +1,11 @@
+<def f='unikey/ukengine/ukengine.h' l='33' ll='45'/>
+<size>141380</size>
+<doc f='unikey/ukengine/ukengine.h' l='32'>//This is a shared object among processes, do not put any pointer in it</doc>
+<mbr r='UkSharedMem::initialized' o='0' t='int'/>
+<mbr r='UkSharedMem::vietKey' o='32' t='int'/>
+<mbr r='UkSharedMem::options' o='64' t='UnikeyOptions'/>
+<mbr r='UkSharedMem::input' o='352' t='UkInputProcessor'/>
+<mbr r='UkSharedMem::usrKeyMapLoaded' o='8576' t='int'/>
+<mbr r='UkSharedMem::usrKeyMap' o='8608' t='int [256]'/>
+<mbr r='UkSharedMem::charsetId' o='16800' t='int'/>
+<mbr r='UkSharedMem::macStore' o='16832' t='CMacroTable'/>

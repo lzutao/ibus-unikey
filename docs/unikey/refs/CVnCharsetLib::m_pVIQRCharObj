@@ -1,0 +1,11 @@
+<dec f='unikey/ukengine/charset.h' l='272' type='VIQRCharset *'/>
+<offset>960</offset>
+<use f='unikey/ukengine/charset.cpp' l='1015' u='w' c='_ZN13CVnCharsetLibC1Ev'/>
+<use f='unikey/ukengine/charset.cpp' l='1044' u='r' c='_ZN13CVnCharsetLibD1Ev'/>
+<use f='unikey/ukengine/charset.cpp' l='1045' u='r' c='_ZN13CVnCharsetLibD1Ev'/>
+<use f='unikey/ukengine/charset.cpp' l='1104' u='r' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>
+<use f='unikey/ukengine/charset.cpp' l='1105' u='w' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>
+<use f='unikey/ukengine/charset.cpp' l='1106' u='r' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>
+<use f='unikey/ukengine/charset.cpp' l='1115' u='r' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>
+<use f='unikey/ukengine/charset.cpp' l='1116' u='w' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>
+<use f='unikey/ukengine/charset.cpp' l='1120' u='r' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>

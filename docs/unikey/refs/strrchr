@@ -1,0 +1,2 @@
+<dec f='include/string.h' l='252' type='char * strrchr(const char * __s, int __c)'/>
+<use f='unikey/ukengine/convert.cpp' l='146' u='c' c='VnFileConvert'/>

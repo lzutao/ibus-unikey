@@ -1,0 +1,2 @@
+<dec f='include/stdio.h' l='246' type='FILE * freopen(const char *__restrict __filename, const char *__restrict __modes, FILE *__restrict __stream)'/>
+<dec f='include/stdio.h' l='258' type='FILE * freopen64(const char *__restrict __filename, const char *__restrict __modes, FILE *__restrict __stream)'/>

@@ -1,0 +1,6 @@
+<def f='include/c++/7/bits/stl_iterator.h' l='282' ll='284' type='reference std::reverse_iterator::operator[](difference_type __n) const'/>
+<doc f='include/c++/7/bits/stl_iterator.h' l='277'>/**
+       *  @return  The value at @c current - @a __n - 1
+       *
+       *  The underlying iterator must be a Random Access Iterator.
+      */</doc>

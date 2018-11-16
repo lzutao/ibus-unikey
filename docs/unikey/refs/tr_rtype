@@ -1,0 +1,13 @@
+<dec f='include/check.h' l='849' type='int tr_rtype(TestResult * tr)'/>
+<doc f='include/check.h' l='837'>/**
+ * Retrieve type of result that the given test result represents.
+ *
+ * This is a member of test_result, and can represent a
+ * pass, failure, or error.
+ *
+ * @param tr test result to retrieve result from
+ *
+ * @return result of given test
+ *
+ * @since 0.6.0
+ */</doc>

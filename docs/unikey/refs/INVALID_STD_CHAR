@@ -1,0 +1,10 @@
+<def f='unikey/ukengine/charset.h' l='80' type='const StdVnChar'/>
+<use f='unikey/ukengine/charset.cpp' l='300' u='r' c='_ZN18UnicodeUTF8Charset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='314' u='r' c='_ZN18UnicodeUTF8Charset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='322' u='r' c='_ZN18UnicodeUTF8Charset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='333' u='r' c='_ZN18UnicodeUTF8Charset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='625' u='r' c='_ZN17DoubleByteCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='1221' u='r' c='_ZN16WinCP1258Charset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/convert.cpp' l='49' u='r' c='_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1857' u='r' c='_ZN8UkEngine11writeOutputEPhRi'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1899' u='r' c='_ZN8UkEngine11getSeqStepsEii'/>

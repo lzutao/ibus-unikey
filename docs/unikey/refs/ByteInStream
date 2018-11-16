@@ -1,0 +1,16 @@
+<inh f='unikey/ukengine/byteio.h' l='14' c='ByteStream'/>
+<def f='unikey/ukengine/byteio.h' l='20' ll='44'/>
+<ovr f='unikey/ukengine/byteio.h' l='57' c='StringBIStream'/>
+<ovr f='unikey/ukengine/byteio.h' l='96' c='FileBIStream'/>
+<size>8</size>
+<doc f='unikey/ukengine/byteio.h' l='19'>//----------------------------------------------------</doc>
+<fun r='_ZN12ByteInStream7getNextERh'/>
+<fun r='_ZN12ByteInStream8peekNextERh'/>
+<fun r='_ZN12ByteInStream5ungetEh'/>
+<fun r='_ZN12ByteInStream8getNextWERt'/>
+<fun r='_ZN12ByteInStream9peekNextWERt'/>
+<fun r='_ZN12ByteInStream9getNextDWERj'/>
+<fun r='_ZN12ByteInStream8bookmarkEv'/>
+<fun r='_ZN12ByteInStream12gotoBookmarkEv'/>
+<fun r='_ZN12ByteInStream3eosEv'/>
+<fun r='_ZN12ByteInStream5closeEv'/>

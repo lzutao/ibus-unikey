@@ -1,0 +1,16 @@
+<dec f='unikey/ukengine/inputproc.h' l='67' type='int'/>
+<use f='unikey/test/test_inputproc.cc' l='100' u='r' c='_Z11print_eventR10UkKeyEvent'/>
+<use f='unikey/test/test_inputproc.cc' l='106' u='r' c='_Z13compare_eventRK10UkKeyEventS1_'/>
+<use f='unikey/test/test_inputproc.cc' l='106' u='r' c='_Z13compare_eventRK10UkKeyEventS1_'/>
+<offset>128</offset>
+<doc f='unikey/ukengine/inputproc.h' l='67'>//meaningful only when this is a vowel</doc>
+<use f='unikey/ukengine/inputproc.cpp' l='354' u='w' c='_ZN16UkInputProcessor14keyCodeToEventEjR10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='979' u='r' c='_ZN8UkEngine11processToneER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='982' u='r' c='_ZN8UkEngine11processToneER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='989' u='r' c='_ZN8UkEngine11processToneER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1008' u='r' c='_ZN8UkEngine11processToneER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1008' u='r' c='_ZN8UkEngine11processToneER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1008' u='r' c='_ZN8UkEngine11processToneER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1014' u='r' c='_ZN8UkEngine11processToneER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1017' u='r' c='_ZN8UkEngine11processToneER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1027' u='r' c='_ZN8UkEngine11processToneER10UkKeyEvent'/>

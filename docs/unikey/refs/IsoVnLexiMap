@@ -1,0 +1,7 @@
+<dec f='unikey/ukengine/inputproc.h' l='118' type='VnLexiName []'/>
+<use f='unikey/ukengine/inputproc.h' l='121' u='r' c='_Z11IsoToVnLexij'/>
+<def f='unikey/ukengine/inputproc.cpp' l='96' type='VnLexiName [256]'/>
+<use f='unikey/ukengine/inputproc.cpp' l='248' u='w' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='252' u='w' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='256' u='w' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='260' u='w' c='_Z25SetupInputClassifierTablev'/>

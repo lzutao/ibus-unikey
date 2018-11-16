@@ -1,0 +1,3 @@
+<dec f='include/x86_64-linux-gnu/bits/libio.h' l='52'/>
+<doc f='include/x86_64-linux-gnu/bits/libio.h' l='51'>/* This define avoids name pollution if we&apos;re using GNU stdarg.h */</doc>
+<dec f='include/wchar.h' l='37'/>

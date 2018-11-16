@@ -1,0 +1,13 @@
+<dec f='include/check.h' l='209'/>
+<doc f='include/check.h' l='197'>/**
+ * Add a test function with an expected exit value to a test case
+ *
+ * The added test is expected to terminate by exiting with the given value
+ *
+ * @param tc test case to add test to
+ * @param tf test function to add to test case
+ * @param expected_exit_value exit value for test function to return in
+ *                             order for the test to be considered passing
+ *
+ * @since 0.9.7
+ */</doc>

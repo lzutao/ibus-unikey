@@ -1,0 +1,9 @@
+<dec f='unikey/ukengine/ukengine.cpp' l='295' type='ConSeq lookupCSeq(VnLexiName c1, VnLexiName c2 = vnl_nonVnChar, VnLexiName c3 = vnl_nonVnChar)'/>
+<def f='unikey/ukengine/ukengine.cpp' l='487' ll='498' type='ConSeq lookupCSeq(VnLexiName c1, VnLexiName c2 = vnl_nonVnChar, VnLexiName c3 = vnl_nonVnChar)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1540' u='c' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1566' u='c' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1583' u='c' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1649' u='c' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1651' u='c' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1740' u='c' c='_ZN8UkEngine19processNoSpellCheckER10UkKeyEvent'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='486'>//------------------------------------------------</doc>

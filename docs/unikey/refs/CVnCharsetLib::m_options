@@ -1,0 +1,12 @@
+<dec f='unikey/ukengine/charset.h' l='280' type='VnConvOptions'/>
+<offset>1536</offset>
+<use f='unikey/ukengine/charset.cpp' l='737' u='m' c='_ZN11VIQRCharset10startInputEv'/>
+<use f='unikey/ukengine/charset.cpp' l='752' u='m' c='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='777' u='m' c='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='910' u='m' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='1027' u='a' c='_ZN13CVnCharsetLibC1Ev'/>
+<use f='unikey/ukengine/charset.cpp' l='1145' u='w' c='_Z16VnConvSetOptionsP14_VnConvOptions'/>
+<use f='unikey/ukengine/charset.cpp' l='1151' u='r' c='_Z16VnConvGetOptionsP14_VnConvOptions'/>
+<use f='unikey/ukengine/convert.cpp' l='50' u='m' c='_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream'/>
+<use f='unikey/ukengine/convert.cpp' l='52' u='m' c='_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream'/>
+<use f='unikey/ukengine/convert.cpp' l='54' u='m' c='_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream'/>

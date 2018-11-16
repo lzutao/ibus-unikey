@@ -1,0 +1,83 @@
+<def f='include/c++/7/istream' l='58' ll='642'/>
+<inh f='include/c++/7/bits/basic_ios.tcc' l='178' c='std::basic_ios'/>
+<def f='include/c++/7/bits/istream.tcc' l='1048'/>
+<ovr f='include/c++/7/bits/istream.tcc' l='1071' c='std::basic_iostream'/>
+<inh f='include/c++/7/bits/basic_ios.tcc' l='181' c='std::basic_ios'/>
+<def f='include/c++/7/bits/istream.tcc' l='1074'/>
+<ovr f='include/c++/7/bits/istream.tcc' l='1093' c='std::basic_iostream'/>
+<size>280</size>
+<mbr r='std::basic_istream::_M_gcount' t='streamsize'/>
+<fun r='_ZNSt13basic_istreamC1EPSt15basic_streambufIT_T0_E'/>
+<fun r='_ZNSt13basic_istreamD1Ev'/>
+<fun r='_ZNSt13basic_istreamrsEPFRSt13basic_istreamIT_T0_ES5_E'/>
+<fun r='_ZNSt13basic_istreamrsEPFRSt9basic_iosIT_T0_ES4_E'/>
+<fun r='_ZNSt13basic_istreamrsEPFRSt8ios_baseS1_E'/>
+<fun r='_ZNSt13basic_istreamrsERb'/>
+<fun r='_ZNSt13basic_istreamrsERs'/>
+<fun r='_ZNSt13basic_istreamrsERt'/>
+<fun r='_ZNSt13basic_istreamrsERi'/>
+<fun r='_ZNSt13basic_istreamrsERj'/>
+<fun r='_ZNSt13basic_istreamrsERl'/>
+<fun r='_ZNSt13basic_istreamrsERm'/>
+<fun r='_ZNSt13basic_istreamrsERx'/>
+<fun r='_ZNSt13basic_istreamrsERy'/>
+<fun r='_ZNSt13basic_istreamrsERf'/>
+<fun r='_ZNSt13basic_istreamrsERd'/>
+<fun r='_ZNSt13basic_istreamrsERe'/>
+<fun r='_ZNSt13basic_istreamrsERPv'/>
+<fun r='_ZNSt13basic_istreamrsEPSt15basic_streambufIT_T0_E'/>
+<fun r='_ZNKSt13basic_istream6gcountEv'/>
+<fun r='_ZNSt13basic_istream3getEv'/>
+<fun r='_ZNSt13basic_istream3getERT_'/>
+<fun r='_ZNSt13basic_istream3getEPT_lS0_'/>
+<fun r='_ZNSt13basic_istream3getEPT_l'/>
+<fun r='_ZNSt13basic_istream3getERSt15basic_streambufIT_T0_ES1_'/>
+<fun r='_ZNSt13basic_istream3getERSt15basic_streambufIT_T0_E'/>
+<fun r='_ZNSt13basic_istream7getlineEPT_lS0_'/>
+<fun r='_ZNSt13basic_istream7getlineEPT_l'/>
+<fun r='_ZNSt13basic_istream6ignoreElNT0_8int_typeE'/>
+<fun r='_ZNSt13basic_istream6ignoreEl'/>
+<fun r='_ZNSt13basic_istream6ignoreEv'/>
+<fun r='_ZNSt13basic_istream4peekEv'/>
+<fun r='_ZNSt13basic_istream4readEPT_l'/>
+<fun r='_ZNSt13basic_istream8readsomeEPT_l'/>
+<fun r='_ZNSt13basic_istream7putbackET_'/>
+<fun r='_ZNSt13basic_istream5ungetEv'/>
+<fun r='_ZNSt13basic_istream4syncEv'/>
+<fun r='_ZNSt13basic_istream5tellgEv'/>
+<fun r='_ZNSt13basic_istream5seekgENT0_8pos_typeE'/>
+<fun r='_ZNSt13basic_istream5seekgENT0_8off_typeESt12_Ios_Seekdir'/>
+<fun r='_ZNSt13basic_istreamC1Ev'/>
+<fun r='_ZNSt13basic_istreamC1ERKSt13basic_istreamIT_T0_E'/>
+<fun r='_ZNSt13basic_istreamC1EOSt13basic_istreamIT_T0_E'/>
+<fun r='_ZNSt13basic_istreamaSERKSt13basic_istreamIT_T0_E'/>
+<fun r='_ZNSt13basic_istreamaSEOSt13basic_istreamIT_T0_E'/>
+<fun r='_ZNSt13basic_istream4swapERSt13basic_istreamIT_T0_E'/>
+<fun r='_ZNSt13basic_istream10_M_extractERT_'/>
+<fun r='_ZNSt13basic_istream7getlineEPT_lS0_'/>
+<fun r='_ZNSt13basic_istream6ignoreEl'/>
+<fun r='_ZNSt13basic_istream6ignoreElNT0_8int_typeE'/>
+<fun r='_ZNSt13basic_istream7getlineEPT_lS0_'/>
+<fun r='_ZNSt13basic_istream6ignoreEl'/>
+<fun r='_ZNSt13basic_istream6ignoreElNT0_8int_typeE'/>
+<fun r='_ZNSt13basic_istream10_M_extractERT_'/>
+<fun r='_ZNSt13basic_istreamrsERs'/>
+<fun r='_ZNSt13basic_istreamrsERi'/>
+<fun r='_ZNSt13basic_istreamrsEPSt15basic_streambufIT_T0_E'/>
+<fun r='_ZNSt13basic_istream3getEv'/>
+<fun r='_ZNSt13basic_istream3getERT_'/>
+<fun r='_ZNSt13basic_istream3getEPT_lS0_'/>
+<fun r='_ZNSt13basic_istream3getERSt15basic_streambufIT_T0_ES1_'/>
+<fun r='_ZNSt13basic_istream7getlineEPT_lS0_'/>
+<fun r='_ZNSt13basic_istream6ignoreEv'/>
+<fun r='_ZNSt13basic_istream6ignoreEl'/>
+<fun r='_ZNSt13basic_istream6ignoreElNT0_8int_typeE'/>
+<fun r='_ZNSt13basic_istream4peekEv'/>
+<fun r='_ZNSt13basic_istream4readEPT_l'/>
+<fun r='_ZNSt13basic_istream8readsomeEPT_l'/>
+<fun r='_ZNSt13basic_istream7putbackET_'/>
+<fun r='_ZNSt13basic_istream5ungetEv'/>
+<fun r='_ZNSt13basic_istream4syncEv'/>
+<fun r='_ZNSt13basic_istream5tellgEv'/>
+<fun r='_ZNSt13basic_istream5seekgENT0_8pos_typeE'/>
+<fun r='_ZNSt13basic_istream5seekgENT0_8off_typeESt12_Ios_Seekdir'/>

@@ -1,0 +1,4 @@
+<def f='unikey/ukengine/ukengine.cpp' l='213' ll='262' type='VCPair [153]'/>
+<use f='unikey/ukengine/ukengine.cpp' l='264' u='r'/>
+<use f='unikey/ukengine/ukengine.cpp' l='389' u='r' c='_Z9isValidVC8VowelSeq6ConSeq'/>
+<use f='unikey/ukengine/ukengine.cpp' l='446' u='r' c='_Z15engineClassInitv'/>

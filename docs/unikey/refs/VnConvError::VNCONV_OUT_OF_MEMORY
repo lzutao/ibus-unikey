@@ -1,0 +1,3 @@
+<dec f='unikey/ukengine/vnconv.h' l='95' type='5'/>
+<use f='unikey/ukengine/convert.cpp' l='61' u='r' c='_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1862' u='r' c='_ZN8UkEngine11writeOutputEPhRi'/>

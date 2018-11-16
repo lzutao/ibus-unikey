@@ -1,0 +1,17 @@
+<dec f='include/check.h' l='1077' type='void srunner_set_log(SRunner * sr, const char * fname)'/>
+<doc f='include/check.h' l='1061'>/**
+ * Set the suite runner to output the result in log format to the
+ * given file.
+ *
+ * Note: log file setting is an initialize only operation -- it should
+ * be done immediately after SRunner creation, and the log file can&apos;t be
+ * changed after being set.
+ *
+ * This setting does not conflict with the other log output types;
+ * all logging types can occur concurrently if configured.
+ *
+ * @param sr suite runner to log results of in log format
+ * @param fname file name to output log results to
+ *
+ * @since 0.7.1
+*/</doc>

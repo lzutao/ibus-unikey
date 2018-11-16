@@ -1,0 +1,79 @@
+<dec f='unikey/ukengine/vnlexi.h' l='35' type='57'/>
+<use f='unikey/ukengine/inputproc.cpp' l='83'/>
+<use f='unikey/ukengine/inputproc.cpp' l='83'/>
+<use f='unikey/ukengine/inputproc.cpp' l='83'/>
+<use f='unikey/ukengine/inputproc.cpp' l='83'/>
+<use f='unikey/ukengine/inputproc.cpp' l='194' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='194' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='194' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='194' u='r'/>
+<use f='unikey/ukengine/ukengine.cpp' l='87'/>
+<use f='unikey/ukengine/ukengine.cpp' l='87'/>
+<use f='unikey/ukengine/ukengine.cpp' l='87'/>
+<use f='unikey/ukengine/ukengine.cpp' l='87'/>
+<use f='unikey/ukengine/ukengine.cpp' l='103'/>
+<use f='unikey/ukengine/ukengine.cpp' l='103'/>
+<use f='unikey/ukengine/ukengine.cpp' l='103'/>
+<use f='unikey/ukengine/ukengine.cpp' l='103'/>
+<use f='unikey/ukengine/ukengine.cpp' l='106'/>
+<use f='unikey/ukengine/ukengine.cpp' l='106'/>
+<use f='unikey/ukengine/ukengine.cpp' l='106'/>
+<use f='unikey/ukengine/ukengine.cpp' l='106'/>
+<use f='unikey/ukengine/ukengine.cpp' l='117'/>
+<use f='unikey/ukengine/ukengine.cpp' l='117'/>
+<use f='unikey/ukengine/ukengine.cpp' l='117'/>
+<use f='unikey/ukengine/ukengine.cpp' l='117'/>
+<use f='unikey/ukengine/ukengine.cpp' l='130'/>
+<use f='unikey/ukengine/ukengine.cpp' l='130'/>
+<use f='unikey/ukengine/ukengine.cpp' l='130'/>
+<use f='unikey/ukengine/ukengine.cpp' l='130'/>
+<use f='unikey/ukengine/ukengine.cpp' l='132'/>
+<use f='unikey/ukengine/ukengine.cpp' l='132'/>
+<use f='unikey/ukengine/ukengine.cpp' l='132'/>
+<use f='unikey/ukengine/ukengine.cpp' l='132'/>
+<use f='unikey/ukengine/ukengine.cpp' l='145'/>
+<use f='unikey/ukengine/ukengine.cpp' l='145'/>
+<use f='unikey/ukengine/ukengine.cpp' l='145'/>
+<use f='unikey/ukengine/ukengine.cpp' l='145'/>
+<use f='unikey/ukengine/ukengine.cpp' l='152'/>
+<use f='unikey/ukengine/ukengine.cpp' l='152'/>
+<use f='unikey/ukengine/ukengine.cpp' l='152'/>
+<use f='unikey/ukengine/ukengine.cpp' l='152'/>
+<use f='unikey/ukengine/ukengine.cpp' l='87'/>
+<use f='unikey/ukengine/ukengine.cpp' l='87'/>
+<use f='unikey/ukengine/ukengine.cpp' l='87'/>
+<use f='unikey/ukengine/ukengine.cpp' l='87'/>
+<use f='unikey/ukengine/ukengine.cpp' l='103'/>
+<use f='unikey/ukengine/ukengine.cpp' l='103'/>
+<use f='unikey/ukengine/ukengine.cpp' l='103'/>
+<use f='unikey/ukengine/ukengine.cpp' l='103'/>
+<use f='unikey/ukengine/ukengine.cpp' l='106'/>
+<use f='unikey/ukengine/ukengine.cpp' l='106'/>
+<use f='unikey/ukengine/ukengine.cpp' l='106'/>
+<use f='unikey/ukengine/ukengine.cpp' l='106'/>
+<use f='unikey/ukengine/ukengine.cpp' l='117'/>
+<use f='unikey/ukengine/ukengine.cpp' l='117'/>
+<use f='unikey/ukengine/ukengine.cpp' l='117'/>
+<use f='unikey/ukengine/ukengine.cpp' l='117'/>
+<use f='unikey/ukengine/ukengine.cpp' l='130'/>
+<use f='unikey/ukengine/ukengine.cpp' l='130'/>
+<use f='unikey/ukengine/ukengine.cpp' l='130'/>
+<use f='unikey/ukengine/ukengine.cpp' l='130'/>
+<use f='unikey/ukengine/ukengine.cpp' l='132'/>
+<use f='unikey/ukengine/ukengine.cpp' l='132'/>
+<use f='unikey/ukengine/ukengine.cpp' l='132'/>
+<use f='unikey/ukengine/ukengine.cpp' l='132'/>
+<use f='unikey/ukengine/ukengine.cpp' l='145'/>
+<use f='unikey/ukengine/ukengine.cpp' l='145'/>
+<use f='unikey/ukengine/ukengine.cpp' l='145'/>
+<use f='unikey/ukengine/ukengine.cpp' l='145'/>
+<use f='unikey/ukengine/ukengine.cpp' l='152'/>
+<use f='unikey/ukengine/ukengine.cpp' l='152'/>
+<use f='unikey/ukengine/ukengine.cpp' l='152'/>
+<use f='unikey/ukengine/ukengine.cpp' l='152'/>
+<use f='unikey/ukengine/ukengine.cpp' l='512' u='r' c='_ZN8UkEngine11processRoofER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='555' u='r' c='_ZN8UkEngine11processRoofER10UkKeyEvent'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='70' u='r'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='70' u='r'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='70' u='r'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='70' u='r'/>

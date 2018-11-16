@@ -1,0 +1,2 @@
+<dec f='include/search.h' l='158' type='void tdestroy(void * __root, __free_fn_t __freefct)'/>
+<doc f='include/search.h' l='157'>/* Destroy the whole tree, call FREEFCT for each node or leaf.  */</doc>

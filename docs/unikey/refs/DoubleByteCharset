@@ -1,0 +1,10 @@
+<inh f='unikey/ukengine/charset.h' l='87' c='VnCharset'/>
+<def f='unikey/ukengine/charset.h' l='141' ll='150'/>
+<size>1384</size>
+<doc f='unikey/ukengine/charset.h' l='140'>//--------------------------------------------------</doc>
+<mbr r='DoubleByteCharset::m_stdMap' o='64' t='UKWORD [256]'/>
+<mbr r='DoubleByteCharset::m_vnChars' o='4160' t='UKDWORD [213]'/>
+<mbr r='DoubleByteCharset::m_toDoubleChar' o='11008' t='UKWORD *'/>
+<fun r='_ZN17DoubleByteCharsetC1EPt'/>
+<fun r='_ZN17DoubleByteCharset9nextInputER12ByteInStreamRjRi'/>
+<fun r='_ZN17DoubleByteCharset7putCharER13ByteOutStreamjRi'/>

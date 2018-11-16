@@ -1,0 +1,13 @@
+<def f='include/c++/7/bits/postypes.h' l='112' ll='207'/>
+<mbr r='std::fpos::_M_off' t='streamoff'/>
+<mbr r='std::fpos::_M_state' t='_StateT'/>
+<fun r='_ZNSt4fposC1Ev'/>
+<fun r='_ZNSt4fposC1El'/>
+<fun r='_ZNKSt4fposcvlEv'/>
+<fun r='_ZNSt4fpos5stateET_'/>
+<fun r='_ZNKSt4fpos5stateEv'/>
+<fun r='_ZNSt4fpospLEl'/>
+<fun r='_ZNSt4fposmIEl'/>
+<fun r='_ZNKSt4fposplEl'/>
+<fun r='_ZNKSt4fposmiEl'/>
+<fun r='_ZNKSt4fposmiERKSt4fposIT_E'/>

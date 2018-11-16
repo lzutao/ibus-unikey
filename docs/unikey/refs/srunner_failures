@@ -1,0 +1,18 @@
+<dec f='include/check.h' l='1027' type='TestResult ** srunner_failures(SRunner * sr)'/>
+<doc f='include/check.h' l='1010'>/**
+ * Return an array of results for all failures found by a suite runner.
+ *
+ * Number of results is equal to srunner_nfailed_tests().
+ *
+ * Information about individual results can be queried using:
+ * tr_rtype(), tr_ctx(), tr_msg(), tr_lno(), tr_lfile(), and tr_tcname().
+ *
+ * Memory is malloc&apos;ed and must be freed; however free the entire structure
+ * instead of individual test cases.
+ *
+ * @param sr suite runner to retrieve results from
+ *
+ * @return array of TestResult objects
+ *
+ * @since 0.6.0
+ */</doc>

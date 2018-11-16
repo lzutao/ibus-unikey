@@ -1,0 +1,9 @@
+<def f='unikey/ukengine/inputproc.cpp' l='36' ll='39' type='unsigned char [30]'/>
+<use f='unikey/ukengine/inputproc.cpp' l='242' u='r' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='244' u='r' c='_Z25SetupInputClassifierTablev'/>
+<doc f='unikey/ukengine/inputproc.cpp' l='29'>/*
+unsigned char WordBreakSyms[] = {
+	&apos;,&apos;, &apos;;&apos;, &apos;:&apos;, &apos;.&apos;, &apos;\&quot;&apos;, &apos;\&apos;&apos;, &apos;!&apos;, &apos;?&apos;, &apos; &apos;,
+	&apos;&lt;&apos;, &apos;&gt;&apos;, &apos;=&apos;, &apos;+&apos;, &apos;-&apos;, &apos;*&apos;, &apos;/&apos;, &apos;\\&apos;,
+	&apos;_&apos;, &apos;~&apos;, &apos;`&apos;, &apos;@&apos;, &apos;#&apos;, &apos;$&apos;, &apos;%&apos;, &apos;^&apos;, &apos;&amp;&apos;, &apos;(&apos;, &apos;)&apos;, &apos;{&apos;, &apos;}&apos;, &apos;[&apos;, &apos;]&apos;};
+*/</doc>

@@ -1,0 +1,17 @@
+<def f='include/c++/7/system_error' l='146' ll='200'/>
+<size>16</size>
+<doc f='include/c++/7/system_error' l='144'>/// error_code
+  // Implementation-specific error identification</doc>
+<fun r='_ZNSt10error_codeC1Ev'/>
+<fun r='_ZNSt10error_codeC1EiRKNSt3_V214error_categoryE'/>
+<fun r='_ZNSt10error_codeC1ET_'/>
+<fun r='_ZNSt10error_code6assignEiRKNSt3_V214error_categoryE'/>
+<fun r='_ZNSt10error_code5clearEv'/>
+<fun r='_ZNSt10error_codeaSET_'/>
+<fun r='_ZNKSt10error_code5valueEv'/>
+<fun r='_ZNKSt10error_code8categoryEv'/>
+<fun r='_ZNKSt10error_code23default_error_conditionEv'/>
+<fun r='_ZNKSt10error_code7messageB5cxx11Ev'/>
+<fun r='_ZNKSt10error_codecvbEv'/>
+<mbr r='std::error_code::_M_value' o='0' t='int'/>
+<mbr r='std::error_code::_M_cat' o='64' t='const std::_V2::error_category *'/>

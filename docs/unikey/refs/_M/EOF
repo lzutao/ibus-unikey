@@ -1,0 +1,6 @@
+<dec f='include/x86_64-linux-gnu/bits/libio.h' l='66'/>
+<use f='include/stdio.h' l='100' u='a'/>
+<use f='unikey/ukengine/byteio.cpp' l='493' u='c'/>
+<use f='unikey/ukengine/byteio.cpp' l='503' u='c'/>
+<use f='unikey/ukengine/byteio.cpp' l='506' u='c'/>
+<use f='unikey/ukengine/byteio.cpp' l='516' u='c'/>

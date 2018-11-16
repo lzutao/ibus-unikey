@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/usrkeymap.cpp' l='34' type='void initKeyMap(int * keyMap)'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='138' u='c' c='_Z12UkLoadKeyMapPKcPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='166' u='c' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<def f='unikey/ukengine/usrkeymap.cpp' l='224' ll='229' type='void initKeyMap(int * keyMap)'/>
+<doc f='unikey/ukengine/usrkeymap.cpp' l='223'>//-------------------------------------------</doc>

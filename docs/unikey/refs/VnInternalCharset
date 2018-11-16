@@ -1,0 +1,8 @@
+<inh f='unikey/ukengine/charset.h' l='87' c='VnCharset'/>
+<def f='unikey/ukengine/charset.h' l='120' ll='126'/>
+<size>8</size>
+<doc f='unikey/ukengine/charset.h' l='119'>//--------------------------------------------------</doc>
+<fun r='_ZN17VnInternalCharsetC1Ev'/>
+<fun r='_ZN17VnInternalCharset9nextInputER12ByteInStreamRjRi'/>
+<fun r='_ZN17VnInternalCharset7putCharER13ByteOutStreamjRi'/>
+<fun r='_ZN17VnInternalCharset11elementSizeEv'/>

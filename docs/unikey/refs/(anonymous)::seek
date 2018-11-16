@@ -1,0 +1,3 @@
+<dec f='include/x86_64-linux-gnu/bits/libio.h' l='372' type='__io_seek_fn *'/>
+<offset>128</offset>
+<doc f='include/x86_64-linux-gnu/bits/libio.h' l='372'>/* Seek/tell file position.  */</doc>

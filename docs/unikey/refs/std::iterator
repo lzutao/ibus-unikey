@@ -1,0 +1,5 @@
+<def f='include/c++/7/bits/stl_iterator_base_types.h' l='118' ll='130'/>
+<ovr f='include/c++/7/bits/stl_iterator.h' l='452' c='std::back_insert_iterator'/>
+<ovr f='include/c++/7/bits/stl_iterator.h' l='544' c='std::front_insert_iterator'/>
+<ovr f='include/c++/7/bits/stl_iterator.h' l='639' c='std::insert_iterator'/>
+<ovr f='include/c++/7/bits/streambuf_iterator.h' l='216' c='std::ostreambuf_iterator'/>

@@ -1,0 +1,7 @@
+<def f='unikey/ukengine/mactab.cpp' l='43' type='char *'/>
+<use f='unikey/ukengine/mactab.cpp' l='52' u='r' c='_Z10macComparePKvS0_'/>
+<use f='unikey/ukengine/mactab.cpp' l='53' u='r' c='_Z10macComparePKvS0_'/>
+<use f='unikey/ukengine/mactab.cpp' l='81' u='r' c='_Z13macKeyComparePKvS0_'/>
+<use f='unikey/ukengine/mactab.cpp' l='107' u='w' c='_ZN11CMacroTable6lookupEPj'/>
+<use f='unikey/ukengine/mactab.cpp' l='201' u='w' c='_ZN11CMacroTable12loadFromFileEPKc'/>
+<doc f='unikey/ukengine/mactab.cpp' l='42'>//---------------------------------------------------------------</doc>

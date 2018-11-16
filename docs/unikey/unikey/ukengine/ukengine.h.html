@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ukengine.h source code [unikey/ukengine/ukengine.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="KeyBufEntry,UkEngine,UkSharedMem,VnWordForm "/>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'unikey/ukengine/ukengine.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>unikey</a>/<a href='./'>ukengine</a>/<a href='ukengine.h.html'>ukengine.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>// -*- mode:c++; tab-width:4; c-basic-offset:4; indent-tabs-mode:nil -*-</i></td></tr>
+<tr><th id="2">2</th><td><i>/* Unikey Vietnamese Input Method</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright (C) 2000-2005 Pham Kim Long</i></td></tr>
+<tr><th id="4">4</th><td><i> * Contact:</i></td></tr>
+<tr><th id="5">5</th><td><i> *   unikey@gmail.com</i></td></tr>
+<tr><th id="6">6</th><td><i> *   UniKey project: <a href="http://unikey.org">http://unikey.org</a></i></td></tr>
+<tr><th id="7">7</th><td><i> *</i></td></tr>
+<tr><th id="8">8</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="9">9</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="10">10</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="11">11</th><td><i> * version 2 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="12">12</th><td><i> *</i></td></tr>
+<tr><th id="13">13</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="14">14</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="15">15</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="16">16</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="17">17</th><td><i> *</i></td></tr>
+<tr><th id="18">18</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="19">19</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="20">20</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="21">21</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="22">22</th><td><i> */</i></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="24">ifndef</span> <span class="macro" data-ref="_M/__UKENGINE_H">__UKENGINE_H</span></u></td></tr>
+<tr><th id="25">25</th><td><u>#define <dfn class="macro" id="_M/__UKENGINE_H" data-ref="_M/__UKENGINE_H">__UKENGINE_H</dfn></u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="charset.h.html">"charset.h"</a></u></td></tr>
+<tr><th id="28">28</th><td><u>#include <a href="vnlexi.h.html">"vnlexi.h"</a></u></td></tr>
+<tr><th id="29">29</th><td><u>#include <a href="inputproc.h.html">"inputproc.h"</a></u></td></tr>
+<tr><th id="30">30</th><td><u>#include <a href="mactab.h.html">"mactab.h"</a></u></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><i>//This is a shared object among processes, do not put any pointer in it</i></td></tr>
+<tr><th id="33">33</th><td><b>struct</b> <dfn class="type def" id="UkSharedMem" title='UkSharedMem' data-ref="UkSharedMem">UkSharedMem</dfn> {</td></tr>
+<tr><th id="34">34</th><td>    <i>//states</i></td></tr>
+<tr><th id="35">35</th><td>    <em>int</em> <dfn class="decl" id="UkSharedMem::initialized" title='UkSharedMem::initialized' data-ref="UkSharedMem::initialized">initialized</dfn>;</td></tr>
+<tr><th id="36">36</th><td>    <em>int</em> <dfn class="decl" id="UkSharedMem::vietKey" title='UkSharedMem::vietKey' data-ref="UkSharedMem::vietKey">vietKey</dfn>;</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td>    <a class="typedef" href="keycons.h.html#UnikeyOptions" title='UnikeyOptions' data-type='struct _UnikeyOptions' data-ref="UnikeyOptions">UnikeyOptions</a> <dfn class="decl" id="UkSharedMem::options" title='UkSharedMem::options' data-ref="UkSharedMem::options">options</dfn>;</td></tr>
+<tr><th id="39">39</th><td>    <a class="type" href="inputproc.h.html#UkInputProcessor" title='UkInputProcessor' data-ref="UkInputProcessor">UkInputProcessor</a> <dfn class="decl" id="UkSharedMem::input" title='UkSharedMem::input' data-ref="UkSharedMem::input">input</dfn>;</td></tr>
+<tr><th id="40">40</th><td>    <em>int</em> <dfn class="decl" id="UkSharedMem::usrKeyMapLoaded" title='UkSharedMem::usrKeyMapLoaded' data-ref="UkSharedMem::usrKeyMapLoaded">usrKeyMapLoaded</dfn>;</td></tr>
+<tr><th id="41">41</th><td>    <em>int</em> <dfn class="decl" id="UkSharedMem::usrKeyMap" title='UkSharedMem::usrKeyMap' data-ref="UkSharedMem::usrKeyMap">usrKeyMap</dfn>[<var>256</var>];</td></tr>
+<tr><th id="42">42</th><td>    <em>int</em> <dfn class="decl" id="UkSharedMem::charsetId" title='UkSharedMem::charsetId' data-ref="UkSharedMem::charsetId">charsetId</dfn>;</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td>    <a class="type" href="mactab.h.html#CMacroTable" title='CMacroTable' data-ref="CMacroTable">CMacroTable</a> <dfn class="decl" id="UkSharedMem::macStore" title='UkSharedMem::macStore' data-ref="UkSharedMem::macStore">macStore</dfn>;</td></tr>
+<tr><th id="45">45</th><td>};</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><u>#define <dfn class="macro" id="_M/MAX_UK_ENGINE" data-ref="_M/MAX_UK_ENGINE">MAX_UK_ENGINE</dfn> 128</u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><b>enum</b> <dfn class="type def" id="VnWordForm" title='VnWordForm' data-ref="VnWordForm">VnWordForm</dfn> {<dfn class="enum" id="VnWordForm::vnw_nonVn" title='VnWordForm::vnw_nonVn' data-ref="VnWordForm::vnw_nonVn">vnw_nonVn</dfn>, <dfn class="enum" id="VnWordForm::vnw_empty" title='VnWordForm::vnw_empty' data-ref="VnWordForm::vnw_empty">vnw_empty</dfn>, <dfn class="enum" id="VnWordForm::vnw_c" title='VnWordForm::vnw_c' data-ref="VnWordForm::vnw_c">vnw_c</dfn>, <dfn class="enum" id="VnWordForm::vnw_v" title='VnWordForm::vnw_v' data-ref="VnWordForm::vnw_v">vnw_v</dfn>, <dfn class="enum" id="VnWordForm::vnw_cv" title='VnWordForm::vnw_cv' data-ref="VnWordForm::vnw_cv">vnw_cv</dfn>, <dfn class="enum" id="VnWordForm::vnw_vc" title='VnWordForm::vnw_vc' data-ref="VnWordForm::vnw_vc">vnw_vc</dfn>, <dfn class="enum" id="VnWordForm::vnw_cvc" title='VnWordForm::vnw_cvc' data-ref="VnWordForm::vnw_cvc">vnw_cvc</dfn>};</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><b>typedef</b> <em>void</em> (* <dfn class="typedef" id="CheckKeyboardCaseCb" title='CheckKeyboardCaseCb' data-type='void (*)(int *, int *)' data-ref="CheckKeyboardCaseCb">CheckKeyboardCaseCb</dfn>)(<em>int</em> *<dfn class="local col2 decl" id="172pShiftPressed" title='pShiftPressed' data-type='int *' data-ref="172pShiftPressed">pShiftPressed</dfn>, <em>int</em> *<dfn class="local col3 decl" id="173pCapslockOn" title='pCapslockOn' data-type='int *' data-ref="173pCapslockOn">pCapslockOn</dfn>);</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><b>struct</b> <dfn class="type def" id="KeyBufEntry" title='KeyBufEntry' data-ref="KeyBufEntry">KeyBufEntry</dfn> {</td></tr>
+<tr><th id="54">54</th><td>    <a class="type" href="inputproc.h.html#UkKeyEvent" title='UkKeyEvent' data-ref="UkKeyEvent">UkKeyEvent</a> <dfn class="decl" id="KeyBufEntry::ev" title='KeyBufEntry::ev' data-ref="KeyBufEntry::ev">ev</dfn>;</td></tr>
+<tr><th id="55">55</th><td>    <em>bool</em> <dfn class="decl" id="KeyBufEntry::converted" title='KeyBufEntry::converted' data-ref="KeyBufEntry::converted">converted</dfn>;</td></tr>
+<tr><th id="56">56</th><td>};</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><b>class</b> <dfn class="type def" id="UkEngine" title='UkEngine' data-ref="UkEngine">UkEngine</dfn></td></tr>
+<tr><th id="59">59</th><td>{</td></tr>
+<tr><th id="60">60</th><td><b>public</b>:</td></tr>
+<tr><th id="61">61</th><td>    <dfn class="decl" id="_ZN8UkEngineC1Ev" title='UkEngine::UkEngine' data-ref="_ZN8UkEngineC1Ev">UkEngine</dfn>();</td></tr>
+<tr><th id="62">62</th><td>    <em>void</em> <dfn class="decl def" id="_ZN8UkEngine11setCtrlInfoEP11UkSharedMem" title='UkEngine::setCtrlInfo' data-ref="_ZN8UkEngine11setCtrlInfoEP11UkSharedMem">setCtrlInfo</dfn>(<a class="type" href="#UkSharedMem" title='UkSharedMem' data-ref="UkSharedMem">UkSharedMem</a> *<dfn class="local col4 decl" id="174p" title='p' data-type='UkSharedMem *' data-ref="174p">p</dfn>)</td></tr>
+<tr><th id="63">63</th><td>    {</td></tr>
+<tr><th id="64">64</th><td>        <a class="member" href="#UkEngine::m_pCtrl" title='UkEngine::m_pCtrl' data-ref="UkEngine::m_pCtrl">m_pCtrl</a> = <a class="local col4 ref" href="#174p" title='p' data-ref="174p">p</a>;</td></tr>
+<tr><th id="65">65</th><td>    }</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td>    <em>void</em> <dfn class="decl def" id="_ZN8UkEngine18setCheckKbCaseFuncEPFvPiS0_E" title='UkEngine::setCheckKbCaseFunc' data-ref="_ZN8UkEngine18setCheckKbCaseFuncEPFvPiS0_E">setCheckKbCaseFunc</dfn>(<a class="typedef" href="#CheckKeyboardCaseCb" title='CheckKeyboardCaseCb' data-type='void (*)(int *, int *)' data-ref="CheckKeyboardCaseCb">CheckKeyboardCaseCb</a> <dfn class="local col5 decl" id="175pFunc" title='pFunc' data-type='CheckKeyboardCaseCb' data-ref="175pFunc">pFunc</dfn>) </td></tr>
+<tr><th id="68">68</th><td>    {</td></tr>
+<tr><th id="69">69</th><td>        <a class="member" href="#UkEngine::m_keyCheckFunc" title='UkEngine::m_keyCheckFunc' data-ref="UkEngine::m_keyCheckFunc">m_keyCheckFunc</a> = <a class="local col5 ref" href="#175pFunc" title='pFunc' data-ref="175pFunc">pFunc</a>;</td></tr>
+<tr><th id="70">70</th><td>    }</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td>    <em>bool</em> <dfn class="decl" id="_ZN8UkEngine15atWordBeginningEv" title='UkEngine::atWordBeginning' data-ref="_ZN8UkEngine15atWordBeginningEv">atWordBeginning</dfn>();</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine7processEjRiPhS0_R12UkOutputType" title='UkEngine::process' data-ref="_ZN8UkEngine7processEjRiPhS0_R12UkOutputType">process</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col6 decl" id="176keyCode" title='keyCode' data-type='unsigned int' data-ref="176keyCode">keyCode</dfn>, <em>int</em> &amp; <dfn class="local col7 decl" id="177backs" title='backs' data-type='int &amp;' data-ref="177backs">backs</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col8 decl" id="178outBuf" title='outBuf' data-type='unsigned char *' data-ref="178outBuf">outBuf</dfn>, <em>int</em> &amp; <dfn class="local col9 decl" id="179outSize" title='outSize' data-type='int &amp;' data-ref="179outSize">outSize</dfn>, <a class="typedef" href="keycons.h.html#UkOutputType" title='UkOutputType' data-type='enum UkOutputType' data-ref="UkOutputType">UkOutputType</a> &amp; <dfn class="local col0 decl" id="180outType" title='outType' data-type='UkOutputType &amp;' data-ref="180outType">outType</dfn>);</td></tr>
+<tr><th id="75">75</th><td>    <em>void</em> <dfn class="decl" id="_ZN8UkEngine4passEi" title='UkEngine::pass' data-ref="_ZN8UkEngine4passEi">pass</dfn>(<em>int</em> <dfn class="local col1 decl" id="181keyCode" title='keyCode' data-type='int' data-ref="181keyCode">keyCode</dfn>); <i>//just pass through without filtering</i></td></tr>
+<tr><th id="76">76</th><td>    <em>void</em> <dfn class="decl" id="_ZN8UkEngine13setSingleModeEv" title='UkEngine::setSingleMode' data-ref="_ZN8UkEngine13setSingleModeEv">setSingleMode</dfn>();</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine16processBackspaceERiPhS0_R12UkOutputType" title='UkEngine::processBackspace' data-ref="_ZN8UkEngine16processBackspaceERiPhS0_R12UkOutputType">processBackspace</dfn>(<em>int</em> &amp; <dfn class="local col2 decl" id="182backs" title='backs' data-type='int &amp;' data-ref="182backs">backs</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col3 decl" id="183outBuf" title='outBuf' data-type='unsigned char *' data-ref="183outBuf">outBuf</dfn>, <em>int</em> &amp; <dfn class="local col4 decl" id="184outSize" title='outSize' data-type='int &amp;' data-ref="184outSize">outSize</dfn>, <a class="typedef" href="keycons.h.html#UkOutputType" title='UkOutputType' data-type='enum UkOutputType' data-ref="UkOutputType">UkOutputType</a> &amp; <dfn class="local col5 decl" id="185outType" title='outType' data-type='UkOutputType &amp;' data-ref="185outType">outType</dfn>);</td></tr>
+<tr><th id="79">79</th><td>    <em>void</em> <dfn class="decl" id="_ZN8UkEngine5resetEv" title='UkEngine::reset' data-ref="_ZN8UkEngine5resetEv">reset</dfn>();</td></tr>
+<tr><th id="80">80</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType" title='UkEngine::restoreKeyStrokes' data-ref="_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType">restoreKeyStrokes</dfn>(<em>int</em> &amp; <dfn class="local col6 decl" id="186backs" title='backs' data-type='int &amp;' data-ref="186backs">backs</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col7 decl" id="187outBuf" title='outBuf' data-type='unsigned char *' data-ref="187outBuf">outBuf</dfn>, <em>int</em> &amp; <dfn class="local col8 decl" id="188outSize" title='outSize' data-type='int &amp;' data-ref="188outSize">outSize</dfn>, <a class="typedef" href="keycons.h.html#UkOutputType" title='UkOutputType' data-type='enum UkOutputType' data-ref="UkOutputType">UkOutputType</a> &amp; <dfn class="local col9 decl" id="189outType" title='outType' data-type='UkOutputType &amp;' data-ref="189outType">outType</dfn>);</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td>    <i>//following methods must be public just to enable the use of pointers to them</i></td></tr>
+<tr><th id="83">83</th><td><i>    //they should not be called from outside.</i></td></tr>
+<tr><th id="84">84</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine11processToneER10UkKeyEvent" title='UkEngine::processTone' data-ref="_ZN8UkEngine11processToneER10UkKeyEvent">processTone</dfn>(<a class="type" href="inputproc.h.html#UkKeyEvent" title='UkKeyEvent' data-ref="UkKeyEvent">UkKeyEvent</a> &amp; <dfn class="local col0 decl" id="190ev" title='ev' data-type='UkKeyEvent &amp;' data-ref="190ev">ev</dfn>);</td></tr>
+<tr><th id="85">85</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine11processRoofER10UkKeyEvent" title='UkEngine::processRoof' data-ref="_ZN8UkEngine11processRoofER10UkKeyEvent">processRoof</dfn>(<a class="type" href="inputproc.h.html#UkKeyEvent" title='UkKeyEvent' data-ref="UkKeyEvent">UkKeyEvent</a> &amp; <dfn class="local col1 decl" id="191ev" title='ev' data-type='UkKeyEvent &amp;' data-ref="191ev">ev</dfn>);</td></tr>
+<tr><th id="86">86</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine11processHookER10UkKeyEvent" title='UkEngine::processHook' data-ref="_ZN8UkEngine11processHookER10UkKeyEvent">processHook</dfn>(<a class="type" href="inputproc.h.html#UkKeyEvent" title='UkKeyEvent' data-ref="UkKeyEvent">UkKeyEvent</a> &amp; <dfn class="local col2 decl" id="192ev" title='ev' data-type='UkKeyEvent &amp;' data-ref="192ev">ev</dfn>);</td></tr>
+<tr><th id="87">87</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine13processAppendER10UkKeyEvent" title='UkEngine::processAppend' data-ref="_ZN8UkEngine13processAppendER10UkKeyEvent">processAppend</dfn>(<a class="type" href="inputproc.h.html#UkKeyEvent" title='UkKeyEvent' data-ref="UkKeyEvent">UkKeyEvent</a> &amp; <dfn class="local col3 decl" id="193ev" title='ev' data-type='UkKeyEvent &amp;' data-ref="193ev">ev</dfn>);</td></tr>
+<tr><th id="88">88</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine11appendVowelER10UkKeyEvent" title='UkEngine::appendVowel' data-ref="_ZN8UkEngine11appendVowelER10UkKeyEvent">appendVowel</dfn>(<a class="type" href="inputproc.h.html#UkKeyEvent" title='UkKeyEvent' data-ref="UkKeyEvent">UkKeyEvent</a> &amp; <dfn class="local col4 decl" id="194ev" title='ev' data-type='UkKeyEvent &amp;' data-ref="194ev">ev</dfn>);</td></tr>
+<tr><th id="89">89</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine16appendConsonnantER10UkKeyEvent" title='UkEngine::appendConsonnant' data-ref="_ZN8UkEngine16appendConsonnantER10UkKeyEvent">appendConsonnant</dfn>(<a class="type" href="inputproc.h.html#UkKeyEvent" title='UkKeyEvent' data-ref="UkKeyEvent">UkKeyEvent</a> &amp; <dfn class="local col5 decl" id="195ev" title='ev' data-type='UkKeyEvent &amp;' data-ref="195ev">ev</dfn>);</td></tr>
+<tr><th id="90">90</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine9processDdER10UkKeyEvent" title='UkEngine::processDd' data-ref="_ZN8UkEngine9processDdER10UkKeyEvent">processDd</dfn>(<a class="type" href="inputproc.h.html#UkKeyEvent" title='UkKeyEvent' data-ref="UkKeyEvent">UkKeyEvent</a> &amp; <dfn class="local col6 decl" id="196ev" title='ev' data-type='UkKeyEvent &amp;' data-ref="196ev">ev</dfn>);</td></tr>
+<tr><th id="91">91</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine14processMapCharER10UkKeyEvent" title='UkEngine::processMapChar' data-ref="_ZN8UkEngine14processMapCharER10UkKeyEvent">processMapChar</dfn>(<a class="type" href="inputproc.h.html#UkKeyEvent" title='UkKeyEvent' data-ref="UkKeyEvent">UkKeyEvent</a> &amp; <dfn class="local col7 decl" id="197ev" title='ev' data-type='UkKeyEvent &amp;' data-ref="197ev">ev</dfn>);</td></tr>
+<tr><th id="92">92</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine13processTelexWER10UkKeyEvent" title='UkEngine::processTelexW' data-ref="_ZN8UkEngine13processTelexWER10UkKeyEvent">processTelexW</dfn>(<a class="type" href="inputproc.h.html#UkKeyEvent" title='UkKeyEvent' data-ref="UkKeyEvent">UkKeyEvent</a> &amp; <dfn class="local col8 decl" id="198ev" title='ev' data-type='UkKeyEvent &amp;' data-ref="198ev">ev</dfn>);</td></tr>
+<tr><th id="93">93</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine14processEscCharER10UkKeyEvent" title='UkEngine::processEscChar' data-ref="_ZN8UkEngine14processEscCharER10UkKeyEvent">processEscChar</dfn>(<a class="type" href="inputproc.h.html#UkKeyEvent" title='UkKeyEvent' data-ref="UkKeyEvent">UkKeyEvent</a> &amp; <dfn class="local col9 decl" id="199ev" title='ev' data-type='UkKeyEvent &amp;' data-ref="199ev">ev</dfn>);</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><b>protected</b>:</td></tr>
+<tr><th id="96">96</th><td>    <em>static</em> <em>bool</em> <dfn class="decl" id="UkEngine::m_classInit" title='UkEngine::m_classInit' data-ref="UkEngine::m_classInit">m_classInit</dfn>;</td></tr>
+<tr><th id="97">97</th><td>    <a class="typedef" href="#CheckKeyboardCaseCb" title='CheckKeyboardCaseCb' data-type='void (*)(int *, int *)' data-ref="CheckKeyboardCaseCb">CheckKeyboardCaseCb</a> <dfn class="decl" id="UkEngine::m_keyCheckFunc" title='UkEngine::m_keyCheckFunc' data-ref="UkEngine::m_keyCheckFunc">m_keyCheckFunc</dfn>;</td></tr>
+<tr><th id="98">98</th><td>    <a class="type" href="#UkSharedMem" title='UkSharedMem' data-ref="UkSharedMem">UkSharedMem</a> *<dfn class="decl" id="UkEngine::m_pCtrl" title='UkEngine::m_pCtrl' data-ref="UkEngine::m_pCtrl">m_pCtrl</dfn>;</td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td>    <em>int</em> <dfn class="decl" id="UkEngine::m_changePos" title='UkEngine::m_changePos' data-ref="UkEngine::m_changePos">m_changePos</dfn>;</td></tr>
+<tr><th id="101">101</th><td>    <em>int</em> <dfn class="decl" id="UkEngine::m_backs" title='UkEngine::m_backs' data-ref="UkEngine::m_backs">m_backs</dfn>;</td></tr>
+<tr><th id="102">102</th><td>    <em>int</em> <dfn class="decl" id="UkEngine::m_bufSize" title='UkEngine::m_bufSize' data-ref="UkEngine::m_bufSize">m_bufSize</dfn>;</td></tr>
+<tr><th id="103">103</th><td>    <em>int</em> <dfn class="decl" id="UkEngine::m_current" title='UkEngine::m_current' data-ref="UkEngine::m_current">m_current</dfn>;</td></tr>
+<tr><th id="104">104</th><td>    <em>int</em> <dfn class="decl" id="UkEngine::m_singleMode" title='UkEngine::m_singleMode' data-ref="UkEngine::m_singleMode">m_singleMode</dfn>;</td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td>    <em>int</em> <dfn class="decl" id="UkEngine::m_keyBufSize" title='UkEngine::m_keyBufSize' data-ref="UkEngine::m_keyBufSize">m_keyBufSize</dfn>;</td></tr>
+<tr><th id="107">107</th><td>    <i>//unsigned int m_keyStrokes[MAX_UK_ENGINE];</i></td></tr>
+<tr><th id="108">108</th><td>    <a class="type" href="#KeyBufEntry" title='KeyBufEntry' data-ref="KeyBufEntry">KeyBufEntry</a> <dfn class="decl" id="UkEngine::m_keyStrokes" title='UkEngine::m_keyStrokes' data-ref="UkEngine::m_keyStrokes">m_keyStrokes</dfn>[<a class="macro" href="#47" title="128" data-ref="_M/MAX_UK_ENGINE">MAX_UK_ENGINE</a>];</td></tr>
+<tr><th id="109">109</th><td>    <em>int</em> <dfn class="decl" id="UkEngine::m_keyCurrent" title='UkEngine::m_keyCurrent' data-ref="UkEngine::m_keyCurrent">m_keyCurrent</dfn>;</td></tr>
+<tr><th id="110">110</th><td>    <em>bool</em> <dfn class="decl" id="UkEngine::m_toEscape" title='UkEngine::m_toEscape' data-ref="UkEngine::m_toEscape">m_toEscape</dfn>;</td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td>    <i>//varables valid in one session</i></td></tr>
+<tr><th id="113">113</th><td>    <em>unsigned</em> <em>char</em> *<dfn class="decl" id="UkEngine::m_pOutBuf" title='UkEngine::m_pOutBuf' data-ref="UkEngine::m_pOutBuf">m_pOutBuf</dfn>;</td></tr>
+<tr><th id="114">114</th><td>    <em>int</em> *<dfn class="decl" id="UkEngine::m_pOutSize" title='UkEngine::m_pOutSize' data-ref="UkEngine::m_pOutSize">m_pOutSize</dfn>;</td></tr>
+<tr><th id="115">115</th><td>    <em>bool</em> <dfn class="decl" id="UkEngine::m_outputWritten" title='UkEngine::m_outputWritten' data-ref="UkEngine::m_outputWritten">m_outputWritten</dfn>;</td></tr>
+<tr><th id="116">116</th><td>    <em>bool</em> <dfn class="decl" id="UkEngine::m_reverted" title='UkEngine::m_reverted' data-ref="UkEngine::m_reverted">m_reverted</dfn>;</td></tr>
+<tr><th id="117">117</th><td>    <em>bool</em> <dfn class="decl" id="UkEngine::m_keyRestored" title='UkEngine::m_keyRestored' data-ref="UkEngine::m_keyRestored">m_keyRestored</dfn>;</td></tr>
+<tr><th id="118">118</th><td>    <em>bool</em> <dfn class="decl" id="UkEngine::m_keyRestoring" title='UkEngine::m_keyRestoring' data-ref="UkEngine::m_keyRestoring">m_keyRestoring</dfn>;</td></tr>
+<tr><th id="119">119</th><td>    <a class="typedef" href="keycons.h.html#UkOutputType" title='UkOutputType' data-type='enum UkOutputType' data-ref="UkOutputType">UkOutputType</a> <dfn class="decl" id="UkEngine::m_outType" title='UkEngine::m_outType' data-ref="UkEngine::m_outType">m_outType</dfn>;</td></tr>
+<tr><th id="120">120</th><td>  </td></tr>
+<tr><th id="121">121</th><td>    <b>struct</b> <dfn class="type def" id="UkEngine::WordInfo" title='UkEngine::WordInfo' data-ref="UkEngine::WordInfo">WordInfo</dfn> {</td></tr>
+<tr><th id="122">122</th><td>        <i>//info for word ending at this position</i></td></tr>
+<tr><th id="123">123</th><td>        <a class="type" href="#VnWordForm" title='VnWordForm' data-ref="VnWordForm">VnWordForm</a> <dfn class="decl" id="UkEngine::WordInfo::form" title='UkEngine::WordInfo::form' data-ref="UkEngine::WordInfo::form">form</dfn>;</td></tr>
+<tr><th id="124">124</th><td>        <em>int</em> <dfn class="decl" id="UkEngine::WordInfo::c1Offset" title='UkEngine::WordInfo::c1Offset' data-ref="UkEngine::WordInfo::c1Offset">c1Offset</dfn>, <dfn class="decl" id="UkEngine::WordInfo::vOffset" title='UkEngine::WordInfo::vOffset' data-ref="UkEngine::WordInfo::vOffset">vOffset</dfn>, <dfn class="decl" id="UkEngine::WordInfo::c2Offset" title='UkEngine::WordInfo::c2Offset' data-ref="UkEngine::WordInfo::c2Offset">c2Offset</dfn>;</td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td>        <b>union</b> {</td></tr>
+<tr><th id="127">127</th><td>            <a class="type" href="vnlexi.h.html#VowelSeq" title='VowelSeq' data-ref="VowelSeq">VowelSeq</a> <dfn class="decl" id="UkEngine::WordInfo::(anonymous)::vseq" title='UkEngine::WordInfo::(anonymous union)::vseq' data-ref="UkEngine::WordInfo::(anonymous)::vseq">vseq</dfn>;</td></tr>
+<tr><th id="128">128</th><td>            <a class="type" href="vnlexi.h.html#ConSeq" title='ConSeq' data-ref="ConSeq">ConSeq</a> <dfn class="decl" id="UkEngine::WordInfo::(anonymous)::cseq" title='UkEngine::WordInfo::(anonymous union)::cseq' data-ref="UkEngine::WordInfo::(anonymous)::cseq">cseq</dfn>;</td></tr>
+<tr><th id="129">129</th><td>        };</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td>        <i>//info for current symbol</i></td></tr>
+<tr><th id="132">132</th><td>        <em>int</em> <dfn class="decl" id="UkEngine::WordInfo::caps" title='UkEngine::WordInfo::caps' data-ref="UkEngine::WordInfo::caps">caps</dfn>, <dfn class="decl" id="UkEngine::WordInfo::tone" title='UkEngine::WordInfo::tone' data-ref="UkEngine::WordInfo::tone">tone</dfn>;</td></tr>
+<tr><th id="133">133</th><td>        <i>//canonical symbol, after caps, tone are removed</i></td></tr>
+<tr><th id="134">134</th><td><i>        //for non-Vn, vnSym == -1</i></td></tr>
+<tr><th id="135">135</th><td>        <a class="type" href="vnlexi.h.html#VnLexiName" title='VnLexiName' data-ref="VnLexiName">VnLexiName</a> <dfn class="decl" id="UkEngine::WordInfo::vnSym" title='UkEngine::WordInfo::vnSym' data-ref="UkEngine::WordInfo::vnSym">vnSym</dfn>;</td></tr>
+<tr><th id="136">136</th><td>        <em>int</em> <dfn class="decl" id="UkEngine::WordInfo::keyCode" title='UkEngine::WordInfo::keyCode' data-ref="UkEngine::WordInfo::keyCode">keyCode</dfn>;</td></tr>
+<tr><th id="137">137</th><td>    };</td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td>    <a class="type" href="#UkEngine::WordInfo" title='UkEngine::WordInfo' data-ref="UkEngine::WordInfo">WordInfo</a> <dfn class="decl" id="UkEngine::m_buffer" title='UkEngine::m_buffer' data-ref="UkEngine::m_buffer">m_buffer</dfn>[<a class="macro" href="#47" title="128" data-ref="_M/MAX_UK_ENGINE">MAX_UK_ENGINE</a>];</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine17processHookWithUOER10UkKeyEvent" title='UkEngine::processHookWithUO' data-ref="_ZN8UkEngine17processHookWithUOER10UkKeyEvent">processHookWithUO</dfn>(<a class="type" href="inputproc.h.html#UkKeyEvent" title='UkKeyEvent' data-ref="UkKeyEvent">UkKeyEvent</a> &amp; <dfn class="local col0 decl" id="200ev" title='ev' data-type='UkKeyEvent &amp;' data-ref="200ev">ev</dfn>);</td></tr>
+<tr><th id="142">142</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine10macroMatchER10UkKeyEvent" title='UkEngine::macroMatch' data-ref="_ZN8UkEngine10macroMatchER10UkKeyEvent">macroMatch</dfn>(<a class="type" href="inputproc.h.html#UkKeyEvent" title='UkKeyEvent' data-ref="UkKeyEvent">UkKeyEvent</a> &amp; <dfn class="local col1 decl" id="201ev" title='ev' data-type='UkKeyEvent &amp;' data-ref="201ev">ev</dfn>);</td></tr>
+<tr><th id="143">143</th><td>    <em>void</em> <dfn class="decl" id="_ZN8UkEngine10markChangeEi" title='UkEngine::markChange' data-ref="_ZN8UkEngine10markChangeEi">markChange</dfn>(<em>int</em> <dfn class="local col2 decl" id="202pos" title='pos' data-type='int' data-ref="202pos">pos</dfn>);</td></tr>
+<tr><th id="144">144</th><td>    <em>void</em> <dfn class="decl" id="_ZN8UkEngine13prepareBufferEv" title='UkEngine::prepareBuffer' data-ref="_ZN8UkEngine13prepareBufferEv">prepareBuffer</dfn>(); <i>//make sure we have a least 10 entries available</i></td></tr>
+<tr><th id="145">145</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine11writeOutputEPhRi" title='UkEngine::writeOutput' data-ref="_ZN8UkEngine11writeOutputEPhRi">writeOutput</dfn>(<em>unsigned</em> <em>char</em> *<dfn class="local col3 decl" id="203outBuf" title='outBuf' data-type='unsigned char *' data-ref="203outBuf">outBuf</dfn>, <em>int</em> &amp; <dfn class="local col4 decl" id="204outSize" title='outSize' data-type='int &amp;' data-ref="204outSize">outSize</dfn>);</td></tr>
+<tr><th id="146">146</th><td>    <i>//int getSeqLength(int first, int last);</i></td></tr>
+<tr><th id="147">147</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine11getSeqStepsEii" title='UkEngine::getSeqSteps' data-ref="_ZN8UkEngine11getSeqStepsEii">getSeqSteps</dfn>(<em>int</em> <dfn class="local col5 decl" id="205first" title='first' data-type='int' data-ref="205first">first</dfn>, <em>int</em> <dfn class="local col6 decl" id="206last" title='last' data-type='int' data-ref="206last">last</dfn>);</td></tr>
+<tr><th id="148">148</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine15getTonePositionE8VowelSeqb" title='UkEngine::getTonePosition' data-ref="_ZN8UkEngine15getTonePositionE8VowelSeqb">getTonePosition</dfn>(<a class="type" href="vnlexi.h.html#VowelSeq" title='VowelSeq' data-ref="VowelSeq">VowelSeq</a> <dfn class="local col7 decl" id="207vs" title='vs' data-type='VowelSeq' data-ref="207vs">vs</dfn>, <em>bool</em> <dfn class="local col8 decl" id="208terminated" title='terminated' data-type='bool' data-ref="208terminated">terminated</dfn>);</td></tr>
+<tr><th id="149">149</th><td>    <em>void</em> <dfn class="decl" id="_ZN8UkEngine11resetKeyBufEv" title='UkEngine::resetKeyBuf' data-ref="_ZN8UkEngine11resetKeyBufEv">resetKeyBuf</dfn>();</td></tr>
+<tr><th id="150">150</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine15checkEscapeVIQRER10UkKeyEvent" title='UkEngine::checkEscapeVIQR' data-ref="_ZN8UkEngine15checkEscapeVIQRER10UkKeyEvent">checkEscapeVIQR</dfn>(<a class="type" href="inputproc.h.html#UkKeyEvent" title='UkKeyEvent' data-ref="UkKeyEvent">UkKeyEvent</a> &amp; <dfn class="local col9 decl" id="209ev" title='ev' data-type='UkKeyEvent &amp;' data-ref="209ev">ev</dfn>);</td></tr>
+<tr><th id="151">151</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine19processNoSpellCheckER10UkKeyEvent" title='UkEngine::processNoSpellCheck' data-ref="_ZN8UkEngine19processNoSpellCheckER10UkKeyEvent">processNoSpellCheck</dfn>(<a class="type" href="inputproc.h.html#UkKeyEvent" title='UkKeyEvent' data-ref="UkKeyEvent">UkKeyEvent</a> &amp; <dfn class="local col0 decl" id="210ev" title='ev' data-type='UkKeyEvent &amp;' data-ref="210ev">ev</dfn>);</td></tr>
+<tr><th id="152">152</th><td>    <em>int</em> <dfn class="decl" id="_ZN8UkEngine14processWordEndER10UkKeyEvent" title='UkEngine::processWordEnd' data-ref="_ZN8UkEngine14processWordEndER10UkKeyEvent">processWordEnd</dfn>(<a class="type" href="inputproc.h.html#UkKeyEvent" title='UkKeyEvent' data-ref="UkKeyEvent">UkKeyEvent</a> &amp; <dfn class="local col1 decl" id="211ev" title='ev' data-type='UkKeyEvent &amp;' data-ref="211ev">ev</dfn>);</td></tr>
+<tr><th id="153">153</th><td>    <em>void</em> <dfn class="decl" id="_ZN8UkEngine20synchKeyStrokeBufferEv" title='UkEngine::synchKeyStrokeBuffer' data-ref="_ZN8UkEngine20synchKeyStrokeBufferEv">synchKeyStrokeBuffer</dfn>();</td></tr>
+<tr><th id="154">154</th><td>    <em>bool</em> <dfn class="decl" id="_ZN8UkEngine17lastWordHasVnMarkEv" title='UkEngine::lastWordHasVnMark' data-ref="_ZN8UkEngine17lastWordHasVnMarkEv">lastWordHasVnMark</dfn>();</td></tr>
+<tr><th id="155">155</th><td>    <em>bool</em> <dfn class="decl" id="_ZN8UkEngine15lastWordIsNonVnEv" title='UkEngine::lastWordIsNonVn' data-ref="_ZN8UkEngine15lastWordIsNonVnEv">lastWordIsNonVn</dfn>();</td></tr>
+<tr><th id="156">156</th><td>};</td></tr>
+<tr><th id="157">157</th><td></td></tr>
+<tr><th id="158">158</th><td><em>void</em> <dfn class="decl" id="_Z17SetupUnikeyEnginev" title='SetupUnikeyEngine' data-ref="_Z17SetupUnikeyEnginev">SetupUnikeyEngine</dfn>();</td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td><u>#<span data-ppcond="24">endif</span></u></td></tr>
+<tr><th id="161">161</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../test/test_ukengine.cc.html'>unikey/test/test_ukengine.cc</a><br/>Generated on <em>2018-Nov-16</em> from project unikey revision <em>0.6.1</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

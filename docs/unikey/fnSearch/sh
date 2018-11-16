@@ -1,0 +1,4 @@
+_ZNSt15basic_streambuf9showmanycEv|std::basic_streambuf::showmanyc
+_ZSt8showbaseRSt8ios_base|std::showbase
+_ZSt9showpointRSt8ios_base|std::showpoint
+_ZSt7showposRSt8ios_base|std::showpos

@@ -1,0 +1,17 @@
+<def f='include/c++/7/bits/stl_iterator.h' l='760' ll='846'/>
+<mbr r='__gnu_cxx::__normal_iterator::_M_current' t='_Iterator'/>
+<fun r='__gnu_cxx::__normal_iterator::__normal_iterator{_Iterator,_Container}'/>
+<fun r='__gnu_cxx::__normal_iterator::__normal_iterator{_Iterator,_Container}'/>
+<fun r='__gnu_cxx::__normal_iterator::__normal_iterator{_Iterator,_Container}'/>
+<fun r='__gnu_cxx::__normal_iterator::operator*'/>
+<fun r='__gnu_cxx::__normal_iterator::operator-}'/>
+<fun r='__gnu_cxx::__normal_iterator::operator++'/>
+<fun r='__gnu_cxx::__normal_iterator::operator++'/>
+<fun r='__gnu_cxx::__normal_iterator::operator--'/>
+<fun r='__gnu_cxx::__normal_iterator::operator--'/>
+<fun r='__gnu_cxx::__normal_iterator::operator[]'/>
+<fun r='__gnu_cxx::__normal_iterator::operator+='/>
+<fun r='__gnu_cxx::__normal_iterator::operator+'/>
+<fun r='__gnu_cxx::__normal_iterator::operator-='/>
+<fun r='__gnu_cxx::__normal_iterator::operator-'/>
+<fun r='__gnu_cxx::__normal_iterator::base'/>

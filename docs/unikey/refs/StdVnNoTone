@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/charset.h' l='296' type='int [213]'/>
+<def f='unikey/ukengine/data.cpp' l='547' ll='571' type='int [213]'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1347' u='r' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1372' u='r' c='_ZN8UkEngine11appendVowelER10UkKeyEvent'/>

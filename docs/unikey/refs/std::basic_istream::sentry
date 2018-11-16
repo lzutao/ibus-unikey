@@ -1,0 +1,13 @@
+<def f='include/c++/7/istream' l='685' ll='736'/>
+<doc f='include/c++/7/istream' l='677'>/**
+   *  @brief  Performs setup work for input streams.
+   *
+   *  Objects of this class are created before all of the standard
+   *  extractors are run.  It is responsible for &lt;em&gt;exception-safe
+   *  prefix and suffix operations,&lt;/em&gt; although only prefix actions
+   *  are currently required by the standard.
+  */</doc>
+<mbr r='std::basic_istream::sentry::_M_ok' t='bool'/>
+<fun r='_ZNSt13basic_istream6sentryC1ERSt13basic_istreamIT_T0_Eb'/>
+<fun r='_ZNKSt13basic_istream6sentrycvbEv'/>
+<fun r='_ZNSt13basic_istream6sentryC1ERSt13basic_istreamIT_T0_Eb'/>

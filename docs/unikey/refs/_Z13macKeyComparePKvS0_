@@ -1,0 +1,3 @@
+<def f='unikey/ukengine/mactab.cpp' l='78' ll='102' type='int macKeyCompare(const void * key, const void * ele)'/>
+<use f='unikey/ukengine/mactab.cpp' l='108' u='r' c='_ZN11CMacroTable6lookupEPj'/>
+<doc f='unikey/ukengine/mactab.cpp' l='77'>//---------------------------------------------------------------</doc>

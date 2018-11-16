@@ -1,0 +1,6 @@
+<dec f='include/x86_64-linux-gnu/bits/libio.h' l='40'/>
+<use f='include/x86_64-linux-gnu/bits/libio.h' l='466' u='c'/>
+<use f='include/x86_64-linux-gnu/bits/libio.h' l='466' u='c'/>
+<use f='include/stdio.h' l='603' u='c'/>
+<use f='include/stdio.h' l='606' u='c'/>
+<use f='include/stdio.h' l='616' u='c'/>

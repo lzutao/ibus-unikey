@@ -1,0 +1,2 @@
+<dec f='include/stdlib.h' l='971' type='int posix_openpt(int __oflag)'/>
+<doc f='include/stdlib.h' l='970'>/* Return a master pseudo-terminal handle.  */</doc>

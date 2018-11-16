@@ -1,0 +1,2 @@
+<dec f='include/stdc-predef.h' l='61'/>
+<doc f='include/stdc-predef.h' l='60'>/* We do not support C11 &lt;threads.h&gt;.  */</doc>

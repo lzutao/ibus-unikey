@@ -1,0 +1,21 @@
+<dec f='include/check.h' l='356' type='void tcase_set_timeout(TCase * tc, double timeout)'/>
+<doc f='include/check.h' l='336'>/**
+ * Set the timeout for all tests in a test case.
+ *
+ * A test that lasts longer than the timeout (in seconds) will be killed
+ * and thus fail with an error.
+ *
+ * If not set, the default timeout is one assigned at compile time. If
+ * the environment variable CK_DEFAULT_TIMEOUT is defined and no timeout
+ * is set, the value in the environment variable is used.
+ *
+ * If Check is compile without fork() support this call is ignored,
+ * as timeouts are not possible.
+ *
+ * @param tc test case to assign timeout to
+ * @param timeout to use, in seconds. If the value contains a decimal
+ *                 portion, but no high resolution timer is available,
+ *                 the value is rounded up to the nearest second.
+ *
+ * @since 0.9.2
+ */</doc>

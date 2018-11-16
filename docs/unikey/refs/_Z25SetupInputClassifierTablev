@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/inputproc.h' l='110' type='void SetupInputClassifierTable()'/>
+<def f='unikey/ukengine/inputproc.cpp' l='208' ll='262' type='void SetupInputClassifierTable()'/>
+<use f='unikey/ukengine/inputproc.cpp' l='268' u='c' c='_ZN16UkInputProcessor4initEv'/>
+<doc f='unikey/ukengine/inputproc.cpp' l='207'>//-------------------------------------------</doc>
+<use f='unikey/ukengine/ukengine.cpp' l='2261' u='c' c='_Z17SetupUnikeyEnginev'/>

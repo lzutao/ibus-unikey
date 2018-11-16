@@ -1,0 +1,43 @@
+<dec f='unikey/ukengine/inputproc.h' l='47' type='10'/>
+<use f='unikey/test/test_inputproc.cc' l='25' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='25' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='25' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='25' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='35' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='35' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='35' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='35' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='25' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='25' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='25' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='25' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='35' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='35' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='35' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='35' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/ukengine/inputproc.cpp' l='101'/>
+<use f='unikey/ukengine/inputproc.cpp' l='101'/>
+<use f='unikey/ukengine/inputproc.cpp' l='101'/>
+<use f='unikey/ukengine/inputproc.cpp' l='101'/>
+<use f='unikey/ukengine/inputproc.cpp' l='120'/>
+<use f='unikey/ukengine/inputproc.cpp' l='120'/>
+<use f='unikey/ukengine/inputproc.cpp' l='120'/>
+<use f='unikey/ukengine/inputproc.cpp' l='120'/>
+<use f='unikey/ukengine/inputproc.cpp' l='135'/>
+<use f='unikey/ukengine/inputproc.cpp' l='135'/>
+<use f='unikey/ukengine/inputproc.cpp' l='135'/>
+<use f='unikey/ukengine/inputproc.cpp' l='135'/>
+<use f='unikey/ukengine/inputproc.cpp' l='150'/>
+<use f='unikey/ukengine/inputproc.cpp' l='150'/>
+<use f='unikey/ukengine/inputproc.cpp' l='150'/>
+<use f='unikey/ukengine/inputproc.cpp' l='150'/>
+<use f='unikey/ukengine/inputproc.cpp' l='164'/>
+<use f='unikey/ukengine/inputproc.cpp' l='164'/>
+<use f='unikey/ukengine/inputproc.cpp' l='164'/>
+<use f='unikey/ukengine/inputproc.cpp' l='164'/>
+<use f='unikey/ukengine/inputproc.cpp' l='353' u='r' c='_ZN16UkInputProcessor14keyCodeToEventEjR10UkKeyEvent'/>
+<use f='unikey/ukengine/inputproc.cpp' l='354' u='r' c='_ZN16UkInputProcessor14keyCodeToEventEjR10UkKeyEvent'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='45'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='45'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='45'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='45'/>

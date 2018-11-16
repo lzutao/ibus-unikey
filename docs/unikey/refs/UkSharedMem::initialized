@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/ukengine.h' l='35' type='int'/>
+<offset>0</offset>
+<doc f='unikey/ukengine/ukengine.h' l='34'>//states</doc>
+<use f='unikey/ukengine/unikey.cpp' l='131' u='w' c='UnikeySetup'/>

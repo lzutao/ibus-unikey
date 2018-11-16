@@ -1,0 +1,10 @@
+<dec f='include/stdio.h' l='243' type='FILE * fopen(const char *__restrict __filename, const char *__restrict __modes)'/>
+<dec f='include/stdio.h' l='256' type='FILE * fopen64(const char *__restrict __filename, const char *__restrict __modes)'/>
+<use f='unikey/ukengine/byteio.cpp' l='287' u='c' c='_ZN12FileBIStream4openEPKc'/>
+<use f='unikey/ukengine/byteio.cpp' l='461' u='c' c='_ZN12FileBOStream4openEPKc'/>
+<use f='unikey/ukengine/convert.cpp' l='129' u='c' c='VnFileConvert'/>
+<use f='unikey/ukengine/convert.cpp' l='162' u='c' c='VnFileConvert'/>
+<use f='unikey/ukengine/mactab.cpp' l='173' u='c' c='_ZN11CMacroTable12loadFromFileEPKc'/>
+<use f='unikey/ukengine/mactab.cpp' l='219' u='c' c='_ZN11CMacroTable11writeToFileEPKc'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='160' u='c' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='241' u='c' c='_Z18UkStoreKeyOrderMapPKcP12UkKeyMapPairi'/>

@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/unikey.h' l='92' type='void UnikeySetOptions(UnikeyOptions * pOpt)'/>
+<def f='unikey/ukengine/unikey.cpp' l='82' ll='91' type='void UnikeySetOptions(UnikeyOptions * pOpt)'/>
+<doc f='unikey/ukengine/unikey.cpp' l='81'>//--------------------------------------------</doc>
+<doc f='unikey/ukengine/unikey.h' l='91'>//set extra options</doc>

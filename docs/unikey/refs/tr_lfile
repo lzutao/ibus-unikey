@@ -1,0 +1,10 @@
+<dec f='include/check.h' l='893' type='const char * tr_lfile(TestResult * tr)'/>
+<doc f='include/check.h' l='884'>/**
+ * Retrieve file name at which a failure occurred, if applicable.
+ *
+ * @return If the test resulted in a failure, returns a string
+ *          containing the name of the file where the failure
+ *          occurred; otherwise returns NULL.
+ *
+ * @since 0.6.0
+ */</doc>

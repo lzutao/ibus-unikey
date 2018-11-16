@@ -1,0 +1,9 @@
+<dec f='unikey/ukengine/inputproc.h' l='84' type='void UkInputProcessor::init()'/>
+<use f='unikey/test/test_inputproc.cc' l='13' u='c' c='_Z5Setupv'/>
+<doc f='unikey/ukengine/inputproc.h' l='79'>//don&apos;t do anything with constructor, because
+  //this object can be allocated in shared memory
+  //Use init method instead
+  //UkInputProcessor();</doc>
+<def f='unikey/ukengine/inputproc.cpp' l='265' ll='272' type='void UkInputProcessor::init()'/>
+<doc f='unikey/ukengine/inputproc.cpp' l='264'>//-------------------------------------------</doc>
+<use f='unikey/ukengine/unikey.cpp' l='123' u='c' c='UnikeySetup'/>

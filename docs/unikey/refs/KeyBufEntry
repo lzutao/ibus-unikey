@@ -1,0 +1,4 @@
+<def f='unikey/ukengine/ukengine.h' l='53' ll='56'/>
+<size>24</size>
+<mbr r='KeyBufEntry::ev' o='0' t='UkKeyEvent'/>
+<mbr r='KeyBufEntry::converted' o='160' t='bool'/>

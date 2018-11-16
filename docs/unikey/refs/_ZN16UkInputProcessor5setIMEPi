@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/inputproc.h' l='94' type='int UkInputProcessor::setIM(int * map)'/>
+<def f='unikey/ukengine/inputproc.cpp' l='305' ll='312' type='int UkInputProcessor::setIM(int * map)'/>
+<doc f='unikey/ukengine/inputproc.cpp' l='304'>//-------------------------------------------</doc>
+<use f='unikey/ukengine/unikey.cpp' l='57' u='c' c='UnikeySetInputMethod'/>

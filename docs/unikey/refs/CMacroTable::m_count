@@ -1,0 +1,16 @@
+<use f='unikey/ukengine/mactab.h' l='62' u='r' c='_ZN11CMacroTable8getCountEv'/>
+<dec f='unikey/ukengine/mactab.h' l='74' type='int'/>
+<offset>1114112</offset>
+<use f='unikey/ukengine/mactab.cpp' l='38' u='w' c='_ZN11CMacroTable4initEv'/>
+<use f='unikey/ukengine/mactab.cpp' l='108' u='r' c='_ZN11CMacroTable6lookupEPj'/>
+<use f='unikey/ukengine/mactab.cpp' l='202' u='r' c='_ZN11CMacroTable12loadFromFileEPKc'/>
+<use f='unikey/ukengine/mactab.cpp' l='232' u='r' c='_ZN11CMacroTable11writeToFileEPKc'/>
+<use f='unikey/ukengine/mactab.cpp' l='250' u='r' c='_ZN11CMacroTable11writeToFileEPKc'/>
+<use f='unikey/ukengine/mactab.cpp' l='269' u='r' c='_ZN11CMacroTable7addItemEPKvS1_i'/>
+<use f='unikey/ukengine/mactab.cpp' l='272' u='r' c='_ZN11CMacroTable7addItemEPKvS1_i'/>
+<use f='unikey/ukengine/mactab.cpp' l='289' u='r' c='_ZN11CMacroTable7addItemEPKvS1_i'/>
+<use f='unikey/ukengine/mactab.cpp' l='301' u='w' c='_ZN11CMacroTable7addItemEPKvS1_i'/>
+<use f='unikey/ukengine/mactab.cpp' l='302' u='r' c='_ZN11CMacroTable7addItemEPKvS1_i'/>
+<use f='unikey/ukengine/mactab.cpp' l='329' u='w' c='_ZN11CMacroTable12resetContentEv'/>
+<use f='unikey/ukengine/mactab.cpp' l='335' u='r' c='_ZN11CMacroTable6getKeyEi'/>
+<use f='unikey/ukengine/mactab.cpp' l='343' u='r' c='_ZN11CMacroTable7getTextEi'/>

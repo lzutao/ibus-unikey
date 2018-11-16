@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/byteio.h' l='182' type='int FileBOStream::open(const char * fileName)'/>
+<doc f='unikey/ukengine/byteio.h' l='180'>//	FileBOStream(char *fileName, int bufsize = 8192, void *buf = NULL);</doc>
+<def f='unikey/ukengine/byteio.cpp' l='459' ll='468' type='int FileBOStream::open(const char * fileName)'/>
+<doc f='unikey/ukengine/byteio.cpp' l='458'>//----------------------------------------------------</doc>

@@ -1,0 +1,7 @@
+<dec f='unikey/ukengine/ukengine.h' l='151' type='int UkEngine::processNoSpellCheck(UkKeyEvent &amp; ev)'/>
+<def f='unikey/ukengine/ukengine.cpp' l='1726' ll='1749' type='int UkEngine::processNoSpellCheck(UkKeyEvent &amp; ev)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1792' u='c' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='1722'>//---------------------------------------------
+// This can be called only after other processing have been done.
+// The new event is supposed to be put into m_buffer already
+//---------------------------------------------</doc>

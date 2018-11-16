@@ -1,0 +1,7 @@
+<dec f='unikey/ukengine/charset.h' l='158' type='int UnicodeUTF8Charset::nextInput(ByteInStream &amp; is, StdVnChar &amp; stdChar, int &amp; bytesRead)'/>
+<inh f='unikey/ukengine/charset.cpp' l='150' c='_ZN14UnicodeCharset9nextInputER12ByteInStreamRjRi'/>
+<def f='unikey/ukengine/charset.cpp' l='282' ll='344' type='int UnicodeUTF8Charset::nextInput(ByteInStream &amp; is, StdVnChar &amp; stdChar, int &amp; bytesRead)'/>
+<use f='unikey/ukengine/charset.cpp' l='975' u='c' c='_ZN15UTF8VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<doc f='unikey/ukengine/charset.cpp' l='279'>////////////////////////////////
+// Unicode UTF-8              //
+////////////////////////////////</doc>

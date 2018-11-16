@@ -1,0 +1,1 @@
+<dec f='include/x86_64-linux-gnu/sys/sysmacros.h' l='74' macro='1' type='unsigned int gnu_dev_minor(__dev_t __dev)'/>

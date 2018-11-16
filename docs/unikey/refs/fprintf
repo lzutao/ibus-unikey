@@ -1,0 +1,6 @@
+<dec f='include/stdio.h' l='312' type='int fprintf(FILE *__restrict __stream, const char *__restrict __format)'/>
+<doc f='include/stdio.h' l='308'>/* Write formatted output to STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>
+<use f='unikey/ukengine/mactab.cpp' l='163' u='c' c='_ZN11CMacroTable11writeHeaderEP8_IO_FILE'/>

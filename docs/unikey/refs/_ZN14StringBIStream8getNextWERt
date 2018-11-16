@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/byteio.h' l='78' type='int StringBIStream::getNextW(UKWORD &amp; w)'/>
+<inh f='unikey/ukengine/byteio.h' l='27' c='_ZN12ByteInStream8getNextWERt'/>
+<def f='unikey/ukengine/byteio.cpp' l='58' ll='70' type='int StringBIStream::getNextW(UKWORD &amp; w)'/>
+<doc f='unikey/ukengine/byteio.cpp' l='57'>//------------------------------------------------</doc>

@@ -1,0 +1,8 @@
+<dec f='include/ctype.h' l='125' type='int toupper(int __c)'/>
+<use f='unikey/ukengine/charset.cpp' l='776' u='c' c='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='860' u='c' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<doc f='include/ctype.h' l='124'>/* Return the uppercase version of C.  */</doc>
+<use f='unikey/ukengine/inputproc.cpp' l='331' u='c' c='_ZN16UkInputProcessor10useBuiltInEP12UkKeyMapping'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1263' u='c' c='_ZN8UkEngine15checkEscapeVIQRER10UkKeyEvent'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='195' u='c' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='196' u='c' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>

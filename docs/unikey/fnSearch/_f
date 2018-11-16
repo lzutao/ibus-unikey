@@ -1,0 +1,3 @@
+_ZN12FileBIStreamD1Ev|FileBIStream::~FileBIStream
+_ZN12FileBOStreamD1Ev|FileBOStream::~FileBOStream
+_ZNSt14_Fnv_hash_impl4hashEPKvmm|std::_Fnv_hash_impl::hash

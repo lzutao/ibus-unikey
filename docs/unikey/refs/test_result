@@ -1,0 +1,4 @@
+<def f='include/check.h' l='787' ll='794'/>
+<doc f='include/check.h' l='784'>/**
+ * Enum describing the possible results of a test
+ */</doc>

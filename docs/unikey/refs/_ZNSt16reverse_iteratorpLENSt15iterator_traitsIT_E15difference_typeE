@@ -1,0 +1,7 @@
+<def f='include/c++/7/bits/stl_iterator.h' l='248' ll='253' type='reverse_iterator&lt;_Iterator&gt; &amp; std::reverse_iterator::operator+=(difference_type __n)'/>
+<doc f='include/c++/7/bits/stl_iterator.h' l='242'>/**
+       *  @return  *this
+       *
+       *  Moves the underlying iterator backwards @a __n steps.
+       *  The underlying iterator must be a Random Access Iterator.
+      */</doc>

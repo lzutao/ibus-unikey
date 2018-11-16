@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/byteio.h' l='30' type='int ByteInStream::getNextDW(UKDWORD &amp; dw)'/>
+<ovr f='unikey/ukengine/byteio.cpp' l='73' c='_ZN14StringBIStream9getNextDWERj'/>
+<ovr f='unikey/ukengine/byteio.cpp' l='384' c='_ZN12FileBIStream9getNextDWERj'/>
+<use f='unikey/ukengine/charset.cpp' l='53' u='c' c='_ZN17VnInternalCharset9nextInputER12ByteInStreamRjRi'/>

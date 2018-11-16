@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/inputproc.h' l='112' type='UkKeyMapping []'/>
+<def f='unikey/ukengine/inputproc.cpp' l='100' ll='117' type='UkKeyMapping [16]'/>
+<use f='unikey/ukengine/inputproc.cpp' l='280' u='r' c='_ZN16UkInputProcessor5setIME13UkInputMethod'/>
+<use f='unikey/ukengine/inputproc.cpp' l='299' u='r' c='_ZN16UkInputProcessor5setIME13UkInputMethod'/>

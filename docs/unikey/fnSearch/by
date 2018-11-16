@@ -1,0 +1,3 @@
+_ZN12ByteInStream8bookmarkEv|ByteInStream::bookmark
+_ZN12ByteInStream12gotoBookmarkEv|ByteInStream::gotoBookmark
+_ZN10ByteStreamD1Ev|ByteStream::~ByteStream

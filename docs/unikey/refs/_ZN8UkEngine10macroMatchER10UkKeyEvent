@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/ukengine.h' l='142' type='int UkEngine::macroMatch(UkKeyEvent &amp; ev)'/>
+<def f='unikey/ukengine/ukengine.cpp' l='2066' ll='2197' type='int UkEngine::macroMatch(UkKeyEvent &amp; ev)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2294' u='c' c='_ZN8UkEngine14processWordEndER10UkKeyEvent'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='2065'>//----------------------------------------------------</doc>

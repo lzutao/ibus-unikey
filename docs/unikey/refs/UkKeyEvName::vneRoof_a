@@ -1,0 +1,18 @@
+<dec f='unikey/ukengine/inputproc.h' l='44' type='1'/>
+<use f='unikey/ukengine/inputproc.cpp' l='108'/>
+<use f='unikey/ukengine/inputproc.cpp' l='108'/>
+<use f='unikey/ukengine/inputproc.cpp' l='108'/>
+<use f='unikey/ukengine/inputproc.cpp' l='108'/>
+<use f='unikey/ukengine/inputproc.cpp' l='127'/>
+<use f='unikey/ukengine/inputproc.cpp' l='127'/>
+<use f='unikey/ukengine/inputproc.cpp' l='127'/>
+<use f='unikey/ukengine/inputproc.cpp' l='127'/>
+<use f='unikey/ukengine/inputproc.cpp' l='142'/>
+<use f='unikey/ukengine/inputproc.cpp' l='142'/>
+<use f='unikey/ukengine/inputproc.cpp' l='142'/>
+<use f='unikey/ukengine/inputproc.cpp' l='142'/>
+<use f='unikey/ukengine/ukengine.cpp' l='508' c='_ZN8UkEngine11processRoofER10UkKeyEvent'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='52'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='52'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='52'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='52'/>

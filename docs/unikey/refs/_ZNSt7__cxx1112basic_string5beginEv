@@ -1,0 +1,5 @@
+<def f='include/c++/7/bits/basic_string.h' l='806' ll='808' type='iterator std::__cxx11::basic_string::begin()'/>
+<doc f='include/c++/7/bits/basic_string.h' l='802'>/**
+       *  Returns a read/write iterator that points to the first character in
+       *  the %string.
+       */</doc>

@@ -1,0 +1,8 @@
+<def f='include/c++/7/bits/ptr_traits.h' l='78' ll='116'/>
+<def f='include/c++/7/bits/ptr_traits.h' l='122' ll='143'/>
+<doc f='include/c++/7/bits/ptr_traits.h' l='118'>/**
+   * @brief  Partial specialization for built-in pointers.
+   * @ingroup pointer_abstractions
+  */</doc>
+<fun r='_ZNSt14pointer_traits10pointer_toERNSt11conditionalIXsr7is_voidINSt10__detectorINSt15__get_first_argIT_E4typeEvNS_14__element_typeEJS3_EE4typeEEE5valu8505264'/>
+<fun r='_ZNSt14pointer_traitsIPT_E10pointer_toERNSt11conditionalIXsr7is_voidIS0_EE5valueESt11__undefinedS0_E4typeE'/>

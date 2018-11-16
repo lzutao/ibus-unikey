@@ -1,0 +1,11 @@
+_ZN11CMacroTable8getCountEv|CMacroTable::getCount
+_ZN11CMacroTable7addItemEPKvS1_i|CMacroTable::addItem
+_ZN11CMacroTable6getKeyEi|CMacroTable::getKey
+_ZN11CMacroTable7getTextEi|CMacroTable::getText
+_ZN11CMacroTable4initEv|CMacroTable::init
+_ZN11CMacroTable12loadFromFileEPKc|CMacroTable::loadFromFile
+_ZN11CMacroTable6lookupEPj|CMacroTable::lookup
+_ZN11CMacroTable10readHeaderEP8_IO_FILERi|CMacroTable::readHeader
+_ZN11CMacroTable12resetContentEv|CMacroTable::resetContent
+_ZN11CMacroTable11writeHeaderEP8_IO_FILE|CMacroTable::writeHeader
+_ZN11CMacroTable11writeToFileEPKc|CMacroTable::writeToFile

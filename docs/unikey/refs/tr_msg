@@ -1,0 +1,8 @@
+<dec f='include/check.h' l='872' type='const char * tr_msg(TestResult * tr)'/>
+<doc f='include/check.h' l='865'>/**
+ * Retrieve failure message from test result, if applicable.
+ *
+ * @return pointer to a message, if one exists. NULL otherwise.
+ *
+ * @since 0.6.0
+ */</doc>

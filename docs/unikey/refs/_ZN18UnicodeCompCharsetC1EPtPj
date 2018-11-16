@@ -1,0 +1,3 @@
+<dec f='unikey/ukengine/charset.h' l='218' type='void UnicodeCompCharset::UnicodeCompCharset(UnicodeChar * uniChars, UKDWORD * uniCompChars)'/>
+<def f='unikey/ukengine/charset.cpp' l='192' ll='212' type='void UnicodeCompCharset::UnicodeCompCharset(UnicodeChar * uniChars, UKDWORD * uniCompChars)'/>
+<use f='unikey/ukengine/charset.cpp' l='1075' u='c' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>

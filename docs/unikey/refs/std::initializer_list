@@ -1,0 +1,8 @@
+<def f='include/c++/7/initializer_list' l='47' ll='80'/>
+<mbr r='std::initializer_list::_M_array' t='iterator'/>
+<mbr r='std::initializer_list::_M_len' t='size_type'/>
+<fun r='_ZNSt16initializer_listC1EPKT_m'/>
+<fun r='_ZNSt16initializer_listC1Ev'/>
+<fun r='_ZNKSt16initializer_list4sizeEv'/>
+<fun r='_ZNKSt16initializer_list5beginEv'/>
+<fun r='_ZNKSt16initializer_list3endEv'/>

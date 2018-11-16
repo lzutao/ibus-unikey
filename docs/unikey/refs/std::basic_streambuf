@@ -1,0 +1,60 @@
+<def f='include/c++/7/streambuf' l='120' ll='822'/>
+<def f='include/c++/7/bits/streambuf.tcc' l='149'/>
+<def f='include/c++/7/bits/streambuf.tcc' l='160'/>
+<size>64</size>
+<mbr r='std::basic_streambuf::_M_in_beg' t='char_type *'/>
+<mbr r='std::basic_streambuf::_M_in_cur' t='char_type *'/>
+<mbr r='std::basic_streambuf::_M_in_end' t='char_type *'/>
+<mbr r='std::basic_streambuf::_M_out_beg' t='char_type *'/>
+<mbr r='std::basic_streambuf::_M_out_cur' t='char_type *'/>
+<mbr r='std::basic_streambuf::_M_out_end' t='char_type *'/>
+<mbr r='std::basic_streambuf::_M_buf_locale' t='std::locale'/>
+<fun r='_ZNSt15basic_streambufD1Ev'/>
+<fun r='_ZNSt15basic_streambuf8pubimbueERKSt6locale'/>
+<fun r='_ZNKSt15basic_streambuf6getlocEv'/>
+<fun r='_ZNSt15basic_streambuf9pubsetbufEPT_l'/>
+<fun r='_ZNSt15basic_streambuf10pubseekoffENT0_8off_typeESt12_Ios_SeekdirSt13_Ios_Openmode'/>
+<fun r='_ZNSt15basic_streambuf10pubseekposENT0_8pos_typeESt13_Ios_Openmode'/>
+<fun r='_ZNSt15basic_streambuf7pubsyncEv'/>
+<fun r='_ZNSt15basic_streambuf8in_availEv'/>
+<fun r='_ZNSt15basic_streambuf6snextcEv'/>
+<fun r='_ZNSt15basic_streambuf6sbumpcEv'/>
+<fun r='_ZNSt15basic_streambuf5sgetcEv'/>
+<fun r='_ZNSt15basic_streambuf5sgetnEPT_l'/>
+<fun r='_ZNSt15basic_streambuf9sputbackcET_'/>
+<fun r='_ZNSt15basic_streambuf7sungetcEv'/>
+<fun r='_ZNSt15basic_streambuf5sputcET_'/>
+<fun r='_ZNSt15basic_streambuf5sputnEPKT_l'/>
+<fun r='_ZNSt15basic_streambufC1Ev'/>
+<fun r='_ZNKSt15basic_streambuf5ebackEv'/>
+<fun r='_ZNKSt15basic_streambuf4gptrEv'/>
+<fun r='_ZNKSt15basic_streambuf5egptrEv'/>
+<fun r='_ZNSt15basic_streambuf5gbumpEi'/>
+<fun r='_ZNSt15basic_streambuf4setgEPT_S1_S1_'/>
+<fun r='_ZNKSt15basic_streambuf5pbaseEv'/>
+<fun r='_ZNKSt15basic_streambuf4pptrEv'/>
+<fun r='_ZNKSt15basic_streambuf5epptrEv'/>
+<fun r='_ZNSt15basic_streambuf5pbumpEi'/>
+<fun r='_ZNSt15basic_streambuf4setpEPT_S1_'/>
+<fun r='_ZNSt15basic_streambuf5imbueERKSt6locale'/>
+<fun r='_ZNSt15basic_streambuf6setbufEPT_l'/>
+<fun r='_ZNSt15basic_streambuf7seekoffENT0_8off_typeESt12_Ios_SeekdirSt13_Ios_Openmode'/>
+<fun r='_ZNSt15basic_streambuf7seekposENT0_8pos_typeESt13_Ios_Openmode'/>
+<fun r='_ZNSt15basic_streambuf4syncEv'/>
+<fun r='_ZNSt15basic_streambuf9showmanycEv'/>
+<fun r='_ZNSt15basic_streambuf6xsgetnEPT_l'/>
+<fun r='_ZNSt15basic_streambuf9underflowEv'/>
+<fun r='_ZNSt15basic_streambuf5uflowEv'/>
+<fun r='_ZNSt15basic_streambuf9pbackfailENT0_8int_typeE'/>
+<fun r='_ZNSt15basic_streambuf6xsputnEPKT_l'/>
+<fun r='_ZNSt15basic_streambuf8overflowENT0_8int_typeE'/>
+<fun r='_ZNSt15basic_streambuf6stosscEv'/>
+<fun r='_ZNSt15basic_streambuf12__safe_gbumpEl'/>
+<fun r='_ZNSt15basic_streambuf12__safe_pbumpEl'/>
+<fun r='_ZNSt15basic_streambufC1ERKSt15basic_streambufIT_T0_E'/>
+<fun r='_ZNSt15basic_streambufaSERKSt15basic_streambufIT_T0_E'/>
+<fun r='_ZNSt15basic_streambuf4swapERSt15basic_streambufIT_T0_E'/>
+<fun r='_ZNSt15basic_streambufC1ERKSt15basic_streambufIT_T0_E'/>
+<fun r='_ZNSt15basic_streambufaSERKSt15basic_streambufIT_T0_E'/>
+<fun r='_ZNSt15basic_streambuf6xsgetnEPT_l'/>
+<fun r='_ZNSt15basic_streambuf6xsputnEPKT_l'/>

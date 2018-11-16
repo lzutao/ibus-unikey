@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/charset.h' l='279' type='PatternList'/>
+<offset>1280</offset>
+<use f='unikey/ukengine/charset.cpp' l='738' u='m' c='_ZN11VIQRCharset10startInputEv'/>
+<use f='unikey/ukengine/charset.cpp' l='753' u='m' c='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='1028' u='m' c='_ZN13CVnCharsetLibC1Ev'/>

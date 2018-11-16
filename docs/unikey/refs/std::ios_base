@@ -1,0 +1,83 @@
+<def f='include/c++/7/bits/ios_base.h' l='228' ll='873'/>
+<ovr f='include/c++/7/bits/basic_ios.h' l='67' c='std::basic_ios'/>
+<ovr f='include/c++/7/bits/basic_ios.tcc' l='178' c='std::basic_ios'/>
+<ovr f='include/c++/7/bits/basic_ios.tcc' l='181' c='std::basic_ios'/>
+<size>216</size>
+<doc f='include/c++/7/bits/ios_base.h' l='219'>/**
+   *  @brief  The base of the I/O class hierarchy.
+   *  @ingroup io
+   *
+   *  This class defines everything that can be defined about I/O that does
+   *  not depend on the type of characters being input or output.  Most
+   *  people will only see @c ios_base when they need to specify the full
+   *  name of the various I/O flags (e.g., the openmodes).
+  */</doc>
+<smbr r='std::ios_base::boolalpha' t='const fmtflags'/>
+<smbr r='std::ios_base::dec' t='const fmtflags'/>
+<smbr r='std::ios_base::fixed' t='const fmtflags'/>
+<smbr r='std::ios_base::hex' t='const fmtflags'/>
+<smbr r='std::ios_base::internal' t='const fmtflags'/>
+<smbr r='std::ios_base::left' t='const fmtflags'/>
+<smbr r='std::ios_base::oct' t='const fmtflags'/>
+<smbr r='std::ios_base::right' t='const fmtflags'/>
+<smbr r='std::ios_base::scientific' t='const fmtflags'/>
+<smbr r='std::ios_base::showbase' t='const fmtflags'/>
+<smbr r='std::ios_base::showpoint' t='const fmtflags'/>
+<smbr r='std::ios_base::showpos' t='const fmtflags'/>
+<smbr r='std::ios_base::skipws' t='const fmtflags'/>
+<smbr r='std::ios_base::unitbuf' t='const fmtflags'/>
+<smbr r='std::ios_base::uppercase' t='const fmtflags'/>
+<smbr r='std::ios_base::adjustfield' t='const fmtflags'/>
+<smbr r='std::ios_base::basefield' t='const fmtflags'/>
+<smbr r='std::ios_base::floatfield' t='const fmtflags'/>
+<smbr r='std::ios_base::badbit' t='const iostate'/>
+<smbr r='std::ios_base::eofbit' t='const iostate'/>
+<smbr r='std::ios_base::failbit' t='const iostate'/>
+<smbr r='std::ios_base::goodbit' t='const iostate'/>
+<smbr r='std::ios_base::app' t='const openmode'/>
+<smbr r='std::ios_base::ate' t='const openmode'/>
+<smbr r='std::ios_base::binary' t='const openmode'/>
+<smbr r='std::ios_base::in' t='const openmode'/>
+<smbr r='std::ios_base::out' t='const openmode'/>
+<smbr r='std::ios_base::trunc' t='const openmode'/>
+<smbr r='std::ios_base::beg' t='const seekdir'/>
+<smbr r='std::ios_base::cur' t='const seekdir'/>
+<smbr r='std::ios_base::end' t='const seekdir'/>
+<fun r='_ZNSt8ios_base17register_callbackEPFvNS_5eventERS_iEi'/>
+<mbr r='std::ios_base::_M_precision' o='64' t='streamsize'/>
+<mbr r='std::ios_base::_M_width' o='128' t='streamsize'/>
+<mbr r='std::ios_base::_M_flags' o='192' t='fmtflags'/>
+<mbr r='std::ios_base::_M_exception' o='224' t='iostate'/>
+<mbr r='std::ios_base::_M_streambuf_state' o='256' t='iostate'/>
+<mbr r='std::ios_base::_M_callbacks' o='320' t='std::ios_base::_Callback_list *'/>
+<fun r='_ZNSt8ios_base17_M_call_callbacksENS_5eventE'/>
+<fun r='_ZNSt8ios_base20_M_dispose_callbacksEv'/>
+<mbr r='std::ios_base::_M_word_zero' o='384' t='std::ios_base::_Words'/>
+<mbr r='std::ios_base::_M_local_word' o='512' t='std::ios_base::_Words [8]'/>
+<mbr r='std::ios_base::_M_word_size' o='1536' t='int'/>
+<mbr r='std::ios_base::_M_word' o='1600' t='std::ios_base::_Words *'/>
+<fun r='_ZNSt8ios_base13_M_grow_wordsEib'/>
+<mbr r='std::ios_base::_M_ios_locale' o='1664' t='std::locale'/>
+<fun r='_ZNSt8ios_base7_M_initEv'/>
+<fun r='_ZNKSt8ios_base5flagsEv'/>
+<fun r='_ZNSt8ios_base5flagsESt13_Ios_Fmtflags'/>
+<fun r='_ZNSt8ios_base4setfESt13_Ios_Fmtflags'/>
+<fun r='_ZNSt8ios_base4setfESt13_Ios_FmtflagsS0_'/>
+<fun r='_ZNSt8ios_base6unsetfESt13_Ios_Fmtflags'/>
+<fun r='_ZNKSt8ios_base9precisionEv'/>
+<fun r='_ZNSt8ios_base9precisionEl'/>
+<fun r='_ZNKSt8ios_base5widthEv'/>
+<fun r='_ZNSt8ios_base5widthEl'/>
+<fun r='_ZNSt8ios_base15sync_with_stdioEb'/>
+<fun r='_ZNSt8ios_base5imbueERKSt6locale'/>
+<fun r='_ZNKSt8ios_base6getlocEv'/>
+<fun r='_ZNKSt8ios_base9_M_getlocEv'/>
+<fun r='_ZNSt8ios_base6xallocEv'/>
+<fun r='_ZNSt8ios_base5iwordEi'/>
+<fun r='_ZNSt8ios_base5pwordEi'/>
+<fun r='_ZNSt8ios_baseD1Ev'/>
+<fun r='_ZNSt8ios_baseC1Ev'/>
+<fun r='_ZNSt8ios_baseC1ERKS_'/>
+<fun r='_ZNSt8ios_baseaSERKS_'/>
+<fun r='_ZNSt8ios_base7_M_moveERS_'/>
+<fun r='_ZNSt8ios_base7_M_swapERS_'/>

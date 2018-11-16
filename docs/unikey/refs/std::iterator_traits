@@ -1,0 +1,5 @@
+<def f='include/c++/7/bits/stl_iterator_base_types.h' l='162' ll='163'/>
+<def f='include/c++/7/bits/stl_iterator_base_types.h' l='177' ll='185'/>
+<def f='include/c++/7/bits/stl_iterator_base_types.h' l='188' ll='196'/>
+<doc f='include/c++/7/bits/stl_iterator_base_types.h' l='176'>/// Partial specialization for pointer types.</doc>
+<doc f='include/c++/7/bits/stl_iterator_base_types.h' l='187'>/// Partial specialization for const pointer types.</doc>

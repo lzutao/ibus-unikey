@@ -1,0 +1,4 @@
+_ZNSt21front_insert_iteratordeEv|std::front_insert_iterator::operator*
+_ZNSt21front_insert_iteratorppEv|std::front_insert_iterator::operator++
+_ZNSt21front_insert_iteratoraSERKNT_10value_typeE|std::front_insert_iterator::operator=
+_ZSt14front_inserterRT_|std::front_inserter

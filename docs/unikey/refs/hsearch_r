@@ -1,0 +1,3 @@
+<dec f='include/search.h' l='106' type='int hsearch_r(ENTRY __item, ACTION __action, ENTRY ** __retval, struct hsearch_data * __htab)'/>
+<doc f='include/search.h' l='104'>/* Reentrant versions which can handle multiple hashing tables at the
+   same time.  */</doc>

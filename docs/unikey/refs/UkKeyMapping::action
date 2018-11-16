@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/inputproc.h' l='72' type='int'/>
+<offset>32</offset>
+<use f='unikey/ukengine/inputproc.cpp' l='328' u='r' c='_ZN16UkInputProcessor10useBuiltInEP12UkKeyMapping'/>
+<use f='unikey/ukengine/inputproc.cpp' l='329' u='r' c='_ZN16UkInputProcessor10useBuiltInEP12UkKeyMapping'/>
+<use f='unikey/ukengine/inputproc.cpp' l='331' u='r' c='_ZN16UkInputProcessor10useBuiltInEP12UkKeyMapping'/>
+<use f='unikey/ukengine/inputproc.cpp' l='334' u='r' c='_ZN16UkInputProcessor10useBuiltInEP12UkKeyMapping'/>

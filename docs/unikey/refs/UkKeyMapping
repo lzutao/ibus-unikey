@@ -1,0 +1,4 @@
+<def f='unikey/ukengine/inputproc.h' l='70' ll='73'/>
+<size>8</size>
+<mbr r='UkKeyMapping::key' o='0' t='unsigned char'/>
+<mbr r='UkKeyMapping::action' o='32' t='int'/>

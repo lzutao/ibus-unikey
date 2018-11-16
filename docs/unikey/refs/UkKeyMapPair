@@ -1,0 +1,4 @@
+<def f='unikey/ukengine/usrkeymap.h' l='28' ll='31'/>
+<size>8</size>
+<mbr r='UkKeyMapPair::key' o='0' t='unsigned char'/>
+<mbr r='UkKeyMapPair::action' o='32' t='int'/>

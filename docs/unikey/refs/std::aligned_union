@@ -1,0 +1,4 @@
+<def f='include/c++/7/type_traits' l='2076' ll='2089'/>
+<smbr r='std::aligned_union::_S_len' t='const size_t'/>
+<smbr r='std::aligned_union::alignment_value' t='const size_t'/>
+<smbr r='std::aligned_union::alignment_value' t='const size_t'/>

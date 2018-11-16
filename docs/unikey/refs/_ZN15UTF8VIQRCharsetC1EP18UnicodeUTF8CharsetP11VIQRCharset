@@ -1,0 +1,8 @@
+<dec f='unikey/ukengine/charset.h' l='254' type='void UTF8VIQRCharset::UTF8VIQRCharset(UnicodeUTF8Charset * pUtf, VIQRCharset * pViqr)'/>
+<def f='unikey/ukengine/charset.cpp' l='944' ll='948' type='void UTF8VIQRCharset::UTF8VIQRCharset(UnicodeUTF8Charset * pUtf, VIQRCharset * pViqr)'/>
+<use f='unikey/ukengine/charset.cpp' l='1120' u='c' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>
+<doc f='unikey/ukengine/charset.cpp' l='939'>/////////////////////////////////////////////
+// Class: UTF8VIQRCharset                  //
+/////////////////////////////////////////////
+
+//-----------------------------------------</doc>

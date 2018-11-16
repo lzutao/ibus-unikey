@@ -1,0 +1,3 @@
+<dec f='include/x86_64-linux-gnu/c++/7/bits/c++config.h' l='708'/>
+<doc f='include/x86_64-linux-gnu/c++/7/bits/c++config.h' l='707'>/* Define if ECANCELED exists. */</doc>
+<use f='include/x86_64-linux-gnu/c++/7/bits/error_constants.h' l='125' u='a'/>

@@ -1,0 +1,15 @@
+<dec f='unikey/ukengine/ukengine.h' l='86' type='int UkEngine::processHook(UkKeyEvent &amp; ev)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='275' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='276' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='277' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='278' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='279' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='275' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='276' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='277' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='278' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='279' u='a'/>
+<def f='unikey/ukengine/ukengine.cpp' l='799' ll='943' type='int UkEngine::processHook(UkKeyEvent &amp; ev)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1213' u='c' c='_ZN8UkEngine13processTelexWER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1220' u='c' c='_ZN8UkEngine13processTelexWER10UkKeyEvent'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='798'>//------------------------------------------------------------------</doc>

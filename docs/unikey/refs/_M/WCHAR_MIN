@@ -1,0 +1,4 @@
+<dec f='include/stdint.h' l='249'/>
+<doc f='include/stdint.h' l='248'>/* These constants might also be defined in &lt;wchar.h&gt;.  */</doc>
+<dec f='include/wchar.h' l='59'/>
+<doc f='include/wchar.h' l='58'>/* These constants might also be defined in &lt;inttypes.h&gt;.  */</doc>

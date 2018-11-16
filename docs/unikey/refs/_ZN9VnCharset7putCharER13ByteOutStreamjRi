@@ -1,0 +1,21 @@
+<dec f='unikey/ukengine/charset.h' l='103' type='int VnCharset::putChar(ByteOutStream &amp; os, StdVnChar stdChar, int &amp; outLen)'/>
+<doc f='unikey/ukengine/charset.h' l='94'>//------------------------------------------------------------------------
+	// put a character to the output after converting it
+	// Arguments:
+	//     output[in]: output buffer
+	//     stdChar[in]: character in standard charset
+	//     outLen[out]: length of converted sequence
+	//     maxAvail[in]: max length available.
+	// Returns: next position in output
+	//------------------------------------------------------------------------</doc>
+<ovr f='unikey/ukengine/charset.cpp' l='62' c='_ZN17VnInternalCharset7putCharER13ByteOutStreamjRi'/>
+<ovr f='unikey/ukengine/charset.cpp' l='103' c='_ZN17SingleByteCharset7putCharER13ByteOutStreamjRi'/>
+<ovr f='unikey/ukengine/charset.cpp' l='168' c='_ZN14UnicodeCharset7putCharER13ByteOutStreamjRi'/>
+<ovr f='unikey/ukengine/charset.cpp' l='252' c='_ZN18UnicodeCompCharset7putCharER13ByteOutStreamjRi'/>
+<ovr f='unikey/ukengine/charset.cpp' l='644' c='_ZN17DoubleByteCharset7putCharER13ByteOutStreamjRi'/>
+<ovr f='unikey/ukengine/charset.cpp' l='851' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<ovr f='unikey/ukengine/charset.cpp' l='982' c='_ZN15UTF8VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<ovr f='unikey/ukengine/charset.cpp' l='1242' c='_ZN16WinCP1258Charset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/convert.cpp' l='56' u='c' c='_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1858' u='c' c='_ZN8UkEngine11writeOutputEPhRi'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1900' u='c' c='_ZN8UkEngine11getSeqStepsEii'/>

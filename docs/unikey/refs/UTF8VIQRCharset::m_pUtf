@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/charset.h' l='251' type='UnicodeUTF8Charset *'/>
+<offset>128</offset>
+<use f='unikey/ukengine/charset.cpp' l='946' u='w' c='_ZN15UTF8VIQRCharsetC1EP18UnicodeUTF8CharsetP11VIQRCharset'/>
+<use f='unikey/ukengine/charset.cpp' l='953' u='r' c='_ZN15UTF8VIQRCharset10startInputEv'/>
+<use f='unikey/ukengine/charset.cpp' l='960' u='r' c='_ZN15UTF8VIQRCharset11startOutputEv'/>
+<use f='unikey/ukengine/charset.cpp' l='975' u='r' c='_ZN15UTF8VIQRCharset9nextInputER12ByteInStreamRjRi'/>

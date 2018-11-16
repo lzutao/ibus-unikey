@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/c++/7/bits/c++config.h' l='1553'/>
+<use f='include/c++/7/bits/std_abs.h' l='99' u='a'/>
+<doc f='include/x86_64-linux-gnu/c++/7/bits/c++config.h' l='1552'>/* Define if __float128 is supported on this host. */</doc>
+<use f='include/c++/7/type_traits' l='345' u='a'/>

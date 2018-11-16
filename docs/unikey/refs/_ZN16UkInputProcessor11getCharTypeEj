@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/inputproc.h' l='97' type='UkCharType UkInputProcessor::getCharType(unsigned int keyCode)'/>
+<def f='unikey/ukengine/inputproc.cpp' l='387' ll='392' type='UkCharType UkInputProcessor::getCharType(unsigned int keyCode)'/>
+<doc f='unikey/ukengine/inputproc.cpp' l='386'>//-------------------------------------------</doc>
+<use f='unikey/ukengine/ukengine.cpp' l='1177' u='c' c='_ZN8UkEngine14processMapCharER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1805' u='c' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>

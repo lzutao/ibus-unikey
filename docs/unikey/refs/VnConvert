@@ -1,0 +1,23 @@
+<dec f='unikey/ukengine/vnconv.h' l='78' type='int VnConvert(int inCharset, int outCharset, UKBYTE * input, UKBYTE * output, int * pInLen, int * pMaxOutLen)'/>
+<def f='unikey/ukengine/convert.cpp' l='80' ll='105' type='int VnConvert(int inCharset, int outCharset, UKBYTE * input, UKBYTE * output, int * pInLen, int * pMaxOutLen)'/>
+<doc f='unikey/ukengine/convert.cpp' l='64'>//----------------------------------------------
+// Arguments:
+//       inCharset: charset of input
+//       outCharset: charset of output
+//       input: input data
+//       output: output data
+//       inLen: [in]  size of input. if inLen = -1, input data is null-terminated.
+//              [out] if input inLen != -1, output iLen is the numbers of byte left in input.
+//       maxOutLen: [in] size of output.
+//                  [out] number of bytes output, if enough memory
+//                        number of bytes needed for output, if not enough memory
+// Returns:  0 if successful
+//           error code: if failed
+//----------------------------------------------
+//int VnConvert(int inCharset, int outCharset, UKBYTE *input, UKBYTE *output, int &amp; inLen, int &amp; maxOutLen)</doc>
+<use f='unikey/ukengine/mactab.cpp' l='236' u='c' c='_ZN11CMacroTable11writeToFileEPKc'/>
+<use f='unikey/ukengine/mactab.cpp' l='245' u='c' c='_ZN11CMacroTable11writeToFileEPKc'/>
+<use f='unikey/ukengine/mactab.cpp' l='279' u='c' c='_ZN11CMacroTable7addItemEPKvS1_i'/>
+<use f='unikey/ukengine/mactab.cpp' l='294' u='c' c='_ZN11CMacroTable7addItemEPKvS1_i'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2172' u='c' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2186' u='c' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>

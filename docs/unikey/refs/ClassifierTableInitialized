@@ -1,0 +1,3 @@
+<def f='unikey/ukengine/inputproc.cpp' l='98' type='bool'/>
+<use f='unikey/ukengine/inputproc.cpp' l='267' u='r' c='_ZN16UkInputProcessor4initEv'/>
+<use f='unikey/ukengine/inputproc.cpp' l='269' u='w' c='_ZN16UkInputProcessor4initEv'/>

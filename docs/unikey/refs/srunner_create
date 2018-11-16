@@ -1,0 +1,17 @@
+<dec f='include/check.h' l='920' type='SRunner * srunner_create(Suite * s)'/>
+<use f='unikey/test/test_inputproc.cc' l='89' u='c' c='main'/>
+<doc f='include/check.h' l='906'>/**
+ * Creates a suite runner for the given suite.
+ *
+ * Once created, additional suites can be added to the
+ * suite runner using srunner_add_suite(), and the suite runner can be
+ * run with srunner_run_all(). Once finished, the suite runner
+ * must be freed with srunner_free().
+ *
+ * @param s suite to generate a suite runner for
+ *
+ * @return suite runner for the given suite
+ *
+ * @since 0.6.0
+ */</doc>
+<use f='unikey/test/test_ukengine.cc' l='33' u='c' c='main'/>

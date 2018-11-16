@@ -1,0 +1,9 @@
+<dec f='unikey/ukengine/unikey.h' l='66' type='unsigned char []'/>
+<def f='unikey/ukengine/unikey.cpp' l='43' type='unsigned char [1024]'/>
+<use f='unikey/ukengine/unikey.cpp' l='144' u='r' c='UnikeyFilter'/>
+<use f='unikey/ukengine/unikey.cpp' l='145' u='r' c='UnikeyFilter'/>
+<use f='unikey/ukengine/unikey.cpp' l='171' u='r' c='UnikeyBackspacePress'/>
+<use f='unikey/ukengine/unikey.cpp' l='172' u='r' c='UnikeyBackspacePress'/>
+<use f='unikey/ukengine/unikey.cpp' l='196' u='r' c='UnikeyRestoreKeyStrokes'/>
+<use f='unikey/ukengine/unikey.cpp' l='197' u='r' c='UnikeyRestoreKeyStrokes'/>
+<doc f='unikey/ukengine/unikey.cpp' l='41'>//----------------------------------------------------</doc>

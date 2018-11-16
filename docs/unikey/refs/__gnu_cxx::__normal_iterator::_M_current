@@ -1,0 +1,16 @@
+<dec f='include/c++/7/bits/stl_iterator.h' l='763' type='_Iterator'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='776' u='w' c='__gnu_cxx::__normal_iterator::__normal_iterator{_Iterator,_Container}'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='780' u='w' c='__gnu_cxx::__normal_iterator::__normal_iterator{_Iterator,_Container}'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='788' u='w' c='__gnu_cxx::__normal_iterator::__normal_iterator{_Iterator,_Container}'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='793' u='r' c='__gnu_cxx::__normal_iterator::operator*'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='797' u='r' c='__gnu_cxx::__normal_iterator::operator-}'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='802' u='w' c='__gnu_cxx::__normal_iterator::operator++'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='808' u='w' c='__gnu_cxx::__normal_iterator::operator++'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='814' u='w' c='__gnu_cxx::__normal_iterator::operator--'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='820' u='w' c='__gnu_cxx::__normal_iterator::operator--'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='825' u='r' c='__gnu_cxx::__normal_iterator::operator[]'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='829' u='w' c='__gnu_cxx::__normal_iterator::operator+='/>
+<use f='include/c++/7/bits/stl_iterator.h' l='833' u='r' c='__gnu_cxx::__normal_iterator::operator+'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='837' u='w' c='__gnu_cxx::__normal_iterator::operator-='/>
+<use f='include/c++/7/bits/stl_iterator.h' l='841' u='r' c='__gnu_cxx::__normal_iterator::operator-'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='845' u='a' c='__gnu_cxx::__normal_iterator::base'/>

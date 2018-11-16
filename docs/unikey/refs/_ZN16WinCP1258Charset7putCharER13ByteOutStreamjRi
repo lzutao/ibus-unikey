@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/charset.h' l='203' type='int WinCP1258Charset::putChar(ByteOutStream &amp; os, StdVnChar stdChar, int &amp; outLen)'/>
+<inh f='unikey/ukengine/charset.h' l='103' c='_ZN9VnCharset7putCharER13ByteOutStreamjRi'/>
+<def f='unikey/ukengine/charset.cpp' l='1242' ll='1272' type='int WinCP1258Charset::putChar(ByteOutStream &amp; os, StdVnChar stdChar, int &amp; outLen)'/>
+<doc f='unikey/ukengine/charset.cpp' l='1239'>//---------------------------------------------------------------------
+// This fuction is exactly the same as that of DoubleByteCharset
+//---------------------------------------------------------------------</doc>

@@ -1,0 +1,8 @@
+<dec f='include/check.h' l='463'/>
+<doc f='include/check.h' l='456'>/**
+ * Unconditionally fail the test
+ *
+ * @note Once called, the remaining of the test is aborted
+ *
+ * @since 0.9.6
+ */</doc>

@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/usrkeymap.h' l='33' type='int UkLoadKeyMap(const char * fileName, int * keyMap)'/>
+<use f='unikey/ukengine/unikey.cpp' l='185' u='c' c='UnikeyLoadUserKeyMap'/>
+<def f='unikey/ukengine/usrkeymap.cpp' l='131' ll='146' type='int UkLoadKeyMap(const char * fileName, int * keyMap)'/>
+<doc f='unikey/ukengine/usrkeymap.cpp' l='130'>//-----------------------------------------------------</doc>

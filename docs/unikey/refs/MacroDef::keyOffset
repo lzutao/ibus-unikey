@@ -1,0 +1,8 @@
+<dec f='unikey/ukengine/mactab.h' l='44' type='int'/>
+<offset>0</offset>
+<use f='unikey/ukengine/mactab.cpp' l='52' u='r' c='_Z10macComparePKvS0_'/>
+<use f='unikey/ukengine/mactab.cpp' l='53' u='r' c='_Z10macComparePKvS0_'/>
+<use f='unikey/ukengine/mactab.cpp' l='81' u='r' c='_Z13macKeyComparePKvS0_'/>
+<use f='unikey/ukengine/mactab.cpp' l='233' u='r' c='_ZN11CMacroTable11writeToFileEPKc'/>
+<use f='unikey/ukengine/mactab.cpp' l='272' u='w' c='_ZN11CMacroTable7addItemEPKvS1_i'/>
+<use f='unikey/ukengine/mactab.cpp' l='337' u='r' c='_ZN11CMacroTable6getKeyEi'/>

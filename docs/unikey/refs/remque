@@ -1,0 +1,2 @@
+<dec f='include/search.h' l='47' type='void remque(void * __elem)'/>
+<doc f='include/search.h' l='46'>/* Unlink ELEM from the doubly-linked list that it is in.  */</doc>

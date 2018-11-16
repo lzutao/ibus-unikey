@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/c++/7/bits/c++config.h' l='1452'/>
+<use f='include/c++/7/cstdlib' l='46' u='c'/>
+<use f='include/c++/7/stdlib.h' l='50' u='c'/>
+<doc f='include/x86_64-linux-gnu/c++/7/bits/c++config.h' l='1451'>/* Define to 1 if a full hosted library is built, or 0 if freestanding. */</doc>
+<use f='include/c++/7/bits/concept_check.h' l='46' u='c'/>

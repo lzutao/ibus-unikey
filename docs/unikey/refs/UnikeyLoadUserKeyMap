@@ -1,0 +1,3 @@
+<dec f='unikey/ukengine/unikey.h' l='106' type='int UnikeyLoadUserKeyMap(const char * fileName)'/>
+<def f='unikey/ukengine/unikey.cpp' l='183' ll='191' type='int UnikeyLoadUserKeyMap(const char * fileName)'/>
+<doc f='unikey/ukengine/unikey.cpp' l='182'>//--------------------------------------------</doc>

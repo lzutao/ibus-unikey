@@ -1,0 +1,10 @@
+<dec f='unikey/ukengine/mactab.h' l='68' type='bool CMacroTable::readHeader(FILE * f, int &amp; version)'/>
+<def f='unikey/ukengine/mactab.cpp' l='121' ll='155' type='bool CMacroTable::readHeader(FILE * f, int &amp; version)'/>
+<use f='unikey/ukengine/mactab.cpp' l='185' u='c' c='_ZN11CMacroTable12loadFromFileEPKc'/>
+<doc f='unikey/ukengine/mactab.cpp' l='114'>//----------------------------------------------------------------------------
+// Read header, if it&apos;s present in the file. Get the version of the file
+// If header is absent, go back to the beginning of file and set version to 0
+// Return false if reading failed.
+//
+// Header format: ;[DO NOT DELETE THIS LINE]***version=n
+//----------------------------------------------------------------------------</doc>

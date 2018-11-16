@@ -1,0 +1,11 @@
+<def f='unikey/ukengine/keycons.h' l='40' ll='51'/>
+<size>36</size>
+<mbr r='_UnikeyOptions::freeMarking' o='0' t='int'/>
+<mbr r='_UnikeyOptions::modernStyle' o='32' t='int'/>
+<mbr r='_UnikeyOptions::macroEnabled' o='64' t='int'/>
+<mbr r='_UnikeyOptions::useUnicodeClipboard' o='96' t='int'/>
+<mbr r='_UnikeyOptions::alwaysMacro' o='128' t='int'/>
+<mbr r='_UnikeyOptions::strictSpellCheck' o='160' t='int'/>
+<mbr r='_UnikeyOptions::useIME' o='192' t='int'/>
+<mbr r='_UnikeyOptions::spellCheckEnabled' o='224' t='int'/>
+<mbr r='_UnikeyOptions::autoNonVnRestore' o='256' t='int'/>

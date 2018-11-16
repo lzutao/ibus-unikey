@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>byteio.h source code [unikey/ukengine/byteio.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="ByteInStream,ByteOutStream,ByteStream,FileBIStream,FileBOStream,StringBIStream,StringBOStream "/>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'unikey/ukengine/byteio.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>unikey</a>/<a href='./'>ukengine</a>/<a href='byteio.h.html'>byteio.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>// -*- coding:unix; mode:c++; tab-width:4; c-basic-offset:4; indent-tabs-mode:nil -*-</i></td></tr>
+<tr><th id="2">2</th><td><u>#<span data-ppcond="2">ifndef</span> <span class="macro" data-ref="_M/BYTE_IO_STREAM_H">BYTE_IO_STREAM_H</span></u></td></tr>
+<tr><th id="3">3</th><td><u>#define <dfn class="macro" id="_M/BYTE_IO_STREAM_H" data-ref="_M/BYTE_IO_STREAM_H">BYTE_IO_STREAM_H</dfn></u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><i>//#include "vnconv.h"</i></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="../../include/stdio.h.html">&lt;stdio.h&gt;</a></u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><b>typedef</b> <em>unsigned</em> <em>char</em> <a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE" id="UKBYTE">UKBYTE</a>;</td></tr>
+<tr><th id="10">10</th><td><b>typedef</b> <em>unsigned</em> <em>short</em> <dfn class="typedef" id="UKWORD" title='UKWORD' data-type='unsigned short' data-ref="UKWORD">UKWORD</dfn>;</td></tr>
+<tr><th id="11">11</th><td><b>typedef</b> <em>unsigned</em> <em>int</em> <dfn class="typedef" id="UKDWORD" title='UKDWORD' data-type='unsigned int' data-ref="UKDWORD">UKDWORD</dfn>;</td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td><i>//----------------------------------------------------</i></td></tr>
+<tr><th id="14">14</th><td><b>class</b> <dfn class="type def" id="ByteStream" title='ByteStream' data-ref="ByteStream">ByteStream</dfn> {</td></tr>
+<tr><th id="15">15</th><td> <b>public</b>:</td></tr>
+<tr><th id="16">16</th><td>  <b>virtual</b> <dfn class="virtual decl def" id="_ZN10ByteStreamD1Ev" title='ByteStream::~ByteStream' data-ref="_ZN10ByteStreamD1Ev">~ByteStream</dfn>(){};</td></tr>
+<tr><th id="17">17</th><td>};</td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><i>//----------------------------------------------------</i></td></tr>
+<tr><th id="20">20</th><td><b>class</b> <dfn class="type def" id="ByteInStream" title='ByteInStream' data-ref="ByteInStream">ByteInStream</dfn>: <b>public</b> <a class="type" href="#ByteStream" title='ByteStream' data-ref="ByteStream">ByteStream</a></td></tr>
+<tr><th id="21">21</th><td>{</td></tr>
+<tr><th id="22">22</th><td><b>public</b>:</td></tr>
+<tr><th id="23">23</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12ByteInStream7getNextERh" title='ByteInStream::getNext' data-ref="_ZN12ByteInStream7getNextERh">getNext</dfn>(<a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> &amp;<dfn class="local col5 decl" id="15b" title='b' data-type='UKBYTE &amp;' data-ref="15b">b</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="24">24</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12ByteInStream8peekNextERh" title='ByteInStream::peekNext' data-ref="_ZN12ByteInStream8peekNextERh">peekNext</dfn>(<a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> &amp;<dfn class="local col6 decl" id="16b" title='b' data-type='UKBYTE &amp;' data-ref="16b">b</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="25">25</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12ByteInStream5ungetEh" title='ByteInStream::unget' data-ref="_ZN12ByteInStream5ungetEh">unget</dfn>(<a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> <dfn class="local col7 decl" id="17b" title='b' data-type='UKBYTE' data-ref="17b">b</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12ByteInStream8getNextWERt" title='ByteInStream::getNextW' data-ref="_ZN12ByteInStream8getNextWERt">getNextW</dfn>(<a class="typedef" href="#UKWORD" title='UKWORD' data-type='unsigned short' data-ref="UKWORD">UKWORD</a> &amp;<dfn class="local col8 decl" id="18w" title='w' data-type='UKWORD &amp;' data-ref="18w">w</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="28">28</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12ByteInStream9peekNextWERt" title='ByteInStream::peekNextW' data-ref="_ZN12ByteInStream9peekNextWERt">peekNextW</dfn>(<a class="typedef" href="#UKWORD" title='UKWORD' data-type='unsigned short' data-ref="UKWORD">UKWORD</a> &amp;<dfn class="local col9 decl" id="19w" title='w' data-type='UKWORD &amp;' data-ref="19w">w</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12ByteInStream9getNextDWERj" title='ByteInStream::getNextDW' data-ref="_ZN12ByteInStream9getNextDWERj">getNextDW</dfn>(<a class="typedef" href="#UKDWORD" title='UKDWORD' data-type='unsigned int' data-ref="UKDWORD">UKDWORD</a> &amp;<dfn class="local col0 decl" id="20dw" title='dw' data-type='UKDWORD &amp;' data-ref="20dw">dw</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl def" id="_ZN12ByteInStream8bookmarkEv" title='ByteInStream::bookmark' data-ref="_ZN12ByteInStream8bookmarkEv">bookmark</dfn>() <i>//no support for bookmark by default</i></td></tr>
+<tr><th id="33">33</th><td>	{</td></tr>
+<tr><th id="34">34</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="35">35</th><td>	}</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl def" id="_ZN12ByteInStream12gotoBookmarkEv" title='ByteInStream::gotoBookmark' data-ref="_ZN12ByteInStream12gotoBookmarkEv">gotoBookmark</dfn>()</td></tr>
+<tr><th id="38">38</th><td>	{</td></tr>
+<tr><th id="39">39</th><td>		<b>return</b> <var>0</var>;</td></tr>
+<tr><th id="40">40</th><td>	}</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12ByteInStream3eosEv" title='ByteInStream::eos' data-ref="_ZN12ByteInStream3eosEv">eos</dfn>() = <var>0</var>; <i>//end of stream</i></td></tr>
+<tr><th id="43">43</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12ByteInStream5closeEv" title='ByteInStream::close' data-ref="_ZN12ByteInStream5closeEv">close</dfn>() = <var>0</var>;</td></tr>
+<tr><th id="44">44</th><td>};</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><i>//----------------------------------------------------</i></td></tr>
+<tr><th id="47">47</th><td><b>class</b> <dfn class="type def" id="ByteOutStream" title='ByteOutStream' data-ref="ByteOutStream">ByteOutStream</dfn>: <b>public</b> <a class="type" href="#ByteStream" title='ByteStream' data-ref="ByteStream">ByteStream</a></td></tr>
+<tr><th id="48">48</th><td>{</td></tr>
+<tr><th id="49">49</th><td><b>public</b>:</td></tr>
+<tr><th id="50">50</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN13ByteOutStream4putBEh" title='ByteOutStream::putB' data-ref="_ZN13ByteOutStream4putBEh">putB</dfn>(<a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> <dfn class="local col1 decl" id="21b" title='b' data-type='UKBYTE' data-ref="21b">b</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="51">51</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN13ByteOutStream4putWEt" title='ByteOutStream::putW' data-ref="_ZN13ByteOutStream4putWEt">putW</dfn>(<a class="typedef" href="#UKWORD" title='UKWORD' data-type='unsigned short' data-ref="UKWORD">UKWORD</a> <dfn class="local col2 decl" id="22w" title='w' data-type='UKWORD' data-ref="22w">w</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="52">52</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN13ByteOutStream4putsEPKci" title='ByteOutStream::puts' data-ref="_ZN13ByteOutStream4putsEPKci">puts</dfn>(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="23s" title='s' data-type='const char *' data-ref="23s">s</dfn>, <em>int</em> <dfn class="local col4 decl" id="24size" title='size' data-type='int' data-ref="24size">size</dfn> = -<var>1</var>) = <var>0</var>; <i>// write an 8-bit string</i></td></tr>
+<tr><th id="53">53</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN13ByteOutStream4isOKEv" title='ByteOutStream::isOK' data-ref="_ZN13ByteOutStream4isOKEv">isOK</dfn>() = <var>0</var>;<i>// get current stream state</i></td></tr>
+<tr><th id="54">54</th><td>};</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><i>//----------------------------------------------------</i></td></tr>
+<tr><th id="57">57</th><td><b>class</b> <dfn class="type def" id="StringBIStream" title='StringBIStream' data-ref="StringBIStream">StringBIStream</dfn> : <b>public</b> <a class="type" href="#ByteInStream" title='ByteInStream' data-ref="ByteInStream">ByteInStream</a></td></tr>
+<tr><th id="58">58</th><td>{</td></tr>
+<tr><th id="59">59</th><td><b>protected</b>:</td></tr>
+<tr><th id="60">60</th><td>	<em>int</em> <dfn class="decl" id="StringBIStream::m_eos" title='StringBIStream::m_eos' data-ref="StringBIStream::m_eos">m_eos</dfn>;</td></tr>
+<tr><th id="61">61</th><td>	<a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> *<dfn class="decl" id="StringBIStream::m_data" title='StringBIStream::m_data' data-ref="StringBIStream::m_data">m_data</dfn>, *<dfn class="decl" id="StringBIStream::m_current" title='StringBIStream::m_current' data-ref="StringBIStream::m_current">m_current</dfn>;</td></tr>
+<tr><th id="62">62</th><td>	<em>int</em> <dfn class="decl" id="StringBIStream::m_len" title='StringBIStream::m_len' data-ref="StringBIStream::m_len">m_len</dfn>, <dfn class="decl" id="StringBIStream::m_left" title='StringBIStream::m_left' data-ref="StringBIStream::m_left">m_left</dfn>;</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td>	<b>struct</b> {</td></tr>
+<tr><th id="65">65</th><td>		<em>int</em> <dfn class="decl" id="StringBIStream::(anonymous)::eos" title='StringBIStream::(anonymous struct)::eos' data-ref="StringBIStream::(anonymous)::eos">eos</dfn>;</td></tr>
+<tr><th id="66">66</th><td>		<a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> *<dfn class="decl" id="StringBIStream::(anonymous)::data" title='StringBIStream::(anonymous struct)::data' data-ref="StringBIStream::(anonymous)::data">data</dfn>, *<dfn class="decl" id="StringBIStream::(anonymous)::current" title='StringBIStream::(anonymous struct)::current' data-ref="StringBIStream::(anonymous)::current">current</dfn>;</td></tr>
+<tr><th id="67">67</th><td>		<em>int</em> <dfn class="decl" id="StringBIStream::(anonymous)::len" title='StringBIStream::(anonymous struct)::len' data-ref="StringBIStream::(anonymous)::len">len</dfn>, <dfn class="decl" id="StringBIStream::(anonymous)::left" title='StringBIStream::(anonymous struct)::left' data-ref="StringBIStream::(anonymous)::left">left</dfn>;</td></tr>
+<tr><th id="68">68</th><td>	} <dfn class="decl" id="StringBIStream::m_bookmark" title='StringBIStream::m_bookmark' data-ref="StringBIStream::m_bookmark">m_bookmark</dfn>;</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td>	<em>int</em> <dfn class="decl" id="StringBIStream::m_didBookmark" title='StringBIStream::m_didBookmark' data-ref="StringBIStream::m_didBookmark">m_didBookmark</dfn>;</td></tr>
+<tr><th id="71">71</th><td>		</td></tr>
+<tr><th id="72">72</th><td><b>public</b>:</td></tr>
+<tr><th id="73">73</th><td>	<dfn class="decl" id="_ZN14StringBIStreamC1EPhii" title='StringBIStream::StringBIStream' data-ref="_ZN14StringBIStreamC1EPhii">StringBIStream</dfn>(<a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> *<dfn class="local col5 decl" id="25data" title='data' data-type='UKBYTE *' data-ref="25data">data</dfn>, <em>int</em> <dfn class="local col6 decl" id="26len" title='len' data-type='int' data-ref="26len">len</dfn>, <em>int</em> <dfn class="local col7 decl" id="27elementSize" title='elementSize' data-type='int' data-ref="27elementSize">elementSize</dfn> = <var>1</var>);</td></tr>
+<tr><th id="74">74</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN14StringBIStream7getNextERh" title='StringBIStream::getNext' data-ref="_ZN14StringBIStream7getNextERh">getNext</dfn>(<a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> &amp;<dfn class="local col8 decl" id="28b" title='b' data-type='UKBYTE &amp;' data-ref="28b">b</dfn>);</td></tr>
+<tr><th id="75">75</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN14StringBIStream8peekNextERh" title='StringBIStream::peekNext' data-ref="_ZN14StringBIStream8peekNextERh">peekNext</dfn>(<a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> &amp;<dfn class="local col9 decl" id="29b" title='b' data-type='UKBYTE &amp;' data-ref="29b">b</dfn>);</td></tr>
+<tr><th id="76">76</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN14StringBIStream5ungetEh" title='StringBIStream::unget' data-ref="_ZN14StringBIStream5ungetEh">unget</dfn>(<a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> <dfn class="local col0 decl" id="30b" title='b' data-type='UKBYTE' data-ref="30b">b</dfn>);</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN14StringBIStream8getNextWERt" title='StringBIStream::getNextW' data-ref="_ZN14StringBIStream8getNextWERt">getNextW</dfn>(<a class="typedef" href="#UKWORD" title='UKWORD' data-type='unsigned short' data-ref="UKWORD">UKWORD</a> &amp;<dfn class="local col1 decl" id="31w" title='w' data-type='UKWORD &amp;' data-ref="31w">w</dfn>);</td></tr>
+<tr><th id="79">79</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN14StringBIStream9peekNextWERt" title='StringBIStream::peekNextW' data-ref="_ZN14StringBIStream9peekNextWERt">peekNextW</dfn>(<a class="typedef" href="#UKWORD" title='UKWORD' data-type='unsigned short' data-ref="UKWORD">UKWORD</a> &amp;<dfn class="local col2 decl" id="32w" title='w' data-type='UKWORD &amp;' data-ref="32w">w</dfn>);</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN14StringBIStream9getNextDWERj" title='StringBIStream::getNextDW' data-ref="_ZN14StringBIStream9getNextDWERj">getNextDW</dfn>(<a class="typedef" href="#UKDWORD" title='UKDWORD' data-type='unsigned int' data-ref="UKDWORD">UKDWORD</a> &amp;<dfn class="local col3 decl" id="33dw" title='dw' data-type='UKDWORD &amp;' data-ref="33dw">dw</dfn>);</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN14StringBIStream3eosEv" title='StringBIStream::eos' data-ref="_ZN14StringBIStream3eosEv">eos</dfn>(); <i>//end of stream</i></td></tr>
+<tr><th id="84">84</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN14StringBIStream5closeEv" title='StringBIStream::close' data-ref="_ZN14StringBIStream5closeEv">close</dfn>();</td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN14StringBIStream8bookmarkEv" title='StringBIStream::bookmark' data-ref="_ZN14StringBIStream8bookmarkEv">bookmark</dfn>();</td></tr>
+<tr><th id="87">87</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN14StringBIStream12gotoBookmarkEv" title='StringBIStream::gotoBookmark' data-ref="_ZN14StringBIStream12gotoBookmarkEv">gotoBookmark</dfn>();</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td>	<em>void</em> <dfn class="decl" id="_ZN14StringBIStream6reopenEv" title='StringBIStream::reopen' data-ref="_ZN14StringBIStream6reopenEv">reopen</dfn>();</td></tr>
+<tr><th id="90">90</th><td>	<em>int</em> <dfn class="decl def" id="_ZN14StringBIStream4leftEv" title='StringBIStream::left' data-ref="_ZN14StringBIStream4leftEv">left</dfn>() {</td></tr>
+<tr><th id="91">91</th><td>		<b>return</b> <a class="member" href="#StringBIStream::m_left" title='StringBIStream::m_left' data-ref="StringBIStream::m_left">m_left</a>;</td></tr>
+<tr><th id="92">92</th><td>	}</td></tr>
+<tr><th id="93">93</th><td>};</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><i>//----------------------------------------------------</i></td></tr>
+<tr><th id="96">96</th><td><b>class</b> <dfn class="type def" id="FileBIStream" title='FileBIStream' data-ref="FileBIStream">FileBIStream</dfn> : <b>public</b> <a class="type" href="#ByteInStream" title='ByteInStream' data-ref="ByteInStream">ByteInStream</a></td></tr>
+<tr><th id="97">97</th><td>{</td></tr>
+<tr><th id="98">98</th><td><b>protected</b>:</td></tr>
+<tr><th id="99">99</th><td>	<a class="typedef" href="../../include/x86_64-linux-gnu/bits/types/FILE.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl" id="FileBIStream::m_file" title='FileBIStream::m_file' data-ref="FileBIStream::m_file">m_file</dfn>;</td></tr>
+<tr><th id="100">100</th><td>	<em>int</em> <dfn class="decl" id="FileBIStream::m_bufSize" title='FileBIStream::m_bufSize' data-ref="FileBIStream::m_bufSize">m_bufSize</dfn>;</td></tr>
+<tr><th id="101">101</th><td>	<em>char</em> *<dfn class="decl" id="FileBIStream::m_buf" title='FileBIStream::m_buf' data-ref="FileBIStream::m_buf">m_buf</dfn>;</td></tr>
+<tr><th id="102">102</th><td>	<em>int</em> <dfn class="decl" id="FileBIStream::m_own" title='FileBIStream::m_own' data-ref="FileBIStream::m_own">m_own</dfn>;</td></tr>
+<tr><th id="103">103</th><td>	<em>int</em> <dfn class="decl" id="FileBIStream::m_didBookmark" title='FileBIStream::m_didBookmark' data-ref="FileBIStream::m_didBookmark">m_didBookmark</dfn>;</td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td>	<b>struct</b> {</td></tr>
+<tr><th id="106">106</th><td>		<em>long</em> <dfn class="decl" id="FileBIStream::(anonymous)::pos" title='FileBIStream::(anonymous struct)::pos' data-ref="FileBIStream::(anonymous)::pos">pos</dfn>;</td></tr>
+<tr><th id="107">107</th><td>	} <dfn class="decl" id="FileBIStream::m_bookmark" title='FileBIStream::m_bookmark' data-ref="FileBIStream::m_bookmark">m_bookmark</dfn>;</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td>	<i>//some systems don't have wide char IO functions</i></td></tr>
+<tr><th id="110">110</th><td><i>	//we have to use this variables to implement that</i></td></tr>
+<tr><th id="111">111</th><td>	<a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> <dfn class="decl" id="FileBIStream::m_readByte" title='FileBIStream::m_readByte' data-ref="FileBIStream::m_readByte">m_readByte</dfn>; </td></tr>
+<tr><th id="112">112</th><td>	<em>int</em> <dfn class="decl" id="FileBIStream::m_readAhead" title='FileBIStream::m_readAhead' data-ref="FileBIStream::m_readAhead">m_readAhead</dfn>;</td></tr>
+<tr><th id="113">113</th><td>	<em>int</em> <dfn class="decl" id="FileBIStream::m_lastIsAhead" title='FileBIStream::m_lastIsAhead' data-ref="FileBIStream::m_lastIsAhead">m_lastIsAhead</dfn>;</td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><b>public</b>:</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td>	<dfn class="decl" id="_ZN12FileBIStreamC1EiPc" title='FileBIStream::FileBIStream' data-ref="_ZN12FileBIStreamC1EiPc">FileBIStream</dfn>(<em>int</em> <dfn class="local col4 decl" id="34bufsize" title='bufsize' data-type='int' data-ref="34bufsize">bufsize</dfn> = <var>8192</var>, <em>char</em> *<dfn class="local col5 decl" id="35buf" title='buf' data-type='char *' data-ref="35buf">buf</dfn> = <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="118">118</th><td><i>//	FileBIStream(char *fileName, int bufsize = 8192, void *buf = NULL);</i></td></tr>
+<tr><th id="119">119</th><td></td></tr>
+<tr><th id="120">120</th><td>	<em>int</em> <dfn class="decl" id="_ZN12FileBIStream4openEPKc" title='FileBIStream::open' data-ref="_ZN12FileBIStream4openEPKc">open</dfn>(<em>const</em> <em>char</em> *<dfn class="local col6 decl" id="36fileName" title='fileName' data-type='const char *' data-ref="36fileName">fileName</dfn>);</td></tr>
+<tr><th id="121">121</th><td>	<em>void</em> <dfn class="decl" id="_ZN12FileBIStream6attachEP8_IO_FILE" title='FileBIStream::attach' data-ref="_ZN12FileBIStream6attachEP8_IO_FILE">attach</dfn>(<a class="typedef" href="../../include/x86_64-linux-gnu/bits/types/FILE.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col7 decl" id="37f" title='f' data-type='FILE *' data-ref="37f">f</dfn>);</td></tr>
+<tr><th id="122">122</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12FileBIStream5closeEv" title='FileBIStream::close' data-ref="_ZN12FileBIStream5closeEv">close</dfn>();</td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12FileBIStream7getNextERh" title='FileBIStream::getNext' data-ref="_ZN12FileBIStream7getNextERh">getNext</dfn>(<a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> &amp;<dfn class="local col8 decl" id="38b" title='b' data-type='UKBYTE &amp;' data-ref="38b">b</dfn>);</td></tr>
+<tr><th id="125">125</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12FileBIStream8peekNextERh" title='FileBIStream::peekNext' data-ref="_ZN12FileBIStream8peekNextERh">peekNext</dfn>(<a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> &amp;<dfn class="local col9 decl" id="39b" title='b' data-type='UKBYTE &amp;' data-ref="39b">b</dfn>);</td></tr>
+<tr><th id="126">126</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12FileBIStream5ungetEh" title='FileBIStream::unget' data-ref="_ZN12FileBIStream5ungetEh">unget</dfn>(<a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> <dfn class="local col0 decl" id="40b" title='b' data-type='UKBYTE' data-ref="40b">b</dfn>);</td></tr>
+<tr><th id="127">127</th><td></td></tr>
+<tr><th id="128">128</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12FileBIStream8getNextWERt" title='FileBIStream::getNextW' data-ref="_ZN12FileBIStream8getNextWERt">getNextW</dfn>(<a class="typedef" href="#UKWORD" title='UKWORD' data-type='unsigned short' data-ref="UKWORD">UKWORD</a> &amp;<dfn class="local col1 decl" id="41w" title='w' data-type='UKWORD &amp;' data-ref="41w">w</dfn>);</td></tr>
+<tr><th id="129">129</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12FileBIStream9peekNextWERt" title='FileBIStream::peekNextW' data-ref="_ZN12FileBIStream9peekNextWERt">peekNextW</dfn>(<a class="typedef" href="#UKWORD" title='UKWORD' data-type='unsigned short' data-ref="UKWORD">UKWORD</a> &amp;<dfn class="local col2 decl" id="42w" title='w' data-type='UKWORD &amp;' data-ref="42w">w</dfn>);</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12FileBIStream9getNextDWERj" title='FileBIStream::getNextDW' data-ref="_ZN12FileBIStream9getNextDWERj">getNextDW</dfn>(<a class="typedef" href="#UKDWORD" title='UKDWORD' data-type='unsigned int' data-ref="UKDWORD">UKDWORD</a> &amp;<dfn class="local col3 decl" id="43dw" title='dw' data-type='UKDWORD &amp;' data-ref="43dw">dw</dfn>);</td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12FileBIStream3eosEv" title='FileBIStream::eos' data-ref="_ZN12FileBIStream3eosEv">eos</dfn>(); <i>//end of stream</i></td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12FileBIStream8bookmarkEv" title='FileBIStream::bookmark' data-ref="_ZN12FileBIStream8bookmarkEv">bookmark</dfn>();</td></tr>
+<tr><th id="136">136</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12FileBIStream12gotoBookmarkEv" title='FileBIStream::gotoBookmark' data-ref="_ZN12FileBIStream12gotoBookmarkEv">gotoBookmark</dfn>();</td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td>	<b>virtual</b> <dfn class="virtual decl" id="_ZN12FileBIStreamD1Ev" title='FileBIStream::~FileBIStream' data-ref="_ZN12FileBIStreamD1Ev">~FileBIStream</dfn>();</td></tr>
+<tr><th id="139">139</th><td>};</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td><i>//----------------------------------------------------</i></td></tr>
+<tr><th id="143">143</th><td><b>class</b> <dfn class="type def" id="StringBOStream" title='StringBOStream' data-ref="StringBOStream">StringBOStream</dfn> : <b>public</b> <a class="type" href="#ByteOutStream" title='ByteOutStream' data-ref="ByteOutStream">ByteOutStream</a></td></tr>
+<tr><th id="144">144</th><td>{</td></tr>
+<tr><th id="145">145</th><td><b>protected</b>:</td></tr>
+<tr><th id="146">146</th><td>	<a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> *<dfn class="decl" id="StringBOStream::m_buf" title='StringBOStream::m_buf' data-ref="StringBOStream::m_buf">m_buf</dfn>, *<dfn class="decl" id="StringBOStream::m_current" title='StringBOStream::m_current' data-ref="StringBOStream::m_current">m_current</dfn>;</td></tr>
+<tr><th id="147">147</th><td>	<em>int</em> <dfn class="decl" id="StringBOStream::m_out" title='StringBOStream::m_out' data-ref="StringBOStream::m_out">m_out</dfn>;</td></tr>
+<tr><th id="148">148</th><td>	<em>int</em> <dfn class="decl" id="StringBOStream::m_len" title='StringBOStream::m_len' data-ref="StringBOStream::m_len">m_len</dfn>;</td></tr>
+<tr><th id="149">149</th><td>	<em>int</em> <dfn class="decl" id="StringBOStream::m_bad" title='StringBOStream::m_bad' data-ref="StringBOStream::m_bad">m_bad</dfn>;</td></tr>
+<tr><th id="150">150</th><td><b>public</b>:</td></tr>
+<tr><th id="151">151</th><td>	<dfn class="decl" id="_ZN14StringBOStreamC1EPhi" title='StringBOStream::StringBOStream' data-ref="_ZN14StringBOStreamC1EPhi">StringBOStream</dfn>(<a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> *<dfn class="local col4 decl" id="44buf" title='buf' data-type='UKBYTE *' data-ref="44buf">buf</dfn>, <em>int</em> <dfn class="local col5 decl" id="45len" title='len' data-type='int' data-ref="45len">len</dfn>);</td></tr>
+<tr><th id="152">152</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN14StringBOStream4putBEh" title='StringBOStream::putB' data-ref="_ZN14StringBOStream4putBEh">putB</dfn>(<a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> <dfn class="local col6 decl" id="46b" title='b' data-type='UKBYTE' data-ref="46b">b</dfn>);</td></tr>
+<tr><th id="153">153</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN14StringBOStream4putWEt" title='StringBOStream::putW' data-ref="_ZN14StringBOStream4putWEt">putW</dfn>(<a class="typedef" href="#UKWORD" title='UKWORD' data-type='unsigned short' data-ref="UKWORD">UKWORD</a> <dfn class="local col7 decl" id="47w" title='w' data-type='UKWORD' data-ref="47w">w</dfn>);</td></tr>
+<tr><th id="154">154</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN14StringBOStream4putsEPKci" title='StringBOStream::puts' data-ref="_ZN14StringBOStream4putsEPKci">puts</dfn>(<em>const</em> <em>char</em> *<dfn class="local col8 decl" id="48s" title='s' data-type='const char *' data-ref="48s">s</dfn>, <em>int</em> <dfn class="local col9 decl" id="49size" title='size' data-type='int' data-ref="49size">size</dfn> = -<var>1</var>);</td></tr>
+<tr><th id="155">155</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN14StringBOStream4isOKEv" title='StringBOStream::isOK' data-ref="_ZN14StringBOStream4isOKEv">isOK</dfn>(); <i>// get current stream state</i></td></tr>
+<tr><th id="156">156</th><td></td></tr>
+<tr><th id="157">157</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl def" id="_ZN14StringBOStream5closeEv" title='StringBOStream::close' data-ref="_ZN14StringBOStream5closeEv">close</dfn>()	</td></tr>
+<tr><th id="158">158</th><td>	{</td></tr>
+<tr><th id="159">159</th><td>		<b>return</b> <var>1</var>;</td></tr>
+<tr><th id="160">160</th><td>	};</td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td>	<em>void</em> <dfn class="decl" id="_ZN14StringBOStream6reopenEv" title='StringBOStream::reopen' data-ref="_ZN14StringBOStream6reopenEv">reopen</dfn>();</td></tr>
+<tr><th id="163">163</th><td>	<em>int</em> <dfn class="decl def" id="_ZN14StringBOStream11getOutBytesEv" title='StringBOStream::getOutBytes' data-ref="_ZN14StringBOStream11getOutBytesEv">getOutBytes</dfn>() {</td></tr>
+<tr><th id="164">164</th><td>		<b>return</b> <a class="member" href="#StringBOStream::m_out" title='StringBOStream::m_out' data-ref="StringBOStream::m_out">m_out</a>;</td></tr>
+<tr><th id="165">165</th><td>	}</td></tr>
+<tr><th id="166">166</th><td>};</td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td><i>//----------------------------------------------------</i></td></tr>
+<tr><th id="169">169</th><td><b>class</b> <dfn class="type def" id="FileBOStream" title='FileBOStream' data-ref="FileBOStream">FileBOStream</dfn> : <b>public</b> <a class="type" href="#ByteOutStream" title='ByteOutStream' data-ref="ByteOutStream">ByteOutStream</a></td></tr>
+<tr><th id="170">170</th><td>{</td></tr>
+<tr><th id="171">171</th><td><b>protected</b>:</td></tr>
+<tr><th id="172">172</th><td>	<a class="typedef" href="../../include/x86_64-linux-gnu/bits/types/FILE.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl" id="FileBOStream::m_file" title='FileBOStream::m_file' data-ref="FileBOStream::m_file">m_file</dfn>;</td></tr>
+<tr><th id="173">173</th><td>	<em>int</em> <dfn class="decl" id="FileBOStream::m_bufSize" title='FileBOStream::m_bufSize' data-ref="FileBOStream::m_bufSize">m_bufSize</dfn>;</td></tr>
+<tr><th id="174">174</th><td>	<em>char</em> *<dfn class="decl" id="FileBOStream::m_buf" title='FileBOStream::m_buf' data-ref="FileBOStream::m_buf">m_buf</dfn>;</td></tr>
+<tr><th id="175">175</th><td>	<em>int</em> <dfn class="decl" id="FileBOStream::m_own" title='FileBOStream::m_own' data-ref="FileBOStream::m_own">m_own</dfn>;</td></tr>
+<tr><th id="176">176</th><td>	<em>int</em> <dfn class="decl" id="FileBOStream::m_bad" title='FileBOStream::m_bad' data-ref="FileBOStream::m_bad">m_bad</dfn>;</td></tr>
+<tr><th id="177">177</th><td></td></tr>
+<tr><th id="178">178</th><td><b>public</b>:</td></tr>
+<tr><th id="179">179</th><td>	<dfn class="decl" id="_ZN12FileBOStreamC1EiPc" title='FileBOStream::FileBOStream' data-ref="_ZN12FileBOStreamC1EiPc">FileBOStream</dfn>(<em>int</em> <dfn class="local col0 decl" id="50bufsize" title='bufsize' data-type='int' data-ref="50bufsize">bufsize</dfn> = <var>8192</var>, <em>char</em> *<dfn class="local col1 decl" id="51buf" title='buf' data-type='char *' data-ref="51buf">buf</dfn> = <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="180">180</th><td><i>//	FileBOStream(char *fileName, int bufsize = 8192, void *buf = NULL);</i></td></tr>
+<tr><th id="181">181</th><td></td></tr>
+<tr><th id="182">182</th><td>	<em>int</em> <dfn class="decl" id="_ZN12FileBOStream4openEPKc" title='FileBOStream::open' data-ref="_ZN12FileBOStream4openEPKc">open</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="52fileName" title='fileName' data-type='const char *' data-ref="52fileName">fileName</dfn>);</td></tr>
+<tr><th id="183">183</th><td>	<em>void</em> <dfn class="decl" id="_ZN12FileBOStream6attachEP8_IO_FILE" title='FileBOStream::attach' data-ref="_ZN12FileBOStream6attachEP8_IO_FILE">attach</dfn>(<a class="typedef" href="../../include/x86_64-linux-gnu/bits/types/FILE.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *);</td></tr>
+<tr><th id="184">184</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12FileBOStream5closeEv" title='FileBOStream::close' data-ref="_ZN12FileBOStream5closeEv">close</dfn>();</td></tr>
+<tr><th id="185">185</th><td></td></tr>
+<tr><th id="186">186</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12FileBOStream4putBEh" title='FileBOStream::putB' data-ref="_ZN12FileBOStream4putBEh">putB</dfn>(<a class="typedef" href="vnconv.h.html#UKBYTE" title='UKBYTE' data-type='unsigned char' data-ref="UKBYTE">UKBYTE</a> <dfn class="local col3 decl" id="53b" title='b' data-type='UKBYTE' data-ref="53b">b</dfn>);</td></tr>
+<tr><th id="187">187</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12FileBOStream4putWEt" title='FileBOStream::putW' data-ref="_ZN12FileBOStream4putWEt">putW</dfn>(<a class="typedef" href="#UKWORD" title='UKWORD' data-type='unsigned short' data-ref="UKWORD">UKWORD</a> <dfn class="local col4 decl" id="54w" title='w' data-type='UKWORD' data-ref="54w">w</dfn>);</td></tr>
+<tr><th id="188">188</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12FileBOStream4putsEPKci" title='FileBOStream::puts' data-ref="_ZN12FileBOStream4putsEPKci">puts</dfn>(<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="55s" title='s' data-type='const char *' data-ref="55s">s</dfn>, <em>int</em> <dfn class="local col6 decl" id="56size" title='size' data-type='int' data-ref="56size">size</dfn> = -<var>1</var>);</td></tr>
+<tr><th id="189">189</th><td>	<b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN12FileBOStream4isOKEv" title='FileBOStream::isOK' data-ref="_ZN12FileBOStream4isOKEv">isOK</dfn>(); <i>// get current stream state</i></td></tr>
+<tr><th id="190">190</th><td>	<b>virtual</b> <dfn class="virtual decl" id="_ZN12FileBOStreamD1Ev" title='FileBOStream::~FileBOStream' data-ref="_ZN12FileBOStreamD1Ev">~FileBOStream</dfn>();</td></tr>
+<tr><th id="191">191</th><td>};</td></tr>
+<tr><th id="192">192</th><td></td></tr>
+<tr><th id="193">193</th><td></td></tr>
+<tr><th id="194">194</th><td><u>#<span data-ppcond="2">endif</span></u></td></tr>
+<tr><th id="195">195</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../test/test_ukengine.cc.html'>unikey/test/test_ukengine.cc</a><br/>Generated on <em>2018-Nov-16</em> from project unikey revision <em>0.6.1</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

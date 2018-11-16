@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/byteio.h' l='189' type='int FileBOStream::isOK()'/>
+<doc f='unikey/ukengine/byteio.h' l='189'>// get current stream state</doc>
+<inh f='unikey/ukengine/byteio.h' l='53' c='_ZN13ByteOutStream4isOKEv'/>
+<def f='unikey/ukengine/byteio.cpp' l='525' ll='528' type='int FileBOStream::isOK()'/>
+<doc f='unikey/ukengine/byteio.cpp' l='524'>//----------------------------------------------------</doc>

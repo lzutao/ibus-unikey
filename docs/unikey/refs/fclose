@@ -1,0 +1,15 @@
+<dec f='include/stdio.h' l='199' type='int fclose(FILE * __stream)'/>
+<doc f='include/stdio.h' l='195'>/* Close STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>
+<use f='unikey/ukengine/byteio.cpp' l='301' u='c' c='_ZN12FileBIStream5closeEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='482' u='c' c='_ZN12FileBOStream5closeEv'/>
+<use f='unikey/ukengine/convert.cpp' l='158' u='c' c='VnFileConvert'/>
+<use f='unikey/ukengine/convert.cpp' l='165' u='c' c='VnFileConvert'/>
+<use f='unikey/ukengine/convert.cpp' l='174' u='c' c='VnFileConvert'/>
+<use f='unikey/ukengine/convert.cpp' l='176' u='c' c='VnFileConvert'/>
+<use f='unikey/ukengine/mactab.cpp' l='200' u='c' c='_ZN11CMacroTable12loadFromFileEPKc'/>
+<use f='unikey/ukengine/mactab.cpp' l='257' u='c' c='_ZN11CMacroTable11writeToFileEPKc'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='216' u='c' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='255' u='c' c='_Z18UkStoreKeyOrderMapPKcP12UkKeyMapPairi'/>

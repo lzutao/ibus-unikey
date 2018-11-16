@@ -1,0 +1,4 @@
+<dec f='include/stdio.h' l='139'/>
+<doc f='include/stdio.h' l='138'>/* C89/C99 say they&apos;re macros.  Make them happy.  */</doc>
+<use f='unikey/ukengine/convert.cpp' l='123' u='c'/>
+<use f='unikey/ukengine/convert.cpp' l='173' u='c'/>

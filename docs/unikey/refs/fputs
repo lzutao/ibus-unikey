@@ -1,0 +1,9 @@
+<dec f='include/stdio.h' l='626' type='int fputs(const char *__restrict __s, FILE *__restrict __stream)'/>
+<doc f='include/stdio.h' l='622'>/* Write a string to STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>
+<use f='unikey/ukengine/byteio.cpp' l='516' u='c' c='_ZN12FileBOStream4putsEPKci'/>
+<use f='unikey/ukengine/mactab.cpp' l='254' u='c' c='_ZN11CMacroTable11writeToFileEPKc'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='247' u='c' c='_Z18UkStoreKeyOrderMapPKcP12UkKeyMapPairi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='252' u='c' c='_Z18UkStoreKeyOrderMapPKcP12UkKeyMapPairi'/>

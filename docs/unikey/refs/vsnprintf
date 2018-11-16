@@ -1,0 +1,10 @@
+<dec f='include/stdio.h' l='344' type='int vsnprintf(char *__restrict __s, size_t __maxlen, const char *__restrict __format, __va_list_tag * __arg)'/>
+<use f='include/c++/7/bits/basic_string.h' l='6406' u='a' c='_ZNSt7__cxx119to_stringEi'/>
+<use f='include/c++/7/bits/basic_string.h' l='6411' u='a' c='_ZNSt7__cxx119to_stringEj'/>
+<use f='include/c++/7/bits/basic_string.h' l='6417' u='a' c='_ZNSt7__cxx119to_stringEl'/>
+<use f='include/c++/7/bits/basic_string.h' l='6422' u='a' c='_ZNSt7__cxx119to_stringEm'/>
+<use f='include/c++/7/bits/basic_string.h' l='6428' u='a' c='_ZNSt7__cxx119to_stringEx'/>
+<use f='include/c++/7/bits/basic_string.h' l='6434' u='a' c='_ZNSt7__cxx119to_stringEy'/>
+<use f='include/c++/7/bits/basic_string.h' l='6443' u='a' c='_ZNSt7__cxx119to_stringEf'/>
+<use f='include/c++/7/bits/basic_string.h' l='6452' u='a' c='_ZNSt7__cxx119to_stringEd'/>
+<use f='include/c++/7/bits/basic_string.h' l='6461' u='a' c='_ZNSt7__cxx119to_stringEe'/>

@@ -1,0 +1,18 @@
+<inh f='unikey/ukengine/byteio.h' l='47' c='ByteOutStream'/>
+<def f='unikey/ukengine/byteio.h' l='169' ll='191'/>
+<size>40</size>
+<doc f='unikey/ukengine/byteio.h' l='168'>//----------------------------------------------------</doc>
+<mbr r='FileBOStream::m_file' o='64' t='FILE *'/>
+<mbr r='FileBOStream::m_bufSize' o='128' t='int'/>
+<mbr r='FileBOStream::m_buf' o='192' t='char *'/>
+<mbr r='FileBOStream::m_own' o='256' t='int'/>
+<mbr r='FileBOStream::m_bad' o='288' t='int'/>
+<fun r='_ZN12FileBOStreamC1EiPc'/>
+<fun r='_ZN12FileBOStream4openEPKc'/>
+<fun r='_ZN12FileBOStream6attachEP8_IO_FILE'/>
+<fun r='_ZN12FileBOStream5closeEv'/>
+<fun r='_ZN12FileBOStream4putBEh'/>
+<fun r='_ZN12FileBOStream4putWEt'/>
+<fun r='_ZN12FileBOStream4putsEPKci'/>
+<fun r='_ZN12FileBOStream4isOKEv'/>
+<fun r='_ZN12FileBOStreamD1Ev'/>

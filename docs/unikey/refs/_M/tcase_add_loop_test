@@ -1,0 +1,15 @@
+<dec f='include/check.h' l='226'/>
+<doc f='include/check.h' l='212'>/**
+ * Add a looping test function to a test case
+ *
+ * The test will be called in a for(i = s; i &lt; e; i++) loop with each
+ * iteration being executed in a new context. The loop variable &apos;i&apos; is
+ * available in the test.
+ *
+ * @param tc test case to add test to
+ * @param tf function to add to test case
+ * @param s starting index for value &quot;i&quot; in test
+ * @param e ending index for value &quot;i&quot; in test
+ *
+ * @since 0.9.4
+ */</doc>

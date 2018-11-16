@@ -1,0 +1,2 @@
+<dec f='include/pthread.h' l='839' type='int pthread_mutexattr_getprotocol(const pthread_mutexattr_t *__restrict __attr, int *__restrict __protocol)'/>
+<doc f='include/pthread.h' l='838'>/* Return in *PROTOCOL the mutex protocol attribute in *ATTR.  */</doc>

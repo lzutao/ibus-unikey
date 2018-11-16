@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/pattern.h' l='45' type='void PatternState::init(char * pattern)'/>
+<def f='unikey/ukengine/pattern.cpp' l='37' ll='51' type='void PatternState::init(char * pattern)'/>
+<use f='unikey/ukengine/pattern.cpp' l='77' u='c' c='_ZN11PatternList4initEPPci'/>
+<doc f='unikey/ukengine/pattern.cpp' l='36'>//----------------------------</doc>

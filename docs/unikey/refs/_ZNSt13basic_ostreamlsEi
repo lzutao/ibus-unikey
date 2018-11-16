@@ -1,0 +1,4 @@
+<dec f='include/c++/7/ostream' l='189' type='__ostream_type &amp; std::basic_ostream::operator&lt;&lt;(int __n)'/>
+<def f='include/c++/7/bits/ostream.tcc' l='103' ll='115' type='basic_ostream&lt;_CharT, _Traits&gt; &amp; std::basic_ostream::operator&lt;&lt;(int __n)'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='206' u='c' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='210' u='c' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>

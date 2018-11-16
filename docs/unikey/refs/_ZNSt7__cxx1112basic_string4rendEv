@@ -1,0 +1,6 @@
+<def f='include/c++/7/bits/basic_string.h' l='857' ll='859' type='reverse_iterator std::__cxx11::basic_string::rend()'/>
+<doc f='include/c++/7/bits/basic_string.h' l='852'>/**
+       *  Returns a read/write reverse iterator that points to one before the
+       *  first character in the %string.  Iteration is done in reverse
+       *  element order.
+       */</doc>

@@ -1,0 +1,3 @@
+<dec f='include/x86_64-linux-gnu/c++/7/bits/c++config.h' l='774'/>
+<use f='include/x86_64-linux-gnu/c++/7/bits/c++config.h' l='1711' u='a'/>
+<doc f='include/x86_64-linux-gnu/c++/7/bits/c++config.h' l='773'>/* Define to 1 if you have the `expl&apos; function. */</doc>

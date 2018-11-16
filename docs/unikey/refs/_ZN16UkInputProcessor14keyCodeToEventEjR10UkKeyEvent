@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/inputproc.h' l='91' type='void UkInputProcessor::keyCodeToEvent(unsigned int keyCode, UkKeyEvent &amp; ev)'/>
+<use f='unikey/test/test_inputproc.cc' l='62' u='c' c='_ZL18testKeyCodeToEventi'/>
+<def f='unikey/ukengine/inputproc.cpp' l='341' ll='366' type='void UkInputProcessor::keyCodeToEvent(unsigned int keyCode, UkKeyEvent &amp; ev)'/>
+<doc f='unikey/ukengine/inputproc.cpp' l='340'>//-------------------------------------------</doc>
+<use f='unikey/ukengine/ukengine.cpp' l='1718' u='c' c='_ZN8UkEngine4passEi'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1765' u='c' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>

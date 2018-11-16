@@ -1,0 +1,6 @@
+<def f='include/search.h' l='97' ll='102'/>
+<size>16</size>
+<doc f='include/search.h' l='96'>/* Data type for reentrant functions.  */</doc>
+<mbr r='hsearch_data::table' o='0' t='struct _ENTRY *'/>
+<mbr r='hsearch_data::size' o='64' t='unsigned int'/>
+<mbr r='hsearch_data::filled' o='96' t='unsigned int'/>

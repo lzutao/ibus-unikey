@@ -1,0 +1,6 @@
+<def f='include/c++/7/bits/stl_iterator.h' l='179' ll='181' type='pointer std::reverse_iterator::operator-&gt;() const'/>
+<doc f='include/c++/7/bits/stl_iterator.h' l='174'>/**
+       *  @return  A pointer to the value at @c --current
+       *
+       *  This requires that @c --current is dereferenceable.
+      */</doc>

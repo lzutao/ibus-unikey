@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/byteio.h' l='102' type='int'/>
+<offset>256</offset>
+<use f='unikey/ukengine/byteio.cpp' l='270' u='w' c='_ZN12FileBIStreamC1EiPc'/>
+<use f='unikey/ukengine/byteio.cpp' l='280' u='r' c='_ZN12FileBIStreamD1Ev'/>
+<use f='unikey/ukengine/byteio.cpp' l='291' u='w' c='_ZN12FileBIStream4openEPKc'/>
+<use f='unikey/ukengine/byteio.cpp' l='311' u='w' c='_ZN12FileBIStream6attachEP8_IO_FILE'/>

@@ -1,0 +1,2 @@
+<dec f='include/search.h' l='90' type='int hcreate(size_t __nel)'/>
+<doc f='include/search.h' l='89'>/* Create a new hashing table which will at most contain NEL elements.  */</doc>

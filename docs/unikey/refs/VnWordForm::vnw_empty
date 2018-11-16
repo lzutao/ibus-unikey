@@ -1,0 +1,20 @@
+<dec f='unikey/ukengine/ukengine.h' l='49' type='1'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1123' u='r' c='_ZN8UkEngine14processMapCharER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1137' u='r' c='_ZN8UkEngine14processMapCharER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1288' u='r' c='_ZN8UkEngine15checkEscapeVIQRER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1295' u='r' c='_ZN8UkEngine15checkEscapeVIQRER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1333' u='r' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1401' c='_ZN8UkEngine11appendVowelER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1561' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1708' u='r' c='_ZN8UkEngine14processEscCharER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1927' u='r' c='_ZN8UkEngine20synchKeyStrokeBufferEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1952' u='r' c='_ZN8UkEngine16processBackspaceERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2041' u='r' c='_ZN8UkEngine13prepareBufferEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2088' u='r' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2090' u='r' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2229' u='r' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2284' u='r' c='_ZN8UkEngine15atWordBeginningEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2300' u='r' c='_ZN8UkEngine14processWordEndER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2319' u='r' c='_ZN8UkEngine14processWordEndER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2347' c='_ZN8UkEngine15lastWordIsNonVnEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2385' u='r' c='_ZN8UkEngine17lastWordHasVnMarkEv'/>

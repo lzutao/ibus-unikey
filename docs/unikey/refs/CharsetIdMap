@@ -1,0 +1,36 @@
+<dec f='unikey/ukengine/data.cpp' l='58' type='CharsetNameId []'/>
+<def f='unikey/ukengine/data.cpp' l='61' ll='81' type='CharsetNameId [19]'/>
+<use f='unikey/ukengine/data.cpp' l='83' u='r'/>
+<doc f='unikey/ukengine/data.cpp' l='25'>/*
+Instructions on how to add more charset supports
+
+Each charset enumerates all its characters according to a fixed order.
+To understand this order, copy the TCVN3 charset bellow to some application
+and view it with some TCVN3 font.
+
+Steps to add an 1-byte charset:
+
+- Determine the Id for your charset. See &quot;vnconv.h&quot;. The Id
+  for your charset is equal to the id of the last 1-byte charset PLUS 1.
+  Then define a constant for that Id (e.g. #define MY_NEW_CHARSET 25)
+- In &quot;vnconv.h&quot;: Increase the variable CONV_TOTAL_SINGLE_CHARSETS by 1.
+- Add an entry for your charset to the end of CharsetIdMap (in this file)
+- Add your charset to the end of SingleBytesTable
+- Note that and the end of each charset (after character z) there&apos;s a section
+  for the symbols in western charsets (see TCVN3). Just copy
+  this section for your charset, and set zero for each code point
+  that is occupied by your charset (for representing Vietnamese characters).
+
+Steps to add a 2-byte charset:
+- Determine the Id for your charset. See &quot;vnconv.h&quot;. The Id
+  for your charset is equal to the id of the last 2-byte charset PLUS 1.
+  Then define a constant for that Id (e.g. #define MY_NEW_CHARSET 44)
+- In &quot;vnconv.h&quot;: Increase the variable CONV_TOTAL_DOUBLE_CHARSETS by 1.
+- Add an entry for your charset to the end of CharsetIdMap (in this file)
+- Add your charset to the end of DoubleByteTables
+- Note that and the end of each charset (after character z) there&apos;s a section
+  for the symbols in western charsets. Just copy this section from
+  VNI-WIN charset to your charset
+- Double-byte characters are represented as a word in which the
+  low byte is base character, high byte is tone mark (if present).
+*/</doc>

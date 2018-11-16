@@ -1,0 +1,20 @@
+<dec f='unikey/ukengine/ukengine.h' l='42' type='int'/>
+<offset>16800</offset>
+<use f='unikey/ukengine/ukengine.cpp' l='1328' u='r' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1339' u='r' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1386' u='r' c='_ZN8UkEngine11appendVowelER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1512' u='r' c='_ZN8UkEngine11appendVowelER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1541' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1557' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1567' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1638' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1692' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1698' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1841' u='r' c='_ZN8UkEngine11writeOutputEPhRi'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1876' u='r' c='_ZN8UkEngine11getSeqStepsEii'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1877' u='r' c='_ZN8UkEngine11getSeqStepsEii'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1883' u='r' c='_ZN8UkEngine11getSeqStepsEii'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1904' u='r' c='_ZN8UkEngine11getSeqStepsEii'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2172' u='r' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2186' u='r' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>
+<use f='unikey/ukengine/unikey.cpp' l='76' u='w' c='UnikeySetOutputCharset'/>

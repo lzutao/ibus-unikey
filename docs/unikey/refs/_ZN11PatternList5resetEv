@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/pattern.h' l='57' type='void PatternList::reset()'/>
+<use f='unikey/ukengine/charset.cpp' l='738' u='c' c='_ZN11VIQRCharset10startInputEv'/>
+<use f='unikey/ukengine/charset.cpp' l='847' u='c' c='_ZN11VIQRCharset11startOutputEv'/>
+<use f='unikey/ukengine/charset.cpp' l='887' u='c' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<def f='unikey/ukengine/pattern.cpp' l='96' ll='100' type='void PatternList::reset()'/>
+<doc f='unikey/ukengine/pattern.cpp' l='95'>//-----------------------------------------------------</doc>

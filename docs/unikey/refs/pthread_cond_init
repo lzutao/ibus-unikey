@@ -1,0 +1,4 @@
+<dec f='include/pthread.h' l='969' type='int pthread_cond_init(pthread_cond_t *__restrict __cond, const pthread_condattr_t *__restrict __cond_attr)'/>
+<use f='include/x86_64-linux-gnu/c++/7/bits/gthr-default.h' l='124' c='__gthrw_pthread_cond_init'/>
+<doc f='include/pthread.h' l='967'>/* Initialize condition variable COND using attributes ATTR, or use
+   the default values if later is NULL.  */</doc>

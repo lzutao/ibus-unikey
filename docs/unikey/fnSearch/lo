@@ -1,0 +1,12 @@
+_ZNKSt6locale7combineERKS_|std::locale::combine
+_ZNSt6localeC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE|std::locale::locale
+_ZNKSt6localeneERKS_|std::locale::operator!=
+_ZNKSt6localeclERKNSt7__cxx1112basic_stringIT_T0_T1_EES7_|std::locale::operator()
+_ZNKSt11logical_andclERKT_S2_|std::logical_and::operator()
+_ZNKSt11logical_notclERKT_|std::logical_not::operator()
+_ZNKSt10logical_orclERKT_S2_|std::logical_or::operator()
+_ZSt11lower_boundT_S_RKT0_|std::lower_bound
+_ZN11CMacroTable12loadFromFileEPKc|CMacroTable::loadFromFile
+_ZN11CMacroTable6lookupEPj|CMacroTable::lookup
+_Z10lookupCSeq10VnLexiNameS_S_|lookupCSeq
+_Z10lookupVSeq10VnLexiNameS_S_|lookupVSeq

@@ -1,0 +1,4 @@
+<dec f='include/stdio.h' l='528'/>
+<doc f='include/stdio.h' l='526'>/* The C standard explicitly says this can be a macro,
+   so we always do the optimization for it.  */</doc>
+<use f='include/c++/7/cstdio' l='78' u='w'/>

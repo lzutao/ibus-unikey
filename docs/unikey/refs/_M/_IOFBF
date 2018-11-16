@@ -1,0 +1,4 @@
+<dec f='include/stdio.h' l='87'/>
+<doc f='include/stdio.h' l='86'>/* The possibilities for the third argument to `setvbuf&apos;.  */</doc>
+<use f='unikey/ukengine/byteio.cpp' l='290' u='c'/>
+<use f='unikey/ukengine/byteio.cpp' l='465' u='c'/>

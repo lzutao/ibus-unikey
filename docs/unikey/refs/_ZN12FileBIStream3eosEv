@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/byteio.h' l='133' type='int FileBIStream::eos()'/>
+<doc f='unikey/ukengine/byteio.h' l='133'>//end of stream</doc>
+<inh f='unikey/ukengine/byteio.h' l='42' c='_ZN12ByteInStream3eosEv'/>
+<def f='unikey/ukengine/byteio.cpp' l='317' ll='322' type='int FileBIStream::eos()'/>
+<doc f='unikey/ukengine/byteio.cpp' l='316'>//----------------------------------------------------</doc>

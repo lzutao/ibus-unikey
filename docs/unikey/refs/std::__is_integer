@@ -1,0 +1,21 @@
+<def f='include/c++/7/bits/cpp_type_traits.h' l='127' ll='131'/>
+<def f='include/c++/7/bits/cpp_type_traits.h' l='137' ll='142'/>
+<def f='include/c++/7/bits/cpp_type_traits.h' l='144' ll='149'/>
+<def f='include/c++/7/bits/cpp_type_traits.h' l='151' ll='156'/>
+<def f='include/c++/7/bits/cpp_type_traits.h' l='158' ll='163'/>
+<def f='include/c++/7/bits/cpp_type_traits.h' l='166' ll='171'/>
+<def f='include/c++/7/bits/cpp_type_traits.h' l='175' ll='180'/>
+<def f='include/c++/7/bits/cpp_type_traits.h' l='182' ll='187'/>
+<def f='include/c++/7/bits/cpp_type_traits.h' l='190' ll='195'/>
+<def f='include/c++/7/bits/cpp_type_traits.h' l='197' ll='202'/>
+<def f='include/c++/7/bits/cpp_type_traits.h' l='204' ll='209'/>
+<def f='include/c++/7/bits/cpp_type_traits.h' l='211' ll='216'/>
+<def f='include/c++/7/bits/cpp_type_traits.h' l='218' ll='223'/>
+<def f='include/c++/7/bits/cpp_type_traits.h' l='225' ll='230'/>
+<def f='include/c++/7/bits/cpp_type_traits.h' l='232' ll='237'/>
+<def f='include/c++/7/bits/cpp_type_traits.h' l='239' ll='244'/>
+<size>1</size>
+<doc f='include/c++/7/bits/cpp_type_traits.h' l='133'>// Thirteen specializations (yes there are eleven standard integer
+  // types; &lt;em&gt;long long&lt;/em&gt; and &lt;em&gt;unsigned long long&lt;/em&gt; are
+  // supported as extensions).  Up to four target-specific __int&lt;N&gt;
+  // types are supported as well.</doc>

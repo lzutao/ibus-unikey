@@ -1,0 +1,3 @@
+_ZN12FileBIStream6attachEP8_IO_FILE|FileBIStream::attach
+_ZN12FileBOStream6attachEP8_IO_FILE|FileBOStream::attach
+_ZN8UkEngine15atWordBeginningEv|UkEngine::atWordBeginning

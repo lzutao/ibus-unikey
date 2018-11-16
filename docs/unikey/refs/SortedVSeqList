@@ -1,0 +1,10 @@
+<def f='unikey/ukengine/ukengine.cpp' l='199' type='VSeqPair [70]'/>
+<use f='unikey/ukengine/ukengine.cpp' l='434' u='m' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='435' u='m' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='444' u='r' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='450' u='m' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='450' u='m' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='450' u='m' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='450' u='m' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='450' u='m' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='480' u='r' c='_Z10lookupVSeq10VnLexiNameS_S_'/>

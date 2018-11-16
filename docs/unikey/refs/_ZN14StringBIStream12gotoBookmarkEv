@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/byteio.h' l='87' type='int StringBIStream::gotoBookmark()'/>
+<inh f='unikey/ukengine/byteio.h' l='37' c='_ZN12ByteInStream12gotoBookmarkEv'/>
+<def f='unikey/ukengine/byteio.cpp' l='142' ll='152' type='int StringBIStream::gotoBookmark()'/>
+<doc f='unikey/ukengine/byteio.cpp' l='141'>//------------------------------------------------</doc>

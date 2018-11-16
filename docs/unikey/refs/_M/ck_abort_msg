@@ -1,0 +1,10 @@
+<dec f='include/check.h' l='473'/>
+<doc f='include/check.h' l='464'>/**
+ * Unconditionally fail the test; print a message
+ *
+ * @param ... message to print (in printf format)
+ *
+ * @note Once called, the remaining of the test is aborted
+ *
+ * @since 0.9.6
+ */</doc>

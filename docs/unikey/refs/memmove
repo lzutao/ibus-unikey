@@ -1,0 +1,5 @@
+<dec f='include/string.h' l='46' type='void * memmove(void * __dest, const void * __src, size_t __n)'/>
+<doc f='include/string.h' l='44'>/* Copy N bytes of SRC to DEST, guaranteeing
+   correct behavior for overlapping strings.  */</doc>
+<use f='unikey/ukengine/ukengine.cpp' l='2047' u='c' c='_ZN8UkEngine13prepareBufferEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2056' u='c' c='_ZN8UkEngine13prepareBufferEv'/>

@@ -1,0 +1,7 @@
+<dec f='unikey/ukengine/ukengine.h' l='115' type='bool'/>
+<offset>25088</offset>
+<use f='unikey/ukengine/ukengine.cpp' l='1304' u='w' c='_ZN8UkEngine15checkEscapeVIQRER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1759' u='w' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1819' u='r' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2193' u='w' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2313' u='w' c='_ZN8UkEngine14processWordEndER10UkKeyEvent'/>

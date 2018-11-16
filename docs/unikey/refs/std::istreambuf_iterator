@@ -1,0 +1,14 @@
+<def f='include/c++/7/bits/streambuf_iterator.h' l='50' ll='200'/>
+<mbr r='std::istreambuf_iterator::_M_sbuf' t='streambuf_type *'/>
+<mbr r='std::istreambuf_iterator::_M_c' t='int_type'/>
+<fun r='_ZNSt19istreambuf_iteratorC1Ev'/>
+<fun r='_ZNSt19istreambuf_iteratorC1ERKSt19istreambuf_iteratorIT_T0_E'/>
+<fun r='_ZNSt19istreambuf_iteratorD1Ev'/>
+<fun r='_ZNSt19istreambuf_iteratorC1ERSt13basic_istreamIT_T0_E'/>
+<fun r='_ZNSt19istreambuf_iteratorC1EPSt15basic_streambufIT_T0_E'/>
+<fun r='_ZNKSt19istreambuf_iteratordeEv'/>
+<fun r='_ZNSt19istreambuf_iteratorppEv'/>
+<fun r='_ZNSt19istreambuf_iteratorppEi'/>
+<fun r='_ZNKSt19istreambuf_iterator5equalERKSt19istreambuf_iteratorIT_T0_E'/>
+<fun r='_ZNKSt19istreambuf_iterator6_M_getEv'/>
+<fun r='_ZNKSt19istreambuf_iterator9_M_at_eofEv'/>

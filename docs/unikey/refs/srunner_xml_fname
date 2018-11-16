@@ -1,0 +1,9 @@
+<dec f='include/check.h' l='1139' type='const char * srunner_xml_fname(SRunner * sr)'/>
+<doc f='include/check.h' l='1131'>/**
+ * Retrieves the name of the currently assigned file
+ * for XML output, if any exists.
+ *
+ * @return the name of the XML file, or NULL if none is configured
+ *
+ * @since 0.9.1
+ */</doc>

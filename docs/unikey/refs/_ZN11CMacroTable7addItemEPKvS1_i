@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/mactab.h' l='65' type='int CMacroTable::addItem(const void * key, const void * text, int charset)'/>
+<def f='unikey/ukengine/mactab.cpp' l='262' ll='303' type='int CMacroTable::addItem(const void * key, const void * text, int charset)'/>
+<use f='unikey/ukengine/mactab.cpp' l='322' u='c' c='_ZN11CMacroTable7addItemEPKci'/>
+<doc f='unikey/ukengine/mactab.cpp' l='261'>//---------------------------------------------------------------</doc>

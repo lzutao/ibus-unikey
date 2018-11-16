@@ -1,0 +1,9 @@
+<def f='include/c++/7/ostream' l='555' ll='564' type='basic_ostream&lt;char, _Traits&gt; &amp; std::operator&lt;&lt;(basic_ostream&lt;char, _Traits&gt; &amp; __out, const char * __s)'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='162' u='c' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='162' u='c' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='206' u='c' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='206' u='c' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='211' u='c' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='210' u='c' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='243' u='c' c='_Z18UkStoreKeyOrderMapPKcP12UkKeyMapPairi'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='243' u='c' c='_Z18UkStoreKeyOrderMapPKcP12UkKeyMapPairi'/>

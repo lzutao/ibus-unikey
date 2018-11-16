@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/mactab.h' l='75' type='int'/>
+<offset>1114176</offset>
+<use f='unikey/ukengine/mactab.cpp' l='39' u='w' c='_ZN11CMacroTable4initEv'/>
+<use f='unikey/ukengine/mactab.cpp' l='266' u='r' c='_ZN11CMacroTable7addItemEPKvS1_i'/>
+<use f='unikey/ukengine/mactab.cpp' l='300' u='w' c='_ZN11CMacroTable7addItemEPKvS1_i'/>
+<use f='unikey/ukengine/mactab.cpp' l='328' u='w' c='_ZN11CMacroTable12resetContentEv'/>

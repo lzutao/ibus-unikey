@@ -1,0 +1,15 @@
+<dec f='include/c++/7/debug/debug.h' l='75'/>
+<use f='include/c++/7/bits/basic_string.h' l='1246' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='1418' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='1679' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='1935' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='2019' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='2366' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='2444' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='2525' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='2609' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='2692' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='2774' u='c'/>
+<use f='include/c++/7/bits/basic_string.tcc' l='1160' u='c'/>
+<use f='include/c++/7/bits/basic_string.tcc' l='1420' u='c'/>
+<use f='include/c++/7/bits/basic_string.tcc' l='1435' u='c'/>

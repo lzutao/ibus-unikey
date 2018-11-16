@@ -1,0 +1,52 @@
+<def f='include/c++/7/ostream' l='58' ll='416'/>
+<inh f='include/c++/7/bits/basic_ios.tcc' l='178' c='std::basic_ios'/>
+<def f='include/c++/7/bits/ostream.tcc' l='359'/>
+<inh f='include/c++/7/bits/basic_ios.tcc' l='181' c='std::basic_ios'/>
+<def f='include/c++/7/bits/ostream.tcc' l='382'/>
+<ovr f='include/c++/7/bits/istream.tcc' l='1071' c='std::basic_iostream'/>
+<ovr f='include/c++/7/bits/istream.tcc' l='1093' c='std::basic_iostream'/>
+<size>272</size>
+<fun r='_ZNSt13basic_ostreamC1EPSt15basic_streambufIT_T0_E'/>
+<fun r='_ZNSt13basic_ostreamD1Ev'/>
+<fun r='_ZNSt13basic_ostreamlsEPFRSt13basic_ostreamIT_T0_ES5_E'/>
+<fun r='_ZNSt13basic_ostreamlsEPFRSt9basic_iosIT_T0_ES4_E'/>
+<fun r='_ZNSt13basic_ostreamlsEPFRSt8ios_baseS1_E'/>
+<fun r='_ZNSt13basic_ostreamlsEl'/>
+<fun r='_ZNSt13basic_ostreamlsEm'/>
+<fun r='_ZNSt13basic_ostreamlsEb'/>
+<fun r='_ZNSt13basic_ostreamlsEs'/>
+<fun r='_ZNSt13basic_ostreamlsEt'/>
+<fun r='_ZNSt13basic_ostreamlsEi'/>
+<fun r='_ZNSt13basic_ostreamlsEj'/>
+<fun r='_ZNSt13basic_ostreamlsEx'/>
+<fun r='_ZNSt13basic_ostreamlsEy'/>
+<fun r='_ZNSt13basic_ostreamlsEd'/>
+<fun r='_ZNSt13basic_ostreamlsEf'/>
+<fun r='_ZNSt13basic_ostreamlsEe'/>
+<fun r='_ZNSt13basic_ostreamlsEPKv'/>
+<fun r='_ZNSt13basic_ostreamlsEPSt15basic_streambufIT_T0_E'/>
+<fun r='_ZNSt13basic_ostream3putET_'/>
+<fun r='_ZNSt13basic_ostream8_M_writeEPKT_l'/>
+<fun r='_ZNSt13basic_ostream5writeEPKT_l'/>
+<fun r='_ZNSt13basic_ostream5flushEv'/>
+<fun r='_ZNSt13basic_ostream5tellpEv'/>
+<fun r='_ZNSt13basic_ostream5seekpENT0_8pos_typeE'/>
+<fun r='_ZNSt13basic_ostream5seekpENT0_8off_typeESt12_Ios_Seekdir'/>
+<fun r='_ZNSt13basic_ostreamC1Ev'/>
+<fun r='_ZNSt13basic_ostreamC1ERSt14basic_iostreamIT_T0_E'/>
+<fun r='_ZNSt13basic_ostreamC1ERKSt13basic_ostreamIT_T0_E'/>
+<fun r='_ZNSt13basic_ostreamC1EOSt13basic_ostreamIT_T0_E'/>
+<fun r='_ZNSt13basic_ostreamaSERKSt13basic_ostreamIT_T0_E'/>
+<fun r='_ZNSt13basic_ostreamaSEOSt13basic_ostreamIT_T0_E'/>
+<fun r='_ZNSt13basic_ostream4swapERSt13basic_ostreamIT_T0_E'/>
+<fun r='_ZNSt13basic_ostream9_M_insertET_'/>
+<fun r='_ZNSt13basic_ostream9_M_insertET_'/>
+<fun r='_ZNSt13basic_ostreamlsEs'/>
+<fun r='_ZNSt13basic_ostreamlsEi'/>
+<fun r='_ZNSt13basic_ostreamlsEPSt15basic_streambufIT_T0_E'/>
+<fun r='_ZNSt13basic_ostream3putET_'/>
+<fun r='_ZNSt13basic_ostream5writeEPKT_l'/>
+<fun r='_ZNSt13basic_ostream5flushEv'/>
+<fun r='_ZNSt13basic_ostream5tellpEv'/>
+<fun r='_ZNSt13basic_ostream5seekpENT0_8pos_typeE'/>
+<fun r='_ZNSt13basic_ostream5seekpENT0_8off_typeESt12_Ios_Seekdir'/>

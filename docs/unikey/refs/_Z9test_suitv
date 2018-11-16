@@ -1,0 +1,4 @@
+<def f='unikey/test/test_inputproc.cc' l='68' ll='81' type='Suite * test_suit()'/>
+<use f='unikey/test/test_inputproc.cc' l='88' u='c' c='main'/>
+<def f='unikey/test/test_ukengine.cc' l='12' ll='25' type='Suite * test_suit()'/>
+<use f='unikey/test/test_ukengine.cc' l='32' u='c' c='main'/>

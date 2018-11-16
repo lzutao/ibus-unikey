@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/byteio.h' l='73' type='void StringBIStream::StringBIStream(UKBYTE * data, int len, int elementSize = 1)'/>
+<def f='unikey/ukengine/byteio.cpp' l='6' ll='21' type='void StringBIStream::StringBIStream(UKBYTE * data, int len, int elementSize = 1)'/>
+<doc f='unikey/ukengine/byteio.cpp' l='5'>//------------------------------------------------</doc>
+<use f='unikey/ukengine/convert.cpp' l='98' u='c' c='VnConvert'/>

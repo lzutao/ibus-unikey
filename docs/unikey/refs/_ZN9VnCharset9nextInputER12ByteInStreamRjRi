@@ -1,0 +1,11 @@
+<dec f='unikey/ukengine/charset.h' l='92' type='int VnCharset::nextInput(ByteInStream &amp; is, StdVnChar &amp; stdChar, int &amp; bytesRead)'/>
+<doc f='unikey/ukengine/charset.h' l='91'>//	virtual UKBYTE *nextInput(UKBYTE *input, int inLen, StdVnChar &amp; stdChar, int &amp; bytesRead) = 0;</doc>
+<ovr f='unikey/ukengine/charset.cpp' l='51' c='_ZN17VnInternalCharset9nextInputER12ByteInStreamRjRi'/>
+<ovr f='unikey/ukengine/charset.cpp' l='88' c='_ZN17SingleByteCharset9nextInputER12ByteInStreamRjRi'/>
+<ovr f='unikey/ukengine/charset.cpp' l='150' c='_ZN14UnicodeCharset9nextInputER12ByteInStreamRjRi'/>
+<ovr f='unikey/ukengine/charset.cpp' l='215' c='_ZN18UnicodeCompCharset9nextInputER12ByteInStreamRjRi'/>
+<ovr f='unikey/ukengine/charset.cpp' l='612' c='_ZN17DoubleByteCharset9nextInputER12ByteInStreamRjRi'/>
+<ovr f='unikey/ukengine/charset.cpp' l='742' c='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<ovr f='unikey/ukengine/charset.cpp' l='965' c='_ZN15UTF8VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<ovr f='unikey/ukengine/charset.cpp' l='1208' c='_ZN16WinCP1258Charset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/convert.cpp' l='48' u='c' c='_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream'/>

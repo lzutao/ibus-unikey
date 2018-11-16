@@ -1,0 +1,9 @@
+<dec f='unikey/ukengine/ukengine.h' l='153' type='void UkEngine::synchKeyStrokeBuffer()'/>
+<def f='unikey/ukengine/ukengine.cpp' l='1922' ll='1935' type='void UkEngine::synchKeyStrokeBuffer()'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1962' u='c' c='_ZN8UkEngine16processBackspaceERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1982' u='c' c='_ZN8UkEngine16processBackspaceERiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1991' u='c' c='_ZN8UkEngine16processBackspaceERiPhS0_R12UkOutputType'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='1918'>//----------------------------------------------------------------
+// Called from processBackspace to keep
+// character buffer (m_buffer) and key stroke buffer in synch
+//----------------------------------------------------------------</doc>

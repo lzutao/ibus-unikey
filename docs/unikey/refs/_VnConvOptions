@@ -1,0 +1,8 @@
+<def f='unikey/ukengine/vnconv.h' l='109' ll='116'/>
+<size>24</size>
+<mbr r='_VnConvOptions::viqrMixed' o='0' t='int'/>
+<mbr r='_VnConvOptions::viqrEsc' o='32' t='int'/>
+<mbr r='_VnConvOptions::toUpper' o='64' t='int'/>
+<mbr r='_VnConvOptions::toLower' o='96' t='int'/>
+<mbr r='_VnConvOptions::removeTone' o='128' t='int'/>
+<mbr r='_VnConvOptions::smartViqr' o='160' t='int'/>

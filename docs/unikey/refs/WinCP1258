@@ -1,0 +1,3 @@
+<dec f='unikey/ukengine/charset.h' l='291' type='UKWORD [213]'/>
+<use f='unikey/ukengine/charset.cpp' l='1100' u='r' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>
+<def f='unikey/ukengine/data.cpp' l='343' ll='367' type='UKWORD [213]'/>

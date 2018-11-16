@@ -1,0 +1,11 @@
+<dec f='include/check.h' l='767'/>
+<doc f='include/check.h' l='757'>/**
+ * Check if two pointers are not.
+ *
+ * If the two passed pointers are equal, the test fails.
+ *
+ * @param X pointer
+ * @param Y pointer to compare against X
+ *
+ * @since 0.9.10
+ */</doc>

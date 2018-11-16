@@ -1,0 +1,9 @@
+<inh f='unikey/ukengine/charset.h' l='87' c='VnCharset'/>
+<def f='unikey/ukengine/charset.h' l='109' ll='117'/>
+<size>528</size>
+<doc f='unikey/ukengine/charset.h' l='108'>//--------------------------------------------------</doc>
+<mbr r='SingleByteCharset::m_stdMap' o='64' t='UKWORD [256]'/>
+<mbr r='SingleByteCharset::m_vnChars' o='4160' t='unsigned char *'/>
+<fun r='_ZN17SingleByteCharsetC1EPh'/>
+<fun r='_ZN17SingleByteCharset9nextInputER12ByteInStreamRjRi'/>
+<fun r='_ZN17SingleByteCharset7putCharER13ByteOutStreamjRi'/>

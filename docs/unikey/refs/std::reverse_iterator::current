@@ -1,0 +1,15 @@
+<dec f='include/c++/7/bits/stl_iterator.h' l='109' type='_Iterator'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='126' u='w' c='_ZNSt16reverse_iteratorC1Ev'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='132' u='w' c='_ZNSt16reverse_iteratorC1ET_'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='139' u='w' c='_ZNSt16reverse_iteratorC1ERKSt16reverse_iteratorIT_E'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='148' u='w' c='_ZNSt16reverse_iteratorC1ERKSt16reverse_iteratorIT_E'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='155' u='r' c='_ZNKSt16reverse_iterator4baseEv'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='170' u='r' c='_ZNKSt16reverse_iteratordeEv'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='191' u='w' c='_ZNSt16reverse_iteratorppEv'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='204' u='w' c='_ZNSt16reverse_iteratorppEi'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='216' u='w' c='_ZNSt16reverse_iteratormmEv'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='229' u='w' c='_ZNSt16reverse_iteratormmEi'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='240' u='r' c='_ZNKSt16reverse_iteratorplENSt15iterator_traitsIT_E15difference_typeE'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='251' u='w' c='_ZNSt16reverse_iteratorpLENSt15iterator_traitsIT_E15difference_typeE'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='262' u='r' c='_ZNKSt16reverse_iteratormiENSt15iterator_traitsIT_E15difference_typeE'/>
+<use f='include/c++/7/bits/stl_iterator.h' l='273' u='w' c='_ZNSt16reverse_iteratormIENSt15iterator_traitsIT_E15difference_typeE'/>

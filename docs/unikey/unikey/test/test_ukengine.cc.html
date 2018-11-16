@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>test_ukengine.cc source code [unikey/test/test_ukengine.cc] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="main "/>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'unikey/test/test_ukengine.cc'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>unikey</a>/<a href='./'>test</a>/<a href='test_ukengine.cc.html'>test_ukengine.cc</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="../../include/stdio.h.html">&lt;stdio.h&gt;</a></u></td></tr>
+<tr><th id="2">2</th><td></td></tr>
+<tr><th id="3">3</th><td><u>#include <a href="../../include/check.h.html">&lt;check.h&gt;</a> // for unit testing, apt install check</u></td></tr>
+<tr><th id="4">4</th><td></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="../ukengine/ukengine.h.html">"ukengine.h"</a></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><a class="macro" href="../../include/check.h.html#369" title="static void testKeyCodeToEvent (int _i __attribute__ ((unused))){ tcase_fn_start (&quot;&quot;&quot;testKeyCodeToEvent&quot;, &quot;/home/phaptc/builddir/ibus-unikey/builddir/../test/test_ukengine.cc&quot;, 7);" data-ref="_M/START_TEST">START_TEST</a>(<dfn class="decl def" id="_ZL18testKeyCodeToEventi" title='testKeyCodeToEvent' data-ref="_ZL18testKeyCodeToEventi">testKeyCodeToEvent</dfn>) {</td></tr>
+<tr><th id="8">8</th><td>    <a class="type" href="../ukengine/ukengine.h.html#UkEngine" title='UkEngine' data-ref="UkEngine">UkEngine</a> <a class="ref fake" href="../ukengine/ukengine.h.html#_ZN8UkEngineC1Ev" title='UkEngine::UkEngine' data-ref="_ZN8UkEngineC1Ev"></a><dfn class="local col2 decl" id="212a" title='a' data-type='UkEngine' data-ref="212a">a</dfn>;</td></tr>
+<tr><th id="9">9</th><td>}</td></tr>
+<tr><th id="10">10</th><td><a class="macro" href="../../include/check.h.html#379" title="}" data-ref="_M/END_TEST">END_TEST</a></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><a class="typedef" href="../../include/check.h.html#Suite" title='Suite' data-type='struct Suite' data-ref="Suite">Suite</a> *<dfn class="decl def" id="_Z9test_suitv" title='test_suit' data-ref="_Z9test_suitv">test_suit</dfn>() {</td></tr>
+<tr><th id="13">13</th><td>    <a class="typedef" href="../../include/check.h.html#Suite" title='Suite' data-type='struct Suite' data-ref="Suite">Suite</a> *<dfn class="local col3 decl" id="213s" title='s' data-type='Suite *' data-ref="213s">s</dfn> = <a class="ref" href="../../include/check.h.html#suite_create" title='suite_create' data-ref="suite_create">suite_create</a>(<q>"Unikey Engine"</q>);</td></tr>
+<tr><th id="14">14</th><td>    <i>/* Core test case */</i></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td>    <a class="typedef" href="../../include/check.h.html#TCase" title='TCase' data-type='struct TCase' data-ref="TCase">TCase</a> *<dfn class="local col4 decl" id="214tc_core" title='tc_core' data-type='TCase *' data-ref="214tc_core">tc_core</dfn> = <a class="ref" href="../../include/check.h.html#tcase_create" title='tcase_create' data-ref="tcase_create">tcase_create</a>(<q>"Core"</q>);</td></tr>
+<tr><th id="17">17</th><td>    <a class="ref" href="../../include/check.h.html#tcase_add_checked_fixture" title='tcase_add_checked_fixture' data-ref="tcase_add_checked_fixture">tcase_add_checked_fixture</a>(<a class="local col4 ref" href="#214tc_core" title='tc_core' data-ref="214tc_core">tc_core</a>, <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>, <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td>    <a class="ref" href="../../include/check.h.html#tcase_add_checked_fixture" title='tcase_add_checked_fixture' data-ref="tcase_add_checked_fixture">tcase_add_checked_fixture</a>(<a class="local col4 ref" href="#214tc_core" title='tc_core' data-ref="214tc_core">tc_core</a>, <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>, <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td>    <a class="macro" href="../../include/check.h.html#180" title="_tcase_add_test((tc_core),(testKeyCodeToEvent),&quot;&quot; &quot;testKeyCodeToEvent&quot; &quot;&quot;,(0), 0, 0, 1)" data-ref="_M/tcase_add_test">tcase_add_test</a>(<a class="local col4 ref" href="#214tc_core" title='tc_core' data-ref="214tc_core">tc_core</a>, <a class="ref" href="#7" title='testKeyCodeToEvent' data-ref="_ZL18testKeyCodeToEventi">testKeyCodeToEvent</a>);</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td>    <a class="ref" href="../../include/check.h.html#suite_add_tcase" title='suite_add_tcase' data-ref="suite_add_tcase">suite_add_tcase</a>(<a class="local col3 ref" href="#213s" title='s' data-ref="213s">s</a>, <a class="local col4 ref" href="#214tc_core" title='tc_core' data-ref="214tc_core">tc_core</a>);</td></tr>
+<tr><th id="24">24</th><td>    <b>return</b> <a class="local col3 ref" href="#213s" title='s' data-ref="213s">s</a>;</td></tr>
+<tr><th id="25">25</th><td>}</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><em>int</em> <dfn class="decl def" id="main" title='main' data-ref="main">main</dfn>() {</td></tr>
+<tr><th id="28">28</th><td>    <i>// utf8proc_int32_t codepoint = 0x00E3;</i></td></tr>
+<tr><th id="29">29</th><td><i>    // char dst[4];</i></td></tr>
+<tr><th id="30">30</th><td><i>    // utf8proc_encode_char(codepoint, dst);</i></td></tr>
+<tr><th id="31">31</th><td>    <em>int</em> <dfn class="local col5 decl" id="215number_failed" title='number_failed' data-type='int' data-ref="215number_failed">number_failed</dfn>;</td></tr>
+<tr><th id="32">32</th><td>    <a class="typedef" href="../../include/check.h.html#Suite" title='Suite' data-type='struct Suite' data-ref="Suite">Suite</a> *<dfn class="local col6 decl" id="216s" title='s' data-type='Suite *' data-ref="216s">s</dfn>    = <a class="ref" href="#_Z9test_suitv" title='test_suit' data-ref="_Z9test_suitv">test_suit</a>();</td></tr>
+<tr><th id="33">33</th><td>    <a class="typedef" href="../../include/check.h.html#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> *<dfn class="local col7 decl" id="217sr" title='sr' data-type='SRunner *' data-ref="217sr">sr</dfn> = <a class="ref" href="../../include/check.h.html#srunner_create" title='srunner_create' data-ref="srunner_create">srunner_create</a>(<a class="local col6 ref" href="#216s" title='s' data-ref="216s">s</a>);</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td>    <a class="ref" href="../../include/check.h.html#srunner_run_all" title='srunner_run_all' data-ref="srunner_run_all">srunner_run_all</a>(<a class="local col7 ref" href="#217sr" title='sr' data-ref="217sr">sr</a>, <a class="enum" href="../../include/check.h.html#print_output::CK_NORMAL" title='print_output::CK_NORMAL' data-ref="print_output::CK_NORMAL">CK_NORMAL</a>);</td></tr>
+<tr><th id="36">36</th><td>    <a class="local col5 ref" href="#215number_failed" title='number_failed' data-ref="215number_failed">number_failed</a> = <a class="ref" href="../../include/check.h.html#srunner_ntests_failed" title='srunner_ntests_failed' data-ref="srunner_ntests_failed">srunner_ntests_failed</a>(<a class="local col7 ref" href="#217sr" title='sr' data-ref="217sr">sr</a>);</td></tr>
+<tr><th id="37">37</th><td>    <a class="ref" href="../../include/check.h.html#srunner_free" title='srunner_free' data-ref="srunner_free">srunner_free</a>(<a class="local col7 ref" href="#217sr" title='sr' data-ref="217sr">sr</a>);</td></tr>
+<tr><th id="38">38</th><td>    <b>return</b> <a class="local col5 ref" href="#215number_failed" title='number_failed' data-ref="215number_failed">number_failed</a>;</td></tr>
+<tr><th id="39">39</th><td>}</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2018-Nov-16</em> from project unikey revision <em>0.6.1</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

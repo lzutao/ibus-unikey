@@ -1,0 +1,55 @@
+<dec f='unikey/ukengine/vnlexi.h' l='30' type='13'/>
+<use f='unikey/ukengine/inputproc.cpp' l='79'/>
+<use f='unikey/ukengine/inputproc.cpp' l='79'/>
+<use f='unikey/ukengine/inputproc.cpp' l='79'/>
+<use f='unikey/ukengine/inputproc.cpp' l='79'/>
+<use f='unikey/ukengine/inputproc.cpp' l='192' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='192' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='192' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='192' u='r'/>
+<use f='unikey/ukengine/ukengine.cpp' l='84'/>
+<use f='unikey/ukengine/ukengine.cpp' l='84'/>
+<use f='unikey/ukengine/ukengine.cpp' l='84'/>
+<use f='unikey/ukengine/ukengine.cpp' l='84'/>
+<use f='unikey/ukengine/ukengine.cpp' l='99'/>
+<use f='unikey/ukengine/ukengine.cpp' l='99'/>
+<use f='unikey/ukengine/ukengine.cpp' l='99'/>
+<use f='unikey/ukengine/ukengine.cpp' l='99'/>
+<use f='unikey/ukengine/ukengine.cpp' l='100'/>
+<use f='unikey/ukengine/ukengine.cpp' l='100'/>
+<use f='unikey/ukengine/ukengine.cpp' l='100'/>
+<use f='unikey/ukengine/ukengine.cpp' l='100'/>
+<use f='unikey/ukengine/ukengine.cpp' l='115'/>
+<use f='unikey/ukengine/ukengine.cpp' l='115'/>
+<use f='unikey/ukengine/ukengine.cpp' l='115'/>
+<use f='unikey/ukengine/ukengine.cpp' l='115'/>
+<use f='unikey/ukengine/ukengine.cpp' l='137'/>
+<use f='unikey/ukengine/ukengine.cpp' l='137'/>
+<use f='unikey/ukengine/ukengine.cpp' l='137'/>
+<use f='unikey/ukengine/ukengine.cpp' l='137'/>
+<use f='unikey/ukengine/ukengine.cpp' l='84'/>
+<use f='unikey/ukengine/ukengine.cpp' l='84'/>
+<use f='unikey/ukengine/ukengine.cpp' l='84'/>
+<use f='unikey/ukengine/ukengine.cpp' l='84'/>
+<use f='unikey/ukengine/ukengine.cpp' l='99'/>
+<use f='unikey/ukengine/ukengine.cpp' l='99'/>
+<use f='unikey/ukengine/ukengine.cpp' l='99'/>
+<use f='unikey/ukengine/ukengine.cpp' l='99'/>
+<use f='unikey/ukengine/ukengine.cpp' l='100'/>
+<use f='unikey/ukengine/ukengine.cpp' l='100'/>
+<use f='unikey/ukengine/ukengine.cpp' l='100'/>
+<use f='unikey/ukengine/ukengine.cpp' l='100'/>
+<use f='unikey/ukengine/ukengine.cpp' l='115'/>
+<use f='unikey/ukengine/ukengine.cpp' l='115'/>
+<use f='unikey/ukengine/ukengine.cpp' l='115'/>
+<use f='unikey/ukengine/ukengine.cpp' l='115'/>
+<use f='unikey/ukengine/ukengine.cpp' l='137'/>
+<use f='unikey/ukengine/ukengine.cpp' l='137'/>
+<use f='unikey/ukengine/ukengine.cpp' l='137'/>
+<use f='unikey/ukengine/ukengine.cpp' l='137'/>
+<use f='unikey/ukengine/ukengine.cpp' l='509' u='r' c='_ZN8UkEngine11processRoofER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='555' u='r' c='_ZN8UkEngine11processRoofER10UkKeyEvent'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='66' u='r'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='66' u='r'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='66' u='r'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='66' u='r'/>

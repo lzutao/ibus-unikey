@@ -1,0 +1,13 @@
+<dec f='include/check.h' l='534'/>
+<doc f='include/check.h' l='522'>/**
+ * Check two signed integers to determine if X&lt;=Y
+ *
+ * If not X&lt;=Y, the test fails.
+ *
+ * @param X signed integer
+ * @param Y signed integer to compare against X
+ *
+ * @note If the check fails, the remaining of the test is aborted
+ *
+ * @since 0.9.10
+ */</doc>

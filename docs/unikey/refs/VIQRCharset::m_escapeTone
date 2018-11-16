@@ -1,0 +1,8 @@
+<dec f='unikey/ukengine/charset.h' l='233' type='int'/>
+<offset>4352</offset>
+<use f='unikey/ukengine/charset.cpp' l='845' u='w' c='_ZN11VIQRCharset11startOutputEv'/>
+<use f='unikey/ukengine/charset.cpp' l='880' u='w' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='884' u='w' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='894' u='w' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='912' u='r' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='934' u='w' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>

@@ -1,0 +1,4 @@
+<def f='include/c++/7/bits/basic_string.h' l='6404' ll='6407' type='string std::__cxx11::to_string(int __val)'/>
+<doc f='include/c++/7/bits/basic_string.h' l='6401'>// NB: (v)snprintf vs sprintf.
+
+  // DR 1261.</doc>

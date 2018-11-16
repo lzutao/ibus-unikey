@@ -1,0 +1,27 @@
+<inh f='unikey/ukengine/byteio.h' l='20' c='ByteInStream'/>
+<def f='unikey/ukengine/byteio.h' l='96' ll='139'/>
+<size>64</size>
+<doc f='unikey/ukengine/byteio.h' l='95'>//----------------------------------------------------</doc>
+<mbr r='FileBIStream::m_file' o='64' t='FILE *'/>
+<mbr r='FileBIStream::m_bufSize' o='128' t='int'/>
+<mbr r='FileBIStream::m_buf' o='192' t='char *'/>
+<mbr r='FileBIStream::m_own' o='256' t='int'/>
+<mbr r='FileBIStream::m_didBookmark' o='288' t='int'/>
+<mbr r='FileBIStream::m_bookmark' o='320' t='struct (anonymous struct at /home/phaptc/builddir/ibus-unikey/builddir/../test/../ukengine/byteio.h:105:2)'/>
+<mbr r='FileBIStream::m_readByte' o='384' t='UKBYTE'/>
+<mbr r='FileBIStream::m_readAhead' o='416' t='int'/>
+<mbr r='FileBIStream::m_lastIsAhead' o='448' t='int'/>
+<fun r='_ZN12FileBIStreamC1EiPc'/>
+<fun r='_ZN12FileBIStream4openEPKc'/>
+<fun r='_ZN12FileBIStream6attachEP8_IO_FILE'/>
+<fun r='_ZN12FileBIStream5closeEv'/>
+<fun r='_ZN12FileBIStream7getNextERh'/>
+<fun r='_ZN12FileBIStream8peekNextERh'/>
+<fun r='_ZN12FileBIStream5ungetEh'/>
+<fun r='_ZN12FileBIStream8getNextWERt'/>
+<fun r='_ZN12FileBIStream9peekNextWERt'/>
+<fun r='_ZN12FileBIStream9getNextDWERj'/>
+<fun r='_ZN12FileBIStream3eosEv'/>
+<fun r='_ZN12FileBIStream8bookmarkEv'/>
+<fun r='_ZN12FileBIStream12gotoBookmarkEv'/>
+<fun r='_ZN12FileBIStreamD1Ev'/>

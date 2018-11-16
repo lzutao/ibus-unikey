@@ -1,0 +1,13 @@
+<dec f='include/check.h' l='145' type='int suite_tcase(Suite * s, const char * tcname)'/>
+<doc f='include/check.h' l='133'>/**
+ * Determines whether a given test suite contains a case named after a
+ * given string.
+ *
+ * @param s suite to check
+ * @param tcname test case to look for
+ *
+ * @return 1 iff the given test case is within the given suite;
+ *          0 otherwise
+ *
+ * @since 0.9.9
+ */</doc>

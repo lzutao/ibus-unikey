@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/vnlexi.h' l='49' type='186'/>
+<use f='unikey/ukengine/ukengine.cpp' l='49'/>
+<use f='unikey/ukengine/ukengine.cpp' l='453' u='r' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='467' u='r' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2271' u='r' c='_Z17SetupUnikeyEnginev'/>

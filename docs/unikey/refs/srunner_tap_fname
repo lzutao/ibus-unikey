@@ -1,0 +1,9 @@
+<dec f='include/check.h' l='1179' type='const char * srunner_tap_fname(SRunner * sr)'/>
+<doc f='include/check.h' l='1171'>/**
+ * Retrieves the name of the currently assigned file
+ * for TAP output, if any exists.
+ *
+ * @return the name of the TAP file, or NULL if none is configured
+ *
+ * @since 0.9.12
+ */</doc>

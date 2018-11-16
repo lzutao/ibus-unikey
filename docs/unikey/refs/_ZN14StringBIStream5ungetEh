@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/byteio.h' l='76' type='int StringBIStream::unget(UKBYTE b)'/>
+<inh f='unikey/ukengine/byteio.h' l='25' c='_ZN12ByteInStream5ungetEh'/>
+<def f='unikey/ukengine/byteio.cpp' l='46' ll='55' type='int StringBIStream::unget(UKBYTE b)'/>
+<doc f='unikey/ukengine/byteio.cpp' l='45'>//------------------------------------------------</doc>

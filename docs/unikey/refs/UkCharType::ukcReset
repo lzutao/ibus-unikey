@@ -1,0 +1,3 @@
+<dec f='unikey/ukengine/inputproc.h' l='59' type='3'/>
+<use f='unikey/ukengine/inputproc.cpp' l='214' u='r' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1314' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>

@@ -1,0 +1,3 @@
+<dec f='include/check.h' l='782' type='void _mark_point(const char * file, int line)'/>
+<use f='unikey/test/test_inputproc.cc' l='63' macro='1' u='c'/>
+<doc f='include/check.h' l='781'>/* Non macro version of #mark_point */</doc>

@@ -1,0 +1,11 @@
+<def f='unikey/ukengine/ukengine.cpp' l='49' type='bool [186]'/>
+<use f='unikey/ukengine/ukengine.cpp' l='454' u='w' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='460' u='w' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='461' u='w' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='464' u='w' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='465' u='w' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='468' u='r' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1043' u='r' c='_ZN8UkEngine9processDdER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1346' u='r' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1729' u='r' c='_ZN8UkEngine19processNoSpellCheckER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2388' u='r' c='_ZN8UkEngine17lastWordHasVnMarkEv'/>

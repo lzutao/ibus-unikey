@@ -1,0 +1,2 @@
+<dec f='include/ctype.h' l='111' type='int isdigit(int )'/>
+<use f='unikey/ukengine/charset.cpp' l='402' u='c' c='_ZN17UnicodeRefCharset9nextInputER12ByteInStreamRjRi'/>

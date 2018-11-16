@@ -1,0 +1,11 @@
+<dec f='unikey/ukengine/ukengine.h' l='145' type='int UkEngine::writeOutput(unsigned char * outBuf, int &amp; outSize)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1820' u='c' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<def f='unikey/ukengine/ukengine.cpp' l='1835' ll='1863' type='int UkEngine::writeOutput(unsigned char * outBuf, int &amp; outSize)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1993' u='c' c='_ZN8UkEngine16processBackspaceERiPhS0_R12UkOutputType'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='1828'>//----------------------------------------------------------
+// Returns 0 on success
+//         error code otherwise
+//  outBuf: buffer to write
+//  outSize: [in] size of buffer in bytes
+//           [out] bytes written to buffer
+//----------------------------------------------------------</doc>

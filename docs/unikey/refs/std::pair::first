@@ -1,0 +1,21 @@
+<dec f='include/c++/7/bits/stl_pair.h' l='203' type='_T1'/>
+<use f='include/c++/7/bits/stl_pair.h' l='219' u='w' c='_ZNSt4pairC1Ev'/>
+<use f='include/c++/7/bits/stl_pair.h' l='232' u='w' c='_ZNSt4pairC1Ev'/>
+<use f='include/c++/7/bits/stl_pair.h' l='250' u='w' c='_ZNSt4pairC1ERKT_RKT0_'/>
+<use f='include/c++/7/bits/stl_pair.h' l='259' u='w' c='_ZNSt4pairC1ERKT_RKT0_'/>
+<use f='include/c++/7/bits/stl_pair.h' l='281' u='w' c='_ZNSt4pairC1ERKSt4pairIT_T0_E'/>
+<use f='include/c++/7/bits/stl_pair.h' l='290' u='w' c='_ZNSt4pairC1ERKSt4pairIT_T0_E'/>
+<use f='include/c++/7/bits/stl_pair.h' l='301' u='w' c='_ZNSt4pairC1EOT_RKT0_'/>
+<use f='include/c++/7/bits/stl_pair.h' l='308' u='w' c='_ZNSt4pairC1EOT_RKT0_'/>
+<use f='include/c++/7/bits/stl_pair.h' l='315' u='w' c='_ZNSt4pairC1ERKT_OT_'/>
+<use f='include/c++/7/bits/stl_pair.h' l='322' u='w' c='_ZNSt4pairC1ERKT_OT_'/>
+<use f='include/c++/7/bits/stl_pair.h' l='331' u='w' c='_ZNSt4pairC1EOT_OT0_'/>
+<use f='include/c++/7/bits/stl_pair.h' l='340' u='w' c='_ZNSt4pairC1EOT_OT0_'/>
+<use f='include/c++/7/bits/stl_pair.h' l='350' u='w' c='_ZNSt4pairC1EOSt4pairIT_T0_E'/>
+<use f='include/c++/7/bits/stl_pair.h' l='360' u='w' c='_ZNSt4pairC1EOSt4pairIT_T0_E'/>
+<use f='include/c++/7/bits/stl_pair.h' l='372' u='w' c='_ZNSt4pairaSENSt11conditionalIXsr6__and_ISt18is_copy_assignableIT_ES1_IT0_EEE5valueERKSt4pairIS2_S4_ERKSt20__nonesuch_no_bracesE4typeE'/>
+<use f='include/c++/7/bits/stl_pair.h' l='391' u='w' c='_ZNSt4pairaSENSt11conditionalIXsr6__and_ISt18is_move_assignableIT_ES1_IT0_EEE5valueEOSt4pairIS2_S4_EOSt20__nonesuch_no_bracesE4typeE'/>
+<use f='include/c++/7/bits/stl_pair.h' l='402' u='w' c='_ZNSt4pairaSERKSt4pairIT_T0_E'/>
+<use f='include/c++/7/bits/stl_pair.h' l='413' u='w' c='_ZNSt4pairaSEOSt4pairIT_T0_E'/>
+<use f='include/c++/7/bits/stl_pair.h' l='424' c='_ZNSt4pair4swapERSt4pairIT_T0_E'/>
+<doc f='include/c++/7/bits/stl_pair.h' l='203'>/// @c first is a copy of the first object</doc>

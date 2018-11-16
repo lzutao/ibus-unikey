@@ -1,0 +1,2 @@
+<def f='unikey/ukengine/charset.h' l='176' type='void UnicodeHexCharset::UnicodeHexCharset(UnicodeChar * vnChars)'/>
+<use f='unikey/ukengine/charset.cpp' l='1090' u='c' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>

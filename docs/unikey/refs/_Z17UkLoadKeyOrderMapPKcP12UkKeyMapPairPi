@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/usrkeymap.h' l='34' type='int UkLoadKeyOrderMap(const char * fileName, UkKeyMapPair * pMap, int * pMapCount)'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='135' u='c' c='_Z12UkLoadKeyMapPKcPi'/>
+<def f='unikey/ukengine/usrkeymap.cpp' l='149' ll='221' type='int UkLoadKeyOrderMap(const char * fileName, UkKeyMapPair * pMap, int * pMapCount)'/>
+<doc f='unikey/ukengine/usrkeymap.cpp' l='148'>//------------------------------------------------------------------</doc>

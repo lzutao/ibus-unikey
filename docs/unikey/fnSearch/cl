@@ -1,0 +1,7 @@
+_ZN14StringBOStream5closeEv|StringBOStream::close
+_ZN12FileBIStream5closeEv|FileBIStream::close
+_ZN12FileBOStream5closeEv|FileBOStream::close
+_ZN14StringBIStream5closeEv|StringBIStream::close
+_ZNSt9basic_ios5clearESt12_Ios_Iostate|std::basic_ios::clear
+_ZNSt10error_code5clearEv|std::error_code::clear
+_ZNSt15error_condition5clearEv|std::error_condition::clear

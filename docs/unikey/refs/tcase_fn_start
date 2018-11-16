@@ -1,0 +1,4 @@
+<dec f='include/check.h' l='359' type='void tcase_fn_start(const char * fname, const char * file, int line)'/>
+<use f='unikey/test/test_inputproc.cc' l='16' macro='1' u='c'/>
+<doc f='include/check.h' l='358'>/* Internal function to mark the start of a test function */</doc>
+<use f='unikey/test/test_ukengine.cc' l='7' macro='1' u='c'/>

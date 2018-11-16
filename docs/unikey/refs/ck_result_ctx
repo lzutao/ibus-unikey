@@ -1,0 +1,4 @@
+<def f='include/check.h' l='829' ll='835'/>
+<doc f='include/check.h' l='826'>/**
+ * Enum representing the types of contexts for a test
+ */</doc>

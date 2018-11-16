@@ -1,0 +1,16 @@
+<def f='unikey/ukengine/inputproc.cpp' l='51' type='UkCharType [256]'/>
+<use f='unikey/ukengine/inputproc.cpp' l='214' u='w' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='218' u='w' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='227' u='w' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='229' u='w' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='232' u='w' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='235' u='w' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='236' u='w' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='237' u='w' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='238' u='w' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='239' u='w' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='240' u='w' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='244' u='w' c='_Z25SetupInputClassifierTablev'/>
+<use f='unikey/ukengine/inputproc.cpp' l='350' u='r' c='_ZN16UkInputProcessor14keyCodeToEventEjR10UkKeyEvent'/>
+<use f='unikey/ukengine/inputproc.cpp' l='382' u='r' c='_ZN16UkInputProcessor15keyCodeToSymbolEjR10UkKeyEvent'/>
+<use f='unikey/ukengine/inputproc.cpp' l='391' u='r' c='_ZN16UkInputProcessor11getCharTypeEj'/>

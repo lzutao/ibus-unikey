@@ -1,0 +1,17 @@
+<dec f='unikey/ukengine/ukengine.h' l='84' type='int UkEngine::processTone(UkKeyEvent &amp; ev)'/>
+<doc f='unikey/ukengine/ukengine.h' l='82'>//following methods must be public just to enable the use of pointers to them
+    //they should not be called from outside.</doc>
+<use f='unikey/ukengine/ukengine.cpp' l='281' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='282' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='283' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='284' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='285' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='286' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='281' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='282' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='283' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='284' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='285' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='286' u='a'/>
+<def f='unikey/ukengine/ukengine.cpp' l='971' ll='1029' type='int UkEngine::processTone(UkKeyEvent &amp; ev)'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='970'>//----------------------------------------------------------</doc>

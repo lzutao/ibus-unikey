@@ -1,0 +1,16 @@
+<dec f='include/check.h' l='170' type='TCase * tcase_create(const char * name)'/>
+<use f='unikey/test/test_inputproc.cc' l='72' u='c' c='_Z9test_suitv'/>
+<doc f='include/check.h' l='157'>/**
+ * Create a test case.
+ *
+ * Once created, tests can be added with the tcase_add_test()
+ * function, and the test case assigned to a suite with the
+ * suite_add_tcase() function.
+ *
+ * @param name name of the test case
+ *
+ * @return test case containing no tests
+ *
+ * @since 0.6.0
+ * */</doc>
+<use f='unikey/test/test_ukengine.cc' l='16' u='c' c='_Z9test_suitv'/>

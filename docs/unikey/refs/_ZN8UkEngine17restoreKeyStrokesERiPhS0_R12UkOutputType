@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/ukengine.h' l='80' type='int UkEngine::restoreKeyStrokes(int &amp; backs, unsigned char * outBuf, int &amp; outSize, UkOutputType &amp; outType)'/>
+<def f='unikey/ukengine/ukengine.cpp' l='2200' ll='2250' type='int UkEngine::restoreKeyStrokes(int &amp; backs, unsigned char * outBuf, int &amp; outSize, UkOutputType &amp; outType)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2311' u='c' c='_ZN8UkEngine14processWordEndER10UkKeyEvent'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='2199'>//----------------------------------------------------</doc>
+<use f='unikey/ukengine/unikey.cpp' l='197' u='c' c='UnikeyRestoreKeyStrokes'/>

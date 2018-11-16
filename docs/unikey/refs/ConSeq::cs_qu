@@ -1,0 +1,3 @@
+<dec f='unikey/ukengine/vnlexi.h' l='150' type='22'/>
+<use f='unikey/ukengine/ukengine.cpp' l='356' u='r' c='_Z9isValidCV6ConSeq8VowelSeq'/>
+<use f='unikey/ukengine/ukengine.cpp' l='417' u='r' c='_Z10isValidCVC6ConSeq8VowelSeqS_'/>

@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/inputproc.h' l='109' type='void UkResetKeyMap(int * keyMap)'/>
+<def f='unikey/ukengine/inputproc.cpp' l='316' ll='321' type='void UkResetKeyMap(int * keyMap)'/>
+<use f='unikey/ukengine/inputproc.cpp' l='326' u='c' c='_ZN16UkInputProcessor10useBuiltInEP12UkKeyMapping'/>
+<doc f='unikey/ukengine/inputproc.cpp' l='315'>//-------------------------------------------</doc>

@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/charset.h' l='240' type='void VIQRCharset::startInput()'/>
+<inh f='unikey/ukengine/charset.h' l='89' c='_ZN9VnCharset10startInputEv'/>
+<def f='unikey/ukengine/charset.cpp' l='731' ll='739' type='void VIQRCharset::startInput()'/>
+<use f='unikey/ukengine/charset.cpp' l='954' u='c' c='_ZN15UTF8VIQRCharset10startInputEv'/>
+<use f='unikey/ukengine/charset.cpp' l='973' u='c' c='_ZN15UTF8VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<doc f='unikey/ukengine/charset.cpp' l='730'>//---------------------------------------------------</doc>

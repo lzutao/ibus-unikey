@@ -1,0 +1,7 @@
+<dec f='unikey/ukengine/pattern.h' l='47' type='int PatternState::foundAtNextChar(char ch)'/>
+<doc f='unikey/ukengine/pattern.h' l='47'>//get next input char, returns 1 if pattern is found.</doc>
+<def f='unikey/ukengine/pattern.cpp' l='56' ll='68' type='int PatternState::foundAtNextChar(char ch)'/>
+<use f='unikey/ukengine/pattern.cpp' l='89' u='c' c='_ZN11PatternList15foundAtNextCharEc'/>
+<doc f='unikey/ukengine/pattern.cpp' l='53'>//-----------------------------------------------------
+//get next input char, returns 1 if pattern is found.
+//-----------------------------------------------------</doc>

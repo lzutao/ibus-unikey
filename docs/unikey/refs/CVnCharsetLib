@@ -1,0 +1,21 @@
+<def f='unikey/ukengine/charset.h' l='263' ll='284'/>
+<size>216</size>
+<doc f='unikey/ukengine/charset.h' l='262'>//--------------------------------------------------</doc>
+<mbr r='CVnCharsetLib::m_sgCharsets' o='0' t='SingleByteCharset *[6]'/>
+<mbr r='CVnCharsetLib::m_dbCharsets' o='384' t='DoubleByteCharset *[4]'/>
+<mbr r='CVnCharsetLib::m_pUniCharset' o='640' t='UnicodeCharset *'/>
+<mbr r='CVnCharsetLib::m_pUniCompCharset' o='704' t='UnicodeCompCharset *'/>
+<mbr r='CVnCharsetLib::m_pUniUTF8' o='768' t='UnicodeUTF8Charset *'/>
+<mbr r='CVnCharsetLib::m_pUniRef' o='832' t='UnicodeRefCharset *'/>
+<mbr r='CVnCharsetLib::m_pUniHex' o='896' t='UnicodeHexCharset *'/>
+<mbr r='CVnCharsetLib::m_pVIQRCharObj' o='960' t='VIQRCharset *'/>
+<mbr r='CVnCharsetLib::m_pUVIQRCharObj' o='1024' t='UTF8VIQRCharset *'/>
+<mbr r='CVnCharsetLib::m_pWinCP1258' o='1088' t='WinCP1258Charset *'/>
+<mbr r='CVnCharsetLib::m_pUniCString' o='1152' t='UnicodeCStringCharset *'/>
+<mbr r='CVnCharsetLib::m_pVnIntCharset' o='1216' t='VnInternalCharset *'/>
+<mbr r='CVnCharsetLib::m_VIQREscPatterns' o='1280' t='PatternList'/>
+<mbr r='CVnCharsetLib::m_VIQROutEscPatterns' o='1408' t='PatternList'/>
+<mbr r='CVnCharsetLib::m_options' o='1536' t='VnConvOptions'/>
+<fun r='_ZN13CVnCharsetLibC1Ev'/>
+<fun r='_ZN13CVnCharsetLibD1Ev'/>
+<fun r='_ZN13CVnCharsetLib12getVnCharsetEi'/>

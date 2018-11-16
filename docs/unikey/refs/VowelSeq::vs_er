@@ -1,0 +1,52 @@
+<dec f='unikey/ukengine/vnlexi.h' l='58' type='4'/>
+<use f='unikey/ukengine/ukengine.cpp' l='86'/>
+<use f='unikey/ukengine/ukengine.cpp' l='86'/>
+<use f='unikey/ukengine/ukengine.cpp' l='87'/>
+<use f='unikey/ukengine/ukengine.cpp' l='87'/>
+<use f='unikey/ukengine/ukengine.cpp' l='87'/>
+<use f='unikey/ukengine/ukengine.cpp' l='87'/>
+<use f='unikey/ukengine/ukengine.cpp' l='103'/>
+<use f='unikey/ukengine/ukengine.cpp' l='103'/>
+<use f='unikey/ukengine/ukengine.cpp' l='103'/>
+<use f='unikey/ukengine/ukengine.cpp' l='103'/>
+<use f='unikey/ukengine/ukengine.cpp' l='86'/>
+<use f='unikey/ukengine/ukengine.cpp' l='86'/>
+<use f='unikey/ukengine/ukengine.cpp' l='87'/>
+<use f='unikey/ukengine/ukengine.cpp' l='87'/>
+<use f='unikey/ukengine/ukengine.cpp' l='87'/>
+<use f='unikey/ukengine/ukengine.cpp' l='87'/>
+<use f='unikey/ukengine/ukengine.cpp' l='103'/>
+<use f='unikey/ukengine/ukengine.cpp' l='103'/>
+<use f='unikey/ukengine/ukengine.cpp' l='103'/>
+<use f='unikey/ukengine/ukengine.cpp' l='103'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='222'/>
+<use f='unikey/ukengine/ukengine.cpp' l='222'/>
+<use f='unikey/ukengine/ukengine.cpp' l='222'/>
+<use f='unikey/ukengine/ukengine.cpp' l='222'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='221'/>
+<use f='unikey/ukengine/ukengine.cpp' l='222'/>
+<use f='unikey/ukengine/ukengine.cpp' l='222'/>
+<use f='unikey/ukengine/ukengine.cpp' l='222'/>
+<use f='unikey/ukengine/ukengine.cpp' l='222'/>
+<use f='unikey/ukengine/ukengine.cpp' l='361' u='r' c='_Z9isValidCV6ConSeq8VowelSeq'/>
+<use f='unikey/ukengine/ukengine.cpp' l='361' u='r' c='_Z9isValidCV6ConSeq8VowelSeq'/>
+<use f='unikey/ukengine/ukengine.cpp' l='421' u='r' c='_Z10isValidCVC6ConSeq8VowelSeqS_'/>

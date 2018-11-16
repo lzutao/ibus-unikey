@@ -1,0 +1,4 @@
+<def f='unikey/ukengine/byteio.h' l='163' ll='165' type='int StringBOStream::getOutBytes()'/>
+<use f='unikey/ukengine/convert.cpp' l='102' u='c' c='VnConvert'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1861' u='c' c='_ZN8UkEngine11writeOutputEPhRi'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1903' u='c' c='_ZN8UkEngine11getSeqStepsEii'/>

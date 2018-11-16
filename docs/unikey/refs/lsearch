@@ -1,0 +1,3 @@
+<dec f='include/search.h' l='169' type='void * lsearch(const void * __key, void * __base, size_t * __nmemb, size_t __size, __compar_fn_t __compar)'/>
+<doc f='include/search.h' l='167'>/* Perform linear search for KEY by comparing by COMPAR function in
+   array [BASE,BASE+NMEMB*SIZE) and insert entry if not found.  */</doc>

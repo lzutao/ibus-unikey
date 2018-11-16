@@ -1,0 +1,15 @@
+<def f='unikey/ukengine/inputproc.h' l='76' ll='107'/>
+<size>1028</size>
+<doc f='unikey/ukengine/inputproc.h' l='75'>///////////////////////////////////////////</doc>
+<fun r='_ZN16UkInputProcessor4initEv'/>
+<fun r='_ZN16UkInputProcessor5getIMEv'/>
+<fun r='_ZN16UkInputProcessor14keyCodeToEventEjR10UkKeyEvent'/>
+<fun r='_ZN16UkInputProcessor15keyCodeToSymbolEjR10UkKeyEvent'/>
+<fun r='_ZN16UkInputProcessor5setIME13UkInputMethod'/>
+<fun r='_ZN16UkInputProcessor5setIMEPi'/>
+<fun r='_ZN16UkInputProcessor9getKeyMapEPi'/>
+<fun r='_ZN16UkInputProcessor11getCharTypeEj'/>
+<smbr r='UkInputProcessor::m_classInit' t='bool'/>
+<mbr r='UkInputProcessor::m_im' o='0' t='UkInputMethod'/>
+<mbr r='UkInputProcessor::m_keyMap' o='32' t='int [256]'/>
+<fun r='_ZN16UkInputProcessor10useBuiltInEP12UkKeyMapping'/>

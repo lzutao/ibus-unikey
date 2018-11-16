@@ -1,0 +1,21 @@
+<def f='include/c++/7/bits/exception_ptr.h' l='79' ll='155'/>
+<size>8</size>
+<doc f='include/c++/7/bits/exception_ptr.h' l='75'>/**
+     *  @brief An opaque pointer to an arbitrary exception.
+     *  @ingroup exceptions
+     */</doc>
+<mbr r='std::__exception_ptr::exception_ptr::_M_exception_object' o='0' t='void *'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptrC1EPv'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptr9_M_addrefEv'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptr10_M_releaseEv'/>
+<fun r='_ZNKSt15__exception_ptr13exception_ptr6_M_getEv'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptrC1Ev'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptrC1ERKS0_'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptrC1EDn'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptrC1EOS0_'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptraSERKS0_'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptraSEOS0_'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptrD1Ev'/>
+<fun r='_ZNSt15__exception_ptr13exception_ptr4swapERS0_'/>
+<fun r='_ZNKSt15__exception_ptr13exception_ptrcvbEv'/>
+<fun r='_ZNKSt15__exception_ptr13exception_ptr20__cxa_exception_typeEv'/>

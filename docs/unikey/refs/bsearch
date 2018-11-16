@@ -1,0 +1,15 @@
+<dec f='include/stdlib.h' l='817' type='void * bsearch(const void * __key, const void * __base, size_t __nmemb, size_t __size, __compar_fn_t __compar)'/>
+<use f='unikey/ukengine/charset.cpp' l='159' u='c' c='_ZN14UnicodeCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='228' u='c' c='_ZN18UnicodeCompCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='238' u='c' c='_ZN18UnicodeCompCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='339' u='c' c='_ZN18UnicodeUTF8Charset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='437' u='c' c='_ZN17UnicodeRefCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='553' u='c' c='_ZN21UnicodeCStringCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='632' u='c' c='_ZN17DoubleByteCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='1228' u='c' c='_ZN16WinCP1258Charset9nextInputER12ByteInStreamRjRi'/>
+<doc f='include/stdlib.h' l='815'>/* Do a binary search for KEY in BASE, which consists of NMEMB elements
+   of SIZE bytes each, using COMPAR to perform the comparisons.  */</doc>
+<use f='unikey/ukengine/mactab.cpp' l='108' u='c' c='_ZN11CMacroTable6lookupEPj'/>
+<use f='unikey/ukengine/ukengine.cpp' l='389' u='c' c='_Z9isValidVC8VowelSeq6ConSeq'/>
+<use f='unikey/ukengine/ukengine.cpp' l='480' u='c' c='_Z10lookupVSeq10VnLexiNameS_S_'/>
+<use f='unikey/ukengine/ukengine.cpp' l='494' u='c' c='_Z10lookupCSeq10VnLexiNameS_S_'/>

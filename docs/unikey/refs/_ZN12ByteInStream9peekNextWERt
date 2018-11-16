@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/byteio.h' l='28' type='int ByteInStream::peekNextW(UKWORD &amp; w)'/>
+<ovr f='unikey/ukengine/byteio.cpp' l='98' c='_ZN14StringBIStream9peekNextWERt'/>
+<ovr f='unikey/ukengine/byteio.cpp' l='398' c='_ZN12FileBIStream9peekNextWERt'/>
+<use f='unikey/ukengine/charset.cpp' l='234' u='c' c='_ZN18UnicodeCompCharset9nextInputER12ByteInStreamRjRi'/>

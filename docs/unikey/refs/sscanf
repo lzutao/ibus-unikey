@@ -1,0 +1,3 @@
+<dec f='include/stdio.h' l='385' type='int sscanf(const char *__restrict __s, const char *__restrict __format)'/>
+<doc f='include/stdio.h' l='384'>/* Read formatted input from S.  */</doc>
+<use f='unikey/ukengine/mactab.cpp' l='148' u='c' c='_ZN11CMacroTable10readHeaderEP8_IO_FILERi'/>

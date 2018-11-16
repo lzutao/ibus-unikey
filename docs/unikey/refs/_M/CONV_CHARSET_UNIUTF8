@@ -1,0 +1,7 @@
+<dec f='unikey/ukengine/vnconv.h' l='42'/>
+<use f='unikey/ukengine/charset.cpp' l='1077' u='c'/>
+<use f='unikey/ukengine/data.cpp' l='70' u='c'/>
+<use f='unikey/ukengine/data.cpp' l='71' u='c'/>
+<use f='unikey/ukengine/mactab.cpp' l='196' u='c'/>
+<use f='unikey/ukengine/mactab.cpp' l='236' u='c'/>
+<use f='unikey/ukengine/mactab.cpp' l='245' u='c'/>

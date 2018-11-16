@@ -1,0 +1,8 @@
+<dec f='unikey/ukengine/byteio.h' l='124' type='int FileBIStream::getNext(UKBYTE &amp; b)'/>
+<inh f='unikey/ukengine/byteio.h' l='23' c='_ZN12ByteInStream7getNextERh'/>
+<def f='unikey/ukengine/byteio.cpp' l='325' ll='337' type='int FileBIStream::getNext(UKBYTE &amp; b)'/>
+<use f='unikey/ukengine/byteio.cpp' l='373' u='c' c='_ZN12FileBIStream8getNextWERt'/>
+<use f='unikey/ukengine/byteio.cpp' l='374' u='c' c='_ZN12FileBIStream8getNextWERt'/>
+<use f='unikey/ukengine/byteio.cpp' l='401' u='c' c='_ZN12FileBIStream9peekNextWERt'/>
+<use f='unikey/ukengine/byteio.cpp' l='402' u='c' c='_ZN12FileBIStream9peekNextWERt'/>
+<doc f='unikey/ukengine/byteio.cpp' l='324'>//----------------------------------------------------</doc>

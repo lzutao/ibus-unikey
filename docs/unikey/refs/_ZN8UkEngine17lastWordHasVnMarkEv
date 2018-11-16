@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/ukengine.h' l='154' type='bool UkEngine::lastWordHasVnMark()'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2203' u='c' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>
+<def f='unikey/ukengine/ukengine.cpp' l='2383' ll='2397' type='bool UkEngine::lastWordHasVnMark()'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='2380'>//---------------------------------------------------------------------------
+// Test if last word has a Vietnamese mark, that is tones, decorators
+//---------------------------------------------------------------------------</doc>

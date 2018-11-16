@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/unikey.h' l='83' type='void UnikeySetCapsState(int shiftPressed, int CapsLockOn)'/>
+<def f='unikey/ukengine/unikey.cpp' l='66' ll='71' type='void UnikeySetCapsState(int shiftPressed, int CapsLockOn)'/>
+<doc f='unikey/ukengine/unikey.cpp' l='65'>//--------------------------------------------</doc>
+<doc f='unikey/ukengine/unikey.h' l='82'>// call this before UnikeyFilter for correctly processing some TELEX shortcuts</doc>

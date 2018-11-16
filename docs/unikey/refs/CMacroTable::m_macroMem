@@ -1,0 +1,10 @@
+<dec f='unikey/ukengine/mactab.h' l='72' type='char [131072]'/>
+<offset>65536</offset>
+<use f='unikey/ukengine/mactab.cpp' l='107' u='r' c='_ZN11CMacroTable6lookupEPj'/>
+<use f='unikey/ukengine/mactab.cpp' l='110' u='r' c='_ZN11CMacroTable6lookupEPj'/>
+<use f='unikey/ukengine/mactab.cpp' l='201' u='r' c='_ZN11CMacroTable12loadFromFileEPKc'/>
+<use f='unikey/ukengine/mactab.cpp' l='233' u='r' c='_ZN11CMacroTable11writeToFileEPKc'/>
+<use f='unikey/ukengine/mactab.cpp' l='242' u='r' c='_ZN11CMacroTable11writeToFileEPKc'/>
+<use f='unikey/ukengine/mactab.cpp' l='267' u='r' c='_ZN11CMacroTable7addItemEPKvS1_i'/>
+<use f='unikey/ukengine/mactab.cpp' l='337' u='r' c='_ZN11CMacroTable6getKeyEi'/>
+<use f='unikey/ukengine/mactab.cpp' l='345' u='r' c='_ZN11CMacroTable7getTextEi'/>

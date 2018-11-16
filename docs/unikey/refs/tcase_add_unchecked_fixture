@@ -1,0 +1,26 @@
+<dec f='include/check.h' l='304' type='void tcase_add_unchecked_fixture(TCase * tc, SFun setup, SFun teardown)'/>
+<doc f='include/check.h' l='279'>/**
+ * Add unchecked fixture setup/teardown functions to a test case
+ *
+ * Unchecked fixture functions are run at the start and end of the
+ * test case, and not before and after unit tests. Further,
+ * unchecked fixture functions are not run in a separate address space,
+ * like test functions, and so must not exit or signal (e.g.,
+ * segfault).
+ *
+ * Also, when run in CK_NOFORK mode, unchecked fixture functions may
+ * lead to different unit test behavior if unit tests change data
+ * setup by the fixture functions.
+ *
+ * Note that if a setup function fails, the remaining setup functions
+ * will be omitted, as will the test case and the teardown functions.
+ * If a teardown function fails the remaining teardown functins will be
+ * omitted.
+ *
+ * @param tc test case to add unchecked fixture setup/teardown to
+ * @param setup function to add to be executed before the test case;
+ *               if NULL no setup function is added
+ * @param teardown function to add to be executed after the test case;
+ *               if NULL no teardown function is added
+ * @since 0.8.0
+ */</doc>

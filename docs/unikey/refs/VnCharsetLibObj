@@ -1,0 +1,25 @@
+<dec f='unikey/ukengine/charset.h' l='294' type='CVnCharsetLib'/>
+<def f='unikey/ukengine/charset.cpp' l='40' type='CVnCharsetLib'/>
+<use f='unikey/ukengine/charset.cpp' l='737' u='m' c='_ZN11VIQRCharset10startInputEv'/>
+<use f='unikey/ukengine/charset.cpp' l='738' u='m' c='_ZN11VIQRCharset10startInputEv'/>
+<use f='unikey/ukengine/charset.cpp' l='752' u='m' c='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='753' u='m' c='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='777' u='m' c='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='847' u='m' c='_ZN11VIQRCharset11startOutputEv'/>
+<use f='unikey/ukengine/charset.cpp' l='864' u='m' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='887' u='m' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='904' u='m' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='910' u='m' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='920' u='m' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='925' u='m' c='_ZN11VIQRCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='1145' u='m' c='_Z16VnConvSetOptionsP14_VnConvOptions'/>
+<use f='unikey/ukengine/charset.cpp' l='1151' u='m' c='_Z16VnConvGetOptionsP14_VnConvOptions'/>
+<use f='unikey/ukengine/convert.cpp' l='50' u='m' c='_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream'/>
+<use f='unikey/ukengine/convert.cpp' l='52' u='m' c='_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream'/>
+<use f='unikey/ukengine/convert.cpp' l='54' u='m' c='_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream'/>
+<use f='unikey/ukengine/convert.cpp' l='92' u='m' c='VnConvert'/>
+<use f='unikey/ukengine/convert.cpp' l='93' u='m' c='VnConvert'/>
+<use f='unikey/ukengine/convert.cpp' l='213' u='m' c='_Z19vnFileStreamConvertiiP8_IO_FILES0_'/>
+<use f='unikey/ukengine/convert.cpp' l='214' u='m' c='_Z19vnFileStreamConvertiiP8_IO_FILES0_'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1841' u='m' c='_ZN8UkEngine11writeOutputEPhRi'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1883' u='m' c='_ZN8UkEngine11getSeqStepsEii'/>

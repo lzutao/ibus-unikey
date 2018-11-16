@@ -1,0 +1,6 @@
+<def f='include/x86_64-linux-gnu/bits/libio.h' l='160' ll='177'/>
+<size>24</size>
+<doc f='include/x86_64-linux-gnu/bits/libio.h' l='158'>/* A streammarker remembers a position in a buffer. */</doc>
+<mbr r='_IO_marker::_next' o='0' t='struct _IO_marker *'/>
+<mbr r='_IO_marker::_sbuf' o='64' t='struct _IO_FILE *'/>
+<mbr r='_IO_marker::_pos' o='128' t='int'/>

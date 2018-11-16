@@ -1,0 +1,14 @@
+<dec f='unikey/ukengine/byteio.h' l='62' type='int'/>
+<use f='unikey/ukengine/byteio.h' l='91' u='r' c='_ZN14StringBIStream4leftEv'/>
+<offset>288</offset>
+<use f='unikey/ukengine/byteio.cpp' l='9' u='w' c='_ZN14StringBIStreamC1EPhii'/>
+<use f='unikey/ukengine/byteio.cpp' l='39' u='w' c='_ZN14StringBIStream7getNextERh'/>
+<use f='unikey/ukengine/byteio.cpp' l='40' u='r' c='_ZN14StringBIStream7getNextERh'/>
+<use f='unikey/ukengine/byteio.cpp' l='52' u='w' c='_ZN14StringBIStream5ungetEh'/>
+<use f='unikey/ukengine/byteio.cpp' l='66' u='w' c='_ZN14StringBIStream8getNextWERt'/>
+<use f='unikey/ukengine/byteio.cpp' l='67' u='r' c='_ZN14StringBIStream8getNextWERt'/>
+<use f='unikey/ukengine/byteio.cpp' l='82' u='w' c='_ZN14StringBIStream9getNextDWERj'/>
+<use f='unikey/ukengine/byteio.cpp' l='83' u='r' c='_ZN14StringBIStream9getNextDWERj'/>
+<use f='unikey/ukengine/byteio.cpp' l='121' u='w' c='_ZN14StringBIStream6reopenEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='136' u='r' c='_ZN14StringBIStream8bookmarkEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='149' u='w' c='_ZN14StringBIStream12gotoBookmarkEv'/>

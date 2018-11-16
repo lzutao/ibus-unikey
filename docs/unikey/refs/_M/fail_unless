@@ -1,0 +1,6 @@
+<dec f='include/check.h' l='386'/>
+<doc f='include/check.h' l='381'>/*
+ * Fail the test case unless expr is false
+ *
+ * This call is deprecated.
+ */</doc>

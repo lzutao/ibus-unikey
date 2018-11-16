@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/charset.h' l='187' type='int UnicodeCStringCharset::nextInput(ByteInStream &amp; is, StdVnChar &amp; stdChar, int &amp; bytesRead)'/>
+<inh f='unikey/ukengine/charset.cpp' l='150' c='_ZN14UnicodeCharset9nextInputER12ByteInStreamRjRi'/>
+<def f='unikey/ukengine/charset.cpp' l='526' ll='558' type='int UnicodeCStringCharset::nextInput(ByteInStream &amp; is, StdVnChar &amp; stdChar, int &amp; bytesRead)'/>
+<doc f='unikey/ukengine/charset.cpp' l='525'>//----------------------------------------</doc>

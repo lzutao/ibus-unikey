@@ -1,0 +1,4 @@
+<def f='include/c++/7/bits/predefined_ops.h' l='130' ll='144'/>
+<mbr r='__gnu_cxx::__ops::_Iter_comp_iter::_M_comp' t='_Compare'/>
+<fun r='__gnu_cxx::__ops::_Iter_comp_iter::_Iter_comp_iter{_Compare}'/>
+<fun r='__gnu_cxx::__ops::_Iter_comp_iter::operator()'/>

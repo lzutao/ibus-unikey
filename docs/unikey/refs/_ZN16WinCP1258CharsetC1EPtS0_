@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/charset.h' l='201' type='void WinCP1258Charset::WinCP1258Charset(UKWORD * compositeChars, UKWORD * precomposedChars)'/>
+<use f='unikey/ukengine/charset.cpp' l='1100' u='c' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>
+<def f='unikey/ukengine/charset.cpp' l='1169' ll='1201' type='void WinCP1258Charset::WinCP1258Charset(UKWORD * compositeChars, UKWORD * precomposedChars)'/>
+<doc f='unikey/ukengine/charset.cpp' l='1166'>/////////////////////////////////////////////
+// Class WinCP1258Charset
+/////////////////////////////////////////////</doc>

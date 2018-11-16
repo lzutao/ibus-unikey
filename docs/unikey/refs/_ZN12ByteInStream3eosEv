@@ -1,0 +1,7 @@
+<dec f='unikey/ukengine/byteio.h' l='42' type='int ByteInStream::eos()'/>
+<doc f='unikey/ukengine/byteio.h' l='42'>//end of stream</doc>
+<ovr f='unikey/ukengine/byteio.cpp' l='24' c='_ZN14StringBIStream3eosEv'/>
+<ovr f='unikey/ukengine/byteio.cpp' l='317' c='_ZN12FileBIStream3eosEv'/>
+<use f='unikey/ukengine/charset.cpp' l='397' u='c' c='_ZN17UnicodeRefCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='772' u='c' c='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/convert.cpp' l='46' u='c' c='_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream'/>

@@ -1,0 +1,10 @@
+<dec f='unikey/ukengine/keycons.h' l='27'/>
+<doc f='unikey/ukengine/keycons.h' l='26'>// macro table constants</doc>
+<use f='unikey/ukengine/mactab.cpp' l='226' u='c'/>
+<use f='unikey/ukengine/mactab.cpp' l='276' u='c'/>
+<use f='unikey/ukengine/mactab.cpp' l='311' u='c'/>
+<use f='unikey/ukengine/mactab.cpp' l='318' u='c'/>
+<use f='unikey/ukengine/mactab.cpp' l='319' u='c'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2077' u='c'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2087' u='c'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2088' u='c'/>

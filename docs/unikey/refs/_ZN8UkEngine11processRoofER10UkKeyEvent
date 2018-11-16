@@ -1,0 +1,11 @@
+<dec f='unikey/ukengine/ukengine.h' l='85' type='int UkEngine::processRoof(UkKeyEvent &amp; ev)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='271' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='272' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='273' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='274' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='271' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='272' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='273' u='a'/>
+<use f='unikey/ukengine/ukengine.cpp' l='274' u='a'/>
+<def f='unikey/ukengine/ukengine.cpp' l='501' ll='640' type='int UkEngine::processRoof(UkKeyEvent &amp; ev)'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='500'>//------------------------------------------------------------------</doc>

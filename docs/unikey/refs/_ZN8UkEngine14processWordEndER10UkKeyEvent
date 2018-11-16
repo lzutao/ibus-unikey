@@ -1,0 +1,8 @@
+<dec f='unikey/ukengine/ukengine.h' l='152' type='int UkEngine::processWordEnd(UkKeyEvent &amp; ev)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1325' u='c' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<def f='unikey/ukengine/ukengine.cpp' l='2292' ll='2333' type='int UkEngine::processWordEnd(UkKeyEvent &amp; ev)'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='2287'>//--------------------------------------------------
+// Check for macro first, if there&apos;s a match, expand macro. If not:
+// Spell-check, if is valid Vietnamese, return normally, if not:
+// restore key strokes if auto-restore is enabled
+//--------------------------------------------------</doc>

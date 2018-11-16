@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/charset.h' l='221' type='int UnicodeCompCharset::elementSize()'/>
+<inh f='unikey/ukengine/charset.cpp' l='45' c='_ZN9VnCharset11elementSizeEv'/>
+<def f='unikey/ukengine/charset.cpp' l='274' ll='277' type='int UnicodeCompCharset::elementSize()'/>
+<doc f='unikey/ukengine/charset.cpp' l='273'>//-------------------------------------------</doc>

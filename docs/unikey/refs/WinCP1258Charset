@@ -1,0 +1,11 @@
+<inh f='unikey/ukengine/charset.h' l='87' c='VnCharset'/>
+<def f='unikey/ukengine/charset.h' l='193' ll='204'/>
+<size>2240</size>
+<doc f='unikey/ukengine/charset.h' l='192'>//--------------------------------------------------</doc>
+<mbr r='WinCP1258Charset::m_stdMap' o='64' t='UKWORD [256]'/>
+<mbr r='WinCP1258Charset::m_vnChars' o='4160' t='UKDWORD [426]'/>
+<mbr r='WinCP1258Charset::m_toDoubleChar' o='17792' t='UKWORD *'/>
+<mbr r='WinCP1258Charset::m_totalChars' o='17856' t='int'/>
+<fun r='_ZN16WinCP1258CharsetC1EPtS0_'/>
+<fun r='_ZN16WinCP1258Charset9nextInputER12ByteInStreamRjRi'/>
+<fun r='_ZN16WinCP1258Charset7putCharER13ByteOutStreamjRi'/>

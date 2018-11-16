@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/ukengine.h' l='141' type='int UkEngine::processHookWithUO(UkKeyEvent &amp; ev)'/>
+<def f='unikey/ukengine/ukengine.cpp' l='645' ll='796' type='int UkEngine::processHookWithUO(UkKeyEvent &amp; ev)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='821' u='c' c='_ZN8UkEngine11processHookER10UkKeyEvent'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='642'>//------------------------------------------------------------------
+// can only be called from processHook
+//------------------------------------------------------------------</doc>

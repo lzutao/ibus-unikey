@@ -1,0 +1,12 @@
+<inh f='include/c++/7/bits/stl_iterator_base_types.h' l='118' c='std::iterator'/>
+<def f='include/c++/7/bits/streambuf_iterator.h' l='216' ll='287'/>
+<mbr r='std::ostreambuf_iterator::_M_sbuf' t='streambuf_type *'/>
+<mbr r='std::ostreambuf_iterator::_M_failed' t='bool'/>
+<fun r='_ZNSt19ostreambuf_iteratorC1ERSt13basic_ostreamIT_T0_E'/>
+<fun r='_ZNSt19ostreambuf_iteratorC1EPSt15basic_streambufIT_T0_E'/>
+<fun r='_ZNSt19ostreambuf_iteratoraSET_'/>
+<fun r='_ZNSt19ostreambuf_iteratordeEv'/>
+<fun r='_ZNSt19ostreambuf_iteratorppEi'/>
+<fun r='_ZNSt19ostreambuf_iteratorppEv'/>
+<fun r='_ZNKSt19ostreambuf_iterator6failedEv'/>
+<fun r='_ZNSt19ostreambuf_iterator6_M_putEPKT_l'/>

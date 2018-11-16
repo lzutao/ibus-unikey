@@ -1,0 +1,4 @@
+<dec f='include/check.h' l='803' type='2'/>
+<use f='unikey/test/test_inputproc.cc' l='91' u='r' c='main'/>
+<doc f='include/check.h' l='803'>/**&lt; All failed tests */</doc>
+<use f='unikey/test/test_ukengine.cc' l='35' u='r' c='main'/>

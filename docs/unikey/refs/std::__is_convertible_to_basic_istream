@@ -1,0 +1,2 @@
+<def f='include/c++/7/istream' l='936' ll='943'/>
+<smbr r='std::__is_convertible_to_basic_istream::value' t='const bool'/>

@@ -1,0 +1,5 @@
+_ZN11VIQRCharsetC1EPj|VIQRCharset::VIQRCharset
+_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi|VIQRCharset::nextInput
+_ZN11VIQRCharset7putCharER13ByteOutStreamjRi|VIQRCharset::putChar
+_ZN11VIQRCharset10startInputEv|VIQRCharset::startInput
+_ZN11VIQRCharset11startOutputEv|VIQRCharset::startOutput

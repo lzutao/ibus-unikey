@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/byteio.h' l='67' type='int'/>
+<offset>192</offset>
+<use f='unikey/ukengine/byteio.cpp' l='137' u='w' c='_ZN14StringBIStream8bookmarkEv'/>
+<use f='unikey/ukengine/byteio.cpp' l='150' u='r' c='_ZN14StringBIStream12gotoBookmarkEv'/>

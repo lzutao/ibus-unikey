@@ -1,0 +1,6 @@
+<dec f='include/stdio.h' l='294' type='int setvbuf(FILE *__restrict __stream, char *__restrict __buf, int __modes, size_t __n)'/>
+<doc f='include/stdio.h' l='291'>/* Make STREAM use buffering mode MODE.
+   If BUF is not NULL, use N bytes of it for buffering;
+   else allocate an internal buffer N bytes long.  */</doc>
+<use f='unikey/ukengine/byteio.cpp' l='290' u='c' c='_ZN12FileBIStream4openEPKc'/>
+<use f='unikey/ukengine/byteio.cpp' l='465' u='c' c='_ZN12FileBOStream4openEPKc'/>

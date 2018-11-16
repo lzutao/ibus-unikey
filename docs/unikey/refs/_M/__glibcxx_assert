@@ -1,0 +1,9 @@
+<dec f='include/x86_64-linux-gnu/c++/7/bits/c++config.h' l='487'/>
+<use f='include/c++/7/bits/stl_iterator_base_funcs.h' l='151' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='1029' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='1048' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='1104' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='1115' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='1126' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='1137' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='1838' u='c'/>

@@ -1,0 +1,21 @@
+<dec f='unikey/ukengine/inputproc.h' l='64' type='UkCharType'/>
+<use f='unikey/test/test_inputproc.cc' l='99' u='r' c='_Z11print_eventR10UkKeyEvent'/>
+<use f='unikey/test/test_inputproc.cc' l='104' u='r' c='_Z13compare_eventRK10UkKeyEventS1_'/>
+<use f='unikey/test/test_inputproc.cc' l='104' u='r' c='_Z13compare_eventRK10UkKeyEventS1_'/>
+<offset>32</offset>
+<use f='unikey/ukengine/inputproc.cpp' l='347' u='w' c='_ZN16UkInputProcessor14keyCodeToEventEjR10UkKeyEvent'/>
+<use f='unikey/ukengine/inputproc.cpp' l='350' u='w' c='_ZN16UkInputProcessor14keyCodeToEventEjR10UkKeyEvent'/>
+<use f='unikey/ukengine/inputproc.cpp' l='358' u='w' c='_ZN16UkInputProcessor14keyCodeToEventEjR10UkKeyEvent'/>
+<use f='unikey/ukengine/inputproc.cpp' l='379' u='w' c='_ZN16UkInputProcessor15keyCodeToSymbolEjR10UkKeyEvent'/>
+<use f='unikey/ukengine/inputproc.cpp' l='382' u='w' c='_ZN16UkInputProcessor15keyCodeToSymbolEjR10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1177' u='w' c='_ZN8UkEngine14processMapCharER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1206' u='w' c='_ZN8UkEngine13processTelexWER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1228' u='w' c='_ZN8UkEngine13processTelexWER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1288' u='r' c='_ZN8UkEngine15checkEscapeVIQRER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1295' u='r' c='_ZN8UkEngine15checkEscapeVIQRER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1313' u='r' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1333' u='r' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1786' u='r' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1805' u='w' c='_ZN8UkEngine7processEjRiPhS0_R12UkOutputType'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1930' u='r' c='_ZN8UkEngine20synchKeyStrokeBufferEv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2214' u='r' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>

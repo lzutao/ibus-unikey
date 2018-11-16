@@ -1,0 +1,4 @@
+<def f='include/c++/7/bits/stl_function.h' l='974' ll='987'/>
+<fun r='_ZNSt13mem_fun_ref_tC1EMT0_FT_vE'/>
+<fun r='_ZNKSt13mem_fun_ref_tclERT0_'/>
+<mbr r='std::mem_fun_ref_t::_M_f' t='_Ret (_Tp::*)()'/>

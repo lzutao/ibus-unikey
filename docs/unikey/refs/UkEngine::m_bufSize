@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/ukengine.h' l='102' type='int'/>
+<offset>192</offset>
+<use f='unikey/ukengine/ukengine.cpp' l='2020' u='w' c='_ZN8UkEngineC1Ev'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2038' u='r' c='_ZN8UkEngine13prepareBufferEv'/>

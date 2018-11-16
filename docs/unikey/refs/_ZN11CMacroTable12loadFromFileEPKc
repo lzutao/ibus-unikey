@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/mactab.h' l='56' type='int CMacroTable::loadFromFile(const char * fname)'/>
+<def f='unikey/ukengine/mactab.cpp' l='167' ll='208' type='int CMacroTable::loadFromFile(const char * fname)'/>
+<doc f='unikey/ukengine/mactab.cpp' l='166'>//---------------------------------------------------------------</doc>
+<use f='unikey/ukengine/unikey.cpp' l='179' u='c' c='UnikeyLoadMacroTable'/>

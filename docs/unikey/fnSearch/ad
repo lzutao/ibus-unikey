@@ -1,0 +1,3 @@
+_ZSt9addressofRT_|std::addressof
+_ZSt7advanceRT_T0_|std::advance
+_ZN11CMacroTable7addItemEPKvS1_i|CMacroTable::addItem

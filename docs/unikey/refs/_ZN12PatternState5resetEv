@@ -1,0 +1,8 @@
+<dec f='unikey/ukengine/pattern.h' l='46' type='void PatternState::reset()'/>
+<def f='unikey/ukengine/pattern.cpp' l='30' ll='34' type='void PatternState::reset()'/>
+<use f='unikey/ukengine/pattern.cpp' l='99' u='c' c='_ZN11PatternList5resetEv'/>
+<doc f='unikey/ukengine/pattern.cpp' l='25'>//////////////////////////////////////////////////
+// Pattern matching (based on KPM algorithm)
+//////////////////////////////////////////////////
+
+//----------------------------</doc>

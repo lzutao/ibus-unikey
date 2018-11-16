@@ -1,0 +1,3 @@
+_ZN12FileBIStream3eosEv|FileBIStream::eos
+_ZN14StringBIStream3eosEv|StringBIStream::eos
+_ZNKSt9basic_ios3eofEv|std::basic_ios::eof

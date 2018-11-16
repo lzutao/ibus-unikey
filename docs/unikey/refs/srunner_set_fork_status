@@ -1,0 +1,21 @@
+<dec f='include/check.h' l='1220' type='void srunner_set_fork_status(SRunner * sr, enum fork_status fstat)'/>
+<doc f='include/check.h' l='1200'>/**
+ * Set the fork status for a given suite runner.
+ *
+ * The default fork status is CK_FORK_GETENV, which will look
+ * for the CK_FORK environment variable, which can be set to
+ * &quot;yes&quot; or &quot;no&quot;. If the environment variable is not present,
+ * CK_FORK will be used if fork() is available on the system,
+ * otherwise CK_NOFORK is used.
+ *
+ * If set to CK_FORK or CK_NOFORK, the environment variable
+ * if defined is ignored.
+ *
+ * If Check is compiled without support for fork(), attempting
+ * to set the status to CK_FORK is ignored.
+ *
+ * @param sr suite runner to assign the fork status to
+ * @param fstat fork status to assign
+ *
+ * @since 0.8.0
+ */</doc>

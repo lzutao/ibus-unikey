@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/mactab.h' l='69' type='void CMacroTable::writeHeader(FILE * f)'/>
+<def f='unikey/ukengine/mactab.cpp' l='158' ll='165' type='void CMacroTable::writeHeader(FILE * f)'/>
+<use f='unikey/ukengine/mactab.cpp' l='229' u='c' c='_ZN11CMacroTable11writeToFileEPKc'/>
+<doc f='unikey/ukengine/mactab.cpp' l='157'>//----------------------------------------------------------------</doc>

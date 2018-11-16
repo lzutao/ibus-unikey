@@ -1,0 +1,1284 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>check.h source code [include/check.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/check.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>include</a>/<a href='check.h.html'>check.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*-*- mode:C; -*- */</i></td></tr>
+<tr><th id="2">2</th><td><i>/*</i></td></tr>
+<tr><th id="3">3</th><td><i> * Check: a unit test framework for C</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (C) 2001, 2002, Arien Malec</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * This library is free software; you can redistribute it and/or</i></td></tr>
+<tr><th id="7">7</th><td><i> * modify it under the terms of the GNU Lesser General Public</i></td></tr>
+<tr><th id="8">8</th><td><i> * License as published by the Free Software Foundation; either</i></td></tr>
+<tr><th id="9">9</th><td><i> * version 2.1 of the License, or (at your option) any later version.</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="12">12</th><td><i> * but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="13">13</th><td><i> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</i></td></tr>
+<tr><th id="14">14</th><td><i> * Lesser General Public License for more details.</i></td></tr>
+<tr><th id="15">15</th><td><i> *</i></td></tr>
+<tr><th id="16">16</th><td><i> * You should have received a copy of the GNU Lesser General Public</i></td></tr>
+<tr><th id="17">17</th><td><i> * License along with this library; if not, write to the</i></td></tr>
+<tr><th id="18">18</th><td><i> * Free Software Foundation, Inc., 59 Temple Place - Suite 330,</i></td></tr>
+<tr><th id="19">19</th><td><i> * Boston, MA 02111-1307, USA.</i></td></tr>
+<tr><th id="20">20</th><td><i> */</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="22">ifndef</span> <span class="macro" data-ref="_M/CHECK_H">CHECK_H</span></u></td></tr>
+<tr><th id="23">23</th><td><u>#define <dfn class="macro" id="_M/CHECK_H" data-ref="_M/CHECK_H">CHECK_H</dfn></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#include &lt;stddef.h&gt;</u></td></tr>
+<tr><th id="26">26</th><td><u>#include <a href="string.h.html">&lt;string.h&gt;</a></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#include <a href="check_stdint.h.html">&lt;check_stdint.h&gt;</a></u></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i>/*</i></td></tr>
+<tr><th id="31">31</th><td><i>   Macros and functions starting with _ (underscore) are internal and</i></td></tr>
+<tr><th id="32">32</th><td><i>   may change without notice. You have been warned!.</i></td></tr>
+<tr><th id="33">33</th><td><i>*/</i></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><u>#<span data-ppcond="36">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="37">37</th><td><u>#define <dfn class="macro" id="_M/CK_CPPSTART" data-ref="_M/CK_CPPSTART">CK_CPPSTART</dfn> extern "C" {</u></td></tr>
+<tr><th id="38">38</th><td><u>#define <dfn class="macro" id="_M/CK_CPPEND" data-ref="_M/CK_CPPEND">CK_CPPEND</dfn> }</u></td></tr>
+<tr><th id="39">39</th><td><a class="macro" href="#37" title="extern &quot;C&quot; {" data-ref="_M/CK_CPPSTART">CK_CPPSTART</a></td></tr>
+<tr><th id="40">40</th><td><u>#<span data-ppcond="36">endif</span></u></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#<span data-ppcond="42">if</span> defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/__GNUC_MINOR__">__GNUC_MINOR__</span>)</u></td></tr>
+<tr><th id="43">43</th><td><u>#define <dfn class="macro" id="_M/GCC_VERSION_AT_LEAST" data-ref="_M/GCC_VERSION_AT_LEAST">GCC_VERSION_AT_LEAST</dfn>(major, minor) \</u></td></tr>
+<tr><th id="44">44</th><td><u>((__GNUC__ &gt; (major)) || \</u></td></tr>
+<tr><th id="45">45</th><td><u> (__GNUC__ == (major) &amp;&amp; __GNUC_MINOR__ &gt;= (minor)))</u></td></tr>
+<tr><th id="46">46</th><td><u>#<span data-ppcond="42">else</span></u></td></tr>
+<tr><th id="47">47</th><td><u>#define GCC_VERSION_AT_LEAST(major, minor) 0</u></td></tr>
+<tr><th id="48">48</th><td><u>#<span data-ppcond="42">endif</span></u></td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><u>#<span data-ppcond="50">if</span> <a class="macro" href="#43" title="((4 &gt; (2)) || (4 == (2) &amp;&amp; 2 &gt;= (95)))" data-ref="_M/GCC_VERSION_AT_LEAST">GCC_VERSION_AT_LEAST</a>(2,95)</u></td></tr>
+<tr><th id="51">51</th><td><u>#define <dfn class="macro" id="_M/CK_ATTRIBUTE_UNUSED" data-ref="_M/CK_ATTRIBUTE_UNUSED">CK_ATTRIBUTE_UNUSED</dfn> __attribute__ ((unused))</u></td></tr>
+<tr><th id="52">52</th><td><u>#<span data-ppcond="50">else</span></u></td></tr>
+<tr><th id="53">53</th><td><u>#define CK_ATTRIBUTE_UNUSED</u></td></tr>
+<tr><th id="54">54</th><td><u>#<span data-ppcond="50">endif</span> /* GCC 2.95 */</u></td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><u>#<span data-ppcond="56">if</span> <a class="macro" href="#43" title="((4 &gt; (2)) || (4 == (2) &amp;&amp; 2 &gt;= (5)))" data-ref="_M/GCC_VERSION_AT_LEAST">GCC_VERSION_AT_LEAST</a>(2,5)</u></td></tr>
+<tr><th id="57">57</th><td><u>#define <dfn class="macro" id="_M/CK_ATTRIBUTE_NORETURN" data-ref="_M/CK_ATTRIBUTE_NORETURN">CK_ATTRIBUTE_NORETURN</dfn> __attribute__ ((noreturn))</u></td></tr>
+<tr><th id="58">58</th><td><u>#<span data-ppcond="56">else</span></u></td></tr>
+<tr><th id="59">59</th><td><u>#define CK_ATTRIBUTE_NORETURN</u></td></tr>
+<tr><th id="60">60</th><td><u>#<span data-ppcond="56">endif</span> /* GCC 2.5 */</u></td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td><u>#include <a href="x86_64-linux-gnu/sys/types.h.html">&lt;sys/types.h&gt;</a></u></td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><i>/*</i></td></tr>
+<tr><th id="65">65</th><td><i> * Used to create the linker script for hiding lib-local symbols. Shall</i></td></tr>
+<tr><th id="66">66</th><td><i> * be put directly in front of the exported symbol.</i></td></tr>
+<tr><th id="67">67</th><td><i> */</i></td></tr>
+<tr><th id="68">68</th><td><u>#define <dfn class="macro" id="_M/CK_EXPORT" data-ref="_M/CK_EXPORT">CK_EXPORT</dfn></u></td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><i>/*</i></td></tr>
+<tr><th id="71">71</th><td><i> * Used for MSVC to create the export attribute</i></td></tr>
+<tr><th id="72">72</th><td><i> * CK_DLL_EXP is defined during the compilation of the library</i></td></tr>
+<tr><th id="73">73</th><td><i> * on the command line.</i></td></tr>
+<tr><th id="74">74</th><td><i> */</i></td></tr>
+<tr><th id="75">75</th><td><u>#<span data-ppcond="75">ifndef</span> <span class="macro" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</span></u></td></tr>
+<tr><th id="76">76</th><td><u>#define <dfn class="macro" id="_M/CK_DLL_EXP" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</dfn></u></td></tr>
+<tr><th id="77">77</th><td><u>#<span data-ppcond="75">endif</span></u></td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><i>/* check version numbers */</i></td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td><u>#define <dfn class="macro" id="_M/CHECK_MAJOR_VERSION" data-ref="_M/CHECK_MAJOR_VERSION">CHECK_MAJOR_VERSION</dfn> (0)</u></td></tr>
+<tr><th id="82">82</th><td><u>#define <dfn class="macro" id="_M/CHECK_MINOR_VERSION" data-ref="_M/CHECK_MINOR_VERSION">CHECK_MINOR_VERSION</dfn> (10)</u></td></tr>
+<tr><th id="83">83</th><td><u>#define <dfn class="macro" id="_M/CHECK_MICRO_VERSION" data-ref="_M/CHECK_MICRO_VERSION">CHECK_MICRO_VERSION</dfn> (0)</u></td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <b>extern</b> <em>int</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="check_major_version" title='check_major_version' data-ref="check_major_version">check_major_version</dfn>;</td></tr>
+<tr><th id="86">86</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <b>extern</b> <em>int</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="check_minor_version" title='check_minor_version' data-ref="check_minor_version">check_minor_version</dfn>;</td></tr>
+<tr><th id="87">87</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <b>extern</b> <em>int</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="check_micro_version" title='check_micro_version' data-ref="check_micro_version">check_micro_version</dfn>;</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><u>#<span data-ppcond="89">ifndef</span> <span class="macro" data-ref="_M/NULL">NULL</span></u></td></tr>
+<tr><th id="90">90</th><td><u>#define NULL ((void*)0)</u></td></tr>
+<tr><th id="91">91</th><td><u>#<span data-ppcond="89">endif</span></u></td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="94">94</th><td><i class="doc"> * Type for a test case</i></td></tr>
+<tr><th id="95">95</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="96">96</th><td><i class="doc"> * A TCase represents a test case.  Create with tcase_create, free</i></td></tr>
+<tr><th id="97">97</th><td><i class="doc"> * with tcase_free.  For the moment, test cases can only be run</i></td></tr>
+<tr><th id="98">98</th><td><i class="doc"> * through a suite</i></td></tr>
+<tr><th id="99">99</th><td><i class="doc">*/</i></td></tr>
+<tr><th id="100">100</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="TCase" title='TCase' data-ref="TCase"><a class="type" href="#TCase" title='TCase' data-ref="TCase">TCase</a></dfn> <dfn class="typedef" id="TCase" title='TCase' data-type='struct TCase' data-ref="TCase">TCase</dfn>;</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="103">103</th><td><i class="doc"> * Type for a test function</i></td></tr>
+<tr><th id="104">104</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="105">105</th><td><b>typedef</b> <em>void</em> (*<dfn class="typedef" id="TFun" title='TFun' data-type='void (*)(int)' data-ref="TFun">TFun</dfn>) (<em>int</em>);</td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="108">108</th><td><i class="doc"> * Type for a setup/teardown function</i></td></tr>
+<tr><th id="109">109</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="110">110</th><td><b>typedef</b> <em>void</em> (*<dfn class="typedef" id="SFun" title='SFun' data-type='void (*)()' data-ref="SFun">SFun</dfn>) (<em>void</em>);</td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="113">113</th><td><i class="doc"> * Type for a test suite</i></td></tr>
+<tr><th id="114">114</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="115">115</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="Suite" title='Suite' data-ref="Suite"><a class="type" href="#Suite" title='Suite' data-ref="Suite">Suite</a></dfn> <dfn class="typedef" id="Suite" title='Suite' data-type='struct Suite' data-ref="Suite">Suite</dfn>;</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="118">118</th><td><i class="doc"> * Creates a test suite with the given name.</i></td></tr>
+<tr><th id="119">119</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="120">120</th><td><i class="doc"> * Create a suite, which will contain test cases. Once</i></td></tr>
+<tr><th id="121">121</th><td><i class="doc"> * created, use suite_add_tcase() to add test cases.</i></td></tr>
+<tr><th id="122">122</th><td><i class="doc"> * When finished, create a suite runner from the</i></td></tr>
+<tr><th id="123">123</th><td><i class="doc"> * suite using srunner_create()</i></td></tr>
+<tr><th id="124">124</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="125">125</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">name</span> name of the suite</i></td></tr>
+<tr><th id="126">126</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="127">127</th><td><i class="doc"> * <span class="command">@return</span> suite</i></td></tr>
+<tr><th id="128">128</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="129">129</th><td><i class="doc"> * <span class="command">@since</span> 0.6.0</i></td></tr>
+<tr><th id="130">130</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="131">131</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <a class="typedef" href="#Suite" title='Suite' data-type='struct Suite' data-ref="Suite">Suite</a> *<a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="suite_create" title='suite_create' data-ref="suite_create">suite_create</dfn>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="370name" title='name' data-type='const char *' data-ref="370name">name</dfn>);</td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="134">134</th><td><i class="doc"> * Determines whether a given test suite contains a case named after a</i></td></tr>
+<tr><th id="135">135</th><td><i class="doc"> * given string.</i></td></tr>
+<tr><th id="136">136</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="137">137</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">s</span> suite to check</i></td></tr>
+<tr><th id="138">138</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tcname</span> test case to look for</i></td></tr>
+<tr><th id="139">139</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="140">140</th><td><i class="doc"> * <span class="command">@return</span> 1 iff the given test case is within the given suite;</i></td></tr>
+<tr><th id="141">141</th><td><i class="doc"> *          0 otherwise</i></td></tr>
+<tr><th id="142">142</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="143">143</th><td><i class="doc"> * <span class="command">@since</span> 0.9.9</i></td></tr>
+<tr><th id="144">144</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="145">145</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>int</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="suite_tcase" title='suite_tcase' data-ref="suite_tcase">suite_tcase</dfn>(<a class="typedef" href="#Suite" title='Suite' data-type='struct Suite' data-ref="Suite">Suite</a> * <dfn class="local col1 decl" id="371s" title='s' data-type='Suite *' data-ref="371s">s</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="372tcname" title='tcname' data-type='const char *' data-ref="372tcname">tcname</dfn>);</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="148">148</th><td><i class="doc"> * Add a test case to a suite</i></td></tr>
+<tr><th id="149">149</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="150">150</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">s</span> suite to add test case to</i></td></tr>
+<tr><th id="151">151</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tc</span> test case to add to suite</i></td></tr>
+<tr><th id="152">152</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="153">153</th><td><i class="doc"> * <span class="command">@since</span> 0.6.0</i></td></tr>
+<tr><th id="154">154</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="155">155</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>void</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="suite_add_tcase" title='suite_add_tcase' data-ref="suite_add_tcase">suite_add_tcase</dfn>(<a class="typedef" href="#Suite" title='Suite' data-type='struct Suite' data-ref="Suite">Suite</a> * <dfn class="local col3 decl" id="373s" title='s' data-type='Suite *' data-ref="373s">s</dfn>, <a class="typedef" href="#TCase" title='TCase' data-type='struct TCase' data-ref="TCase">TCase</a> * <dfn class="local col4 decl" id="374tc" title='tc' data-type='TCase *' data-ref="374tc">tc</dfn>);</td></tr>
+<tr><th id="156">156</th><td></td></tr>
+<tr><th id="157">157</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="158">158</th><td><i class="doc"> * Create a test case.</i></td></tr>
+<tr><th id="159">159</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="160">160</th><td><i class="doc"> * Once created, tests can be added with the tcase_add_test()</i></td></tr>
+<tr><th id="161">161</th><td><i class="doc"> * function, and the test case assigned to a suite with the</i></td></tr>
+<tr><th id="162">162</th><td><i class="doc"> * suite_add_tcase() function.</i></td></tr>
+<tr><th id="163">163</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="164">164</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">name</span> name of the test case</i></td></tr>
+<tr><th id="165">165</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="166">166</th><td><i class="doc"> * <span class="command">@return</span> test case containing no tests</i></td></tr>
+<tr><th id="167">167</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="168">168</th><td><i class="doc"> * <span class="command">@since</span> 0.6.0</i></td></tr>
+<tr><th id="169">169</th><td><i class="doc"> * */</i></td></tr>
+<tr><th id="170">170</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <a class="typedef" href="#TCase" title='TCase' data-type='struct TCase' data-ref="TCase">TCase</a> *<a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="tcase_create" title='tcase_create' data-ref="tcase_create">tcase_create</dfn>(<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="375name" title='name' data-type='const char *' data-ref="375name">name</dfn>);</td></tr>
+<tr><th id="171">171</th><td></td></tr>
+<tr><th id="172">172</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="173">173</th><td><i class="doc"> * Add a test function to a test case</i></td></tr>
+<tr><th id="174">174</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="175">175</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tc</span> test case to add test to</i></td></tr>
+<tr><th id="176">176</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tf</span> test function to add to test case</i></td></tr>
+<tr><th id="177">177</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="178">178</th><td><i class="doc"> * <span class="command">@since</span> 0.6.0</i></td></tr>
+<tr><th id="179">179</th><td><i class="doc"> * */</i></td></tr>
+<tr><th id="180">180</th><td><u>#define <dfn class="macro" id="_M/tcase_add_test" data-ref="_M/tcase_add_test">tcase_add_test</dfn>(tc,tf) tcase_add_test_raise_signal(tc,tf,0)</u></td></tr>
+<tr><th id="181">181</th><td></td></tr>
+<tr><th id="182">182</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="183">183</th><td><i class="doc"> * Add a test function with signal handling to a test case</i></td></tr>
+<tr><th id="184">184</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="185">185</th><td><i class="doc"> * The added test is expected to terminate by throwing the given signal</i></td></tr>
+<tr><th id="186">186</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="187">187</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tc</span> test case to add test to</i></td></tr>
+<tr><th id="188">188</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tf</span> test function to add to test case</i></td></tr>
+<tr><th id="189">189</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">signal</span> expected signal for test function to throw in order for</i></td></tr>
+<tr><th id="190">190</th><td><i class="doc"> *                the test to be considered passing</i></td></tr>
+<tr><th id="191">191</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="192">192</th><td><i class="doc"> * <span class="command">@since</span> 0.9.2</i></td></tr>
+<tr><th id="193">193</th><td><i class="doc"> * */</i></td></tr>
+<tr><th id="194">194</th><td><u>#define <dfn class="macro" id="_M/tcase_add_test_raise_signal" data-ref="_M/tcase_add_test_raise_signal">tcase_add_test_raise_signal</dfn>(tc,tf,signal) \</u></td></tr>
+<tr><th id="195">195</th><td><u>   _tcase_add_test((tc),(tf),"" # tf "",(signal), 0, 0, 1)</u></td></tr>
+<tr><th id="196">196</th><td></td></tr>
+<tr><th id="197">197</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="198">198</th><td><i class="doc"> * Add a test function with an expected exit value to a test case</i></td></tr>
+<tr><th id="199">199</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="200">200</th><td><i class="doc"> * The added test is expected to terminate by exiting with the given value</i></td></tr>
+<tr><th id="201">201</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="202">202</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tc</span> test case to add test to</i></td></tr>
+<tr><th id="203">203</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tf</span> test function to add to test case</i></td></tr>
+<tr><th id="204">204</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">expected_exit_value</span> exit value for test function to return in</i></td></tr>
+<tr><th id="205">205</th><td><i class="doc"> *                             order for the test to be considered passing</i></td></tr>
+<tr><th id="206">206</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="207">207</th><td><i class="doc"> * <span class="command">@since</span> 0.9.7</i></td></tr>
+<tr><th id="208">208</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="209">209</th><td><u>#define <dfn class="macro" id="_M/tcase_add_exit_test" data-ref="_M/tcase_add_exit_test">tcase_add_exit_test</dfn>(tc, tf, expected_exit_value) \</u></td></tr>
+<tr><th id="210">210</th><td><u>  _tcase_add_test((tc),(tf),"" # tf "",0,(expected_exit_value),0,1)</u></td></tr>
+<tr><th id="211">211</th><td></td></tr>
+<tr><th id="212">212</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="213">213</th><td><i class="doc"> * Add a looping test function to a test case</i></td></tr>
+<tr><th id="214">214</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="215">215</th><td><i class="doc"> * The test will be called in a for(i = s; i &lt; e; i++) loop with each</i></td></tr>
+<tr><th id="216">216</th><td><i class="doc"> * iteration being executed in a new context. The loop variable 'i' is</i></td></tr>
+<tr><th id="217">217</th><td><i class="doc"> * available in the test.</i></td></tr>
+<tr><th id="218">218</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="219">219</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tc</span> test case to add test to</i></td></tr>
+<tr><th id="220">220</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tf</span> function to add to test case</i></td></tr>
+<tr><th id="221">221</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">s</span> starting index for value "i" in test</i></td></tr>
+<tr><th id="222">222</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">e</span> ending index for value "i" in test</i></td></tr>
+<tr><th id="223">223</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="224">224</th><td><i class="doc"> * <span class="command">@since</span> 0.9.4</i></td></tr>
+<tr><th id="225">225</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="226">226</th><td><u>#define <dfn class="macro" id="_M/tcase_add_loop_test" data-ref="_M/tcase_add_loop_test">tcase_add_loop_test</dfn>(tc,tf,s,e) \</u></td></tr>
+<tr><th id="227">227</th><td><u>  _tcase_add_test((tc),(tf),"" # tf "",0,0,(s),(e))</u></td></tr>
+<tr><th id="228">228</th><td></td></tr>
+<tr><th id="229">229</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="230">230</th><td><i class="doc"> * Add a looping test function with signal handling to a test case</i></td></tr>
+<tr><th id="231">231</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="232">232</th><td><i class="doc"> * The test will be called in a for(i = s; i &lt; e; i++) loop with each</i></td></tr>
+<tr><th id="233">233</th><td><i class="doc"> * iteration being executed in a new context. The loop variable 'i' is</i></td></tr>
+<tr><th id="234">234</th><td><i class="doc"> * available in the test.</i></td></tr>
+<tr><th id="235">235</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="236">236</th><td><i class="doc"> * The added test is expected to terminate by throwing the given signal</i></td></tr>
+<tr><th id="237">237</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="238">238</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tc</span> test case to add test to</i></td></tr>
+<tr><th id="239">239</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tf</span> function to add to test case</i></td></tr>
+<tr><th id="240">240</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">signal</span> expected signal for test function to throw in order for</i></td></tr>
+<tr><th id="241">241</th><td><i class="doc"> *                the test to be considered passing</i></td></tr>
+<tr><th id="242">242</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">s</span> starting index for value "i" in test</i></td></tr>
+<tr><th id="243">243</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">e</span> ending index for value "i" in test</i></td></tr>
+<tr><th id="244">244</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="245">245</th><td><i class="doc"> * <span class="command">@since</span> 0.9.5</i></td></tr>
+<tr><th id="246">246</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="247">247</th><td><u>#define <dfn class="macro" id="_M/tcase_add_loop_test_raise_signal" data-ref="_M/tcase_add_loop_test_raise_signal">tcase_add_loop_test_raise_signal</dfn>(tc,tf,signal,s,e) \</u></td></tr>
+<tr><th id="248">248</th><td><u>  _tcase_add_test((tc),(tf),"" # tf "",(signal),0,(s),(e))</u></td></tr>
+<tr><th id="249">249</th><td></td></tr>
+<tr><th id="250">250</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="251">251</th><td><i class="doc"> * Add a looping test function with an expected exit value to a test case</i></td></tr>
+<tr><th id="252">252</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="253">253</th><td><i class="doc"> * The test will be called in a for(i = s; i &lt; e; i++) loop with each</i></td></tr>
+<tr><th id="254">254</th><td><i class="doc"> * iteration being executed in a new context. The loop variable 'i' is</i></td></tr>
+<tr><th id="255">255</th><td><i class="doc"> * available in the test.</i></td></tr>
+<tr><th id="256">256</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="257">257</th><td><i class="doc"> * The added test is expected to terminate by exiting with the given value</i></td></tr>
+<tr><th id="258">258</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="259">259</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tc</span> test case to add test to</i></td></tr>
+<tr><th id="260">260</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tf</span> function to add to test case</i></td></tr>
+<tr><th id="261">261</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">expected_exit_value</span> exit value for test function to return in</i></td></tr>
+<tr><th id="262">262</th><td><i class="doc"> *                             order for the test to be considered passing</i></td></tr>
+<tr><th id="263">263</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">s</span> starting index for value "i" in test</i></td></tr>
+<tr><th id="264">264</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">e</span> ending index for value "i" in test</i></td></tr>
+<tr><th id="265">265</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="266">266</th><td><i class="doc"> * <span class="command">@since</span> 0.9.7</i></td></tr>
+<tr><th id="267">267</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="268">268</th><td><u>#define <dfn class="macro" id="_M/tcase_add_loop_exit_test" data-ref="_M/tcase_add_loop_exit_test">tcase_add_loop_exit_test</dfn>(tc,tf,expected_exit_value,s,e) \</u></td></tr>
+<tr><th id="269">269</th><td><u>  _tcase_add_test((tc),(tf),"" # tf "",0,(expected_exit_value),(s),(e))</u></td></tr>
+<tr><th id="270">270</th><td></td></tr>
+<tr><th id="271">271</th><td><i>/* Add a test function to a test case</i></td></tr>
+<tr><th id="272">272</th><td><i>  (function version -- use this when the macro won't work</i></td></tr>
+<tr><th id="273">273</th><td><i>*/</i></td></tr>
+<tr><th id="274">274</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>void</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="_tcase_add_test" title='_tcase_add_test' data-ref="_tcase_add_test">_tcase_add_test</dfn>(<a class="typedef" href="#TCase" title='TCase' data-type='struct TCase' data-ref="TCase">TCase</a> * <dfn class="local col6 decl" id="376tc" title='tc' data-type='TCase *' data-ref="376tc">tc</dfn>, <a class="typedef" href="#TFun" title='TFun' data-type='void (*)(int)' data-ref="TFun">TFun</a> <dfn class="local col7 decl" id="377tf" title='tf' data-type='TFun' data-ref="377tf">tf</dfn>,</td></tr>
+<tr><th id="275">275</th><td>                                          <em>const</em> <em>char</em> *<dfn class="local col8 decl" id="378fname" title='fname' data-type='const char *' data-ref="378fname">fname</dfn>, <em>int</em> <dfn class="local col9 decl" id="379_signal" title='_signal' data-type='int' data-ref="379_signal">_signal</dfn>,</td></tr>
+<tr><th id="276">276</th><td>                                          <em>int</em> <dfn class="local col0 decl" id="380allowed_exit_value" title='allowed_exit_value' data-type='int' data-ref="380allowed_exit_value">allowed_exit_value</dfn>, <em>int</em> <dfn class="local col1 decl" id="381start" title='start' data-type='int' data-ref="381start">start</dfn>,</td></tr>
+<tr><th id="277">277</th><td>                                          <em>int</em> <dfn class="local col2 decl" id="382end" title='end' data-type='int' data-ref="382end">end</dfn>);</td></tr>
+<tr><th id="278">278</th><td></td></tr>
+<tr><th id="279">279</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="280">280</th><td><i class="doc"> * Add unchecked fixture setup/teardown functions to a test case</i></td></tr>
+<tr><th id="281">281</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="282">282</th><td><i class="doc"> * Unchecked fixture functions are run at the start and end of the</i></td></tr>
+<tr><th id="283">283</th><td><i class="doc"> * test case, and not before and after unit tests. Further,</i></td></tr>
+<tr><th id="284">284</th><td><i class="doc"> * unchecked fixture functions are not run in a separate address space,</i></td></tr>
+<tr><th id="285">285</th><td><i class="doc"> * like test functions, and so must not exit or signal (e.g.,</i></td></tr>
+<tr><th id="286">286</th><td><i class="doc"> * segfault).</i></td></tr>
+<tr><th id="287">287</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="288">288</th><td><i class="doc"> * Also, when run in CK_NOFORK mode, unchecked fixture functions may</i></td></tr>
+<tr><th id="289">289</th><td><i class="doc"> * lead to different unit test behavior if unit tests change data</i></td></tr>
+<tr><th id="290">290</th><td><i class="doc"> * setup by the fixture functions.</i></td></tr>
+<tr><th id="291">291</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="292">292</th><td><i class="doc"> * Note that if a setup function fails, the remaining setup functions</i></td></tr>
+<tr><th id="293">293</th><td><i class="doc"> * will be omitted, as will the test case and the teardown functions.</i></td></tr>
+<tr><th id="294">294</th><td><i class="doc"> * If a teardown function fails the remaining teardown functins will be</i></td></tr>
+<tr><th id="295">295</th><td><i class="doc"> * omitted.</i></td></tr>
+<tr><th id="296">296</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="297">297</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tc</span> test case to add unchecked fixture setup/teardown to</i></td></tr>
+<tr><th id="298">298</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">setup</span> function to add to be executed before the test case;</i></td></tr>
+<tr><th id="299">299</th><td><i class="doc"> *               if NULL no setup function is added</i></td></tr>
+<tr><th id="300">300</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">teardown</span> function to add to be executed after the test case;</i></td></tr>
+<tr><th id="301">301</th><td><i class="doc"> *               if NULL no teardown function is added</i></td></tr>
+<tr><th id="302">302</th><td><i class="doc"> * <span class="command">@since</span> 0.8.0</i></td></tr>
+<tr><th id="303">303</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="304">304</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>void</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="tcase_add_unchecked_fixture" title='tcase_add_unchecked_fixture' data-ref="tcase_add_unchecked_fixture">tcase_add_unchecked_fixture</dfn>(<a class="typedef" href="#TCase" title='TCase' data-type='struct TCase' data-ref="TCase">TCase</a> * <dfn class="local col3 decl" id="383tc" title='tc' data-type='TCase *' data-ref="383tc">tc</dfn>, <a class="typedef" href="#SFun" title='SFun' data-type='void (*)()' data-ref="SFun">SFun</a> <dfn class="local col4 decl" id="384setup" title='setup' data-type='SFun' data-ref="384setup">setup</dfn>,</td></tr>
+<tr><th id="305">305</th><td>                                                      <a class="typedef" href="#SFun" title='SFun' data-type='void (*)()' data-ref="SFun">SFun</a> <dfn class="local col5 decl" id="385teardown" title='teardown' data-type='SFun' data-ref="385teardown">teardown</dfn>);</td></tr>
+<tr><th id="306">306</th><td></td></tr>
+<tr><th id="307">307</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="308">308</th><td><i class="doc"> * Add checked fixture setup/teardown functions to a test case</i></td></tr>
+<tr><th id="309">309</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="310">310</th><td><i class="doc"> * Checked fixture functions are run before and after each unit test inside</i></td></tr>
+<tr><th id="311">311</th><td><i class="doc"> * of the address space of the test. Thus, if using CK_FORK</i></td></tr>
+<tr><th id="312">312</th><td><i class="doc"> * mode the separate process running the unit test will survive signals</i></td></tr>
+<tr><th id="313">313</th><td><i class="doc"> * or unexpected exits in the fixture function. Also, if the setup</i></td></tr>
+<tr><th id="314">314</th><td><i class="doc"> * function is idempotent, unit test behavior will be the same in</i></td></tr>
+<tr><th id="315">315</th><td><i class="doc"> * CK_FORK and CK_NOFORK modes.</i></td></tr>
+<tr><th id="316">316</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="317">317</th><td><i class="doc"> * However, since fixture functions are run before and after each unit</i></td></tr>
+<tr><th id="318">318</th><td><i class="doc"> * test, they should not be expensive code.</i></td></tr>
+<tr><th id="319">319</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="320">320</th><td><i class="doc"> * Note that if a setup function fails, the remaining setup functions</i></td></tr>
+<tr><th id="321">321</th><td><i class="doc"> * will be omitted, as will the test and the teardown functions. If a</i></td></tr>
+<tr><th id="322">322</th><td><i class="doc"> * teardown function fails the remaining teardown functins will be</i></td></tr>
+<tr><th id="323">323</th><td><i class="doc"> * omitted.</i></td></tr>
+<tr><th id="324">324</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="325">325</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tc</span> test case to add checked fixture setup/teardown to</i></td></tr>
+<tr><th id="326">326</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">setup</span> function to add to be executed before each unit test in</i></td></tr>
+<tr><th id="327">327</th><td><i class="doc"> *               the test case;  if NULL no setup function is added</i></td></tr>
+<tr><th id="328">328</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">teardown</span> function to add to be executed after each unit test in</i></td></tr>
+<tr><th id="329">329</th><td><i class="doc"> *               the test case; if NULL no teardown function is added</i></td></tr>
+<tr><th id="330">330</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="331">331</th><td><i class="doc"> * <span class="command">@since</span> 0.8.0</i></td></tr>
+<tr><th id="332">332</th><td><i class="doc">*/</i></td></tr>
+<tr><th id="333">333</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>void</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="tcase_add_checked_fixture" title='tcase_add_checked_fixture' data-ref="tcase_add_checked_fixture">tcase_add_checked_fixture</dfn>(<a class="typedef" href="#TCase" title='TCase' data-type='struct TCase' data-ref="TCase">TCase</a> * <dfn class="local col6 decl" id="386tc" title='tc' data-type='TCase *' data-ref="386tc">tc</dfn>, <a class="typedef" href="#SFun" title='SFun' data-type='void (*)()' data-ref="SFun">SFun</a> <dfn class="local col7 decl" id="387setup" title='setup' data-type='SFun' data-ref="387setup">setup</dfn>,</td></tr>
+<tr><th id="334">334</th><td>                                                    <a class="typedef" href="#SFun" title='SFun' data-type='void (*)()' data-ref="SFun">SFun</a> <dfn class="local col8 decl" id="388teardown" title='teardown' data-type='SFun' data-ref="388teardown">teardown</dfn>);</td></tr>
+<tr><th id="335">335</th><td></td></tr>
+<tr><th id="336">336</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="337">337</th><td><i class="doc"> * Set the timeout for all tests in a test case.</i></td></tr>
+<tr><th id="338">338</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="339">339</th><td><i class="doc"> * A test that lasts longer than the timeout (in seconds) will be killed</i></td></tr>
+<tr><th id="340">340</th><td><i class="doc"> * and thus fail with an error.</i></td></tr>
+<tr><th id="341">341</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="342">342</th><td><i class="doc"> * If not set, the default timeout is one assigned at compile time. If</i></td></tr>
+<tr><th id="343">343</th><td><i class="doc"> * the environment variable CK_DEFAULT_TIMEOUT is defined and no timeout</i></td></tr>
+<tr><th id="344">344</th><td><i class="doc"> * is set, the value in the environment variable is used.</i></td></tr>
+<tr><th id="345">345</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="346">346</th><td><i class="doc"> * If Check is compile without fork() support this call is ignored,</i></td></tr>
+<tr><th id="347">347</th><td><i class="doc"> * as timeouts are not possible.</i></td></tr>
+<tr><th id="348">348</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="349">349</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tc</span> test case to assign timeout to</i></td></tr>
+<tr><th id="350">350</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">timeout</span> to use, in seconds. If the value contains a decimal</i></td></tr>
+<tr><th id="351">351</th><td><i class="doc"> *                 portion, but no high resolution timer is available,</i></td></tr>
+<tr><th id="352">352</th><td><i class="doc"> *                 the value is rounded up to the nearest second.</i></td></tr>
+<tr><th id="353">353</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="354">354</th><td><i class="doc"> * <span class="command">@since</span> 0.9.2</i></td></tr>
+<tr><th id="355">355</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="356">356</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>void</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="tcase_set_timeout" title='tcase_set_timeout' data-ref="tcase_set_timeout">tcase_set_timeout</dfn>(<a class="typedef" href="#TCase" title='TCase' data-type='struct TCase' data-ref="TCase">TCase</a> * <dfn class="local col9 decl" id="389tc" title='tc' data-type='TCase *' data-ref="389tc">tc</dfn>, <em>double</em> <dfn class="local col0 decl" id="390timeout" title='timeout' data-type='double' data-ref="390timeout">timeout</dfn>);</td></tr>
+<tr><th id="357">357</th><td></td></tr>
+<tr><th id="358">358</th><td><i>/* Internal function to mark the start of a test function */</i></td></tr>
+<tr><th id="359">359</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>void</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="tcase_fn_start" title='tcase_fn_start' data-ref="tcase_fn_start">tcase_fn_start</dfn>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="391fname" title='fname' data-type='const char *' data-ref="391fname">fname</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="392file" title='file' data-type='const char *' data-ref="392file">file</dfn>,</td></tr>
+<tr><th id="360">360</th><td>                                         <em>int</em> <dfn class="local col3 decl" id="393line" title='line' data-type='int' data-ref="393line">line</dfn>);</td></tr>
+<tr><th id="361">361</th><td></td></tr>
+<tr><th id="362">362</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="363">363</th><td><i class="doc"> * Start a unit test with START_TEST(unit_name), end with END_TEST.</i></td></tr>
+<tr><th id="364">364</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="365">365</th><td><i class="doc"> * One must use braces within a START_/END_ pair to declare new variables</i></td></tr>
+<tr><th id="366">366</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="367">367</th><td><i class="doc"> * <span class="command">@since</span> 0.6.0</i></td></tr>
+<tr><th id="368">368</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="369">369</th><td><u>#define <dfn class="macro" id="_M/START_TEST" data-ref="_M/START_TEST">START_TEST</dfn>(__testname)\</u></td></tr>
+<tr><th id="370">370</th><td><u>static void __testname (int _i CK_ATTRIBUTE_UNUSED)\</u></td></tr>
+<tr><th id="371">371</th><td><u>{\</u></td></tr>
+<tr><th id="372">372</th><td><u>  tcase_fn_start (""# __testname, __FILE__, __LINE__);</u></td></tr>
+<tr><th id="373">373</th><td></td></tr>
+<tr><th id="374">374</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="375">375</th><td><i class="doc"> *  End a unit test</i></td></tr>
+<tr><th id="376">376</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="377">377</th><td><i class="doc"> * <span class="command">@since</span> 0.6.0</i></td></tr>
+<tr><th id="378">378</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="379">379</th><td><u>#define <dfn class="macro" id="_M/END_TEST" data-ref="_M/END_TEST">END_TEST</dfn> }</u></td></tr>
+<tr><th id="380">380</th><td></td></tr>
+<tr><th id="381">381</th><td><i>/*</i></td></tr>
+<tr><th id="382">382</th><td><i> * Fail the test case unless expr is false</i></td></tr>
+<tr><th id="383">383</th><td><i> *</i></td></tr>
+<tr><th id="384">384</th><td><i> * This call is deprecated.</i></td></tr>
+<tr><th id="385">385</th><td><i> */</i></td></tr>
+<tr><th id="386">386</th><td><u>#define <dfn class="macro" id="_M/fail_unless" data-ref="_M/fail_unless">fail_unless</dfn> ck_assert_msg</u></td></tr>
+<tr><th id="387">387</th><td></td></tr>
+<tr><th id="388">388</th><td><i>/*</i></td></tr>
+<tr><th id="389">389</th><td><i> * Fail the test case if expr is false</i></td></tr>
+<tr><th id="390">390</th><td><i> *</i></td></tr>
+<tr><th id="391">391</th><td><i> * This call is deprecated.</i></td></tr>
+<tr><th id="392">392</th><td><i> *</i></td></tr>
+<tr><th id="393">393</th><td><i> * NOTE: The space before the comma sign before ## is essential to be compatible</i></td></tr>
+<tr><th id="394">394</th><td><i> * with gcc 2.95.3 and earlier.</i></td></tr>
+<tr><th id="395">395</th><td><i> * FIXME: these macros may conflict with C89 if expr is</i></td></tr>
+<tr><th id="396">396</th><td><i> * FIXME:   strcmp (str1, str2) due to excessive string length.</i></td></tr>
+<tr><th id="397">397</th><td><i> */</i></td></tr>
+<tr><th id="398">398</th><td><u>#define <dfn class="macro" id="_M/fail_if" data-ref="_M/fail_if">fail_if</dfn>(expr, ...)\</u></td></tr>
+<tr><th id="399">399</th><td><u>  (expr) ? \</u></td></tr>
+<tr><th id="400">400</th><td><u>     _ck_assert_failed(__FILE__, __LINE__, "Failure '"#expr"' occurred" , ## __VA_ARGS__, NULL) \</u></td></tr>
+<tr><th id="401">401</th><td><u>     : _mark_point(__FILE__, __LINE__)</u></td></tr>
+<tr><th id="402">402</th><td></td></tr>
+<tr><th id="403">403</th><td><i>/*</i></td></tr>
+<tr><th id="404">404</th><td><i> * Fail the test</i></td></tr>
+<tr><th id="405">405</th><td><i> *</i></td></tr>
+<tr><th id="406">406</th><td><i> * This call is deprecated.</i></td></tr>
+<tr><th id="407">407</th><td><i> */</i></td></tr>
+<tr><th id="408">408</th><td><u>#define <dfn class="macro" id="_M/fail" data-ref="_M/fail">fail</dfn> ck_abort_msg</u></td></tr>
+<tr><th id="409">409</th><td></td></tr>
+<tr><th id="410">410</th><td><i>/*</i></td></tr>
+<tr><th id="411">411</th><td><i> * This is called whenever an assertion fails.</i></td></tr>
+<tr><th id="412">412</th><td><i> * Note that it only has the noreturn modifier when</i></td></tr>
+<tr><th id="413">413</th><td><i> * using fork. If fork is unavailable, the function</i></td></tr>
+<tr><th id="414">414</th><td><i> * calls longjmp() when a test assertion fails. Marking</i></td></tr>
+<tr><th id="415">415</th><td><i> * the function as noreturn causes gcc to make assumptions</i></td></tr>
+<tr><th id="416">416</th><td><i> * which are not valid, as longjmp() is like a return.</i></td></tr>
+<tr><th id="417">417</th><td><i> */</i></td></tr>
+<tr><th id="418">418</th><td><u>#<span data-ppcond="418">if</span> 1</u></td></tr>
+<tr><th id="419">419</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>void</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="_ck_assert_failed" title='_ck_assert_failed' data-ref="_ck_assert_failed">_ck_assert_failed</dfn>(<em>const</em> <em>char</em> *<dfn class="local col4 decl" id="394file" title='file' data-type='const char *' data-ref="394file">file</dfn>, <em>int</em> <dfn class="local col5 decl" id="395line" title='line' data-type='int' data-ref="395line">line</dfn>,</td></tr>
+<tr><th id="420">420</th><td>                                            <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="396expr" title='expr' data-type='const char *' data-ref="396expr">expr</dfn>,</td></tr>
+<tr><th id="421">421</th><td>                                            ...) <a class="macro" href="#57" title="__attribute__ ((noreturn))" data-ref="_M/CK_ATTRIBUTE_NORETURN">CK_ATTRIBUTE_NORETURN</a>;</td></tr>
+<tr><th id="422">422</th><td><u>#<span data-ppcond="418">else</span></u></td></tr>
+<tr><th id="423">423</th><td>CK_DLL_EXP <em>void</em> CK_EXPORT _ck_assert_failed(<em>const</em> <em>char</em> *file, <em>int</em> line,</td></tr>
+<tr><th id="424">424</th><td>                                            <em>const</em> <em>char</em> *expr, ...);</td></tr>
+<tr><th id="425">425</th><td><u>#<span data-ppcond="418">endif</span></u></td></tr>
+<tr><th id="426">426</th><td></td></tr>
+<tr><th id="427">427</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="428">428</th><td><i class="doc"> * Fail the test if expression is false</i></td></tr>
+<tr><th id="429">429</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="430">430</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">expr</span> expression to evaluate</i></td></tr>
+<tr><th id="431">431</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="432">432</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="433">433</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="434">434</th><td><i class="doc"> * <span class="command">@since</span> 0.9.6</i></td></tr>
+<tr><th id="435">435</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="436">436</th><td><u>#define <dfn class="macro" id="_M/ck_assert" data-ref="_M/ck_assert">ck_assert</dfn>(expr) ck_assert_msg(expr, NULL)</u></td></tr>
+<tr><th id="437">437</th><td></td></tr>
+<tr><th id="438">438</th><td><i>/* The space before the comma sign before ## is essential to be compatible</i></td></tr>
+<tr><th id="439">439</th><td><i>   with gcc 2.95.3 and earlier.</i></td></tr>
+<tr><th id="440">440</th><td><i>*/</i></td></tr>
+<tr><th id="441">441</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="442">442</th><td><i class="doc"> * Fail the test if the expression is false; print message on failure</i></td></tr>
+<tr><th id="443">443</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="444">444</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">expr</span> expression to evaluate</i></td></tr>
+<tr><th id="445">445</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">...</span> message to print (in printf format) if expression is false</i></td></tr>
+<tr><th id="446">446</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="447">447</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="448">448</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="449">449</th><td><i class="doc"> * <span class="command">@since</span> 0.9.6</i></td></tr>
+<tr><th id="450">450</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="451">451</th><td><u>#define <dfn class="macro" id="_M/ck_assert_msg" data-ref="_M/ck_assert_msg">ck_assert_msg</dfn>(expr, ...) \</u></td></tr>
+<tr><th id="452">452</th><td><u>  (expr) ? \</u></td></tr>
+<tr><th id="453">453</th><td><u>     _mark_point(__FILE__, __LINE__) : \</u></td></tr>
+<tr><th id="454">454</th><td><u>     _ck_assert_failed(__FILE__, __LINE__, "Assertion '"#expr"' failed" , ## __VA_ARGS__, NULL)</u></td></tr>
+<tr><th id="455">455</th><td></td></tr>
+<tr><th id="456">456</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="457">457</th><td><i class="doc"> * Unconditionally fail the test</i></td></tr>
+<tr><th id="458">458</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="459">459</th><td><i class="doc"> * <span class="command">@note</span> Once called, the remaining of the test is aborted</i></td></tr>
+<tr><th id="460">460</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="461">461</th><td><i class="doc"> * <span class="command">@since</span> 0.9.6</i></td></tr>
+<tr><th id="462">462</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="463">463</th><td><u>#define <dfn class="macro" id="_M/ck_abort" data-ref="_M/ck_abort">ck_abort</dfn>() ck_abort_msg(NULL)</u></td></tr>
+<tr><th id="464">464</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="465">465</th><td><i class="doc"> * Unconditionally fail the test; print a message</i></td></tr>
+<tr><th id="466">466</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="467">467</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">...</span> message to print (in printf format)</i></td></tr>
+<tr><th id="468">468</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="469">469</th><td><i class="doc"> * <span class="command">@note</span> Once called, the remaining of the test is aborted</i></td></tr>
+<tr><th id="470">470</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="471">471</th><td><i class="doc"> * <span class="command">@since</span> 0.9.6</i></td></tr>
+<tr><th id="472">472</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="473">473</th><td><u>#define <dfn class="macro" id="_M/ck_abort_msg" data-ref="_M/ck_abort_msg">ck_abort_msg</dfn>(...) _ck_assert_failed(__FILE__, __LINE__, "Failed" , ## __VA_ARGS__, NULL)</u></td></tr>
+<tr><th id="474">474</th><td></td></tr>
+<tr><th id="475">475</th><td><i>/* Signed and unsigned integer comparison macros with improved output compared to ck_assert(). */</i></td></tr>
+<tr><th id="476">476</th><td><i>/* OP may be any comparison operator. */</i></td></tr>
+<tr><th id="477">477</th><td><u>#define <dfn class="macro" id="_M/_ck_assert_int" data-ref="_M/_ck_assert_int">_ck_assert_int</dfn>(X, OP, Y) do { \</u></td></tr>
+<tr><th id="478">478</th><td><u>  intmax_t _ck_x = (X); \</u></td></tr>
+<tr><th id="479">479</th><td><u>  intmax_t _ck_y = (Y); \</u></td></tr>
+<tr><th id="480">480</th><td><u>  ck_assert_msg(_ck_x OP _ck_y, "Assertion '%s' failed: %s == %jd, %s == %jd", #X" "#OP" "#Y, #X, _ck_x, #Y, _ck_y); \</u></td></tr>
+<tr><th id="481">481</th><td><u>} while (0)</u></td></tr>
+<tr><th id="482">482</th><td></td></tr>
+<tr><th id="483">483</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="484">484</th><td><i class="doc"> * Check two signed integers to determine if X==Y</i></td></tr>
+<tr><th id="485">485</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="486">486</th><td><i class="doc"> * If not X==Y, the test fails.</i></td></tr>
+<tr><th id="487">487</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="488">488</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> signed integer</i></td></tr>
+<tr><th id="489">489</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> signed integer to compare against X</i></td></tr>
+<tr><th id="490">490</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="491">491</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="492">492</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="493">493</th><td><i class="doc"> * <span class="command">@since</span> 0.9.6</i></td></tr>
+<tr><th id="494">494</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="495">495</th><td><u>#define <dfn class="macro" id="_M/ck_assert_int_eq" data-ref="_M/ck_assert_int_eq">ck_assert_int_eq</dfn>(X, Y) _ck_assert_int(X, ==, Y)</u></td></tr>
+<tr><th id="496">496</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="497">497</th><td><i class="doc"> * Check two signed integers to determine if X!=Y</i></td></tr>
+<tr><th id="498">498</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="499">499</th><td><i class="doc"> * If not X!=Y, the test fails.</i></td></tr>
+<tr><th id="500">500</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="501">501</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> signed integer</i></td></tr>
+<tr><th id="502">502</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> signed integer to compare against X</i></td></tr>
+<tr><th id="503">503</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="504">504</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="505">505</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="506">506</th><td><i class="doc"> * <span class="command">@since</span> 0.9.6</i></td></tr>
+<tr><th id="507">507</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="508">508</th><td><u>#define <dfn class="macro" id="_M/ck_assert_int_ne" data-ref="_M/ck_assert_int_ne">ck_assert_int_ne</dfn>(X, Y) _ck_assert_int(X, !=, Y)</u></td></tr>
+<tr><th id="509">509</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="510">510</th><td><i class="doc"> * Check two signed integers to determine if X&lt;Y</i></td></tr>
+<tr><th id="511">511</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="512">512</th><td><i class="doc"> * If not X&lt;Y, the test fails.</i></td></tr>
+<tr><th id="513">513</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="514">514</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> signed integer</i></td></tr>
+<tr><th id="515">515</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> signed integer to compare against X</i></td></tr>
+<tr><th id="516">516</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="517">517</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="518">518</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="519">519</th><td><i class="doc"> * <span class="command">@since</span> 0.9.10</i></td></tr>
+<tr><th id="520">520</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="521">521</th><td><u>#define <dfn class="macro" id="_M/ck_assert_int_lt" data-ref="_M/ck_assert_int_lt">ck_assert_int_lt</dfn>(X, Y) _ck_assert_int(X, &lt;, Y)</u></td></tr>
+<tr><th id="522">522</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="523">523</th><td><i class="doc"> * Check two signed integers to determine if X&lt;=Y</i></td></tr>
+<tr><th id="524">524</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="525">525</th><td><i class="doc"> * If not X&lt;=Y, the test fails.</i></td></tr>
+<tr><th id="526">526</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="527">527</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> signed integer</i></td></tr>
+<tr><th id="528">528</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> signed integer to compare against X</i></td></tr>
+<tr><th id="529">529</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="530">530</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="531">531</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="532">532</th><td><i class="doc"> * <span class="command">@since</span> 0.9.10</i></td></tr>
+<tr><th id="533">533</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="534">534</th><td><u>#define <dfn class="macro" id="_M/ck_assert_int_le" data-ref="_M/ck_assert_int_le">ck_assert_int_le</dfn>(X, Y) _ck_assert_int(X, &lt;=, Y)</u></td></tr>
+<tr><th id="535">535</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="536">536</th><td><i class="doc"> * Check two signed integers to determine if X&gt;Y</i></td></tr>
+<tr><th id="537">537</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="538">538</th><td><i class="doc"> * If not X&gt;Y, the test fails.</i></td></tr>
+<tr><th id="539">539</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="540">540</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> signed integer</i></td></tr>
+<tr><th id="541">541</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> signed integer to compare against X</i></td></tr>
+<tr><th id="542">542</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="543">543</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="544">544</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="545">545</th><td><i class="doc"> * <span class="command">@since</span> 0.9.10</i></td></tr>
+<tr><th id="546">546</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="547">547</th><td><u>#define <dfn class="macro" id="_M/ck_assert_int_gt" data-ref="_M/ck_assert_int_gt">ck_assert_int_gt</dfn>(X, Y) _ck_assert_int(X, &gt;, Y)</u></td></tr>
+<tr><th id="548">548</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="549">549</th><td><i class="doc"> * Check two signed integers to determine if X&gt;=Y</i></td></tr>
+<tr><th id="550">550</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="551">551</th><td><i class="doc"> * If not X&gt;=Y, the test fails.</i></td></tr>
+<tr><th id="552">552</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="553">553</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> signed integer</i></td></tr>
+<tr><th id="554">554</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> signed integer to compare against X</i></td></tr>
+<tr><th id="555">555</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="556">556</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="557">557</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="558">558</th><td><i class="doc"> * <span class="command">@since</span> 0.9.10</i></td></tr>
+<tr><th id="559">559</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="560">560</th><td><u>#define <dfn class="macro" id="_M/ck_assert_int_ge" data-ref="_M/ck_assert_int_ge">ck_assert_int_ge</dfn>(X, Y) _ck_assert_int(X, &gt;=, Y)</u></td></tr>
+<tr><th id="561">561</th><td></td></tr>
+<tr><th id="562">562</th><td><u>#define <dfn class="macro" id="_M/_ck_assert_uint" data-ref="_M/_ck_assert_uint">_ck_assert_uint</dfn>(X, OP, Y) do { \</u></td></tr>
+<tr><th id="563">563</th><td><u>  uintmax_t _ck_x = (X); \</u></td></tr>
+<tr><th id="564">564</th><td><u>  uintmax_t _ck_y = (Y); \</u></td></tr>
+<tr><th id="565">565</th><td><u>  ck_assert_msg(_ck_x OP _ck_y, "Assertion '%s' failed: %s == %ju, %s == %ju", #X" "#OP" "#Y, #X, _ck_x, #Y, _ck_y); \</u></td></tr>
+<tr><th id="566">566</th><td><u>} while (0)</u></td></tr>
+<tr><th id="567">567</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="568">568</th><td><i class="doc"> * Check two unsigned integers to determine if X==Y</i></td></tr>
+<tr><th id="569">569</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="570">570</th><td><i class="doc"> * If not X==Y, the test fails.</i></td></tr>
+<tr><th id="571">571</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="572">572</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> signed integer</i></td></tr>
+<tr><th id="573">573</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> signed integer to compare against X</i></td></tr>
+<tr><th id="574">574</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="575">575</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="576">576</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="577">577</th><td><i class="doc"> * <span class="command">@since</span> 0.9.10</i></td></tr>
+<tr><th id="578">578</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="579">579</th><td><u>#define <dfn class="macro" id="_M/ck_assert_uint_eq" data-ref="_M/ck_assert_uint_eq">ck_assert_uint_eq</dfn>(X, Y) _ck_assert_uint(X, ==, Y)</u></td></tr>
+<tr><th id="580">580</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="581">581</th><td><i class="doc"> * Check two unsigned integers to determine if X!=Y</i></td></tr>
+<tr><th id="582">582</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="583">583</th><td><i class="doc"> * If not X!=Y, the test fails.</i></td></tr>
+<tr><th id="584">584</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="585">585</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> signed integer</i></td></tr>
+<tr><th id="586">586</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> signed integer to compare against X</i></td></tr>
+<tr><th id="587">587</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="588">588</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="589">589</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="590">590</th><td><i class="doc"> * <span class="command">@since</span> 0.9.10</i></td></tr>
+<tr><th id="591">591</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="592">592</th><td><u>#define <dfn class="macro" id="_M/ck_assert_uint_ne" data-ref="_M/ck_assert_uint_ne">ck_assert_uint_ne</dfn>(X, Y) _ck_assert_uint(X, !=, Y)</u></td></tr>
+<tr><th id="593">593</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="594">594</th><td><i class="doc"> * Check two unsigned integers to determine if X&lt;Y</i></td></tr>
+<tr><th id="595">595</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="596">596</th><td><i class="doc"> * If not X&lt;Y, the test fails.</i></td></tr>
+<tr><th id="597">597</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="598">598</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> signed integer</i></td></tr>
+<tr><th id="599">599</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> signed integer to compare against X</i></td></tr>
+<tr><th id="600">600</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="601">601</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="602">602</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="603">603</th><td><i class="doc"> * <span class="command">@since</span> 0.9.10</i></td></tr>
+<tr><th id="604">604</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="605">605</th><td><u>#define <dfn class="macro" id="_M/ck_assert_uint_lt" data-ref="_M/ck_assert_uint_lt">ck_assert_uint_lt</dfn>(X, Y) _ck_assert_uint(X, &lt;, Y)</u></td></tr>
+<tr><th id="606">606</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="607">607</th><td><i class="doc"> * Check two unsigned integers to determine if X&lt;=Y</i></td></tr>
+<tr><th id="608">608</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="609">609</th><td><i class="doc"> * If not X&lt;=Y, the test fails.</i></td></tr>
+<tr><th id="610">610</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="611">611</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> signed integer</i></td></tr>
+<tr><th id="612">612</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> signed integer to compare against X</i></td></tr>
+<tr><th id="613">613</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="614">614</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="615">615</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="616">616</th><td><i class="doc"> * <span class="command">@since</span> 0.9.10</i></td></tr>
+<tr><th id="617">617</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="618">618</th><td><u>#define <dfn class="macro" id="_M/ck_assert_uint_le" data-ref="_M/ck_assert_uint_le">ck_assert_uint_le</dfn>(X, Y) _ck_assert_uint(X, &lt;=, Y)</u></td></tr>
+<tr><th id="619">619</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="620">620</th><td><i class="doc"> * Check two unsigned integers to determine if X&gt;Y</i></td></tr>
+<tr><th id="621">621</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="622">622</th><td><i class="doc"> * If not X&gt;Y, the test fails.</i></td></tr>
+<tr><th id="623">623</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="624">624</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> signed integer</i></td></tr>
+<tr><th id="625">625</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> signed integer to compare against X</i></td></tr>
+<tr><th id="626">626</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="627">627</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="628">628</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="629">629</th><td><i class="doc"> * <span class="command">@since</span> 0.9.10</i></td></tr>
+<tr><th id="630">630</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="631">631</th><td><u>#define <dfn class="macro" id="_M/ck_assert_uint_gt" data-ref="_M/ck_assert_uint_gt">ck_assert_uint_gt</dfn>(X, Y) _ck_assert_uint(X, &gt;, Y)</u></td></tr>
+<tr><th id="632">632</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="633">633</th><td><i class="doc"> * Check two unsigned integers to determine if X&gt;=Y</i></td></tr>
+<tr><th id="634">634</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="635">635</th><td><i class="doc"> * If not X&gt;=Y, the test fails.</i></td></tr>
+<tr><th id="636">636</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="637">637</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> signed integer</i></td></tr>
+<tr><th id="638">638</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> signed integer to compare against X</i></td></tr>
+<tr><th id="639">639</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="640">640</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="641">641</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="642">642</th><td><i class="doc"> * <span class="command">@since</span> 0.9.10</i></td></tr>
+<tr><th id="643">643</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="644">644</th><td><u>#define <dfn class="macro" id="_M/ck_assert_uint_ge" data-ref="_M/ck_assert_uint_ge">ck_assert_uint_ge</dfn>(X, Y) _ck_assert_uint(X, &gt;=, Y)</u></td></tr>
+<tr><th id="645">645</th><td></td></tr>
+<tr><th id="646">646</th><td><i>/* String comparison macros with improved output compared to ck_assert() */</i></td></tr>
+<tr><th id="647">647</th><td><i>/* OP might be any operator that can be used in '0 OP strcmp(X,Y)' comparison */</i></td></tr>
+<tr><th id="648">648</th><td><i>/* The x and y parameter swap in strcmp() is needed to handle &gt;, &gt;=, &lt;, &lt;= operators */</i></td></tr>
+<tr><th id="649">649</th><td><u>#define <dfn class="macro" id="_M/_ck_assert_str" data-ref="_M/_ck_assert_str">_ck_assert_str</dfn>(X, OP, Y) do { \</u></td></tr>
+<tr><th id="650">650</th><td><u>  const char* _ck_x = (X); \</u></td></tr>
+<tr><th id="651">651</th><td><u>  const char* _ck_y = (Y); \</u></td></tr>
+<tr><th id="652">652</th><td><u>  ck_assert_msg(0 OP strcmp(_ck_y, _ck_x), \</u></td></tr>
+<tr><th id="653">653</th><td><u>    "Assertion '%s' failed: %s == \"%s\", %s == \"%s\"", #X" "#OP" "#Y, #X, _ck_x, #Y, _ck_y); \</u></td></tr>
+<tr><th id="654">654</th><td><u>} while (0)</u></td></tr>
+<tr><th id="655">655</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="656">656</th><td><i class="doc"> * Check two strings to determine if 0==strcmp(X,Y)</i></td></tr>
+<tr><th id="657">657</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="658">658</th><td><i class="doc"> * If not 0==strcmp(X,Y), the test fails.</i></td></tr>
+<tr><th id="659">659</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="660">660</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> string</i></td></tr>
+<tr><th id="661">661</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> string to compare against X</i></td></tr>
+<tr><th id="662">662</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="663">663</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="664">664</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="665">665</th><td><i class="doc"> * <span class="command">@since</span> 0.9.6</i></td></tr>
+<tr><th id="666">666</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="667">667</th><td><u>#define <dfn class="macro" id="_M/ck_assert_str_eq" data-ref="_M/ck_assert_str_eq">ck_assert_str_eq</dfn>(X, Y) _ck_assert_str(X, ==, Y)</u></td></tr>
+<tr><th id="668">668</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="669">669</th><td><i class="doc"> * Check two strings to determine if 0!=strcmp(X,Y)</i></td></tr>
+<tr><th id="670">670</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="671">671</th><td><i class="doc"> * If not 0!=strcmp(X,Y), the test fails.</i></td></tr>
+<tr><th id="672">672</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="673">673</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> string</i></td></tr>
+<tr><th id="674">674</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> string to compare against X</i></td></tr>
+<tr><th id="675">675</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="676">676</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="677">677</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="678">678</th><td><i class="doc"> * <span class="command">@since</span> 0.9.6</i></td></tr>
+<tr><th id="679">679</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="680">680</th><td><u>#define <dfn class="macro" id="_M/ck_assert_str_ne" data-ref="_M/ck_assert_str_ne">ck_assert_str_ne</dfn>(X, Y) _ck_assert_str(X, !=, Y)</u></td></tr>
+<tr><th id="681">681</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="682">682</th><td><i class="doc"> * Check two strings to determine if 0&lt;strcmp(X,Y), (e.g. strcmp(X,Y)&gt;0)</i></td></tr>
+<tr><th id="683">683</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="684">684</th><td><i class="doc"> * If not 0&lt;strcmp(X,Y), the test fails.</i></td></tr>
+<tr><th id="685">685</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="686">686</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> string</i></td></tr>
+<tr><th id="687">687</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> string to compare against X</i></td></tr>
+<tr><th id="688">688</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="689">689</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="690">690</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="691">691</th><td><i class="doc"> * <span class="command">@since</span> 0.9.10</i></td></tr>
+<tr><th id="692">692</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="693">693</th><td><u>#define <dfn class="macro" id="_M/ck_assert_str_lt" data-ref="_M/ck_assert_str_lt">ck_assert_str_lt</dfn>(X, Y) _ck_assert_str(X, &lt;, Y)</u></td></tr>
+<tr><th id="694">694</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="695">695</th><td><i class="doc"> * Check two strings to determine if 0&lt;=strcmp(X,Y) (e.g. strcmp(X,Y)&gt;=0)</i></td></tr>
+<tr><th id="696">696</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="697">697</th><td><i class="doc"> * If not 0&lt;=strcmp(X,Y), the test fails.</i></td></tr>
+<tr><th id="698">698</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="699">699</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> string</i></td></tr>
+<tr><th id="700">700</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> string to compare against X</i></td></tr>
+<tr><th id="701">701</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="702">702</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="703">703</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="704">704</th><td><i class="doc"> * <span class="command">@since</span> 0.9.10</i></td></tr>
+<tr><th id="705">705</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="706">706</th><td><u>#define <dfn class="macro" id="_M/ck_assert_str_le" data-ref="_M/ck_assert_str_le">ck_assert_str_le</dfn>(X, Y) _ck_assert_str(X, &lt;=, Y)</u></td></tr>
+<tr><th id="707">707</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="708">708</th><td><i class="doc"> * Check two strings to determine if 0&lt;strcmp(X,Y) (e.g. strcmp(X,Y)&gt;0)</i></td></tr>
+<tr><th id="709">709</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="710">710</th><td><i class="doc"> * If not 0&lt;strcmp(X,Y), the test fails.</i></td></tr>
+<tr><th id="711">711</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="712">712</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> string</i></td></tr>
+<tr><th id="713">713</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> string to compare against X</i></td></tr>
+<tr><th id="714">714</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="715">715</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="716">716</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="717">717</th><td><i class="doc"> * <span class="command">@since</span> 0.9.10</i></td></tr>
+<tr><th id="718">718</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="719">719</th><td><u>#define <dfn class="macro" id="_M/ck_assert_str_gt" data-ref="_M/ck_assert_str_gt">ck_assert_str_gt</dfn>(X, Y) _ck_assert_str(X, &gt;, Y)</u></td></tr>
+<tr><th id="720">720</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="721">721</th><td><i class="doc"> * Check two strings to determine if 0&gt;=strcmp(X,Y) (e.g. strcmp(X,Y)&lt;=0)</i></td></tr>
+<tr><th id="722">722</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="723">723</th><td><i class="doc"> * If not 0&gt;=strcmp(X,Y), the test fails.</i></td></tr>
+<tr><th id="724">724</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="725">725</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> string</i></td></tr>
+<tr><th id="726">726</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> string to compare against X</i></td></tr>
+<tr><th id="727">727</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="728">728</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="729">729</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="730">730</th><td><i class="doc"> * <span class="command">@since</span> 0.9.10</i></td></tr>
+<tr><th id="731">731</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="732">732</th><td><u>#define <dfn class="macro" id="_M/ck_assert_str_ge" data-ref="_M/ck_assert_str_ge">ck_assert_str_ge</dfn>(X, Y) _ck_assert_str(X, &gt;=, Y)</u></td></tr>
+<tr><th id="733">733</th><td></td></tr>
+<tr><th id="734">734</th><td><i>/* Pointer comparison macros with improved output compared to ck_assert(). */</i></td></tr>
+<tr><th id="735">735</th><td><i>/* OP may only be == or !=  */</i></td></tr>
+<tr><th id="736">736</th><td><u>#define <dfn class="macro" id="_M/_ck_assert_ptr" data-ref="_M/_ck_assert_ptr">_ck_assert_ptr</dfn>(X, OP, Y) do { \</u></td></tr>
+<tr><th id="737">737</th><td><u>  const void* _ck_x = (X); \</u></td></tr>
+<tr><th id="738">738</th><td><u>  const void* _ck_y = (Y); \</u></td></tr>
+<tr><th id="739">739</th><td><u>  ck_assert_msg(_ck_x OP _ck_y, "Assertion '%s' failed: %s == %#x, %s == %#x", #X" "#OP" "#Y, #X, _ck_x, #Y, _ck_y); \</u></td></tr>
+<tr><th id="740">740</th><td><u>} while (0)</u></td></tr>
+<tr><th id="741">741</th><td></td></tr>
+<tr><th id="742">742</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="743">743</th><td><i class="doc"> * Check if two pointers are equal.</i></td></tr>
+<tr><th id="744">744</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="745">745</th><td><i class="doc"> * If the two passed pointers are not equal, the test</i></td></tr>
+<tr><th id="746">746</th><td><i class="doc"> * fails.</i></td></tr>
+<tr><th id="747">747</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="748">748</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> pointer</i></td></tr>
+<tr><th id="749">749</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> pointer to compare against X</i></td></tr>
+<tr><th id="750">750</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="751">751</th><td><i class="doc"> * <span class="command">@note</span> If the check fails, the remaining of the test is aborted</i></td></tr>
+<tr><th id="752">752</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="753">753</th><td><i class="doc"> * <span class="command">@since</span> 0.9.10</i></td></tr>
+<tr><th id="754">754</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="755">755</th><td><u>#define <dfn class="macro" id="_M/ck_assert_ptr_eq" data-ref="_M/ck_assert_ptr_eq">ck_assert_ptr_eq</dfn>(X, Y) _ck_assert_ptr(X, ==, Y)</u></td></tr>
+<tr><th id="756">756</th><td></td></tr>
+<tr><th id="757">757</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="758">758</th><td><i class="doc"> * Check if two pointers are not.</i></td></tr>
+<tr><th id="759">759</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="760">760</th><td><i class="doc"> * If the two passed pointers are equal, the test fails.</i></td></tr>
+<tr><th id="761">761</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="762">762</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">X</span> pointer</i></td></tr>
+<tr><th id="763">763</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">Y</span> pointer to compare against X</i></td></tr>
+<tr><th id="764">764</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="765">765</th><td><i class="doc"> * <span class="command">@since</span> 0.9.10</i></td></tr>
+<tr><th id="766">766</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="767">767</th><td><u>#define <dfn class="macro" id="_M/ck_assert_ptr_ne" data-ref="_M/ck_assert_ptr_ne">ck_assert_ptr_ne</dfn>(X, Y) _ck_assert_ptr(X, !=, Y)</u></td></tr>
+<tr><th id="768">768</th><td></td></tr>
+<tr><th id="769">769</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="770">770</th><td><i class="doc"> * Mark the last point reached in a unit test.</i></td></tr>
+<tr><th id="771">771</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="772">772</th><td><i class="doc"> * If the test throws a signal or exits, the location noted with the</i></td></tr>
+<tr><th id="773">773</th><td><i class="doc"> * failure is the last location of a ck_assert*() or ck_abort() call.</i></td></tr>
+<tr><th id="774">774</th><td><i class="doc"> * Use mark_point() to record intermediate locations (useful for tracking down</i></td></tr>
+<tr><th id="775">775</th><td><i class="doc"> * crashes or exits).</i></td></tr>
+<tr><th id="776">776</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="777">777</th><td><i class="doc"> * <span class="command">@since</span> 0.6.0</i></td></tr>
+<tr><th id="778">778</th><td><i class="doc">*/</i></td></tr>
+<tr><th id="779">779</th><td><u>#define <dfn class="macro" id="_M/mark_point" data-ref="_M/mark_point">mark_point</dfn>() _mark_point(__FILE__,__LINE__)</u></td></tr>
+<tr><th id="780">780</th><td></td></tr>
+<tr><th id="781">781</th><td><i>/* Non macro version of #mark_point */</i></td></tr>
+<tr><th id="782">782</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>void</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="_mark_point" title='_mark_point' data-ref="_mark_point">_mark_point</dfn>(<em>const</em> <em>char</em> *<dfn class="local col7 decl" id="397file" title='file' data-type='const char *' data-ref="397file">file</dfn>, <em>int</em> <dfn class="local col8 decl" id="398line" title='line' data-type='int' data-ref="398line">line</dfn>);</td></tr>
+<tr><th id="783">783</th><td></td></tr>
+<tr><th id="784">784</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="785">785</th><td><i class="doc"> * Enum describing the possible results of a test</i></td></tr>
+<tr><th id="786">786</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="787">787</th><td><b>enum</b> <dfn class="type def" id="test_result" title='test_result' data-ref="test_result">test_result</dfn></td></tr>
+<tr><th id="788">788</th><td>{</td></tr>
+<tr><th id="789">789</th><td>    <dfn class="enum" id="test_result::CK_TEST_RESULT_INVALID" title='test_result::CK_TEST_RESULT_INVALID' data-ref="test_result::CK_TEST_RESULT_INVALID">CK_TEST_RESULT_INVALID</dfn>,     <i class="doc">/**&lt; Default value; should not encounter this */</i></td></tr>
+<tr><th id="790">790</th><td>    <dfn class="enum" id="test_result::CK_PASS" title='test_result::CK_PASS' data-ref="test_result::CK_PASS">CK_PASS</dfn>,                    <i class="doc">/**&lt; Test passed */</i></td></tr>
+<tr><th id="791">791</th><td>    <dfn class="enum" id="test_result::CK_FAILURE" title='test_result::CK_FAILURE' data-ref="test_result::CK_FAILURE">CK_FAILURE</dfn>,                 <i class="doc">/**&lt; Test completed but failed */</i></td></tr>
+<tr><th id="792">792</th><td>    <dfn class="enum" id="test_result::CK_ERROR" title='test_result::CK_ERROR' data-ref="test_result::CK_ERROR">CK_ERROR</dfn>                    <i class="doc">/**&lt; Test failed to complete</i></td></tr>
+<tr><th id="793">793</th><td><i class="doc">                                   (unexpected signal or non-zero early exit) */</i></td></tr>
+<tr><th id="794">794</th><td>};</td></tr>
+<tr><th id="795">795</th><td></td></tr>
+<tr><th id="796">796</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="797">797</th><td><i class="doc"> * Enum specifying the verbosity of output a SRunner should produce</i></td></tr>
+<tr><th id="798">798</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="799">799</th><td><b>enum</b> <dfn class="type def" id="print_output" title='print_output' data-ref="print_output">print_output</dfn></td></tr>
+<tr><th id="800">800</th><td>{</td></tr>
+<tr><th id="801">801</th><td>    <dfn class="enum" id="print_output::CK_SILENT" title='print_output::CK_SILENT' data-ref="print_output::CK_SILENT">CK_SILENT</dfn>,                  <i class="doc">/**&lt; No output */</i></td></tr>
+<tr><th id="802">802</th><td>    <dfn class="enum" id="print_output::CK_MINIMAL" title='print_output::CK_MINIMAL' data-ref="print_output::CK_MINIMAL">CK_MINIMAL</dfn>,                 <i class="doc">/**&lt; Only summary output */</i></td></tr>
+<tr><th id="803">803</th><td>    <dfn class="enum" id="print_output::CK_NORMAL" title='print_output::CK_NORMAL' data-ref="print_output::CK_NORMAL">CK_NORMAL</dfn>,                  <i class="doc">/**&lt; All failed tests */</i></td></tr>
+<tr><th id="804">804</th><td>    <dfn class="enum" id="print_output::CK_VERBOSE" title='print_output::CK_VERBOSE' data-ref="print_output::CK_VERBOSE">CK_VERBOSE</dfn>,                 <i class="doc">/**&lt; All tests */</i></td></tr>
+<tr><th id="805">805</th><td>    <dfn class="enum" id="print_output::CK_ENV" title='print_output::CK_ENV' data-ref="print_output::CK_ENV">CK_ENV</dfn>,                     <i class="doc">/**&lt; Look at environment var CK_VERBOSITY</i></td></tr>
+<tr><th id="806">806</th><td><i class="doc">                                     for what verbosity to use, which can be</i></td></tr>
+<tr><th id="807">807</th><td><i class="doc">                                     either "silent", "minimal", "normal",</i></td></tr>
+<tr><th id="808">808</th><td><i class="doc">                                     or "verbose". If the environment variable</i></td></tr>
+<tr><th id="809">809</th><td><i class="doc">                                     is not set, then CK_NORMAL will be used.*/</i></td></tr>
+<tr><th id="810">810</th><td><u>#<span data-ppcond="810">if</span> 1</u></td></tr>
+<tr><th id="811">811</th><td>    <dfn class="enum" id="print_output::CK_SUBUNIT" title='print_output::CK_SUBUNIT' data-ref="print_output::CK_SUBUNIT">CK_SUBUNIT</dfn>,                 <i class="doc">/**&lt; Run as a subunit child process */</i></td></tr>
+<tr><th id="812">812</th><td><u>#<span data-ppcond="810">endif</span></u></td></tr>
+<tr><th id="813">813</th><td>    <dfn class="enum" id="print_output::CK_LAST" title='print_output::CK_LAST' data-ref="print_output::CK_LAST">CK_LAST</dfn>                     <i class="doc">/**&lt; Not a valid option */</i></td></tr>
+<tr><th id="814">814</th><td>};</td></tr>
+<tr><th id="815">815</th><td></td></tr>
+<tr><th id="816">816</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="817">817</th><td><i class="doc"> * Holds state for a running of a test suite</i></td></tr>
+<tr><th id="818">818</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="819">819</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="SRunner" title='SRunner' data-ref="SRunner"><a class="type" href="#SRunner" title='SRunner' data-ref="SRunner">SRunner</a></dfn> <dfn class="typedef" id="SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</dfn>;</td></tr>
+<tr><th id="820">820</th><td></td></tr>
+<tr><th id="821">821</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="822">822</th><td><i class="doc"> * Opaque type for a test failure</i></td></tr>
+<tr><th id="823">823</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="824">824</th><td><b>typedef</b> <b>struct</b> <dfn class="type" id="TestResult" title='TestResult' data-ref="TestResult"><a class="type" href="#TestResult" title='TestResult' data-ref="TestResult">TestResult</a></dfn> <dfn class="typedef" id="TestResult" title='TestResult' data-type='struct TestResult' data-ref="TestResult">TestResult</dfn>;</td></tr>
+<tr><th id="825">825</th><td></td></tr>
+<tr><th id="826">826</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="827">827</th><td><i class="doc"> * Enum representing the types of contexts for a test</i></td></tr>
+<tr><th id="828">828</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="829">829</th><td><b>enum</b> <dfn class="type def" id="ck_result_ctx" title='ck_result_ctx' data-ref="ck_result_ctx">ck_result_ctx</dfn></td></tr>
+<tr><th id="830">830</th><td>{</td></tr>
+<tr><th id="831">831</th><td>    <dfn class="enum" id="ck_result_ctx::CK_CTX_INVALID" title='ck_result_ctx::CK_CTX_INVALID' data-ref="ck_result_ctx::CK_CTX_INVALID">CK_CTX_INVALID</dfn>,             <i class="doc">/**&lt; Default value; should not encounter this */</i></td></tr>
+<tr><th id="832">832</th><td>    <dfn class="enum" id="ck_result_ctx::CK_CTX_SETUP" title='ck_result_ctx::CK_CTX_SETUP' data-ref="ck_result_ctx::CK_CTX_SETUP">CK_CTX_SETUP</dfn>,               <i class="doc">/**&lt; Setup before a test */</i></td></tr>
+<tr><th id="833">833</th><td>    <dfn class="enum" id="ck_result_ctx::CK_CTX_TEST" title='ck_result_ctx::CK_CTX_TEST' data-ref="ck_result_ctx::CK_CTX_TEST">CK_CTX_TEST</dfn>,                <i class="doc">/**&lt; Body of test itself */</i></td></tr>
+<tr><th id="834">834</th><td>    <dfn class="enum" id="ck_result_ctx::CK_CTX_TEARDOWN" title='ck_result_ctx::CK_CTX_TEARDOWN' data-ref="ck_result_ctx::CK_CTX_TEARDOWN">CK_CTX_TEARDOWN</dfn>             <i class="doc">/**&lt; Teardown after a test */</i></td></tr>
+<tr><th id="835">835</th><td>};</td></tr>
+<tr><th id="836">836</th><td></td></tr>
+<tr><th id="837">837</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="838">838</th><td><i class="doc"> * Retrieve type of result that the given test result represents.</i></td></tr>
+<tr><th id="839">839</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="840">840</th><td><i class="doc"> * This is a member of test_result, and can represent a</i></td></tr>
+<tr><th id="841">841</th><td><i class="doc"> * pass, failure, or error.</i></td></tr>
+<tr><th id="842">842</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="843">843</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tr</span> test result to retrieve result from</i></td></tr>
+<tr><th id="844">844</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="845">845</th><td><i class="doc"> * <span class="command">@return</span> result of given test</i></td></tr>
+<tr><th id="846">846</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="847">847</th><td><i class="doc"> * <span class="command">@since</span> 0.6.0</i></td></tr>
+<tr><th id="848">848</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="849">849</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>int</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="tr_rtype" title='tr_rtype' data-ref="tr_rtype">tr_rtype</dfn>(<a class="typedef" href="#TestResult" title='TestResult' data-type='struct TestResult' data-ref="TestResult">TestResult</a> * <dfn class="local col9 decl" id="399tr" title='tr' data-type='TestResult *' data-ref="399tr">tr</dfn>);</td></tr>
+<tr><th id="850">850</th><td></td></tr>
+<tr><th id="851">851</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="852">852</th><td><i class="doc"> * Retrieve context in which the result occurred for the given test result.</i></td></tr>
+<tr><th id="853">853</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="854">854</th><td><i class="doc"> * The types of contents include the test setup, teardown, or the</i></td></tr>
+<tr><th id="855">855</th><td><i class="doc"> * body of the test itself.</i></td></tr>
+<tr><th id="856">856</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="857">857</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tr</span> test result to retrieve context from</i></td></tr>
+<tr><th id="858">858</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="859">859</th><td><i class="doc"> * <span class="command">@return</span> context to which the given test result applies</i></td></tr>
+<tr><th id="860">860</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="861">861</th><td><i class="doc"> * <span class="command">@since</span> 0.8.0</i></td></tr>
+<tr><th id="862">862</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="863">863</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <b>enum</b> <a class="type" href="#ck_result_ctx" title='ck_result_ctx' data-ref="ck_result_ctx">ck_result_ctx</a> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="tr_ctx" title='tr_ctx' data-ref="tr_ctx">tr_ctx</dfn>(<a class="typedef" href="#TestResult" title='TestResult' data-type='struct TestResult' data-ref="TestResult">TestResult</a> * <dfn class="local col0 decl" id="400tr" title='tr' data-type='TestResult *' data-ref="400tr">tr</dfn>);</td></tr>
+<tr><th id="864">864</th><td></td></tr>
+<tr><th id="865">865</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="866">866</th><td><i class="doc"> * Retrieve failure message from test result, if applicable.</i></td></tr>
+<tr><th id="867">867</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="868">868</th><td><i class="doc"> * <span class="command">@return</span> pointer to a message, if one exists. NULL otherwise.</i></td></tr>
+<tr><th id="869">869</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="870">870</th><td><i class="doc"> * <span class="command">@since</span> 0.6.0</i></td></tr>
+<tr><th id="871">871</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="872">872</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>const</em> <em>char</em> *<a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="tr_msg" title='tr_msg' data-ref="tr_msg">tr_msg</dfn>(<a class="typedef" href="#TestResult" title='TestResult' data-type='struct TestResult' data-ref="TestResult">TestResult</a> * <dfn class="local col1 decl" id="401tr" title='tr' data-type='TestResult *' data-ref="401tr">tr</dfn>);</td></tr>
+<tr><th id="873">873</th><td></td></tr>
+<tr><th id="874">874</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="875">875</th><td><i class="doc"> * Retrieve line number at which a failure occurred, if applicable.</i></td></tr>
+<tr><th id="876">876</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="877">877</th><td><i class="doc"> * <span class="command">@return</span> If the test resulted in a failure, returns the line number</i></td></tr>
+<tr><th id="878">878</th><td><i class="doc"> *          that the failure occurred on; otherwise returns -1.</i></td></tr>
+<tr><th id="879">879</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="880">880</th><td><i class="doc"> * <span class="command">@since</span> 0.6.0</i></td></tr>
+<tr><th id="881">881</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="882">882</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>int</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="tr_lno" title='tr_lno' data-ref="tr_lno">tr_lno</dfn>(<a class="typedef" href="#TestResult" title='TestResult' data-type='struct TestResult' data-ref="TestResult">TestResult</a> * <dfn class="local col2 decl" id="402tr" title='tr' data-type='TestResult *' data-ref="402tr">tr</dfn>);</td></tr>
+<tr><th id="883">883</th><td></td></tr>
+<tr><th id="884">884</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="885">885</th><td><i class="doc"> * Retrieve file name at which a failure occurred, if applicable.</i></td></tr>
+<tr><th id="886">886</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="887">887</th><td><i class="doc"> * <span class="command">@return</span> If the test resulted in a failure, returns a string</i></td></tr>
+<tr><th id="888">888</th><td><i class="doc"> *          containing the name of the file where the failure</i></td></tr>
+<tr><th id="889">889</th><td><i class="doc"> *          occurred; otherwise returns NULL.</i></td></tr>
+<tr><th id="890">890</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="891">891</th><td><i class="doc"> * <span class="command">@since</span> 0.6.0</i></td></tr>
+<tr><th id="892">892</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="893">893</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>const</em> <em>char</em> *<a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="tr_lfile" title='tr_lfile' data-ref="tr_lfile">tr_lfile</dfn>(<a class="typedef" href="#TestResult" title='TestResult' data-type='struct TestResult' data-ref="TestResult">TestResult</a> * <dfn class="local col3 decl" id="403tr" title='tr' data-type='TestResult *' data-ref="403tr">tr</dfn>);</td></tr>
+<tr><th id="894">894</th><td></td></tr>
+<tr><th id="895">895</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="896">896</th><td><i class="doc"> * Retrieve test case name in which a failure occurred, if applicable.</i></td></tr>
+<tr><th id="897">897</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="898">898</th><td><i class="doc"> * <span class="command">@return</span> If the test resulted in a failure, returns a string</i></td></tr>
+<tr><th id="899">899</th><td><i class="doc"> *          containing the name of the test suite where the failure</i></td></tr>
+<tr><th id="900">900</th><td><i class="doc"> *          occurred; otherwise returns NULL.</i></td></tr>
+<tr><th id="901">901</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="902">902</th><td><i class="doc"> * <span class="command">@since</span> 0.6.0</i></td></tr>
+<tr><th id="903">903</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="904">904</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>const</em> <em>char</em> *<a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="tr_tcname" title='tr_tcname' data-ref="tr_tcname">tr_tcname</dfn>(<a class="typedef" href="#TestResult" title='TestResult' data-type='struct TestResult' data-ref="TestResult">TestResult</a> * <dfn class="local col4 decl" id="404tr" title='tr' data-type='TestResult *' data-ref="404tr">tr</dfn>);</td></tr>
+<tr><th id="905">905</th><td></td></tr>
+<tr><th id="906">906</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="907">907</th><td><i class="doc"> * Creates a suite runner for the given suite.</i></td></tr>
+<tr><th id="908">908</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="909">909</th><td><i class="doc"> * Once created, additional suites can be added to the</i></td></tr>
+<tr><th id="910">910</th><td><i class="doc"> * suite runner using srunner_add_suite(), and the suite runner can be</i></td></tr>
+<tr><th id="911">911</th><td><i class="doc"> * run with srunner_run_all(). Once finished, the suite runner</i></td></tr>
+<tr><th id="912">912</th><td><i class="doc"> * must be freed with srunner_free().</i></td></tr>
+<tr><th id="913">913</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="914">914</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">s</span> suite to generate a suite runner for</i></td></tr>
+<tr><th id="915">915</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="916">916</th><td><i class="doc"> * <span class="command">@return</span> suite runner for the given suite</i></td></tr>
+<tr><th id="917">917</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="918">918</th><td><i class="doc"> * <span class="command">@since</span> 0.6.0</i></td></tr>
+<tr><th id="919">919</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="920">920</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> *<a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_create" title='srunner_create' data-ref="srunner_create">srunner_create</dfn>(<a class="typedef" href="#Suite" title='Suite' data-type='struct Suite' data-ref="Suite">Suite</a> * <dfn class="local col5 decl" id="405s" title='s' data-type='Suite *' data-ref="405s">s</dfn>);</td></tr>
+<tr><th id="921">921</th><td></td></tr>
+<tr><th id="922">922</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="923">923</th><td><i class="doc"> * Add an additional suite to a suite runner.</i></td></tr>
+<tr><th id="924">924</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="925">925</th><td><i class="doc"> * The first suite in a suite runner is always added in srunner_create().</i></td></tr>
+<tr><th id="926">926</th><td><i class="doc"> * This call adds additional suites to a suite runner.</i></td></tr>
+<tr><th id="927">927</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="928">928</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">sr</span> suite runner to add the given suite</i></td></tr>
+<tr><th id="929">929</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">s</span> suite to add to the given suite runner</i></td></tr>
+<tr><th id="930">930</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="931">931</th><td><i class="doc"> * <span class="command">@since</span> 0.7.0</i></td></tr>
+<tr><th id="932">932</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="933">933</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>void</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_add_suite" title='srunner_add_suite' data-ref="srunner_add_suite">srunner_add_suite</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col6 decl" id="406sr" title='sr' data-type='SRunner *' data-ref="406sr">sr</dfn>, <a class="typedef" href="#Suite" title='Suite' data-type='struct Suite' data-ref="Suite">Suite</a> * <dfn class="local col7 decl" id="407s" title='s' data-type='Suite *' data-ref="407s">s</dfn>);</td></tr>
+<tr><th id="934">934</th><td></td></tr>
+<tr><th id="935">935</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="936">936</th><td><i class="doc"> * Frees a suite runner, including all contained suite and test cases.</i></td></tr>
+<tr><th id="937">937</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="938">938</th><td><i class="doc"> * This call is responsible for freeing all resources related to a</i></td></tr>
+<tr><th id="939">939</th><td><i class="doc"> * suite runner and all contained suites and test cases. Suite and</i></td></tr>
+<tr><th id="940">940</th><td><i class="doc"> * test cases need not be freed individually, as this call handles that.</i></td></tr>
+<tr><th id="941">941</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="942">942</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">sr</span> suite runner to free</i></td></tr>
+<tr><th id="943">943</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="944">944</th><td><i class="doc"> * <span class="command">@since</span> 0.6.0</i></td></tr>
+<tr><th id="945">945</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="946">946</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>void</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_free" title='srunner_free' data-ref="srunner_free">srunner_free</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col8 decl" id="408sr" title='sr' data-type='SRunner *' data-ref="408sr">sr</dfn>);</td></tr>
+<tr><th id="947">947</th><td></td></tr>
+<tr><th id="948">948</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="949">949</th><td><i class="doc"> * Runs a suite runner and all contained suite, printing results to</i></td></tr>
+<tr><th id="950">950</th><td><i class="doc"> * stdout as specified by the print_mode.</i></td></tr>
+<tr><th id="951">951</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="952">952</th><td><i class="doc"> * In addition to running all suites, if the suite runner has been</i></td></tr>
+<tr><th id="953">953</th><td><i class="doc"> * configured to output to a log, that is also performed.</i></td></tr>
+<tr><th id="954">954</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="955">955</th><td><i class="doc"> * Note that if the CK_RUN_CASE and/or CK_RUN_SUITE environment variables</i></td></tr>
+<tr><th id="956">956</th><td><i class="doc"> * are defined, then only the named suite and/or test case is run.</i></td></tr>
+<tr><th id="957">957</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="958">958</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">sr</span> suite runner to run all suites from</i></td></tr>
+<tr><th id="959">959</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">print_mode</span> the verbosity in which to report results to stdout</i></td></tr>
+<tr><th id="960">960</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="961">961</th><td><i class="doc"> * <span class="command">@since</span> 0.6.0</i></td></tr>
+<tr><th id="962">962</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="963">963</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>void</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_run_all" title='srunner_run_all' data-ref="srunner_run_all">srunner_run_all</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col9 decl" id="409sr" title='sr' data-type='SRunner *' data-ref="409sr">sr</dfn>,</td></tr>
+<tr><th id="964">964</th><td>                                          <b>enum</b> <a class="type" href="#print_output" title='print_output' data-ref="print_output">print_output</a> <dfn class="local col0 decl" id="410print_mode" title='print_mode' data-type='enum print_output' data-ref="410print_mode">print_mode</dfn>);</td></tr>
+<tr><th id="965">965</th><td></td></tr>
+<tr><th id="966">966</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="967">967</th><td><i class="doc"> * Run a specific suite or test case from a suite runner, printing results</i></td></tr>
+<tr><th id="968">968</th><td><i class="doc"> * to stdout as specified by the print_mode.</i></td></tr>
+<tr><th id="969">969</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="970">970</th><td><i class="doc"> * In addition to running any applicable suites or test cases, if the</i></td></tr>
+<tr><th id="971">971</th><td><i class="doc"> * suite runner has been configured to output to a log, that is also</i></td></tr>
+<tr><th id="972">972</th><td><i class="doc"> * performed.</i></td></tr>
+<tr><th id="973">973</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="974">974</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">sr</span> suite runner where the given suite or test case must be</i></td></tr>
+<tr><th id="975">975</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">sname</span> suite name to run. A NULL means "any suite".</i></td></tr>
+<tr><th id="976">976</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">tcname</span> test case name to run. A NULL means "any test case"</i></td></tr>
+<tr><th id="977">977</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">print_mode</span> the verbosity in which to report results to stdout</i></td></tr>
+<tr><th id="978">978</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="979">979</th><td><i class="doc"> * <span class="command">@since</span> 0.9.9</i></td></tr>
+<tr><th id="980">980</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="981">981</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>void</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_run" title='srunner_run' data-ref="srunner_run">srunner_run</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col1 decl" id="411sr" title='sr' data-type='SRunner *' data-ref="411sr">sr</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="412sname" title='sname' data-type='const char *' data-ref="412sname">sname</dfn>,</td></tr>
+<tr><th id="982">982</th><td>                                      <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="413tcname" title='tcname' data-type='const char *' data-ref="413tcname">tcname</dfn>,</td></tr>
+<tr><th id="983">983</th><td>                                      <b>enum</b> <a class="type" href="#print_output" title='print_output' data-ref="print_output">print_output</a> <dfn class="local col4 decl" id="414print_mode" title='print_mode' data-type='enum print_output' data-ref="414print_mode">print_mode</dfn>);</td></tr>
+<tr><th id="984">984</th><td></td></tr>
+<tr><th id="985">985</th><td></td></tr>
+<tr><th id="986">986</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="987">987</th><td><i class="doc"> * Retrieve the number of failed tests executed by a suite runner.</i></td></tr>
+<tr><th id="988">988</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="989">989</th><td><i class="doc"> * This value represents both test failures and errors.</i></td></tr>
+<tr><th id="990">990</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="991">991</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">sr</span> suite runner to query for all failed tests</i></td></tr>
+<tr><th id="992">992</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="993">993</th><td><i class="doc"> * <span class="command">@return</span> number of test failures and errors found by the suite runner</i></td></tr>
+<tr><th id="994">994</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="995">995</th><td><i class="doc"> * <span class="command">@since</span> 0.6.1</i></td></tr>
+<tr><th id="996">996</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="997">997</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>int</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_ntests_failed" title='srunner_ntests_failed' data-ref="srunner_ntests_failed">srunner_ntests_failed</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col5 decl" id="415sr" title='sr' data-type='SRunner *' data-ref="415sr">sr</dfn>);</td></tr>
+<tr><th id="998">998</th><td></td></tr>
+<tr><th id="999">999</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1000">1000</th><td><i class="doc"> * Retrieve the total number of tests run by a suite runner.</i></td></tr>
+<tr><th id="1001">1001</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1002">1002</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">sr</span> suite runner to query for all tests run</i></td></tr>
+<tr><th id="1003">1003</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1004">1004</th><td><i class="doc"> * <span class="command">@return</span> number of all tests run by the suite runner</i></td></tr>
+<tr><th id="1005">1005</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1006">1006</th><td><i class="doc"> * <span class="command">@since</span> 0.6.1</i></td></tr>
+<tr><th id="1007">1007</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1008">1008</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>int</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_ntests_run" title='srunner_ntests_run' data-ref="srunner_ntests_run">srunner_ntests_run</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col6 decl" id="416sr" title='sr' data-type='SRunner *' data-ref="416sr">sr</dfn>);</td></tr>
+<tr><th id="1009">1009</th><td></td></tr>
+<tr><th id="1010">1010</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1011">1011</th><td><i class="doc"> * Return an array of results for all failures found by a suite runner.</i></td></tr>
+<tr><th id="1012">1012</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1013">1013</th><td><i class="doc"> * Number of results is equal to srunner_nfailed_tests().</i></td></tr>
+<tr><th id="1014">1014</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1015">1015</th><td><i class="doc"> * Information about individual results can be queried using:</i></td></tr>
+<tr><th id="1016">1016</th><td><i class="doc"> * tr_rtype(), tr_ctx(), tr_msg(), tr_lno(), tr_lfile(), and tr_tcname().</i></td></tr>
+<tr><th id="1017">1017</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1018">1018</th><td><i class="doc"> * Memory is malloc'ed and must be freed; however free the entire structure</i></td></tr>
+<tr><th id="1019">1019</th><td><i class="doc"> * instead of individual test cases.</i></td></tr>
+<tr><th id="1020">1020</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1021">1021</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">sr</span> suite runner to retrieve results from</i></td></tr>
+<tr><th id="1022">1022</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1023">1023</th><td><i class="doc"> * <span class="command">@return</span> array of TestResult objects</i></td></tr>
+<tr><th id="1024">1024</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1025">1025</th><td><i class="doc"> * <span class="command">@since</span> 0.6.0</i></td></tr>
+<tr><th id="1026">1026</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1027">1027</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <a class="typedef" href="#TestResult" title='TestResult' data-type='struct TestResult' data-ref="TestResult">TestResult</a> **<a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_failures" title='srunner_failures' data-ref="srunner_failures">srunner_failures</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col7 decl" id="417sr" title='sr' data-type='SRunner *' data-ref="417sr">sr</dfn>);</td></tr>
+<tr><th id="1028">1028</th><td></td></tr>
+<tr><th id="1029">1029</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1030">1030</th><td><i class="doc"> * Return an array of results for all tests run by a suite runner.</i></td></tr>
+<tr><th id="1031">1031</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1032">1032</th><td><i class="doc"> * Number of results is equal to srunner_ntests_run(), and excludes</i></td></tr>
+<tr><th id="1033">1033</th><td><i class="doc"> * failures due to setup function failure.</i></td></tr>
+<tr><th id="1034">1034</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1035">1035</th><td><i class="doc"> * Information about individual results can be queried using:</i></td></tr>
+<tr><th id="1036">1036</th><td><i class="doc"> * tr_rtype(), tr_ctx(), tr_msg(), tr_lno(), tr_lfile(), and tr_tcname().</i></td></tr>
+<tr><th id="1037">1037</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1038">1038</th><td><i class="doc"> * Memory is malloc'ed and must be freed; however free the entire structure</i></td></tr>
+<tr><th id="1039">1039</th><td><i class="doc"> * instead of individual test cases.</i></td></tr>
+<tr><th id="1040">1040</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1041">1041</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">sr</span> suite runner to retrieve results from</i></td></tr>
+<tr><th id="1042">1042</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1043">1043</th><td><i class="doc"> * <span class="command">@return</span> array of TestResult objects</i></td></tr>
+<tr><th id="1044">1044</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1045">1045</th><td><i class="doc"> * <span class="command">@since</span> 0.6.1</i></td></tr>
+<tr><th id="1046">1046</th><td><i class="doc">*/</i></td></tr>
+<tr><th id="1047">1047</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <a class="typedef" href="#TestResult" title='TestResult' data-type='struct TestResult' data-ref="TestResult">TestResult</a> **<a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_results" title='srunner_results' data-ref="srunner_results">srunner_results</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col8 decl" id="418sr" title='sr' data-type='SRunner *' data-ref="418sr">sr</dfn>);</td></tr>
+<tr><th id="1048">1048</th><td></td></tr>
+<tr><th id="1049">1049</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1050">1050</th><td><i class="doc"> * Print the results contained in an SRunner to stdout.</i></td></tr>
+<tr><th id="1051">1051</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1052">1052</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">sr</span> suite runner to print results for to stdout</i></td></tr>
+<tr><th id="1053">1053</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">print_mode</span> the print_output (verbosity) to use to report</i></td></tr>
+<tr><th id="1054">1054</th><td><i class="doc"> *         the result</i></td></tr>
+<tr><th id="1055">1055</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1056">1056</th><td><i class="doc"> * <span class="command">@since</span> 0.7.0</i></td></tr>
+<tr><th id="1057">1057</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1058">1058</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>void</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_print" title='srunner_print' data-ref="srunner_print">srunner_print</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col9 decl" id="419sr" title='sr' data-type='SRunner *' data-ref="419sr">sr</dfn>,</td></tr>
+<tr><th id="1059">1059</th><td>                                        <b>enum</b> <a class="type" href="#print_output" title='print_output' data-ref="print_output">print_output</a> <dfn class="local col0 decl" id="420print_mode" title='print_mode' data-type='enum print_output' data-ref="420print_mode">print_mode</dfn>);</td></tr>
+<tr><th id="1060">1060</th><td></td></tr>
+<tr><th id="1061">1061</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1062">1062</th><td><i class="doc"> * Set the suite runner to output the result in log format to the</i></td></tr>
+<tr><th id="1063">1063</th><td><i class="doc"> * given file.</i></td></tr>
+<tr><th id="1064">1064</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1065">1065</th><td><i class="doc"> * Note: log file setting is an initialize only operation -- it should</i></td></tr>
+<tr><th id="1066">1066</th><td><i class="doc"> * be done immediately after SRunner creation, and the log file can't be</i></td></tr>
+<tr><th id="1067">1067</th><td><i class="doc"> * changed after being set.</i></td></tr>
+<tr><th id="1068">1068</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1069">1069</th><td><i class="doc"> * This setting does not conflict with the other log output types;</i></td></tr>
+<tr><th id="1070">1070</th><td><i class="doc"> * all logging types can occur concurrently if configured.</i></td></tr>
+<tr><th id="1071">1071</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1072">1072</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">sr</span> suite runner to log results of in log format</i></td></tr>
+<tr><th id="1073">1073</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">fname</span> file name to output log results to</i></td></tr>
+<tr><th id="1074">1074</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1075">1075</th><td><i class="doc"> * <span class="command">@since</span> 0.7.1</i></td></tr>
+<tr><th id="1076">1076</th><td><i class="doc">*/</i></td></tr>
+<tr><th id="1077">1077</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>void</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_set_log" title='srunner_set_log' data-ref="srunner_set_log">srunner_set_log</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col1 decl" id="421sr" title='sr' data-type='SRunner *' data-ref="421sr">sr</dfn>, <em>const</em> <em>char</em> *<dfn class="local col2 decl" id="422fname" title='fname' data-type='const char *' data-ref="422fname">fname</dfn>);</td></tr>
+<tr><th id="1078">1078</th><td></td></tr>
+<tr><th id="1079">1079</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1080">1080</th><td><i class="doc"> * Checks if the suite runner is assigned a file for log output.</i></td></tr>
+<tr><th id="1081">1081</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1082">1082</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">sr</span> suite runner to check</i></td></tr>
+<tr><th id="1083">1083</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1084">1084</th><td><i class="doc"> * <span class="command">@return</span> 1 iff the suite runner currently is configured to output</i></td></tr>
+<tr><th id="1085">1085</th><td><i class="doc"> *         in log format; 0 otherwise</i></td></tr>
+<tr><th id="1086">1086</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1087">1087</th><td><i class="doc"> * <span class="command">@since</span> 0.7.1</i></td></tr>
+<tr><th id="1088">1088</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1089">1089</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>int</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_has_log" title='srunner_has_log' data-ref="srunner_has_log">srunner_has_log</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col3 decl" id="423sr" title='sr' data-type='SRunner *' data-ref="423sr">sr</dfn>);</td></tr>
+<tr><th id="1090">1090</th><td></td></tr>
+<tr><th id="1091">1091</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1092">1092</th><td><i class="doc"> * Retrieves the name of the currently assigned file</i></td></tr>
+<tr><th id="1093">1093</th><td><i class="doc"> * for log output, if any exists.</i></td></tr>
+<tr><th id="1094">1094</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1095">1095</th><td><i class="doc"> * <span class="command">@return</span> the name of the log file, or NULL if none is configured</i></td></tr>
+<tr><th id="1096">1096</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1097">1097</th><td><i class="doc"> * <span class="command">@since</span> 0.7.1</i></td></tr>
+<tr><th id="1098">1098</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1099">1099</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>const</em> <em>char</em> *<a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_log_fname" title='srunner_log_fname' data-ref="srunner_log_fname">srunner_log_fname</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col4 decl" id="424sr" title='sr' data-type='SRunner *' data-ref="424sr">sr</dfn>);</td></tr>
+<tr><th id="1100">1100</th><td></td></tr>
+<tr><th id="1101">1101</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1102">1102</th><td><i class="doc"> * Set the suite runner to output the result in XML format to the</i></td></tr>
+<tr><th id="1103">1103</th><td><i class="doc"> * given file.</i></td></tr>
+<tr><th id="1104">1104</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1105">1105</th><td><i class="doc"> * Note: XML file setting is an initialize only operation -- it should</i></td></tr>
+<tr><th id="1106">1106</th><td><i class="doc"> * be done immediately after SRunner creation, and the XML file can't be</i></td></tr>
+<tr><th id="1107">1107</th><td><i class="doc"> * changed after being set.</i></td></tr>
+<tr><th id="1108">1108</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1109">1109</th><td><i class="doc"> * This setting does not conflict with the other log output types;</i></td></tr>
+<tr><th id="1110">1110</th><td><i class="doc"> * all logging types can occur concurrently if configured.</i></td></tr>
+<tr><th id="1111">1111</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1112">1112</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">sr</span> suite runner to log results of in XML format</i></td></tr>
+<tr><th id="1113">1113</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">fname</span> file name to output XML results to</i></td></tr>
+<tr><th id="1114">1114</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1115">1115</th><td><i class="doc"> * <span class="command">@since</span> 0.9.1</i></td></tr>
+<tr><th id="1116">1116</th><td><i class="doc">*/</i></td></tr>
+<tr><th id="1117">1117</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>void</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_set_xml" title='srunner_set_xml' data-ref="srunner_set_xml">srunner_set_xml</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col5 decl" id="425sr" title='sr' data-type='SRunner *' data-ref="425sr">sr</dfn>, <em>const</em> <em>char</em> *<dfn class="local col6 decl" id="426fname" title='fname' data-type='const char *' data-ref="426fname">fname</dfn>);</td></tr>
+<tr><th id="1118">1118</th><td></td></tr>
+<tr><th id="1119">1119</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1120">1120</th><td><i class="doc"> * Checks if the suite runner is assigned a file for XML output.</i></td></tr>
+<tr><th id="1121">1121</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1122">1122</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">sr</span> suite runner to check</i></td></tr>
+<tr><th id="1123">1123</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1124">1124</th><td><i class="doc"> * <span class="command">@return</span> 1 iff the suite runner currently is configured to output</i></td></tr>
+<tr><th id="1125">1125</th><td><i class="doc"> *         in XML format; 0 otherwise</i></td></tr>
+<tr><th id="1126">1126</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1127">1127</th><td><i class="doc"> * <span class="command">@since</span> 0.9.1</i></td></tr>
+<tr><th id="1128">1128</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1129">1129</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>int</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_has_xml" title='srunner_has_xml' data-ref="srunner_has_xml">srunner_has_xml</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col7 decl" id="427sr" title='sr' data-type='SRunner *' data-ref="427sr">sr</dfn>);</td></tr>
+<tr><th id="1130">1130</th><td></td></tr>
+<tr><th id="1131">1131</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1132">1132</th><td><i class="doc"> * Retrieves the name of the currently assigned file</i></td></tr>
+<tr><th id="1133">1133</th><td><i class="doc"> * for XML output, if any exists.</i></td></tr>
+<tr><th id="1134">1134</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1135">1135</th><td><i class="doc"> * <span class="command">@return</span> the name of the XML file, or NULL if none is configured</i></td></tr>
+<tr><th id="1136">1136</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1137">1137</th><td><i class="doc"> * <span class="command">@since</span> 0.9.1</i></td></tr>
+<tr><th id="1138">1138</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1139">1139</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>const</em> <em>char</em> *<a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_xml_fname" title='srunner_xml_fname' data-ref="srunner_xml_fname">srunner_xml_fname</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col8 decl" id="428sr" title='sr' data-type='SRunner *' data-ref="428sr">sr</dfn>);</td></tr>
+<tr><th id="1140">1140</th><td></td></tr>
+<tr><th id="1141">1141</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1142">1142</th><td><i class="doc"> * Set the suite runner to output the result in TAP format to the</i></td></tr>
+<tr><th id="1143">1143</th><td><i class="doc"> * given file.</i></td></tr>
+<tr><th id="1144">1144</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1145">1145</th><td><i class="doc"> * Note: TAP file setting is an initialize only operation -- it should</i></td></tr>
+<tr><th id="1146">1146</th><td><i class="doc"> * be done immediately after SRunner creation, and the TAP file can't be</i></td></tr>
+<tr><th id="1147">1147</th><td><i class="doc"> * changed after being set.</i></td></tr>
+<tr><th id="1148">1148</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1149">1149</th><td><i class="doc"> * This setting does not conflict with the other log output types;</i></td></tr>
+<tr><th id="1150">1150</th><td><i class="doc"> * all logging types can occur concurrently if configured.</i></td></tr>
+<tr><th id="1151">1151</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1152">1152</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">sr</span> suite runner to log results of in TAP format</i></td></tr>
+<tr><th id="1153">1153</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">fname</span> file name to output TAP results to</i></td></tr>
+<tr><th id="1154">1154</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1155">1155</th><td><i class="doc"> * <span class="command">@since</span> 0.9.12</i></td></tr>
+<tr><th id="1156">1156</th><td><i class="doc">*/</i></td></tr>
+<tr><th id="1157">1157</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>void</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_set_tap" title='srunner_set_tap' data-ref="srunner_set_tap">srunner_set_tap</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col9 decl" id="429sr" title='sr' data-type='SRunner *' data-ref="429sr">sr</dfn>, <em>const</em> <em>char</em> *<dfn class="local col0 decl" id="430fname" title='fname' data-type='const char *' data-ref="430fname">fname</dfn>);</td></tr>
+<tr><th id="1158">1158</th><td></td></tr>
+<tr><th id="1159">1159</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1160">1160</th><td><i class="doc"> * Checks if the suite runner is assigned a file for TAP output.</i></td></tr>
+<tr><th id="1161">1161</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1162">1162</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">sr</span> suite runner to check</i></td></tr>
+<tr><th id="1163">1163</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1164">1164</th><td><i class="doc"> * <span class="command">@return</span> 1 iff the suite runner currently is configured to output</i></td></tr>
+<tr><th id="1165">1165</th><td><i class="doc"> *         in TAP format; 0 otherwise</i></td></tr>
+<tr><th id="1166">1166</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1167">1167</th><td><i class="doc"> * <span class="command">@since</span> 0.9.12</i></td></tr>
+<tr><th id="1168">1168</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1169">1169</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>int</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_has_tap" title='srunner_has_tap' data-ref="srunner_has_tap">srunner_has_tap</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col1 decl" id="431sr" title='sr' data-type='SRunner *' data-ref="431sr">sr</dfn>);</td></tr>
+<tr><th id="1170">1170</th><td></td></tr>
+<tr><th id="1171">1171</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1172">1172</th><td><i class="doc"> * Retrieves the name of the currently assigned file</i></td></tr>
+<tr><th id="1173">1173</th><td><i class="doc"> * for TAP output, if any exists.</i></td></tr>
+<tr><th id="1174">1174</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1175">1175</th><td><i class="doc"> * <span class="command">@return</span> the name of the TAP file, or NULL if none is configured</i></td></tr>
+<tr><th id="1176">1176</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1177">1177</th><td><i class="doc"> * <span class="command">@since</span> 0.9.12</i></td></tr>
+<tr><th id="1178">1178</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1179">1179</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>const</em> <em>char</em> *<a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_tap_fname" title='srunner_tap_fname' data-ref="srunner_tap_fname">srunner_tap_fname</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col2 decl" id="432sr" title='sr' data-type='SRunner *' data-ref="432sr">sr</dfn>);</td></tr>
+<tr><th id="1180">1180</th><td></td></tr>
+<tr><th id="1181">1181</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1182">1182</th><td><i class="doc"> * Enum describing the current fork usage.</i></td></tr>
+<tr><th id="1183">1183</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1184">1184</th><td><b>enum</b> <dfn class="type def" id="fork_status" title='fork_status' data-ref="fork_status">fork_status</dfn></td></tr>
+<tr><th id="1185">1185</th><td>{</td></tr>
+<tr><th id="1186">1186</th><td>    <dfn class="enum" id="fork_status::CK_FORK_GETENV" title='fork_status::CK_FORK_GETENV' data-ref="fork_status::CK_FORK_GETENV">CK_FORK_GETENV</dfn>,             <i class="doc">/**&lt; look in the environment for CK_FORK */</i></td></tr>
+<tr><th id="1187">1187</th><td>    <dfn class="enum" id="fork_status::CK_FORK" title='fork_status::CK_FORK' data-ref="fork_status::CK_FORK">CK_FORK</dfn>,                    <i class="doc">/**&lt; call fork to run tests */</i></td></tr>
+<tr><th id="1188">1188</th><td>    <dfn class="enum" id="fork_status::CK_NOFORK" title='fork_status::CK_NOFORK' data-ref="fork_status::CK_NOFORK">CK_NOFORK</dfn>                   <i class="doc">/**&lt; don't call fork */</i></td></tr>
+<tr><th id="1189">1189</th><td>};</td></tr>
+<tr><th id="1190">1190</th><td></td></tr>
+<tr><th id="1191">1191</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1192">1192</th><td><i class="doc"> * Retrieve the current fork status for the given suite runner</i></td></tr>
+<tr><th id="1193">1193</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1194">1194</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">sr</span> suite runner to check fork status of</i></td></tr>
+<tr><th id="1195">1195</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1196">1196</th><td><i class="doc"> * <span class="command">@since</span> 0.8.0</i></td></tr>
+<tr><th id="1197">1197</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1198">1198</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <b>enum</b> <a class="type" href="#fork_status" title='fork_status' data-ref="fork_status">fork_status</a> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_fork_status" title='srunner_fork_status' data-ref="srunner_fork_status">srunner_fork_status</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col3 decl" id="433sr" title='sr' data-type='SRunner *' data-ref="433sr">sr</dfn>);</td></tr>
+<tr><th id="1199">1199</th><td></td></tr>
+<tr><th id="1200">1200</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1201">1201</th><td><i class="doc"> * Set the fork status for a given suite runner.</i></td></tr>
+<tr><th id="1202">1202</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1203">1203</th><td><i class="doc"> * The default fork status is CK_FORK_GETENV, which will look</i></td></tr>
+<tr><th id="1204">1204</th><td><i class="doc"> * for the CK_FORK environment variable, which can be set to</i></td></tr>
+<tr><th id="1205">1205</th><td><i class="doc"> * "yes" or "no". If the environment variable is not present,</i></td></tr>
+<tr><th id="1206">1206</th><td><i class="doc"> * CK_FORK will be used if fork() is available on the system,</i></td></tr>
+<tr><th id="1207">1207</th><td><i class="doc"> * otherwise CK_NOFORK is used.</i></td></tr>
+<tr><th id="1208">1208</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1209">1209</th><td><i class="doc"> * If set to CK_FORK or CK_NOFORK, the environment variable</i></td></tr>
+<tr><th id="1210">1210</th><td><i class="doc"> * if defined is ignored.</i></td></tr>
+<tr><th id="1211">1211</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1212">1212</th><td><i class="doc"> * If Check is compiled without support for fork(), attempting</i></td></tr>
+<tr><th id="1213">1213</th><td><i class="doc"> * to set the status to CK_FORK is ignored.</i></td></tr>
+<tr><th id="1214">1214</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1215">1215</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">sr</span> suite runner to assign the fork status to</i></td></tr>
+<tr><th id="1216">1216</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">fstat</span> fork status to assign</i></td></tr>
+<tr><th id="1217">1217</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1218">1218</th><td><i class="doc"> * <span class="command">@since</span> 0.8.0</i></td></tr>
+<tr><th id="1219">1219</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1220">1220</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>void</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="srunner_set_fork_status" title='srunner_set_fork_status' data-ref="srunner_set_fork_status">srunner_set_fork_status</dfn>(<a class="typedef" href="#SRunner" title='SRunner' data-type='struct SRunner' data-ref="SRunner">SRunner</a> * <dfn class="local col4 decl" id="434sr" title='sr' data-type='SRunner *' data-ref="434sr">sr</dfn>,</td></tr>
+<tr><th id="1221">1221</th><td>                                                  <b>enum</b> <a class="type" href="#fork_status" title='fork_status' data-ref="fork_status">fork_status</a> <dfn class="local col5 decl" id="435fstat" title='fstat' data-type='enum fork_status' data-ref="435fstat">fstat</dfn>);</td></tr>
+<tr><th id="1222">1222</th><td></td></tr>
+<tr><th id="1223">1223</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1224">1224</th><td><i class="doc"> * Invoke fork() during a test and assign the child to the same</i></td></tr>
+<tr><th id="1225">1225</th><td><i class="doc"> * process group that the rest of the test case uses.</i></td></tr>
+<tr><th id="1226">1226</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1227">1227</th><td><i class="doc"> * One can invoke fork() directly during a test; however doing so</i></td></tr>
+<tr><th id="1228">1228</th><td><i class="doc"> * may not guarantee that any children processes are destroyed once</i></td></tr>
+<tr><th id="1229">1229</th><td><i class="doc"> * the test finishes. Once a test has completed, all processes in</i></td></tr>
+<tr><th id="1230">1230</th><td><i class="doc"> * the process group will be killed; using this wrapper will prevent</i></td></tr>
+<tr><th id="1231">1231</th><td><i class="doc"> * orphan processes.</i></td></tr>
+<tr><th id="1232">1232</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1233">1233</th><td><i class="doc"> * If Check is compiled without fork() support this call simply</i></td></tr>
+<tr><th id="1234">1234</th><td><i class="doc"> * return -1 and does nothing.</i></td></tr>
+<tr><th id="1235">1235</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1236">1236</th><td><i class="doc"> * <span class="command">@return</span> On success, the PID of the child process is returned in</i></td></tr>
+<tr><th id="1237">1237</th><td><i class="doc"> *          the parent, and 0 is returned in the child.  On failure,</i></td></tr>
+<tr><th id="1238">1238</th><td><i class="doc"> *          a value of -1 is returned to the parent process and no</i></td></tr>
+<tr><th id="1239">1239</th><td><i class="doc"> *          child process is created.</i></td></tr>
+<tr><th id="1240">1240</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1241">1241</th><td><i class="doc"> * <span class="command">@since</span> 0.9.3</i></td></tr>
+<tr><th id="1242">1242</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1243">1243</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <a class="typedef" href="x86_64-linux-gnu/sys/types.h.html#pid_t" title='pid_t' data-type='__pid_t' data-ref="pid_t">pid_t</a> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="check_fork" title='check_fork' data-ref="check_fork">check_fork</dfn>(<em>void</em>);</td></tr>
+<tr><th id="1244">1244</th><td></td></tr>
+<tr><th id="1245">1245</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="1246">1246</th><td><i class="doc"> * Wait for the pid and exit.</i></td></tr>
+<tr><th id="1247">1247</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1248">1248</th><td><i class="doc"> * This is to be used in conjunction with check_fork(). When called,</i></td></tr>
+<tr><th id="1249">1249</th><td><i class="doc"> * will wait for the given process to terminate. If the process</i></td></tr>
+<tr><th id="1250">1250</th><td><i class="doc"> * exited without error, exit(EXIT_SUCCESS) is invoked; otherwise</i></td></tr>
+<tr><th id="1251">1251</th><td><i class="doc"> * exit(EXIT_FAILURE) is invoked.</i></td></tr>
+<tr><th id="1252">1252</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1253">1253</th><td><i class="doc"> * If Check is compiled without support for fork(), this invokes</i></td></tr>
+<tr><th id="1254">1254</th><td><i class="doc"> * exit(EXIT_FAILURE).</i></td></tr>
+<tr><th id="1255">1255</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1256">1256</th><td><i class="doc"> * <span class="command">@param</span> <span class="arg">pid</span> process to wait for, created by check_fork()</i></td></tr>
+<tr><th id="1257">1257</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="1258">1258</th><td><i class="doc"> * <span class="command">@since</span> 0.9.3</i></td></tr>
+<tr><th id="1259">1259</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="1260">1260</th><td><a class="macro" href="#76" title="" data-ref="_M/CK_DLL_EXP">CK_DLL_EXP</a> <em>void</em> <a class="macro" href="#68" title="" data-ref="_M/CK_EXPORT">CK_EXPORT</a> <dfn class="decl" id="check_waitpid_and_exit" title='check_waitpid_and_exit' data-ref="check_waitpid_and_exit">check_waitpid_and_exit</dfn>(<a class="typedef" href="x86_64-linux-gnu/sys/types.h.html#pid_t" title='pid_t' data-type='__pid_t' data-ref="pid_t">pid_t</a> <dfn class="local col6 decl" id="436pid" title='pid' data-type='pid_t' data-ref="436pid">pid</dfn>) <a class="macro" href="#57" title="__attribute__ ((noreturn))" data-ref="_M/CK_ATTRIBUTE_NORETURN">CK_ATTRIBUTE_NORETURN</a>;</td></tr>
+<tr><th id="1261">1261</th><td></td></tr>
+<tr><th id="1262">1262</th><td><u>#<span data-ppcond="1262">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="1263">1263</th><td><a class="macro" href="#38" title="}" data-ref="_M/CK_CPPEND">CK_CPPEND</a></td></tr>
+<tr><th id="1264">1264</th><td><u>#<span data-ppcond="1262">endif</span></u></td></tr>
+<tr><th id="1265">1265</th><td></td></tr>
+<tr><th id="1266">1266</th><td><u>#<span data-ppcond="22">endif</span> /* CHECK_H */</u></td></tr>
+<tr><th id="1267">1267</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../unikey/test/test_inputproc.cc.html'>unikey/test/test_inputproc.cc</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

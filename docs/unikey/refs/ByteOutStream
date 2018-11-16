@@ -1,0 +1,10 @@
+<inh f='unikey/ukengine/byteio.h' l='14' c='ByteStream'/>
+<def f='unikey/ukengine/byteio.h' l='47' ll='54'/>
+<ovr f='unikey/ukengine/byteio.h' l='143' c='StringBOStream'/>
+<ovr f='unikey/ukengine/byteio.h' l='169' c='FileBOStream'/>
+<size>8</size>
+<doc f='unikey/ukengine/byteio.h' l='46'>//----------------------------------------------------</doc>
+<fun r='_ZN13ByteOutStream4putBEh'/>
+<fun r='_ZN13ByteOutStream4putWEt'/>
+<fun r='_ZN13ByteOutStream4putsEPKci'/>
+<fun r='_ZN13ByteOutStream4isOKEv'/>

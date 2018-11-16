@@ -1,0 +1,10 @@
+<dec f='include/check.h' l='1008' type='int srunner_ntests_run(SRunner * sr)'/>
+<doc f='include/check.h' l='999'>/**
+ * Retrieve the total number of tests run by a suite runner.
+ *
+ * @param sr suite runner to query for all tests run
+ *
+ * @return number of all tests run by the suite runner
+ *
+ * @since 0.6.1
+ */</doc>

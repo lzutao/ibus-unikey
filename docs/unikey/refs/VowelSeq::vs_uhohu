@@ -1,0 +1,18 @@
+<dec f='unikey/ukengine/vnlexi.h' l='121' type='67'/>
+<use f='unikey/ukengine/ukengine.cpp' l='142'/>
+<use f='unikey/ukengine/ukengine.cpp' l='142'/>
+<use f='unikey/ukengine/ukengine.cpp' l='148'/>
+<use f='unikey/ukengine/ukengine.cpp' l='148'/>
+<use f='unikey/ukengine/ukengine.cpp' l='150'/>
+<use f='unikey/ukengine/ukengine.cpp' l='150'/>
+<use f='unikey/ukengine/ukengine.cpp' l='150'/>
+<use f='unikey/ukengine/ukengine.cpp' l='150'/>
+<use f='unikey/ukengine/ukengine.cpp' l='142'/>
+<use f='unikey/ukengine/ukengine.cpp' l='142'/>
+<use f='unikey/ukengine/ukengine.cpp' l='148'/>
+<use f='unikey/ukengine/ukengine.cpp' l='148'/>
+<use f='unikey/ukengine/ukengine.cpp' l='150'/>
+<use f='unikey/ukengine/ukengine.cpp' l='150'/>
+<use f='unikey/ukengine/ukengine.cpp' l='150'/>
+<use f='unikey/ukengine/ukengine.cpp' l='150'/>
+<use f='unikey/ukengine/ukengine.cpp' l='955' u='r' c='_ZN8UkEngine15getTonePositionE8VowelSeqb'/>

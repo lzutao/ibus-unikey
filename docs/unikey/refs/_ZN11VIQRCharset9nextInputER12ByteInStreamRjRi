@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/charset.h' l='242' type='int VIQRCharset::nextInput(ByteInStream &amp; is, StdVnChar &amp; stdChar, int &amp; bytesRead)'/>
+<inh f='unikey/ukengine/charset.h' l='92' c='_ZN9VnCharset9nextInputER12ByteInStreamRjRi'/>
+<def f='unikey/ukengine/charset.cpp' l='742' ll='837' type='int VIQRCharset::nextInput(ByteInStream &amp; is, StdVnChar &amp; stdChar, int &amp; bytesRead)'/>
+<use f='unikey/ukengine/charset.cpp' l='978' u='c' c='_ZN15UTF8VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<doc f='unikey/ukengine/charset.cpp' l='741'>//---------------------------------------------------</doc>

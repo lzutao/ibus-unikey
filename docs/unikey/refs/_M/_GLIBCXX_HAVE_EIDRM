@@ -1,0 +1,3 @@
+<dec f='include/x86_64-linux-gnu/c++/7/bits/c++config.h' l='714'/>
+<doc f='include/x86_64-linux-gnu/c++/7/bits/c++config.h' l='713'>/* Define if EIDRM exists. */</doc>
+<use f='include/x86_64-linux-gnu/c++/7/bits/error_constants.h' l='71' u='a'/>

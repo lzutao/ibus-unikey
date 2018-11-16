@@ -1,0 +1,9 @@
+<dec f='unikey/ukengine/charset.h' l='283' type='VnCharset * CVnCharsetLib::getVnCharset(int charsetIdx)'/>
+<def f='unikey/ukengine/charset.cpp' l='1065' ll='1139' type='VnCharset * CVnCharsetLib::getVnCharset(int charsetIdx)'/>
+<doc f='unikey/ukengine/charset.cpp' l='1064'>//-----------------------------------------</doc>
+<use f='unikey/ukengine/convert.cpp' l='92' u='c' c='VnConvert'/>
+<use f='unikey/ukengine/convert.cpp' l='93' u='c' c='VnConvert'/>
+<use f='unikey/ukengine/convert.cpp' l='213' u='c' c='_Z19vnFileStreamConvertiiP8_IO_FILES0_'/>
+<use f='unikey/ukengine/convert.cpp' l='214' u='c' c='_Z19vnFileStreamConvertiiP8_IO_FILES0_'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1841' u='c' c='_ZN8UkEngine11writeOutputEPhRi'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1883' u='c' c='_ZN8UkEngine11getSeqStepsEii'/>

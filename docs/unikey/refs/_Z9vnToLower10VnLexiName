@@ -1,0 +1,8 @@
+<def f='unikey/ukengine/ukengine.cpp' l='1099' ll='1106' type='VnLexiName vnToLower(VnLexiName x)'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1336' u='c' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1347' u='c' c='_ZN8UkEngine13processAppendER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1371' u='c' c='_ZN8UkEngine11appendVowelER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1528' u='c' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2303' u='c' c='_ZN8UkEngine14processWordEndER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2322' u='c' c='_ZN8UkEngine14processWordEndER10UkKeyEvent'/>
+<doc f='unikey/ukengine/ukengine.cpp' l='1098'>//----------------------------------------------------------</doc>

@@ -1,0 +1,3 @@
+<dec f='unikey/ukengine/vnconv.h' l='119' type='void VnConvGetOptions(VnConvOptions * pOptions)'/>
+<def f='unikey/ukengine/charset.cpp' l='1149' ll='1152' type='void VnConvGetOptions(VnConvOptions * pOptions)'/>
+<doc f='unikey/ukengine/charset.cpp' l='1148'>//-------------------------------------------------</doc>

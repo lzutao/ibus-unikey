@@ -1,0 +1,9 @@
+<dec f='unikey/ukengine/charset.h' l='143' type='UKWORD [256]'/>
+<offset>64</offset>
+<use f='unikey/ukengine/charset.cpp' l='600' u='r' c='_ZN17DoubleByteCharsetC1EPt'/>
+<use f='unikey/ukengine/charset.cpp' l='603' u='w' c='_ZN17DoubleByteCharsetC1EPt'/>
+<use f='unikey/ukengine/charset.cpp' l='604' u='r' c='_ZN17DoubleByteCharsetC1EPt'/>
+<use f='unikey/ukengine/charset.cpp' l='605' u='w' c='_ZN17DoubleByteCharsetC1EPt'/>
+<use f='unikey/ukengine/charset.cpp' l='621' u='r' c='_ZN17DoubleByteCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='657' u='r' c='_ZN17DoubleByteCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='672' u='r' c='_ZN17DoubleByteCharset7putCharER13ByteOutStreamjRi'/>

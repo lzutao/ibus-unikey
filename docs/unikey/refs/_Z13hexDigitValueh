@@ -1,0 +1,6 @@
+<def f='unikey/ukengine/charset.cpp' l='371' ll='380' type='int hexDigitValue(unsigned char digit)'/>
+<use f='unikey/ukengine/charset.cpp' l='422' u='c' c='_ZN17UnicodeRefCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='544' u='c' c='_ZN21UnicodeCStringCharset9nextInputER12ByteInStreamRjRi'/>
+<doc f='unikey/ukengine/charset.cpp' l='368'>////////////////////////////////////////
+// Unicode character reference &amp;#D;   //
+////////////////////////////////////////</doc>

@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/charset.h' l='303' type='StdVnChar StdVnGetRoot(StdVnChar ch)'/>
+<def f='unikey/ukengine/charset.cpp' l='1297' ll='1302' type='StdVnChar StdVnGetRoot(StdVnChar ch)'/>
+<doc f='unikey/ukengine/charset.cpp' l='1296'>//----------------------------------------</doc>
+<use f='unikey/ukengine/convert.cpp' l='55' u='c' c='_Z10genConvertR9VnCharsetS0_R12ByteInStreamR13ByteOutStream'/>

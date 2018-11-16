@@ -1,0 +1,27 @@
+<dec f='unikey/ukengine/vnlexi.h' l='42' type='137'/>
+<use f='unikey/test/test_inputproc.cc' l='28' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='28' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='28' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='28' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='28' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='28' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='28' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='28' u='r' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/ukengine/inputproc.cpp' l='48'/>
+<use f='unikey/ukengine/inputproc.cpp' l='48'/>
+<use f='unikey/ukengine/ukengine.cpp' l='185'/>
+<use f='unikey/ukengine/ukengine.cpp' l='185'/>
+<use f='unikey/ukengine/ukengine.cpp' l='185'/>
+<use f='unikey/ukengine/ukengine.cpp' l='185'/>
+<use f='unikey/ukengine/ukengine.cpp' l='189'/>
+<use f='unikey/ukengine/ukengine.cpp' l='189'/>
+<use f='unikey/ukengine/ukengine.cpp' l='189'/>
+<use f='unikey/ukengine/ukengine.cpp' l='189'/>
+<use f='unikey/ukengine/ukengine.cpp' l='185'/>
+<use f='unikey/ukengine/ukengine.cpp' l='185'/>
+<use f='unikey/ukengine/ukengine.cpp' l='185'/>
+<use f='unikey/ukengine/ukengine.cpp' l='185'/>
+<use f='unikey/ukengine/ukengine.cpp' l='189'/>
+<use f='unikey/ukengine/ukengine.cpp' l='189'/>
+<use f='unikey/ukengine/ukengine.cpp' l='189'/>
+<use f='unikey/ukengine/ukengine.cpp' l='189'/>

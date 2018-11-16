@@ -1,0 +1,2 @@
+<dec f='unikey/ukengine/keycons.h' l='79' type='1'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2202' u='r' c='_ZN8UkEngine17restoreKeyStrokesERiPhS0_R12UkOutputType'/>

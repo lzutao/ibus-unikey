@@ -1,0 +1,16 @@
+<dec f='unikey/ukengine/charset.h' l='289' type='UKDWORD [213]'/>
+<use f='unikey/ukengine/charset.cpp' l='1105' u='r' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>
+<use f='unikey/ukengine/charset.cpp' l='1116' u='r' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>
+<def f='unikey/ukengine/data.cpp' l='441' ll='464' type='UKDWORD [213]'/>
+<doc f='unikey/ukengine/data.cpp' l='429'>/*
+&apos; 0x27
+` 0x60
+? 0x3f
+~ 0x7e
+. 0x2e
+
+^ 0x5e
+( 0x28
++ 0x2b
+
+*/</doc>

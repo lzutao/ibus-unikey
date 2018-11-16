@@ -1,0 +1,9 @@
+<def f='unikey/ukengine/pattern.h' l='38' ll='48'/>
+<size>184</size>
+<mbr r='PatternState::m_pattern' o='0' t='char *'/>
+<mbr r='PatternState::m_border' o='64' t='int [41]'/>
+<mbr r='PatternState::m_pos' o='1376' t='int'/>
+<mbr r='PatternState::m_found' o='1408' t='int'/>
+<fun r='_ZN12PatternState4initEPc'/>
+<fun r='_ZN12PatternState5resetEv'/>
+<fun r='_ZN12PatternState15foundAtNextCharEc'/>

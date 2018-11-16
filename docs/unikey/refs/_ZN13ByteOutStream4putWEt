@@ -1,0 +1,9 @@
+<dec f='unikey/ukengine/byteio.h' l='51' type='int ByteOutStream::putW(UKWORD w)'/>
+<ovr f='unikey/ukengine/byteio.cpp' l='200' c='_ZN14StringBOStream4putWEt'/>
+<ovr f='unikey/ukengine/byteio.cpp' l='498' c='_ZN12FileBOStream4putWEt'/>
+<use f='unikey/ukengine/charset.cpp' l='65' u='c' c='_ZN17VnInternalCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='66' u='c' c='_ZN17VnInternalCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='171' u='c' c='_ZN14UnicodeCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='260' u='c' c='_ZN18UnicodeCompCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='263' u='c' c='_ZN18UnicodeCompCharset7putCharER13ByteOutStreamjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='268' u='c' c='_ZN18UnicodeCompCharset7putCharER13ByteOutStreamjRi'/>

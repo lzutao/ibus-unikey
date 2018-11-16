@@ -1,0 +1,8 @@
+<dec f='unikey/ukengine/convert.cpp' l='35' type='int vnFileStreamConvert(int inCharset, int outCharset, FILE * inf, FILE * outf)'/>
+<use f='unikey/ukengine/convert.cpp' l='172' u='c' c='VnFileConvert'/>
+<def f='unikey/ukengine/convert.cpp' l='211' ll='231' type='int vnFileStreamConvert(int inCharset, int outCharset, FILE * inf, FILE * outf)'/>
+<doc f='unikey/ukengine/convert.cpp' l='206'>//------------------------------------------------
+// Returns:
+//     0: successful
+//     errCode: if failed
+//---------------------------------------</doc>

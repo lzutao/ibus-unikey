@@ -1,0 +1,11 @@
+<dec f='include/check.h' l='1129' type='int srunner_has_xml(SRunner * sr)'/>
+<doc f='include/check.h' l='1119'>/**
+ * Checks if the suite runner is assigned a file for XML output.
+ *
+ * @param sr suite runner to check
+ *
+ * @return 1 iff the suite runner currently is configured to output
+ *         in XML format; 0 otherwise
+ *
+ * @since 0.9.1
+ */</doc>

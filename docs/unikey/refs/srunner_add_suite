@@ -1,0 +1,12 @@
+<dec f='include/check.h' l='933' type='void srunner_add_suite(SRunner * sr, Suite * s)'/>
+<doc f='include/check.h' l='922'>/**
+ * Add an additional suite to a suite runner.
+ *
+ * The first suite in a suite runner is always added in srunner_create().
+ * This call adds additional suites to a suite runner.
+ *
+ * @param sr suite runner to add the given suite
+ * @param s suite to add to the given suite runner
+ *
+ * @since 0.7.0
+ */</doc>

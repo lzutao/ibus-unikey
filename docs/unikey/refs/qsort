@@ -1,0 +1,11 @@
+<dec f='include/stdlib.h' l='827' type='void qsort(void * __base, size_t __nmemb, size_t __size, __compar_fn_t __compar)'/>
+<use f='unikey/ukengine/charset.cpp' l='146' u='c' c='_ZN14UnicodeCharsetC1EPt'/>
+<use f='unikey/ukengine/charset.cpp' l='211' u='c' c='_ZN18UnicodeCompCharsetC1EPtPj'/>
+<use f='unikey/ukengine/charset.cpp' l='608' u='c' c='_ZN17DoubleByteCharsetC1EPt'/>
+<use f='unikey/ukengine/charset.cpp' l='1200' u='c' c='_ZN16WinCP1258CharsetC1EPtS0_'/>
+<doc f='include/stdlib.h' l='825'>/* Sort NMEMB elements of BASE, of SIZE bytes each,
+   using COMPAR to perform the comparisons.  */</doc>
+<use f='unikey/ukengine/mactab.cpp' l='202' u='c' c='_ZN11CMacroTable12loadFromFileEPKc'/>
+<use f='unikey/ukengine/ukengine.cpp' l='444' u='c' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='445' u='c' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='446' u='c' c='_Z15engineClassInitv'/>

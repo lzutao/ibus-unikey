@@ -1,0 +1,7 @@
+<dec f='include/errno.h' l='37' type='int * __errno_location()'/>
+<use f='include/c++/7/ext/string_conversions.h' l='63' macro='1' u='c'/>
+<use f='include/c++/7/ext/string_conversions.h' l='63' macro='1' u='c'/>
+<use f='include/c++/7/ext/string_conversions.h' l='64' macro='1' u='c'/>
+<use f='include/c++/7/ext/string_conversions.h' l='64' macro='1' u='c'/>
+<use f='include/c++/7/ext/string_conversions.h' l='84' macro='1' u='c'/>
+<doc f='include/errno.h' l='36'>/* The error code set by various library functions.  */</doc>

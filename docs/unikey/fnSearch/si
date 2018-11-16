@@ -1,0 +1,4 @@
+_ZN17SingleByteCharsetC1EPh|SingleByteCharset::SingleByteCharset
+_ZN17SingleByteCharset9nextInputER12ByteInStreamRjRi|SingleByteCharset::nextInput
+_ZN17SingleByteCharset7putCharER13ByteOutStreamjRi|SingleByteCharset::putChar
+_ZNKSt16initializer_list4sizeEv|std::initializer_list::size

@@ -1,0 +1,6 @@
+<def f='include/x86_64-linux-gnu/bits/types/struct_timespec.h' l='8' ll='12'/>
+<size>16</size>
+<doc f='include/x86_64-linux-gnu/bits/types/struct_timespec.h' l='6'>/* POSIX.1b structure for a time value.  This is like a `struct timeval&apos; but
+   has nanoseconds instead of microseconds.  */</doc>
+<mbr r='timespec::tv_sec' o='0' t='__time_t'/>
+<mbr r='timespec::tv_nsec' o='64' t='__syscall_slong_t'/>

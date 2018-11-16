@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/keycons.h' l='45' type='int'/>
+<offset>96</offset>
+<use f='unikey/ukengine/unikey.cpp' l='87' u='w' c='UnikeySetOptions'/>
+<use f='unikey/ukengine/unikey.cpp' l='87' u='r' c='UnikeySetOptions'/>
+<use f='unikey/ukengine/unikey.cpp' l='105' u='w' c='CreateDefaultUnikeyOptions'/>

@@ -1,0 +1,19 @@
+<dec f='unikey/ukengine/vnlexi.h' l='127' type='-1'/>
+<use f='unikey/ukengine/ukengine.cpp' l='350' u='r' c='_Z9isValidCV6ConSeq8VowelSeq'/>
+<use f='unikey/ukengine/ukengine.cpp' l='375' u='r' c='_Z9isValidVC8VowelSeq6ConSeq'/>
+<use f='unikey/ukengine/ukengine.cpp' l='399' u='r' c='_Z10isValidCVC6ConSeq8VowelSeqS_'/>
+<use f='unikey/ukengine/ukengine.cpp' l='399' u='r' c='_Z10isValidCVC6ConSeq8VowelSeqS_'/>
+<use f='unikey/ukengine/ukengine.cpp' l='401' u='r' c='_Z10isValidCVC6ConSeq8VowelSeqS_'/>
+<use f='unikey/ukengine/ukengine.cpp' l='404' u='r' c='_Z10isValidCVC6ConSeq8VowelSeqS_'/>
+<use f='unikey/ukengine/ukengine.cpp' l='496' u='r' c='_Z10lookupCSeq10VnLexiNameS_S_'/>
+<use f='unikey/ukengine/ukengine.cpp' l='581' u='r' c='_ZN8UkEngine11processRoofER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='582' u='r' c='_ZN8UkEngine11processRoofER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='893' u='r' c='_ZN8UkEngine11processHookER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='894' u='r' c='_ZN8UkEngine11processHookER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1579' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1647' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1653' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1655' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1664' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1667' u='r' c='_ZN8UkEngine16appendConsonnantER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2360' u='r' c='_ZN8UkEngine15lastWordIsNonVnEv'/>

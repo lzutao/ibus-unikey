@@ -1,0 +1,4 @@
+<def f='include/c++/7/bits/stl_function.h' l='741' ll='756'/>
+<mbr r='std::unary_negate::_M_pred' t='_Predicate'/>
+<fun r='_ZNSt12unary_negateC1ERKT_'/>
+<fun r='_ZNKSt12unary_negateclERKNT_13argument_typeE'/>

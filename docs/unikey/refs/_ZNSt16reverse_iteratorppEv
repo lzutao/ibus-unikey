@@ -1,0 +1,6 @@
+<def f='include/c++/7/bits/stl_iterator.h' l='188' ll='193' type='reverse_iterator&lt;_Iterator&gt; &amp; std::reverse_iterator::operator++()'/>
+<doc f='include/c++/7/bits/stl_iterator.h' l='183'>/**
+       *  @return  @c *this
+       *
+       *  Decrements the underlying iterator.
+      */</doc>

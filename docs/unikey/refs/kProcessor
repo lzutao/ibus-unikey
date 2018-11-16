@@ -1,0 +1,4 @@
+<def f='unikey/test/test_inputproc.cc' l='10' type='UkInputProcessor'/>
+<use f='unikey/test/test_inputproc.cc' l='13' u='m' c='_Z5Setupv'/>
+<use f='unikey/test/test_inputproc.cc' l='58' u='m' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/test/test_inputproc.cc' l='62' u='m' c='_ZL18testKeyCodeToEventi'/>

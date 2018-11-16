@@ -1,0 +1,3 @@
+_ZSt7forwardRNSt16remove_referenceIT_E4typeE|std::forward
+_ZN11PatternList15foundAtNextCharEc|PatternList::foundAtNextChar
+_ZN12PatternState15foundAtNextCharEc|PatternState::foundAtNextChar

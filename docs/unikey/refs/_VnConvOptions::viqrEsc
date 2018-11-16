@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/vnconv.h' l='111' type='int'/>
+<offset>32</offset>
+<use f='unikey/ukengine/charset.cpp' l='737' u='r' c='_ZN11VIQRCharset10startInputEv'/>
+<use f='unikey/ukengine/charset.cpp' l='752' u='r' c='_ZN11VIQRCharset9nextInputER12ByteInStreamRjRi'/>
+<use f='unikey/ukengine/charset.cpp' l='1157' u='w' c='_Z18VnConvResetOptionsP14_VnConvOptions'/>

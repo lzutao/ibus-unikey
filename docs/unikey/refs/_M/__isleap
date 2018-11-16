@@ -1,0 +1,3 @@
+<dec f='include/time.h' l='187'/>
+<doc f='include/time.h' l='185'>/* Nonzero if YEAR is a leap year (every 4 years,
+   except every 100th isn&apos;t, and every 400th is).  */</doc>

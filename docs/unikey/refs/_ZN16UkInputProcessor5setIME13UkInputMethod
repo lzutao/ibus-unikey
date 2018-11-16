@@ -1,0 +1,6 @@
+<dec f='unikey/ukengine/inputproc.h' l='93' type='int UkInputProcessor::setIM(UkInputMethod im)'/>
+<use f='unikey/test/test_inputproc.cc' l='58' u='c' c='_ZL18testKeyCodeToEventi'/>
+<use f='unikey/ukengine/inputproc.cpp' l='271' u='c' c='_ZN16UkInputProcessor4initEv'/>
+<def f='unikey/ukengine/inputproc.cpp' l='275' ll='302' type='int UkInputProcessor::setIM(UkInputMethod im)'/>
+<doc f='unikey/ukengine/inputproc.cpp' l='274'>//-------------------------------------------</doc>
+<use f='unikey/ukengine/unikey.cpp' l='52' u='c' c='UnikeySetInputMethod'/>

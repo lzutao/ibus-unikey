@@ -1,0 +1,2 @@
+<dec f='unikey/test/test_inputproc.cc' l='7' type='void print_event(UkKeyEvent &amp; event)'/>
+<def f='unikey/test/test_inputproc.cc' l='97' ll='101' type='void print_event(UkKeyEvent &amp; event)'/>

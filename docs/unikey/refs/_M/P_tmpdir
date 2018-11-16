@@ -1,0 +1,2 @@
+<dec f='include/stdio.h' l='118'/>
+<doc f='include/stdio.h' l='117'>/* Default path prefix for `tempnam&apos; and `tmpnam&apos;.  */</doc>

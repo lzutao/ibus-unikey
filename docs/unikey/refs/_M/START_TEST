@@ -1,0 +1,3 @@
+<dec f='include/check.h' l='369'/>
+<use f='unikey/test/test_inputproc.cc' l='16' u='c'/>
+<use f='unikey/test/test_ukengine.cc' l='7' u='c'/>

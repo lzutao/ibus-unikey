@@ -1,0 +1,4 @@
+<inh f='include/c++/7/bits/nested_exception.h' l='52' c='std::nested_exception'/>
+<def f='include/c++/7/bits/nested_exception.h' l='80' ll='89'/>
+<fun r='_ZNSt17_Nested_exceptionC1ERKT_'/>
+<fun r='_ZNSt17_Nested_exceptionC1EOT_'/>

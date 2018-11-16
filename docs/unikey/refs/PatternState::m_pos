@@ -1,0 +1,12 @@
+<dec f='unikey/ukengine/pattern.h' l='43' type='int'/>
+<offset>1376</offset>
+<use f='unikey/ukengine/pattern.cpp' l='32' u='w' c='_ZN12PatternState5resetEv'/>
+<use f='unikey/ukengine/pattern.cpp' l='39' u='w' c='_ZN12PatternState4initEPc'/>
+<use f='unikey/ukengine/pattern.cpp' l='60' u='r' c='_ZN12PatternState15foundAtNextCharEc'/>
+<use f='unikey/ukengine/pattern.cpp' l='60' u='r' c='_ZN12PatternState15foundAtNextCharEc'/>
+<use f='unikey/ukengine/pattern.cpp' l='60' u='w' c='_ZN12PatternState15foundAtNextCharEc'/>
+<use f='unikey/ukengine/pattern.cpp' l='60' u='r' c='_ZN12PatternState15foundAtNextCharEc'/>
+<use f='unikey/ukengine/pattern.cpp' l='61' u='w' c='_ZN12PatternState15foundAtNextCharEc'/>
+<use f='unikey/ukengine/pattern.cpp' l='62' u='r' c='_ZN12PatternState15foundAtNextCharEc'/>
+<use f='unikey/ukengine/pattern.cpp' l='64' u='w' c='_ZN12PatternState15foundAtNextCharEc'/>
+<use f='unikey/ukengine/pattern.cpp' l='64' u='r' c='_ZN12PatternState15foundAtNextCharEc'/>

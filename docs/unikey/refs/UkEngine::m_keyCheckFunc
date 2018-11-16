@@ -1,0 +1,10 @@
+<use f='unikey/ukengine/ukengine.h' l='69' u='w' c='_ZN8UkEngine18setCheckKbCaseFuncEPFvPiS0_E'/>
+<dec f='unikey/ukengine/ukengine.h' l='97' type='CheckKeyboardCaseCb'/>
+<offset>0</offset>
+<use f='unikey/ukengine/ukengine.cpp' l='1113' u='r' c='_ZN8UkEngine14processMapCharER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1114' u='r' c='_ZN8UkEngine14processMapCharER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1198' u='r' c='_ZN8UkEngine13processTelexWER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1199' u='r' c='_ZN8UkEngine13processTelexWER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2025' u='w' c='_ZN8UkEngineC1Ev'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2070' u='r' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2071' u='r' c='_ZN8UkEngine10macroMatchER10UkKeyEvent'/>

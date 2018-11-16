@@ -1,0 +1,5 @@
+<dec f='include/search.h' l='87' type='ENTRY * hsearch(ENTRY __item, ACTION __action)'/>
+<doc f='include/search.h' l='83'>/* Search for entry matching ITEM.key in internal hash table.  If
+   ACTION is `FIND&apos; return found entry or signal error by returning
+   NULL.  If ACTION is `ENTER&apos; replace existing data (if any) with
+   ITEM.data.  */</doc>

@@ -1,0 +1,31 @@
+<dec f='include/check.h' l='333' type='void tcase_add_checked_fixture(TCase * tc, SFun setup, SFun teardown)'/>
+<use f='unikey/test/test_inputproc.cc' l='73' u='c' c='_Z9test_suitv'/>
+<use f='unikey/test/test_inputproc.cc' l='75' u='c' c='_Z9test_suitv'/>
+<doc f='include/check.h' l='307'>/**
+ * Add checked fixture setup/teardown functions to a test case
+ *
+ * Checked fixture functions are run before and after each unit test inside
+ * of the address space of the test. Thus, if using CK_FORK
+ * mode the separate process running the unit test will survive signals
+ * or unexpected exits in the fixture function. Also, if the setup
+ * function is idempotent, unit test behavior will be the same in
+ * CK_FORK and CK_NOFORK modes.
+ *
+ * However, since fixture functions are run before and after each unit
+ * test, they should not be expensive code.
+ *
+ * Note that if a setup function fails, the remaining setup functions
+ * will be omitted, as will the test and the teardown functions. If a
+ * teardown function fails the remaining teardown functins will be
+ * omitted.
+ *
+ * @param tc test case to add checked fixture setup/teardown to
+ * @param setup function to add to be executed before each unit test in
+ *               the test case;  if NULL no setup function is added
+ * @param teardown function to add to be executed after each unit test in
+ *               the test case; if NULL no teardown function is added
+ *
+ * @since 0.8.0
+*/</doc>
+<use f='unikey/test/test_ukengine.cc' l='17' u='c' c='_Z9test_suitv'/>
+<use f='unikey/test/test_ukengine.cc' l='19' u='c' c='_Z9test_suitv'/>

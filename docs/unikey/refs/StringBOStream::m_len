@@ -1,0 +1,10 @@
+<dec f='unikey/ukengine/byteio.h' l='148' type='int'/>
+<offset>224</offset>
+<use f='unikey/ukengine/byteio.cpp' l='168' u='w' c='_ZN14StringBOStreamC1EPhi'/>
+<use f='unikey/ukengine/byteio.cpp' l='191' u='r' c='_ZN14StringBOStream4putBEh'/>
+<use f='unikey/ukengine/byteio.cpp' l='205' u='r' c='_ZN14StringBOStream4putWEt'/>
+<use f='unikey/ukengine/byteio.cpp' l='220' u='r' c='_ZN14StringBOStream4putsEPKci'/>
+<use f='unikey/ukengine/byteio.cpp' l='224' u='r' c='_ZN14StringBOStream4putsEPKci'/>
+<use f='unikey/ukengine/byteio.cpp' l='230' u='r' c='_ZN14StringBOStream4putsEPKci'/>
+<use f='unikey/ukengine/byteio.cpp' l='231' u='r' c='_ZN14StringBOStream4putsEPKci'/>
+<use f='unikey/ukengine/byteio.cpp' l='239' u='r' c='_ZN14StringBOStream4putsEPKci'/>

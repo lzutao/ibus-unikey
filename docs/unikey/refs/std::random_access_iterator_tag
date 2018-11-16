@@ -1,0 +1,5 @@
+<inh f='include/c++/7/bits/stl_iterator_base_types.h' l='99' c='std::bidirectional_iterator_tag'/>
+<def f='include/c++/7/bits/stl_iterator_base_types.h' l='103'/>
+<size>1</size>
+<doc f='include/c++/7/bits/stl_iterator_base_types.h' l='101'>/// Random-access iterators support a superset of bidirectional
+  /// iterator operations.</doc>

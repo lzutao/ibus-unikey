@@ -1,0 +1,15 @@
+<dec f='unikey/ukengine/vnlexi.h' l='44' type='154'/>
+<use f='unikey/ukengine/inputproc.cpp' l='115' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='115' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='115' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='115' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='202' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='202' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='202' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='202' u='r'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1203' u='r' c='_ZN8UkEngine13processTelexWER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1225' u='r' c='_ZN8UkEngine13processTelexWER10UkKeyEvent'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='75' u='r'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='75' u='r'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='75' u='r'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='75' u='r'/>

@@ -1,0 +1,1 @@
+<def f='include/c++/7/bits/char_traits.h' l='457' ll='463' type='static char_type * std::char_traits&lt;wchar_t&gt;::copy(char_type * __s1, const char_type * __s2, size_t __n)'/>

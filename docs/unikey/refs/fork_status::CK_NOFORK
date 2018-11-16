@@ -1,0 +1,2 @@
+<dec f='include/check.h' l='1188' type='2'/>
+<doc f='include/check.h' l='1188'>/**&lt; don&apos;t call fork */</doc>

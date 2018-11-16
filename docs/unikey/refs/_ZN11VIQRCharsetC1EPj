@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/charset.h' l='239' type='void VIQRCharset::VIQRCharset(UKDWORD * vnChars)'/>
+<def f='unikey/ukengine/charset.cpp' l='703' ll='728' type='void VIQRCharset::VIQRCharset(UKDWORD * vnChars)'/>
+<use f='unikey/ukengine/charset.cpp' l='1105' u='c' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>
+<use f='unikey/ukengine/charset.cpp' l='1116' u='c' c='_ZN13CVnCharsetLib12getVnCharsetEi'/>

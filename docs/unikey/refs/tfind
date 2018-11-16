@@ -1,0 +1,3 @@
+<dec f='include/search.h' l='134' type='void * tfind(const void * __key, void *const * __rootp, __compar_fn_t __compar)'/>
+<doc f='include/search.h' l='132'>/* Search for an entry matching the given KEY in the tree pointed to
+   by *ROOTP.  If no matching entry is available return NULL.  */</doc>

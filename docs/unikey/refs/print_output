@@ -1,0 +1,4 @@
+<def f='include/check.h' l='799' ll='814'/>
+<doc f='include/check.h' l='796'>/**
+ * Enum specifying the verbosity of output a SRunner should produce
+ */</doc>

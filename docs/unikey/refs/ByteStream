@@ -1,0 +1,6 @@
+<def f='unikey/ukengine/byteio.h' l='14' ll='17'/>
+<ovr f='unikey/ukengine/byteio.h' l='20' c='ByteInStream'/>
+<ovr f='unikey/ukengine/byteio.h' l='47' c='ByteOutStream'/>
+<size>8</size>
+<doc f='unikey/ukengine/byteio.h' l='13'>//----------------------------------------------------</doc>
+<fun r='_ZN10ByteStreamD1Ev'/>

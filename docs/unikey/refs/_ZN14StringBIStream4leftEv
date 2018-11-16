@@ -1,0 +1,2 @@
+<def f='unikey/ukengine/byteio.h' l='90' ll='92' type='int StringBIStream::left()'/>
+<use f='unikey/ukengine/convert.cpp' l='103' u='c' c='VnConvert'/>

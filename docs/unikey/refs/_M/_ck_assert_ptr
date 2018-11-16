@@ -1,0 +1,2 @@
+<dec f='include/check.h' l='736'/>
+<doc f='include/check.h' l='735'>/* OP may only be == or !=  */</doc>

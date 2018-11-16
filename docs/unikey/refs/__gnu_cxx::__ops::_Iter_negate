@@ -1,0 +1,4 @@
+<def f='include/c++/7/bits/predefined_ops.h' l='339' ll='352'/>
+<mbr r='__gnu_cxx::__ops::_Iter_negate::_M_pred' t='_Predicate'/>
+<fun r='__gnu_cxx::__ops::_Iter_negate::_Iter_negate{_Predicate}'/>
+<fun r='__gnu_cxx::__ops::_Iter_negate::operator()'/>

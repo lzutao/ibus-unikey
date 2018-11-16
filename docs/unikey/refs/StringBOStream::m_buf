@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/byteio.h' l='146' type='UKBYTE *'/>
+<offset>64</offset>
+<use f='unikey/ukengine/byteio.cpp' l='167' u='w' c='_ZN14StringBOStreamC1EPhi'/>
+<use f='unikey/ukengine/byteio.cpp' l='247' u='r' c='_ZN14StringBOStream6reopenEv'/>

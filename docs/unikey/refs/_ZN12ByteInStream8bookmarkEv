@@ -1,0 +1,4 @@
+<def f='unikey/ukengine/byteio.h' l='32' ll='35' type='int ByteInStream::bookmark()'/>
+<doc f='unikey/ukengine/byteio.h' l='32'>//no support for bookmark by default</doc>
+<ovr f='unikey/ukengine/byteio.cpp' l='130' c='_ZN14StringBIStream8bookmarkEv'/>
+<ovr f='unikey/ukengine/byteio.cpp' l='421' c='_ZN12FileBIStream8bookmarkEv'/>

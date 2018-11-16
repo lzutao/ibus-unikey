@@ -1,0 +1,11 @@
+<dec f='unikey/ukengine/vnconv.h' l='47'/>
+<use f='unikey/ukengine/charset.cpp' l='1093' u='c'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1339' u='c'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1386' u='c'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1512' u='c'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1541' u='c'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1557' u='c'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1567' u='c'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1638' u='c'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1692' u='c'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1698' u='c'/>

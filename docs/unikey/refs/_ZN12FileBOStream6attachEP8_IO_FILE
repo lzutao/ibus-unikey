@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/byteio.h' l='183' type='void FileBOStream::attach(FILE * )'/>
+<def f='unikey/ukengine/byteio.cpp' l='471' ll='476' type='void FileBOStream::attach(FILE * f)'/>
+<doc f='unikey/ukengine/byteio.cpp' l='470'>//----------------------------------------------------</doc>
+<use f='unikey/ukengine/convert.cpp' l='228' u='c' c='_Z19vnFileStreamConvertiiP8_IO_FILES0_'/>

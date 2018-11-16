@@ -1,0 +1,3 @@
+<dec f='include/check.h' l='792' type='3'/>
+<doc f='include/check.h' l='792'>/**&lt; Test failed to complete
+                                   (unexpected signal or non-zero early exit) */</doc>

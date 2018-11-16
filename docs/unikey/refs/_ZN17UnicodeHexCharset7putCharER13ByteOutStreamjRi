@@ -1,0 +1,4 @@
+<dec f='unikey/ukengine/charset.h' l='177' type='int UnicodeHexCharset::putChar(ByteOutStream &amp; os, StdVnChar stdChar, int &amp; outLen)'/>
+<inh f='unikey/ukengine/charset.cpp' l='446' c='_ZN17UnicodeRefCharset7putCharER13ByteOutStreamjRi'/>
+<def f='unikey/ukengine/charset.cpp' l='482' ll='514' type='int UnicodeHexCharset::putChar(ByteOutStream &amp; os, StdVnChar stdChar, int &amp; outLen)'/>
+<doc f='unikey/ukengine/charset.cpp' l='481'>//--------------------------------</doc>

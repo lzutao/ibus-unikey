@@ -1,0 +1,5 @@
+<dec f='unikey/ukengine/byteio.h' l='53' type='int ByteOutStream::isOK()'/>
+<doc f='unikey/ukengine/byteio.h' l='53'>// get current stream state</doc>
+<ovr f='unikey/ukengine/byteio.cpp' l='254' c='_ZN14StringBOStream4isOKEv'/>
+<ovr f='unikey/ukengine/byteio.cpp' l='525' c='_ZN12FileBOStream4isOKEv'/>
+<use f='unikey/ukengine/charset.cpp' l='588' u='c' c='_ZN21UnicodeCStringCharset7putCharER13ByteOutStreamjRi'/>

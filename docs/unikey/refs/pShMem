@@ -1,0 +1,27 @@
+<def f='unikey/ukengine/unikey.cpp' l='35' type='UkSharedMem *'/>
+<use f='unikey/ukengine/unikey.cpp' l='52' u='r' c='UnikeySetInputMethod'/>
+<use f='unikey/ukengine/unikey.cpp' l='55' u='r' c='UnikeySetInputMethod'/>
+<use f='unikey/ukengine/unikey.cpp' l='57' u='r' c='UnikeySetInputMethod'/>
+<use f='unikey/ukengine/unikey.cpp' l='57' u='r' c='UnikeySetInputMethod'/>
+<use f='unikey/ukengine/unikey.cpp' l='76' u='r' c='UnikeySetOutputCharset'/>
+<use f='unikey/ukengine/unikey.cpp' l='84' u='r' c='UnikeySetOptions'/>
+<use f='unikey/ukengine/unikey.cpp' l='85' u='r' c='UnikeySetOptions'/>
+<use f='unikey/ukengine/unikey.cpp' l='86' u='r' c='UnikeySetOptions'/>
+<use f='unikey/ukengine/unikey.cpp' l='87' u='r' c='UnikeySetOptions'/>
+<use f='unikey/ukengine/unikey.cpp' l='88' u='r' c='UnikeySetOptions'/>
+<use f='unikey/ukengine/unikey.cpp' l='89' u='r' c='UnikeySetOptions'/>
+<use f='unikey/ukengine/unikey.cpp' l='90' u='r' c='UnikeySetOptions'/>
+<use f='unikey/ukengine/unikey.cpp' l='96' u='r' c='UnikeyGetOptions'/>
+<use f='unikey/ukengine/unikey.cpp' l='122' u='w' c='UnikeySetup'/>
+<use f='unikey/ukengine/unikey.cpp' l='123' u='r' c='UnikeySetup'/>
+<use f='unikey/ukengine/unikey.cpp' l='124' u='r' c='UnikeySetup'/>
+<use f='unikey/ukengine/unikey.cpp' l='125' u='r' c='UnikeySetup'/>
+<use f='unikey/ukengine/unikey.cpp' l='126' u='r' c='UnikeySetup'/>
+<use f='unikey/ukengine/unikey.cpp' l='127' u='r' c='UnikeySetup'/>
+<use f='unikey/ukengine/unikey.cpp' l='131' u='r' c='UnikeySetup'/>
+<use f='unikey/ukengine/unikey.cpp' l='132' u='r' c='UnikeySetup'/>
+<use f='unikey/ukengine/unikey.cpp' l='138' u='r' c='UnikeyCleanup'/>
+<use f='unikey/ukengine/unikey.cpp' l='179' u='r' c='UnikeyLoadMacroTable'/>
+<use f='unikey/ukengine/unikey.cpp' l='185' u='r' c='UnikeyLoadUserKeyMap'/>
+<use f='unikey/ukengine/unikey.cpp' l='187' u='r' c='UnikeyLoadUserKeyMap'/>
+<doc f='unikey/ukengine/unikey.cpp' l='34'>//---- exported variables for use in UkEnginge class ----</doc>

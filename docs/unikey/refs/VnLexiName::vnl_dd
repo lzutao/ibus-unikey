@@ -1,0 +1,20 @@
+<dec f='unikey/ukengine/vnlexi.h' l='33' type='43'/>
+<use f='unikey/ukengine/inputproc.cpp' l='198' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='198' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='198' u='r'/>
+<use f='unikey/ukengine/inputproc.cpp' l='198' u='r'/>
+<use f='unikey/ukengine/ukengine.cpp' l='166'/>
+<use f='unikey/ukengine/ukengine.cpp' l='166'/>
+<use f='unikey/ukengine/ukengine.cpp' l='166'/>
+<use f='unikey/ukengine/ukengine.cpp' l='166'/>
+<use f='unikey/ukengine/ukengine.cpp' l='166'/>
+<use f='unikey/ukengine/ukengine.cpp' l='166'/>
+<use f='unikey/ukengine/ukengine.cpp' l='166'/>
+<use f='unikey/ukengine/ukengine.cpp' l='166'/>
+<use f='unikey/ukengine/ukengine.cpp' l='464' u='w' c='_Z15engineClassInitv'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1049' u='r' c='_ZN8UkEngine9processDdER10UkKeyEvent'/>
+<use f='unikey/ukengine/ukengine.cpp' l='1068' u='r' c='_ZN8UkEngine9processDdER10UkKeyEvent'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='64' u='r'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='64' u='r'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='64' u='r'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='64' u='r'/>

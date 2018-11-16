@@ -1,0 +1,10 @@
+<inh f='unikey/ukengine/charset.h' l='87' c='VnCharset'/>
+<def f='unikey/ukengine/charset.h' l='212' ll='222'/>
+<size>3432</size>
+<mbr r='UnicodeCompCharset::m_info' o='64' t='UniCompCharInfo [426]'/>
+<mbr r='UnicodeCompCharset::m_uniCompChars' o='27328' t='UKDWORD *'/>
+<mbr r='UnicodeCompCharset::m_totalChars' o='27392' t='int'/>
+<fun r='_ZN18UnicodeCompCharsetC1EPtPj'/>
+<fun r='_ZN18UnicodeCompCharset9nextInputER12ByteInStreamRjRi'/>
+<fun r='_ZN18UnicodeCompCharset7putCharER13ByteOutStreamjRi'/>
+<fun r='_ZN18UnicodeCompCharset11elementSizeEv'/>

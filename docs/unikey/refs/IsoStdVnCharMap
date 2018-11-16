@@ -1,0 +1,5 @@
+<def f='unikey/ukengine/ukengine.cpp' l='61' type='StdVnChar [256]'/>
+<use f='unikey/ukengine/ukengine.cpp' l='65' u='r' c='_Z14IsoToStdVnChari'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2267' u='w' c='_Z17SetupUnikeyEnginev'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2271' u='w' c='_Z17SetupUnikeyEnginev'/>
+<use f='unikey/ukengine/ukengine.cpp' l='2276' u='w' c='_Z17SetupUnikeyEnginev'/>

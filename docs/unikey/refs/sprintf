@@ -1,0 +1,6 @@
+<dec f='include/stdio.h' l='320' type='int sprintf(char *__restrict __s, const char *__restrict __format)'/>
+<doc f='include/stdio.h' l='319'>/* Write formatted output to S.  */</doc>
+<use f='unikey/ukengine/convert.cpp' l='183' u='c' c='VnFileConvert'/>
+<use f='unikey/ukengine/mactab.cpp' l='251' u='c' c='_ZN11CMacroTable11writeToFileEPKc'/>
+<use f='unikey/ukengine/mactab.cpp' l='253' u='c' c='_ZN11CMacroTable11writeToFileEPKc'/>
+<use f='unikey/ukengine/usrkeymap.cpp' l='251' u='c' c='_Z18UkStoreKeyOrderMapPKcP12UkKeyMapPairi'/>
