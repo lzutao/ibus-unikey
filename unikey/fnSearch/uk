@@ -1,6 +1,6 @@
-_ZN16UkInputProcessor5getIMEv|UkInputProcessor::getIM
 _ZN8UkEngine18setCheckKbCaseFuncEPFvPiS0_E|UkEngine::setCheckKbCaseFunc
 _ZN8UkEngine11setCtrlInfoEP11UkSharedMem|UkEngine::setCtrlInfo
+_ZN16UkInputProcessor5getIMEv|UkInputProcessor::getIM
 _ZN16UkInputProcessor11getCharTypeEj|UkInputProcessor::getCharType
 _ZN16UkInputProcessor9getKeyMapEPi|UkInputProcessor::getKeyMap
 _ZN16UkInputProcessor4initEv|UkInputProcessor::init

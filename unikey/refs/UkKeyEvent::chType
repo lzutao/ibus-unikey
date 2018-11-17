@@ -1,8 +1,8 @@
 <dec f='unikey/ukengine/inputproc.h' l='64' type='UkCharType'/>
+<offset>32</offset>
 <use f='unikey/test/test_inputproc.cc' l='99' u='r' c='_Z11print_eventR10UkKeyEvent'/>
 <use f='unikey/test/test_inputproc.cc' l='104' u='r' c='_Z13compare_eventRK10UkKeyEventS1_'/>
 <use f='unikey/test/test_inputproc.cc' l='104' u='r' c='_Z13compare_eventRK10UkKeyEventS1_'/>
-<offset>32</offset>
 <use f='unikey/ukengine/inputproc.cpp' l='347' u='w' c='_ZN16UkInputProcessor14keyCodeToEventEjR10UkKeyEvent'/>
 <use f='unikey/ukengine/inputproc.cpp' l='350' u='w' c='_ZN16UkInputProcessor14keyCodeToEventEjR10UkKeyEvent'/>
 <use f='unikey/ukengine/inputproc.cpp' l='358' u='w' c='_ZN16UkInputProcessor14keyCodeToEventEjR10UkKeyEvent'/>

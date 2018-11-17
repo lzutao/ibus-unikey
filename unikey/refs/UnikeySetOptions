@@ -1,4 +1,6 @@
 <dec f='unikey/ukengine/unikey.h' l='92' type='void UnikeySetOptions(UnikeyOptions * pOpt)'/>
+<use f='unikey/src/engine.cpp' l='256' u='c' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='387' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<doc f='unikey/ukengine/unikey.h' l='91'>//set extra options</doc>
 <def f='unikey/ukengine/unikey.cpp' l='82' ll='91' type='void UnikeySetOptions(UnikeyOptions * pOpt)'/>
 <doc f='unikey/ukengine/unikey.cpp' l='81'>//--------------------------------------------</doc>
-<doc f='unikey/ukengine/unikey.h' l='91'>//set extra options</doc>

@@ -4,4 +4,6 @@
 <use f='include/c++/7/ext/string_conversions.h' l='64' macro='1' u='c'/>
 <use f='include/c++/7/ext/string_conversions.h' l='64' macro='1' u='c'/>
 <use f='include/c++/7/ext/string_conversions.h' l='84' macro='1' u='c'/>
+<use f='unikey/src/engine.cpp' l='363' macro='1' u='c'/>
+<use f='unikey/src/engine.cpp' l='373' macro='1' u='c'/>
 <doc f='include/errno.h' l='36'>/* The error code set by various library functions.  */</doc>

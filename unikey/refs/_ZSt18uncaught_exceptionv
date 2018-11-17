@@ -1,5 +1,4 @@
 <dec f='include/c++/7/exception' l='101' type='bool std::uncaught_exception()'/>
-<use f='include/c++/7/ostream' l='457' u='c' c='_ZNSt13basic_ostream6sentryD1Ev'/>
 <doc f='include/c++/7/exception' l='90'>/** [18.6.4]/1:  &apos;Returns true after completing evaluation of a
    *  throw-expression until either completing initialization of the
    *  exception-declaration in the matching handler or entering @c unexpected()
@@ -11,3 +10,4 @@
    *  %exception can result in a call of @c terminate()
    *  (15.5.1).&apos;
    */</doc>
+<use f='include/c++/7/ostream' l='457' u='c' c='_ZNSt13basic_ostream6sentryD1Ev'/>

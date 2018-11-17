@@ -1,4 +1,8 @@
 <dec f='unikey/ukengine/keycons.h' l='27'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='75' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='217' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='223' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='224' u='c'/>
 <doc f='unikey/ukengine/keycons.h' l='26'>// macro table constants</doc>
 <use f='unikey/ukengine/mactab.cpp' l='226' u='c'/>
 <use f='unikey/ukengine/mactab.cpp' l='276' u='c'/>

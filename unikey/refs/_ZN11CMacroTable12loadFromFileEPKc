@@ -1,4 +1,6 @@
 <dec f='unikey/ukengine/mactab.h' l='56' type='int CMacroTable::loadFromFile(const char * fname)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='360' u='c' c='_Z23import_macro_clicked_cbP10_GtkButtonPv'/>
+<use f='unikey/setup/dlg_main_setup.cpp' l='160' u='c' c='_ZL20macro_edit_button_cbP10_GtkButtonPv'/>
 <def f='unikey/ukengine/mactab.cpp' l='167' ll='208' type='int CMacroTable::loadFromFile(const char * fname)'/>
 <doc f='unikey/ukengine/mactab.cpp' l='166'>//---------------------------------------------------------------</doc>
 <use f='unikey/ukengine/unikey.cpp' l='179' u='c' c='UnikeyLoadMacroTable'/>

@@ -56,9 +56,9 @@
 <tr><th id="42">42</th><td>	<em>int</em> <dfn class="decl" id="PatternState::m_border" title='PatternState::m_border' data-ref="PatternState::m_border">m_border</dfn>[<a class="macro" href="#36" title="40" data-ref="_M/MAX_PATTERN_LEN">MAX_PATTERN_LEN</a>+<var>1</var>];</td></tr>
 <tr><th id="43">43</th><td>	<em>int</em> <dfn class="decl" id="PatternState::m_pos" title='PatternState::m_pos' data-ref="PatternState::m_pos">m_pos</dfn>;</td></tr>
 <tr><th id="44">44</th><td>	<em>int</em> <dfn class="decl" id="PatternState::m_found" title='PatternState::m_found' data-ref="PatternState::m_found">m_found</dfn>;</td></tr>
-<tr><th id="45">45</th><td>	<em>void</em> <dfn class="decl" id="_ZN12PatternState4initEPc" title='PatternState::init' data-ref="_ZN12PatternState4initEPc">init</dfn>(<em>char</em> *<dfn class="local col7 decl" id="57pattern" title='pattern' data-type='char *' data-ref="57pattern">pattern</dfn>);</td></tr>
+<tr><th id="45">45</th><td>	<em>void</em> <dfn class="decl" id="_ZN12PatternState4initEPc" title='PatternState::init' data-ref="_ZN12PatternState4initEPc">init</dfn>(<em>char</em> *<dfn class="local col5 decl" id="25235pattern" title='pattern' data-type='char *' data-ref="25235pattern">pattern</dfn>);</td></tr>
 <tr><th id="46">46</th><td>	<em>void</em> <dfn class="decl" id="_ZN12PatternState5resetEv" title='PatternState::reset' data-ref="_ZN12PatternState5resetEv">reset</dfn>();</td></tr>
-<tr><th id="47">47</th><td>	<em>int</em> <dfn class="decl" id="_ZN12PatternState15foundAtNextCharEc" title='PatternState::foundAtNextChar' data-ref="_ZN12PatternState15foundAtNextCharEc">foundAtNextChar</dfn>(<em>char</em> <dfn class="local col8 decl" id="58ch" title='ch' data-type='char' data-ref="58ch">ch</dfn>); <i>//get next input char, returns 1 if pattern is found.</i></td></tr>
+<tr><th id="47">47</th><td>	<em>int</em> <dfn class="decl" id="_ZN12PatternState15foundAtNextCharEc" title='PatternState::foundAtNextChar' data-ref="_ZN12PatternState15foundAtNextCharEc">foundAtNextChar</dfn>(<em>char</em> <dfn class="local col6 decl" id="25236ch" title='ch' data-type='char' data-ref="25236ch">ch</dfn>); <i>//get next input char, returns 1 if pattern is found.</i></td></tr>
 <tr><th id="48">48</th><td>};</td></tr>
 <tr><th id="49">49</th><td></td></tr>
 <tr><th id="50">50</th><td><b>class</b> <a class="macro" href="#33" title="" data-ref="_M/DllInterface">DllInterface</a> <dfn class="type def" id="PatternList" title='PatternList' data-ref="PatternList">PatternList</dfn></td></tr>
@@ -66,8 +66,8 @@
 <tr><th id="52">52</th><td><b>public</b>:</td></tr>
 <tr><th id="53">53</th><td>	<a class="type" href="#PatternState" title='PatternState' data-ref="PatternState">PatternState</a> *<dfn class="decl" id="PatternList::m_patterns" title='PatternList::m_patterns' data-ref="PatternList::m_patterns">m_patterns</dfn>;</td></tr>
 <tr><th id="54">54</th><td>	<em>int</em> <dfn class="decl" id="PatternList::m_count" title='PatternList::m_count' data-ref="PatternList::m_count">m_count</dfn>;</td></tr>
-<tr><th id="55">55</th><td>	<em>void</em> <dfn class="decl" id="_ZN11PatternList4initEPPci" title='PatternList::init' data-ref="_ZN11PatternList4initEPPci">init</dfn>(<em>char</em> **<dfn class="local col9 decl" id="59patterns" title='patterns' data-type='char **' data-ref="59patterns">patterns</dfn>, <em>int</em> <dfn class="local col0 decl" id="60count" title='count' data-type='int' data-ref="60count">count</dfn>);</td></tr>
-<tr><th id="56">56</th><td>	<em>int</em> <dfn class="decl" id="_ZN11PatternList15foundAtNextCharEc" title='PatternList::foundAtNextChar' data-ref="_ZN11PatternList15foundAtNextCharEc">foundAtNextChar</dfn>(<em>char</em> <dfn class="local col1 decl" id="61ch" title='ch' data-type='char' data-ref="61ch">ch</dfn>); </td></tr>
+<tr><th id="55">55</th><td>	<em>void</em> <dfn class="decl" id="_ZN11PatternList4initEPPci" title='PatternList::init' data-ref="_ZN11PatternList4initEPPci">init</dfn>(<em>char</em> **<dfn class="local col7 decl" id="25237patterns" title='patterns' data-type='char **' data-ref="25237patterns">patterns</dfn>, <em>int</em> <dfn class="local col8 decl" id="25238count" title='count' data-type='int' data-ref="25238count">count</dfn>);</td></tr>
+<tr><th id="56">56</th><td>	<em>int</em> <dfn class="decl" id="_ZN11PatternList15foundAtNextCharEc" title='PatternList::foundAtNextChar' data-ref="_ZN11PatternList15foundAtNextCharEc">foundAtNextChar</dfn>(<em>char</em> <dfn class="local col9 decl" id="25239ch" title='ch' data-type='char' data-ref="25239ch">ch</dfn>); </td></tr>
 <tr><th id="57">57</th><td>	<em>void</em> <dfn class="decl" id="_ZN11PatternList5resetEv" title='PatternList::reset' data-ref="_ZN11PatternList5resetEv">reset</dfn>();</td></tr>
 <tr><th id="58">58</th><td></td></tr>
 <tr><th id="59">59</th><td>	<dfn class="decl def" id="_ZN11PatternListC1Ev" title='PatternList::PatternList' data-ref="_ZN11PatternListC1Ev">PatternList</dfn>() {</td></tr>
@@ -86,6 +86,6 @@
 <tr><th id="72">72</th><td><u>#<span data-ppcond="23">endif</span></u></td></tr>
 <tr><th id="73">73</th><td></td></tr>
 </table><hr/><p id='footer'>
-Generated while processing <a href='../test/test_ukengine.cc.html'>unikey/test/test_ukengine.cc</a><br/>Generated on <em>2018-Nov-16</em> from project unikey revision <em>0.6.1</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+Generated while processing <a href='../setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-17</em> from project unikey revision <em>0.6.1</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
 <br/>Generator usage only permitted with license.</p>
 </div></body></html>

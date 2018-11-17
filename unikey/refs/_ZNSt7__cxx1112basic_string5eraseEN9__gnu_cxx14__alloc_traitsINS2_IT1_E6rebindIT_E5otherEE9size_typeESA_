@@ -1,4 +1,5 @@
 <def f='include/c++/7/bits/basic_string.h' l='1778' ll='1787' type='basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; std::__cxx11::basic_string::erase(size_type __pos = 0, size_type __n = npos)'/>
+<use f='unikey/src/engine.cpp' l='550' u='c' c='_ZL30ibus_unikey_engine_erase_charsP11_IBusEnginei'/>
 <doc f='include/c++/7/bits/basic_string.h' l='1763'>/**
        *  @brief  Remove characters.
        *  @param __pos  Index of first character to remove (default 0).

@@ -7,7 +7,7 @@
 <mbr r='StringBIStream::m_current' o='192' t='UKBYTE *'/>
 <mbr r='StringBIStream::m_len' o='256' t='int'/>
 <mbr r='StringBIStream::m_left' o='288' t='int'/>
-<mbr r='StringBIStream::m_bookmark' o='320' t='struct (anonymous struct at /home/phaptc/builddir/ibus-unikey/builddir/../test/../ukengine/byteio.h:64:2)'/>
+<mbr r='StringBIStream::m_bookmark' o='320' t='struct (anonymous struct at /home/phaptc/builddir/ibus-unikey/builddir/../ukengine/byteio.h:64:2)'/>
 <mbr r='StringBIStream::m_didBookmark' o='576' t='int'/>
 <fun r='_ZN14StringBIStreamC1EPhii'/>
 <fun r='_ZN14StringBIStream7getNextERh'/>

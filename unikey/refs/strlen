@@ -1,5 +1,13 @@
 <dec f='include/string.h' l='384' type='size_t strlen(const char * __s)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='227' u='c' c='_Z13key_edited_cbP20_GtkCellRendererTextPKcS2_Pv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='227' u='c' c='_Z13key_edited_cbP20_GtkCellRendererTextPKcS2_Pv'/>
 <doc f='include/string.h' l='383'>/* Return the length of S.  */</doc>
+<use f='unikey/src/engine.cpp' l='270' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='274' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='285' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='315' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='319' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='330' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
 <use f='unikey/ukengine/mactab.cpp' l='135' u='c' c='_ZN11CMacroTable10readHeaderEP8_IO_FILERi'/>
 <use f='unikey/ukengine/mactab.cpp' l='190' u='c' c='_ZN11CMacroTable12loadFromFileEPKc'/>
 <use f='unikey/ukengine/usrkeymap.cpp' l='176' u='c' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>

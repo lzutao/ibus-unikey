@@ -1,4 +1,4 @@
-<dec f='unikey/ukengine/byteio.h' l='68' type='struct (anonymous struct at /home/phaptc/builddir/ibus-unikey/builddir/../test/../ukengine/byteio.h:64:2)'/>
+<dec f='unikey/ukengine/byteio.h' l='68' type='struct (anonymous struct at /home/phaptc/builddir/ibus-unikey/builddir/../ukengine/byteio.h:64:2)'/>
 <offset>320</offset>
 <use f='unikey/ukengine/byteio.cpp' l='133' u='m' c='_ZN14StringBIStream8bookmarkEv'/>
 <use f='unikey/ukengine/byteio.cpp' l='134' u='m' c='_ZN14StringBIStream8bookmarkEv'/>

@@ -1,4 +1,6 @@
 <dec f='unikey/ukengine/vnconv.h' l='78' type='int VnConvert(int inCharset, int outCharset, UKBYTE * input, UKBYTE * output, int * pInLen, int * pMaxOutLen)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='88' u='c' c='_Z26append_macro_to_list_storeP13_GtkListStore11CMacroTable'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='117' u='c' c='_Z26append_macro_to_list_storeP13_GtkListStore11CMacroTable'/>
 <def f='unikey/ukengine/convert.cpp' l='80' ll='105' type='int VnConvert(int inCharset, int outCharset, UKBYTE * input, UKBYTE * output, int * pInLen, int * pMaxOutLen)'/>
 <doc f='unikey/ukengine/convert.cpp' l='64'>//----------------------------------------------
 // Arguments:

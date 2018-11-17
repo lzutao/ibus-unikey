@@ -1,1 +1,2 @@
 <def f='unikey/ukengine/mactab.h' l='62' type='int CMacroTable::getCount()'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='82' u='c' c='_Z26append_macro_to_list_storeP13_GtkListStore11CMacroTable'/>

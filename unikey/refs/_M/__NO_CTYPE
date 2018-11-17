@@ -3,3 +3,5 @@
 // file will come before all others.
 
 // This keeps isanum, et al from being propagated as macros.</doc>
+<use f='include/ctype.h' l='172' u='a'/>
+<use f='include/ctype.h' l='284' u='a'/>

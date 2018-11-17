@@ -1,4 +1,8 @@
 <dec f='unikey/ukengine/unikey.h' l='66' type='unsigned char []'/>
+<use f='unikey/src/engine.cpp' l='644' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='651' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='699' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='706' u='r' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
 <def f='unikey/ukengine/unikey.cpp' l='43' type='unsigned char [1024]'/>
 <use f='unikey/ukengine/unikey.cpp' l='144' u='r' c='UnikeyFilter'/>
 <use f='unikey/ukengine/unikey.cpp' l='145' u='r' c='UnikeyFilter'/>

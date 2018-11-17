@@ -4,6 +4,7 @@
 <use f='include/c++/7/bits/basic_string.tcc' l='224' u='c'/>
 <use f='include/c++/7/bits/basic_string.tcc' l='1481' u='c'/>
 <use f='include/c++/7/bits/basic_string.tcc' l='1552' u='c'/>
+<doc f='include/c++/7/bits/exception_defines.h' l='39'>// Else proceed normally.</doc>
 <use f='include/c++/7/bits/locale_classes.h' l='457' u='c'/>
 <use f='include/c++/7/bits/locale_classes.h' l='567' u='c'/>
 <use f='include/c++/7/bits/locale_classes.tcc' l='49' u='c'/>
@@ -44,4 +45,3 @@
 <use f='include/c++/7/bits/istream.tcc' l='902' u='c'/>
 <use f='include/c++/7/bits/istream.tcc' l='940' u='c'/>
 <use f='include/c++/7/bits/istream.tcc' l='976' u='c'/>
-<doc f='include/c++/7/bits/exception_defines.h' l='39'>// Else proceed normally.</doc>

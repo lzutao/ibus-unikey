@@ -1,4 +1,8 @@
 <dec f='unikey/ukengine/keycons.h' l='29'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='76' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='270' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='279' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='280' u='c'/>
 <doc f='unikey/ukengine/keycons.h' l='28'>//#define MAX_MACRO_TEXT_LEN 256</doc>
 <use f='unikey/ukengine/mactab.cpp' l='227' u='c'/>
 <use f='unikey/ukengine/mactab.cpp' l='291' u='c'/>

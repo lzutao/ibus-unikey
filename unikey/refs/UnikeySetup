@@ -1,4 +1,5 @@
 <dec f='unikey/ukengine/unikey.h' l='71' type='void UnikeySetup()'/>
+<use f='unikey/src/engine.cpp' l='70' u='c' c='_Z16ibus_unikey_initP8_IBusBus'/>
+<doc f='unikey/ukengine/unikey.h' l='71'>// always call this first</doc>
 <def f='unikey/ukengine/unikey.cpp' l='119' ll='133' type='void UnikeySetup()'/>
 <doc f='unikey/ukengine/unikey.cpp' l='118'>//--------------------------------------------</doc>
-<doc f='unikey/ukengine/unikey.h' l='71'>// always call this first</doc>

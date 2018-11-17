@@ -1,1 +1,10 @@
 <dec f='include/x86_64-linux-gnu/sys/cdefs.h' l='171'/>
+<use f='include/dirent.h' l='330' u='c'/>
+<use f='include/dirent.h' l='359' u='c'/>
+<use f='include/dirent.h' l='385' u='c'/>
+<use f='include/unistd.h' l='339' u='a'/>
+<use f='include/unistd.h' l='340' u='c'/>
+<use f='include/unistd.h' l='997' u='a'/>
+<use f='include/unistd.h' l='998' u='c'/>
+<use f='include/unistd.h' l='1019' u='a'/>
+<use f='include/unistd.h' l='1020' u='c'/>

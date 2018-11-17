@@ -1,4 +1,11 @@
 <dec f='unikey/ukengine/vnconv.h' l='52'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='88' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='117' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='169' u='c'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='420' u='c'/>
+<use f='unikey/src/engine.cpp' l='642' u='c'/>
+<use f='unikey/src/engine.cpp' l='697' u='c'/>
+<use f='unikey/src/utils.cpp' l='36' u='c'/>
 <use f='unikey/ukengine/charset.cpp' l='1078' u='c'/>
 <use f='unikey/ukengine/ukengine.cpp' l='1876' u='c'/>
 <use f='unikey/ukengine/unikey.cpp' l='130' u='c'/>

@@ -1,10 +1,10 @@
 _ZNSt16allocator_traits8max_sizeERKT_|std::allocator_traits::max_size
-_ZSt15make_error_codeSt4errc|std::make_error_code
-_ZSt20make_error_conditionSt4errc|std::make_error_condition
 _ZSt18make_exception_ptrT_|std::make_exception_ptr
 _ZSt18make_move_iteratorT_|std::make_move_iterator
 _ZSt9make_pairOT_OT0_|std::make_pair
 _ZSt3maxRKT_S1_|std::max
+_ZSt15make_error_codeSt4errc|std::make_error_code
+_ZSt20make_error_conditionSt4errc|std::make_error_condition
 _Z10macComparePKvS0_|macCompare
 _Z13macKeyComparePKvS0_|macKeyCompare
 _ZN8UkEngine10macroMatchER10UkKeyEvent|UkEngine::macroMatch

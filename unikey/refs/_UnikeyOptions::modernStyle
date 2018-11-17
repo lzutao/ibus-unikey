@@ -1,5 +1,7 @@
 <dec f='unikey/ukengine/keycons.h' l='43' type='int'/>
 <offset>32</offset>
+<use f='unikey/src/engine.cpp' l='181' u='w' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='225' u='w' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
 <use f='unikey/ukengine/ukengine.cpp' l='963' u='r' c='_ZN8UkEngine15getTonePositionE8VowelSeqb'/>
 <use f='unikey/ukengine/unikey.cpp' l='85' u='w' c='UnikeySetOptions'/>
 <use f='unikey/ukengine/unikey.cpp' l='85' u='r' c='UnikeySetOptions'/>

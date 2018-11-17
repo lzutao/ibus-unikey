@@ -1,3 +1,8 @@
 <dec f='include/string.h' l='136' type='int strcmp(const char * __s1, const char * __s2)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='194' u='c' c='_Z24check_last_macro_in_listP13_GtkListStore'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='226' u='c' c='_Z13key_edited_cbP20_GtkCellRendererTextPKcS2_Pv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='253' u='c' c='_Z13key_edited_cbP20_GtkCellRendererTextPKcS2_Pv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='282' u='c' c='_Z15value_edited_cbP20_GtkCellRendererTextPKcS2_Pv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='306' u='c' c='_Z23remove_macro_clicked_cbP10_GtkButtonPv'/>
 <doc f='include/string.h' l='135'>/* Compare S1 and S2.  */</doc>
 <use f='unikey/ukengine/usrkeymap.cpp' l='185' u='c' c='_Z17UkLoadKeyOrderMapPKcP12UkKeyMapPairPi'/>

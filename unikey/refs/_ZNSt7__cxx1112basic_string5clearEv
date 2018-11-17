@@ -1,5 +1,8 @@
 <def f='include/c++/7/bits/basic_string.h' l='1003' ll='1005' type='void std::__cxx11::basic_string::clear()'/>
-<use f='include/c++/7/bits/locale_facets.tcc' l='282' u='c' c='_ZNKSt7num_get16_M_extract_floatB5cxx11ET0_S0_RSt8ios_baseRSt12_Ios_IostateRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='unikey/src/engine.cpp' l='630' u='c' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='687' u='c' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='746' u='c' c='_ZL31ibus_unikey_engine_clean_bufferP11_IBusEngine'/>
 <doc f='include/c++/7/bits/basic_string.h' l='1000'>/**
        *  Erases the string, making it empty.
        */</doc>
+<use f='include/c++/7/bits/locale_facets.tcc' l='282' u='c' c='_ZNKSt7num_get16_M_extract_floatB5cxx11ET0_S0_RSt8ios_baseRSt12_Ios_IostateRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

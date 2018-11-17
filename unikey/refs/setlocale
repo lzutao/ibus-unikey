@@ -1,2 +1,4 @@
 <dec f='include/locale.h' l='122' type='char * setlocale(int __category, const char * __locale)'/>
+<use f='unikey/setup/setup.cpp' l='23' u='c' c='main'/>
 <doc f='include/locale.h' l='121'>/* Set and/or return the current locale.  */</doc>
+<use f='unikey/src/main.cpp' l='99' u='c' c='main'/>

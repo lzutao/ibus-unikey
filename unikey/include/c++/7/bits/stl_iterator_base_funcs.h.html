@@ -90,31 +90,31 @@
 <tr><th id="77">77</th><td>  <b>template</b>&lt;<b>typename</b> _InputIterator&gt;</td></tr>
 <tr><th id="78">78</th><td>    <b>inline</b> <a class="macro" href="../../../x86_64-linux-gnu/c++/7/bits/c++config.h.html#113" title="" data-ref="_M/_GLIBCXX14_CONSTEXPR">_GLIBCXX14_CONSTEXPR</a></td></tr>
 <tr><th id="79">79</th><td>    <b>typename</b> <a class="type" href="stl_iterator_base_types.h.html#std::iterator_traits" title='std::iterator_traits' data-ref="std::iterator_traits">iterator_traits</a>&lt;_InputIterator&gt;::difference_type</td></tr>
-<tr><th id="80">80</th><td>    <dfn class="decl def" id="_ZSt10__distanceT_S_St18input_iterator_tag" title='std::__distance' data-ref="_ZSt10__distanceT_S_St18input_iterator_tag">__distance</dfn>(_InputIterator <dfn class="local col5 decl" id="395__first" title='__first' data-type='_InputIterator' data-ref="395__first">__first</dfn>, _InputIterator <dfn class="local col6 decl" id="396__last" title='__last' data-type='_InputIterator' data-ref="396__last">__last</dfn>,</td></tr>
+<tr><th id="80">80</th><td>    <dfn class="decl def" id="_ZSt10__distanceT_S_St18input_iterator_tag" title='std::__distance' data-ref="_ZSt10__distanceT_S_St18input_iterator_tag">__distance</dfn>(_InputIterator <dfn class="local col1 decl" id="71__first" title='__first' data-type='_InputIterator' data-ref="71__first">__first</dfn>, _InputIterator <dfn class="local col2 decl" id="72__last" title='__last' data-type='_InputIterator' data-ref="72__last">__last</dfn>,</td></tr>
 <tr><th id="81">81</th><td>               <a class="type" href="stl_iterator_base_types.h.html#std::input_iterator_tag" title='std::input_iterator_tag' data-ref="std::input_iterator_tag">input_iterator_tag</a>)</td></tr>
 <tr><th id="82">82</th><td>    {</td></tr>
 <tr><th id="83">83</th><td>      <i>// concept requirements</i></td></tr>
 <tr><th id="84">84</th><td>      <a class="macro" href="concept_check.h.html#48" title="" data-ref="_M/__glibcxx_function_requires">__glibcxx_function_requires</a>(_InputIteratorConcept&lt;_InputIterator&gt;)</td></tr>
 <tr><th id="85">85</th><td></td></tr>
-<tr><th id="86">86</th><td>      <b>typename</b> <a class="type" href="stl_iterator_base_types.h.html#std::iterator_traits" title='std::iterator_traits' data-ref="std::iterator_traits">iterator_traits</a>&lt;_InputIterator&gt;::difference_type <dfn class="local col7 decl" id="397__n" title='__n' data-type='typename iterator_traits&lt;_InputIterator&gt;::difference_type' data-ref="397__n">__n</dfn> = <var>0</var>;</td></tr>
-<tr><th id="87">87</th><td>      <b>while</b> (<a class="local col5 ref" href="#395__first" title='__first' data-ref="395__first">__first</a> != <a class="local col6 ref" href="#396__last" title='__last' data-ref="396__last">__last</a>)</td></tr>
+<tr><th id="86">86</th><td>      <b>typename</b> <a class="type" href="stl_iterator_base_types.h.html#std::iterator_traits" title='std::iterator_traits' data-ref="std::iterator_traits">iterator_traits</a>&lt;_InputIterator&gt;::difference_type <dfn class="local col3 decl" id="73__n" title='__n' data-type='typename iterator_traits&lt;_InputIterator&gt;::difference_type' data-ref="73__n">__n</dfn> = <var>0</var>;</td></tr>
+<tr><th id="87">87</th><td>      <b>while</b> (<a class="local col1 ref" href="#71__first" title='__first' data-ref="71__first">__first</a> != <a class="local col2 ref" href="#72__last" title='__last' data-ref="72__last">__last</a>)</td></tr>
 <tr><th id="88">88</th><td>	{</td></tr>
-<tr><th id="89">89</th><td>	  ++<a class="local col5 ref" href="#395__first" title='__first' data-ref="395__first">__first</a>;</td></tr>
-<tr><th id="90">90</th><td>	  ++<a class="local col7 ref" href="#397__n" title='__n' data-ref="397__n">__n</a>;</td></tr>
+<tr><th id="89">89</th><td>	  ++<a class="local col1 ref" href="#71__first" title='__first' data-ref="71__first">__first</a>;</td></tr>
+<tr><th id="90">90</th><td>	  ++<a class="local col3 ref" href="#73__n" title='__n' data-ref="73__n">__n</a>;</td></tr>
 <tr><th id="91">91</th><td>	}</td></tr>
-<tr><th id="92">92</th><td>      <b>return</b> <a class="local col7 ref" href="#397__n" title='__n' data-ref="397__n">__n</a>;</td></tr>
+<tr><th id="92">92</th><td>      <b>return</b> <a class="local col3 ref" href="#73__n" title='__n' data-ref="73__n">__n</a>;</td></tr>
 <tr><th id="93">93</th><td>    }</td></tr>
 <tr><th id="94">94</th><td></td></tr>
 <tr><th id="95">95</th><td>  <b>template</b>&lt;<b>typename</b> _RandomAccessIterator&gt;</td></tr>
 <tr><th id="96">96</th><td>    <b>inline</b> <a class="macro" href="../../../x86_64-linux-gnu/c++/7/bits/c++config.h.html#113" title="" data-ref="_M/_GLIBCXX14_CONSTEXPR">_GLIBCXX14_CONSTEXPR</a></td></tr>
 <tr><th id="97">97</th><td>    <b>typename</b> <a class="type" href="stl_iterator_base_types.h.html#std::iterator_traits" title='std::iterator_traits' data-ref="std::iterator_traits">iterator_traits</a>&lt;_RandomAccessIterator&gt;::difference_type</td></tr>
-<tr><th id="98">98</th><td>    <dfn class="decl def" id="_ZSt10__distanceT_S_St26random_access_iterator_tag" title='std::__distance' data-ref="_ZSt10__distanceT_S_St26random_access_iterator_tag">__distance</dfn>(_RandomAccessIterator <dfn class="local col8 decl" id="398__first" title='__first' data-type='_RandomAccessIterator' data-ref="398__first">__first</dfn>, _RandomAccessIterator <dfn class="local col9 decl" id="399__last" title='__last' data-type='_RandomAccessIterator' data-ref="399__last">__last</dfn>,</td></tr>
+<tr><th id="98">98</th><td>    <dfn class="decl def" id="_ZSt10__distanceT_S_St26random_access_iterator_tag" title='std::__distance' data-ref="_ZSt10__distanceT_S_St26random_access_iterator_tag">__distance</dfn>(_RandomAccessIterator <dfn class="local col4 decl" id="74__first" title='__first' data-type='_RandomAccessIterator' data-ref="74__first">__first</dfn>, _RandomAccessIterator <dfn class="local col5 decl" id="75__last" title='__last' data-type='_RandomAccessIterator' data-ref="75__last">__last</dfn>,</td></tr>
 <tr><th id="99">99</th><td>               <a class="type" href="stl_iterator_base_types.h.html#std::random_access_iterator_tag" title='std::random_access_iterator_tag' data-ref="std::random_access_iterator_tag">random_access_iterator_tag</a>)</td></tr>
 <tr><th id="100">100</th><td>    {</td></tr>
 <tr><th id="101">101</th><td>      <i>// concept requirements</i></td></tr>
 <tr><th id="102">102</th><td>      <a class="macro" href="concept_check.h.html#48" title="" data-ref="_M/__glibcxx_function_requires">__glibcxx_function_requires</a>(_RandomAccessIteratorConcept&lt;</td></tr>
 <tr><th id="103">103</th><td>				  _RandomAccessIterator&gt;)</td></tr>
-<tr><th id="104">104</th><td>      <b>return</b> <a class="local col9 ref" href="#399__last" title='__last' data-ref="399__last">__last</a> - <a class="local col8 ref" href="#398__first" title='__first' data-ref="398__first">__first</a>;</td></tr>
+<tr><th id="104">104</th><td>      <b>return</b> <a class="local col5 ref" href="#75__last" title='__last' data-ref="75__last">__last</a> - <a class="local col4 ref" href="#74__first" title='__first' data-ref="74__first">__first</a>;</td></tr>
 <tr><th id="105">105</th><td>    }</td></tr>
 <tr><th id="106">106</th><td></td></tr>
 <tr><th id="107">107</th><td><u>#<span data-ppcond="107">if</span> <a class="macro" href="../../../x86_64-linux-gnu/c++/7/bits/c++config.h.html#247" title="1" data-ref="_M/_GLIBCXX_USE_CXX11_ABI">_GLIBCXX_USE_CXX11_ABI</a></u></td></tr>
@@ -148,49 +148,49 @@
 <tr><th id="135">135</th><td>  <b>template</b>&lt;<b>typename</b> _InputIterator&gt;</td></tr>
 <tr><th id="136">136</th><td>    <b>inline</b> <a class="macro" href="../../../x86_64-linux-gnu/c++/7/bits/c++config.h.html#121" title="" data-ref="_M/_GLIBCXX17_CONSTEXPR">_GLIBCXX17_CONSTEXPR</a></td></tr>
 <tr><th id="137">137</th><td>    <b>typename</b> <a class="type" href="stl_iterator_base_types.h.html#std::iterator_traits" title='std::iterator_traits' data-ref="std::iterator_traits">iterator_traits</a>&lt;_InputIterator&gt;::difference_type</td></tr>
-<tr><th id="138">138</th><td>    <dfn class="decl def" id="_ZSt8distanceT_S_" title='std::distance' data-ref="_ZSt8distanceT_S_">distance</dfn>(_InputIterator <dfn class="local col0 decl" id="400__first" title='__first' data-type='_InputIterator' data-ref="400__first">__first</dfn>, _InputIterator <dfn class="local col1 decl" id="401__last" title='__last' data-type='_InputIterator' data-ref="401__last">__last</dfn>)</td></tr>
+<tr><th id="138">138</th><td>    <dfn class="decl def" id="_ZSt8distanceT_S_" title='std::distance' data-ref="_ZSt8distanceT_S_">distance</dfn>(_InputIterator <dfn class="local col6 decl" id="76__first" title='__first' data-type='_InputIterator' data-ref="76__first">__first</dfn>, _InputIterator <dfn class="local col7 decl" id="77__last" title='__last' data-type='_InputIterator' data-ref="77__last">__last</dfn>)</td></tr>
 <tr><th id="139">139</th><td>    {</td></tr>
 <tr><th id="140">140</th><td>      <i>// concept requirements -- taken care of in __distance</i></td></tr>
-<tr><th id="141">141</th><td>      <b>return</b> <span class="namespace">std::</span>__distance(<a class="local col0 ref" href="#400__first" title='__first' data-ref="400__first">__first</a>, <a class="local col1 ref" href="#401__last" title='__last' data-ref="401__last">__last</a>,</td></tr>
-<tr><th id="142">142</th><td>			     <span class="namespace">std::</span>__iterator_category(<a class="local col0 ref" href="#400__first" title='__first' data-ref="400__first">__first</a>));</td></tr>
+<tr><th id="141">141</th><td>      <b>return</b> <span class="namespace">std::</span>__distance(<a class="local col6 ref" href="#76__first" title='__first' data-ref="76__first">__first</a>, <a class="local col7 ref" href="#77__last" title='__last' data-ref="77__last">__last</a>,</td></tr>
+<tr><th id="142">142</th><td>			     <span class="namespace">std::</span>__iterator_category(<a class="local col6 ref" href="#76__first" title='__first' data-ref="76__first">__first</a>));</td></tr>
 <tr><th id="143">143</th><td>    }</td></tr>
 <tr><th id="144">144</th><td></td></tr>
 <tr><th id="145">145</th><td>  <b>template</b>&lt;<b>typename</b> _InputIterator, <b>typename</b> _Distance&gt;</td></tr>
 <tr><th id="146">146</th><td>    <b>inline</b> <a class="macro" href="../../../x86_64-linux-gnu/c++/7/bits/c++config.h.html#113" title="" data-ref="_M/_GLIBCXX14_CONSTEXPR">_GLIBCXX14_CONSTEXPR</a> <em>void</em></td></tr>
-<tr><th id="147">147</th><td>    <dfn class="decl def" id="_ZSt9__advanceRT_T0_St18input_iterator_tag" title='std::__advance' data-ref="_ZSt9__advanceRT_T0_St18input_iterator_tag">__advance</dfn>(_InputIterator&amp; <dfn class="local col2 decl" id="402__i" title='__i' data-type='_InputIterator &amp;' data-ref="402__i">__i</dfn>, _Distance <dfn class="local col3 decl" id="403__n" title='__n' data-type='_Distance' data-ref="403__n">__n</dfn>, <a class="type" href="stl_iterator_base_types.h.html#std::input_iterator_tag" title='std::input_iterator_tag' data-ref="std::input_iterator_tag">input_iterator_tag</a>)</td></tr>
+<tr><th id="147">147</th><td>    <dfn class="decl def" id="_ZSt9__advanceRT_T0_St18input_iterator_tag" title='std::__advance' data-ref="_ZSt9__advanceRT_T0_St18input_iterator_tag">__advance</dfn>(_InputIterator&amp; <dfn class="local col8 decl" id="78__i" title='__i' data-type='_InputIterator &amp;' data-ref="78__i">__i</dfn>, _Distance <dfn class="local col9 decl" id="79__n" title='__n' data-type='_Distance' data-ref="79__n">__n</dfn>, <a class="type" href="stl_iterator_base_types.h.html#std::input_iterator_tag" title='std::input_iterator_tag' data-ref="std::input_iterator_tag">input_iterator_tag</a>)</td></tr>
 <tr><th id="148">148</th><td>    {</td></tr>
 <tr><th id="149">149</th><td>      <i>// concept requirements</i></td></tr>
 <tr><th id="150">150</th><td>      <a class="macro" href="concept_check.h.html#48" title="" data-ref="_M/__glibcxx_function_requires">__glibcxx_function_requires</a>(_InputIteratorConcept&lt;_InputIterator&gt;)</td></tr>
 <tr><th id="151">151</th><td>      <a class="macro" href="../../../x86_64-linux-gnu/c++/7/bits/c++config.h.html#487" title="" data-ref="_M/__glibcxx_assert">__glibcxx_assert</a>(__n &gt;= <var>0</var>);</td></tr>
-<tr><th id="152">152</th><td>      <b>while</b> (<a class="local col3 ref" href="#403__n" title='__n' data-ref="403__n">__n</a>--)</td></tr>
-<tr><th id="153">153</th><td>	++<a class="local col2 ref" href="#402__i" title='__i' data-ref="402__i">__i</a>;</td></tr>
+<tr><th id="152">152</th><td>      <b>while</b> (<a class="local col9 ref" href="#79__n" title='__n' data-ref="79__n">__n</a>--)</td></tr>
+<tr><th id="153">153</th><td>	++<a class="local col8 ref" href="#78__i" title='__i' data-ref="78__i">__i</a>;</td></tr>
 <tr><th id="154">154</th><td>    }</td></tr>
 <tr><th id="155">155</th><td></td></tr>
 <tr><th id="156">156</th><td>  <b>template</b>&lt;<b>typename</b> _BidirectionalIterator, <b>typename</b> _Distance&gt;</td></tr>
 <tr><th id="157">157</th><td>    <b>inline</b> <a class="macro" href="../../../x86_64-linux-gnu/c++/7/bits/c++config.h.html#113" title="" data-ref="_M/_GLIBCXX14_CONSTEXPR">_GLIBCXX14_CONSTEXPR</a> <em>void</em></td></tr>
-<tr><th id="158">158</th><td>    <dfn class="decl def" id="_ZSt9__advanceRT_T0_St26bidirectional_iterator_tag" title='std::__advance' data-ref="_ZSt9__advanceRT_T0_St26bidirectional_iterator_tag">__advance</dfn>(_BidirectionalIterator&amp; <dfn class="local col4 decl" id="404__i" title='__i' data-type='_BidirectionalIterator &amp;' data-ref="404__i">__i</dfn>, _Distance <dfn class="local col5 decl" id="405__n" title='__n' data-type='_Distance' data-ref="405__n">__n</dfn>,</td></tr>
+<tr><th id="158">158</th><td>    <dfn class="decl def" id="_ZSt9__advanceRT_T0_St26bidirectional_iterator_tag" title='std::__advance' data-ref="_ZSt9__advanceRT_T0_St26bidirectional_iterator_tag">__advance</dfn>(_BidirectionalIterator&amp; <dfn class="local col0 decl" id="80__i" title='__i' data-type='_BidirectionalIterator &amp;' data-ref="80__i">__i</dfn>, _Distance <dfn class="local col1 decl" id="81__n" title='__n' data-type='_Distance' data-ref="81__n">__n</dfn>,</td></tr>
 <tr><th id="159">159</th><td>	      <a class="type" href="stl_iterator_base_types.h.html#std::bidirectional_iterator_tag" title='std::bidirectional_iterator_tag' data-ref="std::bidirectional_iterator_tag">bidirectional_iterator_tag</a>)</td></tr>
 <tr><th id="160">160</th><td>    {</td></tr>
 <tr><th id="161">161</th><td>      <i>// concept requirements</i></td></tr>
 <tr><th id="162">162</th><td>      <a class="macro" href="concept_check.h.html#48" title="" data-ref="_M/__glibcxx_function_requires">__glibcxx_function_requires</a>(_BidirectionalIteratorConcept&lt;</td></tr>
 <tr><th id="163">163</th><td>				  _BidirectionalIterator&gt;)</td></tr>
-<tr><th id="164">164</th><td>      <b>if</b> (<a class="local col5 ref" href="#405__n" title='__n' data-ref="405__n">__n</a> &gt; <var>0</var>)</td></tr>
-<tr><th id="165">165</th><td>        <b>while</b> (<a class="local col5 ref" href="#405__n" title='__n' data-ref="405__n">__n</a>--)</td></tr>
-<tr><th id="166">166</th><td>	  ++<a class="local col4 ref" href="#404__i" title='__i' data-ref="404__i">__i</a>;</td></tr>
+<tr><th id="164">164</th><td>      <b>if</b> (<a class="local col1 ref" href="#81__n" title='__n' data-ref="81__n">__n</a> &gt; <var>0</var>)</td></tr>
+<tr><th id="165">165</th><td>        <b>while</b> (<a class="local col1 ref" href="#81__n" title='__n' data-ref="81__n">__n</a>--)</td></tr>
+<tr><th id="166">166</th><td>	  ++<a class="local col0 ref" href="#80__i" title='__i' data-ref="80__i">__i</a>;</td></tr>
 <tr><th id="167">167</th><td>      <b>else</b></td></tr>
-<tr><th id="168">168</th><td>        <b>while</b> (<a class="local col5 ref" href="#405__n" title='__n' data-ref="405__n">__n</a>++)</td></tr>
-<tr><th id="169">169</th><td>	  --<a class="local col4 ref" href="#404__i" title='__i' data-ref="404__i">__i</a>;</td></tr>
+<tr><th id="168">168</th><td>        <b>while</b> (<a class="local col1 ref" href="#81__n" title='__n' data-ref="81__n">__n</a>++)</td></tr>
+<tr><th id="169">169</th><td>	  --<a class="local col0 ref" href="#80__i" title='__i' data-ref="80__i">__i</a>;</td></tr>
 <tr><th id="170">170</th><td>    }</td></tr>
 <tr><th id="171">171</th><td></td></tr>
 <tr><th id="172">172</th><td>  <b>template</b>&lt;<b>typename</b> _RandomAccessIterator, <b>typename</b> _Distance&gt;</td></tr>
 <tr><th id="173">173</th><td>    <b>inline</b> <a class="macro" href="../../../x86_64-linux-gnu/c++/7/bits/c++config.h.html#113" title="" data-ref="_M/_GLIBCXX14_CONSTEXPR">_GLIBCXX14_CONSTEXPR</a> <em>void</em></td></tr>
-<tr><th id="174">174</th><td>    <dfn class="decl def" id="_ZSt9__advanceRT_T0_St26random_access_iterator_tag" title='std::__advance' data-ref="_ZSt9__advanceRT_T0_St26random_access_iterator_tag">__advance</dfn>(_RandomAccessIterator&amp; <dfn class="local col6 decl" id="406__i" title='__i' data-type='_RandomAccessIterator &amp;' data-ref="406__i">__i</dfn>, _Distance <dfn class="local col7 decl" id="407__n" title='__n' data-type='_Distance' data-ref="407__n">__n</dfn>,</td></tr>
+<tr><th id="174">174</th><td>    <dfn class="decl def" id="_ZSt9__advanceRT_T0_St26random_access_iterator_tag" title='std::__advance' data-ref="_ZSt9__advanceRT_T0_St26random_access_iterator_tag">__advance</dfn>(_RandomAccessIterator&amp; <dfn class="local col2 decl" id="82__i" title='__i' data-type='_RandomAccessIterator &amp;' data-ref="82__i">__i</dfn>, _Distance <dfn class="local col3 decl" id="83__n" title='__n' data-type='_Distance' data-ref="83__n">__n</dfn>,</td></tr>
 <tr><th id="175">175</th><td>              <a class="type" href="stl_iterator_base_types.h.html#std::random_access_iterator_tag" title='std::random_access_iterator_tag' data-ref="std::random_access_iterator_tag">random_access_iterator_tag</a>)</td></tr>
 <tr><th id="176">176</th><td>    {</td></tr>
 <tr><th id="177">177</th><td>      <i>// concept requirements</i></td></tr>
 <tr><th id="178">178</th><td>      <a class="macro" href="concept_check.h.html#48" title="" data-ref="_M/__glibcxx_function_requires">__glibcxx_function_requires</a>(_RandomAccessIteratorConcept&lt;</td></tr>
 <tr><th id="179">179</th><td>				  _RandomAccessIterator&gt;)</td></tr>
-<tr><th id="180">180</th><td>      <a class="local col6 ref" href="#406__i" title='__i' data-ref="406__i">__i</a> += <a class="local col7 ref" href="#407__n" title='__n' data-ref="407__n">__n</a>;</td></tr>
+<tr><th id="180">180</th><td>      <a class="local col2 ref" href="#82__i" title='__i' data-ref="82__i">__i</a> += <a class="local col3 ref" href="#83__n" title='__n' data-ref="83__n">__n</a>;</td></tr>
 <tr><th id="181">181</th><td>    }</td></tr>
 <tr><th id="182">182</th><td></td></tr>
 <tr><th id="183">183</th><td>  <i class="doc">/**</i></td></tr>
@@ -207,37 +207,37 @@
 <tr><th id="194">194</th><td><i class="doc">  */</i></td></tr>
 <tr><th id="195">195</th><td>  <b>template</b>&lt;<b>typename</b> _InputIterator, <b>typename</b> _Distance&gt;</td></tr>
 <tr><th id="196">196</th><td>    <b>inline</b> <a class="macro" href="../../../x86_64-linux-gnu/c++/7/bits/c++config.h.html#121" title="" data-ref="_M/_GLIBCXX17_CONSTEXPR">_GLIBCXX17_CONSTEXPR</a> <em>void</em></td></tr>
-<tr><th id="197">197</th><td>    <dfn class="decl def" id="_ZSt7advanceRT_T0_" title='std::advance' data-ref="_ZSt7advanceRT_T0_">advance</dfn>(_InputIterator&amp; <dfn class="local col8 decl" id="408__i" title='__i' data-type='_InputIterator &amp;' data-ref="408__i">__i</dfn>, _Distance <dfn class="local col9 decl" id="409__n" title='__n' data-type='_Distance' data-ref="409__n">__n</dfn>)</td></tr>
+<tr><th id="197">197</th><td>    <dfn class="decl def" id="_ZSt7advanceRT_T0_" title='std::advance' data-ref="_ZSt7advanceRT_T0_">advance</dfn>(_InputIterator&amp; <dfn class="local col4 decl" id="84__i" title='__i' data-type='_InputIterator &amp;' data-ref="84__i">__i</dfn>, _Distance <dfn class="local col5 decl" id="85__n" title='__n' data-type='_Distance' data-ref="85__n">__n</dfn>)</td></tr>
 <tr><th id="198">198</th><td>    {</td></tr>
 <tr><th id="199">199</th><td>      <i>// concept requirements -- taken care of in __advance</i></td></tr>
-<tr><th id="200">200</th><td>      <b>typename</b> <a class="type" href="stl_iterator_base_types.h.html#std::iterator_traits" title='std::iterator_traits' data-ref="std::iterator_traits">iterator_traits</a>&lt;_InputIterator&gt;::difference_type <dfn class="local col0 decl" id="410__d" title='__d' data-type='typename iterator_traits&lt;_InputIterator&gt;::difference_type' data-ref="410__d">__d</dfn> = <a class="local col9 ref" href="#409__n" title='__n' data-ref="409__n">__n</a>;</td></tr>
-<tr><th id="201">201</th><td>      <span class="namespace">std::</span>__advance(<a class="local col8 ref" href="#408__i" title='__i' data-ref="408__i">__i</a>, <a class="local col0 ref" href="#410__d" title='__d' data-ref="410__d">__d</a>, <span class="namespace">std::</span>__iterator_category(<a class="local col8 ref" href="#408__i" title='__i' data-ref="408__i">__i</a>));</td></tr>
+<tr><th id="200">200</th><td>      <b>typename</b> <a class="type" href="stl_iterator_base_types.h.html#std::iterator_traits" title='std::iterator_traits' data-ref="std::iterator_traits">iterator_traits</a>&lt;_InputIterator&gt;::difference_type <dfn class="local col6 decl" id="86__d" title='__d' data-type='typename iterator_traits&lt;_InputIterator&gt;::difference_type' data-ref="86__d">__d</dfn> = <a class="local col5 ref" href="#85__n" title='__n' data-ref="85__n">__n</a>;</td></tr>
+<tr><th id="201">201</th><td>      <span class="namespace">std::</span>__advance(<a class="local col4 ref" href="#84__i" title='__i' data-ref="84__i">__i</a>, <a class="local col6 ref" href="#86__d" title='__d' data-ref="86__d">__d</a>, <span class="namespace">std::</span>__iterator_category(<a class="local col4 ref" href="#84__i" title='__i' data-ref="84__i">__i</a>));</td></tr>
 <tr><th id="202">202</th><td>    }</td></tr>
 <tr><th id="203">203</th><td></td></tr>
 <tr><th id="204">204</th><td><u>#<span data-ppcond="204">if</span> <span class="macro" title="201103L" data-ref="_M/__cplusplus">__cplusplus</span> &gt;= 201103L</u></td></tr>
 <tr><th id="205">205</th><td></td></tr>
 <tr><th id="206">206</th><td>  <b>template</b>&lt;<b>typename</b> _ForwardIterator&gt;</td></tr>
 <tr><th id="207">207</th><td>    <b>inline</b> <a class="macro" href="../../../x86_64-linux-gnu/c++/7/bits/c++config.h.html#121" title="" data-ref="_M/_GLIBCXX17_CONSTEXPR">_GLIBCXX17_CONSTEXPR</a> _ForwardIterator</td></tr>
-<tr><th id="208">208</th><td>    <dfn class="decl def" id="_ZSt4nextT_NSt15iterator_traitsIS_E15difference_typeE" title='std::next' data-ref="_ZSt4nextT_NSt15iterator_traitsIS_E15difference_typeE">next</dfn>(_ForwardIterator <dfn class="local col1 decl" id="411__x" title='__x' data-type='_ForwardIterator' data-ref="411__x">__x</dfn>, <b>typename</b></td></tr>
-<tr><th id="209">209</th><td>	 <a class="type" href="stl_iterator_base_types.h.html#std::iterator_traits" title='std::iterator_traits' data-ref="std::iterator_traits">iterator_traits</a>&lt;_ForwardIterator&gt;::difference_type <dfn class="local col2 decl" id="412__n" title='__n' data-type='typename iterator_traits&lt;_ForwardIterator&gt;::difference_type' data-ref="412__n">__n</dfn> = <var>1</var>)</td></tr>
+<tr><th id="208">208</th><td>    <dfn class="decl def" id="_ZSt4nextT_NSt15iterator_traitsIS_E15difference_typeE" title='std::next' data-ref="_ZSt4nextT_NSt15iterator_traitsIS_E15difference_typeE">next</dfn>(_ForwardIterator <dfn class="local col7 decl" id="87__x" title='__x' data-type='_ForwardIterator' data-ref="87__x">__x</dfn>, <b>typename</b></td></tr>
+<tr><th id="209">209</th><td>	 <a class="type" href="stl_iterator_base_types.h.html#std::iterator_traits" title='std::iterator_traits' data-ref="std::iterator_traits">iterator_traits</a>&lt;_ForwardIterator&gt;::difference_type <dfn class="local col8 decl" id="88__n" title='__n' data-type='typename iterator_traits&lt;_ForwardIterator&gt;::difference_type' data-ref="88__n">__n</dfn> = <var>1</var>)</td></tr>
 <tr><th id="210">210</th><td>    {</td></tr>
 <tr><th id="211">211</th><td>      <i>// concept requirements</i></td></tr>
 <tr><th id="212">212</th><td>      <a class="macro" href="concept_check.h.html#48" title="" data-ref="_M/__glibcxx_function_requires">__glibcxx_function_requires</a>(_ForwardIteratorConcept&lt;</td></tr>
 <tr><th id="213">213</th><td>				  _ForwardIterator&gt;)</td></tr>
-<tr><th id="214">214</th><td>      <span class="namespace">std::</span>advance(<a class="local col1 ref" href="#411__x" title='__x' data-ref="411__x">__x</a>, <a class="local col2 ref" href="#412__n" title='__n' data-ref="412__n">__n</a>);</td></tr>
-<tr><th id="215">215</th><td>      <b>return</b> <a class="local col1 ref" href="#411__x" title='__x' data-ref="411__x">__x</a>;</td></tr>
+<tr><th id="214">214</th><td>      <span class="namespace">std::</span>advance(<a class="local col7 ref" href="#87__x" title='__x' data-ref="87__x">__x</a>, <a class="local col8 ref" href="#88__n" title='__n' data-ref="88__n">__n</a>);</td></tr>
+<tr><th id="215">215</th><td>      <b>return</b> <a class="local col7 ref" href="#87__x" title='__x' data-ref="87__x">__x</a>;</td></tr>
 <tr><th id="216">216</th><td>    }</td></tr>
 <tr><th id="217">217</th><td></td></tr>
 <tr><th id="218">218</th><td>  <b>template</b>&lt;<b>typename</b> _BidirectionalIterator&gt;</td></tr>
 <tr><th id="219">219</th><td>    <b>inline</b> <a class="macro" href="../../../x86_64-linux-gnu/c++/7/bits/c++config.h.html#121" title="" data-ref="_M/_GLIBCXX17_CONSTEXPR">_GLIBCXX17_CONSTEXPR</a> _BidirectionalIterator</td></tr>
-<tr><th id="220">220</th><td>    <dfn class="decl def" id="_ZSt4prevT_NSt15iterator_traitsIS_E15difference_typeE" title='std::prev' data-ref="_ZSt4prevT_NSt15iterator_traitsIS_E15difference_typeE">prev</dfn>(_BidirectionalIterator <dfn class="local col3 decl" id="413__x" title='__x' data-type='_BidirectionalIterator' data-ref="413__x">__x</dfn>, <b>typename</b></td></tr>
-<tr><th id="221">221</th><td>	 <a class="type" href="stl_iterator_base_types.h.html#std::iterator_traits" title='std::iterator_traits' data-ref="std::iterator_traits">iterator_traits</a>&lt;_BidirectionalIterator&gt;::difference_type <dfn class="local col4 decl" id="414__n" title='__n' data-type='typename iterator_traits&lt;_BidirectionalIterator&gt;::difference_type' data-ref="414__n">__n</dfn> = <var>1</var>) </td></tr>
+<tr><th id="220">220</th><td>    <dfn class="decl def" id="_ZSt4prevT_NSt15iterator_traitsIS_E15difference_typeE" title='std::prev' data-ref="_ZSt4prevT_NSt15iterator_traitsIS_E15difference_typeE">prev</dfn>(_BidirectionalIterator <dfn class="local col9 decl" id="89__x" title='__x' data-type='_BidirectionalIterator' data-ref="89__x">__x</dfn>, <b>typename</b></td></tr>
+<tr><th id="221">221</th><td>	 <a class="type" href="stl_iterator_base_types.h.html#std::iterator_traits" title='std::iterator_traits' data-ref="std::iterator_traits">iterator_traits</a>&lt;_BidirectionalIterator&gt;::difference_type <dfn class="local col0 decl" id="90__n" title='__n' data-type='typename iterator_traits&lt;_BidirectionalIterator&gt;::difference_type' data-ref="90__n">__n</dfn> = <var>1</var>) </td></tr>
 <tr><th id="222">222</th><td>    {</td></tr>
 <tr><th id="223">223</th><td>      <i>// concept requirements</i></td></tr>
 <tr><th id="224">224</th><td>      <a class="macro" href="concept_check.h.html#48" title="" data-ref="_M/__glibcxx_function_requires">__glibcxx_function_requires</a>(_BidirectionalIteratorConcept&lt;</td></tr>
 <tr><th id="225">225</th><td>				  _BidirectionalIterator&gt;)</td></tr>
-<tr><th id="226">226</th><td>      <span class="namespace">std::</span>advance(<a class="local col3 ref" href="#413__x" title='__x' data-ref="413__x">__x</a>, -<a class="local col4 ref" href="#414__n" title='__n' data-ref="414__n">__n</a>);</td></tr>
-<tr><th id="227">227</th><td>      <b>return</b> <a class="local col3 ref" href="#413__x" title='__x' data-ref="413__x">__x</a>;</td></tr>
+<tr><th id="226">226</th><td>      <span class="namespace">std::</span>advance(<a class="local col9 ref" href="#89__x" title='__x' data-ref="89__x">__x</a>, -<a class="local col0 ref" href="#90__n" title='__n' data-ref="90__n">__n</a>);</td></tr>
+<tr><th id="227">227</th><td>      <b>return</b> <a class="local col9 ref" href="#89__x" title='__x' data-ref="89__x">__x</a>;</td></tr>
 <tr><th id="228">228</th><td>    }</td></tr>
 <tr><th id="229">229</th><td></td></tr>
 <tr><th id="230">230</th><td><u>#<span data-ppcond="204">endif</span> // C++11</u></td></tr>
@@ -248,6 +248,6 @@
 <tr><th id="235">235</th><td><u>#<span data-ppcond="59">endif</span> /* _STL_ITERATOR_BASE_FUNCS_H */</u></td></tr>
 <tr><th id="236">236</th><td></td></tr>
 </table><hr/><p id='footer'>
-Generated while processing <a href='../../../../unikey/ukengine/inputproc.cpp.html'>unikey/ukengine/inputproc.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+Generated while processing <a href='../../../../unikey/src/engine.cpp.html'>unikey/src/engine.cpp</a><br/>Generated on <em>2018-Nov-17</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
 <br/>Generator usage only permitted with license.</p>
 </div></body></html>

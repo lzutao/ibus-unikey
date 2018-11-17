@@ -1,4 +1,5 @@
 <dec f='unikey/ukengine/unikey.h' l='79' type='void UnikeyFilter(unsigned int ch)'/>
+<use f='unikey/src/engine.cpp' l='678' u='c' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<doc f='unikey/ukengine/unikey.h' l='78'>// main handler, call every time a character input is received</doc>
 <def f='unikey/ukengine/unikey.cpp' l='142' ll='146' type='void UnikeyFilter(unsigned int ch)'/>
 <doc f='unikey/ukengine/unikey.cpp' l='141'>//--------------------------------------------</doc>
-<doc f='unikey/ukengine/unikey.h' l='78'>// main handler, call every time a character input is received</doc>

@@ -1,2 +1,3 @@
-_ZNKSt9basic_ios10exceptionsEv|std::basic_ios::exceptions
+_Z23export_macro_clicked_cbP10_GtkButtonPv|export_macro_clicked_cb
 _ZNSt9exceptionC1Ev|std::exception::exception
+_ZNKSt9basic_ios10exceptionsEv|std::basic_ios::exceptions

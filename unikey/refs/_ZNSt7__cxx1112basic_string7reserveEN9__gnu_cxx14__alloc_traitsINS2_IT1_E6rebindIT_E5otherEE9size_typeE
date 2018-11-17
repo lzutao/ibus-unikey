@@ -1,11 +1,6 @@
 <use f='include/c++/7/bits/basic_string.h' l='961' u='c' c='_ZNSt7__cxx1112basic_string13shrink_to_fitEv'/>
 <dec f='include/c++/7/bits/basic_string.h' l='998' type='void std::__cxx11::basic_string::reserve(size_type __res_arg = 0)'/>
 <def f='include/c++/7/bits/basic_string.tcc' l='278' ll='306' type='void std::__cxx11::basic_string::reserve(size_type __res = 0)'/>
-<use f='include/c++/7/bits/locale_facets.tcc' l='211' u='c' c='_ZNKSt7num_get16_M_extract_floatB5cxx11ET0_S0_RSt8ios_baseRSt12_Ios_IostateRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
-<use f='include/c++/7/bits/locale_facets.tcc' l='468' u='c' c='_ZNKSt7num_get14_M_extract_intB5cxx11ET0_S0_RSt8ios_baseRSt12_Ios_IostateRT_'/>
-<use f='include/c++/7/bits/locale_facets.tcc' l='695' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRf'/>
-<use f='include/c++/7/bits/locale_facets.tcc' l='710' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRd'/>
-<use f='include/c++/7/bits/locale_facets.tcc' l='742' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRe'/>
 <doc f='include/c++/7/bits/basic_string.h' l='980'>/**
        *  @brief  Attempt to preallocate enough memory for specified number of
        *          characters.
@@ -23,3 +18,8 @@
        *  prevent a possible reallocation of memory and copying of %string
        *  data.
        */</doc>
+<use f='include/c++/7/bits/locale_facets.tcc' l='211' u='c' c='_ZNKSt7num_get16_M_extract_floatB5cxx11ET0_S0_RSt8ios_baseRSt12_Ios_IostateRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/c++/7/bits/locale_facets.tcc' l='468' u='c' c='_ZNKSt7num_get14_M_extract_intB5cxx11ET0_S0_RSt8ios_baseRSt12_Ios_IostateRT_'/>
+<use f='include/c++/7/bits/locale_facets.tcc' l='695' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRf'/>
+<use f='include/c++/7/bits/locale_facets.tcc' l='710' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRd'/>
+<use f='include/c++/7/bits/locale_facets.tcc' l='742' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRe'/>

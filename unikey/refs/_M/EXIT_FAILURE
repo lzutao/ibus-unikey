@@ -1,3 +1,6 @@
 <dec f='include/stdlib.h' l='91'/>
 <doc f='include/stdlib.h' l='89'>/* We define these the same for all machines.
    Changes from this to the outside world should be done in `_exit&apos;.  */</doc>
+<use f='unikey/setup/setup.cpp' l='37' u='c'/>
+<use f='unikey/src/main.cpp' l='84' u='c'/>
+<use f='unikey/src/main.cpp' l='113' u='c'/>

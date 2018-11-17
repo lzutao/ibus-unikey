@@ -97,6 +97,11 @@
 <ovr f='include/c++/7/bits/basic_string.h' l='6614' c='std::__is_fast_hash'/>
 <ovr f='include/c++/7/bits/basic_string.h' l='6632' c='std::__is_fast_hash'/>
 <ovr f='include/c++/7/bits/basic_string.h' l='6647' c='std::__is_fast_hash'/>
+<smbr r='std::integral_constant::value' t='const _Tp'/>
+<fun r='_ZNKSt17integral_constantcvT_Ev'/>
+<smbr r='std::integral_constant::value' t='const _Tp'/>
+<smbr r='std::integral_constant::value' t='const bool'/>
+<smbr r='std::integral_constant::value' t='const bool'/>
 <ovr f='include/c++/7/system_error' l='53' c='std::is_error_code_enum'/>
 <ovr f='include/c++/7/system_error' l='57' c='std::is_error_condition_enum'/>
 <ovr f='include/c++/7/system_error' l='60' c='std::is_error_condition_enum'/>
@@ -105,8 +110,3 @@
 <ovr f='include/c++/7/ostream' l='654' c='std::__is_insertable'/>
 <ovr f='include/c++/7/istream' l='946' c='std::__is_extractable'/>
 <ovr f='include/c++/7/istream' l='949' c='std::__is_extractable'/>
-<smbr r='std::integral_constant::value' t='const _Tp'/>
-<fun r='_ZNKSt17integral_constantcvT_Ev'/>
-<smbr r='std::integral_constant::value' t='const _Tp'/>
-<smbr r='std::integral_constant::value' t='const bool'/>
-<smbr r='std::integral_constant::value' t='const bool'/>

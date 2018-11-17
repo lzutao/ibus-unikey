@@ -1,2 +1,4 @@
 <dec f='include/strings.h' l='120' type='int strncasecmp(const char * __s1, const char * __s2, size_t __n)'/>
 <doc f='include/strings.h' l='119'>/* Compare no more than N chars of S1 and S2, ignoring case.  */</doc>
+<use f='unikey/src/engine.cpp' l='189' u='c' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='206' u='c' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>

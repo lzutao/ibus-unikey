@@ -15,6 +15,14 @@
 <use f='include/c++/7/bits/basic_string.h' l='6495' u='c' c='_ZNSt7__cxx114stofERKNS_12basic_stringIwSt11char_traitsIwESaIwEEEPm'/>
 <use f='include/c++/7/bits/basic_string.h' l='6499' u='c' c='_ZNSt7__cxx114stodERKNS_12basic_stringIwSt11char_traitsIwESaIwEEEPm'/>
 <use f='include/c++/7/bits/basic_string.h' l='6503' u='c' c='_ZNSt7__cxx115stoldERKNS_12basic_stringIwSt11char_traitsIwESaIwEEEPm'/>
+<use f='unikey/src/engine.cpp' l='525' u='c' c='_ZL40ibus_unikey_engine_update_preedit_stringP17_IBusUnikeyEngine'/>
+<use f='unikey/src/engine.cpp' l='758' u='c' c='_ZL25ibus_unikey_engine_commitP11_IBusEngine'/>
+<doc f='include/c++/7/bits/basic_string.h' l='2264'>/**
+       *  @brief  Return const pointer to null-terminated contents.
+       *
+       *  This is a handle to internal data.  Do not modify or dire things may
+       *  happen.
+      */</doc>
 <use f='include/c++/7/bits/locale_classes.h' l='163' u='c' c='_ZNSt6localeC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
 <use f='include/c++/7/bits/locale_classes.h' l='178' u='c' c='_ZNSt6localeC1ERKS_RKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi'/>
 <use f='include/c++/7/bits/locale_classes.h' l='840' u='c' c='_ZNSt7__cxx1114collate_bynameC1ERKNS_12basic_stringIcSt11char_traitsIcESaIcEEEm'/>
@@ -23,9 +31,3 @@
 <use f='include/c++/7/bits/locale_facets.tcc' l='697' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRf'/>
 <use f='include/c++/7/bits/locale_facets.tcc' l='712' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRd'/>
 <use f='include/c++/7/bits/locale_facets.tcc' l='744' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRe'/>
-<doc f='include/c++/7/bits/basic_string.h' l='2264'>/**
-       *  @brief  Return const pointer to null-terminated contents.
-       *
-       *  This is a handle to internal data.  Do not modify or dire things may
-       *  happen.
-      */</doc>

@@ -1,6 +1,6 @@
+_ZSt4prevT_NSt15iterator_traitsIS_E15difference_typeE|std::prev
 _Z11print_eventR10UkKeyEvent|print_event
 _ZNKSt8ios_base9precisionEv|std::ios_base::precision
-_ZSt4prevT_NSt15iterator_traitsIS_E15difference_typeE|std::prev
 _ZN8UkEngine13prepareBufferEv|UkEngine::prepareBuffer
 _ZN8UkEngine7processEjRiPhS0_R12UkOutputType|UkEngine::process
 _ZN8UkEngine13processAppendER10UkKeyEvent|UkEngine::processAppend

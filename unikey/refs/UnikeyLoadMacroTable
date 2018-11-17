@@ -1,3 +1,4 @@
 <dec f='unikey/ukengine/unikey.h' l='105' type='int UnikeyLoadMacroTable(const char * fileName)'/>
+<use f='unikey/src/engine.cpp' l='250' u='c' c='_ZL30ibus_unikey_engine_load_configP17_IBusUnikeyEngine'/>
 <def f='unikey/ukengine/unikey.cpp' l='177' ll='180' type='int UnikeyLoadMacroTable(const char * fileName)'/>
 <doc f='unikey/ukengine/unikey.cpp' l='176'>//--------------------------------------------</doc>

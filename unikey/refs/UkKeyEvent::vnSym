@@ -1,9 +1,9 @@
 <dec f='unikey/ukengine/inputproc.h' l='65' type='VnLexiName'/>
+<offset>64</offset>
+<doc f='unikey/ukengine/inputproc.h' l='65'>//meaningful only when chType==ukcVn</doc>
 <use f='unikey/test/test_inputproc.cc' l='99' u='r' c='_Z11print_eventR10UkKeyEvent'/>
 <use f='unikey/test/test_inputproc.cc' l='105' u='r' c='_Z13compare_eventRK10UkKeyEventS1_'/>
 <use f='unikey/test/test_inputproc.cc' l='105' u='r' c='_Z13compare_eventRK10UkKeyEventS1_'/>
-<offset>64</offset>
-<doc f='unikey/ukengine/inputproc.h' l='65'>//meaningful only when chType==ukcVn</doc>
 <use f='unikey/ukengine/inputproc.cpp' l='346' u='w' c='_ZN16UkInputProcessor14keyCodeToEventEjR10UkKeyEvent'/>
 <use f='unikey/ukengine/inputproc.cpp' l='347' u='r' c='_ZN16UkInputProcessor14keyCodeToEventEjR10UkKeyEvent'/>
 <use f='unikey/ukengine/inputproc.cpp' l='359' u='w' c='_ZN16UkInputProcessor14keyCodeToEventEjR10UkKeyEvent'/>

@@ -1,4 +1,5 @@
 <dec f='unikey/ukengine/unikey.h' l='72' type='void UnikeyCleanup()'/>
+<use f='unikey/src/engine.cpp' l='76' u='c' c='_Z16ibus_unikey_exitv'/>
+<doc f='unikey/ukengine/unikey.h' l='72'>// call this when unloading unikey module</doc>
 <def f='unikey/ukengine/unikey.cpp' l='136' ll='139' type='void UnikeyCleanup()'/>
 <doc f='unikey/ukengine/unikey.cpp' l='135'>//--------------------------------------------</doc>
-<doc f='unikey/ukengine/unikey.h' l='72'>// call this when unloading unikey module</doc>

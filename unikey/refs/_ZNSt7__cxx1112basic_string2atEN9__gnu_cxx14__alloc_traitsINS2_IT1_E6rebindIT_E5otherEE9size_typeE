@@ -1,4 +1,6 @@
 <def f='include/c++/7/bits/basic_string.h' l='1085' ll='1094' type='reference std::__cxx11::basic_string::at(size_type __n)'/>
+<use f='unikey/src/engine.cpp' l='541' u='c' c='_ZL30ibus_unikey_engine_erase_charsP11_IBusEnginei'/>
+<use f='unikey/src/engine.cpp' l='721' u='c' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
 <doc f='include/c++/7/bits/basic_string.h' l='1075'>/**
        *  @brief  Provides access to the data contained in the %string.
        *  @param __n The index of the character to access.

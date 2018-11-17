@@ -81,49 +81,49 @@
 <tr><th id="68">68</th><td>    <b>extern</b> <em>int</em> <dfn class="decl" id="UnikeyBufChars" title='UnikeyBufChars' data-ref="UnikeyBufChars">UnikeyBufChars</dfn>;</td></tr>
 <tr><th id="69">69</th><td>    <b>extern</b> <a class="typedef" href="keycons.h.html#UkOutputType" title='UkOutputType' data-type='enum UkOutputType' data-ref="UkOutputType">UkOutputType</a> <dfn class="decl" id="UnikeyOutput" title='UnikeyOutput' data-ref="UnikeyOutput">UnikeyOutput</dfn>;</td></tr>
 <tr><th id="70">70</th><td></td></tr>
-<tr><th id="71">71</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeySetup" title='UnikeySetup' data-ref="UnikeySetup" id="UnikeySetup">UnikeySetup</a>(); <i>// always call this first</i></td></tr>
-<tr><th id="72">72</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeyCleanup" title='UnikeyCleanup' data-ref="UnikeyCleanup" id="UnikeyCleanup">UnikeyCleanup</a>(); <i>// call this when unloading unikey module</i></td></tr>
+<tr><th id="71">71</th><td>  <em>void</em> <dfn class="decl" id="UnikeySetup" title='UnikeySetup' data-ref="UnikeySetup">UnikeySetup</dfn>(); <i>// always call this first</i></td></tr>
+<tr><th id="72">72</th><td>  <em>void</em> <dfn class="decl" id="UnikeyCleanup" title='UnikeyCleanup' data-ref="UnikeyCleanup">UnikeyCleanup</dfn>(); <i>// call this when unloading unikey module</i></td></tr>
 <tr><th id="73">73</th><td>  </td></tr>
 <tr><th id="74">74</th><td>  <i>// call this to reset Unikey's state when focus, context is changed or</i></td></tr>
 <tr><th id="75">75</th><td><i>  // some control key is pressed</i></td></tr>
-<tr><th id="76">76</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeyResetBuf" title='UnikeyResetBuf' data-ref="UnikeyResetBuf" id="UnikeyResetBuf">UnikeyResetBuf</a>(); </td></tr>
+<tr><th id="76">76</th><td>  <em>void</em> <dfn class="decl" id="UnikeyResetBuf" title='UnikeyResetBuf' data-ref="UnikeyResetBuf">UnikeyResetBuf</dfn>(); </td></tr>
 <tr><th id="77">77</th><td></td></tr>
 <tr><th id="78">78</th><td> <i>// main handler, call every time a character input is received</i></td></tr>
-<tr><th id="79">79</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeyFilter" title='UnikeyFilter' data-ref="UnikeyFilter" id="UnikeyFilter">UnikeyFilter</a>(<em>unsigned</em> <em>int</em> <dfn class="local col1 decl" id="1ch" title='ch' data-type='unsigned int' data-ref="1ch">ch</dfn>);</td></tr>
-<tr><th id="80">80</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeyPutChar" title='UnikeyPutChar' data-ref="UnikeyPutChar" id="UnikeyPutChar">UnikeyPutChar</a>(<em>unsigned</em> <em>int</em> <dfn class="local col2 decl" id="2ch" title='ch' data-type='unsigned int' data-ref="2ch">ch</dfn>); <i>// put new char without filtering</i></td></tr>
+<tr><th id="79">79</th><td>  <em>void</em> <dfn class="decl" id="UnikeyFilter" title='UnikeyFilter' data-ref="UnikeyFilter">UnikeyFilter</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col3 decl" id="2013ch" title='ch' data-type='unsigned int' data-ref="2013ch">ch</dfn>);</td></tr>
+<tr><th id="80">80</th><td>  <em>void</em> <dfn class="decl" id="UnikeyPutChar" title='UnikeyPutChar' data-ref="UnikeyPutChar">UnikeyPutChar</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col4 decl" id="2014ch" title='ch' data-type='unsigned int' data-ref="2014ch">ch</dfn>); <i>// put new char without filtering</i></td></tr>
 <tr><th id="81">81</th><td></td></tr>
 <tr><th id="82">82</th><td>  <i>// call this before UnikeyFilter for correctly processing some TELEX shortcuts</i></td></tr>
-<tr><th id="83">83</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeySetCapsState" title='UnikeySetCapsState' data-ref="UnikeySetCapsState" id="UnikeySetCapsState">UnikeySetCapsState</a>(<em>int</em> <dfn class="local col3 decl" id="3shiftPressed" title='shiftPressed' data-type='int' data-ref="3shiftPressed">shiftPressed</dfn>, <em>int</em> <dfn class="local col4 decl" id="4CapsLockOn" title='CapsLockOn' data-type='int' data-ref="4CapsLockOn">CapsLockOn</dfn>);</td></tr>
+<tr><th id="83">83</th><td>  <em>void</em> <dfn class="decl" id="UnikeySetCapsState" title='UnikeySetCapsState' data-ref="UnikeySetCapsState">UnikeySetCapsState</dfn>(<em>int</em> <dfn class="local col5 decl" id="2015shiftPressed" title='shiftPressed' data-type='int' data-ref="2015shiftPressed">shiftPressed</dfn>, <em>int</em> <dfn class="local col6 decl" id="2016CapsLockOn" title='CapsLockOn' data-type='int' data-ref="2016CapsLockOn">CapsLockOn</dfn>);</td></tr>
 <tr><th id="84">84</th><td></td></tr>
 <tr><th id="85">85</th><td> <i>// call this when backspace is pressed</i></td></tr>
-<tr><th id="86">86</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeyBackspacePress" title='UnikeyBackspacePress' data-ref="UnikeyBackspacePress" id="UnikeyBackspacePress">UnikeyBackspacePress</a>();</td></tr>
+<tr><th id="86">86</th><td>  <em>void</em> <dfn class="decl" id="UnikeyBackspacePress" title='UnikeyBackspacePress' data-ref="UnikeyBackspacePress">UnikeyBackspacePress</dfn>();</td></tr>
 <tr><th id="87">87</th><td></td></tr>
 <tr><th id="88">88</th><td>  <i>// call this to restore to original key strokes</i></td></tr>
-<tr><th id="89">89</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeyRestoreKeyStrokes" title='UnikeyRestoreKeyStrokes' data-ref="UnikeyRestoreKeyStrokes" id="UnikeyRestoreKeyStrokes">UnikeyRestoreKeyStrokes</a>();</td></tr>
+<tr><th id="89">89</th><td>  <em>void</em> <dfn class="decl" id="UnikeyRestoreKeyStrokes" title='UnikeyRestoreKeyStrokes' data-ref="UnikeyRestoreKeyStrokes">UnikeyRestoreKeyStrokes</dfn>();</td></tr>
 <tr><th id="90">90</th><td></td></tr>
 <tr><th id="91">91</th><td> <i>//set extra options</i></td></tr>
-<tr><th id="92">92</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeySetOptions" title='UnikeySetOptions' data-ref="UnikeySetOptions" id="UnikeySetOptions">UnikeySetOptions</a>(<a class="typedef" href="keycons.h.html#UnikeyOptions" title='UnikeyOptions' data-type='struct _UnikeyOptions' data-ref="UnikeyOptions">UnikeyOptions</a> *<dfn class="local col5 decl" id="5pOpt" title='pOpt' data-type='UnikeyOptions *' data-ref="5pOpt">pOpt</dfn>); </td></tr>
-<tr><th id="93">93</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#CreateDefaultUnikeyOptions" title='CreateDefaultUnikeyOptions' data-ref="CreateDefaultUnikeyOptions" id="CreateDefaultUnikeyOptions">CreateDefaultUnikeyOptions</a>(<a class="typedef" href="keycons.h.html#UnikeyOptions" title='UnikeyOptions' data-type='struct _UnikeyOptions' data-ref="UnikeyOptions">UnikeyOptions</a> *<dfn class="local col6 decl" id="6pOpt" title='pOpt' data-type='UnikeyOptions *' data-ref="6pOpt">pOpt</dfn>);</td></tr>
+<tr><th id="92">92</th><td>  <em>void</em> <dfn class="decl" id="UnikeySetOptions" title='UnikeySetOptions' data-ref="UnikeySetOptions">UnikeySetOptions</dfn>(<a class="typedef" href="keycons.h.html#UnikeyOptions" title='UnikeyOptions' data-type='struct _UnikeyOptions' data-ref="UnikeyOptions">UnikeyOptions</a> *<dfn class="local col7 decl" id="2017pOpt" title='pOpt' data-type='UnikeyOptions *' data-ref="2017pOpt">pOpt</dfn>); </td></tr>
+<tr><th id="93">93</th><td>  <em>void</em> <dfn class="decl" id="CreateDefaultUnikeyOptions" title='CreateDefaultUnikeyOptions' data-ref="CreateDefaultUnikeyOptions">CreateDefaultUnikeyOptions</dfn>(<a class="typedef" href="keycons.h.html#UnikeyOptions" title='UnikeyOptions' data-type='struct _UnikeyOptions' data-ref="UnikeyOptions">UnikeyOptions</a> *<dfn class="local col8 decl" id="2018pOpt" title='pOpt' data-type='UnikeyOptions *' data-ref="2018pOpt">pOpt</dfn>);</td></tr>
 <tr><th id="94">94</th><td></td></tr>
-<tr><th id="95">95</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeyGetOptions" title='UnikeyGetOptions' data-ref="UnikeyGetOptions" id="UnikeyGetOptions">UnikeyGetOptions</a>(<a class="typedef" href="keycons.h.html#UnikeyOptions" title='UnikeyOptions' data-type='struct _UnikeyOptions' data-ref="UnikeyOptions">UnikeyOptions</a> *<dfn class="local col7 decl" id="7pOpt" title='pOpt' data-type='UnikeyOptions *' data-ref="7pOpt">pOpt</dfn>);</td></tr>
+<tr><th id="95">95</th><td>  <em>void</em> <dfn class="decl" id="UnikeyGetOptions" title='UnikeyGetOptions' data-ref="UnikeyGetOptions">UnikeyGetOptions</dfn>(<a class="typedef" href="keycons.h.html#UnikeyOptions" title='UnikeyOptions' data-type='struct _UnikeyOptions' data-ref="UnikeyOptions">UnikeyOptions</a> *<dfn class="local col9 decl" id="2019pOpt" title='pOpt' data-type='UnikeyOptions *' data-ref="2019pOpt">pOpt</dfn>);</td></tr>
 <tr><th id="96">96</th><td></td></tr>
 <tr><th id="97">97</th><td>  <i>// set input method</i></td></tr>
 <tr><th id="98">98</th><td><i>  //   im: TELEX_INPUT, VNI_INPUT, VIQR_INPUT, VIQR_STAR_INPUT</i></td></tr>
-<tr><th id="99">99</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeySetInputMethod" title='UnikeySetInputMethod' data-ref="UnikeySetInputMethod" id="UnikeySetInputMethod">UnikeySetInputMethod</a>(<a class="typedef" href="keycons.h.html#UkInputMethod" title='UkInputMethod' data-type='enum UkInputMethod' data-ref="UkInputMethod">UkInputMethod</a> <dfn class="local col8 decl" id="8im" title='im' data-type='UkInputMethod' data-ref="8im">im</dfn>);</td></tr>
+<tr><th id="99">99</th><td>  <em>void</em> <dfn class="decl" id="UnikeySetInputMethod" title='UnikeySetInputMethod' data-ref="UnikeySetInputMethod">UnikeySetInputMethod</dfn>(<a class="typedef" href="keycons.h.html#UkInputMethod" title='UkInputMethod' data-type='enum UkInputMethod' data-ref="UkInputMethod">UkInputMethod</a> <dfn class="local col0 decl" id="2020im" title='im' data-type='UkInputMethod' data-ref="2020im">im</dfn>);</td></tr>
 <tr><th id="100">100</th><td>  <i>// set output format</i></td></tr>
 <tr><th id="101">101</th><td><i>  //  void UnikeySetOutputVIQR();</i></td></tr>
 <tr><th id="102">102</th><td><i>  // void UnikeySetOutputUTF8();</i></td></tr>
-<tr><th id="103">103</th><td>  <em>int</em> <a class="decl" href="unikey.cpp.html#UnikeySetOutputCharset" title='UnikeySetOutputCharset' data-ref="UnikeySetOutputCharset" id="UnikeySetOutputCharset">UnikeySetOutputCharset</a>(<em>int</em> <dfn class="local col9 decl" id="9charset" title='charset' data-type='int' data-ref="9charset">charset</dfn>);</td></tr>
+<tr><th id="103">103</th><td>  <em>int</em> <dfn class="decl" id="UnikeySetOutputCharset" title='UnikeySetOutputCharset' data-ref="UnikeySetOutputCharset">UnikeySetOutputCharset</dfn>(<em>int</em> <dfn class="local col1 decl" id="2021charset" title='charset' data-type='int' data-ref="2021charset">charset</dfn>);</td></tr>
 <tr><th id="104">104</th><td></td></tr>
-<tr><th id="105">105</th><td>  <em>int</em> <a class="decl" href="unikey.cpp.html#UnikeyLoadMacroTable" title='UnikeyLoadMacroTable' data-ref="UnikeyLoadMacroTable" id="UnikeyLoadMacroTable">UnikeyLoadMacroTable</a>(<em>const</em> <em>char</em> *<dfn class="local col0 decl" id="10fileName" title='fileName' data-type='const char *' data-ref="10fileName">fileName</dfn>);</td></tr>
-<tr><th id="106">106</th><td>  <em>int</em> <a class="decl" href="unikey.cpp.html#UnikeyLoadUserKeyMap" title='UnikeyLoadUserKeyMap' data-ref="UnikeyLoadUserKeyMap" id="UnikeyLoadUserKeyMap">UnikeyLoadUserKeyMap</a>(<em>const</em> <em>char</em> *<dfn class="local col1 decl" id="11fileName" title='fileName' data-type='const char *' data-ref="11fileName">fileName</dfn>);</td></tr>
+<tr><th id="105">105</th><td>  <em>int</em> <dfn class="decl" id="UnikeyLoadMacroTable" title='UnikeyLoadMacroTable' data-ref="UnikeyLoadMacroTable">UnikeyLoadMacroTable</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="2022fileName" title='fileName' data-type='const char *' data-ref="2022fileName">fileName</dfn>);</td></tr>
+<tr><th id="106">106</th><td>  <em>int</em> <dfn class="decl" id="UnikeyLoadUserKeyMap" title='UnikeyLoadUserKeyMap' data-ref="UnikeyLoadUserKeyMap">UnikeyLoadUserKeyMap</dfn>(<em>const</em> <em>char</em> *<dfn class="local col3 decl" id="2023fileName" title='fileName' data-type='const char *' data-ref="2023fileName">fileName</dfn>);</td></tr>
 <tr><th id="107">107</th><td></td></tr>
 <tr><th id="108">108</th><td>  <i>//call this to enable typing vietnamese even in a non-vn sequence</i></td></tr>
 <tr><th id="109">109</th><td><i>  //e.g: GD&amp;DDT,QDDND...</i></td></tr>
 <tr><th id="110">110</th><td><i>  //The engine will return to normal mode when a word-break occurs.</i></td></tr>
-<tr><th id="111">111</th><td>  <em>void</em> <a class="decl" href="unikey.cpp.html#UnikeySetSingleMode" title='UnikeySetSingleMode' data-ref="UnikeySetSingleMode" id="UnikeySetSingleMode">UnikeySetSingleMode</a>();</td></tr>
+<tr><th id="111">111</th><td>  <em>void</em> <dfn class="decl" id="UnikeySetSingleMode" title='UnikeySetSingleMode' data-ref="UnikeySetSingleMode">UnikeySetSingleMode</dfn>();</td></tr>
 <tr><th id="112">112</th><td></td></tr>
-<tr><th id="113">113</th><td>  <em>bool</em> <a class="decl" href="unikey.cpp.html#UnikeyAtWordBeginning" title='UnikeyAtWordBeginning' data-ref="UnikeyAtWordBeginning" id="UnikeyAtWordBeginning">UnikeyAtWordBeginning</a>();</td></tr>
+<tr><th id="113">113</th><td>  <em>bool</em> <dfn class="decl" id="UnikeyAtWordBeginning" title='UnikeyAtWordBeginning' data-ref="UnikeyAtWordBeginning">UnikeyAtWordBeginning</dfn>();</td></tr>
 <tr><th id="114">114</th><td><u>#<span data-ppcond="114">if</span> defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>)</u></td></tr>
 <tr><th id="115">115</th><td>}</td></tr>
 <tr><th id="116">116</th><td><u>#<span data-ppcond="114">endif</span></u></td></tr>
@@ -131,6 +131,6 @@
 <tr><th id="118">118</th><td><u>#<span data-ppcond="24">endif</span></u></td></tr>
 <tr><th id="119">119</th><td></td></tr>
 </table><hr/><p id='footer'>
-Generated while processing <a href='unikey.cpp.html'>unikey/ukengine/unikey.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project unikey revision <em>0.6.1</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+Generated while processing <a href='../src/engine.cpp.html'>unikey/src/engine.cpp</a><br/>Generated on <em>2018-Nov-17</em> from project unikey revision <em>0.6.1</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
 <br/>Generator usage only permitted with license.</p>
 </div></body></html>

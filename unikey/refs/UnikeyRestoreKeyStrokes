@@ -1,4 +1,5 @@
 <dec f='unikey/ukengine/unikey.h' l='89' type='void UnikeyRestoreKeyStrokes()'/>
+<use f='unikey/src/engine.cpp' l='673' u='c' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<doc f='unikey/ukengine/unikey.h' l='88'>// call this to restore to original key strokes</doc>
 <def f='unikey/ukengine/unikey.cpp' l='194' ll='198' type='void UnikeyRestoreKeyStrokes()'/>
 <doc f='unikey/ukengine/unikey.cpp' l='193'>//--------------------------------------------</doc>
-<doc f='unikey/ukengine/unikey.h' l='88'>// call this to restore to original key strokes</doc>

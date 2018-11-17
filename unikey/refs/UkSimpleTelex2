@@ -1,3 +1,5 @@
 <dec f='unikey/ukengine/keycons.h' l='37' type='6'/>
+<use f='unikey/src/utils.cpp' l='25'/>
+<use f='unikey/src/utils.cpp' l='25'/>
 <use f='unikey/ukengine/inputproc.cpp' l='285' c='_ZN16UkInputProcessor5setIME13UkInputMethod'/>
 <use f='unikey/ukengine/unikey.cpp' l='51' u='r' c='UnikeySetInputMethod'/>

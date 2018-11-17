@@ -101,12 +101,12 @@
 <tr><th id="87">87</th><td></td></tr>
 <tr><th id="88">88</th><td>      <b>template</b>&lt;<b>typename</b> _Up, <b>typename</b>... _Args&gt;</td></tr>
 <tr><th id="89">89</th><td>	<em>void</em></td></tr>
-<tr><th id="90">90</th><td>	<dfn class="decl def" id="_ZNSaIvE9constructEPT_DpOT0_" title='std::allocator&lt;void&gt;::construct' data-ref="_ZNSaIvE9constructEPT_DpOT0_">construct</dfn>(_Up* <dfn class="local col7 decl" id="1357__p" title='__p' data-type='_Up *' data-ref="1357__p">__p</dfn>, _Args&amp;&amp;... <dfn class="local col8 decl" id="1358__args" title='__args' data-type='_Args &amp;&amp;...' data-ref="1358__args">__args</dfn>)</td></tr>
-<tr><th id="91">91</th><td>	{ ::<b>new</b>((<em>void</em> *)<a class="local col7 ref" href="#1357__p" title='__p' data-ref="1357__p">__p</a>) _Up(<span class="namespace">std::</span>forward&lt;_Args&gt;(<a class="local col8 ref" href="#1358__args" title='__args' data-ref="1358__args">__args</a>)...); }</td></tr>
+<tr><th id="90">90</th><td>	<dfn class="decl def" id="_ZNSaIvE9constructEPT_DpOT0_" title='std::allocator&lt;void&gt;::construct' data-ref="_ZNSaIvE9constructEPT_DpOT0_">construct</dfn>(_Up* <dfn class="local col3 decl" id="983__p" title='__p' data-type='_Up *' data-ref="983__p">__p</dfn>, _Args&amp;&amp;... <dfn class="local col4 decl" id="984__args" title='__args' data-type='_Args &amp;&amp;...' data-ref="984__args">__args</dfn>)</td></tr>
+<tr><th id="91">91</th><td>	{ ::<b>new</b>((<em>void</em> *)<a class="local col3 ref" href="#983__p" title='__p' data-ref="983__p">__p</a>) _Up(<span class="namespace">std::</span>forward&lt;_Args&gt;(<a class="local col4 ref" href="#984__args" title='__args' data-ref="984__args">__args</a>)...); }</td></tr>
 <tr><th id="92">92</th><td></td></tr>
 <tr><th id="93">93</th><td>      <b>template</b>&lt;<b>typename</b> _Up&gt;</td></tr>
 <tr><th id="94">94</th><td>	<em>void</em></td></tr>
-<tr><th id="95">95</th><td>	<dfn class="decl def" id="_ZNSaIvE7destroyEPT_" title='std::allocator&lt;void&gt;::destroy' data-ref="_ZNSaIvE7destroyEPT_">destroy</dfn>(_Up* <dfn class="local col9 decl" id="1359__p" title='__p' data-type='_Up *' data-ref="1359__p">__p</dfn>) { <a class="local col9 ref" href="#1359__p" title='__p' data-ref="1359__p">__p</a>-&gt;~_Up(); }</td></tr>
+<tr><th id="95">95</th><td>	<dfn class="decl def" id="_ZNSaIvE7destroyEPT_" title='std::allocator&lt;void&gt;::destroy' data-ref="_ZNSaIvE7destroyEPT_">destroy</dfn>(_Up* <dfn class="local col5 decl" id="985__p" title='__p' data-type='_Up *' data-ref="985__p">__p</dfn>) { <a class="local col5 ref" href="#985__p" title='__p' data-ref="985__p">__p</a>-&gt;~_Up(); }</td></tr>
 <tr><th id="96">96</th><td><u>#<span data-ppcond="81">endif</span></u></td></tr>
 <tr><th id="97">97</th><td>    };</td></tr>
 <tr><th id="98">98</th><td></td></tr>
@@ -144,8 +144,8 @@
 <tr><th id="130">130</th><td></td></tr>
 <tr><th id="131">131</th><td>      <dfn class="decl def" id="_ZNSt9allocatorC1Ev" title='std::allocator::allocator&lt;type-parameter-0-0&gt;' data-ref="_ZNSt9allocatorC1Ev">allocator</dfn>() <b>throw</b>() { }</td></tr>
 <tr><th id="132">132</th><td></td></tr>
-<tr><th id="133">133</th><td>      <dfn class="decl def" id="_ZNSt9allocatorC1ERKSaIT_E" title='std::allocator::allocator&lt;type-parameter-0-0&gt;' data-ref="_ZNSt9allocatorC1ERKSaIT_E">allocator</dfn>(<em>const</em> allocator&amp; <dfn class="local col0 decl" id="1360__a" title='__a' data-type='const allocator&lt;type-parameter-0-0&gt; &amp;' data-ref="1360__a">__a</dfn>) <b>throw</b>()</td></tr>
-<tr><th id="134">134</th><td>      : <a class="type" href="../../../x86_64-linux-gnu/c++/7/bits/c++allocator.h.html#std::__allocator_base" title='std::__allocator_base' data-ref="std::__allocator_base">__allocator_base</a>&lt;_Tp&gt;(<a class="local col0 ref" href="#1360__a" title='__a' data-ref="1360__a">__a</a>) { }</td></tr>
+<tr><th id="133">133</th><td>      <dfn class="decl def" id="_ZNSt9allocatorC1ERKSaIT_E" title='std::allocator::allocator&lt;type-parameter-0-0&gt;' data-ref="_ZNSt9allocatorC1ERKSaIT_E">allocator</dfn>(<em>const</em> allocator&amp; <dfn class="local col6 decl" id="986__a" title='__a' data-type='const allocator&lt;type-parameter-0-0&gt; &amp;' data-ref="986__a">__a</dfn>) <b>throw</b>()</td></tr>
+<tr><th id="134">134</th><td>      : <a class="type" href="../../../x86_64-linux-gnu/c++/7/bits/c++allocator.h.html#std::__allocator_base" title='std::__allocator_base' data-ref="std::__allocator_base">__allocator_base</a>&lt;_Tp&gt;(<a class="local col6 ref" href="#986__a" title='__a' data-ref="986__a">__a</a>) { }</td></tr>
 <tr><th id="135">135</th><td></td></tr>
 <tr><th id="136">136</th><td>      <b>template</b>&lt;<b>typename</b> _Tp1&gt;</td></tr>
 <tr><th id="137">137</th><td>	<dfn class="decl def" id="_ZNSt9allocatorC1ERKSaIT_E" title='std::allocator::allocator&lt;type-parameter-0-0&gt;' data-ref="_ZNSt9allocatorC1ERKSaIT_E">allocator</dfn>(<em>const</em> <a class="type" href="memoryfwd.h.html#std::allocator" title='std::allocator' data-ref="std::allocator">allocator</a>&lt;_Tp1&gt;&amp;) <b>throw</b>() { }</td></tr>
@@ -200,11 +200,11 @@
 <tr><th id="186">186</th><td>    <b>struct</b> <dfn class="type def" id="std::__alloc_swap" title='std::__alloc_swap' data-ref="std::__alloc_swap">__alloc_swap</dfn>&lt;_Alloc, <b>false</b>&gt;</td></tr>
 <tr><th id="187">187</th><td>    {</td></tr>
 <tr><th id="188">188</th><td>      <em>static</em> <em>void</em></td></tr>
-<tr><th id="189">189</th><td>      <dfn class="decl def" id="_ZNSt12__alloc_swapIT_Lb0EE8_S_do_itERS0_S2_" title='std::__alloc_swap&lt;type-parameter-0-0, false&gt;::_S_do_it' data-ref="_ZNSt12__alloc_swapIT_Lb0EE8_S_do_itERS0_S2_">_S_do_it</dfn>(_Alloc&amp; <dfn class="local col1 decl" id="1361__one" title='__one' data-type='_Alloc &amp;' data-ref="1361__one">__one</dfn>, _Alloc&amp; <dfn class="local col2 decl" id="1362__two" title='__two' data-type='_Alloc &amp;' data-ref="1362__two">__two</dfn>) <a class="macro" href="../../../x86_64-linux-gnu/c++/7/bits/c++config.h.html#136" title="noexcept" data-ref="_M/_GLIBCXX_NOEXCEPT">_GLIBCXX_NOEXCEPT</a></td></tr>
+<tr><th id="189">189</th><td>      <dfn class="decl def" id="_ZNSt12__alloc_swapIT_Lb0EE8_S_do_itERS0_S2_" title='std::__alloc_swap&lt;type-parameter-0-0, false&gt;::_S_do_it' data-ref="_ZNSt12__alloc_swapIT_Lb0EE8_S_do_itERS0_S2_">_S_do_it</dfn>(_Alloc&amp; <dfn class="local col7 decl" id="987__one" title='__one' data-type='_Alloc &amp;' data-ref="987__one">__one</dfn>, _Alloc&amp; <dfn class="local col8 decl" id="988__two" title='__two' data-type='_Alloc &amp;' data-ref="988__two">__two</dfn>) <a class="macro" href="../../../x86_64-linux-gnu/c++/7/bits/c++config.h.html#136" title="noexcept" data-ref="_M/_GLIBCXX_NOEXCEPT">_GLIBCXX_NOEXCEPT</a></td></tr>
 <tr><th id="190">190</th><td>      {</td></tr>
 <tr><th id="191">191</th><td>	<i>// Precondition: swappable allocators.</i></td></tr>
-<tr><th id="192">192</th><td>	<b>if</b> (<a class="local col1 ref" href="#1361__one" title='__one' data-ref="1361__one">__one</a> != <a class="local col2 ref" href="#1362__two" title='__two' data-ref="1362__two">__two</a>)</td></tr>
-<tr><th id="193">193</th><td>	  swap(<a class="local col1 ref" href="#1361__one" title='__one' data-ref="1361__one">__one</a>, <a class="local col2 ref" href="#1362__two" title='__two' data-ref="1362__two">__two</a>);</td></tr>
+<tr><th id="192">192</th><td>	<b>if</b> (<a class="local col7 ref" href="#987__one" title='__one' data-ref="987__one">__one</a> != <a class="local col8 ref" href="#988__two" title='__two' data-ref="988__two">__two</a>)</td></tr>
+<tr><th id="193">193</th><td>	  swap(<a class="local col7 ref" href="#987__one" title='__one' data-ref="987__one">__one</a>, <a class="local col8 ref" href="#988__two" title='__two' data-ref="988__two">__two</a>);</td></tr>
 <tr><th id="194">194</th><td>      }</td></tr>
 <tr><th id="195">195</th><td>    };</td></tr>
 <tr><th id="196">196</th><td></td></tr>
@@ -221,8 +221,8 @@
 <tr><th id="207">207</th><td>    <b>struct</b> <dfn class="type def" id="std::__alloc_neq" title='std::__alloc_neq' data-ref="std::__alloc_neq">__alloc_neq</dfn>&lt;_Alloc, <b>false</b>&gt;</td></tr>
 <tr><th id="208">208</th><td>    {</td></tr>
 <tr><th id="209">209</th><td>      <em>static</em> <em>bool</em></td></tr>
-<tr><th id="210">210</th><td>      <dfn class="decl def" id="_ZNSt11__alloc_neqIT_Lb0EE8_S_do_itERKS0_S3_" title='std::__alloc_neq&lt;type-parameter-0-0, false&gt;::_S_do_it' data-ref="_ZNSt11__alloc_neqIT_Lb0EE8_S_do_itERKS0_S3_">_S_do_it</dfn>(<em>const</em> _Alloc&amp; <dfn class="local col3 decl" id="1363__one" title='__one' data-type='const _Alloc &amp;' data-ref="1363__one">__one</dfn>, <em>const</em> _Alloc&amp; <dfn class="local col4 decl" id="1364__two" title='__two' data-type='const _Alloc &amp;' data-ref="1364__two">__two</dfn>)</td></tr>
-<tr><th id="211">211</th><td>      { <b>return</b> <a class="local col3 ref" href="#1363__one" title='__one' data-ref="1363__one">__one</a> != <a class="local col4 ref" href="#1364__two" title='__two' data-ref="1364__two">__two</a>; }</td></tr>
+<tr><th id="210">210</th><td>      <dfn class="decl def" id="_ZNSt11__alloc_neqIT_Lb0EE8_S_do_itERKS0_S3_" title='std::__alloc_neq&lt;type-parameter-0-0, false&gt;::_S_do_it' data-ref="_ZNSt11__alloc_neqIT_Lb0EE8_S_do_itERKS0_S3_">_S_do_it</dfn>(<em>const</em> _Alloc&amp; <dfn class="local col9 decl" id="989__one" title='__one' data-type='const _Alloc &amp;' data-ref="989__one">__one</dfn>, <em>const</em> _Alloc&amp; <dfn class="local col0 decl" id="990__two" title='__two' data-type='const _Alloc &amp;' data-ref="990__two">__two</dfn>)</td></tr>
+<tr><th id="211">211</th><td>      { <b>return</b> <a class="local col9 ref" href="#989__one" title='__one' data-ref="989__one">__one</a> != <a class="local col0 ref" href="#990__two" title='__two' data-ref="990__two">__two</a>; }</td></tr>
 <tr><th id="212">212</th><td>    };</td></tr>
 <tr><th id="213">213</th><td></td></tr>
 <tr><th id="214">214</th><td><u>#<span data-ppcond="214">if</span> <span class="macro" title="201103L" data-ref="_M/__cplusplus">__cplusplus</span> &gt;= 201103L</u></td></tr>
@@ -236,14 +236,14 @@
 <tr><th id="222">222</th><td>    <b>struct</b> <dfn class="type def" id="std::__shrink_to_fit_aux" title='std::__shrink_to_fit_aux' data-ref="std::__shrink_to_fit_aux">__shrink_to_fit_aux</dfn>&lt;_Tp, <b>true</b>&gt;</td></tr>
 <tr><th id="223">223</th><td>    {</td></tr>
 <tr><th id="224">224</th><td>      <em>static</em> <em>bool</em></td></tr>
-<tr><th id="225">225</th><td>      <dfn class="decl def" id="_ZNSt19__shrink_to_fit_auxIT_Lb1EE8_S_do_itERS0_" title='std::__shrink_to_fit_aux&lt;type-parameter-0-0, true&gt;::_S_do_it' data-ref="_ZNSt19__shrink_to_fit_auxIT_Lb1EE8_S_do_itERS0_">_S_do_it</dfn>(_Tp&amp; <dfn class="local col5 decl" id="1365__c" title='__c' data-type='_Tp &amp;' data-ref="1365__c">__c</dfn>) <b>noexcept</b></td></tr>
+<tr><th id="225">225</th><td>      <dfn class="decl def" id="_ZNSt19__shrink_to_fit_auxIT_Lb1EE8_S_do_itERS0_" title='std::__shrink_to_fit_aux&lt;type-parameter-0-0, true&gt;::_S_do_it' data-ref="_ZNSt19__shrink_to_fit_auxIT_Lb1EE8_S_do_itERS0_">_S_do_it</dfn>(_Tp&amp; <dfn class="local col1 decl" id="991__c" title='__c' data-type='_Tp &amp;' data-ref="991__c">__c</dfn>) <b>noexcept</b></td></tr>
 <tr><th id="226">226</th><td>      {</td></tr>
 <tr><th id="227">227</th><td><u>#<span data-ppcond="227">if</span> <span class="macro" title="199711" data-ref="_M/__cpp_exceptions">__cpp_exceptions</span></u></td></tr>
 <tr><th id="228">228</th><td>	<b>try</b></td></tr>
 <tr><th id="229">229</th><td>	  {</td></tr>
-<tr><th id="230">230</th><td>	    _Tp(__make_move_if_noexcept_iterator(<a class="local col5 ref" href="#1365__c" title='__c' data-ref="1365__c">__c</a>.begin()),</td></tr>
-<tr><th id="231">231</th><td>		__make_move_if_noexcept_iterator(<a class="local col5 ref" href="#1365__c" title='__c' data-ref="1365__c">__c</a>.end()),</td></tr>
-<tr><th id="232">232</th><td>		<a class="local col5 ref" href="#1365__c" title='__c' data-ref="1365__c">__c</a>.get_allocator()).swap(<a class="local col5 ref" href="#1365__c" title='__c' data-ref="1365__c">__c</a>);</td></tr>
+<tr><th id="230">230</th><td>	    _Tp(__make_move_if_noexcept_iterator(<a class="local col1 ref" href="#991__c" title='__c' data-ref="991__c">__c</a>.begin()),</td></tr>
+<tr><th id="231">231</th><td>		__make_move_if_noexcept_iterator(<a class="local col1 ref" href="#991__c" title='__c' data-ref="991__c">__c</a>.end()),</td></tr>
+<tr><th id="232">232</th><td>		<a class="local col1 ref" href="#991__c" title='__c' data-ref="991__c">__c</a>.get_allocator()).swap(<a class="local col1 ref" href="#991__c" title='__c' data-ref="991__c">__c</a>);</td></tr>
 <tr><th id="233">233</th><td>	    <b>return</b> <b>true</b>;</td></tr>
 <tr><th id="234">234</th><td>	  }</td></tr>
 <tr><th id="235">235</th><td>	<b>catch</b>(...)</td></tr>
@@ -261,6 +261,6 @@
 <tr><th id="247">247</th><td><u>#<span data-ppcond="43">endif</span></u></td></tr>
 <tr><th id="248">248</th><td></td></tr>
 </table><hr/><p id='footer'>
-Generated while processing <a href='../../../../unikey/ukengine/inputproc.cpp.html'>unikey/ukengine/inputproc.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+Generated while processing <a href='../../../../unikey/src/engine.cpp.html'>unikey/src/engine.cpp</a><br/>Generated on <em>2018-Nov-17</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
 <br/>Generator usage only permitted with license.</p>
 </div></body></html>

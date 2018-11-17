@@ -1,4 +1,6 @@
 <dec f='unikey/ukengine/keycons.h' l='37' type='1'/>
+<use f='unikey/src/utils.cpp' l='25'/>
+<use f='unikey/src/utils.cpp' l='25'/>
 <use f='unikey/test/test_inputproc.cc' l='35' u='r' c='_ZL18testKeyCodeToEventi'/>
 <use f='unikey/test/test_inputproc.cc' l='35' u='r' c='_ZL18testKeyCodeToEventi'/>
 <use f='unikey/test/test_inputproc.cc' l='36' u='r' c='_ZL18testKeyCodeToEventi'/>

@@ -1,8 +1,8 @@
 <dec f='include/stdio.h' l='318' type='int printf(const char *__restrict __format)'/>
-<use f='unikey/test/test_inputproc.cc' l='98' u='c' c='_Z11print_eventR10UkKeyEvent'/>
 <doc f='include/stdio.h' l='314'>/* Write formatted output to stdout.
 
    This function is a possible cancellation point and therefore not
    marked with __THROW.  */</doc>
+<use f='unikey/test/test_inputproc.cc' l='98' u='c' c='_Z11print_eventR10UkKeyEvent'/>
 <use f='unikey/ukengine/ukengine.cpp' l='449' u='c' c='_Z15engineClassInitv'/>
 <use f='unikey/ukengine/ukengine.cpp' l='468' u='c' c='_Z15engineClassInitv'/>

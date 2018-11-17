@@ -73,8 +73,8 @@
 <tr><th id="59">59</th><td>      <a class="typedef" href="#std::initializer_list::size_type" title='std::initializer_list::size_type' data-type='size_t' data-ref="std::initializer_list::size_type">size_type</a>			<dfn class="decl" id="std::initializer_list::_M_len" title='std::initializer_list::_M_len' data-ref="std::initializer_list::_M_len">_M_len</dfn>;</td></tr>
 <tr><th id="60">60</th><td></td></tr>
 <tr><th id="61">61</th><td>      <i>// The compiler can call a private constructor.</i></td></tr>
-<tr><th id="62">62</th><td>      <b>constexpr</b> <dfn class="decl def" id="_ZNSt16initializer_listC1EPKT_m" title='std::initializer_list::initializer_list&lt;_E&gt;' data-ref="_ZNSt16initializer_listC1EPKT_m">initializer_list</dfn>(<a class="typedef" href="#std::initializer_list::const_iterator" title='std::initializer_list::const_iterator' data-type='const _E *' data-ref="std::initializer_list::const_iterator">const_iterator</a> <dfn class="local col5 decl" id="1485__a" title='__a' data-type='const_iterator' data-ref="1485__a">__a</dfn>, <a class="typedef" href="#std::initializer_list::size_type" title='std::initializer_list::size_type' data-type='size_t' data-ref="std::initializer_list::size_type">size_type</a> <dfn class="local col6 decl" id="1486__l" title='__l' data-type='size_type' data-ref="1486__l">__l</dfn>)</td></tr>
-<tr><th id="63">63</th><td>      : <a class="member" href="#std::initializer_list::_M_array" title='std::initializer_list::_M_array' data-ref="std::initializer_list::_M_array">_M_array</a>(<a class="local col5 ref" href="#1485__a" title='__a' data-ref="1485__a">__a</a>), <a class="member" href="#std::initializer_list::_M_len" title='std::initializer_list::_M_len' data-ref="std::initializer_list::_M_len">_M_len</a>(<a class="local col6 ref" href="#1486__l" title='__l' data-ref="1486__l">__l</a>) { }</td></tr>
+<tr><th id="62">62</th><td>      <b>constexpr</b> <dfn class="decl def" id="_ZNSt16initializer_listC1EPKT_m" title='std::initializer_list::initializer_list&lt;_E&gt;' data-ref="_ZNSt16initializer_listC1EPKT_m">initializer_list</dfn>(<a class="typedef" href="#std::initializer_list::const_iterator" title='std::initializer_list::const_iterator' data-type='const _E *' data-ref="std::initializer_list::const_iterator">const_iterator</a> <dfn class="local col2 decl" id="1132__a" title='__a' data-type='const_iterator' data-ref="1132__a">__a</dfn>, <a class="typedef" href="#std::initializer_list::size_type" title='std::initializer_list::size_type' data-type='size_t' data-ref="std::initializer_list::size_type">size_type</a> <dfn class="local col3 decl" id="1133__l" title='__l' data-type='size_type' data-ref="1133__l">__l</dfn>)</td></tr>
+<tr><th id="63">63</th><td>      : <a class="member" href="#std::initializer_list::_M_array" title='std::initializer_list::_M_array' data-ref="std::initializer_list::_M_array">_M_array</a>(<a class="local col2 ref" href="#1132__a" title='__a' data-ref="1132__a">__a</a>), <a class="member" href="#std::initializer_list::_M_len" title='std::initializer_list::_M_len' data-ref="std::initializer_list::_M_len">_M_len</a>(<a class="local col3 ref" href="#1133__l" title='__l' data-ref="1133__l">__l</a>) { }</td></tr>
 <tr><th id="64">64</th><td></td></tr>
 <tr><th id="65">65</th><td>    <b>public</b>:</td></tr>
 <tr><th id="66">66</th><td>      <b>constexpr</b> <dfn class="decl def" id="_ZNSt16initializer_listC1Ev" title='std::initializer_list::initializer_list&lt;_E&gt;' data-ref="_ZNSt16initializer_listC1Ev">initializer_list</dfn>() <b>noexcept</b></td></tr>
@@ -100,8 +100,8 @@
 <tr><th id="86">86</th><td><i class="doc">   */</i></td></tr>
 <tr><th id="87">87</th><td>  <b>template</b>&lt;<b>class</b> _Tp&gt;</td></tr>
 <tr><th id="88">88</th><td>    <b>constexpr</b> <em>const</em> _Tp*</td></tr>
-<tr><th id="89">89</th><td>    <dfn class="decl def" id="_ZSt5beginSt16initializer_listIT_E" title='std::begin' data-ref="_ZSt5beginSt16initializer_listIT_E">begin</dfn>(<a class="type" href="#std::initializer_list" title='std::initializer_list' data-ref="std::initializer_list">initializer_list</a>&lt;_Tp&gt; <dfn class="local col7 decl" id="1487__ils" title='__ils' data-type='initializer_list&lt;_Tp&gt;' data-ref="1487__ils">__ils</dfn>) <b>noexcept</b></td></tr>
-<tr><th id="90">90</th><td>    { <b>return</b> <a class="local col7 ref" href="#1487__ils" title='__ils' data-ref="1487__ils">__ils</a>.begin(); }</td></tr>
+<tr><th id="89">89</th><td>    <dfn class="decl def" id="_ZSt5beginSt16initializer_listIT_E" title='std::begin' data-ref="_ZSt5beginSt16initializer_listIT_E">begin</dfn>(<a class="type" href="#std::initializer_list" title='std::initializer_list' data-ref="std::initializer_list">initializer_list</a>&lt;_Tp&gt; <dfn class="local col4 decl" id="1134__ils" title='__ils' data-type='initializer_list&lt;_Tp&gt;' data-ref="1134__ils">__ils</dfn>) <b>noexcept</b></td></tr>
+<tr><th id="90">90</th><td>    { <b>return</b> <a class="local col4 ref" href="#1134__ils" title='__ils' data-ref="1134__ils">__ils</a>.begin(); }</td></tr>
 <tr><th id="91">91</th><td></td></tr>
 <tr><th id="92">92</th><td>  <i class="doc">/**</i></td></tr>
 <tr><th id="93">93</th><td><i class="doc">   *  <span class="command">@brief</span>  Return an iterator pointing to one past the last element</i></td></tr>
@@ -110,8 +110,8 @@
 <tr><th id="96">96</th><td><i class="doc">   */</i></td></tr>
 <tr><th id="97">97</th><td>  <b>template</b>&lt;<b>class</b> _Tp&gt;</td></tr>
 <tr><th id="98">98</th><td>    <b>constexpr</b> <em>const</em> _Tp*</td></tr>
-<tr><th id="99">99</th><td>    <dfn class="decl def" id="_ZSt3endSt16initializer_listIT_E" title='std::end' data-ref="_ZSt3endSt16initializer_listIT_E">end</dfn>(<a class="type" href="#std::initializer_list" title='std::initializer_list' data-ref="std::initializer_list">initializer_list</a>&lt;_Tp&gt; <dfn class="local col8 decl" id="1488__ils" title='__ils' data-type='initializer_list&lt;_Tp&gt;' data-ref="1488__ils">__ils</dfn>) <b>noexcept</b></td></tr>
-<tr><th id="100">100</th><td>    { <b>return</b> <a class="local col8 ref" href="#1488__ils" title='__ils' data-ref="1488__ils">__ils</a>.end(); }</td></tr>
+<tr><th id="99">99</th><td>    <dfn class="decl def" id="_ZSt3endSt16initializer_listIT_E" title='std::end' data-ref="_ZSt3endSt16initializer_listIT_E">end</dfn>(<a class="type" href="#std::initializer_list" title='std::initializer_list' data-ref="std::initializer_list">initializer_list</a>&lt;_Tp&gt; <dfn class="local col5 decl" id="1135__ils" title='__ils' data-type='initializer_list&lt;_Tp&gt;' data-ref="1135__ils">__ils</dfn>) <b>noexcept</b></td></tr>
+<tr><th id="100">100</th><td>    { <b>return</b> <a class="local col5 ref" href="#1135__ils" title='__ils' data-ref="1135__ils">__ils</a>.end(); }</td></tr>
 <tr><th id="101">101</th><td>}</td></tr>
 <tr><th id="102">102</th><td></td></tr>
 <tr><th id="103">103</th><td><u>#pragma GCC visibility pop</u></td></tr>
@@ -121,6 +121,6 @@
 <tr><th id="107">107</th><td><u>#<span data-ppcond="30">endif</span> // _INITIALIZER_LIST</u></td></tr>
 <tr><th id="108">108</th><td></td></tr>
 </table><hr/><p id='footer'>
-Generated while processing <a href='../../../unikey/ukengine/inputproc.cpp.html'>unikey/ukengine/inputproc.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+Generated while processing <a href='../../../unikey/src/engine.cpp.html'>unikey/src/engine.cpp</a><br/>Generated on <em>2018-Nov-17</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
 <br/>Generator usage only permitted with license.</p>
 </div></body></html>

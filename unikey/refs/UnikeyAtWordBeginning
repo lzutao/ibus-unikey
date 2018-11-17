@@ -1,2 +1,3 @@
 <dec f='unikey/ukengine/unikey.h' l='113' type='bool UnikeyAtWordBeginning()'/>
+<use f='unikey/src/engine.cpp' l='669' u='c' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
 <def f='unikey/ukengine/unikey.cpp' l='200' ll='203' type='bool UnikeyAtWordBeginning()'/>

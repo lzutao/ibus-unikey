@@ -1,3 +1,5 @@
 <dec f='include/string.h' l='124' type='char * strncpy(char *__restrict __dest, const char *__restrict __src, size_t __n)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='223' u='c' c='_Z13key_edited_cbP20_GtkCellRendererTextPKcS2_Pv'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='279' u='c' c='_Z15value_edited_cbP20_GtkCellRendererTextPKcS2_Pv'/>
 <doc f='include/string.h' l='123'>/* Copy no more than N characters of SRC to DEST.  */</doc>
 <use f='unikey/ukengine/mactab.cpp' l='320' u='c' c='_ZN11CMacroTable7addItemEPKci'/>

@@ -44,8 +44,6 @@
 <def f='include/c++/7/bits/basic_string.h' l='6621' ll='6629'/>
 <inh f='include/c++/7/bits/functional_hash.h' l='50' c='std::__hash_base'/>
 <def f='include/c++/7/bits/basic_string.h' l='6636' ll='6644'/>
-<inh f='include/c++/7/bits/functional_hash.h' l='50' c='std::__hash_base'/>
-<def f='include/c++/7/system_error' l='385' ll='395'/>
 <size>1</size>
 <doc f='include/c++/7/bits/basic_string.h' l='6587'>/// std::hash specialization for string.</doc>
 <doc f='include/c++/7/bits/basic_string.h' l='6602'>/// std::hash specialization for wstring.</doc>
@@ -55,8 +53,6 @@
 <doc f='include/c++/7/bits/functional_hash.h' l='224'>/// Specialization for float.</doc>
 <doc f='include/c++/7/bits/functional_hash.h' l='236'>/// Specialization for double.</doc>
 <doc f='include/c++/7/bits/functional_hash.h' l='248'>/// Specialization for long double.</doc>
-<doc f='include/c++/7/system_error' l='383'>// DR 1182.
-  /// std::hash specialization for error_code.</doc>
 <fun r='_ZNKSt4hashIPT_EclES1_'/>
 <fun r='_ZNKSt4hashIfEclEf'/>
 <fun r='_ZNKSt4hashIdEclEd'/>
@@ -65,4 +61,9 @@
 <fun r='_ZNKSt4hashINSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEEEEclERKS5_'/>
 <fun r='_ZNKSt4hashINSt7__cxx1112basic_stringIDsSt11char_traitsIDsESaIDsEEEEclERKS5_'/>
 <fun r='_ZNKSt4hashINSt7__cxx1112basic_stringIDiSt11char_traitsIDiESaIDiEEEEclERKS5_'/>
+<inh f='include/c++/7/bits/functional_hash.h' l='50' c='std::__hash_base'/>
+<def f='include/c++/7/system_error' l='385' ll='395'/>
+<size>1</size>
+<doc f='include/c++/7/system_error' l='383'>// DR 1182.
+  /// std::hash specialization for error_code.</doc>
 <fun r='_ZNKSt4hashISt10error_codeEclERKS0_'/>

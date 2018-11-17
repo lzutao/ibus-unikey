@@ -1,2 +1,7 @@
 <dec f='include/features.h' l='372'/>
+<use f='include/unistd.h' l='303' u='a'/>
+<use f='include/unistd.h' l='491' u='a'/>
+<use f='include/unistd.h' l='795' u='a'/>
+<use f='include/unistd.h' l='816' u='a'/>
+<use f='include/unistd.h' l='830' u='a'/>
 <use f='include/stdio.h' l='148' u='a'/>

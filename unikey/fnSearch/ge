@@ -1,6 +1,7 @@
-_ZN16UkInputProcessor5getIMEv|UkInputProcessor::getIM
 _ZN11CMacroTable8getCountEv|CMacroTable::getCount
 _ZN14StringBOStream11getOutBytesEv|StringBOStream::getOutBytes
+_ZN16UkInputProcessor5getIMEv|UkInputProcessor::getIM
+_ZSt7getlineRSt13basic_istreamIT_T0_ERNSt7__cxx1112basic_stringIS0_S1_T1_EE|std::getline
 _ZN12FileBIStream7getNextERh|FileBIStream::getNext
 _ZN12FileBIStream9getNextDWERj|FileBIStream::getNextDW
 _ZN12FileBIStream8getNextWERt|FileBIStream::getNextW
@@ -14,7 +15,6 @@ _ZN16UkInputProcessor9getKeyMapEPi|UkInputProcessor::getKeyMap
 _ZNSt13basic_istream3getEPT_l|std::basic_istream::get
 _ZNSt13basic_istream7getlineEPT_l|std::basic_istream::getline
 _ZNKSt15basic_streambuf6getlocEv|std::basic_streambuf::getloc
-_ZSt7getlineRSt13basic_istreamIT_T0_ERNSt7__cxx1112basic_stringIS0_S1_T1_EE|std::getline
 _ZNKSt8ios_base6getlocEv|std::ios_base::getloc
 _ZNKSt7num_get3getET0_S0_RSt8ios_baseRSt12_Ios_IostateRb|std::num_get::get
 _ZN11CMacroTable6getKeyEi|CMacroTable::getKey

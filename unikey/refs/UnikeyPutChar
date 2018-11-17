@@ -1,4 +1,4 @@
 <dec f='unikey/ukengine/unikey.h' l='80' type='void UnikeyPutChar(unsigned int ch)'/>
+<doc f='unikey/ukengine/unikey.h' l='80'>// put new char without filtering</doc>
 <def f='unikey/ukengine/unikey.cpp' l='149' ll='154' type='void UnikeyPutChar(unsigned int ch)'/>
 <doc f='unikey/ukengine/unikey.cpp' l='148'>//--------------------------------------------</doc>
-<doc f='unikey/ukengine/unikey.h' l='80'>// put new char without filtering</doc>

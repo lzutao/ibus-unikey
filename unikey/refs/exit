@@ -2,3 +2,11 @@
 <doc f='include/stdlib.h' l='611'>/* Call all functions registered with `atexit&apos; and `on_exit&apos;,
    in the reverse of the order in which they were registered,
    perform stdio cleanup, and terminate program execution with STATUS.  */</doc>
+<use f='unikey/setup/dlg_main_setup.cpp' l='25' u='c' c='_Z28unikey_main_setup_dialog_newv'/>
+<use f='unikey/setup/setup.cpp' l='37' u='c' c='main'/>
+<use f='unikey/src/engine.cpp' l='369' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/engine.cpp' l='379' u='c' c='_ZL36ibus_unikey_engine_property_activateP11_IBusEnginePKcj'/>
+<use f='unikey/src/main.cpp' l='41' u='c' c='_ZL15start_componentv'/>
+<use f='unikey/src/main.cpp' l='84' u='c' c='_ZL15start_componentv'/>
+<use f='unikey/src/main.cpp' l='113' u='c' c='main'/>
+<use f='unikey/src/main.cpp' l='124' u='c' c='main'/>

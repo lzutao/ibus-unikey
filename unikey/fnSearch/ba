@@ -7,6 +7,8 @@ _ZNSt20bad_array_new_lengthC1Ev|std::bad_array_new_length::bad_array_new_length
 _ZNSt8bad_castC1Ev|std::bad_cast::bad_cast
 _ZNSt13bad_exceptionC1Ev|std::bad_exception::bad_exception
 _ZNSt10bad_typeidC1Ev|std::bad_typeid::bad_typeid
+_ZNKSt13move_iterator4baseEv|std::move_iterator::base
+_ZNKSt16reverse_iterator4baseEv|std::reverse_iterator::base
 _ZNSt9basic_ios15_M_cache_localeERKSt6locale|std::basic_ios::_M_cache_locale
 _ZNSt9basic_ios11_M_setstateESt12_Ios_Iostate|std::basic_ios::_M_setstate
 _ZNKSt9basic_ios3badEv|std::basic_ios::bad
@@ -96,5 +98,3 @@ _ZNSt15basic_streambuf5uflowEv|std::basic_streambuf::uflow
 _ZNSt15basic_streambuf9underflowEv|std::basic_streambuf::underflow
 _ZNSt15basic_streambuf6xsgetnEPT_l|std::basic_streambuf::xsgetn
 _ZNSt15basic_streambuf6xsputnEPKT_l|std::basic_streambuf::xsputn
-_ZNKSt13move_iterator4baseEv|std::move_iterator::base
-_ZNKSt16reverse_iterator4baseEv|std::reverse_iterator::base

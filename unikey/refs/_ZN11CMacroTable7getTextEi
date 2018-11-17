@@ -1,3 +1,4 @@
 <dec f='unikey/ukengine/mactab.h' l='61' type='const StdVnChar * CMacroTable::getText(int idx)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='114' u='c' c='_Z26append_macro_to_list_storeP13_GtkListStore11CMacroTable'/>
 <def f='unikey/ukengine/mactab.cpp' l='341' ll='346' type='const StdVnChar * CMacroTable::getText(int idx)'/>
 <doc f='unikey/ukengine/mactab.cpp' l='340'>//---------------------------------------------------------------</doc>

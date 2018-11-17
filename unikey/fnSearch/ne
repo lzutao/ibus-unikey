@@ -1,3 +1,8 @@
+_ZNKSt6negateclERKT_|std::negate::operator()
+_ZNSt16nested_exceptionC1Ev|std::nested_exception::nested_exception
+_ZNKSt16nested_exception10nested_ptrEv|std::nested_exception::nested_ptr
+_ZNKSt16nested_exception14rethrow_nestedEv|std::nested_exception::rethrow_nested
+_ZSt4nextT_NSt15iterator_traitsIS_E15difference_typeE|std::next
 _ZN17DoubleByteCharset9nextInputER12ByteInStreamRjRi|DoubleByteCharset::nextInput
 _ZN17SingleByteCharset9nextInputER12ByteInStreamRjRi|SingleByteCharset::nextInput
 _ZN15UTF8VIQRCharset9nextInputER12ByteInStreamRjRi|UTF8VIQRCharset::nextInput
@@ -9,8 +14,3 @@ _ZN18UnicodeUTF8Charset9nextInputER12ByteInStreamRjRi|UnicodeUTF8Charset::nextIn
 _ZN11VIQRCharset9nextInputER12ByteInStreamRjRi|VIQRCharset::nextInput
 _ZN17VnInternalCharset9nextInputER12ByteInStreamRjRi|VnInternalCharset::nextInput
 _ZN16WinCP1258Charset9nextInputER12ByteInStreamRjRi|WinCP1258Charset::nextInput
-_ZNKSt6negateclERKT_|std::negate::operator()
-_ZNSt16nested_exceptionC1Ev|std::nested_exception::nested_exception
-_ZNKSt16nested_exception10nested_ptrEv|std::nested_exception::nested_ptr
-_ZNKSt16nested_exception14rethrow_nestedEv|std::nested_exception::rethrow_nested
-_ZSt4nextT_NSt15iterator_traitsIS_E15difference_typeE|std::next

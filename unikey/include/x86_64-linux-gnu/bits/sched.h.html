@@ -2,7 +2,6 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>sched.h source code [include/x86_64-linux-gnu/bits/sched.h] - Woboq Code Browser</title>
-<meta name="woboq:interestingDefinitions" content="sched_param "/>
 <link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
 <link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
 <script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
@@ -95,17 +94,17 @@
 <tr><th id="81">81</th><td></td></tr>
 <tr><th id="82">82</th><td><u>#<span data-ppcond="82">ifdef</span> <a class="macro" href="../../features.h.html#376" data-ref="_M/__USE_GNU">__USE_GNU</a></u></td></tr>
 <tr><th id="83">83</th><td><i>/* Clone current process.  */</i></td></tr>
-<tr><th id="84">84</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="clone" title='clone' data-ref="clone">clone</dfn> (<em>int</em> (*<dfn class="local col1 decl" id="991__fn" title='__fn' data-type='int (*)(void *)' data-ref="991__fn">__fn</dfn>) (<em>void</em> *<dfn class="local col2 decl" id="992__arg" title='__arg' data-type='void *' data-ref="992__arg">__arg</dfn>), <em>void</em> *<dfn class="local col3 decl" id="993__child_stack" title='__child_stack' data-type='void *' data-ref="993__child_stack">__child_stack</dfn>,</td></tr>
-<tr><th id="85">85</th><td>		  <em>int</em> <dfn class="local col4 decl" id="994__flags" title='__flags' data-type='int' data-ref="994__flags">__flags</dfn>, <em>void</em> *<dfn class="local col5 decl" id="995__arg" title='__arg' data-type='void *' data-ref="995__arg">__arg</dfn>, ...) <a class="macro" href="../sys/cdefs.h.html#61" title="throw ()" data-ref="_M/__THROW">__THROW</a>;</td></tr>
+<tr><th id="84">84</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="clone" title='clone' data-ref="clone">clone</dfn> (<em>int</em> (*<dfn class="local col2 decl" id="4012__fn" title='__fn' data-type='int (*)(void *)' data-ref="4012__fn">__fn</dfn>) (<em>void</em> *<dfn class="local col3 decl" id="4013__arg" title='__arg' data-type='void *' data-ref="4013__arg">__arg</dfn>), <em>void</em> *<dfn class="local col4 decl" id="4014__child_stack" title='__child_stack' data-type='void *' data-ref="4014__child_stack">__child_stack</dfn>,</td></tr>
+<tr><th id="85">85</th><td>		  <em>int</em> <dfn class="local col5 decl" id="4015__flags" title='__flags' data-type='int' data-ref="4015__flags">__flags</dfn>, <em>void</em> *<dfn class="local col6 decl" id="4016__arg" title='__arg' data-type='void *' data-ref="4016__arg">__arg</dfn>, ...) <a class="macro" href="../sys/cdefs.h.html#61" title="throw ()" data-ref="_M/__THROW">__THROW</a>;</td></tr>
 <tr><th id="86">86</th><td></td></tr>
 <tr><th id="87">87</th><td><i>/* Unshare the specified resources.  */</i></td></tr>
-<tr><th id="88">88</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="unshare" title='unshare' data-ref="unshare">unshare</dfn> (<em>int</em> <dfn class="local col6 decl" id="996__flags" title='__flags' data-type='int' data-ref="996__flags">__flags</dfn>) <a class="macro" href="../sys/cdefs.h.html#61" title="throw ()" data-ref="_M/__THROW">__THROW</a>;</td></tr>
+<tr><th id="88">88</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="unshare" title='unshare' data-ref="unshare">unshare</dfn> (<em>int</em> <dfn class="local col7 decl" id="4017__flags" title='__flags' data-type='int' data-ref="4017__flags">__flags</dfn>) <a class="macro" href="../sys/cdefs.h.html#61" title="throw ()" data-ref="_M/__THROW">__THROW</a>;</td></tr>
 <tr><th id="89">89</th><td></td></tr>
 <tr><th id="90">90</th><td><i>/* Get index of currently used CPU.  */</i></td></tr>
 <tr><th id="91">91</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="sched_getcpu" title='sched_getcpu' data-ref="sched_getcpu">sched_getcpu</dfn> (<em>void</em>) <a class="macro" href="../sys/cdefs.h.html#61" title="throw ()" data-ref="_M/__THROW">__THROW</a>;</td></tr>
 <tr><th id="92">92</th><td></td></tr>
 <tr><th id="93">93</th><td><i>/* Switch process to namespace of type NSTYPE indicated by FD.  */</i></td></tr>
-<tr><th id="94">94</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="setns" title='setns' data-ref="setns">setns</dfn> (<em>int</em> <dfn class="local col7 decl" id="997__fd" title='__fd' data-type='int' data-ref="997__fd">__fd</dfn>, <em>int</em> <dfn class="local col8 decl" id="998__nstype" title='__nstype' data-type='int' data-ref="998__nstype">__nstype</dfn>) <a class="macro" href="../sys/cdefs.h.html#61" title="throw ()" data-ref="_M/__THROW">__THROW</a>;</td></tr>
+<tr><th id="94">94</th><td><b>extern</b> <em>int</em> <dfn class="decl" id="setns" title='setns' data-ref="setns">setns</dfn> (<em>int</em> <dfn class="local col8 decl" id="4018__fd" title='__fd' data-type='int' data-ref="4018__fd">__fd</dfn>, <em>int</em> <dfn class="local col9 decl" id="4019__nstype" title='__nstype' data-type='int' data-ref="4019__nstype">__nstype</dfn>) <a class="macro" href="../sys/cdefs.h.html#61" title="throw ()" data-ref="_M/__THROW">__THROW</a>;</td></tr>
 <tr><th id="95">95</th><td><u>#<span data-ppcond="82">endif</span></u></td></tr>
 <tr><th id="96">96</th><td></td></tr>
 <tr><th id="97">97</th><td><a class="macro" href="../sys/cdefs.h.html#110" title="}" data-ref="_M/__END_DECLS">__END_DECLS</a></td></tr>
@@ -113,6 +112,6 @@
 <tr><th id="99">99</th><td><u>#<span data-ppcond="20">endif</span> /* bits/sched.h */</u></td></tr>
 <tr><th id="100">100</th><td></td></tr>
 </table><hr/><p id='footer'>
-Generated while processing <a href='../../../unikey/ukengine/inputproc.cpp.html'>unikey/ukengine/inputproc.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+Generated while processing <a href='../../../unikey/setup/dlg_macro_table.cpp.html'>unikey/setup/dlg_macro_table.cpp</a><br/>Generated on <em>2018-Nov-17</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
 <br/>Generator usage only permitted with license.</p>
 </div></body></html>

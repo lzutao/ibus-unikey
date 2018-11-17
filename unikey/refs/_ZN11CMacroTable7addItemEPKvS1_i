@@ -1,4 +1,6 @@
 <dec f='unikey/ukengine/mactab.h' l='65' type='int CMacroTable::addItem(const void * key, const void * text, int charset)'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='169' u='c' c='_Z30unikey_macro_dialog_save_macroP10_GtkDialogP11CMacroTable'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='420' u='c' c='_Z23export_macro_clicked_cbP10_GtkButtonPv'/>
 <def f='unikey/ukengine/mactab.cpp' l='262' ll='303' type='int CMacroTable::addItem(const void * key, const void * text, int charset)'/>
 <use f='unikey/ukengine/mactab.cpp' l='322' u='c' c='_ZN11CMacroTable7addItemEPKci'/>
 <doc f='unikey/ukengine/mactab.cpp' l='261'>//---------------------------------------------------------------</doc>

@@ -79,13 +79,13 @@
 <tr><th id="66">66</th><td><i>  // fall back to the unsafe vsprintf which, in general, can be dangerous</i></td></tr>
 <tr><th id="67">67</th><td><i>  // and should be avoided.</i></td></tr>
 <tr><th id="68">68</th><td>  <b>inline</b> <em>int</em></td></tr>
-<tr><th id="69">69</th><td>  <dfn class="decl def" id="_ZSt16__convert_from_vRKP15__locale_structPciPKcz" title='std::__convert_from_v' data-ref="_ZSt16__convert_from_vRKP15__locale_structPciPKcz">__convert_from_v</dfn>(<em>const</em> <a class="typedef" href="#std::__c_locale" title='std::__c_locale' data-type='__locale_t' data-ref="std::__c_locale">__c_locale</a>&amp; <dfn class="local col4 decl" id="984__cloc" title='__cloc' data-type='const __c_locale &amp;' data-ref="984__cloc">__cloc</dfn> <b>__attribute__</b> ((__unused__)),</td></tr>
-<tr><th id="70">70</th><td>		   <em>char</em>* <dfn class="local col5 decl" id="985__out" title='__out' data-type='char *' data-ref="985__out">__out</dfn>,</td></tr>
-<tr><th id="71">71</th><td>		   <em>const</em> <em>int</em> <dfn class="local col6 decl" id="986__size" title='__size' data-type='const int' data-ref="986__size">__size</dfn> <b>__attribute__</b> ((__unused__)),</td></tr>
-<tr><th id="72">72</th><td>		   <em>const</em> <em>char</em>* <dfn class="local col7 decl" id="987__fmt" title='__fmt' data-type='const char *' data-ref="987__fmt">__fmt</dfn>, ...)</td></tr>
+<tr><th id="69">69</th><td>  <dfn class="decl def" id="_ZSt16__convert_from_vRKP15__locale_structPciPKcz" title='std::__convert_from_v' data-ref="_ZSt16__convert_from_vRKP15__locale_structPciPKcz">__convert_from_v</dfn>(<em>const</em> <a class="typedef" href="#std::__c_locale" title='std::__c_locale' data-type='__locale_t' data-ref="std::__c_locale">__c_locale</a>&amp; <dfn class="local col2 decl" id="992__cloc" title='__cloc' data-type='const __c_locale &amp;' data-ref="992__cloc">__cloc</dfn> <b>__attribute__</b> ((__unused__)),</td></tr>
+<tr><th id="70">70</th><td>		   <em>char</em>* <dfn class="local col3 decl" id="993__out" title='__out' data-type='char *' data-ref="993__out">__out</dfn>,</td></tr>
+<tr><th id="71">71</th><td>		   <em>const</em> <em>int</em> <dfn class="local col4 decl" id="994__size" title='__size' data-type='const int' data-ref="994__size">__size</dfn> <b>__attribute__</b> ((__unused__)),</td></tr>
+<tr><th id="72">72</th><td>		   <em>const</em> <em>char</em>* <dfn class="local col5 decl" id="995__fmt" title='__fmt' data-type='const char *' data-ref="995__fmt">__fmt</dfn>, ...)</td></tr>
 <tr><th id="73">73</th><td>  {</td></tr>
 <tr><th id="74">74</th><td><u>#<span data-ppcond="74">if</span> <a class="macro" href="../../../../features.h.html#415" title="2" data-ref="_M/__GLIBC__">__GLIBC__</a> &gt; 2 || (<a class="macro" href="../../../../features.h.html#415" title="2" data-ref="_M/__GLIBC__">__GLIBC__</a> == 2 &amp;&amp; <a class="macro" href="../../../../features.h.html#416" title="27" data-ref="_M/__GLIBC_MINOR__">__GLIBC_MINOR__</a> &gt; 2)</u></td></tr>
-<tr><th id="75">75</th><td>    <a class="typedef" href="#std::__c_locale" title='std::__c_locale' data-type='__locale_t' data-ref="std::__c_locale">__c_locale</a> <dfn class="local col8 decl" id="988__old" title='__old' data-type='__c_locale' data-ref="988__old">__old</dfn> = <span class="namespace">__gnu_cxx::</span><a class="ref" href="#__uselocale" title='__uselocale' data-ref="__uselocale">__uselocale</a>(<a class="local col4 ref" href="#984__cloc" title='__cloc' data-ref="984__cloc">__cloc</a>);</td></tr>
+<tr><th id="75">75</th><td>    <a class="typedef" href="#std::__c_locale" title='std::__c_locale' data-type='__locale_t' data-ref="std::__c_locale">__c_locale</a> <dfn class="local col6 decl" id="996__old" title='__old' data-type='__c_locale' data-ref="996__old">__old</dfn> = <span class="namespace">__gnu_cxx::</span><a class="ref" href="#__uselocale" title='__uselocale' data-ref="__uselocale">__uselocale</a>(<a class="local col2 ref" href="#992__cloc" title='__cloc' data-ref="992__cloc">__cloc</a>);</td></tr>
 <tr><th id="76">76</th><td><u>#<span data-ppcond="74">else</span></u></td></tr>
 <tr><th id="77">77</th><td>    <em>char</em>* __old = std::setlocale(LC_NUMERIC, <var>0</var>);</td></tr>
 <tr><th id="78">78</th><td>    <em>char</em>* __sav = <var>0</var>;</td></tr>
@@ -98,19 +98,19 @@
 <tr><th id="85">85</th><td>      }</td></tr>
 <tr><th id="86">86</th><td><u>#<span data-ppcond="74">endif</span></u></td></tr>
 <tr><th id="87">87</th><td></td></tr>
-<tr><th id="88">88</th><td>    <span class='typedef' title='__builtin_va_list' data-type='__va_list_tag [1]' data-ref="__builtin_va_list">__builtin_va_list</span> <span class='ref fake' title='__va_list_tag::__va_list_tag' data-ref="__va_list_tag::__va_list_tag"></span><dfn class="local col9 decl" id="989__args" title='__args' data-type='__builtin_va_list' data-ref="989__args">__args</dfn>;</td></tr>
-<tr><th id="89">89</th><td>    <a class="ref" href="#89" title='__builtin_va_start' data-ref="__builtin_va_start">__builtin_va_start</a>(<a class="local col9 ref" href="#989__args" title='__args' data-ref="989__args">__args</a>, <a class="local col7 ref" href="#987__fmt" title='__fmt' data-ref="987__fmt">__fmt</a>);</td></tr>
+<tr><th id="88">88</th><td>    <span class='typedef' title='__builtin_va_list' data-type='__va_list_tag [1]' data-ref="__builtin_va_list">__builtin_va_list</span> <span class='ref fake' title='__va_list_tag::__va_list_tag' data-ref="__va_list_tag::__va_list_tag"></span><dfn class="local col7 decl" id="997__args" title='__args' data-type='__builtin_va_list' data-ref="997__args">__args</dfn>;</td></tr>
+<tr><th id="89">89</th><td>    <a class="ref" href="#89" title='__builtin_va_start' data-ref="__builtin_va_start">__builtin_va_start</a>(<a class="local col7 ref" href="#997__args" title='__args' data-ref="997__args">__args</a>, <a class="local col5 ref" href="#995__fmt" title='__fmt' data-ref="995__fmt">__fmt</a>);</td></tr>
 <tr><th id="90">90</th><td></td></tr>
 <tr><th id="91">91</th><td><u>#<span data-ppcond="91">if</span> <a class="macro" href="c++config.h.html#611" title="1" data-ref="_M/_GLIBCXX_USE_C99_STDIO">_GLIBCXX_USE_C99_STDIO</a></u></td></tr>
-<tr><th id="92">92</th><td>    <em>const</em> <em>int</em> <dfn class="local col0 decl" id="990__ret" title='__ret' data-type='const int' data-ref="990__ret">__ret</dfn> = <a class="ref" href="#92" title='__builtin_vsnprintf' data-ref="__builtin_vsnprintf">__builtin_vsnprintf</a>(<a class="local col5 ref" href="#985__out" title='__out' data-ref="985__out">__out</a>, <a class="local col6 ref" href="#986__size" title='__size' data-ref="986__size">__size</a>, <a class="local col7 ref" href="#987__fmt" title='__fmt' data-ref="987__fmt">__fmt</a>, <a class="local col9 ref" href="#989__args" title='__args' data-ref="989__args">__args</a>);</td></tr>
+<tr><th id="92">92</th><td>    <em>const</em> <em>int</em> <dfn class="local col8 decl" id="998__ret" title='__ret' data-type='const int' data-ref="998__ret">__ret</dfn> = <a class="ref" href="#92" title='__builtin_vsnprintf' data-ref="__builtin_vsnprintf">__builtin_vsnprintf</a>(<a class="local col3 ref" href="#993__out" title='__out' data-ref="993__out">__out</a>, <a class="local col4 ref" href="#994__size" title='__size' data-ref="994__size">__size</a>, <a class="local col5 ref" href="#995__fmt" title='__fmt' data-ref="995__fmt">__fmt</a>, <a class="local col7 ref" href="#997__args" title='__args' data-ref="997__args">__args</a>);</td></tr>
 <tr><th id="93">93</th><td><u>#<span data-ppcond="91">else</span></u></td></tr>
 <tr><th id="94">94</th><td>    <em>const</em> <em>int</em> __ret = __builtin_vsprintf(__out, __fmt, __args);</td></tr>
 <tr><th id="95">95</th><td><u>#<span data-ppcond="91">endif</span></u></td></tr>
 <tr><th id="96">96</th><td></td></tr>
-<tr><th id="97">97</th><td>    <a class="ref" href="#97" title='__builtin_va_end' data-ref="__builtin_va_end">__builtin_va_end</a>(<a class="local col9 ref" href="#989__args" title='__args' data-ref="989__args">__args</a>);</td></tr>
+<tr><th id="97">97</th><td>    <a class="ref" href="#97" title='__builtin_va_end' data-ref="__builtin_va_end">__builtin_va_end</a>(<a class="local col7 ref" href="#997__args" title='__args' data-ref="997__args">__args</a>);</td></tr>
 <tr><th id="98">98</th><td></td></tr>
 <tr><th id="99">99</th><td><u>#<span data-ppcond="99">if</span> <a class="macro" href="../../../../features.h.html#415" title="2" data-ref="_M/__GLIBC__">__GLIBC__</a> &gt; 2 || (<a class="macro" href="../../../../features.h.html#415" title="2" data-ref="_M/__GLIBC__">__GLIBC__</a> == 2 &amp;&amp; <a class="macro" href="../../../../features.h.html#416" title="27" data-ref="_M/__GLIBC_MINOR__">__GLIBC_MINOR__</a> &gt; 2)</u></td></tr>
-<tr><th id="100">100</th><td>    <span class="namespace">__gnu_cxx::</span><a class="ref" href="#__uselocale" title='__uselocale' data-ref="__uselocale">__uselocale</a>(<a class="local col8 ref" href="#988__old" title='__old' data-ref="988__old">__old</a>);</td></tr>
+<tr><th id="100">100</th><td>    <span class="namespace">__gnu_cxx::</span><a class="ref" href="#__uselocale" title='__uselocale' data-ref="__uselocale">__uselocale</a>(<a class="local col6 ref" href="#996__old" title='__old' data-ref="996__old">__old</a>);</td></tr>
 <tr><th id="101">101</th><td><u>#<span data-ppcond="99">else</span></u></td></tr>
 <tr><th id="102">102</th><td>    <b>if</b> (__sav)</td></tr>
 <tr><th id="103">103</th><td>      {</td></tr>
@@ -118,7 +118,7 @@
 <tr><th id="105">105</th><td>	<b>delete</b> [] __sav;</td></tr>
 <tr><th id="106">106</th><td>      }</td></tr>
 <tr><th id="107">107</th><td><u>#<span data-ppcond="99">endif</span></u></td></tr>
-<tr><th id="108">108</th><td>    <b>return</b> <a class="local col0 ref" href="#990__ret" title='__ret' data-ref="990__ret">__ret</a>;</td></tr>
+<tr><th id="108">108</th><td>    <b>return</b> <a class="local col8 ref" href="#998__ret" title='__ret' data-ref="998__ret">__ret</a>;</td></tr>
 <tr><th id="109">109</th><td>  }</td></tr>
 <tr><th id="110">110</th><td></td></tr>
 <tr><th id="111">111</th><td><a class="macro" href="c++config.h.html#331" title="" data-ref="_M/_GLIBCXX_END_NAMESPACE_VERSION">_GLIBCXX_END_NAMESPACE_VERSION</a></td></tr>
@@ -127,6 +127,6 @@
 <tr><th id="114">114</th><td><u>#<span data-ppcond="36">endif</span></u></td></tr>
 <tr><th id="115">115</th><td></td></tr>
 </table><hr/><p id='footer'>
-Generated while processing <a href='../../../../../unikey/ukengine/inputproc.cpp.html'>unikey/ukengine/inputproc.cpp</a><br/>Generated on <em>2018-Nov-16</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+Generated while processing <a href='../../../../../unikey/src/engine.cpp.html'>unikey/src/engine.cpp</a><br/>Generated on <em>2018-Nov-17</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
 <br/>Generator usage only permitted with license.</p>
 </div></body></html>

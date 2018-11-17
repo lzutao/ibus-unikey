@@ -15,5 +15,11 @@
 <use f='include/c++/7/bits/basic_string.tcc' l='316' u='c' c='_ZNSt7__cxx1112basic_string9_M_mutateEN9__gnu_cxx14__alloc_traitsINS2_IT1_E6rebindIT_E5otherEE9size_typeESA_PKS6_SA_'/>
 <use f='include/c++/7/bits/basic_string.tcc' l='337' u='c' c='_ZNSt7__cxx1112basic_string8_M_eraseEN9__gnu_cxx14__alloc_traitsINS2_IT1_E6rebindIT_E5otherEE9size_typeESA_'/>
 <use f='include/c++/7/bits/basic_string.tcc' l='342' u='c' c='_ZNSt7__cxx1112basic_string8_M_eraseEN9__gnu_cxx14__alloc_traitsINS2_IT1_E6rebindIT_E5otherEE9size_typeESA_'/>
+<use f='unikey/src/engine.cpp' l='539' u='c' c='_ZL30ibus_unikey_engine_erase_charsP11_IBusEnginei'/>
+<use f='unikey/src/engine.cpp' l='628' u='c' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='685' u='c' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='719' u='c' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='721' u='c' c='_ZL44ibus_unikey_engine_process_key_event_preeditP11_IBusEnginejjj'/>
+<use f='unikey/src/engine.cpp' l='754' u='c' c='_ZL25ibus_unikey_engine_commitP11_IBusEngine'/>
 <doc f='include/c++/7/bits/basic_string.h' l='914'>///  Returns the number of characters in the string, not including any
       ///  null-termination.</doc>

@@ -4,4 +4,4 @@
 <use f='include/c++/7/bits/postypes.h' l='137' u='r' c='_ZNKSt4fposcvlEv'/>
 <use f='include/c++/7/bits/postypes.h' l='156' u='w' c='_ZNSt4fpospLEl'/>
 <use f='include/c++/7/bits/postypes.h' l='167' u='w' c='_ZNSt4fposmIEl'/>
-<use f='include/c++/7/bits/postypes.h' l='206' u='r' c='_ZNKSt4fposmiERKSt4fposIT_E'/>
+<use f='include/c++/7/bits/postypes.h' l='206' c='_ZNKSt4fposmiERKSt4fposIT_E'/>

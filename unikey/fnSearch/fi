@@ -1,3 +1,5 @@
+_ZSt4fillT_S_RKT0_|std::fill
+_ZSt6fill_nT_T0_RKT1_|std::fill_n
 _ZN12FileBIStreamC1EiPc|FileBIStream::FileBIStream
 _ZN12FileBIStream6attachEP8_IO_FILE|FileBIStream::attach
 _ZN12FileBIStream8bookmarkEv|FileBIStream::bookmark
@@ -22,7 +24,5 @@ _ZN12FileBOStream4putWEt|FileBOStream::putW
 _ZN12FileBOStream4putsEPKci|FileBOStream::puts
 _ZN12FileBOStreamD1Ev|FileBOStream::~FileBOStream
 _ZNKSt9basic_ios4fillEv|std::basic_ios::fill
-_ZSt4fillT_S_RKT0_|std::fill
-_ZSt6fill_nT_T0_RKT1_|std::fill_n
 _ZSt4findSt19istreambuf_iteratorIT_St11char_traitsIS0_EES3_RKS0_|std::find
 _ZSt5fixedRSt8ios_base|std::fixed

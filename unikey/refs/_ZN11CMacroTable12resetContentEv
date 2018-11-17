@@ -1,4 +1,5 @@
 <dec f='unikey/ukengine/mactab.h' l='63' type='void CMacroTable::resetContent()'/>
+<use f='unikey/setup/dlg_macro_table.cpp' l='157' u='c' c='_Z30unikey_macro_dialog_save_macroP10_GtkDialogP11CMacroTable'/>
 <use f='unikey/ukengine/mactab.cpp' l='181' u='c' c='_ZN11CMacroTable12loadFromFileEPKc'/>
 <def f='unikey/ukengine/mactab.cpp' l='326' ll='330' type='void CMacroTable::resetContent()'/>
 <doc f='unikey/ukengine/mactab.cpp' l='325'>//---------------------------------------------------------------</doc>

@@ -1,3 +1,4 @@
 <dec f='unikey/ukengine/vnconv.h' l='61'/>
+<use f='unikey/src/utils.cpp' l='38' u='c'/>
 <use f='unikey/ukengine/charset.cpp' l='1132' u='c'/>
 <use f='unikey/ukengine/data.cpp' l='78' u='c'/>
